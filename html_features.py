@@ -85,16 +85,18 @@ class AdvancedBS:
         return self.bs
 
     def getTitle(self):
-        try:
-            anchor = self.bs.find_all('a')[0]
-        except IndexError:
-            return "not a title"
-        try:
-            print "title : " + (anchor.get('title'))
-        except TypeError:
-            print "There is no title"
-            return "blank"
-        return anchor.get('title')
+        title = self.bs.find('title')
+        return title.text
+        # try:
+        #     anchor = self.bs.find_all('a')[0]
+        # except IndexError:
+        #     return "not a title"
+        # try:
+        #     print "title : " + (anchor.get('title'))
+        # except TypeError:
+        #     print "There is no title"
+        #     return "blank"
+        # return anchor.get('title')
 
     def getHyperLinks(self):
         return self.bs.find_all("a")

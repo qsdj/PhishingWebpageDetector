@@ -1,7 +1,7 @@
 from feature_engineering import *
 import json
 from mlxtend.plotting import plot_decision_regions
-from sklearn import svm, utils
+from sklearn import svm, metrics
 import matplotlib.pyplot as plt
 from time import sleep, time
 import numpy as np
@@ -206,22 +206,23 @@ def test(model, testGood, testBad):
         :FalseNegativeRate
     """
     correct = 0
+    predictions = []
+    actuals = []
     total = len(testGood) + len(testBad)
-    for sample in testGood:
-        if model.predict(np.asarray(sample).reshape(1, -1)) == 0:
+    for sample in testGood.iterrows():
+        index, sample = sample
+        if model.predict(np.asarray(sample.tolist()[:9]).reshape(1, -1)) == 0:
             correct += 1
-    for sample in testBad:
-        if model.predict(np.asarray(sample).reshape(1, -1)) == 1:
+        predictions.append(model.predict(np.asarray(sample.tolist()[:9]).reshape(1, -1)))
+        actuals.append(0)
+    for sample in testBad.iterrows():
+        index, sample = sample
+        if model.predict(np.asarray(sample.tolist()[:9]).reshape(1, -1)) == 1:
             correct += 1
-    return float(correct) / float(total)
+        predictions.append(model.predict(np.asarray(sample.tolist()[:9]).reshape(1, -1)))
+        actuals.append(1)
+    return float(correct) / float(total), metrics.confusion_matrix(predictions, actuals)
 
-
-# Create arbitrary dataSet for example
-# xx = [[1, 2, 3], [2, 3, 4], [0, 9, 2]]
-# yy = [[0, 0, 1]]
-# clf = train(xx, yy)
-# df = pd.DataFrame()
-# print clf.__str__()
 
 # my_model = main()
 # with open(os.path.join(here, "state.pickle"), "wb") as f:
@@ -230,19 +231,19 @@ def test(model, testGood, testBad):
 with open(os.path.join(here, "state.pickle"), "rb") as f:
     my_model = pickle.load(f)
 
-trainingSet, testSet = generateTrainTestData()
-good, bad, testGood1, testBad1 = featureExtraction_Engineering(trainingSet, testSet)
+testGood1 = pd.read_csv("testGood.csv")
+testBad1 = pd.read_csv("testBad.csv")
+
 print test(my_model, testGood1, testBad1)
-print featuresDFLegit
 
 
-featuresDFLegit.to_csv("features_extracted.csv", encoding="utf-8")
-featuresDFNotLegit.to_csv("features_extracted_not.csv", encoding="utf-8")
-test_featuresDFLegit.to_csv("testGood.csv", encoding="utf-8")
-test_featuresDFNotLegit.to_csv("testBad.csv", encoding="utf-8")
+# featuresDFLegit.to_csv("features_extracted.csv", encoding="utf-8")
+# featuresDFNotLegit.to_csv("features_extracted_not.csv", encoding="utf-8")
+# test_featuresDFLegit.to_csv("testGood.csv", encoding="utf-8")
+# test_featuresDFNotLegit.to_csv("testBad.csv", encoding="utf-8")
 
 
-dfList = [featuresDFLegit, featuresDFNotLegit, test_featuresDFLegit, test_featuresDFNotLegit]
-full_features = pd.concat(dfList)
-beautifulSoupDF.to_csv("beautiful_soup_extracted.csv", encoding="utf-8")
-full_features.to_csv("all_features.csv", encoding="utf-8")
+# dfList = [featuresDFLegit, featuresDFNotLegit, test_featuresDFLegit, test_featuresDFNotLegit]
+# full_features = pd.concat(dfList)
+# beautifulSoupDF.to_csv("beautiful_soup_extracted.csv", encoding="utf-8")
+# full_features.to_csv("all_features.csv", encoding="utf-8")

@@ -61,6 +61,7 @@ def outputFeatures(url1, url2):
         # beautifulSoupDF.append(bsDF)
         # beautifulSoupDF.append(bsDF2)
     except urllib2.HTTPError:
+        print "website down and it is not locally saved"
         return fake_vec
     except socket.error:
         # time.sleep(2)
