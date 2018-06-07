@@ -1,0 +1,186 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <!-- InstanceBegin template="/Templates/mainpages.dwt" codeOutsideHTMLIsLocked="false" -->
+ <head>
+  <meta content="Content-Type" http-equiv="Content-Type" />
+  <!-- InstanceBeginEditable name="doctitle" -->
+  <title>
+   Martin Driscoll Irish Art - the Emerald Isle Experience
+  </title>
+  <!-- InstanceEndEditable -->
+  <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Uncial+Antiqua" />
+  <script src="scripts/jquery-1.2.6.min.js" type="text/javascript">
+  </script>
+  <script type="text/javascript">
+   /*** 
+    Simple jQuery Slideshow Script
+    Released by Jon Raasch (jonraasch.com) under FreeBSD license: free to use or modify, not responsible for anything, etc.  Please link out to me if you like it :)
+***/
+
+function slideSwitch() {
+    var $active = $('#slideshow IMG.active');
+
+    if ( $active.length == 0 ) $active = $('#slideshow IMG:last');
+
+    // use this to pull the images in the order they appear in the markup
+    var $next =  $active.next().length ? $active.next()
+        : $('#slideshow IMG:first');
+
+    // uncomment the 3 lines below to pull the images in random order
+    
+    // var $sibs  = $active.siblings();
+    // var rndNum = Math.floor(Math.random() * $sibs.length );
+    // var $next  = $( $sibs[ rndNum ] );
+
+
+    $active.addClass('last-active');
+
+    $next.css({opacity: 0.0})
+        .addClass('active')
+        .animate({opacity: 1.0}, 1000, function() {
+            $active.removeClass('active last-active');
+        });
+}
+
+$(function() {
+    setInterval( "slideSwitch()", 5000 );
+});
+  </script>
+  <link type="text/css" rel="stylesheet" href="styles.css" />
+  <style type="text/css">
+  </style>
+  <!-- InstanceBeginEditable name="head" -->
+  <!-- InstanceEndEditable -->
+ </head>
+ <body>
+  <div id="wrapper">
+   <div id="header">
+   </div>
+   <div id="nav">
+    <div id="navigation">
+     <ul>
+      <li>
+       <a href="index.html">
+        Home
+       </a>
+      </li>
+      <li>
+       <a href="about.html">
+        About
+       </a>
+      </li>
+      <li>
+       <a href="gallery.html">
+        Gallery
+       </a>
+      </li>
+      <li>
+       <a href="licensing.html">
+        Licensing
+       </a>
+      </li>
+      <li>
+       <a href="collectibles.html">
+        Collectibles
+       </a>
+      </li>
+      <li>
+       <a href="contact.html">
+        Contact
+       </a>
+      </li>
+     </ul>
+    </div>
+   </div>
+   <div id="shadowtop">
+   </div>
+   <div id="containermain">
+    <div id="shadow">
+     <div id="content2">
+      <!-- InstanceBeginEditable name="maincontent" -->
+      <h1>
+       Contact
+      </h1>
+      <div id="column1">
+       <h2>
+        Sunflower Fine Art Galleries
+       </h2>
+       <p>
+        172 Seventh Street
+       </p>
+       <p>
+        Garden City, NY 11530
+       </p>
+       <p>
+        Tollfree: 	(877) 747.7406
+       </p>
+       <p>
+        Tel: 	(516) 747-7406
+       </p>
+       <p>
+        <a href="mailto:artgallery@sunflowerfineart.com">
+         artgallery@sunflowerfineartcom
+        </a>
+       </p>
+       <p>
+       </p>
+       <h2>
+        Customer Service
+       </h2>
+       <p>
+        Sunflower Fine Art &amp; Framing's customer   service goal is simple:
+        <br />
+       </p>
+       <p>
+       </p>
+       <p>
+        <em>
+         <strong>
+          We are committed to providing our  customers a totally delightightful experience.
+         </strong>
+        </em>
+        <em>
+         <strong>
+          Every time. Guaranteed.  
+         </strong>
+        </em>
+       </p>
+       <p>
+       </p>
+       <p>
+        Please feel  free to  drop us a line to share your  thoughts on the site; how we  can improve our  offerings &amp; service  for you... all comments  are truly  welcomed.
+       </p>
+       <p>
+       </p>
+      </div>
+      <div id="column2long">
+       <iframe width="425" height="350" frameborder="0" src="https://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=Sunflower+Fine+Art+Galleries,+Mirrors+and+Picture+Framing,+7th+Street,+Garden+City,+NY&aq=0&oq=Sunflower+fine&sll=42.746632,-75.770041&sspn=4.437181,8.942871&ie=UTF8&hq=Sunflower+Fine+Art+Galleries,+Mirrors+and+Picture+Framing,&hnear=7th+St,+Garden+City,+New+York+11530&t=m&z=16&output=embed" marginwidth="0" marginheight="0" scrolling="no">
+       </iframe>
+       <br />
+       <small>
+        <a style="color:#0000FF;text-align:left" href="https://maps.google.com/maps?f=q&source=embed&hl=en&geocode=&q=Sunflower+Fine+Art+Galleries,+Mirrors+and+Picture+Framing,+7th+Street,+Garden+City,+NY&aq=0&oq=Sunflower+fine&sll=42.746632,-75.770041&sspn=4.437181,8.942871&ie=UTF8&hq=Sunflower+Fine+Art+Galleries,+Mirrors+and+Picture+Framing,&hnear=7th+St,+Garden+City,+New+York+11530&t=m&z=16">
+         View Larger Map
+        </a>
+       </small>
+      </div>
+      <!-- InstanceEndEditable -->
+      <div id="footer">
+       <div id="social">
+        <div id="socialempty">
+        </div>
+       </div>
+       <div id="footerText">
+        Copyright © 2012 All Rights Reserved
+        <span style="color:#ffcc05">
+         •
+        </span>
+        Sunflower Fine Art
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+ <!-- InstanceEnd -->
+</html>

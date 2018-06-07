@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <!--
+    Realizado por: 
+    Alexys Gonzalez
+    alexysbike@gmail.com
+    -->
+  <title>
+   Nuova Venezuela
+  </title>
+  <link href="http://nuovavenezuela.com/img/favicon.ico" rel="shortcut icon" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="http://nuovavenezuela.com/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="http://nuovavenezuela.com/css/bootstrap-lightbox.min.css" />
+  <link rel="stylesheet" href="http://nuovavenezuela.com/css/base.css" />
+  <link rel="stylesheet" href="http://nuovavenezuela.com/css/datepicker3.css" />
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+ </head>
+ <body>
+  <div class="container">
+   <div id="header" class="row">
+    <div id="buscador" class="col-md-3">
+     <form method="post" action="http://nuovavenezuela.com/sitio/buscar/" role="search" id="busqueda-pagina" class="">
+      <div class="input-group ">
+       <input type="hidden" value="" id="ordenar" name="ordenar" />
+       <input type="hidden" value="" id="filtrar" name="filtrar" />
+       <input type="hidden" value="" id="valor" name="valor" />
+       <input type="hidden" value="" id="categoria" name="categoria" />
+       <input type="hidden" value="" id="pagina" name="pagina" />
+       <input type="text" value="" id="busqueda-articulo" name="busqueda" placeholder="Busqueda" class="form-control" />
+       <span class="input-group-btn">
+        <button class="btn btn-default" type="submit">
+         <span class="glyphicon glyphicon-search">
+         </span>
+        </button>
+       </span>
+      </div>
+     </form>
+    </div>
+    <div id="logo" class="col-md-4 col-md-offset-1 text-center">
+     <a href="http://nuovavenezuela.com/">
+      <img src="http://nuovavenezuela.com/img/logo.png" />
+     </a>
+    </div>
+    <div id="opciones-usuario" class="col-md-4 text-right">
+     <a id="boton-login" href="#" data-original-title="" title="">
+      <span class="glyphicon glyphicon-user">
+      </span>
+      Login
+     </a>
+     <a href="http://nuovavenezuela.com/usuario/nuevo">
+      <span class="glyphicon glyphicon-ok">
+      </span>
+      Registrar
+     </a>
+    </div>
+   </div>
+  </div>
+  <nav role="navigation" class="navbar navbar-inverse">
+   <!-- Brand and toggle get grouped for better mobile display -->
+   <div class="container">
+    <div class="navbar-header">
+     <button data-target="#bs-example-navbar-collapse-1" data-toggle="collapse" class="navbar-toggle" type="button">
+      <span class="sr-only">
+       Toggle navigation
+      </span>
+      <span class="icon-bar">
+      </span>
+      <span class="icon-bar">
+      </span>
+      <span class="icon-bar">
+      </span>
+     </button>
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div id="bs-example-navbar-collapse-1" class="collapse navbar-collapse">
+     <ul class="nav navbar-nav">
+      <li>
+       <a href="http://nuovavenezuela.com/sitio/buscar/1">
+        Alta Costura
+       </a>
+      </li>
+      <li>
+       <a href="http://nuovavenezuela.com/sitio/buscar/2">
+        Casual
+       </a>
+      </li>
+      <li>
+       <a href="http://nuovavenezuela.com/sitio/buscar/3">
+        Deportiva
+       </a>
+      </li>
+      <li>
+       <a href="http://nuovavenezuela.com/sitio/buscar/4">
+        Playera
+       </a>
+      </li>
+      <li>
+       <a href="http://nuovavenezuela.com/sitio/buscar/5">
+        Íntima
+       </a>
+      </li>
+      <li>
+       <a href="http://nuovavenezuela.com/sitio/buscar/6">
+        Accesorios
+       </a>
+      </li>
+      <li>
+       <a href="http://nuovavenezuela.com/sitio/buscar/7">
+        Calzado
+       </a>
+      </li>
+      <li>
+       <a href="http://nuovavenezuela.com/sitio/buscar_disenador">
+        Diseñadores
+       </a>
+      </li>
+     </ul>
+    </div>
+    <!-- /.navbar-collapse -->
+   </div>
+  </nav>
+  <div id="contenido" class="container">
+   <div class="row">
+    <div class="col-md-6" id="columna-1">
+     <h3 class="text-center">
+      Nuevo Diseñador
+     </h3>
+     <div class="panel panel-default">
+      <div class="panel-body">
+       <form id="registro-usuario" action="http://nuovavenezuela.com/usuario/crear_usuario" method="post" role="form" novalidate="novalidate">
+        <div class="form-group">
+         <label for="correo">
+          Correo Electrónico
+         </label>
+         <input type="email" required="" placeholder="Ingrese su correo electrónico" name="correo" id="correo" class="form-control" />
+        </div>
+        <div class="form-group">
+         <label for="confirmar-correo">
+          Confirmar Correo Electrónico
+         </label>
+         <input type="email" placeholder="Confirme su correo electrónico" name="confirmar-correo" id="confirmar-correo" class="form-control" />
+        </div>
+        <div class="form-group">
+         <label for="password">
+          Contraseña
+         </label>
+         <input type="password" required="" placeholder="Ingrese su contraseña" name="password" id="password" class="form-control" />
+        </div>
+        <div class="form-group">
+         <label for="confirmar-password">
+          Confirmar Contraseña
+         </label>
+         <input type="password" placeholder="Confirme su contraseña" name="confirmar-password" id="confirmar-password" class="form-control" />
+        </div>
+        <div class="form-group">
+         <p class="text-center">
+          <a data-target="#modal-terminos" data-toggle="modal" href="#">
+           Terminos y Condiciones
+          </a>
+          -
+          <a data-target="#modal-privacidad" data-toggle="modal" href="#">
+           Políticas de privacidad y confidencialidad
+          </a>
+         </p>
+         <p class="alert alert-warning">
+          Al darle click al botón "Crear" estas aceptando los Terminos y Condiciones y las políticas de privacidad y confidencialidad
+         </p>
+        </div>
+        <input type="hidden" value="2" name="tipo-usuario" />
+        <button id="crear-usuario" class="btn btn-primary col-md-4" type="submit">
+         Crear
+        </button>
+       </form>
+      </div>
+     </div>
+     <!-- Modal -->
+     <div data-show="true" aria-hidden="true" role="dialog" tabindex="-1" id="modal-terminos" class="modal fade">
+      <div class="modal-dialog modal-lg">
+       <div class="modal-content">
+        <div class="modal-header">
+         <button aria-hidden="true" data-dismiss="modal" class="close" type="button">
+          ×
+         </button>
+         <h2 id="modal-titulo" class="modal-title">
+          Términos y Condiciones
+         </h2>
+        </div>
+        <div class="modal-body">
+         <p>
+          Versión vigente a partir de 03/04/2014
+         </p>
+         <p>
+          Este contrato describe los términos y condiciones generales (los "Términos y Condiciones Generales") aplicables al uso de los servicios ofrecidos por Nuova Venezuela C.A., RIF J-40336353-6, ("los Servicios") dentro del sitio www.nuovavenezuela.com, ("Nuova Venezuela" o el "sitio"). Cualquier persona (en adelante "Usuario" o en plural "Usuarios") que desee acceder y/o usar el sitio o los Servicios podrá hacerlo sujetándose a los Términos y Condiciones Generales respectivos, junto con todas las demás políticas y principios que rigen Nuova Venezuela y que son incorporados al presente por referencia.
+         </p>
+         <p>
+          CUALQUIER PERSONA QUE NO ACEPTE ESTOS TÉRMINOS Y CONDICIONES GENERALES, LOS CUALES TIENEN UN CARÁCTER OBLIGATORIO Y VINCULANTE, DEBERÁ ABSTENERSE                       DE UTILIZAR EL SITIO Y/O LOS SERVICIOS.
+         </p>
+         <p>
+          El Usuario debe leer, entender y aceptar todas las condiciones establecidas en los Términos y Condiciones Generales y en las Políticas de Privacidad, así como en los demás documentos incorporados a los mismos por referencia, previos a su registro como Usuario de Nuova Venezuela.
+         </p>
+         <h4>
+          01 - Capacidad
+         </h4>
+         <p>
+          Los Servicios sólo están disponibles para personas que tengan capacidad legal para contratar. No podrán utilizar los servicios las personas que no tengan esa capacidad, los menores de edad o Usuarios de Nuova Venezuela que hayan sido suspendidos temporalmente o inhabilitados definitivamente. Si estás registrando un Usuario como Empresa, debes tener capacidad para contratar a nombre de tal entidad y de obligar a la misma en los términos de este Acuerdo.
+         </p>
+         <h4>
+          02 – Registro de cuentas
+         </h4>
+         <p>
+          Es obligatorio completar el formulario de registro en todos sus campos con datos válidos para poder utilizar los servicios que brinda Nuova Venezuela. El futuro Usuario deberá completarlo con su información personal de manera exacta, precisa y verdadera ("Datos Personales") y asume el compromiso de actualizar los Datos Personales conforme resulte necesario. Nuova Venezuela podrá utilizar diversos medios para identificar a sus Usuarios, pero Nuova Venezuela NO se responsabiliza por la certeza de los Datos Personales provistos por sus Usuarios. Los Usuarios garantizan y responden, en cualquier caso, de la veracidad, exactitud, vigencia y autenticidad de los Datos Personales ingresados.
+         </p>
+         <p>
+          Nuova Venezuela se reserva el derecho de solicitar algún comprobante y/o dato adicional a efectos de corroborar los Datos Personales, así como de suspender temporal o definitivamente a aquellos Usuarios cuyos datos no hayan podido ser confirmados. En estos casos de inhabilitación, se dará de baja todos los artículos publicados, así como las ofertas realizadas, sin que ello genere algún derecho a resarcimiento.
+         </p>
+         <p>
+          El Usuario accederá a su cuenta personal ("Cuenta") mediante el ingreso de su correo electrónico y clave de seguridad personal elegida ("Clave de Seguridad"). El Usuario se obliga a mantener la confidencialidad de su Clave de Seguridad.
+         </p>
+         <p>
+          La Cuenta es personal, única e intransferible, y está prohibido que un mismo Usuario registre o posea más de una Cuenta. En caso que Nuova Venezuela detecte distintas Cuentas que contengan datos coincidentes o relacionados, podrá cancelar, suspender o inhabilitarlas.
+         </p>
+         <p>
+          El Usuario será responsable por todas las operaciones efectuadas en su Cuenta, pues el acceso a la misma está restringido al ingreso y uso de su Clave de Seguridad, de conocimiento exclusivo del Usuario. El Usuario se compromete a notificar a Nuova Venezuela en forma inmediata y por medio idóneo y fehaciente, cualquier uso no autorizado de su Cuenta, así como el ingreso por terceros no autorizados a la misma. Se aclara que está prohibida la venta, cesión o transferencia de la Cuenta (incluyendo la reputación y calificaciones) bajo ningún título.
+         </p>
+         <p>
+          Nuova Venezuela se reserva el derecho de rechazar cualquier solicitud de registro o de cancelar una registro previamente aceptada, sin que esté obligado a comunicar o exponer las razones de su decisión y sin que ello genere algún derecho a indemnización o resarcimiento.
+         </p>
+         <h4>
+          03 - Modificaciones del Acuerdo
+         </h4>
+         <p>
+          Nuova Venezuela podrá modificar los Términos y Condiciones Generales en cualquier momento haciendo públicos en el Sitio los términos modificados. Todos los términos modificados entrarán en vigor a los 10 (diez) días de su publicación. Dentro de los 5 (cinco) días siguientes a la publicación de las modificaciones introducidas, el Usuario deberá comunicar por e-mail si no acepta las mismas; en ese caso quedará disuelto el vínculo contractual y será inhabilitado como Usuario siempre que no tenga deudas pendientes. Vencido este plazo, se considerará que el Usuario acepta los nuevos términos y el contrato continuará vinculando a ambas partes.
+         </p>
+         <h4>
+          04 - Listado de Bienes
+         </h4>
+         <p>
+          4.1 Publicación de bienes y/o servicios. El Usuario deberá ofrecer a la venta los bienes en las categorías apropiadas. Las publicaciones podrán incluir textos descriptivos, gráficos, fotografías y otros contenidos y condiciones pertinentes para la venta del bien, siempre que no violen ninguna disposición de este acuerdo o demás políticas de Nuova Venezuela. El producto ofrecido por el Usuario Vendedor debe ser exactamente descrito en cuanto a sus condiciones y características relevantes. Se entiende y presume que mediante la inclusión del bien en Nuova Venezuela, el Usuario acepta que tiene la intención y el derecho de vender el bien por él ofrecido, o está facultado para ello por su titular y lo tiene disponible para su entrega inmediata. Se establece que los precios de los productos publicados deberán ser expresados con IVA incluido cuando corresponda la aplicación del mismo, y en moneda del curso legal. Nuova Venezuela podrá remover cualquier publicación cuyo precio no sea expresado de esta forma para evitar confusiones o malos entendidos en cuanto al precio final del producto. Se deja expresamente establecido que ninguna descripción podrá contener datos personales o de contacto, tales como, y sin limitarse a, números telefónicos, dirección de e-mail, dirección postal, direcciones de páginas de Internet que contengan datos como los mencionados anteriormente. No podrá publicitarse otros medios de pagos, distintos de los enunciados por Nuova Venezuela en la página de publicación de artículos. En caso que se infrinja cualquiera de las disposiciones establecidas en esta cláusula, Nuova Venezuela podrá editar el espacio, solicitar al Usuario que lo edite, o dar de baja la publicación, o publicidad, donde se encuentre la infracción y en ningún caso se devolverán o bonificarán los cargos de publicación, o de la publicidad.
+         </p>
+         <p>
+          4.2 Inclusión de imágenes y fotografías
+         </p>
+         <p>
+          El usuario puede incluir imágenes y fotografías del producto ofrecido siempre que las mismas se correspondan con el artículo.
+         </p>
+         <p>
+          Nuova Venezuela podrá impedir la publicación de la fotografía, e incluso del producto, si interpretara, a su exclusivo criterio, que la imagen no cumple con los presentes Términos y Condiciones.
+         </p>
+         <h4>
+          05 - Privacidad de la Información
+         </h4>
+         <p>
+          Para utilizar los Servicios ofrecidos por Nuova Venezuela, los Usuarios deberán facilitar determinados datos de carácter personal. Su información personal se procesa y almacena en servidores o medios magnéticos que mantienen altos estándares de seguridad y protección tanto física como tecnológica. Para mayor información sobre la privacidad de los Datos Personales y casos en los que será revelada la información personal, se pueden consultar nuestras Políticas de Privacidad.
+         </p>
+         <h4>
+          06 - Obligaciones de los Usuarios
+         </h4>
+         <p>
+          6.1 Obligaciones del Comprador. Los usuarios interesados en obtener la prenda o artículo, están obligados a comunicarse con el vendedor/diseñador y completar la operación si han accedido y confirmado la opción ´´comprar´´, salvo que la operación esté prohibida por la ley o los Términos y Condiciones Generales y demás políticas de Nuova Venezuela, en cuyo caso no estará obligado a concretar la operación y deberá por medio de un correo explicar a Nuova Venezuela las razones por las cuales no culmino la operación, de lo contrario se verá afectada su reputación.
+         </p>
+         <p>
+          Al comprar un artículo, el Usuario acepta quedar obligado por las condiciones de venta incluidas en la descripción del artículo en la medida en que las mismas no infrinjan las leyes o los Términos y Condiciones Generales y demás políticas de Nuova Venezuela. La compra es irrevocable salvo en circunstancias excepcionales, tales como que el vendedor cambie sustancialmente la descripción del artículo después de realizada alguna compra, que exista un claro error tipográfico, o que no pueda verificar la identidad del vendedor.
+         </p>
+         <p>
+          Impuestos. Tal como lo establece la normativa fiscal vigente, el comprador debe exigir factura o ticket al vendedor como comprobante de la operación. El vendedor no estará obligado a emitir factura o ticket sólo en el caso de tratarse de una persona física que efectúa ventas ocasionalmente.
+         </p>
+         <p>
+          Para culminar la operación, el comprador deberá calificar al diseñador de acuerdo a su nivel de satisfacción con el mismo, si cumplió con todo lo establecido en el proceso de la compra, de esto dependerá si la reputación del vendedor mejora o empeora.
+         </p>
+         <p>
+          6.2. Obligaciones del Vendedor. El Usuario Vendedor debe tener capacidad legal para vender el bien objeto de su oferta.
+         </p>
+         <p>
+          Si el Usuario Vendedor ha recibido un reporte de compra en alguno de sus bienes o artículos publicados, queda obligado a intentar comunicarse con el comprador y completar la operación con el Usuario que haya realizado la compra. Solamente en casos excepcionales, el Vendedor, podrá retractarse de la venta, tales como cuando no haya podido acordar con el Usuario Comprador sobre la forma de pago, de entrega o no sea posible verificar la verdadera identidad o demás información del Comprador, en este caso deberá informar a Nuova Venezuela a través de un correo las razones por las cuales no se culminó la operación, de lo contrario el vendedor se verá afectado en su reputación.
+         </p>
+         <p>
+          Dado que Nuova Venezuela es un punto de encuentro entre comprador y vendedor y no participa de las operaciones que se realizan entre ellos, el Vendedor será responsable por todas las obligaciones y cargas impositivas que correspondan por la venta de sus artículos, sin que pudiera imputársele a Nuova Venezuela algún tipo de responsabilidad por incumplimientos en tal sentido.
+         </p>
+         <p>
+          El vendedor, para culminar la operación, deberá calificar a la contraparte de acuerdo al comportamiento y cumplimiento del comprador en todo el proceso de compra, afectando de forma negativa o positiva la reputación del cliente.
+         </p>
+         <p>
+          Impuestos. Como se menciona anteriormente, Nuova Venezuela sólo pone a disposición de los Usuarios un espacio virtual que les permite comunicarse mediante Internet para encontrar una forma de vender o comprar artículos. Nuova Venezuela no tiene participación alguna en el proceso de negociación y perfeccionamiento del contrato definitivo entre las partes. Por eso, Nuova Venezuela no es responsable por el efectivo cumplimiento de las obligaciones fiscales o impositivas establecidas por la ley vigente.
+         </p>
+         <h4>
+          07 â€“ Proceso Compra / Venta / EnvÃ­o de los bienes
+         </h4>
+         <p>
+          A.1. Comprador: El cliente hace clic en comprar, verifica y confirma la compra.
+         </p>
+         <p>
+          B.1. Comprador: Recibe un correo con la confirmaciÃ³n de la compra con los datos del diseÃ±ador, datos de la prenda, y cuentas bancarias del creativo a donde tiene que realizar la transferencia o depÃ³sito bancario para pagar la prenda. Â´Â´Nota: el comprador al recibir este correo tiene 3 dÃ­as hÃ¡biles para realizar el pago de la prenda, de lo contrario, el diseÃ±ador se verÃ¡ obligado a calificarlo de forma negativa afectando la reputaciÃ³n del compradorÂ´Â´.
+         </p>
+         <p>
+          B.2. DiseÃ±ador: Recibe un correo donde Nuova Venezuela informa que alguien le ha comprado una prenda.
+         </p>
+         <p>
+          C.1. Comprador: Luego de realizar el pago (transferencia o depÃ³sito bancario) el comprador debe dirigirse a sus compras, buscar en las acciones de la prenda a la que le hizo el pago y seleccionar la opciÃ³n de Reporte de Pagos (sÃ­mbolo universal del dÃ³lar $) y reportar el pago colocando datos como: Banco Emisor, Fecha, CÃ³digo de la transferencia o depÃ³sito bancario y el monto de la transacciÃ³n.
+         </p>
+         <p>
+          C.2. DiseÃ±ador: El diseÃ±ador recibe un correo con el reporte de pago del comprador. Con el cÃ³digo o nÃºmero de confirmaciÃ³n el diseÃ±ador debe confirmar que el pago reportado por el comprador ya estÃ¡ en su cuenta bancaria para asÃ­ poder proceder al envÃ­o de la prenda.
+         </p>
+         <p>
+          D.1. DiseÃ±ador: Una vez confirmado el pago realizado por el comprador en la cuenta del diseÃ±ador, el creativo tiene 3 dÃ­as hÃ¡biles para enviar la prenda al destino establecido con el consumidor, de lo contrario el mismo calificarÃ¡ al diseÃ±ador de forma negativa afectando su reputaciÃ³n en la pÃ¡gina, luego e enviar la pieza el diseÃ±ador debe dirigirse a Mi Cuenta, luego en Ventas y en acciones de la pieza vendida ingresar en el Ã­cono Â´Â´DirecciÃ³n de EnvÃ­oÂ´Â´ , se abre una ventana donde permite marcar la pieza como enviada.
+         </p>
+         <p>
+          D.2. Comprador: Luego que el diseÃ±ador marca la pieza como enviada, el comprador recibe un correo de confirmaciÃ³n de envÃ­o diciendo que se ha reportado el envÃ­o de un artÃ­culo.
+         </p>
+         <p>
+          E.1. Comprador: Una vez recibido el artÃ­culo comprado de forma fÃ­sica, el comprador debe dirigirse a su cuenta y en el panel de Â´Â´accionesÂ´Â´ de la prenda comprada y recibida ingresa a Â´Â´Calificar VendedorÂ´Â´ en el cual, el comprador indica si recibiÃ³ la prenda, califica al diseÃ±ador de forma positiva o negativa y deja un comentario de crÃ­ticas, recomendaciones o simplemente describe si su experiencia fue positiva o negativa.
+         </p>
+         <p>
+          E.2. DiseÃ±ador: Recibe un correo de que lo han calificado y luego procede en el menÃº acciones de la prenda vendida a calificar al comprador.
+         </p>
+         <h4>
+          08 - Prohibiciones
+         </h4>
+         <p>
+          Los Usuarios no podrán eliminar prendas únicas o disminuir piezas en el inventario inicial desde la fecha de publicación hasta los 12 días siguientes de la misma. Ésta opción de bloqueo de inventario se repetirá siempre que se ingresen nuevos artículos o se le sumen piezas en el inventario a artículos ya existentes. Luego de transcurridos dichos 12 días los diseñadores podrán eliminar o disminuir piezas en el inventario sin problemas.
+         </p>
+         <h4>
+          09 - Violaciones del Sistema o Bases de Datos
+         </h4>
+         <p>
+          No está permitida ninguna acción o uso de dispositivo, software, u otro medio tendiente a interferir tanto en las actividades y operatoria de Nuova Venezuela como en las ofertas, descripciones, cuentas o bases de datos de Nuova Venezuela. Cualquier intromisión, tentativa o actividad violatoria o contraria a las leyes sobre derecho de propiedad intelectual y/o a las prohibiciones estipuladas en este contrato harán pasible a su responsable de las acciones legales pertinentes, y a las sanciones previstas por este acuerdo, así como lo hará responsable de indemnizar los daños ocasionados.
+         </p>
+         <h4>
+          10 - Sanciones. Suspensión de operaciones
+         </h4>
+         <p>
+          Sin perjuicio de otras medidas, Nuova Venezuela podrá advertir, suspender en forma temporal o inhabilitar definitivamente la Cuenta de un Usuario,  publicación o una publicidad,  aplicar una sanción que impacte negativamente en la reputación de un Usuario, iniciar las acciones que estime pertinentes y/o suspender la prestación de sus Servicios si (a) se quebrantara alguna ley, o cualquiera de las estipulaciones de los Términos y Condiciones Generales y demás políticas de Nuova Venezuela; (b) si incumpliera sus compromisos como Usuario; (c) si se incurriera a criterio de Nuova Venezuela en conductas o actos dolosos o fraudulentos; (d) no pudiera verificarse la identidad del Usuario o cualquier información proporcionada por el mismo fuere errónea; (e) Nuova Venezuela entendiera que las publicaciones, publicidad u otras acciones pueden ser causa de responsabilidad para el Usuario que las publicó, para Nuova Venezuela o para los Usuarios. En el caso de la suspensión o inhabilitación de un Usuario, todos los artículos, o publicidades, que tuviera publicados serán removidos del sistema y en ningún caso se devolverán o bonificarán los cargos de publicación involucrados.
+         </p>
+         <h4>
+          11 - Responsabilidad
+         </h4>
+         <p>
+          Nuova Venezuela sólo pone a disposición de los Usuarios un espacio virtual que les permite ponerse en comunicación mediante Internet para encontrar una forma de vender o comprar bienes. Nuova Venezuela no es el propietario de los artículos, o publicidades, ofrecidos, no tiene posesión de ellos ni los ofrece en venta. Nuova Venezuela no interviene en el perfeccionamiento de las operaciones realizadas entre los Usuarios ni en las condiciones por ellos estipuladas para las mismas, por ello no será responsable respecto de la existencia, calidad, cantidad, estado, integridad o legitimidad de los bienes ofrecidos, adquiridos o enajenados por los Usuarios, así como de la capacidad para contratar de los Usuarios o de la veracidad de los Datos Personales por ellos ingresados. Cada Usuario conoce y acepta ser el exclusivo responsable por los artículos que publica para su venta y por las compras que realiza.
+         </p>
+         <p>
+          Debido a que Nuova Venezuela no tiene ninguna participación durante todo el tiempo en que el artículo se publica para la venta, ni en la posterior negociación y perfeccionamiento del contrato definitivo entre las partes, no será responsable por el efectivo cumplimiento de las obligaciones asumidas por los Usuarios en el perfeccionamiento de la operación. El Usuario conoce y acepta que al realizar operaciones con otros Usuarios o terceros lo hace bajo su propio riesgo. En ningún caso Nuova Venezuela será responsable por lucro cesante, o por cualquier otro daño y/o perjuicio que haya podido sufrir el Usuario, debido a las operaciones realizadas o no realizadas por artículos publicados a través de Nuova Venezuela.
+         </p>
+         <p>
+          Nuova Venezuela recomienda actuar con prudencia y sentido común al momento de realizar operaciones con otros Usuarios. El Usuario debe tener presentes, además, los riesgos de contratar con menores o con personas que se valgan de una identidad falsa. Nuova Venezuela NO será responsable por la realización de ofertas y/o operaciones con otros Usuarios basadas en la confianza depositada en el sistema o los Servicios brindados por Nuova Venezuela.
+         </p>
+         <p>
+          En caso que uno o más Usuarios o algún tercero inicien cualquier tipo de reclamo o acciones legales contra otro u otros Usuarios, todos y cada uno de los Usuarios involucrados en dichos reclamos o acciones eximen de toda responsabilidad a Nuova Venezuela y a sus directores, gerentes, empleados, agentes, operarios, representantes y apoderados.
+         </p>
+         <h4>
+          12 - Alcance de los servicios de Nuova Venezuela
+         </h4>
+         <p>
+          Este acuerdo no crea ningún contrato de sociedad, de mandato, de franquicia, o relación laboral entre Nuova Venezuela y el Usuario. El Usuario reconoce y acepta que Nuova Venezuela no es parte en ninguna operación, ni tiene control alguno sobre la calidad, seguridad o legalidad de los artículos anunciados, la veracidad o exactitud de los anuncios, la capacidad de los Usuarios para vender o comprar artículos. Nuova Venezuela no puede asegurar que un Usuario completará una operación ni podrá verificar la identidad o Datos Personales ingresados por los Usuarios. Nuova Venezuela no garantiza la veracidad de la publicidad de terceros que aparezca en el sitio y no será responsable por la correspondencia o contratos que el Usuario celebre con dichos terceros o con otros Usuarios.
+         </p>
+         <h4>
+          13 - Fallas en el sistema
+         </h4>
+         <p>
+          Nuova Venezuela no se responsabiliza por cualquier daño, perjuicio o pérdida al Usuario causados por fallas en el sistema, en el servidor o en Internet. Nuova Venezuela tampoco será responsable por cualquier virus que pudiera infectar el equipo del Usuario como consecuencia del acceso, uso o examen de su sitio web o a raíz de cualquier transferencia de datos, archivos, imágenes, textos, o audio contenidos en el mismo. Los Usuarios NO podrán imputarle responsabilidad alguna ni exigir pago por lucro cesante, en virtud de perjuicios resultantes de dificultades técnicas o fallas en los sistemas o en Internet. Nuova Venezuela no garantiza el acceso y uso continuado o ininterrumpido de su sitio. El sistema puede eventualmente no estar disponible debido a dificultades técnicas o fallas de Internet, o por cualquier otra circunstancia ajena a Nuova Venezuela; en tales casos se procurará restablecerlo con la mayor celeridad posible sin que por ello pueda imputársele algún tipo de responsabilidad. Nuova Venezuela no será responsable por ningún error u omisión contenidos en su sitio web.
+         </p>
+         <h4>
+          14 - Tarifas. Facturación
+         </h4>
+         <p>
+          El registro en Nuova Venezuela es gratuito. Al publicar bienes para la venta, el usuario deberá pagar un cargo de publicación y solamente pagará una comisión (de 10%) por venta a Nuova Venezuela cuando la operación se concrete.
+         </p>
+         <p>
+          El proceso de facturación de Nuova Venezuela se manejará 1 vez al mes por cada usuario en los primeros 4 días de cada mes, se enviará un reporte a cada diseñador de todas las ventas del mes pasado, de acuerdo con el reporte se elaborará la factura, la cual será calculada en base al 10% del total de ventas más IVA, es decir, si sus ventas fueron de 400 Bs. durante el mes, NUOVA le facturará de la siguiente forma:
+         </p>
+         <p>
+          Bs. 400 x 10% = Bs. 40 por servicio prestado
+         </p>
+         <p>
+          Bs. 40 x 12% de IVA = Bs. 4,8
+         </p>
+         <p>
+          Entonces, el valor total de su factura será por Bs. 44,80
+         </p>
+         <p>
+          NOTA: Por ser el IVA un monto casi NULO, el consumidor no percibirá cambio alguno en el precio de los artículos.
+         </p>
+         <p>
+          El Usuario se obliga a abonar a Nuova Venezuela la Tarifa, los cargos por publicación o por cualquier otro servicio prestado por Nuova Venezuela por el cual haya establecida una tarifa vigente.
+         </p>
+         <p>
+          Nuova Venezuela se reserva el derecho de modificar, cambiar, agregar, o eliminar las tarifas vigentes, en cualquier momento, lo cual será notificado a los Usuarios, en la forma establecida en la Cláusula 3. Sin embargo, Nuova Venezuela podrá modificar temporalmente la Política de Tarifas y las tarifas por sus servicios por razón de promociones, siendo efectivas estas modificaciones cuando se haga pública la promoción o se realice el anuncio.
+         </p>
+         <p>
+          Nuova Venezuela se reserva el derecho de tomar las medidas judiciales y extrajudiciales que estime pertinentes para obtener el pago del monto debido.
+         </p>
+         <p>
+          En caso de haberse facturado cargos que no hubiesen correspondido, el Usuario deberá comunicarse con nuestro equipo de Atención al Cliente a través de info@nuovavenezuela.com para resolver dicha situación.
+         </p>
+         <h4>
+          15 - Indemnización
+         </h4>
+         <p>
+          El Usuario indemnizará y mantendrá indemne a Nuova Venezuela, sus filiales, empresas controladas y/o controlantes, directivos, administradores, representantes y empleados, por cualquier reclamo o demanda de otros Usuarios o terceros por sus actividades en el Sitio o por su incumplimiento los Términos y Condiciones Generales y demás Políticas que se entienden incorporadas al presente o por la violación de cualesquiera leyes o derechos de terceros, incluyendo los honorarios de abogados en una cantidad razonable.
+         </p>
+         <h4>
+          16 - Jurisdicción y Ley Aplicable
+         </h4>
+         <p>
+          Este acuerdo estará regido en todos sus puntos por las leyes vigentes en la República Bolivariana de Venezuela.
+         </p>
+        </div>
+        <div class="modal-footer">
+         <button data-dismiss="modal" class="btn btn-default" type="button">
+          Cerrar
+         </button>
+        </div>
+       </div>
+      </div>
+     </div>
+     <!-- Modal -->
+     <div data-show="true" aria-hidden="true" role="dialog" tabindex="-1" id="modal-privacidad" class="modal fade">
+      <div class="modal-dialog modal-lg">
+       <div class="modal-content">
+        <div class="modal-header">
+         <button aria-hidden="true" data-dismiss="modal" class="close" type="button">
+          ×
+         </button>
+         <h2 id="modal-titulo" class="modal-title">
+          Políticas de privacidad y confidencialidad de la información
+         </h2>
+        </div>
+        <div class="modal-body">
+         <p>
+          Estas políticas de privacidad (las "Políticas de Privacidad") entrarán en vigor desde su aceptación para los nuevos usuarios y están vigentes desde el 1º de abril de 2014.
+         </p>
+         <p>
+          Como parte normal de nuestra actividad recogemos y, en algunos casos, revelamos información sobre nuestros usuarios y visitantes de nuestro sitio Web. Estas Políticas de Privacidad describen la información que Nuova Venezuela recoge sobre sus usuarios y visitantes y lo que puede hacerse con dicha información. Esta política es muy detallada porque es importante que todos los usuarios y visitantes de nuestro sitio Web conozcan las prácticas de Nuova Venezuela de la forma más precisa posible. Al inscribirse y/o navegar el sitio Web de Nuova Venezuela, el usuario y/o el visitante presta su consentimiento para que se utilice su información personal de acuerdo a las políticas que se describen a continuación.
+         </p>
+         <p>
+          La privacidad de la información de los usuarios es muy importante para Nuova Venezuela. Es por esa razón que se toman las precauciones y recaudos para resguardar su información, utilizando los mecanismos de seguridad informática de protección de la información más completos y eficaces.
+         </p>
+         <p>
+          Este documento es parte integrante de los Términos y Condiciones Generales de Nuova Venezuela. Mediante la aceptación de los Términos y Condiciones Generales en el momento de la inscripción el usuario acepta las políticas aquí contenidas.
+         </p>
+         <h4>
+          Derechos de acceso, cancelación y rectificación de la información personal
+         </h4>
+         <p>
+          Los usuarios tienen reconocidos y podrán ejercitar los derechos de acceder, cancelar y actualizar su Información Personal, incluyendo su dirección de e-mail, así como a oponerse al tratamiento de la misma y a ser informado de las cesiones llevadas a cabo, todo ello de conformidad a lo dispuesto en la normativa aplicable. Los usuarios garantizan y responden, en cualquier caso, de la veracidad, exactitud, vigencia y autenticidad de la Información Personal facilitada, y se comprometen a mantenerla debidamente actualizada.
+         </p>
+         <p>
+          Una vez inscrito en Nuova Venezuela, el usuario podrá revisar y cambiar la información que nos ha enviado durante el proceso de inscripción incluyendo:
+         </p>
+         <p>
+          el Seudónimo y dirección de correo electrónico. Sin perjuicio de los cambios que realice, Nuova Venezuela conservará la Información Personal anterior por motivos de seguridad y control del fraude.
+         </p>
+         <p>
+          La información de la inscripción como: compañía, domicilio, ciudad, región, código postal, número principal de teléfono, número secundario de teléfono, número de fax, correo electrónico, datos de cuentas de bancos, entre otros.
+         </p>
+         <h4>
+          La clave
+         </h4>
+         <p>
+          En determinados casos, mantendremos en nuestros archivos Información Personal que nos hayas pedido que retiremos, y ello con la finalidad de resolver disputas o reclamaciones, detectar problemas o incidencias y solucionarlos, y dar cumplimiento a lo dispuesto en los Términos y Condiciones Generales por un período de tiempo determinado por la ley. En cualquier caso, la Información Personal de un usuario no será inmediatamente retirada de nuestros archivos por motivos legales y técnicos, incluyendo sistemas de soportes de seguridad. Por tanto, no se debe esperar que toda la Información Personal sea definitivamente borrada de nuestras bases de datos.
+         </p>
+         <p>
+          Los usuarios deben actualizar su Información Personal periódicamente conforme vaya cambiando para que los otros usuarios puedan ubicarlos cuando realicen una operación. Para hacer cualquier modificación en la información que suministrada en el momento de la Inscripción, se debe ingresar en la sección Mi cuenta, ir a opciones, editar perfil.
+         </p>
+         <p>
+          Nuova Venezuela podrá modificar en cualquier momento los términos y condiciones de estas Políticas de Privacidad y confidencialidad y/o las prácticas de envío de e-mails. Si decidimos introducir algún cambio material a nuestras Políticas de Privacidad, te notificaremos publicando una versión actualizada de las Políticas en esta sección o mediante el envío de un e-mail o informándolo en la página principal u otras secciones del sitio para mantenerte actualizado de los cambios realizados.
+         </p>
+         <p>
+          Si hacemos cambios materiales en la forma que tu Información Personal es administrada te notificaremos por e-mail para que puedas tomar una decisión informada respecto si aceptas o no que tu Información Personal sea utilizada de esa forma. Si no aceptas esos términos, en ese caso quedará disuelto el vínculo contractual y tu Información Personal no será usada de otra forma que la que fue informada al momento de obtenerse.
+         </p>
+         <p>
+          Para mayor información sobre la confidencialidad de tu Información Personal, contáctanos por correo electrónico a través de info@nuovavenezuela.com.
+         </p>
+         <h4>
+          La información que solicitamos
+         </h4>
+         <p>
+          Lo primero que se debe hacer para disfrutar de los servicios de Nuova Venezuela es inscribirse, suministrando ciertos datos personales ("Información Personal") completos y exactos. Podremos solicitar, recabar y almacenar la siguiente Información Personal: apodo o seudónimo para operar en el sitio de Nuova Venezuela, nombres, apellidos, seudónimos de sus redes sociales, fecha de nacimiento, número de documento o identificación válida, información física de contacto (como número de teléfono domicilio, dirección de e-mail, etc.). Nuova Venezuela podrá confirmar los datos personales suministrados acudiendo a entidades públicas, compañías especializadas o centrales de riesgo, para lo cual nos autorizas expresamente. La información que Nuova Venezuela obtenga de estas entidades será tratada en forma confidencial.
+         </p>
+         <p>
+          El Usuario que se registre en Nuova Venezuela a través de su cuenta personal en una red social ("Cuenta Personal"), o de cualquier modo acceda a Nuova Venezuela a través de su Cuenta Personal, consiente expresamente que Nuova Venezuela:
+         </p>
+         <p>
+          Tenga acceso, en cualquier momento, a la totalidad de la información contenida en su Cuenta Personal, incluyendo en particular, pero sin limitación, a su Información Personal, información sobre sus intereses, gustos, contactos y cualquier otro contenido alojado en su Cuenta Personal; incluya en dicha cuenta, mensajes, fotografías, videos y cualquier otro tipo de contenido; y envíe al correo electrónico del Usuario vinculado a la Cuenta Personal, información o mensajes con la finalidad descripta en la sección "Uso que hacemos de la Información" abajo.
+         </p>
+         <p>
+          Se acuerda expresamente que en cualquier momento el usuario inscrito en Nuova Venezuela podrá solicitar la baja o cierre de su solicitud de inscripción, y/o el cierre de su cuenta o eliminación de su cuenta e información de la base de datos de Nuova Venezuela.
+         </p>
+         <p>
+          Nuova Venezuela recoge y almacena automáticamente cierta información sobre la actividad de los usuarios y visitantes dentro de su sitio web. Tal información puede incluir la URL de la que provienen (estén o no en nuestro sitio web), a qué URL acceden seguidamente (estén o no en nuestro sitio web), qué navegador están usando, y sus direcciones IP. También las páginas visitadas, las búsquedas realizadas, las publicaciones, compras o ventas, calificaciones y réplicas ingresadas, mensajes en los foros, entre otra información podrá ser almacenada y retenida.
+         </p>
+         <p>
+          Si los usuarios nos envían correspondencia sean correos electrónicos o cartas, o si otros usuarios o terceros nos envían correspondencia sobre las actividades o sobre los mensajes de otros usuarios en nuestro sitio, podemos recoger y almacenar tal Información Personal, incluyendo direcciones de e-mail.
+         </p>
+         <h4>
+          Confidencialidad de la información
+         </h4>
+         <p>
+          Una vez inscrito en su sitio Web, Nuova Venezuela no venderá, alquilará o compartirá la Información Personal excepto en las formas establecidas en estas políticas. Sin perjuicio de ello, el usuario consiente en forma expresa que Nuova Venezuela transfiera total o parcialmente la Información Personal a cualquiera de las sociedades controladas, controlantes y/o vinculadas con Nuova Venezuela, a cualquier título y en el momento, forma y condiciones que estime pertinentes. Haremos todo lo que esté a nuestro alcance para proteger la privacidad de la información. Puede suceder que en virtud de órdenes judiciales, o de regulaciones legales, nos veamos compelidos a revelar información a las autoridades o terceras partes bajo ciertas circunstancias, o bien en casos que terceras partes puedan interceptar o acceder a cierta información o transmisiones de datos en cuyo caso Nuova Venezuela no responderá por la información que sea revelada.
+         </p>
+         <h4>
+          Seudónimo
+         </h4>
+         <p>
+          Para interactuar dentro del sitio, los usuarios deben utilizar un seudónimo que los identificará. Los usuarios no tendrán acceso a la información personal de los otros usuarios, salvo en el caso de los ofertantes de una Subasta Exclusiva y cuando hayan realizado con ellos alguna operación a través de nuestra plataforma, luego de la cual ambas partes recibirán la información de la otra.
+         </p>
+         <h4>
+          Clave Personal
+         </h4>
+         <p>
+          Para acceder a los servicios reservados únicamente para los usuarios debidamente inscritos los usuarios dispondrán de una clave personal. Con ella podrán comprar, vender, ofertar, calificar, entre otras actividades. Esta clave debe mantenerla bajo absoluta confidencialidad y, en ningún caso, deberán revelarla o compartirla con otras personas.
+         </p>
+         <p>
+          El usuario será responsable de todos los actos que tengan lugar mediante el uso de su Seudónimo y Clave, lo que incluye hacerse cargo del pago de las tarifas que eventualmente se devenguen o por los perjuicios que puedan sufrir otros usuarios por tal motivo. Si por cualquier razón un usuario creyera que alguien puede conocer su clave, deberá modificarla ingresando a su perfil, opciones- cambiar contraseña.
+         </p>
+         <h4>
+          Menores de Edad
+         </h4>
+         <p>
+          Nuestros servicios solo están disponibles para aquellas personas que tengan capacidad legal para contratar. Por lo tanto, aquellos que no cumplan con esta condición deberán abstenerse de suministrar información personal para ser incluida en nuestras bases de datos. Sin embargo, pueden hacerlo a través de los padres o tutores.
+         </p>
+         <h4>
+          El uso de la información por otros Usuarios
+         </h4>
+         <p>
+          Para facilitar la interacción entre todos los miembros de la comunidad de Nuova Venezuela, nuestro servicio permite un acceso limitado a ciertos datos de contacto del resto de usuarios, tales como Nombre de usuario, Teléfonos, Ciudad y dirección de correo electrónico.
+         </p>
+         <p>
+          Los usuarios sólo podrán utilizar la Información Personal de otros usuarios obtenida en el sitio para: (a) comunicaciones relacionadas con Nuova Venezuela que no constituyan comunicaciones comerciales no solicitadas, (b) utilizar servicios ofrecidos en Nuova Venezuela (por ejemplo: depósito, seguros, envío o transporte y reclamaciones sobre fraude), y (c) cualquier otra finalidad a la que el usuario correspondiente consienta expresamente una vez le hayan sido comunicadas previamente la información legalmente requerida.
+         </p>
+         <p>
+          Bajo ninguna circunstancia, se debe comunicar Información Personal o dirección de correo electrónico de otro usuario a ningún tercero sin nuestro consentimiento y el del usuario afectado. No se debe agregar a la agenda de direcciones de correo electrónico (física o electrónica) los datos de ningún usuario de Nuova Venezuela, ni siquiera los datos de quienes hayan adquirido algún artículo ofrecido en Nuova Venezuela, sin que medie el consentimiento expreso de tal usuario.
+         </p>
+         <h4>
+          Cookies
+         </h4>
+         <p>
+          El usuario y el visitante del sitio Web de Nuova Venezuela conocen y acepta que Nuova Venezuela podrá utilizar un sistema de seguimiento mediante la utilización de cookies (las "Cookies"). Las Cookies son pequeños archivos que se instalan en el disco rígido, con una duración limitada en el tiempo que ayudan a personalizar los servicios. También ofrecemos ciertas funcionalidades que sólo están disponibles mediante el empleo de Cookies. Las Cookies se utilizan con el fin de conocer los intereses, el comportamiento y la demografía de quienes visitan o son usuarios de nuestro Sitio Web y de esa forma, comprender mejor sus necesidades e intereses y darles un mejor servicio o proveerle información relacionada. También usaremos la información obtenida por intermedio de las Cookies para analizar las páginas navegadas por el visitante o usuario, las búsquedas realizadas, mejorar nuestras iniciativas comerciales y promocionales, mostrar publicidad o promociones, banners de interés, noticias sobre Nuova Venezuela , perfeccionar nuestra oferta de contenidos y artículos, personalizar dichos contenidos, presentación y servicios; también podremos utilizar Cookies para promover y hacer cumplir las reglas y seguridad del sitio. Nuova Venezuela podrá agregar Cookies en los e-mails que envíe para medir la efectividad de las promociones.
+         </p>
+         <p>
+          Utilizamos adicionalmente las Cookies para que el usuario no tenga que introducir su clave tan frecuentemente durante una sesión de navegación, también para contabilizar y corroborar las inscripciones, la actividad del usuario y otros acuerdos comerciales, siempre teniendo como objetivo de la instalación de las Cookies, el beneficio del usuario que la recibe, y no será usado con otros fines ajenos a Nuova Venezuela.
+         </p>
+         <p>
+          Se establece que la instalación, permanencia y existencia de las Cookies en el computador del usuario depende de su exclusiva voluntad y puede ser eliminada de su computador cuando el usuario así lo desee. Para saber cómo quitar las Cookies del sistema es necesario revisar la sección Ayuda (Help) del navegador.
+         </p>
+         <p>
+          Adicionalmente, se pueden encontrar Cookies u otros sistemas similares instalados por terceros en ciertas páginas de nuestro sitio Web. Por ejemplo, al navegar por una página creada por un usuario, puede que exista una Cookie emplazada en tal página.
+         </p>
+         <p>
+          Se aclara expresamente que estas políticas cubre la utilización de Cookies por este sitio y no la utilización de Cookies por parte de anunciantes. Nosotros no controlamos el uso de Cookies por terceros.
+         </p>
+         <h4>
+          Envíale este artículo a un amigo
+         </h4>
+         <p>
+          Si eliges usar el servicio "Envía este Producto a un amigo", Nuova Venezuela podrá requerir el nombre y correo electrónico de la persona a quien se le remita. A través de esta funcionalidad, Nuova Venezuela enviará un e-mail automático invitándolo a visitar cierto producto en el sitio Web. Nuova Venezuela utilizará el correo electrónico de la persona a quien se le remita sólo para enviarle esta comunicación y posterior seguimiento, sin embargo dicha información no será almacenada.
+         </p>
+         <p>
+          De acuerdo a su Política de Privacidad, Nuova Venezuela toma los recaudos necesarios para evitar el envío no solicitado de e-mails. Además Nuova Venezuela y sus usuarios no aceptan el "spamming" o envío no solicitado de correos electrónicos. Por ello se establece que está absolutamente prohibida la utilización del servicio "Envíale este artículo a un amigo" con fines de spam, o envío indiscriminado de mensajes de cualquier naturaleza por correo electrónico, con cualquier finalidad que esto se realice. Por favor, no les envíes este tipo de mensajes a quienes así te lo soliciten.
+         </p>
+         <p>
+          Nuova Venezuela podrá suspender o inhabilitar definitivamente a aquellos usuarios que utilicen este servicio con los fines de promocionar sus artículos a la venta o cualquier otro fin distinto al previsto por este servicio y que sean denunciados por aquellas personas que reciben tales mensajes.
+         </p>
+         <p>
+          Cualquier persona que no desee recibir estas comunicaciones por e-mail, deberá requerirlo contactando a Atención al Cliente.
+         </p>
+         <h4>
+          Orden de autoridades competentes - Requerimientos Legales
+         </h4>
+         <p>
+          Nuova Venezuela coopera con las autoridades competentes y con otros terceros para garantizar el cumplimiento de las leyes, por ejemplo en materia de protección de derechos de propiedad industrial e intelectual, prevención del fraude y otras materias.
+         </p>
+         <p>
+          Nuova Venezuela podrá revelar la Información Personal de sus usuarios bajo requerimiento de la autoridades judiciales o gubernamentales competentes para efectos de investigaciones conducidas por ellas, aunque no exista una orden ni una citación ejecutiva o judicial, o por ejemplo (y sin limitación a este supuesto) cuando se trate de investigaciones de carácter penal o de fraude o las relacionadas con piratería informática o la violación de derechos de autor. En tales situaciones, Nuova Venezuela colaborará con las autoridades competentes con el fin de salvaguardar la integridad y la seguridad de la Comunidad y la de sus usuarios.
+         </p>
+         <p>
+          Nuova Venezuela puede (y los usuarios lo autorizan expresamente) comunicar cualquier Información Personal sobre sus usuarios con la finalidad de cumplir la normativa aplicable y cooperar con las autoridades competentes en la medida en que discrecionalmente lo entendamos necesario y adecuado en relación con cualquier investigación de un ilícito o un fraude, infracción de derechos de propiedad industrial o intelectual, u otra actividad que sea ilegal o que pueda exponer a Nuova Venezuela o a sus usuarios a cualquier responsabilidad legal. Además, podemos (y los usuarios lo autorizan expresamente) comunicar su nombre completo, seudónimo, domicilio, ciudad, región, código postal, país, número de teléfono, dirección de correo electrónico, etc. a los participantes en el Programa de Protección de Propiedad Intelectual de Nuova Venezuela en la forma que, a nuestra discreción, entendamos necesaria o adecuada en relación con la investigación del fraude, infracción de derechos de propiedad industrial o intelectual, piratería, o cualquier otra actividad ilegal. Este derecho será ejercido por Nuova Venezuela a efectos de cooperar con el cumplimiento y ejecución de la ley, independientemente que no exista una orden judicial o administrativa al efecto.
+         </p>
+         <p>
+          Además, Nuova Venezuela se reserva el derecho (y nos autorizas expresamente a ello) de comunicar información sobre sus usuarios a otros usuarios, entidades o terceros cuando haya motivos suficientes para considerar que la actividad de un usuario sea sospechosa de intentar o cometer un delito o intentar perjudicar a otras personas. Este derecho será utilizado por Nuova Venezuela a su entera discreción cuando lo considere apropiado o necesario para mantener la integridad y la seguridad de la Comunidad y la de sus usuarios, para hacer cumplir los Términos y Condiciones Generales y demás Políticas del sitio y a efectos de cooperar con la ejecución y cumplimiento de la ley. Este derecho será ejercido por Nuova Venezuela independientemente que no exista una orden judicial o administrativa al efecto.
+         </p>
+         <h4>
+          Seguridad. Almacenamiento de la información
+         </h4>
+         <p>
+          Nuova Venezuela considera a los datos de sus usuarios como un activo que debe ser protegido de cualquier pérdida o acceso no autorizado. Empleamos diversas técnicas de seguridad para proteger tales datos de accesos no autorizados por usuarios de dentro o fuera de nuestra compañía. Sin embargo, es necesario tener muy en cuenta que la seguridad perfecta no existe en Internet.
+         </p>
+         <p>
+          El usuario conoce, acepta y autoriza expresamente a Nuova Venezuela, a registrar y acceder a los mensajes y correos electrónicos que sus usuarios intercambien dentro de la comunidad de Nuova Venezuela para controlar así la calidad del servicio y prevenir violaciones a las condiciones de contratación o a la ley, para así contribuir a la seguridad de las relaciones y comunicaciones en la comunidad.
+         </p>
+         <p>
+          Por ello, Nuova Venezuela no se hace responsable por interceptaciones ilegales o violación de sus sistemas o bases de datos por parte de personas no autorizadas. Nuova Venezuela, tampoco se hace responsable por la indebida utilización de la información obtenida por esos medios.
+         </p>
+         <p>
+          Todos los datos personales de los usuarios serán almacenados en un fichero automatizado de datos personales.
+         </p>
+         <h4>
+          Cambio en las preferencias de e-mails
+         </h4>
+         <p>
+          Sin perjuicio que Nuova Venezuela quiere mantener a sus usuarios actualizados en todo momento sobre promociones, novedades, cambios, etc. los usuarios pueden seleccionar los e-mails e información promocional que gustarían recibir de Nuova Venezuela.
+         </p>
+         <p>
+          Si no quieres recibir correos electrónicos, puedes cambiar tus preferencias de e-mail siguiendo las instrucciones que proporcionamos en nuestras comunicaciones o accediendo a tu cuenta. En tu cuenta podrás seleccionar las preferencias para que sean tenidas en cuenta por Nuova Venezuela en las futuras comunicaciones o enviando tus preferencias por correo.
+         </p>
+        </div>
+        <div class="modal-footer">
+         <button data-dismiss="modal" class="btn btn-default" type="button">
+          Cerrar
+         </button>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="col-md-6" id="columna-2">
+     <a href="http://nuovavenezuela.com/usuario/nuevo/disenador">
+      <img src="http://nuovavenezuela.com/img/informaciones/creacion-perfil-1.png" class="img-responsive" />
+     </a>
+    </div>
+   </div>
+  </div>
+  <div style="margin-top:20px" class="navbar-inverse" id="footer">
+   <div class="container">
+    <div class="row">
+     <div class="col-md-6">
+      <p>
+       © 2014 Nuova Venezuela,C.A.   RIF: J-40336353-6
+       <br />
+       <a href="mailto:info@nuovavenezuela.com">
+        info@nuovavenezuela.com
+       </a>
+       <br />
+       Teléfono: +584149474836
+       <br />
+       <a style="min-width:82px; min-height:24px; text-align:left" href="https://www.facebook.com/nuovavenezuela" target="_blank">
+        <img src="http://nuovavenezuela.com/img/socials/facebook-48.png" style="vertical-align:middle" />
+       </a>
+       <a style="min-width:82px; min-height:24px; text-align:left" href="https://twitter.com/nuovavenezuela" target="_blank">
+        <img src="http://nuovavenezuela.com/img/socials/twitter-48.png" style="vertical-align:middle" />
+       </a>
+       <a style="min-width:82px; min-height:24px; text-align:left" href="http://instagram.com/nuovavenezuela" target="_blank">
+        <img src="http://nuovavenezuela.com/img/socials/instagram-48.png" style="vertical-align:middle" />
+       </a>
+      </p>
+     </div>
+     <div class="col-md-6">
+      <p>
+       <strong>
+        Mapa del Sitio:
+       </strong>
+       <br />
+       <a href="http://nuovavenezuela.com/sitio/buscar">
+        Artículos
+       </a>
+       <br />
+       <a href="http://nuovavenezuela.com/sitio/quienes_somos">
+        Quienes Somos
+       </a>
+       <br />
+       <a href="http://nuovavenezuela.com/sitio/contacto">
+        Contacto
+       </a>
+       <br />
+       <a href="http://nuovavenezuela.com/sitio/tutoriales">
+        Tutoriales
+       </a>
+      </p>
+     </div>
+    </div>
+   </div>
+  </div>
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="http://nuovavenezuela.com/js/lib/jquery-2.0.3.min.js">
+  </script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="http://nuovavenezuela.com/js/lib/bootstrap.min.js">
+  </script>
+  <script src="http://nuovavenezuela.com/js/lib/bootstrap-lightbox.min.js">
+  </script>
+  <script src="http://nuovavenezuela.com/js/lib/jquery.form.min.js" type="text/javascript">
+  </script>
+  <script src="http://nuovavenezuela.com/js/config.js" type="text/javascript">
+  </script>
+  <script src="http://nuovavenezuela.com/js/base.js" type="text/javascript">
+  </script>
+  <script src="http://nuovavenezuela.com/js/scripts/../lib/jquery.validate.min.js" type="text/javascript">
+  </script>
+  <script src="http://nuovavenezuela.com/js/scripts/../lib/bootstrap-datepicker.js" type="text/javascript">
+  </script>
+  <script src="http://nuovavenezuela.com/js/scripts/usuario/registro.usuario.js" type="text/javascript">
+  </script>
+ </body>
+</html>

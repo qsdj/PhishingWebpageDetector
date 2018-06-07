@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" style="">
+ <head>
+  <meta charset="utf-8" />
+  <title>
+   Help Center
+  </title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <!--[if lte IE 9]><link rel="stylesheet" href="css/ie.css" type="text/css" media="screen"  /><![endif]-->
+  <!--[if lt IE 9]>
+
+		<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2pre/html5shiv.js"></script>
+
+	<![endif]-->
+  <link media="screen" type="text/css" href="././application/includes/css/styles.css" rel="stylesheet" />
+  <link media="screen" type="text/css" href="././application/includes/css/1140.css" rel="stylesheet" />
+  <link media="screen" type="text/css" href="././application/includes/css/menu.css" rel="stylesheet" />
+  <link media="screen" type="text/css" href="././application/includes/css/light-box.css" rel="stylesheet" />
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js">
+  </script>
+  <script src="././application/includes/js/css3-mediaqueries.js" type="text/javascript">
+  </script>
+  <script type="text/javascript">
+   function form_validation()
+
+{
+
+	var i = 0;
+
+	if($('#name').val() == "" || $('#name').val() == "Your name...")
+
+	{
+
+		$("#name_required").show();
+
+		//alert('Enter Name');
+
+		i = 1;
+
+	}
+
+	else
+
+	{
+
+		$("#name_required").hide();
+
+	}
+
+	if($('#email').val() == "" || $('#email').val() == "Your email...")
+
+	{
+
+		$("#email_required").show();
+
+		i = 1;
+
+	}
+
+	else
+
+	{
+
+	
+
+	$email = $('#email').val();	
+
+  	var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+
+ 	 if( !emailReg.test( $email ) )
+
+	     {
+
+		 $("#email_required").show();  
+
+   		 i = 1;
+
+ 		 } 
+
+	else
+
+	 {
+
+   	 return true;
+
+  		}
+
+	
+
+	}
+
+	if($('#subject').val() == "" || $('#subject').val() == "Please type subject...")
+
+	{
+
+		$("#subject_required").show();
+
+		//alert('Enter Name');
+
+		i = 1;
+
+	}
+
+	
+
+	
+
+	if(i == 1)
+
+	{
+
+		return false;
+
+	}
+
+
+
+}
+  </script>
+  <style>
+   ol li  {color: #555555;}
+a {color: #555555;}
+  </style>
+  <link rel="shortcut icon" type="image/ico" href="http://loopedn.com/image/favicon.ico" />
+ </head>
+ <body>
+  <div class="container">
+   <div class="row">
+    <div class="header">
+     <script>
+      $(window).load(function () {
+       $('head').append('&lt;link href="http://loopedn.com/image/favicon.ico" type="image/ico" rel="shortcut icon" &gt;');
+     });
+     </script>
+     <div class="fourcol">
+      <div class="logo">
+       <img alt="" src="././application/includes/images/logo-home.png" />
+      </div>
+     </div>
+     <div class="eightcol last">
+      <div class="header-right">
+       <div class="main-menu side-bar">
+        <nav class="animenu">
+         <input type="checkbox" id="button" />
+         <label for="button">
+          Menu
+         </label>
+         <ul>
+          <li>
+           <a href="index.php?route=users/login" class="popup-with-form1">
+            Log In
+           </a>
+          </li>
+          <li>
+           <a class=" checkin" href="index.php?route=users/business">
+            Profile
+           </a>
+          </li>
+          <li>
+           <a class=" checkin" href="index.php?route=users/directory">
+            Directory
+           </a>
+          </li>
+         </ul>
+        </nav>
+       </div>
+      </div>
+     </div>
+     <style>
+      @media only screen and (min-width: 320px) and (max-width: 480px) {
+	.logo a img
+	{
+		width:250px;
+	}
+	.animenu &gt; ul a.actived.checkin 
+	{
+		padding: 13px 10px;
+		width: 100%;
+		text-align: left;
+		margin:0 !important;
+	}
+	.animenu &gt; ul &gt; li &gt; a 
+	{
+		padding: 13px 10px;
+		width: 100%;
+		text-align: left;
+	}
+	.animenu &gt; ul &gt; li
+	{
+		margin:0 !important;
+	}
+}
+     </style>
+    </div>
+    <div class="login-div">
+     <div class="login-div-inner">
+      <div class="login-div-form">
+       <h1>
+        Help Center
+       </h1>
+      </div>
+     </div>
+    </div>
+    <div class="twelvecol">
+     <!-- form itself -->
+     <div class="contaitn">
+      <div style="min-height:500px;" class="contaitn-inner">
+       <div class="description">
+        <div class="success_contact panel">
+        </div>
+        <p>
+         <font size="5">
+          <b>
+           <i>
+            How do I: 
+           </i>
+          </b>
+         </font>
+        </p>
+        <p>
+         <font size="4">
+          <b>
+           <i>
+            Enter the campground I will be staying in or am already staying in?
+           </i>
+          </b>
+         </font>
+        </p>
+        <ol>
+         <li>
+          Navigate to the Find Me page
+         </li>
+         <li>
+          Begin keying the campground name.
+          <ul>
+           <li>
+            <span style="float: left;height: 30px;">
+             <img style="width: 15px;height: 15px;margin: 0 8px 0 0;vertical-align: middle;" src="././application/includes/images/checkmark.png" />
+            </span>
+            If your campground is in the drop down list, click on it, then enter the dates of your stay. When finished click the Update button.
+           </li>
+           <li>
+            <span style="float: left;height: 30px;">
+             <img style="width: 15px;height: 15px;margin: 0 8px 0 0;vertical-align: middle;" src="././application/includes/images/checkmark.png" />
+            </span>
+            If your campground is not in the drop down list, enter the name of the campground, the dates you are staying, the city, state, and GPS coordinates. When finished click the Update button.
+           </li>
+          </ul>
+         </li>
+         <li>
+          Your location will be displayed on the map as a green star. Click on the “star” to view other members or friends who are in your campground.
+         </li>
+        </ol>
+        <p>
+         <strong>
+          <em>
+           What if I do not know the GPS coordinates?
+          </em>
+         </strong>
+        </p>
+        <p>
+         Our map is a Google map which uses the WGS84 datum and decimal degrees. To get the coordinates for any location go to
+         <a href="http://www.gps-coordinates.net/">
+          www.gps-coordinates.net
+         </a>
+         and enter the address, city, and state. The decimal degrees for Latitude &amp; Longitude will be displayed.
+        </p>
+        <p>
+        </p>
+        <p>
+         <font size="4">
+          <b>
+           <i>
+            Connect with someone I want to be my friend?
+           </i>
+          </b>
+         </font>
+        </p>
+        <p>
+         <font size="4">
+          <b>
+           <i>
+            Option 1
+           </i>
+          </b>
+         </font>
+        </p>
+        <ol>
+         <li>
+          Navigate to the Search page
+         </li>
+         <li>
+          You can search for members with the same interests you have. Simply enter your search request. The names of members who matach your interests are displayed below the request
+         </li>
+         <li>
+          Click on the person you want to connect with and their Profile will be displayed. Press the connect button to send the request.
+         </li>
+        </ol>
+        <p>
+         <strong>
+          <em>
+           <span style="font-size:20px;">
+            <span style="font-size:18px;">
+             Option 2
+            </span>
+           </span>
+          </em>
+         </strong>
+        </p>
+        <ol>
+         <li>
+          Navigate to the Status page
+         </li>
+         <li>
+          Begin keying the name or handle in the “connect with another member” field. If the person is a member, their name or handle will appear in the dropdown box. Click on the name from the dropdown box.
+         </li>
+         <li>
+          The action will automatically navigate to that person’s profile. If this is the member you want to connect with press the “connect” button. The member will be sent an email with your request.
+         </li>
+         <li>
+          After the member accepts your connection, their status posts, avatar and name will be listed in the right column of the page.
+         </li>
+        </ol>
+        <p>
+         <span style="font-size:18px;">
+          <strong>
+           <em>
+            Option 3
+           </em>
+          </strong>
+         </span>
+        </p>
+        <ol>
+         <li>
+          Navigate to the Find Me page
+         </li>
+         <li>
+          Click on a green/red button that indicates where members are camping. The pop-up will display the members at that campground.
+         </li>
+         <li>
+          Click on the member that you want to connect with and follow 3 &amp; 4 above to connect.
+         </li>
+        </ol>
+        <p>
+         <font size="4">
+          <b>
+           <i>
+            Create a rally or meet up?
+           </i>
+          </b>
+         </font>
+        </p>
+        <ol>
+         <li>
+          Navigate to the Meet Up page.
+         </li>
+         <li>
+          Click on the “Create new meet up” button.
+         </li>
+         <li>
+          Key in information and click the “post” button.
+         </li>
+         <li>
+          Invite members to join your rally or meet up.
+         </li>
+        </ol>
+        <p>
+         <br />
+        </p>
+        <p>
+         <font size="4">
+          <b>
+           <i>
+            Please click on
+            <a href="mail:info@loopedn.com">
+             info@loopedn.com
+            </a>
+            to request additional information!
+           </i>
+          </b>
+         </font>
+        </p>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <div class="container footer">
+   <div class="row">
+    <div class="twelvecol">
+     <div class="footer-div">
+      <div class="twocol">
+       <ul class="footer-link">
+        <li>
+         <a title="About" href="index.php?route=pages/about">
+          About
+         </a>
+        </li>
+        <li>
+         <a href="index.php?route=pages/helpcenter">
+          Help Center
+         </a>
+        </li>
+        <li>
+         <a href="index.php?route=users/unsubscribe">
+          Unsubscribe
+         </a>
+        </li>
+       </ul>
+      </div>
+      <div class="twocol">
+       <ul class="footer-link">
+        <li>
+         <a title="Terms" href="index.php?route=pages/terms">
+          Terms
+         </a>
+        </li>
+        <li>
+         <a title="Privacy" href="index.php?route=pages/privacy">
+          Privacy
+         </a>
+        </li>
+        <li>
+         <a href="#">
+          Site Map
+         </a>
+        </li>
+       </ul>
+      </div>
+      <div class="fourcol last footer-right">
+       <p>
+        <a href="mailto:info@LoopedN.com">
+         info@LoopedN.com
+        </a>
+       </p>
+      </div>
+      <div class="copyright">
+       <p>
+        TM + © 2015 LoopedN, LLC. All rights reserved.
+       </p>
+      </div>
+     </div>
+     <div class="footer-logos">
+      <div align="center">
+       <img width="4" height="33" src="images/join-bg.gif" />
+       <table width="850" border="0" cellpadding="0">
+        <tbody>
+         <tr>
+          <td valign="top" align="center">
+           <a target="_blank" href="http://katemillerdesign.com/">
+            <img width="190" vspace="0" hspace="15" height="184" border="0" alt="Kate Miller Design logo" src="././application/includes/images/Kate-Miller-Design_logo.png" />
+           </a>
+           <a target="_blank" href="http://www.trailrags.com/">
+            <img width="404" vspace="0" hspace="15" height="127" border="0" alt="TrailRags logo" src="././application/includes/images/TrailRags.png" />
+           </a>
+           <a target="_blank" href="http://www.ultimatecampgrounds.com/uc/index.php/">
+            <img width="170" hspace="15" height="170" border="0" alt="US Campground Project" src="././application/includes/images/USCampProject_ad.jpg" />
+           </a>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <style>
+   @media only screen and (min-width: 320px) and (max-width: 480px) {
+
+	.footer-right
+	{
+		float: left !important;	
+	}
+}
+  </style>
+  <script src="././application/includes/js/upload.js">
+  </script>
+ </body>
+</html>

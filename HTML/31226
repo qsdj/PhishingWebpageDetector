@@ -1,0 +1,220 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta content="Content-Type" http-equiv="Content-Type" />
+  <title>
+   Welcome to CECOP
+  </title>
+  <style type="text/css">
+   &lt;!-- 
+
+body  {
+
+	font: 100% Verdana, Arial, Helvetica, sans-serif;
+
+	background: #666666;
+
+	margin: 0; /* it's good practice to zero the margin and padding of the body element to account for differing browser defaults */
+
+	padding: 0;
+
+	text-align: center; /* this centers the container in IE 5* browsers. The text is then set to the left aligned default in the #container selector */
+
+	color: #000000;
+
+	background-color: #FFF;
+
+}
+
+.twoColFixLt #container {
+
+	width: 980px;  /* using 20px less than a full 800px width allows for browser chrome and avoids a horizontal scroll bar */
+
+	background: #FFFFFF;
+
+	margin: 0 auto; /* the auto margins (in conjunction with a width) center the page */
+
+	border: 1px solid #cccccc;
+
+	text-align: left; /* this overrides the text-align: center on the body element. */
+
+	background-image: url(/images_web/bg.jpg);
+
+	height: 634px;
+
+}
+
+.twoColFixLt #sidebar1 {
+
+	float: left; /* since this element is floated, a width must be given */
+
+	width: 350px; /* the actual width of this div, in standards-compliant browsers, or standards mode in Internet Explorer will include the padding and border in addition to the width */
+
+	background: none; /* the background color will be displayed for the length of the content in the column, but no further */
+
+	padding: 15px 10px 15px 20px;
+
+}
+
+.twoColFixLt #mainContent { 
+
+	margin: 0 0 0 250px; /* the left margin on this div element creates the column down the left side of the page - no matter how much content the sidebar1 div contains, the column space will remain. You can remove this margin if you want the #mainContent div's text to fill the #sidebar1 space when the content in #sidebar1 ends. */
+
+	padding: 0 20px 20px; /* remember that padding is the space inside the div box and margin is the space outside the div box */
+
+} 
+
+.fltrt { /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+
+	float: right;
+
+	margin-left: 8px;
+
+}
+
+.fltlft { /* this class can be used to float an element left in your page */
+
+	float: left;
+
+	margin-right: 8px;
+
+}
+
+.clearfloat { /* this class should be placed on a div or break element and should be the final element before the close of a container that should fully contain a float */
+
+	clear:both;
+
+    height:0;
+
+    font-size: 1px;
+
+    line-height: 0px;
+
+}
+
+body,td,th {
+
+	font-size: 12px;
+
+}
+
+a:link {
+
+	color: #000;
+
+	text-decoration: none;
+
+}
+
+a:visited {
+
+	text-decoration: none;
+
+}
+
+a:hover {
+
+	text-decoration: none;
+
+}
+
+a:active {
+
+	text-decoration: none;
+
+}
+
+--&gt;
+  </style>
+  <!--[if IE 5]>
+
+<style type="text/css"> 
+
+/* place css box model fixes for IE 5* in this conditional comment */
+
+.twoColFixLt #sidebar1 { width: 230px; }
+
+</style>
+
+<![endif]-->
+  <!--[if IE]>
+
+<style type="text/css"> 
+
+/* place css fixes for all versions of IE in this conditional comment */
+
+.twoColFixLt #sidebar1 { padding-top: 30px; }
+
+.twoColFixLt #mainContent { zoom: 1; }
+
+/* the above proprietary zoom property gives IE the hasLayout it needs to avoid several bugs */
+
+</style>
+
+<![endif]-->
+ </head>
+ <body class="twoColFixLt">
+  <div id="container">
+   <div id="sidebar1">
+    <img width="283" height="85" src="/images_web/logo_cecop_internacional.jpg" />
+    <h2>
+     WELCOME TO CECOP
+    </h2>
+    <p>
+    </p>
+    <h3>
+     Please select a country
+    </h3>
+    <ul>
+     <li>
+      <a href="/br">
+       BRASIL
+      </a>
+     </li>
+     <li>
+      <a href="/co">
+       COLOMBIA
+      </a>
+     </li>
+     <li>
+      <a href="/it">
+       ITALY
+      </a>
+     </li>
+     <li>
+      <a href="/pt">
+       PORTUGAL
+      </a>
+     </li>
+     <li>
+      <a href="/uk">
+       UNITED KINGDOM &amp; IRELAND
+      </a>
+     </li>
+     <li>
+      <a href="/sp">
+       SPAIN
+      </a>
+     </li>
+    </ul>
+    <p>
+    </p>
+    <p>
+     CECOP’s philosophy spreads across the world to provide the best service to all our partners, including international: we currently operate in different markets outside Spain, like Italy, Portugal, United Kingdom, Brazil, Colombia and India, with more than optical 3,407 associates and our expansion plans foresee in the coming months, the development of CECOP also in other countries.
+    </p>
+    <p>
+     The best bid market conditions, with the major industry suppliers, some services as optics, always in the maximum respect of its independence, were the determinants of international success. A success that knows no boundaries, so in CECOPcontinue to develop our market analysis to continue our international expansion, opening new markets.
+    </p>
+    <!-- end #sidebar1 -->
+   </div>
+   <div id="mainContent">
+    <h1>
+    </h1>
+    <!-- end #mainContent -->
+   </div>
+   <!-- This clearing element should immediately follow the #mainContent div in order to force the #container div to contain all child floats -->
+   <br class="clearfloat" />
+   <!-- end #container -->
+  </div>
+ </body>
+</html>

@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <title>
+   Event Production
+  </title>
+  <link media="all" type="text/css" rel="stylesheet" href="css/bootstrap.css" />
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="js/jquery.min.js">
+  </script>
+  <!-- Custom Theme files -->
+  <!--theme-style-->
+  <link media="all" type="text/css" rel="stylesheet" href="css/style.css" />
+  <!--//theme-style-->
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <meta content="Content-Type" http-equiv="Content-Type" />
+  <meta content="Marry Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" name="keywords" />
+  <script type="application/x-javascript">
+   addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); }
+  </script>
+  <link media="screen" type="text/css" href="css/flexslider.css" rel="stylesheet" />
+  <!--script-->
+  <script type="text/javascript" src="js/easyResponsiveTabs.js">
+  </script>
+  <script type="text/javascript">
+   $(document).ready(function () {
+			        $('#horizontalTab').easyResponsiveTabs({
+			            type: 'default', //Types: default, vertical, accordion           
+			            width: 'auto', //auto or any width like 600px
+			            fit: true   // 100% fit in a container
+			        });
+			    });
+  </script>
+  <!--script-->
+  <script src="js/jquery.chocolat.js">
+  </script>
+  <link charset="utf-8" media="screen" type="text/css" href="css/chocolat.css" rel="stylesheet" />
+  <!--light-box-files -->
+  <script charset="utf-8" type="text/javascript">
+   $(function() {
+			$('.img-top a').Chocolat();
+		});
+  </script>
+  <script>
+   $(document).ready(function(){
+    $("#qcon").click(function(){
+        $("#qform").slideToggle(500);
+    });
+});
+  </script>
+ </head>
+ <body>
+  <!--header-->
+  <div class="header">
+   <div class="header-top">
+    <div class="container">
+     <div class="logo">
+      <a href="index.php">
+       <img alt="" src="images/logo.png" />
+      </a>
+     </div>
+     <div class="search">
+      <button id="qcon">
+       Quick Contact
+      </button>
+      <div id="qform">
+       <form>
+        <input type="text" placeholder="Name" />
+        <input type="text" placeholder="Email" />
+        <input type="text" placeholder="Contact" />
+        <textarea placeholder="Message" rows="5">
+        </textarea>
+        <input type="submit" value="Send" />
+       </form>
+      </div>
+      <br />
+      Call: +91 98450 88770
+     </div>
+     <div class="clearfix">
+     </div>
+    </div>
+   </div>
+   <div class="container">
+    <div class="top-nav">
+     <ul class="nav nav-pills nav-justified">
+      <li>
+       <a href="index.php">
+        Home
+       </a>
+      </li>
+      <li>
+       <a href="about.php">
+        About
+       </a>
+      </li>
+      <li>
+       <a href="services.php">
+        Services
+       </a>
+      </li>
+      <li class="active">
+       <a href="gallery.php">
+        Gallery
+       </a>
+      </li>
+      <li>
+       <a href="contact.php">
+        Contact
+       </a>
+      </li>
+      <li>
+       <a href="testimony.php">
+        Testimonial
+       </a>
+      </li>
+      <div class="clearfix">
+      </div>
+     </ul>
+     <script>
+      $("span.menu").click(function(){
+                    $(".top-nav ul").slideToggle(500, function(){
+                    });
+                });
+     </script>
+    </div>
+   </div>
+   <div class="container">
+    <div class="banner">
+     <div class="slider">
+      <section class="slider">
+       <div class="flexslider">
+        <div class="flex-viewport" style="overflow: hidden; position: relative;">
+         <ul class="slides" style="width: 1000%; transition-duration: 0.6s; transform: translate3d(-1440px, 0px, 0px);">
+          <li class="clone" style="width: 720px; float: left; display: block;">
+           <div class="col-md-12 banner-left">
+            <img alt="" src="images/s4.jpg" class="img-responsive" />
+           </div>
+           <div class="clearfix">
+           </div>
+          </li>
+          <li style="width: 720px; float: left; display: block;" class="">
+           <div class="col-md-12 banner-left">
+            <img alt="" src="images/s2.jpg" class="img-responsive" />
+           </div>
+           <div class="clearfix">
+           </div>
+          </li>
+          <li style="width: 720px; float: left; display: block;" class="flex-active-slide">
+           <div class="col-md-12 banner-left">
+            <img alt="" src="images/s3.jpg" class="img-responsive" />
+           </div>
+           <div class="clearfix">
+           </div>
+          </li>
+          <li style="width: 720px; float: left; display: block;">
+           <div class="col-md-12 banner-left">
+            <img alt="" src="images/s4.jpg" class="img-responsive" />
+           </div>
+           <div class="clearfix">
+           </div>
+          </li>
+          <li style="width: 720px; float: left; display: block;" class="clone">
+           <div class="col-md-12 banner-left">
+            <img alt="" src="images/s2.jpg" class="img-responsive" />
+           </div>
+           <div class="clearfix">
+           </div>
+          </li>
+         </ul>
+        </div>
+        <ol class="flex-control-nav flex-control-paging">
+         <li>
+          <a class="">
+           1
+          </a>
+         </li>
+         <li>
+          <a class="flex-active">
+           2
+          </a>
+         </li>
+         <li>
+          <a>
+           3
+          </a>
+         </li>
+        </ol>
+        <ul class="flex-direction-nav">
+         <li>
+          <a href="#" class="flex-prev">
+           Previous
+          </a>
+         </li>
+         <li>
+          <a href="#" class="flex-next">
+           Next
+          </a>
+         </li>
+        </ul>
+       </div>
+      </section>
+      <script>
+       window.jQuery || document.write('&lt;script src="js/libs/jquery-1.7.min.js"&gt;\x3C/script&gt;')
+      </script>
+      <!--FlexSlider-->
+      <script src="js/jquery.flexslider.js" defer="defer">
+      </script>
+      <script type="text/javascript">
+       $(window).load(function(){
+                      $('.flexslider').flexslider({
+                        animation: "slide",
+                        start: function(slider){
+                          $('body').removeClass('loading');
+                        }
+                      });
+                    });
+      </script>
+     </div>
+    </div>
+   </div>
+  </div>
+  <!--//header-->
+  <!--content-->
+  <div class="gallery">
+   <div class="container">
+    <div class="sap_tabs">
+     <div style="display: block; width: 100%; margin: 0px;" id="horizontalTab">
+      <ul class="resp-tabs-list">
+       <a href="gallery.php">
+       </a>
+       <li role="tab" aria-controls="tab_item-0" class="resp-tab-active resp-tab-item">
+        <span>
+         All
+        </span>
+       </li>
+       <a href="gallery.php?id=1">
+       </a>
+       <li role="tab" aria-controls="tab_item-1" class="resp-tab-item">
+        <span>
+         EVENTS
+        </span>
+       </li>
+       <a href="gallery.php?id=2">
+       </a>
+       <li role="tab" aria-controls="tab_item-2" class="resp-tab-item">
+        <span>
+         EXHIBITIONS
+        </span>
+       </li>
+       <div class="clearfix">
+       </div>
+      </ul>
+      <div class="resp-tabs-container">
+       <h2 role="tab" class="resp-accordion resp-tab-active" aria-controls="tab_item-0">
+        <span class="resp-arrow">
+        </span>
+        All
+       </h2>
+       <div class="tab-1 resp-tab-content resp-tab-content-active" style="display:block" aria-labelledby="tab_item-0">
+        <div class="tab_img">
+         <div style="padding: 1em 1em;" class="col-md-3 img-top ">
+          <a class="b-link-stripe b-animate-go  thickbox" rel="title" href="admin/images/gallery/15.jpg">
+           <img alt="" class="img-responsive" src="admin/images/gallery/15.jpg" />
+           <div class="link-top">
+            <i class="link">
+            </i>
+           </div>
+          </a>
+         </div>
+         <div style="padding: 1em 1em;" class="col-md-3 img-top ">
+          <a class="b-link-stripe b-animate-go  thickbox" rel="title" href="admin/images/gallery/16.jpg">
+           <img alt="" class="img-responsive" src="admin/images/gallery/16.jpg" />
+           <div class="link-top">
+            <i class="link">
+            </i>
+           </div>
+          </a>
+         </div>
+         <div style="padding: 1em 1em;" class="col-md-3 img-top ">
+          <a class="b-link-stripe b-animate-go  thickbox" rel="title" href="admin/images/gallery/17.jpg">
+           <img alt="" class="img-responsive" src="admin/images/gallery/17.jpg" />
+           <div class="link-top">
+            <i class="link">
+            </i>
+           </div>
+          </a>
+         </div>
+         <div style="padding: 1em 1em;" class="col-md-3 img-top ">
+          <a class="b-link-stripe b-animate-go  thickbox" rel="title" href="admin/images/gallery/20.jpg">
+           <img alt="" class="img-responsive" src="admin/images/gallery/20.jpg" />
+           <div class="link-top">
+            <i class="link">
+            </i>
+           </div>
+          </a>
+         </div>
+         <div style="padding: 1em 1em;" class="col-md-3 img-top ">
+          <a class="b-link-stripe b-animate-go  thickbox" rel="title" href="admin/images/gallery/21.jpg">
+           <img alt="" class="img-responsive" src="admin/images/gallery/21.jpg" />
+           <div class="link-top">
+            <i class="link">
+            </i>
+           </div>
+          </a>
+         </div>
+         <div style="padding: 1em 1em;" class="col-md-3 img-top ">
+          <a class="b-link-stripe b-animate-go  thickbox" rel="title" href="admin/images/gallery/22.jpg">
+           <img alt="" class="img-responsive" src="admin/images/gallery/22.jpg" />
+           <div class="link-top">
+            <i class="link">
+            </i>
+           </div>
+          </a>
+         </div>
+         <div style="padding: 1em 1em;" class="col-md-3 img-top ">
+          <a class="b-link-stripe b-animate-go  thickbox" rel="title" href="admin/images/gallery/23.jpg">
+           <img alt="" class="img-responsive" src="admin/images/gallery/23.jpg" />
+           <div class="link-top">
+            <i class="link">
+            </i>
+           </div>
+          </a>
+         </div>
+         <div style="padding: 1em 1em;" class="col-md-3 img-top ">
+          <a class="b-link-stripe b-animate-go  thickbox" rel="title" href="admin/images/gallery/24.jpg">
+           <img alt="" class="img-responsive" src="admin/images/gallery/24.jpg" />
+           <div class="link-top">
+            <i class="link">
+            </i>
+           </div>
+          </a>
+         </div>
+         <div style="padding: 1em 1em;" class="col-md-3 img-top ">
+          <a class="b-link-stripe b-animate-go  thickbox" rel="title" href="admin/images/gallery/25.jpg">
+           <img alt="" class="img-responsive" src="admin/images/gallery/25.jpg" />
+           <div class="link-top">
+            <i class="link">
+            </i>
+           </div>
+          </a>
+         </div>
+         <div style="padding: 1em 1em;" class="col-md-3 img-top ">
+          <a class="b-link-stripe b-animate-go  thickbox" rel="title" href="admin/images/gallery/26.jpg">
+           <img alt="" class="img-responsive" src="admin/images/gallery/26.jpg" />
+           <div class="link-top">
+            <i class="link">
+            </i>
+           </div>
+          </a>
+         </div>
+         <div style="padding: 1em 1em;" class="col-md-3 img-top ">
+          <a class="b-link-stripe b-animate-go  thickbox" rel="title" href="admin/images/gallery/27.jpg">
+           <img alt="" class="img-responsive" src="admin/images/gallery/27.jpg" />
+           <div class="link-top">
+            <i class="link">
+            </i>
+           </div>
+          </a>
+         </div>
+         <div style="padding: 1em 1em;" class="col-md-3 img-top ">
+          <a class="b-link-stripe b-animate-go  thickbox" rel="title" href="admin/images/gallery/28.jpg">
+           <img alt="" class="img-responsive" src="admin/images/gallery/28.jpg" />
+           <div class="link-top">
+            <i class="link">
+            </i>
+           </div>
+          </a>
+         </div>
+         <div style="padding: 1em 1em;" class="col-md-3 img-top ">
+          <a class="b-link-stripe b-animate-go  thickbox" rel="title" href="admin/images/gallery/29.jpg">
+           <img alt="" class="img-responsive" src="admin/images/gallery/29.jpg" />
+           <div class="link-top">
+            <i class="link">
+            </i>
+           </div>
+          </a>
+         </div>
+         <div style="padding: 1em 1em;" class="col-md-3 img-top ">
+          <a class="b-link-stripe b-animate-go  thickbox" rel="title" href="admin/images/gallery/30.jpg">
+           <img alt="" class="img-responsive" src="admin/images/gallery/30.jpg" />
+           <div class="link-top">
+            <i class="link">
+            </i>
+           </div>
+          </a>
+         </div>
+         <div style="padding: 1em 1em;" class="col-md-3 img-top ">
+          <a class="b-link-stripe b-animate-go  thickbox" rel="title" href="admin/images/gallery/31.jpg">
+           <img alt="" class="img-responsive" src="admin/images/gallery/31.jpg" />
+           <div class="link-top">
+            <i class="link">
+            </i>
+           </div>
+          </a>
+         </div>
+         <div style="padding: 1em 1em;" class="col-md-3 img-top ">
+          <a class="b-link-stripe b-animate-go  thickbox" rel="title" href="admin/images/gallery/34.jpg">
+           <img alt="" class="img-responsive" src="admin/images/gallery/34.jpg" />
+           <div class="link-top">
+            <i class="link">
+            </i>
+           </div>
+          </a>
+         </div>
+         <div style="padding: 1em 1em;" class="col-md-3 img-top ">
+          <a class="b-link-stripe b-animate-go  thickbox" rel="title" href="admin/images/gallery/35.jpg">
+           <img alt="" class="img-responsive" src="admin/images/gallery/35.jpg" />
+           <div class="link-top">
+            <i class="link">
+            </i>
+           </div>
+          </a>
+         </div>
+         <div style="padding: 1em 1em;" class="col-md-3 img-top ">
+          <a class="b-link-stripe b-animate-go  thickbox" rel="title" href="admin/images/gallery/36.jpg">
+           <img alt="" class="img-responsive" src="admin/images/gallery/36.jpg" />
+           <div class="link-top">
+            <i class="link">
+            </i>
+           </div>
+          </a>
+         </div>
+         <div style="padding: 1em 1em;" class="col-md-3 img-top ">
+          <a class="b-link-stripe b-animate-go  thickbox" rel="title" href="admin/images/gallery/37.jpg">
+           <img alt="" class="img-responsive" src="admin/images/gallery/37.jpg" />
+           <div class="link-top">
+            <i class="link">
+            </i>
+           </div>
+          </a>
+         </div>
+         <div style="padding: 1em 1em;" class="col-md-3 img-top ">
+          <a class="b-link-stripe b-animate-go  thickbox" rel="title" href="admin/images/gallery/38.jpg">
+           <img alt="" class="img-responsive" src="admin/images/gallery/38.jpg" />
+           <div class="link-top">
+            <i class="link">
+            </i>
+           </div>
+          </a>
+         </div>
+         <div style="padding: 1em 1em;" class="col-md-3 img-top ">
+          <a class="b-link-stripe b-animate-go  thickbox" rel="title" href="admin/images/gallery/39.jpg">
+           <img alt="" class="img-responsive" src="admin/images/gallery/39.jpg" />
+           <div class="link-top">
+            <i class="link">
+            </i>
+           </div>
+          </a>
+         </div>
+         <div style="padding: 1em 1em;" class="col-md-3 img-top ">
+          <a class="b-link-stripe b-animate-go  thickbox" rel="title" href="admin/images/gallery/40.jpg">
+           <img alt="" class="img-responsive" src="admin/images/gallery/40.jpg" />
+           <div class="link-top">
+            <i class="link">
+            </i>
+           </div>
+          </a>
+         </div>
+         <div style="padding: 1em 1em;" class="col-md-3 img-top ">
+          <a class="b-link-stripe b-animate-go  thickbox" rel="title" href="admin/images/gallery/AAY_7254.JPG">
+           <img alt="" class="img-responsive" src="admin/images/gallery/AAY_7254.JPG" />
+           <div class="link-top">
+            <i class="link">
+            </i>
+           </div>
+          </a>
+         </div>
+         <div style="padding: 1em 1em;" class="col-md-3 img-top ">
+          <a class="b-link-stripe b-animate-go  thickbox" rel="title" href="admin/images/gallery/IMG_0849.jpg">
+           <img alt="" class="img-responsive" src="admin/images/gallery/IMG_0849.jpg" />
+           <div class="link-top">
+            <i class="link">
+            </i>
+           </div>
+          </a>
+         </div>
+         <div style="padding: 1em 1em;" class="col-md-3 img-top ">
+          <a class="b-link-stripe b-animate-go  thickbox" rel="title" href="admin/images/gallery/Khadi.jpg">
+           <img alt="" class="img-responsive" src="admin/images/gallery/Khadi.jpg" />
+           <div class="link-top">
+            <i class="link">
+            </i>
+           </div>
+          </a>
+         </div>
+         <div style="padding: 1em 1em;" class="col-md-3 img-top ">
+          <a class="b-link-stripe b-animate-go  thickbox" rel="title" href="admin/images/gallery/6.JPG">
+           <img alt="" class="img-responsive" src="admin/images/gallery/6.JPG" />
+           <div class="link-top">
+            <i class="link">
+            </i>
+           </div>
+          </a>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <!-- -->
+  <!--footer-->
+  <div class="footer">
+   <div class="container">
+    <div class="footer-top-at">
+     <div class="col-md-4 amet-sed">
+      <h4>
+       MORE INFO
+      </h4>
+      <ul class="nav-bottom">
+       <li>
+        <a href="index.php">
+         Home
+        </a>
+       </li>
+       <li>
+        <a href="about.php">
+         About
+        </a>
+       </li>
+       <li>
+        <a href="services.php">
+         Services
+        </a>
+       </li>
+       <li>
+        <a href="gallery.php">
+         Gallery
+        </a>
+       </li>
+       <li>
+        <a href="contact.php">
+         Contact
+        </a>
+       </li>
+       <li>
+        <a href="testimony.php">
+         Testimonial
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="col-md-4 amet-sed ">
+      <h4>
+       CONTACT US
+      </h4>
+      <p>
+       Contrary to popular belief
+      </p>
+      <p>
+       The standard chunk
+      </p>
+      <p>
+       office:  +12 34 995 0792
+      </p>
+     </div>
+     <div class="col-md-4 amet-sed">
+      <h4>
+       Follow Us
+      </h4>
+      <ul class="social">
+       <li>
+        <a href="">
+         <i>
+         </i>
+        </a>
+       </li>
+       <li>
+        <a href="">
+         <i class="google">
+         </i>
+        </a>
+       </li>
+       <li>
+        <a href="">
+         <i class="twitter">
+         </i>
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="clearfix">
+     </div>
+    </div>
+   </div>
+   <div class="footer-class">
+    <p>
+     © 2015 Marry All Rights Reserved | Design by
+     <a target="_blank" href="http://w3layouts.com/">
+      W3layouts
+     </a>
+    </p>
+   </div>
+  </div>
+ </body>
+</html>

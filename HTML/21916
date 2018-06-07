@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:sioct="http://rdfs.org/sioc/types#" xmlns:sioc="http://rdfs.org/sioc/ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:og="http://ogp.me/ns#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:dc="http://purl.org/dc/terms/" xmlns:content="http://purl.org/rss/1.0/modules/content/" dir="ltr" version="XHTML+RDFa 1.0" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" class="js js flexbox canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients no-cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths">
+ <head profile="http://www.w3.org/1999/xhtml/vocab">
+  <meta content="Content-Type" http-equiv="Content-Type" />
+  <link href="/overview-software" rel="next" />
+  <link type="image/png" href="http://www.sa-elearning.eu/sites/default/files/sa.png" rel="shortcut icon" />
+  <link href="/demetra" rel="up" />
+  <link href="/node/106" rel="shortlink" />
+  <meta content="Drupal 7 (http://drupal.org)" name="Generator" />
+  <link href="/introduction-1" rel="canonical" />
+  <link href="/demetra" rel="prev" />
+  <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
+  <title>
+   Introduction | Seasonal adjustment
+  </title>
+  <meta content="This e-learning tool will target novice users of Seasonal Adjustment such as applied statisticians and members of public institutions engaged in the dissemination of economic and social indicators." name="description" />
+  <meta content="Eurostat" name="author" />
+  <meta content="width=device-width,initial-scale=1" name="viewport" />
+  <link media="all" href="http://www.sa-elearning.eu/sites/default/files/css/css_xE-rWrJf-fncB6ztZfd2huxqgxu4WO-qwma6Xer30m4.css" rel="stylesheet" type="text/css" />
+  <link media="all" href="http://www.sa-elearning.eu/sites/default/files/css/css_PjPrIajDE50MAegNugI8RxZU-osJkgA83JQnvEfQVog.css" rel="stylesheet" type="text/css" />
+  <link media="all" href="http://www.sa-elearning.eu/sites/default/files/css/css_Vlr4wAX-JmF2utVTnaQOe9zLyXTqf0iwQ0Bkg8EmQBM.css" rel="stylesheet" type="text/css" />
+  <link media="all" href="http://www.sa-elearning.eu/sites/default/files/css/css_OY-sjhJ8wU5ZE1pUESqA-PHNUrBMTplaKJZeBEjSRHI.css" rel="stylesheet" type="text/css" />
+  <!--[if lte IE 7]>
+<link type="text/css" rel="stylesheet" href="http://www.sa-elearning.eu/sites/all/themes/sadjustment/css/ie.css?nrkx3z" media="all"  />
+<![endif]-->
+  <!--[if IE 6]>
+<link type="text/css" rel="stylesheet" href="http://www.sa-elearning.eu/sites/all/themes/sadjustment/css/ie6.css?nrkx3z" media="all"  />
+<![endif]-->
+  <link rel="stylesheet" href="/sites/all/themes/sadjustment/css/style.css" />
+  <script async="" src="//www.google-analytics.com/analytics.js">
+  </script>
+  <script type="text/javascript" async="" src="http://www.google-analytics.com/ga.js">
+  </script>
+  <script src="http://www.sa-elearning.eu/misc/jquery.js?v=1.4.4" type="text/javascript">
+  </script>
+  <script src="http://www.sa-elearning.eu/misc/jquery.once.js?v=1.2" type="text/javascript">
+  </script>
+  <script src="http://www.sa-elearning.eu/misc/drupal.js?nrkx3z" type="text/javascript">
+  </script>
+  <script src="http://www.sa-elearning.eu/sites/all/modules/video/js/video.js?nrkx3z" type="text/javascript">
+  </script>
+  <script src="http://www.sa-elearning.eu/sites/all/modules/google_analytics/googleanalytics.js?nrkx3z" type="text/javascript">
+  </script>
+  <script type="text/javascript">
+   &lt;!--//--&gt;&lt;![CDATA[//&gt;&lt;!--
+var _gaq = _gaq || [];_gaq.push(["_setAccount", "UA-33367328-1"]);_gaq.push(["_trackPageview"]);(function() {var ga = document.createElement("script");ga.type = "text/javascript";ga.async = true;ga.src = ("https:" == document.location.protocol ? "https://ssl" : "http://www") + ".google-analytics.com/ga.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ga, s);})();
+//--&gt;&lt;!]]&gt;
+  </script>
+  <script src="http://www.sa-elearning.eu/sites/all/modules/field_group/field_group.js?nrkx3z" type="text/javascript">
+  </script>
+  <script src="http://www.sa-elearning.eu/sites/all/themes/sadjustment/js/PIE.js?nrkx3z" type="text/javascript">
+  </script>
+  <script src="http://www.sa-elearning.eu/sites/all/themes/sadjustment/js/libs/modernizr-2.0.min.js?nrkx3z" type="text/javascript">
+  </script>
+  <script src="http://www.sa-elearning.eu/sites/all/themes/sadjustment/js/libs/jquery.carouFredSel-5.5.0-packed.js?nrkx3z" type="text/javascript">
+  </script>
+  <script src="http://www.sa-elearning.eu/sites/all/themes/sadjustment/js/jquery.colorbox-min.js?nrkx3z" type="text/javascript">
+  </script>
+  <script src="http://www.sa-elearning.eu/sites/all/themes/sadjustment/js/jquery.treeview.min.js?nrkx3z" type="text/javascript">
+  </script>
+  <script src="http://www.sa-elearning.eu/sites/all/themes/sadjustment/js/highcharts.js?nrkx3z" type="text/javascript">
+  </script>
+  <script src="http://www.sa-elearning.eu/sites/all/themes/sadjustment/js/scripts.js?nrkx3z" type="text/javascript">
+  </script>
+  <script type="text/javascript">
+   &lt;!--//--&gt;&lt;![CDATA[//&gt;&lt;!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"sadjustment","theme_token":"Nzx90xt_SLd3at3V6OtrqOygh2yABCiaBEHOOLJt8Cc","js":{"misc\/jquery.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/modules\/video\/js\/video.js":1,"sites\/all\/modules\/google_analytics\/googleanalytics.js":1,"0":1,"sites\/all\/modules\/field_group\/field_group.js":1,"sites\/all\/themes\/sadjustment\/js\/PIE.js":1,"sites\/all\/themes\/sadjustment\/js\/libs\/modernizr-2.0.min.js":1,"sites\/all\/themes\/sadjustment\/js\/libs\/jquery.carouFredSel-5.5.0-packed.js":1,"sites\/all\/themes\/sadjustment\/js\/jquery.colorbox-min.js":1,"sites\/all\/themes\/sadjustment\/js\/jquery.treeview.min.js":1,"sites\/all\/themes\/sadjustment\/js\/highcharts.js":1,"sites\/all\/themes\/sadjustment\/js\/scripts.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"modules\/book\/book.css":1,"modules\/comment\/comment.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"sites\/all\/modules\/quiz\/quiz.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/views\/css\/views.css":1,"sites\/all\/modules\/ckeditor\/css\/ckeditor.css":1,"sites\/all\/modules\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/lexicon\/css\/lexicon.css":1,"sites\/all\/modules\/video\/css\/video.css":1,"sites\/all\/modules\/print\/css\/printlinks.css":1,"sites\/all\/modules\/field_group\/field_group.css":1,"sites\/all\/themes\/sadjustment\/css\/colorbox.css":1,"sites\/all\/themes\/sadjustment\/css\/jquery.treeview.css":1,"sites\/all\/themes\/sadjustment\/css\/ie.css":1,"sites\/all\/themes\/sadjustment\/css\/ie6.css":1}},"googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls|xml|z|zip"},"field_group":{"div":"full"}});
+//--&gt;&lt;!]]&gt;
+  </script>
+  <!--[if (gte IE 6)&(lte IE 8)]>
+    <script type="text/javascript" src="/sites/all/themes/sadjustment/js/selectivizr-min.js"></script>
+  <![endif]-->
+ </head>
+ <body class="html not-front not-logged-in one-sidebar sidebar-first page-node page-node- page-node-106 node-type-book demetra">
+  <div id="cboxOverlay" style="display: none;">
+  </div>
+  <div id="colorbox" class="" style="padding-bottom: 50px; padding-right: 50px; display: none;">
+   <div id="cboxWrapper">
+    <div>
+     <div id="cboxTopLeft" style="float: left;">
+     </div>
+     <div id="cboxTopCenter" style="float: left;">
+     </div>
+     <div id="cboxTopRight" style="float: left;">
+     </div>
+    </div>
+    <div style="clear: left;">
+     <div id="cboxMiddleLeft" style="float: left;">
+     </div>
+     <div id="cboxContent" style="float: left;">
+      <div id="cboxLoadedContent" style="width: 0px; height: 0px; overflow: hidden; float: left;">
+      </div>
+      <div id="cboxLoadingOverlay" style="float: left;">
+      </div>
+      <div id="cboxLoadingGraphic" style="float: left;">
+      </div>
+      <div id="cboxTitle" style="float: left;">
+      </div>
+      <div id="cboxCurrent" style="float: left;">
+      </div>
+      <div id="cboxNext" style="float: left;">
+      </div>
+      <div id="cboxPrevious" style="float: left;">
+      </div>
+      <div id="cboxSlideshow" style="float: left;">
+      </div>
+      <div id="cboxClose" style="float: left;">
+      </div>
+     </div>
+     <div id="cboxMiddleRight" style="float: left;">
+     </div>
+    </div>
+    <div style="clear: left;">
+     <div id="cboxBottomLeft" style="float: left;">
+     </div>
+     <div id="cboxBottomCenter" style="float: left;">
+     </div>
+     <div id="cboxBottomRight" style="float: left;">
+     </div>
+    </div>
+   </div>
+   <div style="position: absolute; width: 9999px; visibility: hidden; display: none;">
+   </div>
+  </div>
+  <div id="skip-link">
+   <a class="element-invisible element-focusable" href="#main-content">
+    Skip to main content
+   </a>
+  </div>
+  <div class="wrapper">
+   <header id="header">
+    <h1>
+     <a id="logo" rel="logo" href="/">
+      Logo
+     </a>
+    </h1>
+    <nav id="primary_links" role="navigation">
+     <ul class="menu clearfix">
+      <li class="first leaf has-children menu-mlid-718">
+       <a href="/take-elearning-course-seasonal-adjustment">
+        Homepage
+       </a>
+      </li>
+      <li class="leaf has-children menu-mlid-317">
+       <a href="/introduction-2">
+        Conceptual Framework
+       </a>
+      </li>
+      <li class="leaf has-children menu-mlid-530">
+       <a href="/introduction-training-tutorial-ess-guidelines-sa">
+        ESS Guidelines
+       </a>
+      </li>
+      <li class="leaf active-trail active menu-mlid-531">
+       <a class="active-trail active" href="/introduction-1">
+        Demetra +
+       </a>
+      </li>
+      <li class="last leaf menu-mlid-1899">
+       <a title="" href="/glossary/list">
+        Glossary
+       </a>
+      </li>
+     </ul>
+    </nav>
+   </header>
+   <form accept-charset="UTF-8" id="search-block-form" method="post" action="/introduction-1">
+    <div>
+     <a href="/search#get-search">
+      Search
+     </a>
+     <h2 class="element-invisible">
+      Search form
+     </h2>
+     <div class="form-item form-type-textfield form-item-search-block-form">
+      <label for="edit-search-block-form--2" class="element-invisible">
+       Search
+      </label>
+      <input type="text" class="form-text" maxlength="128" size="15" value="" name="search_block_form" id="edit-search-block-form--2" title="Enter the terms you wish to search for." />
+     </div>
+     <div id="edit-actions" class="form-actions form-wrapper">
+      <input type="submit" class="form-submit" value="Search" name="op" id="edit-submit" />
+     </div>
+     <input type="hidden" value="form-5dmBtdHr4AADkAv5L_D3pDjggwqREnd0qN44-hKSlkc" name="form_build_id" />
+     <input type="hidden" value="search_block_form" name="form_id" />
+    </div>
+   </form>
+   <!-- /.section, /#header -->
+   <div class="content-wrapper">
+    <section id="sidebar-first">
+     <div class="block block-bookblock" id="block-bookblock-40">
+      <h2>
+       Demetra +
+      </h2>
+      <ul class="menu clearfix filetree treeview">
+       <li class="first leaf active-trail open">
+        <a class="active-trail active open" href="/introduction-1">
+         Introduction
+        </a>
+       </li>
+       <li class="collapsed">
+        <a href="/overview-software">
+         Overview of the software
+        </a>
+       </li>
+       <li class="collapsed">
+        <a href="/original-data-be-adjusted">
+         Original data to be adjusted
+        </a>
+       </li>
+       <li class="collapsed">
+        <a href="/defining-seasonal-adjustment">
+         Defining seasonal adjustment
+        </a>
+       </li>
+       <li class="collapsed">
+        <a href="/results%E2%80%99-analysis">
+         Results’ analysis
+        </a>
+       </li>
+       <li class="collapsed">
+        <a href="/readjusting">
+         Readjusting
+        </a>
+       </li>
+       <li class="last collapsed">
+        <a href="/period-period-data-production">
+         Period-to-period data production
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="block block-user" id="block-user-login">
+      <h2>
+       Take full advantage of the eLearning by registering
+      </h2>
+      <form accept-charset="UTF-8" id="user-login-form" method="post" action="/introduction-1?destination=node/106">
+       <div>
+        <div class="form-item form-type-textfield form-item-name">
+         <label for="edit-name">
+          Username
+          <span title="This field is required." class="form-required">
+           *
+          </span>
+         </label>
+         <input type="text" class="form-text required" maxlength="60" size="15" value="" name="name" id="edit-name" placeholder="Username" />
+        </div>
+        <div class="form-item form-type-password form-item-pass">
+         <label for="edit-pass">
+          Password
+          <span title="This field is required." class="form-required">
+           *
+          </span>
+         </label>
+         <input type="password" class="form-text required" maxlength="128" size="15" name="pass" id="edit-pass" placeholder="Password" />
+        </div>
+        <div class="new_user">
+         <a title="Create a new user account." href="/user/register">
+          New user?
+         </a>
+        </div>
+        <input type="hidden" value="form-0IrbabLOauLuFRF8rR-MLz1E0IIGOmH8GA2Eda2RR0w" name="form_build_id" />
+        <input type="hidden" value="user_login_block" name="form_id" />
+        <div id="edit-actions--2" class="form-actions form-wrapper">
+         <input type="submit" class="form-submit" value="Log in" name="op" id="edit-submit--2" />
+        </div>
+       </div>
+      </form>
+     </div>
+     <div class="block block-block" id="block-block-4">
+      <p>
+       <img style="width: 145px; background-color: rgb(42, 57, 144);padding: 20px;border-radius: 10px;margin-left: 30px;" src="http://www.cros-portal.eu/profiles/cros/themes/custom/cros/images/estat_rgb_logo.png" alt="" />
+      </p>
+     </div>
+    </section>
+    <section id="content">
+     <header id="content_header">
+      <h2 class="element-invisible">
+       You are here
+      </h2>
+      <div class="breadcrumb">
+       <a href="/demetra">
+        Demetra +
+       </a>
+       »
+       <a class="active" href="/introduction-1">
+        Introduction
+       </a>
+      </div>
+      <h1 id="page-title" class="title">
+       Introduction
+      </h1>
+     </header>
+     <div class="block block-system" id="block-system-main">
+      <div typeof="sioc:Item foaf:Document" about="/introduction-1" class="node node-book node-full clearfix" id="node-106">
+       <span class="rdf-meta element-hidden" content="Introduction" property="dc:title">
+       </span>
+       <span class="rdf-meta element-hidden" datatype="xsd:integer" content="0" property="sioc:num_replies">
+       </span>
+       <div class="content clearfix">
+        <div class="collapsible right_content group-right-content field-group-div speed-fast effect-none fieldgroup-effects-processed" id="node-book-full-group-right-content">
+         <h3>
+          <span class="field-group-format-toggler">
+           <a href="#" class="field-group-format-title">
+            Right content
+           </a>
+          </span>
+         </h3>
+         <div style="display: block;" class="field-group-format-wrapper">
+          <div class="field field-name-field-right-hint field-type-text-long field-label-above">
+           <div class="field-label">
+            Hint: 
+           </div>
+           <div class="field-items">
+            <div class="field-item even">
+             <p>
+              Be aware that instead of "X-12-ARIMA", "ARIMA" and "TRAMO/SEATS" Demetra+ uses notation "X12","Arima" and "TramoSeats", respectively.
+             </p>
+            </div>
+           </div>
+          </div>
+          <!--
+THIS FILE IS NOT USED AND IS HERE AS A STARTING POINT FOR CUSTOMIZATION ONLY.
+See http://api.drupal.org/api/function/theme_field/7 for details.
+After copying this file to your theme's folder and customizing it, remove this
+HTML comment.
+-->
+          <div class="field field-name-field-tags field-type-taxonomy-term-reference field-label-above clearfix">
+           <div class="field-label">
+            Tags/Keywords: 
+           </div>
+           <div class="field-items">
+            <div class="field-item even">
+             <a href="/glossary/list#letter_e">
+              Eurostat
+             </a>
+            </div>
+            <div class="field-item odd">
+             <a href="/glossary/list#letter_g">
+              Guidelines
+             </a>
+            </div>
+            <div class="field-item even">
+             <a href="/glossary/list#letter_e">
+              European Statistical System
+             </a>
+            </div>
+           </div>
+          </div>
+          <div class="field field-name-field-interactive-chart field-type-list-boolean field-label-above field-hidden">
+           <div class="field-label">
+            Interactive chart: 
+           </div>
+           <div class="field-items">
+            <div class="field-item even">
+             Invisible
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <span class="print-link">
+         <span class="print_html">
+          <a rel="nofollow" class="print-page" title="Display a printer-friendly version of this page." href="http://www.sa-elearning.eu/print/106">
+           <img title="Printer-friendly version" alt="Printer-friendly version" src="http://www.sa-elearning.eu/sites/all/themes/sadjustment/images/print.png" typeof="foaf:Image" class="print-icon" />
+          </a>
+         </span>
+        </span>
+        <div class="field field-name-body field-type-text-with-summary field-label-hidden">
+         <div class="field-items">
+          <div property="content:encoded" class="field-item even">
+           <h2>
+            <strong>
+             The aim of the Demetra+ eLearning course
+            </strong>
+           </h2>
+           <p>
+            Demetra+ is a statistical software package for seasonal adjustment supported by Eurostat. The application is extremely efficient at seasonal adjustment of large-scale datasets.  Moreover it takes a user-friendly approach to checking the quality of the seasonal adjustment results.
+           </p>
+           <p>
+            The package includes two seasonal adjustment methods: X-12-ARIMA and TRAMO/SEATS restricted with regard to their original implementations. The changes to the algorithms introduced by Demetra+ do not influence the overall outcome of the seasonal adjustment, although some functionalities are not available. On the other hand Demetra+ incorporates various tools that support time series analysis and facilitate user-defined modelling and comparison of results.
+           </p>
+           <p>
+            This part of the eLearning course provides online education and training tutorial in Demetra+ using a step-by-step approach. The aim of this training is to introduce the user to the main features of the software and to make him/her able to take advantage of the tool. Further information can be found in Demetra+ User Manual.
+           </p>
+           <p>
+            Generally, the tutorial presents the typical paths to follow, but also some examples of non-standard cases are discussed. The step-by-step animations facilitate replication of the results with user’s own data. The course discusses the consecutive phases of seasonal adjustment from preparing the source data to the analysis of the results, readjusting and regular data production.  Therefore it is recommended to follow the chapters in the proposed order.
+           </p>
+           <p>
+            The e-Learning course is based on Demetra+ version 1.0.3 for Windows released 23/05/2012. The software can be freely downloaded from 
+            <a href="http://www.cros-portal.eu">
+             http://www.cros-portal.eu
+            </a>
+            .
+           </p>
+           <p>
+           </p>
+           <h2>
+            <strong>
+             Prerequisites
+            </strong>
+           </h2>
+           <p>
+            As the tutorial presents how to design the processing and analyse the output, the user is expected to have already acquired background knowledge about the concept of seasonal adjustment and be familiar with X-12-ARIMA and TRAMO/SEATS methods. Therefore he/she should first have mastered the Conceptual Framework course. It should be emphasised that Demetra+ enable to adopt the ESS Guidelines on seasonal adjustment. The user may acquaint with these advices and suggested strategies by taking the ESS Guidelines course.
+           </p>
+           <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-45279860-1', 'sa-elearning.eu');
+  ga('send', 'pageview');
+           </script>
+          </div>
+         </div>
+        </div>
+        <div class="book-navigation" id="book-navigation-40">
+         <div class="page-links clearfix">
+          <a title="Go to previous page" class="page-previous" href="/demetra">
+           ‹ Demetra +
+          </a>
+          <a title="Continue this eLearning" class="page-next" href="/overview-software">
+           Overview of the software ›
+          </a>
+         </div>
+        </div>
+        <div class="collapsible right_box group-right-box field-group-div speed-fast effect-none fieldgroup-effects-processed" id="node-book-full-group-right-box">
+         <h3>
+          <span class="field-group-format-toggler">
+           <a href="#" class="field-group-format-title">
+            Right box
+           </a>
+          </span>
+         </h3>
+         <div style="display: block;" class="field-group-format-wrapper">
+          <div class="field field-name-field-extend-ressources field-type-link-field field-label-above">
+           <div class="field-label">
+            External resources: 
+           </div>
+           <div class="field-items">
+            <div class="field-item even">
+             <a href="http://www.cros-portal.eu/sites/default/files/Demetra+%20User%20Manual_0.pdf">
+              Grudkowska S. (2011),
+              <i>
+               Demetra+ User Manual
+              </i>
+             </a>
+            </div>
+            <div class="field-item odd">
+             <a href="http://www.cros-portal.eu/sites/default/files/Demetra+%20User%20Manual_0.pdf">
+              Eurostat (2009),
+              <i>
+               ESS Guidelines on Seasonal Adjustment
+              </i>
+             </a>
+            </div>
+            <div class="field-item even">
+             <a href="http://www.cros-portal.eu/page/3-5-may-2011-introduction-seasonal-adjustment-and-demetra">
+              Buono D., Infante E., (2010),
+              <i>
+               Seasonal Adjustment and DEMETRA+
+              </i>
+             </a>
+            </div>
+            <div class="field-item odd">
+             <a href="http://www.cros-portal.eu/sites/default/files/LTP%20ECOTRIM%20and%20DEMETRA+_final.ppt">
+              Buono, D., Infante, E., (2011),
+              <i>
+               Introduction to Ecotrim and DEMETRA+
+              </i>
+             </a>
+            </div>
+           </div>
+          </div>
+          <div class="field field-name-field-learn-more field-type-node-reference field-label-above">
+           <div class="field-label">
+            Conceptual framework: 
+           </div>
+           <div class="field-items">
+            <div class="field-item even">
+             <a href="/introduction-2">
+              Introduction
+             </a>
+            </div>
+           </div>
+          </div>
+          <div class="field field-name-field-ess-guide field-type-node-reference field-label-above">
+           <div class="field-label">
+            ESS Guidelines: 
+           </div>
+           <div class="field-items">
+            <div class="field-item even">
+             <a href="/introduction-training-tutorial-ess-guidelines-sa">
+              Introduction to training tutorial on ESS Guidelines on SA
+             </a>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <footer id="content_footer">
+     </footer>
+    </section>
+   </div>
+  </div>
+  <div id="footer-wrapper">
+   <footer class="wrapper" id="footer">
+    <nav id="footer_links" role="navigation">
+     <ul class="menu clearfix">
+      <li class="first leaf menu-mlid-555">
+       <a title="" href="/disclaimer">
+        Disclamer
+       </a>
+      </li>
+      <li class="leaf menu-mlid-556">
+       <a title="" href="/contact">
+        Contact
+       </a>
+      </li>
+      <li class="last leaf menu-mlid-558">
+       <a title="" href="http://epp.eurostat.ec.europa.eu">
+        Eurostat
+       </a>
+      </li>
+     </ul>
+    </nav>
+   </footer>
+  </div>
+ </body>
+</html>

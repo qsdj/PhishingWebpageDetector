@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" class="cufon-active cufon-ready">
+ <head>
+  <meta content="Content-Type" http-equiv="Content-Type" />
+  <title>
+   AYKUTSAN ÇORAP
+  </title>
+  <meta content="Content-Type" http-equiv="Content-Type" />
+  <meta content="tr" http-equiv="Content-language" />
+  <meta content="no-cache" http-equiv="Pragma" />
+  <meta content="no-cache" http-equiv="Cache-Control" />
+  <meta content="" name="SearchTitle" />
+  <meta content="" name="SearchDescription" />
+  <meta content="AYKUTSAN ÇORAP MENDİL TEKS. SAN. TİC. LTD. ŞTİ" name="Description" />
+  <meta content="AYKUTSAN ÇORAP MENDİL TEKS. SAN. TİC. LTD. ŞTİ" name="Keywords" />
+  <meta content="all,index,follow" name="robots" />
+  <meta content="all,index,follow" name="googlebot" />
+  <meta content="all,index,follow" name="msnbot" />
+  <meta content="all,index,follow" name="Slurp" />
+  <meta content="1 days Days" name="Revisit-After" />
+  <meta content="Information" name="Page-Type" />
+  <meta lang="tr" content="all" name="audience" />
+  <meta content="document" name="resource-type" />
+  <meta content="Turkish" name="Language" />
+  <meta content="Yes" http-equiv="expires" />
+  <meta content="No" http-equiv="ImageToolbar" />
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js" type="text/javascript">
+  </script>
+  <link href="css/main_css.css" rel="stylesheet" />
+  <script type="text/javascript">
+   $(document).ready(function() {
+			/*
+			*   Examples - images
+			*/
+
+			$("a#example1").fancybox();
+
+			$("a#example2").fancybox({
+				'overlayShow'	: false,
+				'transitionIn'	: 'elastic',
+				'transitionOut'	: 'elastic'
+			});
+
+			$("a#example3").fancybox({
+				'transitionIn'	: 'none',
+				'transitionOut'	: 'none'	
+			});
+
+			$("a#example4").fancybox({
+				'opacity'		: true,
+				'overlayShow'	: false,
+				'transitionIn'	: 'elastic',
+				'transitionOut'	: 'none'
+			});
+
+			$("a#example5").fancybox();
+
+			$("a#example6").fancybox({
+				'titlePosition'		: 'outside',
+				'overlayColor'		: '#000',
+				'overlayOpacity'	: 0.9
+			});
+
+			$("a#example7").fancybox({
+				'titlePosition'	: 'inside'
+			});
+
+			$("a#example8").fancybox({
+				'titlePosition'	: 'over'
+			});
+
+			$("a[rel=example_group]").fancybox({
+				'transitionIn'		: 'none',
+				'transitionOut'		: 'none',
+				'titlePosition' 	: 'over',
+				'titleFormat'		: function(title, currentArray, currentIndex, currentOpts) {
+					return '&lt;span id="fancybox-title-over"&gt;Image ' + (currentIndex + 1) + ' / ' + currentArray.length + (title.length ? ' &amp;nbsp; ' + title : '') + '&lt;/span&gt;';
+				}
+			});
+
+			/*
+			*   Examples - various
+			*/
+
+			$("#various1").fancybox({
+				'titlePosition'		: 'inside',
+				'transitionIn'		: 'none',
+				'transitionOut'		: 'none'
+			});
+
+			$("#various2").fancybox();
+
+			$("#various3").fancybox({
+				'width'				: '75%',
+				'height'			: '75%',
+				'autoScale'			: false,
+				'transitionIn'		: 'none',
+				'transitionOut'		: 'none',
+				'type'				: 'iframe'
+			});
+
+			$("#various4").fancybox({
+				'padding'			: 0,
+				'autoScale'			: false,
+				'transitionIn'		: 'none',
+				'transitionOut'		: 'none'
+			});
+		});
+  </script>
+  <script type="text/javascript">
+   //################ Açılır Menu ################
+$(function(){
+$(".menu li.menu_li").hover(function(){
+$(this).addClass("aktif");
+$(".alt_menu", this).show();
+}, function(){
+$(this).removeClass("aktif");
+$(".alt_menu", this).hide();
+})
+})
+//################ Banner ################
+//jQuery(function($){$('.banner').TransBanner();});	
+
+//################ Ready ################
+$(document).ready(function (){
+/*Form Kontrol*/	
+$.validationEngine.defaults.scroll = false;
+jQuery(document).ready(function(){
+jQuery("#z_defter_form").validationEngine();
+jQuery("#5").validationEngine();
+});
+
+	
+
+//################ Popup ################
+		
+//Tek resim
+});
+});
+
+//################ Anket ################
+//Oy ver
+function anket_oyver(){
+var gelen = $(".sik_id").val();
+if (gelen=="") {
+$(".anket_hata").show();
+$(".anket_hata").html("Lüften bir seçenek belirleyin.");
+}else {
+$(".anket_hata").hide();
+$.ajax({
+type:'POST',
+url:'inc/ajax/anket.php?islem=oy_kullan',
+data:$('#anket_oykullan').serialize(),
+success: function(cevap) {
+}
+});
+$(".anket_siklari").hide();
+$(".anket_sonuclari").show();
+$(".anket_sonuclari").load("inc/ajax/anket.php?islem=oy_sonuclari");
+}}
+
+//Sonuçlar
+function anket_sonuclar(){
+$(".anket_siklari").hide();
+$(".anket_sonuclari").show();
+}
+//Anket Şık işaretle
+function sik_isaretle(id){
+$(".sik_id").val(id);
+}
+//######################### Query Form kontrol #################
+
+(function($){
+    $.fn.validationEngineLanguage = function(){
+    };
+    $.validationEngineLanguage = {
+        newLang: function(){
+            $.validationEngineLanguage.allRules = {
+                "required": { // Add your regex rules here, you can take telephone as an example
+                    "regex": "none",
+                    "alertText": "» Bu alan zorunludur.",
+                    "alertTextCheckboxMultiple": "Lütfen bir seçenek işaretleyiniz.",
+                    "alertTextCheckboxe": "» Bu onay kutusu zorunludur."
+                },
+                "minSize": {
+                    "regex": "none",
+                    "alertText": "» Bu alana en az ",
+                    "alertText2": " karakter girmelisiniz "
+                },
+                "maxSize": {
+                    "regex": "none",
+                    "alertText": "» Bu alana en fazla ",
+                    "alertText2": " karakter girebilirsiniz"
+                },
+				"groupRequired": {
+                    "regex": "none",
+                    "alertText": "» You must fill one of the following fields"
+                },
+                "min": {
+                    "regex": "none",
+                    "alertText": "» Geçerli en küçük değer: "
+                },
+                "max": {
+                    "regex": "none",
+                    "alertText": "» Geçerli en yüksek değer: "
+                },
+                "past": {
+                    "regex": "none",
+                    "alertText": "» Lütfen ",
+                    "alertText2": " tarihinden daha ileri bir tarih giriniz "
+                },
+                "future": {
+                    "regex": "none",
+                    "alertText": "» Lütfen ",
+                    "alertText2": " tarihinden daha geri bir tarih giriniz "
+
+                },	
+                "maxCheckbox": {
+                    "regex": "none",
+                    "alertText": "» En fazla ",
+                    "alertText2": " onay kutusu işaretleyebilirsiniz"
+                },
+                "minCheckbox": {
+                    "regex": "none",
+                    "alertText": "» Lütfen en az ",
+                    "alertText2": " onay kutusunu işaretleyiniz"
+                },
+                "equals": {
+                    "regex": "none",
+                    "alertText": "» Değerler aynı olmalı"
+                },
+                "phone": {
+                    // credit: jquery.h5validate.js / orefalo
+                    "regex": /^([\+][0-9]{1,3}[ \.\-])?([\(]{1}[0-9]{2,6}[\)])?([0-9 \.\-\/]{3,20})((x|ext|extension)[ ]?[0-9]{1,4})?$/,
+                    "alertText": "» Geçersiz telefon numarası"
+                },
+                "email": {
+                    // Shamelessly lifted from Scott Gonzalez via the Bassistance Validation plugin http://projects.scottsplayground.com/email_address_validation/
+                    "regex": /^((([a-z]|\d|[!#\$%&amp;'\*\+\-\/=\?\^_`{\|}~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+(\.([a-z]|\d|[!#\$%&amp;'\*\+\-\/=\?\^_`{\|}~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+)*)|((\x22)((((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(([\x01-\x08\x0b\x0c\x0e-\x1f\x7f]|\x21|[\x23-\x5b]|[\x5d-\x7e]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(\\([\x01-\x09\x0b\x0c\x0d-\x7f]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]))))*(((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(\x22)))@((([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.)+(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.?$/i,
+                    "alertText": "» Hatalı E-Mail adresi."
+                },
+                "integer": {
+                    "regex": /^[\-\+]?\d+$/,
+                    "alertText": "» Geçerli bir tam sayı değil"
+                },
+                "number": {
+                    // Number, including positive, negative, and floating decimal. credit: orefalo
+                    "regex": /^[\-\+]?(([0-9]+)([\.,]([0-9]+))?|([\.,]([0-9]+))?)$/,
+                    "alertText": "» Geçerli bir noktalı sayı değil"
+                },
+                "date": {
+                    "regex": /^\d{4}[\/\-](0?[1-9]|1[012])[\/\-](0?[1-9]|[12][0-9]|3[01])$/,
+                    "alertText": "» Geçersiz tarih. Tarih YYYY-MM-DD formatında olmalı"
+                },
+                "ipv4": {
+                    "regex": /^((([01]?[0-9]{1,2})|(2[0-4][0-9])|(25[0-5]))[.]){3}(([0-1]?[0-9]{1,2})|(2[0-4][0-9])|(25[0-5]))$/,
+                    "alertText": "» Geçersiz IP adresi"
+                },
+                "url": {
+                    "regex": /^(https?|ftp):\/\/(((([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(%[\da-f]{2})|[!\$&amp;'\(\)\»\+,;=]|:)»@)?(((\d|[1-9]\d|1\d\d|2[0-4]\d|25[0-5])\.(\d|[1-9]\d|1\d\d|2[0-4]\d|25[0-5])\.(\d|[1-9]\d|1\d\d|2[0-4]\d|25[0-5])\.(\d|[1-9]\d|1\d\d|2[0-4]\d|25[0-5]))|((([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])»([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.)+(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])»([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.?)(:\d»)?)(\/((([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(%[\da-f]{2})|[!\$&amp;'\(\)\»\+,;=]|:|@)+(\/(([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(%[\da-f]{2})|[!\$&amp;'\(\)\»\+,;=]|:|@)»)»)?)?(\?((([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(%[\da-f]{2})|[!\$&amp;'\(\)\»\+,;=]|:|@)|[\uE000-\uF8FF]|\/|\?)»)?(\#((([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(%[\da-f]{2})|[!\$&amp;'\(\)\»\+,;=]|:|@)|\/|\?)»)?$/i,
+                    "alertText": "» Geçersiz URL"
+                },
+                "onlyNumberSp": {
+                    "regex": /^[0-9\ ]+$/,
+                    "alertText": "» Bu alanda sadece rakam olmalı"
+                },
+                "onlyLetterSp": {
+                    "regex": /^[a-zA-Z\ \']+$/,
+                    "alertText": "» Bu alanda sadece harf olmalı"
+                },
+                "onlyLetterNumber": {
+                    "regex": /^[0-9a-zA-Z]+$/,
+                    "alertText": "» Bu alanda özel karakterler olamaz"
+                },
+                // --- CUSTOM RULES -- Those are specific to the demos, they can be removed or changed to your likings
+                "ajaxUserCall": {
+                    "url": "ajaxValidateFieldUser",
+                    // you may want to pass extra data on the ajax call
+                    "extraData": "name=eric",
+                    "alertText": "» Bu kullanıcı adı kullanımda",
+                    "alertTextLoad": "» Doğrulanıyor, lütfen bekleyiniz"
+                },
+				"ajaxUserCallPhp": {
+                    "url": "phpajax/ajaxValidateFieldUser.php",
+                    // you may want to pass extra data on the ajax call
+                    "extraData": "name=eric",
+                    // if you provide an "alertTextOk", it will show as a green prompt when the field validates
+                    "alertTextOk": "» Bu kullanıcı adını kullanabilirsiniz",
+                    "alertText": "» Bu kullanıcı adı kullanımda",
+                    "alertTextLoad": "» Doğrulanıyor, lütfen bekleyiniz"
+                },
+                "ajaxNameCall": {
+                    // remote json service location
+                    "url": "ajaxValidateFieldName",
+                    // error
+                    "alertText": "» Bu isim kullanımda",
+                    // if you provide an "alertTextOk", it will show as a green prompt when the field validates
+                    "alertTextOk": "» Bu isim kullanılabilir",
+                    // speaks by itself
+                    "alertTextLoad": "» Doğrulanıyor, lütfen bekleyiniz"
+                },
+				 "ajaxNameCallPhp": {
+	                    // remote json service location
+	                    "url": "phpajax/ajaxValidateFieldName.php",
+	                    // error
+	                    "alertText": "» Bu isim kullanımda",
+	                    // speaks by itself
+	                    "alertTextLoad": "» Doğrulanıyor, lütfen bekleyiniz"
+	                },
+                "validate2fields": {
+                    "alertText": "» Lütfen 'HELLO' yazın"
+                }
+            };
+            
+        }
+    };
+    $.validationEngineLanguage.newLang();
+})(jQuery);
+  </script>
+  <style type="text/css">
+   cufon{text-indent:0!important;}@media screen,projection{cufon{display:inline!important;display:inline-block!important;position:relative!important;vertical-align:middle!important;font-size:1px!important;line-height:1px!important;}cufon cufontext{display:-moz-inline-box!important;display:inline-block!important;width:0!important;height:0!important;overflow:hidden!important;text-indent:-10000in!important;}cufon canvas{position:relative!important;}}@media print{cufon{padding:0!important;}cufon canvas{display:none!important;}}
+  </style>
+ </head>
+ <body class="tema1">
+  <div style="display:none" class="popupp">
+   <div style="z-index:6000;float:left;" class="popup">
+   </div>
+  </div>
+  <link media="screen" type="text/css" href="tema/css/style.css" rel="stylesheet" />
+  <script src="tema/js/script.js">
+  </script>
+  <script src="tema/js/superfish.js">
+  </script>
+  <script src="tema/js/jquery.flexslider-min.js">
+  </script>
+  <script src="tema/js/jquery.easing.1.3.js">
+  </script>
+  <script src="tema/js/jquery.ui.totop.js">
+  </script>
+  <script src="tema/js/jquery.responsivemenu.js">
+  </script>
+  <script src="tema/js/jquery.hoverIntent.minified.js">
+  </script>
+  <script>
+   $(function(){
+	$().UItoTop({ easingType: 'easeOutQuart' });
+	$('#toTop').hover(function(){$(this).stop().animate({opacity:.7})},(function(){$(this).stop().animate({opacity:1})}))
+})
+  </script>
+  <!--[if lt IE 8]>
+   <div style=' clear: both; text-align:center; position: relative;'>
+     <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+       <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."  />
+    </a>
+  </div>
+<![endif]-->
+  <!--[if lt IE 9]>
+	<script src="tema/js/html5.js"></script>
+	<link rel="stylesheet" href="tema/css/ie.css">
+<![endif]-->
+  <!--[if IE 9]>
+	<style>
+		.tooltips li a:hover img{ width:85%;}
+	</style>
+<![endif]-->
+  <script src="tema/js/cufon-yui.js">
+  </script>
+  <script src="tema/js/Futura_Bk_BT_400.font.js">
+  </script>
+  <script src="tema/js/cufon-replace.js">
+  </script>
+  <div class="bg">
+   <header>
+    <div class="container_24">
+     <a href="index.php?dil=0">
+      <div style="float:left;width:27px;height:27px;position:absolute;right:32px;top:7px;border-radius:15px;z-index:9999;">
+      </div>
+     </a>
+     <a href="index.php?dil=1">
+      <div style="float:left;width:27px;height:27px;position:absolute;right:1px;top:7px;border-radius:15px;z-index:9999;">
+      </div>
+     </a>
+     <div style="float:left;position:absolute;right:0;top:7px;background:url(tema/images/dil.png);width:59px;height:27px;">
+     </div>
+     <div class="grid_24">
+      <h1 class="logo">
+       <a href="index.php">
+        Lahmacun
+       </a>
+      </h1>
+      <ul class="sf-menu">
+       <li class="active">
+        <a href="index.php?icerik=48">
+         Ana Sayfa
+        </a>
+       </li>
+       <li class="">
+        <a href="index.php?icerik=49">
+         Hakkımızda
+        </a>
+        <span>
+        </span>
+       </li>
+       <li class="">
+        <a href="index.php?icerik=50&goster=104">
+         ÜRÜNLERİMİZ
+        </a>
+        <ul>
+         <li>
+          <a href="index.php?icerik=50&goster=104">
+           Bayan Çorap
+          </a>
+         </li>
+         <li>
+          <a href="index.php?icerik=50&goster=107">
+           Erkek Çorap
+          </a>
+         </li>
+         <li>
+          <a href="index.php?icerik=50&goster=108">
+           Çocuk Çorap
+          </a>
+         </li>
+        </ul>
+        <span>
+        </span>
+       </li>
+       <li class="">
+        <a href="katalog/katalog.html" target="_blank ">
+         Online Katalog
+        </a>
+        <span>
+        </span>
+       </li>
+       <li class="">
+        <a href="index.php?icerik=52" target="_blank ">
+         İLETİŞİM
+        </a>
+        <span>
+        </span>
+       </li>
+      </ul>
+      <div class="clear">
+      </div>
+     </div>
+     <div class="clear">
+     </div>
+    </div>
+   </header>
+   <section>
+    <div class="container_24">
+     <div class="wrapper">
+      <div style="background:#fff;">
+       <div class="grid_7">
+        <div style="margin-right:55px;">
+         <h3 class="cufon_fb">
+          <cufon class="cufon cufon-canvas" alt="Ürünlerimiz" style="width: 101px; height: 20px;">
+           <canvas width="121" height="24" style="width: 121px; height: 24px; top: -4px; left: -3px;">
+           </canvas>
+           <cufontext>
+            Ürünlerimiz
+           </cufontext>
+          </cufon>
+         </h3>
+         <ul class="list_ana list_padbot">
+          <li>
+           <a class="button" href="index.php?icerik=50&goster=104">
+            Bayan Çorap
+           </a>
+          </li>
+          <li>
+           <a class="button" href="index.php?icerik=50&goster=107">
+            Erkek Çorap
+           </a>
+          </li>
+          <li>
+           <a class="button" href="index.php?icerik=50&goster=108">
+            Çocuk Çorap
+           </a>
+          </li>
+         </ul>
+         <img width="214" height="320" style="margin-top:-29px;" src="tema/images/logolar.png" />
+        </div>
+       </div>
+       <div class="grid_17">
+        <div class="bg-slider">
+         <div class="slider">
+          <div class="flexslider">
+           <ul class="slides">
+            <link type="text/css" rel="stylesheet" href="slider/css/evoslider.css" />
+            <link type="text/css" rel="stylesheet" href="slider/css/default/default.css" />
+            <script type="text/javascript" src="slider/js/jquery.easing.1.3.js">
+            </script>
+            <script type="text/javascript" src="slider/js/jquery.evoslider.lite-1.1.0.js">
+            </script>
+            <script type="text/javascript">
+             function banner(left,top,width,height){
+    $("#banner-slider").evoSlider({
+        mode: "scroller",                   // Sets slider mode ("accordion", "slider", or "scroller")
+        width: width,                       // The width of slider
+        height: height,                     // The height of slider
+        slideSpace: 5,                      // The space between slides
+    
+        mouse: true,                        // Enables mousewheel scroll navigation
+        keyboard: true,                     // Enables keyboard navigation (left and right arrows)
+        speed: 500,                         // Slide transition speed in ms. (1s = 1000ms)
+        easing: "swing",                    // Defines the easing effect mode
+        loop: true,                         // Rotate slideshow
+    
+        autoplay: true,                     // Sets EvoSlider to play slideshow when initialized
+        interval: 5000,                     // Slideshow interval time in ms
+        pauseOnHover: true,                 // Pause slideshow if mouse over the slide
+        pauseOnClick: true,                 // Stop slideshow if playing
+        
+        directionNav: true,                // Shows directional navigation when initialized
+        directionNavAutoHide: true,         // Shows directional navigation on hover and hide it when mouseout
+    
+        controlNav: true,                   // Enables control navigation
+        controlNavAutoHide: false           // Shows control navigation on mouseover and hide it when mouseout 
+    });
+	$(".controlNav").css("left",left+"px");
+	$(".arrow_prev").css("top",top+"px");
+	$(".arrow_next").css("top",top+"px");
+}
+            </script>
+            <div class="evoslider default" id="banner-slider" style="width: 640px; height: 208px;">
+             <dl style="width: 640px; height: 208px;">
+              <dt style="display: none;">
+              </dt>
+              <dd style="left: 0px; width: 640px; height: 208px;">
+               <img style="width:640px;height:208px;" alt="Slider 1" src="up/1336581779.jpg" />
+              </dd>
+              <dt style="display: none;">
+              </dt>
+              <dd style="left: 640px; width: 640px; height: 208px;">
+               <img style="width:640px;height:208px;" alt="Slider 1" src="up/1336581944.jpg" />
+              </dd>
+              <dt style="display: none;">
+              </dt>
+              <dd style="left: 1280px; width: 640px; height: 208px;">
+               <img style="width:640px;height:208px;" alt="Slider 1" src="up/1336582126.jpg" />
+              </dd>
+              <dt style="display: none;">
+              </dt>
+              <dd style="left: 1920px; width: 640px; height: 208px;">
+               <img style="width:640px;height:208px;" alt="Slider 1" src="up/1339395609.jpg" />
+              </dd>
+              <dt style="display: none;">
+              </dt>
+              <dd style="left: 2560px; width: 640px; height: 208px;">
+               <img style="width:640px;height:208px;" alt="Slider 1" src="up/1339395614.jpg" />
+              </dd>
+              <dt style="display: none;">
+              </dt>
+              <dd style="left: 3200px; width: 640px; height: 208px;">
+               <img style="width:640px;height:208px;" alt="Slider 1" src="up/1336581382.jpg" />
+              </dd>
+             </dl>
+             <div class="arrow_prev" style="display: block; top: 95px; opacity: 0;">
+             </div>
+             <div class="arrow_next" style="display: block; top: 95px; opacity: 0;">
+             </div>
+             <div class="controlNav" style="left: 300px;">
+              <div class="control_wrapper">
+               <ul style="width: 78px; height: 10px;">
+                <li class="bullets active">
+                </li>
+                <li class="bullets">
+                </li>
+                <li class="bullets">
+                </li>
+                <li class="bullets">
+                </li>
+                <li class="bullets">
+                </li>
+                <li class="bullets last">
+                </li>
+               </ul>
+              </div>
+             </div>
+            </div>
+            <script type="text/javascript">
+             banner('300','95','640','208');
+            </script>
+           </ul>
+          </div>
+         </div>
+        </div>
+        <h1 class="slogan">
+         Sizin için seçtiklerimiz
+        </h1>
+        <p style="line-height:25px;" class="padbot">
+        </p>
+        <div class="resim_ana1">
+         <a href="up/141467305913365781597.jpg" id="example1" class="resim_cerceve1">
+          <img src="th.php?p=up/141467305913365781597.jpg&w=218" class="resimm1" alt="" title="" />
+         </a>
+         <div class="resim_aciklamasi1">
+         </div>
+        </div>
+        <div class="resim_ana1">
+         <a href="up/1414673059133657815910.jpg" id="example1" class="resim_cerceve1">
+          <img src="th.php?p=up/1414673059133657815910.jpg&w=218" class="resimm1" alt="" title="" />
+         </a>
+         <div class="resim_aciklamasi1">
+         </div>
+        </div>
+        <div class="resim_ana1">
+         <a href="up/1414673059133657815913.jpg" id="example1" class="resim_cerceve1">
+          <img src="th.php?p=up/1414673059133657815913.jpg&w=218" class="resimm1" alt="" title="" />
+         </a>
+         <div class="resim_aciklamasi1">
+         </div>
+        </div>
+        <div class="resim_ana1">
+         <a href="up/14146733091.jpg" id="example1" class="resim_cerceve1">
+          <img src="th.php?p=up/14146733091.jpg&w=218" class="resimm1" alt="" title="" />
+         </a>
+         <div class="resim_aciklamasi1">
+         </div>
+        </div>
+        <div class="resim_ana1">
+         <a href="up/14146733092.jpg" id="example1" class="resim_cerceve1">
+          <img src="th.php?p=up/14146733092.jpg&w=218" class="resimm1" alt="" title="" />
+         </a>
+         <div class="resim_aciklamasi1">
+         </div>
+        </div>
+        <div class="resim_ana1">
+         <a href="up/14146733093.jpg" id="example1" class="resim_cerceve1">
+          <img src="th.php?p=up/14146733093.jpg&w=218" class="resimm1" alt="" title="" />
+         </a>
+         <div class="resim_aciklamasi1">
+         </div>
+        </div>
+        <div class="resim_ana1">
+         <a href="up/14146733094.jpg" id="example1" class="resim_cerceve1">
+          <img src="th.php?p=up/14146733094.jpg&w=218" class="resimm1" alt="" title="" />
+         </a>
+         <div class="resim_aciklamasi1">
+         </div>
+        </div>
+        <div class="resim_ana1">
+         <a href="up/14146733095.jpg" id="example1" class="resim_cerceve1">
+          <img src="th.php?p=up/14146733095.jpg&w=218" class="resimm1" alt="" title="" />
+         </a>
+         <div class="resim_aciklamasi1">
+         </div>
+        </div>
+        <div class="resim_ana1">
+         <a href="up/14146733096.jpg" id="example1" class="resim_cerceve1">
+          <img src="th.php?p=up/14146733096.jpg&w=218" class="resimm1" alt="" title="" />
+         </a>
+         <div class="resim_aciklamasi1">
+         </div>
+        </div>
+        <div class="resim_ana1">
+         <a href="up/14146733097.jpg" id="example1" class="resim_cerceve1">
+          <img src="th.php?p=up/14146733097.jpg&w=218" class="resimm1" alt="" title="" />
+         </a>
+         <div class="resim_aciklamasi1">
+         </div>
+        </div>
+        <div class="resim_ana1">
+         <a href="up/14146733098.jpg" id="example1" class="resim_cerceve1">
+          <img src="th.php?p=up/14146733098.jpg&w=218" class="resimm1" alt="" title="" />
+         </a>
+         <div class="resim_aciklamasi1">
+         </div>
+        </div>
+        <div class="resim_ana1">
+         <a href="up/141467330910.jpg" id="example1" class="resim_cerceve1">
+          <img src="th.php?p=up/141467330910.jpg&w=218" class="resimm1" alt="" title="" />
+         </a>
+         <div class="resim_aciklamasi1">
+         </div>
+        </div>
+        <p>
+        </p>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section>
+  </div>
+  <footer>
+   <div class="footer-line">
+    <div class="container_24">
+     <div class="wrapper">
+      <div class="grid_24">
+       <div class="privacy">
+        AYKUTSAN ÇORAP. All Rights Reserved
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </footer>
+  <script type="text/javascript">
+   Cufon.now();
+  </script>
+  <link href="css/validationEngine.jquery.css" rel="stylesheet" />
+  <script charset="utf-8" type="text/javascript" src="js/jquery.validationEngine-tr.js">
+  </script>
+  <script charset="utf-8" type="text/javascript" src="js/jquery.validationEngine.js">
+  </script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js" type="text/javascript">
+  </script>
+  <script>
+   !window.jQuery &amp;&amp; document.write('&lt;script src="jquery-1.4.3.min.js"&gt;&lt;\/script&gt;');
+  </script>
+  <script src="fancybox/jquery.mousewheel-3.0.4.pack.js" type="text/javascript">
+  </script>
+  <script src="fancybox/jquery.fancybox-1.3.4.pack.js" type="text/javascript">
+  </script>
+  <link media="screen" href="fancybox/jquery.fancybox-1.3.4.css" type="text/css" rel="stylesheet" />
+  <div id="fancybox-tmp">
+  </div>
+  <div id="fancybox-loading">
+   <div>
+   </div>
+  </div>
+  <div id="fancybox-overlay">
+  </div>
+  <div id="fancybox-wrap">
+   <div id="fancybox-outer">
+    <div id="fancybox-bg-n" class="fancybox-bg">
+    </div>
+    <div id="fancybox-bg-ne" class="fancybox-bg">
+    </div>
+    <div id="fancybox-bg-e" class="fancybox-bg">
+    </div>
+    <div id="fancybox-bg-se" class="fancybox-bg">
+    </div>
+    <div id="fancybox-bg-s" class="fancybox-bg">
+    </div>
+    <div id="fancybox-bg-sw" class="fancybox-bg">
+    </div>
+    <div id="fancybox-bg-w" class="fancybox-bg">
+    </div>
+    <div id="fancybox-bg-nw" class="fancybox-bg">
+    </div>
+    <div id="fancybox-content">
+    </div>
+    <a id="fancybox-close">
+    </a>
+    <div id="fancybox-title">
+    </div>
+    <a id="fancybox-left" href="javascript:;">
+     <span id="fancybox-left-ico" class="fancy-ico">
+     </span>
+    </a>
+    <a id="fancybox-right" href="javascript:;">
+     <span id="fancybox-right-ico" class="fancy-ico">
+     </span>
+    </a>
+   </div>
+  </div>
+ </body>
+</html>

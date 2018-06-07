@@ -1,0 +1,375 @@
+<!--?xml version="1.0" encoding="utf-8"?-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-gb" xml:lang="en-gb" xmlns="http://www.w3.org/1999/xhtml" slick-uniqueid="3">
+ <head>
+  <base href="http://www.d-trix.ca/index.php/component/users/" />
+  <meta content="content-type" http-equiv="content-type" />
+  <meta content="Joomla! - Open Source Content Management" name="generator" />
+  <title>
+   d-trix.ca
+  </title>
+  <link href="/plugins/system/jch_optimize/assets2/jscss.php?f=f3ef3654a4fd0043023d1c586451058f&type=css&gz=gz&d=30" type="text/css" rel="stylesheet" />
+  <link type="application/opensearchdescription+xml" title="Search d-trix.ca" rel="search" href="http://www.d-trix.ca/index.php/component/search/?format=opensearch" />
+  <link type="text/css" href="http://www.d-trix.ca/plugins/system/osolcaptcha/osolCaptcha/captchaStyle.css" rel="stylesheet" />
+  <script type="text/javascript">
+   /*&lt;![CDATA[*/function reloadCapthcha(instanceNo)
+						{
+							var captchaSrc = "http://www.d-trix.ca/index.php?showCaptcha=True&amp;instanceNo="+instanceNo+"&amp;time="+ new Date().getTime();
+							//alert(captachaSrc);
+							//alert(document.getElementById('captchaCode'+instanceNo));
+							document.getElementById('captchaCode'+instanceNo).src = captchaSrc ;
+							//alert(document.getElementById('captchaCode'+instanceNo).src);
+						} 
+						
+function keepAlive() {	var myAjax = new Request({method: "get", url: "index.php"}).send();} window.addEvent("domready", function(){ keepAlive.periodical(3540000); });
+window.addEvent('domready', function() {
+			$$('.hasTip').each(function(el) {
+				var title = el.get('title');
+				if (title) {
+					var parts = title.split('::', 2);
+					el.store('tip:title', parts[0]);
+					el.store('tip:text', parts[1]);
+				}
+			});
+			var JTooltips = new Tips($$('.hasTip'), { maxTitleChars: 50, fixed: false});
+		});/*]]&gt;*/
+  </script>
+  <meta content="Juergen Koller - http://www.lernvid.com" name="designer" />
+  <meta content="Copyright LernVid.com - Creative Commons Sharalike 3.0" name="licence" />
+  <!--[if IE 7]><link href="/templates/black_lernvid.com/css/ie7.css" rel="stylesheet" type="text/css" media="all"  /> <![endif]-->
+  <!--[if lt IE 7]><link href="/templates/black_lernvid.com/css/ie5x6x.css" rel="stylesheet" type="text/css" media="all"  /> <![endif]-->
+  <script type="text/javascript">
+   /*&lt;![CDATA[*/window.addEvent( 'domready', function() {
+								onsubmitFunction =  $('user-registration').get('onsubmit');
+									//alert($('user-registration').option.value);
+									$('user-registration').addEvent( 'submit', function(e){
+																				   
+										var captchaResponse =  true;
+										formInst = this;
+										osolCatchaTxtInst = this.osolCatchaTxtInst.value;
+										osolCatchaTxt = this.osolCatchaTxt.value;
+										//alert($('osolCaptcha-ajax-container'));
+										  $('osolCaptcha-ajax-container0').addClass('osolCaptcha-ajax-loading');
+								 			$('osolCaptcha-ajax-container0').innerHTML =  "Please wait while verifying captcha";
+										  /*var a = new Ajax('http://www.d-trix.ca/index.php',{
+											   method:'get',
+											   onComplete:function(response){
+													//var resp=Json.evaluate(response);
+													alert('ajax complete ,result : ' + resp);
+													// Other code to execute when the request completes.
+													$('osolCaptcha-ajax-container0').removeClass('osolCaptcha-ajax-loading').innerHTML = '';
+											   }
+										  }).request();*/
+										  var request = new Request({
+			
+																	url: 'http://www.d-trix.ca/index.php',
+											
+																	method:'get',
+											
+																	data: 'verifyCaptcha=True&amp;instanceNo='+osolCatchaTxtInst+'&amp;osolCatchaTxtInst='+osolCatchaTxt,
+											
+																	onSuccess: function(responseText){
+														
+																					//alert( responseText);
+																					$('osolCaptcha-ajax-container0').removeClass('osolCaptcha-ajax-loading').innerHTML = '';
+																					if(responseText == 'false')
+																					{
+																						alert('You have entered the wrong CAPTCHA sequence. Please try again.')
+																						captchaResponse = false;
+																					}
+																					else
+																					{
+																						//alert( onsubmitFunction);
+																						if( eval(onsubmitFunction) || onsubmitFunction == null )
+																						{
+																							formInst.submit();
+																						}
+																					}
+																					
+																					
+														
+																				}
+											
+																	}).send();
+										  
+										  
+											return false;
+											
+										  
+									 });
+						
+					} );/*]]&gt;*/
+  </script>
+ </head>
+ <body>
+  <div id="bg_up">
+   <div style="max-width:1180px;" id="wrapper">
+    <div id="header_container">
+     <div id="header">
+      <div id="logo">
+      </div>
+      <div id="styleswitcher">
+       <noscript>
+        Switcher needs Javascript enabled!
+       </noscript>
+       <ul>
+        <li>
+         <a class="styleswitch" rel="styles1" href="/index.php" title="style 1">
+          <img alt="style 1" src="/templates/black_lernvid.com/images/styles1.png" />
+         </a>
+        </li>
+        <li>
+         <a class="styleswitch" rel="styles2" href="/index.php" title="style 2">
+          <img alt="style 2" src="/templates/black_lernvid.com/images/styles2.png" />
+         </a>
+        </li>
+        <li>
+         <a class="styleswitch" rel="styles3" href="/index.php" title="style 3">
+          <img alt="style 3" src="/templates/black_lernvid.com/images/styles3.png" />
+         </a>
+        </li>
+        <li>
+         <a class="styleswitch" rel="styles4" href="/index.php" title="style 4">
+          <img alt="style 4" src="/templates/black_lernvid.com/images/styles4.png" />
+         </a>
+        </li>
+        <li>
+         <a class="styleswitch" rel="styles5" href="/index.php" title="style 5">
+          <img alt="style 5" src="/templates/black_lernvid.com/images/styles5.png" />
+         </a>
+        </li>
+        <li>
+         <a class="styleswitch" rel="styles6" href="/index.php" title="style 6">
+          <img alt="style 6" src="/templates/black_lernvid.com/images/styles6.png" />
+         </a>
+        </li>
+        <li>
+         <a class="styleswitch" rel="styles7" href="/index.php" title="style 7">
+          <img alt="style 7" src="/templates/black_lernvid.com/images/styles7.png" />
+         </a>
+        </li>
+        <li>
+         <a class="styleswitch" rel="styles8" href="/index.php" title="style 8">
+          <img alt="style 8" src="/templates/black_lernvid.com/images/styles8.png" />
+         </a>
+        </li>
+       </ul>
+      </div>
+     </div>
+    </div>
+    <div id="oben">
+     <div id="navigation">
+      <ul class="menu">
+       <li class="item-464">
+        <a href="/">
+         Home
+        </a>
+       </li>
+      </ul>
+     </div>
+    </div>
+    <div id="container">
+     <div id="content_up_outer">
+      <div id="content_up">
+       <div id="content_up_left">
+        <div id="breadcrumbs">
+         <div id="breadcrumbs_left">
+          <div class="breadcrumbs">
+           <span class="showHere">
+            You are here:
+           </span>
+           <span>
+            Home
+           </span>
+          </div>
+         </div>
+         <div id="breadcrumbs_right">
+         </div>
+        </div>
+        <div id="content_up_right">
+         <div id="search">
+          <div id="search_inner">
+           <form method="post" action="/index.php/component/users/">
+            <div class="search">
+             <label for="mod-search-searchword">
+              Search...
+             </label>
+             <input type="text" onfocus="if (this.value=='Search...') this.value='';" onblur="if (this.value=='') this.value='Search...';" value="Search..." size="20" class="inputbox" maxlength="20" id="mod-search-searchword" name="searchword" />
+             <input type="hidden" value="search" name="task" />
+             <input type="hidden" value="com_search" name="option" />
+             <input type="hidden" value="0" name="Itemid" />
+            </div>
+           </form>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="clr">
+     </div>
+     <div id="sidebar_left">
+      <div class="module_menu">
+       <div>
+        <div>
+         <div>
+          <h3>
+           Sections
+          </h3>
+          <ul class="menu">
+           <li class="item-435 current">
+            <a href="/">
+             Home
+            </a>
+           </li>
+           <li class="item-487">
+            <a href="/index.php/myhouse">
+             Our House
+            </a>
+           </li>
+           <li class="item-486">
+            <a href="/index.php/music">
+             Music
+            </a>
+           </li>
+           <li class="item-469">
+            <a href="/index.php/sections-urban-terror">
+             Urban Terror
+            </a>
+           </li>
+           <li class="item-521">
+            <a href="/index.php/downloads">
+             Downloads
+            </a>
+           </li>
+          </ul>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div id="content_outleft">
+      <div id="content">
+       <div id="system-message-container">
+       </div>
+       <div class="reset">
+        <form class="form-validate" method="post" action="/index.php/component/users/?task=reset.request" id="user-registration">
+         <p>
+          Please enter the email address for your account. A verification code will be sent to you. Once you have received the verification code, you will be able to choose a new password for your account.
+         </p>
+         <fieldset>
+          <dl>
+           <dt>
+            <label title="Email Address::Please enter the email address associated with your User account.<br />A verification code will be sent to you. Once you have received the verification code, you will be able to choose a new password for your account." class="hasTip required" for="jform_email" id="jform_email-lbl">
+             Email Address:
+             <span class="star">
+               *
+             </span>
+            </label>
+           </dt>
+           <dd>
+            <input type="text" size="30" class="validate-username required" value="" id="jform_email" name="jform[email]" aria-required="true" required="required" />
+           </dd>
+           <dt>
+           </dt>
+           <dd>
+           </dd>
+          </dl>
+         </fieldset>
+         <div>
+          <div class="osolCaptchaBlock">
+           <div id="osolCaptcha-ajax-container0">
+           </div>
+           <label for="osolCatchaTxt0">
+            Please enter the following characters you see into the textbox below.
+           </label>
+           <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tbody>
+             <tr>
+              <td width="120" class="osol_captcha_td">
+               <a style="font-size:10px" target="blank" href="http://www.outsource-online.net/osol-captcha-for-joomla.html">
+                <img alt="Captcha plugin 2+ for Joomla from Outsource Online" src="http://www.d-trix.ca/index.php?showCaptcha=True&instanceNo=0" id="captchaCode0" />
+               </a>
+              </td>
+              <td width="170" valign="top" class="osol_captcha_td">
+               <label>
+                <a onclick="reloadCapthcha(0);return false;" href="#">
+                 Letters not clear ?
+                 <br />
+                 Click to renew captcha
+                </a>
+               </label>
+              </td>
+              <td valign="top" class="osol_captcha_td">
+               <input type="text" class="inputbox required validate-captcha" id="osolCatchaTxt0" name="osolCatchaTxt" aria-required="true" required="required" />
+               <input type="hidden" value="0" id="osolCatchaTxtInst" name="osolCatchaTxtInst" />
+               <br />
+              </td>
+             </tr>
+            </tbody>
+           </table>
+          </div>
+          <button class="validate" type="submit">
+           Submit
+          </button>
+          <input type="hidden" value="1" name="5546e6fa719004deaf1f7f48dbe07816" />
+         </div>
+        </form>
+       </div>
+      </div>
+     </div>
+     <div class="clr">
+     </div>
+     <div id="content_down">
+      <div id="content_down_left">
+      </div>
+     </div>
+     <div id="container2">
+      <div class="clr">
+      </div>
+      <div id="footer">
+       <div id="copyright_info">
+        <p>
+         | Copyright
+         <strong>
+          d-trix.ca
+         </strong>
+         | Design ©
+         <a title="Templates" target="_blank" href="http://www.lernvid.com">
+          LernVid.com
+         </a>
+         &amp;
+         <a title="Webdesign" target="_blank" href="http://www.qpattern.com">
+          qpattern
+         </a>
+         |
+        </p>
+       </div>
+       <div class="gotop">
+        <a title="go to top" class="gotoplink" href="#">
+        </a>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="clr">
+    </div>
+   </div>
+  </div>
+  <script src="/templates/black_lernvid.com/js/jquery-1.4.2.min.js" type="text/javascript">
+  </script>
+  <script type="text/javascript">
+   var $j = jQuery.noConflict();
+  </script>
+  <script src="/templates/black_lernvid.com/js/jq.css.switch.js" type="text/javascript">
+  </script>
+  <script src="/templates/black_lernvid.com/js/jq.hover.js" type="text/javascript">
+  </script>
+  <script src="/templates/black_lernvid.com/js/jq.loadhover.js" type="text/javascript">
+  </script>
+  <script src="/templates/black_lernvid.com/js/jq.effects.js" type="text/javascript">
+  </script>
+  <script src="/plugins/system/jch_optimize/assets2/jscss.php?f=b7289c522ee89323c0edd154b13171c6&type=js&gz=gz&d=30" type="text/javascript">
+  </script>
+ </body>
+</html>

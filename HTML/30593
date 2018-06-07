@@ -1,0 +1,421 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta content="Content-Type" http-equiv="Content-Type" />
+  <title>
+   Institute of Coopearative Management - Mba Studies, Mba Course, ICM Madurai
+  </title>
+  <link type="text/css" rel="stylesheet" href="templatemo_style.css" />
+  <link media="screen,projection" type="text/css" rel="stylesheet" href="css/jquery.ennui.contentslider.css" />
+ </head>
+ <body>
+  <div id="templatemo_header_wrapper">
+   <div id="templatemo_header">
+    <div id="site_title">
+     <h1>
+      <a target="_parent" rel="nofollow" href="http://www.mba-icmmadurai.in">
+       <img alt="Web Templates" src="images/cname.jpg" />
+      </a>
+     </h1>
+    </div>
+    <a target="_blank" rel="nofollow" title="Click" href="http://www.clipartlogo.com" class="header_corel">
+    </a>
+    <div id="search_box">
+     <table width="302" height="30" bgcolor="#F5F3F3">
+      <tbody>
+       <tr>
+        <td width="294" align="right">
+         <script type="text/javascript" language="Javascript">
+          &lt;!--
+/*
+ Java Script Calendar is a small script for web pages which displays current Day of the week, Month, Date and Year along with Holidays notification. Just like this working demo below. It will work with Netscape 2++, Microsoft 3++ and Opera 3++ web browsers.
+
+                                    Tuesday, November 24, 1998    
+
+About 70 holidays from all over the world are displayed by Calendar (if you know other ones, let me know, I will add them). It even calculates Easter Sunday date! To see how it works change the date on your computer to January, 1,
+for example and re-load the page.
+
+Installation is very simple. Just copy the script below, everything between SCRIPT and SCRIPT tags (including tags themselves) and paste in the place you want it to appear on your page. You can customize the way
+ it looks by changing document.write function arguments just after month names definitions. Java Script Calendar is free without any limitations. Copyright &amp;copy; Eugene Vassiltsov. But please, let me know if you will use it.
+*/
+
+ calendar = new Date();
+ day = calendar.getDay();
+ month = calendar.getMonth();
+ date = calendar.getDate();
+ year = calendar.getYear();
+ if (year &lt; 1000)
+ year+=1900
+ cent = parseInt(year/100);
+ g = year % 19;
+ k = parseInt((cent - 17)/25);
+ i = (cent - parseInt(cent/4) - parseInt((cent - k)/3) + 19*g + 15) % 30;
+ i = i - parseInt(i/28)*(1 - parseInt(i/28)*parseInt(29/(i+1))*parseInt((21-g)/11));
+ j = (year + parseInt(year/4) + i + 2 - cent + parseInt(cent/4)) % 7;
+ l = i - j;
+ emonth = 3 + parseInt((l + 40)/44);
+ edate = l + 28 - 31*parseInt((emonth/4));
+ emonth--;
+ var dayname = new Array ("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday");
+ var monthname = 
+ new Array ("January","February","March","April","May","June","July","August","September","October","November","December" );
+ document.write("&lt;font face=verdana,arial size=2  color=#BA6704&gt;");
+ document.write(dayname[day] + ", ");
+ document.write(monthname[month] + " ");
+ if (date&lt; 10) document.write("0" + date + ", ");
+         else document.write(date + ", ");
+ document.write(year + "    &lt;font color=#FAD141");
+ // Easter
+ if ((month == emonth) &amp;&amp; (date == edate)) document.write("Easter Sunday (Western)   ");
+ // January
+ if ((month == 0) &amp;&amp; (date == 1)) document.write("New Year's Day");
+ if ((month == 0) &amp;&amp; (date == 15)) document.write("Adults Day (Japan)");
+ if ((month == 0) &amp;&amp; (date == 26)) document.write("Republic Day");
+ // February
+ if ((month == 1) &amp;&amp; (date == 2)) document.write("Groundhog Day");
+ if ((month == 1) &amp;&amp; (date == 8)) document.write("Jules Verne born (1828)");
+ if ((month == 1) &amp;&amp; (date == 11)) document.write("National Foundation Day (Japan)");
+ if ((month == 1) &amp;&amp; (date== 12)) document.write("Lincoln's Birthday");
+ if((month == 1) &amp;&amp; (date == 14)) document.write("St. Valentine's Day");
+ if ((month == 1) &amp;&amp; (date == 15)) document.write("Galileo Galilei born (1564)");
+ if ((month == 1) &amp;&amp; (date == 22)) document.write("Washington's Birthday");
+ if ((month == 1) &amp;&amp; (date == 29)) document.write("Leap Day");
+ // March
+ if ((month == 2) &amp;&amp; (date == 3)) document.write("Girl's Day (Japan)");
+ if ((month == 2) &amp;&amp; (date == 17)) document.write("St. Patrick's Day");
+ if ((month == 2) &amp;&amp; (date == 21)) document.write("J.S. Bach born (1685)");
+ // April
+ if ((month == 3) &amp;&amp; (date == 1)) document.write("April Fools' Day");
+ if ((month == 3) &amp;&amp; (date == 8)) document.write("Buddha born");
+ if ((month == 3) &amp;&amp; (date == 15) &amp;&amp; (day != 0)) document.write("Income Tax Day (USA),   ");
+ if ((month == 3) &amp;&amp; (date == 16) &amp;&amp; (day == 1)) document.write("Income Tax Day (USA) ");
+ if ((month == 3) &amp;&amp; (date == 15)) document.write("Leonardo da Vinci born (1452)");
+ if ((month == 3) &amp;&amp; (date == 22)) document.write("Earth Day");
+ if ((month == 3) &amp;&amp; (date == 29)) document.write("Emperor's Birthday (Japan)");
+ if ((month == 3) &amp;&amp; (day == 0) &amp;&amp; (date &gt; 0) &amp;&amp; (date&lt; 8)) document.write("Daylight Savings Time Begins");
+ // May
+ if ((month == 4) &amp;&amp; (date == 1)) document.write("May Day,   Boy's Day (Japan)");
+ if ((month == 4) &amp;&amp; (date == 2)) document.write("Constitution Day (Japan)");
+ if ((month == 4) &amp;&amp; (date == 5)) document.write("Cinco de Mayo (Mexico),   Children's Day (Japan)");
+ if ((month == 4) &amp;&amp; (date == 14)) document.write("Independence Day (Paraguay)");
+ if ((month == 4) &amp;&amp; (day == 0) &amp;&amp; (date &gt; 7) &amp;&amp; (date&lt; 16)) document.write("Mother's Day");
+ if ((month == 4) &amp;&amp; (day == 1) &amp;&amp; (date &gt; 24)) document.write("Memorial Day");
+ // June
+ if ((month == 5) &amp;&amp; (date == 5)) document.write("Constitution Day (Denmark)");
+ if ((month == 5) &amp;&amp; (date == 6)) document.write("D-Day (USA)");
+ if ((month == 5) &amp;&amp; (date == 11)) document.write("Kamehameha (Hawaii)");
+ if ((month == 5) &amp;&amp; (date == 14)) document.write("FlagDay (USA)");
+ if ((month == 5) &amp;&amp; (date == 21)) document.write("Summer Solstice");
+ if((month == 5) &amp;&amp; (date == 24)) document.write("St. Jean Baptiste Day (Canada)");
+ if ((month == 5) &amp;&amp; (date == 30)) document.write("Independence Day (Zaire)");
+ if ((month == 5) &amp;&amp; (day == 0) &amp;&amp; (date &gt; 15) &amp;&amp; (date&lt; 24)) document.write("Father's Day");
+ // July
+ if ((month == 6) &amp;&amp; (date == 1)) document.write("Independence Day (Canada)");
+ if ((month == 6) &amp;&amp; (date == 4)) document.write("Independence Day (USA)");
+ if ((month == 6) &amp;&amp; (date == 14)) document.write("Bastille Day (France)");
+ // August
+ if ((month == 7) &amp;&amp; (date == 1)) document.write("Confederation Day (Switzerland)");
+ if ((month == 7) &amp;&amp; (date == 10)) document.write("Independence Day (Ecuador)");
+ if ((month == 7) &amp;&amp; (date == 15)) document.write("Independence Day (India)");
+ // September
+ if ((month == 8) &amp;&amp; (date == 5)) document.write("Independence Day (Brazil)");
+ if ((month == 8) &amp;&amp; (date == 15)) document.write("Respect for the Aged Day (Japan)");
+ if ((month == 8) &amp;&amp; (date == 16)) document.write("Independence Day (Mexico)");
+ if ((month == 8) &amp;&amp; (day== 1)&amp;&amp; (date &gt; 0) &amp;&amp; (date&lt; 8)) document.write("Labor Day (USA)");
+ // October
+ if ((month == 9) &amp;&amp; (date == 5)) document.write("German Reunufication (1990)");
+ if ((month == 9) &amp;&amp; (date == 10)) document.write("Health-Sports Day (Japan)");
+ if ((month == 9) &amp;&amp; (day == 1) &amp;&amp; (date &gt; 7) &amp;&amp; (date&lt; 16)) document.write("Columbus Day (USA)");
+ if ((month == 9) &amp;&amp; (day == 0) &amp;&amp; (date &gt; 24) &amp;&amp; (date&lt; 31)) document.write("Daylight Savings Time Ends");
+ if ((month == 9) &amp;&amp; (day == 0) &amp;&amp; (date == 31)) document.write("Daylight Savings Time Ends&lt;BR&gt;");
+ if ((month == 9) &amp;&amp; (date == 24)) document.write("United Nations Day");
+ if ((month == 9) &amp;&amp; (date == 31)) document.write("Halloween");
+ // November
+ if ((month == 10) &amp;&amp; (date == 1)) document.write("All Saints Day");
+ if ((month == 10) &amp;&amp; (date == 2)) document.write("All Souls Day");
+ if ((month == 10) &amp;&amp; (date == 3)) document.write("Culture Day (Japan)");
+ if ((month == 10) &amp;&amp; (date == 11)) document.write("Veteran's Day (USA),    Remembrance Day (Canada)");
+ if ((month == 10) &amp;&amp; (date ==20)) document.write("Revolution Day (Mexico)");
+ if ((month == 10) &amp;&amp; (date == 23)) document.write("Labor Thanksgiving Day (Japan)");
+ if ((month == 10) &amp;&amp; (day == 4) &amp;&amp; (date &gt; 23) &amp;&amp; (date&lt; 30)) document.write("Thanksgiving (USA)");
+ if ((month == 10) &amp;&amp; (date == 30) &amp;&amp; (day == 4)) document.write("Thanksgiving (USA)");
+ // December
+ if ((month == 11) &amp;&amp; (date == 10)) document.write("Human Rights Day");
+ if ((month == 11) &amp;&amp; (date == 21)) document.write("Winter Solstice");
+ if ((month == 11) &amp;&amp; (date == 24)) document.write("Christmas Eve");
+ if ((month == 11) &amp;&amp; (date == 25)) document.write("Christmas");
+ if ((month == 11) &amp;&amp; (date == 26)) document.write("Boxing Day");
+ if ((month == 11) &amp;&amp; (date == 31)) document.write("New Year's Eve");
+'&lt;br&gt;&lt;/font&gt;"'
+//--&gt;
+         </script>
+         <font size="2" face="verdana,arial" color="#BA6704">
+          Tuesday, January 05, 2016
+          <font color="#FAD141<br">
+           <br />
+           <span style="text-align:right">
+            <script src="liveclock.js" language="javascript">
+             /*
+Live Clock Script-
+By Mark Plachetta (astro@bigpond.net.au�) based on code from DynamicDrive.com
+For full source code, 100's more DHTML scripts, and Terms Of Use,
+visit http://www.dynamicdrive.com
+*/
+            </script>
+           </span>
+          </font>
+         </font>
+        </td>
+       </tr>
+      </tbody>
+     </table>
+     <table align="center">
+      <tbody>
+       <tr>
+        <td>
+         <object width="209" height="34" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000">
+          <param value="humanassets.swf" name="movie">
+          </param>
+          <param value="high" name="quality">
+           <embed width="209" height="34" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" quality="high" src="humanassets.swf">
+           </embed>
+          </param>
+         </object>
+        </td>
+       </tr>
+      </tbody>
+     </table>
+    </div>
+    <div class="cleaner">
+    </div>
+   </div>
+   <!-- end of header -->
+   <div id="templatemo_menu">
+    <ul>
+     <li>
+      <a class="current" href="website.php">
+       Home
+      </a>
+     </li>
+     <li>
+      <a href="aboutmba.php">
+       About MBA
+      </a>
+     </li>
+     <li>
+      <a href="mandatory.php">
+       Mandatory
+      </a>
+     </li>
+     <li>
+      <a href="mbafacilities.php">
+       Facilities
+      </a>
+     </li>
+     <li>
+      <a href="gallery.php">
+       Photo Gallery
+      </a>
+     </li>
+     <li>
+      <a href="registration.php">
+       Registration
+      </a>
+     </li>
+     <li>
+      <a href="contactus.php">
+       Contact Us
+      </a>
+     </li>
+    </ul>
+   </div>
+   <!-- end of templatemo_menu -->
+   <div id="templatemo_banner">
+    <table width="900" align="center">
+     <tbody>
+      <tr>
+       <td>
+        <marquee onmouseout="this.start();" onmouseover="this.stop();" scrollamount="3" behavior="scroll">
+         <font color="#FFFFFF">
+          <strong>
+           Welcome to Mba-icmmadurai.in..new website..
+          </strong>
+         </font>
+        </marquee>
+       </td>
+      </tr>
+     </tbody>
+    </table>
+    <center>
+     <object width="783" height="235" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000">
+      <param value="fade.swf" name="movie">
+      </param>
+      <param value="transparent" name="wmode">
+      </param>
+      <param value="high" name="quality">
+       <embed width="783" height="235" wmode="transparent" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" quality="high" src="fade.swf">
+       </embed>
+      </param>
+     </object>
+    </center>
+   </div>
+  </div>
+  <!-- end of header_wrapper -->
+  <div id="templatemo_content_wrapper_outer">
+   <div id="templatemo_content_wrapper_inner">
+    <div id="templatemo_content_wrapper">
+     <div id="templatemo_content">
+      <h1>
+       MBA Facilities
+      </h1>
+      <table align="center" cellpadding="20">
+       <tbody>
+        <tr>
+         <td valign="top">
+          <img src="images/mba1.jpg" />
+         </td>
+        </tr>
+        <tr>
+         <td valign="top">
+          <img src="images/mba2.jpg" />
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <div class="button float_l">
+       <a href="mbafacilitiesall.php">
+        View All
+       </a>
+      </div>
+     </div>
+     <!-- end of templatemo_content -->
+     <div id="templatemo_sidebar">
+      <div id="news_section">
+       <h2>
+        Alumni
+       </h2>
+       <div class="news_box">
+        <center>
+         <a href="alumnicorner.php">
+          <img border="0" src="images/alumnicorner.jpg" />
+         </a>
+        </center>
+        <br />
+        <center>
+         <a href="registration.php">
+          <img border="0" src="images/alumniregistration.jpg" />
+         </a>
+        </center>
+       </div>
+       <div class="cleaner">
+       </div>
+      </div>
+      <div id="news_section">
+       <h2>
+        News &amp; Events
+       </h2>
+       <div class="news_box">
+        <table>
+         <tbody>
+          <tr>
+           <td>
+            <marquee onmouseout="this.start();" onmouseover="this.stop();" scrollamount="3" direction="up" behavior="scroll">
+             <font color="#000000">
+              <strong>
+               March 2014
+
+Programme on AgriClinic and AgroService centres for the Secretaries of select PACS of Dindigul district, sponsored by ICDP, Dindigul, is being conducted at our Institute, for a period of three days from 03rd March to 05th March 2014.
+              </strong>
+             </font>
+            </marquee>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="cleaner">
+       </div>
+      </div>
+      <div class="cleaner">
+      </div>
+     </div>
+     <!-- end of sidebar -->
+     <div class="cleaner">
+     </div>
+    </div>
+   </div>
+  </div>
+  <div id="templatemo_footer_wrapper">
+   <div id="templatemo_footer">
+    <ul class="footer_menu">
+     <li>
+      <a class="current" href="website.php">
+       Home
+      </a>
+     </li>
+     <li>
+      <a href="aboutmba.php">
+       About MBA
+      </a>
+     </li>
+     <li>
+      <a href="mandatory.php">
+       Mandatory
+      </a>
+     </li>
+     <li>
+      <a href="mbafacilities.php">
+       Facilities
+      </a>
+     </li>
+     <li>
+      <a href="gallery.php">
+       Photo Gallery
+      </a>
+     </li>
+     <li>
+      <a href="registration.php">
+       Registration
+      </a>
+     </li>
+     <li>
+      <a href="contactus.php">
+       Contact Us
+      </a>
+     </li>
+    </ul>
+    <table>
+     <tbody>
+      <tr>
+       <td width="643">
+        <a href="#">
+         Copyright © 2014  MBA-ICM Madurai.in
+        </a>
+       </td>
+       <td width="292">
+        <a target="_blank" href="http://go4property.com">
+         <font size="2" color="#FFFFFF">
+          www.go
+         </font>
+         <font size="3" color="#FFFFFF">
+          4
+         </font>
+         <font size="2" color="#FFFFFF">
+          property.com
+         </font>
+        </a>
+        <a target="_blank" href="http://maduraiwebsite.com">
+         <img border="0" align="absmiddle" src="images/footerlogo.jpg" />
+        </a>
+       </td>
+      </tr>
+     </tbody>
+    </table>
+   </div>
+   <!-- end of footer -->
+  </div>
+  <!-- end of footer_wrapper -->
+  <script src="js/logging.js" type="text/javascript">
+  </script>
+ </body>
+</html>

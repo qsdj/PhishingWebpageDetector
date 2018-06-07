@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients no-cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths" style="">
+ <head>
+  <meta charset="UTF-8" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <!-- Search engines -->
+  <meta content="A commercial interior design, fitout, and Project Management company" name="description" />
+  <link href="/favicon.ico" type="image/x-icon" rel="shortcut icon" />
+  <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" />
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js">
+  </script>
+  <link href="css/contact_form.css" rel="stylesheet" />
+  <script src="js/contact_form.js">
+  </script>
+  <link href="css/reset.css" rel="stylesheet" />
+  <!-- CSS reset -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- Resource style -->
+  <script src="js/modernizr.js">
+  </script>
+  <!-- Modernizr -->
+  <link rel="stylesheet" href="css1/main.css" />
+  <!-- same old, same old -->
+  <link rel="stylesheet" href="css1/demo.css" />
+  <!-- used for quick prototyping-->
+  <script type="text/javascript" src="../vendor/jquery-1.7.1.min.js">
+  </script>
+  <!--web site on the fly -->
+  <!-- A very, very Quick prototype site for a client, a lot of mess showing-->
+  <!-- Display different fonts and sizes, when changes are finalised move to style sheet -->
+  <title>
+   Ironbark Commercial Interiors
+  </title>
+ </head>
+ <body style="font-family: 'Open Sans', sans-serif;">
+  <div style="background-color: #2c343b; " class="wrapper">
+   <div style="width:100%; height:90px; background-color: #2c343b; ">
+    <span style="color:#dd5900; font-size:42px; font-weight:bold;">
+     Iron
+    </span>
+    <span style="color:#fff2e4; font-size:42px; font-weight:bold;">
+     bark
+    </span>
+    <span style="color:#fff2e4; font-size:18px;">
+     Commercial Interiors
+    </span>
+    <nav class="nav">
+     <ul class="nav-list">
+      <li class="nav-item">
+       <a href="index.html">
+        Home
+       </a>
+      </li>
+      <li class="nav-item">
+       <a href="about.html">
+        About
+       </a>
+      </li>
+      <li class="nav-item">
+       <a href="services.html">
+        Services
+       </a>
+      </li>
+      <li class="nav-item">
+       <a href="projects.html">
+        Projects
+       </a>
+      </li>
+      <li class="nav-item">
+       <a href="contact.html">
+        Contact
+       </a>
+      </li>
+     </ul>
+     <div class="nav-mobile">
+     </div>
+    </nav>
+    <!-- /Nav -->
+   </div>
+  </div>
+  <div style="clear:both;">
+  </div>
+  <div style="margin: 0 auto; width:400px; font-size: 1.2em;">
+   <p style="font-size: 24px;">
+    Contact us
+   </p>
+   <p>
+    Planning Your Office Refurbishment, or require information on avalible options
+    <br />
+    Please contact us
+    <br />
+    <br />
+    <span style="color:#dd5900; ">
+     Iron
+    </span>
+    <span style="color:#2c343b;">
+     bark Commercial Interiors
+    </span>
+    <br />
+    Unit 2 22 Lexington Drive
+    <br />
+    Bella Vista NSW Australia
+    <br />
+    E-mail: info@ironbarkci.com.au
+    <br />
+    <br />
+    To send us an email enquiry, please use the form below.
+   </p>
+   <p>
+   </p>
+   <form id="form">
+    <h3>
+     Contact Form
+    </h3>
+    <p id="returnmessage">
+    </p>
+    <label>
+     Name:
+     <span>
+      *
+     </span>
+    </label>
+    <input type="text" placeholder="Name" id="name" />
+    <label>
+     Email:
+     <span>
+      *
+     </span>
+    </label>
+    <input type="text" placeholder="Email" id="email" />
+    <label>
+     Contact No:
+     <span>
+      *
+     </span>
+    </label>
+    <input type="text" placeholder="10 digit Mobile no." id="contact" />
+    <label>
+     Message:
+    </label>
+    <textarea placeholder="Message......." id="message">
+    </textarea>
+    <input type="button" value="Send Message" id="submit" />
+   </form>
+   <p>
+   </p>
+  </div>
+  <div style="clear:both;">
+  </div>
+  <div style="float:left; width:100%; padding_top:20px;">
+   <footer style="font-size:11px; text-align:center; ">
+    © Ironbark Commercial Interiors designed by
+    <a href="http://www.inanosoft.com">
+     inanosoft
+    </a>
+   </footer>
+  </div>
+  <script>
+   (function () {
+	
+		// Create mobile element
+		var mobile = document.createElement('div');
+		mobile.className = 'nav-mobile';
+		document.querySelector('.nav').appendChild(mobile);
+	
+		// hasClass
+		function hasClass(elem, className) {
+			return new RegExp(' ' + className + ' ').test(' ' + elem.className + ' ');
+		}
+	
+		// toggleClass
+		function toggleClass(elem, className) {
+			var newClass = ' ' + elem.className.replace(/[\t\r\n]/g, ' ') + ' ';
+			if (hasClass(elem, className)) {
+				while (newClass.indexOf(' ' + className + ' ') &gt;= 0) {
+					newClass = newClass.replace(' ' + className + ' ', ' ');
+				}
+				elem.className = newClass.replace(/^\s+|\s+$/g, '');
+			} else {
+				elem.className += ' ' + className;
+			}
+		}
+	
+		// Mobile nav function
+		var mobileNav = document.querySelector('.nav-mobile');
+		var toggle = document.querySelector('.nav-list');
+		mobileNav.onclick = function () {
+			toggleClass(this, 'nav-mobile-open');
+			toggleClass(toggle, 'nav-active');
+		};
+	})();
+  </script>
+ </body>
+</html>

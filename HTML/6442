@@ -1,0 +1,2046 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-gb" xml:lang="en-gb" xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <style type="text/css">
+   .gm-style .gm-style-mtc label,.gm-style .gm-style-mtc div{font-weight:400}
+  </style>
+  <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" />
+  <style type="text/css">
+   .gm-style .gm-style-cc span,.gm-style .gm-style-cc a,.gm-style .gm-style-mtc div{font-size:10px}
+  </style>
+  <style type="text/css">
+   @media print {  .gm-style .gmnoprint, .gmnoprint {    display:none  }}@media screen {  .gm-style .gmnoscreen, .gmnoscreen {    display:none  }}
+  </style>
+  <style type="text/css">
+   .gm-style{font-family:Roboto,Arial,sans-serif;font-size:11px;font-weight:400;text-decoration:none}.gm-style img{max-width:none}
+  </style>
+  <meta content="content-type" http-equiv="content-type" />
+  <meta content="index, follow" name="robots" />
+  <meta content="Kontacto, bienes, raices, propiedades, casas, condominios, bodegas" name="keywords" />
+  <meta content="Kontacto Inmobiliario, tu kontacto con las mejores propiedades y bienes raices." name="description" />
+  <meta content="Joomla! 1.5 - Open Source Content Management" name="generator" />
+  <title>
+   Advanced Property Search
+  </title>
+  <link type="text/css" href="/neweb/components/com_iproperty/assets/css/iproperty.css" rel="stylesheet" />
+  <link type="text/css" href="http://yui.yahooapis.com/2.7.0/build/slider/assets/skins/sam/slider.css" rel="stylesheet" />
+  <link type="text/css" href="/neweb/components/com_gantry/css/gantry.css" rel="stylesheet" />
+  <link type="text/css" href="/neweb/components/com_gantry/css/grid-12.css" rel="stylesheet" />
+  <link type="text/css" href="/neweb/components/com_gantry/css/joomla.css" rel="stylesheet" />
+  <link type="text/css" href="/neweb/templates/rt_zephyr_j15/css/joomla.css" rel="stylesheet" />
+  <link type="text/css" href="/neweb/templates/rt_zephyr_j15/css/extended.css" rel="stylesheet" />
+  <link type="text/css" href="/neweb/templates/rt_zephyr_j15/css/demo-styles.css" rel="stylesheet" />
+  <link type="text/css" href="/neweb/templates/rt_zephyr_j15/css/template.css" rel="stylesheet" />
+  <link type="text/css" href="/neweb/templates/rt_zephyr_j15/css/template-gecko.css" rel="stylesheet" />
+  <link type="text/css" href="/neweb/templates/rt_zephyr_j15/css/overlays.css" rel="stylesheet" />
+  <link type="text/css" href="/neweb/templates/rt_zephyr_j15/css/typography.css" rel="stylesheet" />
+  <link type="text/css" href="/neweb/templates/rt_zephyr_j15/css/fusionmenu.css" rel="stylesheet" />
+  <link type="text/css" href="/neweb/templates/rt_zephyr_j15/css/static-styles.css" rel="stylesheet" />
+  <link type="text/css" href="/neweb/modules/mod_jflanguageselection/tmpl/mod_jflanguageselection.css" rel="stylesheet" />
+  <style type="text/css">
+   &lt;!--
+body #rt-logo {width:305px;height:80px;}
+    --&gt;
+  </style>
+  <script src="/neweb/media/system/js/mootools.js" type="text/javascript" style="">
+  </script>
+  <script src="http://yui.yahooapis.com/2.7.0/build/yahoo-dom-event/yahoo-dom-event.js" type="text/javascript">
+  </script>
+  <script src="http://yui.yahooapis.com/2.7.0/build/dragdrop/dragdrop-min.js" type="text/javascript">
+  </script>
+  <script src="http://yui.yahooapis.com/2.7.0/build/animation/animation-min.js" type="text/javascript">
+  </script>
+  <script src="http://yui.yahooapis.com/2.7.0/build/slider/slider-min.js" type="text/javascript">
+  </script>
+  <script src="/neweb/components/com_iproperty/assets/js/sortableTable.js" type="text/javascript">
+  </script>
+  <script src="http://www.google.com/jsapi?key=ABQIAAAAuxiJYnl4vl2lREqx0JTS0BTRY1s5e9yu2XCqEKRhRTWgiD7fIBT4gwKuPMqyY_pKBlpm3f0TN2dMeg" type="text/javascript">
+  </script>
+  <script src="/neweb/components/com_iproperty/assets/js/ipGmapScript.js" type="text/javascript">
+  </script>
+  <script src="/neweb/components/com_gantry/js/gantry-totop.js" type="text/javascript">
+  </script>
+  <script src="/neweb/components/com_gantry/js/gantry-buildspans.js" type="text/javascript">
+  </script>
+  <script src="/neweb/components/com_gantry/js/gantry-inputs.js" type="text/javascript">
+  </script>
+  <script src="/neweb/components/com_gantry/js/gantry-smartload.js" type="text/javascript">
+  </script>
+  <script src="/neweb/templates/rt_zephyr_j15/js/rt-rokstories-thumb-scroller.js" type="text/javascript">
+  </script>
+  <script src="/neweb/modules/mod_roknavmenu/themes/fusion/js/fusion.js" type="text/javascript">
+  </script>
+  <script type="text/javascript">
+   window.addEvent('domready', function(){ var JTooltips = new Tips($$('.hasTip'), { maxTitleChars: 50, fixed: false}); });
+var ajaxSearch, myclick;
+                    var langText = new Array();
+                    langText['tprop']='Results';
+                    langText['price']='Price';
+                    langText['nolimit']='No Limit';
+                    langText['pid']='Property ID';
+                    langText['street']='Street';
+                    langText['beds']='Beds';
+                    langText['baths']='Baths';
+                    langText['sqft']='M&lt;sup&gt;2&lt;/sup&gt;';
+                    langText['preview']='Preview';
+                    langText['more']='More';
+                    langText['inputText']='ID or Keyword';
+                    langText['noRecords']='Sorry, no records were found. Please try again.';
+                    langText['previous']='Previous';
+                    langText['next']='Next';
+                    langText['of']='of';
+                    google.load('maps', '2');
+                    window.addEvent((window.webkit) ? 'load' : 'domready', function() {
+                        if (google.maps.BrowserIsCompatible()) {
+                            new IpAjaxSearch({
+                                'ipbaseurl': 'http://kontacto.com.mx/neweb/',
+                                'showHoa': 0,
+                                'showReo': 0,
+                                'showWf': 0,
+                                'sliderLength': 300,
+                                'priceHigh': 16777215,
+                                'priceLow': 500,
+                                'sqftHigh': 10000,
+                                'sqftLow': 40,
+                                'bedsHigh': 10,
+                                'bedsLow': 0,
+                                'bathsHigh': 10,
+                                'bathsLow': 0,
+                                'itemId': 3,
+                                'latitude': '19.402811',
+                                'longitude': '-99.161396',
+                                'zoom': 4,
+                                'maptype': 'G_NORMAL_MAP',
+                                'showPreview': '1',
+                                'currencySymbol': '$',
+                                'currencyPos': '0',
+                                'currencyFormat': '1',
+                                'noLimit': 1
+                            });
+                        }
+                    });
+
+                    function ajaxPage(limitstart){
+                        document.slider_search.limitstart.value = limitstart;
+                        ajaxSearch();
+                    }
+
+                    function limitReset(){
+                        document.slider_search.limitstart.value = '';
+                    }
+			window.addEvent('domready', function() {
+				var modules = ['rt-block'];
+				var header = ['h3','h2','h1'];
+				GantryBuildSpans(modules, header);
+			});
+		
+InputsExclusion.push('.content_vote','#rt-popup','#rt-popuplogin','#vmMainPage','#community-wrap')
+window.addEvent('domready', function() {new GantrySmartLoad({'offset': {'x': 200, 'y': 200}, 'placeholder': '/neweb/templates/rt_zephyr_j15/images/blank.gif', 'exclusion': ['ul.menutop,div.roktabs-wrapper,span.image,div.fusion-submenu-wrapper,.module-content ul.menu .image,.roknewspager-div a,#rokintroscroller']}); });
+		        window.addEvent('load', function() {
+					new Fusion('ul.menutop', {
+						pill: 0,
+						effect: 'slide and fade',
+						opacity: 1,
+						hideDelay: 500,
+						centered: 0,
+						tweakInitial: {'x': 0, 'y': -10},
+        				tweakSubsequent: {'x': -10, 'y': -10},
+						menuFx: {duration: 400, transition: Fx.Transitions.Circ.easeOut},
+						pillFx: {duration: 400, transition: Fx.Transitions.Back.easeOut}
+					});
+	            });
+  </script>
+  <script type="text/javascript" src="http://maps.google.com/maps?file=googleapi&key=ABQIAAAAuxiJYnl4vl2lREqx0JTS0BTRY1s5e9yu2XCqEKRhRTWgiD7fIBT4gwKuPMqyY_pKBlpm3f0TN2dMeg&v=2">
+  </script>
+  <style type="text/css">
+   .iprow0{background: #e8e8e8;}
+  </style>
+  <style type="text/css">
+   #advmap_canvas{width:730px; height : 400px; border : 1px solid #202020;}
+                            #advmap_canvas_transparent{width:730px;}
+                            #loading_div{width:732px; height : 402px;}
+                            .pe_advsearch_container{ border: 1px solid #202020; background-color: #e8e8e8;}
+                            .sliderbg {width: 314px;}
+                            table#prop_table tr.altRow {background: #e8e8e8;}
+                            table#prop_table tr.over {background: #202020;}
+                            .bubble_image{width: 150px; height: 100px; overflow: hidden; margin-right: 10px; border: solid 1px #202020;}
+  </style>
+  <script type="text/javascript" charset="UTF-8" src="http://maps.google.com/maps-api-v3/api/js/22/9a/common.js">
+  </script>
+  <script type="text/javascript" charset="UTF-8" src="http://maps.google.com/maps-api-v3/api/js/22/9a/map.js">
+  </script>
+  <script type="text/javascript" charset="UTF-8" src="http://maps.google.com/maps-api-v3/api/js/22/9a/overlay.js">
+  </script>
+  <script type="text/javascript" charset="UTF-8" src="http://maps.google.com/maps-api-v3/api/js/22/9a/util.js">
+  </script>
+  <script type="text/javascript" charset="UTF-8" src="http://maps.google.com/maps-api-v3/api/js/22/9a/infowindow.js">
+  </script>
+  <script type="text/javascript" charset="UTF-8" src="http://maps.google.com/maps-api-v3/api/js/22/9a/onion.js">
+  </script>
+  <script type="text/javascript" charset="UTF-8" src="http://maps.google.com/maps-api-v3/api/js/22/9a/controls.js">
+  </script>
+  <script type="text/javascript" charset="UTF-8" src="http://maps.google.com/maps-api-v3/api/js/22/9a/stats.js">
+  </script>
+  <script type="text/javascript" charset="UTF-8" src="http://maps.googleapis.com/maps/api/js/ViewportInfoService.GetViewportInfo?1m6&1m2&1d19.299921731000808&2d-99.35573801184006&2m2&1d19.500692728873634&2d-98.96714898369908&2u13&4sen&5e0&6sm%40325000000&7b0&8e0&9b0&callback=_xdc_._d87m35&token=52196">
+  </script>
+  <script type="text/javascript" charset="UTF-8" src="http://maps.google.com/maps-api-v3/api/js/22/9a/marker.js">
+  </script>
+  <script type="text/javascript" charset="UTF-8" src="http://mt1.googleapis.com/vt?pb=%211m4%211m3%211i13%212i1838%213i3645%211m4%211m3%211i13%212i1839%213i3645%211m4%211m3%211i13%212i1838%213i3646%211m4%211m3%211i13%212i1839%213i3646%211m4%211m3%211i13%212i1840%213i3645%211m4%211m3%211i13%212i1840%213i3646%212m3%211e0%212sm%213i325123419%213m9%212sen%213sUS%215e18%2112m1%211e47%2112m3%211e37%212m1%211ssmartmaps%214e3&callback=_xdc_._z7slb1&token=56412">
+  </script>
+  <script type="text/javascript" charset="UTF-8" src="http://maps.googleapis.com/maps/api/js/AuthenticationService.Authenticate?1shttp%3A%2F%2Fkontacto.com.mx%2Fneweb%2Findex.php%3Foption%3Dcom_iproperty%26view%3Dadvsearch%26Itemid%3D3%26lang%3Den&callback=_xdc_._hs8kr5&token=82282">
+  </script>
+  <script type="text/javascript" charset="UTF-8" src="http://maps.googleapis.com/maps/api/js/ViewportInfoService.GetViewportInfo?1m6&1m2&1dNaN&2dNaN&2m2&1dNaN&2dNaN&2u0&4sen&5e0&6sm%40325000000&7b0&8e0&9b0&callback=_xdc_._fac4c6&token=84504">
+  </script>
+  <script type="text/javascript" charset="UTF-8" src="http://maps.googleapis.com/maps/api/js/QuotaService.RecordEvent?1shttp%3A%2F%2Fkontacto.com.mx%2Fneweb%2Findex.php%3Foption%3Dcom_iproperty%26view%3Dadvsearch%26Itemid%3D3%26lang%3Den&5e0&6u1&7suprk8m&callback=_xdc_._wxzg8j&token=99636">
+  </script>
+ </head>
+ <body class="bodylevel-high background-trans-paper page-overlay-light readonstyle-button fixedfooter-0 font-family-helvetica font-size-is-default menu-type-fusionmenu col12 ">
+  <div class="page-overlay-light" id="rt-page-background">
+   <div class="rt-container">
+    <div id="rt-drawer">
+     <div class="clear">
+     </div>
+    </div>
+    <div class="header-overlay-light" id="rt-header">
+     <div class="rt-grid-3 rt-alpha">
+      <div class="rt-block">
+       <a id="rt-logo" href="/neweb/">
+       </a>
+      </div>
+     </div>
+     <div class="rt-grid-3 rt-prefix-4">
+      <div class="rt-block">
+       <div class="date-block">
+        <span class="date">
+         <span class="date-icon">
+         </span>
+         October 17, 2015
+        </span>
+       </div>
+      </div>
+     </div>
+     <div class="rt-grid-2 rt-omega">
+      <div class="rt-block">
+       <div class="rt-module-surround">
+        <div class="rt-module-inner">
+         <div class="module-content">
+          <div id="jflanguageselection">
+           <ul class="jflanguageselection">
+            <li>
+             <a href="http://kontacto.com.mx/neweb/index.php?option=com_iproperty&view=advsearch&Itemid=3&lang=es">
+              <img width="20" height="14" title="Español (spanish formal Internacional)" alt="Español (spanish formal Internacional)" src="/neweb/components/com_joomfish/images/flags/es.gif" smartload="0" />
+             </a>
+            </li>
+            <li id="active_language">
+             <a href="http://kontacto.com.mx/neweb/index.php?option=com_iproperty&view=advsearch&Itemid=3&lang=en">
+              <img title="English (United Kingdom)" alt="English (United Kingdom)" src="/neweb/components/com_joomfish/images/flags/en.gif" />
+             </a>
+            </li>
+           </ul>
+          </div>
+          <!--Joom!fish V2.0.4 (Lightning)-->
+          <!-- &copy; 2003-2009 Think Network, released under the GPL. -->
+          <!-- More information: at http://www.joomfish.net -->
+          <div class="clear">
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="clear">
+     </div>
+    </div>
+    <div id="rt-body-surround">
+     <div class="rt-box-top">
+      <div class="rt-box-top2">
+      </div>
+      <div class="rt-box-top3">
+      </div>
+     </div>
+     <div class="rt-box-bg">
+      <div class="rt-box-bg2">
+       <div class="rt-box-bg3">
+        <div class="navigation-overlay-dark" id="rt-navigation">
+         <div class="nopill">
+          <ul class="menutop level1 ">
+           <li class="item1 root">
+            <a href="http://kontacto.com.mx/neweb/" class="orphan item bullet" id="a-1445063946009812">
+             <span>
+              Inicio
+             </span>
+            </a>
+           </li>
+           <li class="item2 parent active root f-main-parent">
+            <span class="daddy item bullet nolink" id="span-1445063946010309">
+             <span>
+              Búsqueda de Propiedades
+             </span>
+            </span>
+           </li>
+           <li class="item7 root">
+            <a href="/neweb/index.php?option=com_content&view=article&id=1&Itemid=7&lang=en" class="orphan item bullet" id="a-1445063946011411">
+             <span>
+              Quíenes Somos
+             </span>
+            </a>
+           </li>
+           <li class="item8 root">
+            <a href="/neweb/index.php?option=com_iproperty&view=contact&ctype=company&id=1&Itemid=8&lang=en" class="orphan item bullet" id="a-1445063946012212">
+             <span>
+              Kontáctanos
+             </span>
+            </a>
+           </li>
+           <li class="item10 root">
+            <a href="/neweb/index.php?option=com_content&view=article&id=2&Itemid=10&lang=en" class="orphan item bullet" id="a-1445063946012525">
+             <span>
+              Aviso de Privacidad
+             </span>
+            </a>
+           </li>
+           <li class="item9 root">
+            <a href="http://www.kontacto.com.mx/neweb/index.php?option=com_iproperty&view=ipuser&lang=es&Name=Value" class="orphan item image" id="a-1445063946012248">
+             <span>
+              <img alt="icon-key1.png" src="/neweb/templates/rt_zephyr_j15/images/icons/icon-key1.png" />
+              Login (clientes registrados)
+             </span>
+            </a>
+           </li>
+          </ul>
+         </div>
+         <div class="clear">
+         </div>
+        </div>
+        <div class="rt-shadowbar">
+        </div>
+        <div class="body-overlay-light" id="rt-main-overlay">
+         <div class="mb12" id="rt-main">
+          <div class="rt-main-inner">
+           <div class="rt-grid-12 ">
+            <div class="rt-block">
+             <div class="default details-layout1 box-">
+              <div id="rt-mainbody">
+               <!-- Iproperty v1.5.4 by The Thinkery. http://thethinkery.net -->
+               <div style="background: #202020;" id="ip_toolbar">
+                <a href="javascript:history.back();">
+                 Back
+                </a>
+                <a class="hasTip" href="/neweb/index.php?option=com_iproperty&view=ipuser&Itemid=3&lang=en">
+                 My Favorites
+                </a>
+               </div>
+               <div class="ipclear">
+               </div>
+               <form action="" class="pe_advsearch_form" name="slider_search" id="ajaxform">
+                <div class="iprelative">
+                 <div id="advmap_canvas" style="position: relative; background-color: rgb(229, 227, 223); overflow: hidden;">
+                  <div>
+                  </div>
+                  <div>
+                  </div>
+                  <div style="position: absolute; left: 0px; top: 0px; overflow: hidden; width: 100%; height: 100%; z-index: 0;" class="gm-style">
+                   <div style='position: absolute; left: 0px; top: 0px; overflow: hidden; width: 100%; height: 100%; z-index: 0; cursor: url("http://maps.gstatic.com/mapfiles/openhand_8_8.cur"), default;'>
+                    <div style="position: absolute; left: 0px; top: 0px; z-index: 1; width: 100%;">
+                     <div style="position: absolute; left: 0px; top: 0px; z-index: 100; width: 100%;">
+                      <div style="position: absolute; top: 0px; left: 0px;">
+                      </div>
+                      <div style="position: absolute; left: 0px; top: 0px; z-index: 0;">
+                       <div style="position: absolute; left: 0px; top: 0px; z-index: 1; visibility: inherit;" aria-hidden="true">
+                       </div>
+                      </div>
+                     </div>
+                     <div style="position: absolute; left: 0px; top: 0px; z-index: 101; width: 100%;">
+                      <div style="position: absolute; top: 0px; left: 0px;">
+                      </div>
+                     </div>
+                     <div style="position: absolute; left: 0px; top: 0px; z-index: 102; width: 100%;">
+                      <div style="position: absolute; top: 0px; left: 0px;">
+                      </div>
+                     </div>
+                     <div style="position: absolute; left: 0px; top: 0px; z-index: 103; width: 100%;">
+                      <div style="position: absolute; left: 0px; top: 0px; z-index: -1;">
+                       <div style="position: absolute; left: 0px; top: 0px; z-index: 1; visibility: inherit;" aria-hidden="true">
+                       </div>
+                      </div>
+                     </div>
+                     <div style="position: absolute; z-index: 0; left: 0px; top: 0px;">
+                      <div style="overflow: hidden; width: 732px; height: 402px;">
+                      </div>
+                     </div>
+                     <div style="position: absolute; left: 0px; top: 0px; z-index: 0;">
+                      <div style="position: absolute; left: 0px; top: 0px; z-index: 1; visibility: inherit;" aria-hidden="true">
+                      </div>
+                     </div>
+                    </div>
+                    <div style="position: absolute; left: 0px; top: 0px; z-index: 2; width: 100%; height: 100%;">
+                    </div>
+                    <div style="position: absolute; left: 0px; top: 0px; z-index: 3; width: 100%;">
+                     <div style="position: absolute; left: 0px; top: 0px; z-index: 104; width: 100%;">
+                      <div style="position: absolute; top: 0px; left: 0px;">
+                      </div>
+                     </div>
+                     <div style="position: absolute; left: 0px; top: 0px; z-index: 105; width: 100%;">
+                      <div style="position: absolute; top: 0px; left: 0px;">
+                      </div>
+                     </div>
+                     <div style="position: absolute; left: 0px; top: 0px; z-index: 106; width: 100%;">
+                      <div style="position: absolute; top: 0px; left: 0px;">
+                      </div>
+                     </div>
+                     <div style="position: absolute; left: 0px; top: 0px; z-index: 107; width: 100%;">
+                      <div style="position: absolute; top: 0px; left: 0px;">
+                      </div>
+                     </div>
+                    </div>
+                   </div>
+                   <div style="margin-left: 5px; margin-right: 5px; z-index: 1000000; position: absolute; left: 0px; bottom: 0px;">
+                    <a style="position: static; overflow: visible; float: none; display: inline;" target="_blank" href="https://maps.google.com/maps?ll=NaN,NaN&z=0&t=m&hl=en&gl=US&mapclient=apiv3" title="Click to see this area on Google Maps">
+                     <div style="width: 66px; height: 26px; cursor: pointer;">
+                      <img style="position: absolute; left: 0px; top: 0px; width: 66px; height: 26px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px;" src="http://maps.gstatic.com/mapfiles/api-3/images/google4.png" draggable="false" />
+                     </div>
+                    </a>
+                   </div>
+                   <div style="background-color: white; padding: 15px 21px; border: 1px solid rgb(171, 171, 171); font-family: Roboto,Arial,sans-serif; color: rgb(34, 34, 34); box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.2); z-index: 10000002; display: none; width: 256px; height: 148px; position: absolute; left: 215px; top: 110px;">
+                    <div style="padding: 0px 0px 10px; font-size: 16px;">
+                     Map Data
+                    </div>
+                    <div style="font-size: 13px;">
+                    </div>
+                    <div style="width: 13px; height: 13px; overflow: hidden; position: absolute; opacity: 0.7; right: 12px; top: 12px; z-index: 10000; cursor: pointer;">
+                     <img style="position: absolute; left: -2px; top: -336px; width: 59px; height: 492px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px;" src="http://maps.gstatic.com/mapfiles/api-3/images/mapcnt6.png" draggable="false" />
+                    </div>
+                   </div>
+                   <div class="gmnoprint" style="z-index: 1000001; position: absolute; right: 69px; bottom: 0px; width: 12px;">
+                    <div draggable="false" style="-moz-user-select: none;" class="gm-style-cc">
+                     <div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;">
+                      <div style="width: 1px;">
+                      </div>
+                      <div style="background-color: rgb(245, 245, 245); width: auto; height: 100%; margin-left: 1px;">
+                      </div>
+                     </div>
+                     <div style="position: relative; padding-right: 6px; padding-left: 6px; font-family: Roboto,Arial,sans-serif; font-size: 10px; color: rgb(68, 68, 68); white-space: nowrap; direction: ltr; text-align: right;">
+                      <a style="color: rgb(68, 68, 68); text-decoration: none; cursor: pointer; display: none;">
+                       Map Data
+                      </a>
+                      <span style="display: none;">
+                      </span>
+                     </div>
+                    </div>
+                   </div>
+                   <div class="gmnoscreen" style="position: absolute; right: 0px; bottom: 0px;">
+                    <div style="font-family: Roboto,Arial,sans-serif; font-size: 11px; color: rgb(68, 68, 68); direction: ltr; text-align: right; background-color: rgb(245, 245, 245);">
+                    </div>
+                   </div>
+                   <div class="gmnoprint gm-style-cc" style="z-index: 1000001; -moz-user-select: none; position: absolute; right: 0px; bottom: 0px;" draggable="false">
+                    <div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;">
+                     <div style="width: 1px;">
+                     </div>
+                     <div style="background-color: rgb(245, 245, 245); width: auto; height: 100%; margin-left: 1px;">
+                     </div>
+                    </div>
+                    <div style="position: relative; padding-right: 6px; padding-left: 6px; font-family: Roboto,Arial,sans-serif; font-size: 10px; color: rgb(68, 68, 68); white-space: nowrap; direction: ltr; text-align: right;">
+                     <a style="text-decoration: none; cursor: pointer; color: rgb(68, 68, 68);" href="https://www.google.com/intl/en_US/help/terms_maps.html" target="_blank">
+                      Terms of Use
+                     </a>
+                    </div>
+                   </div>
+                   <div draggable="false" style="-moz-user-select: none; position: absolute; right: 0px; bottom: 0px; display: none;" class="gm-style-cc">
+                    <div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;">
+                     <div style="width: 1px;">
+                     </div>
+                     <div style="background-color: rgb(245, 245, 245); width: auto; height: 100%; margin-left: 1px;">
+                     </div>
+                    </div>
+                    <div style="position: relative; padding-right: 6px; padding-left: 6px; font-family: Roboto,Arial,sans-serif; font-size: 10px; color: rgb(68, 68, 68); white-space: nowrap; direction: ltr; text-align: right;">
+                     <a target="_new" title="Report errors in the road map or imagery to Google" style="font-family: Roboto,Arial,sans-serif; font-size: 10px; color: rgb(68, 68, 68); text-decoration: none; position: relative;" href="https://www.google.com/maps/@NaN,NaN,0z/data=%2110m1%211e1%2112b1?source=apiv3&rapsrc=apiv3">
+                      Report a map error
+                     </a>
+                    </div>
+                   </div>
+                   <div class="gmnoprint" style="margin: 5px; -moz-user-select: none; position: absolute; left: 0px; top: 0px;" draggable="false" controlwidth="78" controlheight="356">
+                    <div class="gmnoprint" controlwidth="78" controlheight="80" style='cursor: url("http://maps.gstatic.com/mapfiles/openhand_8_8.cur"), default; width: 78px; height: 78px; position: absolute; left: 0px; top: 0px;'>
+                     <div class="gmnoprint" controlwidth="78" controlheight="80" style="width: 78px; height: 78px; position: absolute; left: 0px; top: 0px;">
+                      <div style="visibility: hidden;">
+                       <svg xmlns="http://www.w3.org/2000/svg" style="position: absolute; left: 0px; top: 0px;" version="1.1" overflow="hidden" width="78px" height="78px" viewbox="0 0 78 78">
+                        <circle cx="39" cy="39" r="35" stroke-width="3" fill-opacity="0.2" fill="#f2f4f6" stroke="#f2f4f6">
+                         <g transform="rotate(0 39 39)">
+                          <rect x="33" y="0" rx="4" ry="4" width="12" height="11" stroke="#a6a6a6" stroke-width="1" fill="#f2f4f6">
+                           <polyline points="36.5,8.5 36.5,2.5 41.5,8.5 41.5,2.5" stroke-linejoin="bevel" stroke-width="1.5" fill="#f2f4f6" stroke="#000">
+                           </polyline>
+                          </rect>
+                         </g>
+                        </circle>
+                       </svg>
+                      </div>
+                     </div>
+                     <div class="gmnoprint" controlwidth="59" controlheight="59" style="position: absolute; left: 10px; top: 11px;">
+                      <div style="width: 59px; height: 59px; overflow: hidden; position: relative;">
+                       <img style="position: absolute; left: 0px; top: 0px; width: 59px; height: 492px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px;" src="http://maps.gstatic.com/mapfiles/api-3/images/mapcnt6.png" draggable="false" />
+                       <div style="position: absolute; left: 0px; top: 20px; width: 19.6667px; height: 19.6667px; cursor: pointer;" title="Pan left">
+                       </div>
+                       <div style="position: absolute; left: 39px; top: 20px; width: 19.6667px; height: 19.6667px; cursor: pointer;" title="Pan right">
+                       </div>
+                       <div style="position: absolute; left: 20px; top: 0px; width: 19.6667px; height: 19.6667px; cursor: pointer;" title="Pan up">
+                       </div>
+                       <div style="position: absolute; left: 20px; top: 39px; width: 19.6667px; height: 19.6667px; cursor: pointer;" title="Pan down">
+                       </div>
+                      </div>
+                     </div>
+                    </div>
+                    <div controlwidth="32" controlheight="40" style='cursor: url("http://maps.gstatic.com/mapfiles/openhand_8_8.cur"), default; position: absolute; left: 23px; top: 85px;'>
+                     <div style="width: 32px; height: 40px; overflow: hidden; position: absolute; left: 0px; top: 0px;" aria-label="Street View Pegman Control">
+                      <img style="position: absolute; left: -9px; top: -102px; width: 1028px; height: 214px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px;" src="http://maps.gstatic.com/mapfiles/api-3/images/cb_scout2.png" draggable="false" />
+                     </div>
+                     <div style="width: 32px; height: 40px; overflow: hidden; position: absolute; left: 0px; top: 0px; visibility: hidden;" aria-label="Pegman is disabled">
+                      <img style="position: absolute; left: -107px; top: -102px; width: 1028px; height: 214px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px;" src="http://maps.gstatic.com/mapfiles/api-3/images/cb_scout2.png" draggable="false" />
+                     </div>
+                     <div style="width: 32px; height: 40px; overflow: hidden; position: absolute; left: 0px; top: 0px; visibility: hidden;" aria-label="Pegman is on top of the Map">
+                      <img style="position: absolute; left: -58px; top: -102px; width: 1028px; height: 214px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px;" src="http://maps.gstatic.com/mapfiles/api-3/images/cb_scout2.png" draggable="false" />
+                     </div>
+                     <div style="width: 32px; height: 40px; overflow: hidden; position: absolute; left: 0px; top: 0px; visibility: hidden;" aria-label="Street View Pegman Control">
+                      <img style="position: absolute; left: -205px; top: -102px; width: 1028px; height: 214px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px;" src="http://maps.gstatic.com/mapfiles/api-3/images/cb_scout2.png" draggable="false" />
+                     </div>
+                    </div>
+                    <div class="gmnoprint" style="opacity: 0.6; display: none; position: absolute;" controlwidth="0" controlheight="0">
+                     <div style="width: 22px; height: 22px; overflow: hidden; position: absolute; cursor: pointer;" title="Rotate map 90 degrees">
+                      <img style="position: absolute; left: -38px; top: -360px; width: 59px; height: 492px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px;" src="http://maps.gstatic.com/mapfiles/api-3/images/mapcnt6.png" draggable="false" />
+                     </div>
+                    </div>
+                    <div class="gmnoprint" style="position: absolute; left: 27px; top: 130px;" controlwidth="25" controlheight="226">
+                     <div style="width: 23px; height: 24px; overflow: hidden; position: relative; cursor: pointer; z-index: 1;" title="Zoom in">
+                      <img style="position: absolute; left: -17px; top: -400px; width: 59px; height: 492px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px;" src="http://maps.gstatic.com/mapfiles/api-3/images/mapcnt6.png" draggable="false" />
+                     </div>
+                     <div style="width: 25px; height: 178px; overflow: hidden; position: relative; cursor: pointer; top: -4px;" title="Click to zoom">
+                      <img style="position: absolute; left: -17px; top: -87px; width: 59px; height: 492px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px;" src="http://maps.gstatic.com/mapfiles/api-3/images/mapcnt6.png" draggable="false" />
+                     </div>
+                     <div style='width: 21px; height: 14px; overflow: hidden; position: absolute; transition: top 0.25s ease 0s; z-index: 2; cursor: url("http://maps.gstatic.com/mapfiles/openhand_8_8.cur"), default; left: 2px; top: 188px;' title="Drag to zoom">
+                      <img style="position: absolute; left: 0px; top: -384px; width: 59px; height: 492px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px;" src="http://maps.gstatic.com/mapfiles/api-3/images/mapcnt6.png" draggable="false" />
+                     </div>
+                     <div style="width: 23px; height: 23px; overflow: hidden; position: relative; cursor: pointer; top: -4px; z-index: 3;" title="Zoom out">
+                      <img style="position: absolute; left: -17px; top: -361px; width: 59px; height: 492px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px;" src="http://maps.gstatic.com/mapfiles/api-3/images/mapcnt6.png" draggable="false" />
+                     </div>
+                    </div>
+                   </div>
+                   <div class="gmnoprint" style="margin: 5px; z-index: 0; position: absolute; cursor: pointer; right: 0px; top: 0px;">
+                    <div style="float: left;" class="gm-style-mtc">
+                     <div style="direction: ltr; overflow: hidden; text-align: center; position: relative; color: rgb(0, 0, 0); font-family: Roboto,Arial,sans-serif; -moz-user-select: none; font-size: 11px; background-color: rgb(255, 255, 255); padding: 1px 6px; border-bottom-left-radius: 2px; border-top-left-radius: 2px; background-clip: padding-box; border: 1px solid rgba(0, 0, 0, 0.15); box-shadow: 0px 1px 4px -1px rgba(0, 0, 0, 0.3); min-width: 25px; font-weight: 500;" draggable="false" title="Show street map">
+                      Map
+                     </div>
+                    </div>
+                    <div style="float: left;" class="gm-style-mtc">
+                     <div style="direction: ltr; overflow: hidden; text-align: center; position: relative; color: rgb(86, 86, 86); font-family: Roboto,Arial,sans-serif; -moz-user-select: none; font-size: 11px; background-color: rgb(255, 255, 255); padding: 1px 6px; border-bottom-right-radius: 2px; border-top-right-radius: 2px; background-clip: padding-box; border-width: 1px 1px 1px 0px; border-style: solid solid solid none; border-color: rgba(0, 0, 0, 0.15) rgba(0, 0, 0, 0.15) rgba(0, 0, 0, 0.15) -moz-use-text-color; -moz-border-top-colors: none; -moz-border-right-colors: none; -moz-border-bottom-colors: none; -moz-border-left-colors: none; border-image: none; box-shadow: 0px 1px 4px -1px rgba(0, 0, 0, 0.3); min-width: 46px;" draggable="false" title="Show satellite imagery">
+                      Satellite
+                     </div>
+                     <div style="background-color: white; z-index: -1; padding-top: 2px; background-clip: padding-box; border-width: 0px 1px 1px; border-style: none solid solid; border-color: -moz-use-text-color rgba(0, 0, 0, 0.15) rgba(0, 0, 0, 0.15); -moz-border-top-colors: none; -moz-border-right-colors: none; -moz-border-bottom-colors: none; -moz-border-left-colors: none; border-image: none; box-shadow: 0px 1px 4px -1px rgba(0, 0, 0, 0.3); position: absolute; right: 0px; top: 24px; text-align: left; display: none;">
+                      <div style="color: rgb(184, 184, 184); font-family: Roboto,Arial,sans-serif; -moz-user-select: none; font-size: 11px; background-color: rgb(255, 255, 255); padding: 3px 8px 3px 3px; direction: ltr; text-align: left; white-space: nowrap; display: none;" draggable="false" title="Zoom in to show 45 degree view">
+                       <span role="checkbox" style="box-sizing: border-box; position: relative; line-height: 0; font-size: 0px; margin: 0px 5px 0px 0px; display: inline-block; background-color: rgb(255, 255, 255); border: 1px solid rgb(241, 241, 241); border-radius: 1px; width: 13px; height: 13px; vertical-align: middle;">
+                        <div style="position: absolute; left: 1px; top: -2px; width: 13px; height: 11px; overflow: hidden; display: none;">
+                         <img style="position: absolute; left: -52px; top: -44px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; width: 68px; height: 67px;" src="http://maps.gstatic.com/mapfiles/mv/imgs8.png" draggable="false" />
+                        </div>
+                       </span>
+                       <label style="vertical-align: middle; cursor: pointer;">
+                        45°
+                       </label>
+                      </div>
+                      <div style="color: rgb(0, 0, 0); font-family: Roboto,Arial,sans-serif; -moz-user-select: none; font-size: 11px; background-color: rgb(255, 255, 255); padding: 3px 8px 3px 3px; direction: ltr; text-align: left; white-space: nowrap;" draggable="false" title="Show imagery with street names">
+                       <span role="checkbox" style="box-sizing: border-box; position: relative; line-height: 0; font-size: 0px; margin: 0px 5px 0px 0px; display: inline-block; background-color: rgb(255, 255, 255); border: 1px solid rgb(198, 198, 198); border-radius: 1px; width: 13px; height: 13px; vertical-align: middle;">
+                        <div style="position: absolute; left: 1px; top: -2px; width: 13px; height: 11px; overflow: hidden;">
+                         <img style="position: absolute; left: -52px; top: -44px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; width: 68px; height: 67px;" src="http://maps.gstatic.com/mapfiles/mv/imgs8.png" draggable="false" />
+                        </div>
+                       </span>
+                       <label style="vertical-align: middle; cursor: pointer;">
+                        Labels
+                       </label>
+                      </div>
+                     </div>
+                    </div>
+                   </div>
+                  </div>
+                 </div>
+                 <div id="loading_div" style="display: none;">
+                 </div>
+                 <div id="advmap_counter">
+                  37
+                 </div>
+                 <div id="advmap_nofound" style="display: none;">
+                  <h3 style="visibility: visible;">
+                   <span>
+                    No
+                   </span>
+                   Records Found
+                  </h3>
+                  <p>
+                   Sorry, no records were found. Please adjust your search criteria and try again.
+                  </p>
+                 </div>
+                 <div id="advmap_canvas_transparent">
+                  <div class="advmap_filter">
+                   <input type="text" onclick="this.value=''" value="ID or Keyword" name="search_string" id="search_string" class="inputbox" onblur="limitReset();ajaxSearch()" />
+                   <select onchange="ajaxSearch()" class="inputbox" id="city" name="city">
+                    <option selected="selected" value="">
+                     City
+                    </option>
+                    <option value=" Lomas de Chapultepec 	">
+                     Lomas de Chapultepec
+                    </option>
+                    <option value="Alvaro Obregon">
+                     Alvaro Obregon
+                    </option>
+                    <option value="Arenal Tepepan">
+                     Arenal Tepepan
+                    </option>
+                    <option value="Barrio de San Lucas">
+                     Barrio de San Lucas
+                    </option>
+                    <option value="Bosque de las Lomas">
+                     Bosque de las Lomas
+                    </option>
+                    <option value="Bosque de las Lomeas">
+                     Bosque de las Lomeas
+                    </option>
+                    <option value="D.F. ">
+                     D.F.
+                    </option>
+                    <option value="DF">
+                     DF
+                    </option>
+                    <option value="Distrito Federal ">
+                     Distrito Federal
+                    </option>
+                    <option value="Estado de Mexico ">
+                     Estado de Mexico
+                    </option>
+                    <option value="Fuentes del Pedregal">
+                     Fuentes del Pedregal
+                    </option>
+                    <option value="Jardines Del Pedregal">
+                     Jardines Del Pedregal
+                    </option>
+                    <option value="La Martinica">
+                     La Martinica
+                    </option>
+                    <option value="Leona Vicario">
+                     Leona Vicario
+                    </option>
+                    <option value="Lomas de Cuernvaca">
+                     Lomas de Cuernvaca
+                    </option>
+                    <option value="Lomas de Tecamachalco">
+                     Lomas de Tecamachalco
+                    </option>
+                    <option value="Napoles">
+                     Napoles
+                    </option>
+                    <option value="Noh Bec">
+                     Noh Bec
+                    </option>
+                    <option value="Real de las Lomas">
+                     Real de las Lomas
+                    </option>
+                    <option value="Real de Tezoyuca">
+                     Real de Tezoyuca
+                    </option>
+                    <option value="San Jeronimo Lidice">
+                     San Jeronimo Lidice
+                    </option>
+                    <option value="San Pedro Martir">
+                     San Pedro Martir
+                    </option>
+                    <option value="Santiago Cuautlalpan">
+                     Santiago Cuautlalpan
+                    </option>
+                    <option value="Sta Catarina Ayotzingo">
+                     Sta Catarina Ayotzingo
+                    </option>
+                    <option value="Temixco">
+                     Temixco
+                    </option>
+                    <option value="Tepepan">
+                     Tepepan
+                    </option>
+                    <option value="Tránsito">
+                     Tránsito
+                    </option>
+                   </select>
+                   <select onchange="ajaxSearch()" class="inputbox" id="stype" name="stype">
+                    <option value="">
+                     Sale Type
+                    </option>
+                    <option value="1">
+                     For Sale
+                    </option>
+                    <option value="2">
+                     For Lease
+                    </option>
+                    <option value="3">
+                     For Sale or Lease
+                    </option>
+                    <option value="4">
+                     For Rent
+                    </option>
+                    <option value="6">
+                     Pending
+                    </option>
+                    <option value="5">
+                     Sold
+                    </option>
+                   </select>
+                   <input type="button" value="GO" onclick="limitReset();ajaxSearch()" />
+                  </div>
+                 </div>
+                </div>
+                <div class="pe_advsearch_container">
+                 <table width="100%" cellspacing="5" cellpadding="0">
+                  <tbody>
+                   <tr>
+                    <td width="50%" valign="top">
+                     <div>
+                      <div class="advmap_slideholder">
+                       <table width="100%">
+                        <tbody>
+                         <tr>
+                          <td width="33%">
+                           <span class="eighty" id="slider_minmax_min0">
+                            No Limit
+                           </span>
+                          </td>
+                          <td width="33%" align="center">
+                           <strong>
+                            Price
+                           </strong>
+                          </td>
+                          <td width="33%" align="right">
+                           <span class="eighty" id="slider_minmax_max0">
+                            No Limit
+                           </span>
+                          </td>
+                         </tr>
+                         <tr>
+                          <td colspan="3">
+                           <div id="minmax_slider0" class="sliderbg">
+                            <div class="knob" id="slider_minmax_minKnobA0" style="left: 0px; top: -5px;">
+                             <img width="14" height="19" alt="" src="/neweb/templates/rt_zephyr_j15/images/blank.gif" smartload="1" class="spinner" />
+                            </div>
+                            <div class="knob" id="slider_minmax_maxKnobA0" style="left: 300px; top: -5px;">
+                             <img width="14" height="19" alt="" src="/neweb/templates/rt_zephyr_j15/images/blank.gif" smartload="2" class="spinner" />
+                            </div>
+                           </div>
+                          </td>
+                         </tr>
+                         <tr>
+                         </tr>
+                        </tbody>
+                       </table>
+                      </div>
+                     </div>
+                     <div>
+                      <div class="advmap_slideholder">
+                       <table width="100%">
+                        <tbody>
+                         <tr>
+                          <td width="33%">
+                           <span class="eighty" id="slider_minmax_min1">
+                            40
+                           </span>
+                          </td>
+                          <td width="33%" align="center">
+                           <strong>
+                            M
+                            <sup>
+                             2
+                            </sup>
+                           </strong>
+                          </td>
+                          <td width="33%" align="right">
+                           <span class="eighty" id="slider_minmax_max1">
+                            10,000
+                           </span>
+                          </td>
+                         </tr>
+                         <tr>
+                          <td colspan="3">
+                           <div id="minmax_slider1" class="sliderbg">
+                            <div class="knob" id="slider_minmax_minKnobA1" style="left: 0px; top: -5px;">
+                             <img width="14" height="19" alt="" src="/neweb/templates/rt_zephyr_j15/images/blank.gif" smartload="3" class="spinner" />
+                            </div>
+                            <div class="knob" id="slider_minmax_maxKnobA1" style="left: 300px; top: -5px;">
+                             <img width="14" height="19" alt="" src="/neweb/templates/rt_zephyr_j15/images/blank.gif" smartload="4" class="spinner" />
+                            </div>
+                           </div>
+                          </td>
+                         </tr>
+                        </tbody>
+                       </table>
+                      </div>
+                     </div>
+                    </td>
+                    <td width="50%" valign="top">
+                     <div>
+                      <div class="advmap_slideholder">
+                       <table width="100%">
+                        <tbody>
+                         <tr>
+                          <td width="33%">
+                           <span class="eighty" id="slider_minmax_min2">
+                            0
+                           </span>
+                          </td>
+                          <td width="33%" align="center">
+                           <strong>
+                            Beds
+                           </strong>
+                          </td>
+                          <td width="33%" align="right">
+                           <span class="eighty" id="slider_minmax_max2">
+                            10
+                           </span>
+                          </td>
+                         </tr>
+                         <tr>
+                          <td colspan="3">
+                           <div id="minmax_slider2" class="sliderbg">
+                            <div class="knob" id="slider_minmax_minKnobA2" style="left: 0px; top: -5px;">
+                             <img width="14" height="19" alt="" src="/neweb/templates/rt_zephyr_j15/images/blank.gif" smartload="5" class="spinner" />
+                            </div>
+                            <div class="knob" id="slider_minmax_maxKnobA2" style="left: 300px; top: -5px;">
+                             <img width="14" height="19" alt="" src="/neweb/templates/rt_zephyr_j15/images/blank.gif" smartload="6" class="spinner" />
+                            </div>
+                           </div>
+                          </td>
+                         </tr>
+                        </tbody>
+                       </table>
+                      </div>
+                     </div>
+                     <div>
+                      <div class="advmap_slideholder">
+                       <table width="100%">
+                        <tbody>
+                         <tr>
+                          <td width="33%">
+                           <span class="eighty" id="slider_minmax_min3">
+                            0
+                           </span>
+                          </td>
+                          <td width="33%" align="center">
+                           <strong>
+                            Bathrooms
+                           </strong>
+                          </td>
+                          <td width="33%" align="right">
+                           <span class="eighty" id="slider_minmax_max3">
+                            10
+                           </span>
+                          </td>
+                         </tr>
+                         <tr>
+                          <td colspan="3">
+                           <div id="minmax_slider3" class="sliderbg">
+                            <div class="knob" id="slider_minmax_minKnobA3" style="left: 0px; top: -5px;">
+                             <img width="14" height="19" alt="" src="/neweb/templates/rt_zephyr_j15/images/blank.gif" smartload="7" class="spinner" />
+                            </div>
+                            <div class="knob" id="slider_minmax_maxKnobA3" style="left: 300px; top: -5px;">
+                             <img width="14" height="19" alt="" src="/neweb/templates/rt_zephyr_j15/images/blank.gif" smartload="8" class="spinner" />
+                            </div>
+                           </div>
+                          </td>
+                         </tr>
+                        </tbody>
+                       </table>
+                      </div>
+                     </div>
+                    </td>
+                   </tr>
+                  </tbody>
+                 </table>
+                 <div class="advmap_ptypeholder">
+                  <table id="checkBoxContainer" class="ptable">
+                   <tbody>
+                    <tr>
+                     <td width="25%" valign="top">
+                      <input type="checkbox" onclick="ajaxSearch()" class="inputbox" value="14" name="ptype[]" />
+                      Bodega
+                     </td>
+                     <td width="25%" valign="top">
+                      <input type="checkbox" onclick="ajaxSearch()" class="inputbox" value="15" name="ptype[]" />
+                      Casa con uso de suelo
+                     </td>
+                     <td width="25%" valign="top">
+                      <input type="checkbox" onclick="ajaxSearch()" class="inputbox" value="8" name="ptype[]" />
+                      Casa en Condominio
+                     </td>
+                     <td width="25%" valign="top">
+                      <input type="checkbox" onclick="ajaxSearch()" class="inputbox" value="9" name="ptype[]" />
+                      Casa Sola
+                     </td>
+                    </tr>
+                    <tr>
+                     <td width="25%" valign="top">
+                      <input type="checkbox" onclick="ajaxSearch()" class="inputbox" value="10" name="ptype[]" />
+                      Comercial e Industrial
+                     </td>
+                     <td width="25%" valign="top">
+                      <input type="checkbox" onclick="ajaxSearch()" class="inputbox" value="7" name="ptype[]" />
+                      Departamento
+                     </td>
+                     <td width="25%" valign="top">
+                      <input type="checkbox" onclick="ajaxSearch()" class="inputbox" value="16" name="ptype[]" />
+                      Edificio
+                     </td>
+                     <td width="25%" valign="top">
+                      <input type="checkbox" onclick="ajaxSearch()" class="inputbox" value="5" name="ptype[]" />
+                      Edificio
+                     </td>
+                    </tr>
+                    <tr>
+                     <td width="25%" valign="top">
+                      <input type="checkbox" onclick="ajaxSearch()" class="inputbox" value="1" name="ptype[]" />
+                      Habitacional
+                     </td>
+                     <td width="25%" valign="top">
+                      <input type="checkbox" onclick="ajaxSearch()" class="inputbox" value="17" name="ptype[]" />
+                      Local
+                     </td>
+                     <td width="25%" valign="top">
+                      <input type="checkbox" onclick="ajaxSearch()" class="inputbox" value="13" name="ptype[]" />
+                      Nave
+                     </td>
+                     <td width="25%" valign="top">
+                      <input type="checkbox" onclick="ajaxSearch()" class="inputbox" value="18" name="ptype[]" />
+                      Oficina
+                     </td>
+                    </tr>
+                    <tr>
+                     <td width="25%" valign="top">
+                      <input type="checkbox" onclick="ajaxSearch()" class="inputbox" value="19" name="ptype[]" />
+                      Penthouse
+                     </td>
+                     <td width="25%" valign="top">
+                      <input type="checkbox" onclick="ajaxSearch()" class="inputbox" value="2" name="ptype[]" />
+                      Quintas
+                     </td>
+                     <td width="25%" valign="top">
+                      <input type="checkbox" onclick="ajaxSearch()" class="inputbox" value="11" name="ptype[]" />
+                      Rancho
+                     </td>
+                     <td width="25%" valign="top">
+                      <input type="checkbox" onclick="ajaxSearch()" class="inputbox" value="6" name="ptype[]" />
+                      Terreno
+                     </td>
+                    </tr>
+                    <tr>
+                     <td width="25%" valign="top">
+                      <input type="checkbox" onclick="ajaxSearch()" class="inputbox" value="12" name="ptype[]" />
+                      Terreno Industrial
+                     </td>
+                     <td width="25%" valign="top">
+                      <input type="checkbox" onclick="ajaxSearch()" class="inputbox" value="4" name="ptype[]" />
+                      Tiempo Compartido
+                     </td>
+                     <td width="25%" valign="top">
+                      <input type="checkbox" onclick="ajaxSearch()" class="inputbox" value="3" name="ptype[]" />
+                      Villas
+                     </td>
+                    </tr>
+                   </tbody>
+                  </table>
+                 </div>
+                </div>
+                <div id="property_list">
+                 <table class="ip_pagination">
+                  <tbody>
+                   <tr>
+                    <td class="ip_pagecount">
+                     Results: 0-37 of 37
+                    </td>
+                    <td class="ip_pagenav">
+                    </td>
+                   </tr>
+                  </tbody>
+                 </table>
+                 <table id="prop_table">
+                  <thead>
+                   <tr>
+                    <th axis="currency" class="sortedDESC">
+                     Price
+                    </th>
+                    <th axis="string" class="">
+                     Property ID
+                    </th>
+                    <th axis="string" class="">
+                     Street
+                    </th>
+                    <th axis="number" class="">
+                     Beds
+                    </th>
+                    <th axis="number" class="">
+                     Baths
+                    </th>
+                    <th axis="number" class="">
+                     M
+                     <sup>
+                      2
+                     </sup>
+                    </th>
+                    <td class="noaxis">
+                     Preview
+                    </td>
+                   </tr>
+                  </thead>
+                  <tbody>
+                   <tr id="0" class="altRow">
+                    <td>
+                     $22,000,000
+                    </td>
+                    <td>
+                    </td>
+                    <td>
+                     <a href="/neweb/index.php?option=com_iproperty&view=property&id=507&lang=en">
+                      Sierra Gorda *, Distrito Federal
+                     </a>
+                    </td>
+                    <td>
+                     3
+                    </td>
+                    <td>
+                     3.0
+                    </td>
+                    <td>
+                     420
+                    </td>
+                    <td>
+                     --
+                    </td>
+                   </tr>
+                   <tr id="1" class="">
+                    <td>
+                     $13,000,000
+                    </td>
+                    <td>
+                    </td>
+                    <td>
+                     <a onmouseover="javascript:myclick(473);" href="/neweb/index.php?option=com_iproperty&view=property&id=473&lang=en">
+                      Felipe Angeles *, Sta Catarina Ayotzingo
+                     </a>
+                    </td>
+                    <td>
+                     0
+                    </td>
+                    <td>
+                     4.0
+                    </td>
+                    <td>
+                     3600
+                    </td>
+                    <td>
+                     <a href="javascript:myclick(473);">
+                      Preview
+                     </a>
+                    </td>
+                   </tr>
+                   <tr id="2" class="altRow">
+                    <td>
+                     $12,500,000
+                    </td>
+                    <td>
+                    </td>
+                    <td>
+                     <a href="/neweb/index.php?option=com_iproperty&view=property&id=523&lang=en">
+                      PARIS *, DISTRITO FEDERAL
+                     </a>
+                    </td>
+                    <td>
+                     3
+                    </td>
+                    <td>
+                     2.5
+                    </td>
+                    <td>
+                     272
+                    </td>
+                    <td>
+                     --
+                    </td>
+                   </tr>
+                   <tr id="3" class="">
+                    <td>
+                     $12,000,000
+                    </td>
+                    <td>
+                    </td>
+                    <td>
+                     <a href="/neweb/index.php?option=com_iproperty&view=property&id=332&lang=en">
+                      Estero *, Jardines Del Pedregal
+                     </a>
+                    </td>
+                    <td>
+                     3
+                    </td>
+                    <td>
+                     3.5
+                    </td>
+                    <td>
+                     750
+                    </td>
+                    <td>
+                     --
+                    </td>
+                   </tr>
+                   <tr id="4" class="altRow">
+                    <td>
+                     $10,800,000
+                    </td>
+                    <td>
+                    </td>
+                    <td>
+                     <a onmouseover="javascript:myclick(435);" href="/neweb/index.php?option=com_iproperty&view=property&id=435&lang=en">
+                      Cjon. de San Miguel *, Barrio de San Lucas
+                     </a>
+                    </td>
+                    <td>
+                     3
+                    </td>
+                    <td>
+                     3.0
+                    </td>
+                    <td>
+                     334
+                    </td>
+                    <td>
+                     <a href="javascript:myclick(435);">
+                      Preview
+                     </a>
+                    </td>
+                   </tr>
+                   <tr id="5" class="">
+                    <td>
+                     $10,790,000
+                    </td>
+                    <td>
+                    </td>
+                    <td>
+                     <a onmouseover="javascript:myclick(388);" href="/neweb/index.php?option=com_iproperty&view=property&id=388&lang=en">
+                      Bosque de Toronjos *, Bosque de las Lomas
+                     </a>
+                    </td>
+                    <td>
+                     3
+                    </td>
+                    <td>
+                     3.5
+                    </td>
+                    <td>
+                     440
+                    </td>
+                    <td>
+                     <a href="javascript:myclick(388);">
+                      Preview
+                     </a>
+                    </td>
+                   </tr>
+                   <tr id="6" class="altRow">
+                    <td>
+                     $10,500,000
+                    </td>
+                    <td>
+                    </td>
+                    <td>
+                     <a onmouseover="javascript:myclick(281);" href="/neweb/index.php?option=com_iproperty&view=property&id=281&lang=en">
+                      Privada del Bosque *, Real de Tezoyuca
+                     </a>
+                    </td>
+                    <td>
+                     5
+                    </td>
+                    <td>
+                     5.5
+                    </td>
+                    <td>
+                     582
+                    </td>
+                    <td>
+                     <a href="javascript:myclick(281);">
+                      Preview
+                     </a>
+                    </td>
+                   </tr>
+                   <tr id="7" class="">
+                    <td>
+                     $10,450,000
+                    </td>
+                    <td>
+                    </td>
+                    <td>
+                     <a onmouseover="javascript:myclick(408);" href="/neweb/index.php?option=com_iproperty&view=property&id=408&lang=en">
+                      Cto. Fuentes del Ped *, Fuentes del Pedregal
+                     </a>
+                    </td>
+                    <td>
+                     4
+                    </td>
+                    <td>
+                     4.5
+                    </td>
+                    <td>
+                     511
+                    </td>
+                    <td>
+                     <a href="javascript:myclick(408);">
+                      Preview
+                     </a>
+                    </td>
+                   </tr>
+                   <tr id="8" class="altRow">
+                    <td>
+                     $8,800,000
+                    </td>
+                    <td>
+                    </td>
+                    <td>
+                     <a onmouseover="javascript:myclick(397);" href="/neweb/index.php?option=com_iproperty&view=property&id=397&lang=en">
+                      Fuiente de Tritones *, Lomas de Tecamachalco
+                     </a>
+                    </td>
+                    <td>
+                     3
+                    </td>
+                    <td>
+                     3.5
+                    </td>
+                    <td>
+                     450
+                    </td>
+                    <td>
+                     <a href="javascript:myclick(397);">
+                      Preview
+                     </a>
+                    </td>
+                   </tr>
+                   <tr id="9" class="">
+                    <td>
+                     $6,500,000
+                    </td>
+                    <td>
+                    </td>
+                    <td>
+                     <a onmouseover="javascript:myclick(215);" href="/neweb/index.php?option=com_iproperty&view=property&id=215&lang=en">
+                      Paseo de la Reforma *, Lomas de Cuernvaca
+                     </a>
+                    </td>
+                    <td>
+                     5
+                    </td>
+                    <td>
+                     5.5
+                    </td>
+                    <td>
+                     300
+                    </td>
+                    <td>
+                     <a href="javascript:myclick(215);">
+                      Preview
+                     </a>
+                    </td>
+                   </tr>
+                   <tr id="10" class="altRow">
+                    <td>
+                     $6,500,000
+                    </td>
+                    <td>
+                    </td>
+                    <td>
+                     <a onmouseover="javascript:myclick(410);" href="/neweb/index.php?option=com_iproperty&view=property&id=410&lang=en">
+                      San Jeronimo *, San Jeronimo Lidice
+                     </a>
+                    </td>
+                    <td>
+                     3
+                    </td>
+                    <td>
+                     3.5
+                    </td>
+                    <td>
+                     374
+                    </td>
+                    <td>
+                     <a href="javascript:myclick(410);">
+                      Preview
+                     </a>
+                    </td>
+                   </tr>
+                   <tr id="11" class="">
+                    <td>
+                     $6,000,000
+                    </td>
+                    <td>
+                    </td>
+                    <td>
+                     <a onmouseover="javascript:myclick(449);" href="/neweb/index.php?option=com_iproperty&view=property&id=449&lang=en">
+                      Prol. Abasolo *, Tepepan
+                     </a>
+                    </td>
+                    <td>
+                     3
+                    </td>
+                    <td>
+                     3.5
+                    </td>
+                    <td>
+                     320
+                    </td>
+                    <td>
+                     <a href="javascript:myclick(449);">
+                      Preview
+                     </a>
+                    </td>
+                   </tr>
+                   <tr id="12" class="altRow">
+                    <td>
+                     $4,980,000
+                    </td>
+                    <td>
+                    </td>
+                    <td>
+                     <a onmouseover="javascript:myclick(430);" href="/neweb/index.php?option=com_iproperty&view=property&id=430&lang=en">
+                      Tulipan *, San Pedro Martir
+                     </a>
+                    </td>
+                    <td>
+                     3
+                    </td>
+                    <td>
+                     4.5
+                    </td>
+                    <td>
+                     350
+                    </td>
+                    <td>
+                     <a href="javascript:myclick(430);">
+                      Preview
+                     </a>
+                    </td>
+                   </tr>
+                   <tr id="13" class="">
+                    <td>
+                     $4,750,000
+                    </td>
+                    <td>
+                    </td>
+                    <td>
+                     <a href="/neweb/index.php?option=com_iproperty&view=property&id=506&lang=en">
+                      Cuahutemoc *, DF
+                     </a>
+                    </td>
+                    <td>
+                     5
+                    </td>
+                    <td>
+                     2.0
+                    </td>
+                    <td>
+                     125
+                    </td>
+                    <td>
+                     --
+                    </td>
+                   </tr>
+                   <tr id="14" class="altRow">
+                    <td>
+                     $3,920,000
+                    </td>
+                    <td>
+                    </td>
+                    <td>
+                     <a onmouseover="javascript:myclick(476);" href="/neweb/index.php?option=com_iproperty&view=property&id=476&lang=en">
+                      Periferico Sur *, Arenal Tepepan
+                     </a>
+                    </td>
+                    <td>
+                     3
+                    </td>
+                    <td>
+                     2.5
+                    </td>
+                    <td>
+                     162
+                    </td>
+                    <td>
+                     <a href="javascript:myclick(476);">
+                      Preview
+                     </a>
+                    </td>
+                   </tr>
+                   <tr id="15" class="">
+                    <td>
+                     $3,870,000
+                    </td>
+                    <td>
+                    </td>
+                    <td>
+                     <a href="/neweb/index.php?option=com_iproperty&view=property&id=525&lang=en">
+                      Bosque de Minas *, DISTRITO FEDERAL
+                     </a>
+                    </td>
+                    <td>
+                     2
+                    </td>
+                    <td>
+                     2.0
+                    </td>
+                    <td>
+                     180
+                    </td>
+                    <td>
+                     --
+                    </td>
+                   </tr>
+                   <tr id="16" class="altRow">
+                    <td>
+                     $3,750,000
+                    </td>
+                    <td>
+                    </td>
+                    <td>
+                     <a onmouseover="javascript:myclick(478);" href="/neweb/index.php?option=com_iproperty&view=property&id=478&lang=en">
+                      Dakota *, Napoles
+                     </a>
+                    </td>
+                    <td>
+                     3
+                    </td>
+                    <td>
+                     2.0
+                    </td>
+                    <td>
+                     142
+                    </td>
+                    <td>
+                     <a href="javascript:myclick(478);">
+                      Preview
+                     </a>
+                    </td>
+                   </tr>
+                   <tr id="17" class="">
+                    <td>
+                     $2,800,000
+                    </td>
+                    <td>
+                    </td>
+                    <td>
+                     <a href="/neweb/index.php?option=com_iproperty&view=property&id=364&lang=en">
+                      La Pera Xochinahua *, La Martinica
+                     </a>
+                    </td>
+                    <td>
+                     2
+                    </td>
+                    <td>
+                     2.0
+                    </td>
+                    <td>
+                     100
+                    </td>
+                    <td>
+                     --
+                    </td>
+                   </tr>
+                   <tr id="18" class="altRow">
+                    <td>
+                     $1,899,320
+                    </td>
+                    <td>
+                    </td>
+                    <td>
+                     <a href="/neweb/index.php?option=com_iproperty&view=property&id=515&lang=en">
+                      Antiguo Camino a Hui *, Estado de MExico
+                     </a>
+                    </td>
+                    <td>
+                     3
+                    </td>
+                    <td>
+                     2.0
+                    </td>
+                    <td>
+                     96
+                    </td>
+                    <td>
+                     --
+                    </td>
+                   </tr>
+                   <tr id="19" class="">
+                    <td>
+                     $1,700,000
+                    </td>
+                    <td>
+                    </td>
+                    <td>
+                     <a href="/neweb/index.php?option=com_iproperty&view=property&id=505&lang=en">
+                      Calle K *, DF
+                     </a>
+                    </td>
+                    <td>
+                     4
+                    </td>
+                    <td>
+                     2.0
+                    </td>
+                    <td>
+                     125
+                    </td>
+                    <td>
+                     --
+                    </td>
+                   </tr>
+                   <tr id="20" class="altRow">
+                    <td>
+                     $1,370,000/USD
+                    </td>
+                    <td>
+                    </td>
+                    <td>
+                     <a href="/neweb/index.php?option=com_iproperty&view=property&id=521&lang=en">
+                      CHALCHIHUI *, DISTRITO FEDERAL
+                     </a>
+                    </td>
+                    <td>
+                     3
+                    </td>
+                    <td>
+                     3.5
+                    </td>
+                    <td>
+                     500
+                    </td>
+                    <td>
+                     --
+                    </td>
+                   </tr>
+                   <tr id="21" class="">
+                    <td>
+                     $800,000
+                    </td>
+                    <td>
+                    </td>
+                    <td>
+                     <a href="/neweb/index.php?option=com_iproperty&view=property&id=483&lang=en">
+                      Sierra Gorda *, Lomas de Chapultepec
+                     </a>
+                    </td>
+                    <td>
+                     3
+                    </td>
+                    <td>
+                     3.0
+                    </td>
+                    <td>
+                     308
+                    </td>
+                    <td>
+                     --
+                    </td>
+                   </tr>
+                   <tr id="22" class="altRow">
+                    <td>
+                     $750,000/USD
+                    </td>
+                    <td>
+                    </td>
+                    <td>
+                     <a onmouseover="javascript:myclick(380);" href="/neweb/index.php?option=com_iproperty&view=property&id=380&lang=en">
+                      Bosque de Granados *, Bosque de las Lomeas
+                     </a>
+                    </td>
+                    <td>
+                     3
+                    </td>
+                    <td>
+                     3.5
+                    </td>
+                    <td>
+                     400
+                    </td>
+                    <td>
+                     <a href="javascript:myclick(380);">
+                      Preview
+                     </a>
+                    </td>
+                   </tr>
+                   <tr id="23" class="">
+                    <td>
+                     $600,000/USD
+                    </td>
+                    <td>
+                    </td>
+                    <td>
+                     <a onmouseover="javascript:myclick(406);" href="/neweb/index.php?option=com_iproperty&view=property&id=406&lang=en">
+                      Fuente de Prometeo *, Lomas de Tecamachalco
+                     </a>
+                    </td>
+                    <td>
+                     3
+                    </td>
+                    <td>
+                     3.5
+                    </td>
+                    <td>
+                     520
+                    </td>
+                    <td>
+                     <a href="javascript:myclick(406);">
+                      Preview
+                     </a>
+                    </td>
+                   </tr>
+                   <tr id="24" class="altRow">
+                    <td>
+                     $170,000
+                    </td>
+                    <td>
+                    </td>
+                    <td>
+                     <a href="/neweb/index.php?option=com_iproperty&view=property&id=490&lang=en">
+                      BLVD. DE LA LUZ Jardines del Pedregal, D.F.
+                     </a>
+                    </td>
+                    <td>
+                     3
+                    </td>
+                    <td>
+                     3.5
+                    </td>
+                    <td>
+                     700
+                    </td>
+                    <td>
+                     --
+                    </td>
+                   </tr>
+                   <tr id="25" class="">
+                    <td>
+                     $130,000
+                    </td>
+                    <td>
+                    </td>
+                    <td>
+                     <a onmouseover="javascript:myclick(474);" href="/neweb/index.php?option=com_iproperty&view=property&id=474&lang=en">
+                      Felipe Angeles *, Sta Catarina Ayotzingo
+                     </a>
+                    </td>
+                    <td>
+                     0
+                    </td>
+                    <td>
+                     4.0
+                    </td>
+                    <td>
+                     3600
+                    </td>
+                    <td>
+                     <a href="javascript:myclick(474);">
+                      Preview
+                     </a>
+                    </td>
+                   </tr>
+                   <tr id="26" class="altRow">
+                    <td>
+                     $97,000
+                    </td>
+                    <td>
+                    </td>
+                    <td>
+                     <a onmouseover="javascript:myclick(385);" href="/neweb/index.php?option=com_iproperty&view=property&id=385&lang=en">
+                      Paseo de la Reforma *, Real de las Lomas
+                     </a>
+                    </td>
+                    <td>
+                     4
+                    </td>
+                    <td>
+                     4.5
+                    </td>
+                    <td>
+                     500
+                    </td>
+                    <td>
+                     <a href="javascript:myclick(385);">
+                      Preview
+                     </a>
+                    </td>
+                   </tr>
+                   <tr id="27" class="">
+                    <td>
+                     $26,000
+                    </td>
+                    <td>
+                    </td>
+                    <td>
+                     <a href="/neweb/index.php?option=com_iproperty&view=property&id=524&lang=en">
+                      Gutierrez Zamora *, DISTRITO FEDERAL
+                     </a>
+                    </td>
+                    <td>
+                     3
+                    </td>
+                    <td>
+                     2.0
+                    </td>
+                    <td>
+                     122
+                    </td>
+                    <td>
+                     --
+                    </td>
+                   </tr>
+                   <tr id="28" class="altRow">
+                    <td>
+                     $22,000
+                    </td>
+                    <td>
+                    </td>
+                    <td>
+                     <a href="/neweb/index.php?option=com_iproperty&view=property&id=517&lang=en">
+                      Gutierrez Zamora *, Distrito Federal
+                     </a>
+                    </td>
+                    <td>
+                     2
+                    </td>
+                    <td>
+                     2.5
+                    </td>
+                    <td>
+                     110
+                    </td>
+                    <td>
+                     --
+                    </td>
+                   </tr>
+                   <tr id="29" class="">
+                    <td>
+                     $22,000
+                    </td>
+                    <td>
+                    </td>
+                    <td>
+                     <a href="/neweb/index.php?option=com_iproperty&view=property&id=511&lang=en">
+                      Aniceto Ortega *, DISTRITO FEDERAL
+                     </a>
+                    </td>
+                    <td>
+                     3
+                    </td>
+                    <td>
+                     2.0
+                    </td>
+                    <td>
+                     190
+                    </td>
+                    <td>
+                     --
+                    </td>
+                   </tr>
+                   <tr id="30" class="altRow">
+                    <td>
+                     $20,500
+                    </td>
+                    <td>
+                    </td>
+                    <td>
+                     <a href="/neweb/index.php?option=com_iproperty&view=property&id=513&lang=en">
+                      Avenida Santa Fe *, Distrito Federal
+                     </a>
+                    </td>
+                    <td>
+                     1
+                    </td>
+                    <td>
+                     1.0
+                    </td>
+                    <td>
+                     92
+                    </td>
+                    <td>
+                     --
+                    </td>
+                   </tr>
+                   <tr id="31" class="">
+                    <td>
+                     $12,500
+                    </td>
+                    <td>
+                    </td>
+                    <td>
+                     <a href="/neweb/index.php?option=com_iproperty&view=property&id=522&lang=en">
+                      Secreto *, Distrito Federal
+                     </a>
+                    </td>
+                    <td>
+                     2
+                    </td>
+                    <td>
+                     0.0
+                    </td>
+                    <td>
+                     100
+                    </td>
+                    <td>
+                     --
+                    </td>
+                   </tr>
+                   <tr id="32" class="altRow">
+                    <td>
+                     $11,800
+                    </td>
+                    <td>
+                    </td>
+                    <td>
+                     <a href="/neweb/index.php?option=com_iproperty&view=property&id=503&lang=en">
+                      Camino Viejo a Huixq *, Distrito Federal
+                     </a>
+                    </td>
+                    <td>
+                     3
+                    </td>
+                    <td>
+                     1.0
+                    </td>
+                    <td>
+                     126
+                    </td>
+                    <td>
+                     --
+                    </td>
+                   </tr>
+                   <tr id="33" class="">
+                    <td>
+                     $10,000
+                    </td>
+                    <td>
+                    </td>
+                    <td>
+                     <a href="/neweb/index.php?option=com_iproperty&view=property&id=520&lang=en">
+                      Progreso *, Distrito Federal
+                     </a>
+                    </td>
+                    <td>
+                     0
+                    </td>
+                    <td>
+                     0.0
+                    </td>
+                    <td>
+                     60
+                    </td>
+                    <td>
+                     --
+                    </td>
+                   </tr>
+                   <tr id="34" class="altRow">
+                    <td>
+                     $3,500/USD
+                    </td>
+                    <td>
+                    </td>
+                    <td>
+                     <a href="/neweb/index.php?option=com_iproperty&view=property&id=510&lang=en">
+                      Rincon del Bosque *, Distrito Federal
+                     </a>
+                    </td>
+                    <td>
+                     2
+                    </td>
+                    <td>
+                     2.5
+                    </td>
+                    <td>
+                     150
+                    </td>
+                    <td>
+                     --
+                    </td>
+                   </tr>
+                   <tr id="35" class="">
+                    <td>
+                     $120/m2
+                    </td>
+                    <td>
+                    </td>
+                    <td>
+                     <a onmouseover="javascript:myclick(337);" href="/neweb/index.php?option=com_iproperty&view=property&id=337&lang=en">
+                      Lorenzo Boturini *, Tránsito
+                     </a>
+                    </td>
+                    <td>
+                     0
+                    </td>
+                    <td>
+                     10.0
+                    </td>
+                    <td>
+                     5900
+                    </td>
+                    <td>
+                     <a href="javascript:myclick(337);">
+                      Preview
+                     </a>
+                    </td>
+                   </tr>
+                   <tr id="36" class="altRow">
+                    <td>
+                     $8
+                    </td>
+                    <td>
+                    </td>
+                    <td>
+                     <a href="/neweb/index.php?option=com_iproperty&view=property&id=484&lang=en">
+                      Alfonso Esparza Ote *, Alvaro Obregon
+                     </a>
+                    </td>
+                    <td>
+                     4
+                    </td>
+                    <td>
+                     2.0
+                    </td>
+                    <td>
+                     229
+                    </td>
+                    <td>
+                     --
+                    </td>
+                   </tr>
+                  </tbody>
+                 </table>
+                 <table class="ip_pagination">
+                  <tbody>
+                   <tr>
+                    <td class="ip_pagecount">
+                     Results: 0-37 of 37
+                    </td>
+                    <td class="ip_pagenav">
+                    </td>
+                   </tr>
+                  </tbody>
+                 </table>
+                </div>
+                <div class="ipclear">
+                </div>
+                <input type="hidden" value="50" name="limit" />
+                <input type="hidden" value="" name="limitstart" />
+               </form>
+              </div>
+              <div class="clear">
+              </div>
+             </div>
+            </div>
+           </div>
+           <div class="clear">
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="rt-shadowbar">
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="rt-box-bottom">
+      <div class="rt-box-bottom2">
+      </div>
+      <div class="rt-box-bottom3">
+      </div>
+     </div>
+    </div>
+    <div class="rt-shadowbar">
+    </div>
+   </div>
+   <div class="footer-overlay-light" id="rt-footerbar">
+    <div class="rt-container">
+     <div id="rt-footer">
+      <div class="rt-grid-6 rt-alpha">
+       <div class="clear">
+       </div>
+       <span class="copytext">
+        Todos  los derechos reservados para Kontacto Inmobiliario 2011
+       </span>
+      </div>
+      <div class="rt-grid-6 rt-omega">
+       <div class="rt-block">
+        <a id="gantry-totop" href="#" style="outline: medium none;">
+         <span class="totop-desc">
+          Scroll To Top
+         </span>
+         <span class="totop-icon">
+         </span>
+        </a>
+       </div>
+      </div>
+      <div class="clear">
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="rt-shadowbar">
+   </div>
+  </div>
+  <div class="tool-tip" style="position: absolute; top: 0px; left: 0px; visibility: hidden;">
+   <div>
+   </div>
+  </div>
+  <div class="fusion-js-container level1 menutop">
+   <div class="fusion-js-subs active">
+    <div style="width: 180px; margin-top: 0px;" class="fusion-submenu-wrapper navigation-overlay-dark level2">
+     <ul style="width:180px;" class="level2">
+      <li class="item3 active f-submenu-item">
+       <a href="/neweb/index.php?option=com_iproperty&view=advsearch&Itemid=3&lang=en" class="orphan item image subtext" id="a-1445063946010779" tabindex="-1">
+        <span>
+         <img alt="icon-arrow2.png" src="/neweb/templates/rt_zephyr_j15/images/icons/icon-arrow2.png" />
+         Búsqueda Avanzada
+         <em>
+          Mapa de Propiedades
+         </em>
+        </span>
+       </a>
+      </li>
+      <li class="item4 parent f-parent-item">
+       <span class="daddy item image nolink" id="span-144506394601076" tabindex="-1">
+        <span>
+         <img alt="icon-arrow2.png" src="/neweb/templates/rt_zephyr_j15/images/icons/icon-arrow2.png" />
+         Tipos de Propiedades
+        </span>
+       </span>
+      </li>
+     </ul>
+     <div class="drop-bot">
+     </div>
+    </div>
+   </div>
+   <div class="fusion-js-subs">
+    <div style="width: 180px; margin-left: 0px;" class="fusion-submenu-wrapper navigation-overlay-dark level3">
+     <ul style="width:180px;" class="level3">
+      <li class="item5 f-submenu-item">
+       <a href="/neweb/index.php?option=com_iproperty&view=cat&id=1&Itemid=5&lang=en" class="orphan item image" id="a-1445063946011455" tabindex="-1">
+        <span>
+         <img alt="icon-home.png" src="/neweb/templates/rt_zephyr_j15/images/icons/icon-home.png" />
+         Habitacional
+        </span>
+       </a>
+      </li>
+      <li class="item6 f-submenu-item">
+       <a href="/neweb/index.php?option=com_iproperty&view=cat&id=10&Itemid=6&lang=en" class="orphan item image" id="a-1445063946011179" tabindex="-1">
+        <span>
+         <img alt="icon-home.png" src="/neweb/templates/rt_zephyr_j15/images/icons/icon-home.png" />
+         Comercial e Industrial
+        </span>
+       </a>
+      </li>
+     </ul>
+     <div class="drop-bot">
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>

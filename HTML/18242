@@ -1,0 +1,1396 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" class="csstransforms no-csstransforms3d csstransitions js no-touch">
+ <head>
+  <meta content="Content-Type" http-equiv="Content-Type" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <title>
+   Chip Telecom
+  </title>
+  <link href="wp-content/themes/NEW%20CHIP/favicon.ico" rel="shortcut icon" />
+  <link type="image/x-icon" rel="icon" href="wp-content/themes/NEW%20CHIP/favicon.ico" />
+  <link type="image/x-icon" href="wp-content/themes/NEW%20CHIP/favicon.ico" rel="shortcut icon" />
+  <link type="text/css" rel="stylesheet" href="wp-content/themes/NEW%20CHIP/style.css" />
+  <link type="text/css" rel="stylesheet" href="wp-content/themes/NEW%20CHIP/csspaginas.css" />
+  <!--webfonts-->
+  <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Average+Sans" />
+  <!--//webfonts-->
+  <script type="application/x-javascript">
+   addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+ function hideURLbar(){ window.scrollTo(0,1); }
+  </script>
+  <script type="text/javascript" src="wp-content/themes/NEW%20CHIP/js/jquery.min.js">
+  </script>
+  <script src="http://code.jquery.com/jquery-1.7.1.min.js">
+  </script>
+  <script src="wp-content/themes/NEW%20CHIP/js/bjqs-1.3.min.js">
+  </script>
+  <script src="source/jquery-1.9.0.min.js" type="text/javascript">
+  </script>
+  <script src="source/jquery.fancybox.js?v=2.1.4" type="text/javascript">
+  </script>
+  <link media="screen" href="source/jquery.fancybox.css?v=2.1.4" type="text/css" rel="stylesheet" />
+  <script type="text/javascript">
+   $(document).ready(function() {
+			/*
+			 *  Simple image gallery. Uses default settings
+			 */
+
+			$('.fancybox').fancybox();
+
+			/*
+			 *  Different effects
+			 */
+
+			// Change title type, overlay closing speed
+			$(".fancybox-effects-a").fancybox({
+				helpers: {
+					title : {
+						type : 'outside'
+					},
+					overlay : {
+						speedOut : 0
+					}
+				}
+			});
+
+			// Disable opening and closing animations, change title type
+			$(".fancybox-effects-b").fancybox({
+				openEffect  : 'none',
+				closeEffect	: 'none',
+
+				helpers : {
+					title : {
+						type : 'over'
+					}
+				}
+			});
+
+			// Set custom style, close if clicked, change title type and overlay color
+			$(".fancybox-effects-c").fancybox({
+				wrapCSS    : 'fancybox-custom',
+				closeClick : true,
+
+				openEffect : 'none',
+
+				helpers : {
+					title : {
+						type : 'inside'
+					},
+					overlay : {
+						css : {
+							'background' : 'rgba(238,238,238,0.85)'
+						}
+					}
+				}
+			});
+
+			// Remove padding, set opening and closing animations, close if clicked and disable overlay
+			$(".fancybox-effects-d").fancybox({
+				padding: 0,
+
+				openEffect : 'elastic',
+				openSpeed  : 150,
+
+				closeEffect : 'elastic',
+				closeSpeed  : 150,
+
+				closeClick : true,
+
+				helpers : {
+					overlay : null
+				}
+			});
+
+			/*
+			 *  Button helper. Disable animations, hide close button, change title type and content
+			 */
+
+			$('.fancybox-buttons').fancybox({
+				openEffect  : 'none',
+				closeEffect : 'none',
+
+				prevEffect : 'none',
+				nextEffect : 'none',
+
+				closeBtn  : false,
+
+				helpers : {
+					title : {
+						type : 'inside'
+					},
+					buttons	: {}
+				},
+
+				afterLoad : function() {
+					this.title = 'Image ' + (this.index + 1) + ' of ' + this.group.length + (this.title ? ' - ' + this.title : '');
+				}
+			});
+
+
+			/*
+			 *  Thumbnail helper. Disable animations, hide close button, arrows and slide to next gallery item if clicked
+			 */
+
+			$('.fancybox-thumbs').fancybox({
+				prevEffect : 'none',
+				nextEffect : 'none',
+
+				closeBtn  : false,
+				arrows    : false,
+				nextClick : true,
+
+				helpers : {
+					thumbs : {
+						width  : 50,
+						height : 50
+					}
+				}
+			});
+
+			/*
+			 *  Media helper. Group items, disable animations, hide arrows, enable media and button helpers.
+			*/
+			$('.fancybox-media')
+				.attr('rel', 'media-gallery')
+				.fancybox({
+					openEffect : 'none',
+					closeEffect : 'none',
+					prevEffect : 'none',
+					nextEffect : 'none',
+
+					arrows : false,
+					helpers : {
+						media : {},
+						buttons : {}
+					}
+				});
+
+			/*
+			 *  Open manually
+			 */
+
+			$("#fancybox-manual-a").click(function() {
+				$.fancybox.open('1_b.jpg');
+			});
+
+			$("#fancybox-manual-b").click(function() {
+				$.fancybox.open({
+					href : 'iframe.html',
+					type : 'iframe',
+					padding : 5
+				});
+			});
+
+			$("#fancybox-manual-c").click(function() {
+				$.fancybox.open([
+					{
+						href : '1_b.jpg',
+						title : 'My title'
+					}, {
+						href : '2_b.jpg',
+						title : '2nd title'
+					}, {
+						href : '3_b.jpg'
+					}
+				], {
+					helpers : {
+						thumbs : {
+							width: 75,
+							height: 50
+						}
+					}
+				});
+			});
+
+
+		});
+  </script>
+  <style type="text/css">
+   .fancybox-custom .fancybox-skin {
+			box-shadow: 0 0 50px #222;
+		}
+  </style>
+ </head>
+ <body>
+  <!---//smoth-scrlling---->
+  <div class="main-body">
+   <div class="header">
+    <div class="wrap">
+     <div id="content">
+      <header style="z-index:99; position:relative; ">
+       <div id="cssmenu">
+        <ul>
+         <li class="active">
+          <a href="http://www.chiptelecom.com.br/">
+           <span>
+            Home
+           </span>
+          </a>
+         </li>
+         <li class="has-sub">
+          <a>
+           <span>
+            Produtos
+           </span>
+          </a>
+          <ul>
+           <li>
+            <a href="headsets.html">
+             <span>
+              Headset's
+             </span>
+            </a>
+           </li>
+           <li>
+            <a>
+             <span>
+              Telefones
+             </span>
+            </a>
+            <ul>
+             <li>
+              <a href="telefones-panasonic.html">
+               Panasonic
+              </a>
+             </li>
+             <li>
+              <a href="telefones-siemens.html">
+               Siemens
+              </a>
+             </li>
+             <li>
+              <a href="telefones-intelbras.html">
+               Intelbras
+              </a>
+             </li>
+             <li>
+              <a href="telefones-alcatel.html">
+               Alcatel Lucent
+              </a>
+             </li>
+            </ul>
+           </li>
+           <li>
+            <a>
+             <span>
+              Soluções
+             </span>
+            </a>
+            <ul>
+             <li>
+              <a href="solucoes-gravador.html">
+               <span>
+                Gravador Digital
+               </span>
+              </a>
+             </li>
+             <li>
+              <a href="solucoes-supervisor.html">
+               <span>
+                Supervisor
+               </span>
+              </a>
+             </li>
+             <li>
+              <a href="solucoes-ura.html">
+               <span>
+                URA
+               </span>
+              </a>
+             </li>
+             <li>
+              <a href="solucoes-discador.html">
+               <span>
+                Discador
+               </span>
+              </a>
+             </li>
+             <li class="last">
+              <a href="solucoes-crm.html">
+               <span>
+                CRM
+               </span>
+              </a>
+             </li>
+            </ul>
+           </li>
+           <li>
+            <a href="manutencao.html">
+             <span>
+              Manutenção
+             </span>
+            </a>
+           </li>
+           <li>
+            <a href="cftv.html">
+             <span>
+              CFTV
+             </span>
+            </a>
+           </li>
+           <li>
+            <a>
+             <span>
+              Mais +
+             </span>
+            </a>
+            <ul>
+             <li>
+              <a href="mais-telefonia.html">
+               <span>
+                Telefonia e Redes
+               </span>
+              </a>
+             </li>
+             <li>
+              <a href="mais-pagamentos.html">
+               <span>
+                Pagamentos
+               </span>
+              </a>
+             </li>
+             <li>
+              <a href="mais-tarrifadores.html">
+               <span>
+                Tarrifadores
+               </span>
+              </a>
+             </li>
+             <li class="last">
+              <a href="mais-interface.html">
+               <span>
+                Interface para Celular
+               </span>
+              </a>
+             </li>
+            </ul>
+           </li>
+          </ul>
+         </li>
+         <li>
+          <a href="empresa.html">
+           <span>
+            Empresa
+           </span>
+          </a>
+         </li>
+         <li class="last">
+          <a href="parceiros.html">
+           <span>
+            Parceiros
+           </span>
+          </a>
+         </li>
+         <li class="last">
+          <a href="/contato">
+           <span>
+            Contato
+           </span>
+          </a>
+         </li>
+        </ul>
+       </div>
+       <div style="height:100px; width:200px; z-index:5; position: relative; margin-left:150px; padding-top:20px; margin-bottom:-25px" id="logo">
+        <a href="http://www.chiptelecom.com.br/">
+         <img src="wp-content/themes/NEW%20CHIP/images/logo.png" />
+        </a>
+        <div class="clear">
+        </div>
+       </div>
+      </header>
+      <!-- @end #topnav -->
+     </div>
+    </div>
+    <div class="cbp-so-scroller" id="cbp-so-scroller">
+     <h5 class="title">
+      Headset's
+     </h5>
+     <!--Portfolio-->
+     <div class="clearfix" id="portfolio">
+      <div class="typo1">
+       <div class="wrapper clearfix">
+        <!--end:section-title-->
+        <div class="clearfix" id="options">
+         <ul data-option-key="filter" class="option-set clearfix" id="filters">
+          <li>
+           <a data-option-value=".element" href="#filter">
+            Todos
+           </a>
+          </li>
+          <li>
+           <a data-option-value=".bluetooth" href="#filter">
+            Bluetooth
+           </a>
+          </li>
+          <li>
+           <a data-option-value=".wireless" href="#filter">
+            Wireless
+           </a>
+          </li>
+          <li>
+           <a data-option-value=".celular" href="#filter">
+            Celular
+           </a>
+          </li>
+          <li>
+           <a data-option-value=".escritorio" href="#filter">
+            Escritorio
+           </a>
+          </li>
+          <li>
+           <a data-option-value=".pc" href="#filter">
+            PC e Games
+           </a>
+          </li>
+          <li>
+           <a data-option-value=".voip" href="#filter">
+            Voip
+           </a>
+          </li>
+          <li>
+           <a data-option-value=".contact" href="#filter">
+            Contact Center
+           </a>
+          </li>
+          <li>
+           <a data-option-value=".acess" href="#filter">
+            Acessorios
+           </a>
+          </li>
+         </ul>
+         <!--end:filters-->
+        </div>
+       </div>
+       <!--end:wrapper-->
+       <ul name="container" style="position: relative; overflow: hidden; height: 3952px; width: 885px;" id="container" class="clickable cs-style-5 grid clearfix isotope">
+        <li style="height: 280px; width: 250px; border: 2px solid rgb(242, 242, 242); background: rgb(255, 255, 255) none repeat scroll 0% 0%; position: absolute; left: 0px; top: 0px; transform: translate(0px, 0px);" class="element escritorio isotope-item">
+         <div style="font-size:17px;  padding-bottom:10px;padding-top:10px; text-align:center; background:#f1f1f1">
+          T110
+         </div>
+         <div align="center" style="border-top:#f2f2f2 solid 2px;  ">
+          <img height="165" src="images/t110.jpg" />
+         </div>
+         <div style="border-top:#f2f2f2 solid 2px; padding-top:10px; padding-bottom:10px; text-align: center; font-size:14px; ">
+          <a href="t110.html" class="button3">
+           Saiba Mais
+          </a>
+         </div>
+        </li>
+        <li style="height: 280px; width: 250px; border: 2px solid rgb(242, 242, 242); background: rgb(255, 255, 255) none repeat scroll 0% 0%; position: absolute; left: 0px; top: 0px; transform: translate(295px, 0px);" class="element contact isotope-item">
+         <div style="font-size:17px;  padding-bottom:10px;padding-top:10px; text-align:center; background:#f1f1f1">
+          HW261
+         </div>
+         <div align="center" style="border-top:#f2f2f2 solid 2px;  ">
+          <img width="249" height="165" src="produtos/hw261-1.jpg" />
+         </div>
+         <div style="border-top:#f2f2f2 solid 2px; padding-top:10px; padding-bottom:10px; text-align: center; font-size:14px; ">
+          <a href="hw261.html" class="button3">
+           Saiba Mais
+          </a>
+         </div>
+        </li>
+        <li style="height: 280px; width: 250px; border: 2px solid rgb(242, 242, 242); background: rgb(255, 255, 255) none repeat scroll 0% 0%; position: absolute; left: 0px; top: 0px; transform: translate(590px, 0px);" class="element contact isotope-item">
+         <div style="font-size:17px;  padding-bottom:10px;padding-top:10px; text-align:center; background:#f1f1f1">
+          HW261N
+         </div>
+         <div align="center" style="border-top:#f2f2f2 solid 2px;  ">
+          <img height="165" src="produtos/hw261n-1.jpg" />
+         </div>
+         <div style="border-top:#f2f2f2 solid 2px; padding-top:10px; padding-bottom:10px; text-align: center; font-size:14px; ">
+          <a href="hw261n.html" class="button3">
+           Saiba Mais
+          </a>
+         </div>
+        </li>
+        <li style="height: 280px; width: 250px; border: 2px solid rgb(242, 242, 242); background: rgb(255, 255, 255) none repeat scroll 0% 0%; position: absolute; left: 0px; top: 0px; transform: translate(0px, 298px);" class="element contact isotope-item">
+         <div style="font-size:17px;  padding-bottom:10px;padding-top:10px; text-align:center; background:#f1f1f1">
+          HW251
+         </div>
+         <div align="center" style="border-top:#f2f2f2 solid 2px;  ">
+          <img height="165" src="produtos/HW251-1.jpg" />
+         </div>
+         <div style="border-top:#f2f2f2 solid 2px; padding-top:10px; padding-bottom:10px; text-align: center; font-size:14px; ">
+          <a href="hw251.html" class="button3">
+           Saiba Mais
+          </a>
+         </div>
+        </li>
+        <li style="height: 280px; width: 250px; border: 2px solid rgb(242, 242, 242); background: rgb(255, 255, 255) none repeat scroll 0% 0%; position: absolute; left: 0px; top: 0px; transform: translate(295px, 298px);" class="element pc voip bluetooth isotope-item">
+         <div style="font-size:17px;  padding-bottom:10px;padding-top:10px; text-align:center; background:#f1f1f1">
+          Calisto P820
+         </div>
+         <div align="center" style="border-top:#f2f2f2 solid 2px;  ">
+          <img height="165" src="images/p820.jpg" />
+         </div>
+         <div style="border-top:#f2f2f2 solid 2px; padding-top:10px; padding-bottom:10px; text-align: center; font-size:14px; ">
+          <a href="p820.html" class="button3">
+           Saiba Mais
+          </a>
+         </div>
+        </li>
+        <li style="height: 280px; width: 250px; border: 2px solid rgb(242, 242, 242); background: rgb(255, 255, 255) none repeat scroll 0% 0%; position: absolute; left: 0px; top: 0px; transform: translate(590px, 298px);" class="element wireless bluetooth isotope-item">
+         <div style="font-size:17px;  padding-bottom:10px;padding-top:10px; text-align:center; background:#f1f1f1">
+          Savi W740
+         </div>
+         <div align="center" style="border-top:#f2f2f2 solid 2px;  ">
+          <img height="165" src="images/s740.jpg" />
+         </div>
+         <div style="border-top:#f2f2f2 solid 2px; padding-top:10px; padding-bottom:10px; text-align: center; font-size:14px; ">
+          <a href="savi740.html" class="button3">
+           Saiba Mais
+          </a>
+         </div>
+        </li>
+        <li style="height: 280px; width: 250px; border: 2px solid rgb(242, 242, 242); background: rgb(255, 255, 255) none repeat scroll 0% 0%; position: absolute; left: 0px; top: 0px; transform: translate(0px, 596px);" class="element bluetooth isotope-item">
+         <div style="font-size:17px;  padding-bottom:10px;padding-top:10px; text-align:center; background:#f1f1f1">
+          Voyager Legend CS
+         </div>
+         <div align="center" style="border-top:#f2f2f2 solid 2px;  ">
+          <img height="165" src="images/Legend-cs.jpg" />
+         </div>
+         <div style="border-top:#f2f2f2 solid 2px; padding-top:10px; padding-bottom:10px; text-align: center; font-size:14px; ">
+          <a href="legendcs.html" class="button3">
+           Saiba Mais
+          </a>
+         </div>
+        </li>
+        <li style="height: 280px; width: 250px; border: 2px solid rgb(242, 242, 242); background: rgb(255, 255, 255) none repeat scroll 0% 0%; position: absolute; left: 0px; top: 0px; transform: translate(295px, 596px);" class="element pc voip bluetooth isotope-item">
+         <div style="font-size:17px;  padding-bottom:10px;padding-top:10px; text-align:center; background:#f1f1f1">
+          Calisto 620
+         </div>
+         <div align="center" style="border-top:#f2f2f2 solid 2px;  ">
+          <img height="165" src="images/c620.jpg" />
+         </div>
+         <div style="border-top:#f2f2f2 solid 2px; padding-top:10px; padding-bottom:10px; text-align: center; font-size:14px; ">
+          <a href="c620.html" class="button3">
+           Saiba Mais
+          </a>
+         </div>
+        </li>
+        <li style="height: 280px; width: 250px; border: 2px solid rgb(242, 242, 242); background: rgb(255, 255, 255) none repeat scroll 0% 0%; position: absolute; left: 0px; top: 0px; transform: translate(590px, 596px);" class="element celular bluetooth isotope-item">
+         <div style="font-size:17px;  padding-bottom:10px;padding-top:10px; text-align:center; background:#f1f1f1">
+          Voyager Legend B235
+         </div>
+         <div align="center" style="border-top:#f2f2f2 solid 2px;  ">
+          <img height="165" src="images/voy-leg-b235.jpg" />
+         </div>
+         <div style="border-top:#f2f2f2 solid 2px; padding-top:10px; padding-bottom:10px; text-align: center; font-size:14px; ">
+          <a href="b235.html" class="button3">
+           Saiba Mais
+          </a>
+         </div>
+        </li>
+        <li style="height: 280px; width: 250px; border: 2px solid rgb(242, 242, 242); background: rgb(255, 255, 255) none repeat scroll 0% 0%; position: absolute; left: 0px; top: 0px; transform: translate(0px, 894px);" class="element wireless bluetooth isotope-item">
+         <div style="font-size:17px;  padding-bottom:10px;padding-top:10px; text-align:center; background:#f1f1f1">
+          Savi Go
+         </div>
+         <div align="center" style="border-top:#f2f2f2 solid 2px;  ">
+          <img height="165" src="images/sGo.jpg" />
+         </div>
+         <div style="border-top:#f2f2f2 solid 2px; padding-top:10px; padding-bottom:10px; text-align: center; font-size:14px; ">
+          <a href="savigo.html" class="button3">
+           Saiba Mais
+          </a>
+         </div>
+        </li>
+        <li style="height: 280px; width: 250px; border: 2px solid rgb(242, 242, 242); background: rgb(255, 255, 255) none repeat scroll 0% 0%; position: absolute; left: 0px; top: 0px; transform: translate(295px, 894px);" class="element wireless isotope-item">
+         <div style="font-size:17px;  padding-bottom:10px;padding-top:10px; text-align:center; background:#f1f1f1">
+          CS 540
+         </div>
+         <div align="center" style="border-top:#f2f2f2 solid 2px;  ">
+          <img height="165" src="images/cs540.jpg" />
+         </div>
+         <div style="border-top:#f2f2f2 solid 2px; padding-top:10px; padding-bottom:10px; text-align: center; font-size:14px; ">
+          <a href="cs540.html" class="button3">
+           Saiba Mais
+          </a>
+         </div>
+        </li>
+        <li style="height: 280px; width: 250px; border: 2px solid rgb(242, 242, 242); background: rgb(255, 255, 255) none repeat scroll 0% 0%; position: absolute; left: 0px; top: 0px; transform: translate(590px, 894px);" class="element wireless isotope-item">
+         <div style="font-size:17px;  padding-bottom:10px;padding-top:10px; text-align:center; background:#f1f1f1">
+          CS 530
+         </div>
+         <div align="center" style="border-top:#f2f2f2 solid 2px;  ">
+          <img height="165" src="images/cs530.jpg" />
+         </div>
+         <div style="border-top:#f2f2f2 solid 2px; padding-top:10px; padding-bottom:10px; text-align: center; font-size:14px; ">
+          <a href="cs530.html" class="button3">
+           Saiba Mais
+          </a>
+         </div>
+        </li>
+        <li style="height: 280px; width: 250px; border: 2px solid rgb(242, 242, 242); background: rgb(255, 255, 255) none repeat scroll 0% 0%; position: absolute; left: 0px; top: 0px; transform: translate(0px, 1192px);" class="element contact isotope-item">
+         <div style="font-size:17px;  padding-bottom:10px;padding-top:10px; text-align:center; background:#f1f1f1">
+          HW251N
+         </div>
+         <div align="center" style="border-top:#f2f2f2 solid 2px;  ">
+          <img height="165" src="produtos/hw251n-1.jpg" />
+         </div>
+         <div style="border-top:#f2f2f2 solid 2px; padding-top:10px; padding-bottom:10px; text-align: center; font-size:14px; ">
+          <a href="hw251n.html" class="button3">
+           Saiba Mais
+          </a>
+         </div>
+        </li>
+        <li style="height: 280px; width: 250px; border: 2px solid rgb(242, 242, 242); background: rgb(255, 255, 255) none repeat scroll 0% 0%; position: absolute; left: 0px; top: 0px; transform: translate(295px, 1192px);" class="element escritorio isotope-item">
+         <div style="font-size:17px;  padding-bottom:10px;padding-top:10px; text-align:center; background:#f1f1f1">
+          M22
+         </div>
+         <div align="center" style="border-top:#f2f2f2 solid 2px;  ">
+          <img height="165" src="produtos/m22-1.jpg" />
+         </div>
+         <div style="border-top:#f2f2f2 solid 2px; padding-top:10px; padding-bottom:10px; text-align: center; font-size:14px; ">
+          <a href="m22.html" class="button3">
+           Saiba Mais
+          </a>
+         </div>
+        </li>
+        <li style="height: 280px; width: 250px; border: 2px solid rgb(242, 242, 242); background: rgb(255, 255, 255) none repeat scroll 0% 0%; position: absolute; left: 0px; top: 0px; transform: translate(590px, 1192px);" class="element contact isotope-item">
+         <div style="font-size:17px;  padding-bottom:10px;padding-top:10px; text-align:center; background:#f1f1f1">
+          P52
+         </div>
+         <div align="center" style="border-top:#f2f2f2 solid 2px;  ">
+          <img height="165" src="produtos/P52-1.jpg" />
+         </div>
+         <div style="border-top:#f2f2f2 solid 2px; padding-top:10px; padding-bottom:10px; text-align: center; font-size:14px; ">
+          <a href="p52.html" class="button3">
+           Saiba Mais
+          </a>
+         </div>
+        </li>
+        <li style="height: 280px; width: 250px; border: 2px solid rgb(242, 242, 242); background: rgb(255, 255, 255) none repeat scroll 0% 0%; position: absolute; left: 0px; top: 0px; transform: translate(0px, 1490px);" class="element contact isotope-item">
+         <div style="font-size:17px;  padding-bottom:10px;padding-top:10px; text-align:center; background:#f1f1f1">
+          P252
+         </div>
+         <div align="center" style="border-top:#f2f2f2 solid 2px;  ">
+          <img height="165" src="produtos/P252-1.jpg" />
+         </div>
+         <div style="border-top:#f2f2f2 solid 2px; padding-top:10px; padding-bottom:10px; text-align: center; font-size:14px; ">
+          <a href="p252.html" class="button3">
+           Saiba Mais
+          </a>
+         </div>
+        </li>
+        <li style="height: 280px; width: 250px; border: 2px solid rgb(242, 242, 242); background: rgb(255, 255, 255) none repeat scroll 0% 0%; position: absolute; left: 0px; top: 0px; transform: translate(295px, 1490px);" class="element escritorio isotope-item">
+         <div style="font-size:17px;  padding-bottom:10px;padding-top:10px; text-align:center; background:#f1f1f1">
+          S12
+         </div>
+         <div align="center" style="border-top:#f2f2f2 solid 2px;  ">
+          <img height="165" src="produtos/s12-1.jpg" />
+         </div>
+         <div style="border-top:#f2f2f2 solid 2px; padding-top:10px; padding-bottom:10px; text-align: center; font-size:14px; ">
+          <a href="s12.html" class="button3">
+           Saiba Mais
+          </a>
+         </div>
+        </li>
+        <li style="height: 280px; width: 250px; border: 2px solid rgb(242, 242, 242); background: rgb(255, 255, 255) none repeat scroll 0% 0%; position: absolute; left: 0px; top: 0px; transform: translate(590px, 1490px);" class="element contact isotope-item">
+         <div style="font-size:17px;  padding-bottom:10px;padding-top:10px; text-align:center; background:#f1f1f1">
+          SP11
+         </div>
+         <div align="center" style="border-top:#f2f2f2 solid 2px;  ">
+          <img height="165" src="produtos/sp11-1.jpg" />
+         </div>
+         <div style="border-top:#f2f2f2 solid 2px; padding-top:10px; padding-bottom:10px; text-align: center; font-size:14px; ">
+          <a href="sp11.html" class="button3">
+           Saiba Mais
+          </a>
+         </div>
+        </li>
+        <li style="height: 280px; width: 250px; border: 2px solid rgb(242, 242, 242); background: rgb(255, 255, 255) none repeat scroll 0% 0%; position: absolute; left: 0px; top: 0px; transform: translate(0px, 1788px);" class="element contact isotope-item">
+         <div style="font-size:17px;  padding-bottom:10px;padding-top:10px; text-align:center; background:#f1f1f1">
+          SP12
+         </div>
+         <div align="center" style="border-top:#f2f2f2 solid 2px;  ">
+          <img height="165" src="produtos/sp12-1.jpg" />
+         </div>
+         <div style="border-top:#f2f2f2 solid 2px; padding-top:10px; padding-bottom:10px; text-align: center; font-size:14px; ">
+          <a href="sp12.html" class="button3">
+           Saiba Mais
+          </a>
+         </div>
+        </li>
+        <!--                       
+                       <li class="element celular bluetooth isotope-item" style="height:280px; width:250px; border:#f2f2f2 solid 2px; background:#fff;" ><div style="font-size:17px;  padding-bottom:10px;padding-top:10px; text-align:center; background:#f1f1f1"> Voyager Pro b230</div><div style="border-top:#f2f2f2 solid 2px;  "align="center"><img height="165" src="produtos/Voyager%20B230-2.jpg"  /> </div><div style="border-top:#f2f2f2 solid 2px; padding-top:10px; padding-bottom:10px; text-align: center; font-size:14px; ">   <a class="button3" href="vb230.html">Saiba Mais</a> </div> </li> 
+                       
+                        <li class="element celular bluetooth isotope-item" style="height:280px; width:250px; border:#f2f2f2 solid 2px; background:#fff;" ><div style="font-size:17px;  padding-bottom:10px;padding-top:10px; text-align:center; background:#f1f1f1"> Voyager Pro </div><div style="border-top:#f2f2f2 solid 2px;  "align="center"><img height="165" src="produtos/voyagerpro-1.jpg"  /> </div><div style="border-top:#f2f2f2 solid 2px; padding-top:10px; padding-bottom:10px; text-align: center; font-size:14px; ">   <a class="button3" href="vp.html">Saiba Mais</a> </div> </li>
+                        
+                    -->
+        <!--
+                                         
+                     <li class="element pc isotope-item" style="height:280px; width:250px; border:#f2f2f2 solid 2px; background:#fff;" ><div style="font-size:17px;  padding-bottom:10px;padding-top:10px; text-align:center; background:#f1f1f1">Audio 480 USB</div><div style="border-top:#f2f2f2 solid 2px;  " align="center"><img height="165" src="produtos/audio480-1.jpg"  /> </div><div style="border-top:#f2f2f2 solid 2px; padding-top:10px; padding-bottom:10px; text-align: center; font-size:14px; ">   <a class="button3" href="audio480.html">Saiba Mais</a> </div> </li>
+                     -->
+        <li style="height: 280px; width: 250px; border: 2px solid rgb(242, 242, 242); background: rgb(255, 255, 255) none repeat scroll 0% 0%; position: absolute; left: 0px; top: 0px; transform: translate(295px, 1788px);" class="element pc voip isotope-item">
+         <div style="font-size:17px;  padding-bottom:10px;padding-top:10px; text-align:center; background:#f1f1f1">
+          Blackwire c310
+         </div>
+         <div align="center" style="border-top:#f2f2f2 solid 2px;  ">
+          <img height="165" src="produtos/bc310-1.jpg" />
+         </div>
+         <div style="border-top:#f2f2f2 solid 2px; padding-top:10px; padding-bottom:10px; text-align: center; font-size:14px; ">
+          <a href="bc310.html" class="button3">
+           Saiba Mais
+          </a>
+         </div>
+        </li>
+        <li style="height: 280px; width: 250px; border: 2px solid rgb(242, 242, 242); background: rgb(255, 255, 255) none repeat scroll 0% 0%; position: absolute; left: 0px; top: 0px; transform: translate(590px, 1788px);" class="element pc voip isotope-item">
+         <div style="font-size:17px;  padding-bottom:10px;padding-top:10px; text-align:center; background:#f1f1f1">
+          Blackwire c320
+         </div>
+         <div align="center" style="border-top:#f2f2f2 solid 2px;  ">
+          <img height="165" src="produtos/bc320-2.jpg" />
+         </div>
+         <div style="border-top:#f2f2f2 solid 2px; padding-top:10px; padding-bottom:10px; text-align: center; font-size:14px; ">
+          <a href="bc320.html" class="button3">
+           Saiba Mais
+          </a>
+         </div>
+        </li>
+        <li style="height: 280px; width: 250px; border: 2px solid rgb(242, 242, 242); background: rgb(255, 255, 255) none repeat scroll 0% 0%; position: absolute; left: 0px; top: 0px; transform: translate(0px, 2086px);" class="element pc voip isotope-item">
+         <div style="font-size:17px;  padding-bottom:10px;padding-top:10px; text-align:center; background:#f1f1f1">
+          Blackwire c510
+         </div>
+         <div align="center" style="border-top:#f2f2f2 solid 2px;  ">
+          <img height="165" src="produtos/bc510-3.jpg" />
+         </div>
+         <div style="border-top:#f2f2f2 solid 2px; padding-top:10px; padding-bottom:10px; text-align: center; font-size:14px; ">
+          <a href="bc510.html" class="button3">
+           Saiba Mais
+          </a>
+         </div>
+        </li>
+        <li style="height: 280px; width: 250px; border: 2px solid rgb(242, 242, 242); background: rgb(255, 255, 255) none repeat scroll 0% 0%; position: absolute; left: 0px; top: 0px; transform: translate(295px, 2086px);" class="element pc voip isotope-item">
+         <div style="font-size:17px;  padding-bottom:10px;padding-top:10px; text-align:center; background:#f1f1f1">
+          Blackwire c520
+         </div>
+         <div align="center" style="border-top:#f2f2f2 solid 2px;  ">
+          <img height="165" src="produtos/bc520-4.jpg" />
+         </div>
+         <div style="border-top:#f2f2f2 solid 2px; padding-top:10px; padding-bottom:10px; text-align: center; font-size:14px; ">
+          <a href="bc520.html" class="button3">
+           Saiba Mais
+          </a>
+         </div>
+        </li>
+        <li style="height: 280px; width: 250px; border: 2px solid rgb(242, 242, 242); background: rgb(255, 255, 255) none repeat scroll 0% 0%; position: absolute; left: 0px; top: 0px; transform: translate(590px, 2086px);" class="element pc voip isotope-item">
+         <div style="font-size:17px;  padding-bottom:10px;padding-top:10px; text-align:center; background:#f1f1f1">
+          Blackwire c610
+         </div>
+         <div align="center" style="border-top:#f2f2f2 solid 2px;  ">
+          <img height="165" src="produtos/bc610-1.jpg" />
+         </div>
+         <div style="border-top:#f2f2f2 solid 2px; padding-top:10px; padding-bottom:10px; text-align: center; font-size:14px; ">
+          <a href="bc610.html" class="button3">
+           Saiba Mais
+          </a>
+         </div>
+        </li>
+        <li style="height: 280px; width: 250px; border: 2px solid rgb(242, 242, 242); background: rgb(255, 255, 255) none repeat scroll 0% 0%; position: absolute; left: 0px; top: 0px; transform: translate(0px, 2384px);" class="element pc voip isotope-item">
+         <div style="font-size:17px;  padding-bottom:10px;padding-top:10px; text-align:center; background:#f1f1f1">
+          Blackwire c620
+         </div>
+         <div align="center" style="border-top:#f2f2f2 solid 2px;  ">
+          <img height="165" src="produtos/bc620-1.jpg" />
+         </div>
+         <div style="border-top:#f2f2f2 solid 2px; padding-top:10px; padding-bottom:10px; text-align: center; font-size:14px; ">
+          <a href="bc620.html" class="button3">
+           Saiba Mais
+          </a>
+         </div>
+        </li>
+        <li style="height: 280px; width: 250px; border: 2px solid rgb(242, 242, 242); background: rgb(255, 255, 255) none repeat scroll 0% 0%; position: absolute; left: 0px; top: 0px; transform: translate(295px, 2384px);" class="element pc voip isotope-item">
+         <div style="font-size:17px;  padding-bottom:10px;padding-top:10px; text-align:center; background:#f1f1f1">
+          Blackwire c710
+         </div>
+         <div align="center" style="border-top:#f2f2f2 solid 2px;  ">
+          <img height="165" src="produtos/bc710-2.jpg" />
+         </div>
+         <div style="border-top:#f2f2f2 solid 2px; padding-top:10px; padding-bottom:10px; text-align: center; font-size:14px; ">
+          <a href="bc710.html" class="button3">
+           Saiba Mais
+          </a>
+         </div>
+        </li>
+        <li style="height: 280px; width: 250px; border: 2px solid rgb(242, 242, 242); background: rgb(255, 255, 255) none repeat scroll 0% 0%; position: absolute; left: 0px; top: 0px; transform: translate(590px, 2384px);" class="element pc voip isotope-item">
+         <div style="font-size:17px;  padding-bottom:10px;padding-top:10px; text-align:center; background:#f1f1f1">
+          Blackwire c720
+         </div>
+         <div align="center" style="border-top:#f2f2f2 solid 2px;  ">
+          <img height="165" src="produtos/bc720-2.jpg" />
+         </div>
+         <div style="border-top:#f2f2f2 solid 2px; padding-top:10px; padding-bottom:10px; text-align: center; font-size:14px; ">
+          <a href="bc720.html" class="button3">
+           Saiba Mais
+          </a>
+         </div>
+        </li>
+        <li style="height: 280px; width: 250px; border: 2px solid rgb(242, 242, 242); background: rgb(255, 255, 255) none repeat scroll 0% 0%; position: absolute; left: 0px; top: 0px; transform: translate(0px, 2682px);" class="element pc voip isotope-item">
+         <div style="font-size:17px;  padding-bottom:10px;padding-top:10px; text-align:center; background:#f1f1f1">
+          Gamecom 1
+         </div>
+         <div align="center" style="border-top:#f2f2f2 solid 2px;  ">
+          <img height="165" src="produtos/gcp-1.jpg" />
+         </div>
+         <div style="border-top:#f2f2f2 solid 2px; padding-top:10px; padding-bottom:10px; text-align: center; font-size:14px; ">
+          <a href="gamecom1.html" class="button3">
+           Saiba Mais
+          </a>
+         </div>
+        </li>
+        <li style="height: 280px; width: 250px; border: 2px solid rgb(242, 242, 242); background: rgb(255, 255, 255) none repeat scroll 0% 0%; position: absolute; left: 0px; top: 0px; transform: translate(295px, 2682px);" class="element pc voip isotope-item">
+         <div style="font-size:17px;  padding-bottom:10px;padding-top:10px; text-align:center; background:#f1f1f1;">
+          Gamecom Pro 1
+         </div>
+         <div align="center" style="border-top:#f2f2f2 solid 2px;  ">
+          <img height="165" src="produtos/gc-1.jpg" />
+         </div>
+         <div style="border-top:#f2f2f2 solid 2px; padding-top:10px; padding-bottom:10px; text-align: center; font-size:14px; ">
+          <a href="gamecompro.html" class="button3">
+           Saiba Mais
+          </a>
+         </div>
+        </li>
+        <li style="height: 280px; width: 250px; border: 2px solid rgb(242, 242, 242); background: rgb(255, 255, 255) none repeat scroll 0% 0%; position: absolute; left: 0px; top: 0px; transform: translate(590px, 2682px);" class="element voip isotope-item">
+         <div style="font-size:17px;  padding-bottom:10px;padding-top:10px; text-align:center; background:#f1f1f1">
+          DA40
+         </div>
+         <div align="center" style="border-top:#f2f2f2 solid 2px;  ">
+          <img height="165" src="produtos/da40.jpg" />
+         </div>
+         <div style="border-top:#f2f2f2 solid 2px; padding-top:10px; padding-bottom:10px; text-align: center; font-size:14px; ">
+          <a href="da40.html" class="button3">
+           Saiba Mais
+          </a>
+         </div>
+        </li>
+        <li style="height: 280px; width: 250px; border: 2px solid rgb(242, 242, 242); background: rgb(255, 255, 255) none repeat scroll 0% 0%; position: absolute; left: 0px; top: 0px; transform: translate(0px, 2980px);" class="element voip isotope-item">
+         <div style="font-size:17px;  padding-bottom:10px;padding-top:10px; text-align:center; background:#f1f1f1">
+          DA45
+         </div>
+         <div align="center" style="border-top:#f2f2f2 solid 2px;  ">
+          <img height="165" src="produtos/da45-1.jpg" />
+         </div>
+         <div style="border-top:#f2f2f2 solid 2px; padding-top:10px; padding-bottom:10px; text-align: center; font-size:14px; ">
+          <a href="da45.html" class="button3">
+           Saiba Mais
+          </a>
+         </div>
+        </li>
+        <li style="height: 280px; width: 250px; border: 2px solid rgb(242, 242, 242); background: rgb(255, 255, 255) none repeat scroll 0% 0%; position: absolute; left: 0px; top: 0px; transform: translate(295px, 2980px);" class="element voip isotope-item">
+         <div style="font-size:17px;  padding-bottom:10px;padding-top:10px; text-align:center; background:#f1f1f1">
+          DA60
+         </div>
+         <div align="center" style="border-top:#f2f2f2 solid 2px;  ">
+          <img height="165" src="produtos/da60-1.jpg" />
+         </div>
+         <div style="border-top:#f2f2f2 solid 2px; padding-top:10px; padding-bottom:10px; text-align: center; font-size:14px; ">
+          <a href="da60.html" class="button3">
+           Saiba Mais
+          </a>
+         </div>
+        </li>
+        <li style="height: 220px; width: 250px; border: 2px solid rgb(242, 242, 242); background: rgb(255, 255, 255) none repeat scroll 0% 0%; position: absolute; left: 0px; top: 0px; transform: translate(590px, 2980px);" class="element acess isotope-item">
+         <div style="font-size:17px;  padding-bottom:10px;padding-top:10px; text-align:center; background:#f1f1f1">
+          Cabo QD
+         </div>
+         <div align="center" style="border-top:#f2f2f2 solid 2px;  ">
+          <a title="Produto Plantronics" data-fancybox-group="gallery" href="produtos/qd-1.jpg" class="fancybox">
+           <img height="165" src="produtos/qd-1.jpg" />
+          </a>
+         </div>
+        </li>
+        <li style="height: 220px; width: 250px; border: 2px solid rgb(242, 242, 242); background: rgb(255, 255, 255) none repeat scroll 0% 0%; position: absolute; left: 0px; top: 0px; transform: translate(590px, 3218px);" class="element acess isotope-item">
+         <div style="font-size:17px;  padding-bottom:10px;padding-top:10px; text-align:center; background:#f1f1f1">
+          Adaptador AC
+         </div>
+         <div align="center" style="border-top:#f2f2f2 solid 2px;  ">
+          <a title="Produto Plantronics" data-fancybox-group="gallery" href="produtos/adaptac.jpg" class="fancybox">
+           <img height="165" src="produtos/adaptac.jpg" />
+          </a>
+         </div>
+        </li>
+        <li style="height: 220px; width: 250px; border: 2px solid rgb(242, 242, 242); background: rgb(255, 255, 255) none repeat scroll 0% 0%; position: absolute; left: 0px; top: 0px; transform: translate(0px, 3278px);" class="element acess isotope-item">
+         <div style="font-size:17px;  padding-bottom:10px;padding-top:10px; text-align:center; background:#f1f1f1">
+          Tubo de voz
+         </div>
+         <div align="center" style="border-top:#f2f2f2 solid 2px;  ">
+          <a title="Produto Plantronics" data-fancybox-group="gallery" href="produtos/tubodevoz-2.jpg" class="fancybox">
+           <img height="165" src="produtos/tubodevoz-2.jpg" />
+          </a>
+         </div>
+        </li>
+        <li style="height: 220px; width: 250px; border: 2px solid rgb(242, 242, 242); background: rgb(255, 255, 255) none repeat scroll 0% 0%; position: absolute; left: 0px; top: 0px; transform: translate(295px, 3278px);" class="element acess isotope-item">
+         <div style="font-size:17px;  padding-bottom:10px;padding-top:10px; text-align:center; background:#f1f1f1">
+          Protetor Doughnut
+         </div>
+         <div align="center" style="border-top:#f2f2f2 solid 2px;  ">
+          <a title="Produto Plantronics" data-fancybox-group="gallery" href="produtos/donut-2.jpg" class="fancybox">
+           <img height="165" src="produtos/donut-2.jpg" />
+          </a>
+         </div>
+        </li>
+        <li style="height: 220px; width: 250px; border: 2px solid rgb(242, 242, 242); background: rgb(255, 255, 255) none repeat scroll 0% 0%; position: absolute; left: 0px; top: 0px; transform: translate(590px, 3456px);" class="element acess isotope-item">
+         <div style="font-size:17px;  padding-bottom:10px;padding-top:10px; text-align:center; background:#f1f1f1">
+          Cabo A10
+         </div>
+         <div align="center" style="border-top:#f2f2f2 solid 2px;  ">
+          <a title="Produto Plantronics" data-fancybox-group="gallery" href="produtos/caboa10-1.jpg" class="fancybox">
+           <img height="168" src="produtos/caboa10-1.jpg" />
+          </a>
+         </div>
+        </li>
+        <li style="height: 220px; width: 250px; border: 2px solid rgb(242, 242, 242); background: rgb(255, 255, 255) none repeat scroll 0% 0%; position: absolute; left: 0px; top: 0px; transform: translate(0px, 3516px);" class="element acess isotope-item">
+         <div style="font-size:17px;  padding-bottom:10px;padding-top:10px; text-align:center; background:#f1f1f1">
+          Protetor Supra
+         </div>
+         <div align="center" style="border-top:#f2f2f2 solid 2px;  ">
+          <a title="Produto Plantronics" data-fancybox-group="gallery" href="produtos/protetorsupra-1.jpg" class="fancybox">
+           <img height="165" src="produtos/protetorsupra-1.jpg" />
+          </a>
+         </div>
+        </li>
+        <li style="height: 220px; width: 250px; border: 2px solid rgb(242, 242, 242); background: rgb(255, 255, 255) none repeat scroll 0% 0%; position: absolute; left: 0px; top: 0px; transform: translate(295px, 3516px);" class="element acess isotope-item">
+         <div style="font-size:17px;  padding-bottom:10px;padding-top:10px; text-align:center; background:#f1f1f1">
+          Protetor T100
+         </div>
+         <div align="center" style="border-top:#f2f2f2 solid 2px;  ">
+          <a title="Produto Plantronics" data-fancybox-group="gallery" href="produtos/protetort100-2.jpg" class="fancybox">
+           <img height="165" src="produtos/protetort100-2.jpg" />
+          </a>
+         </div>
+        </li>
+        <li style="height: 240px; width: 250px; border: 2px solid rgb(242, 242, 242); background: rgb(255, 255, 255) none repeat scroll 0% 0%; position: absolute; left: 0px; top: 0px; transform: translate(590px, 3694px);" class="element acess isotope-item">
+         <div style="font-size:17px;  padding-bottom:10px;padding-top:10px; text-align:center; background:#f1f1f1">
+          HL10
+         </div>
+         <div align="center" style="border-top:#f2f2f2 solid 2px;  ">
+          <a title="Produto Plantronics" data-fancybox-group="gallery" href="produtos/hl10-1.jpg" class="fancybox">
+           <img height="165" src="produtos/hl10-1.jpg" />
+          </a>
+         </div>
+        </li>
+        <div class="clear">
+        </div>
+       </ul>
+       <!-- #container -->
+      </div>
+      <!--end:typo1-->
+     </div>
+    </div>
+    <!-- portfolio_script_javascript-->
+    <script src="wp-content/themes/NEW%20CHIP/js/jquery.min2.js" type="text/javascript">
+    </script>
+    <script src="wp-content/themes/NEW%20CHIP/js/jquery.isotope.min.js">
+    </script>
+    <script src="wp-content/themes/NEW%20CHIP/js/jquery.prettyPhoto.js">
+    </script>
+    <script src="wp-content/themes/NEW%20CHIP/js/custom.js">
+    </script>
+    <script src="wp-content/themes/NEW%20CHIP/js/modernizr.custom.js">
+    </script>
+    <div align="center" style="margin:0 auto; 	background:#ddd; height:2px;text-align:center;">
+    </div>
+    <div align="center" style="margin:0 auto; width:900px; text-align:center;">
+     <img border="0" usemap="#Map" src="images/promo.png" />
+     <map id="Map" name="Map">
+      <area href="/contato" coords="331,214,561,260" shape="rect">
+      </area>
+     </map>
+    </div>
+    <div class="footer">
+     <div class="wrap">
+      <div class="footer-con">
+       <div class="footer-left">
+        <ul>
+         <li>
+          <a href="empresa.html">
+           Empresa
+          </a>
+         </li>
+         <li>
+          <a href="headsets.html">
+           Headsets
+          </a>
+         </li>
+         <li>
+          <a href="mais-pagamentos.html">
+           Pagamentos
+          </a>
+         </li>
+         <li>
+          <a href="mailto:comercial@chiptelecom.com.br">
+           E-mail
+          </a>
+         </li>
+         <div class="clear">
+         </div>
+        </ul>
+       </div>
+       <div class="footer-right">
+        <ul>
+         <li class="fb">
+          <a href="https://www.facebook.com/Chiptelecom">
+          </a>
+         </li>
+         <li class="twitter">
+          <a href="https://twitter.com/ChipTelecom1">
+          </a>
+         </li>
+         <div class="clear">
+         </div>
+        </ul>
+       </div>
+       <div class="clear">
+       </div>
+      </div>
+      <!-- scroll_top_btn -->
+      <script src="wp-content/themes/NEW%20CHIP/js/move-top.js" type="text/javascript">
+      </script>
+      <script src="wp-content/themes/NEW%20CHIP/js/easing.js" type="text/javascript">
+      </script>
+      <script type="text/javascript">
+       $(document).ready(function() {
+						
+							var defaults = {
+					  			containerID: 'toTop', // fading element id
+								containerHoverID: 'toTopHover', // fading element hover id
+								scrollSpeed: 1200,
+								easingType: 'linear' 
+					 		};
+							
+							
+							$().UItoTop({ easingType: 'easeOutQuart' });
+							
+						});
+      </script>
+      <!---smoth-scrlling---->
+      <script type="text/javascript">
+       jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
+				});
+			});
+      </script>
+      <a style="display: none;" id="toTop" href="#">
+       <span id="toTopHover">
+       </span>
+       <span style="opacity: 1;" id="toTopHover">
+       </span>
+      </a>
+     </div>
+     <!-----start-copyright---->
+     <div class="copy-right">
+      <p>
+       <a href="http://chiptelecom.com.br">
+        Chip Telecom
+       </a>
+       Todos os direitos Reservados
+      </p>
+     </div>
+     <!-----//end-copyright---->
+    </div>
+   </div>
+   <!---//End-signin
+                
+                
+                
+                
+                
+                
+                
+                    
+                    <li class="element bluetooth semfio isotope-item" style="position: absolute; left: 0px; top: 0px; -webkit-transform: translate3d(0px, 0px, 0px);">
+                      <figure>
+                          <img src="images/s740.jpg" alt="">
+                          <figcaption>
+                                <h3><a href="savi740.html">Savi 740</a></h3>
+                                                
+                                <footer>
+                                   <div id="nivo-lightbox-demo"><p> <a href="savi740.html" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo">Mais</a> </p></div>                                   
+                                </footer>
+                            </figcaption>
+                        </figure>
+                       
+                    </li>
+                    
+                   
+                    
+                    <li class="element bluetooth isotope-item" style="position: absolute; left: 0px; top: 0px; -webkit-transform: translate3d(0px, 0px, 0px);">
+                      <figure>
+                          <img src="images/Legend-cs.jpg" alt="">
+                          <figcaption>
+                                <h3><a href="cs.html">Legend CS</a></h3>
+                                                
+                                <footer>
+                                   <div id="nivo-lightbox-demo"><p> <a href="cs.html" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo"> Mais</a> </p></div>                                   
+                                </footer>
+                            </figcaption>
+                        </figure>
+                       
+                    </li>
+                    
+                    <li class="element bluetooth isotope-item" style="position: absolute; left: 0px; top: 0px; -webkit-transform: translate3d(0px, 0px, 0px);">
+                      <figure>
+                          <img src="images/voy-leg-b235.jpg" alt="">
+                          <figcaption>
+                                <h3><a href="b235.html">Voyager Legend B235</a></h3>
+                                                
+                                <footer>
+                                   <div id="nivo-lightbox-demo"><p> <a href="b235.html" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo"> Mais</a> </p></div>                                   
+                                </footer>
+                            </figcaption>
+                        </figure>
+                       
+                    </li>
+                    
+                    
+                    
+                     <li class="element bluetooth semfio isotope-item" style="position: absolute; left: 0px; top: 0px; -webkit-transform: translate3d(0px, 0px, 0px);">
+                      <figure>
+                          <img src="images/sGo.jpg" alt="">
+                          <figcaption>
+                                <h3><a href="go.html">Savi Go</a></h3>
+                                                
+                                <footer>
+                                   <div id="nivo-lightbox-demo"><p> <a href="go.html" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo">Mais</a> </p></div>                                   
+                                </footer>
+                            </figcaption>
+                        </figure>
+                       
+                    </li>
+                    
+                    
+                    
+                    <li class="element bluetooth isotope-item" style="position: absolute; left: 0px; top: 0px; -webkit-transform: translate3d(0px, 0px, 0px);">
+                      <figure>
+                          <img src="images/c620.jpg" alt="">
+                          <figcaption>
+                                <h3><a href="620.html">Calisto 620</a></h3>
+                                                
+                                <footer>
+                                   <div id="nivo-lightbox-demo"><p> <a href="620.html" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo"> Mais</a> </p></div>                                   
+                                </footer>
+                            </figcaption>
+                        </figure>
+                       
+                    </li>
+                    
+                    <li class="element semfio isotope-item" style="position: absolute; height:200px; left: 0px; top: 0px; -webkit-transform: translate3d(0px, 0px, 0px);">
+                      <figure>
+                          <img src="images/cs540.jpg" alt="">
+                          <figcaption>
+                                <h3><a href="cs540.html">CS 540</a></h3>
+                                                
+                                <footer>
+                                   <div id="nivo-lightbox-demo"><p> <a href="cs540.html" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo">Mais</a> </p></div>                                   
+                                </footer>
+                            </figcaption>
+                        </figure>
+                       
+                    </li>
+                    
+                    <li class="element semfio isotope-item" style="position: absolute;height:200px; left: 0px; top: 0px; -webkit-transform: translate3d(0px, 0px, 0px);">
+                      <figure>
+                          <img src="images/cs530.jpg" alt="">
+                          <figcaption>
+                                <h3><a href="cs530.html"> CS 530</a></h3>
+                                                
+                                <footer>
+                                   <div id="nivo-lightbox-demo"><p> <a href="cs530.html" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo">Mais</a> </p></div>                                   
+                                </footer>
+                            </figcaption>
+                        </figure>
+                       
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                        
+                                           
+                    <li class="element escritorio isotope-item" style="position: absolute;height:200px; left: 0px; top: 0px; -webkit-transform: translate3d(1180px, 267px, 0px);">
+                      <figure>
+                          <img src="images/t110.jpg" alt="">
+                            <figcaption>
+                                <h3><a href="t110.html">T110</a></h3>
+                                          
+                                   <div id="nivo-lightbox-demo"> <p> <a href="t110.html" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo"> Mais</a> </p></div>                                  
+                            </figcaption>
+                        </figure>
+                    </li>
+                    
+                    
+                    
+                    
+                                             
+                    <li class="element escritorio isotope-item" style="position: absolute; height:200px;left: 0px; top: 0px; -webkit-transform: translate3d(1180px, 267px, 0px);">
+                      <figure>
+                          <img src="produtos/m22-1.jpg" alt="">
+                            <figcaption>
+                                <h3><a href="m22.html">M22</a></h3>
+                                                
+                                <footer>
+                                   <div id="nivo-lightbox-demo"> <p> <a href="m22.html" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo"> Mais</a> </p></div>                                  
+                            </figcaption>
+                        </figure>
+                    </li>
+                    
+                    
+                                              
+                    <li class="element contact isotope-item" style="position: absolute;height:200px; left: 0px; top: 0px; -webkit-transform: translate3d(1180px, 267px, 0px);">
+                      <figure>
+                          <img src="produtos/P52 Supra-2.jpg" alt="">
+                            <figcaption>
+                              <h3><a href="p52.html">P52</a></h3>
+                                                
+                                <footer>
+                                   <div id="nivo-lightbox-demo"> <p> <a href="p52.html" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo"> Mais</a> </p></div>                                  
+                        </figcaption>
+                      </figure>
+                    </li>
+                    
+                    
+                                              
+                    <li class="element contact isotope-item" style="position: absolute;height:200px; left: 0px; top: 0px; -webkit-transform: translate3d(1180px, 267px, 0px);">
+                      <figure>
+                          <img src="produtos/HW251-1.jpg" alt="">
+                            <figcaption>
+                                <h3><a href="hw251.html">HW251</a></h3>
+                                                
+                                <footer>
+                                   <div id="nivo-lightbox-demo"> <p> <a href="hw251.html" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo"> Mais</a> </p></div>                                  
+                            </figcaption>
+                        </figure>
+                    </li>
+                    
+                    
+                                              
+                    <li class="element contact isotope-item" style="position: absolute;height:200px; left: 0px; top: 0px; -webkit-transform: translate3d(1180px, 267px, 0px);">
+                      <figure>
+                          <img src="produtos/HW261-1.jpg" alt="">
+                            <figcaption>
+                                <h3><a href="hw261.html">HW261</a></h3>
+                                                
+                                <footer>
+                                   <div id="nivo-lightbox-demo"> <p> <a href="hw261.html" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo"> Mais</a> </p></div>                                  
+                            </figcaption>
+                        </figure>
+                    </li>
+                    
+                    
+                                              
+                    <li class="element contact isotope-item" style="position: absolute;height:200px; left: 0px; top: 0px; -webkit-transform: translate3d(1180px, 267px, 0px);">
+                      <figure>
+                          <img src="produtos/hw261n-1.jpg" alt="">
+                            <figcaption>
+                                <h3><a href="hw261n.html">HW261N</a></h3>
+                                                
+                                <footer>
+                                   <div id="nivo-lightbox-demo"> <p> <a href="hw261n.html" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo"> Mais</a> </p></div>                                  
+                            </figcaption>
+                        </figure>
+                    </li>
+                    
+                    
+                                              
+                    <li class="element contact isotope-item" style="position: absolute; height:200px;left: 0px; top: 0px; -webkit-transform: translate3d(1180px, 267px, 0px);">
+                      <figure>
+                          <img src="produtos/hw251n-1.jpg" alt="">
+                            <figcaption>
+                                <h3><a href="hw251n.html">HW251N</a></h3>
+                                                
+                                <footer>
+                                   <div id="nivo-lightbox-demo"> <p> <a href="hw251n.html" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo"> Mais</a> </p></div>                                  
+                            </figcaption>
+                        </figure>
+                    </li>
+                    
+                    
+                                              
+                    <li class="element contact isotope-item" style="position: absolute;height:200px; left: 0px; top: 0px; -webkit-transform: translate3d(1180px, 267px, 0px);">
+                      <figure>
+                          <img src="produtos/s12-1.jpg" alt="">
+                            <figcaption>
+                              <h3><a href="s12.html">s12</a></h3>
+                                                
+                                <footer>
+                                   <div id="nivo-lightbox-demo"> <p> <a href="s12.html" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo"> Mais</a> </p></div>                                  
+                        </figcaption>
+                      </figure>
+                    </li>
+                    
+                    
+                    
+                                               
+                    <li class="element contact isotope-item" style="position: absolute; height:200px;left: 0px; top: 0px; -webkit-transform: translate3d(1180px, 267px, 0px);">
+                      <figure>
+                          <img src="produtos/p252-1.jpg" alt="">
+                            <figcaption>
+                              <h3><a href="p252.html">P252</a></h3>
+                                                
+                                <footer>
+                                   <div id="nivo-lightbox-demo"> <p> <a href="p252.html" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo"> Mais</a> </p></div>                                  
+                        </figcaption>
+                      </figure>
+                    </li>
+                                 
+                                 
+                                 
+                                                    
+                    <li class="element contact isotope-item" style="position: absolute;height:200px; left: 0px; top: 0px; -webkit-transform: translate3d(1180px, 267px, 0px);">
+                      <figure>
+                          <img src="produtos/sp11-1.jpg" alt="">
+                            <figcaption>
+                              <h3><a href="sp11.html">SP11</a></h3>
+                                                
+                                <footer>
+                                   <div id="nivo-lightbox-demo"> <p> <a href="sp11.html" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo"> Mais</a> </p></div>                                  
+                        </figcaption>
+                      </figure>
+                    </li>
+                                  
+                                 
+                                 
+                                                    
+                    <li class="element contact isotope-item" style="position: absolute; height:200px; left: 0px; top: 0px; -webkit-transform: translate3d(1180px, 267px, 0px);">
+                      <figure>
+                          <img src="produtos/sp12-1.jpg" alt="">
+                            <figcaption>
+                              <h3><a href="sp12.html">SP12</a></h3>
+                                                
+                                <footer>
+                                   <div id="nivo-lightbox-demo"> <p> <a href="sp12.html" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo"> Mais</a> </p></div>                                  
+                        </figcaption>
+                      </figure>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                ---->
+  </div>
+  <a id="toTop" href="#">
+   To Top
+  </a>
+ </body>
+</html>

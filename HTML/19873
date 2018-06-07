@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html xmlns="http://www.w3.org/1999/xhtml" class="js flexbox canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients no-cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths wf-dincondensedweb-n4-active wf-kremlinprowebsemiexp-n4-active wf-active js csstransforms3d" style="">
+ <!--<![endif]-->
+ <head>
+  <meta charset="utf-8" />
+  <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+  <title>
+   LASWAP
+  </title>
+  <meta content="Welcome to LaSWAP – a unique Sixth Form Centre comprising four small but closely linked sixth forms that all work together to create our distinctive ‘campus’ feel. We help all our students make the most effective transition from school to higher education, offer them the widest choice of stimulating courses and improve their chances of getting into their first choice universities. Indeed, for over 30 years the top universities continually tell us that LaSWAP students settle in far more quickly than young people from other sixth forms. They also perform better in an independent academic environment, which helps them to move on to more rewarding careers and fulfilling lives." name="description" />
+  <meta content="" name="author" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <link href="http://www.laswap.camden.sch.uk/wp-content/themes/laswap/_/img/favicon.png" type="image/png" rel="icon" />
+  <link href="http://www.laswap.camden.sch.uk/wp-content/themes/laswap/normalize.css" type="text/css" rel="stylesheet" />
+  <link href="http://www.laswap.camden.sch.uk/wp-content/themes/laswap/grid.css" type="text/css" rel="stylesheet" />
+  <link href="http://www.laswap.camden.sch.uk/wp-content/themes/laswap/style.css" rel="stylesheet" />
+  <link href="http://www.laswap.camden.sch.uk/wp-content/themes/laswap/slider.css" type="text/css" rel="stylesheet" />
+  <link href="http://www.laswap.camden.sch.uk/wp-content/themes/laswap/_/css/pin.css" type="text/css" rel="stylesheet" />
+  <link href="http://www.laswap.camden.sch.uk/wp-content/themes/laswap/resp.css" type="text/css" rel="stylesheet" />
+  <link href="http://www.laswap.camden.sch.uk/wp-content/themes/laswap/_/js/lib/magnific-popup.css" type="text/css" rel="stylesheet" />
+  <script src="//use.typekit.net/cij6rwh.js" type="text/javascript">
+  </script>
+  <style type="text/css">
+   .tk-kremlin-pro-web-semi-exp{font-family:"kremlin-pro-web-semi-exp",serif;}.tk-din-condensed-web{font-family:"din-condensed-web",sans-serif;}
+  </style>
+  <link rel="stylesheet" href="https://use.typekit.net/c/60076e/1w;din-condensed-web,2,ZwM:P:n4;kremlin-pro-web-semi-exp,2,SHH:P:n4/d?3bb2a6e53c9684ffdc9a9bf51b5b2a629d347ed6863d344d206715ab3cb91ac2b25490817d044e370ac63a99b5a637c40251eddcbac40777f6aa426414fd286a82bc446305b107c1fd1063fa69a1278b97f808127c1f0232a42a1d5a3e6d9548c32012e5f426ccf43c43c4759b2e78b84e13859267b9ac6e72997a5e1c49639556d6b8" media="all" />
+  <script type="text/javascript">
+   try{Typekit.load();}catch(e){}
+  </script>
+  <script src="http://www.laswap.camden.sch.uk/wp-content/themes/laswap/_/js/lib/modernizr-2.6.2.min.js">
+  </script>
+  <script charset="utf-8" type="text/javascript">
+   var base_url = 'http://www.laswap.camden.sch.uk'; 
+            var base_dir = '';
+  </script>
+  <script type="text/javascript">
+   window._wpemojiSettings = {"baseUrl":"http:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"http:\/\/www.laswap.camden.sch.uk\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.3.1"}};
+			!function(a,b,c){function d(a){var c=b.createElement("canvas"),d=c.getContext&amp;&amp;c.getContext("2d");return d&amp;&amp;d.fillText?(d.textBaseline="top",d.font="600 32px Arial","flag"===a?(d.fillText(String.fromCharCode(55356,56812,55356,56807),0,0),c.toDataURL().length&gt;3e3):(d.fillText(String.fromCharCode(55357,56835),0,0),0!==d.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&amp;&amp;c.supports.flag||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&amp;&amp;c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&amp;&amp;f.twemoji&amp;&amp;(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+  </script>
+  <script src="http://www.laswap.camden.sch.uk/wp-includes/js/wp-emoji-release.min.js?ver=4.3.1" type="text/javascript">
+  </script>
+  <style type="text/css">
+   img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+  </style>
+  <link media="all" type="text/css" href="http://www.laswap.camden.sch.uk/wp-content/plugins/jquery-collapse-o-matic/light_style.css?ver=1.6" id="collapseomatic-css-css" rel="stylesheet" />
+  <link media="all" type="text/css" href="http://www.laswap.camden.sch.uk/wp-content/themes/laswap/_/js/lib/royalslider.css?ver=4.3.1" id="royalslider-css-css" rel="stylesheet" />
+  <link media="all" type="text/css" href="http://www.laswap.camden.sch.uk/wp-content/themes/laswap/_/js/lib/rs-default.css?ver=4.3.1" id="rs-default-css-css" rel="stylesheet" />
+  <link media="all" type="text/css" href="http://www.laswap.camden.sch.uk/wp-content/themes/laswap/_/js/lib/rs-minimal-white.css?ver=4.3.1" id="rs-minimal-white-css-css" rel="stylesheet" />
+  <link href="http://www.laswap.camden.sch.uk/" rel="canonical" />
+  <link href="http://www.laswap.camden.sch.uk/" rel="shortlink" />
+ </head>
+ <body class="home page page-id-7 page-template page-template-tpl-homepage page-template-tpl-homepage-php page-home">
+  <!--[if lt IE 9]>
+        <div class="browserhappy-container">
+            <img src="http://www.laswap.camden.sch.uk/wp-content/themes/laswap/_/img/laswap-logo.png" />
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/" target="_blank">upgrade your browser</a> to view this website.</p>
+
+            <p class="browserhappy-contact"> La Swap Administrative Officers:<br  />
+            020 7692 4157<br  />
+            Email:  <a href="mailto:laswap@williamellis.camden.sch.uk">laswap@williamellis.camden.sch.uk</a></p>
+        </div>
+    <![endif]-->
+  <div class="page-wrap red">
+   <div class="wrap">
+    <header>
+     <a href="http://www.laswap.camden.sch.uk/" class="col1-4 logo ">
+      <img src="http://www.laswap.camden.sch.uk/wp-content/themes/laswap/_/img/laswap-logo.png" />
+     </a>
+     <a class="mobile-menu black icon-menu-1" href="#mobile-menu">
+     </a>
+     <nav id="navigation" class="col3-4">
+      <ul>
+       <li class="page_item page-item-51 page_item_has_children">
+        <a href="http://www.laswap.camden.sch.uk/why-laswap/">
+         Why LaSWAP
+        </a>
+       </li>
+       <li class="page_item page-item-29 page_item_has_children">
+        <a href="http://www.laswap.camden.sch.uk/what-to-study/">
+         What to study
+        </a>
+       </li>
+       <li class="page_item page-item-31 page_item_has_children">
+        <a href="http://www.laswap.camden.sch.uk/how-to-apply/">
+         How to apply
+        </a>
+       </li>
+       <li class="page_item page-item-33 page_item_has_children">
+        <a href="http://www.laswap.camden.sch.uk/laswap-life/">
+         LaSWAP life
+        </a>
+       </li>
+       <li class="page_item page-item-35 page_item_has_children">
+        <a href="http://www.laswap.camden.sch.uk/parents-carers/">
+         Parents/Carers
+        </a>
+       </li>
+       <li class="page_item page-item-39">
+        <a href="http://www.laswap.camden.sch.uk/contact/">
+         Contact
+        </a>
+       </li>
+       <li class="page_item page-item-37">
+        <a href="http://www.laswap.camden.sch.uk/terms-dates/">
+         Key dates
+        </a>
+       </li>
+      </ul>
+      <div class="search-icons-container">
+       <div class="search-icons-container-inner">
+        <div class="search-container left">
+         <form action="http://www.laswap.camden.sch.uk/" id="searchform" method="get" role="search">
+          <div>
+           <label for="s" class="screen-reader-text">
+           </label>
+           <span class="search-input">
+            <input type="text" id="s" name="s" placeholder="Search..." value="" class="placeholder" />
+           </span>
+           <a class="submit">
+            <input type="submit" value="" id="searchsubmit" />
+           </a>
+          </div>
+         </form>
+        </div>
+        <div class="icons-container">
+         <a class="icons icon-facebook-circled left" target="_blank" href="https://www.facebook.com/laswapsixthform1">
+         </a>
+         <a class="icons icon-twitter-circled left" target="_blank" href="https://twitter.com/laswapsixthform?lang=en-gb">
+         </a>
+        </div>
+       </div>
+      </div>
+     </nav>
+    </header>
+   </div>
+   <div class="full-width background-pattern">
+    <div class="royalSlider heroSlider rsMinW rsHor" id="full-width-slider" style="height: 301.563px;">
+     <div class="rsOverflow" style="cursor: grab; width: 965px; height: 302px;">
+      <div class="rsContainer" style="transition-duration: 0s; transform: translate3d(0px, 0px, 0px);">
+       <div class="rsSlide " style="left: 0px;">
+        <div class="rsContent" style="visibility: visible; opacity: 1; transition: opacity 400ms ease-in-out 0s;">
+         <img src="http://www.laswap.camden.sch.uk/wp-content/uploads/2013/02/home2.jpg" class="rsImg rsMainSlideImage" style="width: 967px; height: 302px; margin-left: -1px; margin-top: 0px;" />
+         <div class="text-wrapper ">
+          <div class="slideshow-text slideshow-text-1 white">
+           <h1>
+            <span>
+             Open up a world
+            </span>
+           </h1>
+          </div>
+          <div class="slideshow-text slideshow-text-2 white">
+           <h1>
+            <span>
+             of further education
+            </span>
+           </h1>
+          </div>
+          <div class="slideshow-text slideshow-text-3 white">
+           <div class="slideshow-text-block bg-orange">
+            <span>
+             More successful
+             <br />
+             university applications
+            </span>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="rsSlide " style="left: 973px;">
+        <div class="rsContent">
+         <img src="http://www.laswap.camden.sch.uk/wp-content/uploads/2013/02/home4.jpg" class="rsImg rsMainSlideImage" style="width: 967px; height: 302px; margin-left: -1px; margin-top: 0px;" />
+         <div class="text-wrapper ">
+          <div class="slideshow-text slideshow-text-1 white">
+           <h1>
+            <span>
+             Open up a world
+            </span>
+           </h1>
+          </div>
+          <div class="slideshow-text slideshow-text-2 white">
+           <h1>
+            <span>
+             of further education
+            </span>
+           </h1>
+          </div>
+          <div class="slideshow-text slideshow-text-3 white">
+           <div class="slideshow-text-block bg-blue-dark">
+            <span>
+             Widest choice and
+             <br />
+             combination of courses
+            </span>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="rsSlide " style="left: 1946px;">
+        <div class="rsContent">
+         <img src="http://www.laswap.camden.sch.uk/wp-content/uploads/2013/02/home5.jpg" class="rsImg rsMainSlideImage" style="width: 967px; height: 302px; margin-left: -1px; margin-top: 0px;" />
+         <div class="text-wrapper ">
+          <div class="slideshow-text slideshow-text-1 white">
+           <h1>
+            <span>
+             Open up a world
+            </span>
+           </h1>
+          </div>
+          <div class="slideshow-text slideshow-text-2 white">
+           <h1>
+            <span>
+             of further education
+            </span>
+           </h1>
+          </div>
+          <div class="slideshow-text slideshow-text-3 white">
+           <div class="slideshow-text-block bg-orange">
+            <span>
+             Four stimulating
+             <br />
+             specialist campuses
+            </span>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="rsSlide " style="left: -973px;">
+        <div class="rsContent">
+         <img src="http://www.laswap.camden.sch.uk/wp-content/uploads/2013/02/home3.jpg" class="rsImg rsMainSlideImage" style="width: 967px; height: 302px; margin-left: -1px; margin-top: 0px;" />
+         <div class="text-wrapper ">
+          <div class="slideshow-text slideshow-text-1 white">
+           <h1>
+            <span>
+             Open up a world
+            </span>
+           </h1>
+          </div>
+          <div class="slideshow-text slideshow-text-2 white">
+           <h1>
+            <span>
+             of further education
+            </span>
+           </h1>
+          </div>
+          <div class="slideshow-text slideshow-text-3 white">
+           <div class="slideshow-text-block bg-orange">
+            <span>
+             Better preparation for
+             <br />
+             university… and life beyond
+            </span>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="rsSlide " style="left: -1946px;">
+        <div class="rsContent">
+         <img src="http://www.laswap.camden.sch.uk/wp-content/uploads/2013/02/home1.jpg" class="rsImg rsMainSlideImage" style="width: 967px; height: 302px; margin-left: -1px; margin-top: 0px;" />
+         <div class="text-wrapper ">
+          <div class="slideshow-text slideshow-text-1 white">
+           <h1>
+            <span>
+             Open up a world
+            </span>
+           </h1>
+          </div>
+          <div class="slideshow-text slideshow-text-2 white">
+           <h1>
+            <span>
+             of further education
+            </span>
+           </h1>
+          </div>
+          <div class="slideshow-text slideshow-text-3 white">
+           <div class="slideshow-text-block bg-purple">
+            <span>
+             Over 300 highly experienced
+             <br />
+             Sixth Form teachers
+            </span>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="rsArrow rsArrowLeft" style="display: block;">
+      <div class="rsArrowIcn">
+      </div>
+     </div>
+     <div class="rsArrow rsArrowRight" style="display: block;">
+      <div class="rsArrowIcn">
+      </div>
+     </div>
+    </div>
+    <div class="wrap notice-board">
+     <h2 style="text-align: center;">
+     </h2>
+     <h2 style="text-align: center;">
+      LaSWAP applications 2016/17: Friday 11 December, 2015
+     </h2>
+     <h4 style="text-align: center;">
+      For an application form, you must register online. Please click 
+      <a href="http://www.laswap.camden.sch.uk/how-to-apply/registration-for-application-form/" title="Registration for an Application Form 2016/17">
+       here
+      </a>
+      .
+     </h4>
+     <p style="text-align: center;">
+      An application form will be sent to you by post. Please see the
+      <em>
+       how to apply
+      </em>
+      section for further details.
+     </p>
+     <h2 style="text-align: center;">
+      Congratulations to LaSWAP students  – our best A level results 
+      <span style="text-decoration: underline;">
+       <a href="http://www.laswap.camden.sch.uk/wp-content/uploads/2015/08/Results-day-2015.pdf">
+        ever!
+       </a>
+       &gt;
+      </span>
+     </h2>
+     <h4 style="text-align: center;">
+      University places up too – now 15% above the national UCAS figure
+     </h4>
+    </div>
+    <!-- image + animated block with text -->
+    <div class=" section-repeater   home-why-laswap">
+     <div class="wrap">
+      <div class="section red bg-red">
+       <div class="page-title ">
+        <a class="" href="http://www.laswap.camden.sch.uk/why-laswap/">
+         <span class="section-title white">
+          Why LaSWAP
+         </span>
+        </a>
+        <span class="arrow" href="javascript:history.go(-1)">
+        </span>
+       </div>
+       <div class="column-left col1-4">
+        <ul class="secondary-navigation">
+         <li class="page_item page-item-41">
+          <a href="http://www.laswap.camden.sch.uk/why-laswap/our-video/">
+           Our Video
+          </a>
+         </li>
+         <li class="page_item page-item-45">
+          <a href="http://www.laswap.camden.sch.uk/why-laswap/10-reasons-to-study-here/">
+           10 reasons to study here
+          </a>
+         </li>
+         <li class="page_item page-item-43">
+          <a href="http://www.laswap.camden.sch.uk/why-laswap/sixth-form-of-choice/">
+           Sixth form of choice
+          </a>
+         </li>
+         <li class="page_item page-item-270">
+          <a href="http://www.laswap.camden.sch.uk/why-laswap/why-laswap-is-our-choice/">
+           Why LaSWAP is our choice
+          </a>
+         </li>
+        </ul>
+       </div>
+       <div class="main-content col1-2">
+        <p>
+         Welcome to LaSWAP – a unique Sixth Form Centre comprising four small but closely linked sixth forms that all work together to create our distinctive ‘campus’ feel. We help all our students make the most effective transition from school to higher education, offer them the widest choice of stimulating courses and improve their chances of getting into their first choice universities. Indeed, for over 30 years the top universities continually tell us that LaSWAP students settle in far more quickly than young people from other sixth forms. They also perform better in an independent academic environment, which helps them to move on to more rewarding careers and fulfilling lives.
+        </p>
+        <h4>
+         Georgina Atkinson, Director LaSWAP
+        </h4>
+        <a class="medium-text" href="http://www.laswap.camden.sch.uk/why-laswap/">
+         MORE &gt;
+        </a>
+       </div>
+       <div class="column-right col1-4">
+        <p>
+         <iframe width="220" height="124" frameborder="0" allowfullscreen="allowfullscreen" src="//player.vimeo.com/video/106922874?title=0&byline=0&portrait=0">
+         </iframe>
+        </p>
+        <h4>
+         Watch our video
+        </h4>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class=" section-repeater   home-what-to-study">
+     <div class="wrap">
+      <div class="section blue-dark bg-blue-dark">
+       <div class="page-title ">
+        <a class="" href="http://www.laswap.camden.sch.uk/what-to-study/">
+         <span class="section-title white">
+          What to study
+         </span>
+        </a>
+        <span class="arrow" href="javascript:history.go(-1)">
+        </span>
+       </div>
+       <div class="column-left col1-4">
+        <ul class="secondary-navigation">
+         <li class="page_item page-item-123">
+          <a href="http://www.laswap.camden.sch.uk/what-to-study/laswap-pathway/">
+           LaSWAP Pathways
+          </a>
+         </li>
+         <li class="page_item page-item-94">
+          <a href="http://www.laswap.camden.sch.uk/what-to-study/courses/">
+           Courses
+          </a>
+         </li>
+        </ul>
+       </div>
+       <div class="main-content col1-2">
+        <p style="color: #7b7b7a;">
+         We are an inclusive sixth form that believes in the benefits of a diverse student community. So we have designed pathways to suit most needs, but not everyone will be able to access all pathways. Always remember that our entry requirements are there to make sure your pathway is exactly right for your needs.
+        </p>
+        <p style="color: #7b7b7a;">
+         So which pathway is best for you? Simply choose the option that best matches your GCSE grades to see the pathway choices that LaSWAP can offer you.
+        </p>
+        <p style="color: #7b7b7a;">
+         <a href="http://www.laswap.camden.sch.uk/wp-content/uploads/2013/02/pathway.png">
+          <img width="300" height="74" alt="pathway" src="http://www.laswap.camden.sch.uk/wp-content/uploads/2013/02/pathway.png" class="alignnone size-full wp-image-389" />
+         </a>
+        </p>
+        <a class="medium-text" href="http://www.laswap.camden.sch.uk/what-to-study/">
+         MORE &gt;
+        </a>
+       </div>
+       <div class="column-right col1-4">
+        <p>
+         <a href="http://www.laswap.camden.sch.uk/wp-content/uploads/2014/08/15.jpg">
+          <img width="184" height="184" alt="15" src="http://www.laswap.camden.sch.uk/wp-content/uploads/2014/08/15.jpg" class="alignnone size-full wp-image-408" />
+         </a>
+        </p>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class=" section-repeater   home-how-to-apply">
+     <div class="wrap">
+      <div class="section orange bg-orange">
+       <div class="page-title ">
+        <a class="" href="http://www.laswap.camden.sch.uk/how-to-apply/">
+         <span class="section-title white">
+          How to apply
+         </span>
+        </a>
+        <span class="arrow" href="javascript:history.go(-1)">
+        </span>
+       </div>
+       <div class="column-left col1-4">
+        <ul class="secondary-navigation">
+         <li class="page_item page-item-125">
+          <a href="http://www.laswap.camden.sch.uk/how-to-apply/internal-students/">
+           Internal Students
+          </a>
+         </li>
+         <li class="page_item page-item-127">
+          <a href="http://www.laswap.camden.sch.uk/how-to-apply/external-students/">
+           External Students
+          </a>
+         </li>
+         <li class="page_item page-item-131">
+          <a href="http://www.laswap.camden.sch.uk/how-to-apply/admissions-and-entry-quals/">
+           ADMISSIONS 2016/17 AND ENTRY QUALS
+          </a>
+         </li>
+         <li class="page_item page-item-854">
+          <a href="http://www.laswap.camden.sch.uk/how-to-apply/registration-for-application-form/">
+           Registration for an Application Form 2016/17
+          </a>
+         </li>
+         <li class="page_item page-item-185">
+          <a href="http://www.laswap.camden.sch.uk/how-to-apply/application-form/">
+           APPLICATION FORM
+          </a>
+         </li>
+         <li class="page_item page-item-187">
+          <a href="http://www.laswap.camden.sch.uk/how-to-apply/bursary-fsm-form/">
+           Bursary &amp; FSM FORM
+          </a>
+         </li>
+        </ul>
+       </div>
+       <div class="main-content col1-2">
+        <p>
+         LaSWAP is unique. Because of the huge range of opportunities we offer, everyone has the chance to be the best they can be. You’ll achieve more than you ever expected!
+        </p>
+        <a class="medium-text" href="http://www.laswap.camden.sch.uk/how-to-apply/">
+         MORE &gt;
+        </a>
+       </div>
+       <div class="column-right col1-4">
+        <p>
+         <a href="http://www.laswap.camden.sch.uk/wp-content/uploads/2014/08/10.jpg">
+          <img width="184" height="184" alt="10" src="http://www.laswap.camden.sch.uk/wp-content/uploads/2014/08/10.jpg" class="alignnone size-full wp-image-403" />
+         </a>
+        </p>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class=" section-repeater   home-laswap-life">
+     <div class="wrap">
+      <div class="section green-dark bg-green-dark">
+       <div class="page-title ">
+        <a class="" href="http://www.laswap.camden.sch.uk/laswap-life/">
+         <span class="section-title white">
+          LaSWAP life
+         </span>
+        </a>
+        <span class="arrow" href="javascript:history.go(-1)">
+        </span>
+       </div>
+       <div class="column-left col1-4">
+        <ul class="secondary-navigation">
+         <li class="page_item page-item-134">
+          <a href="http://www.laswap.camden.sch.uk/laswap-life/trips-and-events/">
+           Trips and Events
+          </a>
+         </li>
+         <li class="page_item page-item-136">
+          <a href="http://www.laswap.camden.sch.uk/laswap-life/university-quotes/">
+           University
+          </a>
+         </li>
+         <li class="page_item page-item-138">
+          <a href="http://www.laswap.camden.sch.uk/laswap-life/gallery/">
+           Gallery
+          </a>
+         </li>
+         <li class="page_item page-item-262">
+          <a href="http://www.laswap.camden.sch.uk/laswap-life/our-facebook-page/">
+           Our Facebook page
+          </a>
+         </li>
+         <li class="page_item page-item-258">
+          <a href="http://www.laswap.camden.sch.uk/laswap-life/students-documents/">
+           Useful documents
+          </a>
+         </li>
+         <li class="page_item page-item-260">
+          <a href="http://www.laswap.camden.sch.uk/laswap-life/flyers-and-brochures/">
+           Flyers and brochures
+          </a>
+         </li>
+        </ul>
+       </div>
+       <div class="main-content col1-2">
+        <p>
+         We asked our students what they think about LaSWAP. Our surveys show that we are an extremely happy community because our students feel they get great teaching. They also tell us they feel better prepared for university or a future career. And they really enjoy meeting and learning from the diverse students around them.
+        </p>
+        <a class="medium-text" href="http://www.laswap.camden.sch.uk/laswap-life/">
+         MORE &gt;
+        </a>
+       </div>
+       <div class="column-right col1-4">
+        <p>
+         <a href="http://www.laswap.camden.sch.uk/wp-content/uploads/2014/08/07.jpg">
+          <img width="184" height="184" alt="07" src="http://www.laswap.camden.sch.uk/wp-content/uploads/2014/08/07.jpg" class="alignnone size-full wp-image-400" />
+         </a>
+        </p>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class=" section-repeater   home-parents-carers">
+     <div class="wrap">
+      <div class="section purple bg-purple">
+       <div class="page-title ">
+        <a class="" href="http://www.laswap.camden.sch.uk/parents-carers/">
+         <span class="section-title white">
+          Parents/Carers
+         </span>
+        </a>
+        <span class="arrow" href="javascript:history.go(-1)">
+        </span>
+       </div>
+       <div class="column-left col1-4">
+        <ul class="secondary-navigation">
+         <li class="page_item page-item-142">
+          <a href="http://www.laswap.camden.sch.uk/parents-carers/documents/">
+           Useful Documents
+          </a>
+         </li>
+         <li class="page_item page-item-144">
+          <a href="http://www.laswap.camden.sch.uk/parents-carers/who-to-contact/">
+           Who to contact
+          </a>
+         </li>
+         <li class="page_item page-item-146">
+          <a href="http://www.laswap.camden.sch.uk/parents-carers/how-you-can-help-us/">
+           How you can help us &amp; parent forum
+          </a>
+         </li>
+         <li class="page_item page-item-150">
+          <a href="http://www.laswap.camden.sch.uk/parents-carers/enrichment-glossary/">
+           Enrichment
+          </a>
+         </li>
+         <li class="page_item page-item-300">
+          <a href="http://www.laswap.camden.sch.uk/parents-carers/parent-glossary/">
+           Parent Glossary / Parent Bulletins
+          </a>
+         </li>
+        </ul>
+       </div>
+       <div class="main-content col1-2">
+        <p>
+         Recent research shows that students who complete their studies at large sixth form centres are much better prepared and able to make the transition to the independence of university life. That’s why we call LaSWAP the sixth form of choice.
+        </p>
+        <a class="medium-text" href="http://www.laswap.camden.sch.uk/parents-carers/">
+         MORE &gt;
+        </a>
+       </div>
+       <div class="column-right col1-4">
+        <p>
+         <a href="http://www.laswap.camden.sch.uk/wp-content/uploads/2013/02/17.jpg">
+          <img width="184" height="184" alt="17" src="http://www.laswap.camden.sch.uk/wp-content/uploads/2013/02/17.jpg" class="alignnone size-full wp-image-410" />
+         </a>
+        </p>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="wrap">
+     <div class="section homepage-page-link green-light bg-green-light col1-2">
+      <div class="page-title ">
+       <a class="" href="http://www.laswap.camden.sch.uk/contact/">
+        <span class="section-title white">
+         Contact
+        </span>
+       </a>
+       <a class="arrow" href="http://www.laswap.camden.sch.uk/contact/">
+       </a>
+      </div>
+     </div>
+     <div class="section homepage-page-link blue-light bg-blue-light col1-2">
+      <div class="page-title ">
+       <a class="" href="http://www.laswap.camden.sch.uk/terms-dates/">
+        <span class="section-title white">
+         Key dates
+        </span>
+       </a>
+       <a class="arrow" href="http://www.laswap.camden.sch.uk/terms-dates/">
+       </a>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="wrap">
+    <footer>
+     <div class="col1-2 no-padding">
+      <span class="medium-text">
+       SEE OUR SCHOOLS
+      </span>
+      <div class="col1-2 no-padding">
+       <p>
+        <a target="_blank" href="http://www.lasainteunion.org.uk/">
+         La Sainte Union School &gt;
+        </a>
+        <br />
+        <a target="_blank" href="http://www.williamellis.camden.sch.uk/">
+         William Ellis School &gt;
+        </a>
+       </p>
+      </div>
+      <div class="col1-2 no-padding">
+       <p>
+        <a target="_blank" href="http://www.aclandburghley.camden.sch.uk/">
+         Acland Burghley School &gt;
+        </a>
+        <br />
+        <a target="_blank" href="http://www.parliamenthill.camden.sch.uk/">
+         Parliament Hill School &gt;
+        </a>
+       </p>
+      </div>
+     </div>
+     <div class="col1-2 no-padding top10">
+      <span class="medium-text">
+       GET IN TOUCH
+      </span>
+      <div class="col1-2 no-padding">
+       <p>
+        For general enquiries and all admissions please contact:
+					LaSWAP Administration Officer: 020 7692 4157
+        <br />
+        Email:
+        <a href="mailto:LaSWAP@williamellis.camden.sch.uk">
+         LaSWAP@williamellis.camden.sch.uk
+        </a>
+       </p>
+      </div>
+      <div class="col1-2 no-padding">
+       <p class="right">
+        Website designed by
+        <a target="_blank" href="http://www.graphicalagency.com/">
+         Graphical
+        </a>
+       </p>
+      </div>
+     </div>
+    </footer>
+   </div>
+   <!--end of #wrap-->
+   <script type="text/javascript">
+    var colomatduration = 'fast';
+var colomatslideEffect = 'slideFade';
+   </script>
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js" type="text/javascript">
+   </script>
+   <script src="http://www.laswap.camden.sch.uk/wp-content/plugins/jquery-collapse-o-matic/js/collapse.js?ver=1.5.18" type="text/javascript">
+   </script>
+   <script src="http://www.laswap.camden.sch.uk/wp-content/themes/laswap/_/js/lib/modernizr.custom.34807.js" type="text/javascript">
+   </script>
+   <script src="http://www.laswap.camden.sch.uk/wp-content/themes/laswap/_/js/lib/jquery.magnific-popup.js" type="text/javascript">
+   </script>
+   <script src="http://www.laswap.camden.sch.uk/wp-content/themes/laswap/_/js/lib/jquery.royalslider.min.js" type="text/javascript">
+   </script>
+   <script src="http://www.laswap.camden.sch.uk/wp-content/themes/laswap/_/js/lib/jquery.columnizer.js" type="text/javascript">
+   </script>
+   <script src="http://www.laswap.camden.sch.uk/wp-content/themes/laswap/_/js/main.js" type="text/javascript">
+   </script>
+  </div>
+ </body>
+</html>

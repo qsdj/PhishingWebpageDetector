@@ -1,0 +1,2488 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" class="no-js">
+ <head>
+  <meta charset="utf-8" />
+  <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
+  <link href="https://plus.google.com/+Gocsb/about" rel="publisher" />
+  <meta content="..." itemprop="address" id="go_address" />
+  <meta content="130 Birdseye Rd" itemprop="streetAddress" id="go_streetAddress" />
+  <meta content="Farmington" itemprop="addressLocality" id="go_addressLocality" />
+  <meta content="Colima" itemprop="addressRegion" id="go_addressRegion" />
+  <meta content="06032" itemprop="postalCode" id="go_postalCode" />
+  <meta content="1 800 TV RADIO" itemprop="telephone" id="go_telephone" />
+  <link href="/favicon.ico" rel="SHORTCUT ICON" />
+  <link rel="stylesheet" href="http://www.gocsb.com/css/font.css" />
+  <link rel="stylesheet" href="http://www.gocsb.com/css/css.css" />
+  <link rel="stylesheet" href="http://www.gocsb.com/css/font-awesome.css" />
+  <script type="text/javascript" async="" src="https://chatserver.comm100.com/livechat.ashx?siteId=213865">
+  </script>
+  <script async="" src="//www.google-analytics.com/analytics.js">
+  </script>
+  <script async="" src="//www.google-analytics.com/analytics.js">
+  </script>
+  <script src="http://www.gocsb.com/js/jquery.min.js">
+  </script>
+  <script src="http://www.gocsb.com/js/popover-v1.js">
+  </script>
+  <script>
+   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-60126572-1', 'auto');
+  ga('send', 'pageview');
+  </script>
+  <title>
+   Contact Connecticut School of Broadcasting | Broadcasting School
+  </title>
+  <meta content="Why wait to start your career in radio or television?  Contact us today. The information you seek is just a click away! Visit us today!" name="description" />
+  <script>
+   $(document).ready(function(){
+    $(".btn-navbar").click(function(){
+        $(".nav-collapse").toggle();
+    });
+});
+  </script>
+  <link rel="stylesheet" type="text/css" href="http://www.gocsb.com/css/jquery-ui.css" />
+  <script src="http://www.gocsb.com/js/jquery-ui.js">
+  </script>
+  <style type="text/css">
+   .form .error{margin-top:0px; float:left;}
+  </style>
+  <script type="text/javascript" src="http://www.gocsb.com/js/jquery.metadata.js">
+  </script>
+  <script type="text/javascript" src="http://www.gocsb.com/js/jquery.validate.js">
+  </script>
+  <script type="text/javascript">
+   $.validator.setDefaults({
+                    submitHandler: function() { window.document.frm_contactus.submit() }
+                });
+                $.metadata.setType("attr", "validate");
+                $().ready(function() {
+                // validate signup form on keyup and submit
+                $("#frm_contactus").validate({
+                    rules: {
+                        
+                        campus: "required",
+                        mainInterest: "required",
+						workPreference: "required",
+						firstName: "required",
+                        lastName:"required",
+                        email: {
+                            required: true,
+                            email: true
+                        },
+                        phone: "required",
+						                        address:"required",
+						city:"required",
+						state:"required",
+						zip:"required",
+												DateOfBirth:"required",
+						aboutus:"required"
+                    },
+                    messages: {
+                        campus: "",
+                        mainInterest: "",
+						workPreference: "",
+						firstName: "Required",
+                        lastName: "Required",
+                        email: "Required",
+                        phone: "Required",
+						                        address: "Required",
+						city: "Required",
+						state: "Required",
+						zip: "Required",
+												DateOfBirth: "Required",
+						aboutus: "Required"
+                    }
+                });
+                
+            });
+				
+			function fun_about(id)
+                    {
+						var id = window.document.frm_contactus.campus.value;
+						if(id != "")
+					{
+						document.getElementById('HowHeard1div').style.display="block";	
+						$.ajax({
+						type: "POST",
+						url: "http://www.gocsb.com/ajaxHearAbout",
+						data: "location=" + id,
+						success: function(responce){
+							document.getElementById('HowHeard1div').innerHTML=responce;
+						}
+						});
+					}
+					else
+					{
+						document.getElementById('HowHeard1div').style.display="none";	
+					}
+						
+                        
+                    }
+					function howHeard1Change(selectedValue)
+					{
+						if(selectedValue != "")
+						{
+							document.getElementById('WhichWhoDiv').style.display="block";	
+							var location = window.document.frm_contactus.campus.value;
+						$.ajax({
+								type: "POST",
+								url: "http://www.gocsb.com/ajaxWhichWho",
+								data: "hearabout=" + selectedValue + "&amp;location="+location,
+								success: function(responce){
+									document.getElementById('WhichWhoDiv').innerHTML=responce;
+								}
+								});
+						}else{
+							document.getElementById('WhichWhoDiv').style.display="none";	
+						}
+						
+					}
+			
+			function fun_radioStation(id)
+			{
+				//alert(id);
+				if(id == 3 || id == 5 || id == 6 || id == 9)
+				{
+					document.getElementById('radioStation').style.display="block";	
+				}
+				else
+				{
+					document.getElementById('radioStation').style.display="none";	
+				}
+			}
+			$(function() {
+				$( "#datepicker" ).datepicker({ changeMonth: true, changeYear: true, minDate: '1/1/1900', maxDate: '1/1/2010', defaultDate: '-25Y', yearRange: '-60:-13' });
+				});
+			/*$(function() {
+			$("#txt_DOB").datepicker({ changeMonth: true, changeYear: true, minDate: '1/1/1900', maxDate: '1/1/2010', defaultDate: '-25Y', yearRange: '-60:-13' });
+			});*/
+  </script>
+  <meta content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, initial-scale=1" name="viewport" />
+ </head>
+ <body id="home" style="">
+  <div id="comm100-float-button-2" style='visibility: visible; position: fixed; cursor: pointer; z-index: 2147483637; background: transparent url("https://chatserver.comm100.com/DBResource/DBImage.ashx?imgId=118&type=2&siteId=213865") no-repeat scroll 0% 0%; width: 45px; height: 211px; left: 914px; top: 85px;'>
+  </div>
+  <header>
+   <div class="container-wrap header-wrap">
+    <h1 class="ir">
+     Broadcasting School
+    </h1>
+    <a href="http://www.gocsb.com/">
+     <img alt="Connecticut School of Broadcasting" src="http://www.gocsb.com/images/logo.png" class="logo" />
+    </a>
+    <h1 class="header-title">
+     Connecticut School of Broadcasting
+    </h1>
+    <div class="secondary-nav hidden-phone">
+     <a href="http://www.gocsb.com/about" class="text">
+      About Us
+     </a>
+     <a href="http://www.gocsb.com/blog" class="text">
+      Blog
+     </a>
+     <a href="http://www.gocsb.com/allnoise" class="text">
+      AllNoise
+     </a>
+     <a href="http://www.gocsb.com/reviews" class="text">
+      Letters
+     </a>
+     <a class="text" target="_blank" href="http://www.facebook.com/ctschoolofbroadcasting">
+      <img alt="facebook" src="http://www.gocsb.com/images/fb.jpg" />
+     </a>
+     <a class="text" target="_blank" href="http://www.twitter.com/gocsb">
+      <img alt="twitter" src="http://www.gocsb.com/images/twitter.jpg" />
+     </a>
+     <span class="phone">
+      1 800 TV RADIO
+     </span>
+    </div>
+    <img width="77" height="32" alt="equalizer" src="http://www.gocsb.com/images/equalizer.png" class="equalizer hidden-phone" />
+    <div class="navbar navbar-inverse">
+     <div class="navbar-inner">
+      <div class="container-wrap">
+       <div class="row-fluid">
+        <a onclick="_gaq.push(['_trackEvent','Phone Call','Call Button','Mobile']);" href="tel:1-800-887-2346" class="btn btn-inverse call-button visible-phone">
+         <i class="icon-phone">
+         </i>
+         call
+        </a>
+        <a data-target=".nav-collapse" data-toggle="collapse" class="btn btn-navbar">
+         <span class="icon-bar">
+         </span>
+         <span class="icon-bar">
+         </span>
+         <span class="icon-bar">
+         </span>
+        </a>
+        <div class="nav-collapse collapse">
+         <ul class="nav">
+          <li class="home hidden-phone">
+           <a href="http://www.gocsb.com/">
+            <img onmouseout="this.src='http://www.gocsb.com/images/home.jpg';" onmouseover="this.src='http://www.gocsb.com/images/home_over.jpg';" alt="Home" src="http://www.gocsb.com/images/home.jpg" />
+           </a>
+          </li>
+          <li class="visible-phone">
+           <a href="http://www.gocsb.com/">
+            Home
+           </a>
+          </li>
+          <li class="dropdown locations">
+           <a href="http://www.gocsb.com/locations" class="dropdown-toggle">
+            Locations
+           </a>
+           <ul class="dropdown-menu hidden-phone">
+            <li class="pull-left">
+             <a href="http://www.gocsb.com/locations/boston-massachusetts">
+              Boston
+              <span>
+               Massachusetts
+              </span>
+             </a>
+            </li>
+            <li class="pull-right">
+             <a href="http://www.gocsb.com/locations/charlotte-north-carolina">
+              Charlotte
+              <span>
+               North Carolina
+              </span>
+             </a>
+            </li>
+            <li class="pull-left">
+             <a href="http://www.gocsb.com/locations/hartford-connecticut">
+              Farmington
+              <span>
+               Connecticut
+              </span>
+             </a>
+            </li>
+            <li class="pull-right">
+             <a href="http://www.gocsb.com/locations/atlanta-georgia">
+              Atlanta
+              <span>
+               Georgia
+              </span>
+             </a>
+            </li>
+            <li class="pull-left">
+             <a href="http://www.gocsb.com/locations/stratford-connecticut">
+              Stratford
+              <span>
+               Connecticut
+              </span>
+             </a>
+            </li>
+            <li class="pull-right">
+             <a href="http://www.gocsb.com/locations/orlando-florida">
+              Orlando
+              <span>
+               Florida
+              </span>
+             </a>
+            </li>
+            <li class="pull-left">
+             <a href="http://www.gocsb.com/locations/westbury-new-york">
+              Westbury
+              <span>
+               New York
+              </span>
+             </a>
+            </li>
+            <li class="pull-right">
+             <a href="http://www.gocsb.com/locations/tampa-florida">
+              Tampa
+              <span>
+               Florida
+              </span>
+             </a>
+            </li>
+            <li class="pull-left">
+             <a href="http://www.gocsb.com/locations/hasbrouck-heights-new-jersey">
+              Hasbrouck Heights
+              <span>
+               New Jersey
+              </span>
+             </a>
+            </li>
+            <li class="pull-right">
+             <a href="http://www.gocsb.com/locations/palm-beach-florida">
+              Palm Beach
+              <span>
+               Florida
+              </span>
+             </a>
+            </li>
+            <li class="pull-left">
+             <a href="http://www.gocsb.com/locations/cherry-hill-new-jersey">
+              Cherry Hill
+              <span>
+               New Jersey
+              </span>
+             </a>
+            </li>
+            <li class="pull-right">
+             <a href="http://www.gocsb.com/locations/miami-florida">
+              Miami
+              <span>
+               Florida
+              </span>
+             </a>
+            </li>
+           </ul>
+          </li>
+          <li class="dropdown programs">
+           <a class="dropdown-toggle" href="http://www.gocsb.com/program">
+            Our Program
+           </a>
+           <ul class="dropdown-menu hidden-phone">
+            <li>
+             <a href="http://www.gocsb.com/radio">
+              <img alt="Radio Broadcasting School" src="http://www.gocsb.com/images/thumb-radio.jpg" />
+              Radio
+             </a>
+            </li>
+            <li>
+             <a href="http://www.gocsb.com/television">
+              <img alt="Television Broadcasting School" src="http://www.gocsb.com/images/thumb-television.jpg" />
+              Television
+             </a>
+            </li>
+            <li>
+             <a href="http://www.gocsb.com/sports-broadcasting">
+              <img alt="Sports Broadcasting School" src="http://www.gocsb.com/images/thumb-sports-2.jpg" />
+              Sports
+             </a>
+            </li>
+            <li>
+             <a href="http://www.gocsb.com/audio-video">
+              <img alt="Audio Video Production School" src="http://www.gocsb.com/images/thumb-av.jpg" />
+              Audio Video
+             </a>
+            </li>
+           </ul>
+          </li>
+          <li>
+           <a class="admissions" href="http://www.gocsb.com/admissions">
+            Admissions
+           </a>
+          </li>
+          <li>
+           <a class="careers" href="http://www.gocsb.com/careers">
+            Careers
+           </a>
+          </li>
+          <li>
+           <a class="alumni" href="http://www.gocsb.com/alumni">
+            Alumni
+           </a>
+          </li>
+          <li class="hidden-desktop">
+           <a href="http://www.gocsb.com/50th-anniversary">
+            50th Anniversary
+           </a>
+          </li>
+          <li class="hidden-desktop">
+           <a href="http://www.gocsb.com/reviews">
+            Letters From Grads
+           </a>
+          </li>
+          <li>
+           <a class="contact" href="http://www.gocsb.com/contact">
+            Contact Us
+           </a>
+          </li>
+         </ul>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </header>
+  <div class="carousel slide" id="myCarousel">
+   <div class="carousel-inner">
+    <div class="item active">
+     <img alt="title-locations-main" src="http://www.gocsb.com/images/title-generic.jpg" class="main" />
+    </div>
+   </div>
+  </div>
+  <div class="container-wrap content-wrap main-content-area">
+   <h1 class="title">
+    Contact Us
+   </h1>
+   <h1 class="title">
+    Contact Us
+   </h1>
+   <div class="content">
+    <div class="row-fluid">
+     <div class="span8 main-col">
+      <h2 class="contaxt">
+       We'll send you information about admissions, scholarships, and financial assistance.
+      </h2>
+      <hr />
+      <form action="http://www.gocsb.com/contactus" method="post" id="frm_contactus" name="frm_contactus">
+       <input type="hidden" value="1" name="contactType" />
+       <div class="main-form form">
+        <h3 class="inline-header">
+         Select the campus nearest you:
+        </h3>
+        <div class="controls controls-row">
+         <select onchange="fun_about(this.value);" name="campus" class="span12">
+          <option value="">
+           --- Select One ---
+          </option>
+          <option value="MA - Needham (Boston)">
+           MA - Needham (Boston)
+          </option>
+          <option value="CT - Farmington (Hartford)">
+           CT - Farmington (Hartford)
+          </option>
+          <option value="CT - Stratford (New Haven)">
+           CT - Stratford (New Haven)
+          </option>
+          <option value="NJ - Hasbrouck Heights">
+           NJ - Hasbrouck Heights
+          </option>
+          <option value="NJ - Cherry Hill">
+           NJ - Cherry Hill
+          </option>
+          <option value="NC - Charlotte">
+           NC - Charlotte
+          </option>
+          <option value="NY - Westbury (Long Island)">
+           NY - Westbury (Long Island)
+          </option>
+          <option value="GA - Atlanta (Lawrenceville/Duluth)">
+           GA - Atlanta (Lawrenceville/Duluth)
+          </option>
+          <option value="FL - Orlando">
+           FL - Orlando
+          </option>
+          <option value="FL - Palm Beach">
+           FL - Palm Beach
+          </option>
+          <option value="FL - Tampa">
+           FL - Tampa
+          </option>
+          <option value="FL - Miami (Doral)">
+           FL - Miami (Doral)
+          </option>
+         </select>
+        </div>
+        <div class="controls-row">
+         <span class="span6">
+          <label>
+           What's your main interest?
+          </label>
+          <select name="mainInterest" class="span12">
+           <option value="">
+            --- Select One ---
+           </option>
+           <option value="Radio">
+            Radio
+           </option>
+           <option value="Television">
+            Television
+           </option>
+           <option value="Sports Broadcasting">
+            Sports Broadcasting
+           </option>
+           <option value="Audio/Video">
+            Audio/Video
+           </option>
+           <option value="I’m not sure">
+            I’m not sure
+           </option>
+          </select>
+         </span>
+         <span class="span6">
+          <label>
+           Which do you prefer?
+          </label>
+          <select name="workPreference" class="span12">
+           <option value="">
+            --- Select One ---
+           </option>
+           <option value="Being on-air">
+            Being on-air
+           </option>
+           <option value="Working behind the scenes">
+            Working behind the scenes
+           </option>
+           <option value="I’m not sure">
+            I’m not sure
+           </option>
+          </select>
+         </span>
+        </div>
+        <div class="controls-row">
+         <span class="span6">
+          <label>
+           First Name
+          </label>
+          <input type="text" value="" name="firstName" class="span12" />
+         </span>
+         <span class="span6">
+          <label>
+           Last Name
+          </label>
+          <input type="text" value="" name="lastName" class="span12" />
+         </span>
+        </div>
+        <div class="controls-row">
+         <span class="span6">
+          <label>
+           Email
+          </label>
+          <input type="text" value="" name="email" class="span12" />
+         </span>
+         <span class="span6">
+          <label>
+           Phone
+          </label>
+          <input type="text" value="" name="phone" class="span12" />
+         </span>
+        </div>
+        <div class="controls-row">
+         <span class="span6">
+          <label>
+           Address
+          </label>
+          <input type="text" value="" name="address" class="span12" />
+         </span>
+         <span class="span6">
+          <label>
+           City
+          </label>
+          <input type="text" value="" name="city" class="span12" />
+         </span>
+        </div>
+        <div class="controls-row">
+         <span class="span6">
+          <label>
+           State
+          </label>
+          <select name="state" class="span12">
+           <option value="">
+            -- Select One --
+           </option>
+           <option value="AL">
+            Alabama
+           </option>
+           <option value="AK">
+            Alaska
+           </option>
+           <option value="AZ">
+            Arizona
+           </option>
+           <option value="AR">
+            Arkansas
+           </option>
+           <option value="CA">
+            California
+           </option>
+           <option value="CO">
+            Colorado
+           </option>
+           <option value="CT">
+            Connecticut
+           </option>
+           <option value="DE">
+            Delaware
+           </option>
+           <option value="DC">
+            Dist. of Col.
+           </option>
+           <option value="FL">
+            Florida
+           </option>
+           <option value="GA">
+            Georgia
+           </option>
+           <option value="HI">
+            Hawaii
+           </option>
+           <option value="ID">
+            Idaho
+           </option>
+           <option value="IL">
+            Illinois
+           </option>
+           <option value="IN">
+            Indiana
+           </option>
+           <option value="IA">
+            Iowa
+           </option>
+           <option value="KS">
+            Kansas
+           </option>
+           <option value="KY">
+            Kentucky
+           </option>
+           <option value="LA">
+            Louisiana
+           </option>
+           <option value="ME">
+            Maine
+           </option>
+           <option value="MD">
+            Maryland
+           </option>
+           <option value="MA">
+            Massachusetts
+           </option>
+           <option value="MI">
+            Michigan
+           </option>
+           <option value="MN">
+            Minnesota
+           </option>
+           <option value="MS">
+            Mississippi
+           </option>
+           <option value="MO">
+            Missouri
+           </option>
+           <option value="MT">
+            Montana
+           </option>
+           <option value="NE">
+            Nebraska
+           </option>
+           <option value="NV">
+            Nevada
+           </option>
+           <option value="NH">
+            New Hampshire
+           </option>
+           <option value="NJ">
+            New Jersey
+           </option>
+           <option value="NM">
+            New Mexico
+           </option>
+           <option value="NY">
+            New York
+           </option>
+           <option value="NC">
+            North Carolina
+           </option>
+           <option value="ND">
+            North Dakota
+           </option>
+           <option value="OH">
+            Ohio
+           </option>
+           <option value="OK">
+            Oklahoma
+           </option>
+           <option value="OR">
+            Oregon
+           </option>
+           <option value="PA">
+            Pennsylvania
+           </option>
+           <option value="RI">
+            Rhode Island
+           </option>
+           <option value="SC">
+            South Carolina
+           </option>
+           <option value="SD">
+            South Dakota
+           </option>
+           <option value="TN">
+            Tennessee
+           </option>
+           <option value="TX">
+            Texas
+           </option>
+           <option value="UT">
+            Utah
+           </option>
+           <option value="VT">
+            Vermont
+           </option>
+           <option value="VA">
+            Virginia
+           </option>
+           <option value="WA">
+            Washington
+           </option>
+           <option value="WV">
+            West Virginia
+           </option>
+           <option value="WI">
+            Wisconsin
+           </option>
+           <option value="WY">
+            Wyoming
+           </option>
+          </select>
+         </span>
+         <span class="span6">
+          <label>
+           Zip
+          </label>
+          <input type="text" value="" maxlength="5" name="zip" class="span12" />
+         </span>
+        </div>
+        <div class="controls-row">
+         <span class="span6">
+          <label>
+           When were you born?
+          </label>
+          <!--<input class="span12 hasDatepicker" id="txt_DOB" name="dateofBirth" value="" type="text">-->
+          <input type="text" class="span12 hasDatepicker" data-val="true" id="datepicker" name="DateOfBirth" value="" />
+         </span>
+         <span style="display:none;" id="HowHeard1div" class="span6">
+          <label for="#">
+           How did you hear about us?
+          </label>
+          <select onchange="howHeard1Change(this.value);" name="aboutus" class="span12">
+           <option value="">
+            --None--
+           </option>
+           <option value="Internet Search">
+            Internet Search
+           </option>
+           <option value="Word of Mouth">
+            Word of Mouth
+           </option>
+           <option value="Guidance Counselor">
+            Guidance Counselor
+           </option>
+           <option value="Grad / Student Referral">
+            Grad / Student Referral
+           </option>
+           <option value="Local Event">
+            Local Event
+           </option>
+           <option value="Career/College Fair">
+            Career/College Fair
+           </option>
+           <option value="560am - SportsRadio560 - WQAM">
+            560am - SportsRadio560 - WQAM
+           </option>
+           <option value="560 AM - SportsRadio 560 - WNSR">
+            560 AM - SportsRadio 560 - WNSR
+           </option>
+           <option value="AM 570 Sports - KLAC">
+            AM 570 Sports - KLAC
+           </option>
+           <option value="570 AM - WMCA">
+            570 AM - WMCA
+           </option>
+           <option value="570 AM - KLIF">
+            570 AM - KLIF
+           </option>
+           <option value="580 AM - ESPN Radio - WDBO">
+            580 AM - ESPN Radio - WDBO
+           </option>
+           <option value="600 AM - WICC 600 - WICC">
+            600 AM - WICC 600 - WICC
+           </option>
+           <option value="610 AM - SportsRadio 610">
+            610 AM - SportsRadio 610
+           </option>
+           <option value="610 AM - SportsRadio - WFNZ">
+            610 AM - SportsRadio - WFNZ
+           </option>
+           <option value="610 AM - Sports Radio The Fan - WFNZ">
+            610 AM - Sports Radio The Fan - WFNZ
+           </option>
+           <option value="610 AM - SportsRadio - WIP">
+            610 AM - SportsRadio - WIP
+           </option>
+           <option value="620 AM - The Sports Animal - WDAE">
+            620 AM - The Sports Animal - WDAE
+           </option>
+           <option value="640 AM - 640 Sports - WMEN">
+            640 AM - 640 Sports - WMEN
+           </option>
+           <option value="660 AM - The Fan - WFAN">
+            660 AM - The Fan - WFAN
+           </option>
+           <option value="670 AM - The Score - WSCR">
+            670 AM - The Score - WSCR
+           </option>
+           <option value="680 AM - The Fan - WCNN">
+            680 AM - The Fan - WCNN
+           </option>
+           <option value="710 AM - ESPN Radio - KSPN">
+            710 AM - ESPN Radio - KSPN
+           </option>
+           <option value="730 AM - Soul 73 - KKDA-AM">
+            730 AM - Soul 73 - KKDA-AM
+           </option>
+           <option value="740 AM - The Game - WYGM">
+            740 AM - The Game - WYGM
+           </option>
+           <option value="740 AM - The Team - WQTM">
+            740 AM - The Team - WQTM
+           </option>
+           <option value="760 AM - ESPN Radio - WEFL">
+            760 AM - ESPN Radio - WEFL
+           </option>
+           <option value="790 AM - SportsTalk 790 The Ticket - WAXY">
+            790 AM - SportsTalk 790 The Ticket - WAXY
+           </option>
+           <option value="790 AM - SportsTalk 790 The Zone - WQXI">
+            790 AM - SportsTalk 790 The Zone - WQXI
+           </option>
+           <option value="850 AM - Big Talk - WFTL">
+            850 AM - Big Talk - WFTL
+           </option>
+           <option value="850 / 1440 - WEEI AM">
+            850 / 1440 - WEEI AM
+           </option>
+           <option value="850 AM/ 93.7 -  WEEI">
+            850 AM/ 93.7 -  WEEI
+           </option>
+           <option value="850 / 1440 / 103.7 / 105.5 - WEEI">
+            850 / 1440 / 103.7 / 105.5 - WEEI
+           </option>
+           <option value="880 AM - NewsRadio 880 - WCBS">
+            880 AM - NewsRadio 880 - WCBS
+           </option>
+           <option value="880 AM - The Biz - WZAB">
+            880 AM - The Biz - WZAB
+           </option>
+           <option value="890 / 1400 - ESPN Radio - WAMG">
+            890 / 1400 - ESPN Radio - WAMG
+           </option>
+           <option value="920 AM - Fox Sports - KWWN">
+            920 AM - Fox Sports - KWWN
+           </option>
+           <option value="940 AM – ESPN Radio – WINE">
+            940 AM – ESPN Radio – WINE
+           </option>
+           <option value="940 AM – The Sports Animal – WINZ">
+            940 AM – The Sports Animal – WINZ
+           </option>
+           <option value="950 AM - ESPN 950 – WPEN">
+            950 AM - ESPN 950 – WPEN
+           </option>
+           <option value="970 AM - News Radio - WFLA">
+            970 AM - News Radio - WFLA
+           </option>
+           <option value="970 AM - Fox Sports - WBGG">
+            970 AM - Fox Sports - WBGG
+           </option>
+           <option value="970 AM – The Apple – WNYM">
+            970 AM – The Apple – WNYM
+           </option>
+           <option value="980 AM - ESPN 980 - WTEM">
+            980 AM - ESPN 980 - WTEM
+           </option>
+           <option value="1000 AM - ESPN Radio - WMVP">
+            1000 AM - ESPN Radio - WMVP
+           </option>
+           <option value="1010 AM - 1010 The Fan - WHFS">
+            1010 AM - 1010 The Fan - WHFS
+           </option>
+           <option value="1040 AM - 1040 ESPN - WHBO">
+            1040 AM - 1040 ESPN - WHBO
+           </option>
+           <option value="1050 AM - ESPN Radio - WEPN">
+            1050 AM - ESPN Radio - WEPN
+           </option>
+           <option value="1060 AM & 1080 AM - ESPN Radio - WHOO">
+            1060 AM &amp; 1080 AM - ESPN Radio - WHOO
+           </option>
+           <option value="1080 AM - News/Talk 1080 - WTIC">
+            1080 AM - News/Talk 1080 - WTIC
+           </option>
+           <option value="1080 AM - Sports Talk 1080 The Team - WHOO">
+            1080 AM - Sports Talk 1080 The Team - WHOO
+           </option>
+           <option value="1100 AM - ESPN 1100 - KBAD">
+            1100 AM - ESPN 1100 - KBAD
+           </option>
+           <option value="1100 AM - WHLI">
+            1100 AM - WHLI
+           </option>
+           <option value="1250 AM - ESPN - WEAE">
+            1250 AM - ESPN - WEAE
+           </option>
+           <option value="1290 AM - Newsradio - WJNO">
+            1290 AM - Newsradio - WJNO
+           </option>
+           <option value="AM 1300 - SportsRadio 1300 The Zone - KVET">
+            AM 1300 - SportsRadio 1300 The Zone - KVET
+           </option>
+           <option value="1300 AM - ESPN Radio - WJZ">
+            1300 AM - ESPN Radio - WJZ
+           </option>
+           <option value="1300 AM - ESPN Radio - WAVZ">
+            1300 AM - ESPN Radio - WAVZ
+           </option>
+           <option value="1310 AM / 104.1 FM - Sports Radio 1310 The Ticket - KTCK">
+            1310 AM / 104.1 FM - Sports Radio 1310 The Ticket - KTCK
+           </option>
+           <option value="1410 AM - ESPN Radio  - WPOP">
+            1410 AM - ESPN Radio  - WPOP
+           </option>
+           <option value="1410 AM - Fox Sports 1410  - WPOP">
+            1410 AM - Fox Sports 1410  - WPOP
+           </option>
+           <option value="1410 AM - KQV">
+            1410 AM - KQV
+           </option>
+           <option value="1440 AM/105.5 - WEEI">
+            1440 AM/105.5 - WEEI
+           </option>
+           <option value="1450 AM - ESPN Deportes - WOCN">
+            1450 AM - ESPN Deportes - WOCN
+           </option>
+           <option value="1460 AM - WVOX">
+            1460 AM - WVOX
+           </option>
+           <option value="1510 AM – ESPN Radio – WPUT">
+            1510 AM – ESPN Radio – WPUT
+           </option>
+           <option value="1510AM - NBC SportsRadio - WUFC">
+            1510AM - NBC SportsRadio - WUFC
+           </option>
+           <option value="88.9 - WJMJ">
+            88.9 - WJMJ
+           </option>
+           <option value="89.7 - Classical South Florida - WKCP">
+            89.7 - Classical South Florida - WKCP
+           </option>
+           <option value="90.5 - Spirit 90.5 - WBVM">
+            90.5 - Spirit 90.5 - WBVM
+           </option>
+           <option value="92.3 - K Rock - WXRK">
+            92.3 - K Rock - WXRK
+           </option>
+           <option value="92.3 - 92 Q Jams - WERQ">
+            92.3 - 92 Q Jams - WERQ
+           </option>
+           <option value="90.7 - Classical South Florida - WPBI">
+            90.7 - Classical South Florida - WPBI
+           </option>
+           <option value="92.3 - KOMP">
+            92.3 - KOMP
+           </option>
+           <option value="92.3 - 92 PRO-FM - WPRO">
+            92.3 - 92 PRO-FM - WPRO
+           </option>
+           <option value="92.3 - K-92 FM - WWKA">
+            92.3 - K-92 FM - WWKA
+           </option>
+           <option value="92.5 - Country 92.5 - WWYZ">
+            92.5 - Country 92.5 - WWYZ
+           </option>
+           <option value="92.9 - Dave FM - WZGC">
+            92.9 - Dave FM - WZGC
+           </option>
+           <option value="92.9 - Radio 92.9 - WBOS">
+            92.9 - Radio 92.9 - WBOS
+           </option>
+           <option value="92.9 - The Game - WZGC">
+            92.9 - The Game - WZGC
+           </option>
+           <option value="93.1 - 93 Rock - WHDR">
+            93.1 - 93 Rock - WHDR
+           </option>
+           <option value="93.1 - Mix 93.1 - WHYN">
+            93.1 - Mix 93.1 - WHYN
+           </option>
+           <option value="93.3 - WFLZ">
+            93.3 - WFLZ
+           </option>
+           <option value="93.3 - WMMR">
+            93.3 - WMMR
+           </option>
+           <option value="93.3 - Hot 93.3 - KDHT">
+            93.3 - Hot 93.3 - KDHT
+           </option>
+           <option value="93.3 - Channel 93.3 - KTCL">
+            93.3 - Channel 93.3 - KTCL
+           </option>
+           <option value="93.3 - The Bone - KDBN">
+            93.3 - The Bone - KDBN
+           </option>
+           <option value="93.5 - K-Day - KDAY">
+            93.5 - K-Day - KDAY
+           </option>
+           <option value="93.5 - WVIP">
+            93.5 - WVIP
+           </option>
+           <option value="93.7 - WEEI">
+            93.7 - WEEI
+           </option>
+           <option value="93.7 - KLBJ">
+            93.7 - KLBJ
+           </option>
+           <option value="93.7 - The Fan - WCNN">
+            93.7 - The Fan - WCNN
+           </option>
+           <option value="93.7 - B-94 - WBZW">
+            93.7 - B-94 - WBZW
+           </option>
+           <option value="93.7 - The Zone - WRKZ">
+            93.7 - The Zone - WRKZ
+           </option>
+           <option value="93.7 - Hot 93.7 - WZMX">
+            93.7 - Hot 93.7 - WZMX
+           </option>
+           <option value="93.7 - B-94 - WTZN">
+            93.7 - B-94 - WTZN
+           </option>
+           <option value="93.9 - Movin' 93.9 - KMVN">
+            93.9 - Movin' 93.9 - KMVN
+           </option>
+           <option value="94.1 - 94 HJY - WHJY">
+            94.1 - 94 HJY - WHJY
+           </option>
+           <option value="94.1 - 94 WYSP - WYSP">
+            94.1 - 94 WYSP - WYSP
+           </option>
+           <option value="94.1 - Mix 94.1 - KMXB">
+            94.1 - Mix 94.1 - KMXB
+           </option>
+           <option value="94.1 - SportsRadio - WIP">
+            94.1 - SportsRadio - WIP
+           </option>
+           <option value="94.1 - Star 94.1 - WSTR">
+            94.1 - Star 94.1 - WSTR
+           </option>
+           <option value="94.3 / 99.3 HD2 - HITS - W232BW">
+            94.3 / 99.3 HD2 - HITS - W232BW
+           </option>
+           <option value="94.3 - WLZX-HD2">
+            94.3 - WLZX-HD2
+           </option>
+           <option value="94.3 - 94.3 WMJC - WMJC">
+            94.3 - 94.3 WMJC - WMJC
+           </option>
+           <option value="94.3 - 94X - WIGX">
+            94.3 - 94X - WIGX
+           </option>
+           <option value="94.3 - HITS - W232BW">
+            94.3 - HITS - W232BW
+           </option>
+           <option value="94.3 - Real Radio - WZZR">
+            94.3 - Real Radio - WZZR
+           </option>
+           <option value="94.3 - The Shark - WWSK">
+            94.3 - The Shark - WWSK
+           </option>
+           <option value="94.3 - WYBC">
+            94.3 - WYBC
+           </option>
+           <option value="94.3 & 92.7 FM / 730 AM - Triple X ESPN Radio">
+            94.3 &amp; 92.7 FM / 730 AM - Triple X ESPN Radio
+           </option>
+           <option value="94.5 - Jam'n - WJMN">
+            94.5 - Jam'n - WJMN
+           </option>
+           <option value="94.5 - The Buzz - KTBZ">
+            94.5 - The Buzz - KTBZ
+           </option>
+           <option value="94.5 - WPST">
+            94.5 - WPST
+           </option>
+           <option value="94.9 - Mega - WMGE">
+            94.9 - Mega - WMGE
+           </option>
+           <option value="95.1 - Kiss - WNKS">
+            95.1 - Kiss - WNKS
+           </option>
+           <option value="95.1 - I-95 - WRKI">
+            95.1 - I-95 - WRKI
+           </option>
+           <option value="95.3 - Power 95.3 - WPYO">
+            95.3 - Power 95.3 - WPYO
+           </option>
+           <option value="95.5 - The Beat - WBTS">
+            95.5 - The Beat - WBTS
+           </option>
+           <option value="95.5 - The Wolf - WSM">
+            95.5 - The Wolf - WSM
+           </option>
+           <option value="95.5 - WBRU">
+            95.5 - WBRU
+           </option>
+           <option value="95.5 – The Beat – WBTS">
+            95.5 – The Beat – WBTS
+           </option>
+           <option value="95.5 - Wild 95.5 - WLDI">
+            95.5 - Wild 95.5 - WLDI
+           </option>
+           <option value="95.5 - WPGC">
+            95.5 - WPGC
+           </option>
+           <option value="95.5 - WPLJ">
+            95.5 - WPLJ
+           </option>
+           <option value="95.7 - Kiss 95.7 - WKSS">
+            95.7 - Kiss 95.7 - WKSS
+           </option>
+           <option value="95.7 - El Zol - WXDJ">
+            95.7 - El Zol - WXDJ
+           </option>
+           <option value="95.7 - The Ride - WXRC">
+            95.7 - The Ride - WXRC
+           </option>
+           <option value="95.9 - The River - WERV">
+            95.9 - The River - WERV
+           </option>
+           <option value="95.9 - The Fox - WFOX">
+            95.9 - The Fox - WFOX
+           </option>
+           <option value="96.1 - The Beat - WHQC">
+            96.1 - The Beat - WHQC
+           </option>
+           <option value="96.1 - Kiss FM - WKST">
+            96.1 - Kiss FM - WKST
+           </option>
+           <option value="96.1 - My Country - WJVC">
+            96.1 - My Country - WJVC
+           </option>
+           <option value="96.1 - Power 96.1 - WWPW">
+            96.1 - Power 96.1 - WWPW
+           </option>
+           <option value="96.1 - Project 9-6-1 - WKLS">
+            96.1 - Project 9-6-1 - WKLS
+           </option>
+           <option value="96.3 - Jack FM - WCJK">
+            96.3 - Jack FM - WCJK
+           </option>
+           <option value="96.3 - The Big 96.3 - KSCS">
+            96.3 - The Big 96.3 - KSCS
+           </option>
+           <option value="96.3 - Latino 96.3 - KXOL">
+            96.3 - Latino 96.3 - KXOL
+           </option>
+           <option value="96.5 - Mix 96.5 - KHMX">
+            96.5 - Mix 96.5 - KHMX
+           </option>
+           <option value="96.5 - NewsTalk - WDBO">
+            96.5 - NewsTalk - WDBO
+           </option>
+           <option value="96.5 - Wired 96.5 - WRDW">
+            96.5 - Wired 96.5 - WRDW
+           </option>
+           <option value="96.5 - The Classic Rock Station - WHTQ">
+            96.5 - The Classic Rock Station - WHTQ
+           </option>
+           <option value="96.5 - WHTQ">
+            96.5 - WHTQ
+           </option>
+           <option value="96.5 - WTIC-FM">
+            96.5 - WTIC-FM
+           </option>
+           <option value="96.5 - Power 96 - WPOW">
+            96.5 - Power 96 - WPOW
+           </option>
+           <option value="96.5 - WIRED - WRDW">
+            96.5 - WIRED - WRDW
+           </option>
+           <option value="96.7 - KCAL Rocks - KCAL">
+            96.7 - KCAL Rocks - KCAL
+           </option>
+           <option value="96.7 - Star 96.7 - WSSR">
+            96.7 - Star 96.7 - WSSR
+           </option>
+           <option value="96.7 - Kiss FM - KHFI">
+            96.7 - Kiss FM - KHFI
+           </option>
+           <option value="97.1 - 97X - WSUN">
+            97.1 - 97X - WSUN
+           </option>
+           <option value="97.1 - Hot 97 - WQHT">
+            97.1 - Hot 97 - WQHT
+           </option>
+           <option value="97.1 - Free FM - KLSX">
+            97.1 - Free FM - KLSX
+           </option>
+           <option value="97.1 - RQQ - WRQQ">
+            97.1 - RQQ - WRQQ
+           </option>
+           <option value="97.1 - WASH-FM">
+            97.1 - WASH-FM
+           </option>
+           <option value="97.3 - The Coast - WFLC">
+            97.3 - The Coast - WFLC
+           </option>
+           <option value="97.5 - Hot 97-5 - KVEG">
+            97.5 - Hot 97-5 - KVEG
+           </option>
+           <option value="97.5 - The Fantatic - WPEN-FM">
+            97.5 - The Fantatic - WPEN-FM
+           </option>
+           <option value="97.5 - The Ticket - KFNC">
+            97.5 - The Ticket - KFNC
+           </option>
+           <option value="97.5 - Z 97.5 - WZZP">
+            97.5 - Z 97.5 - WZZP
+           </option>
+           <option value="97.7 & 107.3 - WAAF">
+            97.7 &amp; 107.3 - WAAF
+           </option>
+           <option value="97.9 - 98 Rock - WIYY">
+            97.9 - 98 Rock - WIYY
+           </option>
+           <option value="97.9 - 99X - WWWQ-HD2">
+            97.9 - 99X - WWWQ-HD2
+           </option>
+           <option value="97.9 - ESPN - WUCS">
+            97.9 - ESPN - WUCS
+           </option>
+           <option value="97.9 - Power 98 - WPEG">
+            97.9 - Power 98 - WPEG
+           </option>
+           <option value="97.9 - The Loop - WLUP">
+            97.9 - The Loop - WLUP
+           </option>
+           <option value="97.9 - 98 Rock - WXTB">
+            97.9 - 98 Rock - WXTB
+           </option>
+           <option value="97.9 - The Box - KBXX">
+            97.9 - The Box - KBXX
+           </option>
+           <option value="97.9 - The Beat - KBFB">
+            97.9 - The Beat - KBFB
+           </option>
+           <option value="97.9 - WRMF">
+            97.9 - WRMF
+           </option>
+           <option value="98.3 - 98Q - WDAQ">
+            98.3 - 98Q - WDAQ
+           </option>
+           <option value="98.5 - KLUC">
+            98.5 - KLUC
+           </option>
+           <option value="98.5 - Mix 98.5 - WBMX">
+            98.5 - Mix 98.5 - WBMX
+           </option>
+           <option value="98.5 - The Sports Hub - WBZ-FM">
+            98.5 - The Sports Hub - WBZ-FM
+           </option>
+           <option value="98.7 - The Fan - WHFS">
+            98.7 - The Fan - WHFS
+           </option>
+           <option value="98.7 - Wild 98.7 - WLLD">
+            98.7 - Wild 98.7 - WLLD
+           </option>
+           <option value="98.3 - K-JOY - WKJY">
+            98.3 - K-JOY - WKJY
+           </option>
+           <option value="98.7 - ESPN NY - WEPN">
+            98.7 - ESPN NY - WEPN
+           </option>
+           <option value="98.7 - WMZQ">
+            98.7 - WMZQ
+           </option>
+           <option value="98.7 - The Gater - WKGR">
+            98.7 - The Gater - WKGR
+           </option>
+           <option value="99.1 - 99 Jamz - WEDR">
+            99.1 - 99 Jamz - WEDR
+           </option>
+           <option value="99.1 - KGGI">
+            99.1 - KGGI
+           </option>
+           <option value="99.1 - Easy 99.1 - WPLM">
+            99.1 - Easy 99.1 - WPLM
+           </option>
+           <option value="99.1 - 99 Rock - WPLR">
+            99.1 - 99 Rock - WPLR
+           </option>
+           <option value="99.3 - Lazer 99.3 - WLZX">
+            99.3 - Lazer 99.3 - WLZX
+           </option>
+           <option value="99.5 - WQYK">
+            99.5 - WQYK
+           </option>
+           <option value="99.5 - The Mountain - KQMT">
+            99.5 - The Mountain - KQMT
+           </option>
+           <option value="99.5 - The Wolf - KPLX">
+            99.5 - The Wolf - KPLX
+           </option>
+           <option value="99.5 - Hot 99.5 - WIHT">
+            99.5 - Hot 99.5 - WIHT
+           </option>
+           <option value="99.7 - Q100 - WWWQ">
+            99.7 - Q100 - WWWQ
+           </option>
+           <option value="99.9 - Star 99.9 - WEZN">
+            99.9 - Star 99.9 - WEZN
+           </option>
+           <option value="100.3 - The Beaver - WVVR">
+            100.3 - The Beaver - WVVR
+           </option>
+           <option value="100.3 - Legends 100.3 - WLML">
+            100.3 - Legends 100.3 - WLML
+           </option>
+           <option value="100.3 - KILT-FM">
+            100.3 - KILT-FM
+           </option>
+           <option value="100.3 - Z100 - WHTZ">
+            100.3 - Z100 - WHTZ
+           </option>
+           <option value="100.5 - Rock 100 - WNNX">
+            100.5 - Rock 100 - WNNX
+           </option>
+           <option value="100.7 - KASE 101 - KASE">
+            100.7 - KASE 101 - KASE
+           </option>
+           <option value="100.7 - Y-100 - WHYI">
+            100.7 - Y-100 - WHYI
+           </option>
+           <option value="100.7 - Mix 100.7 - WMTX">
+            100.7 - Mix 100.7 - WMTX
+           </option>
+           <option value="100.7 - WZLX">
+            100.7 - WZLX
+           </option>
+           <option value="101.1 - DC 101 - WWDC">
+            101.1 - DC 101 - WWDC
+           </option>
+           <option value="101.1 - Q 101 - WKQX">
+            101.1 - Q 101 - WKQX
+           </option>
+           <option value="101.1 - Real Rock - WJRR">
+            101.1 - Real Rock - WJRR
+           </option>
+           <option value="101.1 - KOSI 101 - KOSI">
+            101.1 - KOSI 101 - KOSI
+           </option>
+           <option value="101.1 - The Beat - WUBT">
+            101.1 - The Beat - WUBT
+           </option>
+           <option value="101.3 - KC 101 - WKCI">
+            101.3 - KC 101 - WKCI
+           </option>
+           <option value="101.5 - NJ 101.5 - WKXW">
+            101.5 - NJ 101.5 - WKXW
+           </option>
+           <option value="101.5 - 101X - KROX">
+            101.5 - 101X - KROX
+           </option>
+           <option value="101.5 - The Point - WPOI">
+            101.5 - The Point - WPOI
+           </option>
+           <option value="101.7 - WFNX">
+            101.7 - WFNX
+           </option>
+           <option value="101.9 - RXP - WRXP">
+            101.9 - RXP - WRXP
+           </option>
+           <option value="101.9 - 102 Jamz - WJHM">
+            101.9 - 102 Jamz - WJHM
+           </option>
+           <option value="101.9 FM - The Fan - WFAN">
+            101.9 FM - The Fan - WFAN
+           </option>
+           <option value="102.1 - Q 102 - WIOQ">
+            102.1 - Q 102 - WIOQ
+           </option>
+           <option value="102.1 - Rock 102 - WAQY">
+            102.1 - Rock 102 - WAQY
+           </option>
+           <option value="102.1 - Magic 102.1 - WGMG">
+            102.1 - Magic 102.1 - WGMG
+           </option>
+           <option value="102.1 - The Edge - KDGE">
+            102.1 - The Edge - KDGE
+           </option>
+           <option value="102.3 - WBAB">
+            102.3 - WBAB
+           </option>
+           <option value="102.3 - X 102.3 - WMBX">
+            102.3 - X 102.3 - WMBX
+           </option>
+           <option value="102.3 - The x 1023 - WMBX">
+            102.3 - The x 1023 - WMBX
+           </option>
+           <option value="102.5 - Country 102.5 - WKLB">
+            102.5 - Country 102.5 - WKLB
+           </option>
+           <option value="102.5 - The Bone - WHPT">
+            102.5 - The Bone - WHPT
+           </option>
+           <option value="102.5 - WDVE">
+            102.5 - WDVE
+           </option>
+           <option value="102.7 - KIIS FM - KIIS">
+            102.7 - KIIS FM - KIIS
+           </option>
+           <option value="102.9 - The Buzz - WBUZ">
+            102.9 - The Buzz - WBUZ
+           </option>
+           <option value="102.9 - 102.9 MGK - WMGK">
+            102.9 - 102.9 MGK - WMGK
+           </option>
+           <option value="102.9 - WMGK">
+            102.9 - WMGK
+           </option>
+           <option value="103.1 - B-103 - WBZO">
+            103.1 - B-103 - WBZO
+           </option>
+           <option value="103.1 - 103 WRNR">
+            103.1 - 103 WRNR
+           </option>
+           <option value="103.1 - The Buzz - WPBZ">
+            103.1 - The Buzz - WPBZ
+           </option>
+           <option value="103.1-2 - The Buzz - WPBZ-HD2">
+            103.1-2 - The Buzz - WPBZ-HD2
+           </option>
+           <option value="103.3 - ESPN Radio - KESN">
+            103.3 - ESPN Radio - KESN
+           </option>
+           <option value="103.3 - 103 KDF - WKDF">
+            103.3 - 103 KDF - WKDF
+           </option>
+           <option value="103.3 - V103 - WVEE">
+            103.3 - V103 - WVEE
+           </option>
+           <option value="103.1 - South Florida Country - WIRK">
+            103.1 - South Florida Country - WIRK
+           </option>
+           <option value="103.5 - Kiss FM - WKSC">
+            103.5 - Kiss FM - WKSC
+           </option>
+           <option value="103.5 - WKTU">
+            103.5 - WKTU
+           </option>
+           <option value="103.5 - Mega - WMGE">
+            103.5 - Mega - WMGE
+           </option>
+           <option value="103.7 - WVEI - FM">
+            103.7 - WVEI - FM
+           </option>
+           <option value="103.7 / 105.5 - WEEI FM">
+            103.7 / 105.5 - WEEI FM
+           </option>
+           <option value="103.7 - FM 103 - WSOC">
+            103.7 - FM 103 - WSOC
+           </option>
+           <option value="103.9 - WRCN">
+            103.9 - WRCN
+           </option>
+           <option value="104.1 - KRBE">
+            104.1 - KRBE
+           </option>
+           <option value="104.1 - Real Radio - WTKS">
+            104.1 - Real Radio - WTKS
+           </option>
+           <option value="104.1 - Radio 104 - WMRQ">
+            104.1 - Radio 104 - WMRQ
+           </option>
+           <option value="104.1 - fm104one - WURH">
+            104.1 - fm104one - WURH
+           </option>
+           <option value="104.1 - Mix 104.1 - WBMX">
+            104.1 - Mix 104.1 - WBMX
+           </option>
+           <option value="104.1 - WBCN">
+            104.1 - WBCN
+           </option>
+           <option value="104.3 - Q 104.3 - WAXQ">
+            104.3 - Q 104.3 - WAXQ
+           </option>
+           <option value="104.3 - Sports Radio 104.3 The Fan - KKFN">
+            104.3 - Sports Radio 104.3 The Fan - KKFN
+           </option>
+           <option value="104.3 - Sunny 104.3 - WEAT">
+            104.3 - Sunny 104.3 - WEAT
+           </option>
+           <option value="104.3 - The Ticket - WAXY">
+            104.3 - The Ticket - WAXY
+           </option>
+           <option value="104.5 - Radio 104.5 - WRFF">
+            104.5 - Radio 104.5 - WRFF
+           </option>
+           <option value="104.5 - K104 - KKDA-FM">
+            104.5 - K104 - KKDA-FM
+           </option>
+           <option value="104.5 - The Zone - WGFX">
+            104.5 - The Zone - WGFX
+           </option>
+           <option value="104.9 - Beat 104.9 - KXBT">
+            104.9 - Beat 104.9 - KXBT
+           </option>
+           <option value="104.9 - SoJO 104.9 - WSJO">
+            104.9 - SoJO 104.9 - WSJO
+           </option>
+           <option value="104.9 - Party 104.9 - KPTY">
+            104.9 - Party 104.9 - KPTY
+           </option>
+           <option value="105.1 - Lite Rock 105.1 - WWLI">
+            105.1 - Lite Rock 105.1 - WWLI
+           </option>
+           <option value="105.1 - LiteRock 105 - WWLI">
+            105.1 - LiteRock 105 - WWLI
+           </option>
+           <option value="105.1 - Mix 105.1 - WOMX">
+            105.1 - Mix 105.1 - WOMX
+           </option>
+           <option value="105.3 - Party 105 - WPTY">
+            105.3 - Party 105 - WPTY
+           </option>
+           <option value="105.3 - The Fan - KRLD">
+            105.3 - The Fan - KRLD
+           </option>
+           <option value="105.5 - WDHA">
+            105.5 - WDHA
+           </option>
+           <option value="105.5 - WWEI">
+            105.5 - WWEI
+           </option>
+           <option value="105.5 - Q105 - WQGN">
+            105.5 - Q105 - WQGN
+           </option>
+           <option value="105.7 - KRNB">
+            105.7 - KRNB
+           </option>
+           <option value="105.7 - Radio 105.7 - WRDA">
+            105.7 - Radio 105.7 - WRDA
+           </option>
+           <option value="105.7/106.7 - Wild 105.7 - WWVA">
+            105.7/106.7 - Wild 105.7 - WWVA
+           </option>
+           <option value="105.9 - News Radio - WFLA">
+            105.9 - News Radio - WFLA
+           </option>
+           <option value="105.9 - Power 106 - KPWR">
+            105.9 - Power 106 - KPWR
+           </option>
+           <option value="105.9 - The River  - WHCN">
+            105.9 - The River  - WHCN
+           </option>
+           <option value="105.9 - Alice - KALC">
+            105.9 - Alice - KALC
+           </option>
+           <option value="105.9 - The Rock - WNRQ">
+            105.9 - The Rock - WNRQ
+           </option>
+           <option value="105.9 - Big 105.9 - WBGG">
+            105.9 - Big 105.9 - WBGG
+           </option>
+           <option value="105.9 - The X - WXDX">
+            105.9 - The X - WXDX
+           </option>
+           <option value="106.1 - Kiss FM - KHKS">
+            106.1 - Kiss FM - KHKS
+           </option>
+           <option value="106.1 - Mix 106.1 - WISX">
+            106.1 - Mix 106.1 - WISX
+           </option>
+           <option value="106.1 - WBLI">
+            106.1 - WBLI
+           </option>
+           <option value="106.3 - Hot 106.3 - WWKX">
+            106.3 - Hot 106.3 - WWKX
+           </option>
+           <option value="106.5 - The End - WEND">
+            106.5 - The End - WEND
+           </option>
+           <option value="106.5 - Soft Rock - WBMW">
+            106.5 - Soft Rock - WBMW
+           </option>
+           <option value="106.7 - DJ 106.7 - WRMA">
+            106.7 - DJ 106.7 - WRMA
+           </option>
+           <option value="106.7 - Free FM - WJFK">
+            106.7 - Free FM - WJFK
+           </option>
+           <option value="106.7 - Magic - WMJX">
+            106.7 - Magic - WMJX
+           </option>
+           <option value="106.7 - XL 106.7 - WXXL">
+            106.7 - XL 106.7 - WXXL
+           </option>
+           <option value="106.7 - K-Rock - KROQ">
+            106.7 - K-Rock - KROQ
+           </option>
+           <option value="106.7 - WAMO">
+            106.7 - WAMO
+           </option>
+           <option value="106.7 - ESPN 106.7 The Fan - WNFN">
+            106.7 - ESPN 106.7 The Fan - WNFN
+           </option>
+           <option value="106.7 - KBPI">
+            106.7 - KBPI
+           </option>
+           <option value="106.7 - Romance 106.7 - WRMA">
+            106.7 - Romance 106.7 - WRMA
+           </option>
+           <option value="106.9 - The Point - KHPT">
+            106.9 - The Point - KHPT
+           </option>
+           <option value="106.9 - The Rock - WCCC">
+            106.9 - The Rock - WCCC
+           </option>
+           <option value="106.9 - Rock 106.9 - WCCC">
+            106.9 - Rock 106.9 - WCCC
+           </option>
+           <option value="107.5 - X-107.5 Xtreme Radio - KXTE">
+            107.5 - X-107.5 Xtreme Radio - KXTE
+           </option>
+           <option value="107.5 - KS 107.5 - KQKS">
+            107.5 - KS 107.5 - KQKS
+           </option>
+           <option value="107.5 - WGCI">
+            107.5 - WGCI
+           </option>
+           <option value="107.5 - The River - WRVW">
+            107.5 - The River - WRVW
+           </option>
+           <option value="107.7 - Magic 107.7 - WMGF">
+            107.7 - Magic 107.7 - WMGF
+           </option>
+           <option value="107.9 - Hot 107.9 - WHTA">
+            107.9 - Hot 107.9 - WHTA
+           </option>
+           <option value="107.9 - Kiss 108 - WXKS">
+            107.9 - Kiss 108 - WXKS
+           </option>
+           <option value="107.9 - Sunny 107.9 - WEAT">
+            107.9 - Sunny 107.9 - WEAT
+           </option>
+           <option value="107.9 - WEBE 108 - WEBE">
+            107.9 - WEBE 108 - WEBE
+           </option>
+           <option value="107.9 - Y-108 - WDSY">
+            107.9 - Y-108 - WDSY
+           </option>
+           <option value="107.9 - Area 107.9 - KVGS">
+            107.9 - Area 107.9 - KVGS
+           </option>
+           <option value="107.9 - WIRK">
+            107.9 - WIRK
+           </option>
+           <option value="Internet Radio">
+            Internet Radio
+           </option>
+           <option value="Pandora Radio">
+            Pandora Radio
+           </option>
+           <option value="MBTA - T Radio">
+            MBTA - T Radio
+           </option>
+           <option value="Radio - Other Station">
+            Radio - Other Station
+           </option>
+           <option value="TV - A&E">
+            TV - A&amp;E
+           </option>
+           <option value="TV - Bay News 9">
+            TV - Bay News 9
+           </option>
+           <option value="TV - Cartoon Network">
+            TV - Cartoon Network
+           </option>
+           <option value="TV - CMT">
+            TV - CMT
+           </option>
+           <option value="TV - CNN">
+            TV - CNN
+           </option>
+           <option value="TV - Comedy Central">
+            TV - Comedy Central
+           </option>
+           <option value="TV - Comcast Sportsnet">
+            TV - Comcast Sportsnet
+           </option>
+           <option value="TV - Discovery Channel">
+            TV - Discovery Channel
+           </option>
+           <option value="TV - E! Entertainment">
+            TV - E! Entertainment
+           </option>
+           <option value="TV - ESPN">
+            TV - ESPN
+           </option>
+           <option value="TV - ESPN2">
+            TV - ESPN2
+           </option>
+           <option value="TV - ESPN Classic">
+            TV - ESPN Classic
+           </option>
+           <option value="TV - Fox 17 - WZTV">
+            TV - Fox 17 - WZTV
+           </option>
+           <option value="TV - Fox News">
+            TV - Fox News
+           </option>
+           <option value="TV - Fox News Channel">
+            TV - Fox News Channel
+           </option>
+           <option value="TV - Fox Sports">
+            TV - Fox Sports
+           </option>
+           <option value="TV - FoxSports New England / Celtics">
+            TV - FoxSports New England / Celtics
+           </option>
+           <option value="TV - FSFL-TV">
+            TV - FSFL-TV
+           </option>
+           <option value="TV - FX">
+            TV - FX
+           </option>
+           <option value="TV - Golf">
+            TV - Golf
+           </option>
+           <option value="TV - G4 TV">
+            TV - G4 TV
+           </option>
+           <option value="TV - Headline News">
+            TV - Headline News
+           </option>
+           <option value="TV - History Channel">
+            TV - History Channel
+           </option>
+           <option value="TV - Military Channel">
+            TV - Military Channel
+           </option>
+           <option value="TV - MSNBC">
+            TV - MSNBC
+           </option>
+           <option value="TV - MSG">
+            TV - MSG
+           </option>
+           <option value="TV - MTV">
+            TV - MTV
+           </option>
+           <option value="TV - MTV2">
+            TV - MTV2
+           </option>
+           <option value="TV - My TV 30 - WUXP">
+            TV - My TV 30 - WUXP
+           </option>
+           <option value="TV - NBC 10 - WPXI">
+            TV - NBC 10 - WPXI
+           </option>
+           <option value="TV - NECN - New England Cable News">
+            TV - NECN - New England Cable News
+           </option>
+           <option value="TV - New England Patriots Programming">
+            TV - New England Patriots Programming
+           </option>
+           <option value="TV - News 12">
+            TV - News 12
+           </option>
+           <option value="TV - News 13">
+            TV - News 13
+           </option>
+           <option value="TV - News 14 Carolina">
+            TV - News 14 Carolina
+           </option>
+           <option value="TV - Nick Network">
+            TV - Nick Network
+           </option>
+           <option value="TV - News Channel Carolina">
+            TV - News Channel Carolina
+           </option>
+           <option value="TV - Sci-Fi Channel">
+            TV - Sci-Fi Channel
+           </option>
+           <option value="TV - SNY">
+            TV - SNY
+           </option>
+           <option value="TV - Spike">
+            TV - Spike
+           </option>
+           <option value="TV - SUN-TV">
+            TV - SUN-TV
+           </option>
+           <option value="TV - SYFY">
+            TV - SYFY
+           </option>
+           <option value="TV - TBS">
+            TV - TBS
+           </option>
+           <option value="TV - TBSC">
+            TV - TBSC
+           </option>
+           <option value="TV - The Colbert Report">
+            TV - The Colbert Report
+           </option>
+           <option value="TV - The Daily Show w/ Jon Stewart">
+            TV - The Daily Show w/ Jon Stewart
+           </option>
+           <option value="TV - Time Warner Cable">
+            TV - Time Warner Cable
+           </option>
+           <option value="TV - ToonTV">
+            TV - ToonTV
+           </option>
+           <option value="TV - TNN">
+            TV - TNN
+           </option>
+           <option value="TV - TNT">
+            TV - TNT
+           </option>
+           <option value="TV - USA">
+            TV - USA
+           </option>
+           <option value="TV - VH1">
+            TV - VH1
+           </option>
+           <option value="TV - VS">
+            TV - VS
+           </option>
+           <option value="TV - WCNC - NBC Charlotte">
+            TV - WCNC - NBC Charlotte
+           </option>
+           <option value="TV - WFLX - Fox29 TV">
+            TV - WFLX - Fox29 TV
+           </option>
+           <option value="TV - WPTV NewsChannel 5">
+            TV - WPTV NewsChannel 5
+           </option>
+           <option value="TV - YES">
+            TV - YES
+           </option>
+           <option value="TV - ZCFN">
+            TV - ZCFN
+           </option>
+           <option value="TV - Other Station">
+            TV - Other Station
+           </option>
+           <option value="Apple.com">
+            Apple.com
+           </option>
+           <option value="Craigslist.org">
+            Craigslist.org
+           </option>
+           <option value="CreativeCOW.net">
+            CreativeCOW.net
+           </option>
+           <option value="DV Magazine">
+            DV Magazine
+           </option>
+           <option value="Facebook">
+            Facebook
+           </option>
+           <option value="Fairfield Yellow Pages">
+            Fairfield Yellow Pages
+           </option>
+           <option value="Mandy.com">
+            Mandy.com
+           </option>
+           <option value="Magazine Ad">
+            Magazine Ad
+           </option>
+           <option value="MySpace">
+            MySpace
+           </option>
+           <option value="Tennessee Tribune">
+            Tennessee Tribune
+           </option>
+           <option value="Newspaper Article">
+            Newspaper Article
+           </option>
+           <option value="Saw CSB Sign Outside of the Building">
+            Saw CSB Sign Outside of the Building
+           </option>
+           <option value="Saw the CSB Vehicle">
+            Saw the CSB Vehicle
+           </option>
+           <option value="America’s Perfect Teen and Miss">
+            America’s Perfect Teen and Miss
+           </option>
+           <option value="Miss Perfect Teen Pageant">
+            Miss Perfect Teen Pageant
+           </option>
+           <option value="Miss America's Outstanding Teen">
+            Miss America's Outstanding Teen
+           </option>
+           <option value="Dolphin Mall">
+            Dolphin Mall
+           </option>
+           <option value="New Britain Rock Cats">
+            New Britain Rock Cats
+           </option>
+           <option value="The L / Bus / Mass Transit">
+            The L / Bus / Mass Transit
+           </option>
+           <option value="Veterans Transition Guide">
+            Veterans Transition Guide
+           </option>
+           <option value="Chicago Blackhawks">
+            Chicago Blackhawks
+           </option>
+           <option value="MacDill AFB Newcomers Guide">
+            MacDill AFB Newcomers Guide
+           </option>
+           <option value="Billboard">
+            Billboard
+           </option>
+           <option value="Unknown">
+            Unknown
+           </option>
+           <option value="Beeline">
+            Beeline
+           </option>
+           <option value="Hartford Courant">
+            Hartford Courant
+           </option>
+           <option value="Yellow Pages">
+            Yellow Pages
+           </option>
+           <option value="Atlanta Yellow Pages">
+            Atlanta Yellow Pages
+           </option>
+           <option value="Boston Yellow Pages">
+            Boston Yellow Pages
+           </option>
+           <option value="Charlotte Yellow Pages">
+            Charlotte Yellow Pages
+           </option>
+           <option value="Fort Lauderdale Yellow Pages">
+            Fort Lauderdale Yellow Pages
+           </option>
+           <option value="Hartford Yellow Pages">
+            Hartford Yellow Pages
+           </option>
+           <option value="New Haven Yellow Pages">
+            New Haven Yellow Pages
+           </option>
+           <option value="Orlando Yellow Pages">
+            Orlando Yellow Pages
+           </option>
+           <option value="Tampa Yellow Pages">
+            Tampa Yellow Pages
+           </option>
+           <option value="West Palm Beach Yellow Pages">
+            West Palm Beach Yellow Pages
+           </option>
+           <option value="Fandango.com">
+            Fandango.com
+           </option>
+           <option value="EOnline.com">
+            EOnline.com
+           </option>
+           <option value="Durham Fair">
+            Durham Fair
+           </option>
+           <option value="Dolphin 19 Cinemas">
+            Dolphin 19 Cinemas
+           </option>
+           <option value="Sunset Place 24">
+            Sunset Place 24
+           </option>
+           <option value="Royal Palm 18">
+            Royal Palm 18
+           </option>
+           <option value="Downtown at the Gardens 16">
+            Downtown at the Gardens 16
+           </option>
+           <option value="Regency 20">
+            Regency 20
+           </option>
+           <option value="Westshore Plaza 14">
+            Westshore Plaza 14
+           </option>
+           <option value="The Loop Stadium 16">
+            The Loop Stadium 16
+           </option>
+           <option value="Waterford Lakes Stadium 20">
+            Waterford Lakes Stadium 20
+           </option>
+           <option value="CTV - A & E">
+            CTV - A &amp; E
+           </option>
+           <option value="CTV - CNN">
+            CTV - CNN
+           </option>
+           <option value="CTV - Cartoon Network">
+            CTV - Cartoon Network
+           </option>
+           <option value="CTV - Comedy Central">
+            CTV - Comedy Central
+           </option>
+           <option value="CTV - Discovery Channel">
+            CTV - Discovery Channel
+           </option>
+           <option value="CTV - E! Entertainment">
+            CTV - E! Entertainment
+           </option>
+           <option value="CTV - ESPN">
+            CTV - ESPN
+           </option>
+           <option value="CTV - ESPN Classic">
+            CTV - ESPN Classic
+           </option>
+           <option value="CTV - Fox News">
+            CTV - Fox News
+           </option>
+           <option value="CTV - Golf">
+            CTV - Golf
+           </option>
+           <option value="CTV - History Channel">
+            CTV - History Channel
+           </option>
+           <option value="CTV - News 12">
+            CTV - News 12
+           </option>
+           <option value="CTV - Nick Network">
+            CTV - Nick Network
+           </option>
+           <option value="CTV - Military Channel">
+            CTV - Military Channel
+           </option>
+           <option value="CTV - MSG">
+            CTV - MSG
+           </option>
+           <option value="CTV - MTV">
+            CTV - MTV
+           </option>
+           <option value="CTV - MTV 2">
+            CTV - MTV 2
+           </option>
+           <option value="CTV - SNY">
+            CTV - SNY
+           </option>
+           <option value="CTV - Spike">
+            CTV - Spike
+           </option>
+           <option value="CTV - TBS">
+            CTV - TBS
+           </option>
+           <option value="CTV - The Colbert Report">
+            CTV - The Colbert Report
+           </option>
+           <option value="CTV - The Daily Show w/ Jon Stewart">
+            CTV - The Daily Show w/ Jon Stewart
+           </option>
+           <option value="CTV - TNN">
+            CTV - TNN
+           </option>
+           <option value="CTV - USA">
+            CTV - USA
+           </option>
+           <option value="CTV - YES">
+            CTV - YES
+           </option>
+           <option value="CTV - VS">
+            CTV - VS
+           </option>
+           <option value="TWTV - Cartoon Network">
+            TWTV - Cartoon Network
+           </option>
+           <option value="TWTV - Comedy Central">
+            TWTV - Comedy Central
+           </option>
+           <option value="TWTV - E! Entertainment">
+            TWTV - E! Entertainment
+           </option>
+           <option value="TWTV - ESPN">
+            TWTV - ESPN
+           </option>
+           <option value="TWTV - ESPN Classic">
+            TWTV - ESPN Classic
+           </option>
+           <option value="TWTV - Golf">
+            TWTV - Golf
+           </option>
+           <option value="TWTV - News 12">
+            TWTV - News 12
+           </option>
+           <option value="TWTV - Nick Network">
+            TWTV - Nick Network
+           </option>
+           <option value="TWTV - MSG">
+            TWTV - MSG
+           </option>
+           <option value="TWTV - MTV">
+            TWTV - MTV
+           </option>
+           <option value="TWTV - MTV 2">
+            TWTV - MTV 2
+           </option>
+           <option value="TWTV - SNY">
+            TWTV - SNY
+           </option>
+           <option value="TWTV - USA">
+            TWTV - USA
+           </option>
+           <option value="TWTV - YES">
+            TWTV - YES
+           </option>
+           <option value="TWTV - VS">
+            TWTV - VS
+           </option>
+           <option value="Buzz103.radio.com">
+            Buzz103.radio.com
+           </option>
+           <option value="El Nuevo">
+            El Nuevo
+           </option>
+           <option value="Miami Herald">
+            Miami Herald
+           </option>
+           <option value="WKMG Career Expo">
+            WKMG Career Expo
+           </option>
+           <option value="iheartradio.com">
+            iheartradio.com
+           </option>
+           <option value="CBS Radio Studio @ the Epicenter">
+            CBS Radio Studio @ the Epicenter
+           </option>
+           <option value="SportsBang on CBS4 WFOR-TV">
+            SportsBang on CBS4 WFOR-TV
+           </option>
+           <option value="South Florida Fair">
+            South Florida Fair
+           </option>
+           <option value="YouTube">
+            YouTube
+           </option>
+           <option value="94.9 - Magic 94.9 - WWRM">
+            94.9 - Magic 94.9 - WWRM
+           </option>
+           <option value="860 AM - WGUL">
+            860 AM - WGUL
+           </option>
+           <option value="106.3 - ESPN Radio - WUUB">
+            106.3 - ESPN Radio - WUUB
+           </option>
+           <option value="101.9 - 101.9 AMP RADIO - WJHM">
+            101.9 - 101.9 AMP RADIO - WJHM
+           </option>
+           <option value="NESN">
+            NESN
+           </option>
+           <option value="TV - Cablevision">
+            TV - Cablevision
+           </option>
+          </select>
+         </span>
+        </div>
+        <div style="display:none;" id="HowHeard4">
+         <div class="controls-row">
+          <label>
+           Which television station?
+          </label>
+         </div>
+         <div class="controls controls-row">
+          <select name="television" class="span12">
+           <option value="">
+            -- Select One --
+           </option>
+           <option value="TV - Cablevision">
+            TV - Cablevision
+           </option>
+          </select>
+         </div>
+        </div>
+        <div style="display:none;" id="WhichWhoDiv">
+        </div>
+        <div style="display:none;" id="HowHeard3">
+         <div class="controls-row">
+          <label for="email">
+           Who told you about us?
+          </label>
+         </div>
+         <div class="controls controls-row">
+          <select class="span12" name="toldAbout">
+           <option value="" selected="selected">
+            -- Select One --
+           </option>
+           <option value="CSB Graduate">
+            CSB Graduate
+           </option>
+           <option value="CSB Student">
+            CSB Student
+           </option>
+           <option value="Guidance Counselor">
+            Guidance Counselor
+           </option>
+           <option value="Friend/Family">
+            Friend/Family
+           </option>
+          </select>
+         </div>
+        </div>
+        <hr />
+        <div class="controls-row">
+         <span class="span6 offset3">
+          <button name="save" class="btn btn-primary special span12" type="submit">
+           Contact Us
+          </button>
+         </span>
+        </div>
+       </div>
+      </form>
+     </div>
+     <div class="span4 hidden-phone">
+      <blockquote>
+       <p>
+        Learn by doing in a matter of months - not years.  There is no substitute for hands-on experience.
+       </p>
+       <p class="quote-sig">
+        <span>
+         - Dick Robinson
+        </span>
+        <br />
+        Founder and Chairman
+       </p>
+      </blockquote>
+      <center>
+       <img alt="call-now-noline" src="../images/global/call-now-noline.png" class="call-now" />
+      </center>
+      <hr />
+      <a href="50th-anniversary">
+       <img class="fifty-seal-sidebar" alt="50th Anniversary Seal" src="../images/50th/50th-Seal-Large.png" />
+      </a>
+      <a href="50th-anniversary" class="btn special seal-sidebar">
+       We're Celebrating Over 50 Years of Excellence in Media Training
+      </a>
+     </div>
+    </div>
+   </div>
+  </div>
+  <!-- /container -->
+  <footer>
+   <div class="container-wrap">
+    <div class="row-fluid">
+     <div class="span12">
+      <div class="span3 first hidden-phone">
+       <a href="http://www.gocsb.com/">
+        <img alt="Logo" src="http://www.gocsb.com/images/logo-footer.png" class="footer-logo" />
+       </a>
+       <ul>
+        <li>
+         <a href="http://www.gocsb.com/about">
+          About Us
+         </a>
+        </li>
+        <li>
+         <a href="http://www.gocsb.com/admissions">
+          Admissions
+         </a>
+        </li>
+        <li>
+         <a href="http://www.gocsb.com/careers">
+          Careers
+         </a>
+        </li>
+       </ul>
+      </div>
+      <div class="span3 hidden-phone">
+       <span class="footer-div ">
+       </span>
+       <ul>
+        <li>
+         <a href="http://www.gocsb.com/locations">
+          Locations
+         </a>
+        </li>
+        <li>
+         <a href="http://www.gocsb.com/radio">
+          Radio
+         </a>
+        </li>
+        <li>
+         <a href="http://www.gocsb.com/television">
+          Television
+         </a>
+        </li>
+        <li>
+         <a href="http://www.gocsb.com/sports-broadcasting">
+          Sports
+         </a>
+        </li>
+        <li>
+         <a href="http://www.gocsb.com/audio-video">
+          Audio/Video
+         </a>
+        </li>
+       </ul>
+      </div>
+      <div class="span3 hidden-phone">
+       <span class="footer-div">
+       </span>
+       <span class="btn-wrap">
+        <a onclick="window.open('http://www.allnoiseradio.com', 'mywindow', ',width=478,height=260,resizable=no,scrollbars=no,menubar=no'); return true;" class="btn btn-custom">
+         Listen Now
+        </a>
+       </span>
+       <p>
+        <a onclick="window.open('http://www.allnoiseradio.com', 'mywindow', ',width=478,height=260,resizable=no,scrollbars=no,menubar=no'); return true;">
+         <img alt="All Noise Radio" src="http://www.gocsb.com/images/all-noise-logo.png" />
+        </a>
+       </p>
+       <p>
+        As a student, you'll be able to create your own radio show and gain real-world experience.
+       </p>
+      </div>
+      <div class="span3">
+       <span class="footer-div hidden-phone">
+       </span>
+       <span class="btn-wrap hidden-phone">
+        <a href="http://www.gocsb.com/contact" class="btn btn-custom">
+         Contact Us
+        </a>
+       </span>
+       <p>
+        <a target="_blank" href="http://www.facebook.com/ctschoolofbroadcasting">
+         <i class="social icon-facebook-sign first">
+         </i>
+        </a>
+        <a target="_blank" href="http://www.twitter.com/gocsb">
+         <i class="social icon-twitter-sign">
+         </i>
+        </a>
+        <a target="_blank" href="https://plus.google.com/+Gocsb">
+         <i class="social icon-google-plus-sign">
+         </i>
+        </a>
+       </p>
+       <p class="phone">
+        1 800 TV RADIO
+       </p>
+       <p class="copyright">
+        ©  2015 Connecticut School of Broadcasting
+       </p>
+       <a href="http://www.gocsb.com/privacy" class="privacy">
+        privacy policy
+       </a>
+      </div>
+     </div>
+    </div>
+   </div>
+   <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+
+			  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+
+			  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+
+			  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+			
+
+			  ga('create', 'UA-60126572-1', 'auto');
+
+			  ga('send', 'pageview');
+   </script>
+   <script>
+    $('.carousel').carousel({
+  interval: 5000
+})
+   </script>
+   <!--Begin Comm100 Live Chat Code-->
+   <div id="comm100-button-347" style="display: none;">
+   </div>
+   <script type="text/javascript">
+    var Comm100API = Comm100API || new Object;
+    Comm100API.chat_buttons = Comm100API.chat_buttons || [];
+    var comm100_chatButton = new Object;
+    comm100_chatButton.code_plan = 347;
+    comm100_chatButton.div_id = 'comm100-button-347';
+    Comm100API.chat_buttons.push(comm100_chatButton);
+    Comm100API.site_id = 213865;
+    Comm100API.main_code_plan = 347;
+
+    var comm100_lc = document.createElement('script');
+    comm100_lc.type = 'text/javascript';
+    comm100_lc.async = true;
+    comm100_lc.src = 'https://chatserver.comm100.com/livechat.ashx?siteId=' + Comm100API.site_id;
+    var comm100_s = document.getElementsByTagName('script')[0];
+    comm100_s.parentNode.insertBefore(comm100_lc, comm100_s);
+
+    setTimeout(function() {
+        if (!Comm100API.loaded) {
+            var lc = document.createElement('script');
+            lc.type = 'text/javascript';
+            lc.async = true;
+            lc.src = 'https://hostedmax.comm100.com/chatserver/livechat.ashx?siteId=' + Comm100API.site_id;
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(lc, s);
+        }
+    }, 5000)
+   </script>
+   <!--End Comm100 Live Chat Code-->
+  </footer>
+  <script type="text/javascript">
+   fun_about('');
+  </script>
+  <div style="display:none">
+   <a href="http://pornofrango.com">
+    pornofrango
+   </a>
+   <a href="http://pornotigre.net">
+    pornotigre
+   </a>
+   <a href="http://sexojurel.net">
+    sexojurel
+   </a>
+   <a href="http://pornovaca.org">
+    pornovaca
+   </a>
+   <a href="http://sexooruga.com">
+    sexooruga
+   </a>
+   <a href="http://pornocriceto.com">
+    pornocriceto
+   </a>
+   <a href="http://pornocachorro.org">
+    pornocachorro
+   </a>
+   <a href="http://pornocoiote.com">
+    pornocoiote
+   </a>
+   <a href="http://pornoburro.org">
+    pornoburro
+   </a>
+   <a href="http://pornocodorna.com">
+    pornocodorna
+   </a>
+   <a href="http://sexoguepardo.net">
+    sexoguepardo
+   </a>
+   <a href="http://sexosello.xyz">
+    sexosello
+   </a>
+   <a href="http://sexocucaracha.com">
+    sexocucaracha
+   </a>
+   <a href="http://sexoarmadillo.com">
+    sexoarmadillo
+   </a>
+   <a href="http://pornocaballo.net">
+    pornocaballo
+   </a>
+   <a href="http://sexoleona.com">
+    sexoleona
+   </a>
+   <a href="http://pornotigru.xyz">
+    pornotigru
+   </a>
+   <a href="http://sexomarsopa.net">
+    sexomarsopa
+   </a>
+   <a title="filmati porno" href="http://www.videopornogratis.eu/incesti">
+    filmati porno
+   </a>
+  </div>
+  <div style="display:none">
+   <a title="nouveauclashofclansastuce.com" href="http://nouveauclashofclansastuce.com/">
+    nouveauclashofclansastuce.com
+   </a>
+   <a title="Clash of Kings Hack" href="http://www.etagamingzone.com/clash-of-kings-hack-clash-of-kings-cheats/">
+    Clash of Kings Hack
+   </a>
+   <a title="8 ball pool hack" href="http://free8ballpoolhacktool.com/">
+    8 ball pool hack
+   </a>
+  </div>
+  <div class="ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all" id="ui-datepicker-div">
+  </div>
+ </body>
+</html>

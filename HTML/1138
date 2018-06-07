@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<!DOCTYPE html [
+  <!ENTITY % htmlDTD
+    PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "DTD/xhtml1-strict.dtd">
+  %htmlDTD;
+  <!ENTITY % globalDTD
+    SYSTEM "chrome://global/locale/global.dtd">
+  %globalDTD;
+  <!ENTITY % feedDTD
+    SYSTEM "chrome://browser/locale/feeds/subscribe.dtd">
+  %feedDTD;
+]>
+<?xml version='1.0' encoding='utf-8'?>
+<html id="feedHandler" xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <title>
+   The Streetly Academy
+  </title>
+  <link rel="stylesheet" href="chrome://browser/skin/feeds/subscribe.css" type="text/css" media="all" />
+  <link rel="stylesheet" href="chrome://browser/content/feeds/subscribe.css" type="text/css" media="all" />
+  <script type="application/javascript" src="chrome://browser/content/feeds/subscribe.js">
+  </script>
+ </head>
+ <body onload="SubscribeHandler.writeContent();" onunload="SubscribeHandler.uninit();">
+  <div id="feedHeaderContainer">
+   <div id="feedHeader" dir="ltr" class="feedBackground" firstrun="true">
+    <div id="feedIntroText">
+     <p id="feedSubscriptionInfo1">
+      This is a "feed" of frequently changing content on this site.
+     </p>
+     <p id="feedSubscriptionInfo2">
+      You can subscribe to this feed to receive updates when this content changes.
+     </p>
+    </div>
+    <div id="feedSubscribeLine">
+    </div>
+   </div>
+  </div>
+  <script type="application/javascript">
+   SubscribeHandler.init();
+  </script>
+  <div id="feedBody">
+   <div id="feedTitle">
+    <a id="feedTitleLink">
+     <img id="feedTitleImage" />
+    </a>
+    <div id="feedTitleContainer">
+     <h1 id="feedTitleText" xml:base="http://streetly.academy/feed">
+      The Streetly Academy
+     </h1>
+     <h2 id="feedSubtitleText" xml:base="http://streetly.academy/feed">
+      Values and Achievement
+     </h2>
+    </div>
+   </div>
+   <div id="feedContent">
+   </div>
+  </div>
+ </body>
+</html>

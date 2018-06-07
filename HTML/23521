@@ -1,0 +1,566 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <link href="http://hon3forums.com/Themes/default/css/index.css?fin20" type="text/css" rel="stylesheet" />
+  <script src="http://hon3forums.com/Themes/default/scripts/script.js?fin20" type="text/javascript">
+  </script>
+  <script src="http://hon3forums.com/Themes/default/scripts/theme.js?fin20" type="text/javascript">
+  </script>
+  <script type="text/javascript">
+   &lt;!-- // --&gt;&lt;![CDATA[
+		var smf_theme_url = "http://hon3forums.com/Themes/default";
+		var smf_default_theme_url = "http://hon3forums.com/Themes/default";
+		var smf_images_url = "http://hon3forums.com/Themes/default/images";
+		var smf_scripturl = "http://hon3forums.com/index.php?PHPSESSID=55ac4fab69b6191a18d367a387c7eaea&amp;amp;";
+		var smf_iso_case_folding = false;
+		var smf_charset = "ISO-8859-1";
+		var ajax_notification_text = "Loading...";
+		var ajax_notification_cancel_text = "Cancel";
+	// ]]&gt;
+  </script>
+  <meta content="Content-Type" http-equiv="Content-Type" />
+  <meta content="Set Search Parameters" name="description" />
+  <title>
+   Set Search Parameters
+  </title>
+  <link href="http://hon3forums.com/index.php?PHPSESSID=55ac4fab69b6191a18d367a387c7eaea&action=help" rel="help" />
+  <link href="http://hon3forums.com/index.php?PHPSESSID=55ac4fab69b6191a18d367a387c7eaea&action=search" rel="search" />
+  <link href="http://hon3forums.com/index.php?PHPSESSID=55ac4fab69b6191a18d367a387c7eaea&" rel="contents" />
+  <link href="http://hon3forums.com/index.php?PHPSESSID=55ac4fab69b6191a18d367a387c7eaea&type=rss;action=.xml" title="HOn3 Forums - RSS" type="application/rss+xml" rel="alternate" />
+  <link href="http://hon3forums.com/Themes/default/css/portal.css" id="portal_css" type="text/css" rel="stylesheet" />
+  <script src="http://hon3forums.com/Themes/default/scripts/portal.js?235" type="text/javascript">
+  </script>
+  <script type="text/javascript" language="JavaScript">
+   &lt;!-- // --&gt;&lt;![CDATA[
+		var sp_images_url = "http://hon3forums.com/Themes/default/images/sp";
+		function sp_collapseBlock(id)
+		{
+			mode = document.getElementById("sp_block_" + id).style.display == "" ? 0 : 1;
+			document.cookie = "sp_block_" + id + "=" + (mode ? 0 : 1);
+			document.getElementById("sp_collapse_" + id).src = smf_images_url + (mode ? "/collapse.gif" : "/expand.gif");
+			document.getElementById("sp_block_" + id).style.display = mode ? "" : "none";
+		}
+		function sp_collapseSide(id)
+		{
+			var sp_sides = new Array();
+			sp_sides[1] = "sp_left";
+			sp_sides[4] = "sp_right";
+			mode = document.getElementById(sp_sides[id]).style.display == "" ? 0 : 1;
+			document.cookie = sp_sides[id] + "=" + (mode ? 0 : 1);
+			document.getElementById("sp_collapse_side" + id).src = sp_images_url + (mode ? "/collapse.png" : "/expand.png");
+			document.getElementById(sp_sides[id]).style.display = mode ? "" : "none";
+		}
+		window.addEventListener("load", sp_image_resize, false);
+	// ]]&gt;
+  </script>
+ </head>
+ <body>
+  <div style="width: 90%" id="wrapper">
+   <div id="header">
+    <div class="frame">
+     <div id="top_section">
+      <h1 class="forumtitle">
+       <a href="http://hon3forums.com/index.php?PHPSESSID=55ac4fab69b6191a18d367a387c7eaea&">
+        <img alt="HOn3 Forums" src="http://www.hon3forums.com/345.jpg" />
+       </a>
+      </h1>
+      <img style="cursor: pointer;" title="Shrink or expand the header." alt="*" src="http://hon3forums.com/Themes/default/images/upshrink.png" id="upshrink" />
+      <div class="floatright" id="siteslogan">
+       HOn3 Forums - The Place To Be In HOn3!
+      </div>
+     </div>
+     <div class="middletext" id="upper_section">
+      <div class="user">
+       <script src="http://hon3forums.com/Themes/default/scripts/sha1.js" type="text/javascript">
+       </script>
+       <form onsubmit="hashLoginPassword(this, '3908238fc2bfc819af4731bf91e06abe');" accept-charset="ISO-8859-1" method="post" action="http://hon3forums.com/index.php?PHPSESSID=55ac4fab69b6191a18d367a387c7eaea&action=login2" id="guest_form">
+        <div class="info">
+         Welcome,
+         <strong>
+          Guest
+         </strong>
+         . Please
+         <a href="http://hon3forums.com/index.php?PHPSESSID=55ac4fab69b6191a18d367a387c7eaea&action=login">
+          login
+         </a>
+         or
+         <a href="http://hon3forums.com/index.php?PHPSESSID=55ac4fab69b6191a18d367a387c7eaea&action=register">
+          register
+         </a>
+         .
+        </div>
+        <input type="text" class="input_text" size="10" name="user" />
+        <input type="password" class="input_password" size="10" name="passwrd" />
+        <select name="cookielength">
+         <option value="60">
+          1 Hour
+         </option>
+         <option value="1440">
+          1 Day
+         </option>
+         <option value="10080">
+          1 Week
+         </option>
+         <option value="43200">
+          1 Month
+         </option>
+         <option selected="selected" value="-1">
+          Forever
+         </option>
+        </select>
+        <input type="submit" class="button_submit" value="Login" />
+        <br />
+        <div class="info">
+         Login with username, password and session length
+        </div>
+        <input type="hidden" value="" name="hash_passwrd" />
+       </form>
+      </div>
+      <div class="news normaltext">
+       <form accept-charset="ISO-8859-1" method="post" action="http://hon3forums.com/index.php?PHPSESSID=55ac4fab69b6191a18d367a387c7eaea&action=search2" id="search_form">
+        <input type="text" class="input_text" value="" name="search" />
+        <input type="submit" class="button_submit" value="Search" name="submit" />
+        <input type="hidden" value="0" name="advanced" />
+       </form>
+       <h2>
+        News:
+       </h2>
+       <p>
+        HOn3 Forums, The Place To Be, In HOn3!
+       </p>
+      </div>
+     </div>
+     <br class="clear" />
+     <script type="text/javascript">
+      &lt;!-- // --&gt;&lt;![CDATA[
+			var oMainHeaderToggle = new smc_Toggle({
+				bToggleEnabled: true,
+				bCurrentlyCollapsed: false,
+				aSwappableContainers: [
+					'upper_section'
+				],
+				aSwapImages: [
+					{
+						sId: 'upshrink',
+						srcExpanded: smf_images_url + '/upshrink.png',
+						altExpanded: 'Shrink or expand the header.',
+						srcCollapsed: smf_images_url + '/upshrink2.png',
+						altCollapsed: 'Shrink or expand the header.'
+					}
+				],
+				oThemeOptions: {
+					bUseThemeSettings: false,
+					sOptionName: 'collapse_header',
+					sSessionVar: 'f8bf5c3cadc4',
+					sSessionId: '3908238fc2bfc819af4731bf91e06abe'
+				},
+				oCookieOptions: {
+					bUseCookie: true,
+					sCookieName: 'upshrink'
+				}
+			});
+		// ]]&gt;
+     </script>
+     <div id="main_menu">
+      <ul id="menu_nav" class="dropmenu">
+       <li id="button_home">
+        <a href="http://hon3forums.com/index.php?PHPSESSID=55ac4fab69b6191a18d367a387c7eaea&" class="firstlevel">
+         <span class="last firstlevel">
+          Home
+         </span>
+        </a>
+       </li>
+       <li id="button_forum">
+        <a href="http://hon3forums.com/index.php?PHPSESSID=55ac4fab69b6191a18d367a387c7eaea&action=forum" class="firstlevel">
+         <span class="firstlevel">
+          Forum
+         </span>
+        </a>
+       </li>
+       <li id="button_help">
+        <a href="http://hon3forums.com/index.php?PHPSESSID=55ac4fab69b6191a18d367a387c7eaea&action=help" class="firstlevel">
+         <span class="firstlevel">
+          Help
+         </span>
+        </a>
+       </li>
+       <li id="button_search">
+        <a href="http://hon3forums.com/index.php?PHPSESSID=55ac4fab69b6191a18d367a387c7eaea&action=search" class="active firstlevel">
+         <span class="firstlevel">
+          Search
+         </span>
+        </a>
+       </li>
+       <li id="button_calendar">
+        <a href="http://hon3forums.com/index.php?PHPSESSID=55ac4fab69b6191a18d367a387c7eaea&action=calendar" class="firstlevel">
+         <span class="firstlevel">
+          Calendar
+         </span>
+        </a>
+       </li>
+       <li id="button_login">
+        <a href="http://hon3forums.com/index.php?PHPSESSID=55ac4fab69b6191a18d367a387c7eaea&action=login" class="firstlevel">
+         <span class="firstlevel">
+          Login
+         </span>
+        </a>
+       </li>
+       <li id="button_register">
+        <a href="http://hon3forums.com/index.php?PHPSESSID=55ac4fab69b6191a18d367a387c7eaea&action=register" class="firstlevel">
+         <span class="last firstlevel">
+          Register
+         </span>
+        </a>
+       </li>
+      </ul>
+     </div>
+     <br class="clear" />
+    </div>
+   </div>
+   <div id="content_section">
+    <div class="frame">
+     <div id="main_content_section">
+      <div class="navigate_section">
+       <ul>
+        <li>
+         <a href="http://hon3forums.com/index.php?PHPSESSID=55ac4fab69b6191a18d367a387c7eaea&action=forum">
+          <span>
+           HOn3 Forums
+          </span>
+         </a>
+         »
+        </li>
+        <li class="last">
+         <a href="http://hon3forums.com/index.php?PHPSESSID=55ac4fab69b6191a18d367a387c7eaea&action=search">
+          <span>
+           Search
+          </span>
+         </a>
+        </li>
+       </ul>
+      </div>
+      <table id="sp_main">
+       <tbody>
+        <tr>
+         <td id="sp_center">
+          <form id="searchform" name="searchform" accept-charset="ISO-8859-1" method="post" action="http://hon3forums.com/index.php?PHPSESSID=55ac4fab69b6191a18d367a387c7eaea&action=search2">
+           <div class="cat_bar">
+            <h3 class="catbg">
+             <span class="ie6_header floatleft">
+              <img class="icon" alt="" src="http://hon3forums.com/Themes/default/images/buttons/search.gif" />
+              Set Search Parameters
+             </span>
+            </h3>
+           </div>
+           <fieldset id="advanced_search">
+            <span class="upperframe">
+             <span>
+             </span>
+            </span>
+            <div class="roundframe">
+             <input type="hidden" value="1" name="advanced" />
+             <span class="enhanced">
+              <strong>
+               Search for:
+              </strong>
+              <input type="text" class="input_text" size="40" maxlength="100" name="search" />
+              <script type="text/javascript">
+               &lt;!-- // --&gt;&lt;![CDATA[
+						function initSearch()
+						{
+							if (document.forms.searchform.search.value.indexOf("%u") != -1)
+								document.forms.searchform.search.value = unescape(document.forms.searchform.search.value);
+						}
+						createEventListener(window);
+						window.addEventListener("load", initSearch, false);
+					// ]]&gt;
+              </script>
+              <select name="searchtype">
+               <option selected="selected" value="1">
+                Match all words
+               </option>
+               <option value="2">
+                Match any words
+               </option>
+              </select>
+             </span>
+             <em class="smalltext">
+             </em>
+             <em>
+              e.g.
+             </em>
+             Orwell "Animal Farm" -movie
+             <dl id="search_options">
+              <dt>
+               By user:
+              </dt>
+              <dd>
+               <input type="text" class="input_text" size="40" value="*" name="userspec" id="userspec" />
+              </dd>
+              <dt>
+               Search order:
+              </dt>
+              <dd>
+               <select name="sort" id="sort">
+                <option value="relevance|desc">
+                 Most relevant results first
+                </option>
+                <option value="num_replies|desc">
+                 Largest topics first
+                </option>
+                <option value="num_replies|asc">
+                 Smallest topics first
+                </option>
+                <option value="id_msg|desc">
+                 Most recent topics first
+                </option>
+                <option value="id_msg|asc">
+                 Oldest topics first
+                </option>
+               </select>
+              </dd>
+              <dt class="options">
+               Options:
+              </dt>
+              <dd class="options">
+               <label for="show_complete">
+                <input type="checkbox" class="input_check" value="1" id="show_complete" name="show_complete" />
+                Show results as messages
+               </label>
+               <br />
+               <label for="subject_only">
+                <input type="checkbox" class="input_check" value="1" id="subject_only" name="subject_only" />
+                Search in topic subjects only
+               </label>
+              </dd>
+              <dt class="between">
+               Message age:
+              </dt>
+              <dd>
+               between
+               <input type="text" class="input_text" maxlength="4" size="5" value="0" name="minage" />
+                and 
+               <input type="text" class="input_text" maxlength="4" size="5" value="9999" name="maxage" />
+               days
+              </dd>
+             </dl>
+            </div>
+            <span class="lowerframe">
+             <span>
+             </span>
+            </span>
+           </fieldset>
+           <fieldset class="flow_hidden">
+            <span class="upperframe">
+             <span>
+             </span>
+            </span>
+            <div class="roundframe">
+             <div class="title_bar">
+              <h4 class="titlebg">
+               <a onclick="expandCollapseBoards(); return false;" href="javascript:void(0);">
+                <img alt="" id="expandBoardsIcon" src="http://hon3forums.com/Themes/default/images/expand.gif" />
+               </a>
+               <a onclick="expandCollapseBoards(); return false;" href="javascript:void(0);">
+                <strong>
+                 Choose a board to search in, or search all
+                </strong>
+               </a>
+              </h4>
+             </div>
+             <div style="display: none;" id="searchBoardsExpand" class="flow_auto">
+              <ul class="ignoreboards floatleft">
+               <li class="category">
+                <a onclick="selectBoards([10]); return false;" href="javascript:void(0);">
+                 Contests
+                </a>
+                <ul>
+                 <li style="margin-left: 0em;" class="board">
+                  <label for="brd10">
+                   <input type="checkbox" class="input_check" checked="checked" value="10" name="brd[10]" id="brd10" />
+                   Challenges
+                  </label>
+                 </li>
+                </ul>
+               </li>
+               <li class="category">
+                <a onclick="selectBoards([6, 2, 12, 13, 1, 3, 11, 4, 8, 5, 7, 9]); return false;" href="javascript:void(0);">
+                 HOn3 Model Railroading
+                </a>
+                <ul>
+                 <li style="margin-left: 0em;" class="board">
+                  <label for="brd6">
+                   <input type="checkbox" class="input_check" checked="checked" value="6" name="brd[6]" id="brd6" />
+                   Announcements
+                  </label>
+                 </li>
+                 <li style="margin-left: 0em;" class="board">
+                  <label for="brd2">
+                   <input type="checkbox" class="input_check" checked="checked" value="2" name="brd[2]" id="brd2" />
+                   Welcome aboard!
+                  </label>
+                 </li>
+                 <li style="margin-left: 0em;" class="board">
+                  <label for="brd12">
+                   <input type="checkbox" class="input_check" checked="checked" value="12" name="brd[12]" id="brd12" />
+                   Site Problems
+                  </label>
+                 </li>
+                 <li style="margin-left: 0em;" class="board">
+                  <label for="brd13">
+                   <input type="checkbox" class="input_check" checked="checked" value="13" name="brd[13]" id="brd13" />
+                   Suggestion Box
+                  </label>
+                 </li>
+                 <li style="margin-left: 0em;" class="board">
+                  <label for="brd1">
+                   <input type="checkbox" class="input_check" checked="checked" value="1" name="brd[1]" id="brd1" />
+                   HOn3 General Discussion Forum
+                  </label>
+                 </li>
+                 <li style="margin-left: 0em;" class="board">
+                  <label for="brd3">
+                   <input type="checkbox" class="input_check" checked="checked" value="3" name="brd[3]" id="brd3" />
+                   Layouts And Layout Construction And Design
+                  </label>
+                 </li>
+                </ul>
+               </li>
+              </ul>
+              <ul class="ignoreboards floatright">
+               <li class="category">
+                <ul>
+                 <li style="margin-left: 0em;" class="board">
+                  <label for="brd11">
+                   <input type="checkbox" class="input_check" checked="checked" value="11" name="brd[11]" id="brd11" />
+                   Model &amp; Kit Building/Bashing
+                  </label>
+                 </li>
+                 <li style="margin-left: 0em;" class="board">
+                  <label for="brd4">
+                   <input type="checkbox" class="input_check" checked="checked" value="4" name="brd[4]" id="brd4" />
+                   DCC And Electronics
+                  </label>
+                 </li>
+                 <li style="margin-left: 0em;" class="board">
+                  <label for="brd8">
+                   <input type="checkbox" class="input_check" checked="checked" value="8" name="brd[8]" id="brd8" />
+                   Photo Gallery Comments
+                  </label>
+                 </li>
+                 <li style="margin-left: 0em;" class="board">
+                  <label for="brd5">
+                   <input type="checkbox" class="input_check" checked="checked" value="5" name="brd[5]" id="brd5" />
+                   Prototype Information
+                  </label>
+                 </li>
+                 <li style="margin-left: 0em;" class="board">
+                  <label for="brd7">
+                   <input type="checkbox" class="input_check" checked="checked" value="7" name="brd[7]" id="brd7" />
+                   New Product Announcements
+                  </label>
+                 </li>
+                 <li style="margin-left: 0em;" class="board">
+                  <label for="brd9">
+                   <input type="checkbox" class="input_check" checked="checked" value="9" name="brd[9]" id="brd9" />
+                   Swap Meet
+                  </label>
+                 </li>
+                </ul>
+               </li>
+              </ul>
+             </div>
+             <br class="clear" />
+             <div class="padding">
+              <input type="checkbox" class="input_check floatleft" onclick="invertAll(this, this.form, 'brd');" checked="checked" value="" id="check_all" name="all" />
+              <label class="floatleft" for="check_all">
+               Check all
+              </label>
+              <input type="submit" class="button_submit floatright" value="Search" name="submit" />
+             </div>
+             <br class="clear" />
+            </div>
+            <span class="lowerframe">
+             <span>
+             </span>
+            </span>
+           </fieldset>
+          </form>
+          <script type="text/javascript">
+           &lt;!-- // --&gt;&lt;![CDATA[
+		function selectBoards(ids)
+		{
+			var toggle = true;
+
+			for (i = 0; i &lt; ids.length; i++)
+				toggle = toggle &amp; document.forms.searchform["brd" + ids[i]].checked;
+
+			for (i = 0; i &lt; ids.length; i++)
+				document.forms.searchform["brd" + ids[i]].checked = !toggle;
+		}
+
+		function expandCollapseBoards()
+		{
+			var current = document.getElementById("searchBoardsExpand").style.display != "none";
+
+			document.getElementById("searchBoardsExpand").style.display = current ? "none" : "";
+			document.getElementById("expandBoardsIcon").src = smf_images_url + (current ? "/expand.gif" : "/collapse.gif");
+		}
+	// ]]&gt;
+          </script>
+         </td>
+        </tr>
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <div id="footer_section">
+    <div class="frame">
+     <ul class="reset">
+      <li style="line-height: 1.5em;" class="copyright">
+       <span style="display: inline; visibility: visible; font-family: Verdana, Arial, sans-serif;" class="smalltext">
+        <a class="new_win" target="_blank" title="Simple Machines Forum" href="http://hon3forums.com/index.php?PHPSESSID=55ac4fab69b6191a18d367a387c7eaea&action=credits">
+         SMF 2.0.5
+        </a>
+        |
+        <a class="new_win" target="_blank" title="License" href="http://www.simplemachines.org/about/smf/license.php">
+         SMF © 2013
+        </a>
+        ,
+        <a class="new_win" target="_blank" title="Simple Machines" href="http://www.simplemachines.org">
+         Simple Machines
+        </a>
+        <br />
+        <a class="new_win" target="_blank" href="http://www.simpleportal.net/">
+         SimplePortal 2.3.5 © 2008-2012, SimplePortal
+        </a>
+       </span>
+      </li>
+      <li>
+       <a title="Valid XHTML 1.0!" class="new_win" target="_blank" href="http://validator.w3.org/check?uri=referer" id="button_xhtml">
+        <span>
+         XHTML
+        </span>
+       </a>
+      </li>
+      <li>
+       <a class="new_win" href="http://hon3forums.com/index.php?PHPSESSID=55ac4fab69b6191a18d367a387c7eaea&action=.xml;type=rss" id="button_rss">
+        <span>
+         RSS
+        </span>
+       </a>
+      </li>
+      <li class="last">
+       <a class="new_win" href="http://hon3forums.com/index.php?PHPSESSID=55ac4fab69b6191a18d367a387c7eaea&wap2" id="button_wap2">
+        <span>
+         WAP2
+        </span>
+       </a>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>

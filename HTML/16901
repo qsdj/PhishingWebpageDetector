@@ -1,0 +1,1264 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta content="content-type" http-equiv="content-type" />
+  <title>
+   Reocities
+  </title>
+  <link media="screen" href="/static/css/screen.css" type="text/css" rel="stylesheet" />
+ </head>
+ <body>
+  <div id="header-wrapper">
+   <div id="header">
+    <h1>
+     <a href="http://reocities.com">
+      Reocities
+     </a>
+    </h1>
+    <ul id="nav">
+     <li>
+      <a href="/newhome/">
+       <span>
+        Home
+       </span>
+      </a>
+     </li>
+     <li>
+      <a href="/newhome/faq.html">
+       <span>
+        FAQ
+       </span>
+      </a>
+     </li>
+     <li>
+      <a href="/neighborhoods/">
+       <span>
+        Neighborhoods
+       </span>
+      </a>
+     </li>
+     <li>
+      <a class="active" href="/newhome/makingof.html">
+       <span>
+        Making Of
+       </span>
+      </a>
+     </li>
+     <li>
+      <a href="/guestbook/">
+       <span>
+        GuestBook
+       </span>
+      </a>
+     </li>
+    </ul>
+    <div id="ad">
+    </div>
+   </div>
+  </div>
+  <div id="content-wrapper">
+   <div id="content1">
+    <h2>
+     The Making Of, a story of stress and scripting.
+    </h2>
+    <p class="call-to-action">
+     Please help spread the word!
+    </p>
+    <br />
+    <h3>
+     The ingredients:
+    </h3>
+    <ul class="ingredients">
+     <li>
+      1 iconic website about to be erased
+     </li>
+     <li>
+      21 pots of strong tea
+     </li>
+     <li>
+      more sugar than is probably healthy
+     </li>
+     <li>
+      very little sleep
+     </li>
+     <li>
+      some computing gear
+     </li>
+     <li>
+      one solid Internet connection
+     </li>
+     <li>
+      6 days in October 2009
+     </li>
+     <li>
+      Some very good help (Thanks Abi!)
+     </li>
+    </ul>
+    <p>
+     Progress reports via twitter:
+     <a href="http://twitter.com/jmattheij" target="_new">
+      jmattheij@twitter
+     </a>
+    </p>
+    <h3>
+     Timeline:
+    </h3>
+    <ul>
+     <li>
+      <h4>
+       14:00 PM, Tuesday, 20 October 2009 - GeoCities Dying
+      </h4>
+      <p>
+       A while ago I posted a link on Hacker News that GeoCities was going to close. It didn't really click with me that that
+might be a disaster. I figured, good riddance, they're nothing but a hosting provider for spammers. Then, on the 20th
+of October 2009, about a week before GeoCities was really going to close, someone else
+       <a href="http://news.ycombinator.com/item?id=892163">
+        posted 
+a link
+       </a>
+       , pointing to
+       <a href="/tablizer/">
+        some interesting pages
+       </a>
+       . These were on an old GeoCities account, about
+to be erased. It wasn't what I would call a masterpiece, and I didn't agree with all of it, but it seemed like it was worth keeping.
+      </p>
+      <p>
+       So I logged in to one of my trusty servers and backed up that user's home directory. Then, I started to wonder how much 
+more good stuff was about to be lost forever. Only one way to find out.
+      </p>
+      <p>
+       A bit of googling for my favorite subjects with
+       <i>
+        inurl:geocities.com
+       </i>
+       turned up a surprising number of really interesting pages. 
+That's when I decided to back up as much of the 'Silicon Valley' area in GeoCities as I could. One thing led to another, and sooner 
+or later it was clear that just backing up a bit of GeoCities wasn't going to be good enough.
+      </p>
+      <p>
+       There was plenty of interesting (and not so interesting) stuff in other areas of the site. So I decided to go all the way and get
+all of GeoCities. But making a backup of something as large as geocities.com, and making it live again was not as simple as it seemed.
+      </p>
+      <p>
+       <i>
+        wget -r http://www.geocities.com/
+       </i>
+       <br />
+      </p>
+      <p>
+       That would be enough in an ideal world. But, unfortunately, this is not an ideal world. And geocities.com is far from an ideal website.
+      </p>
+      <br />
+     </li>
+     <li>
+      <h4>
+       Size
+      </h4>
+      <p>
+       GeoCities is large. Very, very large. Not when compared to, say, the likes of MySpace or Facebook. But compared to your average garden
+variety website, it is huge. Given that, when GeoCities first launched in 1994, the average hard drive was somewhere around 500 MB, to store
+multiple hundreds of gigabytes must have been a complicated technological feat to achieve.
+      </p>
+      <p>
+       RAID was already around, but those 'inexpensive' disks were, for the most part, not that inexpensive. Storage technology was several 
+orders of magnitude slower and had a smaller capacity than today. In spite of all that, you can't just go and make a copy like you 
+could do with any other set of page. Yesterday's giants are still pretty big.
+      </p>
+      <br />
+     </li>
+     <li>
+      <h4>
+       Number Of Files
+      </h4>
+      <p>
+       GeoCities comprises hundreds of millions of files in all kinds of formats, and the most important part of the link structure, the
+.html and .htm files, were made in an age when FrontPage was considered hot stuff.
+      </p>
+      <p>
+       To avoid overflowing the directory structure on the machines that GeoCities was using, they opted for a tree based format. This meant
+that any one of the Cities was subdivided into Neighborhoods, and each one had 10 000 accounts, maximum.
+      </p>
+      <br />
+     </li>
+     <li>
+      <h4>
+       11:50 AM, Wednesday, 21 October 2009 - GeoCities Dying
+      </h4>
+      <p>
+       The working title up to this moment was 'saved-geocities.com', but I really didn't like it
+and brought it up in conversation with Paul, a friend of mine.
+      </p>
+      <p>
+       He suggested 'neocities.com',
+but of course, that was taken already. After trying a bunch of other combinations it
+turned out that 'reocities.com' was still free. And that's much better than 'saved-geocities.com',
+so I registered it and changed the working title.
+      </p>
+      <br />
+     </li>
+     <li>
+      <h4>
+       Finding Out What's There
+      </h4>
+      <p>
+       The 10,000 directories per neighborhood scheme worked well for GeoCities: with only 721 such Neighborhoods, a maximum of 7 210 000 accounts could be stored. But because not
+all of those accounts exist, and because not all are interlinked, the scheme would fail miserably if used to back up geocities.com. 
+All you would get is the top level directories, and even then, only those that are linked. A
+       <a href="http://en.wikipedia.org/wiki/Geocities">
+        Wikipedia article
+       </a>
+       on GeoCities listed the top level directories (except for a few), so at least that gave me something to go on.
+      </p>
+      <p>
+       In a few minutes, on my backup machine, which has a fair bit of storage capacity, I had up and running a first script to randomly poke 
+possible accounts to see if they were live. After a few minutes of 404s, the first accounts were hit, and fortunately, 
+plenty of them were linking to other accounts. At this point, I was pulling about 10 Mb/s out of GeoCities. That may seem a lot, but
+if you take into account that there were only a few days left, it was a real problem.
+      </p>
+      <br />
+     </li>
+     <li>
+      <h4>
+       13:00 PM, Wednesday, 21 October 2009 - GeoCities Bandwidth Cap
+      </h4>
+      <p>
+       Another complexity with GeoCities is that it's really nagware. The sites go down when they've exceeded their bandwidth cap, 
+so whenever you're halfway into reading, you get prompted with a
+       <i>
+        site temporarily unavailable
+       </i>
+       . The idea behind this was that users 
+would sign up for the for-pay service because they would want their pages to be available at all times. Obviously, that really sucks because,
+while the clock is ticking, the user accounts appear and disappear at random.
+      </p>
+      <p>
+       So, a second script was born: find the missing files. This one was a bit more involved than the first one, parsing the 
+.html files and checking to see if all the files that are referenced are present. If they aren't, it makes an entry in a database
+table. Then, a number of retriever scripts scan the table and fire off more recursive Wgets to fetch the missing files. But 
+because of the bandwidth cap, those files might not make it the second time either. However, plenty of them do, so at least we get 
+some more coverage. Bandwidth inbound now is about 20 Mb/s Better, but still far from enough.
+      </p>
+      <br />
+     </li>
+     <li>
+      <h4>
+       Broken Links
+      </h4>
+      <p>
+       If all this is successful, then we'll be able to restore GeoCities. But there will still be the problem of fixing all the inbound
+links, so that people clicking on a link through Google or some other site which links in are not going to end up on the 'dead' site.
+      </p>
+      <p>
+       Enter Greasemonkey. This nifty little Firefox tool allows you to change the content of web pages on the fly. A couple of hours of
+reading and fiddling later and we have a link fixer. Its purpose is to change every occurrence of geocities.com to reocities.com .
+      </p>
+      <br />
+     </li>
+     <li>
+      <h4>
+       10:00 AM, Thursday, 22 October 2009 - Filling In The Gaps
+      </h4>
+      <p>
+       Because the main structure slowly started to get fleshed out, I could see where the gaps were. A fourth script was made to sequentially
+scan all directories with gaps and to try to hit user accounts that might exist, and a bunch of those were started in parallel.
+      </p>
+      <p>
+       30 Mb/s, server load redlining. Not the most efficient code, especially not the script that scans for missing files.
+      </p>
+      <br />
+     </li>
+     <li>
+      <h4>
+       04:00 AM, Friday, 23 October 2009 - Trouble!
+      </h4>
+      <p>
+       The URLs in GeoCities turn out to be case insensitive. This is an excellent example of how a small detail can bite you if you don't
+catch it right away. By now I've got many hundreds of Gs of data on that disk, and it turns out that I'm fetching plenty of it in duplicate.
+      </p>
+      <p>
+       The reasoning at GeoCities must have gone like this: "If the URL for a particular user is
+       <i>
+        http://www.geocities.com/Heartland/0001
+       </i>
+       , 
+then that user will type in
+       <i>
+        heartland
+       </i>
+       instead of
+       <i>
+        Heartland
+       </i>
+       whenever they make a page, or try to type it in elsewhere. This 
+would lead to a serious headache among the support staff, so why don't we make all URLs case insensitive."
+      </p>
+      <p>
+       But, now there
+       <i>
+        really
+       </i>
+       is no more incentive to type those URLs in properly. For every top level directory, there are several varieties. 
+So whenever a 'new' directory is found, it might be an old directory that we already had. But since Wget and the UNIX file system are case 
+sensitive those files get stored in completely new directories, which then also have their gaps filled. Clearly, this is not the way.
+      </p>
+      <p>
+       Also it would be nice to get some more bandwidth going because we're not going to make it in time like this. It's the 24th, 2 more days left...
+      </p>
+      <br />
+     </li>
+     <li>
+      <h4>
+       17:00 PM, Friday, 23 October 2009 - Script 6. Get That Structure
+      </h4>
+      <p>
+       Above is the story of the 721 top level directories. When I started out, I didn't know that, but roughly at this point in time I realized 
+I desperately needed to find out the size of the 'cupboard'.
+      </p>
+      <p>
+       By now there was enough data to be able to figure out exactly what those top level directories were. A small complication
+is that as GeoCities grew, they added subdirectories to levels that were already being used for customer accounts. So, you might have
+       <i>
+        /Heartland/1007
+       </i>
+       for a user and
+       <i>
+        /Heartland/Lake/1009
+       </i>
+       for someone else.
+      </p>
+      <p>
+       A 'structure' directory was deemed to be a directory that contains nothing but other directories. Enter the sixth script, one that checks
+for that specific condition and makes an entry in a database. This database then contained also all the doubles, upper and lower case 
+versions of the same main directory. The doubles were removed by checking if a copy with the right capitalization existed (if you're 
+keeping count, that's script 7).
+      </p>
+      <br />
+     </li>
+     <li>
+      <h4>
+       21:00 PM, Friday, 23 October 2009 - The Secret Weapon
+      </h4>
+      <p>
+       At this point in time there are only 44 hours to go until it is permanently curtains for GeoCities. We're talking Friday to
+Saturday night, and I realize that if I don't do something drastic, then this effort is going to fail.
+      </p>
+      <p>
+       So, enter the secret weapon. A couple of years ago I wrote a small (about 1 billion pages) search engine. For that purpose I bought
+a cluster of 5 machines, which have since been upgraded with 4 TB storage each, and already had a fairly beefy CPU. They're also 
+connected to the net with some good uplinks and have a 1Gb/s connection between them to a dedicated switch. Time to get those guys involved.
+      </p>
+      <p>
+       Now that we know the structure of GeoCities, it is possible to farm out the fetching of pieces to each of the cluster nodes. A small 
+program figures out who is busy with what, and each cluster can concentrate on one of the 721 shelves, and the 10 000 possible accounts
+on that shelf. In the past 4 days some of those shelves have already seen extensive coverage, so we mark those as done, leaving about 
+half to be processed still. After a few more hours to get this all set up the cluster was humming along at 150 Mb/s inbound. 
+That's a CD every 30 seconds or so!
+      </p>
+      <br />
+     </li>
+     <li>
+      <h4>
+       15:00 PM, Saturday, 24 October 2009 - Trouble (II)
+      </h4>
+      <p>
+       When I got up again (14:00 PM, Saturday, I had gone to sleep around 09:00 AM), one of the cluster boxes had died. This was bad, but a
+remote reboot brought it back up again. Those machines are normally used as video relays for ww.com, and they don't
+hit the disks this hard. So, apparently, the fifth clusterbox doesn't like to be pushed this bad. A bit of figuring out
+what it was doing when it crashed, reset those Neighborhoods in the top levels table and the others will take over.
+      </p>
+      <p>
+       It seems to be hardware related. Maybe one of the fans has died, and my buddy Rob, in the hosting center, missed a page
+or the monitor failed to report it. Never mind, keep going. No time to pull it and fix it, we'll deal with that when
+this is over.
+      </p>
+      <p>
+       Restarted that box on a slightly slower regime, still pulling well over 100 Mb/s total. 36 hours to go.
+      </p>
+      <br />
+     </li>
+     <li>
+      <h4>
+       02:00 AM, Sunday, 25 October 2009 - More Missing Files
+      </h4>
+      <p>
+       Sunday, the 25th of October, 02:00 AM, the first of the servers are completing their jobs. So, it's time to find more missing files.
+      </p>
+      <p>
+       The missing files strategy using the database worked well, but was a bit heavy on the CPU. To simplify it, I reworked it to make a 
+single batch file of all the missing URLs on the pages, sort it, undouble it, split it and feed it to a bunch of Wgets, 10 000 files per batch.
+      </p>
+      <p>
+       This process has to be repeated for all the other nodes as well, as they finish their first round of fetching user directories. 
+Hopefully a bunch of them will be out of their AIBL (artificially induced bandwidth limitation), so we can get some of the ones that
+we could not reach earlier.
+      </p>
+      <p>
+       One downside of the distributed approach is that a lot of the files are now on other machines. So, they all have to be
+merged back in again in the main dataset to make sure that we only do the work once, and so we can check which
+links point to existing accounts and which point into empty space.
+      </p>
+      <p>
+       Missing images are especially very annoying, but we can't guarantee that those sites will come up again before GeoCities
+shuts down. Nothing for it but to keep trying. So, another run with the missing files script, this time distributed across the nodes.
+      </p>
+      <br />
+     </li>
+     <li>
+      <h4>
+       03:30 AM, Sunday, 25 October 2009 - Trouble (III)
+      </h4>
+      <p>
+       The lack of sleep isn't helping. I just missed again. All the files I was receiving ended up in the same directory. This is not good. 
+It's not a total loss though, a quick check shows that most of the filenames were unique, so only the ones that were ambiguous are lost.
+Wget has tons of options, and I must have missed something when I told it to fetch those missing files, and that caused it to drop the path
+information.
+      </p>
+      <p>
+       Update: sure enough, I was fetching single files, so I thought I could leave out the
+       <i>
+        -r
+       </i>
+       option, but of course, that also stops 
+Wget from giving the file the whole path name, it assumes you simply want to fetch the file into the current directory.
+      </p>
+      <br />
+     </li>
+     <li>
+      <h4>
+       03:45 AM, Sunday, 25 October 2009 - Lucky Break
+      </h4>
+      <p>
+       I just realized that this weekend is daylight saving time, so I have an extra hour!
+      </p>
+      <br />
+     </li>
+     <li>
+      <h4>
+       07:15 AM, Sunday, 25 October 2009 - Last Bits &amp; Pieces
+      </h4>
+      <p>
+       The last groups of programs that were reading user directories are finally ending. A couple of them got caught in spammer
+home directories with 10's of thousands of files, and this caused quite a bit of a delay. I didn't want to stop the process
+because I'm not sure I would be able to restart it from the exact point where it left off. Better play if safe.
+      </p>
+      <p>
+       I probably should have anticipated the spam subdirs, it's not as though it is unknown that GeoCities was a haven
+to link spammers.
+      </p>
+      <br />
+     </li>
+     <li>
+      <h4>
+       15:20 PM, Sunday, 25 October 2009 - One More Run Across All The Neighborhoods
+      </h4>
+      <p>
+       The missing files fetch is cooking nicely on all the machines. On each box there are at least several 
+hundred thousand to a million files that have been identified as missing.
+      </p>
+      <p>
+       Because time is really short, now I've decided not to wait until that is done but to run another pass
+across all the Neighborhoods while the missing files run is still busy. That's pushing things a bit, with
+120 or so Wget processes per machine running in parallel on every machine. But it seems worth taking the chance.
+      </p>
+      <p>
+       There is something to be said for doing both, it's a difficult choice to say we should try to get more 
+home directories that weren't accessible last time or to try to complete the ones that we did get. So
+let's try to do both and see if we get away with that.
+      </p>
+      <br />
+     </li>
+     <li>
+      <h4>
+       19:00 PM, Sunday, 25 October 2009 - Slow Progress
+      </h4>
+      <p>
+       It's going but it is still like watching paint dry.
+      </p>
+      <p>
+       All the machines are now cycling the same batch over and over again, reloading all the user homepages that could not be found in the
+previous runs, checking all the newly arrived HTML for missing files, and in parallel to that load, the missing files.
+      </p>
+      <br />
+     </li>
+     <li>
+      <h4>
+       20:00 PM, Sunday, 25 October 2009 - We Need A Design!
+      </h4>
+      <p>
+       The data will work out, I'm fairly sure that we will have a substantial part of Geocities here by the time the plug gets pulled.So, 
+that means that now, instead of just looking to the past, I can start looking to the future. Tomorrow, at the instant GeoCities
+goes offline, I plan to start splashing reocities.com all over the place: Twitter, press release, links from ww.com and so on.
+      </p>
+      <p>
+       That means we'll have an audience, and one slight problem: the site really looks like crap. I've been so concentrated on getting the
+data in here that I completely neglected the visual aspect.
+      </p>
+      <p>
+       Time to call in outside help. I just posted a request on Hacker News to see if there is a stress-proof designer that can pull a small miracle
+overnight, so we can be seen in a way that you could actually be proud of.
+      </p>
+      <br />
+     </li>
+     <li>
+      <h4>
+       21:30 PM, Sunday, 25 October 2009 - Enter Abi
+      </h4>
+      <p>
+       One quick response to the call for designers, a guy called Abi Noda from the United States. He sent me an e-mail, which
+miraculously got through the totally overloaded mail server. It was not made to do several 100 CPU intensive processes,
+and there is probably smoke curling out of the vents there, so it's good I can't see it. We mailed back and forth a bit, then it 
+suddenly got silent. I figured that maybe the mail was now really not making it, so better find a different way to
+communicate. No phone number... But he has a website with a contact form. Asked him to join me in the TMC IRC channel,
+that runs on the same server as the mail but it is a lot more resistant against overload.
+      </p>
+      <p>
+       We talked for a bit and he seems to be an ok guy and really digs the project
+so I think my designer worries are taken care of.
+      </p>
+      <br />
+     </li>
+     <li>
+      <h4>
+       01:30 AM, Monday, 26 October 2009 - D-Day
+      </h4>
+      <p>
+       So far so good. Yahoo is hopefully doing this on California time, which should give me some more
+hours to work with. And with even more luck they only do it at 9am their time and not at 12 O'clock.
+      </p>
+      <p>
+       Or maybe even a full day, who knows... keeping fingers and toes crossed, more time is better.
+      </p>
+      <p>
+       More and more folks from HN mailing to ask what this is all about, all of the
+people that previewed it think it is a neat thing, that's encouraging!
+      </p>
+      <br />
+     </li>
+     <li>
+      <h4>
+       05:15 AM, Monday, 26 October 2009 - New design is ready, started merge
+      </h4>
+      <p>
+       Abi has finished the design in absolute record time and it looks half decent too.
+      </p>
+      <p>
+       Pretty amazing! Embarrasment is mine though, I tried paying him through PayPal
+but since I don't normally use it I had to set up an account. That would not be
+a problem because it only takes 5 minutes, if it weren't for the fact that
+they then book $1.50 from your account to give you a verification code (the
+proof that you can see the credit card statement). Only *then* are you allowed
+to pay. First problem with that is that it takes 3 days, and I would like to pay
+now, second problem is that the statement arrives with the bookkeeper.
+      </p>
+      <p>
+       We'll retry tomorrow using the regular bank. Bummer though, he worked so hard
+and I'd like to make it money on the barrel. Lesson: arrange method of payment
+beforehand.
+      </p>
+      <p>
+       In the meantime I've been working hard on the script that generates a merged
+instance of the site, minus all the cruft. This will take a while to run though,
+it has to go through every single file, decide to drop, copy or filter it (in
+order of expense). It also fixes a bunch of links within the pages and
+references to other files. I really hope I won't have to run that script
+too often.
+      </p>
+      <p>
+       Next job, integrating Abi's design into the sites pages.
+      </p>
+      <br />
+     </li>
+     <li>
+      <h4>
+       07:15 AM, Monday, 26 October 2009 - Design integrated
+      </h4>
+      <p>
+       That went quickly enough. I had to butcher the css a bit to make it work
+in single column mode, otherwise this timeline looks terrible, and four
+columns won't work for the directory either.
+      </p>
+      <p>
+       Worst case only 1:45 hours left to go...
+      </p>
+      <p>
+       Let's hope the Yahoo execs that are in charge of shutting down unprofitable
+but historic parts of their business will sleep in today.
+      </p>
+      <br />
+     </li>
+     <li>
+      <h4>
+       07:30 AM, Monday, 26 October 2009 - PayPal issues resolved
+      </h4>
+      <p>
+       Leon, one of my partners knew that we have a paypal account that was already
+verified, problem solved, Abi confirmed payment received. One worry less!
+      </p>
+      <br />
+     </li>
+     <li>
+      <h4>
+       08:15 AM, Monday, 26 October 2009 - mod_rewrite to the rescue
+      </h4>
+      <p>
+       It doesn't matter what you do with apache, if there is a problem you can
+always solve it with mod_rewrite. The question is *how*.
+      </p>
+      <p>
+       This time it seemed easy enough, map all upper case letters to lower case
+letters in the incoming urls and store the filenames in lower case. That way
+it doesn't matter what someone types in, it will always work.
+      </p>
+      <p>
+       A quick google for a solution gave me a page that had a little recipe
+on it. Cut &amp; paste &amp; try.
+      </p>
+      <p>
+       Boom. That wasn't good, a redirect loop. Turned out the cut &amp; paste method
+failed miserably this time, the problem was easy enough in retrospect
+but I am pretty tired right now so not half as sharp as normally.
+      </p>
+      <p>
+       If you do a tolowercase conversion then the url gets interally redirected,
+and then matches *again*. So you have to add a conditional to make sure
+that the conversion only happens if there are uppercase characters
+in the url.
+      </p>
+      <p>
+       Mod_rewrite reminds me of a chainsaw. It's extremely powerful stuff but
+if you're not careful you're going to get hurt, badly.
+      </p>
+      <br />
+     </li>
+     <li>
+      <h4>
+       09:45 AM, Monday, 26 October 2009 - Hm, it's still up! And I'll never learn how to use CSS
+      </h4>
+      <p>
+       CSS is great. If you work with it all the time and if you put in the time once
+to really understand it in detail. I never get around to that, I'll always learn
+just as much as I need to get the job done. Tables were logical to me, it always
+worked and usually pretty quickly. CSS is always a war.
+      </p>
+      <p>
+       I understand the
+various advantages of uncoupling content en presentation, it makes perfect sense.
+      </p>
+      <p>
+       But it never ceases to confuse me. Anyway, it looks like the 'bar' is working
+now, on some pages it even looks good. What's not so nice is that I completely
+forgot about framesets. Stupid. But it's done. So all the pages that were 
+imported that are a part of a frameset look pretty crappy.
+      </p>
+      <p>
+       What I'll do is I'll just let the import run, and I'll add a line of js
+to make sure that on framed pages the bar simply doesn't appear for now.
+      </p>
+      <p>
+       Then, later when I have a bit more time I'll revisit that and make it work
+properly. That seems to be the quickest solution.
+      </p>
+      <p>
+       There are also still minor style issues on the 'bar', but I'll fix those 
+later as well.
+      </p>
+      <br />
+     </li>
+     <li>
+      <h4>
+       11:00 AM, Monday, 26 October 2009 - Geocities is a trending topic in twitter
+      </h4>
+      <p>
+       More and more people are starting to realize that something bad is about to happen.
+      </p>
+      <p>
+       I'm going to take a nap, stuff is working by itself and I need the sleep for later.
+      </p>
+      <br />
+     </li>
+     <li>
+      <h4>
+       15:00 PM, Monday, 26 October 2009 - More Trouble
+      </h4>
+      <p>
+       I just woke up to find a whole pile of scripts that had frozen, I've 
+been doing this over my ADSL line and for the first time in days 
+something happened to it. Not all of the connections failed though.
+      </p>
+      <p>
+       Anyway, that's what you get for not using 'screen', but I needed the
+ability to scroll back for a bit and screen doesn't give you that.
+(other than that it is damn near perfect).
+      </p>
+      <p>
+       Oh well, restart the stuff that had stopped (not that much, most of
+those batches were at or near the end anyway) and keep going.
+      </p>
+      <br />
+     </li>
+     <li>
+      <h4>
+       15:00 PM, Monday, 26 October 2009 - Going live
+      </h4>
+      <p>
+       Account restoration is still in full swing, still, I think the time
+has come to announce the project to the world. I hope the server
+will survive.
+      </p>
+      <p>
+       Restoring accounts is pretty server intensive, if you couple that 
+with visitors then this box is going to be hard hit, but there
+really is no help for that. Account restoration will probably
+run well into the week so we'll have to deal with that anyway.
+      </p>
+      <p>
+       The good news is that this site is almost completely static so
+as soon as we've gotten rid of the few scripts that manage the
+recovery of the remaining files we can switch on a caching 
+front end (varnishd probably) and lighten the load considerably.
+      </p>
+      <br />
+     </li>
+     <li>
+      <h4>
+       21:15 PM, Monday, 26 October 2009 - tips &amp; tricks
+      </h4>
+      <p>
+       The word is spreading all over the net apparently, mail and 
+messages keep flooding in from people that like it. There is some
+confusion as to why the homedirectories are not all there yet,
+but there is not much that I can do to speed it up, it will 
+simpy take a while to get this done.
+      </p>
+      <p>
+       Most significant bits of input:
+      </p>
+      <ul>
+       <li>
+        Lots of spelling errors corrected
+       </li>
+       <li>
+        tips on running wget more efficient
+       </li>
+       <li>
+        how to make 'screen' scroll back
+       </li>
+       <li>
+        the fact that my example geocities page now was a 404
+       </li>
+      </ul>
+      <p>
+       The accounts are restored to the tune of a few thousand every
+hour or so, and that's only from the first 'set' of accounts
+on the primary machine.
+      </p>
+      <p>
+       All machines are still getting more data from geocities since
+they're still up and running, I plan to keep doing that until
+the very last moment.
+      </p>
+      <p>
+       Lots of interesting stuff here
+       <a href="http://news.ycombinator.com/item?id=903567">
+        in this HackerNews
+       </a>
+       thread,
+apparently there is at least one other 'wholesale' effort underway, and
+it looks like we'll be able to pool resources.
+      </p>
+      <br />
+     </li>
+     <li>
+      <h4>
+       21:15 PM, Monday, 26 October 2009 - Offer of help!
+      </h4>
+      <p>
+       Jeroen from HN just contacted me with an offer to clean up the pages
+and the stylesheet so that everything will validate. I don't have
+time to look at that right now so I'm really happy with that.
+      </p>
+      <p>
+       Validation is important because it maximizes consistency across
+various broswer types.
+      </p>
+      <br />
+     </li>
+     <li>
+      <h4>
+       01:00 AM, Tuesday 27 October 2009 - Server Disappeared!
+      </h4>
+      <p>
+       The weirdest thing. 12:30 AM, suddenly the server dropped out of sight.
+      </p>
+      <p>
+       Not a good moment. All the crawler jobs that are still running as well
+as the newly launched website, this is about as bad as it gets when
+it comes to timing a server outage.
+      </p>
+      <p>
+       I called my buddy Rob, the sysadmin at the colocation of Virtual Access
+and he was incredulous, what do you mean ? It works for me!
+      </p>
+      <p>
+       But I still couldn't see the server, I could see every other server
+in the rack, but not that one.
+      </p>
+      <p>
+       Weirdest problem. So apparently the outage is very selective, all my
+packets get through from here to the colo, *except* the ones for the
+main machine. That's a new one. So we ran some more tests, found
+one more IP that I also couldn't see. Everything else works just fine.
+      </p>
+      <p>
+       So, now the whole world can see reocities.com, but I can't.
+      </p>
+      <p>
+       Right now I'm using one of the other machines in the farm as a 
+backdoor in to this one. I'll have to find a way to be able to 
+access the webserver on it though, probably best to run a small
+proxy or so.
+      </p>
+      <br />
+     </li>
+     <li>
+      <h4>
+       04:50 AM, Tuesday 27 October 2009 - Providers are a headache
+      </h4>
+      <p>
+       So, it turns out that my provider is having some connectivity issues
+causing random machines to drop out. I've set up a proxy on one of 
+the crawler boxes so I can browse, and I'm using one that seems
+to be consistently good now as a tunnel. Annoying but that's the
+way it is. Hopefully that will have cleared by tomorrow. Usually 
+they (KPN) are very reliable, as long as I've been here this 
+ADSl connection has gone down once for about 30 minutes and that's
+it. Not bad, so I have no reason to start complaining now.
+      </p>
+      <p>
+       Gordon Mohr of archive.org contacted me for the list of user 
+directories, I've sent him an email back where I have parked
+them for him.
+      </p>
+      <p>
+       Time is pressing, I
+have no idea what kind of might archive.org can bring to bear
+but I assume it's a lot more than what I've got here. More
+saved = better.
+      </p>
+      <p>
+       4 Hours to go by my reckoning, I really hope that Yahoo will
+keep geocities alive but I fear that in a short while it will
+be curtains. Time will tell!
+      </p>
+      <br />
+     </li>
+     <li>
+      <h4>
+       05:15 AM, Tuesday 27 October 2009 - First 100,000 accounts restored
+      </h4>
+      <p>
+       It's only the beginning, but we've just passed the first 100,000 accounts
+restored. The process is rather slower than I hoped for, I'll have to 
+re-write the code in C or so to make it much quicker to generate a
+new 'polished' version after another issue in the original
+pages has been discovered. This is going to be an ongoing thing because
+you simply can't anticipate each and every problem that might crop up,
+so the plan is to fix a bunch of problems, do a generation in to a new
+directory starting from the original files (and *never* to touch those),
+then when it's done switch to the new one, remove the old one.
+      </p>
+      <p>
+       Rinse, repeat. Over time that should solve most of the problems in 
+as automatic a fashion as possible.
+      </p>
+      <p>
+       There are two problems that will need attention soon, the first is that
+there are a lot of spammer accounts that contain nothing but 1000's of
+pages linking to other spam sites. Those will have to go, also there
+is a bug in the 'webring' tag that causes the geocities webserver
+to loop, I have no idea what they're doing there but this:
+      </p>
+      <p>
+       <i>
+        http://www.geocities.com/Area51/Dunes/4656/InNomine/InNomine/Heaven/Graphics/InNomine/Hell/Hell/Hell/Hell/Hell/Hell/Hell.html
+       </i>
+      </p>
+      <p>
+       Is a url that I've found, and when I go there I can continue to click on
+'hell' forever, it never ends (maybe that's the idea behind hell ;) ).
+      </p>
+      <p>
+       Anyway, it's an issue because wget does not anticipate such nonsense.
+      </p>
+      <p>
+       Eventually it will cut out (at level 7 or so) but by then it will have
+downloaded an enormous number of permutations of the words in the link.
+      </p>
+      <br />
+     </li>
+     <li>
+      <h4>
+       09:30 AM, Tuesday 27 October 2009 - We're on borrowed time now
+      </h4>
+      <p>
+       Officially it is now past midnight in California, so we're in the twilight
+zone now. All the crawlers are still running. Gordon Mohr sent me another
+list of seed urls, but I figure that since they've already got those
+anyway it is better to concentrate on the stuff that we are sure we
+don't have yet.
+      </p>
+      <p>
+       How do you go about switching off a site like Geocities anyway, it's not
+as though you walk up to the single server and power it down.
+      </p>
+      <br />
+     </li>
+     <li>
+      <h4>
+       17:30 PM, Tuesday 27 October 2009 - Still going!
+      </h4>
+      <p>
+       We're still crawling, people are mailing me to backup their stuff, 
+most of the times we already have it but every now and then there
+is one that slipped under the radar.
+      </p>
+      <p>
+       The importer had stopped somewhere in the afternoon, I've just
+restarted it, it has now recovered more than 250,000 accounts!
+      </p>
+      <p>
+       I've decided to hold off on merging until the crawlers really
+have stopped working.
+      </p>
+      <br />
+     </li>
+     <li>
+      <h4>
+       20:30 PM, Tuesday 27 October 2009 - GeoCities just died...
+      </h4>
+      <p>
+       It's offical, GeoCities is now closed... the crawlers are reporting
+410's on lots of URLs, whatever we didn't get hopefully has found
+a home elsewhere on the net by now.
+      </p>
+      <p>
+       I'll keep the crawlers running until I only get 410's, then the 
+merge will begin.
+      </p>
+      <br />
+     </li>
+     <li>
+      <h4>
+       04:30 AM, Wednesday 28 October 2009 - Trickles, bits and pieces
+      </h4>
+      <p>
+       To my surprise it takes a while for GeoCities to die, which really
+is a good thing I suppose. More and more stuff gone but every
+now and then suddenly a surprise burst of lots of content.
+      </p>
+      <p>
+       More contact with Gordon Mohr from archive.org, he's given me
+permission to complete this set from whatever he's got after
+it goes online. That's really nice of him.
+      </p>
+      <p>
+       People are mailing me their files for re-inclusion, that also
+really helps, every little bit will help making it complete.
+      </p>
+      <p>
+       380,000 accounts have been recovered so far, more and more
+neighbourhoods coming 'alive'.
+      </p>
+      <br />
+     </li>
+     <li>
+      <h4>
+       11:15 AM, Wednesday 28 October 2009 - Starting the merge, 500K user accounts recovered
+      </h4>
+      <p>
+       The crawling has ended, no more data seemed to be coming out of geocities
+so I've stopped all crawlers. As far as we're concerned we either have
+it or we'll have to find it elsewhere. It's a real pity.
+      </p>
+      <p>
+       500,000 user accounts have been recovered so far, it's taking a lot longer
+than I thought it would to do that.
+      </p>
+      <p>
+       The merge has begun as well, I'll first be copying all the data from the
+machines that participated in the crawl into a series of working 
+directories, then once that is done there will be a variation on the
+script that does the account import to figure out which files are doubles
+and which ones are original.
+      </p>
+      <p>
+       After that there will be another pass with the script that finds missing
+files to see how big the damage is.
+      </p>
+      <br />
+     </li>
+     <li>
+      <h4>
+       17:45 PM, Wednesday 28 October 2009 - 600K accounts recovered, this is a *lot* of data!
+      </h4>
+      <p>
+       I keep missing out on how big this really is. Copying the files from the crawler
+boxes, I figured, oh, let's get that done. But when you're dealing with terabytes
+suddenly a simple copy takes hours and hours.
+      </p>
+      <p>
+       More and more people are picking up on this, and all of the mail I'm getting
+is of the happy variety. This was quite the little project, and mail like 
+this really makes me feel that it was worth it.
+      </p>
+      <br />
+     </li>
+     <li>
+      <h4>
+       22:45 PM, Wednesday 28 October 2009 - Mashable picked us up, we're all over twitter
+      </h4>
+      <p>
+       The word is definitely spreading, more and more people visiting the site, blogging
+about it, it's absolutely amazing.
+      </p>
+      <p>
+       The mail volume is getting larger and larger, not a single negative email
+so far.
+      </p>
+      <p>
+       I've added a guestbook to the site, it isn't the nicest but it's what I could
+do in short order, I'll revisit that later on when I have more time for
+cosmetics.
+      </p>
+      <p>
+       Speaking of which, there seems to be a problem in IE with the top bar,
+I'll have to take care of that asap.
+      </p>
+      <br />
+     </li>
+     <li>
+      <h4>
+       00:05 AM, Thursday 29 October 2009 - Stylesheet and homepage update
+      </h4>
+      <p>
+       True to his word Jeroen K. just sent me a reworked stylesheet and homepage to
+undo some of my panicked changes to the stylesheet that caused it to no
+longer validate.
+      </p>
+      <p>
+       Thanks Jeroen!
+      </p>
+      <br />
+     </li>
+     <li>
+      <h4>
+       06:45 AM, Friday 30 October 2009 - 800,000 accounts restored
+      </h4>
+      <p>
+       Account restoration is still running smoothly, 800,000 (!!) accounts have now
+been restored, more and more people are mailing in their sites for inclusion.
+      </p>
+      <p>
+       Copying the data from the rest of the farm takes just about forever, but I 
+hope to have the first machine copied by the end of today.
+      </p>
+      <br />
+     </li>
+     <li>
+      <h4>
+       07:40 AM, Friday 30 October 2009 - Page Tagging added
+      </h4>
+      <p>
+       To help in cataloguing the content I've added a page tagging facility,
+this allows visitors to tag the pages with keywords.
+      </p>
+      <p>
+       I've made it a 'free' tag, this means that pretty much anything goes,
+that way there is no straightjacket in terms of a set of keywords
+that you can choose from. It also helps with multi-lingual issues.
+      </p>
+      <p>
+       There will soon be a 'tags' page, that will explain both what tags are
+for and that will list pages grouped by tags.
+      </p>
+      <br />
+     </li>
+     <li>
+      <h4>
+       21:30 PM, Friday 30 October 2009 - Anime fan alert
+      </h4>
+      <p>
+       A character by the name of 'Enternal' has sent me an archive of 
+many Anime sites that we may have missed, they'll be restored in the
+next couple of days.
+      </p>
+      <p>
+       Many thanks! If anybody else wants to send me content please upload
+it somewhere and send the url where I can get at it, that
+way you don't explode my inbox :)
+      </p>
+      <p>
+       Message to those that are running bots on Reocities.com: Please do
+*NOT* do this, right now we are hosted on a single machine, not
+all the content is available yet, you are wasting our precious
+bandwidth and you are causing trouble for real visitors. Have
+some patience.
+      </p>
+      <p>
+       The data that has been saved is not going anywhere, don't worry!
+      </p>
+      <p>
+       Also, running a bot is an excellent way to get your IP instantly
+blocked.
+      </p>
+      <br />
+     </li>
+     <li>
+      <h4>
+       01:15 AM, Wednesday 4 November 2009 - Much Progress
+      </h4>
+      <p>
+       Apologies for not keeping the journal up to date, there has been
+lots of progress, but it mostly involved pumping large amounts
+of data back and forth. We found out that even though Geocities
+was officially closed more than a week ago up to today we have
+been able to get still more and more sites from them.
+      </p>
+      <p>
+       There seems to be some confusion about archive.org working with
+Geocities to get all of geocities backed up, this is unfortunately
+not true, and I think it is not very responsible to give people
+the illusion that archive.org will for sure have their files.
+      </p>
+      <p>
+       Up to the last moment that geocities was available I was in contact
+with archive.org, and they said that they never even received a
+full list of accounts, let alone cooperation with making a copy.
+      </p>
+      <p>
+       What we do hope to do is to complete as much as possible of geocities
+by combining all the archives that were made, and the good new
+is that that is already happening.
+      </p>
+      <p>
+       We're getting close to 2 million accounts restored, there are 
+still many more to come though, but it will take longer and
+longer to get the last ones. I wished I could make any kind 
+of guarantees that everything will be recovered, but it is
+not possible to make a statement about that without at least
+a list of all the accounts that existed.
+      </p>
+      <p>
+       I've been working on a master list of files and accounts for
+exactly that purpose, this list will sooner or later be
+accessible through an interface on this site so you can 
+query the status of your account, see which files have
+been identified, and of those which ones have been 
+recovered.
+      </p>
+      <p>
+       I've also been doing some serious catching up on sleep :)
+      </p>
+      <br />
+     </li>
+     <li>
+      <h4>
+       00:15 AM, Thursday 19 November 2009 - Reocities is now 'valid' html
+      </h4>
+      <p>
+       Jeroen Kruis (of '
+       <a href="http://vldtr.com/">
+        vldtr
+       </a>
+       has spent a lot of time
+on reocities.com to make all the pages valid html, we're really happy because
+that should mean that the pages now work in all browsers that are standards
+compliant.
+      </p>
+      <p>
+       Html validation is important because if your pages are not valid you may
+inadvertently cause some users to have trouble viewing your site.
+      </p>
+      <p>
+       We're still far from done importing data, more news on that within
+a couple of days.
+      </p>
+     </li>
+     <li>
+      <b>
+       Errors in the pages
+      </b>
+      <br />
+      <p>
+       There are plenty of things that are broken in the pages that were downloaded.
+      </p>
+      <ul>
+       <li>
+        removing the Yahoo! modifications to the pages
+       </li>
+       <li>
+        web page counters
+       </li>
+       <li>
+        link exchanges
+       </li>
+       <li>
+        webrings
+       </li>
+       <li>
+        defunct ad networks
+       </li>
+       <li>
+        linkfarms, mfa sites (especially those that go against adsense t&amp;c)
+       </li>
+       <li>
+        framesets! (makes the bar look really ugly)
+       </li>
+       <li>
+        missing files
+       </li>
+       <li>
+        broken links
+       </li>
+       <li>
+        HTML errors
+       </li>
+       <li>
+        removing spam and linkfarm accounts
+       </li>
+      </ul>
+      <p>
+       For each and every one of these there will be a module in a program that will try to restore the functionality, and if that
+isn't possible, we'll try to replace it with an equivalent.
+      </p>
+      <p>
+       Broken links will be 'unlinked'.
+      </p>
+      <br />
+     </li>
+    </ul>
+   </div>
+  </div>
+  <div id="footer-wrapper">
+   <div id="footer">
+    © 2009 ReoCities 
+    <a href="http://madebyabi.com" id="made_by_abi">
+     <img alt="made by abi" src="/static/images/made_by_abi.gif" />
+    </a>
+   </div>
+  </div>
+  <script type="text/javascript">
+   var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+  </script>
+  <script type="text/javascript" src="http://www.google-analytics.com/ga.js">
+  </script>
+  <script type="text/javascript">
+   try {
+var pageTracker = _gat._getTracker("UA-6749498-3");
+pageTracker._trackPageview();
+} catch(err) {}
+  </script>
+ </body>
+</html>

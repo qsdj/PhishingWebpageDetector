@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en-US" xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta charset="UTF-8" />
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
+  <link href="http://gmpg.org/xfn/11" rel="profile" />
+  <link href="http://onlineworldtopuniversity.com/xmlrpc.php" rel="pingback" />
+  <title>
+   Domain Driven Design and Cloud Storage Management in Programming | Read Special
+  </title>
+  <link href="http://onlineworldtopuniversity.com/feed/" title="Read Special » Feed" type="application/rss+xml" rel="alternate" />
+  <link href="http://onlineworldtopuniversity.com/comments/feed/" title="Read Special » Comments Feed" type="application/rss+xml" rel="alternate" />
+  <link href="http://onlineworldtopuniversity.com/domain-driven-design-and-cloud-storage-management-in-programming/feed/" title="Read Special » Domain Driven Design and Cloud Storage Management in Programming Comments Feed" type="application/rss+xml" rel="alternate" />
+  <script async="" type="text/javascript" src="https://pagead2.googlesyndication.com/pub-config/ca-pub-3680233627049976.js">
+  </script>
+  <script type="text/javascript">
+   window._wpemojiSettings = {"baseUrl":"http:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"http:\/\/onlineworldtopuniversity.com\/wp-includes\/js\/wp-emoji-release.min.js"}};
+			!function(a,b,c){function d(a){var c=b.createElement("canvas"),d=c.getContext&amp;&amp;c.getContext("2d");return d&amp;&amp;d.fillText?(d.textBaseline="top",d.font="600 32px Arial","flag"===a?(d.fillText(String.fromCharCode(55356,56812,55356,56807),0,0),c.toDataURL().length&gt;3e3):(d.fillText(String.fromCharCode(55357,56835),0,0),0!==d.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&amp;&amp;c.supports.flag||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&amp;&amp;c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&amp;&amp;f.twemoji&amp;&amp;(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+  </script>
+  <script src="http://onlineworldtopuniversity.com/wp-includes/js/wp-emoji-release.min.js" type="text/javascript">
+  </script>
+  <style type="text/css">
+   img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+  </style>
+  <link media="all" type="text/css" href="http://onlineworldtopuniversity.com/wp-content/themes/redwaves-lite/style.css" id="redwaves-style-css" rel="stylesheet" />
+  <link media="all" type="text/css" href="http://onlineworldtopuniversity.com/wp-content/themes/redwaves-lite/inc/FontAwesome/css/font-awesome.min.css" id="font-awesome-css" rel="stylesheet" />
+  <link media="all" type="text/css" href="//fonts.googleapis.com/css?family=Roboto" id="roboto_google_font-css" rel="stylesheet" />
+  <script src="http://onlineworldtopuniversity.com/wp-includes/js/jquery/jquery.js" type="text/javascript">
+  </script>
+  <script src="http://onlineworldtopuniversity.com/wp-includes/js/jquery/jquery-migrate.min.js" type="text/javascript">
+  </script>
+  <link href="http://onlineworldtopuniversity.com/xmlrpc.php?rsd" title="RSD" type="application/rsd+xml" rel="EditURI" />
+  <link href="http://onlineworldtopuniversity.com/wp-includes/wlwmanifest.xml" type="application/wlwmanifest+xml" rel="wlwmanifest" />
+  <link href="http://onlineworldtopuniversity.com/environmental-constraints-on-business-activity/" title="Environmental Constraints on Business Activity" rel="prev" />
+  <link href="http://onlineworldtopuniversity.com/learn-solution-of-cash-flow-problems-in-mba-study/" title="Learn Solution of Cash Flow Problems in MBA Study" rel="next" />
+  <meta content="WordPress 4.2.5" name="generator" />
+  <link href="http://onlineworldtopuniversity.com/domain-driven-design-and-cloud-storage-management-in-programming/" rel="canonical" />
+  <link href="http://onlineworldtopuniversity.com/?p=68" rel="shortlink" />
+  <meta content="Aq64QymW9uS2upWxtVM_7Rj68UD6-AHUhNld8VyUpec" name="google-site-verification" />
+  <style type="text/css">
+   button, .pagination a, .nav-links a, .readmore, .thecategory a:hover, input[type='submit'], #commentform input#submit, .contactform #submit, .pagination a, #wp-calendar td a, #wp-calendar caption, #wp-calendar #prev a:before, #wp-calendar #next a:before, .tagcloud a, #wp-calendar thead th.today, #wp-calendar td a:hover, #wp-calendar #today { background: #0066bf; } .secondary-navigation, .secondary-navigation ul ul li, .secondary-navigation ul ul li:hover, .secondary-navigation ul ul ul li:hover, .secondary-navigation ul ul ul li, #mobile-menu-wrapper, a.sideviewtoggle { background: #0066bf; }  .thecategory ul li a:hover { background: #0066bf; !important} a, .breadcrumb a, .entry-content a {color: #0066bf;} .title a:hover, .post-data .post-title a:hover, .post-title a:hover, .post-info a:hover,.textwidget a, .reply a, .comm, .fn a, .comment-reply-link, .entry-content .singleleft a:hover, .breadcrumb a:hover, .widget-post-title a:hover { color: #0066bf; } .main-container .widget-title {   border-bottom: 2px solid #0066bf; }
+  </style>
+  <script src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" async="">
+  </script>
+  <script data-pso-version="20151012_180834" pagespeed_no_defer="">
+   window.dynamicgoogletags={config:[]};dynamicgoogletags.config=["ca-pub-3680233627049976",[[[["HEADER",0,,[]],["10px","10px",1],1,[1],"1809268848",0],[["ARTICLE",0,,[],0],["16px","15px",0],0,[0],"4274187644",3]]],[[[],[],[]]],"WordPressSinglePost","9123189644",,0.01,,[10,1209600000],0.01,0];(function(){var k=this,aa=function(a){var b=typeof a;if("object"==b)if(a){if(a instanceof Array)return"array";if(a instanceof Object)return b;var c=Object.prototype.toString.call(a);if("[object Window]"==c)return"object";if("[object Array]"==c||"number"==typeof a.length&amp;&amp;"undefined"!=typeof a.splice&amp;&amp;"undefined"!=typeof a.propertyIsEnumerable&amp;&amp;!a.propertyIsEnumerable("splice"))return"array";if("[object Function]"==c||"undefined"!=typeof a.call&amp;&amp;"undefined"!=typeof a.propertyIsEnumerable&amp;&amp;!a.propertyIsEnumerable("call"))return"function"}else return"null";
+else if("function"==b&amp;&amp;"undefined"==typeof a.call)return"object";return b},p=function(a){return"number"==typeof a},r=function(a,b){function c(){}c.prototype=b.prototype;a.Aa=b.prototype;a.prototype=new c;a.prototype.constructor=a;a.va=function(a,c,f){for(var g=Array(arguments.length-2),h=2;h&lt;arguments.length;h++)g[h-2]=arguments[h];return b.prototype[c].apply(a,g)}};var ba=String.prototype.trim?function(a){return a.trim()}:function(a){return a.replace(/^[\s\xa0]+|[\s\xa0]+$/g,"")},ca=function(a,b){return a&lt;b?-1:a&gt;b?1:0};var da=function(a){var b={},c;for(c in a)b[c]=a[c];return b};var t=function(){},u=function(a,b,c){a.f=null;b||(b=[]);a.za=void 0;a.T=-1;a.g=b;a:{if(a.g.length){b=a.g.length-1;var d=a.g[b];if(d&amp;&amp;"object"==typeof d&amp;&amp;"array"!=aa(d)){a.X=b-a.T;a.N=d;break a}}a.X=Number.MAX_VALUE}if(c)for(b=0;b&lt;c.length;b++)d=c[b],d&lt;a.X?(d+=a.T,a.g[d]=a.g[d]||ea):a.N[d]=a.N[d]||ea},ea=[],v=function(a,b){if(b&lt;a.X){var c=b+a.T,d=a.g[c];return d===ea?a.g[c]=[]:d}d=a.N[b];return d===ea?a.N[b]=[]:d},w=function(a,b,c){b&lt;a.X?a.g[b+a.T]=c:a.N[b]=c},y=function(a,b,c){a.f||(a.f={});if(!a.f[c]){var d=
+v(a,c);d&amp;&amp;(a.f[c]=new b(d))}return a.f[c]},z=function(a,b,c){a.f||(a.f={});if(!a.f[c]){for(var d=v(a,c),e=[],f=0;f&lt;d.length;f++)e[f]=new b(d[f]);a.f[c]=e}b=a.f[c];b==ea&amp;&amp;(b=a.f[c]=[]);return b},fa=function(a,b,c){a.f||(a.f={});var d=c?c.g:c;a.f[b]=c;w(a,b,d)},ga=function(a,b,c){a.f||(a.f={});c=c||[];for(var d=[],e=0;e&lt;c.length;e++)d[e]=c[e].g;a.f[b]=c;w(a,b,d)};t.prototype.toString=function(){return this.g.toString()};
+var A=function(a){return new a.constructor(ha(a.g))},ha=function(a){var b;if("array"==aa(a)){for(var c=Array(a.length),d=0;d&lt;a.length;d++)null!=(b=a[d])&amp;&amp;(c[d]="object"==typeof b?ha(b):b);return c}c={};for(d in a)null!=(b=a[d])&amp;&amp;(c[d]="object"==typeof b?ha(b):b);return c};var ka=function(a){u(this,a,ja)};r(ka,t);var ja=[4];ka.prototype.i=function(){return A(this)};var B=function(a){return v(a,5)},C=function(a){u(this,a,null)};r(C,t);C.prototype.i=function(){return A(this)};var la=function(a){u(this,a,null)};r(la,t);la.prototype.i=function(){return A(this)};la.prototype.F=function(){return v(this,1)};la.prototype.setPosition=function(a){w(this,1,a)};var D=function(a){u(this,a,null)};r(D,t);D.prototype.i=function(){return A(this)};var E=function(a){return y(a,ka,1)};D.prototype.F=function(){return v(this,3)};D.prototype.setPosition=function(a){w(this,3,a)};var F=function(a){u(this,a,ma)};r(F,t);var ma=[1];F.prototype.i=function(){return A(this)};F.prototype.j=function(){return z(this,D,1)};F.prototype.ja=function(a){ga(this,1,a)};var G=function(a){u(this,a,na)};r(G,t);var na=[2];G.prototype.i=function(){return A(this)};
+G.prototype.ga=function(){return v(this,3)};var oa=function(a){u(this,a,null)};r(oa,t);oa.prototype.i=function(){return A(this)};var H=function(a){u(this,a,pa)};r(H,t);var pa=[1,2,3];H.prototype.i=function(){return A(this)};H.prototype.j=function(){return z(this,D,2)};H.prototype.ja=function(a){ga(this,2,a)};var qa=function(a){return y(a,ka,4)},I=function(a){u(this,a,ra)};r(I,t);var ra=[3];I.prototype.i=function(){return A(this)};I.prototype.A=function(){return v(this,1)};
+I.prototype.D=function(){return y(this,F,2)};I.prototype.P=function(){return v(this,4)};I.prototype.ga=function(){return v(this,5)};I.prototype.O=function(){return y(this,sa,9)};var sa=function(a){u(this,a,null)};r(sa,t);sa.prototype.i=function(){return A(this)};var ta=function(a,b){var c=new D,d=a.i();void 0!==b.v?-1==b.v?(w(d,2,b.o),w(d,5,-1),c.setPosition(3)):0==b.v?(w(d,2,b.o),w(d,5,0),c.setPosition(0)):(w(d,2,b.o),w(d,5,b.v-1),c.setPosition(3)):-1==b.o?(w(d,2,-1),c.setPosition(3)):0==b.o?(w(d,2,0),c.setPosition(0)):(w(d,2,b.o-1),c.setPosition(3));fa(c,1,d);return c},xa=function(a,b){var c=b||document,d=null,e=v(a,3);if(e)if(d=c.getElementById(e))d=[d];else return[];if(e=v(a,1))if(d){for(var f=[],g=0;g&lt;d.length;++g)d[g].tagName&amp;&amp;d[g].tagName.toUpperCase()==
+e.toUpperCase()&amp;&amp;f.push(d[g]);d=f}else{d=c.getElementsByTagName(e);e=[];for(f=0;f&lt;d.length;++f)e.push(d[f]);d=e}if((e=v(a,4))&amp;&amp;0&lt;e.length)if(d)for(c=d,d=[],f=0;f&lt;c.length;++f)ua(c[f],e)&amp;&amp;d.push(c[f]);else{if(!c.body)return[];d=va(e,c.body)}c=v(a,2);if(p(c)&amp;&amp;d)if(0&gt;c&amp;&amp;(c+=d.length),d.length&gt;c)d=[d[c]];else return[];c=B(a);if(p(c)&amp;&amp;d){e=[];for(f=0;f&lt;d.length;f++)g=wa(d[f]),0&gt;c&amp;&amp;(c+=g.length),0&lt;=c&amp;&amp;c&lt;g.length&amp;&amp;e.push(g[c]);d=e}c=v(a,6);if(void 0!==c&amp;&amp;d)switch(c){case 0:return d.slice(1);case 1:return d.slice(0,
+d.length-1);case 2:return d.slice(1,d.length-1)}return d?d:[]},ya=function(a){return"INS"==a.tagName&amp;&amp;ua(a,["adsbygoogle-placeholder"])},wa=function(a){var b=[];a=a.getElementsByTagName("p");for(var c=0;c&lt;a.length;++c)100&lt;=za(a[c])&amp;&amp;b.push(a[c]);return b},Aa=function(a,b){if(a==b)return!0;if(!a||!b||v(a,1)!=v(b,1)||v(a,2)!=v(b,2)||v(a,3)!=v(b,3)||B(a)!=B(b)||v(a,6)!=v(b,6))return!1;var c=v(a,4),d=v(b,4);if(c||d)if(c&amp;&amp;d&amp;&amp;c.length==d.length)for(var e=0;e&lt;c.length;e++){if(c[e]!=d[e])return!1}else return!1;
+return!0},za=function(a){if(3==a.nodeType)return a.length;if(1!=a.nodeType||"SCRIPT"==a.tagName)return 0;for(var b=0,c=0;c&lt;a.childNodes.length;++c)b+=za(a.childNodes[c]);return b},va=function(a,b){if(b.getElementsByClassName){for(var c=b.getElementsByClassName(a.join(" ")),d=[],e=0;e&lt;c.length;++e)d.push(c[e]);return d}c=[];ua(b,a)&amp;&amp;c.push(b);for(e=0;e&lt;b.childNodes.length;++e)1==b.childNodes[e].nodeType&amp;&amp;(c=c.concat(va(a,b.childNodes[e])));return c},ua=function(a,b){for(var c=a.className?a.className.split(/\s+/):
+[],d={},e=0;e&lt;c.length;++e)d[c[e]]=!0;for(e=0;e&lt;b.length;++e)if(!d[b[e]])return!1;return!0};var J;a:{var Ba=k.navigator;if(Ba){var Ca=Ba.userAgent;if(Ca){J=Ca;break a}}J=""}var K=function(a){return-1!=J.indexOf(a)};var Da=K("Opera")||K("OPR"),L=K("Trident")||K("MSIE"),Ea=K("Edge"),Fa=K("Gecko")&amp;&amp;!(-1!=J.toLowerCase().indexOf("webkit")&amp;&amp;!K("Edge"))&amp;&amp;!(K("Trident")||K("MSIE"))&amp;&amp;!K("Edge"),Ga=-1!=J.toLowerCase().indexOf("webkit")&amp;&amp;!K("Edge"),Ha=function(){var a=J;if(Fa)return/rv\:([^\);]+)(\)|;)/.exec(a);if(Ea)return/Edge\/([\d\.]+)/.exec(a);if(L)return/\b(?:MSIE|rv)[: ]([^\);]+)(\)|;)/.exec(a);if(Ga)return/WebKit\/(\S+)/.exec(a)},Ia=function(){var a=k.document;return a?a.documentMode:void 0},Ja=function(){if(Da&amp;&amp;
+k.opera){var a;var b=k.opera.version;try{a=b()}catch(c){a=b}return a}a="";(b=Ha())&amp;&amp;(a=b?b[1]:"");return L&amp;&amp;(b=Ia(),b&gt;parseFloat(a))?String(b):a}(),Ka={},La=function(a){if(!Ka[a]){for(var b=0,c=ba(String(Ja)).split("."),d=ba(String(a)).split("."),e=Math.max(c.length,d.length),f=0;0==b&amp;&amp;f&lt;e;f++){var g=c[f]||"",h=d[f]||"",l=RegExp("(\\d*)(\\D*)","g"),m=RegExp("(\\d*)(\\D*)","g");do{var n=l.exec(g)||["","",""],q=m.exec(h)||["","",""];if(0==n[0].length&amp;&amp;0==q[0].length)break;b=ca(0==n[1].length?0:parseInt(n[1],
+10),0==q[1].length?0:parseInt(q[1],10))||ca(0==n[2].length,0==q[2].length)||ca(n[2],q[2])}while(0==b)}Ka[a]=0&lt;=b}},Ma=k.document,Na=Ma&amp;&amp;L?Ia()||("CSS1Compat"==Ma.compatMode?parseInt(Ja,10):5):void 0;var Oa;if(!(Oa=!Fa&amp;&amp;!L)){var Pa;if(Pa=L)Pa=9&lt;=Na;Oa=Pa}Oa||Fa&amp;&amp;La("1.9.1");L&amp;&amp;La("9");var Qa=function(a,b){for(var c in a)Object.prototype.hasOwnProperty.call(a,c)&amp;&amp;b.call(void 0,a[c],c,a)},Ra=function(a,b,c){a.addEventListener?a.addEventListener(b,c,!1):a.attachEvent&amp;&amp;a.attachEvent("on"+b,c)};var Sa=function(a){var b="";Qa(a,function(a,d){if(0===a||a)b+="&amp;"+d+"="+encodeURIComponent(String(a))});return b},Ta=function(a,b,c){a.google_image_requests||(a.google_image_requests=[]);var d=a.document.createElement("img");if(c){var e=function(a){c(a);a=e;d.removeEventListener?d.removeEventListener("load",a,!1):d.detachEvent&amp;&amp;d.detachEvent("onload",a);a=e;d.removeEventListener?d.removeEventListener("error",a,!1):d.detachEvent&amp;&amp;d.detachEvent("onerror",a)};Ra(d,"load",e);Ra(d,"error",e)}d.src=b;a.google_image_requests.push(d)};var Ua=window;var Va=function(a,b){var c=a.length;if(0==c)return 0;for(var d=b||305419896,e=0;e&lt;c;e++)d^=(d&lt;&lt;5)+(d&gt;&gt;2)+a.charCodeAt(e)&amp;4294967295;return 0&lt;d?d:4294967296+d},Wa=/(^| )adsbygoogle($| )/;var Xa=function(a,b,c){this.U=a;this.pa=!!b;this.oa=c?c:new sa};Xa.prototype.O=function(){return this.oa||new sa};var M=function(a){return a.dynamicgoogletags=a.dynamicgoogletags||{}};var Ya=function(a){a=a.document;return("CSS1Compat"==a.compatMode?a.documentElement:a.body)||{}};var Za=function(){this.document=document};var $a=function(a){return!!a.nextSibling||!!a.parentNode&amp;&amp;$a(a.parentNode)},ab=function(a,b){var c=E(b);if(!c)return null;c=xa(c,a);return 0&lt;c.length?c[0]:null},N=function(a,b){var c=bb(a.document,b,!0);return p(c)&amp;&amp;!(c&lt;=Ya(a).clientHeight)},cb=function(a,b){return a.body?b-a.body.getBoundingClientRect().top:b},bb=function(a,b,c){if(!c||!p(v(b,8)))if(c=ab(a,b)){var d=y(b,C,2);a=a.createElement("div");a.className="googlepublisherpluginad";var e=a.style;e.textAlign="center";e.width="100%";e.height=
+"0px";e.clear=d&amp;&amp;v(d,3)?"both":"none";db(b.F(),c,a);c=a.getBoundingClientRect().top;a.parentNode.removeChild(a);w(b,8,c)}return v(b,8)},gb=function(a,b,c){switch(b){case 0:return!!eb(a,fb(c));case 3:return!!eb(a,c);case 1:return!1;case 2:return b=c.lastChild,!!eb(a,b?1==b.nodeType?b:fb(b):null);default:return!1}},eb=function(a,b){if(!b)return!1;var c;c=a.getComputedStyle?a.getComputedStyle(b,null):b.currentStyle;if(!c)return!1;c=c.cssFloat||c.styleFloat;return"left"==c||"right"==c},db=function(a,
+b,c){switch(a){case 0:b.parentNode&amp;&amp;b.parentNode.insertBefore(c,b);break;case 3:if(a=b.parentNode){var d=b.nextSibling;if(d&amp;&amp;d.parentNode!=a)for(;d&amp;&amp;8==d.nodeType;)d=d.nextSibling;a.insertBefore(c,d)}break;case 1:b.insertBefore(c,b.firstChild);break;case 2:b.appendChild(c)}ya(b)&amp;&amp;(b.style.display="block")},hb=function(a){return a.adsbygoogle=a.adsbygoogle||[]},ib=function(a){switch(a){case 0:return"auto";case 1:return"horizontal";case 2:return"vertical";case 3:return"rectangle";default:return"auto"}},
+fb=function(a){for(a=a.previousSibling;a&amp;&amp;1!=a.nodeType;)a=a.previousSibling;return a?a:null},jb=function(a,b){a.sort(function(a,d){var e=bb(b,a,!0),e=p(e)?e:Number.POSITIVE_INFINITY,f=bb(b,d,!0),f=p(f)?f:Number.POSITIVE_INFINITY;return e-f})};var kb=function(a){this.u=a;this.la=[]};kb.prototype.b=function(){return 0&lt;z(this.u,H,3).length?z(this.u,H,3)[0]:null};var lb=[{id:17415666,ba:!1,da:!1},{id:17415667,ba:!0,da:!1},{id:17415668,ba:!0,da:!0}],mb=function(a){var b=/^#([^=]*)=(\d+)$/.exec(O.location.hash);return b&amp;&amp;3==b.length&amp;&amp;b[1]==a?+b[2]:null},nb=function(a,b){for(var c=a.google_ad_modifications=a.google_ad_modifications||{},c=c.loeids=c.loeids||[],d=0;d&lt;b.length;d++)c.push(""+b[d])},ob=function(a,b){var c=a.google_ad_modifications=a.google_ad_modifications||{};(c.ad_channels=c.ad_channels||[]).push(b)},qb=function(a,b){var c=a+pb,d=Va(c);return((d%
+512*2+1)*b+Va(c,d)%1024)%1024},rb=function(a,b,c){var d=a.length;c-=0;return 0&gt;c||c&gt;=b*d?null:a[c%d]};var sb={"120x90":!0,"160x90":!0,"180x90":!0,"200x90":!0,"468x15":!0,"728x15":!0};var tb,ub="http"+("http:"==Ua.location.protocol?"":"s")+"://pagead2.googlesyndication.com/pagead/gen_204?id=";tb=new function(){this.ma=ub;this.ta=Math.random()};var wb=function(a){this.ka=a;a={};var b=this.ka.ya;try{if(b&amp;&amp;"function"==typeof b.sa)for(var c=b.sa().xa(),b=0;b&lt;c.length;b++){var d=c[b].wa();a[d]=!0}}catch(f){c={ok:0,err:f.toString()};try{if(.1&gt;tb.ta){var e=tb.ma+"ladd_evt"+Sa(c),e=e.substring(0,2E3);Ta(k,e)}}catch(g){}}this.qa=a;this.M=null;this.ia=0;vb(this)},xb=function(a,b){var c=a.id;return!!c&amp;&amp;!!c.indexOf&amp;&amp;"function"===typeof c.indexOf&amp;&amp;0===c.indexOf(b)},yb=function(a){null==a.M&amp;&amp;vb(a);return 0&lt;a.M.length},vb=function(a){for(var b=[],c=0,
+d=a.ka.document.querySelectorAll("*"),e=0;e&lt;d.length;e++){var f=a,g=d[e],h;(h="INS"==g.tagName&amp;&amp;Wa.test(g.className))||(h=g.id,h=f.qa[h]?!0:"DIV"==g.tagName&amp;&amp;0==h.indexOf("div-gpt-ad"));if(h||xb(g,"google_ads_frame")||xb(g,"aswift_"))if(f=d[e].getBoundingClientRect())b.push(f),g=d[e],"IFRAME"!=g.tagName||!xb(g,"google_ads_frame")&amp;&amp;!xb(g,"aswift_")||sb[f.width+"x"+f.height]&amp;&amp;50&gt;f.height||c++}a.M=b;a.ia=c};var P=function(a){this.a=a;this.I=[];this.ea=0;this.V=[];this.Y=[];this.fa=this.$=null;this.ha=!1},zb=function(a,b){var c=qa(a.b());if(!(c&amp;&amp;b&amp;&amp;v(b,1)==v(c,1)&amp;&amp;v(b,3)==v(c,3)&amp;&amp;p(v(b,2))&amp;&amp;p(B(b))))return!1;var c=v(c,4),d=v(b,4);if(c.length!=d.length)return!1;for(var e=0;e&lt;c.length;++e)if(d[e]!=c[e])return!1;return!0},Ab=function(a){var b=p(void 0)?void 0:20,c=a.b(),d=c.j(),e=qa(c);if(!(a.ha||0&gt;=b)&amp;&amp;e&amp;&amp;0!=xa(e,a.a.document).length){a.ha=!0;for(var c=[],f=0;f&lt;d.length;++f){var g=d[f],h=E(g);if(zb(a,h)){var l=
+v(h,2),h=B(h);0&lt;=l&amp;&amp;0&lt;=h&amp;&amp;(!c[l]||B(E(c[l]))&lt;h)&amp;&amp;(c[l]=g)}}h=0;d=xa(e,a.a.document);for(l=0;l&lt;c.length&amp;&amp;h&lt;b;++l){var e=h,f=a,m=d[l],g=c[l],h=b-h,n=f.b().j(),q=0;if(m&amp;&amp;g){var m=wa(m).length,x=E(g);switch(v(x,6)){case 0:case 1:--m;break;case 2:m-=2}for(x=B(E(g))+1;x&lt;m&amp;&amp;q&lt;h;++x){var ia=g.i(),Y=E(ia);w(Y,5,x);n.push(ia);q++}}q&amp;&amp;f.b().ja(n);h=e+q}}};P.prototype.W=function(){return this.V};var Q=function(a,b){for(var c=0;c&lt;a.V.length;++c)if(a.V[c]==b)return;a.V.push(b)};P.prototype.aa=function(){return this.Y};
+var R=function(a,b){for(var c=0;c&lt;a.Y.length;++c)if(a.Y[c]==b)return;a.Y.push(b)},Cb=function(a,b,c){var d=ab(a.a.document,b);if(!d)return 2;var e=b.F(),f;if(f=E(b))f=E(b),f=void 0!==v(f,2);return f&amp;&amp;gb(a.a,e,d)?7:2!=e||c||$a(d)?(c=1==e||2==e?d:d.parentNode)&amp;&amp;0&gt;=c.offsetWidth&amp;&amp;!ya(c)?3:Bb(a,b,d):4};P.prototype.l=function(){return this.I.length};
+var Bb=function(a,b,c){if(null!=a.fa&amp;&amp;!N(a.a,b))return 4;if(v(b,7))return R(a,8),6;var d;a:if(v(b,5))d=v(b,5);else{if(d=S(a).b())if(d=v(d,3),a.ea&lt;d.length){d=d[a.ea++];break a}Q(a,4);d=null}if(null==d)return 1;w(b,7,!0);var e=[],f=a.P();f&amp;&amp;e.push(f);for(var f=S(a).la,g=0;g&lt;f.length;++g)e.push(f[g]);p(v(b,9))&amp;&amp;e.push("pso-lv-"+v(b,9));var h=a.a.document,l=a.A(),m=d,n=v(b,6),f=y(b,C,2),g=h.createElement("div");g.className="googlepublisherpluginad";var q=g.style;q.textAlign="center";q.width="100%";q.height=
+"auto";q.clear=f&amp;&amp;v(f,3)?"both":"none";h=h.createElement("ins");h.className="adsbygoogle";h.setAttribute("data-ad-client",l);m&amp;&amp;h.setAttribute("data-ad-slot",m);h.setAttribute("data-ad-format",ib(n));e.length&amp;&amp;h.setAttribute("data-ad-channel",e.join("+"));h.setAttribute("data-tag-origin","pso");e=h.style;e.display="block";e.margin="auto";e.backgroundColor="transparent";f&amp;&amp;(v(f,1)&amp;&amp;(e.marginTop=v(f,1)||""),v(f,2)&amp;&amp;(e.marginBottom=v(f,2)||""));g.appendChild(h);db(b.F(),c,g);try{hb(a.a).push({})}catch(x){return v(b,
+5)!=d&amp;&amp;a.ea--,w(b,7,!1),R(a,6),g.parentNode&amp;&amp;g.parentNode.removeChild(g),5}a.I.push(g);return 0},Db=function(a,b){var c=a.a.document,d=c.body;if(!b||!d)return 4;var e=a.A(),f=c.createElement("div");f.className="googlepublisherpluginad";f.style.display="block";c=c.createElement("ins");c.className="adsbygoogle";c.setAttribute("data-ad-client",e);c.setAttribute("data-reactive-ad-format","1");c.setAttribute("data-tag-origin","pso");c.style.display="none";f.appendChild(c);db(2,d,f);try{hb(a.a).push({})}catch(g){return R(a,
+6),f.parentNode&amp;&amp;f.parentNode.removeChild(f),5}a.I.push(f);return 0},Eb=function(a,b){for(var c=Number.POSITIVE_INFINITY,d=0;d&lt;a.I.length;++d)var e=a.I[d].getBoundingClientRect().top,f=a.I[d].getBoundingClientRect().bottom,c=Math.min(c,b&lt;e?e-b:f&lt;b?b-f:0);return c},Fb=function(a,b,c,d){b=ta(b,c);c=new C;w(c,1,"10px");w(c,2,"10px");fa(b,2,c);return Cb(a,b,d)},Gb=function(a,b,c,d){for(var e=0;e&lt;b.length;e++){var f=b[e],g=y(f,la,4);if(g&amp;&amp;g.F()==c&amp;&amp;0==Cb(a,f,d))return!0}return!1},S=function(a){a=M(a.a).ps||
+null;if(!a)throw Error("No placementState");return a},T=function(a,b){var c=S(a).u;if(!c||!c.A())return Q(a,5),!1;c=z(c,H,3)[0];return c?v(c,3).length&lt;b?(Q(a,4),Q(a,5),!1):!0:(Q(a,5),!1)};P.prototype.A=function(){return S(this).u.A()||""};P.prototype.P=function(){return S(this).u.P()||void 0};P.prototype.D=function(){return S(this).u.D()||new F};P.prototype.b=function(){var a=S(this).b();if(!a)throw Error("No mConfig");return a};var Hb=function(a){a=a.b();a=v(a,6);return null!=a&amp;&amp;0&lt;a};var Ib={v:void 0,o:-1},Jb=function(a){P.call(this,a);this.L=this.K=this.Z=!1};r(Jb,P);Jb.prototype.apply=function(a){if(T(this,3)){var b=this.b().j();this.Z||(this.Z=Gb(this,b,2,!!a));this.K||(this.K=Gb(this,b,3,!!a));if(a){this.K||(R(this,7),this.K=Kb(this,b));if(!this.L){a=qa(this.b());var c;if(c=a)c=ta(a,Ib),c=N(this.a,c);this.L=c&amp;&amp;0==Fb(this,a,Ib,!0)?!0:!1}this.L||(this.L=Kb(this,b))}}};Jb.prototype.m=function(){return this.Z&amp;&amp;this.K&amp;&amp;this.L};
+var Kb=function(a,b){for(var c=0;c&lt;b.length;c++){var d=b[c];if(N(a.a,d)&amp;&amp;!v(d,7)&amp;&amp;0==Cb(a,d,!0))return!0}return!1};var Lb=function(a){P.call(this,a);this.R=null};r(Lb,P);var Mb=["WordPressHome","WordPressFront","WordPressCategory","WordPressArchive"],Nb={o:0,v:0},Ob={o:0,v:void 0};
+Lb.prototype.apply=function(a){if(T(this,3)){if(null==this.R){var b;a:{for(b=0;b&lt;Mb.length;++b)if(Mb[b]==this.P()){b=!0;break a}b=!1}this.B=(this.R=b)?da(Ob):da(Nb)}if(b=qa(this.b())){for(;3&gt;this.l()&amp;&amp;Pb(this,b);){var c;if(c=a)c=ta(b,this.B),c=!N(this.a,c);c?Qb(this,1):0==Fb(this,b,this.B,a)?Qb(this,2):Qb(this,1)}a&amp;&amp;3&gt;this.l()&amp;&amp;R(this,1)}else Q(this,5)}};Lb.prototype.m=function(){return 0&lt;this.l()};
+var Pb=function(a,b){var c=xa(b);if(0==c.length)return!1;if(a.R)return a.B.o&lt;=c.length;c=wa(c[0]);return 0==c.length?!1:a.B.v&lt;=c.length},Qb=function(a,b){a.R?a.B.o+=b:a.B.v+=b};var U=function(a){P.call(this,a)};r(U,P);U.prototype.apply=function(a){var b;(b=S(this).u)&amp;&amp;b.A()&amp;&amp;b.D()?b=!0:(Q(this,5),b=!1);if(b){b=this.D().j();for(var c=0;c&lt;b.length;c++){var d=b[c];v(d,7)||Cb(this,d,a)}}};U.prototype.m=function(){return(0==this.D().j().length||0&lt;this.l())&amp;&amp;0==this.W().length};var Rb=function(a){P.call(this,a);if(T(this,0)){a=this.D().j();for(var b=this.b().j(),c=0;c&lt;a.length;c++){var d=a[c],e;a:{e=d;var f=b;if(e&amp;&amp;E(e))for(var g=0;g&lt;f.length;g++){var h=f[g];if(e.F()==h.F()&amp;&amp;Aa(E(e),E(h))){e=h;break a}}e=null}e&amp;&amp;y(e,C,2)&amp;&amp;(e=y(e,C,2),fa(d,2,e))}}};r(Rb,U);var Sb=function(a){P.call(this,a);a=this.D().j();if(T(this,0)){var b;b=this.b();b=v(b,3);b=T(this,a.length)?a.length:b.length;for(var c=0;c&lt;b;++c)w(a[c],5,void 0)}};r(Sb,U);var V=function(a){P.call(this,a)};r(V,P);V.prototype.apply=function(){};V.prototype.m=function(){return Hb(this)?yb(new wb(this.a)):!0};var Tb=function(a){P.call(this,a);this.J=null};r(Tb,P);
+Tb.prototype.apply=function(a){if(a&amp;&amp;T(this,2)){Ab(this);a=Ya(this.a).clientHeight||640;null==this.J&amp;&amp;(this.J=new wb(this.a));var b=this.J.ia;if(!(5&lt;=b)){var b=Math.min(2,5-b),c=this.b().j(),d=this.a.document;jb(c,d);for(var e=0;e&lt;c.length&amp;&amp;this.l()&lt;b;++e){var f=c[e];if(N(this.a,f)){var g=bb(d,f,!0);if(void 0!==g){var h;a:{h=this.J;for(var l=0;l&lt;h.M.length;l++){var m=h.M[l];if(Math.abs(m.top-g)&lt;a||Math.abs(m.bottom-g)&lt;a){h=!0;break a}}h=!1}h||Eb(this,g)&lt;a||Cb(this,f,!0)}}}0==this.l()&amp;&amp;R(this,1)}}};
+Tb.prototype.m=function(){return Hb(this)?yb(this.J):!0};var Ub=function(a){P.call(this,a);this.G=!1};r(Ub,V);Ub.prototype.apply=function(a){a&amp;&amp;!this.G&amp;&amp;(this.G=0==Db(this,a))};Ub.prototype.m=function(){return this.G&amp;&amp;V.prototype.m.call(this)};var Vb=function(){},W=function(a,b,c){P.call(this,a);this.H=b;this.ua=c;this.G=!1;this.H.fa=new Vb;a=this.A();b=this.a.document;c=b.createElement("script");c.async=!0;c.type="text/javascript";c.src="https://pagead2.googlesyndication.com/pub-config/"+a+".js";db(0,b.getElementsByTagName("script")[0],c)};r(W,P);W.prototype.apply=function(a){void 0!==this.a.google_async_config&amp;&amp;(this.ua&amp;&amp;!this.G&amp;&amp;(this.G=0==Db(this,a)),this.H.apply(a))};W.prototype.m=function(){return this.H.m()};W.prototype.W=function(){return this.H.W()};
+W.prototype.aa=function(){return this.H.aa()};W.prototype.l=function(){return this.H.l()+(this.G?1:0)};var Wb=function(a){P.call(this,a);a=Ya(a).clientHeight;this.na=.1*a;this.ra=.75*a};r(Wb,P);
+Wb.prototype.apply=function(a){if(!T(this,3))return!1;Ab(this);var b=this.b().j();jb(b,this.a.document);var c;c=this.na;var d;d=document;d=d.querySelectorAll?d.querySelectorAll("header,#header,#masthead,.header,.site-header"):[];for(var e=d.length,f=0&lt;e?d[0]:null,g=1;g&lt;e;g++)d[g].getBoundingClientRect().top&lt;f.getBoundingClientRect().top&amp;&amp;(f=d[g]);(d=f)&amp;&amp;(d=d.getBoundingClientRect())&amp;&amp;d.top!=d.bottom&amp;&amp;d.left!=d.right&amp;&amp;(c=Math.min(c,cb(document,d.bottom)));for(d=0;d&lt;b.length&amp;&amp;3&gt;this.l();d++){e=b[d];
+var f=c,g=this.a.document,h=bb(g,e,!1);!p(h)||cb(g,h)&lt;f?f=!1:(f=Eb(this,h),f=this.ra&lt;f);f&amp;&amp;(f=N(this.a,e),g=v(e,6)||0,f&amp;&amp;0==g&amp;&amp;w(e,6,3),!f&amp;&amp;a||Cb(this,e,a))}return this.m()};Wb.prototype.m=function(){return 3==this.l()};var X={};X[16]=U;X[17]=U;X[18]=Sb;X[19]=V;X[31]=V;X[29]=Tb;X[30]=Ub;X[21]=Jb;X[24]=Lb;X[28]=Wb;X[32]=Rb;X[1]=U;X[3]=Jb;X[5]=Lb;X[8]=V;X[11]=U;X[13]=Sb;var Xb=[19,31,29,30,16,18,17],Yb=[19,16,8,1],Zb=[16,19,31,30,17,1,6,8,11];var $b=function(a){return 0&gt;a||99&lt;a?null:10&gt;a?"0"+a:""+a};var ac=function(){this.C=this.S=this.ca=null};var bc=function(a,b,c,d,e){var f=M(window).ss||null,g=M(window).ps||null,h;g&amp;&amp;(h=g.u);var l=a?"pso_success":"pso_failure",m;h&amp;&amp;(m=a?v(h,10):v(h,7),null==m&amp;&amp;(m=0));a={};var n;a:{n=(new Za).document.getElementsByTagName("script");for(var q=0;q&lt;n.length;++q)if(n[q].hasAttribute("data-pso-version")){n=n[q].getAttribute("data-pso-version");break a}n=null}a.sv=n;g&amp;&amp;h&amp;&amp;(a.wpc=h.A(),a.tn=h.P(),g=g.b(),a.ev=g?v(g,5):null);f&amp;&amp;(a.s=f.S,a.st=f.ca);a.c=b;a.w=0&lt;window.innerWidth?window.innerWidth:null;a.h=0&lt;window.innerHeight?
+window.innerHeight:null;0&lt;c.length&amp;&amp;(a.err=c.join());0&lt;d.length&amp;&amp;(a.warn=d.join());e&amp;&amp;e.name&amp;&amp;(a.excp_n=e.name);e&amp;&amp;e.message&amp;&amp;(a.excp_m=e.message.substring(0,512));if(e&amp;&amp;e.stack){var x;b=e.stack;try{-1==b.indexOf("")&amp;&amp;(b="\n"+b);for(var ia;b!=ia;)ia=b,b=b.replace(/((https?:\/..*\/)[^\/:]*:\d+(?:.|\n)*)\2/,"$1");x=b.replace(/\n */g,"\n")}catch($c){x=""}a.excp_s=x}var l="https://pagead2.googlesyndication.com/pagead/gen_204?id="+l,Y;for(Y in a)a.hasOwnProperty(Y)&amp;&amp;(x=a[Y],0===x||x)&amp;&amp;(x=""+x,l+="&amp;"+Y+
+"="+("function"==typeof encodeURIComponent?encodeURIComponent(x):escape(x)));Math.random()&lt;(null!=m?m:.01)&amp;&amp;Ta(window,l,void 0)};var cc=null,dc=null,ec=!1,fc=function(a,b,c){a.addEventListener?(c&amp;&amp;a.addEventListener("DOMContentLoaded",c,!1),b&amp;&amp;a.addEventListener("load",b,!1)):a.attachEvent&amp;&amp;b&amp;&amp;a.attachEvent("onload",b)},jc=function(a,b){dc=!!b;var c=b?gc:hc;ic(a,c);cc=a.setInterval(c,10)},ic=function(a,b){var c=hb(a);if(!c.loaded){var d=c.shift;c.shift=function(){c.shift=d;b();return d.call(c)}}},kc=function(a,b){(!dc||b)&amp;&amp;p(cc)&amp;&amp;a.clearInterval&amp;&amp;(a.clearInterval(cc),cc=null)},lc=function(){kc(window);ec||hc(!1);hc(!0)},mc=
+function(){try{lc();var a=M(window).ss||null;if(a&amp;&amp;a.C){var b=a.C,c=b.m(),d=b.W(),e=b.aa(),f=b.$,g=b.l();c||0!=g||d.push(6);c&amp;&amp;0==d.length&amp;&amp;null===f?bc(!0,g,[],e,null):bc(!1,g,d,e,f)}else bc(!1,0,[2],[],null)}catch(h){bc(!1,null,[1],[],h)}M(window).loaded=!0},gc=function(a){a=a||window;switch(a.document.readyState){case "complete":void 0!==a.google_async_config&amp;&amp;(kc(a,!0),mc());break;case "interactive":break;default:hc()}},hc=function(a){a||(ec=!0);var b=M(window).ss||null;if(b&amp;&amp;b.C){b=b.C;try{b.apply(a)}catch(c){Q(b,
+1),null===b.$&amp;&amp;(b.$=c)}}};var nc=function(a){var b=O;a:if(p(a)){for(var c=0;c&lt;Xb.length;++c)if(a==Xb[c]){a=!1;break a}a=!0}else a=!1;a&amp;&amp;(b=b.google_ad_modifications=b.google_ad_modifications||{},b.remove_ads_by_default=!0,b.ad_whitelist=[{ad_tag_origin:"pso"}],b.ad_blacklist=[],b.space_collapsing="slot")},sc=function(){var a=O,b=oc,c=pc,d=b.b();if(!d)return qc(16);var e;a:{e=z(d,G,1);for(var f=0;f&lt;e.length;++f){for(var g=!0,h=0;h&lt;Zb.length;++h)v(e[f],4)==Zb[h]&amp;&amp;(g=!1);if(g){e=[];0==d.j().length&amp;&amp;e.push("PsoInvalidVariant");
+0==v(d,3).length&amp;&amp;e.push("PsoNoAdSlotCodes");break a}}e=[]}if(0&lt;e.length){a=e;for(c=0;c&lt;a.length;++c)b.la.push(a[c]);return qc(16)}a:{e=z(d,G,1);f=c.U;if(p(f))for(g=0;g&lt;e.length;g++)if(h=e[g],X[v(h,4)])for(var l=z(h,oa,2),m=0;m&lt;l.length;m++){var n=l[m],q=v(n,1),n=v(n,2);if(p(q)&amp;&amp;p(n)&amp;&amp;f&gt;=q&amp;&amp;f&lt;=n){e=h;break a}}e=null}if(!e)a:{e=z(d,G,1);f={};for(g=0;g&lt;e.length;g++)f[v(e[g],4)]=e[g];for(g=0;g&lt;Yb.length;g++)if(f[Yb[g]]){e=f[Yb[g]].i();w(e,6,3);break a}e=null}if(!e)return qc(16);2==v(e,6)&amp;&amp;((f=e.ga())&amp;&amp;
+ob(a,f),f=v(e,1),null!=f&amp;&amp;nb(a,[f]));f=!0;g=c.O();if(g=v(g,2))g=Date.now?Date.now():+new Date,h=c.O(),h=v(h,2),g=g&lt;h;g||(ob(a,"pso-ama-exd"),f=!1);v(b.u,11)&amp;&amp;(ob(a,"pso-ama-stl-tmp"),f=!1);f&amp;&amp;ob(a,"pso-ama-elig");if(f&amp;&amp;(2==v(e,6)||1==v(e,6))&amp;&amp;(f=e,d=z(d,G,1),null!==c.U)){c={};b=[];for(g=0;g&lt;d.length;g++)h=rc(d[g]),null==h||c[h]||(c[h]=!0,b.push(h));d=rc(f);if(null!=d){c=[];d=$b(d);f=!1;if(d)for(g=0;g&lt;b.length;g++)h=$b(b[g]),d==h&amp;&amp;(f=!0),h&amp;&amp;c.push(+("950"+d+h));f||(c=[]);nb(a,c)}}a=new ac;a.ca=v(e,
+5);a.S=v(e,4);return a},qc=function(a){var b=new ac;b.S=a;return b},rc=function(a){var b;switch(v(a,6)){case 1:b=v(a,4);break;case 2:b=v(a,7)}return null!=b?b:null};try{a:{var O=window,tc,uc=M(O).config;tc=uc?new I(uc):null;if(!tc)throw Error("No config");var oc=new kb(tc),vc=oc;M(O).ps=vc;var Z,pc;if(K("iPad")||K("Android")&amp;&amp;!K("Mobile")||K("Silk")||!(K("iPod")||K("iPhone")||K("Android")||K("IEMobile")))Z=qc(16);else{var wc;if((wc=mb("pso_strategy"))&amp;&amp;X[wc])Z=qc(wc),nc(wc);else{var xc=O,yc=oc.u.O(),zc;try{var Ac=parseInt(xc.localStorage.getItem("PSO_EXP0"),10);zc=isNaN(Ac)?null:Ac}catch(a){zc=null}var Bc=!1;if(null==zc){zc=Math.floor(1024*Math.random());try{xc.localStorage.setItem("PSO_EXP0",
+zc.toString()),Bc=!0}catch(a){Bc=!1}}pc=new Xa(zc,Bc,yc);Z=sc()}1==Z.ca&amp;&amp;nc(Z.S)}if(!Z)throw Error("No strategyState created!");var Cc=Z;M(O).ss=Cc;var Dc=O,Ec=Z,Fc=Ec.S;if(p(Fc)){var Gc=X[Fc];Fc&amp;&amp;Gc&amp;&amp;(Ec.C=new Gc(Dc))}if(pc){var pb=O.location.hostname,Hc;var Ic=pc,Jc;c:{for(var Kc=mb("pso_expt"),Lc=0;Kc&amp;&amp;Lc&lt;lb.length;Lc++){var Mc=lb[Lc];if(Mc.id==Kc){Jc=Mc;break c}}Jc=null}if(Jc)Hc=Jc;else{var Nc=qb("rflow",Ic.U),Oc=Ic.O(),Pc=v(Oc,1)||0;Hc=rb(lb,Pc,Nc)}var Qc=O,Rc=pc.U,Sc=[],Tc=rb([17415655,17415656],
+1,qb("unif1",Rc));null===Tc||Sc.push(Tc);var Uc=rb([17415657,17415658],10,qb("unif2",Rc));null===Uc||Sc.push(Uc);var Vc=rb([17415659,17415660],100,qb("unif3",Rc));null===Vc||Sc.push(Vc);0&lt;Sc.length&amp;&amp;nb(Qc,Sc);var Wc;if(Wc=Hc&amp;&amp;Z.C&amp;&amp;oc.b()){var Xc=oc.b();Wc=!v(Xc,6)}if(Wc&amp;&amp;(nb(O,[Hc.id]),Hc.ba&amp;&amp;pc.pa)){Z.C=new W(O,Z.C,Hc.da);var Yc=O;jc(Yc,!0);fc(Yc,lc,lc);break a}}var Zc=O;switch(Zc.document.readyState){case "complete":mc();break;case "interactive":lc();fc(Zc,mc);break;default:jc(Zc),fc(Zc,mc,lc)}}}catch(a){bc(!1,
+null,[],[],a)};})();
+  </script>
+ </head>
+ <body class="single single-post postid-68 single-format-standard">
+  <div class="hfeed site">
+   <a href="#content" class="skip-link screen-reader-text">
+    Skip to content
+   </a>
+   <header role="banner" class="site-header" id="masthead">
+    <div class="googlepublisherpluginad" style="text-align: center; width: 100%; height: auto; clear: both;">
+     <ins class="adsbygoogle" data-ad-client="ca-pub-3680233627049976" data-ad-slot="1809268848" data-ad-format="auto" data-ad-channel="WordPressSinglePost" data-tag-origin="pso" style="display: block; margin: 10px auto; background-color: transparent; height: 90px;" data-adsbygoogle-status="done">
+      <ins style="display:inline-table;border:none;height:90px;margin:0;padding:0;position:relative;visibility:visible;width:959px;background-color:transparent" id="aswift_0_expand">
+       <ins style="display:block;border:none;height:90px;margin:0;padding:0;position:relative;visibility:visible;width:959px;background-color:transparent" id="aswift_0_anchor">
+        <iframe width="959" height="90" frameborder="0" style="left:0;position:absolute;top:0;" name="aswift_0" id="aswift_0" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&&s.handlers,h=H&&H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&&d&&(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" allowfullscreen="true" scrolling="no" allowtransparency="true" hspace="0" vspace="0" marginheight="0" marginwidth="0">
+        </iframe>
+       </ins>
+      </ins>
+     </ins>
+    </div>
+    <div id="mobile-menu-wrapper">
+     <a class="sideviewtoggle" id="sidemenu_hide" href="javascript:void(0); ">
+      Menu
+     </a>
+     <a class="searchtoggle" href="javascript:void(0);">
+      <div>
+       <i class="fa fa-search">
+       </i>
+      </div>
+     </a>
+     <div class="mobile_search" style="display: none;">
+      <form action="http://onlineworldtopuniversity.com/" class="search-form" method="get" role="search">
+       <div>
+        <span class="screen-reader-text">
+         Search for
+        </span>
+        <input type="search" title="Search for:" name="s" value="" placeholder="Search …" class="search-field" />
+        <input type="submit" value="Search" class="search-submit" />
+        <i class="fa fa-search">
+        </i>
+       </div>
+      </form>
+     </div>
+     <nav class="clearfix" id="navigation">
+      <div class="mobile-menu" id="mobile-menu">
+       <div class="nav-menu">
+       </div>
+      </div>
+     </nav>
+    </div>
+    <div class="container header-container">
+     <div class="header-inner">
+      <div class="logo-wrap">
+       <h1>
+        <a rel="nofollow" title="Read Special" href="http://onlineworldtopuniversity.com">
+         Read Special
+        </a>
+       </h1>
+       <p>
+        <span>
+        </span>
+       </p>
+      </div>
+      <!-- .logo-wrap -->
+      <div class="header_area-wrap">
+       <div class="header_area">
+       </div>
+       <!-- .header_area -->
+      </div>
+      <!-- .header_area-wrap -->
+     </div>
+     <!-- .header-inner -->
+    </div>
+    <!-- .container -->
+    <div class="secondary-navigation" id="sideviewtoggle">
+     <div class="container clearfix">
+      <a class="sideviewtoggle" id="sidemenu_show" href="javascript:void(0); ">
+       Menu
+      </a>
+     </div>
+     <!--.container-->
+    </div>
+    <div id="sticky-sticky-wrapper" class="sticky-wrapper" style="height: 56px;">
+     <div class="secondary-navigation" id="sticky">
+      <div class="container clearfix">
+       <nav role="navigation" class="main-navigation" id="site-navigation">
+        <div class="menu-home-container">
+         <ul class="menu" id="menu-home">
+          <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-7" id="menu-item-7">
+           <a href="http://onlineworldtopuniversity.com/">
+            Home
+           </a>
+          </li>
+         </ul>
+        </div>
+       </nav>
+       <!-- #site-navigation -->
+      </div>
+      <!--.container -->
+     </div>
+    </div>
+   </header>
+   <!-- #masthead -->
+   <div class="main-container" id="content">
+    <div id="page">
+     <div class="content-area" id="primary">
+      <main role="main" class="site-main" id="main">
+       <article class="post-68 post type-post status-publish format-standard has-post-thumbnail hentry category-education" id="post-68">
+        <div xmlns:v="http://rdf.data-vocabulary.org/#" class="breadcrumb">
+         <div>
+          <i class="fa fa-home">
+          </i>
+         </div>
+         <div class="root" typeof="v:Breadcrumb">
+          <a href="http://onlineworldtopuniversity.com" property="v:title" rel="v:url">
+           Home
+          </a>
+         </div>
+         <div>
+          <i class="fa fa-caret-right">
+          </i>
+         </div>
+         <div typeof="v:Breadcrumb">
+          <a property="v:title" rel="v:url" href="http://onlineworldtopuniversity.com/category/education/">
+           Education
+          </a>
+         </div>
+         <div>
+          <i class="fa fa-caret-right">
+          </i>
+         </div>
+         <div typeof="v:Breadcrumb">
+          <span property="v:title">
+           Domain Driven Design and Cloud Storage Management in Programming
+          </span>
+         </div>
+        </div>
+        <header class="entry-header">
+         <h1 class="entry-title">
+          Domain Driven Design and Cloud Storage Management in Programming
+         </h1>
+        </header>
+        <!-- .entry-header -->
+        <div class="entry-content">
+         <div class="googlepublisherpluginad" style="text-align: center; width: 100%; height: auto; clear: none;">
+          <ins class="adsbygoogle" data-ad-client="ca-pub-3680233627049976" data-ad-slot="4274187644" data-ad-format="rectangle" data-ad-channel="WordPressSinglePost" data-tag-origin="pso" style="display: block; margin: 16px auto 15px; background-color: transparent; height: 280px;" data-adsbygoogle-status="done">
+           <ins style="display:inline-table;border:none;height:280px;margin:0;padding:0;position:relative;visibility:visible;width:635px;background-color:transparent" id="aswift_1_expand">
+            <ins style="display:block;border:none;height:280px;margin:0;padding:0;position:relative;visibility:visible;width:635px;background-color:transparent" id="aswift_1_anchor">
+             <iframe width="635" height="280" frameborder="0" style="left:0;position:absolute;top:0;" name="aswift_1" id="aswift_1" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&&s.handlers,h=H&&H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&&d&&(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" allowfullscreen="true" scrolling="no" allowtransparency="true" hspace="0" vspace="0" marginheight="0" marginwidth="0">
+             </iframe>
+            </ins>
+           </ins>
+          </ins>
+         </div>
+         <p>
+          Once I opened my lenovo T61 laptop and search for USA Top Computer Software Engineering Schools and Colleges for study. Then I thought about what do I mean by cloud data and domain driven design? I realize that data-centric mainly means that engineering students establish system in all directions their understanding of the data which they will be interacting with. Now we all are living in 21st century and it is generation of Windows 10 then we all IT students should know that cloud computing gives a region to store our mechanism images and any data which our applications require. Now I will tell you about the very interesting thing about studies. We all want to study at best IT, Computer or Engineering University. So, USA is best place for study about Software Engineering. There are many IT and Engineering Universities in USA like Carnegie Mellon University, Texas Tech University, Massachusetts Institute of Technology, University of California and Stanford University. These are the world best universities for Software Engineering courses. At this time we only talk about Domain driven design and cloud storage. As we know cloud storage has also increased in trendiness similarly as cloud computing. But you know what is the reason this is so famous between .NET developers is that Microsoft gave big time with DataAdapters, DataSets and DataTables. I just want to ask from BSCS students that why cloud storage transports online storage on huge call over a network based on a call for a given (QoS)? Have you ever thought about it?
+         </p>
+         <p>
+          <a href="http://onlineworldtopuniversity.com/wp-content/uploads/2015/08/1.jpg">
+           <img width="397" height="320" alt="1" src="http://onlineworldtopuniversity.com/wp-content/uploads/2015/08/1-300x242.jpg" class="alignnone  wp-image-69" />
+          </a>
+         </p>
+         <p>
+          Similarly my next question is about domain driven design (DDD), focuses on the problem domain as a whole that not only add the performance but the data also. So, why its is like that? I only say search about it. Yesterday, I met a student who asked me that how we can copy local data to cloud storage a online disk can be synced to the cloud and issued to other computers; and we can use it as a file to keep framework for regulatory or other motives? I thought about this question and felt very happy. Then I answered him as we can use cloud storage for applications that supply data indirectly to their customer through the network. I also said that the application redirects the customer to a place at the cloud storage supplier for the data and media such as audio are instances. Some students are very clever. One of the student asked me about me that how garbage collection solo can save programmers from the largest source of programming errors in C or C++ which can clear memory allocation and deallocation and similarly an object is no longer in use and Java eliminates it from memory automatically? So I replied that you can simply ignore this because it is typically a data thing interface with operations for creating, reading and removing the single data thing through HTTP operations.
+         </p>
+         <p>
+          After a long discussion one thing we came to know that Java code has to play by the rules And encapsulation (computer_programming) is a skill for hiding data and performance with in a class but it is very important thing of object-oriented design.But in most languages of software, the visibility of data objects is the part of the connection among the programmer and the compiler. So, it is an issue of linguistics not an declaration about the real safety of the data in the context of the starting program’s domain. Then we talked about some companies set out to build a public computing cloud or create bulky parallel and economical data-driven applications relational databases became refutable. But they initiated a cloud, the same structures became part of their cloud contributions. Then Google’s BigTable solution was to develop a relatively simple storage management system that could give fast approach to petabytes of data, potentially superfluous issued over thousands of gadgets.
+         </p>
+         <div class="related-posts" id="related_posts">
+          <h3>
+           Related Posts
+          </h3>
+          <ul>
+           <li>
+            <div class="horizontal-container">
+             <div class="relatedthumb">
+              <a title="World Best Education At Centennial College of Applied Arts and Technology" rel="bookmark" href="http://onlineworldtopuniversity.com/world-best-education-at-centennial-college-of-applied-arts-and-technology/">
+               <img width="120" height="120" alt="3" class="attachment-small wp-post-image" src="http://onlineworldtopuniversity.com/wp-content/uploads/2015/06/3-120x120.jpg" />
+              </a>
+             </div>
+             <div class="post-data-container">
+              <div class="post-title">
+               World Best Education At Centennial College of Applied Arts and Technology
+              </div>
+              <div class="post-info">
+               <div class="meta-info">
+                <span class="posted">
+                 <i class="space fa fa-calendar">
+                 </i>
+                 <time datetime="2015-06-02T07:25:38+00:00" class="entry-date published updated">
+                  June 2, 2015
+                 </time>
+                </span>
+                <span class="comments">
+                 <i class="fa fa-comments">
+                 </i>
+                 No Comments
+                </span>
+               </div>
+              </div>
+             </div>
+            </div>
+           </li>
+           <li>
+            <div class="horizontal-container">
+             <div class="relatedthumb">
+              <a title="UCL: University College London Online Learning System" rel="bookmark" href="http://onlineworldtopuniversity.com/ucl-university-college-london-online-learning-system/">
+               <img width="120" height="120" alt="1" class="attachment-small wp-post-image" src="http://onlineworldtopuniversity.com/wp-content/uploads/2015/06/1-120x120.jpg" />
+              </a>
+             </div>
+             <div class="post-data-container">
+              <div class="post-title">
+               UCL: University College London Online Learning System
+              </div>
+              <div class="post-info">
+               <div class="meta-info">
+                <span class="posted">
+                 <i class="space fa fa-calendar">
+                 </i>
+                 <time datetime="2015-06-02T06:59:48+00:00" class="entry-date published">
+                  June 2, 2015
+                 </time>
+                 <time datetime="2015-06-02T07:27:31+00:00" class="updated">
+                  June 2, 2015
+                 </time>
+                </span>
+                <span class="comments">
+                 <i class="fa fa-comments">
+                 </i>
+                 No Comments
+                </span>
+               </div>
+              </div>
+             </div>
+            </div>
+           </li>
+          </ul>
+         </div>
+         <div class="next_prev_post">
+          <div class="left-button">
+           <i class="fa fa-chevron-left">
+           </i>
+           <a rel="prev" href="http://onlineworldtopuniversity.com/environmental-constraints-on-business-activity/">
+            Previous Post
+           </a>
+          </div>
+          <div class="right-button">
+           <a rel="next" href="http://onlineworldtopuniversity.com/learn-solution-of-cash-flow-problems-in-mba-study/">
+            Next Post
+           </a>
+           <i class="fa fa-chevron-right">
+           </i>
+          </div>
+         </div>
+         <!-- .next_prev_post -->
+        </div>
+        <!-- .entry-content -->
+       </article>
+       <!-- #post-## -->
+       <!-- You can start editing here. -->
+       <!-- If comments are open, but there are no comments. -->
+       <div id="commentsAdd">
+        <div class="comment-respond" id="respond">
+         <h3 class="comment-reply-title" id="reply-title">
+          Add a Comment
+          <small>
+           <a style="display:none;" href="/domain-driven-design-and-cloud-storage-management-in-programming/#respond" id="cancel-comment-reply-link" rel="nofollow">
+            Cancel reply
+           </a>
+          </small>
+         </h3>
+         <form novalidate="" class="comment-form" id="commentform" method="post" action="http://onlineworldtopuniversity.com/wp-comments-post.php">
+          <p class="comment-notes">
+           <span id="email-notes">
+            Your email address will not be published.
+           </span>
+           Required fields are marked
+           <span class="required">
+            *
+           </span>
+          </p>
+          <p class="comment-form-author">
+           <label for="author" style="display:none">
+            Name
+            <span class="required">
+            </span>
+           </label>
+           <input type="text" size="30" value="" placeholder="Name" name="author" id="author" />
+          </p>
+          <p class="comment-form-email">
+           <label for="email" style="display:none">
+            Email
+            <span class="required">
+            </span>
+           </label>
+           <input type="text" size="30" value="" placeholder="Email" name="email" id="email" />
+          </p>
+          <p class="comment-form-url">
+           <label for="url" style="display:none">
+            Website
+           </label>
+           <input type="text" size="30" value="" placeholder="Website" name="url" id="url" />
+          </p>
+          <p class="comment-form-comment">
+           <textarea aria-required="true" rows="8" cols="45" name="comment" id="comment">
+           </textarea>
+          </p>
+          <p class="form-submit">
+           <input type="submit" value="Add Comment" class="submit" id="submit" name="submit" />
+           <input type="hidden" id="comment_post_ID" value="68" name="comment_post_ID" />
+           <input type="hidden" value="0" id="comment_parent" name="comment_parent" />
+          </p>
+         </form>
+        </div>
+        <!-- #respond -->
+       </div>
+      </main>
+      <!-- #main -->
+     </div>
+     <!-- #primary -->
+     <div role="complementary" class="widget-area" id="secondary">
+      <aside class="widget widget_search" id="search-2">
+      </aside>
+      <form action="http://onlineworldtopuniversity.com/" class="search-form" method="get" role="search">
+       <div>
+        <span class="screen-reader-text">
+         Search for
+        </span>
+        <input type="search" title="Search for:" name="s" value="" placeholder="Search …" class="search-field" />
+        <input type="submit" value="Search" class="search-submit" />
+        <i class="fa fa-search">
+        </i>
+       </div>
+      </form>
+      <aside class="widget widget_recent_entries" id="recent-posts-2">
+       <h3 class="widget-title">
+        Recent Posts
+       </h3>
+       <ul>
+        <li>
+         <a href="http://onlineworldtopuniversity.com/learn-solution-of-cash-flow-problems-in-mba-study/">
+          Learn Solution of Cash Flow Problems in MBA Study
+         </a>
+        </li>
+        <li>
+         <a href="http://onlineworldtopuniversity.com/domain-driven-design-and-cloud-storage-management-in-programming/">
+          Domain Driven Design and Cloud Storage Management in Programming
+         </a>
+        </li>
+        <li>
+         <a href="http://onlineworldtopuniversity.com/environmental-constraints-on-business-activity/">
+          Environmental Constraints on Business Activity
+         </a>
+        </li>
+        <li>
+         <a href="http://onlineworldtopuniversity.com/external-influences-and-constraints-on-business-activity/">
+          External Influences and Constraints on Business Activity
+         </a>
+        </li>
+        <li>
+         <a href="http://onlineworldtopuniversity.com/crusts-and-kinds-of-cloud-computing/">
+          Crusts and Kinds of Cloud Computing
+         </a>
+        </li>
+       </ul>
+      </aside>
+      <aside class="widget widget_categories" id="categories-2">
+       <h3 class="widget-title">
+        Categories
+       </h3>
+       <ul>
+        <li class="cat-item cat-item-4">
+         <a href="http://onlineworldtopuniversity.com/category/business/">
+          Business
+         </a>
+        </li>
+        <li class="cat-item cat-item-5">
+         <a href="http://onlineworldtopuniversity.com/category/cloud-computing/">
+          Cloud Computing
+         </a>
+        </li>
+        <li class="cat-item cat-item-3">
+         <a href="http://onlineworldtopuniversity.com/category/education/">
+          Education
+         </a>
+        </li>
+       </ul>
+      </aside>
+     </div>
+     <!-- #secondary -->
+    </div>
+    <!--#page -->
+   </div>
+   <!--.main-container -->
+   <footer role="contentinfo" class="site-footer" id="colophon">
+    <div class="footersep">
+    </div>
+    <div class="copyrights">
+     <div class="container">
+      <div id="copyright-note">
+       <div class="site-info">
+        RedWaves theme Copyright 2015
+       </div>
+       <!-- .site-info -->
+       <div class="right">
+        RedWaves theme by
+        <a href="http://themient.com">
+         Themient
+        </a>
+       </div>
+      </div>
+     </div>
+     <!-- .container -->
+    </div>
+    <!-- .copyrights -->
+   </footer>
+   <!-- #colophon -->
+  </div>
+  <!-- #page -->
+  <script src="http://onlineworldtopuniversity.com/wp-includes/js/comment-reply.min.js" type="text/javascript">
+  </script>
+  <script src="http://onlineworldtopuniversity.com/wp-content/themes/redwaves-lite/js/jquery.pin.js" type="text/javascript">
+  </script>
+  <script type="text/javascript">
+   jQuery.noConflict();
+	jQuery(document).ready(function(){
+		jQuery("#sidemenu_show").click(function(){
+			jQuery("#mobile-menu-wrapper").animate({ left: "0px" }, 500);
+		});
+	});
+	jQuery(document).ready(function(){
+		jQuery("#sidemenu_hide").click(function(){
+			jQuery("#mobile-menu-wrapper").animate({ left: "-300px" },500);
+		});
+	});
+	jQuery(document).ready(function(){
+		jQuery(".mobile_search").hide();
+		jQuery(".searchtoggle").click(function(){
+			jQuery(".mobile_search").slideToggle('slow');
+		});
+	});
+  </script>
+ </body>
+</html>

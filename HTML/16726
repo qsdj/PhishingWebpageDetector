@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pl-PL" style="overflow-y: hidden;">
+ <head>
+  <script type="text/javascript">
+   var ct_ajaxurl = 'http://krakow24.info/wp-admin/admin-ajax.php';
+  </script>
+  <meta charset="UTF-8" />
+  <meta content="" name="keywords" />
+  <meta content="" name="description" />
+  <title>
+   My Account | Katalog firmowy w Krakowie
+  </title>
+  <link href="http://gmpg.org/xfn/11" rel="profile" />
+  <link href="http://krakow24.info/xmlrpc.php" rel="pingback" />
+  <link href="#" rel="shortcut icon" />
+  <style type="text/css">
+   @import url(http://fonts.googleapis.com/css?family=Source+Code+Pro:500);@import url(http://fonts.googleapis.com/css?family=Source+Code+Pro:500);@import url(http://fonts.googleapis.com/css?family=Source+Code+Pro:500);@import url(http://fonts.googleapis.com/css?family=Source+Code+Pro:regular);    body,.main-section p {
+        font:500 Normal  14px 'Source Code Pro', sans-serif;         color:#555555;
+    }
+    header .logo{
+        margin:0px 0px !important;
+       }
+    .nav li a,.navigation ul li{
+        font:500 Normal  14px 'Source Code Pro', sans-serif !important;    }
+     h1{
+    font:500 Normal  26px 'Source Code Pro', sans-serif !important;}
+    h2{
+    font:500 Normal  22px 'Source Code Pro', sans-serif !important;}
+    h3{
+    font:500 Normal  20px 'Source Code Pro', sans-serif !important;}
+    h4{
+    font:500 Normal  18px 'Source Code Pro', sans-serif !important;}
+    h5{
+    font:500 Normal  16px 'Source Code Pro', sans-serif !important;}
+    h6{
+    font:500 Normal  14px 'Source Code Pro', sans-serif !important;}
+    
+    .main-section h1, .main-section h1 a {color: #333333 !important;}
+    .main-section h2, .main-section h2 a{color: #333333 !important;}
+    .main-section h3, .main-section h3 a{color: #333333 !important;}
+    .main-section h4, .main-section h4 a{color: #333333 !important;}
+    .main-section h5, .main-section h5 a{color: #333333 !important;}
+    .main-section h6, .main-section h6 a{color: #333333 !important;}
+    .widget .widget-section-title h2{
+        font:Normal  20px 'Source Code Pro', sans-serif !important;    }
+	  .cs-section-title h2{
+        font-size:25px !important;    }
+	.top-bar,#lang_sel ul ul {background-color:#00456d;}
+	#lang_sel ul ul:before { border-bottom-color: #00456d; }
+	.top-bar p{color:#ffffff !important;}
+	.top-bar a,.top-bar i{color:#ffffff !important;}
+	.logo-section,.main-head{background:#a5c3d2 !important;}
+	.main-navbar,#main-header .btn-style1,.wrapper:before {background:#edf8ff !important;}
+	.navigation ul &gt; li &gt; a {color:#00456e !important;}
+	.sub-dropdown { background-color:#ffffff !important;}
+	.navigation &gt; ul ul li &gt; a {color:#3d3d3d !important;}
+	.navigation &gt; ul ul li:hover &gt; a {color:#3d2419;color:#3d2419 !important;}
+	.navigation &gt; ul &gt; li:hover &gt; a {color:#3d3d3d !important;}
+	.navigation &gt; ul &gt; li.parentIcon:hover &gt; a:before { background-color:#3d3d3d !important; }
+	.cs-user,.cs-user-login { border-color:#3d3d3d !important; }
+    {
+        box-shadow: 0 4px 0 #00456d inset !important;
+    }
+    .header_2 .nav &gt; li:hover &gt; a,.header_2 .nav &gt; li.current-menu-ancestor &gt; a {
+       
+    }
+  </style>
+  <style type="text/css">
+   footer#footer-sec, footer.group:before {
+            background-color:#ffffff !important;
+        }
+        #footer-sec {
+            background:url() #333333 no-repeat bottom center !important;
+        }
+        .footer-content {
+            background-color:#333333 !important;
+        }
+        #copyright p {
+            color:666666 !important;
+        }
+        footer a,footer .widget-form ul li input[type='submit'],footer.group .tagcloud a,footer.group .widget ul li a {
+            color:#333333 !important;
+        }
+        footer#footer-sec .widget h2, footer#footer-sec .widget h5,footer.group h2,footer#footer-sec h3,footer#footer-sec h4,footer#footer-sec h5,footer#footer-sec h6 {
+            color:#000000 !important;
+        }
+      #newslatter-sec,#newslatter-sec span,footer#footer-sec .widget ul li,footer#footer-sec .widget p, footer#footer-sec .widget_calendar tr td,footer.group,footer#footer-sec p,footer .widget_latest_post .post-options li,footer#footer-sec .widget i,.widget-form ul li i {
+            color:#333333 !important;
+        }
+  </style>
+  <style type="text/css">
+   /*!
+* Theme Color File */
+
+/*!
+* Theme Color */
+.cs-color,/*widget*/
+/* ShopButton */.woocommerce ul.products li.product a.add_to_cart_button, .woocommerce-page ul.products li.product a.add_to_cart_button,
+.woocommerce #content input.button, .woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button, .woocommerce-page #content input.button, .woocommerce-page #respond input#submit, .woocommerce-page a.button, .woocommerce-page button.button, .woocommerce-page input.button /* ShopButton */,/*Category*/.select-category ul li a,/*CheckBox*/ul.check-box label,/*Widget*/aside .widget ul li:hover &gt; a,/*DirectoryTab*/.dr_filtertabs .nav-tabs &gt; li.active &gt; a,.dr_filtertabs .nav-tabs &gt; li.active &gt; a i,.read-more,
+.panel-group.default .panel-title a,.panel-group.simple .panel-title a,.pagination ul li a.active,.cs-filter-menu li a:hover,.cs-filter-menu li a.active,.grid-filter li.active a,.dr_shortoption .cs-organizer .organizer-name h6 a,.cs_assigment_tabs ul li:hover a,.cs_assigment_tabs ul li.active a,.realestate-gallery .dr_pricesection span,.post-thumb .thumb-options li a,.opening-hours ul li span i,.cs-tabs .nav-tabs &gt; li.active &gt; a,.cs-price .inner-sec,.cs-filter-menu li.active a,.go-home,.shortcode-nav ul &gt; li:hover &gt; a:after,.shortcode-nav ul &gt; li:hover &gt; a i,
+.date-time time small,.thumblist li a.comment-reply-link,.registor-log a i,.become-agent,.cs-directory .dr_pricesection span,.listNav .ln-letters a,.cs_directory_categories ul li:hover &gt; a,
+.directory-section:hover h2 a,.widget ul li a:hover,.recentblog_post a:hover,.cs-blog:hover h2 a,.cs-team h2:hover a,.directory-section:hover h5 a,.cat-inner:hover a,.organizer-name:hover a,
+.relevant-search ul li:hover a,.cs-grid-view article:hover h5 a,.element-breadcrumb .breadcrumbs ul li a:hover,.cs-post-sharebtn article:hover h5 a,.cs-about-author h5 a:hover,#comment .auther:hover a,.pagination ul li a:hover,.saved-ads h3 a:hover,.ads-in:hover h4 a,.directory-package td a:hover,.dr_postoption li a:hover,.team-grid .text span,.agentdetail-info:hover h2 a,
+.cs-login-sec .cs-user-menu li a:hover,.twitter-section .text a,.sg-footer a:hover,.loc-info:hover h2 a,.main-navbar .cs-login-sec ul li .cs-user,
+.woocommerce ul.products li.product:hover h3,.cs-services figure i, .grid_two_listing .cs-location-address i, .list-attachment-wrap .cs_attachments:hover .cs-download i {
+ color:#dd3333 !important;
+}
+/*!
+* Theme Background Color */
+.cs-bg-color,/* ShopButton */.cs-bgcolor,
+.woocommerce #content input.button:hover, .woocommerce #respond input#submit:hover, .woocommerce a.button:hover, .woocommerce button.button:hover, .woocommerce input.button:hover, .woocommerce-page #content input.button:hover, .woocommerce-page #respond input#submit:hover, .woocommerce-page a.button:hover, .woocommerce-page button.button:hover, .woocommerce-page input.button:hover,/* ShopButton *//*SubHeader*/.breadcrumb ul li:first-child:after,/*SocialMedia*/.social-media ul li a:hover,/*PriceRange*/.irs-bar,.irs-slider.to:before,.irs-slider.from:before,/*Blog*/.cs-post-sharebtn a.post-np:hover,/*Widget*/.widget_text a.read_more,/*DirectoryTab*/.dr_filtertabs .nav-tabs &gt; li.active &gt; a:before,.cs-tags ul li a:hover,.cs-attachments li:hover figure,/*dropcap*/.dropcap-one::first-letter,.cs-update-avatar,span.backtotop a,.cs-search form label input[type='submit'],.ui-widget-header,.gmapzoomplus:hover,.gmapzoomminus:hover,.gmaplock:hover,.gmapunlock:hover,.gmapcurrentloc:hover,.ui-slider-handle strong,
+.directory-advanced-search-content .SumoSelect &gt; .optWrapper &gt; .options &gt; li:hover,.directory-advanced-search-content .SumoSelect &gt; .optWrapper &gt; .options &gt; li.selected,.cs-form-element li input[type='button'],.cs-form-element .SumoSelect:hover &gt; .CaptionCont &gt; label,.icon-input a,.cs_profile_tabs ul.cs-user-menu li.active,.fileUpload,.faq-form .dr_custmbtn,.widget_tag_cloud a,
+/*RangeSlider*/.directory-advanced-search-content ul li .ui-state-default:before, .directory-advanced-search-content ul li .ui-widget-content .ui-state-default:before, .directory-advanced-search-content ul li .ui-widget-header .ui-state-default:before,.dr-filters ul li .ui-widget-header .ui-state-default:before/*RangeSlider*/,.more-photo,.right-info span.category-list,.directory-advanced-search-content form ul li .form-submit,.tablev2 thead,.cs-blogslide .owl-prev:hover,.cs-blogslide .owl-next:hover,
+.user-signup form input[type='submit'],.page-not-found .cs-search-area input.btn,.cs-blog-crousel .post-options li time,.register-page input[type='button'],
+.filter-nav ul li.our-agents a,#scroll-nav li,.main-filter.slide-loader .filter-nav:before,.donate-btn,.password_protected input[type='submit'],.password_protected .protected-icon a,
+.cs_directory_categories ul &gt; li:hover &gt; span, .cs-paid-ad,.page-no-search .cs-search-area input.btn,.listNav .ln-letters a.ln-selected, .woocommerce-page.woocommerce ul.products li.product a.button.add_to_cart_button,.woocommerce ul.products li.product a.button.add_to_cart_button,.cs-search-v2 .directory-advanced-search-content .dir-search-fields,
+.cs-search-v2 .directory-advanced-search-content,.service-btn,.widget_newsletter input[type='submit'],.cs-mailchimp input[type="submit"],.streetView:hover, .mapView:hover,
+.directory-gallery ul li figure i:hover,.cs_gallery .modal-body button.close, .list-attachment-wrap .cs_attachments:hover .cs-attachment-list{
+    background-color:#dd3333 !important;
+}
+/*!
+* Theme Border Color */
+.cs_counter.modren .cs-numcount,
+/* ShopButton */.woocommerce ul.products li.product a.add_to_cart_button, .woocommerce-page ul.products li.product a.add_to_cart_button,
+.woocommerce #content input.button, .woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button, .woocommerce-page #content input.button, .woocommerce-page #respond input#submit, .woocommerce-page a.button, .woocommerce-page button.button, .woocommerce-page input.button /* ShopButton */,.read-more,.cs-filter-menu li a:hover,.cs-filter-menu li a.active,.cs_assigment_tabs ul li:hover a,.cs_assigment_tabs ul li.active a,.post-thumb .thumb-options li a,.cs-filter-menu li.active a,.go-home,
+.thumblist li a.comment-reply-link {
+    border-color:#dd3333 !important;
+}
+.events-minimal:hover,.widget.event-calendar .eventsCalendar-list-wrap,.cs-tabs.vertical .nav-tabs .active a:before {
+    border-left-color:#dd3333 !important;
+}
+.cs-tabs .nav-tabs &gt; .active &gt; a:before {
+    border-top-color:#dd3333 !important;
+}
+  </style>
+  <title>
+   My Account | Katalog firmowy w Krakowie
+  </title>
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+  <script type="text/javascript">
+   var ct_ajaxurl = 'http://krakow24.info/wp-admin/admin-ajax.php';
+  </script>
+  <link href="http://krakow24.info/feed/" title="Katalog firmowy w Krakowie  » Kanał z wpisami" type="application/rss+xml" rel="alternate" />
+  <link href="http://krakow24.info/comments/feed/" title="Katalog firmowy w Krakowie  » Kanał z komentarzami" type="application/rss+xml" rel="alternate" />
+  <link href="http://krakow24.info/events/?ical=1" title="Katalog firmowy w Krakowie  » iCal Feed" type="text/calendar" rel="alternate" />
+  <script type="text/javascript">
+   window._wpemojiSettings = {"baseUrl":"http:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"http:\/\/krakow24.info\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.3.1"}};
+			!function(a,b,c){function d(a){var c=b.createElement("canvas"),d=c.getContext&amp;&amp;c.getContext("2d");return d&amp;&amp;d.fillText?(d.textBaseline="top",d.font="600 32px Arial","flag"===a?(d.fillText(String.fromCharCode(55356,56812,55356,56807),0,0),c.toDataURL().length&gt;3e3):(d.fillText(String.fromCharCode(55357,56835),0,0),0!==d.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&amp;&amp;c.supports.flag||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&amp;&amp;c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&amp;&amp;f.twemoji&amp;&amp;(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+  </script>
+  <script src="http://krakow24.info/wp-includes/js/wp-emoji-release.min.js?ver=4.3.1" type="text/javascript">
+  </script>
+  <style type="text/css">
+   img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+  </style>
+  <link media="all" type="text/css" href="http://krakow24.info/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=4.3" id="contact-form-7-css" rel="stylesheet" />
+  <link media="all" type="text/css" href="//krakow24.info/wp-content/plugins/woocommerce/assets/css/select2.css?ver=4.3.1" id="select2-css" rel="stylesheet" />
+  <link media="all" type="text/css" href="http://krakow24.info/wp-content/plugins/wp-directory/assets/css/flexslider.css?ver=4.3.1" id="jquery.slider-min_css-css" rel="stylesheet" />
+  <link media="all" type="text/css" href="http://krakow24.info/wp-content/plugins/wp-directory/assets/css/datatable.css?ver=4.3.1" id="datatable_style-css" rel="stylesheet" />
+  <link media="all" type="text/css" href="http://krakow24.info/wp-content/themes/directory-theme/include/assets/icon/css/iconmoon.css?ver=4.3.1" id="iconmoon_css-css" rel="stylesheet" />
+  <link media="all" type="text/css" href="http://krakow24.info/wp-content/themes/directory-theme/assets/css/bootstrap.css?ver=4.3.1" id="bootstrap_css-css" rel="stylesheet" />
+  <link media="all" type="text/css" href="http://krakow24.info/wp-content/themes/directory-theme/style.css?ver=4.3.1" id="style_css-css" rel="stylesheet" />
+  <link media="all" type="text/css" href="http://krakow24.info/wp-content/themes/directory-theme/assets/css/responsive.css?ver=4.3.1" id="responsive_css-css" rel="stylesheet" />
+  <link media="all" type="text/css" href="http://krakow24.info/wp-content/themes/directory-theme/assets/css/bootstrap-theme.css?ver=4.3.1" id="bootstrap-theme_css-css" rel="stylesheet" />
+  <link media="all" type="text/css" href="http://krakow24.info/wp-content/themes/directory-theme/assets/css/prettyphoto.css?ver=4.3.1" id="prettyPhoto_css-css" rel="stylesheet" />
+  <link media="all" type="text/css" href="http://krakow24.info/wp-content/themes/directory-theme/assets/css/cs_woocommerce.css?ver=4.3.1" id="cs_woocommerce_css-css" rel="stylesheet" />
+  <script src="http://krakow24.info/wp-includes/js/jquery/jquery.js?ver=1.11.3" type="text/javascript">
+  </script>
+  <script src="http://krakow24.info/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1" type="text/javascript">
+  </script>
+  <link href="http://krakow24.info/xmlrpc.php?rsd" title="RSD" type="application/rsd+xml" rel="EditURI" />
+  <link href="http://krakow24.info/wp-includes/wlwmanifest.xml" type="application/wlwmanifest+xml" rel="wlwmanifest" />
+  <meta content="WordPress 4.3.1" name="generator" />
+  <meta content="WooCommerce 2.4.10" name="generator" />
+  <link href="http://krakow24.info/my-account/" rel="canonical" />
+  <link href="http://krakow24.info/?p=10" rel="shortlink" />
+  <style id="fit-vids-style">
+   .fluid-width-video-wrapper{width:100%;position:relative;padding:0;}.fluid-width-video-wrapper iframe,.fluid-width-video-wrapper object,.fluid-width-video-wrapper embed {position:absolute;top:0;left:0;width:100%;height:100%;}
+  </style>
+ </head>
+ <body class="page page-id-10 page-template-default woocommerce-account woocommerce-page woocommerce-lost-password">
+  <div class="wrapper header-relative wrapper_full_width">
+   <!-- Header 1 Start -->
+   <header class="header_1 top-bar-on" id="main-header">
+    <!-- Top Strip -->
+    <div class="top-bar">
+     <!-- Container -->
+     <div class="container">
+      <!-- Left Side -->
+      <aside class="left-side">
+      </aside>
+      <p>
+       Telefon: 792 020 020
+       <i class="fa fa-envelope-o">
+       </i>
+       <a href="mailto:%20">
+       </a>
+      </p>
+      <nav class="top-nav">
+      </nav>
+      <!-- Right Side -->
+      <aside class="right-side">
+       <div class="cs-login-sec">
+        <ul>
+         <li>
+          <div class="sg-socialmedia cs-borcolor">
+           <ul>
+            <li>
+             <a target="_blank" class="colrhover" data-placement="top" data-original-title="Facebook" href="https://web.facebook.com/krakow24/?ref=bookmarks" title="" style="color:#cccccc;">
+              <i class="fa icon-facebook7 ">
+              </i>
+             </a>
+            </li>
+            <li>
+             <a target="_blank" class="colrhover" data-placement="top" data-original-title="Google Plus" href="https://plus.google.com/114055665014682869235/posts" title="" style="color:#ccc;">
+              <i class="fa icon-googleplus7 ">
+              </i>
+             </a>
+            </li>
+           </ul>
+          </div>
+         </li>
+         <li>
+          <a href="http://krakow24.info/cart/">
+           <i class="icon-shopping-cart">
+           </i>
+           <span class="amount">
+            0
+           </span>
+          </a>
+         </li>
+        </ul>
+       </div>
+      </aside>
+     </div>
+    </div>
+    <!-- Main Header -->
+    <div class="main-navbar" style="z-index: 1000;">
+     <div class="container">
+      <aside class="left-side">
+       <div class="logo">
+        <a href="http://krakow24.info" style="min-height: 84px; line-height: 84px;">
+         <img alt="Katalog firmowy w Krakowie " style="width:193px; height: 40px;" src="http://krakow24.info/wp-content/uploads/2015/09/logo.png" />
+        </a>
+       </div>
+      </aside>
+      <aside class="right-side">
+       <nav class="navigation">
+        <a class="cs-click-menu">
+         <i class="icon-list8">
+         </i>
+        </a>
+        <ul>
+         <a class="cs-close-btn">
+          <i class="icon-times-circle">
+          </i>
+         </a>
+         <li class="menu-item dropdown sub-menu menu-item-type-post_type dropdown sub-menu menu-item-object-page" id="menu-item-4030">
+          <a href="http://krakow24.info/" style="min-height: 84px; line-height: 84px;">
+           Start
+          </a>
+         </li>
+         <li class="menu-item dropdown sub-menu menu-item-type-post_type dropdown sub-menu menu-item-object-page dropdown sub-menu menu-item-has-children parentIcon" id="menu-item-4022">
+          <a href="http://krakow24.info/widok-sortowania-ogloszen/" style="min-height: 84px; line-height: 84px;">
+           Firmy
+          </a>
+          <ul class="sub-dropdown">
+           <li class="menu-item  menu-item-type-post_type  menu-item-object-page" id="menu-item-4185">
+            <a href="http://krakow24.info/4051-2/">
+             Kategorie
+            </a>
+           </li>
+           <li class="menu-item dropdown sub-menu menu-item-type-custom dropdown sub-menu menu-item-object-custom" id="menu-item-4197">
+            <a href="http://krakow24.info/widok-sortowania-ogloszen/">
+             Najnowsze
+            </a>
+           </li>
+           <li class="menu-item dropdown sub-menu menu-item-type-custom dropdown sub-menu menu-item-object-custom" id="menu-item-4198">
+            <a href="http://krakow24.info/widok-sortowania-ogloszen/">
+             Najpopularniejsze
+            </a>
+           </li>
+          </ul>
+          <!--End Sub Menu -->
+          <span class="responsive-btn">
+           <i class="icon-plus8">
+           </i>
+          </span>
+         </li>
+         <li class="menu-item dropdown sub-menu menu-item-type-custom dropdown sub-menu menu-item-object-custom" id="menu-item-4204">
+          <a href="http://krakow24.info/events/" style="min-height: 84px; line-height: 84px;">
+           Wydarzenia
+          </a>
+         </li>
+         <li class="menu-item dropdown sub-menu menu-item-type-post_type dropdown sub-menu menu-item-object-page dropdown sub-menu menu-item-has-children parentIcon" id="menu-item-4155">
+          <a href="http://krakow24.info/reklama/" style="min-height: 84px; line-height: 84px;">
+           Reklama
+          </a>
+          <ul class="sub-dropdown">
+           <li class="menu-item  menu-item-type-post_type  menu-item-object-page" id="menu-item-4157">
+            <a href="http://krakow24.info/artykuly-sponsorowane/">
+             Artykuły sponsorowane
+            </a>
+           </li>
+           <li class="menu-item  menu-item-type-post_type  menu-item-object-page" id="menu-item-4158">
+            <a href="http://krakow24.info/wizytowka-na-24-pl/">
+             Wizytówka na 24.pl
+            </a>
+           </li>
+           <li class="menu-item  menu-item-type-post_type  menu-item-object-page" id="menu-item-4159">
+            <a href="http://krakow24.info/wydarzenia-reklamowe/">
+             Wydarzenia reklamowe
+            </a>
+           </li>
+           <li class="menu-item  menu-item-type-post_type  menu-item-object-page" id="menu-item-4160">
+            <a href="http://krakow24.info/billboard-reklamowy/">
+             Billboard reklamowy
+            </a>
+           </li>
+           <li class="menu-item  menu-item-type-post_type  menu-item-object-page" id="menu-item-4207">
+            <a href="http://krakow24.info/agencja-reklamowa/">
+             Agencja reklamowa
+            </a>
+           </li>
+          </ul>
+          <!--End Sub Menu -->
+          <span class="responsive-btn">
+           <i class="icon-plus8">
+           </i>
+          </span>
+         </li>
+         <li class="menu-item dropdown sub-menu menu-item-type-post_type dropdown sub-menu menu-item-object-page" id="menu-item-4247">
+          <a href="http://krakow24.info/opisy-do-reklam/" style="min-height: 84px; line-height: 84px;">
+           Ogłoszenia
+          </a>
+         </li>
+         <li class="menu-item dropdown sub-menu menu-item-type-post_type dropdown sub-menu menu-item-object-page" id="menu-item-4136">
+          <a href="http://krakow24.info/kontakt/" style="min-height: 84px; line-height: 84px;">
+           Kontakt
+          </a>
+         </li>
+         <li class="menu-item dropdown sub-menu menu-item-type-post_type dropdown sub-menu menu-item-object-page" id="menu-item-4048">
+          <a href="http://krakow24.info/panel/" style="min-height: 84px; line-height: 84px;">
+           Panel
+          </a>
+         </li>
+        </ul>
+       </nav>
+       <div class="btn-sec">
+        <a class="hd-btn cs-bgcolor" data-target="#cs_ad_post_modal" data-toggle="modal">
+         <i class="icon-plus3">
+         </i>
+         Dodaj firmę
+        </a>
+        <div class="modal fade add-to-favborites-modal" id="cs_ad_post_modal" tabindex="-1" role="dialog" aria-hidden="true">
+         <div class="modal-dialog">
+          <div class="modal-content">
+           <div class="modal-body">
+            <div class="cs-login-favorites  afterlogin">
+             <script>
+              jQuery(document).ready(function(){
+				jQuery('#ControlForm_580071 input').keydown(function(e) {
+				if (e.keyCode == 13) {
+					cs_user_authentication('http://krakow24.info/wp-admin/admin-ajax.php','580071');
+				}
+			});
+			jQuery("#cs-signup-form-section-favorites-580071").hide();
+			jQuery("#accout-already-favorites-580071").hide();
+			  jQuery("#signup-now-favorites-580071").click(function(){
+				jQuery("#login-from-580071").hide();
+				jQuery("#signup-now-favorites-580071").hide();
+				jQuery("#cs-signup-form-section-favorites-580071").show();
+				jQuery("#accout-already-favorites-580071").show();
+			  });
+			  jQuery("#accout-already-favorites-580071").click(function(){
+				jQuery("#login-from-580071").show();
+				jQuery("#signup-now-favorites-580071").show();
+				jQuery("#cs-signup-form-section-favorites-580071").hide();
+				jQuery("#accout-already-favorites-580071").hide();
+			  });
+			});
+             </script>
+             <section class="sg-header ">
+              <button type="button" class="close" data-dismiss="modal">
+               <span aria-hidden="true">
+                <i class="icon-times">
+                </i>
+               </span>
+               <span class="sr-only">
+                Close
+               </span>
+              </button>
+              <div id="login-from-580071" class="header-element login-from login-form-id-580071">
+               <h6>
+                Logowanie użytkownika
+               </h6>
+               <p>
+                Zaloguj się, aby dodać nowę ogłoszenia.
+               </p>
+               <form id="ControlForm_580071" class="wp-user-form webkit" method="post">
+                <fieldset>
+                 <span style="display:none" class="status status-message">
+                 </span>
+                 <p class="sg-email">
+                  <span class="iconuser">
+                  </span>
+                  <input type="text" value="Nazwa użytkownika" onblur="if(this.value == '') { this.value ='Nazwa użytkownika'; }" onfocus="if(this.value =='Nazwa użytkownika') { this.value = ''; }" tabindex="12" size="20" name="user_login" />
+                 </p>
+                 <p class="sg-password">
+                  <span class="iconepassword">
+                  </span>
+                  <input type="password" value="Hasło" onblur="if(this.value == '') { this.value ='Hasło'; }" onfocus="if(this.value =='Hasło') { this.value = ''; }" tabindex="12" size="20" name="user_pass" />
+                 </p>
+                 <p>
+                  <i class="icon-angle-right">
+                  </i>
+                  <input type="button" onclick="javascript:cs_user_authentication('http://krakow24.info/wp-admin/admin-ajax.php','580071')" value="Zaloguj się" class="cs-bgcolor" name="user-submit" />
+                  <input type="hidden" value="http://krakow24.info/my-account/" name="redirect_to" />
+                  <input type="hidden" value="1" name="redirect_to_ad" />
+                  <input type="hidden" value="1" name="user-cookie" />
+                  <input type="hidden" name="action" value="ajax_login" />
+                  <input type="hidden" value="login" name="login" />
+                 </p>
+                </fieldset>
+               </form>
+              </div>
+              <div style="display:none" id="cs-signup-form-section-favorites-580071" class="user-sign-up">
+               <h6>
+                Logowanie użytkownika
+               </h6>
+               <form enctype="multipart/form-data" id="wp_signup_form_580071" class="wp-user-form" method="post">
+                <fieldset>
+                 <div class="status-message" id="result_580071">
+                  <p class="status">
+                  </p>
+                 </div>
+                 <p class="sg-email">
+                  <span class="iconuser">
+                  </span>
+                  <input type="text" value="Nazwa użytkownika" onblur="if(this.value == '') { this.value ='Nazwa użytkownika'; }" onfocus="if(this.value =='Nazwa użytkownika') { this.value = ''; }" tabindex="12" size="20" name="user_login" />
+                 </p>
+                 <p class="sg-password">
+                  <span class="iconemail">
+                  </span>
+                  <input type="email" value="Adres e-mail" onblur="if(this.value == '') { this.value ='Adres e-mail'; }" onfocus="if(this.value =='Adres e-mail') { this.value = ''; }" tabindex="12" size="20" name="user_email" />
+                 </p>
+                 <p>
+                  <i class="icon-angle-right">
+                  </i>
+                  <input type="hidden" value="1906409590" name="ct_checkjs_register_form" id="ct_checkjs_register_form_0b8aff0438617c055eb55f0ba5d226fa" />
+                  <input type="button" onclick="javascript:cs_registration_validation('http://krakow24.info/wp-admin/admin-ajax.php','580071')" class="cs-bgcolor" value="Zarejestruj się" name="user-submit" />
+                  <input type="hidden" value="member" name="role" />
+                  <input type="hidden" value="cs_registration_validation" name="action" />
+                 </p>
+                </fieldset>
+               </form>
+              </div>
+              <div class="hd_sepratore">
+               <span>
+                LUB
+               </span>
+              </div>
+              <div class="footer-element comment-form-social-connect social_login_ui ">
+               <div class="social_login_facebook_auth">
+                <input type="hidden" value="995020333862795" name="client_id" />
+                <input type="hidden" value="http://krakow24.info/index.php?social-login=facebook-callback" name="redirect_uri" />
+               </div>
+               <div class="social_login_twitter_auth">
+                <input type="hidden" value="9n1rLtT75HYWdkosEAzhhK8fQ" name="client_id" />
+                <input type="hidden" value="http://krakow24.info/index.php?social-login=twitter" name="redirect_uri" />
+               </div>
+               <div class="social_login_google_auth">
+                <input type="hidden" value="516996110455-8kai348itebguqj1ul5mtddq15a19ouh.apps.googleusercontent.com" name="client_id" />
+                <input type="hidden" value="http://krakow24.info/wp-login.php?loginGoogle=1" name="redirect_uri" />
+               </div>
+               <div class="sg-social">
+                <ul>
+                 <li>
+                  <a class="social_login_login_twitter" data-original-title="twitter" id="cs-social-login-72qIrtw" title="Twitter" href="javascript:void(0);">
+                   <span style="display:none" class="social-mess-top tw-social-login">
+                    Please set API key
+                   </span>
+                   <i class="icon-twitter6">
+                   </i>
+                   Zaloguj się z twitter
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </div>
+              <!-- End of social_login_ui div -->
+             </section>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </aside>
+      <aside class="sg-footer">
+       <a class="left-side" href="http://krakow24.info/my-account/lost-password/">
+        Zapomniałeś hasło?
+       </a>
+      </aside>
+      <p class="right-side" id="signup-now-favorites-580071">
+       <a>
+        Zarejestruj się
+       </a>
+      </p>
+      <p class="right-side" id="accout-already-favorites-580071" style="display: none;">
+       <a style="font-size:12px;">
+        Zaloguj
+       </a>
+      </p>
+     </div>
+    </div>
+   </header>
+  </div>
+  <div class="cs-login-sec">
+   <ul>
+    <li>
+     <a class="cs-user" href="#">
+      <i class="icon-user2">
+      </i>
+     </a>
+     <div style="display: none;" class="cs-signup">
+      <!-- Header Element -->
+      <script>
+       jQuery(document).ready(function(){
+							jQuery('#ControlForm_157991 input').keydown(function(e) {
+							if (e.keyCode == 13) {
+								cs_user_authentication('http://krakow24.info/wp-admin/admin-ajax.php','157991');
+							}
+						});
+						jQuery("#cs-signup-form-section").hide();
+						jQuery("#accout-already").hide();
+						  jQuery("#signup-now").click(function(){
+							jQuery("#login-from-157991").hide();
+							jQuery("#signup-now").hide();
+							jQuery("#cs-signup-form-section").show();
+							jQuery("#accout-already").show();
+						  });
+						  jQuery("#accout-already").click(function(){
+							jQuery("#login-from-157991").show();
+							jQuery("#signup-now").show();
+							jQuery("#cs-signup-form-section").hide();
+							jQuery("#accout-already").hide();
+						  });
+						});
+      </script>
+      <section class="sg-header ">
+       <div id="login-from-157991" class="header-element login-from login-form-id-157991">
+        <h6>
+         Logowanie użytkownika
+        </h6>
+        <form id="ControlForm_157991" class="wp-user-form webkit" method="post">
+         <fieldset>
+          <span style="display:none" class="status status-message">
+          </span>
+          <p class="sg-email">
+           <span class="iconuser">
+           </span>
+           <input type="text" value="Nazwa użytkownika" onblur="if(this.value == '') { this.value ='Nazwa użytkownika'; }" onfocus="if(this.value =='Nazwa użytkownika') { this.value = ''; }" tabindex="12" size="20" name="user_login" />
+          </p>
+          <p class="sg-password">
+           <span class="iconepassword">
+           </span>
+           <input type="password" value="Hasło" onblur="if(this.value == '') { this.value ='Hasło'; }" onfocus="if(this.value =='Hasło') { this.value = ''; }" tabindex="12" size="20" name="user_pass" />
+          </p>
+          <p>
+           <i class="icon-angle-right">
+           </i>
+           <input type="button" onclick="javascript:cs_user_authentication('http://krakow24.info/wp-admin/admin-ajax.php','157991')" value="Zaloguj się" class="cs-bgcolor" name="user-submit" />
+           <input type="hidden" value="http://krakow24.info/my-account/" name="redirect_to" />
+           <input type="hidden" value="1" name="user-cookie" />
+           <input type="hidden" name="action" value="ajax_login" />
+           <input type="hidden" value="login" name="login" />
+          </p>
+         </fieldset>
+        </form>
+       </div>
+       <div style="display:none" id="cs-signup-form-section" class="user-sign-up">
+        <h6>
+         Logowanie użytkownika
+        </h6>
+        <form enctype="multipart/form-data" id="wp_signup_form_157991" class="wp-user-form" method="post">
+         <fieldset>
+          <div class="status-message" id="result_157991">
+           <p class="status">
+           </p>
+          </div>
+          <p class="sg-email">
+           <span class="iconuser">
+           </span>
+           <input type="text" value="Nazwa użytkownika" onblur="if(this.value == '') { this.value ='Nazwa użytkownika'; }" onfocus="if(this.value =='Nazwa użytkownika') { this.value = ''; }" tabindex="12" size="20" name="user_login" />
+          </p>
+          <p class="sg-password">
+           <span class="iconemail">
+           </span>
+           <input type="email" value="Adres e-mail" onblur="if(this.value == '') { this.value ='Adres e-mail'; }" onfocus="if(this.value =='Adres e-mail') { this.value = ''; }" tabindex="12" size="20" name="user_email" />
+          </p>
+          <p>
+           <i class="icon-angle-right">
+           </i>
+           <input type="hidden" value="1906409590" name="ct_checkjs_register_form" id="ct_checkjs_register_form_b86e8d03fe992d1b0e19656875ee557c" />
+           <input type="button" onclick="javascript:cs_registration_validation('http://krakow24.info/wp-admin/admin-ajax.php','157991')" class="cs-bgcolor" value="Zarejestruj się" name="user-submit" />
+           <input type="hidden" value="member" name="role" />
+           <input type="hidden" value="cs_registration_validation" name="action" />
+          </p>
+         </fieldset>
+        </form>
+       </div>
+       <div class="hd_sepratore">
+        <span>
+         LUB
+        </span>
+       </div>
+       <div class="footer-element comment-form-social-connect social_login_ui ">
+        <div class="social_login_facebook_auth">
+         <input type="hidden" value="995020333862795" name="client_id" />
+         <input type="hidden" value="http://krakow24.info/index.php?social-login=facebook-callback" name="redirect_uri" />
+        </div>
+        <div class="social_login_twitter_auth">
+         <input type="hidden" value="9n1rLtT75HYWdkosEAzhhK8fQ" name="client_id" />
+         <input type="hidden" value="http://krakow24.info/index.php?social-login=twitter" name="redirect_uri" />
+        </div>
+        <div class="social_login_google_auth">
+         <input type="hidden" value="516996110455-8kai348itebguqj1ul5mtddq15a19ouh.apps.googleusercontent.com" name="client_id" />
+         <input type="hidden" value="http://krakow24.info/wp-login.php?loginGoogle=1" name="redirect_uri" />
+        </div>
+        <div class="sg-social">
+         <ul>
+          <li>
+           <a class="social_login_login_twitter" data-original-title="twitter" id="cs-social-login-KwTnhtw" title="Twitter" href="javascript:void(0);">
+            <span style="display:none" class="social-mess-top tw-social-login">
+             Please set API key
+            </span>
+            <i class="icon-twitter6">
+            </i>
+            Zaloguj się z twitter
+           </a>
+          </li>
+         </ul>
+        </div>
+       </div>
+       <!-- End of social_login_ui div -->
+      </section>
+      <aside class="sg-footer">
+       <a class="left-side" href="http://krakow24.info/my-account/lost-password/">
+        Zapomniałeś hasło?
+       </a>
+      </aside>
+      <p class="right-side" id="signup-now">
+       <a>
+        Zarejestruj się
+       </a>
+      </p>
+      <p class="right-side" id="accout-already" style="display: none;">
+       <a style="font-size:12px;">
+        Zaloguj
+       </a>
+      </p>
+      <!-- Footer Element -->
+     </div>
+    </li>
+   </ul>
+  </div>
+  <span>
+  </span>
+  <script type="text/javascript">
+   jQuery(document).ready(function($){
+                    cs_nicescroll();    
+                });
+  </script>
+  <script type="text/javascript">
+   jQuery(document).ready(function(){
+                    jQuery('.main-navbar').scrollToFixed();    
+                });
+  </script>
+  <div class="clear">
+  </div>
+  <div style="min-height:170px;   " class="breadcrumb-sec ">
+   <!-- Container -->
+   <div class="container">
+    <div class="cs-table">
+     <div class="cs-tablerow">
+      <!-- PageInfo -->
+      <div class="pageinfo page-title-align-left">
+       <h1 style="color:#ffffff !important">
+        My Account
+       </h1>
+      </div>
+      <!-- BreadCrumb -->
+      <div class="breadcrumb">
+       <style scoped="scoped">
+        .breadcrumb ul li a,.breadcrumb ul li.active,.breadcrumb ul li:first-child:after {
+					color :#fff !important;
+				}
+       </style>
+       <div class="breadcrumbs">
+        <ul>
+         <li>
+          <a href="http://krakow24.info/">
+           Home
+          </a>
+         </li>
+         <li class="active">
+          My Account
+         </li>
+        </ul>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <div class="clear">
+  </div>
+  <main id="main-content">
+   <div class="main-section">
+    <div class="container">
+     <div class="row">
+      <div class="col-md-12">
+       <div class="rich-text-editor">
+        <header class="heading">
+         <h6 class="transform">
+          Zapomniane hasło
+         </h6>
+        </header>
+        <div class="woocommerce">
+         <form class="lost_reset_password" method="post">
+          <p>
+           Zapomniałeś hasła? Wpisz swoją nazwę użytkownika lub adres e-mail. Dostaniesz link do stworzenia nowego hasła mailem.
+          </p>
+          <p class="form-row form-row-first">
+           <label for="user_login">
+            Nazwa użytkownika lub e-mail
+           </label>
+           <input type="text" id="user_login" name="user_login" class="input-text" />
+          </p>
+          <div class="clear">
+          </div>
+          <p class="form-row">
+           <input type="hidden" value="true" name="wc_reset_password" />
+           <input type="submit" value="Resetuj hasło" class="button" />
+          </p>
+          <input type="hidden" value="c01208c489" name="_wpnonce" id="_wpnonce" />
+          <input type="hidden" value="/my-account/lost-password/" name="_wp_http_referer" />
+         </form>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </main>
+  <div class="clear">
+  </div>
+  <footer id="footer-sec">
+   <div class="container">
+    <div class="row">
+    </div>
+   </div>
+  </footer>
+  <div class="footer-content">
+   <div id="copyright">
+    <div class="container">
+     <div class="row">
+      <div class="col-md-6">
+       <div class="footer_icon">
+       </div>
+       <nav class="footer-nav">
+       </nav>
+       <p>
+        © 2015
+       </p>
+      </div>
+      <div class="col-md-6">
+       <div class="social-media">
+        <ul>
+         <li>
+          <a target="_blank" class="colrhover" data-placement="top" data-original-title="Facebook" href="https://web.facebook.com/krakow24/?ref=bookmarks" title="" style="color:#cccccc;">
+           <i class="fa icon-facebook7 ">
+           </i>
+          </a>
+         </li>
+         <li>
+          <a target="_blank" class="colrhover" data-placement="top" data-original-title="Google Plus" href="https://plus.google.com/114055665014682869235/posts" title="" style="color:#ccc;">
+           <i class="fa icon-googleplus7 ">
+           </i>
+          </a>
+         </li>
+        </ul>
+       </div>
+      </div>
+      <a id="backtop" href="#">
+       <i class="icon-angle-up">
+       </i>
+      </a>
+     </div>
+    </div>
+   </div>
+  </div>
+  <div class="clear">
+  </div>
+  <script src="http://krakow24.info/wp-content/plugins/cleantalk-spam-protect/inc/cleantalk_nocache.js?random=5.31.1" type="text/javascript" async="">
+  </script>
+  <input type="hidden" value="http://krakow24.info/wp-login.php" id="social_login_form_uri" />
+  <script src="http://krakow24.info/wp-content/plugins/contact-form-7/includes/js/jquery.form.min.js?ver=3.51.0-2014.06.20" type="text/javascript">
+  </script>
+  <script type="text/javascript">
+   /* &lt;![CDATA[ */
+var _wpcf7 = {"loaderUrl":"http:\/\/krakow24.info\/wp-content\/plugins\/contact-form-7\/images\/ajax-loader.gif","sending":"Trwa wysy\u0142anie..."};
+/* ]]&gt; */
+  </script>
+  <script src="http://krakow24.info/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=4.3" type="text/javascript">
+  </script>
+  <script src="//krakow24.info/wp-content/plugins/woocommerce/assets/js/select2/select2.min.js?ver=3.5.2" type="text/javascript">
+  </script>
+  <script src="//krakow24.info/wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js?ver=2.70" type="text/javascript">
+  </script>
+  <script type="text/javascript">
+   /* &lt;![CDATA[ */
+var woocommerce_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/my-account\/lost-password\/?wc-ajax=%%endpoint%%"};
+/* ]]&gt; */
+  </script>
+  <script src="//krakow24.info/wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min.js?ver=2.4.10" type="text/javascript">
+  </script>
+  <script src="//krakow24.info/wp-content/plugins/woocommerce/assets/js/frontend/lost-password.min.js?ver=2.4.10" type="text/javascript">
+  </script>
+  <script src="http://krakow24.info/wp-content/plugins/wp-directory/assets/scripts/directory_functions.js?ver=4.3.1" type="text/javascript">
+  </script>
+  <script src="http://krakow24.info/wp-content/plugins/wp-directory/assets/scripts/bootstrap_min.js?ver=4.3.1" type="text/javascript">
+  </script>
+  <script src="http://krakow24.info/wp-content/plugins/wp-directory/directory-login/cs-social-login/media/js/cs-connect.js?ver=4.3.1" type="text/javascript">
+  </script>
+  <script src="http://krakow24.info/wp-content/plugins/wp-directory/assets/scripts/jquery.flexslider-min.js?ver=4.3.1" type="text/javascript">
+  </script>
+  <script src="http://krakow24.info/wp-content/plugins/wp-directory/assets/scripts/datatable.js?ver=4.3.1" type="text/javascript">
+  </script>
+  <script src="http://krakow24.info/wp-content/themes/directory-theme/assets/scripts/jquery.nicescroll.min.js?ver=4.3.1" type="text/javascript">
+  </script>
+  <script src="http://krakow24.info/wp-content/themes/directory-theme/assets/scripts/functions.js?ver=4.3.1" type="text/javascript">
+  </script>
+  <script src="http://krakow24.info/wp-content/themes/directory-theme/assets/scripts/sticky_header.js?ver=4.3.1" type="text/javascript">
+  </script>
+  <script src="http://krakow24.info/wp-content/plugins/cleantalk-spam-protect/inc/cleantalk_nocache.js?random=5.31.1" type="text/javascript" async="">
+  </script>
+  <div id="ascrail2000" class="nicescroll-rails" style="width: 5px; z-index: 0; background: rgb(216, 216, 216) none repeat scroll 0% 0%; cursor: default; position: fixed; top: 0px; height: 100%; right: 0px; opacity: 1;">
+   <div style="position: relative; top: 0px; float: right; width: 5px; height: 120px; background-color: rgb(66, 66, 66); background-clip: padding-box; border-radius: 30px;">
+   </div>
+  </div>
+ </body>
+</html>

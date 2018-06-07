@@ -1,0 +1,457 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" class="">
+ <head>
+  <title>
+   SINPRAFARMA SP :: Início
+  </title>
+  <meta content="Content-Type" http-equiv="Content-Type" />
+  <link href="logo.jpg" rel="shortcut icon" />
+  <link rel="stylesheet" href="css/ui-lightness/jquery-ui-1.10.3.custom.css" type="text/css" />
+  <link href="style.css?ch=20160105225648" type="text/css" rel="stylesheet" />
+  <script src="js/jquery.js" type="text/javascript">
+  </script>
+  <script src="js/jquery-ui-1.10.3.custom.js" type="text/javascript">
+  </script>
+  <script src="js/jquery.form.js" type="text/javascript">
+  </script>
+  <script src="js/jquery.mask.js?ch=20160105225648" type="text/javascript">
+  </script>
+  <script src="js/js.js?ch=20160105225648" type="text/javascript">
+  </script>
+  <!-- Add mousewheel plugin (this is optional) -->
+  <script src="/fancybox/lib/jquery.mousewheel-3.0.6.pack.js" type="text/javascript">
+  </script>
+  <!-- Add fancyBox -->
+  <link media="screen" type="text/css" href="/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" />
+  <script src="/fancybox/source/jquery.fancybox.pack.js?v=2.1.5" type="text/javascript">
+  </script>
+  <!-- Optionally add helpers - button, thumbnail and/or media -->
+  <link media="screen" type="text/css" href="/fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" rel="stylesheet" />
+  <script src="/fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5" type="text/javascript">
+  </script>
+  <script src="/fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6" type="text/javascript">
+  </script>
+  <link media="screen" type="text/css" href="/fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" rel="stylesheet" />
+  <script src="/fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7" type="text/javascript">
+  </script>
+  <style type="text/css">
+   .fancybox-margin{margin-right:16px;}
+  </style>
+ </head>
+ <body style="background:url(images/bg_colonia.png)center top no-repeat scroll;">
+  <div id="conteudo" style="height: 235px;">
+   <div id="header">
+    <!--LOGOTIPO-->
+    <div id="logo">
+     <img src="animate/aminate/logo/01.png" style="z-index: 10; display: inline;" />
+     <img src="animate/aminate/logo/02.png" style="z-index: 10; display: inline;" />
+     <img src="animate/aminate/logo/03.png" style="z-index: 10; display: inline;" />
+     <img src="animate/aminate/logo/04.png" style="z-index: 10; display: inline;" />
+     <img src="animate/aminate/logo/05.png" style="z-index: 10; display: inline;" />
+     <img src="animate/aminate/logo/06.png" style="z-index: 10; display: inline;" />
+     <img src="animate/aminate/logo/07.png" style="z-index: 10;" />
+    </div>
+    <script type="text/javascript">
+     var an = 0;
+		var animelogo = "";		
+		var settimeee = setInterval(function(){
+		animelogo = setInterval(function(){
+				$('#logo &gt; img').css('z-index','10');
+				$('#logo &gt; img:eq('+an+')').css('z-index','20');
+				$('#logo &gt; img:eq('+an+')').fadeIn('slow');
+				if(an &lt; 7){
+					an++
+				}else{
+					an = 0;
+					clearInterval(animelogo);
+				}
+			},50);
+		},3000);
+    </script>
+    <!-- ÁREA RESTRITA -->
+    <div style="width:470px;" id="area_restrita">
+     <form class="formlogin" method="post" action="login.php" id="dados">
+      <input type="text" style="width:145px; height:15px;" placeholder="Usuário" name="usuario" />
+      <input type="password" style="width:120px; height:15px;" value="" placeholder="Senha" name="senha" />
+      <input type="submit" style="display:none" value="Logar" />
+      <a target="_self" class="bt_log" href="javascript:return false;">
+       Logar
+      </a>
+     </form>
+     <div style="margin-left:10px; margin-top:-5px;" class="cadastro">
+      ou cadastre-se
+      <a target="_self" href="cadastre_se.php">
+       AQUI
+      </a>
+      <br />
+      <a target="_self" href="rescue.php">
+       Esqueceu sua senha?
+      </a>
+     </div>
+    </div>
+    <!-- LINKS -->
+    <ul id="nav">
+     <li>
+      <a target="_self" href="./">
+       HOME
+      </a>
+     </li>
+     <li>
+      <a target="_self" href="pg.php?pg=23">
+       SOBRE O SINPRAFARMA
+      </a>
+     </li>
+     <li>
+      <a target="_self" href="pg.php?pg=62">
+       SERVIÇOS
+      </a>
+     </li>
+     <li>
+      <a style="color:#555; text-shadow:none;" target="_self" href="./">
+       PARA VOCÊ TRABALHADOR
+       <img src="images/vip.png" />
+      </a>
+      <ul>
+       <li>
+        <a target="_self" href="pg.php?pg=138">
+         Convênios
+        </a>
+       </li>
+       <li>
+        <a target="_self" href="colonia_v2.php">
+         Colônia de Férias
+        </a>
+       </li>
+       <li>
+        <a target="_self" href="empregos.php">
+         Empregos
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li>
+      <!--pg=4-->
+      <a style="color:#555; text-shadow:none;" target="_self" href="pg.php?pg=29">
+       PARA SEU ESTABELECIMENTO
+      </a>
+      <img src="images/vip.png" />
+      <ul>
+       <li>
+        <a target="_self" href="pg.php?pg=29">
+         Homologações
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li>
+      <a target="_self" href="noticias.php">
+       NOTÍCIAS
+      </a>
+     </li>
+     <li>
+      <a target="_self" href="localizacao.php">
+       LOCALIZAÇÃO
+      </a>
+     </li>
+     <li>
+      <a target="_self" href="contato.php">
+       CONTATO
+      </a>
+     </li>
+     <li style="float:right; margin-top:2px; margin-right:0;">
+      <a target="_blank" href="https://www.facebook.com/sinprafarmasp">
+       <img src="images/bt_facebook.png" />
+      </a>
+      <a target="_blank" href="#">
+       <img src="images/bt_twitter.png" />
+      </a>
+     </li>
+    </ul>
+   </div>
+   <script type="text/javascript">
+    $('.bt_log').click(function(){
+		if($('[name=usuario]').val()==''){
+			alert('Você deve fornecer um usuário!');
+			return false;
+		}else if($('[name=senha]').val()==''){
+			alert('Você deve fornecer uma senha!');
+			return false;
+		}else{
+			$('.formlogin').submit();
+		}
+	})
+	
+	$('.formlogin').submit(function(){
+		if($('[name=usuario]').val()==''){
+			alert('Você deve fornecer um usuário!');
+			return false;
+		}else if($('[name=senha]').val()==''){
+			alert('Você deve fornecer uma senha!');
+			return false;
+		}
+	})
+   </script>
+   <div id="title_colonia">
+    <span style="color:#FC0">
+     Colônia
+    </span>
+    <span style="color:#009900">
+     de Férias
+    </span>
+   </div>
+   <div id="foto">
+    <img width="1155" height="634" src="media/colonia_v2/piscina_01.jpg" />
+    <div id="fotos_colonia">
+     <div class="fotos_arrow_left" style="float:left; margin-top:20px; margin-right:10px;">
+      <img src="images/arrow_right.png" />
+     </div>
+     <div id="fotos_colonia_content">
+      <ul style="width: 7656px;">
+       <li style="opacity: 0.5;">
+        <img width="144" height="106" src="media/colonia_v2/piscina_01.jpg" />
+       </li>
+       <li style="opacity: 0.5;">
+        <img width="144" height="106" src="media/colonia_v2/piscina_02.jpg" />
+       </li>
+       <li style="opacity: 0.5;">
+        <img width="144" height="106" src="media/colonia_v2/piscina_03.jpg" />
+       </li>
+       <li style="opacity: 0.5;">
+        <img width="144" height="106" src="media/colonia_v2/piscina_04.jpg" />
+       </li>
+       <li style="opacity: 0.5;">
+        <img width="144" height="106" src="media/colonia_v2/piscina_05.jpg" />
+       </li>
+       <li style="opacity: 0.5;">
+        <img width="144" height="106" src="media/colonia_v2/piscina_06.jpg" />
+       </li>
+       <li style="opacity: 0.5;">
+        <img width="144" height="106" src="media/colonia_v2/piscina_07.jpg" />
+       </li>
+       <li style="opacity: 0.5;">
+        <img width="144" height="106" src="media/colonia_v2/piscina_08.jpg" />
+       </li>
+       <li style="opacity: 0.5;">
+        <img width="144" height="106" src="media/colonia_v2/piscina_09.jpg" />
+       </li>
+       <li style="opacity: 0.5;">
+        <img width="144" height="106" src="media/colonia_v2/piscina_10.jpg" />
+       </li>
+       <li style="opacity: 0.5;">
+        <img width="144" height="106" src="media/colonia_v2/piscina_11.jpg" />
+       </li>
+       <li style="opacity: 0.5;">
+        <img width="144" height="106" src="media/colonia_v2/piscina_12.jpg" />
+       </li>
+       <li style="opacity: 0.5;">
+        <img width="144" height="106" src="media/colonia_v2/piscina_13.jpg" />
+       </li>
+       <li style="opacity: 0.5;">
+        <img width="144" height="106" src="media/colonia_v2/piscina_14.jpg" />
+       </li>
+       <li style="opacity: 0.5;">
+        <img width="144" height="106" src="media/colonia_v2/piscina_15.jpg" />
+       </li>
+       <li style="opacity: 0.5;">
+        <img width="144" height="106" src="media/colonia_v2/piscina_16.jpg" />
+       </li>
+       <li style="opacity: 0.5;">
+        <img width="144" height="106" src="media/colonia_v2/piscina_17.jpg" />
+       </li>
+       <li style="opacity: 0.5;">
+        <img width="144" height="106" src="media/colonia_v2/piscina_18.jpg" />
+       </li>
+       <li style="opacity: 0.5;">
+        <img width="144" height="106" src="media/colonia_v2/piscina_19.jpg" />
+       </li>
+       <li style="opacity: 0.5;">
+        <img width="144" height="106" src="media/colonia_v2/piscina_20.jpg" />
+       </li>
+       <li style="opacity: 0.5;">
+        <img width="144" height="106" src="media/colonia_v2/piscina_21.jpg" />
+       </li>
+       <li style="opacity: 0.5;">
+        <img width="144" height="106" src="media/colonia_v2/piscina_22.jpg" />
+       </li>
+       <li style="opacity: 0.5;">
+        <img width="144" height="106" src="media/colonia_v2/piscina_23.jpg" />
+       </li>
+       <li style="opacity: 0.5;">
+        <img width="144" height="106" src="media/colonia_v2/piscina_24.jpg" />
+       </li>
+       <li style="opacity: 0.5;">
+        <img width="144" height="106" src="media/colonia_v2/dormitorios_01.jpg" />
+       </li>
+       <li style="opacity: 0.5;">
+        <img width="144" height="106" src="media/colonia_v2/dormitorios_02.jpg" />
+       </li>
+       <li style="opacity: 0.5;">
+        <img width="144" height="106" src="media/colonia_v2/dormitorios_03.jpg" />
+       </li>
+       <li style="opacity: 0.5;">
+        <img width="144" height="106" src="media/colonia_v2/dormitorios_04.jpg" />
+       </li>
+       <li style="opacity: 0.5;">
+        <img width="144" height="106" src="media/colonia_v2/lanchonete_01.jpg" />
+       </li>
+       <li style="opacity: 0.5;">
+        <img width="144" height="106" src="media/colonia_v2/lanchonete_02.jpg" />
+       </li>
+       <li style="opacity: 0.5;">
+        <img width="144" height="106" src="media/colonia_v2/lanchonete_03.jpg" />
+       </li>
+       <li style="opacity: 0.5;">
+        <img width="144" height="106" src="media/colonia_v2/lanchonete_04.jpg" />
+       </li>
+       <li style="opacity: 0.5;">
+        <img width="144" height="106" src="media/colonia_v2/jogos_01.jpg" />
+       </li>
+       <li style="opacity: 0.5;">
+        <img width="144" height="106" src="media/colonia_v2/jogos_02.jpg" />
+       </li>
+       <li style="opacity: 0.5;">
+        <img width="144" height="106" src="media/colonia_v2/jogos_03.jpg" />
+       </li>
+       <li style="opacity: 0.5;">
+        <img width="144" height="106" src="media/colonia_v2/jogos_04.jpg" />
+       </li>
+       <li style="opacity: 0.5;">
+        <img width="144" height="106" src="media/colonia_v2/jogos_05.jpg" />
+       </li>
+       <li style="opacity: 0.5;">
+        <img width="144" height="106" src="media/colonia_v2/jogos_06.jpg" />
+       </li>
+       <li style="opacity: 0.5;">
+        <img width="144" height="106" src="media/colonia_v2/refeitorio_01.jpg" />
+       </li>
+       <li style="opacity: 0.5;">
+        <img width="144" height="106" src="media/colonia_v2/refeitorio_02.jpg" />
+       </li>
+       <li style="opacity: 0.5;">
+        <img width="144" height="106" src="media/colonia_v2/refeitorio_03.jpg" />
+       </li>
+       <li style="opacity: 0.5;">
+        <img width="144" height="106" src="media/colonia_v2/refeitorio_04.jpg" />
+       </li>
+       <li style="opacity: 0.5;">
+        <img width="144" height="106" src="media/colonia_v2/refeitorio_05.jpg" />
+       </li>
+       <li style="opacity: 0.5;">
+        <img width="144" height="106" src="media/colonia_v2/refeitorio_06.jpg" />
+       </li>
+      </ul>
+     </div>
+     <div class="fotos_arrow_right" style="float:left; margin-top:20px;">
+      <img src="images/arrow_left.png" />
+     </div>
+    </div>
+   </div>
+   <ul id="info">
+    <li onclick="mudainfo('email')">
+     <img src="images/icon_email.png" />
+    </li>
+    <li onclick="mudainfo('fone')">
+     <img src="images/icon_fone.png" />
+    </li>
+    <li onclick="mudainfo('localizacao')">
+     <img src="images/icon_localizacao.png" />
+    </li>
+    <li onclick="mudainfo('agenda')">
+     <img src="images/icon_agenda.png" />
+    </li>
+   </ul>
+   <div class="mudainfo">
+    <div class="colonia_email">
+     secretaria@sinprafarmasp.org.br
+    </div>
+    <div class="colonia_fone">
+     (11) 3111.9029
+    </div>
+    <div class="colonia_localizacao">
+     Avenida dos Sindicatos, 291 :: Vila Mirim (Praia Grande) °
+     <a target="_blank" href="https://maps.google.com.br/maps?f=q&source=embed&hl=pt-BR&geocode=&q=Avenida+dos+Sindicatos,+291,+Praia+Grande+-+S%C3%A3o+Paulo&aq=0&oq=Avenida+dos+Sindicatos,+291&sll=-23.682804,-46.595546&sspn=0.742005,1.352692&ie=UTF8&hq=&hnear=Av.+dos+Sindicatos,+291+-+Cidade+Ocian,+Praia+Grande+-+S%C3%A3o+Paulo,+11704-650&t=m&ll=-24.029924,-46.483154&spn=0.022734,0.092611&z=14&iwloc=A">
+      Veja no google maps
+     </a>
+    </div>
+    <div class="colonia_agenda">
+     Caso você já seja um associado SINPRAFARMA-SP, realize sua reserva através do telefone (11) 3111.9029 ou compareça no endereço Rua Abolição, Bela Vista - São Paulo/SP de Segunda à Sexta-feira das 9h00 às 17h00.
+    </div>
+   </div>
+  </div>
+  <!--Rodape-->
+  <script type="text/javascript">
+   function mudainfo(fn){
+			$('.mudainfo &gt; div').css('display','none');
+			switch(fn){
+				case 'email':
+				$('.colonia_email').css('display','block');
+				break;
+				case 'fone':
+				$('.colonia_fone').css('display','block');
+				break;
+				case 'localizacao':
+				$('.colonia_localizacao').css('display','block');
+				break;
+				case 'agenda':
+				$('.colonia_agenda').css('display','block');
+				break;
+			}
+		}
+		
+		$('#fotos_colonia &gt; #fotos_colonia_content &gt; ul').css('width',174*Number($('#fotos_colonia &gt; #fotos_colonia_content &gt; ul &gt; li').size())+'px');
+		var posleft = Number($('#fotos_colonia_content &gt; ul').css('margin-left').replace("px",""));
+		var mover = "";
+		$('.fotos_arrow_left').mouseenter(function(){
+			mover = setInterval(function(){
+				if(posleft &lt;= 0){
+					$('#fotos_colonia_content &gt; ul').css('margin-left',posleft+5+"px");
+					posleft = Number($('#fotos_colonia_content &gt; ul').css('margin-left').replace("px",""));
+				}
+			},10);
+		});
+		
+		$('.fotos_arrow_right').mouseenter(function(){
+			mover = setInterval(function(){
+				if(posleft &gt;= -($('#fotos_colonia_content &gt; ul').width()-800)){
+					$('#fotos_colonia_content &gt; ul').css('margin-left',posleft-5+"px");
+					posleft = Number($('#fotos_colonia_content &gt; ul').css('margin-left').replace("px",""));
+				}
+			},10);
+		});
+		
+		$('.fotos_arrow_right, .fotos_arrow_left').mouseleave(function(){
+			clearInterval(mover);
+		});
+		
+		$('#fotos_colonia_content &gt; ul &gt; li &gt; img').click(function(){
+			$('#foto &gt; img').attr('src',$(this).attr('src'));
+		})
+		
+		$('#fotos_colonia_content &gt; ul &gt; li').animate({opacity:0.5},0);
+		
+		$('#fotos_colonia_content &gt; ul &gt; li').mouseenter(function(){
+			$(this).animate({opacity:1},200);
+		});
+		
+		$('#fotos_colonia_content &gt; ul &gt; li').mouseleave(function(){
+			$(this).animate({opacity:0.5},200);
+		});
+		
+		var mostramenu = false;
+		
+		$('#foto').mousemove(function(e){
+			if(e.pageY &gt; 600){
+				if(mostramenu==false){
+					$('#fotos_colonia').fadeIn(500);
+					mostramenu=true;
+				}
+			}else{
+				if(mostramenu==true){
+					$('#fotos_colonia').fadeOut(500);
+					mostramenu=false;
+				}
+			}
+		});
+  </script>
+ </body>
+</html>

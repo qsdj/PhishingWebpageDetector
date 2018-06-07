@@ -1,0 +1,429 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta content="Content-Type" http-equiv="Content-Type" />
+  <title>
+   Inmovicos
+  </title>
+  <script type="text/javascript" async="" src="http://www.google-analytics.com/ga.js">
+  </script>
+  <script src="js/jquery-1.7.2.min.js">
+  </script>
+  <script src="js/lightbox.js">
+  </script>
+  <link rel="stylesheet" href="css/lightbox.css" />
+  <link media="screen" type="text/css" href="css/estilo.css" rel="stylesheet" />
+  <link href="img/favicon.ico" rel="shortcut icon" />
+  <script type="text/javascript">
+   var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-3215442-13']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+  </script>
+ </head>
+ <body>
+  <table width="100%" height="100%" border="0" align="center" cellspacing="0" cellpadding="0">
+   <tbody>
+    <tr>
+     <td valign="middle" height="100" background="img/body-tail.gif" align="center">
+      <table width="900" height="100%" border="0" cellspacing="0" cellpadding="0">
+       <tbody>
+        <tr>
+         <td width="281" height="100" class="tituloazul">
+          <a target="_self" href="index.php">
+           <img border="0" alt="Inmovicos Agentes Inmobiliarios" src="img/logoinmovicos.png" />
+          </a>
+         </td>
+         <td width="619" valign="middle" align="right">
+          <a class="menu" target="_self" href="index.php">
+           Inicio
+          </a>
+             |   
+          <a class="menu" target="_self" href="servicios.php">
+           Servicios
+          </a>
+              |   
+          <a class="menu" target="_self" href="asesoria-juridica.php">
+           Asesoría Jurídica
+          </a>
+              |   
+          <a class="menu" target="_self" href="contacta.php">
+           Contacta
+          </a>
+         </td>
+        </tr>
+       </tbody>
+      </table>
+     </td>
+    </tr>
+    <tr>
+     <td valign="middle" height="3" background="img/footer-tail.gif" align="center">
+     </td>
+    </tr>
+    <tr>
+     <td valign="middle" height="100%" background="img/content-tail.gif" align="center">
+      <table width="900" height="100%" border="0" cellspacing="0" cellpadding="0" class="texto">
+       <tbody>
+        <tr>
+         <td valign="middle" height="300" align="right" style="background-image:url(img/inicio3.jpg); background-repeat:no-repeat;" class="texto" colspan="3">
+          <form action="propiedades.php" method="post" name="form1" id="form1">
+           <table width="350" border="0" cellspacing="0" cellpadding="0" style="background-image:url(img/trans.png); background-repeat: repeat;">
+            <tbody>
+             <tr>
+              <td valign="middle" align="center" colspan="4">
+               <p class="titulonegro">
+                Buscador de inmuebles.
+               </p>
+              </td>
+             </tr>
+             <tr>
+              <td width="10">
+              </td>
+              <td valign="middle" height="40" align="left" colspan="3">
+               Alquiler
+               <label>
+                <input type="checkbox" id="alquiler" name="alquiler" />
+               </label>
+               Venta
+               <label>
+                <input type="checkbox" checked="checked" id="venta" name="venta" />
+               </label>
+              </td>
+             </tr>
+             <tr>
+              <td>
+              </td>
+              <td width="150" valign="middle" align="left">
+               Precio hasta:
+              </td>
+              <td width="13">
+              </td>
+              <td width="147" valign="middle" align="left">
+               <label>
+                <input type="text" value="550000" size="10" id="precio" name="precio" />
+                €
+               </label>
+              </td>
+             </tr>
+             <tr>
+              <td>
+              </td>
+              <td valign="middle" align="left">
+               Superficie desde:
+              </td>
+              <td>
+              </td>
+              <td valign="middle" align="left">
+               <input type="text" size="10" value="115" id="superficieutil" name="superficieutil" />
+               m2
+              </td>
+             </tr>
+             <tr>
+              <td>
+              </td>
+              <td valign="middle" align="left">
+               Dormitorios desde:
+              </td>
+              <td>
+              </td>
+              <td valign="middle" align="left">
+               <input type="text" size="10" value="2" id="dormitorios" name="dormitorios" />
+               hb.
+              </td>
+             </tr>
+             <tr>
+              <td>
+              </td>
+              <td>
+              </td>
+              <td>
+              </td>
+              <td valign="middle" align="left">
+              </td>
+             </tr>
+             <tr>
+              <td height="55">
+              </td>
+              <td valign="middle" align="center">
+               <a class="textopequelink" target="_self" href="index.php?buscador=1">
+                <img border="0" align="absmiddle" alt="Buscador avanzado" src="img/lupita.png" />
+                Buscador avanzado
+               </a>
+              </td>
+              <td>
+              </td>
+              <td valign="middle" align="center">
+               <input type="submit" value="Enviar" onmouseover="this.style.cursor='hand'" class="textopequelink" name="Enviar" />
+              </td>
+             </tr>
+            </tbody>
+           </table>
+          </form>
+         </td>
+        </tr>
+        <tr>
+         <td width="588" valign="top" align="left" class="texto">
+          <br />
+          <p class="titulonegro">
+           Se vende piso en la calle Ferraz
+          </p>
+          <p align="right" class="tituloazul">
+           550.000 €     
+          </p>
+          <p>
+           Se vende piso en la C/ Ferraz. Muy buena casa con portero físico. Dos dormitorios,salón, dos baños, cocina, armarios empotrados y vestidor en el dormitorio principal. Reformado con buenas calidades.
+          </p>
+          <p>
+           Ferraz 22     
+           <a class="textopequelink" target="_blank" href="https://maps.google.es/maps?q=Ferraz%2022%20+28008+madrid&hl=es">
+            Ver en google maps
+           </a>
+          </p>
+          <p>
+           Moncloa - Madrid
+          </p>
+          <br />
+         </td>
+         <td width="17" valign="top" align="left" style="background-image:url(img/separador.png); background-repeat:repeat-y;" colspan="-1">
+         </td>
+         <td width="295" valign="top" align="left" colspan="-1">
+          <p class="titulonegro">
+           Contacta.
+          </p>
+          <p>
+           <img width="100" hspace="10" height="100" align="left" alt="Inmovicos" src="img/google.jpg" />
+           C/ Ferraz, 30.
+           <br />
+           28008 - Madrid.
+           <br />
+           Tlf. 91 758 13 62
+           <br />
+           Fax. 91 542 44 97
+           <br />
+           <a class="textolink" target="_blank" href="mailto:central@inmovicos.es">
+            central@inmovicos.es
+           </a>
+           <br />
+           <br />
+           <br />
+           <a target="_blank" href="https://plus.google.com/+InmovicosEs/about">
+            <img width="32" hspace="10" height="32" border="0" alt="Google Plus Inmovicos" onmouseout="this.src='img/g+.png';" onmouseover="this.src='img/g+on.png';" src="img/g+.png" />
+           </a>
+          </p>
+         </td>
+        </tr>
+        <tr>
+         <td valign="top" align="left" class="texto" colspan="3">
+          <table width="900" border="0" cellspacing="0" cellpadding="0">
+           <tbody>
+            <tr>
+             <td width="401" valign="top" align="left">
+              <strong>
+               Fotografías
+              </strong>
+              <br />
+              <br />
+              <a class="imagenlink" target="_blank" rel="lightbox[Inmovicos]" href="propiedades/imagenes/431/hall.jpg">
+               <img width="150" vspace="5" hspace="5" height="100" border="0" alt="Se vende piso en la calle Ferraz" src="propiedades/imagenes/431/hall.jpg" />
+              </a>
+              <a class="imagenlink" target="_blank" rel="lightbox[Inmovicos]" href="propiedades/imagenes/431/web.jpg">
+               <img width="150" vspace="5" hspace="5" height="100" border="0" alt="Se vende piso en la calle Ferraz" src="propiedades/imagenes/431/web.jpg" />
+              </a>
+              <a class="imagenlink" target="_blank" rel="lightbox[Inmovicos]" href="propiedades/imagenes/431/dorm1.jpg">
+               <img width="150" vspace="5" hspace="5" height="100" border="0" alt="Se vende piso en la calle Ferraz" src="propiedades/imagenes/431/dorm1.jpg" />
+              </a>
+              <a class="imagenlink" target="_blank" rel="lightbox[Inmovicos]" href="propiedades/imagenes/431/ba%C3%B1o.jpg">
+               <img width="150" vspace="5" hspace="5" height="100" border="0" alt="Se vende piso en la calle Ferraz" src="propiedades/imagenes/431/ba%C3%B1o.jpg" />
+              </a>
+              <a class="imagenlink" target="_blank" rel="lightbox[Inmovicos]" href="propiedades/imagenes/431/ba%C3%B1o1.jpg">
+               <img width="150" vspace="5" hspace="5" height="100" border="0" alt="Se vende piso en la calle Ferraz" src="propiedades/imagenes/431/ba%C3%B1o1.jpg" />
+              </a>
+              <a class="imagenlink" target="_blank" rel="lightbox[Inmovicos]" href="propiedades/imagenes/431/dorm2.jpg">
+               <img width="150" vspace="5" hspace="5" height="100" border="0" alt="Se vende piso en la calle Ferraz" src="propiedades/imagenes/431/dorm2.jpg" />
+              </a>
+              <a class="imagenlink" target="_blank" rel="lightbox[Inmovicos]" href="propiedades/imagenes/431/cocina1.jpg">
+               <img width="150" vspace="5" hspace="5" height="100" border="0" alt="Se vende piso en la calle Ferraz" src="propiedades/imagenes/431/cocina1.jpg" />
+              </a>
+              <a class="imagenlink" target="_blank" rel="lightbox[Inmovicos]" href="propiedades/imagenes/431/ba%C3%B1o3.jpg">
+               <img width="150" vspace="5" hspace="5" height="100" border="0" alt="Se vende piso en la calle Ferraz" src="propiedades/imagenes/431/ba%C3%B1o3.jpg" />
+              </a>
+              <a class="imagenlink" target="_blank" rel="lightbox[Inmovicos]" href="propiedades/imagenes/431/salo1.jpg">
+               <img width="150" vspace="5" hspace="5" height="100" border="0" alt="Se vende piso en la calle Ferraz" src="propiedades/imagenes/431/salo1.jpg" />
+              </a>
+              <a class="imagenlink" target="_blank" rel="lightbox[Inmovicos]" href="propiedades/imagenes/431/cocina.jpg">
+               <img width="150" vspace="5" hspace="5" height="100" border="0" alt="Se vende piso en la calle Ferraz" src="propiedades/imagenes/431/cocina.jpg" />
+              </a>
+             </td>
+             <td width="22" valign="top" align="left">
+             </td>
+             <td width="477" valign="top" align="left">
+              <p>
+               <strong>
+                Datos de interés
+                <br />
+               </strong>
+               <br />
+               <strong>
+                Superficie construida /útil:
+               </strong>
+                     120 m2 / 115 m2
+               <br />
+               <strong>
+                Dormitorios:
+               </strong>
+                   2
+               <br />
+               <strong>
+                Baños:
+               </strong>
+                  2
+               <br />
+               <strong>
+                Amueblado:
+               </strong>
+                  No
+               <br />
+               <strong>
+                Altura:
+               </strong>
+                  4
+               <br />
+               <strong>
+                Ascensor:
+               </strong>
+                  Si
+               <br />
+               <strong>
+                Estado de conservación:
+               </strong>
+                  Buen estado
+               <br />
+               <strong>
+                Exterior:
+               </strong>
+                  Si
+               <br />
+               <strong>
+                Garaje:
+               </strong>
+                  No
+               <br />
+               <strong>
+                Trastero:
+               </strong>
+                  No
+               <br />
+               <strong>
+                Gastos comunidad:
+               </strong>
+                  190 €
+               <br />
+               <strong>
+                Acceso minusválidos:
+               </strong>
+                  No
+               <br />
+               <strong>
+                Tipo de calefacción:
+               </strong>
+                  Central
+               <br />
+               <strong>
+                Agua caliente:
+               </strong>
+                  Individual
+               <br />
+               <strong>
+                Armarios:
+               </strong>
+                  2
+               <br />
+               <strong>
+                Portería:
+               </strong>
+                  Si
+               <br />
+               <strong>
+                Acabados:
+               </strong>
+                  Buenos
+              </p>
+              <p>
+               <img width="500" height="2" alt="" src="img/empty.png" />
+              </p>
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </td>
+        </tr>
+       </tbody>
+      </table>
+     </td>
+    </tr>
+    <tr>
+     <td valign="middle" height="100" background="img/body-tail.gif" align="center">
+      <table width="900" height="100%" border="0" cellspacing="0" cellpadding="0">
+       <tbody>
+        <tr>
+         <td width="281" height="100" class="textopeque">
+          ASESORIA INMOBILIARIA INMOVICOS S.L.. Dirección: Ferraz, 30 - 28008 , MADRID. Tlf.: 91 758 13 62 - Fax: 91 542 44 97 |
+          <a class="textopequelink" target="_self" href="legal.php">
+           Aviso legal
+          </a>
+          |
+          <a class="textopequelink" target="_blank" href="http://www.inmovicos.es/login/">
+           Intranet
+          </a>
+         </td>
+        </tr>
+        <tr>
+        </tr>
+       </tbody>
+      </table>
+     </td>
+    </tr>
+   </tbody>
+  </table>
+  <div id="lightboxOverlay" style="display: none;">
+  </div>
+  <div id="lightbox" style="display: none;">
+   <div class="lb-outerContainer">
+    <div class="lb-container">
+     <img class="lb-image" />
+     <div class="lb-nav">
+      <a class="lb-prev">
+      </a>
+      <a class="lb-next">
+      </a>
+     </div>
+     <div class="lb-loader">
+      <a class="lb-cancel">
+       <img src="images/loading.gif" />
+      </a>
+     </div>
+    </div>
+   </div>
+   <div class="lb-dataContainer">
+    <div class="lb-data">
+     <div class="lb-details">
+      <span class="lb-caption">
+      </span>
+      <span class="lb-number">
+      </span>
+     </div>
+     <div class="lb-closeContainer">
+      <a class="lb-close">
+       <img src="images/close.png" />
+      </a>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>

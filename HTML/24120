@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+ <head>
+  <link href="css/main_css.css" type="text/css" rel="stylesheet" />
+  <script src="jquery/jquery.js">
+  </script>
+  <script src="jquery/main_jquery.js">
+  </script>
+  <!-- Head of website with Logo -->
+ </head>
+ <body>
+  <div id="head">
+   <div id="logo">
+    <img style="width:50px; height:50;" src="image/aussie_visa_logo.jpg" alt="" class="logo" />
+   </div>
+   <div id="title">
+    Aussie Visa Educational Zone
+   </div>
+  </div>
+  <!--Main Links to Other Pages-->
+  <div class="links">
+   <style>
+    ul#menu li{	display: inline;	}
+   </style>
+   <ul id="menu">
+    <li>
+     <a class="zero">
+     </a>
+    </li>
+    <li>
+     <a href="index.html" class="one">
+      About Us
+     </a>
+    </li>
+    <li>
+     <a href="Visa_Process.html" class="two">
+      Visa Types
+     </a>
+    </li>
+    <li>
+     <a href="Visa_Process.html" class="three">
+      Education
+     </a>
+    </li>
+    <li>
+     <a href="Contact.html" class="four">
+      Jobs
+     </a>
+    </li>
+    <li>
+     <a href="Contact.html" class="five">
+      Accomodation
+     </a>
+    </li>
+    <li>
+     <a href="services.html" class="six">
+      Services
+     </a>
+    </li>
+    <li>
+     <a class="seven">
+     </a>
+    </li>
+   </ul>
+  </div>
+  <style>
+   #location {
+			font-family: "Helvetica";
+			position: absolute;
+			top: 200px;
+			left: 700px;
+		}
+
+		body {	background-color: rgb(255, 233, 197);	}
+
+		#contact {
+			position: absolute;
+			top: 650px;
+			left: 100px;
+			font-family: "Helvetica";
+		}
+		#contact_nepal {
+			position: absolute;
+			top: 75px;
+			left: 500px;
+			width: 300px;
+		}
+		#location img {
+			position: absolute;
+			top:0px;
+			left: -600px;
+
+		}
+		#message {
+			position: absolute;
+			top:1000px;
+			left: 590px;
+			background-color: rgb(152, 0, 0);
+			border: 10px solid rgb(152, 0, 0);
+			border-radius: 20px;
+			color: #F8F8F8;
+			font-family: "Helvetica";
+		}
+  </style>
+  <!-- Contact -->
+  <div id="location">
+   <p>
+    <b>
+     Location
+    </b>
+   </p>
+   <p>
+    202/661-663 George st, Haymarket NsW 2000, Australia
+   </p>
+   <br />
+   <p>
+    <b>
+     Opening Hours
+    </b>
+   </p>
+   <p>
+    Mon-Fri: 9am-5pm
+   </p>
+   <p>
+    Saturday: 10am-5pm
+   </p>
+   <p>
+    Sunday: 10am-5pm
+   </p>
+   <br />
+   <img style="width:550px; height:228;" src="image/20151128_185110.jpg" class="map" />
+  </div>
+  <div id="contact">
+   <p style="font-size: 30px">
+    <b>
+     Contact
+    </b>
+   </p>
+   <p>
+    <b>
+     Australia:
+    </b>
+    +61 02 9646 2763
+   </p>
+   <br />
+   <p>
+    <b>
+     ER. Kiran Shrestha
+    </b>
+   </p>
+   <p>
+    Mobile: +61 0433 553 665
+   </p>
+   <p>
+    Mobile: +61 0425 340 056
+   </p>
+   <p>
+    E-mail: info@aussievisazone.com.au
+   </p>
+   <p>
+    E-mail: avaezone@gmail.com
+   </p>
+   <p>
+    www.auzonep.com.au
+   </p>
+   <br />
+   <p>
+    <b>
+     Ms. Kristy Leagh Formosa
+    </b>
+   </p>
+   <p>
+    Reg. Migration Professional - MARA 0960429
+   </p>
+   <p>
+    B.Education Australian Catholic University
+   </p>
+   <p>
+    Mobile: +61 0422 295 194
+   </p>
+   <p>
+    E-mail: avaezone@gmail.com
+   </p>
+   <p>
+    www.auzonep.com.au
+   </p>
+   <div id="contact_nepal">
+    <p>
+     <b>
+      Nepal:
+     </b>
+     +977 01 520439
+    </p>
+    <p>
+     Kharibot-8, Balkumari Lalitpur
+    </p>
+    <p>
+     Near Kathford Engineering Colleage
+    </p>
+    <p>
+     E-mail: nepal.avaezone@gmail.com
+    </p>
+    <p>
+     Mobile: 9840020855
+    </p>
+   </div>
+  </div>
+  <!-- End of Contact -->
+  <!-- message -->
+  <div id="message">
+   <h2>
+    Message Us
+   </h2>
+   <form action="http://www.aussievisazone.com.au/index.php?url=message/create" method="post">
+    <table border="0">
+     <tbody>
+      <tr>
+       <th>
+        Full Name
+       </th>
+       <td>
+        <input type="text" onclick="this.value=''" value="fullname" size="50" name="Message[fullname]" />
+       </td>
+      </tr>
+      <tr>
+       <th>
+        Address
+       </th>
+       <td>
+        <input type="text" onclick="this.value=''" value="address" size="50" name="Message[address]" />
+       </td>
+      </tr>
+      <tr>
+       <th>
+        Email
+       </th>
+       <td>
+        <input type="text" onclick="this.value=''" value="email" size="50" name="Message[email]" />
+       </td>
+      </tr>
+      <tr>
+       <th>
+        Course
+       </th>
+       <td>
+        <input type="text" onclick="this.value=''" value="input your interested course here" size="50" name="Message[course]" />
+       </td>
+      </tr>
+      <tr>
+       <th>
+        Cotact
+       </th>
+       <td>
+        <input type="text" onclick="this.value=''" value="contact" size="50" name="Message[contact]" />
+       </td>
+      </tr>
+      <tr>
+       <th>
+        Message
+       </th>
+       <td>
+        <textarea onclick="this.value=''" rows="4" name="Message[detail]" cols="50">
+         type your message here
+        </textarea>
+       </td>
+      </tr>
+      <tr>
+       <th colspan="2">
+        <input type="submit" value="SUBMIT MESSAGE" name="submitMessage" />
+        <input type="reset" value="RESET" name="reset" />
+       </th>
+      </tr>
+     </tbody>
+    </table>
+   </form>
+  </div>
+  <!-- end of message -->
+  <!-- extension -->
+  <div id="extension">
+   <div id="about_us">
+    <p>
+     About Us
+    </p>
+    <p>
+    </p>
+    <p>
+     <a href="http://www.aussievisazone.com.au/aussie1.php">
+      Board of Directors
+     </a>
+    </p>
+    <p>
+     <a href="http://www.aussievisazone.com.au/aussie5.php">
+      Members
+     </a>
+    </p>
+    <p>
+     <a href="http://www.aussievisazone.com.au/aussie6.php">
+      History
+     </a>
+    </p>
+    <p>
+     <a href="http://www.aussievisazone.com.au/aussie7.php">
+      Introduction
+     </a>
+    </p>
+   </div>
+   <div id="registration">
+    <p>
+     Migration Info
+    </p>
+    <p>
+    </p>
+    <p>
+     <a href="http://www.aussievisazone.com.au/aussie8.php">
+      Migration Registration no
+     </a>
+    </p>
+    <p>
+     <a href="https://www.mara.gov.au/media/95420/Code_of_Conduct.pdf">
+      The Code of Conduct
+     </a>
+    </p>
+    <p>
+     <a href="http://www.immimaster.com/">
+      Immigration Master
+     </a>
+    </p>
+   </div>
+   <div id="message_us_on_facebook">
+    <p>
+     Message us on Facebook
+    </p>
+    <p>
+    </p>
+    <p>
+     <a href="https://www.facebook.com/auvisanepal">
+      Auvisa
+     </a>
+    </p>
+    <p>
+     <a href="https://www.facebook.com/avezone">
+      Aussie Visa Zone
+     </a>
+    </p>
+    <p>
+     <a href="https://www.facebook.com/kristy.formosa">
+      Migration Lawyer
+     </a>
+    </p>
+   </div>
+   <div id="all_about_aussie">
+    <p>
+     All about Aussie Visa
+    </p>
+    <p>
+    </p>
+    <p>
+     <a href="http://www.aussievisazone.com.au/aussie2.php">
+      Our Assessments
+     </a>
+    </p>
+    <p>
+     <a href="http://www.aussievisazone.com.au/aussie3.php">
+      Contact us
+     </a>
+    </p>
+    <p>
+     <a href="http://www.aussievisazone.com.au/aussie4.php">
+      Migration LawyerPresent Events
+     </a>
+    </p>
+   </div>
+   <div id="extension_links">
+    <a href="https://www.facebook.com/avezone" class="extension_link_one">
+     <img src="image/facebook.png" class="facebook" />
+    </a>
+    <a href="https://accounts.google.com/ServiceLogin?service=mail&passive=true&rm=false&continue=https://mail.google.com/mail/&ss=1&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1#identifier" class="extension_link_one">
+     <img src="image/gplus.png" class="facebook" />
+    </a>
+    <a href="https://twitter.com/" class="extension_link_one">
+     <img src="image/twitter.png" class="facebook" />
+    </a>
+    <a href="https://accounts.google.com/ServiceLogin?service=mail&passive=true&rm=false&continue=https://mail.google.com/mail/&ss=1&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1#identifier" class="extension_link_one">
+     <img src="image/email.png" class="facebook" />
+    </a>
+   </div>
+  </div>
+  <!-- end of exsention -->
+ </body>
+</html>

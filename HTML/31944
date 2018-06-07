@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="pt-br"><![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8 ie7" lang="pt-br"><![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9 ie8" lang="pt-br"><![endif]-->
+<!--[if gt IE 8]> <html class="no-js ie9" lang="pt-br"><![endif]-->
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-br" class="">
+ <head>
+  <meta charset="utf-8" />
+  <title>
+   07 - Tech Service
+  </title>
+  <meta content="PrestaShop" name="generator" />
+  <meta content="index,follow" name="robots" />
+  <meta content="width=device-width, minimum-scale=0.25, maximum-scale=1.6, initial-scale=1.0" name="viewport" />
+  <meta content="yes" name="apple-mobile-web-app-capable" />
+  <link href="/img/favicon.ico?1423672603" type="image/vnd.microsoft.icon" rel="icon" />
+  <link href="/img/favicon.ico?1423672603" type="image/x-icon" rel="shortcut icon" />
+  <link media="all" type="text/css" href="/themes/default-bootstrap/css/global.css" rel="stylesheet" />
+  <link media="all" type="text/css" href="/themes/default-bootstrap/css/autoload/highdpi.css" rel="stylesheet" />
+  <link media="all" type="text/css" href="/themes/default-bootstrap/css/autoload/responsive-tables.css" rel="stylesheet" />
+  <link media="all" type="text/css" href="/themes/default-bootstrap/css/autoload/uniform.default.css" rel="stylesheet" />
+  <link media="all" type="text/css" href="/js/jquery/plugins/fancybox/jquery.fancybox.css" rel="stylesheet" />
+  <link media="all" type="text/css" href="/themes/default-bootstrap/css/product.css" rel="stylesheet" />
+  <link media="print" type="text/css" href="/themes/default-bootstrap/css/print.css" rel="stylesheet" />
+  <link media="all" type="text/css" href="/themes/default-bootstrap/css/modules/blockviewed/blockviewed.css" rel="stylesheet" />
+  <link media="all" type="text/css" href="/themes/default-bootstrap/css/modules/blockcontact/blockcontact.css" rel="stylesheet" />
+  <link media="all" type="text/css" href="/themes/default-bootstrap/css/modules/blockcategories/blockcategories.css" rel="stylesheet" />
+  <link media="all" type="text/css" href="/themes/default-bootstrap/css/modules/blockuserinfo/blockuserinfo.css" rel="stylesheet" />
+  <link media="all" type="text/css" href="/themes/default-bootstrap/css/modules/blocklanguages/blocklanguages.css" rel="stylesheet" />
+  <link media="all" type="text/css" href="/themes/default-bootstrap/css/modules/blocktags/blocktags.css" rel="stylesheet" />
+  <link media="all" type="text/css" href="/themes/default-bootstrap/css/modules/blocksearch/blocksearch.css" rel="stylesheet" />
+  <link media="all" type="text/css" href="/js/jquery/plugins/autocomplete/jquery.autocomplete.css" rel="stylesheet" />
+  <link media="all" type="text/css" href="/themes/default-bootstrap/css/modules/blocknewsletter/blocknewsletter.css" rel="stylesheet" />
+  <link media="all" type="text/css" href="/modules/themeconfigurator/css/hooks.css" rel="stylesheet" />
+  <link media="all" type="text/css" href="/modules/socialsharing/css/socialsharing.css" rel="stylesheet" />
+  <link media="all" type="text/css" href="/themes/default-bootstrap/css/modules/blocktopmenu/css/blocktopmenu.css" rel="stylesheet" />
+  <link media="all" type="text/css" href="/themes/default-bootstrap/css/modules/blocktopmenu/css/superfish-modified.css" rel="stylesheet" />
+  <script type="text/javascript">
+   var FancyboxI18nClose = 'Fechar';
+var FancyboxI18nNext = 'Pr&amp;oacute;ximo';
+var FancyboxI18nPrev = 'Anterior';
+var PS_CATALOG_MODE = true;
+var ajaxsearch = true;
+var allowBuyWhenOutOfStock = false;
+var attribute_anchor_separator = '-';
+var attributesCombinations = [];
+var availableLaterValue = '';
+var availableNowValue = '';
+var baseDir = 'http://techservicechapeco.com.br/';
+var baseUri = 'http://techservicechapeco.com.br/';
+var blocksearch_type = 'top';
+var contentOnly = false;
+var currencyBlank = 1;
+var currencyFormat = 3;
+var currencyRate = 1;
+var currencySign = 'R$';
+var currentDate = '2016-01-07 22:41:02';
+var customerGroupWithoutTax = true;
+var customizationFields = false;
+var default_eco_tax = 0;
+var displayList = true;
+var displayPrice = 1;
+var doesntExist = 'O produto não existe neste modelo. Por favor escolha outro.';
+var doesntExistNoMore = 'Este produto não está mais em estoque';
+var doesntExistNoMoreBut = 'com esses atributos, mas está disponível com outros';
+var ecotaxTax_rate = 0;
+var fieldRequired = 'Por favor, preencha todos os campos obrigatórios, em seguida salve a personalização.';
+var group_reduction = 0;
+var idDefaultImage = 33;
+var id_lang = 2;
+var id_product = 14;
+var img_prod_dir = 'http://techservicechapeco.com.br/img/p/';
+var img_ps_dir = 'http://techservicechapeco.com.br/img/';
+var instantsearch = false;
+var isGuest = 0;
+var isLogged = 0;
+var isMobile = false;
+var jqZoomEnabled = false;
+var maxQuantityToAllowDisplayOfLastQuantityMessage = 3;
+var minimalQuantity = 1;
+var noTaxForThisProduct = true;
+var oosHookJsCodeFunctions = [];
+var page_name = 'product';
+var priceDisplayMethod = 1;
+var priceDisplayPrecision = 2;
+var productAvailableForOrder = true;
+var productBasePriceTaxExcl = 0;
+var productBasePriceTaxExcluded = 0;
+var productHasAttributes = false;
+var productPrice = 0;
+var productPriceTaxExcluded = 0;
+var productPriceWithoutReduction = 0;
+var productReference = '';
+var productShowPrice = false;
+var productUnitPriceRatio = 0;
+var product_fileButtonHtml = 'Escolha um arquivo';
+var product_fileDefaultHtml = 'Nenhum arquivo selecionado';
+var product_specific_price = [];
+var quantitiesDisplayAllowed = true;
+var quantityAvailable = 0;
+var quickView = true;
+var reduction_percent = 0;
+var reduction_price = 0;
+var roundMode = 2;
+var search_url = 'http://techservicechapeco.com.br/search';
+var sharing_img = 'http://techservicechapeco.com.br/33/07.jpg';
+var sharing_name = '07';
+var sharing_url = 'http://techservicechapeco.com.br/home/14-07.html';
+var specific_currency = false;
+var specific_price = 0;
+var static_token = 'fdb4994330de5796ed2c6a10a65e23ac';
+var stock_management = 1;
+var taxRate = 0;
+var token = 'fdb4994330de5796ed2c6a10a65e23ac';
+var uploading_in_progress = 'Upload em andamento, por favor aguarde ...';
+var usingSecureMode = false;
+  </script>
+  <script src="/js/jquery/jquery-1.11.0.min.js" type="text/javascript">
+  </script>
+  <script src="/js/jquery/jquery-migrate-1.2.1.min.js" type="text/javascript">
+  </script>
+  <script src="/js/jquery/plugins/jquery.easing.js" type="text/javascript">
+  </script>
+  <script src="/js/tools.js" type="text/javascript">
+  </script>
+  <script src="/themes/default-bootstrap/js/global.js" type="text/javascript">
+  </script>
+  <script src="/themes/default-bootstrap/js/autoload/10-bootstrap.min.js" type="text/javascript">
+  </script>
+  <script src="/themes/default-bootstrap/js/autoload/15-jquery.total-storage.min.js" type="text/javascript">
+  </script>
+  <script src="/themes/default-bootstrap/js/autoload/15-jquery.uniform-modified.js" type="text/javascript">
+  </script>
+  <script src="/js/jquery/plugins/fancybox/jquery.fancybox.js" type="text/javascript">
+  </script>
+  <script src="/themes/default-bootstrap/js/products-comparison.js" type="text/javascript">
+  </script>
+  <script src="/js/jquery/plugins/jquery.idTabs.js" type="text/javascript">
+  </script>
+  <script src="/js/jquery/plugins/jquery.scrollTo.js" type="text/javascript">
+  </script>
+  <script src="/js/jquery/plugins/jquery.serialScroll.js" type="text/javascript">
+  </script>
+  <script src="/js/jquery/plugins/bxslider/jquery.bxslider.js" type="text/javascript">
+  </script>
+  <script src="/themes/default-bootstrap/js/product.js" type="text/javascript">
+  </script>
+  <script src="/themes/default-bootstrap/js/tools/treeManagement.js" type="text/javascript">
+  </script>
+  <script src="/js/jquery/plugins/autocomplete/jquery.autocomplete.js" type="text/javascript">
+  </script>
+  <script src="/themes/default-bootstrap/js/modules/blocksearch/blocksearch.js" type="text/javascript">
+  </script>
+  <script src="/themes/default-bootstrap/js/modules/blocknewsletter/blocknewsletter.js" type="text/javascript">
+  </script>
+  <script src="/modules/socialsharing/js/socialsharing.js" type="text/javascript">
+  </script>
+  <script src="/themes/default-bootstrap/js/modules/blocktopmenu/js/hoverIntent.js" type="text/javascript">
+  </script>
+  <script src="/themes/default-bootstrap/js/modules/blocktopmenu/js/superfish-modified.js" type="text/javascript">
+  </script>
+  <script src="/themes/default-bootstrap/js/modules/blocktopmenu/js/blocktopmenu.js" type="text/javascript">
+  </script>
+  <meta content="product" property="og:type" />
+  <meta content="http://techservicechapeco.com.br/home/14-07.html?content_only=1" property="og:url" />
+  <meta content="07 - Tech Service" property="og:title" />
+  <meta content="Tech Service" property="og:site_name" />
+  <meta content="" property="og:description" />
+  <meta content="http://techservicechapeco.com.br/33-large_default/07.jpg" property="og:image" />
+  <meta content="0" property="product:pretax_price:amount" />
+  <meta content="BRL" property="product:pretax_price:currency" />
+  <meta content="0" property="product:price:amount" />
+  <meta content="BRL" property="product:price:currency" />
+  <link media="all" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:300,600&subset=latin,latin-ext" rel="stylesheet" />
+  <!--[if IE 8]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+		<![endif]-->
+  <style type="text/css">
+   .fancybox-margin{margin-right:16px;}
+  </style>
+ </head>
+ <body class="product product-14 product-07 category-2 category-home hide-right-column lang_br" id="product">
+  <div id="page">
+   <div class="header-container">
+    <header id="header">
+     <div class="banner">
+      <div class="container">
+       <div class="row">
+       </div>
+      </div>
+     </div>
+     <div class="nav">
+      <div class="container">
+       <div class="row">
+        <nav>
+         <div id="contact-link">
+          <a title="Fale conosco" href="http://techservicechapeco.com.br/contact-us">
+           Fale conosco
+          </a>
+         </div>
+         <!-- Block user information module NAV  -->
+         <div class="header_user_info">
+          <a title="Entrar com sua conta de cliente" rel="nofollow" href="http://techservicechapeco.com.br/my-account" class="login">
+           Entrar
+          </a>
+         </div>
+         <!-- /Block usmodule NAV -->
+         <!-- Block languages module -->
+         <!-- /Block languages module -->
+        </nav>
+       </div>
+      </div>
+     </div>
+     <div>
+      <div class="container">
+       <div class="row">
+        <div id="header_logo">
+         <a title="Tech Service" href="http://techservicechapeco.com.br/">
+          <img width="215" height="164" alt="Tech Service" src="http://techservicechapeco.com.br/img/tech-service-1418663349.jpg" class="logo img-responsive" />
+         </a>
+        </div>
+        <!-- Block languages module -->
+        <!-- /Block languages module -->
+        <!-- Block search module TOP -->
+        <div class="col-sm-4 clearfix" id="search_block_top">
+         <form action="//techservicechapeco.com.br/search" method="get" id="searchbox">
+          <input type="hidden" value="search" name="controller" />
+          <input type="hidden" value="position" name="orderby" />
+          <input type="hidden" value="desc" name="orderway" />
+          <input type="text" value="" placeholder="Busca" name="search_query" id="search_query_top" class="search_query form-control ac_input" autocomplete="off" />
+          <button class="btn btn-default button-search" name="submit_search" type="submit">
+           <span>
+            Busca
+           </span>
+          </button>
+         </form>
+        </div>
+        <!-- /Block search module TOP -->
+        <!-- Menu -->
+        <div class="sf-contener clearfix col-lg-12" id="block_top_menu">
+         <div class="cat-title">
+          Categorias
+         </div>
+         <ul class="sf-menu clearfix menu-content sf-js-enabled sf-arrows">
+          <li>
+           <a title="Home" href="http://techservicechapeco.com.br/">
+            Home
+           </a>
+          </li>
+          <li>
+           <a title="Empresa" href="http://techservicechapeco.com.br/content/1-empresa">
+            Empresa
+           </a>
+          </li>
+          <li>
+           <a title="Manutenção Preventiva" href="http://techservicechapeco.com.br/content/2-preventiva">
+            Manutenção Preventiva
+           </a>
+          </li>
+          <li>
+           <a title="Manutenção Corretiva" href="http://techservicechapeco.com.br/content/3-corretiva">
+            Manutenção Corretiva
+           </a>
+          </li>
+          <li>
+           <a title="Dosagem de Líquido" href="http://techservicechapeco.com.br/content/4-dosagem">
+            Dosagem de Líquido
+           </a>
+          </li>
+          <li>
+           <a title="Torno" href="http://techservicechapeco.com.br/content/5-torno">
+            Torno
+           </a>
+          </li>
+          <li>
+           <a title="Videos" href="http://techservicechapeco.com.br/content/6-videos">
+            Videos
+           </a>
+          </li>
+         </ul>
+        </div>
+        <!--/ Menu -->
+       </div>
+      </div>
+     </div>
+    </header>
+   </div>
+   <div class="columns-container">
+    <div class="container" id="columns">
+     <!-- Breadcrumb -->
+     <div class="breadcrumb clearfix">
+      <a title="Voltar para a Página Inicial" href="http://techservicechapeco.com.br/" class="home">
+       <i class="icon-home">
+       </i>
+      </a>
+      <span class="navigation-pipe">
+       &gt;
+      </span>
+      07
+     </div>
+     <!-- /Breadcrumb -->
+     <div class="row" id="slider_row">
+      <div class="center_column col-xs-12 col-sm-12" id="top_column">
+      </div>
+     </div>
+     <div class="row">
+      <div class="center_column col-xs-12 col-sm-12" id="center_column">
+       <div itemtype="http://schema.org/Product" itemscope="">
+        <div class="primary_block row">
+         <div class="container">
+          <div class="top-hr">
+          </div>
+         </div>
+         <!-- left infos-->
+         <div class="pb-left-column col-xs-12 col-sm-4 col-md-5">
+          <!-- product img-->
+          <div class="clearfix" id="image-block">
+           <span id="view_full_size">
+            <img width="264" height="264" alt="07" title="07" src="http://techservicechapeco.com.br/33-large_default/07.jpg" itemprop="image" id="bigpic" />
+            <span class="span_link no-print">
+             Ver maior
+            </span>
+           </span>
+          </div>
+          <!-- end image-block -->
+          <!-- thumbnails -->
+          <div class="clearfix hidden" id="views_block">
+           <div id="thumbs_list">
+            <ul id="thumbs_list_frame" style="width: 82px;">
+             <li class="last" id="thumbnail_33">
+              <a title="07" class="fancybox shown" data-fancybox-group="other-views" href="http://techservicechapeco.com.br/33-thickbox_default/07.jpg">
+               <img width="80" height="80" itemprop="image" title="07" alt="07" src="http://techservicechapeco.com.br/33-cart_default/07.jpg" id="thumb_33" class="img-responsive" />
+              </a>
+             </li>
+            </ul>
+           </div>
+           <!-- end thumbs_list -->
+          </div>
+          <!-- end views-block -->
+          <!-- end thumbnails -->
+         </div>
+         <!-- end pb-left-column -->
+         <!-- end left infos-->
+         <!-- center infos -->
+         <div class="pb-center-column col-xs-12 col-sm-4">
+          <h1 itemprop="name">
+           07
+          </h1>
+          <p style="display: none;" id="product_reference">
+           <label>
+            Referência
+           </label>
+           <span itemprop="sku" class="editable">
+           </span>
+          </p>
+          <p id="product_condition">
+           <label>
+            Condição:
+           </label>
+           <link href="http://schema.org/NewCondition" itemprop="itemCondition" />
+           <span class="editable">
+            Novo
+           </span>
+          </p>
+          <!-- availability or doesntExist -->
+          <p style="display: none;" id="availability_statut">
+           <span class="warning_inline" id="availability_value">
+            Este produto não está mais em estoque
+           </span>
+          </p>
+          <p style="display: none" id="last_quantities" class="warning_inline">
+           Aviso: Últimas unidades!
+          </p>
+          <p style="display: none;" id="availability_date">
+           <span id="availability_date_label">
+            Data de disponibilidade:
+           </span>
+           <span id="availability_date_value">
+           </span>
+          </p>
+          <!-- Out of stock hook -->
+          <div id="oosHook">
+          </div>
+          <p class="socialsharing_product list-inline no-print">
+           <button class="btn btn-default btn-twitter social-sharing" type="button" data-type="twitter">
+            <i class="icon-twitter">
+            </i>
+            Tweet
+            <!-- <img src="http://techservicechapeco.com.br/modules/socialsharing/img/twitter.gif" alt="Tweet"  /> -->
+           </button>
+           <button class="btn btn-default btn-facebook social-sharing" type="button" data-type="facebook">
+            <i class="icon-facebook">
+            </i>
+            Compartilhar
+            <!-- <img src="http://techservicechapeco.com.br/modules/socialsharing/img/facebook.gif" alt="Facebook Like"  /> -->
+           </button>
+           <button class="btn btn-default btn-google-plus social-sharing" type="button" data-type="google-plus">
+            <i class="icon-google-plus">
+            </i>
+            Google+
+            <!-- <img src="http://techservicechapeco.com.br/modules/socialsharing/img/google.gif" alt="Google Plus"  /> -->
+           </button>
+           <button class="btn btn-default btn-pinterest social-sharing" type="button" data-type="pinterest">
+            <i class="icon-pinterest">
+            </i>
+            Pinterest
+            <!-- <img src="http://techservicechapeco.com.br/modules/socialsharing/img/pinterest.gif" alt="Pinterest"  /> -->
+           </button>
+          </p>
+          <!-- usefull links-->
+          <ul class="clearfix no-print" id="usefull_link_block">
+           <li id="left_share_fb">
+            <a class="_blank" href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Ftechservicechapeco.com.br%2Fhome%2F14-07.html&t=07" target="_blank">
+             Compartilhar no Facebook
+            </a>
+           </li>
+           <li class="print">
+            <a href="javascript:print();">
+             Imprimir
+            </a>
+           </li>
+          </ul>
+         </div>
+         <!-- end center infos-->
+         <!-- pb-right-column-->
+         <div class="pb-right-column col-xs-12 col-sm-4 col-md-3">
+          <!-- add to cart form-->
+          <form method="post" action="http://techservicechapeco.com.br/cart" id="buy_block">
+           <!-- hidden datas -->
+           <p class="hidden">
+            <input type="hidden" value="fdb4994330de5796ed2c6a10a65e23ac" name="token" />
+            <input type="hidden" id="product_page_product_id" value="14" name="id_product" />
+            <input type="hidden" value="1" name="add" />
+            <input type="hidden" value="" id="idCombination" name="id_product_attribute" />
+           </p>
+           <div class="box-info-product">
+            <div class="content_prices clearfix">
+             <div class="clear">
+             </div>
+            </div>
+            <!-- end content_prices -->
+            <div class="product_attributes clearfix">
+             <!-- quantity wanted -->
+             <!-- minimal quantity wanted -->
+             <p style="display: none;" id="minimal_quantity_wanted_p">
+              A quantidade mínima de compra para este produto é
+              <b id="minimal_quantity_label">
+               1
+              </b>
+             </p>
+            </div>
+            <!-- end product_attributes -->
+            <div class="box-cart-bottom">
+             <div class="unvisible">
+              <p class="buttons_bottom_block no-print" id="add_to_cart">
+               <button class="exclusive" name="Submit" type="submit">
+                <span>
+                 Adicionar
+                </span>
+               </button>
+              </p>
+             </div>
+             <strong>
+             </strong>
+            </div>
+            <!-- end box-cart-bottom -->
+           </div>
+           <!-- end box-info-product -->
+          </form>
+         </div>
+         <!-- end pb-right-column-->
+        </div>
+        <!-- end primary_block -->
+        <!--HOOK_PRODUCT_TAB -->
+        <section class="page-product-box">
+        </section>
+        <!--end HOOK_PRODUCT_TAB -->
+        <!-- description & features -->
+       </div>
+       <!-- itemscope product wrapper -->
+      </div>
+      <!-- #center_column -->
+     </div>
+     <!-- .row -->
+    </div>
+    <!-- #columns -->
+   </div>
+   <!-- .columns-container -->
+   <!-- Footer -->
+   <div class="footer-container">
+    <footer class="container" id="footer">
+     <div class="row">
+      <!-- MODULE Block contact infos -->
+      <section class="footer-block col-xs-12 col-sm-4" id="block_contact_infos">
+       <div>
+        <h4>
+         Dados da loja
+        </h4>
+        <ul class="toggle-footer" style="">
+         <li>
+          <i class="icon-map-marker">
+          </i>
+          Rua Pinhalzinho, 603-E, Bairro Efapi
+         </li>
+         <li>
+          <i class="icon-phone">
+          </i>
+          Ligue-nos agora:
+          <span>
+           (49) 3329-1022
+          </span>
+         </li>
+         <li>
+          <i class="icon-envelope-alt">
+          </i>
+          E-mail:
+          <span>
+           <a href="mailto:%74%65%63%68%73%65%72%76%69%63%65%63%68%61%70%65%63%6f@%67%6d%61%69%6c.%63%6f%6d">
+            techservicechapeco@gmail.com
+           </a>
+          </span>
+         </li>
+        </ul>
+       </div>
+      </section>
+      <!-- /MODULE Block contact infos -->
+     </div>
+    </footer>
+   </div>
+   <!-- #footer -->
+  </div>
+  <!-- #page -->
+ </body>
+</html>

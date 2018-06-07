@@ -1,0 +1,965 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta content="Content-Type" http-equiv="Content-Type" />
+  <title>
+   Serviços / Grupo Águia - Segurança no Trabalho
+  </title>
+  <link href="stylesheets/reset.css" type="text/css" rel="stylesheet" />
+  <link href="stylesheets/main.css" type="text/css" rel="stylesheet" />
+  <link rel="shortcut icon" href="http://www.grupoaguiatecseg.com.br/favicon.png" />
+  <!-- EXPANSAO DE TEXTO -->
+  <style type="text/css">
+   ul.links {
+	margin: 0px;
+	padding: 0px;
+	padding-left: 20px;
+	padding-top: 10px;
+}
+ul.links li {
+	list-style: circle;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	list-style: url('images/lista_servicos.gif');
+}
+ul.links li a {
+	text-decoration: none;
+	border-bottom: 1px dotted #335181;
+}
+  </style>
+  <script type="text/javascript" src="js/jquery.min.js">
+  </script>
+  <script type="text/javascript">
+   function ver_servico(id){
+      $("div").each(function(){
+        if($(this).hasClass("servicos") &amp;&amp; this.id != id &amp;&amp; !$(this).hasClass("invisivel")){
+          $(this).addClass('invisivel');
+          $(this).hide('slow');
+        }
+      });
+  
+      if(!$("#"+id).hasClass("invisivel")){
+        $("#"+id).addClass('invisivel');
+        $("#"+id).hide('slow');
+      }
+      else {
+        $("#"+id).show('slow').removeClass("invisivel");
+      }
+    }
+  </script>
+  <!-- jQuery 1 -->
+  <!-- Attach our CSS -->
+  <link href="orbit-1.2.3.css" rel="stylesheet" />
+  <link href="demo-style.css" rel="stylesheet" />
+  <!-- Attach necessary JS -->
+  <script src="jquery-1.5.1.min.js" type="text/javascript">
+  </script>
+  <script src="jquery.orbit-1.2.3.min.js" type="text/javascript">
+  </script>
+  <!-- Run the plugin -->
+  <script type="text/javascript">
+   $(window).load(function() {
+				$('#featured').orbit();
+			});
+  </script>
+  <style type="text/css">
+   &lt;!--
+.style1 {
+	color: #007DCC
+}
+--&gt;
+  </style>
+ </head>
+ <body>
+  <div id="header">
+   <div class="container">
+    <h1>
+     <a href="index.html">
+      Grupo Águia
+     </a>
+    </h1>
+    <div id="main_menu">
+     <ul>
+      <li class="first_list">
+       <a class="main_menu_first" href="index.html">
+        home
+       </a>
+      </li>
+      <li class="first_list">
+       <a class="main_menu_first" href="empresa.html">
+        Empresa
+       </a>
+      </li>
+      <li class="first_list">
+       <a class="main_menu_first main_current" href="servicos.html">
+        serviços
+       </a>
+      </li>
+      <li class="first_list">
+       <a class="main_menu_first" href="links.html">
+        Links
+       </a>
+      </li>
+      <li class="first_list">
+       <a class="main_menu_first" href="portifolio.html">
+        portfolio
+       </a>
+      </li>
+      <li class="first_list">
+       <a class="main_menu_first" href="clientes.html">
+        Clientes
+       </a>
+      </li>
+      <li class="first_list">
+       <a class="main_menu_first" href="contato.html">
+        contato
+       </a>
+      </li>
+     </ul>
+    </div>
+    <!-- END #main_menu -->
+   </div>
+   <!-- END .container -->
+  </div>
+  <!-- END #header -->
+  <div id="main_content">
+   <div id="slideshow_area">
+    <div class="container">
+     <div id="slideshow_container">
+      <img alt="" src="img/servicos.jpg" />
+      <!-- Captions for Orbit -->
+     </div>
+    </div>
+    <!-- END #slideshow_container -->
+   </div>
+   <!-- END .container -->
+  </div>
+  <!-- END #slideshow_area -->
+  <!-- END #mid_content -->
+  <div id="latest_works">
+   <h3>
+    SERVIÇOS
+   </h3>
+   <!-- END #carousel_nav -->
+   <div id="sobre">
+    <div class="conteudo">
+     <ul class="links">
+      <li>
+       <div>
+        <a onclick="ver_servico('servico1'); return false;" href="#">
+         O que é Inspeções de segurança do trabalho
+        </a>
+       </div>
+       <div class="invisivel servicos" id="servico1">
+        A inspeção de segurança é o conjunto de ações que objetivam a detecção de riscos que possam causar acidentes do trabalho e doenças profissionais.
+        <br />
+        A inspeção de segurança serve para determinar medidas preventivas ou corretivas a serem tomadas. Não é usada para levantar culpados.
+        <br />
+        Quem faz a inspeção de segurança é a CIPA e o SESMT, como agentes modificadores do ambiente de trabalho,junto ao técnico,engenheiro ou medico do trabalho que   irão inspecionar as dependências da empresa.
+        <br />
+        <br />
+        As etapas da inspeção de segurança são as seguintes:
+        <br />
+        <br />
+        •	1 - Observação: a vistoria deve der feita com senso critico, buscando detalhes e informações de todo o processo de trabalho, além da investigação visual.
+        <br />
+        <br />
+        •	2 - Informação: a irregularidade, se possível, deve ser discutida na hora, principalmente quando a situação é grave, buscando solução antes da ocorrência, no momento da detecção do problema.
+        <br />
+        <br />
+        •	3 - Registro: os itens levantados devem ser anotados com clareza, medições dos riscos , relatando os problemas, descrevendo os perigos e sugerindo medidas preventivas e corretivas.
+        <br />
+        <br />
+        •	4 - Encaminhamento: as recomendações devem ser enviadas aos setores competentes, para as medidas cabíveis.
+        <br />
+        <br />
+        •	5 - Acompanhamento: as propostas para a solução dos problemas devem ser acompanhadas até a sua execução.
+        <br />
+        <br />
+        <strong>
+         QUEM DEVE ELABORAR LAUDOS TREINAMENTOS NESTES SEGUIMENTOS?
+        </strong>
+        <br />
+        <br />
+        São legalmente habilitados pelo MTE os Técnicos de Segurança, Engenheiros CREA E MTB de Médicos do Trabalho CRM E MTB, todos voltados  para as atividades ocupacionais.
+       </div>
+      </li>
+      <li>
+       <div>
+        <a onclick="ver_servico('servico2'); return false;" href="#">
+         O que é PPRA? - Programa de Prevenção de Riscos Ambientais
+        </a>
+       </div>
+       <div class="invisivel servicos" id="servico2">
+        <p>
+         PPRA é a sigla de Programa de Prevenção de Riscos Ambientais.
+         <br />
+         Esse programa foi criado pela Norma Regulamentadora (NR) 9, sendo a sua redação inicial dada pela Portaria do MTE 3214/1978 da Secretaria de Segurança e Saúde do Trabalho, do Ministério do Trabalho.
+         <br />
+         Esse programa visa estabelecer uma metodologia de ação que garanta a preservação da saúde e integridade dos trabalhadores frente aos riscos físicos,químicos ou biológicos  dos ambientes de trabalho.
+         <br />
+         <br />
+         <strong>
+          Quem é obrigado a fazer o PPRA?
+         </strong>
+         <br />
+         A elaboração e implementação do PPRA/PCMSO é obrigatória para todos os empregadores e instituições que admitam trabalhadores como empregados.
+         <br />
+         Não importa grau de risco ou a quantidade de empregados. Assim, tanto um condomínio, uma loja ou uma refinaria de petróleo, todos estão obrigados a ter PPRA, cada um com suas próprias características e complexidade.
+         <br />
+         <br />
+         <strong>
+          O que deve ser feito primeiro, o PPRA ou o PCMSO?
+         </strong>
+         <br />
+         Ambos programas são de caráter permanente,valido por 12 meses  portanto eles devem coexistir na sua empresa. No primeiro ano, entretanto, o PPRA deverá estar na frente para servir de base ao PC.
+         <br />
+         <br />
+         <strong>
+          O PPRA É UM DOCUMENTO QUE DEVE SER APRESENTADO À FISCALIZAÇÃO DO MINISTÉRIO DO TRABALHO?
+         </strong>
+         <br />
+         O PPRA/PCMSO/LTCAT é um programa de ação contínua, não é um documento. Já o documento-base gerado quando de sua elaboração e as ações que compõem o programa podem ser solicitados pelo Fiscal.
+         <br />
+         Caso a empresa possua o documento-base e não existam evidencias de que esteja sendo praticado, o Fiscal entenderá que o programa NÃO EXISTE E A NÃO CONFORMIDADE EXISTIRÁ.
+         <br />
+         <br />
+         Este documento deve estar disponível na empresa para análise dos Auditores Fiscais da Previdência Social, Médicos e Peritos do INSS, devendo ser realizadas as alterações necessárias no mesmo, sempre que as condições de nocividade se alterarem, guardando-se as descrições anteriormente existentes no referido Laudo, juntamente com as novas alterações introduzidas, datando-se adequadamente os documentos, quando tais modificações ocorrerem.
+        </p>
+       </div>
+      </li>
+      <li>
+       <div>
+        <a onclick="ver_servico('servico3'); return false;" href="#">
+         O que é PCMSO - Programa de Controle Médico de Saúde Ocupacional
+        </a>
+       </div>
+       <div class="invisivel servicos" id="servico3">
+        <p>
+         PCMSO é o Programa de Controle Médico e Saúde Ocupacional, foi criado em 29 de Dezembro de 1994, com a reedição da Norma Regulamentadora Nº 7 (NR 07), da Portaria 3.214 / 78 do Ministério do Trabalho.
+         <br />
+         Esse programa é o conjunto dos procedimentos e condutas a serem adotados pela sua empresa em função dos riscos aos quais os funcionários se expõem, durante a jornada de trabalho, com o objetivo de preservar a saúde e integridade física dos mesmos.
+         <br />
+         <br />
+         <strong>
+          Quem está obrigado a fazer o PCMSO?
+         </strong>
+         <br />
+         A elaboração e implementação do PCMSO é obrigatória por lei para todos os empregadores e empresas que admitam (1) um  trabalhador como empregado. Não importa, nesse caso, o grau de risco ou a quantidade de empregados.
+         <br />
+         <br />
+         <strong>
+          QUAL O OBJETIVO DO PCMSO
+         </strong>
+         <br />
+         O PCMSO monitora por anamnese e exames laboratoriais a saúde dos trabalhadores. Tem por objetivo identificar precocemente qualquer desvio que possa comprometer a saúde dos trabalhadores.
+         <br />
+         NÃO ELIMINADOS são objeto de controle pelo PCMSO. Portanto, sem o PPRA não existe PCMSO, devendo ambos estarem permanente ativos.
+         <br />
+         <br />
+         <strong>
+          CONDOMÍNIOS SÃO OBRIGADOS A MANTER ESTES PROGRAMAS?
+         </strong>
+         <br />
+         Os condomínios empregam funcionários em regime de CLT. Não existe exceção. O espírito desta legislação é proteger os trabalhadores, porém também se destina a proteger os empregadores. Levantados os riscos e comunicada as condutas de proteção, os trabalhadores são obrigados a cumprirem o acordado, sob pena de demissão por justa causa.
+        </p>
+       </div>
+      </li>
+      <li>
+       <div>
+        <a onclick="ver_servico('servico4'); return false;" href="#">
+         LTCAT - Laudo Técnico das Condições Ambientais do Trabalho
+        </a>
+       </div>
+       <div class="invisivel servicos" id="servico4">
+        <p>
+         O LTCAT  é um Laudo, elaborado com o intuito de se documentar os agentes nocivos existentes no ambiente de trabalho e concluir se estes podem gerar insalubridade OU PERICULOSIDADE  para os trabalhadores eventualmente expostos.
+         <br />
+         Somente será renovado caso sejam introduzidas modificações no ambiente de trabalho.
+         <br />
+         <br />
+         <strong>
+          As empresas podem ser multadas caso não possuam o LTCAT?
+         </strong>
+         <br />
+         O parágrafo 3º do Art. 58 d Lei 8213/91 com o texto dado pela Lei 9528/97 diz que:
+         <br />
+         A empresa que não mantiver laudo técnico atualizado com referência aos agentes nocivos existentes no ambiente de trabalho de seus trabalhadores ou que emitir documento de comprovação de efetiva exposição em desacordo com o respectivo laudo, estará sujeito à penalidade prevista no Art. 133 desta Lei, que foi republicada na MP 1596-14 de 10.11.97 e convertida na Lei 9528 de 10.12.97A estrutura estabelecida pela Instrução Normativa nº 100 do INSS.
+         <br />
+         <br />
+         <strong>
+          Qual é o prazo de validade do LTCAT /PPRA /PCMSO?
+         </strong>
+         <br />
+         O  tem validade definida PARA 12 MESES  MAS , atemporal, ficando atualizado permanentemente, enquanto o “layout” da empresa não sofrer alterações.
+        </p>
+       </div>
+      </li>
+      <li>
+       <div>
+        <a onclick="ver_servico('servico5'); return false;" href="#">
+         AVCB – Auto de Vistoria do Corpo de Bombeiros
+        </a>
+       </div>
+       <div class="invisivel servicos" id="servico5">
+        <p>
+         <strong>
+          A.V.C.B. (Auto de Vistoria do Corpo de Bombeiros - SP)
+         </strong>
+         <br />
+         Auto de Vistoria do Corpo de Bombeiros (A. V. C. B.):
+         <br />
+         é o documento emitido pelo Corpo de Bombeiros da Policia Militar do Estado de São Paulo (CBPMESP) certificando que, durante a vistoria, a edificação possuía ascondições de segurança contra incêndio (É um conjunto de medidas estruturais, técnicas e organizacionais integradas para garantir a edificação um nivel ótimo de proteção no segmento de segurança contra incêndios e pânico.), previstas pela legislação e constantes no processo, estabelecendo um período de revalidação.
+         <br />
+         <br />
+         <strong>
+          Em que casos é obrigatório o A.V.C.B.
+         </strong>
+         <br />
+         I – construção e reforma;
+         <br />
+         II – mudança da ocupação ou uso;
+         <br />
+         III – ampliação da área construída;
+         <br />
+         IV – regularização das edificações e áreas de risco;
+         <br />
+         V - construções provisórias (circos, eventos, etc.).
+         <br />
+         <br />
+         <strong>
+          Em que casos não é obrigatório o A.V.C.B.
+         </strong>
+         <br />
+         I - residências exclusivamente unifamiliares;
+         <br />
+         II - residências exclusivamente unifamiliares localizadas no pavimento superior de ocupação mista, com até dois pavimentos e que possuam acessos independente.
+         <br />
+         <br />
+         <strong>
+          O que é Brigada de incêndio (Norma Regulamentadora - NR - 23)
+         </strong>
+         <br />
+         A Brigada de Incêndio é basicamente um grupo organizado de pessoas que são especialmente capacitadas para que possam atuar numa área previamente estabelecida, na prevenção, abandono e combate a um princípio de incêndio, e que também estejam aptas a prestar os primeiros socorros a possíveis vítimas.
+         <br />
+         <br />
+         <strong>
+          Quem forma a brigada de incêndio
+         </strong>
+         <br />
+         Os brigadistas devem ser pessoas da própria empresa, gozar de boa saúde, boa condição física e conhecer as instalações. Deve ser treinado para ser capaz de identificar situações de emergência, acionar alarme e corpo de bombeiros, cortar energia quando necessário, realizar primeiros socorros, controlar pânico, guiar a saída das pessoas para abandono da área, combater princípios de incêndio. O treinamento é requisito indispensável para que seja aprovado autos de vistoria do Corpo de Bombeiros e deve ter periodicidade anual.
+        </p>
+       </div>
+      </li>
+      <li>
+       <div>
+        <a onclick="ver_servico('servico6'); return false;" href="#">
+         Extintores
+        </a>
+       </div>
+       <div class="invisivel servicos" id="servico6">
+        <p>
+         Devido as constantes fiscalizações e a necessidade de um controle automatizado dos extintores e equipamentos, a AGUIA desenvolveu um sistema específico para o controle de extintores,MUNHOS EXTINTORES  controlando desde recargas e manutenções periódicas até quantidade de utilizações e manutenções extraordinárias.
+         <br />
+         <br />
+         <strong>
+          Quais as vantagens
+         </strong>
+         <br />
+         •  Automatização do controle dos extintores da empresa;
+         <br />
+         •  Acompanhamento de troca, manutenção e recarga dos extintores em tempo real;
+         <br />
+         •  Redução no tempo gasto pela equipe na verificação e inspeção dos extintores;
+         <br />
+         •  Relatórios de vencimentos das manutenções periódicas, adaptados a necessidade de sua empresa.
+         <br />
+        </p>
+       </div>
+      </li>
+      <li>
+       <div>
+        <a onclick="ver_servico('servico7'); return false;" href="#">
+         Ergonômia
+        </a>
+       </div>
+       <div class="invisivel servicos" id="servico7">
+        <p>
+         <strong>
+          Laudo de ergonomia (Norma Regulamentadora - NR - 17)
+         </strong>
+         <br />
+         <br />
+         <strong>
+          O que é ERGONOMIA
+         </strong>
+         <br />
+         O laudo ergonômico visa estabelecer parâmetros que permitam a adaptação das condições de trabalho dos funcionários às suas características fisiológicas, de modo a proporcionar um máximo de conforto, segurança e produtividade.
+         <br />
+         As condições de trabalho incluem aspectos relacionados ao levantamento, transporte e descarga de materiais, ao mobiliário, aos equipamentos e às condições ambientais dos posto de trabalho na sua empresa.
+         <br />
+         <br />
+         Para avaliar a adaptação das condições de trabalho às características psicofisiológicas dos trabalhadores, cabe ao empregador realizar a análise ergonômica do trabalho, devendo a mesma abordar, no mínimo, as condições de trabalho, conforme estabelecido nesta Norma Regulamentadora.
+         <br />
+         <br />
+         <strong>
+          Porque fazer laudo ergonômico
+         </strong>
+         É muito importante preocupar-se com a ergonomia oferecida aos seus funcionários, sob pena de ser obrigado a indenizá-los em caso de doença ocupacional. Por isso postos de trabalho ergonomicamente adequados são essenciais para a saúde e bem estar de seus funcionários.
+        </p>
+       </div>
+      </li>
+      <li>
+       <div>
+        <a onclick="ver_servico('servico8'); return false;" href="#">
+         Ginástica Laboral
+        </a>
+       </div>
+       <div class="invisivel servicos" id="servico8">
+        <p>
+         <strong>
+          O que é ginástica laboral
+         </strong>
+         <br />
+         Ginástica Laboral é a prática voluntária de atividades físicas realizadas pelos trabalhadores coletivamente, dentro do próprio local de trabalho, durante sua jornada de trabalho.
+         <br />
+         <br />
+         Consiste em exercícios, alongamentos e relaxamentos muscular, bem como a flexibilidade articular, que promova o fortalecimento de estruturas frágeis e, principalmente, o relaxamento das estruturas sobrecarregadas.
+         <br />
+         <br />
+         <strong>
+          Porque fazer
+         </strong>
+         <br />
+         A Ginástica Laboral tem com objetivo prevenir as doenças ocupacionais, contribuindo para melhoria da qualidade de vida dos seus funcionários.
+         <br />
+         Hoje, produzir mais e melhor, sem desenvolver danos à saúde dos trabalhadores, é uma realidade.
+         <br />
+         Se tomarmos como exemplo os modelos de empresas estrangeiras, é cada vez maior o número de adeptos que descobrem, nos Programas de Ginástica Laboral, um meio eficaz e saudável de reduzir os casos de doenças ocupacionais.
+         <br />
+         <br />
+         <strong>
+          Benefícios para a sua empresa
+         </strong>
+         <br />
+         •	Diminuição no número de acidentes de trabalho;
+         <br />
+         •	Redução nos gastos com serviços médicos;
+         <br />
+         •	Diminuição de faltas ao trabalho por motivo de doenças;
+         <br />
+         •	Aumento de produtividade e satisfação dos funcionários;
+         <br />
+        </p>
+       </div>
+      </li>
+      <li>
+       <div>
+        <a onclick="ver_servico('servico9'); return false;" href="#">
+         PPP - Perfil Profissiográfico Previdenciário
+        </a>
+       </div>
+       <div class="invisivel servicos" id="servico9">
+        <p>
+         É o histórico da vida laboral do trabalhador que reúne informações para a previdência social sobre os riscos a que o trabalhador esteve exposto em seu ambiente de trabalho.
+         <br />
+         <br />
+         <strong>
+          QUANDO EMITIR PPP?
+         </strong>
+         <br />
+         O PPP deve ser entregue ao trabalhador no ato da rescisão contratual ou para fins de aposentadoria especial, devendo ser atualizado:
+         <br />
+         <br />
+         •	Sempre que houver mudança no ambiente de trabalho;
+         <br />
+         •	Sempre que houver mudança de função.
+         <br />
+         <br />
+         O Perfil Profissiográfico Previdenciário (PPP) é um formulário com campos a serem preenchidos com todas as informações relativas ao empregado, como por exemplo, a atividade que exerce, o agente nocivo ao qual está exposto, a intensidade e a concentração do agente, exames médicos clínicos, além de dados referentes à empresa.
+         <br />
+         O formulário deve ser preenchido pelas empresas que exercem atividades que exponham seus empregados a agentes nocivos químicos, físicos, biológicos ou associação de agentes prejudiciais à saúde ou à integridade física (origem da concessão de aposentadoria especial após 15, 20 ou 25 anos de contribuição).
+         <br />
+         <br />
+         Além disso, todos os empregadores e instituições que admitam trabalhadores como empregados do Programa de Prevenção de Riscos Ambientais e do Programa de Controle Médico de Saúde Ocupacional, de acordo com Norma Regulamentadora nº 9 da Portaria nº 3.214/78 do MTE, também devem preencher o PPP.
+         <br />
+         MULTA PELA OMISSÃO E NÃO ENTREGA
+         <br />
+         <br />
+         <strong>
+          PPP Eletrônico VIA EMAIL
+         </strong>
+         <br />
+         Estamos transformando o formulário do Perfil Profissiográfico Profissional – PPP em um sistema: as empresas terão acesso ao programa, farão as atualizações necessárias e enviarão para a Previdência Social, a exemplo do funcionamento do programa de declaração de imposto de renda. O PPP Eletrônico deverá, a princípio, estar disponibilizado na Internet, possibilitando que o trabalhador possa acessá-lo por meio de senha individual, permitindo assim o acompanhamento do preenchimento e das atualizações; a solicitação de retificação de possíveis erros; a emissão e impressão imediata quando necessitar para qualquer comprovação; entre outros.
+        </p>
+       </div>
+      </li>
+      <li>
+       <div>
+        <a onclick="ver_servico('servico10'); return false;" href="#">
+         CIPA - Comissão Interna de Prevenção de Acidentes
+        </a>
+       </div>
+       <div class="invisivel servicos" id="servico10">
+        <p>
+         <strong>
+          QUANDO DEVO  TER CIPA EM MINHA EMPRESA?
+         </strong>
+         <br />
+         De acordo com a norma regulamentadora NR-5, as empresas com menos de 20 funcionários ficam desobrigadas, porém as demais devem , independente do grau de risco constituir CIPA.
+         <br />
+         <br />
+         <strong>
+          O que é CIPA
+         </strong>
+         <br />
+         A Comissão Interna de Prevenção de Acidentes (CIPA) é um instrumento que os trabalhadores dispõem para tratar da prevenção de acidentes do trabalho, das condições do ambiente do trabalho e de todos os aspectos que afetam sua saúde e segurança.
+         <br />
+         A CIPA é regulamentada pela Consolidação das Leis do Trabalho (CLT) nos artigos 162 a 165 e pela Norma Regulamentadora 5 (NR-5), contida na portaria 3.214 de 08.06.78 baixada pelo Ministério do Trabalho.
+         <br />
+         O objetivo básico da CIPA é fazer com que empregadores e empregados trabalhem conjuntamente na tarefa de prevenir acidentes e melhorar a qualidade do ambiente de trabalho.
+         <br />
+         <br />
+         <strong>
+          Que empresas devem compor uma CIPA?
+         </strong>
+         <br />
+         A organização da CIPA é obrigatória nos locais de trabalho seja qual for sua característica ,desde que tenham o mínimo legal de empregados regidos pela CLT conforme o quadro 1 da NR-5.
+         <br />
+         <br />
+         <strong>
+          Quem compõe a CIPA?
+         </strong>
+         <br />
+         A CIPA é composta por representantes titulares do empregador e dos empregados e seu número de participantes deve obedecer as proporções mínimas na NR -5.
+         <br />
+         O mandato dos membros titulares da CIPA é de um ano.
+        </p>
+       </div>
+      </li>
+      <li>
+       <div>
+        <a onclick="ver_servico('servico11'); return false;" href="#">
+         Primeiros Socorros
+        </a>
+       </div>
+       <div class="invisivel servicos" id="servico11">
+        <p>
+         O treinamento de primeiros socorros visa à capacitação de seus funcionários para que possa ser realizado o primeiro atendimento em caso de acidente ou mal súbito, prestando socorro imediato e adequado à vítima até a chegada de um profissional qualificado.
+         <br />
+         <br />
+         <strong>
+          Como podemos ajudar
+         </strong>
+         <br />
+         O treinamento de primeiros socorros visa desenvolver as habilidades de seus funcionários através do aprendizado teórico e prático das técnicas utilizadas para o pronto atendimento às vítimas de acidentes de qualquer natureza.
+        </p>
+       </div>
+      </li>
+      <li>
+       <div>
+        <a onclick="ver_servico('servico12'); return false;" href="#">
+         EPI/EPC Equipamento de Proteção Individual e Coletivo
+        </a>
+       </div>
+       <div class="invisivel servicos" id="servico12">
+        <p>
+         <strong>
+          O que é EPI?
+         </strong>
+         <br />
+         O EPI é um dispositivo de uso pessoal destinado a preservar a saúde e integridade física do funcionário no exercício de suas atividades.
+         <br />
+         SÃO ESTES,LUVAS ,BOTAS,OCULOS,PROTETOR DE OUVIDO, CAPACETES, MASCARAS , E OUTROS ESPECIFICOS PARA EXECUTAR CADA ATIVIDADE.
+         <br />
+         <br />
+         Equipamentos de Proteção Individual (EPI), são regulamentados pelo Ministério do Trabalho e Emprego, em sua norma regulamentadora NR-6.
+         <br />
+         A empresa está obrigada a fornecer aos empregados gratuitamente,artigo 157/158-CLT  EPI adequado ao risco e em perfeita conservação e funcionamento., conferidos os C.A ADEQUADO  CERTIFICADO DE APROVAÇÃO.
+         <br />
+         <br />
+         O empregado tem como obrigação saber a forma correta de utilizá-lo ATRÁVÉS DE TREINAMENTO e mantê-lo em perfeito estado de conservação E HIGIENE.
+         <br />
+         <br />
+         <strong>
+          O que é CA?
+         </strong>
+         <br />
+         O CA - Certificado de Aprovação - é um documento emitido pelo Ministério do Trabalho e Emprego que tem por finalidade avaliar e manter um padrão nos equipamento de proteção.
+         <br />
+         <br />
+         A NR6 - que regulariza os equipamentos de proteção individual - exige que todo equipamento de proteção individual, de fabricação nacional ou importado, só poderá ser posto à venda ou utilizado com a marcação do CA.
+         <br />
+         <br />
+         Para se obter um CA, o fabricante ou importador, deve enviar uma amostra do equipamento para um laboratório autorizado, o laboratório faz testes com esse equipamento e emite um laudo com as características do produto.
+         <br />
+         Esse laudo é enviado ao MTE para emissão do CA que garantirá o padrão dos equipamentos que devem obedecer as especificações presentes no laudo.
+        </p>
+       </div>
+      </li>
+      <li>
+       <div>
+        <a onclick="ver_servico('servico13'); return false;" href="#">
+         Teste hidrostático - Laudo de Caldeiras e Vasos Sob Pressão - (NR-13 da Portaria nº 3.214/78)
+        </a>
+       </div>
+       <div class="invisivel servicos" id="servico13">
+        <p>
+         Um teste hidrostático é um teste que mede a força ou a integridade estrutural de embalagens pressurizadas que contenham um líquido ou um gás. Os recipientes que podem ser testados incluem caldeiras, cilindros de gás ou os tubos em um sistema de água. O teste assegura que não existam quaisquer fugas no recipiente e que é estruturalmente seguro realizar qualquer operação normal para tal equipamento.
+         <br />
+         <br />
+         <strong>
+          Laudo de caldeiras e vasos sob pressão
+         </strong>
+         (Norma Regulamentadora - NR - 13)
+         <br />
+         Se a sua empresa possue caldeiras e/ou vasos sob pressão, Você deve atender a Norma Regulamentadora 13 quanto a inspeções de segurança.
+         <br />
+         <br />
+         <strong>
+          Porque fazer
+         </strong>
+         <br />
+         A sua implementação, além de ter um caráter legal, é também uma contribuição significativa para o estabelecimento de uma política de segurança na sua empresa, no que se refere a ter, de modo seguro e confiável, as suas unidades operando.
+        </p>
+       </div>
+      </li>
+      <li>
+       <div>
+        <a onclick="ver_servico('servico14'); return false;" href="#">
+         Laudo Elétrico (NR-10 da Portaria nº 3.214/78, NBR 5410/04 e NBR 14039/2005)
+        </a>
+       </div>
+       <div class="invisivel servicos" id="servico14">
+        <p>
+         O Laudo das Instalações  elétricas  visa a proteção daqueles que trabalham com instalações  elétricas  bem   como  salvaguardar  as  máquinas  e  equipamentos  existentes na empresa.
+         <br />
+         <br />
+         O Laudo de pára-raios é obtido através  das  medições de resistência  ôhmica  evitando  constatar  se os   equipamentos   estão adequadamente protegidos   contra   descargas atmosféricas.
+         <br />
+         <br />
+         Desde  janeiro  de  2005,  foi  implantada  a  Nova NR – 10,  na  qual  consta  a obrigatoriedade de implantação do Projeto Unifilar.
+         <br />
+         As  Empresas  com  entrada  de energia acima de 75  KVA, deverão desenvolver o projeto Unifilar.
+         <br />
+         Laudo elétrico e para-raio (Norma Regulamentadora - NR - 10)
+         <br />
+         <br />
+         <strong>
+          Qual a finalidade?
+         </strong>
+         <br />
+         A principal finalidade do laudo elétrico é a elaboração de documento de responsabilidade do engenheiro elétrico, atestando as condições da distribuição da eletricidade dentro das empresas.
+         <br />
+         Outro objetivo do laudo elétrico é verificar os requisitos e condições mínimas de controle e sistemas preventivos, do sistema elétrico, de forma a garantir a segurança e a saúde dos trabalhadores que direta ou indiretamente, interajam em instalações elétricas ou serviços com eletricidade, bem como, detectar e apontar para os responsáveis da empresa as condições, que possam gerar insegurança nas instalações elétricas.
+         <br />
+         <br />
+         <strong>
+          Porque fazer?
+         </strong>
+         <br />
+         Devem ser feitas vistorias periódicas, com atualização do laudo elétrico.
+         <br />
+         A legislação relacionada ao laudo elétrico indica obrigatoriedade definida de acordo com a Portaria 3214/78 e suas alterações em sua NR-10.
+         <br />
+         <br />
+         •  Levantamento físico das condições atuais das instalações elétricas, desde a cabina primária, quadro geral até os pontos de utilização;
+         <br />
+         •  Medições de tensão e corrente das chaves dos quadros principais e secundários;
+         <br />
+         •  Análise da compatibilidade entre proteções, condutores e cargas;
+         <br />
+         •  Análise dos dados em conformidade com as normas da ABNT, concessionária de energia local e NR 10;
+         <br />
+         •  Indicação das providências a serem tomadas quanto aos problemas encontrados;
+         <br />
+         •  Recomendações para melhoria das instalações elétricas;
+         <br />
+         •  Cronograma de adequação;
+         <br />
+         •  O Relatório será apresentado encadernado acompanhado da Anotação de Responsabilidade Técnica – ART do engenheiro;
+         <br />
+         •  Para-Raios.
+         <br />
+         <br />
+         A excelência do laudo elétrico é constituir um documento matriz, garantindo a segurança e condição de trabalho da população ativa.
+        </p>
+       </div>
+      </li>
+      <li>
+       <div>
+        <a onclick="ver_servico('servico15'); return false;" href="#">
+         Medição Ôhmica - SPDA
+        </a>
+       </div>
+       <div class="invisivel servicos" id="servico15">
+        <p>
+         Medição ôhmica nos aterramentos (hastes) de Pára-Raios de Condomínios e empresas:
+         <br />
+         A medição Ôhmica é um ítem muito importante para se atestar se o pára-raios do seu condomínio ou empresa está atuando. Ter um pára-raios instalado não significa que ele esteja protegendo seu patrimônio contra descargas atmosféricas.
+         <br />
+         É através da medição ôhmica, que é verificada através de aparelhos específicos como o Terrômetro, que pode ser verificada a medição ôhmica, que deve estar dentro da limite aceitável nas normas técnicas, e de segurança.
+        </p>
+       </div>
+      </li>
+      <li>
+       <div>
+        <a onclick="ver_servico('servico16'); return false;" href="#">
+         Periculosidade / Insalubridade   - Assistência técnica em perícias judiciais, acidentes do trabalho e doenças ocupacionais
+        </a>
+       </div>
+       <div class="invisivel servicos" id="servico16">
+        <p>
+         <strong>
+          Laudo de periculosidade
+         </strong>
+         <br />
+         O Laudo Técnico de Avaliação de Periculosidade é elaborado de acordo com os critérios técnicos estabelecidos nos anexos da Norma Regulamentadora nº 16 do Ministério do Trabalho e Emprego (Inflamáveis, Explosivos e Radiações Ionizantes) e Decreto nº 93.412 de 14.10.86 (Eletricidade).
+         <br />
+         <br />
+         O referido laudo tem por objetivo analisar as atividades desenvolvidas nas empresas, que de maneira direta ou indireta, tenham envolvimento ou contato com explosivos, líquidos e gases inflamáveis, radiações ionizantes e eletricidade, avaliando se as mesmas são passíveis de gerar o direito ao recebimento do Adicional de Periculosidade.
+         <br />
+         <br />
+         O Laudo Técnico Avaliação de Periculosidade possibilita o estabelecimento de planos de ação preventivos e corretivos, visando à eliminação e/ou controle das situações de risco identificadas nas empresas, de forma a evitar ou minimizar os efeitos de um possível passivo trabalhista.
+         <br />
+         <br />
+         O laudo técnico de periculosidade diz respeito às atividades e operações com:
+         <br />
+         <br />
+         •	explosivos
+         <br />
+         •	inflamáveis líquidos
+         <br />
+         •	inflamáveis gasosos
+         <br />
+         •	radiação ionizante
+         <br />
+         •	substância radioativa
+         <br />
+         •	Laudo de insalubridade
+         <br />
+         •	O Laudo de Insalubridade é o documento técnico-legal que estabelece se os empregados da empresa têm ou não direito ao recebimento do adicional de insalubridade (10%, 20% ou 40% do salário-mínimo), em virtude da exposição a agentes físicos, químicos e/ou biológicos, considerando os limites de tolerâncias estabelecidos pelas legislações e as proteções fornecidas pela empresa.
+         <br />
+         •	Após a visita de um profissional habilitado da SSO, sua empresa receberá um documento, contendo as conclusões em relação à exposição dos trabalhadores aos agentes nocivos (causadores de insalubridade), bem como alternativas técnicas para evitar o pagamento dos adicionais de insalubridade, quando for o caso.
+         <br />
+         Aplica-se nos estabelecimentos que possuam prensas e equipamentos similares.
+        </p>
+       </div>
+      </li>
+      <li>
+       <div>
+        <a onclick="ver_servico('servico17'); return false;" href="#">
+         PCMAT - Programa de Condições e Meio Ambiente de Trabalho na Indústria da Construção - NR 18
+        </a>
+       </div>
+       <div class="invisivel servicos" id="servico17">
+        <p>
+         A Norma Regulamentadora - NR-18, estabelece diretrizes de ordem administrativa, de planejamento e de organização, que objetivam a implementação de medidas de controle e sistemas preventivos de segurança nos processos, nas condições e no meio ambiente de trabalho na indústria da construção.
+         <br />
+         <br />
+         <strong>
+          QUANDO DEVO FAZER PCMAT?
+         </strong>
+         <br />
+         São obrigatórios a elaboração e o cumprimento do PCMAT nos estabelecimentos com 20 (vinte) trabalhadores ou mais, contemplando os aspectos desta NR e outros dispositivos complementares de segurança.
+         <br />
+         <br />
+         <strong>
+          O fiscal deve solicitar ART do PCMAT e verificar:
+         </strong>
+         <br />
+         1. Se o PCMAT tiver sido elaborado por profissional do Sistema Confea/Crea e este não tiver as atribuições de acordo com a Resolução n.º 359 de 1991, deverá ser notificado por exorbitância de atribuições, baseado na alínea “b”do art. 6º da Lei n° 5.194, de 1966;
+         <br />
+         2. Se o PCMAT tiver sido elaborado por leigo, deverá ser notificado por exercício ilegal da profissão, falta de registro, baseado na alínea “a” do art.6º da Lei n° 5.194, de 1966;
+         <br />
+         3. Se o PCMAT tiver sido elaborado por profissional legalmente habilitado e não existir ART, deverá ser notificado por falta de ART, baseado no art. 1° da Lei n° 6.496, de 1977;
+        </p>
+       </div>
+      </li>
+      <li>
+       <div>
+        <a onclick="ver_servico('servico18'); return false;" href="#">
+         PPRPS - Programa de Prevenção de Riscos em Prensas e Similares - NR 12
+        </a>
+       </div>
+       <div class="invisivel servicos" id="servico18">
+        <p>
+         O Ministério do Trabalho e Emprego está atento ao cumprimento da Convenção Coletiva de Melhoria das Condições de Trabalho em Prensas e Equipamentos Similares, Injetoras de Plástico e Tratamento de Superfícies nas Indústrias Metalúrgicas no Estado de São Paulo.
+         <br />
+         <br />
+         <strong>
+          Para efeito de PPRPS são considerados os seguintes tipos de prensas, independentemente de sua capacidade:
+         </strong>
+         <br />
+         <br />
+         &gt;&gt; Prensas mecânicas excêntricas de engate por chaveta;
+         <br />
+         &gt;&gt; Prensas mecânicas excêntricas com freios/embreagem;
+         <br />
+         &gt;&gt; Prensas de fricção com acionamento por fuso;
+         <br />
+         &gt;&gt; Prensas hidráulicas;
+         <br />
+         &gt;&gt; Outros tipos de prensas não relacionadas anteriormente.
+         <br />
+         <br />
+         <strong>
+          Outros Programas em Segurança do Trabalho e Saúde Ocupacional
+         </strong>
+         <br />
+         <br />
+         •	PCA - Programa de Conservação Auditiva
+         <br />
+         •	PPR - Programa de Proteção Respiratória
+         <br />
+         •	PPRPS - Programa de Prevenção de Riscos em Prensas e Similares
+         <br />
+         •	PPRAG - Programa de Prevenção de Riscos Ambientais em Galvânicas
+         <br />
+         •	PCMSOG - Programa de Controle Médico de Saúde Ocupacional para Galvânicas
+         <br />
+         •	PPEOB - Programa de Proteção à Exposição Ocupacional ao Benzeno
+         <br />
+         •	PPRAMP - Plano de Prevenção de Acidentes com Materiais pèrfurocortantes
+         <br />
+        </p>
+       </div>
+      </li>
+      <li>
+       <div>
+        <a onclick="ver_servico('servico19'); return false;" href="#">
+         Multas do Ministério do Trabalho - Posso ser multado pela falta destes programas?
+        </a>
+       </div>
+       <div class="invisivel servicos" id="servico19">
+        <p>
+         Sim, a multa pode variar de 1.129 ufir a 3.884 ufir. Em caso de reincidência a multa sobe para 6.304 ufir. Porém a multa é o problema menos. Caso um funcionário venha a contrair qualquer doença ocupacional, os empregadores respondem judicialmente pelo dano causado. Indenizações e os custos processuais assumem valores elevadíssimos podendo comprometer a saúde financeira dos condomínios.
+        </p>
+       </div>
+      </li>
+      <li>
+       <div>
+        <a onclick="return false;" name="projetos" href="#">
+         Projetos
+        </a>
+       </div>
+       <div>
+        <p>
+         AVCB - Auto de Vistoria do Corpo de Bombeiros
+         <br />
+         Obtenção de licenças e autorizações junto a CETESB
+         <br />
+         Obtenção de licenças e autorizações junto a Prefeitura
+        </p>
+       </div>
+      </li>
+      <li>
+       <div>
+        <a onclick="return false;" name="treinamentos" href="#">
+         Cursos e Treinamentos
+        </a>
+       </div>
+       <div>
+        <p>
+         NR-23 Brigada de combate a incêndio
+         <br />
+         NR-05 CIPA - Comissão Interna de Prevenção de Acidentes
+         <br />
+         NR-35 Segurança nos trabalhos em altura
+         <br />
+         NR-33 Segurança nos trabalhos em espaço confinado
+         <br />
+         NR-10  Curso de Segurança em instalações e serviços com eletricidade
+         <br />
+         NR-20 Combustíveis e Inflamáveis
+         <br />
+         NR-06 EPI/EPC
+         <br />
+        </p>
+       </div>
+      </li>
+     </ul>
+    </div>
+   </div>
+   <!-- END #carousel_wrapper -->
+   <!-- END #carousel_wrapper -->
+  </div>
+  <!-- END #latest_works -->
+  <div id="bottom_content">
+   <!-- END #testimonials -->
+   <!-- END #clients -->
+  </div>
+  <!-- END #bottom_content -->
+  <!-- END #download -->
+  <div style="clear:both">
+  </div>
+  <!-- END #main_content -->
+  <div id="footer">
+   <div class="container">
+    <div class="footer_info" id="footer_about">
+     <h4>
+      SEGURANÇA NO TRABALHO
+     </h4>
+     <iframe width="300" height="200" frameborder="0" allowfullscreen="allowfullscreen" src="http://www.youtube.com/embed/yZk6_KVsZ4k">
+     </iframe>
+    </div>
+    <!-- END #footer_about -->
+    <!-- END #footer_about -->
+    <!-- END #footer_about -->
+    <div class="footer_info" id="footer_contact">
+     <h4>
+      fale conosco
+      <br />
+     </h4>
+     <p>
+      <span class="bold_text">
+       Endereço Clinica Silos:
+      </span>
+      <br />
+      R. Luiz Faccini, 33, 1 Andar, Sala 07
+      <br />
+      Guarulhos - Centro - São Paulo - SP
+     </p>
+     <br />
+     <p>
+      <span class="bold_text">
+       Grupo Aguia:
+      </span>
+     </p>
+     <p>
+      Cel: 11 9.4766-1389  ID: 35*22105197
+      <br />
+      Fone: 11 4962-5504 / 11 9.5372-4886
+     </p>
+     <p>
+      Fone: 11 2358-5994 / 11 2442  -9032
+     </p>
+     <p>
+      <br />
+     </p>
+     <p>
+      <span class="bold_text">
+       E-mail:
+      </span>
+      <br />
+      contato@grupoaguiatecseg.com.br
+     </p>
+    </div>
+    <!-- END #footer_about -->
+    <div class="footer_info" id="footer_connect">
+     <h4>
+      REDE SOCIAL
+     </h4>
+     <iframe frameborder="0" allowtransparency="true" style="border:none; overflow:hidden; width:300px; height:200px;" scrolling="No" src="http://www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Fgrupoaguiatecseg&width=300&height=200&colorscheme=dark&show_faces=true&header=false&stream=false&show_border=false&appId=188327261345381">
+     </iframe>
+    </div>
+    <!-- END #footer_about -->
+    <br />
+    <p>
+    </p>
+   </div>
+   <!-- END .container -->
+  </div>
+  <!-- END #footer -->
+ </body>
+</html>

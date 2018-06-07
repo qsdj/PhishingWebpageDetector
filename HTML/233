@@ -1,0 +1,705 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <title>
+   Diemould - Home
+  </title>
+  <meta content="Content-Type" http-equiv="Content-Type" />
+  <meta content="Diemould India Pvt. Ltd." name="title" />
+  <meta content="offer manufacturing services for Injection Moulds, Die Casting Dies, Press Tools, and Gauges and Fixtures through selected sub-contractors" name="description" />
+  <meta content="Engineering Services,Design Services,Product Design,Product Development,Reverse Engineering,,Mould Management,Mold,Mould Design,Die Casting Die Design,Press tool Design,Gauge Design,Fixture Design,Tool Design,Injection Mould,,Plastic Injection Mould,Mould Manufacturing,Tool Maker,Tool Room,Moulds,Automotive Tooling,Lighting,Automotive Lighting,,Head lamp,Tail Lamp,Tail Light,Steering Wheels,Diemould" name="keywords" />
+  <meta content="en" name="language" />
+  <meta content="Diemould" name="subject" />
+  <meta content="All" name="robots" />
+  <meta content="Your company" name="copyright" />
+  <meta content="Site description here" name="abstract" />
+  <meta content="true" name="MSSmartTagsPreventParsing" />
+  <link href="favicon.ico" rel="shortcut icon" />
+  <link href="style.css" type="text/css" rel="stylesheet" />
+  <style type="text/css">
+   &lt;!--
+.style1 {
+	color: #FFFFFF
+}
+--&gt;
+  </style>
+  <script language="javascript">
+   var timeout = 500;
+        var closetimer = 0;
+        var ddmenuitem = 0;
+
+        // open hidden layer
+        function mopen(id) {
+            // cancel close timer
+            mcancelclosetime();
+
+            // close old layer
+            if (ddmenuitem) ddmenuitem.style.visibility = 'hidden';
+
+            // get new layer and show it
+            ddmenuitem = document.getElementById(id);
+            ddmenuitem.style.visibility = 'visible';
+
+        }
+        // close showed layer
+        function mclose() {
+            if (ddmenuitem) ddmenuitem.style.visibility = 'hidden';
+        }
+
+        // go close timer
+        function mclosetime() {
+            closetimer = window.setTimeout(mclose, timeout);
+        }
+
+        // cancel close timer
+        function mcancelclosetime() {
+            if (closetimer) {
+                window.clearTimeout(closetimer);
+                closetimer = null;
+            }
+        }
+
+        // close layer when click-out
+        document.onclick = mclose;
+  </script>
+  <script type="text/javascript">
+   //  debugger
+      //  hs6Arr = new Array(10)
+        hs6Arr = [
+        //["thumb1.jpg","bigpic1.jpg","Alt Text 1","text box text"],
+["images/Wheel Cap1 .png", "images/Wheel Cap1 .png", "", " "],
+["images/P1010011.png", "images/P1010011.png", "", " "],
+["images/Door Trim Assembly Fixture 2.png", "images/Door Trim Assembly Fixture 2.png", "", " "],
+["images/Mirror Assembly.png", "images/Mirror Assembly.png", "", " "],
+["images/Door Handle 1.png", "images/Door Handle 1.png", "", " "],
+["images/Interior4.png", "images/Interior4.png", "", " "],
+["images/ALNA Tail Lamp.png", "images/ALNA Tail Lamp.png", "", " "],
+["images/Head Lamp.png", "images/Head Lamp.png", "", " "],
+["images/Hub Cap.png", "images/Hub Cap.png", "", " "]
+
+        /*  
+        ["pic06.jpg","pic06.jpg","Alt Text 6",""],
+        ["pic07.jpg","pic07.jpg","Alt Text 7",""],
+        ["pic08.jpg","pic08.jpg","Alt Text 8",""],
+        ["pic09.jpg","pic09.jpg","Alt Text 9",""],
+        ["pic10.jpg","pic10.jpg","Alt Text 10",""]
+        */
+]
+
+        dir = 1 // 0 = left 1 = right
+        speed = 1
+
+        imageSize = 100  // % set to zero to use fixedWidth and fixedHeight values
+
+        fixedWidth = 200 // set a fixed width
+        fixedHeight = 200 // set a fixed height
+        spacerWidth = 4 // space between images
+        dualFade = 0 // 0 = fades in, 1 = fades out then in
+
+        biggest = 0
+        scrollBoxBorder = 0
+        totalWidth = 0
+        hs6Timer = null
+
+        lastN = 0
+        count = 0
+        fading = 0
+        fadeStep = 2
+        fadeSpeed = 10
+        minFadeValue = 0
+
+        preload = new Array()
+        for (var i = 0; i &lt; hs6Arr.length; i++) {
+            preload[i] = []
+
+            for (var j = 0; j &lt; 2; j++) {
+                preload[i][j] = new Image()
+                preload[i][j].src = hs6Arr[i][j]
+            }
+
+        }
+
+        function initHS6() {
+            scrollBox = document.getElementById("scroll_box")
+            scroll1 = document.getElementById("scroller1")
+            //alert(preload[0][0].src)
+            for (var k = 0; k &lt; hs6Arr.length; k++) {
+
+               //remove big pic show &amp; text on click event
+                scroll1.innerHTML += '&lt;img id="pic' + k + '" src="' + preload[k][0].src + '" alt="' + hs6Arr[k][2] + '" title="' + hs6Arr[k][2] + '"&gt;'
+                //scroll1.innerHTML += '&lt;img id="pic' + k + '" src="' + preload[k][0].src + '" alt="' + hs6Arr[k][2] + '" title="' + hs6Arr[k][2] + '" onclick="initFade(' + k + ')" onmouseover="showTxt(this,this.offsetParent.id,' + k + ')" onmouseout="hideTxt(event)"&gt;'
+
+                if (imageSize != 0) { // use percentage size
+                    newWidth = preload[k][0].width / 100 * imageSize
+                    newHeight = preload[k][0].height / 100 * imageSize
+                }
+                else { // use fixed size
+                    newWidth = fixedWidth
+                    newHeight = fixedHeight
+                }
+
+                document.getElementById("pic" + k).style.width = newWidth + "px"
+                document.getElementById("pic" + k).style.height = newHeight + "px"
+
+                if (document.getElementById("pic" + k).offsetHeight &gt; biggest) {
+                    biggest = document.getElementById("pic" + k).offsetHeight
+                }
+
+                document.getElementById("pic" + k).style.marginLeft = spacerWidth + "px"
+                totalWidth += document.getElementById("pic" + k).offsetWidth + spacerWidth
+            }
+
+            totalWidth += 1
+
+            for (var l = 0; l &lt; hs6Arr.length; l++) { // vertically center images
+                document.getElementById("pic" + l).style.marginBottom = (biggest - document.getElementById("pic" + l).offsetHeight) / 2 + "px"
+            }
+
+            if (scrollBox.currentStyle &amp;&amp; !window.opera &amp;&amp; document.compatMode != "CSS1Compat") {
+                scrollBoxBorder = parseInt(scrollBox.currentStyle.borderWidth) * 2
+            }
+
+            scrollBox.style.height = biggest + scrollBoxBorder + "px"
+            scroll1.style.width = totalWidth + "px"
+            scroll2 = document.getElementById("scroller2")
+            scroll2.innerHTML = scroll1.innerHTML
+            scroll2.style.left = scroll1.offsetWidth + "px"
+            scroll2.style.top = 0 + "px" //-scroll1.offsetHeight+"px"
+            scroll2.style.width = totalWidth + "px"
+
+            if (dir == 1) {
+                speed = -speed
+            }
+
+            scrollHS6()
+        }
+
+        function scrollHS6() {
+            clearTimeout(hs6Timer)
+            scroll1Pos = parseInt(scroll1.style.left)
+            scroll2Pos = parseInt(scroll2.style.left)
+            scroll1Pos -= speed
+            scroll2Pos -= speed
+            scroll1.style.left = scroll1Pos + "px"
+            scroll2.style.left = scroll2Pos + "px"
+            hs6Timer = setTimeout("scrollHS6()", 50)
+
+            if (dir == 0) {
+                if (scroll1Pos &lt; -scroll1.offsetWidth) {
+                    scroll1.style.left = scroll1.offsetWidth + "px"
+                }
+
+                if (scroll2Pos &lt; -scroll1.offsetWidth) {
+                    scroll2.style.left = scroll1.offsetWidth + "px"
+                }
+            }
+
+            if (dir == 1) {
+                if (scroll1Pos &gt; parseInt(scrollBox.style.width)) {
+                    scroll1.style.left = scroll2Pos + (-scroll1.offsetWidth) + "px"
+                }
+
+                if (scroll2Pos &gt; parseInt(scrollBox.style.width)) {
+                    scroll2.style.left = scroll1Pos + (-scroll2.offsetWidth) + "px"
+                }
+            }
+
+        }
+
+        st = null
+        function pause() {
+            clearTimeout(hs6Timer)
+            clearTimeout(st)
+        }
+
+        function reStartHS6() {
+            clearTimeout(st)
+            st = setTimeout("scrollHS6()", 100)
+        }
+
+        function initFade(n) {
+            count = n
+            if (lastN == n || fading == 1) { return }
+
+            if (dualFade == 0) { fadeValue = 0 }
+            else { fadeValue = 100 }
+
+            picNum = n
+            lastN = n
+            fadePic()
+        }
+
+        function fadePic() {
+            displayEl = document.images["bigpic"]
+            fading = 1
+            fadeValue -= fadeStep
+            fadeTimer = setTimeout("fadePic()", fadeSpeed)
+
+            if (displayEl.filters) { displayEl.filters.alpha.opacity = fadeValue }
+            else { displayEl.style.opacity = (fadeValue / 100) - 0.1 }
+
+            if (fadeValue &lt; minFadeValue) { // for fade out first
+                fadeValue = minFadeValue
+                fadeStep = -fadeStep
+                displayEl.src = hs6Arr[picNum][1]
+            }
+
+            if (fadeValue &gt;= 100) { // fade in
+                fadeValue = 100
+                fadeStep = -fadeStep
+                fading = 0
+                clearTimeout(fadeTimer)
+            }
+        }
+
+        function showTxt(obj, objParentID, num) {
+            if (hs6Arr[num][3] == "") { return }
+
+            imgTxt = document.getElementById("imgtxt")
+            imgParent = document.getElementById(objParentID)
+
+            imgTxt.innerHTML = hs6Arr[num][3]
+
+            scrollBoxBorder = 0
+            imageBorder = 0
+
+            txtBorder = 0
+            txtPadding = 0
+
+            if (document.uniqueID &amp;&amp; document.getElementById("pic" + num).currentStyle) { // ie
+                imageBorder = parseInt(document.getElementById("pic" + num).currentStyle.borderWidth)
+                //txtPadding=parseInt(imgTxt.currentStyle.paddingLeft) // uncomment for doctype
+            }
+
+            if (window.getComputedStyle) {
+                scrollBoxBorder = parseInt(document.defaultView.getComputedStyle(scrollBox, '').getPropertyValue("border-top-width"))
+
+                scrollBoxBorder = (/firefox/i.test(navigator.userAgent) ? scrollBoxBorder : (window.opera ? -scrollBoxBorder : 0))
+
+                imageBorder = parseInt(document.defaultView.getComputedStyle(document.getElementById("pic" + num), '').getPropertyValue("border-top-width"))
+                txtPadding = parseInt(document.defaultView.getComputedStyle(imgTxt, '').getPropertyValue("padding-top"))
+                txtBorder = parseInt(document.defaultView.getComputedStyle(imgTxt, '').getPropertyValue("border-top-width"))
+
+            }
+
+            imgTxt.style.display = "block"
+            imgTxt.style.width = obj.offsetWidth - (imageBorder * 2) - (txtPadding * 2) - (txtBorder * 2) + "px"
+
+            imgTxt.style.left = obj.offsetLeft + imgParent.offsetLeft + scrollBoxBorder + imageBorder + "px"
+            imgTxt.style.top = (obj.offsetTop + imgParent.offsetTop) + obj.offsetHeight - imgTxt.offsetHeight + scrollBoxBorder - imageBorder + "px"
+
+        }
+
+        function hideTxt(e) {
+            if (e.toElement &amp;&amp; event.toElement.id != "imgtxt") {
+                imgTxt.style.display = "none"
+            }
+
+            if (e.relatedTarget &amp;&amp; e.relatedTarget.id != "imgtxt") {
+                imgTxt.style.display = "none"
+            }
+        }
+  </script>
+  <style>
+   /* where used the border and padding must have a value even if it is zero */
+
+#scroll_box {
+	position:relative;
+	overflow:hidden;
+	border:0px solid #ebebeb;
+	text-align:left;
+	z-index:0;
+	background-color:White;
+}
+#scroller1 img, #scroller2 img {
+	cursor:pointer;
+	border:0px solid #a7a1a1;
+}
+#imgtxt {
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-size:12px;
+	border:0px solid red;
+	padding:12px;
+	background-color:#FFFFFF;
+	display:none;
+	opacity:0.75;
+}
+#bigpic {
+	opacity:0.9;
+	margin-top:20px;
+}
+  </style>
+  <!--[if IE]>
+
+<style type="text/css">
+
+#imgtxt{
+filter:alpha(opacity=75); /*opacity for IE */
+}
+
+#bigpic{
+filter:alpha(opacity=100); /*opacity for IE */
+}
+
+</style>
+
+<![endif]-->
+ </head>
+ <body bgcolor="#ffffff" onload="initHS6()">
+  <div id="wrapper">
+   <div id="bg">
+    <div id="header">
+    </div>
+    <div id="page">
+     <div id="container">
+      <!-- banner -->
+      <div id="banner">
+      </div>
+      <!-- end banner -->
+      <!-- horizontal navigation -->
+      <div style="z-index:1000" id="sddm">
+       <ul>
+        <li style="border: none" id="">
+         <a shape="rect" href="index.html">
+          Home
+         </a>
+        </li>
+        <li id="">
+         <a shape="rect" href="aboutus.html">
+          About Us
+         </a>
+        </li>
+        <li id="">
+         <a shape="rect" onmouseout="mclosetime()" onmouseover="mopen('m1')" href="#">
+          Services
+         </a>
+         <div onmouseout="mclosetime()" onmouseover="mcancelclosetime()" id="m1">
+          <a href="plasticinjection.html">
+           Injection Mould Design
+          </a>
+          <a href="cmmfixture.html">
+           CMM Fixture Design
+          </a>
+          <a href="tooling.html">
+           Plastic Product Design &amp; Development
+          </a>
+          <a href="pressuredie.html">
+           Die Casting Die Design
+          </a>
+          <a href="reverse_engineering.html">
+           Reverse Engineering and 3D CAD Modeling
+          </a>
+          <a href="3d-2d-parametric.html">
+           3D to 2D Parametric Drawing Creation
+          </a>
+         </div>
+        </li>
+        <li id="Li1">
+         <a shape="rect" href="associates.html">
+          Associates
+         </a>
+        </li>
+        <li id="">
+         <a shape="rect" href="contactus.html">
+          Contact Us
+         </a>
+        </li>
+       </ul>
+      </div>
+      <!-- end horizontal navigation -->
+      <!--  content -->
+      <div id="content">
+       <div id="center">
+        <div style="height:545px;" id="welcome">
+         <table width="100%" border="0" bgcolor="#f7f7f7" background="images/bodybg.png" align="center" cellspacing="0" cellpadding="0" style="background-repeat:repeat-x;padding-top:10px;">
+          <tbody>
+           <tr>
+            <td align="center" colspan="3">
+             <div style="width:10px;float:left;padding-left:2px">
+              <img src="images/leftcorner.png" />
+             </div>
+             <div style="width: 998px; float: left; height: 130px;" onmouseout="reStartHS6()" onmouseover="pause()" id="scroll_box">
+              <div style="position: absolute; left: 1px; top: 0px; width: 1549px;" id="scroller1">
+               <img title="" alt="" src="http://www.diemouldtooling.in/images/Wheel%20Cap1%20.png" id="pic0" style="width: 168px; height: 130px; margin-left: 4px; margin-bottom: 0px;" />
+               <img title="" alt="" src="http://www.diemouldtooling.in/images/P1010011.png" id="pic1" style="width: 168px; height: 130px; margin-left: 4px; margin-bottom: 0px;" />
+               <img title="" alt="" src="http://www.diemouldtooling.in/images/Door%20Trim%20Assembly%20Fixture%202.png" id="pic2" style="width: 168px; height: 130px; margin-left: 4px; margin-bottom: 0px;" />
+               <img title="" alt="" src="http://www.diemouldtooling.in/images/Mirror%20Assembly.png" id="pic3" style="width: 168px; height: 130px; margin-left: 4px; margin-bottom: 0px;" />
+               <img title="" alt="" src="http://www.diemouldtooling.in/images/Door%20Handle%201.png" id="pic4" style="width: 168px; height: 130px; margin-left: 4px; margin-bottom: 0px;" />
+               <img title="" alt="" src="http://www.diemouldtooling.in/images/Interior4.png" id="pic5" style="width: 168px; height: 130px; margin-left: 4px; margin-bottom: 0px;" />
+               <img title="" alt="" src="http://www.diemouldtooling.in/images/ALNA%20Tail%20Lamp.png" id="pic6" style="width: 168px; height: 130px; margin-left: 4px; margin-bottom: 0px;" />
+               <img title="" alt="" src="http://www.diemouldtooling.in/images/Head%20Lamp.png" id="pic7" style="width: 168px; height: 130px; margin-left: 4px; margin-bottom: 0px;" />
+               <img title="" alt="" src="http://www.diemouldtooling.in/images/Hub%20Cap.png" id="pic8" style="width: 168px; height: 130px; margin-left: 4px; margin-bottom: 0px;" />
+              </div>
+              <div style="position: absolute; left: -1548px; top: 0px; width: 1549px;" id="scroller2">
+               <img title="" alt="" src="http://www.diemouldtooling.in/images/Wheel%20Cap1%20.png" id="pic0" style="width: 168px; height: 130px; margin-left: 4px; margin-bottom: 0px;" />
+               <img title="" alt="" src="http://www.diemouldtooling.in/images/P1010011.png" id="pic1" style="width: 168px; height: 130px; margin-left: 4px; margin-bottom: 0px;" />
+               <img title="" alt="" src="http://www.diemouldtooling.in/images/Door%20Trim%20Assembly%20Fixture%202.png" id="pic2" style="width: 168px; height: 130px; margin-left: 4px; margin-bottom: 0px;" />
+               <img title="" alt="" src="http://www.diemouldtooling.in/images/Mirror%20Assembly.png" id="pic3" style="width: 168px; height: 130px; margin-left: 4px; margin-bottom: 0px;" />
+               <img title="" alt="" src="http://www.diemouldtooling.in/images/Door%20Handle%201.png" id="pic4" style="width: 168px; height: 130px; margin-left: 4px; margin-bottom: 0px;" />
+               <img title="" alt="" src="http://www.diemouldtooling.in/images/Interior4.png" id="pic5" style="width: 168px; height: 130px; margin-left: 4px; margin-bottom: 0px;" />
+               <img title="" alt="" src="http://www.diemouldtooling.in/images/ALNA%20Tail%20Lamp.png" id="pic6" style="width: 168px; height: 130px; margin-left: 4px; margin-bottom: 0px;" />
+               <img title="" alt="" src="http://www.diemouldtooling.in/images/Head%20Lamp.png" id="pic7" style="width: 168px; height: 130px; margin-left: 4px; margin-bottom: 0px;" />
+               <img title="" alt="" src="http://www.diemouldtooling.in/images/Hub%20Cap.png" id="pic8" style="width: 168px; height: 130px; margin-left: 4px; margin-bottom: 0px;" />
+              </div>
+              <div onmouseout="hideTxt(event)" id="imgtxt">
+               Hello
+              </div>
+             </div>
+             <div style="width:5px;float:right;padding-right:9px;">
+              <img src="images/rightcorner.png" />
+             </div>
+            </td>
+           </tr>
+           <tr>
+            <td colspan="3">
+             <img height="5px" src="images/spacer.gif" />
+            </td>
+           </tr>
+           <tr>
+            <td valign="top" bgcolor="#F7F7F7" background="images/bodybg.png" style="background-repeat:repeat-x;padding-top:10px;">
+             <div id="lt-menu">
+              <h4>
+               <img align="absmiddle" alt="" src="images/arrow.png" />
+               Line of Business
+              </h4>
+              <ul>
+               <li>
+                <a href="plasticinjection.html">
+                 Injection Mould Design
+                </a>
+               </li>
+               <li>
+                <a href="cmmfixture.html">
+                 CMM Fixture Design
+                </a>
+               </li>
+               <li>
+                <a href="tooling.html">
+                 Plastic Product Design &amp; Development
+                </a>
+               </li>
+               <li>
+                <a href="pressuredie.html">
+                 Die Casting Die Design
+                </a>
+               </li>
+               <li>
+                <a href="reverse_engineering.html">
+                 Reverse Engineering and 3D CAD Modeling
+                </a>
+               </li>
+               <li>
+                <a href="3d-2d-parametric.html">
+                 3D to 2D Parametric Drawing Creation
+                </a>
+               </li>
+              </ul>
+             </div>
+            </td>
+            <td valign="top" style="padding-right:5px; padding-left:5px;">
+             <h2>
+              Welcome to DIEMOULD
+             </h2>
+             <p>
+              Diemould is commercial design house offering Injection  Mold Design  and other engineering  services. We have  a rich experience of  35 years in the field of plastics providing value added services to the  customers around the world.
+              <br />
+             </p>
+             <table border="0" align="center" cellspacing="0px" cellpadding="0px">
+              <tbody>
+               <tr>
+                <td valign="middle" align="center" class="wraptocenter">
+                 <img width="150" height="150" alt="Plastic Product Design & Development" src="images/Product_Development.jpg" />
+                </td>
+                <td valign="middle" align="center" class="wraptocenter">
+                 <img width="150" height="150" alt="Injection Mold Design" src="images/mould.jpg" />
+                </td>
+                <td valign="middle" align="center" class="wraptocenter">
+                 <img width="150" height="150" alt="CMM Fixture Design" src="images/CMM-Fixture-Design.jpg" />
+                </td>
+               </tr>
+               <tr>
+                <td align="center">
+                 <strong>
+                  Plastic Product Design &amp; Development
+                 </strong>
+                </td>
+                <td align="center">
+                 <strong>
+                  Injection Mold Design
+                 </strong>
+                </td>
+                <td align="center">
+                 <strong>
+                  CMM Fixture Design
+                 </strong>
+                </td>
+               </tr>
+               <tr>
+                <td colspan="3">
+                 <img height="40px" src="images/spacer.gif" />
+                </td>
+               </tr>
+              </tbody>
+             </table>
+            </td>
+            <td valign="top" bgcolor="#F7F7F7" background="images/bodybg.png" style="background-repeat:repeat-x;padding-top:10px; padding-right:5px;">
+             <div id="rt-menu">
+              <h4>
+               <img align="absmiddle" alt="" src="images/arrow.png" />
+               Line of Business
+              </h4>
+              <ul>
+               <li>
+                Automotive
+               </li>
+               <li>
+                Electronics
+               </li>
+               <li>
+                Packaging
+               </li>
+               <li>
+                Sports
+               </li>
+               <li>
+                Appliances
+               </li>
+               <li>
+                Health care
+               </li>
+              </ul>
+             </div>
+            </td>
+           </tr>
+          </tbody>
+         </table>
+        </div>
+       </div>
+       <div style="height: 10px" class="clear">
+       </div>
+       <!-- end content -->
+      </div>
+      <!-- end container -->
+     </div>
+     <div class="footerwrapper">
+      <div class="footer1">
+       <div class="footertop">
+        <ul>
+         <li class="explore">
+          <div>
+           <h3>
+            EXPLORE
+           </h3>
+           <p>
+            <a href="index.html">
+             Home
+            </a>
+            <a href="aboutus.html">
+             About Us
+            </a>
+            <a href="contactus.html">
+             Contact
+                  Us
+            </a>
+            <a href="associates.html">
+             Associates
+            </a>
+           </p>
+          </div>
+         </li>
+         <li class="expertise">
+          <div>
+           <h3>
+            SERVICES
+           </h3>
+           <p>
+            <a href="tooling.html">
+             Injection Mould Design
+            </a>
+            <a href="plasticinjection.html">
+             CMM Fixture Design
+            </a>
+            <a href="pressuredie.html">
+             Plastic Product Design &amp; Development
+            </a>
+            <a href="presstools.html">
+             Die Casting Die Design
+            </a>
+            <a href="reverse_engineering.html">
+             Reverse Engineering and 
+3D CAD Modeling
+            </a>
+            <a href="cmmfixture.html">
+            </a>
+            <a href="3d-2d-parametric.html">
+             3D to 2D Parametric 
+Drawing Creation
+            </a>
+            <a href="manufacturing.html">
+            </a>
+           </p>
+          </div>
+         </li>
+         <li class="contact">
+          <div>
+           <h3>
+            ENQUIRIES
+           </h3>
+           <p>
+            <font color="#EF9738">
+             Email:
+            </font>
+             enquiry@diemouldtooling.in
+           </p>
+           <p>
+            <font color="#EF9738">
+             Call us on:
+            </font>
+            +91 78299 03937
+           </p>
+           <p>
+            <font color="#EF9738">
+             Office Address:
+            </font>
+            <br />
+            Diemould Tooling India Pvt. Ltd.
+            <br />
+            3784/1, 3rd Floor, 13th Cross,
+            <br />
+            Banashankari 2nd Stage,
+            <br />
+            Bengaluru - 560070,
+            <br />
+            Karnataka,
+                  INDIA
+           </p>
+          </div>
+         </li>
+         <li class="contact">
+          <div>
+           <h3>
+            ASSOCIATES
+           </h3>
+           <p>
+            <a target="_blank" href="http://www.axiomengineers.com.au/">
+             <img width="100" height="27" style="border-style: none" src="images/logo2.png" />
+            </a>
+           </p>
+          </div>
+         </li>
+        </ul>
+       </div>
+       <div class="copyright">
+        Copyright © 2015 Diemould Tooling India Pvt. Ltd. All Rights Reserved.
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <p>
+   </p>
+  </div>
+ </body>
+</html>

@@ -1,0 +1,723 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" class="">
+ <head>
+  <title>
+   SINPRAFARMA SP :: Início
+  </title>
+  <meta content="Content-Type" http-equiv="Content-Type" />
+  <link href="logo.jpg" rel="shortcut icon" />
+  <link rel="stylesheet" href="css/ui-lightness/jquery-ui-1.10.3.custom.css" type="text/css" />
+  <link href="style.css?ch=20160105225505" type="text/css" rel="stylesheet" />
+  <script async="" src="//www.google-analytics.com/analytics.js">
+  </script>
+  <script src="js/jquery.js" type="text/javascript">
+  </script>
+  <script src="js/jquery-ui-1.10.3.custom.js" type="text/javascript">
+  </script>
+  <script src="js/jquery.form.js" type="text/javascript">
+  </script>
+  <script src="js/jquery.mask.js?ch=20160105225505" type="text/javascript">
+  </script>
+  <script src="js/js.js?ch=20160105225505" type="text/javascript">
+  </script>
+  <!-- Add mousewheel plugin (this is optional) -->
+  <script src="/fancybox/lib/jquery.mousewheel-3.0.6.pack.js" type="text/javascript">
+  </script>
+  <!-- Add fancyBox -->
+  <link media="screen" type="text/css" href="/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" />
+  <script src="/fancybox/source/jquery.fancybox.pack.js?v=2.1.5" type="text/javascript">
+  </script>
+  <!-- Optionally add helpers - button, thumbnail and/or media -->
+  <link media="screen" type="text/css" href="/fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" rel="stylesheet" />
+  <script src="/fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5" type="text/javascript">
+  </script>
+  <script src="/fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6" type="text/javascript">
+  </script>
+  <link media="screen" type="text/css" href="/fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" rel="stylesheet" />
+  <script src="/fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7" type="text/javascript">
+  </script>
+  <style type="text/css">
+   .fancybox-margin{margin-right:16px;}
+  </style>
+ </head>
+ <body>
+  <div id="conteudo" style="height: 235px;">
+   <div id="header">
+    <!--LOGOTIPO-->
+    <div id="logo">
+     <img src="animate/aminate/logo/01.png" style="z-index: 10; display: inline;" />
+     <img src="animate/aminate/logo/02.png" style="z-index: 10; display: inline;" />
+     <img src="animate/aminate/logo/03.png" style="z-index: 10; display: inline;" />
+     <img src="animate/aminate/logo/04.png" style="z-index: 10; display: inline;" />
+     <img src="animate/aminate/logo/05.png" style="z-index: 10; display: inline;" />
+     <img src="animate/aminate/logo/06.png" style="z-index: 10; display: inline;" />
+     <img src="animate/aminate/logo/07.png" style="z-index: 10;" />
+    </div>
+    <script type="text/javascript">
+     var an = 0;
+		var animelogo = "";		
+		var settimeee = setInterval(function(){
+		animelogo = setInterval(function(){
+				$('#logo &gt; img').css('z-index','10');
+				$('#logo &gt; img:eq('+an+')').css('z-index','20');
+				$('#logo &gt; img:eq('+an+')').fadeIn('slow');
+				if(an &lt; 7){
+					an++
+				}else{
+					an = 0;
+					clearInterval(animelogo);
+				}
+			},50);
+		},3000);
+    </script>
+    <!-- ÁREA RESTRITA -->
+    <div style="width:470px;" id="area_restrita">
+     <form class="formlogin" method="post" action="login.php" id="dados">
+      <input type="text" style="width:145px; height:15px;" placeholder="Usuário" name="usuario" />
+      <input type="password" style="width:120px; height:15px;" value="" placeholder="Senha" name="senha" />
+      <input type="submit" style="display:none" value="Logar" />
+      <a target="_self" class="bt_log" href="javascript:return false;">
+       Logar
+      </a>
+     </form>
+     <div style="margin-left:10px; margin-top:-5px;" class="cadastro">
+      ou cadastre-se
+      <a target="_self" href="cadastre_se.php">
+       AQUI
+      </a>
+      <br />
+      <a target="_self" href="rescue.php">
+       Esqueceu sua senha?
+      </a>
+     </div>
+    </div>
+    <!-- LINKS -->
+    <ul id="nav">
+     <li>
+      <a target="_self" href="./">
+       HOME
+      </a>
+     </li>
+     <li>
+      <a target="_self" href="pg.php?pg=23">
+       SOBRE O SINPRAFARMA
+      </a>
+     </li>
+     <li>
+      <a target="_self" href="pg.php?pg=62">
+       SERVIÇOS
+      </a>
+     </li>
+     <li>
+      <a style="color:#555; text-shadow:none;" target="_self" href="./">
+       PARA VOCÊ TRABALHADOR
+       <img src="images/vip.png" />
+      </a>
+      <ul>
+       <li>
+        <a target="_self" href="pg.php?pg=138">
+         Convênios
+        </a>
+       </li>
+       <li>
+        <a target="_self" href="colonia_v2.php">
+         Colônia de Férias
+        </a>
+       </li>
+       <li>
+        <a target="_self" href="empregos.php">
+         Empregos
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li>
+      <!--pg=4-->
+      <a style="color:#555; text-shadow:none;" target="_self" href="pg.php?pg=29">
+       PARA SEU ESTABELECIMENTO
+      </a>
+      <img src="images/vip.png" />
+      <ul>
+       <li>
+        <a target="_self" href="pg.php?pg=29">
+         Homologações
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li>
+      <a target="_self" href="noticias.php">
+       NOTÍCIAS
+      </a>
+     </li>
+     <li>
+      <a target="_self" href="localizacao.php">
+       LOCALIZAÇÃO
+      </a>
+     </li>
+     <li>
+      <a target="_self" href="contato.php">
+       CONTATO
+      </a>
+     </li>
+     <li style="float:right; margin-top:2px; margin-right:0;">
+      <a target="_blank" href="https://www.facebook.com/sinprafarmasp">
+       <img src="images/bt_facebook.png" />
+      </a>
+      <a target="_blank" href="#">
+       <img src="images/bt_twitter.png" />
+      </a>
+     </li>
+    </ul>
+   </div>
+   <script type="text/javascript">
+    $('.bt_log').click(function(){
+		if($('[name=usuario]').val()==''){
+			alert('Você deve fornecer um usuário!');
+			return false;
+		}else if($('[name=senha]').val()==''){
+			alert('Você deve fornecer uma senha!');
+			return false;
+		}else{
+			$('.formlogin').submit();
+		}
+	})
+	
+	$('.formlogin').submit(function(){
+		if($('[name=usuario]').val()==''){
+			alert('Você deve fornecer um usuário!');
+			return false;
+		}else if($('[name=senha]').val()==''){
+			alert('Você deve fornecer uma senha!');
+			return false;
+		}
+	})
+   </script>
+   <div id="banners_topo">
+    <div class="bn_01">
+     <a target="_self" href="cadastre_se.php">
+      <img src="images/bn_principal.png" />
+     </a>
+    </div>
+    <div class="bn_02">
+     <img border="0" usemap="#Map" src="images/bn_parceiros.png" />
+     <map id="Map" name="Map">
+      <area target="_blank" href="http://www.fecomerciarios.org.br/" coords="5,23,172,83" shape="rect">
+      </area>
+      <area target="_blank" href="http://www.cntc.com.br/" coords="263,19,360,82" shape="rect">
+      </area>
+      <area target="_blank" href="http://www.ugt.org.br/" coords="190,18,246,81" shape="rect">
+      </area>
+     </map>
+    </div>
+   </div>
+   <div id="cont_int">
+    <div id="cont_left">
+     <div id="banner">
+      <ul id="list">
+       <li class="">
+       </li>
+       <li class="">
+       </li>
+       <li class="">
+       </li>
+       <li class="act">
+       </li>
+       <li class="">
+       </li>
+       <li class="">
+       </li>
+       <li class="">
+       </li>
+       <li class="">
+       </li>
+       <li class="">
+       </li>
+       <li class="">
+       </li>
+       <li class="">
+       </li>
+       <li class="">
+       </li>
+       <li class="">
+       </li>
+       <li class="">
+       </li>
+      </ul>
+      <ul id="cont_banner">
+       <li class="int_banners" style="z-index: 0;">
+        <img height="261" src="media/banner/20151229181132_Banner-Ano-Novo.jpg" />
+       </li>
+       <li class="int_banners" style="z-index: 0;">
+        <a target="_self" href="pg.php?pg=150">
+         <img height="261" src="media/banner/20151208122632_banner_jornal_cobra_2015_V2.png" />
+        </a>
+       </li>
+       <li class="int_banners" style="z-index: 0;">
+        <a target="_self" href="pg.php?pg=148">
+         <img height="261" src="media/banner/20151202172016_conquista-do-Vale-Refeicao.png" />
+        </a>
+       </li>
+       <li class="int_banners" style="z-index: 2;">
+        <a target="_self" href="pg.php?pg=146">
+         <img height="261" src="media/banner/20151117172214_banner_reajuste_1.jpg" />
+        </a>
+       </li>
+       <li class="int_banners" style="z-index: 0;">
+        <a target="_self" href="pg.php?pg=143">
+         <img height="261" src="media/banner/20150928143614_DIA_D.png" />
+        </a>
+       </li>
+       <li class="int_banners" style="z-index: 0;">
+        <img height="261" src="media/banner/20150924175030_banner_raiadrogasil.png" />
+       </li>
+       <li class="int_banners" style="z-index: 0;">
+        <a target="_self" href="pg.php?pg=137">
+         <img height="261" src="media/banner/20150909163928_kitsbebe.png" />
+        </a>
+       </li>
+       <li class="int_banners" style="z-index: 0;">
+        <img height="261" src="media/banner/20150728143719_rede_sociais.jpg" />
+       </li>
+       <li class="int_banners" style="z-index: 0;">
+        <a target="_self" href="pg.php?pg=131">
+         <img height="261" src="media/banner/20150729184604_banner.png" />
+        </a>
+       </li>
+       <li class="int_banners" style="z-index: 0;">
+        <a target="_self" href="pg.php?pg=130">
+         <img height="261" src="media/banner/20150623182906_banner_retrat..png" />
+        </a>
+       </li>
+       <li class="int_banners" style="z-index: 0;">
+        <a target="_self" href="pg.php?pg=128">
+         <img height="261" src="media/banner/20150616142554_banner_sinpra_novasede.png" />
+        </a>
+       </li>
+       <li class="int_banners" style="z-index: 0;">
+        <a target="_self" href="pg.php?pg=126">
+         <img height="261" src="media/banner/20150603141814_banner_sinpra3.jpg" />
+        </a>
+       </li>
+       <li class="int_banners" style="z-index: 0;">
+        <a target="_self" href="pg.php?pg=107">
+         <img height="261" src="media/banner/20150130124617_sinprafarma_quadruplica_sinidicalizados.png" />
+        </a>
+       </li>
+       <li class="int_banners" style="z-index: 0;">
+        <a target="_self" href="pg.php?pg=104">
+         <img height="261" src="media/banner/20150121171725_BANNER_ENTRE_EM_CONTATO.png" />
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div style="height:10px;">
+     </div>
+     <div id="mais_noticias">
+      <div style="background-position:70px 10px" class="block">
+       Mais Notícias
+      </div>
+      <ul class="mais_noticias">
+       <li>
+        <a target="_self" href="noticia.php?nt=1583">
+         <div class="not_img">
+          <div>
+           <img height="98" src="media/thumb_banner/20160105172118_c.jpg" />
+          </div>
+         </div>
+        </a>
+        <p class="not_titulo">
+         MPL convoca atos em SP, RJ e BH contra o aumento na tarifa dos transportes
+        </p>
+        <p>
+         O Movimento Passe Livre (MPL) convocou protestos para a próxima sexta-feira (8/1) em três capitais do País contra o aumento da tarifa de ônibus, metrô e trem. Em São Paulo, a data da...
+        </p>
+       </li>
+       <li>
+        <a target="_self" href="noticia.php?nt=1582">
+         <div class="not_img">
+          <div>
+           <img height="98" src="media/thumb_banner/20160105121846_Motta-fala.jpg" />
+          </div>
+         </div>
+        </a>
+        <p class="not_titulo">
+         Motta fala ao "Estadão" sobre governo Dilma e ajuste fiscal
+        </p>
+        <p>
+         O presidente da Fecomerciários e da UGT/SP, Luiz Carlos Motta, foi entrevistado pelo jornal “O Estado de S.Paulo”, edição de sábado, 2 de janeiro, na matéria sobre a vinculação da manutenção de apoio das entidades sindicais ao governo...
+        </p>
+       </li>
+       <li>
+        <a target="_self" href="noticia.php?nt=1581">
+         <div class="not_img">
+          <div>
+           <img height="98" src="media/thumb_banner/20151230102232_Salario.png" />
+          </div>
+         </div>
+        </a>
+        <p class="not_titulo">
+         Dilma assina decreto que eleva salário mínimo para R$ 880 em 2016
+        </p>
+        <p>
+         A presidente Dilma Rousseff assinou decreto nesta terça-feira (29/12) fixando o salário mínimo em R$ 880. O valor entra em vigor a partir de 1 de janeiro. O novo mínimo será publicado no Diário Oficial da...
+        </p>
+       </li>
+       <li>
+        <a target="_self" href="noticia.php?nt=1580">
+         <div class="not_img">
+          <div>
+           <img height="98" src="media/thumb_banner/20151229105210_Rodovias.jpg" />
+          </div>
+         </div>
+        </a>
+        <p class="not_titulo">
+         Caminhões ficam proibidos de rodar em rodovias nos feriados de 2016
+        </p>
+        <p>
+         A Polícia Rodoviária Federal proibiu o tráfego de caminhões em rodovias federais durante os feriados de 2016. A portaria foi publicada no Diário Oficial da União desta terça-feira (29/12)...
+        </p>
+       </li>
+      </ul>
+     </div>
+     <div id="links_sec">
+      <ul class="links_sec">
+       <li>
+        <a target="_self" href="pg.php?pg=27">
+         <img width="345" height="101" src="images/bt_guias_boletos.png" />
+        </a>
+       </li>
+       <li style="margin-right:0;">
+        <a target="_self" href="convencao.php">
+         <img width="345" height="101" src="images/bt_adiantamento.png" />
+        </a>
+       </li>
+       <li>
+        <a target="_self" href="pg.php?pg=138">
+         <img width="345" height="101" src="images/bt_convenios.png" />
+        </a>
+       </li>
+       <li style="margin-right:0;">
+        <!-- <a href=" pg.php?pg=46" target="_self">-->
+        <a target="_self" href="">
+         <img width="345" height="101" src="images/bt_juridico.png" />
+        </a>
+       </li>
+       <li>
+        <a target="_self" href="colonia_v2.php">
+         <img width="345" height="101" src="images/bt_colonia_ferias.png" />
+        </a>
+       </li>
+       <li style="margin-right:0;">
+        <a target="_self" href="pg.php?pg=29">
+         <img width="345" height="101" src="images/bt_homologacao.png" />
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div id="not_destaques">
+      <div style="background-position:60px 10px" class="block">
+       Destaques
+      </div>
+      <ul class="not_destaques">
+       <li>
+        <a target="_self" href="noticia.php?nt=1579">
+        </a>
+        <p class="not_titulo">
+         Vacina contra dengue é aprovada pela Anvisa e deve ser vendida em 3 meses
+        </p>
+        <p>
+         A Anvisa (Agência Nacional de Vigilância Sanitária) aprovou a primeira vacina contra a dengue no País. A decisão, publicada no "Diário Oficial" da União nesta segunda-feira (28/12), é o passo inicial para...
+        </p>
+       </li>
+       <li>
+        <a target="_self" href="noticia.php?nt=1578">
+        </a>
+        <p class="not_titulo">
+         Câmara aprova concessão de título de Cidadão Paulistano ao presidente Motta
+        </p>
+        <p>
+         Vereadores da Câmara Municipal de São Paulo aprovaram, por unanimidade, a concessão do título de Cidadão Paulistano a Luiz Carlos Motta, presidente da Fecomerciários e da UGT/SP. O Projeto de Lei nº 85/2015, de autoria do vereador Salomão...
+        </p>
+       </li>
+       <li>
+        <a target="_self" href="noticia.php?nt=1577">
+        </a>
+        <p class="not_titulo">
+         Verão começa sob forte El Niño e previsão de calor intenso e mais chuvas
+        </p>
+        <p>
+         O verão começou nesta terça-feira (22/12) no hemisfério sul, sob efeito de um forte El Niño, e a previsão de muito calor. Todas as regiões do País, exceto a Sul, devem ter temperatura acima da...
+        </p>
+       </li>
+       <li>
+        <a target="_self" href="noticia.php?nt=1576">
+        </a>
+        <p class="not_titulo">
+         Estação Luz permanece fechada e passageiros sofrem para fazer interligação no Brás
+        </p>
+        <p>
+         A estação Luz da CPTM (Companhia Paulista de Trens Metropolitanos) permanece fechada nesta terça-feira (22/12) após o incêndio que destruiu parte do prédio e devastou o Museu da Língua...
+        </p>
+       </li>
+      </ul>
+     </div>
+    </div>
+    <div id="cont_right">
+     <div id="palavra_presidente">
+      <div style="background-position:120px 10px" class="block">
+       Palavra do Presidente
+      </div>
+      <div style="height:90px; margin:15px 0;">
+       <img style="float:left; margin-right:20px;" src="../images/presidente.png" />
+       <p style="padding-top:58px;">
+        Sr. João Pereira de Brito
+        <br />
+        <strong>
+         Presidente do Sinprafarma
+        </strong>
+       </p>
+      </div>
+      <div style="text-align:justify">
+       <p>
+        O presidente do Sinprafarma-SP, preocupado com o bem estar e qualidade de vida dos trabalhadores práticos de farmácia de sua base territorial, assume o compromisso junto à categoria patronal de lutar constantemente por melhores salários, benefícios e condições  de trabalho. Para que esta luta venha se fortalecer cada vez mais, convido todos os trabalhadores a participarem.
+       </p>
+       <p>
+        Unidos seremos mais fortes.
+       </p>
+      </div>
+     </div>
+     <!--<div id="colonia" style="margin:20px 0;">
+	<img src="aminate/colonia/01.png"  />
+    <img src="aminate/colonia/02.png"  />
+    <img src="aminate/colonia/03.png"  />
+    <img src="aminate/colonia/04.png"  />
+    <img src="aminate/colonia/05.png"  />
+    <img src="aminate/colonia/06.png"  />
+    <img src="aminate/colonia/07.png"  />
+    <img src="aminate/colonia/08.png"  />
+    <img src="aminate/colonia/09.png"  />
+    <img src="aminate/colonia/10.png"  />
+    <img src="aminate/colonia/11.png"  />
+</div>
+<script type="text/javascript">
+	var en = 0;
+	var animecolonia = "";
+	var settime = setInterval(function(){
+		animecolonia = setInterval(function(){
+			$('#colonia > img').css('z-index','10');
+			$('#colonia > img:eq('+en+')').css('z-index','20');
+			$('#colonia > img:eq('+en+')').fadeIn('slow');
+			if(en < 11){
+				en++
+			}else{
+				en = 0;
+				clearInterval(animecolonia);
+			}
+		},100);
+	},6000);
+	
+</script>
+-->
+     <a target="_self" href="colonia_v2.php">
+      <img src="images/colonia.png" />
+     </a>
+     <!--<div class="bn_03" style="margin:20px 0 40px 0;"><a href="cadastre_se.php" target="_self"><img src="images/bn_assossiado.png"  /></a></div>-->
+     <div id="empregos">
+      <div style="background-position:60px 10px;" class="block">
+       Empregos
+      </div>
+      <ul class="empregos">
+       <li>
+        <a target="_self" href="det_emprego.php?id=286">
+        </a>
+        <p class="emp_titulo">
+         <b>
+          Droga Leste
+         </b>
+         Farmaceutico (noturno) / 2690,00
+        </p>
+        <p style="color:#999">
+         Itaquera
+        </p>
+        <p>
+         Irá realizar a dispensação do medicamento. Necessário ter CRF ativo e conhecer de genérico, similar e ético.
+        </p>
+       </li>
+       <li>
+        <a target="_self" href="det_emprego.php?id=285">
+        </a>
+        <p class="emp_titulo">
+         <b>
+          D&amp;F Farma Ltda
+         </b>
+         Balconista / Combinar
+        </p>
+        <p style="color:#999">
+         Av. Oswaldo Collino, 840 - Presidente Altino - Osasco
+        </p>
+        <p>
+         Atendimento no balcão, dispensar medicamentos, aplicação de injetáveis, aferição de pressão.
+        </p>
+       </li>
+       <li>
+        <a target="_self" href="det_emprego.php?id=283">
+        </a>
+        <p class="emp_titulo">
+         <b>
+          Rede Droga Leste
+         </b>
+         Balconista de Farmácia / Combinar
+        </p>
+        <p style="color:#999">
+         Zona Leste
+        </p>
+        <p>
+        </p>
+       </li>
+       <li>
+        <a target="_self" href="det_emprego.php?id=281">
+        </a>
+        <p class="emp_titulo">
+         <b>
+          Farma Familia
+         </b>
+         Farmaceutica (o) Responsável / Combinar
+        </p>
+        <p style="color:#999">
+         Rua Costa Barros,66- Vila Alpina
+        </p>
+        <p>
+         Atividades: atendimento aos clientes; organização dos produtos e controle dos psicotrópicos; serviços de saúde (aplicação de injetáveis e esclarecimento de dúvidas); administração dos medicamentos injetáveis e validade dos produtos;Conhecimento do Programa SGNPC .
+- Responsável pela compra, armazenagem e distribuição de medicamentos e materiais, bem como pelo controle de estoque e descarte de produtos vencidos; - Responsável técnico pela farmácia da empresa, garantindo que todas as normas impostas pelos órgãos responsáveis sejam cumpridas rigorosamente.
+        </p>
+       </li>
+       <li>
+        <a target="_self" href="det_emprego.php?id=280">
+        </a>
+        <p class="emp_titulo">
+         <b>
+          Rede Droga Leste
+         </b>
+         Balconista de Drogaria / Piso
+        </p>
+        <p style="color:#999">
+         Zona Leste de SP
+        </p>
+        <p>
+         Atendimento ao cliente na dispensação de medicamentos, conhecimento em medicamentos éticos, genéricos e similares.
+        </p>
+       </li>
+      </ul>
+      <div style="text-align:center; margin:30px 0;">
+       <a style="margin:15px 0;" class="button" target="_self" href="empregos.php">
+        VER TODAS AS VAGAS
+       </a>
+       <a target="_self" href="cad_assoc.php">
+        CADASTRE SEU CURRÍCULO
+       </a>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <div id="footer">
+   <div id="cont_footer">
+    <ul class="nav">
+     <li>
+      <a target="_self" href="./">
+       HOME
+      </a>
+     </li>
+     <li>
+      <a target="_self" href="pg.php?pg=23">
+       SOBRE O SINPRAFARMA
+      </a>
+     </li>
+     <li>
+      <a target="_self" href="pg.php?pg=34">
+       SERVIÇOS
+      </a>
+     </li>
+     <li>
+      <a target="_self" href="pg.php?pg=65">
+       PARA VOCÊ TRABALHADOR
+      </a>
+     </li>
+     <li>
+      <a target="_self" href="pg.php?pg=29">
+       PARA SEU ESTABELECIMENTO
+      </a>
+     </li>
+     <li>
+      <a target="_self" href="noticias.php">
+       NOTÍCIAS
+      </a>
+     </li>
+     <li>
+      <a target="_self" href="localizacao.php">
+       LOCALIZAÇÃO
+      </a>
+     </li>
+     <li>
+      <a target="_self" href="contato.php">
+       CONTATO
+      </a>
+     </li>
+    </ul>
+    <div class="rights">
+     Todos os direitos reservados à Sinprafarma © 2016
+     <div style="float:right; margin-left:440px;">
+      <a target="_blank" href="http://webmail.sinprafarmasp.org.br">
+       webmail
+      </a>
+     </div>
+    </div>
+    <div class="footer_logo">
+     <div id="logo_fo">
+      <img src="animate/aminate/logo/01.png" style="z-index: 20; display: inline;" />
+      <img src="animate/aminate/logo/02.png" style="z-index: 10; display: inline;" />
+      <img src="animate/aminate/logo/03.png" style="z-index: 10; display: inline;" />
+      <img src="animate/aminate/logo/04.png" style="z-index: 10; display: inline;" />
+      <img src="animate/aminate/logo/05.png" style="z-index: 10; display: inline;" />
+      <img src="animate/aminate/logo/06.png" style="z-index: 10; display: inline;" />
+      <img src="animate/aminate/logo/07.png" style="z-index: 10;" />
+     </div>
+     <script type="text/javascript">
+      var on = 0;
+                var aanimelogo = "";		
+                var ssettimeee = setInterval(function(){
+                aanimelogo = setInterval(function(){
+                        $('#logo_fo &gt; img').css('z-index','10');
+                        $('#logo_fo &gt; img:eq('+an+')').css('z-index','20');
+                        $('#logo_fo &gt; img:eq('+an+')').fadeIn('slow');
+                        if(on &lt; 7){
+                            on++
+                        }else{
+                            on = 0;
+                            clearInterval(aanimelogo);
+                        }
+                    },50);
+                },3000);
+     </script>
+    </div>
+   </div>
+  </div>
+  <script>
+   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-45531533-1', 'sinprafarmasp.org.br');
+  ga('send', 'pageview');
+  </script>
+  --&gt;
+  <!--<div style="position:absolute; left:0; top:0; width:100%; height:100%; z-index:1000019; background-color:rgba(0,0,0,0.9)">
+        <div style="position:absolute; left:50%; top:50%; margin-left:-218px; margin-top:-164px; z-index:1000020">
+            <img src="images/popup_futsal.png" width="436" height="328" style="cursor:pointer" onClick="javascript:window.open('pg.php?pg=81','_self')"  />
+            <div style="position:absolute; right:0px; top:0px; background-color:rgba(0,0,0,0); width:25px; height:25px; cursor:pointer" onClick="javascript:$(this).parent().parent().remove();"></div>
+        </div>
+    </div>-->
+ </body>
+</html>

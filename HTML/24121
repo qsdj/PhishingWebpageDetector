@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+ <head>
+  <link href="css/main_css.css" type="text/css" rel="stylesheet" />
+  <script src="jquery/jquery.js">
+  </script>
+  <script src="jquery/main_jquery.js">
+  </script>
+  <!-- Head of website with Logo -->
+ </head>
+ <body>
+  <div id="head">
+   <div id="logo">
+    <img style="width:50px; height:50;" src="image/aussie_visa_logo.jpg" alt="" class="logo" />
+   </div>
+   <div id="title">
+    Aussie Visa Educational Zone
+   </div>
+  </div>
+  <!--Main Links to Other Pages-->
+  <div class="links">
+   <style>
+    ul#menu li{	display: inline;	}
+   </style>
+   <ul id="menu">
+    <li>
+     <a class="zero">
+     </a>
+    </li>
+    <li>
+     <a href="index.html" class="one">
+      About Us
+     </a>
+    </li>
+    <li>
+     <a href="Visa_Process.html" class="two">
+      Visa Types
+     </a>
+    </li>
+    <li>
+     <a href="Visa_Process.html" class="three">
+      Education
+     </a>
+    </li>
+    <li>
+     <a href="Contact.html" class="four">
+      Jobs
+     </a>
+    </li>
+    <li>
+     <a href="Contact.html" class="five">
+      Accomodation
+     </a>
+    </li>
+    <li>
+     <a href="services.html" class="six">
+      Services
+     </a>
+    </li>
+    <li>
+     <a class="seven">
+     </a>
+    </li>
+   </ul>
+  </div>
+  <style>
+   body { background-color: rgb(255, 233, 197); }
+
+	
+	   	ul#menu li{ display: inline; }
+
+	   	#extension{
+			top: 1500px;
+			left: 0px;
+			width: 1350px;
+			height: 400px;
+			position: absolute;
+			background-color: #303030 ;
+			color: white;
+			font-family: "Helvetica"; 
+		}
+
+		#student_visa {
+			position: absolute;
+			top: 350px;
+			left: 600px;
+			font-family: "Helvetica";
+			color: #303030 ;
+		}
+
+		#sponsor_visa {
+			position: absolute;
+			top: 350px;
+			left: 550px;
+			font-family: "Helvetica";
+			color: #303030 ;
+		}
+
+		#partner_visa {
+			position: absolute;
+			top: 350px;
+			left: 650px;
+			font-family: "Helvetica";
+			color: #303030 ;
+		}
+
+		#employer_nomination_scheme_visa {
+			position: absolute;
+			top: 350px;
+			left: 600px;
+			font-family: "Helvetica";
+			color: #303030 ;
+		}
+		
+		#skilled_regional_visa {
+			position: absolute;
+			top: 350px;
+			left: 600px;
+			font-family: "Helvetica";
+			color: #303030 ;
+		}
+
+		#skilled_nominated_visa {
+			position: absolute;
+			top: 350px;
+			left: 600px;
+			font-family: "Helvetica";
+			color: #303030 ;
+		}
+
+		#parent_visa {
+			position: absolute;
+			top: 350px;
+			left: 600px;
+			font-family: "Helvetica";
+			color: #303030 ;
+		}
+
+		#refugee_visa {
+			position: absolute;
+			top: 350px;
+			left: 550px;
+			font-family: "Helvetica";
+			color: #303030 ;
+		}
+
+
+
+		#australian_flag {
+			position: absolute;
+			left: 620px;
+			top: 380px;
+			color:#383838;
+			font-family:"Helvetica";
+			font-size:100%;
+			text-decoration: none;
+			font-weight: bold;
+		}
+
+
+		#visas_background {
+			background-color: rgb(250, 250, 250);
+			position: absolute;
+			top: 300px;
+			left: 120px;
+			width: 1100px;
+			height: 1000px;
+			border-radius: 25px;
+		}
+
+		#visas a {
+			color: #F8F8F8;
+			font-family:"Helvetica";
+			font-size:100%;
+			text-decoration: none;
+			font-weight: bold;
+		}
+  </style>
+  <script>
+   $(document).ready(function(){
+  			$("#student_visa").hide();
+  			$("#sponsor_visa").hide();
+  			$("#partner_visa").hide();
+  			$("#employer_nomination_scheme_visa").hide();
+  			$("#skilled_regional_visa").hide();
+  			$("#skilled_nominated_visa").hide();
+  			$("#parent_visa").hide();
+  			$("#refugee_visa").hide();
+  			
+  			$("#visas a.student_visa").click(function(){
+  				$("#visas a").css("color", "#F8F8F8");
+  				$("#visas a.student_visa").css("color", "#383838");
+  				$("#australian_flag").fadeOut(500);
+  				$("#sponsor_visa").fadeOut(500);
+  				$("#partner_visa").fadeOut(500);
+  				$("#employer_nomination_scheme_visa").fadeOut(500);
+  				$("#skilled_regional_visa").fadeOut(500);
+  				$("#skilled_nominated_visa").fadeOut(500);
+  				$("#parent_visa").fadeOut(500);
+  				$("#refugee_visa").fadeOut(500);
+  				$("#student_visa").fadeIn(500);
+  			});
+  			
+  			$("#visas a.sponsor_visa").click(function(){
+  				$("#visas a").css("color", "#F8F8F8");
+  				$("#visas a.sponsor_visa").css("color", "#383838");
+  				$("#australian_flag").fadeOut(500);
+  				$("#student_visa").fadeOut(500);
+  				$("#partner_visa").fadeOut(500);
+  				$("#employer_nomination_scheme_visa").fadeOut(500);
+  				$("#skilled_regional_visa").fadeOut(500);
+  				$("#skilled_nominated_visa").fadeOut(500);
+  				$("#parent_visa").fadeOut(500);
+  				$("#refugee_visa").fadeOut(500);
+  				$("#sponsor_visa").fadeIn(500);
+  			});
+
+  			$("#visas a.partner_visa").click(function(){
+  				$("#visas a").css("color", "#F8F8F8");
+  				$("#visas a.partner_visa").css("color", "#383838");
+  				$("#australian_flag").fadeOut(500);
+  				$("#student_visa").fadeOut(500);
+  				$("#sponsor_visa").fadeOut(500);
+  				$("#employer_nomination_scheme_visa").fadeOut(500);
+  				$("#skilled_regional_visa").fadeOut(500);
+  				$("#skilled_nominated_visa").fadeOut(500);
+  				$("#parent_visa").fadeOut(500);
+  				$("#refugee_visa").fadeOut(500);
+  				$("#partner_visa").fadeIn(500);
+  			});
+
+  			$("#visas a.employer_nomination_scheme_visa").click(function(){
+  				$("#visas a").css("color", "#F8F8F8");
+  				$("#visas a.employer_nomination_scheme_visa").css("color", "#383838");
+  				$("#australian_flag").fadeOut(500);
+  				$("#student_visa").fadeOut(500);
+  				$("#sponsor_visa").fadeOut(500);
+  				$("#partner_visa").fadeOut(500);
+  				$("#skilled_regional_visa").fadeOut(500);
+  				$("#skilled_nominated_visa").fadeOut(500);
+  				$("#parent_visa").fadeOut(500);
+  				$("#refugee_visa").fadeOut(500);
+  				$("#employer_nomination_scheme_visa").fadeIn(500);
+  			});
+
+
+  			$("#visas a.skilled_regional_visa").click(function(){
+  				$("#visas a").css("color", "#F8F8F8");
+  				$("#visas a.skilled_regional_visa").css("color", "#383838");
+  				$("#australian_flag").fadeOut(500);
+  				$("#student_visa").fadeOut(500);
+  				$("#sponsor_visa").fadeOut(500);
+  				$("#partner_visa").fadeOut(500);
+  				$("#employer_nomination_scheme_visa").fadeOut(500);
+  				$("#skilled_nominated_visa").fadeOut(500);
+  				$("#parent_visa").fadeOut(500);
+  				$("#refugee_visa").fadeOut(500);
+  				$("#skilled_regional_visa").fadeIn(500);
+  			});
+
+  			$("#visas a.skilled_nominated_visa").click(function(){
+  				$("#visas a").css("color", "#F8F8F8");
+  				$("#visas a.skilled_nominated_visa").css("color", "#383838");
+  				$("#australian_flag").fadeOut(500);
+  				$("#student_visa").fadeOut(500);
+  				$("#sponsor_visa").fadeOut(500);
+  				$("#partner_visa").fadeOut(500);
+  				$("#employer_nomination_scheme_visa").fadeOut(500);
+  				$("#skilled_regional_visa").fadeOut(500);
+  				$("#parent_visa").fadeOut(500);
+  				$("#refugee_visa").fadeOut(500);
+  				$("#skilled_nominated_visa").fadeIn(500);
+  			});
+
+  			$("#visas a.parent_visa").click(function(){
+  				$("#visas a").css("color", "#F8F8F8");
+  				$("#visas a.parent_visa").css("color", "#383838");
+  				$("#australian_flag").fadeOut(500);
+  				$("#student_visa").fadeOut(500);
+  				$("#sponsor_visa").fadeOut(500);
+  				$("#partner_visa").fadeOut(500);
+  				$("#employer_nomination_scheme_visa").fadeOut(500);
+  				$("#skilled_regional_visa").fadeOut(500);
+  				$("#skilled_nominated_visa").fadeOut(500);
+  				$("#refugee_visa").fadeOut(500);
+  				$("#parent_visa").fadeIn(500);
+  			});
+
+  			$("#visas a.refugee_visa").click(function(){
+  				$("#visas a").css("color", "#F8F8F8");
+  				$("#visas a.refugee_visa").css("color", "#383838");
+  				$("#australian_flag").fadeOut(500);
+  				$("#student_visa").fadeOut(500);
+  				$("#sponsor_visa").fadeOut(500);
+  				$("#partner_visa").fadeOut(500);
+  				$("#employer_nomination_scheme_visa").fadeOut(500);
+  				$("#skilled_regional_visa").fadeOut(500);
+  				$("#skilled_nominated_visa").fadeOut(500);
+  				$("#parent_visa").fadeOut(500);
+  				$("#refugee_visa").fadeIn(500);
+  			});
+
+		});
+  </script>
+  <!-- List of Visas -->
+  <div id="visas_background">
+  </div>
+  <div id="visas">
+   <p style="position:absolute; top:200px; left:230px; font-family:Helvetica; font-size:150%; color:#383838;">
+    <b>
+     We have information of main VISAS to help you to stay and work in Australia
+    </b>
+   </p>
+   <p style="position:absolute; top: 400px; left:200px; display:block; font-weight:bold; font-family:Helvetica; background-color:#7e0b0b; border-style:solid; border-width:7px; border-color:#7e0b0b; border-radius: 10px; text-align:center;">
+    <a onclick="return false" href="#" class="student_visa">
+     Student Visa
+     <br />
+     <font size="2">
+      Apply Now
+     </font>
+    </a>
+   </p>
+   <p style="position:absolute; top: 470px; left:200px; display:block; font-weight:bold; font-family:Helvetica; background-color:#7e0b0b; border-style: solid; border-width: 7px; border-color:#7e0b0b; border-radius: 10px; text-align:center;">
+    <a onclick="return false" href="#" class="sponsor_visa">
+     Sponsor Visa
+     <br />
+     <font size="2">
+      Apply Now
+     </font>
+    </a>
+   </p>
+   <p style="position:absolute; top: 540px; left:200px; display:block; font-weight:bold; font-family:Helvetica; background-color:#7e0b0b; border-style: solid; border-width: 7px; border-color:#7e0b0b; border-radius: 10px; text-align:center;">
+    <a onclick="return false" href="#" class="partner_visa">
+     Partner Visa
+     <br />
+     <font size="2">
+      Apply Now
+     </font>
+    </a>
+   </p>
+   <p style="position:absolute; top: 610px; left:200px; display:block; font-weight:bold; font-family:Helvetica; background-color:#7e0b0b; border-style: solid; border-width: 7px; border-color:#7e0b0b; border-radius: 10px; text-align:center;">
+    <a onclick="return false" href="#" class="employer_nomination_scheme_visa">
+     Employer Nomination Scheme
+     <br />
+     <font size="2">
+      Apply Now
+     </font>
+    </a>
+   </p>
+   <p style="position:absolute; top: 680px; left:200px; display:block; font-weight:bold; font-family:Helvetica; background-color:#7e0b0b; border-style: solid; border-width: 7px; border-color:#7e0b0b; border-radius: 10px; text-align:center;">
+    <a onclick="return false" href="#" class="skilled_regional_visa">
+     Skilled Regional Visa
+     <br />
+     <font size="2">
+      Apply Now
+     </font>
+    </a>
+   </p>
+   <p style="position:absolute; top: 750px; left:200px; display:block; font-weight:bold; font-family:Helvetica; background-color:#7e0b0b; border-style: solid; border-width: 7px; border-color:#7e0b0b; border-radius: 10px; text-align:center;">
+    <a onclick="return false" href="#" class="skilled_nominated_visa">
+     Skilled Nominated Visa
+     <br />
+     <font size="2">
+      Apply Now
+     </font>
+    </a>
+   </p>
+   <p style="position:absolute; top: 820px; left:200px; display:block; font-weight:bold; font-family:Helvetica; background-color:#7e0b0b; border-style: solid; border-width: 7px; border-color:#7e0b0b; border-radius: 10px; text-align:center;">
+    <a onclick="return false" href="#" class="parent_visa">
+     Parent Visa
+     <br />
+     <font size="2">
+      Apply Now
+     </font>
+    </a>
+   </p>
+   <p style="position:absolute; top: 890px; left:200px; display:block; font-weight:bold; font-family:Helvetica; background-color:#7e0b0b; border-style: solid; border-width: 7px; border-color:#7e0b0b; border-radius: 10px; text-align:center;">
+    <a onclick="return false" href="#" class="refugee_visa">
+     Refugee Visa
+     <br />
+     <font size="2">
+      Apply Now
+     </font>
+    </a>
+   </p>
+  </div>
+  <!-- end of List of visas -->
+  <!-- Australian Flag -->
+  <div id="australian_flag">
+   <p align="center" style="font-size:25px;">
+    Welcome to Visa Process Zone
+   </p>
+   <p align="center">
+    We provide steps of important visas in easy way
+   </p>
+   <p align="center">
+    Click any Visa you like to apply on the left side
+   </p>
+   <p align="center">
+    It will show you steps you need to go through
+   </p>
+   <br />
+   <img width="450px" src="image/flag.jpg" />
+  </div>
+  <!-- end of Australian flag -->
+  <!-- student visa -->
+  <div id="student_visa" style="display: none;">
+   <video width="500" style="position:relative; left:0px;" controls="controls">
+    <source type="video/mp4" src="video/motion.mp4">
+    </source>
+   </video>
+   <p style="font-size:30px;">
+    <b>
+     How to study in Australia?
+    </b>
+   </p>
+   <p style="position:relative; left:30px;">
+    <img width="30" style="position:relative; top: 5px;" src="image/1.png" />
+    Decide on a course and an institution
+   </p>
+   <p style="position:relative; left:30px;">
+    <img width="30" style="position:relative; top: 5px;" src="image/2.png" />
+    Apply for the course
+   </p>
+   <p style="position:relative; left:30px;">
+    <img width="30" style="position:relative; top: 5px;" src="image/3.png" />
+    Receive your letter of offer from institution
+   </p>
+   <p style="position:relative; left:30px;">
+    <img width="30" style="position:relative; top: 5px;" src="image/4.png" />
+    Cinform to the institution that you are intending join the course
+   </p>
+   <p style="position:relative; left:30px;">
+    <img width="30" style="position:relative; top: 5px;" src="image/5.png" />
+    Receive Confirmation of Enrolment (CoE)
+   </p>
+   <p style="position:relative; left:30px;">
+    <img width="30" style="position:relative; top: 5px;" src="image/6.png" />
+    Apply for your visa
+   </p>
+   <br />
+   <p>
+    <a href="https://docs.google.com/forms/d/16NlI1EKZejScbQFr5dhGgVdy2sL5n_jKSL_XL2LQAf8/viewform">
+     <img style="position:relative; left: 105px;" src="image/click_to_assess_yourself_button.png" />
+    </a>
+   </p>
+  </div>
+  <!-- end of student visa -->
+  <!-- sponsored visa -->
+  <div id="sponsor_visa" style="display: none;">
+   <video width="500" style="position:relative; left:0px;" controls="controls">
+    <source type="video/mp4" src="video/motion.mp4">
+    </source>
+   </video>
+   <p style="font-size:20px;">
+    <b>
+     If you like to apply sponsored visa as an employee:
+    </b>
+   </p>
+   <p style="position:relative; left:30px;">
+    <img width="30" style="position:relative; top: 5px;" src="image/1.png" />
+    Accept an offer of employment from the employer
+   </p>
+   <p style="position:relative; left:30px;">
+    <img width="30" style="position:relative; top: 5px;" src="image/2.png" />
+    Apply for the 457 visa
+   </p>
+   <p style="position:relative; left:30px;">
+    <img width="30" style="position:relative; top: 5px;" src="image/3.png" />
+    work in your nominated occupation, and for the employer that has
+    <br />
+            sponsored you
+   </p>
+   <br />
+   <p>
+    <a href="https://docs.google.com/forms/d/1MpNYUizN1m1vm864xUUQE-9Y8CqRTxi2OUugvPgNonQ/viewform">
+     <img style="position:relative; left: 130px;" src="image/click_to_assess_yourself_button.png" />
+    </a>
+   </p>
+  </div>
+  <!-- end of sponsored visa -->
+  <!-- partner visa -->
+  <div id="partner_visa" style="display: none;">
+   <video width="500" style="position:relative; left:-30px;" controls="controls">
+    <source type="video/mp4" src="video/motion.mp4">
+    </source>
+   </video>
+   <p style="font-size:20px;">
+    <b>
+     To get partner visa, you must be married to or
+     <br />
+     in a de facto relationship with an:
+    </b>
+   </p>
+   <p style="position:relative; left:30px;">
+    <img width="30" style="position:relative; top: 5px;" src="image/1.png" />
+    Australian citizen
+   </p>
+   <p style="position:relative; left:30px;">
+    <img width="30" style="position:relative; top: 5px;" src="image/2.png" />
+    Australian permanent resident
+   </p>
+   <p style="position:relative; left:30px;">
+    <img width="30" style="position:relative; top: 5px;" src="image/3.png" />
+    eligible New Zealand citizen
+   </p>
+   <p style="position:relative; left:30px;">
+    <img width="30" style="position:relative; top: 5px;" src="image/4.png" />
+    You must be in Australia when you apply
+   </p>
+   <br />
+   <p>
+    <a href="https://docs.google.com/forms/d/1qhRA57hovzHD0nmqTNdTHFNqp07rWJm26GVR2w0GoFg/viewform">
+     <img style="position:relative; left: 80px;" src="image/click_to_assess_yourself_button.png" />
+    </a>
+   </p>
+  </div>
+  <!-- end of partner visa -->
+  <!-- Employer Nomination Scheme visa -->
+  <div id="employer_nomination_scheme_visa" style="display: none;">
+   <video width="500" style="position:relative; left:15px;" controls="controls">
+    <source type="video/mp4" src="video/motion.mp4">
+    </source>
+   </video>
+   <p style="font-size:20px;">
+    <b>
+     This visa is Permanent Resident visa for skilled workers
+    </b>
+   </p>
+   <p>
+    <b>
+     Requirements
+    </b>
+   </p>
+   <p style="position:relative; left:30px;">
+    <img width="30" style="position:relative; top: 5px;" src="image/1.png" />
+    Nomination by an approved Australian employer
+   </p>
+   <p style="position:relative; left:30px;">
+    <img width="30" style="position:relative; top: 5px;" src="image/2.png" />
+    Under 50 years of age, unless you are exempt
+   </p>
+   <p style="position:relative; left:30px;">
+    <img width="30" style="position:relative; top: 5px;" src="image/3.png" />
+    Meeting the skills, qualifications and English language requirements,
+    <br />
+             unless you are exempt
+   </p>
+   <p style="position:relative; left:30px;">
+    <img width="30" style="position:relative; top: 5px;" src="image/4.png" />
+    Applying under the stream for which you were nominated
+   </p>
+   <br />
+   <p>
+    <a href="https://docs.google.com/forms/d/1yQKo7H1OHOzr2eaWFiqmThtKznN1yFuvA3-XqKMmA1M/viewform">
+     <img style="position:relative; left: 130px;" src="image/click_to_assess_yourself_button.png" />
+    </a>
+   </p>
+  </div>
+  <!-- end of Employer Nomination Scheme visa -->
+  <!-- Skilled Regional visa -->
+  <div id="skilled_regional_visa" style="display: none;">
+   <video width="500" style="position:relative; left:0px;" controls="controls">
+    <source type="video/mp4" src="video/motion.mp4">
+    </source>
+   </video>
+   <p style="font-size:20px;">
+    <b>
+     This visa allows skilled workers to live and work in
+     <br />
+     specified regional areas in Australia for up to four
+     <br />
+     years.
+    </b>
+   </p>
+   <p>
+    <b>
+     Requirements
+    </b>
+   </p>
+   <p style="position:relative; left:30px;">
+    <img width="30" style="position:relative; top: 5px;" src="image/1.png" />
+    You must have been nominated by an Australian State or
+    <br />
+            Territory government agency or sponsored by an eligible
+    <br />
+            relative living in a designated area.
+   </p>
+   <p style="position:relative; left:30px;">
+    <img width="30" style="position:relative; top: 5px;" src="image/2.png" />
+    You must have nominated an occupation that is on the relevant
+    <br />
+            skilled occupations list.
+   </p>
+   <p style="position:relative; left:30px;">
+    <img width="30" style="position:relative; top: 5px;" src="image/3.png" />
+    You must have a suitable skills assessment for that occupation.
+   </p>
+   <p style="position:relative; left:30px;">
+    <img width="30" style="position:relative; top: 5px;" src="image/4.png" />
+    Not yet turned 50 years of age
+   </p>
+   <p style="position:relative; left:30px;">
+    <img width="30" style="position:relative; top: 5px;" src="image/5.png" />
+    You must have achieved the score specified in your letter of
+    <br />
+            invitation based on the factors in the points test.
+   </p>
+   <p style="position:relative; left:30px;">
+    <img width="30" style="position:relative; top: 5px;" src="image/6.png" />
+    At least competent English
+   </p>
+   <br />
+   <p>
+    <a href="https://docs.google.com/forms/d/1yQKo7H1OHOzr2eaWFiqmThtKznN1yFuvA3-XqKMmA1M/viewform">
+     <img style="position:relative; left: 130px;" src="image/click_to_assess_yourself_button.png" />
+    </a>
+   </p>
+  </div>
+  <!-- end of Skilled Regional visa -->
+  <!-- Skilled Nominated visa -->
+  <div id="skilled_nominated_visa" style="display: none;">
+   <video width="500" style="position:relative;" controls="controls">
+    <source type="video/mp4" src="video/motion.mp4">
+    </source>
+   </video>
+   <p style="font-size:18px;">
+    <b>
+     This visa is for points-tested skilled workers who are
+     <br />
+     nominated by a state or territory government agency.
+     <br />
+    </b>
+   </p>
+   <p style="font-size:18px;">
+    <b>
+     It allows you to live and work in Australia as a permanent
+     <br />
+     resident.
+    </b>
+   </p>
+   <p>
+   </p>
+   <p>
+    <b>
+     Requirements
+    </b>
+   </p>
+   <p style="position:relative; left:30px;">
+    <img width="30" style="position:relative; top: 5px;" src="image/1.png" />
+    You must have nominated an occupation that is on the relevant
+    <br />
+            skilled occupation list.
+   </p>
+   <p style="position:relative; left:30px;">
+    <img width="30" style="position:relative; top: 5px;" src="image/2.png" />
+    You must have obtained a suitable skills assessment for that occupation.
+   </p>
+   <p style="position:relative; left:30px;">
+    <img width="30" style="position:relative; top: 5px;" src="image/3.png" />
+    Not yet turned 50 years of age.
+   </p>
+   <p style="position:relative; left:30px;">
+    <img width="30" style="position:relative; top: 5px;" src="image/4.png" />
+    You must have achieved the score specified in your letter of invitation
+    <br />
+            based on the factors in the points test.
+   </p>
+   <p style="position:relative; left:30px;">
+    <img width="30" style="position:relative; top: 5px;" src="image/5.png" />
+    At least competent English.
+   </p>
+   <p style="position:relative; left:30px;">
+    <img width="30" style="position:relative; top: 5px;" src="image/6.png" />
+    You must have been nominated by an Australian state or territory
+    <br />
+            government agency.
+   </p>
+   <br />
+   <p>
+    <a href="https://docs.google.com/forms/d/1yQKo7H1OHOzr2eaWFiqmThtKznN1yFuvA3-XqKMmA1M/viewform">
+     <img style="position:relative; left: 130px;" src="image/click_to_assess_yourself_button.png" />
+    </a>
+   </p>
+  </div>
+  <!-- end of Skilled Nominated visa -->
+  <!-- parent visa -->
+  <div id="parent_visa" style="display: none;">
+   <video width="500" style="position:relative;" controls="controls">
+    <source type="video/mp4" src="video/motion.mp4">
+    </source>
+   </video>
+   <p style="font-size:18px;">
+    <b>
+     This visa lets parents live in Australia if their child is
+     <br />
+     an Australian citizen, permanent resident or eligible
+     <br />
+     New Zealand citizen who is settled in Australia.
+    </b>
+   </p>
+   <p>
+    <b>
+     You might be able to get this visa if you:
+    </b>
+   </p>
+   <p style="position:relative; left:30px;">
+    <img width="30" style="position:relative; top: 5px;" src="image/1.png" />
+    are sponsored
+   </p>
+   <p style="position:relative; left:30px;">
+    <img width="30" style="position:relative; top: 5px;" src="image/2.png" />
+    meet the balance-of-family test
+   </p>
+   <p style="position:relative; left:30px;">
+    <img width="30" style="position:relative; top: 5px;" src="image/3.png" />
+    are prepared to wait in a queue before your visa can be decided.
+   </p>
+   <br />
+   <p>
+    <a href="https://www.border.gov.au/Trav/Visa-1/309-">
+    </a>
+    <a href="https://www.border.gov.au/Trav/Visa-1/103-">
+     <img style="position:relative; left: 120px;" src="image/parent_visa_button1.png" />
+    </a>
+   </p>
+  </div>
+  <!-- end of parent visa -->
+  <!-- refugee visa -->
+  <div id="refugee_visa" style="display: none;">
+   <video width="500" style="position:relative; left:0px;" controls="controls">
+    <source type="video/mp4" src="video/motion.mp4">
+    </source>
+   </video>
+   <p style="font-size:18px;">
+    <b>
+     This visa allows you to:
+    </b>
+    <br />
+        - stay indefinitely in Australia
+    <br />
+        - propose or sponsor family members for permanent residence.
+   </p>
+   <p>
+    <b>
+     You might be able to get this visa if you:
+    </b>
+   </p>
+   <p>
+   </p>
+   <p style="position:relative; left:30px;">
+    <img width="30" style="position:relative; top: 5px;" src="image/1.png" />
+    are outside Australia
+   </p>
+   <p style="position:relative; left:30px;">
+    <img width="30" style="position:relative; top: 5px;" src="image/2.png" />
+    are living outside your home country
+   </p>
+   <p style="position:relative; left:30px;">
+    <img width="30" style="position:relative; top: 5px;" src="image/3.png" />
+    are subject to persecution in your home country
+   </p>
+   <br />
+   <p>
+    <a href="https://docs.google.com/forms/d/1CS9QMYIXQVo1US9d-wkV59tfJl2H3ZkI3pSMh6zTKL4/viewform">
+     <img style="position:relative; left: 170px;" src="image/click_to_assess_yourself_button.png" />
+    </a>
+   </p>
+  </div>
+  <!-- end of refugee visa -->
+  <!-- extension -->
+  <div id="extension">
+   <div id="about_us">
+    <p>
+     About Us
+    </p>
+    <p>
+    </p>
+    <p>
+     <a href="http://www.aussievisazone.com.au/aussie1.php">
+      Board of Directors
+     </a>
+    </p>
+    <p>
+     <a href="http://www.aussievisazone.com.au/aussie5.php">
+      Members
+     </a>
+    </p>
+    <p>
+     <a href="http://www.aussievisazone.com.au/aussie6.php">
+      History
+     </a>
+    </p>
+    <p>
+     <a href="http://www.aussievisazone.com.au/aussie7.php">
+      Introduction
+     </a>
+    </p>
+   </div>
+   <div id="registration">
+    <p>
+     Migration Info
+    </p>
+    <p>
+    </p>
+    <p>
+     <a href="http://www.aussievisazone.com.au/aussie8.php">
+      Migration Registration no
+     </a>
+    </p>
+    <p>
+     <a href="https://www.mara.gov.au/media/95420/Code_of_Conduct.pdf">
+      The Code of Conduct
+     </a>
+    </p>
+    <p>
+     <a href="http://www.immimaster.com/">
+      Immigration Master
+     </a>
+    </p>
+   </div>
+   <div id="message_us_on_facebook">
+    <p>
+     Message us on Facebook
+    </p>
+    <p>
+    </p>
+    <p>
+     <a href="https://www.facebook.com/auvisanepal">
+      Auvisa
+     </a>
+    </p>
+    <p>
+     <a href="https://www.facebook.com/avezone">
+      Aussie Visa Zone
+     </a>
+    </p>
+    <p>
+     <a href="https://www.facebook.com/kristy.formosa">
+      Migration Lawyer
+     </a>
+    </p>
+   </div>
+   <div id="all_about_aussie">
+    <p>
+     All about Aussie Visa
+    </p>
+    <p>
+    </p>
+    <p>
+     <a href="http://www.aussievisazone.com.au/aussie2.php">
+      Our Assessments
+     </a>
+    </p>
+    <p>
+     <a href="http://www.aussievisazone.com.au/aussie3.php">
+      Contact us
+     </a>
+    </p>
+    <p>
+     <a href="http://www.aussievisazone.com.au/aussie4.php">
+      Migration LawyerPresent Events
+     </a>
+    </p>
+   </div>
+   <div id="extension_links">
+    <a href="https://www.facebook.com/avezone" class="extension_link_one">
+     <img src="image/facebook.png" class="facebook" />
+    </a>
+    <a href="https://accounts.google.com/ServiceLogin?service=mail&passive=true&rm=false&continue=https://mail.google.com/mail/&ss=1&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1#identifier" class="extension_link_one">
+     <img src="image/gplus.png" class="facebook" />
+    </a>
+    <a href="https://twitter.com/" class="extension_link_one">
+     <img src="image/twitter.png" class="facebook" />
+    </a>
+    <a href="https://accounts.google.com/ServiceLogin?service=mail&passive=true&rm=false&continue=https://mail.google.com/mail/&ss=1&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1#identifier" class="extension_link_one">
+     <img src="image/email.png" class="facebook" />
+    </a>
+   </div>
+  </div>
+  <!-- end of exsention -->
+ </body>
+</html>

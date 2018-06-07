@@ -1,0 +1,1607 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" style="" class=" js no-touch cssanimations csstransitions">
+ <head>
+  <base href="https://www.natoa.org/web/" />
+  <title>
+   What we do
+  </title>
+  <meta content="What we do" name="description" />
+  <meta content="What we do" name="keywords" />
+  <meta charset="utf-8" />
+  <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
+  <meta content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0" name="viewport" />
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+  <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,700" />
+  <link type="text/css" rel="stylesheet" href="https://www.natoa.org/web/assets/css/style.css" />
+  <link href="https://www.natoa.org/web/assets/css/component.css" type="text/css" rel="stylesheet" />
+  <link media="screen" type="text/css" href="https://www.natoa.org/web/assets/css/responsiveslides.css" rel="stylesheet" />
+  <link type="text/css" rel="stylesheet" href="https://www.natoa.org/web/assets/css/media.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js">
+  </script>
+  <script src="https://www.natoa.org/web/assets/js/responsiveslides.min.js" type="text/javascript">
+  </script>
+  <script type="text/javascript">
+   // You can also use "$(window).load(function() {"
+        $(function () {
+            // Slideshow 1
+            $("#slider1").responsiveSlides({
+                auto: true,
+                manualControls: '#slider3-pager',
+                pager: true,
+                nav: true,
+                pause: true, 
+                speed: 300,
+                namespace: "callbacks",
+                before: function () {
+                    $('.events').append("&lt;li&gt;before event fired.&lt;/li&gt;");
+                },
+                after: function () {
+                    $('.events').append("&lt;li&gt;after event fired.&lt;/li&gt;");
+                }
+            });
+    
+        });
+  </script>
+  <script src="https://www.natoa.org/web/assets/js/modernizr.custom.js">
+  </script>
+  <script src="https://www.natoa.org/web/assets/js/jquery.dlmenu.js">
+  </script>
+  <script>
+   $(function() {
+            $( '#dl-menu' ).dlmenu({
+                animationClasses : { classin : 'dl-animate-in-5', classout : 'dl-animate-out-5' }
+            });
+        });
+			$(window).load(function(e) {
+            $('#arrowWrap').append($('.callbacks1_nav'));
+        });
+  </script>
+ </head>
+ <body>
+  <header>
+   <div class="topPanelWrap">
+    <div class="contentwrap">
+     <ul class="topLeftInfo">
+      <li>
+       <img alt="" src="https://www.natoa.org/web/assets/images/email-icon.png" />
+       <span class="span_2">
+        info@natoa.org
+       </span>
+      </li>
+      <li>
+       <img alt="" src="https://www.natoa.org/web/assets/images/phone-icon.png" />
+       <span class="span_1">
+        703.519.8035
+       </span>
+      </li>
+     </ul>
+     <ul class="topRightInfo">
+      <!-- My Natoa dropdownlist-->
+      <li class="mynatoa">
+       <div class="membersNavWrapper megamenu_light_theme">
+        <ul class="megamenu">
+         <a style="text-decoration:none;color:#ffffff;" href="https://www.natoa.org/web/member/web_login" class="menuitem_drop">
+          My NATOA
+         </a>
+        </ul>
+       </div>
+       <!--<a href="">My Natoa</a>-->
+      </li>
+      <!-- My Natoa dropdownlist-->
+      <li>
+       <a target="_blank" href="http://www.facebook.com/pages/National-Association-of-Telecommunications-Officers-and-Advisors-NATOA/176603435683063">
+        <img alt="" src="https://www.natoa.org/web/assets/images/fb-icon.png" />
+       </a>
+      </li>
+      <li>
+       <a href="https://twitter.com/natoa">
+        <img alt="" src="https://www.natoa.org/web/assets/images/twitter.png" />
+       </a>
+      </li>
+      <li>
+       <a target="_blank" href="http://www.linkedin.com/profile/view?id=103136580&trk=tab_pro">
+        <img alt="" src="https://www.natoa.org/web/assets/images/linkedin.png" />
+       </a>
+      </li>
+      <li>
+       <a target="_blank" href="http://feeds.feedburner.com/natoa-news">
+        <img alt="" src="https://www.natoa.org/web/assets/images/rssfeedb.png" />
+       </a>
+      </li>
+      <li class="login">
+       <a style="color:#ffffff;" href="https://www.natoa.org/web/member/web_login">
+        Login
+       </a>
+      </li>
+      <li class="menudot">
+       <img width="10" height="10" alt="" src="https://www.natoa.org/web/assets/images/menudot.png" />
+      </li>
+      <li class="register">
+       <a href="https://www.natoa.org/web/member/web_registration">
+        Register
+       </a>
+      </li>
+     </ul>
+    </div>
+   </div>
+   <div class="headerWrap">
+    <div class="contentwrap">
+     <logo>
+      <a href="https://www.natoa.org/web/">
+       <img alt="" src="https://www.natoa.org/web/assets/images/logo.png" />
+      </a>
+     </logo>
+     <div class="navwrap">
+      <div class="megamenu_wrapper megamenu_light_theme">
+       <!-- BEGIN MENU WRAPPER -->
+       <div class="megamenu_container megamenu_lightblue">
+        <!-- BEGIN MENU CONTAINER -->
+        <ul class="megamenu">
+         <!-- BEGIN MENU -->
+         <li>
+          <a class="menuitem_drop" href="https://www.natoa.org/web/">
+           Home
+          </a>
+          <!-- Begin Home Item -->
+         </li>
+         <!-- End Home Item -->
+         <li>
+          <a href="https://www.natoa.org/web/about-us/about-us.html" class="menuitem_drop">
+           About Us
+          </a>
+          <!-- Begin Lists Item -->
+          <div class="dropdown_3columns_services">
+           <!-- Begin columns container -->
+           <div class="col_half_3 firstcolumn">
+            <h3>
+             <a href="https://www.natoa.org/web/about-us/about-us.html">
+              About Us
+             </a>
+            </h3>
+            <ul>
+             <li>
+              <a href="https://www.natoa.org/web/about-us/who-we-are.html">
+               Who We Are
+              </a>
+             </li>
+             <li>
+              <a href="https://www.natoa.org/web/about-us/what-we-do.html">
+               What We Do
+              </a>
+             </li>
+             <li>
+              <a href="https://www.natoa.org/web/about-us/accomplishments.html">
+               Accomplishments
+              </a>
+             </li>
+             <li>
+              <a href="https://www.natoa.org/web/about-us/committees.html">
+               Committees
+              </a>
+             </li>
+             <li>
+              <a href="https://www.natoa.org/web/about-us/governance.html">
+               Governance
+              </a>
+             </li>
+             <li>
+              <a href="https://www.natoa.org/web/about-us/contact-us.html">
+               Contact Us
+              </a>
+             </li>
+            </ul>
+           </div>
+           <div class="col_half_3">
+            <h3>
+             <a href="https://www.natoa.org/web/bod">
+              Board of Directors
+             </a>
+            </h3>
+            <ul>
+             <!--<li><a href="https://www.natoa.org/web/bod">Board of Directors</a></li>-->
+             <li>
+              <a href="https://www.natoa.org/web/bod/details/5">
+               Jodie Miller
+              </a>
+             </li>
+             <li>
+              <a href="https://www.natoa.org/web/bod/details/10">
+               Mike Lynch
+              </a>
+             </li>
+             <li>
+              <a href="https://www.natoa.org/web/bod/details/16">
+               Garth Ashpaugh
+              </a>
+             </li>
+             <li>
+              <a href="https://www.natoa.org/web/bod/details/1">
+               Tony Perez
+              </a>
+             </li>
+             <li>
+              <a href="https://www.natoa.org/web/bod/details/7">
+               Todd Barnes
+              </a>
+             </li>
+             <li>
+              <a href="https://www.natoa.org/web/bod/details/17">
+               Sue Buske
+              </a>
+             </li>
+             <li>
+              <a href="https://www.natoa.org/web/bod/details/11">
+               Larry Dunbar
+              </a>
+             </li>
+             <li>
+              <a href="https://www.natoa.org/web/bod/details/4">
+               Keith Reeves
+              </a>
+             </li>
+             <li>
+              <a href="https://www.natoa.org/web/bod/details/2">
+               Catharine Rice
+              </a>
+             </li>
+             <li>
+              <a href="https://www.natoa.org/web/bod/details/12">
+               Brian Roberts
+              </a>
+             </li>
+             <li>
+              <a href="https://www.natoa.org/web/bod/details/18">
+               Michael Russo
+              </a>
+             </li>
+             <li>
+              <a href="https://www.natoa.org/web/bod/details/13">
+               Dwight Williams
+              </a>
+             </li>
+            </ul>
+           </div>
+           <div class="col_half_3">
+            <h3>
+             <a href="https://www.natoa.org/web/site_history" class="menuitem_drop">
+              History
+             </a>
+            </h3>
+            <a href="https://www.natoa.org/web/site_history" class="menuitem_drop">
+            </a>
+            <ul>
+             <a href="https://www.natoa.org/web/site_history" class="menuitem_drop">
+             </a>
+             <li>
+              <a href="https://www.natoa.org/web/site_history" class="menuitem_drop">
+              </a>
+              <a href="https://www.natoa.org/web/site_history/details/2">
+               Charter Members
+              </a>
+             </li>
+             <li>
+              <a href="https://www.natoa.org/web/site_history/details/3">
+               Past Presidents
+              </a>
+             </li>
+             <li>
+              <a href="https://www.natoa.org/web/site_history/details/4">
+               Life Members
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+          <!-- End columns container -->
+         </li>
+         <li>
+          <a class="menuitem_drop" href="https://www.natoa.org/web/membership/membership.html">
+           Membership
+          </a>
+          <div class="dropdown_1column dropdown_flyout">
+           <ul class="levels">
+            <li>
+             <a href="https://www.natoa.org/web/membership/who-are-our-members.html">
+              Who Are Our Members
+             </a>
+            </li>
+            <li>
+             <a href="https://www.natoa.org/web/membership/member-benefits.html">
+              Member Benefits
+             </a>
+            </li>
+            <li>
+             <a href="https://www.natoa.org/web/membership/member-types.html">
+              Member Types
+             </a>
+            </li>
+            <li>
+             <a href="https://www.natoa.org/web/membership/member-success-stories.html">
+              Member Success Stories
+             </a>
+            </li>
+            <li>
+             <a href="https://www.natoa.org/web/membership/join-us-now.html">
+              Join Us Now
+             </a>
+            </li>
+           </ul>
+          </div>
+         </li>
+         <li>
+          <a href="https://www.natoa.org/web/site_policy/policy" class="menuitem_drop">
+           Policy / Advocacy
+          </a>
+          <div class="dropdown_1column dropdown_flyout">
+           <ul class="levels">
+            <li>
+             <a href="https://www.natoa.org/web/site_policy/policy_page/1">
+              On the Hill
+             </a>
+            </li>
+            <li>
+             <a href="https://www.natoa.org/web/site_policy/policy_page/2">
+              At the FCC
+             </a>
+            </li>
+            <li>
+             <a href="https://www.natoa.org/web/site_policy/policy_page/3">
+              In the Courts
+             </a>
+            </li>
+            <li>
+             <a href="https://www.natoa.org/web/site_policy/policy_page/4">
+              Policy Matters
+             </a>
+            </li>
+           </ul>
+          </div>
+         </li>
+         <li>
+          <a href="https://www.natoa.org/web/community-broadband/community-broadband.html" class="menuitem_drop">
+           Community Broadband
+          </a>
+          <div class="dropdown_1column dropdown_flyout">
+           <ul class="levels">
+            <li>
+             <a href="https://www.natoa.org/web/community-broadband/community-broadband-awards.html">
+              Community Broadband Awards
+             </a>
+            </li>
+            <li>
+             <a href="https://www.natoa.org/web/community-broadband/community-networks.html">
+              Community Networks
+             </a>
+            </li>
+            <li>
+             <a href="https://www.natoa.org/web/community-broadband/i-nets.html">
+              I-Nets
+             </a>
+            </li>
+            <li>
+             <a href="https://www.natoa.org/web/community-broadband/national-broadband-plan.html">
+              National Broadband Plan
+             </a>
+            </li>
+           </ul>
+          </div>
+         </li>
+         <li>
+          <a href="https://www.natoa.org/web/peg/site_details/1" class="menuitem_drop">
+           PEG
+          </a>
+          <div class="dropdown_1column dropdown_flyout">
+           <ul class="levels">
+            <li>
+             <a href="https://www.natoa.org/web/peg/site_details/1">
+              Government Programming Awards
+             </a>
+            </li>
+            <li>
+             <a href="https://www.natoa.org/web/peg/site_details/2">
+              CAP Act
+             </a>
+            </li>
+            <li>
+             <a href="https://www.natoa.org/web/peg/site_details/3">
+              State Actions
+             </a>
+            </li>
+            <li>
+             <a href="https://www.natoa.org/web/peg/site_details/4">
+              What’s New
+             </a>
+            </li>
+            <li>
+             <a href="https://www.natoa.org/web/site_videos/video_list">
+              Community Video
+             </a>
+            </li>
+           </ul>
+          </div>
+         </li>
+         <li>
+          <a href="https://www.natoa.org/events/" class="menuitem_drop">
+           Conferences &amp; eNATOA
+          </a>
+          <div class="dropdown_1column dropdown_flyout">
+           <ul class="levels">
+            <li>
+             <a href="https://www.natoa.org/events/">
+              Upcoming Events
+             </a>
+            </li>
+            <li>
+             <a href="https://www.natoa.org/events/annual-conference/">
+              Annual Conference
+             </a>
+            </li>
+            <li>
+             <a href="https://www.natoa.org/events/regional/spring/">
+              Spring Conference
+             </a>
+            </li>
+            <li>
+             <a href="https://www.natoa.org/events/sponsorship-opportunities.html">
+              Sponsorship Opportunities
+             </a>
+            </li>
+            <li>
+             <a href="https://www.natoa.org/events/enatoa.html">
+              eNATOA Webinar
+             </a>
+            </li>
+            <li>
+             <a href="https://www.natoa.org/events/chapter-events.html">
+              Chapter Events
+             </a>
+            </li>
+            <!-- <li><a href=""></a></li> -->
+           </ul>
+          </div>
+         </li>
+         <li>
+          <a href="https://www.natoa.org/web/resources/resources.html" class="menuitem_drop">
+           Resources
+          </a>
+          <div class="dropdown_1column dropdown_flyout">
+           <ul class="levels">
+            <li>
+             <a href="https://www.natoa.org/web/resources/advertising-sponsorship.html">
+              Advertising/Sponsorship
+             </a>
+            </li>
+            <li>
+             <a href="https://www.natoa.org/web/resources/article-submissions.html">
+              Article Submissions
+             </a>
+            </li>
+            <li>
+             <a href="https://www.natoa.org/web/resources/job-postings.html">
+              Job Postings
+             </a>
+            </li>
+            <li>
+             <a href="https://www.natoa.org/web/resources/natoa-partnerships.html">
+              NATOA Partnerships
+             </a>
+            </li>
+            <li>
+             <a href="https://www.natoa.org/web/resources/online-resources.html">
+              Online Resources
+             </a>
+            </li>
+            <li>
+             <a href="https://www.natoa.org/web/resources/publications.html">
+              Publications
+             </a>
+            </li>
+           </ul>
+          </div>
+         </li>
+         <li>
+          <a href="https://www.natoa.org/web/chapters" class="menuitem_drop">
+           Chapters
+          </a>
+         </li>
+         <li>
+          <a href="" class="menuitem_drop">
+           Members Only
+          </a>
+          <!-- Begin Lists Item -->
+          <div class="dropdown_1column rightcol">
+           <!-- Begin columns container -->
+           <div class="col_full firstcolumn">
+            <h3>
+             Member Resource
+            </h3>
+            <ul>
+             <li>
+              <a href="https://www.natoa.org/web/site_news/news_mem_list">
+               Top News
+              </a>
+             </li>
+             <li>
+              <a href="https://www.natoa.org/web/site_member_resource/site_committes_details">
+               Committees
+              </a>
+             </li>
+             <li>
+              <a href="https://www.natoa.org/web/site_member_resource/site_servs_details">
+               List Serves
+              </a>
+             </li>
+             <li>
+              <a href="https://www.natoa.org/web/site_member_resource/site_renewal_forum">
+               Franchise Renewal Forum
+              </a>
+             </li>
+             <li>
+              <a href="https://www.natoa.org/web/site_searchable_library/view_searchable_library">
+               Searchable Library
+              </a>
+             </li>
+            </ul>
+           </div>
+           <div class="col_full firstcolumn">
+            <h3>
+             Member Directory
+            </h3>
+            <ul>
+             <li>
+              <a href="https://www.natoa.org/members/Web_MemberDirectory.php">
+               Searchable Directory
+              </a>
+             </li>
+             <!--<li><a href="#">PDF Directory</a></li>-->
+            </ul>
+           </div>
+           <div class="col_full firstcolumn">
+            <h3>
+             <a style="color:#333333;text-decoration:none" href="https://www.natoa.org/web/site_member_resource/member_resource">
+              Other Resources
+             </a>
+            </h3>
+            <ul>
+             <li>
+              <a href="https://www.natoa.org/web/site_member_resource/site_menues/1">
+               Advocacy Tools
+              </a>
+             </li>
+             <li>
+              <a href="https://www.natoa.org/web/site_member_resource/site_menues/2">
+               General Resources
+              </a>
+             </li>
+             <li>
+              <a href="https://www.natoa.org/web/site_member_resource/site_menues/3">
+               Governance
+              </a>
+             </li>
+             <li>
+              <a href="https://www.natoa.org/web/site_member_resource/site_menues/4">
+               Minutes
+              </a>
+             </li>
+             <li>
+              <a href="https://www.natoa.org/web/site_member_resource/site_menues/5">
+               Newsletters
+              </a>
+             </li>
+             <li>
+              <a href="https://www.natoa.org/web/site_member_resource/site_menues/6">
+               Programmers
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+          <!-- End columns container -->
+         </li>
+         <!-- End Drop Down Item -->
+         <!-- No Drop Down Item -->
+         <!-- End Contact Item -->
+        </ul>
+        <!-- END MENU -->
+       </div>
+       <!-- END MENU CONTAINER -->
+      </div>
+      <div class="dl-menuwrapper" id="dl-menu">
+       <button class="dl-trigger">
+        Open Menu
+       </button>
+       <ul class="dl-menu">
+        <li>
+         <a href="https://www.natoa.org/web/about-us/about-us.html">
+          About Us
+         </a>
+         <ul class="dl-submenu">
+          <li class="dl-back">
+           <a href="#">
+            back
+           </a>
+          </li>
+          <li>
+           <a href="https://www.natoa.org/web/about-us/who-we-are.html">
+            Who We Are
+           </a>
+          </li>
+          <li>
+           <a href="https://www.natoa.org/web/about-us/what-we-do.html">
+            What We Do
+           </a>
+          </li>
+          <li>
+           <a href="https://www.natoa.org/web/about-us/accomplishments.html">
+            Accomplishments
+           </a>
+          </li>
+          <li>
+           <a href="https://www.natoa.org/web/about-us/committees.html">
+            Committees
+           </a>
+          </li>
+          <li>
+           <a href="https://www.natoa.org/web/about-us/governance.html">
+            Governance
+           </a>
+          </li>
+          <li>
+           <a href="https://www.natoa.org/web/about-us/contact-us.html">
+            Contact Us
+           </a>
+          </li>
+          <li>
+           <a href="#">
+            Board of Directors
+           </a>
+           <ul class="dl-submenu">
+            <li class="dl-back">
+             <a href="#">
+              back
+             </a>
+            </li>
+            <li>
+             <a href="https://www.natoa.org/web/bod/details/5">
+              Jodie Miller
+             </a>
+            </li>
+            <li>
+             <a href="https://www.natoa.org/web/bod/details/10">
+              Mike Lynch
+             </a>
+            </li>
+            <li>
+             <a href="https://www.natoa.org/web/bod/details/16">
+              Garth Ashpaugh
+             </a>
+            </li>
+            <li>
+             <a href="https://www.natoa.org/web/bod/details/1">
+              Tony Perez
+             </a>
+            </li>
+            <li>
+             <a href="https://www.natoa.org/web/bod/details/7">
+              Todd Barnes
+             </a>
+            </li>
+            <li>
+             <a href="https://www.natoa.org/web/bod/details/17">
+              Sue Buske
+             </a>
+            </li>
+            <li>
+             <a href="https://www.natoa.org/web/bod/details/11">
+              Larry Dunbar
+             </a>
+            </li>
+            <li>
+             <a href="https://www.natoa.org/web/bod/details/4">
+              Keith Reeves
+             </a>
+            </li>
+            <li>
+             <a href="https://www.natoa.org/web/bod/details/2">
+              Catharine Rice
+             </a>
+            </li>
+            <li>
+             <a href="https://www.natoa.org/web/bod/details/12">
+              Brian Roberts
+             </a>
+            </li>
+            <li>
+             <a href="https://www.natoa.org/web/bod/details/18">
+              Michael Russo
+             </a>
+            </li>
+            <li>
+             <a href="https://www.natoa.org/web/bod/details/13">
+              Dwight Williams
+             </a>
+            </li>
+           </ul>
+          </li>
+          <li>
+           <a href="#">
+            History
+           </a>
+           <ul class="dl-submenu">
+            <li class="dl-back">
+             <a href="#">
+              back
+             </a>
+            </li>
+            <li>
+             <a href="https://www.natoa.org/web/site_history/details/2">
+              Charter Members
+             </a>
+            </li>
+            <li>
+             <a href="https://www.natoa.org/web/site_history/details/3">
+              Past Presidents
+             </a>
+            </li>
+            <li>
+             <a href="https://www.natoa.org/web/site_history/details/4">
+              Life Members
+             </a>
+            </li>
+           </ul>
+          </li>
+         </ul>
+        </li>
+        <li>
+         <a href="https://www.natoa.org/web/membership/membership.html">
+          Membership
+         </a>
+         <ul class="dl-submenu">
+          <li class="dl-back">
+           <a href="#">
+            back
+           </a>
+          </li>
+          <li>
+           <a href="https://www.natoa.org/web/membership/who-are-our-members.html">
+            Who Are Our Members
+           </a>
+          </li>
+          <li>
+           <a href="https://www.natoa.org/web/membership/member-benefits.html">
+            Member Benefits
+           </a>
+          </li>
+          <li>
+           <a href="https://www.natoa.org/web/membership/member-types.html">
+            Member Types
+           </a>
+          </li>
+          <li>
+           <a href="https://www.natoa.org/web/membership/member-success-stories.html">
+            Member Success Stories
+           </a>
+          </li>
+          <li>
+           <a href="https://www.natoa.org/web/membership/join-us-now.html">
+            Join Us Now
+           </a>
+          </li>
+         </ul>
+        </li>
+        <li>
+         <a href="https://www.natoa.org/web/site_policy/policy">
+          Policy / Advocacy
+         </a>
+         <ul class="dl-submenu">
+          <li class="dl-back">
+           <a href="#">
+            back
+           </a>
+          </li>
+          <li>
+           <a href="https://www.natoa.org/web/site_policy/policy_page/1">
+            On the Hill
+           </a>
+          </li>
+          <li>
+           <a href="https://www.natoa.org/web/site_policy/policy_page/2">
+            At the FCC
+           </a>
+          </li>
+          <li>
+           <a href="https://www.natoa.org/web/site_policy/policy_page/3">
+            In the Courts
+           </a>
+          </li>
+          <li>
+           <a href="https://www.natoa.org/web/site_policy/policy_page/4">
+            Policy Matters
+           </a>
+          </li>
+         </ul>
+        </li>
+        <li>
+         <a href="https://www.natoa.org/web/community-broadband/community-broadband.html">
+          Community Broadband
+         </a>
+         <ul class="dl-submenu">
+          <li class="dl-back">
+           <a href="#">
+            back
+           </a>
+          </li>
+          <li>
+           <a href="https://www.natoa.org/web/community-broadband/community-broadband-awards.html">
+            Community Broadband Awards
+           </a>
+          </li>
+          <li>
+           <a href="https://www.natoa.org/web/community-broadband/community-networks.html">
+            Community Networks
+           </a>
+          </li>
+          <li>
+           <a href="https://www.natoa.org/web/community-broadband/i-nets.html">
+            I-Nets
+           </a>
+          </li>
+          <li>
+           <a href="https://www.natoa.org/web/community-broadband/national-broadband-plan.html">
+            National Broadband Plan
+           </a>
+          </li>
+         </ul>
+        </li>
+        <li>
+         <a href="#">
+          PEG
+         </a>
+         <ul class="dl-submenu">
+          <li class="dl-back">
+           <a href="#">
+            back
+           </a>
+          </li>
+          <li>
+           <a href="https://www.natoa.org/web/peg/site_details/1">
+            Government Programming Awards
+           </a>
+          </li>
+          <li>
+           <a href="https://www.natoa.org/web/peg/site_details/2">
+            CAP Act
+           </a>
+          </li>
+          <li>
+           <a href="https://www.natoa.org/web/peg/site_details/3">
+            State Actions
+           </a>
+          </li>
+          <li>
+           <a href="https://www.natoa.org/web/peg/site_details/4">
+            What’s New
+           </a>
+          </li>
+          <li>
+           <a href="https://www.natoa.org/web/site_videos/video_list">
+            Community Video
+           </a>
+          </li>
+         </ul>
+        </li>
+        <li>
+         <a href="https://www.natoa.org/web/annual_conference">
+          Conferences &amp; eNATOA
+         </a>
+         <ul class="dl-submenu">
+          <li class="dl-back">
+           <a href="#">
+            back
+           </a>
+          </li>
+          <li>
+           <a href="https://www.natoa.org/web/site_events/events_list">
+            Upcoming Events
+           </a>
+          </li>
+          <li>
+           <a href="https://www.natoa.org/web/site_conference/conference_details/1">
+            Annual Conference
+           </a>
+          </li>
+          <li>
+           <a href="https://www.natoa.org/web/site_conference/conference_details/2">
+            Spring Conference
+           </a>
+          </li>
+          <li>
+           <a href="https://www.natoa.org/web/site_conference/conference_details/3">
+            Sponsorship Opportunities
+           </a>
+          </li>
+          <li>
+           <a href="https://www.natoa.org/web/site_conference/conference_details/4">
+            eNATOA Webinar
+           </a>
+          </li>
+          <li>
+           <a href="https://www.natoa.org/web/site_conference/conference_details/5">
+            Chapter Events
+           </a>
+          </li>
+         </ul>
+        </li>
+        <li>
+         <a href="https://www.natoa.org/web/resources/resources.html">
+          Resources
+         </a>
+         <ul class="dl-submenu">
+          <li class="dl-back">
+           <a href="#">
+            back
+           </a>
+          </li>
+          <li>
+           <a href="https://www.natoa.org/web/resources/advertising-sponsorship.html">
+            Advertising/Sponsorship
+           </a>
+          </li>
+          <li>
+           <a href="https://www.natoa.org/web/resources/article-submissions.html">
+            Article Submissions
+           </a>
+          </li>
+          <li>
+           <a href="https://www.natoa.org/web/resources/job-postings.html">
+            Job Postings
+           </a>
+          </li>
+          <li>
+           <a href="https://www.natoa.org/web/resources/natoa-partnerships.html">
+            NATOA Partnerships
+           </a>
+          </li>
+          <li>
+           <a href="https://www.natoa.org/web/resources/online-resources.html">
+            Online Resources
+           </a>
+          </li>
+          <li>
+           <a href="https://www.natoa.org/web/resources/publications.html">
+            Publications
+           </a>
+          </li>
+         </ul>
+        </li>
+        <li>
+         <a href="https://www.natoa.org/web/chapters">
+          Chapters
+         </a>
+         <!--<ul class="dl-submenu">
+																						<li><a href=""></a></li>
+																			</ul>-->
+        </li>
+        <li>
+         <a href="#">
+          My Natoa
+         </a>
+         <ul class="dl-submenu">
+          <li class="dl-back">
+           <a href="#">
+            back
+           </a>
+          </li>
+          <li>
+           <a href="#">
+            My Profile
+           </a>
+           <ul class="dl-submenu">
+            <li class="dl-back">
+             <a href="#">
+              back
+             </a>
+            </li>
+            <li>
+             <a href="https://www.natoa.org/members/Web_ProfileEdit.php">
+              Profile Editor
+             </a>
+            </li>
+            <li>
+             <a href="https://www.natoa.org/web/member/change_password">
+              Change Password
+             </a>
+            </li>
+            <!--<li><a href="#">Natoa Communities</a></li>
+											<li><a href="#">Additional Members</a></li>-->
+           </ul>
+          </li>
+          <li>
+           <a href="https://www.natoa.org/members/gpa/entrants/">
+            GPA Site
+           </a>
+          </li>
+          <li>
+           <a href="https://www.natoa.org/members/Web_MemberJobBoard.php">
+            My Job Board Posts
+           </a>
+          </li>
+          <li>
+           <a href="https://www.natoa.org/members/Web_MyReceipts.php">
+            My Receipt
+           </a>
+          </li>
+          <li>
+           <a href="https://www.natoa.org/members/gpa/judges/Web_Judges.php">
+            * GPA Judges Area *
+           </a>
+          </li>
+          <li>
+           <a href="https://www.natoa.org/members/Web_EventRegionalConferenceSpeakers.php?confSKU=bc52ff5ecb62758fc325483714294851b6e3d7dd2ac81a81aef3f2049c7625d5">
+            Speakers &amp; Moderators
+           </a>
+          </li>
+          <li>
+           <a href="https://www.natoa.org/members/Web_NewMember.php?isRenewal=true">
+            Membership Renewal
+           </a>
+          </li>
+         </ul>
+        </li>
+        <li>
+         <a href="#">
+          Members Only
+         </a>
+         <ul class="dl-submenu">
+          <li class="dl-back">
+           <a href="#">
+            back
+           </a>
+          </li>
+          <li>
+           <a href="https://www.natoa.org/web/site_news/news_mem_list">
+            Top News
+           </a>
+          </li>
+          <li>
+           <a href="https://www.natoa.org/web/site_member_resource/site_committes_details">
+            Committees
+           </a>
+          </li>
+          <li>
+           <a href="https://www.natoa.org/web/site_member_resource/site_servs_details">
+            List Serves
+           </a>
+          </li>
+          <li>
+           <a href="https://www.natoa.org/web/site_member_resource/site_renewal_forum">
+            Franchise Renewal Forum
+           </a>
+          </li>
+          <li>
+           <a href="https://www.natoa.org/web/site_searchable_library/view_searchable_library">
+            Searchable Library
+           </a>
+          </li>
+          <li>
+           <a href="https://www.natoa.org/web/site_member_resource/site_menues/1">
+            Advocacy Tools
+           </a>
+          </li>
+          <li>
+           <a href="https://www.natoa.org/web/site_member_resource/site_menues/2">
+            General Resources
+           </a>
+          </li>
+          <li>
+           <a href="https://www.natoa.org/web/site_member_resource/site_menues/3">
+            Governance
+           </a>
+          </li>
+          <li>
+           <a href="https://www.natoa.org/web/site_member_resource/site_menues/4">
+            Minutes
+           </a>
+          </li>
+          <li>
+           <a href="https://www.natoa.org/web/site_member_resource/site_menues/5">
+            Newsletters
+           </a>
+          </li>
+          <li>
+           <a href="https://www.natoa.org/web/site_member_resource/site_menues/6">
+            Programmers
+           </a>
+          </li>
+          <li>
+           <a href="https://www.natoa.org/members/Web_MemberDirectory.php">
+            Searchable Directory
+           </a>
+          </li>
+          <!--<li><a href="#">PDF Directory</a></li>-->
+         </ul>
+        </li>
+       </ul>
+      </div>
+     </div>
+    </div>
+   </div>
+  </header>
+  <script type="text/javascript">
+   &lt;!--
+$(document).ready(function () {
+	$("#shortDescriptionHref").click(function() { $("#shortDescription, #content").toggle('slow'); });
+	$("#contentHref").click(function() { $("#content, #shortDescription").toggle('slow'); });
+});
+//--&gt;
+  </script>
+  <section>
+   <div class="intBanner">
+    <h2>
+     What We Do
+    </h2>
+   </div>
+  </section>
+  <section class="int_post_sec">
+   <div class="contentwrap">
+    <div class="bc">
+     <ul>
+      <li>
+       <a href="https://www.natoa.org/web/">
+        Home
+       </a>
+      </li>
+      <li>
+       /
+      </li>
+      <li>
+       <a href="about-us/about-us.html">
+        About Us
+       </a>
+      </li>
+      <li>
+       /
+      </li>
+      <li>
+       What we do
+      </li>
+     </ul>
+    </div>
+   </div>
+   <div class="contentwrap">
+    <div class="pageonholl">
+     <div id="shortDescription">
+      <h2>
+       What We Do
+      </h2>
+      <p>
+       <strong>
+        Core Activities
+       </strong>
+       <strong>
+        On the Hill and at the Federal Communications Commission (FCC)
+       </strong>
+      </p>
+      <p>
+       <em>
+        Formal Advocacy
+       </em>
+      </p>
+      <div style="display:none">
+       <a href="https://play.google.com/store/apps/details?id=com.mreuan.boost.pro&hl=en">
+        RAM Accelerator
+       </a>
+       is a new Android App that allows you to free-up your phone's memory.
+      </div>
+      <p>
+       <em>
+        Informed and Experienced Representation
+       </em>
+      </p>
+      <p>
+       <strong>
+        Conferences, Events &amp; Awards
+       </strong>
+      </p>
+      <p>
+       <em>
+        Annual Conference
+       </em>
+      </p>
+      <p>
+       <em>
+        Monthly Webinars
+       </em>
+      </p>
+      <p>
+       <em>
+        Other Conferences and Networking Events
+       </em>
+      </p>
+      <p>
+       <strong>
+        Government Programming Awards (GPAs)
+       </strong>
+      </p>
+      <p>
+       <strong>
+        Community Broadband Awards
+       </strong>
+      </p>
+      <p>
+       <strong>
+        State Chapters
+       </strong>
+      </p>
+      <br />
+      <a style="color:#f65339 !important;text-decoration:none;float:right;font-size: 14px;font-weight:bold;" id="shortDescriptionHref" href="javascript:void(0);">
+       Show More...
+      </a>
+      <br />
+     </div>
+     <div style="display:none;" id="content">
+      <h2>
+       What We Do
+      </h2>
+      <p>
+       <strong>
+        Core Activities
+       </strong>
+       <br />
+       <strong>
+        On the Hill and at the Federal Communications Commission (FCC)
+       </strong>
+       <br />
+       <br />
+       <em>
+        <strong>
+         Formal Advocacy
+        </strong>
+       </em>
+       <br />
+       NATOA is highly respected and regarded by members of Congress and the FCC as a major voice and key advisor regarding local government perspectives and the public interest.  We continuously collaborate with key legislators and FCC commissioners and staff to ensure NATOA’s voice is heard and our positions are considered.  As a trade organization, NATOA facilitates our ability to pool resources in order to make an impact in a world where the industry is able to spend exponentially more than local governments will ever be able to afford.  In addition to utilizing the talent of its members, NATOA cooperates with colleague organizations such as National League of Cities (NLC), United States Conference of Mayors (USCM), National Association of Counties (NACo), and Alliance for Community Media (ACM). 
+       <br />
+       <br />
+       <em>
+        <strong>
+         Informed and Experienced Representation
+        </strong>
+       </em>
+       <br />
+       NATOA’s board of directors, our members, and staff are highly qualified and skilled professionals who serve as key advocates for both formal and informal advocacy activities.
+       <br />
+       <br />
+       <strong>
+        Conferences, Events &amp; Awards
+       </strong>
+       <br />
+       <br />
+       <em>
+        <strong>
+         Annual Conference
+        </strong>
+       </em>
+       <br />
+       The NATOA Annual Conference is the premier local government conference for elected and appointed officials, and professionals who share oversight over communications and cable policy and regulation, legislative review and advocacy, public rights-of-way management and compensation, wireless facilities zoning and siting, information and technology, and PEG programming.  The annual conference enables participants to review major policy and legal changes and developments, review technical advancements both in the context of using new technology to benefit local communities and in local government enforcement obligations, understand key issues, network, and conduct association business.     
+       <br />
+       <br />
+       <em>
+        <strong>
+         Other Conferences and Networking Events
+        </strong>
+       </em>
+       <br />
+       Other opportunities for networking and learning are offered by NATOA through regional and state chapter events and monthly e-NATOA webinars.  
+       <br />
+       <br />
+       <em>
+        <strong>
+         Government Programming Awards (GPAs)
+        </strong>
+       </em>
+       <br />
+       The NATOA GPA competition is the largest of its kind recognizing excellence in broadcast, cable, multimedia and electronic programming produced by local government entities.  Categories cover a variety of programming including, community events, documentary, public affairs and public service, interview/talk show, performing arts, sports, election coverage and children’s issues.
+       <br />
+       <br />
+       <em>
+        <strong>
+         Community Broadband Awards
+        </strong>
+       </em>
+       <br />
+       In recognition of the role of local government in broadband technology, NATOA proudly honors outstanding individuals and projects that seek to improve government and public options in broadband technology. This exceptional awards program highlights some of the many extraordinary efforts going on at the local level to bring the benefits of advanced technology to American communities.
+       <br />
+       <br />
+       <em>
+        <strong>
+         State Chapters
+        </strong>
+       </em>
+       <br />
+       NATOA has a network of State and Regional Chapters whose members reflect NATOA’s mission in their home states and local communities.  NATOA assists Chapters in their networking, education, and advocacy efforts at local and state levels.
+      </p>
+      <br />
+      <a style="color:#f65339 !important;text-decoration:none;float:right;font-size: 14px;font-weight:bold;" id="contentHref" href="javascript:void(0);">
+       Show Less...
+      </a>
+      <br />
+     </div>
+    </div>
+   </div>
+  </section>
+  <section>
+   <div class="bottomnavigationwrap">
+    <div class="contentwrap">
+     <div class="botNavcol">
+      <h2>
+       <a href="https://www.natoa.org/web/about-us/about-us.html">
+        About Us
+       </a>
+      </h2>
+      <ul class="botNavList">
+       <li>
+        <a href="https://www.natoa.org/web/about-us/who-we-are.html">
+         Who We Are
+        </a>
+       </li>
+       <li>
+        <a href="https://www.natoa.org/web/about-us/what-we-do.html">
+         What We Do
+        </a>
+       </li>
+       <li>
+        <a href="https://www.natoa.org/web/about-us/accomplishments.html">
+         Accomplishments
+        </a>
+       </li>
+       <li>
+        <a href="https://www.natoa.org/web/about-us/committees.html">
+         Committees
+        </a>
+       </li>
+       <li>
+        <a href="https://www.natoa.org/web/about-us/governance.html">
+         Governance
+        </a>
+       </li>
+       <li>
+        <a href="https://www.natoa.org/web/about-us/contact-us.html">
+         Contact Us
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="botNavcol">
+      <h2>
+       <a class="menuitem_drop" href="https://www.natoa.org/web/membership/membership.html">
+        Membership
+       </a>
+      </h2>
+      <ul class="botNavList">
+       <li>
+        <a href="https://www.natoa.org/web/membership/who-are-our-members.html">
+         Who Are Our Members
+        </a>
+       </li>
+       <li>
+        <a href="https://www.natoa.org/web/membership/member-benefits.html">
+         Member Benefits
+        </a>
+       </li>
+       <li>
+        <a href="https://www.natoa.org/web/membership/member-types.html">
+         Member Types
+        </a>
+       </li>
+       <li>
+        <a href="https://www.natoa.org/web/membership/member-success-stories.html">
+         Member Success Stories
+        </a>
+       </li>
+       <li>
+        <a href="https://www.natoa.org/web/membership/join-us-now.html">
+         Join Us Now
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="botNavcol">
+      <h2>
+       <a href="https://www.natoa.org/web/site_policy/policy">
+        Policy / Advocacy
+       </a>
+      </h2>
+      <ul class="botNavList">
+       <li>
+        <a href="https://www.natoa.org/web/site_policy/policy_page/1">
+         On the Hill
+        </a>
+       </li>
+       <li>
+        <a href="https://www.natoa.org/web/site_policy/policy_page/2">
+         At the FCC
+        </a>
+       </li>
+       <li>
+        <a href="https://www.natoa.org/web/site_policy/policy_page/3">
+         In the Courts
+        </a>
+       </li>
+       <li>
+        <a href="https://www.natoa.org/web/site_policy/policy_page/4">
+         Policy Matters
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="botNavcol">
+      <h2>
+       <a href="https://www.natoa.org/web/community-broadband/community-broadband.html" class="menuitem_drop">
+        Community Broadband
+       </a>
+      </h2>
+      <ul class="botNavList">
+       <li>
+        <a href="https://www.natoa.org/web/community-broadband/community-broadband-awards.html">
+         Community Broadband Awards
+        </a>
+       </li>
+       <li>
+        <a href="https://www.natoa.org/web/community-broadband/community-networks.html">
+         Community Networks
+        </a>
+       </li>
+       <li>
+        <a href="https://www.natoa.org/web/community-broadband/i-nets.html">
+         I-Nets
+        </a>
+       </li>
+       <li>
+        <a href="https://www.natoa.org/web/community-broadband/national-broadband-plan.html">
+         National Broadband Plan
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="botNavcol">
+      <h2>
+       <a href="https://www.natoa.org/web/resources/resources.html">
+        Resources
+       </a>
+      </h2>
+      <ul class="botNavList">
+       <li>
+        <a href="https://www.natoa.org/web/resources/advertising-sponsorship.html">
+         Advertising/Sponsorship
+        </a>
+       </li>
+       <li>
+        <a href="https://www.natoa.org/web/resources/article-submissions.html">
+         Article Submissions
+        </a>
+       </li>
+       <li>
+        <a href="https://www.natoa.org/web/resources/job-postings.html">
+         Job Postings
+        </a>
+       </li>
+       <li>
+        <a href="https://www.natoa.org/web/resources/natoa-partnerships.html">
+         NATOA Partnerships
+        </a>
+       </li>
+       <li>
+        <a href="https://www.natoa.org/web/resources/online-resources.html">
+         Online Resources
+        </a>
+       </li>
+       <li>
+        <a href="https://www.natoa.org/web/resources/publications.html">
+         Publications
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="botNavcol">
+      <h2>
+       <a href="https://www.natoa.org/web/about-us/contact-us.html">
+        Contact Us
+       </a>
+      </h2>
+      <div class="botcontactwrap">
+       3213 Duke Street #695
+       <br />
+       Alexandria, VA 22314
+       <br />
+       <br />
+       (t) 703.519.8035
+       <br />
+       (f) 703.997.7080
+       <br />
+       info@natoa.org
+      </div>
+     </div>
+    </div>
+   </div>
+  </section>
+  <footer>
+   <div class="footerwrap">
+    <div class="contentwrap">
+     <div class="footLt">
+      ©2000 - 2015, The National Association of Telecommunications Officers and Advisors.
+     </div>
+     <div class="footRt">
+      <ul class="footsociallist">
+       <li>
+        <a target="_blank" href="http://www.facebook.com/pages/National-Association-of-Telecommunications-Officers-and-Advisors-NATOA/176603435683063">
+         <img alt="" src="https://www.natoa.org/web/assets/images/fb-icon.png" />
+        </a>
+       </li>
+       <li>
+        <a target="_blank" href="https://twitter.com/natoa">
+         <img alt="" src="https://www.natoa.org/web/assets/images/twitter.png" />
+        </a>
+       </li>
+       <li>
+        <a target="_blank" href="http://www.linkedin.com/profile/view?id=103136580&trk=tab_pro">
+         <img alt="" src="https://www.natoa.org/web/assets/images/linkedin.png" />
+        </a>
+       </li>
+       <li>
+        <a target="_blank" href="http://feeds.feedburner.com/natoa-news">
+         <img alt="" src="https://www.natoa.org/web/assets/images/rssfeedb.png" />
+        </a>
+       </li>
+      </ul>
+     </div>
+    </div>
+   </div>
+  </footer>
+  <script src="https://www.natoa.org/web/assets/js/jquery.nicescroll.min.js">
+  </script>
+  <script type="text/javascript">
+   $(document).ready(function(){
+		$("#boxscroll").niceScroll({touchbehavior:false,cursorcolor:"#676767",cursoropacitymax:1,cursorwidth:10,background:"#b7b7b7",autohidemode:false});	
+		$("#home").height($(window).height()-110); 
+		$(".callbacks img").height($(window).height());
+		$(".callbacks .caption").height($(window).height()-110);
+		var hm_height = $('#slider1').height()/2;
+		hm_height = hm_height - 50;
+		$('.callbacks_nav').css('top', hm_height + 'px');
+	  	$('.textcol1').height($('.textcol1').height());
+		$('.textcol2').height($('.textcol1').height());
+	});
+	window.onresize = function(event) {
+		$("#home").height($(window).height()-110); 
+		$(".callbacks img").height($(window).height());
+		$(".callbacks .caption").height($(window).height()-110);
+		var hm_height = $('#slider1').height()/2;
+		hm_height = hm_height - 50;
+		$('.callbacks_nav').css('top', hm_height + 'px');
+	  	$('.textcol1').height($('.textcol1').height());
+		$('.textcol2').height($('.textcol1').height());
+	};
+  </script>
+  <script src="https://www.natoa.org/web/assets/js/jquery.flexisel.js" type="text/javascript">
+  </script>
+  <script>
+   $(window).load(function() {
+		$("#flexiselDemo1").flexisel();   
+		$('.mob_menu').click(function(){
+			$('.navWrapper').slideToggle();
+		});
+		$('.log_tab').click(function(){
+			$('.popup_sec').fadeIn('fast');
+		});
+		$('.close_btn,.overlay_sec,.cle').click(function(){
+			$('.popup_sec').fadeOut('slow');
+		});
+	});
+  </script>
+ </body>
+</html>

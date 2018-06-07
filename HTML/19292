@@ -1,0 +1,266 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta content="Content-Type" http-equiv="Content-Type" />
+  <meta content="OneClickTennis service: Find your perfect opponent, arrange matches, track your progress, and compete with other players." name="DESCRIPTION" />
+  <meta content="tennis; play; match; play tennis; tennis partners; tennis partner; tennis opponent; tennis match; ladder; competition" name="KEYWORDS" />
+  <meta content="EN-US" name="MS.LOCALE" />
+  <meta content="EN-US" name="LANG" />
+  <meta content="tennis matching service" name="CATEGORY" />
+  <meta content="en" http-equiv="Content-Language" />
+  <meta content="text/javascript" http-equiv="Content-Script-Type" />
+  <title>
+   OneClickTennis
+  </title>
+  <base href="http://www.oneclicktennis.com/index.php" />
+  <link href="stylesheets/fixedsize/style.css" media="screen" type="text/css" rel="stylesheet" />
+  <link href="stylesheets/fixedsize/print.css" media="print" type="text/css" rel="stylesheet" />
+  <link href="js/jquery/css/south-street/jquery-ui-1.8.1.custom.css" media="all" type="text/css" rel="stylesheet" />
+  <script src="js/jquery/jquery-1.4.2.min.js" type="text/javascript">
+  </script>
+  <script src="js/jquery/jquery-ui-1.8.1.custom.min.js" type="text/javascript">
+  </script>
+  <script src="js/date.min.js" type="text/javascript">
+  </script>
+  <script src="js/common.js" type="text/javascript">
+  </script>
+ </head>
+ <body>
+  <div id="left-shadow">
+   <div id="right-shadow">
+    <div>
+     <div class="no-print">
+      <a href="index.php">
+       <img alt="[OneClickTennis Logo]" src="stylesheets/fixedsize/header/header-logo.gif" style="border: 0; display: block; height: 98px;" />
+      </a>
+     </div>
+     <div id="main_menu_strip">
+      <ul style="float: left">
+       <li>
+        <a class="first" href="http://www.oneclicktennis.com/index.php">
+         Home
+        </a>
+       </li>
+       <li>
+        <a href="http://www.oneclicktennis.com/index.php?choice=player&tab=history">
+         Sneak Peek
+        </a>
+       </li>
+       <li>
+        <a href="http://www.oneclicktennis.com/index.php?choice=module&module=court_finder&action=court_list_dynamic">
+         Courts
+        </a>
+       </li>
+       <li>
+        <a href="http://www.oneclicktennis.com/blog">
+         Blog
+        </a>
+       </li>
+       <li>
+        <a id="howTo" href="#">
+         How To
+        </a>
+       </li>
+       <li>
+        <a href="http://www.oneclicktennis.com/index.php?inf=partners">
+         Partners
+        </a>
+       </li>
+       <li>
+        <a href="http://www.oneclicktennis.com/index.php?choice=tell_a_friend">
+         Tell A Friend
+        </a>
+       </li>
+      </ul>
+      <ul style="float: right;">
+       <li>
+        <a class="first" href="http://www.oneclicktennis.com/index.php?choice=login">
+         Sign In
+        </a>
+       </li>
+       <li>
+        <a href="http://www.oneclicktennis.com/index.php?choice=register">
+         Register
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div style="clear: both">
+     </div>
+     <div id="content">
+      <!-- Plaxo widget code -->
+      <script src="http://www.plaxo.com/css/m/js/util.js" type="text/javascript">
+      </script>
+      <script src="http://www.plaxo.com/css/m/js/basic.js" type="text/javascript">
+      </script>
+      <script src="http://www.plaxo.com/css/m/js/abc_launcher.js" type="text/javascript">
+      </script>
+      <script type="text/javascript">
+       &lt;!--
+function onABCommComplete() {
+  // OPTIONAL: do something here after the new data has been populated in your text area
+}
+//--&gt;
+      </script>
+      <!-- end of Plaxo widget code -->
+      <script type="text/javascript">
+       // set focus on user name/address field
+			window.onload = function() { document.getElementsByName('sender_email')[0].focus(); }
+      </script>
+      <table width="100%" cellspacing="0" cellpadding="0" class="main-txt">
+       <tbody>
+        <tr>
+         <td class="tab_header">
+          Tell A Friend About Us
+         </td>
+        </tr>
+        <tr>
+         <td class="tab_contents">
+          <form method="post" action="http://www.oneclicktennis.com/index.php?choice=tell_a_friend">
+           The more players join, the better chance of finding a perfect opponent! Tell your friends, family
+           <br />
+           and co-workers about
+           <span class="oct">
+            OneClickTennis
+           </span>
+           and
+           <b>
+            get one month free
+           </b>
+           for every person
+			who signs up!
+           <br />
+           (You must be logged in when sending this form)
+           <p>
+           </p>
+           <table width="70%" class="main-txt">
+            <tbody>
+             <tr>
+              <td>
+               Your name or nickname:
+              </td>
+              <td>
+               <input type="text" size="30" name="sender_email" />
+              </td>
+             </tr>
+             <tr>
+              <td valign="top">
+               Your friend's email address:
+               <br />
+               (comma-separated list)
+              </td>
+              <td valign="top">
+               <table class="main-txt">
+                <tbody>
+                 <tr>
+                  <td>
+                   <textarea rows="5" cols="30" name="friend_email" id="recipient_list">
+                   </textarea>
+                  </td>
+                  <td>
+                   <a onclick="showPlaxoABChooser('recipient_list', '/php/info/plaxo_cb.html'); return false;" href="#">
+                    <img border="0/" alt="Add from my address book" src="http://www.plaxo.com/images/abc/buttons/add_button.gif" />
+                    <br />
+                    [add emails from gmail, hotmail, yahoo, aol and more]
+                   </a>
+                  </td>
+                 </tr>
+                </tbody>
+               </table>
+              </td>
+             </tr>
+             <tr>
+              <td valign="top">
+               OneClickTennis message:
+              </td>
+              <td style="color: #666666;">
+               If you are a tennis enthusiast, check out OneClickTennis:
+               <br />
+               <a href="http://www.oneclicktennis.com">
+                http://www.oneclicktennis.com
+               </a>
+               . Whatever your skill level,
+               <br />
+               preferences, or favorite courts, OneClickTennis will find
+               <br />
+               you the best opponent and arrange a match for you.
+               <br />
+              </td>
+             </tr>
+             <tr>
+              <td valign="top">
+               Add your own message:
+               <br />
+               (up to 100 characters)
+              </td>
+              <td>
+               <textarea wrap="on" cols="55" rows="4" name="own_msg">
+               </textarea>
+              </td>
+             </tr>
+            </tbody>
+           </table>
+           <p>
+           </p>
+           <p>
+            Help us spread the word!
+            <a target="_blank" href="http://www.oneclicktennis.com/images/oneclick_flyer.pdf">
+             <b>
+              Download our flyer
+             </b>
+            </a>
+            , print it out, and post it in your community!
+           </p>
+           <p align="center" class="main-txt">
+            <input type="submit" class="white-bt" value="Submit" name="submit" />
+            <input type="Button" class="white-bt" value="Cancel" onclick="window.location=''" />
+           </p>
+          </form>
+         </td>
+        </tr>
+       </tbody>
+      </table>
+     </div>
+     <div id="footer_strip">
+      © 2004-2015
+      <a href="mailto:webmaster@oneclicktennis.com">
+       One Click Tennis
+      </a>
+      . All rights reserved.
+      <a href="http://www.oneclicktennis.com/index.php?inf=about_us">
+       About Us
+      </a>
+      |
+      <a href="http://www.oneclicktennis.com/index.php?inf=disclaimer">
+       Terms of Use
+      </a>
+      |
+      <a href="http://www.oneclicktennis.com/index.php?inf=privacy">
+       Privacy Policy
+      </a>
+      |
+      <a href="http://www.oneclicktennis.com/index.php?choice=report_problem">
+       Feedback
+      </a>
+     </div>
+    </div>
+   </div>
+  </div>
+  <script type="text/javascript">
+   $(function() {
+	window.name = 'main';
+	$('#loginUsername').focus(); // focus, if element present
+	$('#howTo').bind('click', function() {
+		window.open('php/help/how_to/how_to.php','myWin', 'resizable, scrollbars, width=800,height=600');
+		return false;
+	});
+});
+  </script>
+  <script type="text/javascript" src="http://www.google-analytics.com/urchin.js">
+  </script>
+  <script type="text/javascript">
+   _uacct = "UA-274069-2";
+		urchinTracker();
+  </script>
+ </body>
+</html>

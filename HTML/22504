@@ -1,0 +1,1360 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="js_active  vc_desktop  vc_transform skrollr skrollr-desktop">
+ <head>
+  <meta charset="utf-8" />
+  <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport" />
+  <meta content="Content-Type" http-equiv="Content-Type" />
+  <title>
+   Mechatronics. » Enterprise Development Engineering
+  </title>
+  <script async="" src="https://embed.tawk.to/565733fa5744aabc4643655d/default" charset="UTF-8" crossorigin="*">
+  </script>
+  <script type="text/javascript">
+   window._wpemojiSettings = {"baseUrl":"http:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"http:\/\/medengg.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.3.1"}};
+			!function(a,b,c){function d(a){var c=b.createElement("canvas"),d=c.getContext&amp;&amp;c.getContext("2d");return d&amp;&amp;d.fillText?(d.textBaseline="top",d.font="600 32px Arial","flag"===a?(d.fillText(String.fromCharCode(55356,56812,55356,56807),0,0),c.toDataURL().length&gt;3e3):(d.fillText(String.fromCharCode(55357,56835),0,0),0!==d.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&amp;&amp;c.supports.flag||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&amp;&amp;c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&amp;&amp;f.twemoji&amp;&amp;(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+  </script>
+  <script src="http://medengg.com/wp-includes/js/wp-emoji-release.min.js?ver=4.3.1" type="text/javascript">
+  </script>
+  <style type="text/css">
+   img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+  </style>
+  <link media="all" type="text/css" href="http://medengg.com/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=4.3.1" id="contact-form-7-css" rel="stylesheet" />
+  <link media="all" type="text/css" href="http://medengg.com/wp-content/plugins/essential-grid/public/assets/css/settings.css?ver=2.0.9.1" id="essential-grid-plugin-settings-css" rel="stylesheet" />
+  <link media="all" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans%3A300%2C400%2C600%2C700%2C800" id="tp-open-sans-css" rel="stylesheet" />
+  <link media="all" type="text/css" href="http://fonts.googleapis.com/css?family=Raleway%3A100%2C200%2C300%2C400%2C500%2C600%2C700%2C800%2C900" id="tp-raleway-css" rel="stylesheet" />
+  <link media="all" type="text/css" href="http://fonts.googleapis.com/css?family=Droid+Serif%3A400%2C700" id="tp-droid-serif-css" rel="stylesheet" />
+  <link media="all" type="text/css" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro%3A200%2C300%2C400%2C600%2C700%2C900" id="tp-sourcesans-css" rel="stylesheet" />
+  <link media="all" type="text/css" href="http://medengg.com/wp-content/plugins/revslider/public/assets/css/settings.css?ver=5.0.4.1" id="rs-plugin-settings-css" rel="stylesheet" />
+  <style type="text/css" id="rs-plugin-settings-inline-css">
+   .tp-caption a{color:#ff7302;text-shadow:none;-webkit-transition:all 0.2s ease-out;-moz-transition:all 0.2s ease-out;-o-transition:all 0.2s ease-out;-ms-transition:all 0.2s ease-out}.tp-caption a:hover{color:#ffa902}.largeredbtn{font-family:"Raleway",sans-serif;font-weight:900;font-size:16px;line-height:60px;color:#fff !important;text-decoration:none;padding-left:40px;padding-right:80px;padding-top:22px;padding-bottom:22px;background:rgb(234,91,31); background:-moz-linear-gradient(top,rgba(234,91,31,1) 0%,rgba(227,58,12,1) 100%); background:-webkit-gradient(linear,left top,left bottom,color-stop(0%,rgba(234,91,31,1)),color-stop(100%,rgba(227,58,12,1))); background:-webkit-linear-gradient(top,rgba(234,91,31,1) 0%,rgba(227,58,12,1) 100%); background:-o-linear-gradient(top,rgba(234,91,31,1) 0%,rgba(227,58,12,1) 100%); background:-ms-linear-gradient(top,rgba(234,91,31,1) 0%,rgba(227,58,12,1) 100%); background:linear-gradient(to bottom,rgba(234,91,31,1) 0%,rgba(227,58,12,1) 100%); filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#ea5b1f',endColorstr='#e33a0c',GradientType=0 )}.largeredbtn:hover{background:rgb(227,58,12); background:-moz-linear-gradient(top,rgba(227,58,12,1) 0%,rgba(234,91,31,1) 100%); background:-webkit-gradient(linear,left top,left bottom,color-stop(0%,rgba(227,58,12,1)),color-stop(100%,rgba(234,91,31,1))); background:-webkit-linear-gradient(top,rgba(227,58,12,1) 0%,rgba(234,91,31,1) 100%); background:-o-linear-gradient(top,rgba(227,58,12,1) 0%,rgba(234,91,31,1) 100%); background:-ms-linear-gradient(top,rgba(227,58,12,1) 0%,rgba(234,91,31,1) 100%); background:linear-gradient(to bottom,rgba(227,58,12,1) 0%,rgba(234,91,31,1) 100%); filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#e33a0c',endColorstr='#ea5b1f',GradientType=0 )}.fullrounded img{-webkit-border-radius:400px;-moz-border-radius:400px;border-radius:400px}.tp-caption a{color:#ff7302;text-shadow:none;-webkit-transition:all 0.2s ease-out;-moz-transition:all 0.2s ease-out;-o-transition:all 0.2s ease-out;-ms-transition:all 0.2s ease-out}.tp-caption a:hover{color:#ffa902}.largeredbtn{font-family:"Raleway",sans-serif;font-weight:900;font-size:16px;line-height:60px;color:#fff !important;text-decoration:none;padding-left:40px;padding-right:80px;padding-top:22px;padding-bottom:22px;background:rgb(234,91,31); background:-moz-linear-gradient(top,rgba(234,91,31,1) 0%,rgba(227,58,12,1) 100%); background:-webkit-gradient(linear,left top,left bottom,color-stop(0%,rgba(234,91,31,1)),color-stop(100%,rgba(227,58,12,1))); background:-webkit-linear-gradient(top,rgba(234,91,31,1) 0%,rgba(227,58,12,1) 100%); background:-o-linear-gradient(top,rgba(234,91,31,1) 0%,rgba(227,58,12,1) 100%); background:-ms-linear-gradient(top,rgba(234,91,31,1) 0%,rgba(227,58,12,1) 100%); background:linear-gradient(to bottom,rgba(234,91,31,1) 0%,rgba(227,58,12,1) 100%); filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#ea5b1f',endColorstr='#e33a0c',GradientType=0 )}.largeredbtn:hover{background:rgb(227,58,12); background:-moz-linear-gradient(top,rgba(227,58,12,1) 0%,rgba(234,91,31,1) 100%); background:-webkit-gradient(linear,left top,left bottom,color-stop(0%,rgba(227,58,12,1)),color-stop(100%,rgba(234,91,31,1))); background:-webkit-linear-gradient(top,rgba(227,58,12,1) 0%,rgba(234,91,31,1) 100%); background:-o-linear-gradient(top,rgba(227,58,12,1) 0%,rgba(234,91,31,1) 100%); background:-ms-linear-gradient(top,rgba(227,58,12,1) 0%,rgba(234,91,31,1) 100%); background:linear-gradient(to bottom,rgba(227,58,12,1) 0%,rgba(234,91,31,1) 100%); filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#e33a0c',endColorstr='#ea5b1f',GradientType=0 )}.fullrounded img{-webkit-border-radius:400px;-moz-border-radius:400px;border-radius:400px}.tp-caption a{color:#ff7302;text-shadow:none;-webkit-transition:all 0.2s ease-out;-moz-transition:all 0.2s ease-out;-o-transition:all 0.2s ease-out;-ms-transition:all 0.2s ease-out;line-height:140%}.tp-caption a:hover{color:#ffa902}@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,800,300,700);.tp-caption a{color:#296169;text-shadow:none;text-decoration:none;-webkit-transition:all 0.2s ease-out;-moz-transition:all 0.2s ease-out;-o-transition:all 0.2s ease-out;-ms-transition:all 0.2s ease-out}.tp-caption a:hover{color:#296169}.tp-caption a{color:#296169;text-shadow:none;text-decoration:none;-webkit-transition:all 0.2s ease-out;-moz-transition:all 0.2s ease-out;-o-transition:all 0.2s ease-out;-ms-transition:all 0.2s ease-out}.tp-caption a:hover{color:#296169}.feature-round{color:#000;background:#fff;background:rgba(255,255,255,0.7);font-size:12px;width:100px;height:100px;line-height:14px;text-align:center;text-decoration:none;box-sizing:border-box;padding:35px 35px 35px 35px;background-color:transparent;border-radius:50px 50px 50px 50px;border-width:0px;border-color:#000000;border-style:none}
+  </style>
+  <link media="all" type="text/css" href="http://medengg.com/wp-content/plugins/showbiz/showbiz-plugin/css/settings.css?ver=1.7.3" id="showbiz-settings-css" rel="stylesheet" />
+  <link media="all" type="text/css" href="http://medengg.com/wp-content/plugins/showbiz/showbiz-plugin/fancybox/jquery.fancybox.css?ver=1.7.3" id="fancybox-css" rel="stylesheet" />
+  <link media="all" type="text/css" href="http://medengg.com/wp-content/themes/miami/miami/assets/css/bootstrap.min.css?ver=false" id="miami_bootstrap_css-css" rel="stylesheet" />
+  <link media="all" type="text/css" href="http://medengg.com/wp-content/themes/miami/miami/style.css?ver=false" id="miami_theme_css-css" rel="stylesheet" />
+  <link media="all" type="text/css" href="http://medengg.com/wp-content/themes/miami/miami/assets/css/icons.css?ver=false" id="miami_icons_css-css" rel="stylesheet" />
+  <link media="all" type="text/css" href="http://medengg.com/wp-content/themes/miami/miami/assets/fonts/css/fontello.css?ver=false" id="miami_fontello_css-css" rel="stylesheet" />
+  <link media="all" type="text/css" href="http://medengg.com/wp-includes/css/dashicons.min.css?ver=4.3.1" id="dashicons-css" rel="stylesheet" />
+  <link media="all" type="text/css" href="http://medengg.com/wp-content/plugins/js_composer/assets/css/js_composer.css?ver=4.6.2" id="js_composer_front-css" rel="stylesheet" />
+  <link media="all" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans%3A700%2C400" id="redux-google-fonts-seed_cspv4-css" rel="stylesheet" />
+  <script src="http://medengg.com/wp-includes/js/jquery/jquery.js?ver=1.11.3" type="text/javascript">
+  </script>
+  <script src="http://medengg.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1" type="text/javascript">
+  </script>
+  <script src="http://medengg.com/wp-content/plugins/essential-grid/public/assets/js/lightbox.js?ver=2.0.9.1" type="text/javascript">
+  </script>
+  <script src="http://medengg.com/wp-content/plugins/essential-grid/public/assets/js/jquery.themepunch.tools.min.js?ver=2.0.9.1" type="text/javascript">
+  </script>
+  <script src="http://medengg.com/wp-content/plugins/essential-grid/public/assets/js/jquery.themepunch.essential.min.js?ver=2.0.9.1" type="text/javascript">
+  </script>
+  <script src="http://medengg.com/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.revolution.min.js?ver=5.0.4.1" type="text/javascript">
+  </script>
+  <script src="http://medengg.com/wp-content/plugins/showbiz/showbiz-plugin/fancybox/jquery.fancybox.pack.js?ver=1.7.3" type="text/javascript">
+  </script>
+  <script src="http://medengg.com/wp-content/plugins/showbiz/showbiz-plugin/js/jquery.themepunch.showbizpro.min.js?ver=1.7.3" type="text/javascript">
+  </script>
+  <link href="http://medengg.com/xmlrpc.php?rsd" title="RSD" type="application/rsd+xml" rel="EditURI" />
+  <link href="http://medengg.com/wp-includes/wlwmanifest.xml" type="application/wlwmanifest+xml" rel="wlwmanifest" />
+  <meta content="WordPress 4.3.1" name="generator" />
+  <link href="http://medengg.com/" rel="canonical" />
+  <link href="http://medengg.com/" rel="shortlink" />
+  <script type="text/javascript">
+   jQuery(document).ready(function() {
+				// CUSTOM AJAX CONTENT LOADING FUNCTION
+				var ajaxRevslider = function(obj) {
+				
+					// obj.type : Post Type
+					// obj.id : ID of Content to Load
+					// obj.aspectratio : The Aspect Ratio of the Container / Media
+					// obj.selector : The Container Selector where the Content of Ajax will be injected. It is done via the Essential Grid on Return of Content
+					
+					var content = "";
+
+					data = {};
+					
+					data.action = 'revslider_ajax_call_front';
+					data.client_action = 'get_slider_html';
+					data.token = '769ece2abb';
+					data.type = obj.type;
+					data.id = obj.id;
+					data.aspectratio = obj.aspectratio;
+					
+					// SYNC AJAX REQUEST
+					jQuery.ajax({
+						type:"post",
+						url:"http://medengg.com/wp-admin/admin-ajax.php",
+						dataType: 'json',
+						data:data,
+						async:false,
+						success: function(ret, textStatus, XMLHttpRequest) {
+							if(ret.success == true)
+								content = ret.data;								
+						},
+						error: function(e) {
+							console.log(e);
+						}
+					});
+					
+					 // FIRST RETURN THE CONTENT WHEN IT IS LOADED !!
+					 return content;						 
+				};
+				
+				// CUSTOM AJAX FUNCTION TO REMOVE THE SLIDER
+				var ajaxRemoveRevslider = function(obj) {
+					return jQuery(obj.selector+" .rev_slider").revkill();
+				};
+
+				// EXTEND THE AJAX CONTENT LOADING TYPES WITH TYPE AND FUNCTION
+				var extendessential = setInterval(function() {
+					if (jQuery.fn.tpessential != undefined) {
+						clearInterval(extendessential);
+						if(typeof(jQuery.fn.tpessential.defaults) !== 'undefined') {
+							jQuery.fn.tpessential.defaults.ajaxTypes.push({type:"revslider",func:ajaxRevslider,killfunc:ajaxRemoveRevslider,openAnimationSpeed:0.3});   
+							// type:  Name of the Post to load via Ajax into the Essential Grid Ajax Container
+							// func: the Function Name which is Called once the Item with the Post Type has been clicked
+							// killfunc: function to kill in case the Ajax Window going to be removed (before Remove function !
+							// openAnimationSpeed: how quick the Ajax Content window should be animated (default is 0.3)
+						}
+					}
+				},30);
+			});
+  </script>
+  <style type="text/css">
+   .recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}
+  </style>
+  <meta content="Powered by Visual Composer - drag and drop page builder for WordPress." name="generator" />
+  <!--[if IE 8]><link rel="stylesheet" type="text/css" href="http://medengg.com/wp-content/plugins/js_composer/assets/css/vc-ie8.css" media="screen"><![endif]-->
+  <meta content="Powered by Slider Revolution 5.0.4.1 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface." name="generator" />
+  <noscript>
+   &lt;style&gt; .wpb_animate_when_almost_visible { opacity: 1; }&lt;/style&gt;
+  </noscript>
+  <style type="text/css">
+   .esgbox-margin{margin-right:0px;}
+  </style>
+ </head>
+ <body class="home page page-id-13 page-template-default  stickyfooter onepagermenu wpb-js-composer js-comp-ver-4.6.2 vc_responsive esg-blurlistenerexists">
+  <style>
+   a{color:#33bfd8}.button:hover{border-color:#33bfd8; background:#33bfd8}.lightondark .button:hover{border-color:#33bfd8;background:#33bfd8}.lightondark .button.bordered:hover{border-color:#33bfd8; background:#33bfd8}.button.bordered:hover{border-color:#33bfd8; background:#33bfd8}.button.subtle:hover{border-color:#33bfd8; background:#33bfd8}.lightondark .button.subtle:hover{border-color:#33bfd8; background:#33bfd8}.button.highlight{border:2px solid #33bfd8; background:#33bfd8}.lightondark ul.regularlist a{color:#33bfd8}ul.speciallist li a:hover{color:#33bfd8}.lightondark ul.speciallist li a:hover{color:#33bfd8}.pricetable .priceitem.highlight h3.pricetitle{background:#33bfd8}.lightondark .pricetable .priceitem.highlight h3.pricetitle{background:#33bfd8}.simpleservice .serviceicon{color:#33bfd8}.simpleservice.highlight{background:#33bfd8}.simpleservice.highlight:hover .serviceicon{color:#33bfd8}.sidebar_widget.widget_nav_menu li.current_page_item a{color:#33bfd8}.comment-reply-link.reply:hover{color:#33bfd8}.readmorebutton a:hover:after,.comment-reply-link.reply:hover:after{background:#33bfd8}.sharemainbutton:hover{background:#33bfd8; border:2px solid #33bfd8}.lightondark input[type="submit"]:focus:hover{border:2px solid #33bfd8}input[type="submit"]:hover{background:#33bfd8}.readmorebutton a:hover,.comment-reply-link.reply:hover{color:#33bfd8}.sticky .blog_post_title a{color:#33bfd8}body,select,textarea,input[type="text"],input[type="password"],input[type="datetime"],input[type="datetime-local"],input[type="date"],input[type="month"],input[type="time"],input[type="week"],input[type="number"],input[type="email"],input[type="url"],input[type="search"],input[type="tel"],input[type="color"],#showbiz_moreportfolio_1 .showbiz-title,#showbiz_moreportfolio_1 a.showbiz-title,#showbiz_moreportfolio_1 a.showbiz-title:visited,#showbiz_moreportfolio_1 .excerpt,.sb-post-details,.sb-post-details span,.sb-post-details a,.sb-post-details a:visited,.sb-readmore,.sb-readmore span,.sb-readmore a,.sb-readmore a:visited{font-family:'Source Sans Pro',sans-serif}.esg-grid,.esg-selected-filterbutton{font-family:'Source Sans Pro',sans-serif !important}
+  </style>
+  <style scope="">
+   .content_max_width {max-width:100%}
+  </style>
+  <!-- THE SLIDE WIDGET PANEL -->
+  <!-- END OF SLIDE WIDGET PANEL-->
+  <!--! BODY WRAPPER -->
+  <section id="miamitop">
+  </section>
+  <article id="bodywrapper" style="margin-bottom: 149px;">
+   <!--! HEADER -->
+   <header class="fixed-header-fullwidth" id="header_wrapper">
+    <!--!	SubHeader -->
+    <!-- SUBHEADER ALTERNATIVE I. -->
+    <div class="sticky-wrapper-header">
+     <section class="stickyheader  indent makeitsticky darkextend" id="header">
+     </section>
+     <section class=" darkmainnav solid  background_fullmenu rightside " style="" id="header_inner_wrapper">
+      <!-- BOOTSTRAP ROW -->
+     </section>
+     <section class="row">
+      <!-- SUBHEADER ALTERNATIVE II. -->
+      <!--!	Logo -->
+     </section>
+     <section class="floatleft" id="logo_wrapper">
+      <a href="http://medengg.com">
+      </a>
+     </section>
+     <section id="logo">
+      <img data-at2x="http://medengg.com/wp-content/uploads/2015/10/ME_Logo_s.png" src="http://medengg.com/wp-content/uploads/2015/10/ME_Logo_sss.png" class="mainlogo" alt="" />
+      <img data-at2x="http://medengg.com/wp-content/uploads/2015/10/ME_Logo_s.png" src="http://medengg.com/wp-content/uploads/2015/10/ME_Logo_sss.png" class="scrolledlogo" alt="" />
+     </section>
+     <!-- END OF LOGO PART -->
+     <!--!  Navigation Floating -->
+     <section id="nav-floating">
+     </section>
+     <section class="floatleft adjusted" id="navigation" style="visibility: visible; height: auto;">
+      <ul class="navigation" id="menu-dummy-content">
+       <li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home megamenu  darknav" id="menu-item-115" data-backgroundcolor="rgba(37,37,37,1)">
+        <a href="http://medengg.com/" class="menu-link">
+         Home
+        </a>
+       </li>
+       <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children darknav" id="menu-item-197" data-backgroundcolor="rgba(37,37,37,1)">
+        <a href="#" class="menu-link">
+         Products
+        </a>
+        <ul class="sub-menu" style="background-color: rgb(37, 37, 37);">
+         <li class="menu-item menu-item-type-custom menu-item-object-custom" id="menu-item-198">
+          <a href="#" class="menu-link">
+           3D Printers
+          </a>
+         </li>
+         <li class="menu-item menu-item-type-custom menu-item-object-custom" id="menu-item-199">
+          <a href="#" class="menu-link">
+           Scientific and Lab
+          </a>
+         </li>
+         <li class="menu-item menu-item-type-custom menu-item-object-custom" id="menu-item-200">
+          <a href="#" class="menu-link">
+           Educational
+          </a>
+         </li>
+         <li class="menu-item menu-item-type-custom menu-item-object-custom" id="menu-item-201">
+          <a href="#" class="menu-link">
+           Medical Equipment
+          </a>
+         </li>
+         <li class="menu-item menu-item-type-custom menu-item-object-custom" id="menu-item-202">
+          <a href="#" class="menu-link">
+           Medical Supplies
+          </a>
+         </li>
+        </ul>
+       </li>
+       <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children darknav" id="menu-item-203" data-backgroundcolor="rgba(37,37,37,1)">
+        <a href="#" class="menu-link">
+         3D Models
+        </a>
+        <ul class="sub-menu" style="background-color: rgb(37, 37, 37);">
+         <li class="menu-item menu-item-type-custom menu-item-object-custom" id="menu-item-204">
+          <a href="#" class="menu-link">
+           3D Designing
+          </a>
+         </li>
+         <li class="menu-item menu-item-type-custom menu-item-object-custom" id="menu-item-205">
+          <a href="#" class="menu-link">
+           3D Models
+          </a>
+         </li>
+         <li class="menu-item menu-item-type-custom menu-item-object-custom" id="menu-item-206">
+          <a href="#" class="menu-link">
+           3D Products
+          </a>
+         </li>
+        </ul>
+       </li>
+       <li class="menu-item menu-item-type-post_type menu-item-object-page darknav" id="menu-item-214" data-backgroundcolor="rgba(37,37,37,1)">
+        <a href="http://medengg.com/place-your-order/" class="menu-link">
+         Place Your Order
+        </a>
+       </li>
+       <li class="menu-item menu-item-type-post_type menu-item-object-page darknav" id="menu-item-154" data-backgroundcolor="rgba(37,37,37,1)">
+        <a href="http://medengg.com/contact/" class="menu-link">
+         Contact Us
+        </a>
+       </li>
+      </ul>
+      <div class="darknav" id="mobile-navigation">
+       <i class="showonclose icon-menu">
+       </i>
+       <i class="showonopen icon-cancel">
+       </i>
+      </div>
+     </section>
+     <!-- END OF NAVIGATION -->
+     <!--!	Social Icons -->
+     <section class="floatright" id="header_widgets_wrapper" style="display: none; visibility: visible; height: auto;">
+      <a href="https://www.facebook.com/MED-ENGG-451932841598289/" class="shareme">
+       <div class="headerlikes">
+        <i class="headerlikesicon icon-facebook">
+        </i>
+        <span class="clearfix">
+        </span>
+       </div>
+      </a>
+      <a href="https://plus.google.com/u/0/?hl=en/" class="shareme">
+       <div class="headerlikes">
+        <i class="headerlikesicon icon-gplus">
+        </i>
+        <span class="clearfix">
+        </span>
+       </div>
+      </a>
+      <a href="https://www.instagram.com/medengg/" class="shareme">
+       <div class="headerlikes">
+        <i class="headerlikesicon icon-instagramm">
+        </i>
+        <span class="clearfix">
+        </span>
+       </div>
+      </a>
+      <a href="" class="shareme">
+       <div class="headerlikes">
+        <i class="headerlikesicon icon-vimeo-squared">
+        </i>
+        <span class="clearfix">
+        </span>
+       </div>
+      </a>
+     </section>
+     <!-- END OF HEADER WIDGET PARTS -->
+     <div class="clearfix">
+     </div>
+     <!-- END OF NAV FLOATING -->
+     <div class="clearfix">
+     </div>
+     <!-- END OF BOOTSTRAP ROW -->
+    </div>
+    <!-- END OF HEADER -->
+   </header>
+   <!-- END OF HEADER -->
+   <!--!	Page Title Image -->
+   <section class="withtp-media withcolor " id="header_background">
+    <div style="min-height:130px;" class="innerbgholder ">
+     <div style="background-color:#313437;opacity:1" class="header_background_overlay">
+     </div>
+     <div style="" class="header_background_overlay">
+     </div>
+    </div>
+   </section>
+   <!--! Content -->
+  </article>
+  <article class="nosidebar  post-13 page type-page status-publish hentry" id="page-13">
+   <!-- Content -->
+   <section style="margin:auto;width:100%;background-color:#ffffff" class="dark" id="content_inner_wrapper">
+   </section>
+   <section id="content-container">
+   </section>
+  </article>
+  <article class="dark" id="page-title-wrapper">
+   <section class="container-fluid titleincontent hb_inner_wrapper" style="max-width:100%">
+   </section>
+   <section style="width:100%" class="page_title_outter_wrapper">
+    <!--!	Page Title -->
+    <h1 style="margin-top:65px;" class="textaligncenter parallaxpgtitle dark headerunderline" id="pagetitle">
+     Home
+    </h1>
+   </section>
+  </article>
+  <div class="topspacer" style="height:153px;">
+  </div>
+  <section class="tp_vc_mw_rowwrapper    ">
+   <article class="tp_vc_mw_rowinner  darkonlight " style="padding-top: 0px ; padding-bottom: 0px;">
+    <div style="background-color:transparent;" class="rowbgimage_overlay">
+    </div>
+    <div class="content_max_width">
+     <div class="vc_row wpb_row vc_row-fluid vc_general vc_parallax vc_parallax-on" data-vc-parallax="1.5">
+      <div class="wpb_column vc_column_container vc_col-sm-12">
+       <div class="wpb_wrapper">
+        <div class="wpb_text_column wpb_content_element">
+         <h3 class="airy_headline textaligncenter headerunderline ">
+          A THEME FOR EVERY TASTE
+         </h3>
+         <div style="text-align: center;" class="airy_subheadline">
+          <p>
+           Miami introduces the most flexible layout ever to the world of WordPress Themes.
+           <br />
+           We provide you with a Toolkit to build your Dreams!
+          </p>
+         </div>
+        </div>
+        <div style="display:block;clear:both;height:22px" class="  ">
+        </div>
+        <div class="wpb_text_column wpb_content_element ">
+         <div class="wpb_wrapper">
+          <p style="text-align: center;" class="pullover-image">
+           <img alt="devices" src="wp-content/themes/miami/assets/images/imac.png" style="margin-bottom: -100px; position: relative; z-index: 100; max-width: 100%;" class="alignnone size-full wp-image-360" />
+          </p>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="vc_parallax-inner skrollable skrollable-before" style="height: 150%; top: -50%;" data-bottom-top="top: -50%;" data-top-bottom="top: 0%;">
+      </div>
+     </div>
+     <div style="clear:both">
+     </div>
+    </div>
+   </article>
+  </section>
+  <section class="tp_vc_mw_rowwrapper    ">
+   <article class="tp_vc_mw_rowinner  lightondark " style="padding-top: 155px ; padding-bottom: 85px;">
+    <div data-parfactor="5" class="parallaxbg rowbgimage_outter">
+     <div class="rowbgimage_inner">
+      <div class="rowbgimage_offset" style="transform: translate3d(0px, -150.5px, 0px);">
+       <img class="rowbgimage" src="http://medengg.com/wp-content/uploads/2015/10/parallax1.jpg" style="max-width: 1000%;" />
+      </div>
+     </div>
+    </div>
+    <div style="background-color:rgba(255,255,255,0.01);" class="rowbgimage_overlay">
+    </div>
+    <div style="background-image:url(http://medengg.com/wp-content/plugins/tpvcaddons/tp_vc_assets/images/noise.gif)!important;opacity: 0.05 !important;" class="rowbgimage_overlay">
+    </div>
+    <div class="content_max_width">
+     <div class="vc_row wpb_row vc_row-fluid vc_general vc_parallax vc_parallax-on" data-vc-parallax="1.5">
+      <div class="wpb_column vc_column_container vc_col-sm-12">
+       <div class="wpb_wrapper">
+        <div class="wpb_text_column wpb_content_element">
+         <h3 class="airy_headline textaligncenter headerunderline centertitle">
+          Highlights
+         </h3>
+        </div>
+        <div style="display:block;clear:both;height:8px" class="  ">
+        </div>
+        <style type="text/css">
+         a.eg-henryharrison-element-1,a.eg-henryharrison-element-2{-webkit-transition:all .4s linear;   -moz-transition:all .4s linear;   -o-transition:all .4s linear;   -ms-transition:all .4s linear;   transition:all .4s linear}.eg-jimmy-carter-element-11 i:before{margin-left:0px; margin-right:0px}.eg-harding-element-17{letter-spacing:1px}.eg-harding-wrapper .esg-entry-media{overflow:hidden; box-sizing:border-box;   -webkit-box-sizing:border-box;   -moz-box-sizing:border-box;   padding:30px 30px 0px 30px}.eg-harding-wrapper .esg-entry-media img{overflow:hidden; border-radius:50%;   -webkit-border-radius:50%;   -moz-border-radius:50%}.eg-ulysses-s-grant-wrapper .esg-entry-media{overflow:hidden; box-sizing:border-box;   -webkit-box-sizing:border-box;   -moz-box-sizing:border-box;   padding:30px 30px 0px 30px}.eg-ulysses-s-grant-wrapper .esg-entry-media img{overflow:hidden; border-radius:50%;   -webkit-border-radius:50%;   -moz-border-radius:50%}.eg-richard-nixon-wrapper .esg-entry-media{overflow:hidden; box-sizing:border-box;   -webkit-box-sizing:border-box;   -moz-box-sizing:border-box;   padding:30px 30px 0px 30px}.eg-richard-nixon-wrapper .esg-entry-media img{overflow:hidden; border-radius:50%;   -webkit-border-radius:50%;   -moz-border-radius:50%}.eg-herbert-hoover-wrapper .esg-entry-media img{filter:url("data:image/svg+xml;utf8,&lt;svg xmlns='http://www.w3.org/2000/svg'&gt;&lt;filter id='grayscale'&gt;&lt;feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/&gt;&lt;/filter&gt;&lt;/svg&gt;#grayscale");   filter:gray;   -webkit-filter:grayscale(100%)}.eg-herbert-hoover-wrapper:hover .esg-entry-media img{filter:url("data:image/svg+xml;utf8,&lt;svg xmlns='http://www.w3.org/2000/svg'&gt;&lt;filter id='grayscale'&gt;&lt;feColorMatrix type='matrix' values='1 0 0 0 0,0 1 0 0 0,0 0 1 0 0,0 0 0 1 0'/&gt;&lt;/filter&gt;&lt;/svg&gt;#grayscale");  -webkit-filter:grayscale(0%)}.eg-lyndon-johnson-wrapper .esg-entry-media img{filter:url("data:image/svg+xml;utf8,&lt;svg xmlns='http://www.w3.org/2000/svg'&gt;&lt;filter id='grayscale'&gt;&lt;feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/&gt;&lt;/filter&gt;&lt;/svg&gt;#grayscale");   filter:gray;   -webkit-filter:grayscale(100%)}.eg-lyndon-johnson-wrapper:hover .esg-entry-media img{filter:url("data:image/svg+xml;utf8,&lt;svg xmlns='http://www.w3.org/2000/svg'&gt;&lt;filter id='grayscale'&gt;&lt;feColorMatrix type='matrix' values='1 0 0 0 0,0 1 0 0 0,0 0 1 0 0,0 0 0 1 0'/&gt;&lt;/filter&gt;&lt;/svg&gt;#grayscale");  -webkit-filter:grayscale(0%)}.esg-overlay.eg-ronald-reagan-container{background:-moz-linear-gradient(top,rgba(0,0,0,0) 50%,rgba(0,0,0,0.83) 99%,rgba(0,0,0,0.85) 100%); background:-webkit-gradient(linear,left top,left bottom,color-stop(50%,rgba(0,0,0,0)),color-stop(99%,rgba(0,0,0,0.83)),color-stop(100%,rgba(0,0,0,0.85))); background:-webkit-linear-gradient(top,rgba(0,0,0,0) 50%,rgba(0,0,0,0.83) 99%,rgba(0,0,0,0.85) 100%); background:-o-linear-gradient(top,rgba(0,0,0,0) 50%,rgba(0,0,0,0.83) 99%,rgba(0,0,0,0.85) 100%); background:-ms-linear-gradient(top,rgba(0,0,0,0) 50%,rgba(0,0,0,0.83) 99%,rgba(0,0,0,0.85) 100%); background:linear-gradient(to bottom,rgba(0,0,0,0) 50%,rgba(0,0,0,0.83) 99%,rgba(0,0,0,0.85) 100%); filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000',endColorstr='#d9000000',GradientType=0 )}.eg-georgebush-wrapper .esg-entry-cover{background:-moz-linear-gradient(top,rgba(0,0,0,0) 50%,rgba(0,0,0,0.83) 99%,rgba(0,0,0,0.85) 100%); background:-webkit-gradient(linear,left top,left bottom,color-stop(50%,rgba(0,0,0,0)),color-stop(99%,rgba(0,0,0,0.83)),color-stop(100%,rgba(0,0,0,0.85))); background:-webkit-linear-gradient(top,rgba(0,0,0,0) 50%,rgba(0,0,0,0.83) 99%,rgba(0,0,0,0.85) 100%); background:-o-linear-gradient(top,rgba(0,0,0,0) 50%,rgba(0,0,0,0.83) 99%,rgba(0,0,0,0.85) 100%); background:-ms-linear-gradient(top,rgba(0,0,0,0) 50%,rgba(0,0,0,0.83) 99%,rgba(0,0,0,0.85) 100%); background:linear-gradient(to bottom,rgba(0,0,0,0) 50%,rgba(0,0,0,0.83) 99%,rgba(0,0,0,0.85) 100%); filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000',endColorstr='#d9000000',GradientType=0 )}.eg-jefferson-wrapper{-webkit-border-radius:5px !important; -moz-border-radius:5px !important; border-radius:5px !important; -webkit-mask-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC) !important}.eg-monroe-element-1{text-shadow:0px 1px 3px rgba(0,0,0,0.1)}.eg-lyndon-johnson-wrapper .esg-entry-cover{background:-moz-radial-gradient(center,ellipse cover,rgba(0,0,0,0.35) 0%,rgba(18,18,18,0) 96%,rgba(19,19,19,0) 100%); background:-webkit-gradient(radial,center center,0px,center center,100%,color-stop(0%,rgba(0,0,0,0.35)),color-stop(96%,rgba(18,18,18,0)),color-stop(100%,rgba(19,19,19,0))); background:-webkit-radial-gradient(center,ellipse cover,rgba(0,0,0,0.35) 0%,rgba(18,18,18,0) 96%,rgba(19,19,19,0) 100%); background:-o-radial-gradient(center,ellipse cover,rgba(0,0,0,0.35) 0%,rgba(18,18,18,0) 96%,rgba(19,19,19,0) 100%); background:-ms-radial-gradient(center,ellipse cover,rgba(0,0,0,0.35) 0%,rgba(18,18,18,0) 96%,rgba(19,19,19,0) 100%); background:radial-gradient(ellipse at center,rgba(0,0,0,0.35) 0%,rgba(18,18,18,0) 96%,rgba(19,19,19,0) 100%); filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#59000000',endColorstr='#00131313',GradientType=1 )}.eg-wilbert-wrapper .esg-entry-cover{background:-moz-radial-gradient(center,ellipse cover,rgba(0,0,0,0.35) 0%,rgba(18,18,18,0) 96%,rgba(19,19,19,0) 100%); background:-webkit-gradient(radial,center center,0px,center center,100%,color-stop(0%,rgba(0,0,0,0.35)),color-stop(96%,rgba(18,18,18,0)),color-stop(100%,rgba(19,19,19,0))); background:-webkit-radial-gradient(center,ellipse cover,rgba(0,0,0,0.35) 0%,rgba(18,18,18,0) 96%,rgba(19,19,19,0) 100%); background:-o-radial-gradient(center,ellipse cover,rgba(0,0,0,0.35) 0%,rgba(18,18,18,0) 96%,rgba(19,19,19,0) 100%); background:-ms-radial-gradient(center,ellipse cover,rgba(0,0,0,0.35) 0%,rgba(18,18,18,0) 96%,rgba(19,19,19,0) 100%); background:radial-gradient(ellipse at center,rgba(0,0,0,0.35) 0%,rgba(18,18,18,0) 96%,rgba(19,19,19,0) 100%); filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#59000000',endColorstr='#00131313',GradientType=1 )}.eg-wilbert-wrapper .esg-entry-media img{-webkit-transition:0.4s ease-in-out;  -moz-transition:0.4s ease-in-out;  -o-transition:0.4s ease-in-out;  transition:0.4s ease-in-out;  filter:url("data:image/svg+xml;utf8,&lt;svg xmlns='http://www.w3.org/2000/svg'&gt;&lt;filter id='grayscale'&gt;&lt;feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/&gt;&lt;/filter&gt;&lt;/svg&gt;#grayscale");   filter:gray;   -webkit-filter:grayscale(100%)}.eg-wilbert-wrapper:hover .esg-entry-media img{filter:url("data:image/svg+xml;utf8,&lt;svg xmlns='http://www.w3.org/2000/svg'&gt;&lt;filter id='grayscale'&gt;&lt;feColorMatrix type='matrix' values='1 0 0 0 0,0 1 0 0 0,0 0 1 0 0,0 0 0 1 0'/&gt;&lt;/filter&gt;&lt;/svg&gt;#grayscale");  -webkit-filter:grayscale(0%)}.eg-phillie-element-3:after{content:" ";width:0px;height:0px;border-style:solid;border-width:5px 5px 0 5px;border-color:#000 transparent transparent transparent;left:50%;margin-left:-5px; bottom:-5px; position:absolute}.eg-howardtaft-wrapper .esg-entry-media img,.eg-howardtaft-wrapper .esg-media-poster{filter:url("data:image/svg+xml;utf8,&lt;svg xmlns='http://www.w3.org/2000/svg'&gt;&lt;filter id='grayscale'&gt;&lt;feColorMatrix type='matrix' values='1 0 0 0 0,0 1 0 0 0,0 0 1 0 0,0 0 0 1 0'/&gt;&lt;/filter&gt;&lt;/svg&gt;#grayscale");  -webkit-filter:grayscale(0%)}.eg-howardtaft-wrapper:hover .esg-entry-media img,.eg-howardtaft-wrapper:hover .esg-media-poster{filter:url("data:image/svg+xml;utf8,&lt;svg xmlns='http://www.w3.org/2000/svg'&gt;&lt;filter id='grayscale'&gt;&lt;feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/&gt;&lt;/filter&gt;&lt;/svg&gt;#grayscale");   filter:gray;   -webkit-filter:grayscale(100%)}.myportfolio-container .added_to_cart.wc-forward{font-family:"Open Sans"; font-size:13px; color:#fff; margin-top:10px}.esgbox-title.esgbox-title-outside-wrap{font-size:15px; font-weight:700; text-align:center}.esgbox-title.esgbox-title-inside-wrap{padding-bottom:10px; font-size:15px; font-weight:700; text-align:center}.eg-miami-related-posts-element-1{letter-spacing:1px}.tp-esg-item.eg-searchresults-wrapper:hover .eg-searchresults-element-1{color:#fff !important}.tp-esg-item.eg-searchresults-wrapper:hover .eg-searchresults-element-2{color:#fff !important}.tp-esg-item.eg-searchresults-wrapper:hover .eg-searchresults-element-3{color:#fff !important}.eg-miami-2-element-3{width:100%;height:100%;display:block}.eg-miami-2-element-3-a{width:100%;height:100%;padding:20px}.eg-miami-team-skin-element-0{letter-spacing:1px}.eg-miami-team-skin-element-3{letter-spacing:1px}.lightondark .eg-miami-team-skin-element-1{color:#fff !important}.lightondark .eg-miami-team-skin-element-3{color:rgba(255,255,255,0.3) !important}.eg-miami-team-skin-element-4,.eg-miami-team-skin-element-25,.eg-miami-team-skin-element-26,.eg-miami-team-skin-element-27{-webkit-transition:background 0.2s ease-in; -moz-transition:background 0.2s ease-in; -o-transition:background 0.2s ease-in; -ms-transition:background 0.2s ease-in}.eg-miami-1-element-2{letter-spacing:1px}.eg-miami-1-element-2{max-width:50%; text-align:right !important}.eg-miami-3-element-3{letter-spacing:1px}.eg-miami-masonry-blog-element-3{letter-spacing:1px}.eg-miami-masonry-blog-element-31{letter-spacing:1px}.eg-miami-masonry-blog-element-25{letter-spacing:1px}.eg-miami-masonry-blog-element-28{letter-spacing:1px}.eg-miami-cobble-blog-element-1{text-align:left}.eg-miami-cobble-blog-element-3{letter-spacing:1px}.eg-miami-cobble-blog-light-element-3{letter-spacing:1px}.eg-miami-portfolio-dark-element-3{letter-spacing:1px}.eg-miami-portfolio-light-element-3{letter-spacing:1px}.eg-miami-light-simple-element-1{text-align:left}.eg-miami-dark-simple-element-1{text-align:left}a.eg-henryharrison-element-1,a.eg-henryharrison-element-2{-webkit-transition:all .4s linear;   -moz-transition:all .4s linear;   -o-transition:all .4s linear;   -ms-transition:all .4s linear;   transition:all .4s linear}.eg-jimmy-carter-element-11 i:before{margin-left:0px; margin-right:0px}.eg-harding-element-17{letter-spacing:1px}.eg-harding-wrapper .esg-entry-media{overflow:hidden; box-sizing:border-box;   -webkit-box-sizing:border-box;   -moz-box-sizing:border-box;   padding:30px 30px 0px 30px}.eg-harding-wrapper .esg-entry-media img{overflow:hidden; border-radius:50%;   -webkit-border-radius:50%;   -moz-border-radius:50%}.eg-ulysses-s-grant-wrapper .esg-entry-media{overflow:hidden; box-sizing:border-box;   -webkit-box-sizing:border-box;   -moz-box-sizing:border-box;   padding:30px 30px 0px 30px}.eg-ulysses-s-grant-wrapper .esg-entry-media img{overflow:hidden; border-radius:50%;   -webkit-border-radius:50%;   -moz-border-radius:50%}.eg-richard-nixon-wrapper .esg-entry-media{overflow:hidden; box-sizing:border-box;   -webkit-box-sizing:border-box;   -moz-box-sizing:border-box;   padding:30px 30px 0px 30px}.eg-richard-nixon-wrapper .esg-entry-media img{overflow:hidden; border-radius:50%;   -webkit-border-radius:50%;   -moz-border-radius:50%}.eg-herbert-hoover-wrapper .esg-entry-media img{filter:url("data:image/svg+xml;utf8,&lt;svg xmlns='http://www.w3.org/2000/svg'&gt;&lt;filter id='grayscale'&gt;&lt;feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/&gt;&lt;/filter&gt;&lt;/svg&gt;#grayscale");   filter:gray;   -webkit-filter:grayscale(100%)}.eg-herbert-hoover-wrapper:hover .esg-entry-media img{filter:url("data:image/svg+xml;utf8,&lt;svg xmlns='http://www.w3.org/2000/svg'&gt;&lt;filter id='grayscale'&gt;&lt;feColorMatrix type='matrix' values='1 0 0 0 0,0 1 0 0 0,0 0 1 0 0,0 0 0 1 0'/&gt;&lt;/filter&gt;&lt;/svg&gt;#grayscale");  -webkit-filter:grayscale(0%)}.eg-lyndon-johnson-wrapper .esg-entry-media img{filter:url("data:image/svg+xml;utf8,&lt;svg xmlns='http://www.w3.org/2000/svg'&gt;&lt;filter id='grayscale'&gt;&lt;feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/&gt;&lt;/filter&gt;&lt;/svg&gt;#grayscale");   filter:gray;   -webkit-filter:grayscale(100%)}.eg-lyndon-johnson-wrapper:hover .esg-entry-media img{filter:url("data:image/svg+xml;utf8,&lt;svg xmlns='http://www.w3.org/2000/svg'&gt;&lt;filter id='grayscale'&gt;&lt;feColorMatrix type='matrix' values='1 0 0 0 0,0 1 0 0 0,0 0 1 0 0,0 0 0 1 0'/&gt;&lt;/filter&gt;&lt;/svg&gt;#grayscale");  -webkit-filter:grayscale(0%)}.esg-overlay.eg-ronald-reagan-container{background:-moz-linear-gradient(top,rgba(0,0,0,0) 50%,rgba(0,0,0,0.83) 99%,rgba(0,0,0,0.85) 100%); background:-webkit-gradient(linear,left top,left bottom,color-stop(50%,rgba(0,0,0,0)),color-stop(99%,rgba(0,0,0,0.83)),color-stop(100%,rgba(0,0,0,0.85))); background:-webkit-linear-gradient(top,rgba(0,0,0,0) 50%,rgba(0,0,0,0.83) 99%,rgba(0,0,0,0.85) 100%); background:-o-linear-gradient(top,rgba(0,0,0,0) 50%,rgba(0,0,0,0.83) 99%,rgba(0,0,0,0.85) 100%); background:-ms-linear-gradient(top,rgba(0,0,0,0) 50%,rgba(0,0,0,0.83) 99%,rgba(0,0,0,0.85) 100%); background:linear-gradient(to bottom,rgba(0,0,0,0) 50%,rgba(0,0,0,0.83) 99%,rgba(0,0,0,0.85) 100%); filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000',endColorstr='#d9000000',GradientType=0 )}.eg-georgebush-wrapper .esg-entry-cover{background:-moz-linear-gradient(top,rgba(0,0,0,0) 50%,rgba(0,0,0,0.83) 99%,rgba(0,0,0,0.85) 100%); background:-webkit-gradient(linear,left top,left bottom,color-stop(50%,rgba(0,0,0,0)),color-stop(99%,rgba(0,0,0,0.83)),color-stop(100%,rgba(0,0,0,0.85))); background:-webkit-linear-gradient(top,rgba(0,0,0,0) 50%,rgba(0,0,0,0.83) 99%,rgba(0,0,0,0.85) 100%); background:-o-linear-gradient(top,rgba(0,0,0,0) 50%,rgba(0,0,0,0.83) 99%,rgba(0,0,0,0.85) 100%); background:-ms-linear-gradient(top,rgba(0,0,0,0) 50%,rgba(0,0,0,0.83) 99%,rgba(0,0,0,0.85) 100%); background:linear-gradient(to bottom,rgba(0,0,0,0) 50%,rgba(0,0,0,0.83) 99%,rgba(0,0,0,0.85) 100%); filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000',endColorstr='#d9000000',GradientType=0 )}.eg-jefferson-wrapper{-webkit-border-radius:5px !important; -moz-border-radius:5px !important; border-radius:5px !important; -webkit-mask-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC) !important}.eg-monroe-element-1{text-shadow:0px 1px 3px rgba(0,0,0,0.1)}.eg-lyndon-johnson-wrapper .esg-entry-cover{background:-moz-radial-gradient(center,ellipse cover,rgba(0,0,0,0.35) 0%,rgba(18,18,18,0) 96%,rgba(19,19,19,0) 100%); background:-webkit-gradient(radial,center center,0px,center center,100%,color-stop(0%,rgba(0,0,0,0.35)),color-stop(96%,rgba(18,18,18,0)),color-stop(100%,rgba(19,19,19,0))); background:-webkit-radial-gradient(center,ellipse cover,rgba(0,0,0,0.35) 0%,rgba(18,18,18,0) 96%,rgba(19,19,19,0) 100%); background:-o-radial-gradient(center,ellipse cover,rgba(0,0,0,0.35) 0%,rgba(18,18,18,0) 96%,rgba(19,19,19,0) 100%); background:-ms-radial-gradient(center,ellipse cover,rgba(0,0,0,0.35) 0%,rgba(18,18,18,0) 96%,rgba(19,19,19,0) 100%); background:radial-gradient(ellipse at center,rgba(0,0,0,0.35) 0%,rgba(18,18,18,0) 96%,rgba(19,19,19,0) 100%); filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#59000000',endColorstr='#00131313',GradientType=1 )}.eg-wilbert-wrapper .esg-entry-cover{background:-moz-radial-gradient(center,ellipse cover,rgba(0,0,0,0.35) 0%,rgba(18,18,18,0) 96%,rgba(19,19,19,0) 100%); background:-webkit-gradient(radial,center center,0px,center center,100%,color-stop(0%,rgba(0,0,0,0.35)),color-stop(96%,rgba(18,18,18,0)),color-stop(100%,rgba(19,19,19,0))); background:-webkit-radial-gradient(center,ellipse cover,rgba(0,0,0,0.35) 0%,rgba(18,18,18,0) 96%,rgba(19,19,19,0) 100%); background:-o-radial-gradient(center,ellipse cover,rgba(0,0,0,0.35) 0%,rgba(18,18,18,0) 96%,rgba(19,19,19,0) 100%); background:-ms-radial-gradient(center,ellipse cover,rgba(0,0,0,0.35) 0%,rgba(18,18,18,0) 96%,rgba(19,19,19,0) 100%); background:radial-gradient(ellipse at center,rgba(0,0,0,0.35) 0%,rgba(18,18,18,0) 96%,rgba(19,19,19,0) 100%); filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#59000000',endColorstr='#00131313',GradientType=1 )}.eg-wilbert-wrapper .esg-entry-media img{-webkit-transition:0.4s ease-in-out;  -moz-transition:0.4s ease-in-out;  -o-transition:0.4s ease-in-out;  transition:0.4s ease-in-out;  filter:url("data:image/svg+xml;utf8,&lt;svg xmlns='http://www.w3.org/2000/svg'&gt;&lt;filter id='grayscale'&gt;&lt;feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/&gt;&lt;/filter&gt;&lt;/svg&gt;#grayscale");   filter:gray;   -webkit-filter:grayscale(100%)}.eg-wilbert-wrapper:hover .esg-entry-media img{filter:url("data:image/svg+xml;utf8,&lt;svg xmlns='http://www.w3.org/2000/svg'&gt;&lt;filter id='grayscale'&gt;&lt;feColorMatrix type='matrix' values='1 0 0 0 0,0 1 0 0 0,0 0 1 0 0,0 0 0 1 0'/&gt;&lt;/filter&gt;&lt;/svg&gt;#grayscale");  -webkit-filter:grayscale(0%)}.eg-phillie-element-3:after{content:" ";width:0px;height:0px;border-style:solid;border-width:5px 5px 0 5px;border-color:#000 transparent transparent transparent;left:50%;margin-left:-5px; bottom:-5px; position:absolute}.eg-howardtaft-wrapper .esg-entry-media img,.eg-howardtaft-wrapper .esg-media-poster{filter:url("data:image/svg+xml;utf8,&lt;svg xmlns='http://www.w3.org/2000/svg'&gt;&lt;filter id='grayscale'&gt;&lt;feColorMatrix type='matrix' values='1 0 0 0 0,0 1 0 0 0,0 0 1 0 0,0 0 0 1 0'/&gt;&lt;/filter&gt;&lt;/svg&gt;#grayscale");  -webkit-filter:grayscale(0%)}.eg-howardtaft-wrapper:hover .esg-entry-media img,.eg-howardtaft-wrapper:hover .esg-media-poster{filter:url("data:image/svg+xml;utf8,&lt;svg xmlns='http://www.w3.org/2000/svg'&gt;&lt;filter id='grayscale'&gt;&lt;feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/&gt;&lt;/filter&gt;&lt;/svg&gt;#grayscale");   filter:gray;   -webkit-filter:grayscale(100%)}.myportfolio-container .added_to_cart.wc-forward{font-family:"Open Sans"; font-size:13px; color:#fff; margin-top:10px}.esgbox-title.esgbox-title-outside-wrap{font-size:15px; font-weight:700; text-align:center}.esgbox-title.esgbox-title-inside-wrap{padding-bottom:10px; font-size:15px; font-weight:700; text-align:center}
+        </style>
+        <style type="text/css">
+         .simple-dark .navigationbuttons,.simple-dark .esg-pagination,.simple-dark .esg-filters{text-align:center}.simple-dark .esg-filterbutton,.simple-dark .esg-navigationbutton,.simple-dark .esg-sortbutton,.simple-dark .esg-cartbutton{color:#fff; margin-right:5px; cursor:pointer; padding:0px 10px; border:1px solid rgb(255,255,255); border:1px solid rgba(255,255,255,0.15); line-height:29px; font-size:12px; font-weight:600; font-family:"Open Sans",sans-serif; display:inline-block; background:rgba(255,255,255,0.08 ); margin-bottom:5px}.simple-dark .esg-navigationbutton *{color:#fff}.simple-dark .esg-left,.simple-dark .esg-right{padding:0px 5px !important}.simple-dark .esg-sortbutton-wrapper,.simple-dark .esg-cartbutton-wrapper{display:inline-block}.simple-dark .esg-sortbutton-order,.simple-dark .esg-cartbutton-order{display:inline-block;  vertical-align:top;  border:1px solid rgb(255,255,255);  border:1px solid rgba(255,255,255,0.15);  width:29px;  line-height:29px;  font-size:9px;  font-weight:600;  color:#fff;  cursor:pointer;  background:rgba(255,255,255,0.08 )}.simple-dark .esg-cartbutton{color:#fff; cursor:default !important}.simple-dark .esg-cartbutton .esgicon-basket{color:#fff;   font-size:15px;   line-height:15px;   margin-right:10px}.simple-dark .esg-cartbutton-wrapper{cursor:default !important}.simple-dark .esg-sortbutton,.simple-dark .esg-cartbutton{display:inline-block; position:relative; cursor:pointer; margin-right:5px}.simple-dark .esg-navigationbutton:hover,.simple-dark .esg-filterbutton:hover,.simple-dark .esg-sortbutton:hover,.simple-dark .esg-sortbutton-order:hover,.simple-dark .esg-cartbutton-order:hover,.simple-dark .esg-filterbutton.selected{border-color:#fff;  color:#000;  box-shadow:0px 3px 5px 0px rgba(0,0,0,0.13);  background:#fff}.simple-dark .esg-navigationbutton:hover *{color:#000}.simple-dark .esg-pagination-button:last-child{margin-right:0}.simple-dark .esg-sortbutton-order.tp-desc:hover{border-color:#fff; border-color:rgba(255,255,255,0.2); color:#000; box-shadow:0px -3px 5px 0px rgba(0,0,0,0.13) !important}.simple-dark .esg-filter-checked{padding:1px;  color:transparent;  background:#000;  background:rgba(255,255,255,0.15);  margin-left:7px;  font-size:9px;  font-weight:300;  line-height:9px;  vertical-align:middle}.simple-dark .esg-filterbutton.selected .esg-filter-checked,.simple-dark .esg-filterbutton:hover .esg-filter-checked{padding:1px;  color:#000;  background:#fff;  margin-left:7px;  font-size:9px;  font-weight:300;  line-height:9px;  vertical-align:middle}
+        </style>
+        <!-- ESSENTIAL GRID SKIN CSS -->
+        <style type="text/css">
+         .eg-miami-highlights-element-11{font-size:13px !important; line-height:30px !important; color:#ffffff !important; font-weight:700 !important; display:inline-block !important; float:left !important; clear:both !important; margin:0px 0px 10px 30px !important; padding:0px 0px 0px 0px !important; border-radius:0px 0px 0px 0px !important; background-color:rgba(255,255,255,0) !important; position:relative !important; z-index:2 !important; text-transform:uppercase !important}.eg-miami-highlights-element-1{font-size:17px; line-height:26px; color:#ffffff; font-weight:600; display:block; text-align:left; clear:both; margin:0px 0px 0px 0px ; padding:0px 30px 6px 30px ; border-radius:0px 0px 0px 0px ; background-color:rgba(255,255,255,0); position:relative; z-index:2 !important; font-family:"Source Sans Pro"}.eg-miami-highlights-element-10{font-size:15px; line-height:24px; color:#ffffff; font-weight:400; display:block; text-align:left; clear:both; margin:5px 0px 0px 0px ; padding:0px 30px 0px 30px ; border-radius:0px 0px 0px 0px ; background-color:rgba(255,255,255,0); position:relative; z-index:2 !important; font-family:"Source Sans Pro"}
+        </style>
+        <style type="text/css">
+        </style>
+        <style type="text/css">
+         .eg-miami-highlights-container{background-color:rgba(37,37,37,1.00)}
+        </style>
+        <style type="text/css">
+         .eg-miami-highlights-content{background-color:#ffffff; padding:0px 0px 0px 0px; border-width:0px 0px 0px 0px; border-radius:0px 0px 0px 0px; border-color:transparent; border-style:none; text-align:center}
+        </style>
+        <style type="text/css">
+         .esg-grid .mainul li.eg-miami-highlights-wrapper{background-color:#ffffff; padding:0px 0px 0px 0px; border-width:0px 0px 0px 0px; border-radius:0px 0px 0px 0px; border-color:transparent; border-style:none}
+        </style>
+        <!-- ESSENTIAL GRID END SKIN CSS -->
+        <style type="text/css">
+        </style>
+        <!-- THE ESSENTIAL GRID 2.0.9.1 -->
+        <!-- GRID WRAPPER FOR CONTAINER SIZING - HERE YOU CAN SET THE CONTAINER SIZE AND CONTAINER SKIN -->
+       </div>
+      </div>
+     </div>
+    </div>
+   </article>
+   <article id="esg-grid-2-1-wrap" class="myportfolio-container simple-dark" style="position: relative; z-index: 0; min-height: 100px; height: auto;">
+    <!-- THE GRID ITSELF WITH FILTERS, PAGINATION, SORTING ETC... -->
+    <div style="position:relative;left:0px;top:0px;width:100%;height:auto;" class="esg-container-fullscreen-forcer">
+     <div style="background-color: transparent;padding: 0px 0px 0px 0px ; box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box;" class="esg-grid esg-layout-even esg-container" id="esg-grid-2-1">
+      <!-- ############################ -->
+      <!-- THE GRID ITSELF WITH ENTRIES -->
+      <!-- ############################ -->
+      <div class="esg-overflowtrick" style="width: 100%; height: 695px;">
+       <ul class="mainul" style="height: 695px;">
+        <!-- PORTFOLIO ITEM 47 -->
+        <li data-cobblesh="2" data-cobblesw="2" class="filterall filter-lightstyle filter-lightpoly eg-miami-highlights-wrapper tp-esg-item itemtoshow esg-hovered isvisiblenow" style="opacity: 1; visibility: inherit; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0.1, 0.999917); height: 460px; width: 610px; display: block; top: 0px; left: 0px; transform-origin: center center 0px;">
+         <!-- THE CONTAINER FOR THE MEDIA AND THE COVER EFFECTS -->
+         <div class="esg-media-cover-wrapper">
+          <!-- THE MEDIA OF THE ENTRY -->
+          <div style="width:100%;height:100%; overflow:hidden;position:relative;" class="esg-entry-media-wrapper">
+           <div class="esg-entry-media">
+            <img alt="" src="http://medengg.com/wp-content/uploads/2015/10/highlightlightbg.jpg" style="top: 0px; left: 0%; width: 101%; height: auto; visibility: visible; display: block; position: absolute;" />
+           </div>
+          </div>
+          <!-- THE CONTENT OF THE ENTRY -->
+          <div class="esg-entry-cover" style="transform-style: flat; height: 460px;">
+           <!-- THE COLORED OVERLAY -->
+           <div data-delay="0" class="esg-overlay esg-slideout eg-miami-highlights-container" style="transform-origin: 50% 50% 0px; opacity: 1; visibility: inherit;">
+           </div>
+           <div class="esg-cc eec" style="top: 168px;">
+            <div data-hidetype="visibility" data-hideunder="260" class="esg-center eg-handlehideunder eg-miami-highlights-element-11">
+             <img src="http://medengg.com/wp-content/uploads/2015/10/ico_diamond_dark.png" />
+            </div>
+            <div class="esg-center eg-miami-highlights-element-1">
+             Header Styles
+            </div>
+            <div class="esg-center eg-miami-highlights-element-10">
+             Build your header section from a broad selection of avalable styles.
+             <br />
+             There are over 40 combinations to chose from!
+            </div>
+            <div>
+            </div>
+           </div>
+          </div>
+          <!-- END OF THE CONTENT IN THE ENTRY -->
+         </div>
+         <!-- END OF THE CONTAINER FOR THE MEDIA AND COVER/HOVER EFFECTS -->
+        </li>
+        <!-- END OF PORTFOLIO ITEM -->
+        <!-- PORTFOLIO ITEM 47 -->
+        <li data-cobblesh="1" data-cobblesw="2" class="filterall eg-miami-highlights-wrapper tp-esg-item itemtoshow esg-hovered isvisiblenow" style="opacity: 1; visibility: inherit; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0.1, 0.999917); height: 225px; width: 610px; display: block; top: 470px; left: 0px; transform-origin: center center 0px;">
+         <!-- THE CONTAINER FOR THE MEDIA AND THE COVER EFFECTS -->
+         <div class="esg-media-cover-wrapper">
+          <!-- THE MEDIA OF THE ENTRY -->
+          <div style="width:100%;height:100%; overflow:hidden;position:relative;" class="esg-entry-media-wrapper">
+           <div class="esg-entry-media">
+            <img alt="" src="http://medengg.com/wp-content/uploads/2015/10/pagelayouts2.jpg" style="top: 0px; left: 0%; width: 101%; height: auto; visibility: visible; display: block; position: absolute;" />
+           </div>
+          </div>
+          <!-- THE CONTENT OF THE ENTRY -->
+          <div class="esg-entry-cover" style="transform-style: flat; height: 225px;">
+           <!-- THE COLORED OVERLAY -->
+           <div data-delay="0" class="esg-overlay esg-slideout eg-miami-highlights-container" style="transform-origin: 50% 50% 0px; opacity: 1; visibility: inherit;">
+           </div>
+           <div class="esg-cc eec" style="top: 50px;">
+            <div data-hidetype="visibility" data-hideunder="260" class="esg-center eg-handlehideunder eg-miami-highlights-element-11">
+             <img src="http://medengg.com/wp-content/uploads/2015/10/ico_s_layouts_light.png" />
+            </div>
+            <div class="esg-center eg-miami-highlights-element-1">
+             Page Layouts
+            </div>
+            <div class="esg-center eg-miami-highlights-element-10">
+             With the Miami Theme you can select your layout on a per page basis.
+             <br />
+             Create special pages in no time!
+            </div>
+            <div>
+            </div>
+           </div>
+          </div>
+          <!-- END OF THE CONTENT IN THE ENTRY -->
+         </div>
+         <!-- END OF THE CONTAINER FOR THE MEDIA AND COVER/HOVER EFFECTS -->
+        </li>
+        <!-- END OF PORTFOLIO ITEM -->
+        <!-- PORTFOLIO ITEM 47 -->
+        <li data-cobblesh="1" data-cobblesw="1" class="filterall eg-miami-highlights-wrapper tp-esg-item itemtoshow esg-hovered isvisiblenow" style="opacity: 1; visibility: inherit; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0.1, 0.999917); height: 225px; width: 299px; display: block; top: 0px; left: 620px; transform-origin: center center 0px;">
+         <!-- THE CONTAINER FOR THE MEDIA AND THE COVER EFFECTS -->
+         <div class="esg-media-cover-wrapper">
+          <!-- THE MEDIA OF THE ENTRY -->
+          <div style="width:100%;height:100%; overflow:hidden;position:relative;" class="esg-entry-media-wrapper">
+           <div class="esg-entry-media">
+            <img alt="" src="http://medengg.com/wp-content/uploads/2015/10/oneclickinstall2.jpg" style="top: 0px; left: 0%; width: 101%; height: auto; visibility: visible; display: block; position: absolute;" />
+           </div>
+          </div>
+          <!-- THE CONTENT OF THE ENTRY -->
+          <div class="esg-entry-cover" style="transform-style: flat; height: 225px;">
+           <!-- THE COLORED OVERLAY -->
+           <div data-delay="0" class="esg-overlay esg-slideout eg-miami-highlights-container" style="transform-origin: 50% 50% 0px; opacity: 1; visibility: inherit;">
+           </div>
+           <div class="esg-cc eec" style="top: 38px;">
+            <div data-hidetype="visibility" data-hideunder="260" class="esg-center eg-handlehideunder eg-miami-highlights-element-11">
+             <img src="http://medengg.com/wp-content/uploads/2015/10/ico_s_install_light.png" />
+            </div>
+            <div class="esg-center eg-miami-highlights-element-1">
+             Intelligent Install
+            </div>
+            <div class="esg-center eg-miami-highlights-element-10">
+             Select the data you would like to import as a starting base and have your site running in no time!
+            </div>
+            <div>
+            </div>
+           </div>
+          </div>
+          <!-- END OF THE CONTENT IN THE ENTRY -->
+         </div>
+         <!-- END OF THE CONTAINER FOR THE MEDIA AND COVER/HOVER EFFECTS -->
+        </li>
+        <!-- END OF PORTFOLIO ITEM -->
+        <!-- PORTFOLIO ITEM 47 -->
+        <li data-cobblesh="1" data-cobblesw="1" class="filterall eg-miami-highlights-wrapper tp-esg-item itemtoshow esg-hovered isvisiblenow" style="opacity: 1; visibility: inherit; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0.1, 0.999917); height: 225px; width: 299px; display: block; top: 235px; left: 620px; transform-origin: center center 0px;">
+         <!-- THE CONTAINER FOR THE MEDIA AND THE COVER EFFECTS -->
+         <div class="esg-media-cover-wrapper">
+          <!-- THE MEDIA OF THE ENTRY -->
+          <div style="width:100%;height:100%; overflow:hidden;position:relative;" class="esg-entry-media-wrapper">
+           <div class="esg-entry-media">
+            <img alt="" src="http://medengg.com/wp-content/uploads/2015/10/custombackend2.jpg" style="top: 0px; left: 0%; width: 101%; height: auto; visibility: visible; display: block; position: absolute;" />
+           </div>
+          </div>
+          <!-- THE CONTENT OF THE ENTRY -->
+          <div class="esg-entry-cover" style="transform-style: flat; height: 225px;">
+           <!-- THE COLORED OVERLAY -->
+           <div data-delay="0" class="esg-overlay esg-slideout eg-miami-highlights-container" style="transform-origin: 50% 50% 0px; opacity: 1; visibility: inherit;">
+           </div>
+           <div class="esg-cc eec" style="top: 38px;">
+            <div data-hidetype="visibility" data-hideunder="260" class="esg-center eg-handlehideunder eg-miami-highlights-element-11">
+             <img src="http://medengg.com/wp-content/uploads/2015/10/ico_cog_light.png" />
+            </div>
+            <div class="esg-center eg-miami-highlights-element-1">
+             Custom Backend
+            </div>
+            <div class="esg-center eg-miami-highlights-element-10">
+             We also provide you with a huge number of options to fully customize the look of your website.
+            </div>
+            <div>
+            </div>
+           </div>
+          </div>
+          <!-- END OF THE CONTENT IN THE ENTRY -->
+         </div>
+         <!-- END OF THE CONTAINER FOR THE MEDIA AND COVER/HOVER EFFECTS -->
+        </li>
+        <!-- END OF PORTFOLIO ITEM -->
+       </ul>
+      </div>
+      <!-- ############################ -->
+      <!--      END OF THE GRID         -->
+      <!-- ############################ -->
+     </div>
+    </div>
+    <!-- END OF THE GRID -->
+    <div class="esg-loader spinner2" style="background-color: rgb(255, 255, 255); visibility: hidden; opacity: 0;">
+     <div class="dot1">
+     </div>
+     <div class="dot2">
+     </div>
+     <div class="bounce1">
+     </div>
+     <div class="bounce2">
+     </div>
+     <div class="bounce3">
+     </div>
+    </div>
+    <div style="width:100%;height:auto" class="esg-relative-placeholder">
+    </div>
+   </article>
+   <!-- END OF THE GRID WRAPPER -->
+   <div class="clear">
+   </div>
+   <script type="text/javascript">
+    function eggbfc(winw,resultoption) {
+	var lasttop = winw,
+	lastbottom = 0,
+	smallest =9999,
+	largest = 0,
+	samount = 0,
+	lamoung = 0,
+	lastamount = 0,
+	resultid = 0,
+	resultidb = 0,
+	responsiveEntries = [
+						{ width:1400,amount:4},
+						{ width:1170,amount:4},
+						{ width:1024,amount:3},
+						{ width:960,amount:3},
+						{ width:778,amount:3},
+						{ width:640,amount:2},
+						{ width:480,amount:1}
+						];
+	if (responsiveEntries!=undefined &amp;&amp; responsiveEntries.length&gt;0)
+		jQuery.each(responsiveEntries, function(index,obj) {
+			var curw = obj.width != undefined ? obj.width : 0,
+				cura = obj.amount != undefined ? obj.amount : 0;
+			if (smallest&gt;curw) {
+				smallest = curw;
+				samount = cura;
+				resultidb = index;
+			}
+			if (largest&lt;curw) {
+				largest = curw;
+				lamount = cura;
+			}
+			if (curw&gt;lastbottom &amp;&amp; curw&lt;=lasttop) {
+				lastbottom = curw;
+				lastamount = cura;
+				resultid = index;
+			}
+		})
+		if (smallest&gt;winw) {
+			lastamount = samount;
+			resultid = resultidb;
+		}
+		var obj = new Object;
+		obj.index = resultid;
+		obj.column = lastamount;
+		if (resultoption=="id")
+			return obj;
+		else
+			return lastamount;
+	}
+if ("cobbles"=="even") {
+	var coh=0,
+		container = jQuery("#esg-grid-2-1");
+	var	cwidth = container.width(),
+		ar = "4:3",
+		gbfc = eggbfc(jQuery(window).width(),"id"),
+	row = 3;
+ar = ar.split(":");
+aratio=parseInt(ar[0],0) / parseInt(ar[1],0);
+coh = cwidth / aratio;
+coh = coh/gbfc.column*row;
+	var ul = container.find("ul").first();
+	ul.css({display:"block",height:coh+"px"});
+}
+var essapi_2;
+jQuery(document).ready(function() {
+	essapi_2 = jQuery("#esg-grid-2-1").tpessential({
+        gridID:2,
+        layout:"cobbles",
+        forceFullWidth:"off",
+        lazyLoad:"off",
+        row:3,
+        loadMoreAjaxToken:"138b8bc02a",
+        loadMoreAjaxUrl:"http://medengg.com/wp-admin/admin-ajax.php",
+        loadMoreAjaxAction:"Essential_Grid_Front_request_ajax",
+        ajaxContentTarget:"ess-grid-ajax-container-",
+        ajaxScrollToOffset:"0",
+        ajaxCloseButton:"off",
+        ajaxContentSliding:"on",
+        ajaxScrollToOnLoad:"on",
+        ajaxNavButton:"off",
+        ajaxCloseType:"button",
+        ajaxCloseInner:"false",
+        ajaxCloseStyle:"light",
+        ajaxClosePosition:"tr",
+        space:10,
+        pageAnimation:"fade",
+        paginationScrollToTop:"off",
+        spinner:"spinner2",
+        spinnerColor:"#FFFFFF",
+        lightBoxMode:"single",
+        animSpeed:1000,
+        delayBasic:1,
+        mainhoverdelay:1,
+        filterType:"single",
+        showDropFilter:"hover",
+        filterGroupClass:"esg-fgc-2",
+        googleFonts:['Open+Sans:300,400,600,700,800','Raleway:100,200,300,400,500,600,700,800,900','Droid+Serif:400,700','Source+Sans+Pro:200,300,400,600,700,900'],
+        aspectratio:"4:3",
+        responsiveEntries: [
+						{ width:1400,amount:4},
+						{ width:1170,amount:4},
+						{ width:1024,amount:3},
+						{ width:960,amount:3},
+						{ width:778,amount:3},
+						{ width:640,amount:2},
+						{ width:480,amount:1}
+						]
+	});
+
+});
+   </script>
+   <div class="vc_parallax-inner skrollable skrollable-before" style="height: 150%; top: -50%;" data-bottom-top="top: -50%;" data-top-bottom="top: 0%;">
+   </div>
+   <div style="clear:both">
+   </div>
+  </section>
+  <section class="tp_vc_mw_rowwrapper    ">
+   <article class="tp_vc_mw_rowinner  darkonlight " style="padding-top: 70px ; padding-bottom: 68px;">
+    <div style="background-color:#ffffff;" class="rowbgimage_overlay">
+    </div>
+    <div class="content_max_width">
+     <div class="vc_row wpb_row vc_row-fluid vc_general vc_parallax vc_parallax-on" data-vc-parallax="1.5">
+      <div class="wpb_column vc_column_container vc_col-sm-3">
+       <div class="wpb_wrapper">
+        <div style="display:block;clear:both;height:50px" class="hidden-xs  ">
+        </div>
+        <div class="simpleservice wpb_content_element   ">
+         <div class="serviceicon">
+          <i class="icon-tint">
+          </i>
+         </div>
+         <div class="servicetext">
+          <h3 class="smalltitle">
+           Light &amp; Dark Style
+          </h3>
+          <p>
+           <span style="color: #666666;">
+            Easily use all modules and page content of light or dark backgrounds.
+           </span>
+          </p>
+         </div>
+        </div>
+        <div class="simpleservice wpb_content_element   ">
+         <div class="serviceicon">
+          <i class="icon-cubes">
+          </i>
+         </div>
+         <div class="servicetext">
+          <h3 class="smalltitle">
+           Unlimited Variants
+          </h3>
+          <p>
+           <span style="color: #666666;">
+            Supreme Quality Portfolio &amp; Blog Grid Skins allow for any Layout you can imagine.
+           </span>
+          </p>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="wpb_column vc_column_container vc_col-sm-3">
+       <div class="wpb_wrapper">
+        <div style="display:block;clear:both;height:50px" class="hidden-xs  ">
+        </div>
+        <div class="simpleservice wpb_content_element   ">
+         <div class="serviceicon">
+          <i class="icon-resize-full-alt">
+          </i>
+         </div>
+         <div class="servicetext">
+          <h3 class="smalltitle">
+           Variable Grid Size
+          </h3>
+          <p>
+           Selected between predefined page grid sizes or assign custom values per page.
+          </p>
+         </div>
+        </div>
+        <div class="simpleservice wpb_content_element   ">
+         <div class="serviceicon">
+          <i class="icon-desktop">
+          </i>
+         </div>
+         <div class="servicetext">
+          <h3 class="smalltitle">
+           Flexible Parallax
+          </h3>
+          <p>
+           You can easily add parallax image or video backgrounds to any page or post.
+          </p>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="wpb_column vc_column_container vc_col-sm-3">
+       <div class="wpb_wrapper">
+        <div style="display:block;clear:both;height:50px" class="hidden-xs  ">
+        </div>
+        <div class="simpleservice wpb_content_element   ">
+         <div class="serviceicon">
+          <i class="icon-gauge">
+          </i>
+         </div>
+         <div class="servicetext">
+          <h3 class="smalltitle">
+           Great Performance
+          </h3>
+          <p>
+           We made sure that the theme runs smoothly even with crowded content pages.
+          </p>
+         </div>
+        </div>
+        <div class="simpleservice wpb_content_element   ">
+         <div class="serviceicon">
+          <i class="icon-thumbs-up">
+          </i>
+         </div>
+         <div class="servicetext">
+          <h3 class="smalltitle">
+           Fit for any Purpose
+          </h3>
+          <p>
+           <span style="color: #666666;">
+            Whether you need a big Corporate Website or a smaller Project: Miami is up for the task!
+           </span>
+          </p>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="wpb_column vc_column_container vc_col-sm-3">
+       <div class="wpb_wrapper">
+        <div class="simpleservice highlight wpb_content_element   ">
+         <div class="serviceicon">
+         </div>
+         <div class="servicetext">
+          <h3 class="smalltitle">
+           Per-Page Options
+          </h3>
+          <p>
+           You can configure the header, menu, page width, colors, sidebars, logos, etc. as a default setting or on a per-page basis for those special pages with a unique look!
+          </p>
+          <a target="" class="servicelink " href="http://#">
+           READ MORE
+          </a>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="vc_parallax-inner skrollable skrollable-before" style="height: 150%; top: -50%;" data-bottom-top="top: -50%;" data-top-bottom="top: 0%;">
+      </div>
+     </div>
+     <div style="clear:both">
+     </div>
+    </div>
+   </article>
+  </section>
+  <section class="tp_vc_mw_rowwrapper    ">
+   <article class="tp_vc_mw_rowinner  lightondark " style="padding-top: 122px ; padding-bottom: 56px;">
+    <div style="background-color:#253038;" class="rowbgimage_overlay">
+    </div>
+    <div class="content_max_width">
+     <div class="vc_row wpb_row vc_row-fluid vc_general vc_parallax vc_parallax-on" data-vc-parallax="1.5">
+      <div class="wpb_column vc_column_container vc_col-sm-6">
+       <div class="wpb_wrapper" style="backface-visibility: hidden; transform: translate3d(0px, 0px, 0px);">
+        <div class="wpb_single_image wpb_content_element space_hoover vc_align_right">
+         <div class="wpb_wrapper">
+          <div class="vc_single_image-wrapper   vc_box_border_grey">
+           <img alt="ipad.png" class="vc_single_image-img attachment-full" src="http://medengg.com/wp-content/uploads/2015/10/ipad.png" style="transform: translate3d(0px, 0px, 0px) scale(0.98, 0.98);" />
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="wpb_column vc_column_container vc_col-sm-6">
+       <div class="wpb_wrapper">
+        <div style="display:block;clear:both;height:30px" class="  ">
+        </div>
+        <div class="wpb_text_column wpb_content_element">
+         <h3 class="airy_headline textaligncenter headerunderline centertitle">
+          WEBDESIGN MADE EASY
+         </h3>
+        </div>
+        <div style="display:block;clear:both;height:8px" class="  ">
+        </div>
+        <div data-active-tab="1" data-vc-disable-keydown="false" data-collapsible="" class="wpb_accordion wpb_content_element  not-column-inherit">
+         <div class="wpb_wrapper wpb_accordion_wrapper ui-accordion ui-widget ui-helper-reset" role="tablist">
+          <div class="wpb_accordion_section group">
+           <h3 class="wpb_accordion_header ui-accordion-header ui-state-default ui-accordion-header-active ui-state-active ui-corner-top ui-accordion-icons" role="tab" id="ui-id-1" aria-controls="ui-id-2" aria-selected="true" aria-expanded="true" tabindex="0">
+            <span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-s">
+            </span>
+            <a href="#a-solid-base-for-any-project">
+             A Solid Base for any Project
+            </a>
+           </h3>
+           <div class="wpb_accordion_content ui-accordion-content vc_clearfix ui-helper-reset ui-widget-content ui-corner-bottom ui-accordion-content-active" style="display: block;" id="ui-id-2" aria-labelledby="ui-id-1" role="tabpanel" aria-hidden="false">
+            <div class="wpb_text_column wpb_content_element ">
+             <div class="wpb_wrapper">
+              <p>
+               The Miami Multi-Purpose WordPress Theme is an ideal base for any kind of website.
+              </p>
+              <p>
+               The flexibility of our handcrafted framework makes a wide variety of applications possible, ranging from pure business websites, to fancy agency portfolios, blogs and more.
+              </p>
+             </div>
+            </div>
+           </div>
+          </div>
+          <div class="wpb_accordion_section group">
+           <h3 class="wpb_accordion_header ui-accordion-header ui-state-default ui-corner-all ui-accordion-icons" role="tab" id="ui-id-3" aria-controls="ui-id-4" aria-selected="false" aria-expanded="false" tabindex="-1">
+            <span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e">
+            </span>
+            <a href="#easy-content-building-layout-importing">
+             Easy Content Building &amp; Layout Importing
+            </a>
+           </h3>
+           <div class="wpb_accordion_content ui-accordion-content vc_clearfix ui-helper-reset ui-widget-content ui-corner-bottom" style="display: none;" id="ui-id-4" aria-labelledby="ui-id-3" role="tabpanel" aria-hidden="true">
+            <div class="wpb_text_column wpb_content_element ">
+             <div class="wpb_wrapper">
+              <p>
+               Building your site with Miami is super easy.
+              </p>
+              <p>
+               You can start off by importing the full demo data containing all content displayed in the theme demo and modify the theme from there.
+              </p>
+              <p>
+               Alternatively you can create blank pages and load a predefined layout to offer a quick starting point! All content elements are of course accessible via the Visual Composer content creation tool.
+              </p>
+             </div>
+            </div>
+           </div>
+          </div>
+          <div class="wpb_accordion_section group">
+           <h3 class="wpb_accordion_header ui-accordion-header ui-state-default ui-corner-all ui-accordion-icons" role="tab" id="ui-id-5" aria-controls="ui-id-6" aria-selected="false" aria-expanded="false" tabindex="-1">
+            <span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e">
+            </span>
+            <a href="#be-amazed-miami-is-a-must-have">
+             Be Amazed - Miami is a must have
+            </a>
+           </h3>
+           <div class="wpb_accordion_content ui-accordion-content vc_clearfix ui-helper-reset ui-widget-content ui-corner-bottom" style="display: none;" id="ui-id-6" aria-labelledby="ui-id-5" role="tabpanel" aria-hidden="true">
+            <div class="wpb_text_column wpb_content_element ">
+             <div class="wpb_wrapper">
+              <p>
+               Your clients, colleagues and friends will be absolutely stunned, how easy and fast you build a professional website with the Miami Theme.
+              </p>
+              <p>
+               If you used the theme to create a website you would like to show us, feel free to send us a link, we are always interested to see in what ways buyers use our work!
+              </p>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="vc_parallax-inner skrollable skrollable-before" style="height: 150%; top: -50%;" data-bottom-top="top: -50%;" data-top-bottom="top: 0%;">
+      </div>
+     </div>
+     <div style="clear:both">
+     </div>
+    </div>
+   </article>
+  </section>
+  <section class="tp_vc_mw_rowwrapper    ">
+   <article class="tp_vc_mw_rowinner  lightondark " style="padding-top: 50px ; padding-bottom: 8px;">
+    <div style="background-color:#33bfd8;" class="rowbgimage_overlay">
+    </div>
+    <div class="content_max_width">
+     <div class="vc_row wpb_row vc_row-fluid vc_general vc_parallax vc_parallax-on" data-vc-parallax="1.5">
+      <div class="wpb_column vc_column_container vc_col-sm-12">
+       <div class="wpb_wrapper">
+        <div class="wpb_text_column wpb_content_element">
+         <h3 class="airy_headline textaligncenter headerunderline centertitle">
+          WE WORKED WITH
+         </h3>
+        </div>
+       </div>
+      </div>
+      <div class="vc_parallax-inner skrollable skrollable-before" style="height: 150%; top: -50%;" data-bottom-top="top: -50%;" data-top-bottom="top: 0%;">
+      </div>
+     </div>
+     <div style="clear:both">
+     </div>
+    </div>
+   </article>
+  </section>
+  <section class="tp_vc_mw_rowwrapper    ">
+   <article class="tp_vc_mw_rowinner  lightondark " style="padding-top: 96px ; padding-bottom: 48px;">
+    <div data-parfactor="5" class="parallaxbg rowbgimage_outter">
+     <div class="rowbgimage_inner">
+      <div class="rowbgimage_offset" style="transform: translate3d(0px, -141.25px, 0px);">
+       <img class="rowbgimage" src="http://medengg.com/wp-content/uploads/2015/10/parallax7.jpg" style="max-width: 1000%;" />
+      </div>
+     </div>
+    </div>
+    <div style="background-color:rgba(69,57,82,0.95);" class="rowbgimage_overlay">
+    </div>
+    <div class="content_max_width">
+     <div class="vc_row wpb_row vc_row-fluid vc_general vc_parallax vc_parallax-on" data-vc-parallax="1.5">
+      <div class="wpb_column vc_column_container vc_col-sm-8">
+       <div class="wpb_wrapper">
+        <div class="simplegrid threecol">
+         <div class="simpleitem">
+          <a href="#">
+           <img alt="client5.png" class="attachment-full" src="http://medengg.com/wp-content/uploads/2015/10/client5.png" />
+          </a>
+         </div>
+         <div class="simpleitem">
+          <a href="#">
+           <img alt="client6.png" class="attachment-full" src="http://medengg.com/wp-content/uploads/2015/10/client6.png" />
+          </a>
+         </div>
+         <div class="simpleitem">
+          <a href="#">
+           <img alt="client3.png" class="attachment-full" src="http://medengg.com/wp-content/uploads/2015/10/client3.png" />
+          </a>
+         </div>
+         <div class="simpleitem">
+          <a href="#">
+           <img alt="client4.png" class="attachment-full" src="http://medengg.com/wp-content/uploads/2015/10/client4.png" />
+          </a>
+         </div>
+         <div class="simpleitem">
+          <a href="#">
+           <img alt="client1.png" class="attachment-full" src="http://medengg.com/wp-content/uploads/2015/10/client1.png" />
+          </a>
+         </div>
+         <div class="simpleitem">
+          <img alt="client2.png" class="attachment-full" src="http://medengg.com/wp-content/uploads/2015/10/client2.png" />
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="wpb_column vc_column_container vc_col-sm-4">
+       <div class="wpb_wrapper">
+        <div style="display:block;clear:both;height:20px" class="  ">
+        </div>
+        <div class="testimonial_slider " data-transition="slide">
+         <ul>
+          <li class="" style="transform-style: flat; transform: translate3d(0px, 0px, 0px);">
+           <p class="testimonial_slider_content">
+           </p>
+           <p>
+            “The Miami Theme has really opened our Eyes to whats possible on the Web! We can really recommend Miami Studios to anyone who needs a Website”
+           </p>
+           <p>
+           </p>
+           <p class="testimonial_slider_author">
+            Teresa Wilson -
+            <span class="company">
+             Columbia C.P.
+            </span>
+           </p>
+          </li>
+          <li class="" style="transform-style: flat; transform: translate3d(0px, 0px, 0px);">
+           <p class="testimonial_slider_content">
+           </p>
+           <p>
+            “Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ”
+           </p>
+           <p>
+           </p>
+           <p class="testimonial_slider_author">
+            Teresa Wilson -
+            <span class="company">
+             Columbia C.P.
+            </span>
+           </p>
+          </li>
+          <li class="" style="transform-style: flat; transform: translate3d(0px, 0px, 0px);">
+           <p class="testimonial_slider_content">
+           </p>
+           <p>
+            “Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. ”
+           </p>
+           <p>
+           </p>
+           <p class="testimonial_slider_author">
+            Teresa Wilson -
+            <span class="company">
+             Columbia C.P.
+            </span>
+           </p>
+          </li>
+          <li class="" style="transform-style: flat; transform: translate3d(0px, 0px, 0px);">
+           <p class="testimonial_slider_content">
+           </p>
+           <p>
+            “Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. The Miami Theme has really opened our Eyes to whats possible on the Web! We can really recommend Miami Studios to anyone who needs a Website”
+           </p>
+           <p>
+           </p>
+           <p class="testimonial_slider_author">
+            Teresa Wilson -
+            <span class="company">
+             Columbia C.P.
+            </span>
+           </p>
+          </li>
+         </ul>
+         <div class="testimonial-bullets">
+          <div class="bullet first selected">
+          </div>
+          <div class="bullet">
+          </div>
+          <div class="bullet">
+          </div>
+          <div class="bullet last">
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="vc_parallax-inner skrollable skrollable-before" style="height: 150%; top: -50%;" data-bottom-top="top: -50%;" data-top-bottom="top: 0%;">
+      </div>
+     </div>
+     <div style="clear:both">
+     </div>
+    </div>
+   </article>
+  </section>
+  <section class="tp_vc_mw_rowwrapper    ">
+   <article class="tp_vc_mw_rowinner  darkonlight " style="padding-top: 143px ; padding-bottom: 115px;">
+    <div style="background-color:transparent;" class="rowbgimage_overlay">
+    </div>
+    <div class="content_max_width">
+     <div class="vc_row wpb_row vc_row-fluid vc_general vc_parallax vc_parallax-on" data-vc-parallax="1.5">
+      <div class="textaligncenter wpb_column vc_column_container vc_col-sm-12">
+       <div class="wpb_wrapper">
+        <div class="wpb_text_column wpb_content_element">
+         <h3 class="airy_headline textaligncenter headerunderline ">
+          LET’S BE AWESOME TOGETHER
+         </h3>
+         <div style="text-align: center;" class="airy_subheadline">
+          <p>
+           Miami introduces the most flexible layout ever to the world of WordPress Themes.
+           <br />
+           We provide you with a Toolkit to build your Dreams!
+          </p>
+         </div>
+        </div>
+        <div style="display:block;clear:both;height:17px" class="  ">
+        </div>
+        <a href="http://themepunch.com/miami/contact/" target="_self" class="button highlight  ">
+         <i class="icon-paper-plane">
+         </i>
+         Get in Touch
+        </a>
+       </div>
+      </div>
+      <div class="vc_parallax-inner skrollable skrollable-before" style="height: 150%; top: -50%;" data-bottom-top="top: -50%;" data-top-bottom="top: 0%;">
+      </div>
+     </div>
+     <div style="clear:both">
+     </div>
+    </div>
+   </article>
+  </section>
+  <div class="content_max_width">
+  </div>
+  <!-- End Of Content -->
+  <div class="clearfix">
+  </div>
+  <!-- #post -->
+  <footer class="" id="footer" style="position: fixed; bottom: 0px; z-index: 0;">
+   <div class="footerinnerwrapper">
+    <!-- LEFT / RIGHT UNDERLAYS FOR FOOTER -->
+    <section style="background-color:#3f9e9e" class="footer_left_underlay sidebar_widget">
+    </section>
+    <section style="background-color:#3f9e9e" class="footer_right_underlay">
+    </section>
+    <!-- END OF LEFT - RIGHT UNDERLAYS -->
+    <section style="max-width:100%" class="footer-inner container-fluid rowwrapper">
+    </section>
+    <section class="row">
+     <article style="background-color:#3f9e9e" class="col-md-12 widgetslot sidebar_widget">
+     </article>
+    </section>
+    <!-- END OF ROW -->
+    <!-- END OF THE FOOTER CONTAINER -->
+   </div>
+   <!-- END FOOTER INNER WRAPPER -->
+  </footer>
+  <div class="responsivemenuwrapper">
+   <section class="darknav" id="responsivemenu" style="width: 959px;">
+    <div class="respmenuelement nav-level0">
+     <a class="resp-nav-text" target="_self" href="http://medengg.com/">
+      Home
+     </a>
+    </div>
+    <div class="respmenuelement nav-level0 hassubmenu">
+     <a class="resp-nav-text respmenu-clickable" target="_self" href="#">
+      Products
+     </a>
+     <div class="respmenu-inner-wrapper">
+      <div class="respmenuelement nav-level1">
+       <a class="resp-nav-text" target="_self" href="#">
+        3d printers
+       </a>
+      </div>
+      <div class="respmenuelement nav-level1">
+       <a class="resp-nav-text" target="_self" href="#">
+        Scientific and lab
+       </a>
+      </div>
+      <div class="respmenuelement nav-level1">
+       <a class="resp-nav-text" target="_self" href="#">
+        Educational
+       </a>
+      </div>
+      <div class="respmenuelement nav-level1">
+       <a class="resp-nav-text" target="_self" href="#">
+        Medical equipment
+       </a>
+      </div>
+      <div class="respmenuelement nav-level1">
+       <a class="resp-nav-text" target="_self" href="#">
+        Medical supplies
+       </a>
+      </div>
+     </div>
+    </div>
+    <div class="respmenuelement nav-level0 hassubmenu">
+     <a class="resp-nav-text respmenu-clickable" target="_self" href="#">
+      3d models
+     </a>
+     <div class="respmenu-inner-wrapper">
+      <div class="respmenuelement nav-level1">
+       <a class="resp-nav-text" target="_self" href="#">
+        3d designing
+       </a>
+      </div>
+      <div class="respmenuelement nav-level1">
+       <a class="resp-nav-text" target="_self" href="#">
+        3d models
+       </a>
+      </div>
+      <div class="respmenuelement nav-level1">
+       <a class="resp-nav-text" target="_self" href="#">
+        3d products
+       </a>
+      </div>
+     </div>
+    </div>
+    <div class="respmenuelement nav-level0">
+     <a class="resp-nav-text" target="_self" href="http://medengg.com/place-your-order/">
+      Place your order
+     </a>
+    </div>
+    <div class="respmenuelement nav-level0">
+     <a class="resp-nav-text" target="_self" href="http://medengg.com/contact/">
+      Contact us
+     </a>
+    </div>
+   </section>
+  </div>
+  <!-- ! END OF BODY WRAPPER -->
+  <!--Start of Tawk.to Script-->
+  <script type="text/javascript">
+   var $_Tawk_API={},$_Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/565733fa5744aabc4643655d/default';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+  </script>
+  <!--End of Tawk.to Script-->
+  <link media="all" type="text/css" href="http://medengg.com/wp-content/plugins/tpvcaddons//tp_vc_assets/tp_vc_frontend.css?ver=false" id="vc_extend_style-css" rel="stylesheet" />
+  <script src="http://medengg.com/wp-content/plugins/contact-form-7/includes/js/jquery.form.min.js?ver=3.51.0-2014.06.20" type="text/javascript">
+  </script>
+  <script type="text/javascript">
+   /* &lt;![CDATA[ */
+var _wpcf7 = {"loaderUrl":"http:\/\/medengg.com\/wp-content\/plugins\/contact-form-7\/images\/ajax-loader.gif","recaptchaEmpty":"Please verify that you are not a robot.","sending":"Sending ..."};
+/* ]]&gt; */
+  </script>
+  <script src="http://medengg.com/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=4.3.1" type="text/javascript">
+  </script>
+  <script src="http://medengg.com/wp-content/themes/miami/miami/assets/js/bootstrap.min.js?ver=false" type="text/javascript">
+  </script>
+  <script src="http://medengg.com/wp-content/themes/miami/miami/assets/js/retina.min.js?ver=false" type="text/javascript">
+  </script>
+  <script src="http://medengg.com/wp-content/themes/miami/miami/assets/js/fitvid.js?ver=false" type="text/javascript">
+  </script>
+  <script type="text/javascript">
+   /* &lt;![CDATA[ */
+var miami = {"sharrrephp":"http:\/\/medengg.com\/wp-content\/themes\/miami\/miami\/assets\/js\/sharrre.php"};
+/* ]]&gt; */
+  </script>
+  <script src="http://medengg.com/wp-content/themes/miami/miami/assets/js/jquery.sharrre.min.js?ver=false" type="text/javascript">
+  </script>
+  <script type="text/javascript">
+   /* &lt;![CDATA[ */
+var tp_search = {"search_php":"http:\/\/medengg.com\/wp-content\/themes\/miami\/miami\/framework\/theme_get_search_result.php"};
+/* ]]&gt; */
+  </script>
+  <script src="http://medengg.com/wp-content/themes/miami/miami/assets/js/screen.js?ver=false" type="text/javascript">
+  </script>
+  <script src="http://medengg.com/wp-includes/js/comment-reply.min.js?ver=4.3.1" type="text/javascript">
+  </script>
+  <script src="http://medengg.com/wp-content/plugins/js_composer/assets/js/js_composer_front.js?ver=4.6.2" type="text/javascript">
+  </script>
+  <script src="http://medengg.com/wp-content/plugins/js_composer/assets/lib/bower/skrollr/dist/skrollr.min.js?ver=4.6.2" type="text/javascript">
+  </script>
+  <script src="http://medengg.com/wp-includes/js/jquery/ui/core.min.js?ver=1.11.4" type="text/javascript">
+  </script>
+  <script src="http://medengg.com/wp-includes/js/jquery/ui/widget.min.js?ver=1.11.4" type="text/javascript">
+  </script>
+  <script src="http://medengg.com/wp-includes/js/jquery/ui/accordion.min.js?ver=1.11.4" type="text/javascript">
+  </script>
+  <div id="tawkchat-iframe-container" style="outline: medium none ! important; visibility: visible ! important; resize: none ! important; box-shadow: none ! important; overflow: visible ! important; background: transparent none repeat scroll 0% 0% ! important; opacity: 1 ! important; top: auto ! important; position: fixed ! important; border: 0px none ! important; min-height: 0px ! important; min-width: 0px ! important; max-height: none ! important; max-width: none ! important; padding: 0px ! important; margin: 0px ! important; transition-property: none ! important; transform: none ! important; width: auto ! important; height: auto ! important; z-index: 2147483647 ! important; cursor: auto ! important; float: none ! important; bottom: 0px ! important; right: 0px ! important; left: auto ! important; display: block;" class="">
+   <iframe frameborder="0" id="tawkchat-maximized-iframe-element" src="about:blank" scrolling="no" style="outline: medium none ! important; visibility: visible ! important; resize: none ! important; box-shadow: none ! important; overflow: visible ! important; background: transparent none repeat scroll 0% 0% ! important; opacity: 1 ! important; top: auto ! important; right: auto ! important; bottom: auto ! important; left: auto ! important; position: static ! important; border: 0px none ! important; min-height: auto ! important; min-width: auto ! important; max-height: none ! important; max-width: none ! important; padding: 0px ! important; margin: 0px ! important; transition-property: none ! important; transform: none ! important; width: 320px ! important; height: 400px ! important; z-index: 999999 ! important; cursor: auto ! important; float: none ! important; display: none ! important;" class="">
+   </iframe>
+   <iframe frameborder="0" id="tawkchat-minified-iframe-element" src="about:blank" scrolling="no" style="outline: medium none ! important; visibility: visible ! important; resize: none ! important; box-shadow: none ! important; overflow: visible ! important; background: transparent none repeat scroll 0% 0% ! important; opacity: 1 ! important; position: fixed ! important; border: 0px none ! important; padding: 0px ! important; transition-property: none ! important; z-index: 1000001 ! important; cursor: auto ! important; float: none ! important; height: 40px ! important; min-height: 40px ! important; max-height: 40px ! important; width: 320px ! important; min-width: 320px ! important; max-width: 320px ! important; transform: rotate(0deg) translateZ(0px) ! important; transform-origin: 0px 50% 0px ! important; margin: 0px ! important; top: auto ! important; bottom: 0px ! important; right: 10px ! important; left: auto ! important; display: block ! important;" class="">
+   </iframe>
+   <iframe frameborder="0" id="tawkchat-chat-bubble-iframe" src="about:blank" scrolling="no" style="outline: medium none ! important; visibility: visible ! important; resize: none ! important; box-shadow: none ! important; overflow: visible ! important; background: transparent none repeat scroll 0% 0% ! important; opacity: 1 ! important; position: fixed ! important; border: 0px none ! important; padding: 0px ! important; margin: 0px ! important; transition-property: none ! important; transform: none ! important; cursor: auto ! important; float: none ! important; bottom: 42px ! important; top: auto ! important; right: 0px ! important; left: auto ! important; width: 146px ! important; max-width: 146px ! important; min-width: 146px ! important; height: 85px ! important; max-height: 85px ! important; min-height: 85px ! important; z-index: 1000000 ! important; display: none ! important;" class="">
+   </iframe>
+   <iframe frameborder="0" id="chat-indicator-iframe" src="about:blank" scrolling="no" style="outline: medium none ! important; visibility: visible ! important; resize: none ! important; box-shadow: none ! important; overflow: visible ! important; background: transparent none repeat scroll 0% 0% ! important; opacity: 1 ! important; position: fixed ! important; border: 0px none ! important; padding: 0px ! important; margin: 0px 0px 0px -330px ! important; transition-property: none ! important; transform: none ! important; display: none ! important; z-index: 1000002 ! important; cursor: auto ! important; float: none ! important; top: auto ! important; bottom: 40px ! important; right: 10px ! important; left: auto ! important; width: 320px ! important; max-width: 320px ! important; min-width: 320px ! important; height: 37px ! important; max-height: 37px ! important; min-height: 37px ! important;" class="">
+   </iframe>
+   <div id="tawkchat-drag-element" style="outline: medium none ! important; visibility: visible ! important; resize: none ! important; box-shadow: none ! important; overflow: visible ! important; background: rgb(255, 255, 255) none repeat scroll 0% 0% ! important; opacity: 0 ! important; top: 1px ! important; bottom: auto ! important; position: absolute ! important; border: 0px none ! important; min-height: auto ! important; min-width: auto ! important; max-height: none ! important; max-width: none ! important; padding: 0px ! important; margin: 0px ! important; transition-property: none ! important; transform: none ! important; width: auto ! important; height: 45px ! important; display: block ! important; z-index: 999997 ! important; cursor: move ! important; float: none ! important; left: 150px ! important; right: 96px ! important;" class="">
+   </div>
+   <div id="tawkchat-resize-left" style="outline: medium none ! important; visibility: visible ! important; resize: none ! important; box-shadow: none ! important; overflow: visible ! important; background: transparent none repeat scroll 0% 0% ! important; opacity: 1 ! important; top: 0px ! important; right: 96px ! important; bottom: auto ! important; left: 0px ! important; position: absolute ! important; border: 0px none ! important; min-height: auto ! important; min-width: auto ! important; max-height: none ! important; max-width: none ! important; padding: 0px ! important; margin: 0px ! important; transition-property: none ! important; transform: none ! important; width: 6px ! important; height: 100% ! important; display: block ! important; z-index: 999998 ! important; cursor: w-resize ! important; float: none ! important;" class="">
+   </div>
+   <div id="tawkchat-resize-right" style="outline: medium none ! important; visibility: visible ! important; resize: none ! important; box-shadow: none ! important; overflow: visible ! important; background: transparent none repeat scroll 0% 0% ! important; opacity: 1 ! important; top: 0px ! important; right: 0px ! important; bottom: auto ! important; left: auto ! important; position: absolute ! important; border: 0px none ! important; min-height: auto ! important; min-width: auto ! important; max-height: none ! important; max-width: none ! important; padding: 0px ! important; margin: 0px ! important; transition-property: none ! important; transform: none ! important; width: 6px ! important; height: 100% ! important; display: block ! important; z-index: 999998 ! important; cursor: e-resize ! important; float: none ! important;" class="">
+   </div>
+   <div id="tawkchat-resize-top" style="outline: medium none ! important; visibility: visible ! important; resize: none ! important; box-shadow: none ! important; overflow: visible ! important; background: transparent none repeat scroll 0% 0% ! important; opacity: 1 ! important; top: 0px ! important; right: 0px ! important; bottom: auto ! important; left: auto ! important; position: absolute ! important; border: 0px none ! important; min-height: auto ! important; min-width: auto ! important; max-height: none ! important; max-width: none ! important; padding: 0px ! important; margin: 0px ! important; transition-property: none ! important; transform: none ! important; width: 100% ! important; height: 6px ! important; display: block ! important; z-index: 999998 ! important; cursor: n-resize ! important; float: none ! important;" class="">
+   </div>
+   <div id="tawkchat-resize-bottom" style="outline: medium none ! important; visibility: visible ! important; resize: none ! important; box-shadow: none ! important; overflow: visible ! important; background: transparent none repeat scroll 0% 0% ! important; opacity: 1 ! important; top: auto ! important; right: 0px ! important; bottom: 0px ! important; left: auto ! important; position: absolute ! important; border: 0px none ! important; min-height: auto ! important; min-width: auto ! important; max-height: none ! important; max-width: none ! important; padding: 0px ! important; margin: 0px ! important; transition-property: none ! important; transform: none ! important; width: 100% ! important; height: 6px ! important; display: block ! important; z-index: 999998 ! important; cursor: s-resize ! important; float: none ! important;" class="">
+   </div>
+   <div id="tawkchat-resize-top-left" style="outline: medium none ! important; visibility: visible ! important; resize: none ! important; box-shadow: none ! important; overflow: visible ! important; background: transparent none repeat scroll 0% 0% ! important; opacity: 1 ! important; top: 0px ! important; right: auto ! important; bottom: auto ! important; left: 0px ! important; position: absolute ! important; border: 0px none ! important; min-height: auto ! important; min-width: auto ! important; max-height: none ! important; max-width: none ! important; padding: 0px ! important; margin: 0px ! important; transition-property: none ! important; transform: none ! important; width: 12px ! important; height: 12px ! important; display: block ! important; z-index: 999998 ! important; cursor: nw-resize ! important; float: none ! important;" class="">
+   </div>
+   <div id="tawkchat-resize-top-right" style="outline: medium none ! important; visibility: visible ! important; resize: none ! important; box-shadow: none ! important; overflow: visible ! important; background: transparent none repeat scroll 0% 0% ! important; opacity: 1 ! important; top: 0px ! important; right: 0px ! important; bottom: auto ! important; left: auto ! important; position: absolute ! important; border: 0px none ! important; min-height: auto ! important; min-width: auto ! important; max-height: none ! important; max-width: none ! important; padding: 0px ! important; margin: 0px ! important; transition-property: none ! important; transform: none ! important; width: 12px ! important; height: 12px ! important; display: block ! important; z-index: 999998 ! important; cursor: ne-resize ! important; float: none ! important;" class="">
+   </div>
+   <div id="tawkchat-resize-bottom-left" style="outline: medium none ! important; visibility: visible ! important; resize: none ! important; box-shadow: none ! important; overflow: visible ! important; background: transparent none repeat scroll 0% 0% ! important; opacity: 1 ! important; top: auto ! important; right: auto ! important; bottom: 0px ! important; left: 0px ! important; position: absolute ! important; border: 0px none ! important; min-height: auto ! important; min-width: auto ! important; max-height: none ! important; max-width: none ! important; padding: 0px ! important; margin: 0px ! important; transition-property: none ! important; transform: none ! important; width: 12px ! important; height: 12px ! important; display: block ! important; z-index: 999998 ! important; cursor: sw-resize ! important; float: none ! important;" class="">
+   </div>
+   <div id="tawkchat-resize-bottom-right" style="outline: medium none ! important; visibility: visible ! important; resize: none ! important; box-shadow: none ! important; overflow: visible ! important; background: transparent none repeat scroll 0% 0% ! important; opacity: 1 ! important; top: auto ! important; right: 0px ! important; bottom: 0px ! important; left: auto ! important; position: absolute ! important; border: 0px none ! important; min-height: auto ! important; min-width: auto ! important; max-height: none ! important; max-width: none ! important; padding: 0px ! important; margin: 0px ! important; transition-property: none ! important; transform: none ! important; width: 12px ! important; height: 12px ! important; display: block ! important; z-index: 999999 ! important; cursor: se-resize ! important; float: none ! important;" class="">
+   </div>
+   <div id="tawkchat-overlay" style="outline: medium none ! important; visibility: visible ! important; resize: none ! important; box-shadow: none ! important; overflow: visible ! important; background: transparent none repeat scroll 0% 0% ! important; opacity: 1 ! important; top: 0px ! important; right: auto ! important; bottom: auto ! important; left: 0px ! important; position: absolute ! important; border: 0px none ! important; min-height: auto ! important; min-width: auto ! important; max-height: none ! important; max-width: none ! important; padding: 0px ! important; margin: 0px ! important; transition-property: none ! important; transform: none ! important; width: 100% ! important; height: 100% ! important; display: none ! important; z-index: 1000001 ! important; cursor: move ! important; float: left ! important;" class="">
+   </div>
+  </div>
+  <iframe src="about:blank" style="display: none ! important;">
+  </iframe>
+ </body>
+</html>

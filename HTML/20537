@@ -1,0 +1,505 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="es-ES" xmlns="http://www.w3.org/1999/xhtml" class=" js_on ">
+ <head profile="http://gmpg.org/xfn/11">
+  <meta content="Content-Type" http-equiv="Content-Type" />
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0" name="viewport" />
+  <title>
+   Blog «  Numerik
+  </title>
+  <link href="http://numerik.es/numerik/xmlrpc.php" rel="pingback" />
+  <link href="http://numerik.es/numerik/feed/" title="Numerik » Feed" type="application/rss+xml" rel="alternate" />
+  <link href="http://numerik.es/numerik/comments/feed/" title="Numerik » RSS de los comentarios" type="application/rss+xml" rel="alternate" />
+  <script id="twitter-wjs" src="http://platform.twitter.com/widgets.js">
+  </script>
+  <script type="text/javascript">
+   window._wpemojiSettings = {"baseUrl":"http:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"http:\/\/numerik.es\/numerik\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.3.1"}};
+			!function(a,b,c){function d(a){var c=b.createElement("canvas"),d=c.getContext&amp;&amp;c.getContext("2d");return d&amp;&amp;d.fillText?(d.textBaseline="top",d.font="600 32px Arial","flag"===a?(d.fillText(String.fromCharCode(55356,56812,55356,56807),0,0),c.toDataURL().length&gt;3e3):(d.fillText(String.fromCharCode(55357,56835),0,0),0!==d.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&amp;&amp;c.supports.flag||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&amp;&amp;c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&amp;&amp;f.twemoji&amp;&amp;(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+  </script>
+  <script src="http://numerik.es/numerik/wp-includes/js/wp-emoji-release.min.js?ver=4.3.1" type="text/javascript">
+  </script>
+  <style type="text/css">
+   img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+  </style>
+  <link media="all" type="text/css" href="http://numerik.es/numerik/wp-content/plugins/easing-slider/css/easingslider.min.css?ver=2.2.1.1" id="easingslider-css" rel="stylesheet" />
+  <link media="all" type="text/css" href="http://numerik.es/numerik/wp-content/plugins/revslider/public/assets/css/settings.css?ver=5.0.9" id="rs-plugin-settings-css" rel="stylesheet" />
+  <style type="text/css" id="rs-plugin-settings-inline-css">
+   #rs-demo-id {}
+  </style>
+  <link media="screen" type="text/css" href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css" id="font-awesome-css" rel="stylesheet" />
+  <link media="screen" type="text/css" href="http://numerik.es/numerik/wp-content/themes/u-design/styles/common-css/reset.css?ver=1.0" id="u-design-reset-css" rel="stylesheet" />
+  <link media="screen" type="text/css" href="http://numerik.es/numerik/wp-content/themes/u-design/styles/style1/css/text.css?ver=1.0" id="u-design-text-css" rel="stylesheet" />
+  <link media="screen" type="text/css" href="http://numerik.es/numerik/wp-content/themes/u-design/styles/common-css/960.css?ver=1.0" id="u-design-grid-960-css" rel="stylesheet" />
+  <link media="screen" type="text/css" href="http://numerik.es/numerik/wp-content/themes/u-design/scripts/superfish-menu/css/superfish.css?ver=1.7.2" id="u-design-superfish_menu-css" rel="stylesheet" />
+  <link media="screen" type="text/css" href="http://numerik.es/numerik/wp-content/themes/u-design/scripts/prettyPhoto/css/prettyPhoto.css?ver=3.1.6" id="u-design-pretty_photo-css" rel="stylesheet" />
+  <link media="screen" type="text/css" href="http://numerik.es/numerik/wp-content/themes/u-design/styles/common-css/font-awesome/css/font-awesome.css?ver=2.7.19" id="u-design-font-awesome-css" rel="stylesheet" />
+  <link media="screen" type="text/css" href="http://numerik.es/numerik/wp-content/themes/u-design/styles/style1/css/style.css?ver=2.7.19" id="u-design-style-css" rel="stylesheet" />
+  <link media="screen" type="text/css" href="http://numerik.es/numerik/wp-content/themes/u-design/styles/custom/custom_style.css?ver=2.7.19.1448529607" id="u-design-custom-style-css" rel="stylesheet" />
+  <link media="screen" type="text/css" href="http://numerik.es/numerik/wp-content/themes/u-design/styles/common-css/responsive.css?ver=2.7.19" id="u-design-responsive-css" rel="stylesheet" />
+  <link media="screen" type="text/css" href="http://numerik.es/numerik/wp-content/themes/u-design/styles/common-css/fluid.css?ver=2.7.19" id="u-design-fluid-css" rel="stylesheet" />
+  <!--[if lte IE 9]>
+<link rel='stylesheet' id='u-design-ie9-css'  href='http://numerik.es/numerik/wp-content/themes/u-design/styles/common-css/ie-all.css?ver=2.7.19' type='text/css' media='screen'  />
+<![endif]-->
+  <!--[if lte IE 7]>
+<link rel='stylesheet' id='u-design-ie7-css'  href='http://numerik.es/numerik/wp-content/themes/u-design/styles/common-css/ie6-7.css?ver=2.7.19' type='text/css' media='screen'  />
+<![endif]-->
+  <script src="http://numerik.es/numerik/wp-includes/js/jquery/jquery.js?ver=1.11.3" type="text/javascript">
+  </script>
+  <script src="http://numerik.es/numerik/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1" type="text/javascript">
+  </script>
+  <script src="http://numerik.es/numerik/wp-content/plugins/easing-slider/js/jquery.easingslider.min.js?ver=2.2.1.1" type="text/javascript">
+  </script>
+  <script src="http://numerik.es/numerik/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.tools.min.js?ver=5.0.9" type="text/javascript">
+  </script>
+  <script src="http://numerik.es/numerik/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.revolution.min.js?ver=5.0.9" type="text/javascript">
+  </script>
+  <!--[if lt IE 9]>
+<script type='text/javascript' src='http://numerik.es/numerik/wp-content/themes/u-design/scripts/respond.min.js?ver=1.4.2'></script>
+<![endif]-->
+  <link href="http://numerik.es/numerik/xmlrpc.php?rsd" title="RSD" type="application/rsd+xml" rel="EditURI" />
+  <link href="http://numerik.es/numerik/blog/" rel="canonical" />
+  <link href="http://numerik.es/numerik/?p=37" rel="shortlink" />
+  <style>
+   .scroll-back-to-top-wrapper {
+    position: fixed;
+	opacity: 0;
+	visibility: hidden;
+	overflow: hidden;
+	text-align: center;
+	z-index: 99999999;
+    background-color: #B591B5;
+	color: #eeeeee;
+	width: 50px;
+	height: 48px;
+	line-height: 48px;
+	right: 30px;
+	bottom: 30px;
+	padding-top: 2px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+.scroll-back-to-top-wrapper:hover {
+	background-color: #888888;
+  color: #eeeeee;
+}
+.scroll-back-to-top-wrapper.show {
+    visibility:visible;
+    cursor:pointer;
+	opacity: 0.7;
+}
+.scroll-back-to-top-wrapper i.fa {
+	line-height: inherit;
+}
+.scroll-back-to-top-wrapper .fa-lg {
+	vertical-align: 0;
+}
+  </style>
+  <style type="text/css">
+   .recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}
+  </style>
+  <meta content="Powered by Slider Revolution 5.0.9 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface." name="generator" />
+  <script type="text/javascript" charset="utf-8" async="" src="https://platform.twitter.com/js/timeline.2aa155a26b98cb156d16d48423139a74.js">
+  </script>
+ </head>
+ <body class="page page-id-37 page-template page-template-page-Blog page-template-page-Blog-php u-design-responsive-on">
+  <div id="wrapper-1">
+   <div id="top-wrapper">
+    <div class="container_24" id="top-elements">
+     <div class="grid_14" id="logo">
+      <div class="site-name">
+       <a href="http://numerik.es/numerik" title="Numerik">
+        Numerik
+       </a>
+      </div>
+     </div>
+     <div class="social-media-area grid_9 prefix_15">
+      <div class="social_media_top widget_text substitute_widget_class">
+       <div class="textwidget">
+        <div align="right" style="margin-top:10px; margin-bottom:-16px; font-size:16px; line-height:20px">
+         <a target="_blank" href="http://www.grupo-n.es">
+          <img src="http://www.numerik.es/numerik/wp-content/imagenes/grupo-n.svg" />
+         </a>
+         <br />
+         <ul class="ud-social-icons">
+          <li>
+           <a target="_blank" href="https://twitter.com/" title="Twitter">
+            <i style="font-size:1.4em;" class="fa fa-twitter">
+            </i>
+           </a>
+          </li>
+          <li>
+           <a target="_blank" href="https://www.facebook.com/Numerik-Digital-517528698404879/timeline/" title="Facebook">
+            <i style="font-size:1.4em;" class="fa fa-facebook">
+            </i>
+           </a>
+          </li>
+          <li>
+           <a target="_blank" href="https://plus.google.com" title="Google+">
+            <i style="font-size:1.4em;" class="fa fa-google-plus">
+            </i>
+           </a>
+          </li>
+         </ul>
+         <span style="padding-top:4px; padding-bottom:30px;">
+          <br />
+          <a href="http://www.numerik.es" class="bghome">
+           <span style=" font-size:20px;">
+            <strong>
+             h
+            </strong>
+           </span>
+           ome  
+          </a>
+          <a href="#servicios" class="bgser">
+           <span style=" font-size:20px;">
+            <strong>
+             s
+            </strong>
+           </span>
+           ervicios 
+          </a>
+          <a href="#referencias" class="bgref">
+           <span style=" font-size:20px;">
+            <strong>
+             r
+            </strong>
+           </span>
+           eferencias 
+          </a>
+          <a href="#contacto" class="bgcon">
+           <span style=" font-size:20px;">
+            <strong>
+             c
+            </strong>
+           </span>
+           ontacto 
+          </a>
+          <a target="_blank" href="http://www.numerik.es/numerik/blog" class="bgblog">
+           <span style=" font-size:20px;">
+            <strong>
+             b
+            </strong>
+           </span>
+           log  
+          </a>
+          <br />
+         </span>
+        </div>
+       </div>
+      </div>
+     </div>
+     <!-- end social-media-area -->
+    </div>
+    <!-- end top-elements -->
+    <div class="clear">
+    </div>
+    <div id="main-menu">
+     <div class="container_24" id="dropdown-holder">
+      <div class="navigation-menu" id="navigation-menu" style="display: block;">
+       <ul class="sf-menu sf-js-enabled" id="main-top-menu">
+        <li>
+         <a href="http://numerik.es/numerik">
+          <span>
+           Inicio
+          </span>
+         </a>
+        </li>
+        <li class="page_item page-item-37 current_page_item">
+         <a href="http://numerik.es/numerik/blog/">
+          <span>
+           Blog
+          </span>
+         </a>
+        </li>
+       </ul>
+      </div>
+     </div>
+     <!-- end dropdown-holder -->
+    </div>
+    <!-- end top-main-menu -->
+   </div>
+   <!-- end top-wrapper -->
+   <div class="clear">
+   </div>
+   <a title="Numerik" href="http://numerik.es/numerik" id="sticky-menu-logo">
+    <img height="40" alt="logo" src="http://numerik.es/numerik/wp-content/uploads/2015/10/numerik_logo2.jpg" />
+   </a>
+   <div id="page-content-title">
+    <div class="container_24" id="page-content-header">
+     <div id="page-title">
+      <h1 class="pagetitle">
+       Blog
+      </h1>
+     </div>
+     <!-- end page-title -->
+    </div>
+    <!-- end page-content-header -->
+   </div>
+   <!-- end page-content-title -->
+   <div class="clear">
+   </div>
+   <div id="page-content">
+    <div class="no-breadcrumbs-padding">
+    </div>
+    <div class="container_24" id="content-container">
+     <div class="grid_16" id="main-content">
+      <div class="main-content-padding">
+       <div class="clear">
+       </div>
+       <div class="warning">
+        <div class="msg-box-icon">
+         <p class="center">
+          No entries were found under this blog section.
+         </p>
+         <div class="inline-search-form">
+          <form action="http://numerik.es/numerik/" class="searchform" id="searchform" method="get" role="search">
+           <div>
+            <label for="s" class="screen-reader-text">
+             Search for:
+            </label>
+            <input type="text" placeholder="Type here to search" value="" name="s" id="s" />
+            <input type="submit" value="Buscar" id="searchsubmit" />
+           </div>
+          </form>
+         </div>
+        </div>
+       </div>
+       <div class="clear">
+       </div>
+      </div>
+      <!-- end main-content-padding -->
+     </div>
+     <!-- end main-content -->
+     <div class="grid_8" id="sidebar">
+      <div id="sidebarSubnav">
+       <div class="widget widget_tag_cloud substitute_widget_class" id="tag_cloud-2">
+        <h3 class="widgettitle">
+         Tags
+        </h3>
+        <div class="tagcloud">
+        </div>
+       </div>
+       <div class="widget widget_archive custom-formatting" id="archives-3">
+        <h3 class="widgettitle">
+         Archivo
+        </h3>
+        <ul>
+        </ul>
+       </div>
+      </div>
+     </div>
+     <!-- end sidebar -->
+    </div>
+    <!-- end content-container -->
+    <div class="clear">
+    </div>
+   </div>
+   <!-- end page-content -->
+   <div class="clear">
+   </div>
+   <div id="bottom-bg">
+    <div class="container_24" id="bottom">
+     <div class="bottom-content-padding">
+      <div class="one_fourth" id="bottom_1">
+       <div class="column-content-wrapper">
+        <div class="bottom-col-content widget_text substitute_widget_class">
+         <div class="textwidget">
+          <div style="text-align:center;">
+           <img src="http://www.numerik.es/numerik/wp-content/imagenes/icono_5.png" />
+           <br />
+           <div id="contacto">
+            <span style="text-align:center; color:#b591b5;  font-size:24px;">
+             Contacto
+            </span>
+           </div>
+           <span style="text-align:center; color:#989898; line-height:18px; font-size:14px;">
+            <br />
+            <span style="text-align:center; color:#cccccc; line-height:18px; font-size:18px;">
+             <strong>
+              Madrid
+             </strong>
+            </span>
+            <br />
+            Calle Velázquez, 12 4ª planta
+            <br />
+            ​28001 · Madrid · España
+            <br />
+            <a href="tel:+34918269825">
+             + 34 91 826 98 25 -
+            </a>
+            <a href="mailto:info@numerik.es">
+             info@numerik.es
+            </a>
+           </span>
+           <span style="text-align:center; color:#989898; line-height:18px; font-size:14px;">
+            <br />
+            <br />
+            <span style="text-align:center; color:#cccccc; line-height:18px; font-size:18px;">
+             <strong>
+              Logroño
+             </strong>
+            </span>
+            <br />
+            Calle Bretón de los Herreros, 44
+            <br />
+            26001 · Logroño · La Rioja · España
+            <br />
+            <a href="tel:+34941512946">
+             + 34 941 512 946 -
+            </a>
+            <a href="mailto:info@numerik.es">
+             info@numerik.es
+            </a>
+           </span>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <!-- end bottom_1 -->
+      <div class="one_fourth" id="bottom_2">
+       <div class="column-content-wrapper">
+        <div class="bottom-col-content widget_text substitute_widget_class">
+         <div class="textwidget">
+          <img src="http://www.numerik.es/numerik/wp-content/imagenes/icono_6.png" />
+          <div style="text-align:center;">
+           <div id="contacto">
+            <span style="text-align:center; color:#b591b5;  font-size:24px;">
+             Blog
+            </span>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <!-- end bottom_2 -->
+      <div class="one_fourth" id="bottom_3">
+       <div class="column-content-wrapper">
+        <div class="bottom-col-content widget_text substitute_widget_class">
+         <div class="textwidget">
+          <div id="referencias">
+          </div>
+          <img src="http://www.numerik.es/numerik/wp-content/imagenes/icono_7.png" />
+          <div style="text-align:center;">
+           <div id="contacto">
+            <span style="text-align:center; color:#b591b5;  font-size:24px;">
+             Referencias
+            </span>
+           </div>
+           <noscript>
+            &lt;style type="text/css"&gt;.easingslider-50 .easingslider-preload { display: none; } .easingslider-50 .easingslider-slide { display: none; } .easingslider-50 .easingslider-slide-1 { display: block !important; }&lt;/style&gt;
+           </noscript>
+           <div style="max-width: 400px !important; max-height: 250px !important;" data-options='{"general":{"randomize":false},"dimensions":{"width":400,"height":250,"responsive":true,"full_width":false,"image_resizing":false,"keep_ratio":true,"background_images":false},"transitions":{"effect":"fade","duration":400},"navigation":{"arrows":false,"arrows_hover":false,"arrows_position":"inside","pagination":false,"pagination_hover":false,"pagination_position":"inside","pagination_location":"bottom-center"},"playback":{"enabled":true,"pause":4000}}' class="easingslider easingslider-50 no-js use-fade has-loaded">
+            <div style="height: 118px; max-height: 250px;" class="easingslider-viewport">
+             <div style="animation-duration: 400ms; display: block;" class="easingslider-slide easingslider-slide-1 easingslider-image-slide active prev-out">
+              <img class="easingslider-image" alt="" title="" src="http://numerik.es/numerik/wp-content/uploads/2015/11/slide_ref_11.png" />
+             </div>
+             <div style="animation-duration: 400ms; display: block;" class="easingslider-slide easingslider-slide-2 easingslider-image-slide next-in">
+              <img class="easingslider-image" alt="" title="" src="http://numerik.es/numerik/wp-content/uploads/2015/11/slide_ref_2.png" />
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <!-- end bottom_3 -->
+      <div class="one_fourth last_column" id="bottom_4">
+       <div class="column-content-wrapper">
+        <div class="bottom-col-content widget_text substitute_widget_class">
+         <div class="textwidget">
+          <img src="http://www.numerik.es/numerik/wp-content/imagenes/icono_8.png" />
+          <br />
+          <br />
+          <iframe frameborder="0" id="twitter-widget-0" scrolling="no" allowtransparency="true" allowfullscreen="true" class="twitter-timeline twitter-timeline-rendered" style="position: static; visibility: visible; display: inline-block; width: 100%; height: 270px; padding: 0px; border: medium none; max-width: 520px; min-width: 180px; min-height: 200px; margin-top: 0px; margin-bottom: 0px;" data-widget-id="652032375694749696" data-user-id="3536410102" title="Cronología de Twitter">
+          </iframe>
+          <script>
+           !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+          </script>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <!-- end bottom_4 -->
+    </div>
+    <!-- end bottom-content-padding -->
+   </div>
+   <!-- end bottom -->
+  </div>
+  <!-- end bottom-bg -->
+  <div class="clear">
+  </div>
+  <div id="footer-bg">
+   <div class="container_24 footer-top" id="footer">
+    <div class="grid_20" id="footer_text">
+     <div>
+      © 2015
+      <strong>
+       NUMERIK
+      </strong>
+     </div>
+    </div>
+   </div>
+  </div>
+  <div class="clear">
+  </div>
+  <!-- end wrapper-1 -->
+  <div class="scroll-back-to-top-wrapper">
+   <span class="scroll-back-to-top-inner">
+    <i class="fa fa-2x fa-arrow-circle-up">
+    </i>
+   </span>
+  </div>
+  <script src="http://numerik.es/numerik/wp-includes/js/comment-reply.min.js?ver=4.3.1" type="text/javascript">
+  </script>
+  <script type="text/javascript">
+   /* &lt;![CDATA[ */
+var scrollBackToTop = {"scrollDuration":"500","fadeDuration":"0.5"};
+/* ]]&gt; */
+  </script>
+  <script src="http://numerik.es/numerik/wp-content/plugins/scroll-back-to-top/assets/js/scroll-back-to-top.js" type="text/javascript">
+  </script>
+  <script src="http://numerik.es/numerik/wp-content/themes/u-design/scripts/prettyPhoto/js/jquery.prettyPhoto.js?ver=3.1.6" type="text/javascript">
+  </script>
+  <script type="text/javascript">
+   /* &lt;![CDATA[ */
+var pretty_photo_custom_params = {"window_width_to_disable_pp":"0","pretty_photo_style_theme":"dark_rounded","disable_pretty_photo_gallery_overlay":null};
+/* ]]&gt; */
+  </script>
+  <script src="http://numerik.es/numerik/wp-content/themes/u-design/scripts/prettyPhoto/custom_params.js?ver=3.1.6" type="text/javascript">
+  </script>
+  <script src="http://numerik.es/numerik/wp-content/themes/u-design/scripts/superfish-menu/js/superfish.combined.js?ver=1.7.2" type="text/javascript">
+  </script>
+  <script type="text/javascript">
+   /* &lt;![CDATA[ */
+var udesign_script_vars = {"search_widget_placeholder":"Type here to search","disable_smooth_scrolling_on_pages":null,"remove_fixed_menu_on_mobile":null};
+/* ]]&gt; */
+  </script>
+  <script src="http://numerik.es/numerik/wp-content/themes/u-design/scripts/script.js?ver=1.0" type="text/javascript">
+  </script>
+  <script src="http://numerik.es/numerik/wp-content/themes/u-design/scripts/responsive/meanmenu/jquery.meanmenu.min.js?ver=2.0.8" type="text/javascript">
+  </script>
+  <script src="http://numerik.es/numerik/wp-content/themes/u-design/scripts/responsive/meanmenu/jquery.meanmenu.options.js?ver=2.0.8" type="text/javascript">
+  </script>
+ </body>
+</html>

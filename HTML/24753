@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <title>
+   Ed Portas
+  </title>
+  <link type="text/css" rel="stylesheet" href="css/bootstrap.css" />
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <!-- Custom Theme files -->
+  <link type="text/css" rel="stylesheet" href="css/style.php" />
+  <!-- Custom Theme files -->
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <script type="application/x-javascript">
+   addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); }
+  </script>
+  <link media="all" type="text/css" rel="stylesheet" href="css/nav.php" />
+  <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700,800,900" />
+  <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300:700" />
+  <script type="text/javascript" src="js/jquery.min.js">
+  </script>
+  <script>
+   $(function() {
+
+	    var button = $('#loginButton');
+
+	    var box = $('#loginBox');
+
+	    var form = $('#loginForm');
+
+	    button.removeAttr('href');
+
+	    button.mouseup(function(login) {
+
+	        box.toggle();
+
+	        button.toggleClass('active');
+
+	    });
+
+	    form.mouseup(function() { 
+
+	        return false;
+
+	    });
+
+	    $(this).mouseup(function(login) {
+
+	        if(!($(login.target).parent('#loginButton').length &gt; 0)) {
+
+	            button.removeClass('active');
+
+	            box.hide();
+
+	        }
+
+	    });
+
+	});
+  </script>
+  <!----font-Awesome----->
+  <link href="fonts/css/font-awesome.min.css" rel="stylesheet" />
+  <!----font-Awesome----->
+ </head>
+ <body>
+  <!-- Header -->
+  <div class="header">
+   <div style=" background-color:005680;" class="header_top">
+    <div class="container">
+     <div class="headertop_nav">
+      <ul>
+       <li>
+        <i class="fa fa-phone">
+        </i>
+        (11) 2748-3777
+       </li>
+      </ul>
+     </div>
+     <div class="header-top-right">
+      <div class="login_box">
+       <div id="loginContainer">
+        <a class="active" id="loginButton">
+         <span class="active">
+          <i class="search-icon">
+          </i>
+          Busca
+         </span>
+        </a>
+        <div id="loginBox">
+         <form method="get" action="busca.php" id="loginForm">
+          <div class="search_box">
+           <input type="text" onblur="if (this.value == '') {this.value = 'Busca;}" onfocus="this.value = '';" value="Busca" id="busca" name="busca" />
+           <input type="submit" value="" id="button" name="button" />
+          </div>
+         </form>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="clearfix">
+     </div>
+    </div>
+   </div>
+  </div>
+  <div class="header_bottom">
+   <div class="container">
+    <div class="logo">
+     <h1>
+      <a href="index.php">
+       <img width="300" border="0" src="imagens/logo/logo_ed.png" />
+      </a>
+     </h1>
+    </div>
+    <div class="navigation">
+     <div>
+      <label for="mobile_menu" class="mobile_menu">
+       <span>
+        Menu
+       </span>
+      </label>
+      <input type="checkbox" id="mobile_menu" />
+      <ul class="nav">
+       <li>
+        <a href="index.php">
+         Home
+        </a>
+       </li>
+       <li>
+        <a href="blog.php">
+         Blog
+        </a>
+       </li>
+       <li>
+        <a href="empresa.php">
+         Empresa
+        </a>
+       </li>
+       <li class="dropdown">
+        <a href="#">
+         Produtos
+        </a>
+        <ul class="dropdown2">
+         <li>
+          <a href="sessoes.php?Secao=166&Automatizacao+e+Acessorios+para+Portao.htm">
+           Automatização e Acessórios para Portão
+          </a>
+         </li>
+         <li>
+          <a href="sessoes.php?Secao=171&Batentes+Macicos.htm">
+           Batentes Maciços
+          </a>
+         </li>
+         <li>
+          <a href="sessoes.php?Secao=177&Esquadrias+de+Aluminio.htm">
+           Esquadrias de Alumínio
+          </a>
+         </li>
+         <li>
+          <a href="sessoes.php?Secao=169&Esquadrias+de+Madeiras+macicas.htm">
+           Esquadrias de Madeiras maciças
+          </a>
+         </li>
+         <li>
+          <a href="sessoes.php?Secao=170&Esquadrias+de+Madeiras+macicas+com+vidro+temperado.htm">
+           Esquadrias de Madeiras maciças com vidro temperado
+          </a>
+         </li>
+         <li>
+          <a href="sessoes.php?Secao=172&Portas+camarao.htm">
+           Portas camarão
+          </a>
+         </li>
+         <li>
+          <a href="sessoes.php?Secao=174&Portas+de++Seguranca+em+Aco.htm">
+           Portas de  Segurança em Aço
+          </a>
+         </li>
+         <li>
+          <a href="sessoes.php?Secao=168&Portas+de+Madeiras.htm">
+           Portas de Madeiras
+          </a>
+         </li>
+         <li>
+          <a href="sessoes.php?Secao=173&Portas+Pivoltantes.htm">
+           Portas Pivoltantes
+          </a>
+         </li>
+         <li>
+          <a href="sessoes.php?Secao=165&Portoes.htm">
+           Portões
+          </a>
+         </li>
+         <li>
+          <a href="sessoes.php?Secao=175&Puxadores.htm">
+           Puxadores
+          </a>
+         </li>
+         <li>
+          <a href="sessoes.php?Secao=176&Trilhos+para+porta+de+correr.htm">
+           Trilhos para porta de correr
+          </a>
+         </li>
+        </ul>
+       </li>
+       <li>
+        <a href="#">
+         Mais informações
+        </a>
+        <ul>
+         <li>
+          <a href="Paginas.php?pg=71">
+           Como Comprar
+          </a>
+         </li>
+         <li>
+          <a href="Paginas.php?pg=61">
+           Como conservar sua porta de madeira
+          </a>
+         </li>
+        </ul>
+       </li>
+       <li>
+        <a href="contato.php">
+         Contato
+        </a>
+       </li>
+       <div class="clearfix">
+       </div>
+      </ul>
+     </div>
+    </div>
+    <div class="clearfix">
+    </div>
+   </div>
+  </div>
+  <!-- Ends Header -->
+  <!------------ Start Content ---------------->
+  <div class="main">
+   <div class="reservation_top">
+    <div class="container">
+     <div class="row">
+      <div class="col-md-5">
+       <div class="contact_left">
+        <h3>
+         Mapa
+        </h3>
+        <iframe width="400" height="300" frameborder="0" style="border:0" src="https://www.google.com/maps/embed?pb=%211m18%211m12%211m3%211d3656.707602531535%212d-46.481602599999974%213d-23.578942799999997%212m3%211f0%212f0%213f0%213m2%211i1024%212i768%214f13.1%213m3%211m2%211s0x94ce67adc8ea47d5%3A0xa5c353c3f6dd440f%212sAv.+Maria+Luiza+Americano%2C+23+-+Itaquera%2C+S%C3%A3o+Paulo+-+SP%215e0%213m2%211spt-BR%212sbr%214v1430143031342">
+        </iframe>
+        <address class="address">
+         <p>
+          Endereço:  Av. Maria Luiza Americano, nº 23
+          <br />
+          Itaquera - São Paulo - SP
+          <br />
+          Cep:  08275-001
+         </p>
+         <dl>
+          <dt>
+          </dt>
+          <dd>
+           <i class="fa fa-phone">
+           </i>
+           <span style=" color:#000000">
+            (11) 2748-3777
+           </span>
+          </dd>
+          <dd>
+           <i class="fa fa-phone">
+           </i>
+           <span style=" color:#000000">
+            (11) 0000-0000
+           </span>
+          </dd>
+          <dd>
+           <i class="fa fa-phone">
+           </i>
+           <span style=" color:#000000">
+            (11) 0000-0000
+           </span>
+          </dd>
+          <dd>
+           E-mail:
+           <a href="mailto:contato@edportas.com.br">
+            <span style=" color:#000000">
+             contato@edportas.com.br
+            </span>
+           </a>
+          </dd>
+         </dl>
+        </address>
+       </div>
+      </div>
+      <div class="col-md-7 contact_right">
+       <h3>
+        Contato
+       </h3>
+       <div class="contact-form">
+        <form onsubmit="return valida_dados(this)" action="processar.php" method="post" name="meu_form" id="meu_form">
+         <p class="contato">
+          Nome
+         </p>
+         <input type="text" style=" width:300px; height:26px; border-width:1px; border-color:#999; -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 8px; -webkit-border-radius:5px; border-radius: 5px; padding: 2px; " name="nome" />
+         <br />
+         <br />
+         <p class="contato">
+          E-mail
+         </p>
+         <input type="text" style=" width:300px; height:26px; border-width:1px; border-color:#999; -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 8px; -webkit-border-radius:5px; border-radius: 5px; padding: 2px; " name="email" />
+         <br />
+         <br />
+         <p class="contato">
+          Telefone
+         </p>
+         <input type="text" style=" width:300px; height:26px; border-width:1px; border-color:#999; -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 8px; -webkit-border-radius:5px; border-radius: 5px; padding: 2px; " name="telefone" />
+         <br />
+         <br />
+         <p class="contato">
+          Mensagem
+         </p>
+         <textarea style=" width:300px; height:50px; border-width:1px; border-color:#999; -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 8px; -webkit-border-radius:5px; border-radius: 5px; padding: 2px; " rows="" cols="" name="mensagem">
+         </textarea>
+         <hr />
+         <img src="2.png" />
+         <img src="1.png" />
+         <img src="0.png" />
+         <img src="4.png" />
+         <img src="3.png" />
+         <img src="3.png" />
+         <p>
+          <font face="arial">
+           Digite o codigo corretamente
+          </font>
+         </p>
+         <input type="text" maxlength="6" name="text_captcha" />
+         <!--codigo Captcha-->
+         <input type="hidden" value="hzaxff" name="codigo_captcha" />
+         <hr />
+         <input type="submit" name="processar" />
+        </form>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="footer">
+    <div class="container">
+     <div class="footer_top">
+      <div class="row">
+       <div class="col-md-4 footer_grid">
+        <h4>
+         Assine Newsletter
+        </h4>
+        <p>
+         Receba em seu e-mail as nossa novidades.
+        </p>
+        <div class="search">
+         <form method="post" action="" name="Cadastro">
+          <input type="text" placeholder="Seu e-mail" value="" id="email" name="email" />
+          <input type="submit" name="Acao" value="1" />
+         </form>
+        </div>
+       </div>
+       <div class="col-md-4 footer_grid">
+        <h4>
+         Mais Informações
+        </h4>
+        <div class="footer-list">
+         <div data-show-border="false" data-stream="false" data-header="false" data-show-faces="true" data-colorscheme="dark" class="fb-like-box">
+          <table width="100%" border="0" cellspacing="0" cellpadding="0">
+           <tbody>
+            <tr>
+             <td>
+              <p>
+               <a href="Paginas.php?pg=71">
+                <font color="#FFFFFF">
+                 Como Comprar
+                </font>
+               </a>
+              </p>
+             </td>
+            </tr>
+            <tr>
+             <td>
+              <p>
+               <a href="Paginas.php?pg=61">
+                <font color="#FFFFFF">
+                 Como conservar sua porta de madeira
+                </font>
+               </a>
+              </p>
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </div>
+        </div>
+       </div>
+       <div class="col-md-4 footer_grid">
+        <h4>
+         InformaÇÕes
+        </h4>
+        <div class="company_address">
+         <p style="color:#FFFFFF">
+          Av. Maria Luiza Americano, nº 23 - Cep. 08275-001
+         </p>
+         <p style="color:#FFFFFF">
+          Itaquera - São Paulo - SP
+         </p>
+         <p style="color:#FFFFFF">
+          <i class="fa fa-phone">
+          </i>
+          (11) 2748-3777
+         </p>
+         <p style="color:#FFFFFF">
+          <i class="fa fa-phone">
+          </i>
+          (11) 0000-0000
+         </p>
+         <p style="color:#FFFFFF">
+          <i class="fa fa-phone">
+          </i>
+          (11) 0000-0000
+         </p>
+         <p style="color:#FFFFFF">
+          Email:
+          <span>
+           <a href="mailto:contato@edportas.com.br">
+            contato@edportas.com.br
+           </a>
+          </span>
+         </p>
+        </div>
+        <ul class="socials">
+        </ul>
+       </div>
+       <div class="clearfix">
+       </div>
+      </div>
+     </div>
+     <div class="footer_bottom">
+      <div class="copy_right">
+       <p>
+        © 2015 Todos os direitos reservados Ed Portas
+       </p>
+      </div>
+      <div class="footer_nav">
+       <ul>
+        <li>
+         <img border="0" src="cartoes/visa.png" />
+         <img border="0" src="cartoes/master.png" />
+         <img border="0" src="cartoes/america.png" />
+         <img border="0" src="cartoes/diners.png" />
+         <img border="0" src="cartoes/construcard.png" />
+        </li>
+        <br />
+        <font color="#FFFFFF">
+         Desenvolvido Por
+         <a style=" color:#FFFFFF;" target="_blank" href="http://www.spdestaque.com.br">
+          SP Destaque
+         </a>
+        </font>
+       </ul>
+      </div>
+      <div class="clearfix">
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>

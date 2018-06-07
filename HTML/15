@@ -1,0 +1,781 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="es-es" xml:lang="es-es" xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta content="content-type" http-equiv="content-type" />
+  <meta content="index, follow" name="robots" />
+  <meta content="" name="keywords" />
+  <meta content="" name="description" />
+  <meta content="Joomla! 1.5 - Open Source Content Management" name="generator" />
+  <title>
+   ¿Olvidó su nombre de usuario?
+  </title>
+  <link type="text/css" href="http://my-pinkelephant.com//plugins/system/jatypo/typo/typo.css" rel="stylesheet" />
+  <link type="text/css" href="/templates/system/css/system.css" rel="stylesheet" />
+  <link type="text/css" href="/templates/system/css/general.css" rel="stylesheet" />
+  <link type="text/css" href="/media/system/css/modal.css" rel="stylesheet" />
+  <link type="text/css" href="/modules/mod_jalogin/assets/style.css" rel="stylesheet" />
+  <link type="text/css" href="/plugins/system/jat3/base-themes/default/css/addons.css" rel="stylesheet" />
+  <link type="text/css" href="/plugins/system/jat3/base-themes/default/css/layout.css" rel="stylesheet" />
+  <link type="text/css" href="/plugins/system/jat3/base-themes/default/css/template.css" rel="stylesheet" />
+  <link type="text/css" href="/plugins/system/jat3/base-themes/default/css/usertools.css" rel="stylesheet" />
+  <link type="text/css" href="/plugins/system/jat3/base-themes/default/css/css3.css" rel="stylesheet" />
+  <link type="text/css" href="/plugins/system/jat3/base-themes/default/css/menu/mega.css" rel="stylesheet" />
+  <link type="text/css" href="/templates/ja_social/css/typo.css" rel="stylesheet" />
+  <link type="text/css" href="/templates/ja_social/css/layout.css" rel="stylesheet" />
+  <link type="text/css" href="/templates/ja_social/css/template.css" rel="stylesheet" />
+  <link type="text/css" href="/templates/ja_social/css/css3.css" rel="stylesheet" />
+  <link type="text/css" href="/templates/ja_social/css/menu/mega.css" rel="stylesheet" />
+  <link type="text/css" href="/templates/ja_social/css/k2.css" rel="stylesheet" />
+  <script src="/media/system/js/mootools.js" type="text/javascript">
+  </script>
+  <script src="/plugins/system/jat3/base-themes/default/js/core.js" type="text/javascript">
+  </script>
+  <script src="/plugins/system/jat3/base-themes/default/js/menu/mega.js" type="text/javascript">
+  </script>
+  <script src="/media/system/js/modal.js" type="text/javascript">
+  </script>
+  <script src="http://my-pinkelephant.com/components/com_k2/js/k2.js" type="text/javascript">
+  </script>
+  <script src="/media/system/js/validate.js" type="text/javascript">
+  </script>
+  <script src="/modules/mod_jalogin/assets/script.js" type="text/javascript">
+  </script>
+  <script type="text/javascript">
+   window.addEvent('domready', function() {
+
+			SqueezeBox.initialize({});
+
+			$$('a.modal').each(function(el) {
+				el.addEvent('click', function(e) {
+					new Event(e).stop();
+					SqueezeBox.fromElement(el);
+				});
+			});
+		});
+var K2RatingURL = 'http://my-pinkelephant.com/';
+		window.addEvent('domready', function(){ var JTooltips = new Tips($$('.hasTip'), { maxTitleChars: 50, fixed: false}); });
+ /* &lt;![CDATA[ */  
+					function clickExplorer() {
+						if( document.all ) {
+							alert('Todos los contenidos mostrados son propiedad de PINK ELEPHANT');
+						}
+						return false;
+					}
+
+					function clickOther(e) {
+						if( document.layers || ( document.getElementById &amp;&amp; !document.all ) ) {
+							if ( e.which == 2 || e.which == 3 ) {
+								alert('Todos los contenidos mostrados son propiedad de PINK ELEPHANT');
+								return false;
+							}
+						}
+					}
+					if( document.layers ) {
+						document.captureEvents( Event.MOUSEDOWN );
+						document.onmousedown=clickOther;
+					}
+					else {
+						document.onmouseup = clickOther;
+						document.oncontextmenu = clickExplorer;
+					}   /* ]]&gt; */ 
+ /* &lt;![CDATA[ */  window.addEvent('domready', function() { 
+				   
+	
+				    document.body.oncopy = function() { 
+							alert('Todos los contenidos mostrados son propiedad de PINK ELEPHANT'); 
+					 return false; } });  
+						 if( typeof( document.onselectstart ) != 'undefined' )
+							document.onselectstart = function(){ return false };
+						 document.ondragstart = function(){ return false }   /* ]]&gt; */
+  </script>
+  <link type="image/x-icon" rel="shortcut icon" href="/plugins/system/jat3/base-themes/default/images/favicon.ico" />
+  <!--[if IE 7.0]>
+<style>
+.clearfix { display: inline-block; } /* IE7xhtml*/
+</style>
+<![endif]-->
+  <style type="text/css">
+   /*dynamic css*/
+	.main {
+		width: 980px;
+	}
+	
+	#ja-wrapper {
+		min-width: 980px;
+	}
+  </style>
+ </head>
+ <body class="fs3" id="bd">
+  <div id="ja-wrapper">
+   <a id="Top" name="Top">
+   </a>
+   <div class="wrap" id="ja-header">
+    <div class="main">
+     <div class="main-inner1 clearfix">
+      <h1 class="logo">
+       <a title="My Pink Elephant" href="/index.php">
+        <span>
+         My Pink Elephant
+        </span>
+       </a>
+      </h1>
+      <div id="ja-search">
+       <div id="socialmedia">
+        <p>
+         <!--<a href="#"><img width="32" height="29" border="0" src="/templates/ja_social/images/fblogo.png"  /></a>-->
+         <a href="https://twitter.com/#%21/expertosenitil">
+          <img border="0" src="/templates/ja_social/images/twitterlogo.png" />
+         </a>
+        </p>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="wrap" id="ja-topbar">
+    <div class="main clearfix">
+     <p class="ja-day">
+      <span class="day">
+       Wednesday
+      </span>
+      <span class="date">
+       , Oct 14th
+      </span>
+     </p>
+     <p class="ja-updatetime">
+      <span>
+       Last update
+      </span>
+      <em>
+       05:46:39 PM GMT
+      </em>
+     </p>
+     <div class="ja-headtool" id="ja-headtools">
+      <ul>
+       <li>
+        <a title="" onclick="showBox('ja-user-login','mod_login_username',this, window.event || event);return false;" href="/index.php?option=com_user&view=login" class="login-switch">
+         <span>
+          Ingreso de Usuarios
+         </span>
+        </a>
+        <!--LOFIN FORM content-->
+        <div style="width:350px;" id="ja-user-login">
+         <form id="login" name="login" method="post" action="/index.php?option=com_user">
+          <label class="ja-login-user" for="mod_login_username">
+           <span>
+            Nombre de usuario:
+           </span>
+           <br />
+           <input type="text" size="20" alt="username" class="inputbox" id="mod_login_username" name="username" />
+          </label>
+          <label class="ja-login-password" for="mod_login_password">
+           <span>
+            Contraseña:
+           </span>
+           <br />
+           <input type="password" alt="password" size="20" class="inputbox" name="passwd" id="mod_login_password" />
+          </label>
+          <label for="mod_login_remember">
+           <input type="hidden" alt="Remember Me" value="yes" class="inputbox" id="mod_login_remember" name="remember" />
+          </label>
+          <br />
+          <input type="submit" value="Iniciar Sesión" class="button" name="Submit" />
+          <br />
+          <div class="ja-login-links clearfix">
+           <a href="/index.php?option=com_user&view=reset">
+            ¿Olvidaste su usuario?
+           </a>
+           <a href="/index.php?option=com_user&view=remind">
+            ¿Olvidaste tu contraseña?
+           </a>
+          </div>
+          <input type="hidden" value="com_user" name="option" />
+          <input type="hidden" value="login" name="task" />
+          <input type="hidden" value="L2luZGV4LnBocD9vcHRpb249Y29tX2NvbnRlbnQmdmlldz1hcnRpY2xlJmlkPTU4Jkl0ZW1pZD0xNTU=" name="return" />
+          <input type="hidden" value="1" name="2d5a7d69ae8f6a14ecd91bb0ad5bcc2f" />
+         </form>
+        </div>
+       </li>
+       <!--LOFIN FORM content-->
+      </ul>
+     </div>
+    </div>
+   </div>
+   <div class="wrap" id="ja-mainnav">
+    <div class="main clearfix">
+     <div id="ja-megamenu" class="ja-megamenu">
+      <ul class="megamenu level0">
+       <li class="mega first">
+        <a title="Inicio" id="menu1" class="mega first" href="http://my-pinkelephant.com/">
+         <span class="menu-title">
+          Inicio
+         </span>
+        </a>
+       </li>
+      </ul>
+     </div>
+     <script type="text/javascript">
+      var megamenu = new jaMegaMenuMoo ('ja-megamenu', {
+				'bgopacity': 0, 
+				'delayHide': 300, 
+				'slide': 1, 
+				'fading': 0,
+				'direction':'down',
+				'action':'mouseover',
+				'tips': false,
+				'duration': 300,
+				'hidestyle': 'fastwhenshow'
+			});
+     </script>
+    </div>
+   </div>
+   <!-- jdoc:include type="menu" level="0" / -->
+   <ul class="no-display">
+    <li>
+     <a title="Skip to content" href="#ja-content">
+      Skip to content
+     </a>
+    </li>
+   </ul>
+   <div id="ja-cpanel-wrapper">
+    <div id="ja-cpanel" style="top: 0px;">
+     <div style="margin: -3px -1px 0px 0px; overflow: hidden; height: 0px;">
+      <div id="ja-cpanel-main" style="margin: 0px;">
+       <div class="ja-cpanel-head clearfix">
+        <a title="About T3" class="first" href="http://wiki.joomlart.com/wiki/JA_T3_Framework_2/Overview">
+         <span>
+          About
+         </span>
+        </a>
+        <a title="Guides" href="http://wiki.joomlart.com/wiki/JA_T3_Framework_2/Guides">
+         <span>
+          Guides
+         </span>
+        </a>
+        <a title="FAQs" href="http://wiki.joomlart.com/wiki/JA_T3_Framework_2/FAQs">
+         <span>
+          FAQs
+         </span>
+        </a>
+       </div>
+       <div class="ja-cpanel-tools clearfix">
+        <h3>
+         Font Size
+        </h3>
+        <div class="ja-box-usertools">
+         <ul class="ja-usertools-font clearfix">
+          <li class="font-inc">
+           <a onclick="switchFontSize('ja_social_font', 'inc');return false;" title="Increase font size">
+            <span>
+             Increase font size
+            </span>
+           </a>
+          </li>
+          <li class="font-dec">
+           <a onclick="switchFontSize('ja_social_font', 'dec');return false;" title="Decrease font size">
+            <span>
+             Decrease font size
+            </span>
+           </a>
+          </li>
+          <li class="font-reset">
+           <a onclick="switchFontSize('ja_social_font', 'reset');return false;" title="Default font size">
+            <span>
+             Default font size
+            </span>
+           </a>
+          </li>
+         </ul>
+        </div>
+        <script type="text/javascript">
+         var DefaultFontSize=parseInt('3');
+	var CurrentFontSize=parseInt('3');
+        </script>
+        <h3>
+         Screen
+        </h3>
+        <div class="ja-box-usertools">
+         <ul class="ja-usertools-screen clearfix">
+          <li class="screen-wide">
+           <input type="radio" value="wide" name="user_screen" id="user_screen_wide" />
+           <label title="Wide Screen" for="user_screen_wide">
+            <span>
+             Wide Screen
+            </span>
+           </label>
+          </li>
+          <li class="screen-auto">
+           <input type="radio" value="auto" name="user_screen" id="user_screen_auto" />
+           <label title="Full Screen" for="user_screen_auto">
+            <span>
+             Full Screen
+            </span>
+           </label>
+          </li>
+          <li class="screen-narrow">
+           <input type="radio" value="narrow" name="user_screen" id="user_screen_narrow" />
+           <label title="Narrow Screen" for="user_screen_narrow">
+            <span>
+             Narrow Screen
+            </span>
+           </label>
+          </li>
+         </ul>
+        </div>
+        <h3>
+         Profile
+        </h3>
+        <div class="ja-box-usertools">
+         <ul class="ja-usertools-profile clearfix">
+          <li class="profile profile-active">
+           <input type="radio" checked="checked" value="default" name="user_profile" id="user_profile_default" />
+           <label title="default" for="user_profile_default">
+            <span>
+             default
+            </span>
+           </label>
+          </li>
+          <li class="profile ">
+           <input type="radio" value="google-font" name="user_profile" id="user_profile_google-font" />
+           <label title="google-font" for="user_profile_google-font">
+            <span>
+             google-font
+            </span>
+           </label>
+          </li>
+          <li class="profile ">
+           <input type="radio" value="green" name="user_profile" id="user_profile_green" />
+           <label title="green" for="user_profile_green">
+            <span>
+             green
+            </span>
+           </label>
+          </li>
+          <li class="profile ">
+           <input type="radio" value="grey" name="user_profile" id="user_profile_grey" />
+           <label title="grey" for="user_profile_grey">
+            <span>
+             grey
+            </span>
+           </label>
+          </li>
+          <li class="profile ">
+           <input type="radio" value="orange" name="user_profile" id="user_profile_orange" />
+           <label title="orange" for="user_profile_orange">
+            <span>
+             orange
+            </span>
+           </label>
+          </li>
+          <li class="profile ">
+           <input type="radio" value="purple" name="user_profile" id="user_profile_purple" />
+           <label title="purple" for="user_profile_purple">
+            <span>
+             purple
+            </span>
+           </label>
+          </li>
+         </ul>
+        </div>
+        <h3>
+         Layout
+        </h3>
+        <div class="ja-box-usertools">
+         <ul class="ja-usertools-layout clearfix">
+          <li class="layout layout-default">
+           <input type="radio" value="default" name="user_layouts" id="user_layouts_default" />
+           <label title="default" for="user_layouts_default">
+            <span>
+             default
+            </span>
+           </label>
+          </li>
+          <li class="layout layout-left-main-right">
+           <input type="radio" value="left-main-right" name="user_layouts" id="user_layouts_left-main-right" />
+           <label title="left-main-right" for="user_layouts_left-main-right">
+            <span>
+             left-main-right
+            </span>
+           </label>
+          </li>
+          <li class="layout layout-left-right-main">
+           <input type="radio" value="left-right-main" name="user_layouts" id="user_layouts_left-right-main" />
+           <label title="left-right-main" for="user_layouts_left-right-main">
+            <span>
+             left-right-main
+            </span>
+           </label>
+          </li>
+          <li class="layout layout-right-main-left">
+           <input type="radio" value="right-main-left" name="user_layouts" id="user_layouts_right-main-left" />
+           <label title="right-main-left" for="user_layouts_right-main-left">
+            <span>
+             right-main-left
+            </span>
+           </label>
+          </li>
+         </ul>
+        </div>
+        <h3>
+         Direction
+        </h3>
+        <div class="ja-box-usertools">
+         <ul class="ja-usertools-direction clearfix">
+          <li class="direction-ltr-active">
+           <input type="radio" checked="checked" value="ltr" name="user_direction" id="user_direction_ltr" />
+           <label title="LTR" for="user_direction_ltr">
+            <span>
+             LTR
+            </span>
+           </label>
+          </li>
+          <li class="direction-rtl">
+           <input type="radio" value="rtl" name="user_direction" id="user_direction_rtl" />
+           <label title="RTL" for="user_direction_rtl">
+            <span>
+             RTL
+            </span>
+           </label>
+          </li>
+         </ul>
+        </div>
+        <h3>
+         Menu Style
+        </h3>
+        <div class="ja-box-usertools">
+         <ul class="ja-usertools-menu clearfix">
+          <li class="menu-mega-active">
+           <input type="radio" checked="checked" value="mega" name="user_menu" id="user_menu_mega" />
+           <label title="Mega Menu" for="user_menu_mega">
+            <span>
+             Mega Menu
+            </span>
+           </label>
+          </li>
+          <li class="menu-css">
+           <input type="radio" value="css" name="user_menu" id="user_menu_css" />
+           <label title="CSS Menu" for="user_menu_css">
+            <span>
+             CSS Menu
+            </span>
+           </label>
+          </li>
+          <li class="menu-dropline">
+           <input type="radio" value="dropline" name="user_menu" id="user_menu_dropline" />
+           <label title="Dropline Menu" for="user_menu_dropline">
+            <span>
+             Dropline Menu
+            </span>
+           </label>
+          </li>
+          <li class="menu-split">
+           <input type="radio" value="split" name="user_menu" id="user_menu_split" />
+           <label title="Split Menu" for="user_menu_split">
+            <span>
+             Split Menu
+            </span>
+           </label>
+          </li>
+         </ul>
+        </div>
+       </div>
+       <div class="ja-cpanel-action clearfix">
+        <a title="Apply setting" class="button" onclick="cpanel_apply();return false;" href="#">
+         <span>
+          Apply
+         </span>
+        </a>
+        <a title="Reset to default setting" onclick="cpanel_reset();return false;" href="#">
+         <span>
+          Reset
+         </span>
+        </a>
+       </div>
+      </div>
+     </div>
+     <a id="ja-cpanel-toggle" href="#">
+      <span>
+       Cpanel
+      </span>
+     </a>
+    </div>
+   </div>
+   <script type="text/javascript">
+    var tmpl_name = 'ja_social';
+	window.addEvent('load', function () {
+		$('ja-cpanel-toggle').status == 'close';
+		$('ja-cpanel-toggle').slider = new Fx.Slide('ja-cpanel-main', {duration: 400});
+		$('ja-cpanel-toggle').slider.hide();
+		$('ja-cpanel').setStyle ('top', 0);
+		$('ja-cpanel-toggle').addEvent ('click', function (e) {
+			this.slider.toggle();
+			if (this.hasClass ('open')) {
+				this.removeClass ('open').addClass ('close');
+			} else {
+				this.removeClass ('close').addClass ('open');
+			}
+			new Event(e).stop();
+		});
+
+	});
+   </script>
+   <!-- MAIN CONTAINER -->
+   <div class="wrap ja-l1" id="ja-container">
+    <div class="main clearfix">
+     <div style="width:100%" id="ja-mainbody">
+      <!-- CONTENT -->
+      <div style="width:78%" id="ja-main">
+       <div class="inner clearfix">
+        <div class="clearfix " id="ja-contentwrap">
+         <div style="width:100%" class="column" id="ja-content">
+          <div style="width:100%" class="column" id="ja-current-content">
+           <div class="ja-content-main clearfix" id="ja-content-main">
+            <h1 class="componentheading">
+             ¿Olvidó su nombre de usuario?
+            </h1>
+            <form class="josForm form-validate" method="post" action="/index.php?option=com_user&task=remindusername">
+             <p>
+              Introduzca la dirección de correo electrónico asociada con su cuenta de usuario. Le enviaremos su nombre de usuario a la dirección registrada.
+             </p>
+             <label class="hasTip" for="email">
+              Dirección de correo electrónico:
+             </label>
+             <input type="text" class="inputbox required validate-email" name="email" id="email" />
+             <button class="button" type="submit">
+              Enviar
+             </button>
+             <input type="hidden" value="1" name="2d5a7d69ae8f6a14ecd91bb0ad5bcc2f" />
+            </form>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <!-- //CONTENT -->
+      <!-- LEFT COLUMN-->
+      <div style="width:22%" class="column sidebar" id="ja-left">
+       <div class="ja-colswrap clearfix ja-l1">
+        <div style="width:100%" class="ja-col  column" id="ja-left1">
+         <div id="Mod18" class="ja-moduletable moduletable  clearfix">
+          <div class="ja-box-ct clearfix">
+           <form id="form-login" name="form-login" method="post" action="index.php">
+            <p id="form-login-username">
+             <label for="username">
+              Nombre de usuario
+              <br />
+              <input type="text" size="18" alt="username" class="inputbox" id="username" name="username" />
+             </label>
+            </p>
+            <p id="form-login-password">
+             <label for="passwd">
+              Contraseña
+              <br />
+              <input type="password" alt="password" size="18" class="inputbox" id="passwd" name="passwd" />
+             </label>
+            </p>
+            <p id="form-login-remember">
+             <label for="remember">
+              Recordarme
+              <input type="checkbox" alt="Remember Me" value="yes" id="remember" name="remember" />
+             </label>
+            </p>
+            <input type="submit" value="Acceso" class="button" name="Submit" />
+            <ul>
+             <li>
+              <a href="/index.php?option=com_user&view=reset">
+               ¿Olvidó la contraseña?
+              </a>
+             </li>
+             <li>
+              <a href="/index.php?option=com_user&view=remind">
+               ¿Olvidó el nombre de usuario?
+              </a>
+             </li>
+            </ul>
+            <input type="hidden" value="com_user" name="option" />
+            <input type="hidden" value="login" name="task" />
+            <input type="hidden" value="L2luZGV4LnBocD9vcHRpb249Y29tX2NvbnRlbnQmdmlldz1mcm9udHBhZ2UmSXRlbWlkPTE=" name="return" />
+            <input type="hidden" value="1" name="2d5a7d69ae8f6a14ecd91bb0ad5bcc2f" />
+           </form>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <!-- //LEFT COLUMN-->
+     </div>
+    </div>
+   </div>
+   <!-- //MAIN CONTAINER -->
+   <div class="wrap" id="ja-botsl">
+    <div class="main">
+     <div class="main-inner1 clearfix">
+      <!-- SPOTLIGHT -->
+      <div style="width: 25%; min-height: 218px;" class="ja-box column ja-box-left">
+       <div id="Mod62" class="ja-moduletable moduletable  clearfix">
+        <h3>
+         <span>
+          Nuestros Servicios
+         </span>
+        </h3>
+        <div class="ja-box-ct clearfix">
+         <ul>
+         </ul>
+         <div>
+          <span style="color: #ffffff;">
+           Visite nuestra página
+          </span>
+         </div>
+         <div>
+          <a style="color: #ffffff;" target="_blank" href="http://www.pinkelephant.com/">
+           www.pinkelephant.com
+          </a>
+         </div>
+         <div>
+          <a href="http://www.pinkelephant.com/uploadedFiles/Content/es-mx/ResourceCenter/Brochures/catalogo_de_servicios_final.pdf">
+           Baje aquí nuestro catálogo de Servicios
+          </a>
+         </div>
+         <ul>
+         </ul>
+        </div>
+       </div>
+      </div>
+      <div style="width: 25%; min-height: 218px;" class="ja-box column ja-box-center">
+       <div id="Mod63" class="ja-moduletable moduletable  clearfix">
+        <h3>
+         <span>
+          Centro de Ayuda
+         </span>
+        </h3>
+        <div class="ja-box-ct clearfix">
+         <ul>
+         </ul>
+         <div>
+          <a style="color: #ffffff;" target="_blank" href="mailto:servicedesk@my-pinkelephant.com">
+           Service Desk
+          </a>
+         </div>
+         <ul>
+         </ul>
+        </div>
+       </div>
+      </div>
+      <div style="width: 25%; min-height: 218px;" class="ja-box column ja-box-center">
+       <div id="Mod64" class="ja-moduletable moduletable  clearfix">
+        <h3>
+         <span>
+          Síguenos en:
+         </span>
+        </h3>
+        <div class="ja-box-ct clearfix">
+         <ul class="social-list">
+          <li class="ja-twitter">
+           <a title="Expertos en ITIL" href="https://twitter.com/#%21/expertosenitil">
+            Twitter
+           </a>
+          </li>
+         </ul>
+        </div>
+       </div>
+      </div>
+      <div style="width: 25%; min-height: 218px;" class="ja-box column ja-box-right">
+       <div id="Mod65" class="ja-moduletable moduletable  clearfix">
+        <h3>
+         <span>
+          Contáctanos
+         </span>
+        </h3>
+        <div class="ja-box-ct clearfix">
+         <ul class="contact-list">
+          <li class="add">
+           <strong>
+           </strong>
+           Montecito 38, piso 39 of 31
+           <br />
+           Col. Nápoles
+           <br />
+           Benito Juárez, Ciudad de México
+          </li>
+          <li class="tel">
+           <strong>
+           </strong>
+           +52 55 3544 3050
+          </li>
+          <li class="email">
+           <a href="mailto:servicedesk@my-pinkelephant.com">
+            Service Desk
+           </a>
+          </li>
+         </ul>
+         <p>
+         </p>
+        </div>
+       </div>
+      </div>
+      <!-- SPOTLIGHT -->
+     </div>
+    </div>
+   </div>
+   <script type="text/javascript">
+    window.addEvent('load', function (){ equalHeight ('#ja-botsl .ja-box') });
+   </script>
+   <div class="wrap" id="ja-navhelper">
+    <div class="main">
+     <div class="main-inner1 clearfix">
+      <div class="ja-breadcrums">
+       <strong>
+        You are here
+       </strong>
+       <span class="breadcrumbs pathway">
+        <span class="name">
+         Home
+        </span>
+       </span>
+      </div>
+      <ul class="ja-links">
+       <li class="layout-switcher">
+       </li>
+       <li class="top">
+        <a title="Back to Top" href="#Top">
+         Top
+        </a>
+       </li>
+      </ul>
+      <ul class="no-display">
+       <li>
+        <a title="Skip to content" href="#ja-content">
+         Skip to content
+        </a>
+       </li>
+      </ul>
+     </div>
+    </div>
+   </div>
+   <div class="wrap" id="ja-footer">
+    <div class="main clearfix">
+     <div class="ja-copyright">
+     </div>
+     <div class="t3-logo t3-logo-light" id="ja-poweredby">
+      <a target="_blank" title="Powered By T3 Framework" href="http://t3.joomlart.com">
+       Powered By T3 Framework
+      </a>
+     </div>
+    </div>
+   </div>
+  </div>
+  <div id="sbox-overlay" style="display: none; z-index: 65555; position: fixed; top: 0px; left: 0px; visibility: hidden; opacity: 0;">
+  </div>
+  <div id="sbox-window" style="display: none; z-index: 65557; position: fixed; top: 50%; left: 50%;">
+   <a id="sbox-btn-close" href="#">
+   </a>
+   <div id="sbox-content" style="visibility: hidden; opacity: 0;">
+   </div>
+  </div>
+  <div class="tool-tip" style="position: absolute; top: 0px; left: 0px; visibility: hidden;">
+   <div>
+   </div>
+  </div>
+ </body>
+</html>

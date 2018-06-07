@@ -1,0 +1,1120 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" style="" class=" js no-touch csstransforms csstransitions">
+ <head>
+  <meta charset="utf-8" />
+  <title>
+   QUBE ICD
+  </title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/bootstrap.css" />
+  <link rel="stylesheet" href="css/bootstrap-responsive.css" />
+  <link rel="stylesheet" href="css/megamenu.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/font-awesome.css" />
+  <link href="js/fancybox/jquery.fancybox.css?v=2.1.4" rel="stylesheet" />
+  <!-- REVOLUTION BANNER CSS SETTINGS -->
+  <link media="screen" href="css/fullwidth.css" rel="stylesheet" />
+  <link media="screen" href="css/settings.css" rel="stylesheet" />
+  <!-- Jquery -->
+  <script src="js/jquery.js">
+  </script>
+  <script src="js/respond.min.js">
+  </script>
+  <script src="js/modernizr.custom.17475.js">
+  </script>
+  <!-- Fonts-->
+  <link media="all" title="helvetica" href="css/helvetica.css" type="text/css" rel="alternate stylesheet" />
+  <link media="all" title="cabin" href="css/cabin.css" type="text/css" rel="alternate stylesheet" />
+  <link media="all" title="droid" href="css/droid.css" type="text/css" rel="alternate stylesheet" />
+  <link media="all" title="lato" href="css/lato.css" type="text/css" rel="alternate stylesheet" />
+  <link media="all" title="montserrat" href="css/montserrat.css" type="text/css" rel="alternate stylesheet" />
+  <link media="all" title="opensans" href="css/opensans.css" type="text/css" rel="alternate stylesheet" />
+  <link media="all" title="quattrocento" href="css/quattrocento.css" type="text/css" rel="alternate stylesheet" />
+  <link media="all" title="roboto" href="css/roboto.css" type="text/css" rel="alternate stylesheet" />
+  <link media="all" title="robotoslab" href="css/robotoslab.css" type="text/css" rel="alternate stylesheet" />
+  <link href="css/pagination.css" type="text/css" rel="stylesheet" />
+  <link type="text/css" rel="stylesheet" href="css/B_blue.css" />
+  <!-- Include KillerCarousel JavaScript -->
+  <script src="gallery_slide/js/killercarousel.js" type="text/javascript">
+  </script>
+  <!-- Include KillerCarousel CSS -->
+  <link rel="stylesheet" type="text/css" href="gallery_slide/css/killercarousel.css" />
+  <script type="text/javascript">
+   $(function() {
+        $('.kc-wrap').KillerCarousel({
+            // Width of carousel.
+            width: 800,
+            // Item spacing in 3d (CSS3 3d) mode.
+            spacing3d: 120,
+            // Item spacing in 2d (no CSS3 3d) mode. 
+            spacing2d: 120,
+            // Path to images for shadows etc.
+            imagePath: "gallery_slide/js/killercarousel/",
+            showShadow: true,
+            showReflection: true,
+            // Looping mode.
+            infiniteLoop: true,
+            // Scale at 75% of parent element.
+            autoScale: 85
+
+        });
+
+        var kc = $('.kc-wrap').data('KillerCarousel');
+        var dir = 0;
+        setInterval(function() {
+            kc.position(kc.position() + dir * 50);
+        }, 100)
+        $(window).bind('mouseup touchend', function() {
+            dir = 0;
+            kc.lineUp();
+        })
+        $('.nav-but-left,.nav-but-right').bind('mousedown touchstart', function(evt) {
+            // console.log(evt.type + " "+Date.now());
+            dir = -1;
+            if ($(this).hasClass('nav-but-left'))
+                dir = 1;
+            evt.preventDefault();
+            return false;
+        })
+
+    });
+  </script>
+  <style>
+   .kc-wrapx {
+        top:-15px;
+        background-position: center 45%;
+        clear:both;
+    }
+
+
+
+    /* CSS for item wrapper */
+    .kc-item {
+        position:absolute;              
+        width:150px;
+        height:170px;
+    }
+
+    /* CSS for images inside item wrapper */
+    .kc-item img {
+        position:absolute;
+       /* pointer-events: none; */  /* Make images non-selectable. */
+        width:100%;             /* Make images expand to wrapper size (used in 2d modes). */
+    }
+
+    #nav-buts {
+        position:absolute;
+        bottom:10px;
+        right:10px;
+    }
+
+    .nav-but-left,.nav-but-right {
+        font-family: arial;
+        width:32px;
+        height:28px;
+        border:2px solid #ccc;
+        background-color: #444;
+        border-radius: 5px;
+        text-align:center;
+        float:left;
+        color:#fff;
+        font-size: 16px;
+        margin-right:10px;
+        padding-top:0px;
+        box-shadow: 1px 1px 3px rgba(0,0,0,0.25);
+        cursor: pointer;
+    }
+    .nav-but-left:hover,.nav-but-right:hover {
+        background-color:#666;
+    }
+  </style>
+  <style type="text/css">
+   .nam
+{
+float:left;
+font-size:14px;
+background:#fff;
+margin-top:10px;
+width:100%;
+height:20px;
+text-align:center;
+ text-transform: uppercase;
+ word-wrap: break-word;
+ color:#238C00;
+ font-weight: bold;
+ 
+}
+.nam1
+{
+float:center;
+font-size:14px;
+background:#fff;
+margin-top:15px;
+margin-bottom:15px;
+width:100%;
+height:30px;
+text-align:center;
+text-transform: uppercase;
+color:#001966;
+word-wrap: break-word;
+font-weight: bold;
+font-style:italic;
+
+}
+  </style>
+ </head>
+ <body>
+  <header>
+   <div class="container">
+    <div class="row">
+     <div id="logo" class="span4">
+      <a href="index.php">
+       <img alt="Logo" src="img/logo.png" />
+      </a>
+     </div>
+     <div class="span8">
+      <div class="hidden-phone1" id="phone">
+       <a href="https://www.facebook.com/QUBEICD">
+        <img class="rotate" alt="" src="img/fb/fb.png" />
+       </a>
+       <a href="%20https://twitter.com/Qubeicd">
+        <img class="rotate" alt="" src="img/fb/tw.png" />
+       </a>
+       <a href="https://plus.google.com/u/0/101106869237304566757%20">
+        <img class="rotate" alt="" src="img/fb/gp.png" />
+       </a>
+       <p>
+        <img src="img/Call.png" />
+       </p>
+      </div>
+     </div>
+     <!-- End span8-->
+    </div>
+    <!-- End row-->
+   </div>
+   <!-- End container-->
+  </header>
+  <!-- End Header-->
+  <nav>
+   <div class="megamenu_container">
+    <a href="#" id="megamenu-button-mobile">
+     Menu
+    </a>
+    <!-- Menu button responsive-->
+    <!-- Begin Mega Menu Container -->
+    <ul class="megamenu">
+     <!-- Begin Mega Menu -->
+     <li>
+      <a class="nodrop-down" href="index.php">
+       Home
+      </a>
+     </li>
+     <li>
+      <a class="nodrop-down" href="about.html">
+       About Us
+      </a>
+     </li>
+     <li>
+      <a class="nodrop-down" href="course.html">
+       Courses
+      </a>
+     </li>
+     <li>
+      <a class="nodrop-down" href="gallery.php">
+       Gallery
+      </a>
+     </li>
+     <li>
+      <a class="nodrop-down" href="contact.html">
+       Contact Us
+      </a>
+     </li>
+    </ul>
+    <!-- End Mega Menu -->
+   </div>
+  </nav>
+  <!--Star slider-->
+  <div class="container">
+   <div class="row">
+    <!-- =========================Start Col right section ============================= -->
+    <section class="span12 ">
+     <div class="col-right">
+      <!----------------------->
+      <div class="row-fluid">
+       <h3 style="color:#fff;font-weight: bold;text-align: center;background-color: #B01F81;padding: 10px;border-radius: 5px;">
+        CONGRATULATIONS TO ALL OUR ACHIEVERS
+       </h3>
+       <!--<div class = "kc-wrap" title="Scroll to Right or Left">
+                    Carousel items follow 
+					
+					
+					<div class="kc-item" >
+                        <img src="img/toppers/Aarthi.jpg" alt = "image1" title="Scroll to Right or Left"  class="zoo">
+                    </div>
+                    <div class="kc-item">
+                        <img src="img/toppers/Aruna.jpg" alt = "image2" title="Scroll to Right or Left" class="zoo">
+                    </div> 
+                    <div class="kc-item">
+                        <img src="img/toppers/athish.jpg" alt = "image3" title="Scroll to Right or Left" class="zoo">
+                    </div>
+                    <div class="kc-item">
+                        <img src="img/toppers/gokul.jpg" alt = "image4" title="Scroll to Right or Left" class="zoo">
+                    </div>
+                    <div class="kc-item">
+                        <img src="img/toppers/ilamathi.jpg" alt = "image5" title="Scroll to Right or Left" class="zoo">
+                    </div>
+                    <div class="kc-item">
+                        <img src="img/toppers/jaya.jpg" alt = "image6" title="Scroll to Right or Left" class="zoo">
+                    </div>
+                    <div class="kc-item">
+                        <img src="img/toppers/karthi.jpg" alt = "image7" title="Scroll to Right or Left" class="zoo">
+                    </div>
+                    <div class="kc-item">
+                        <img src="img/toppers/karthikeyan.jpg" alt = "image8" title="Scroll to Right or Left" class="zoo">
+                    </div>
+                    <div class="kc-item">
+                        <img src="img/toppers/Mahendran.jpg" alt = "image9" title="Scroll to Right or Left" class="zoo">
+                    </div>
+                    <div class="kc-item">
+                        <img src="img/toppers/Raghul.jpg" alt = "image10" title="Scroll to Right or Left" class="zoo">
+                    </div>
+                    <div class="kc-item">
+                        <img src="img/toppers/Sankari.jpg" alt = "image11" title="Scroll to Right or Left" class="zoo">
+                    </div>
+                    <div class="kc-item">
+                        <img src="img/toppers/3-pht.jpg" alt = "image12" title="Scroll to Right or Left" class="zoo">
+                    </div>
+                    <div class="kc-item">
+                        <img src="img/toppers/2-pht.jpg" alt = "image13" title="Scroll to Right or Left" class="zoo">
+                    </div>
+                    <div class="kc-item">
+                        <img src="img/toppers/vignesh.jpg" alt = "image14" title="Scroll to Right or Left" class="zoo">
+                    </div>
+                    <div class="kc-item">
+                        <img src="img/toppers/ponn.jpg" alt = "image15" title="Scroll to Right or Left" class="zoo">
+                    </div>
+                    <div class="kc-item">
+                        <img src="img/toppers/abi.jpg" alt = "image16" title="Scroll to Right or Left" class="zoo">
+                    </div>
+                    <div class="kc-item">
+                        <img src="img/toppers/anba.jpg" alt = "image17" title="Scroll to Right or Left" class="zoo">
+                    </div>
+                    <div class="kc-item">
+                        <img src="img/toppers/gaya.jpg" alt = "image18" title="Scroll to Right or Left" class="zoo">
+                    </div>
+                    <div class="kc-item">
+                        <img src="img/toppers/kuma.jpg" alt = "image19" title="Scroll to Right or Left" class="zoo">
+                    </div>
+                    <div class="kc-item">
+                        <img src="img/toppers/vidhya.jpg" alt = "image20" title="Scroll to Right or Left" class="zoo">
+                    </div>
+                    <div class="kc-item">
+                        <img src="img/toppers/1-Pht.jpg" alt = "image21" title="Scroll to Right or Left" class="zoo">
+                    </div>
+                    <div class="kc-item">
+                        <img src="img/toppers/Sriram.jpg" alt = "image22" title="Scroll to Right or Left" class="zoo">
+                    </div>
+                    <div class="kc-item">
+                        <img src="img/toppers/Vaishnavi.jpg" alt = "image23" title="Scroll to Right or Left" class="zoo">
+                    </div>
+                    
+                    
+                    
+
+                    <div id="nav-buts">
+                        <div class="nav-but-left">&laquo;</div>
+                        <div class="nav-but-right">&raquo;</div>
+                    </div>
+</div>-->
+       <!------------------------------------------->
+       <div class="project-list">
+        <img src="img/fb/arc.png" />
+        <ul style="width: 90%;margin-left: 11%;margin-top: -80%">
+         <li>
+          <a title="Ms. Illamathi                        <br/>STATE BANK OF HYDERABAD                    " class="fancybox" rel="gallery1" href="gallery/20141112073419.jpg">
+          </a>
+          <div style="background:#8F1B6A; padding:none;" class="box-style-one borders">
+           <a title="Ms. Illamathi                        <br/>STATE BANK OF HYDERABAD                    " class="fancybox" rel="gallery1" href="gallery/20141112073419.jpg">
+            <img style="width:150px;height:150px;" alt="Ms. Illamathi                        " src="gallery/20141112073419.jpg" />
+            <h5>
+             Ms. Illamathi
+            </h5>
+            <h6>
+             STATE BANK OF HYDERABAD
+            </h6>
+           </a>
+          </div>
+         </li>
+         <li>
+          <a title="Mr. GokulKumar<br/>BANK OF BARODA" class="fancybox" rel="gallery1" href="gallery/20141112073443.jpg">
+          </a>
+          <div style="background:#8F1B6A; padding:none;" class="box-style-one borders">
+           <a title="Mr. GokulKumar<br/>BANK OF BARODA" class="fancybox" rel="gallery1" href="gallery/20141112073443.jpg">
+            <img style="width:150px;height:150px;" alt="Mr. GokulKumar" src="gallery/20141112073443.jpg" />
+            <h5>
+             Mr. GokulKumar
+            </h5>
+            <h6>
+             BANK OF BARODA
+            </h6>
+           </a>
+          </div>
+         </li>
+         <li>
+          <a title="Mrs. Sankari<br/>BANK OF BARODA " class="fancybox" rel="gallery1" href="gallery/20141112073514.jpg">
+          </a>
+          <div style="background:#8F1B6A; padding:none;" class="box-style-one borders">
+           <a title="Mrs. Sankari<br/>BANK OF BARODA " class="fancybox" rel="gallery1" href="gallery/20141112073514.jpg">
+            <img style="width:150px;height:150px;" alt="Mrs. Sankari" src="gallery/20141112073514.jpg" />
+            <h5>
+             Mrs. Sankari
+            </h5>
+            <h6>
+             BANK OF BARODA
+            </h6>
+           </a>
+          </div>
+         </li>
+         <li>
+          <a title="Mr.Athistha Kumar <br/>INDIAN BANK " class="fancybox" rel="gallery1" href="gallery/20141112073543.jpg">
+          </a>
+          <div style="background:#8F1B6A; padding:none;" class="box-style-one borders">
+           <a title="Mr.Athistha Kumar <br/>INDIAN BANK " class="fancybox" rel="gallery1" href="gallery/20141112073543.jpg">
+            <img style="width:150px;height:150px;" alt="Mr.Athistha Kumar " src="gallery/20141112073543.jpg" />
+            <h5>
+             Mr.Athistha Kumar
+            </h5>
+            <h6>
+             INDIAN BANK
+            </h6>
+           </a>
+          </div>
+         </li>
+         <li>
+          <a title="Mr. Karthi<br/>BANK OF BARODA, REPCO" class="fancybox" rel="gallery1" href="gallery/20141112073558.jpg">
+          </a>
+          <div style="background:#8F1B6A; padding:none;" class="box-style-one borders">
+           <a title="Mr. Karthi<br/>BANK OF BARODA, REPCO" class="fancybox" rel="gallery1" href="gallery/20141112073558.jpg">
+            <img style="width:150px;height:150px;" alt="Mr. Karthi" src="gallery/20141112073558.jpg" />
+            <h5>
+             Mr. Karthi
+            </h5>
+            <h6>
+             BANK OF BARODA, REPCO
+            </h6>
+           </a>
+          </div>
+         </li>
+         <li>
+          <a title="Mr. Anbarassan<br/>UCO BANK" class="fancybox" rel="gallery1" href="gallery/20141112073621.jpg">
+          </a>
+          <div style="background:#8F1B6A; padding:none;" class="box-style-one borders">
+           <a title="Mr. Anbarassan<br/>UCO BANK" class="fancybox" rel="gallery1" href="gallery/20141112073621.jpg">
+            <img style="width:150px;height:150px;" alt="Mr. Anbarassan" src="gallery/20141112073621.jpg" />
+            <h5>
+             Mr. Anbarassan
+            </h5>
+            <h6>
+             UCO BANK
+            </h6>
+           </a>
+          </div>
+         </li>
+         <li>
+          <a title="Mr.Sriram Muralidharan<br/>CANARA BANK" class="fancybox" rel="gallery1" href="gallery/20141112073644.jpg">
+          </a>
+          <div style="background:#8F1B6A; padding:none;" class="box-style-one borders">
+           <a title="Mr.Sriram Muralidharan<br/>CANARA BANK" class="fancybox" rel="gallery1" href="gallery/20141112073644.jpg">
+            <img style="width:150px;height:150px;" alt="Mr.Sriram Muralidharan" src="gallery/20141112073644.jpg" />
+            <h5>
+             Mr.Sriram Muralidharan
+            </h5>
+            <h6>
+             CANARA BANK
+            </h6>
+           </a>
+          </div>
+         </li>
+         <li>
+          <a title="Ms.Vidhya<br/>INDIAN BANK " class="fancybox" rel="gallery1" href="gallery/20141112073708.jpg">
+          </a>
+          <div style="background:#8F1B6A; padding:none;" class="box-style-one borders">
+           <a title="Ms.Vidhya<br/>INDIAN BANK " class="fancybox" rel="gallery1" href="gallery/20141112073708.jpg">
+            <img style="width:150px;height:150px;" alt="Ms.Vidhya" src="gallery/20141112073708.jpg" />
+            <h5>
+             Ms.Vidhya
+            </h5>
+            <h6>
+             INDIAN BANK
+            </h6>
+           </a>
+          </div>
+         </li>
+         <li>
+          <a title="Ms. Vaishnavi <br/>INDIAN OVERSEAS BANK" class="fancybox" rel="gallery1" href="gallery/20141112073725.jpg">
+          </a>
+          <div style="background:#8F1B6A; padding:none;" class="box-style-one borders">
+           <a title="Ms. Vaishnavi <br/>INDIAN OVERSEAS BANK" class="fancybox" rel="gallery1" href="gallery/20141112073725.jpg">
+            <img style="width:150px;height:150px;" alt="Ms. Vaishnavi " src="gallery/20141112073725.jpg" />
+            <h5>
+             Ms. Vaishnavi
+            </h5>
+            <h6>
+             INDIAN OVERSEAS BANK
+            </h6>
+           </a>
+          </div>
+         </li>
+         <li>
+          <a title="Mr. Kumaravel<br/>BANK OF BARODA" class="fancybox" rel="gallery1" href="gallery/20141108095019.jpg">
+          </a>
+          <div style="background:#8F1B6A; padding:none;" class="box-style-one borders">
+           <a title="Mr. Kumaravel<br/>BANK OF BARODA" class="fancybox" rel="gallery1" href="gallery/20141108095019.jpg">
+            <img style="width:150px;height:150px;" alt="Mr. Kumaravel" src="gallery/20141108095019.jpg" />
+            <h5>
+             Mr. Kumaravel
+            </h5>
+            <h6>
+             BANK OF BARODA
+            </h6>
+           </a>
+          </div>
+         </li>
+         <li>
+          <a title="Ms.Aarthi <br/>CORPORATION BANK" class="fancybox" rel="gallery1" href="gallery/20141112073818.jpg">
+          </a>
+          <div style="background:#8F1B6A; padding:none;" class="box-style-one borders">
+           <a title="Ms.Aarthi <br/>CORPORATION BANK" class="fancybox" rel="gallery1" href="gallery/20141112073818.jpg">
+            <img style="width:150px;height:150px;" alt="Ms.Aarthi " src="gallery/20141112073818.jpg" />
+            <h5>
+             Ms.Aarthi
+            </h5>
+            <h6>
+             CORPORATION BANK
+            </h6>
+           </a>
+          </div>
+         </li>
+         <li>
+          <a title="Mr. Ponn Rajasekaran<br/>BANK OF BARODA" class="fancybox" rel="gallery1" href="gallery/20141112073826.jpg">
+          </a>
+          <div style="background:#8F1B6A; padding:none;" class="box-style-one borders">
+           <a title="Mr. Ponn Rajasekaran<br/>BANK OF BARODA" class="fancybox" rel="gallery1" href="gallery/20141112073826.jpg">
+            <img style="width:150px;height:150px;" alt="Mr. Ponn Rajasekaran" src="gallery/20141112073826.jpg" />
+            <h5>
+             Mr. Ponn Rajasekaran
+            </h5>
+            <h6>
+             BANK OF BARODA
+            </h6>
+           </a>
+          </div>
+         </li>
+         <li>
+          <a title="Mr. Abimanue<br/>ORIENTAL BANK OF COMMERCE" class="fancybox" rel="gallery1" href="gallery/20141108033330.jpg">
+          </a>
+          <div style="background:#8F1B6A; padding:none;" class="box-style-one borders">
+           <a title="Mr. Abimanue<br/>ORIENTAL BANK OF COMMERCE" class="fancybox" rel="gallery1" href="gallery/20141108033330.jpg">
+            <img style="width:150px;height:150px;" alt="Mr. Abimanue" src="gallery/20141108033330.jpg" />
+            <h5>
+             Mr. Abimanue
+            </h5>
+            <h6>
+             ORIENTAL BANK OF COMMERCE
+            </h6>
+           </a>
+          </div>
+         </li>
+         <li>
+          <a title="Mr.Karthikeyan<br/>PUNJAB NATIONAL BANK" class="fancybox" rel="gallery1" href="gallery/20151121064215.jpg">
+          </a>
+          <div style="background:#8F1B6A; padding:none;" class="box-style-one borders">
+           <a title="Mr.Karthikeyan<br/>PUNJAB NATIONAL BANK" class="fancybox" rel="gallery1" href="gallery/20151121064215.jpg">
+            <img style="width:150px;height:150px;" alt="Mr.Karthikeyan" src="gallery/20151121064215.jpg" />
+            <h5>
+             Mr.Karthikeyan
+            </h5>
+            <h6>
+             PUNJAB NATIONAL BANK
+            </h6>
+           </a>
+          </div>
+         </li>
+         <li>
+          <a title="Mrs.Gayathridevi<br/>INDIAN OVERSEAS BANK" class="fancybox" rel="gallery1" href="gallery/20151121064111.jpg">
+          </a>
+          <div style="background:#8F1B6A; padding:none;" class="box-style-one borders">
+           <a title="Mrs.Gayathridevi<br/>INDIAN OVERSEAS BANK" class="fancybox" rel="gallery1" href="gallery/20151121064111.jpg">
+            <img style="width:150px;height:150px;" alt="Mrs.Gayathridevi" src="gallery/20151121064111.jpg" />
+            <h5>
+             Mrs.Gayathridevi
+            </h5>
+            <h6>
+             INDIAN OVERSEAS BANK
+            </h6>
+           </a>
+          </div>
+         </li>
+         <li>
+          <a title="Mr. Mahendran <br/>SOUTH INDIAN BANK" class="fancybox" rel="gallery1" href="gallery/20151121064008.jpg">
+          </a>
+          <div style="background:#8F1B6A; padding:none;" class="box-style-one borders">
+           <a title="Mr. Mahendran <br/>SOUTH INDIAN BANK" class="fancybox" rel="gallery1" href="gallery/20151121064008.jpg">
+            <img style="width:150px;height:150px;" alt="Mr. Mahendran " src="gallery/20151121064008.jpg" />
+            <h5>
+             Mr. Mahendran
+            </h5>
+            <h6>
+             SOUTH INDIAN BANK
+            </h6>
+           </a>
+          </div>
+         </li>
+         <li>
+          <a title="Mr. Vignesh <br/>SOUTH INDIAN BANK " class="fancybox" rel="gallery1" href="gallery/20151121063650.jpg">
+          </a>
+          <div style="background:#8F1B6A; padding:none;" class="box-style-one borders">
+           <a title="Mr. Vignesh <br/>SOUTH INDIAN BANK " class="fancybox" rel="gallery1" href="gallery/20151121063650.jpg">
+            <img style="width:150px;height:150px;" alt="Mr. Vignesh " src="gallery/20151121063650.jpg" />
+            <h5>
+             Mr. Vignesh
+            </h5>
+            <h6>
+             SOUTH INDIAN BANK
+            </h6>
+           </a>
+          </div>
+         </li>
+         <li>
+          <a title=" Ms. Aruna<br/>SOUTH INDIAN BANK" class="fancybox" rel="gallery1" href="gallery/20151121062419.jpg">
+          </a>
+          <div style="background:#8F1B6A; padding:none;" class="box-style-one borders">
+           <a title=" Ms. Aruna<br/>SOUTH INDIAN BANK" class="fancybox" rel="gallery1" href="gallery/20151121062419.jpg">
+            <img style="width:150px;height:150px;" alt=" Ms. Aruna" src="gallery/20151121062419.jpg" />
+            <h5>
+             Ms. Aruna
+            </h5>
+            <h6>
+             SOUTH INDIAN BANK
+            </h6>
+           </a>
+          </div>
+         </li>
+         <li>
+          <a title="Mr. Rahul Bharathi<br/>SOUTH INDIAN BANK" class="fancybox" rel="gallery1" href="gallery/20151121063132.jpg">
+          </a>
+          <div style="background:#8F1B6A; padding:none;" class="box-style-one borders">
+           <a title="Mr. Rahul Bharathi<br/>SOUTH INDIAN BANK" class="fancybox" rel="gallery1" href="gallery/20151121063132.jpg">
+            <img style="width:150px;height:150px;" alt="Mr. Rahul Bharathi" src="gallery/20151121063132.jpg" />
+            <h5>
+             Mr. Rahul Bharathi
+            </h5>
+            <h6>
+             SOUTH INDIAN BANK
+            </h6>
+           </a>
+          </div>
+         </li>
+         <li>
+          <a title="Vignesh<br/>IBPS" class="fancybox" rel="gallery1" href="gallery/20151125034950.jpg">
+          </a>
+          <div style="background:#8F1B6A; padding:none;" class="box-style-one borders">
+           <a title="Vignesh<br/>IBPS" class="fancybox" rel="gallery1" href="gallery/20151125034950.jpg">
+            <img style="width:150px;height:150px;" alt="Vignesh" src="gallery/20151125034950.jpg" />
+            <h5>
+             Vignesh
+            </h5>
+            <h6>
+             IBPS
+            </h6>
+           </a>
+          </div>
+         </li>
+         <li>
+          <a title=" Ms. BHARANI<br/>IBPS" class="fancybox" rel="gallery1" href="gallery/20151125035514.JPG">
+          </a>
+          <div style="background:#8F1B6A; padding:none;" class="box-style-one borders">
+           <a title=" Ms. BHARANI<br/>IBPS" class="fancybox" rel="gallery1" href="gallery/20151125035514.JPG">
+            <img style="width:150px;height:150px;" alt=" Ms. BHARANI" src="gallery/20151125035514.JPG" />
+            <h5>
+             Ms. BHARANI
+            </h5>
+            <h6>
+             IBPS
+            </h6>
+           </a>
+          </div>
+         </li>
+         <li>
+          <a title="Mr. KARTHIC <br/>IBPS" class="fancybox" rel="gallery1" href="gallery/20151125035752.jpg">
+          </a>
+          <div style="background:#8F1B6A; padding:none;" class="box-style-one borders">
+           <a title="Mr. KARTHIC <br/>IBPS" class="fancybox" rel="gallery1" href="gallery/20151125035752.jpg">
+            <img style="width:150px;height:150px;" alt="Mr. KARTHIC " src="gallery/20151125035752.jpg" />
+            <h5>
+             Mr. KARTHIC
+            </h5>
+            <h6>
+             IBPS
+            </h6>
+           </a>
+          </div>
+         </li>
+         <li>
+          <a title="Mr. KRISHNA DAS<br/>IBPS" class="fancybox" rel="gallery1" href="gallery/20151125035902.jpg">
+          </a>
+          <div style="background:#8F1B6A; padding:none;" class="box-style-one borders">
+           <a title="Mr. KRISHNA DAS<br/>IBPS" class="fancybox" rel="gallery1" href="gallery/20151125035902.jpg">
+            <img style="width:150px;height:150px;" alt="Mr. KRISHNA DAS" src="gallery/20151125035902.jpg" />
+            <h5>
+             Mr. KRISHNA DAS
+            </h5>
+            <h6>
+             IBPS
+            </h6>
+           </a>
+          </div>
+         </li>
+         <li>
+          <a title=" Mr. KUMARAVEL<br/>IBPS" class="fancybox" rel="gallery1" href="gallery/20151125035940.jpg">
+          </a>
+          <div style="background:#8F1B6A; padding:none;" class="box-style-one borders">
+           <a title=" Mr. KUMARAVEL<br/>IBPS" class="fancybox" rel="gallery1" href="gallery/20151125035940.jpg">
+            <img style="width:150px;height:150px;" alt=" Mr. KUMARAVEL" src="gallery/20151125035940.jpg" />
+            <h5>
+             Mr. KUMARAVEL
+            </h5>
+            <h6>
+             IBPS
+            </h6>
+           </a>
+          </div>
+         </li>
+         <li>
+          <a title="Ms. BHUVANESHWARI <br/>IBPS" class="fancybox" rel="gallery1" href="gallery/20151125040017.jpg">
+          </a>
+          <div style="background:#8F1B6A; padding:none;" class="box-style-one borders">
+           <a title="Ms. BHUVANESHWARI <br/>IBPS" class="fancybox" rel="gallery1" href="gallery/20151125040017.jpg">
+            <img style="width:150px;height:150px;" alt="Ms. BHUVANESHWARI " src="gallery/20151125040017.jpg" />
+            <h5>
+             Ms. BHUVANESHWARI
+            </h5>
+            <h6>
+             IBPS
+            </h6>
+           </a>
+          </div>
+         </li>
+         <li>
+          <a title="Mrs. GOWRI<br/>IBPS" class="fancybox" rel="gallery1" href="gallery/20151125040107.jpg">
+          </a>
+          <div style="background:#8F1B6A; padding:none;" class="box-style-one borders">
+           <a title="Mrs. GOWRI<br/>IBPS" class="fancybox" rel="gallery1" href="gallery/20151125040107.jpg">
+            <img style="width:150px;height:150px;" alt="Mrs. GOWRI" src="gallery/20151125040107.jpg" />
+            <h5>
+             Mrs. GOWRI
+            </h5>
+            <h6>
+             IBPS
+            </h6>
+           </a>
+          </div>
+         </li>
+         <li>
+          <a title="Mr. VIGNESH<br/>IBPS" class="fancybox" rel="gallery1" href="gallery/20151125040138.jpg">
+          </a>
+          <div style="background:#8F1B6A; padding:none;" class="box-style-one borders">
+           <a title="Mr. VIGNESH<br/>IBPS" class="fancybox" rel="gallery1" href="gallery/20151125040138.jpg">
+            <img style="width:150px;height:150px;" alt="Mr. VIGNESH" src="gallery/20151125040138.jpg" />
+            <h5>
+             Mr. VIGNESH
+            </h5>
+            <h6>
+             IBPS
+            </h6>
+           </a>
+          </div>
+         </li>
+         <li>
+          <a title="Mr. DINESHWARAN<br/>IBPS" class="fancybox" rel="gallery1" href="gallery/20151125040208.jpg">
+          </a>
+          <div style="background:#8F1B6A; padding:none;" class="box-style-one borders">
+           <a title="Mr. DINESHWARAN<br/>IBPS" class="fancybox" rel="gallery1" href="gallery/20151125040208.jpg">
+            <img style="width:150px;height:150px;" alt="Mr. DINESHWARAN" src="gallery/20151125040208.jpg" />
+            <h5>
+             Mr. DINESHWARAN
+            </h5>
+            <h6>
+             IBPS
+            </h6>
+           </a>
+          </div>
+         </li>
+         <li>
+          <a title="Ms. PAVITHRA<br/>IBPS" class="fancybox" rel="gallery1" href="gallery/20151125040349.JPG">
+          </a>
+          <div style="background:#8F1B6A; padding:none;" class="box-style-one borders">
+           <a title="Ms. PAVITHRA<br/>IBPS" class="fancybox" rel="gallery1" href="gallery/20151125040349.JPG">
+            <img style="width:150px;height:150px;" alt="Ms. PAVITHRA" src="gallery/20151125040349.JPG" />
+            <h5>
+             Ms. PAVITHRA
+            </h5>
+            <h6>
+             IBPS
+            </h6>
+           </a>
+          </div>
+         </li>
+         <li>
+          <a title=" Ms. BHUVANESHWARI<br/>IBPS" class="fancybox" rel="gallery1" href="gallery/20151125040413.jpg">
+          </a>
+          <div style="background:#8F1B6A; padding:none;" class="box-style-one borders">
+           <a title=" Ms. BHUVANESHWARI<br/>IBPS" class="fancybox" rel="gallery1" href="gallery/20151125040413.jpg">
+            <img style="width:150px;height:150px;" alt=" Ms. BHUVANESHWARI" src="gallery/20151125040413.jpg" />
+            <h5>
+             Ms. BHUVANESHWARI
+            </h5>
+            <h6>
+             IBPS
+            </h6>
+           </a>
+          </div>
+         </li>
+         <li>
+          <a title=" Ms. GAYATHRI <br/>IBPS" class="fancybox" rel="gallery1" href="gallery/20151125040433.jpg">
+          </a>
+          <div style="background:#8F1B6A; padding:none;" class="box-style-one borders">
+           <a title=" Ms. GAYATHRI <br/>IBPS" class="fancybox" rel="gallery1" href="gallery/20151125040433.jpg">
+            <img style="width:150px;height:150px;" alt=" Ms. GAYATHRI " src="gallery/20151125040433.jpg" />
+            <h5>
+             Ms. GAYATHRI
+            </h5>
+            <h6>
+             IBPS
+            </h6>
+           </a>
+          </div>
+         </li>
+         <li>
+          <a title="Ms. KARTHIKA<br/>IBPS" class="fancybox" rel="gallery1" href="gallery/20151125040500.jpg">
+          </a>
+          <div style="background:#8F1B6A; padding:none;" class="box-style-one borders">
+           <a title="Ms. KARTHIKA<br/>IBPS" class="fancybox" rel="gallery1" href="gallery/20151125040500.jpg">
+            <img style="width:150px;height:150px;" alt="Ms. KARTHIKA" src="gallery/20151125040500.jpg" />
+            <h5>
+             Ms. KARTHIKA
+            </h5>
+            <h6>
+             IBPS
+            </h6>
+           </a>
+          </div>
+         </li>
+         <li>
+          <a title="Ms. MYVIZHI <br/>IBPS" class="fancybox" rel="gallery1" href="gallery/20151125040529.JPG">
+          </a>
+          <div style="background:#8F1B6A; padding:none;" class="box-style-one borders">
+           <a title="Ms. MYVIZHI <br/>IBPS" class="fancybox" rel="gallery1" href="gallery/20151125040529.JPG">
+            <img style="width:150px;height:150px;" alt="Ms. MYVIZHI " src="gallery/20151125040529.JPG" />
+            <h5>
+             Ms. MYVIZHI
+            </h5>
+            <h6>
+             IBPS
+            </h6>
+           </a>
+          </div>
+         </li>
+         <li>
+          <a title="Ms. ISHWARYA<br/>IBPS" class="fancybox" rel="gallery1" href="gallery/20151125040641.jpg">
+          </a>
+          <div style="background:#8F1B6A; padding:none;" class="box-style-one borders">
+           <a title="Ms. ISHWARYA<br/>IBPS" class="fancybox" rel="gallery1" href="gallery/20151125040641.jpg">
+            <img style="width:150px;height:150px;" alt="Ms. ISHWARYA" src="gallery/20151125040641.jpg" />
+            <h5>
+             Ms. ISHWARYA
+            </h5>
+            <h6>
+             IBPS
+            </h6>
+           </a>
+          </div>
+         </li>
+         <li>
+          <a title="Ms. VIDHYA<br/>IBPS" class="fancybox" rel="gallery1" href="gallery/20151125040711.jpg">
+          </a>
+          <div style="background:#8F1B6A; padding:none;" class="box-style-one borders">
+           <a title="Ms. VIDHYA<br/>IBPS" class="fancybox" rel="gallery1" href="gallery/20151125040711.jpg">
+            <img style="width:150px;height:150px;" alt="Ms. VIDHYA" src="gallery/20151125040711.jpg" />
+            <h5>
+             Ms. VIDHYA
+            </h5>
+            <h6>
+             IBPS
+            </h6>
+           </a>
+          </div>
+         </li>
+         <li>
+          <a title=" Ms. SNEHA<br/>IBPS" class="fancybox" rel="gallery1" href="gallery/20151125040731.jpg">
+          </a>
+          <div style="background:#8F1B6A; padding:none;" class="box-style-one borders">
+           <a title=" Ms. SNEHA<br/>IBPS" class="fancybox" rel="gallery1" href="gallery/20151125040731.jpg">
+            <img style="width:150px;height:150px;" alt=" Ms. SNEHA" src="gallery/20151125040731.jpg" />
+            <h5>
+             Ms. SNEHA
+            </h5>
+            <h6>
+             IBPS
+            </h6>
+           </a>
+          </div>
+         </li>
+         <li>
+          <a title="Ms. MADHUMITHA<br/>IBPS" class="fancybox" rel="gallery1" href="gallery/20151125040751.jpg">
+          </a>
+          <div style="background:#8F1B6A; padding:none;" class="box-style-one borders">
+           <a title="Ms. MADHUMITHA<br/>IBPS" class="fancybox" rel="gallery1" href="gallery/20151125040751.jpg">
+            <img style="width:150px;height:150px;" alt="Ms. MADHUMITHA" src="gallery/20151125040751.jpg" />
+            <h5>
+             Ms. MADHUMITHA
+            </h5>
+            <h6>
+             IBPS
+            </h6>
+           </a>
+          </div>
+         </li>
+         <li>
+          <a title=" Mrs. GOWRI <br/>IBPS" class="fancybox" rel="gallery1" href="gallery/20151125040812.jpg">
+          </a>
+          <div style="background:#8F1B6A; padding:none;" class="box-style-one borders">
+           <a title=" Mrs. GOWRI <br/>IBPS" class="fancybox" rel="gallery1" href="gallery/20151125040812.jpg">
+            <img style="width:150px;height:150px;" alt=" Mrs. GOWRI " src="gallery/20151125040812.jpg" />
+            <h5>
+             Mrs. GOWRI
+            </h5>
+            <h6>
+             IBPS
+            </h6>
+           </a>
+          </div>
+         </li>
+         <li>
+          <a title=" Mr. ABIMANUE<br/>IBPS" class="fancybox" rel="gallery1" href="gallery/20151125040828.jpg">
+          </a>
+          <div style="background:#8F1B6A; padding:none;" class="box-style-one borders">
+           <a title=" Mr. ABIMANUE<br/>IBPS" class="fancybox" rel="gallery1" href="gallery/20151125040828.jpg">
+            <img style="width:150px;height:150px;" alt=" Mr. ABIMANUE" src="gallery/20151125040828.jpg" />
+            <h5>
+             Mr. ABIMANUE
+            </h5>
+            <h6>
+             IBPS
+            </h6>
+           </a>
+          </div>
+         </li>
+         <li>
+          <a title="Mr. KARTHIC<br/>IBPS" class="fancybox" rel="gallery1" href="gallery/20151125040844.jpg">
+          </a>
+          <div style="background:#8F1B6A; padding:none;" class="box-style-one borders">
+           <a title="Mr. KARTHIC<br/>IBPS" class="fancybox" rel="gallery1" href="gallery/20151125040844.jpg">
+            <img style="width:150px;height:150px;" alt="Mr. KARTHIC" src="gallery/20151125040844.jpg" />
+            <h5>
+             Mr. KARTHIC
+            </h5>
+            <h6>
+             IBPS
+            </h6>
+           </a>
+          </div>
+         </li>
+        </ul>
+       </div>
+      </div>
+     </div>
+    </section>
+    <!-- end col right-->
+    <nav class="pagination">
+     <ul>
+      <ul class="pages">
+       <li class="details">
+        Page 1 of 3
+       </li>
+       <li>
+        <a class="current">
+         1
+        </a>
+       </li>
+       <li>
+        <a href="?page=2">
+         2
+        </a>
+       </li>
+       <li>
+        <a href="?page=3">
+         3
+        </a>
+       </li>
+       <li>
+        <a href="?page=2">
+         Next
+        </a>
+       </li>
+       <li>
+        <a href="?page=3">
+         Last
+        </a>
+       </li>
+      </ul>
+     </ul>
+    </nav>
+   </div>
+  </div>
+  <!-- end container-->
+  <footer>
+   <div class="container">
+    <div class="row">
+     <div id="brand-footer" class="span4">
+      <p>
+       <img alt="" src="img/logo.png" />
+      </p>
+      <div class="fb">
+       <a target="_blank" href="https://www.facebook.com/QUBEICD">
+        Follow on  Facebook
+       </a>
+      </div>
+      <br />
+      <div class="twitter">
+       <a target="_blank" href="https://twitter.com/Qubeicd">
+        Follow on Twitter
+       </a>
+      </div>
+      <br />
+      <div class="google">
+       <a target="_blank" href="https://plus.google.com/u/0/101106869237304566757">
+        Follow on Google
+       </a>
+      </div>
+     </div>
+     <div id="contacts-footer" class="span4">
+      <h4 style="font-weight:bold; color:#B01F81;">
+       Contacts
+      </h4>
+      <ul>
+       <li>
+        <i class="icon-home">
+        </i>
+        392-B, Ist Floor S.S Complex,
+        <br />
+        Opp to Tanishq Jewellery,
+        <br />
+        Gandhipuram,
+        <br />
+        Coimbatore. 641012
+       </li>
+       <li>
+        <i class="icon-phone">
+        </i>
+        Telephone: + 91 (422) 655 6552
+       </li>
+       <li>
+        <i class="icon-phone">
+        </i>
+        Mobile: + 91 - 99441 78992, +91- 98439 96659
+       </li>
+       <li>
+        <i class="icon-envelope">
+        </i>
+        Email:
+        <a href="#">
+         info@qubeicd.com
+        </a>
+        <br />
+        <a href="#">
+         qube.icd@gmail.com
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div id="quick-links" class="span4">
+      <!-- <h4>Quick links</h4>
+            <ul>
+            	<li><a href="#" >Home</a></li>
+                <li><a href="#" >About Us</a></li>
+            	<li><a href="#" >Courses</a></li>
+                <li><a href="#" >Gallery</a></li>
+                <li><a href="#" >Contact Us</a></li>
+            </ul> -->
+      <h3 style="font-weight:bold; color:#B01F81;">
+       Get it touch
+      </h3>
+      <form id="contactform" action="#" method="post">
+       <div class="row">
+        <div class="span3">
+         <input type="text" required="" placeholder="Name" id="name_contact" class="span3 ie7-margin" />
+        </div>
+       </div>
+       <div class="row">
+        <!-- <div class="span3">
+						<label>Email <span class="required">* </span></label>
+						<input type="email" id="email_contact" class="span3 ie7-margin">
+					</div> -->
+        <div class="span3">
+         <input type="text" required="" placeholder="Phone Number" class="span3 ie7-margin" id="phone_contact" />
+        </div>
+       </div>
+       <div class="row">
+        <div class="span3">
+         <textarea required="" placeholder="Message" style="width:260px;" class="span6" id="message_contact" rows="3">
+         </textarea>
+        </div>
+       </div>
+       <div class="row">
+        <div style="margin-top:-20px;" class="button-align span3">
+         <input type="submit" class=" button_medium" value="Submit" id="submit-contact" />
+        </div>
+       </div>
+      </form>
+     </div>
+    </div>
+    <hr />
+    <p>
+     Copyright © 2014 - All Rights Reserved - Qube Innovative Career Developers      Designed by
+     <a target="_blank" href="http://m8media.co.in/">
+      M8 Media
+     </a>
+    </p>
+   </div>
+  </footer>
+  <!-- End footer-->
+  <div id="toTop">
+   Back to Top
+  </div>
+  <!-- MEGAMENU -->
+  <script src="js/jquery.easing.js">
+  </script>
+  <script src="js/megamenu.js">
+  </script>
+  <!-- OTHER JS -->
+  <script src="js/bootstrap.js">
+  </script>
+  <script src="js/functions.js">
+  </script>
+  <script src="js/assets/validate.js">
+  </script>
+  <!-- FANCYBOX -->
+  <script type="text/javascript" src="js/fancybox/jquery.fancybox.pack.js?v=2.1.4">
+  </script>
+  <script type="text/javascript" src="js/fancybox/jquery.fancybox-media.js?v=1.0.5">
+  </script>
+  <script type="text/javascript" src="js/fancy_func.js">
+  </script>
+  <!-- REVOLUTION SLIDER -->
+  <!--<script src="js/jquery.themepunch.plugins.min.js"></script>
+ <script type="text/javascript" src="js/jquery.themepunch.revolution.min.js"></script>
+ <script src="js/revolutio-slider-func.js"></script>-->
+ </body>
+</html>

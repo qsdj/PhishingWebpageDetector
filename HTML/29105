@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-gb" dir="ltr" slick-uniqueid="3" class="firefox firefox15 desktop custom-responsive">
+ <head>
+  <base href="http://www.iamgroup.co.za/Contact-us/" />
+  <meta content="content-type" http-equiv="content-type" />
+  <meta content="Website of i Am Group. For EVENTS, TV & MEDIA, ACTIVATIONS and more." name="keywords" />
+  <meta content="i Am Group" name="description" />
+  <title>
+   Contact us
+  </title>
+  <link title="RSS 2.0" type="application/rss+xml" rel="alternate" href="/Contact-us/feed/rss.html" />
+  <link title="Atom 1.0" type="application/atom+xml" rel="alternate" href="/Contact-us/feed/atom.html" />
+  <link rel="shortlink" href="http://www.iamgroup.co.za/3p" />
+  <link type="text/css" href="/modules/mod_accordionslide/assets/css/accordion-slider.min.css" rel="stylesheet" />
+  <link type="text/css" href="/modules/mod_accordionslide/assets/css/jquery.fancybox.css" rel="stylesheet" />
+  <link type="text/css" href="/modules/mod_accordionslide/assets/css/accordionslide.css" rel="stylesheet" />
+  <script type="text/javascript" src="/media/system/js/mootools-core.js">
+  </script>
+  <script type="text/javascript" src="/media/system/js/core.js">
+  </script>
+  <script type="text/javascript" src="/media/system/js/mootools-more.js">
+  </script>
+  <script type="text/javascript" src="/media/jui/js/jquery.min.js">
+  </script>
+  <script type="text/javascript" src="/media/jui/js/jquery-noconflict.js">
+  </script>
+  <script type="text/javascript" src="/media/jui/js/jquery-migrate.min.js">
+  </script>
+  <script type="text/javascript" src="/media/system/js/caption.js">
+  </script>
+  <script type="text/javascript" src="/modules/mod_accordionslide/assets/js/jquery.min.js">
+  </script>
+  <script type="text/javascript" src="/modules/mod_accordionslide/assets/js/jquery.accordionSlider.min.js">
+  </script>
+  <script type="text/javascript" src="/modules/mod_accordionslide/assets/js/jquery.fancybox.pack.js">
+  </script>
+  <script type="text/javascript">
+   jQuery(function($) {
+			 $('.hasTip').each(function() {
+				var title = $(this).attr('title');
+				if (title) {
+					var parts = title.split('::', 2);
+					var mtelement = document.id(this);
+					mtelement.store('tip:title', parts[0]);
+					mtelement.store('tip:text', parts[1]);
+				}
+			});
+			var JTooltips = new Tips($('.hasTip').get(), {"maxTitleChars": 50,"fixed": false});
+		});
+jQuery(window).on('load',  function() {
+				new JCaption('img.caption');
+			});
+  </script>
+  <link type="text/css" rel="stylesheet" media="screen" href="http://www.iamgroup.co.za/libraries/cegcore/assets/bootstrap/css/bootstrap.css" />
+  <link type="text/css" rel="stylesheet" media="screen" href="http://www.iamgroup.co.za/libraries/cegcore/assets/bootstrap/css/bootstrap-theme.css" />
+  <link type="text/css" rel="stylesheet" media="screen" href="http://www.iamgroup.co.za/libraries/cegcore/assets/bootstrap/css/bootstrap-gcore.css" />
+  <link type="text/css" rel="stylesheet" media="screen" href="http://www.iamgroup.co.za/libraries/cegcore/assets/font_awesome/css/font-awesome.css" />
+  <link type="text/css" rel="stylesheet" media="screen" href="http://www.iamgroup.co.za/libraries/cegcore/assets/gplugins/gtabs/gtabs.css" />
+  <link type="text/css" rel="stylesheet" media="screen" href="http://www.iamgroup.co.za/libraries/cegcore/assets/gplugins/gsliders/gsliders.css" />
+  <link type="text/css" rel="stylesheet" media="screen" href="http://www.iamgroup.co.za/libraries/cegcore/assets/gplugins/gmodal/gmodal.css" />
+  <link type="text/css" rel="stylesheet" media="screen" href="http://www.iamgroup.co.za/libraries/cegcore/assets/gplugins/gdropdown/gdropdown.css" />
+  <script type="text/javascript" src="http://www.iamgroup.co.za/libraries/cegcore/assets/jquery/jquery.js">
+  </script>
+  <script type="text/javascript" src="http://www.iamgroup.co.za/libraries/cegcore/assets/gplugins/gtabs/gtabs.js">
+  </script>
+  <script type="text/javascript" src="http://www.iamgroup.co.za/libraries/cegcore/assets/gplugins/gsliders/gsliders.js">
+  </script>
+  <script type="text/javascript" src="http://www.iamgroup.co.za/libraries/cegcore/assets/gplugins/gmodal/gmodal.js">
+  </script>
+  <script type="text/javascript" src="http://www.iamgroup.co.za/libraries/cegcore/assets/gplugins/gdropdown/gdropdown.js">
+  </script>
+  <script type="text/javascript">
+   jQuery(document).ready(function($){
+				function chronoforms_fields_events(){
+}
+chronoforms_fields_events();
+function chronoforms_pageload_fields_events(){
+
+}
+chronoforms_pageload_fields_events();
+			});
+  </script>
+  <script type="text/javascript">
+   jQuery(document).ready(function($){
+			$('[data-g-toggle="tab"]').closest('.nav').gtabs({
+				'pane_selector':'.tab-pane',
+				'tab_selector':'[data-g-toggle="tab"]',
+			});
+			$('[data-g-toggle="collapse"]').closest('.panel-group').gsliders({
+				'pane_selector':'.panel-collapse',
+				'tab_selector':'[data-g-toggle="collapse"]',
+				'active_pane_class':'in',
+			});
+			
+			$('[data-g-toggle="modal"]').on('click', function(e){
+				e.preventDefault();
+				$modal = $($(this).data('g-target'));
+				$modal.gmodal({
+					'close_selector' : '[data-g-dismiss="modal"]',
+				});
+				$modal.gmodal('open');
+			});
+			
+			$('.gdropdown').gdropdown();
+			$('[data-g-toggle="dropdown"]').on('click', function(e){
+				e.preventDefault();
+				$(this).parent().find('.gdropdown').gdropdown('toggle');
+			});
+		});
+  </script>
+  <link href="/templates/system/css/system.css" rel="stylesheet" />
+  <link href="/templates/system/css/general.css" rel="stylesheet" />
+  <!-- Created by Artisteer v4.3.0.60745 -->
+  <meta content="initial-scale = 1.0, maximum-scale = 1.0, user-scalable = no, width = device-width" name="viewport" />
+  <!--[if lt IE 9]><script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <link type="text/css" media="screen" href="/templates/iam/css/template.css" rel="stylesheet" />
+  <!--[if lte IE 7]><link rel="stylesheet" href="/templates/iam/css/template.ie7.css" media="screen"  /><![endif]-->
+  <link type="text/css" media="all" href="/templates/iam/css/template.responsive.css" rel="stylesheet" />
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans&subset=latin" type="text/css" rel="stylesheet" />
+  <script>
+   if ('undefined' != typeof jQuery) document._artxJQueryBackup = jQuery;
+  </script>
+  <script src="/templates/iam/jquery.js">
+  </script>
+  <script>
+   jQuery.noConflict();
+  </script>
+  <script src="/templates/iam/script.js">
+  </script>
+  <script src="/templates/iam/script.responsive.js">
+  </script>
+  <script src="/templates/iam/modules.js">
+  </script>
+  <script>
+   if (document._artxJQueryBackup) jQuery = document._artxJQueryBackup;
+  </script>
+  <script id="facebook-jssdk" async="" src="//connect.facebook.net/en_GB/all.js">
+  </script>
+  <style type="text/css">
+   .fancybox-margin{margin-right:16px;}
+  </style>
+  <style type="text/css">
+   .fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow-x:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset&gt;div{overflow:hidden}.fb_link img{border:none}
+.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}.fb_reset .fb_dialog_legacy{overflow:visible}.fb_dialog_advanced{padding:10px;-moz-border-radius:8px;-webkit-border-radius:8px;border-radius:8px}.fb_dialog_content{background:#fff;color:#333}.fb_dialog_close_icon{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;_background-image:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif);cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{top:5px;left:5px;right:auto}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent;_background-image:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif)}.fb_dialog_close_icon:active{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent;_background-image:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif)}.fb_dialog_loader{background-color:#f6f7f8;border:1px solid #606060;font-size:24px;padding:20px}.fb_dialog_top_left,.fb_dialog_top_right,.fb_dialog_bottom_left,.fb_dialog_bottom_right{height:10px;width:10px;overflow:hidden;position:absolute}.fb_dialog_top_left{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 0;left:-10px;top:-10px}.fb_dialog_top_right{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 -10px;right:-10px;top:-10px}.fb_dialog_bottom_left{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 -20px;bottom:-10px;left:-10px}.fb_dialog_bottom_right{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 -30px;right:-10px;bottom:-10px}.fb_dialog_vert_left,.fb_dialog_vert_right,.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{position:absolute;background:#525252;filter:alpha(opacity=70);opacity:.7}.fb_dialog_vert_left,.fb_dialog_vert_right{width:10px;height:100%}.fb_dialog_vert_left{margin-left:-10px}.fb_dialog_vert_right{right:0;margin-right:-10px}.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{width:100%;height:10px}.fb_dialog_horiz_top{margin-top:-10px}.fb_dialog_horiz_bottom{bottom:0;margin-bottom:-10px}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #3a5795;color:#fff;font-size:14px;font-weight:bold;margin:0}.fb_dialog_content .dialog_title&gt;span{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{-webkit-transform:none;height:100%;margin:0;overflow:visible;position:absolute;top:-10000px;left:0;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{width:auto;height:auto;min-height:initial;min-width:initial;background:none}.fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner{width:100%}.fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content{background:none}.loading.centered #fb_dialog_loader_close{color:#fff;display:block;padding-top:20px;clear:both;font-size:18px}#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .45);position:absolute;left:0;top:0;width:100%;min-height:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_content .dialog_header{-webkit-box-shadow:white 0 1px 1px -1px inset;background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#738ABA), to(#2C4987));border-bottom:1px solid;border-color:#1d4088;color:#fff;font:14px Helvetica, sans-serif;font-weight:bold;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{-webkit-font-smoothing:subpixel-antialiased;height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#4966A6), color-stop(.5, #355492), to(#2A4887));border:1px solid #2f477a;-webkit-background-clip:padding-box;-webkit-border-radius:3px;-webkit-box-shadow:rgba(0, 0, 0, .117188) 0 1px 1px inset, rgba(255, 255, 255, .167969) 0 1px 0;display:inline-block;margin-top:3px;max-width:85px;line-height:18px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{border:none;background:none;color:#fff;font:12px Helvetica, sans-serif;font-weight:bold;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #555;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f6f7f8;border:1px solid #555;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_button{text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}#fb_dialog_loader_spinner{animation:rotateSpinner 1.2s linear infinite;background-color:transparent;background-image:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/yD/r/t-wz8gw1xG1.png);background-repeat:no-repeat;background-position:50% 50%;height:24px;width:24px}@keyframes rotateSpinner{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_hide_iframes iframe{position:relative;left:-10000px}.fb_iframe_widget_loader{position:relative;display:inline-block}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}.fb_iframe_widget_loader iframe{min-height:32px;z-index:2;zoom:1}.fb_iframe_widget_loader .FB_Loader{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/y9/r/jKEcVPZFk-2.gif) no-repeat;height:32px;width:32px;margin-left:-16px;position:absolute;left:50%;z-index:4}
+  </style>
+ </head>
+ <body>
+  <!-- Facebook SDK -->
+  <div id="fb-root" class=" fb_reset">
+   <div style="position: absolute; top: -10000px; height: 0px; width: 0px;">
+    <div>
+    </div>
+   </div>
+  </div>
+  <script type="text/javascript">
+   // Load the SDK Asynchronously
+      (function(d){
+      var js, id = 'facebook-jssdk'; if (d.getElementById(id)) {return;}
+      js = d.createElement('script'); js.id = id; js.async = true;
+      js.src = '//connect.facebook.net/en_GB/all.js';
+      d.getElementsByTagName('head')[0].appendChild(js);
+    }(document));
+  </script>
+  <!-- End Facebook SDK -->
+  <div id="art-main">
+   <header class="art-header" style="background-position: 50% 0%;">
+    <div class="art-shapes">
+    </div>
+    <div id="CONTROL-ID" class="art-positioncontrol art-positioncontrol-1029890652" style="left: 0px; top: 1.05px; margin-left: 0px !important;">
+     <!-- begin nostyle -->
+     <div class="art-nostyle">
+      <!-- begin nostyle content -->
+      <div class="custom">
+       <p>
+       </p>
+       <p>
+        <strong>
+         <span style="font-size: 14pt; color: #4b6994;">
+          <span style="font-size: 8pt; color: #ffffff;">
+           .
+          </span>
+         </span>
+        </strong>
+        <strong>
+         <span style="font-size: 14pt; color: #4b6994;">
+          <span style="font-size: 8pt; color: #ffffff;">
+           <img width="162" height="201" style="vertical-align: middle;" alt="logo2" src="/images/slides/logo2.png" />
+          </span>
+         </span>
+        </strong>
+        Get in touch!
+       </p>
+      </div>
+      <!-- end nostyle content -->
+     </div>
+     <!-- end nostyle -->
+    </div>
+   </header>
+   <nav class="art-nav desktop-nav">
+    <a class="art-menu-btn" href="#">
+     <span>
+     </span>
+     <span>
+     </span>
+     <span>
+     </span>
+    </a>
+    <ul class="art-hmenu">
+     <li class="item-101">
+      <a href="/">
+       Home
+      </a>
+     </li>
+     <li class="item-108">
+      <a href="/About-us/">
+       About us
+      </a>
+     </li>
+     <li class="item-107">
+      <a href="/Events/">
+       Events
+      </a>
+     </li>
+     <li class="item-109">
+      <a href="/TV-Media/">
+       TV &amp; Media
+      </a>
+     </li>
+     <li class="item-110">
+      <a href="/Activations/">
+       Activations
+      </a>
+     </li>
+     <li class="item-111">
+      <a href="/Sport/">
+       Sport
+      </a>
+     </li>
+     <li class="item-136">
+      <a href="/gallery.html">
+       Gallery
+      </a>
+     </li>
+     <li class="item-112 current active">
+      <a href="/Contact-us/" class="active">
+       Contact us
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div class="art-sheet clearfix">
+    <div class="art-content-layout">
+     <div class="art-content-layout-row">
+      <div style="width: 100%;" class="art-layout-cell art-layout-sidebar-bg">
+       <!-- begin nostyle -->
+       <div class="art-nostyle">
+        <!-- begin nostyle content -->
+        <div class="accordion-dynamic accordion-slider as-opened as-horizontal" id="accordion88" style="height: 251.708px; width: 860px;">
+         <div class="credit">
+          <a href="http://www.omegatheme.com/joomla-templates" title="Joomla Module OT Accordion slide powered by Joomla templates - OmegaTheme.com" class="powered">
+           <img src="http://static.omegatheme.com/images/logo_embed.png" title="Joomla Module OT Accordion slide powered by Joomla templates - OmegaTheme.com" alt="Joomla Module OT Accordion slide powered by Joomla templates - OmegaTheme.com" />
+          </a>
+         </div>
+         <div class="as-mask" style="">
+          <div class="as-panels" style="width: 860px; left: 0px;">
+           <div class="as-panel" data-index="0" data-init="true" style="left: 0px; width: 111.2px;" data-loaded="true">
+            <a href="/Slider/home.html">
+             <img class="as-background" style="height: 252px;" alt="About us" src="http://www.iamgroup.co.za/images/slides/bike.jpg" />
+            </a>
+            <div data-vertical="8" data-horizontal="8" data-position="bottomLeft" class="as-layer as-closed as-white panel-counter" style="margin: 0px; left: 8px; bottom: 8px; visibility: visible; opacity: 1;">
+             About us
+            </div>
+            <h3 data-hide-transition="left" data-show-delay="500" data-show-transition="left" data-vertical="10%" data-horizontal="40" class="as-layer as-opened as-black as-padding" style="visibility: hidden; display: none;">
+             About us
+            </h3>
+           </div>
+           <div class="as-panel" data-index="1" data-init="true" style="left: 121.2px; width: 111.2px;" data-loaded="true">
+            <a href="/Slider/events.html">
+             <img class="as-background" style="height: 252px;" alt="Events" src="http://www.iamgroup.co.za/images/slides/wine.jpg" />
+            </a>
+            <div data-vertical="8" data-horizontal="8" data-position="bottomLeft" class="as-layer as-closed as-white panel-counter" style="margin: 0px; left: 8px; bottom: 8px; visibility: visible; opacity: 1;">
+             Events
+            </div>
+            <h3 data-hide-transition="left" data-show-delay="500" data-show-transition="left" data-vertical="10%" data-horizontal="40" class="as-layer as-opened as-black as-padding" style="visibility: hidden; display: none;">
+             Events
+            </h3>
+           </div>
+           <div class="as-panel" data-index="2" data-init="true" style="left: 242.4px; width: 111.2px;" data-loaded="true">
+            <a href="/Slider/tv-media.html">
+             <img class="as-background" style="height: 252px;" alt="TV & Media" src="http://www.iamgroup.co.za/images/slides/produce.jpg" />
+            </a>
+            <div data-vertical="8" data-horizontal="8" data-position="bottomLeft" class="as-layer as-closed as-white panel-counter" style="margin: 0px; left: 8px; bottom: 8px; visibility: visible; opacity: 1;">
+             TV &amp; Media
+            </div>
+            <h3 data-hide-transition="left" data-show-delay="500" data-show-transition="left" data-vertical="10%" data-horizontal="40" class="as-layer as-opened as-black as-padding" style="visibility: hidden; display: none;">
+             TV &amp; Media
+            </h3>
+           </div>
+           <div class="as-panel as-opened" data-index="3" data-init="true" style="left: 363.6px; width: 254px;" data-loaded="true">
+            <a href="/Slider/activations.html">
+             <img class="as-background" style="height: 252px;" alt="Activations" src="http://www.iamgroup.co.za/images/slides/image2a.jpg" />
+            </a>
+            <div data-vertical="8" data-horizontal="8" data-position="bottomLeft" class="as-layer as-closed as-white panel-counter" style="visibility: hidden; display: none;">
+             Activations
+            </div>
+            <h3 data-hide-transition="left" data-show-delay="500" data-show-transition="left" data-vertical="10%" data-horizontal="40" class="as-layer as-opened as-black as-padding" style="margin: 0px; left: 40px; top: 10%; visibility: visible; opacity: 1; transform: translate3d(0px, 0px, 0px);">
+             Activations
+            </h3>
+           </div>
+           <div class="as-panel" data-index="4" data-init="true" style="left: 627.6px; width: 111.2px;" data-loaded="true">
+            <a href="/Slider/sport.html">
+             <img class="as-background" style="height: 252px;" alt="Sport" src="http://www.iamgroup.co.za/images/slides/sporta.jpg" />
+            </a>
+            <div data-vertical="8" data-horizontal="8" data-position="bottomLeft" class="as-layer as-closed as-white panel-counter" style="margin: 0px; left: 8px; bottom: 8px; visibility: visible; opacity: 1;">
+             Sport
+            </div>
+            <h3 data-hide-transition="left" data-show-delay="500" data-show-transition="left" data-vertical="10%" data-horizontal="40" class="as-layer as-opened as-black as-padding" style="visibility: hidden; display: none;">
+             Sport
+            </h3>
+           </div>
+           <div class="as-panel" data-index="5" data-init="true" style="left: 748.8px; width: 111.2px;" data-loaded="true">
+            <a href="/Slider/contact-us.html">
+             <img class="as-background" style="height: 252px;" alt="Contact us" src="http://www.iamgroup.co.za/images/slides/conttact2a.jpg" />
+            </a>
+            <div data-vertical="8" data-horizontal="8" data-position="bottomLeft" class="as-layer as-closed as-white panel-counter" style="margin: 0px; left: 8px; bottom: 8px; visibility: visible; opacity: 1;">
+             Contact us
+            </div>
+            <h3 data-hide-transition="left" data-show-delay="500" data-show-transition="left" data-vertical="10%" data-horizontal="40" class="as-layer as-opened as-black as-padding" style="visibility: hidden; display: none;">
+             Contact us
+            </h3>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="controls">
+        </div>
+        <script>
+         $('#accordion88').accordionSlider({
+        width: '960',
+        height: '280',
+        responsiveMode: 'custom',  
+        visiblePanels: 6,
+        startPanel: 3,
+        closePanelsOnMouseOut: false,
+        shadow: false, 
+        panelDistance: 10,
+        autoplay: false ,
+        mouseWheel: false,
+        breakpoints: {
+            960: {visiblePanels: 6},
+            800: {visiblePanels: 6 - 2, orientation: 'vertical', width: 600, height: 500},
+            650: {visiblePanels: 6 - 1},
+            500: {visiblePanels: 6 - 2, orientation: 'vertical', aspectRatio: 1.2}
+        }
+    });
+        </script>
+        <!-- end nostyle content -->
+       </div>
+       <!-- end nostyle -->
+      </div>
+     </div>
+    </div>
+    <div class="art-layout-wrapper">
+     <div class="art-content-layout">
+      <div class="art-content-layout-row">
+       <div class="art-layout-cell art-content">
+        <article class="art-post art-messages" style="display: none;">
+         <div class="art-postcontent clearfix">
+          <div id="system-message-container">
+          </div>
+         </div>
+        </article>
+        <div itemtype="http://schema.org/Blog" itemscope="" class="blog">
+         <div class="items-leading">
+          <div itemtype="http://schema.org/BlogPosting" itemscope="" itemprop="blogPost" class="leading-0">
+           <article class="art-post">
+            <h2 class="art-postheader">
+             <a href="/Contact-us/contact-us.html">
+              Contact us
+             </a>
+            </h2>
+            <div class="art-postcontent clearfix">
+             <div class="art-article">
+              <p>
+               Phone: 082 557 3419
+              </p>
+              <p>
+               E-mail:
+               <span id="cloak81745">
+                <a href="mailto:info@iamgroup.co.za">
+                 info@iamgroup.co.za
+                </a>
+               </span>
+               <script type="text/javascript">
+                //&lt;!--
+ document.getElementById('cloak81745').innerHTML = '';
+ var prefix = '&amp;#109;a' + 'i&amp;#108;' + '&amp;#116;o';
+ var path = 'hr' + 'ef' + '=';
+ var addy81745 = '&amp;#105;nf&amp;#111;' + '&amp;#64;';
+ addy81745 = addy81745 + '&amp;#105;&amp;#97;mgr&amp;#111;&amp;#117;p' + '&amp;#46;' + 'c&amp;#111;' + '&amp;#46;' + 'z&amp;#97;';
+ var addy_text81745 = '&amp;#105;nf&amp;#111;' + '&amp;#64;' + '&amp;#105;&amp;#97;mgr&amp;#111;&amp;#117;p' + '&amp;#46;' + 'c&amp;#111;' + '&amp;#46;' + 'z&amp;#97;';
+ document.getElementById('cloak81745').innerHTML += '&lt;a ' + path + '\'' + prefix + ':' + addy81745 + '\'&gt;'+addy_text81745+'&lt;\/a&gt;';
+ //--&gt;
+               </script>
+              </p>
+              <p>
+              </p>
+              <div class="gbs3">
+               <form class="chronoform form-horizontal" id="chronoform-webform" name="webform" method="post" enctype="multipart/form-data" action="http://www.iamgroup.co.za/Contact-us/?chronoform=webform&event=submit">
+                <label for="text1">
+                 Name
+                </label>
+                <br />
+                <input type="text" placeholder="" value="" id="text1" name="text1" />
+                <br />
+                <label for="text3">
+                 E-mail address
+                </label>
+                <br />
+                <input type="text" placeholder="" value="" id="text3" name="text3" />
+                <br />
+                <label for="textarea4">
+                 Message
+                </label>
+                <br />
+                <textarea cols="40" rows="3" placeholder="" id="textarea4" name="textarea4">
+                </textarea>
+                <br />
+                <br />
+                <input type="submit" class="art-button" value="Submit" id="button5" name="button5" />
+               </form>
+               <p class="chrono_credits">
+                <a target="_blank" href="http://www.chronoengine.com">
+                 Powered by ChronoForms - ChronoEngine.com
+                </a>
+               </p>
+              </div>
+              <p>
+              </p>
+             </div>
+            </div>
+           </article>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+    <footer class="art-footer">
+     <div class="art-content-layout">
+      <div class="art-content-layout-row responsive-layout-row-2">
+       <div style="width: 25%" class="art-layout-cell">
+        <p>
+         <br />
+        </p>
+       </div>
+       <div style="width: 25%" class="art-layout-cell">
+        <p>
+         <br />
+        </p>
+       </div>
+       <div style="width: 25%" class="art-layout-cell">
+        <p>
+         <br />
+        </p>
+       </div>
+       <div style="width: 25%" class="art-layout-cell">
+        <p>
+         <br />
+        </p>
+       </div>
+      </div>
+     </div>
+     <div class="art-content-layout">
+      <div class="art-content-layout-row responsive-layout-row-1">
+       <div style="width: 100%" class="art-layout-cell">
+        <p>
+         Copyright © 2015 I AM Group - All rights reserved.
+         <br />
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <div id="art-resp">
+   <div id="art-resp-m">
+   </div>
+   <div id="art-resp-t">
+   </div>
+  </div>
+  <div id="art-resp-tablet-landscape">
+  </div>
+  <div id="art-resp-tablet-portrait">
+  </div>
+  <div id="art-resp-phone-landscape">
+  </div>
+  <div id="art-resp-phone-portrait">
+  </div>
+ </body>
+</html>

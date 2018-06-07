@@ -1,0 +1,3844 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta content="Content-Type" http-equiv="Content-Type" />
+  <meta content="ja" http-equiv="Content-Language" />
+  <meta content="text/css" http-equiv="Content-Style-Type" />
+  <meta content="text/javascript" http-equiv="Content-Script-Type" />
+  <meta content="no" http-equiv="Imagetoolbar" />
+  <meta content="" name="description" />
+  <title>
+   イベント・セミナー情報
+  </title>
+  <link href="http://www.shokuhyaku.jp/campaign/feed/" title="イベント・セミナー情報" type="application/rss+xml" rel="alternate" />
+  <link type="text/css" rel="stylesheet" href="http://www.shokuhyaku.jp/campaign/wp-content/themes/shoku1002/common.css" />
+  <link type="text/css" rel="stylesheet" href="http://www.shokuhyaku.jp/campaign/wp-content/themes/shoku1002/wordpress.css" />
+  <link media="screen" type="text/css" rel="stylesheet" href="http://www.shokuhyaku.jp/campaign/wp-content/themes/shoku1002/colorbox.css" />
+  <script type="text/javascript" src="http://www.shokuhyaku.jp/campaign/wp-content/themes/shoku1002/javascript/swfobject.js">
+  </script>
+  <script type="text/javascript" src="http://www.shokuhyaku.jp/campaign/wp-content/themes/shoku1002/javascript/jquery.min.js">
+  </script>
+  <script type="text/javascript" src="http://www.shokuhyaku.jp/campaign/wp-content/themes/shoku1002/javascript/jquery.cookie.js">
+  </script>
+  <script type="text/javascript" src="http://www.shokuhyaku.jp/campaign/wp-content/themes/shoku1002/javascript/jquery.getqueryparam.js">
+  </script>
+  <script type="text/javascript" src="http://www.shokuhyaku.jp/campaign/wp-content/themes/shoku1002/javascript/jquery.urlEncode.js">
+  </script>
+  <script type="text/javascript" src="http://www.shokuhyaku.jp/campaign/wp-content/themes/shoku1002/javascript/jquery.colorbox.js">
+  </script>
+  <script type="text/javascript" src="http://www.shokuhyaku.jp/campaign/wp-content/themes/shoku1002/javascript/util.js">
+  </script>
+ </head>
+ <body>
+  <div id="cboxOverlay" style="display: none;">
+  </div>
+  <div id="colorbox" style="padding-bottom: 20px; padding-right: 0px; display: none;">
+   <div id="cboxWrapper">
+    <div>
+     <div id="cboxTopLeft" style="float: left;">
+     </div>
+     <div id="cboxTopCenter" style="float: left;">
+     </div>
+     <div id="cboxTopRight" style="float: left;">
+     </div>
+    </div>
+    <div>
+     <div id="cboxMiddleLeft" style="float: left;">
+     </div>
+     <div id="cboxContent" style="float: left;">
+      <div id="cboxLoadedContent" style="width: 0px; height: 0px;" class="">
+      </div>
+      <div id="cboxLoadingOverlay" class="">
+      </div>
+      <div id="cboxLoadingGraphic" class="">
+      </div>
+      <div id="cboxTitle" class="">
+      </div>
+      <div id="cboxCurrent" class="">
+      </div>
+      <div id="cboxSlideshow" class="">
+      </div>
+      <div id="cboxNext" class="">
+      </div>
+      <div id="cboxPrevious" class="">
+      </div>
+      <div id="cboxClose" class="">
+      </div>
+     </div>
+     <div id="cboxMiddleRight" style="float: left;">
+     </div>
+    </div>
+    <div>
+     <div id="cboxBottomLeft" style="float: left;">
+     </div>
+     <div id="cboxBottomCenter" style="float: left;">
+     </div>
+     <div id="cboxBottomRight" style="float: left;">
+     </div>
+    </div>
+   </div>
+   <div style="position:absolute; top:0; left:0; width:9999px; height:0;">
+   </div>
+  </div>
+  <div id="wallpaper">
+   <div id="header">
+    <div class="inner">
+     <div id="header_menu">
+      <a href="/" id="header_menu1">
+       <img width="108" height="53" alt="トップページ" src="http://www.shokuhyaku.jp/campaign/wp-content/themes/shoku1002/images/common/spacer.png" />
+      </a>
+      <a href="/objective/" id="header_menu2">
+       <img width="82" height="53" alt="会の目的" src="http://www.shokuhyaku.jp/campaign/wp-content/themes/shoku1002/images/common/spacer.png" />
+      </a>
+      <a href="/manage/" id="header_menu3">
+       <img width="86" height="53" alt="会の運営" src="http://www.shokuhyaku.jp/campaign/wp-content/themes/shoku1002/images/common/spacer.png" />
+      </a>
+      <a href="/policy/" id="header_menu4">
+       <img width="86" height="53" alt="年度方針" src="http://www.shokuhyaku.jp/campaign/wp-content/themes/shoku1002/images/common/spacer.png" />
+      </a>
+      <a href="/campaign/" id="header_menu5" class="active">
+       <img width="170" height="53" alt="イベント・セミナー情報" src="http://www.shokuhyaku.jp/campaign/wp-content/themes/shoku1002/images/common/spacer.png" />
+      </a>
+      <a href="/member_list/" id="header_menu6">
+       <img width="114" height="53" alt="会員企業一覧" src="http://www.shokuhyaku.jp/campaign/wp-content/themes/shoku1002/images/common/spacer.png" />
+      </a>
+      <a href="/member_room/" id="header_menu7">
+       <img width="96" height="53" alt="会員ルーム" src="http://www.shokuhyaku.jp/campaign/wp-content/themes/shoku1002/images/common/spacer.png" />
+      </a>
+      <a href="/information/" id="header_menu8">
+       <img width="89" height="53" alt="新着情報" src="http://www.shokuhyaku.jp/campaign/wp-content/themes/shoku1002/images/common/spacer.png" />
+      </a>
+      <a href="/inquiry/" id="header_menu9">
+       <img width="103" height="53" alt="お問い合わせ" src="http://www.shokuhyaku.jp/campaign/wp-content/themes/shoku1002/images/common/spacer.png" />
+      </a>
+     </div>
+    </div>
+   </div>
+   <a name="page_top">
+   </a>
+   <div id="main">
+    <div id="main_content">
+     <div id="debug">
+     </div>
+     <h1>
+      <img width="394" height="48" alt="イベント・セミナー情報" src="http://www.shokuhyaku.jp/campaign/wp-content/themes/shoku1002/images/content/campaign/title.png" />
+     </h1>
+     <a name="641">
+     </a>
+     <div class="post_box">
+      <div class="post_date">
+       2015.12.07
+      </div>
+      <div class="post_title">
+       組織委員会　東京研修のご案内
+      </div>
+      <div class="post_message">
+       <p>
+        <span style="color: #0000ff;">
+         <strong>
+          組織委員会　東京研修
+         </strong>
+        </span>
+       </p>
+       <p>
+        <span style="color: #000000;">
+         今回の東京研修は、コスト削減会議との合同企画となります。
+        </span>
+       </p>
+       <p>
+        <span style="color: #000000;">
+         マイナンバー制度、後継者育成についての講演を予定しております。
+        </span>
+       </p>
+       <p>
+        <span style="color: #000000;">
+         是非多くの皆様のご参加をお待ちしております。
+        </span>
+       </p>
+       <p>
+        <span style="color: #000000;">
+         なお、既にお配りしております「出欠確認表」を
+         <span style="color: #ff0000;">
+          <strong>
+           12月28日必着
+          </strong>
+         </span>
+         でFAXにてご返送いただきますようお願い申し上げます。
+        </span>
+       </p>
+       <p>
+        <span style="color: #000000;">
+         <br />
+        </span>
+       </p>
+       <p>
+        <span style="color: #000000;">
+         ・日時　　／平成28年2月23日（火）、24日（水）
+        </span>
+       </p>
+       <p>
+        <span style="color: #000000;">
+         ・集合場所／TKP東京駅八重洲カンファレンスセンター
+        </span>
+       </p>
+       <p>
+        <a href="http://www.kashikaigishitsu.net/facilitys/cc-tokyo-yaesu/" onclick="javascript:pageTracker._trackPageview('/outgoing/www.kashikaigishitsu.net/facilitys/cc-tokyo-yaesu/');">
+         http://www.kashikaigishitsu.net/facilitys/cc-tokyo-yaesu/
+        </a>
+       </p>
+       <p>
+        <span style="color: #000000;">
+        </span>
+       </p>
+       <p style="padding-left: 90px;">
+        <span style="color: #000000;">
+         東
+        </span>
+        <span style="color: #000000;">
+         京都中央区京橋1-7-1　TEL：03-3562-8522
+        </span>
+       </p>
+       <p>
+        <span style="color: #000000;">
+         ・集合時間／組織委員会　　２月２３日（火）1３時
+        </span>
+       </p>
+       <p style="padding-left: 90px;">
+        <span style="color: #000000;">
+         コスト委員会　２月２４日（水)１０時
+        </span>
+       </p>
+       <p>
+        <span style="color: #000000;">
+         ・参加費　／無料
+        </span>
+       </p>
+       <p>
+        <span style="color: #000000;">
+         <br />
+        </span>
+       </p>
+       <p>
+        <span style="color: #000000;">
+         <span style="color: #0000ff;">
+          <strong>
+           <a href="http://www.shokuhyaku.jp/campaign/files/2015/12/9de325cb5b2346402cffd6e7a2bab6d31.pdf" onclick="javascript:pageTracker._trackPageview('/outgoing/www.shokuhyaku.jp/campaign/files/2015/12/9de325cb5b2346402cffd6e7a2bab6d31.pdf');">
+            スケジュール・出欠確認表
+           </a>
+          </strong>
+         </span>
+         はこちらからご覧ください。
+        </span>
+       </p>
+       <p style="text-align: right;">
+        ◇食百年の会　事務局
+       </p>
+      </div>
+     </div>
+     <a name="634">
+     </a>
+     <div class="post_box">
+      <div class="post_date">
+       2015.11.26
+      </div>
+      <div class="post_title">
+       組織委員会　とんかつ部会のご案内
+      </div>
+      <div class="post_message">
+       <p>
+        <span style="color: #0000ff;">
+         <strong>
+          組織委員会　とんかつ部会　繁盛店視察
+         </strong>
+        </span>
+       </p>
+       <p>
+       </p>
+       <p>
+        <span style="color: #000000;">
+         本年度の活動テーマ『
+         <strong>
+          <span style="color: #ff0000;">
+           仲間に学ぶ
+          </span>
+         </strong>
+         』にもとづき、とんかつ部会を開催いたします。
+        </span>
+       </p>
+       <p>
+        <span style="color: #000000;">
+         株式会社マルズ・ジョイフード様のご好意により繁盛店の視察と講演等盛りだくさんの内容です
+        </span>
+        <span style="color: #000000;">
+         。
+        </span>
+       </p>
+       <p>
+        <span style="color: #000000;">
+         是非多くの皆様のご参加をお待ちしております。
+        </span>
+       </p>
+       <p>
+        <span style="color: #000000;">
+         なお、既にお配りしております「参加申し込み表」を
+        </span>
+        <span style="color: #ff0000;">
+         <strong>
+          12月28日必着
+         </strong>
+        </span>
+        <span style="color: #000000;">
+         でFAXにて
+        </span>
+       </p>
+       <p>
+        <span style="color: #000000;">
+         ご返送いただきますようお願い申し上げます。
+        </span>
+       </p>
+       <p>
+        <span style="color: #000000;">
+         <br />
+        </span>
+       </p>
+       <p>
+        <span style="color: #000000;">
+         ・日時　　／平成28年3月10日（木）
+        </span>
+       </p>
+       <p>
+        <span style="color: #000000;">
+         ・集合場所／JR常磐線　いわき駅改札出口
+        </span>
+       </p>
+       <p>
+        <span style="color: #000000;">
+         ・集合時間／12時15分集合
+        </span>
+       </p>
+       <p>
+        <span style="color: #000000;">
+         ・参加費　／お１人様　5,000円
+        </span>
+       </p>
+       <p>
+        <span style="color: #000000;">
+         <br />
+        </span>
+       </p>
+       <p>
+        <span style="color: #000000;">
+         <span style="color: #0000ff;">
+          <strong>
+           <a href="http://www.shokuhyaku.jp/campaign/files/2015/11/b2650ebb5598f08c544c77c5526e8ef3.pdf" onclick="javascript:pageTracker._trackPageview('/outgoing/www.shokuhyaku.jp/campaign/files/2015/11/b2650ebb5598f08c544c77c5526e8ef3.pdf');">
+            スケジュール・参加申し込み表はこちらからご覧ください。
+           </a>
+          </strong>
+         </span>
+        </span>
+       </p>
+       <p style="text-align: right;">
+        ◇食百年の会　事務局
+       </p>
+      </div>
+     </div>
+     <a name="611">
+     </a>
+     <div class="post_box">
+      <div class="post_date">
+       2015.11.26
+      </div>
+      <div class="post_title">
+       第八期年間スケジュール表
+      </div>
+      <div class="post_message">
+       <p>
+        <span style="color: #ff0000;">
+         <strong>
+          食百年の会
+         </strong>
+        </span>
+       </p>
+       <p>
+        <span style="color: #000000;">
+         <span style="color: #ff0000;">
+          <strong>
+           <a href="http://www.shokuhyaku.jp/campaign/files/2015/11/8076ecd02da5930b5ae9c00cfdc266a5.pdf" onclick="javascript:pageTracker._trackPageview('/outgoing/www.shokuhyaku.jp/campaign/files/2015/11/8076ecd02da5930b5ae9c00cfdc266a5.pdf');">
+            8期年間スケジュール表
+           </a>
+          </strong>
+         </span>
+         をアップします。
+        </span>
+       </p>
+       <p>
+        <span style="color: #000000;">
+         ご活用くださいませ。
+        </span>
+       </p>
+       <p style="text-align: right;">
+        ◇食百年の会　事務局
+       </p>
+      </div>
+     </div>
+     <a name="596">
+     </a>
+     <div class="post_box">
+      <div class="post_date">
+       2015.08.03
+      </div>
+      <div class="post_title">
+       伏龍会　金沢研修のご案内
+      </div>
+      <div class="post_message">
+       <div>
+        <span style="color: #0000ff;">
+         <strong>
+          伏龍会　金沢研修
+         </strong>
+        </span>
+       </div>
+       <div>
+        <p>
+        </p>
+        <p>
+         <span style="color: #000000;">
+          伏龍会では今期最後の勉強会として、金沢研修を開催いたします。
+         </span>
+        </p>
+        <p>
+         <span style="color: #000000;">
+          北陸新幹線開通後、さらなる活気に満ちた金沢の今を見て廻ります。
+         </span>
+        </p>
+        <p>
+         <span style="color: #000000;">
+          皆様のご参加お待ちしております！！
+         </span>
+        </p>
+        <p>
+         <span style="color: #000000;">
+          ご参加申込みは、既にお送りしております申込み用紙にて
+          <strong>
+           <span style="color: #ff0000;">
+            8月6日
+           </span>
+           必着
+          </strong>
+          で
+         </span>
+        </p>
+        <p>
+         <span style="color: #000000;">
+          FAXくださいますようお願いいたします。
+         </span>
+        </p>
+        <p>
+         <span style="color: #000000;">
+          ・日　 　時／平成27年9月15日（火）～17日（木）
+         </span>
+        </p>
+        <p>
+         <span style="color: #000000;">
+          ・集　　合／
+          <strong>
+           <span style="color: #ff0000;">
+            金沢駅　改札出口
+           </span>
+           13時00分
+          </strong>
+         </span>
+        </p>
+        <p>
+         <span style="color: #000000;">
+          ・宿　　泊
+         </span>
+         <span style="color: #000000;">
+          ／  15日　ダイワロイネットホテル金沢　(各自支払8,800円)　
+          <a href="http://www.daiwaroynet.jp/kanazawa/" onclick="javascript:pageTracker._trackPageview('/outgoing/www.daiwaroynet.jp/kanazawa/');">
+           http://www.daiwaroynet.jp/kanazawa/
+          </a>
+         </span>
+        </p>
+        <p style="padding-left: 60px;">
+         <span style="color: #000000;">
+          16日　加賀屋姉妹店　あえの風　(各自支払22,680円) 　
+          <a target="_blank" href="http://www.aenokaze.jp/" title="http://www.aenokaze.jp/" onclick="javascript:pageTracker._trackPageview('/outgoing/www.aenokaze.jp/');">
+           http://www.aenokaze.jp/
+          </a>
+         </span>
+        </p>
+        <p>
+         <span style="color: #000000;">
+          ・内　 容／加賀友禅染め体験、東茶屋街道、21世紀美術館・兼六園視察、金沢まいもん寿司・漁匠庵食事会、近江市場・箔一視察、芝寿司・スギヨ・能登半島工場見学、(株)芝寿司　梶谷社長・加賀屋支配人　講和　他
+         </span>
+        </p>
+        <p>
+        </p>
+        <p>
+         <strong>
+          <a href="http://www.shokuhyaku.jp/campaign/files/2015/08/b9ad14bc8ca6f1408b00c19f98e4b2df.pdf" onclick="javascript:pageTracker._trackPageview('/outgoing/www.shokuhyaku.jp/campaign/files/2015/08/b9ad14bc8ca6f1408b00c19f98e4b2df.pdf');">
+           スケジュール･申込み表はこちらからご覧ください。
+          </a>
+         </strong>
+        </p>
+        <p style="text-align: right;">
+         ◇食百年の会　事務局
+        </p>
+       </div>
+      </div>
+     </div>
+     <a name="590">
+     </a>
+     <div class="post_box">
+      <div class="post_date">
+       2015.07.23
+      </div>
+      <div class="post_title">
+       第八期総会、懇親会のご案内
+      </div>
+      <div class="post_message">
+       <div>
+        <span style="color: #ff0000;">
+         <strong>
+          食百年の会
+         </strong>
+        </span>
+       </div>
+       <div>
+        <p>
+         <strong>
+         </strong>
+        </p>
+        <p>
+         <span style="color: #000000;">
+          下記日程で第八期の総会を開催することとなりました。
+         </span>
+        </p>
+        <p>
+         <span style="color: #000000;">
+          新委員長のご紹介と活動計画発表に加え、
+         </span>
+        </p>
+        <p>
+         <span style="color: #000000;">
+          講演も予定しておりますので、是非とも皆様方のご出席を賜りたいと存じます。
+         </span>
+        </p>
+        <p>
+         <span style="color: #000000;">
+          出欠は、既にお送りしております申込み用紙にて
+          <strong>
+           <span style="color: #ff0000;">
+            8月31日
+           </span>
+           必着
+          </strong>
+          でFAXくださいますようお願いいたします。
+         </span>
+        </p>
+        <p>
+        </p>
+        <p>
+         <span style="color: #000000;">
+          ・日　　時／平成27年10月7日（水）
+         </span>
+        </p>
+        <p style="padding-left: 60px;">
+         <span style="color: #000000;">
+          12時00分～18時30分　（受付11時30分より）
+         </span>
+        </p>
+        <p>
+         <span style="color: #000000;">
+          ・場　　所／LEVEL　XXI　東京會舘　
+          <a href="http://www.kaikan.co.jp/xxi/" onclick="javascript:pageTracker._trackPageview('/outgoing/www.kaikan.co.jp/xxi/');">
+           http://www.kaikan.co.jp/xxi/
+          </a>
+         </span>
+        </p>
+        <p style="padding-left: 60px;">
+         <span style="color: #000000;">
+          東京都千代田区丸の内2-2-2　　TEL：03-5255-1515
+         </span>
+        </p>
+        <p>
+        </p>
+        <p>
+         <span style="color: #000000;">
+          【主なスケジュール】
+         </span>
+        </p>
+        <p>
+         <span style="color: #000000;">
+          ■　総　会
+         </span>
+        </p>
+        <p>
+         <span style="color: #000000;">
+          ■　講　演　一部　　　日本貿易振興機構　北川　浩伸氏
+         </span>
+        </p>
+        <p>
+         <span style="color: #000000;">
+          ■　講　演　二部　　　陸上自衛隊　陸将　武内誠一氏
+         </span>
+        </p>
+        <p>
+         <span style="color: #000000;">
+          ■　懇親会
+         </span>
+        </p>
+        <p>
+         <strong>
+         </strong>
+        </p>
+        <p>
+         <strong>
+          <a href="http://www.shokuhyaku.jp/campaign/files/2015/07/b57a2e49a00cd854623d1fe0456aa136.pdf" onclick="javascript:pageTracker._trackPageview('/outgoing/www.shokuhyaku.jp/campaign/files/2015/07/b57a2e49a00cd854623d1fe0456aa136.pdf');">
+           詳細・出欠確認表　はこちらからご覧ください。
+          </a>
+         </strong>
+        </p>
+        <p style="text-align: right;">
+         ◇食百年の会　事務局
+        </p>
+       </div>
+       <p>
+        <a name="478">
+        </a>
+       </p>
+      </div>
+     </div>
+     <a name="579">
+     </a>
+     <div class="post_box">
+      <div class="post_date">
+       2015.06.22
+      </div>
+      <div class="post_title">
+       上海・蘇州・杭州研修のご案内
+      </div>
+      <div class="post_message">
+       <div>
+        <span style="color: #ff6600;">
+         <strong>
+          食文化研究会　上海・蘇州・杭州研修
+         </strong>
+        </span>
+       </div>
+       <div>
+        <div>
+         <div>
+          <div>
+           <div>
+            <div>
+             <div>
+              <div>
+               <div>
+                <p>
+                 <span style="color: #000000;">
+                  今季の食文化研究会主催の海外研修は
+                  <strong>
+                   中国
+                  </strong>
+                  です。
+                 </span>
+                </p>
+                <p>
+                 <span style="color: #000000;">
+                  上海から杭州までの約150kmを新幹線で繋ぐ、歴史と未来を垣間見る三日間です。
+                 </span>
+                </p>
+                <p>
+                 <span style="color: #000000;">
+                  お申込みは、既にお送りしております申込み用紙にて
+                  <span style="color: #ff0000;">
+                   <strong>
+                    7
+                   </strong>
+                  </span>
+                  <strong>
+                   <span style="color: #ff0000;">
+                    月31日
+                   </span>
+                   必着で
+                  </strong>
+                  FAXくださいますようお願いいたします。
+                 </span>
+                </p>
+                <p>
+                </p>
+                <p>
+                 <span style="color: #000000;">
+                  ・日　　　時／平成27年9月8日（火）～11日（金）　《三泊四日》
+                 </span>
+                </p>
+                <p>
+                 <span style="color: #000000;">
+                  ・集合場所／
+                  <strong>
+                   上海浦東空港　到着ロビー　
+                   <span style="color: #ff0000;">
+                    １２時００分
+                   </span>
+                  </strong>
+                  <strong>
+                   集合
+                  </strong>
+                 </span>
+                </p>
+                <p>
+                 <span style="color: #000000;">
+                  ・宿　泊　先／
+                  <strong>
+                   上海：花園飯店
+                  </strong>
+                  <a href="http://goo.gl/0a1thh" onclick="javascript:pageTracker._trackPageview('/outgoing/goo.gl/0a1thh');">
+                   http://goo.gl/0a1thh
+                  </a>
+                 </span>
+                </p>
+                <p style="padding-left: 90px;">
+                 <span style="color: #000000;">
+                  <strong>
+                   杭州：ハイアットリージェンシー
+                  </strong>
+                  <a href="http://goo.gl/9ISzhA" onclick="javascript:pageTracker._trackPageview('/outgoing/goo.gl/9ISzhA');">
+                   http://goo.gl/9ISzhA
+                  </a>
+                 </span>
+                </p>
+                <p>
+                 <span style="color: #000000;">
+                  ・参　加　費／お１人様９万円(現地食事．バス．宿泊費等)
+                 </span>
+                </p>
+                <p style="padding-left: 90px;">
+                 <span style="color: #000000;">
+                  ※１社２名様から１万円加算になります。１人部屋は１万円追加となります。(１泊)
+                 </span>
+                </p>
+                <p>
+                 <span style="color: #000000;">
+                  ・主な　内容／講演（上海大菱食品有限公司　総経理様、上海合点寿司　総経理様）、日月光広場・田子坊市場視察、蘇州料理会食、拙政園視察(世界文化遺産)視察、イオン2号店・がってん寿司10号店視察、海底勞（火鍋）会食、西湖・河坊街視察その他。
+                 </span>
+                </p>
+                <p>
+                </p>
+                <p>
+                 <strong>
+                  <a href="http://www.shokuhyaku.jp/campaign/files/2015/06/d82de7f734453f66153de680d433f77a.pdf" onclick="javascript:pageTracker._trackPageview('/outgoing/www.shokuhyaku.jp/campaign/files/2015/06/d82de7f734453f66153de680d433f77a.pdf');">
+                   詳細・申込み用紙はこちらからご覧ください。
+                  </a>
+                 </strong>
+                </p>
+                <p style="text-align: right;">
+                 <strong>
+                 </strong>
+                 ◇食百年の会　事務局
+                </p>
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <a name="569">
+     </a>
+     <div class="post_box">
+      <div class="post_date">
+       2015.06.18
+      </div>
+      <div class="post_title">
+       組織委員会　東京研修のご案内
+      </div>
+      <div class="post_message">
+       <div>
+        <span style="color: #0000ff;">
+         <strong>
+          組織委員会　東京研修
+         </strong>
+        </span>
+       </div>
+       <div>
+        <div>
+         <p>
+         </p>
+         <p>
+          <span style="color: #000000;">
+           今回の組織員会は会員企業三社の海外進出についての講演を企画いたしました。
+          </span>
+         </p>
+         <p>
+          <span style="color: #000000;">
+           皆様お繰り合わせの上、ご参加いただけますようお願い申し上げます。
+          </span>
+         </p>
+         <p>
+          <span style="color: #000000;">
+           なお、既にお配りしております「出欠確認表」を
+           <strong>
+            <span style="color: #ff0000;">
+             6月30日（火）
+            </span>
+            必着
+           </strong>
+           でFAXにて
+          </span>
+         </p>
+         <p>
+          <span style="color: #000000;">
+           ご返送いただきますようお願い申し上げます。
+          </span>
+         </p>
+         <p>
+         </p>
+         <p>
+          <span style="color: #000000;">
+           ・日時　　　／平成27年7月15日（水）
+          </span>
+         </p>
+         <p>
+          <span style="color: #000000;">
+           ・集合場所　／TKP東京駅八重洲カンファレンスセンター
+          </span>
+         </p>
+         <p>
+          <span style="color: #000000;">
+          </span>
+          <span style="color: #000000;">
+           <a target="_blank" href="http://www.kashikaigishitsu.net/facilitys/cc-tokyo-yaesu/access/" onclick="javascript:pageTracker._trackPageview('/outgoing/www.kashikaigishitsu.net/facilitys/cc-tokyo-yaesu/access/');">
+            http://www.kashikaigishitsu.net/facilitys/cc-tokyo-yaesu/access/
+           </a>
+          </span>
+         </p>
+         <p style="padding-left: 90px;">
+          <span style="color: #000000;">
+           東京都中央区京橋1-17-1　TEL：03-3562-8522
+          </span>
+         </p>
+         <p>
+          <span style="color: #000000;">
+           ・集合時間　／
+           <strong>
+            13時集合
+           </strong>
+          </span>
+         </p>
+         <p>
+          <span style="color: #000000;">
+           ・参加費　　／講演会無料　懇親会10,000円
+          </span>
+         </p>
+         <p>
+          <span style="color: #000000;">
+           ・懇親会会場／和食懐石『京』
+          </span>
+          <span style="color: #000000;">
+           <a target="_blank" href="http://miyako-yurakucho.com/" onclick="javascript:pageTracker._trackPageview('/outgoing/miyako-yurakucho.com/');">
+            http://miyako-yurakucho.com/
+           </a>
+          </span>
+         </p>
+         <p style="padding-left: 90px;">
+          <span style="color: #000000;">
+           東京都千代田区丸の内3-1-1　国際ビル2F　TEL：03-5211-8700
+          </span>
+         </p>
+         <p>
+         </p>
+         <p>
+          <strong>
+           <a href="http://www.shokuhyaku.jp/campaign/files/2015/06/c5f6f317f2cd886a1e32eb905ccf2dfe.pdf" onclick="javascript:pageTracker._trackPageview('/outgoing/www.shokuhyaku.jp/campaign/files/2015/06/c5f6f317f2cd886a1e32eb905ccf2dfe.pdf');">
+            詳細・出欠確認表はこちらからご覧ください。
+           </a>
+          </strong>
+         </p>
+         <p style="text-align: right;">
+          <strong>
+          </strong>
+          ◇食百年の会　事務局
+         </p>
+        </div>
+       </div>
+      </div>
+     </div>
+     <a name="564">
+     </a>
+     <div class="post_box">
+      <div class="post_date">
+       2015.05.21
+      </div>
+      <div class="post_title">
+       第二回コスト削減委員会のご案内
+      </div>
+      <div class="post_message">
+       <div>
+        <span style="color: #008000;">
+         <strong>
+          コスト削減委員会のご案内
+         </strong>
+        </span>
+       </div>
+       <div>
+        <p>
+        </p>
+        <p>
+         <span style="color: #000000;">
+          今期第二回目のコスト削減委員会が6月9日に開催されます。
+         </span>
+        </p>
+        <p>
+         <span style="color: #000000;">
+          協議希望のリストを事前にご提出いただき、内容の濃い会としたいと存知ます。
+         </span>
+        </p>
+        <p>
+         <span style="color: #000000;">
+          是非多くの皆様にご参加くださいますようご案内申し上げます。
+         </span>
+        </p>
+        <p>
+         <span style="color: #000000;">
+          出席等につきましては、
+         </span>
+         <strong>
+          <span style="color: #ff0000;">
+           5月29日
+          </span>
+          必着
+          <span style="color: #000000;">
+           でFAX
+          </span>
+         </strong>
+         <span style="color: #000000;">
+          にてご返送をお願い申し上げます。
+         </span>
+        </p>
+        <p>
+        </p>
+        <p>
+         <span style="color: #000000;">
+          ■開催日時：　平成27年6月9日（火）　
+          <strong>
+           13：30
+          </strong>
+          ～
+          <strong>
+           17
+          </strong>
+          ：
+          <strong>
+           00
+          </strong>
+         </span>
+        </p>
+        <p>
+         <span style="color: #000000;">
+          ■場　　　所：　TKP東京八重洲カンファレンスセンター　
+          <strong>
+           7F
+          </strong>
+         </span>
+        </p>
+        <p>
+         <a href="http://www.kashikaigishitsu.net/search-rooms/goannai?id=212" onclick="javascript:pageTracker._trackPageview('/outgoing/www.kashikaigishitsu.net/search-rooms/goannai?id=212');">
+          <span style="color: #000000;">
+           http://www.kashikaigishitsu.net/search-rooms/goannai?id=212
+          </span>
+         </a>
+        </p>
+        <p>
+         <span style="color: #000000;">
+          ■事前提出：協議希望品目リスト
+         </span>
+        </p>
+        <p>
+        </p>
+        <p>
+         <strong>
+          <a href="http://www.shokuhyaku.jp/campaign/files/2015/05/00d42c69116c96dac83aba3fa9bcc4fd.pdf" onclick="javascript:pageTracker._trackPageview('/outgoing/www.shokuhyaku.jp/campaign/files/2015/05/00d42c69116c96dac83aba3fa9bcc4fd.pdf');">
+           詳細及び出席申込書はこちらをご覧下さい。
+          </a>
+         </strong>
+        </p>
+        <p style="text-align: right;">
+         ◇食百年の会　事務局
+        </p>
+       </div>
+      </div>
+     </div>
+     <a name="544">
+     </a>
+     <div class="post_box">
+      <div class="post_date">
+       2015.04.06
+      </div>
+      <div class="post_title">
+       伏龍会　タイ研修のご案内
+      </div>
+      <div class="post_message">
+       <div>
+        <span style="color: #0000ff;">
+         <strong>
+          伏龍会　タイ研修
+         </strong>
+        </span>
+       </div>
+       <div>
+        <p>
+        </p>
+        <p>
+         <span style="color: #000000;">
+          伏龍会では今期の海外研修として、タイ研修を開催いたします。
+         </span>
+        </p>
+        <p>
+         <span style="color: #000000;">
+          皆様のご参加お待ちしております！！
+         </span>
+        </p>
+        <p>
+         <span style="color: #000000;">
+          ご参加申込みは、既にお送りしております申込み用紙にて
+          <strong>
+           <span style="color: #ff0000;">
+            4月30日
+           </span>
+           必着
+          </strong>
+          で
+         </span>
+        </p>
+        <p>
+         <span style="color: #000000;">
+          FAXくださいますようお願いいたします。
+         </span>
+        </p>
+        <p>
+         <span style="color: #000000;">
+          ・日　 　時／平成27年6月23日（火）～25日（木）
+         </span>
+        </p>
+        <p>
+         <span style="color: #000000;">
+          ・集　　合／スワンナープーム国際空港　到着ロビー　
+          <span style="color: #ff0000;">
+           <strong>
+            16時00分
+           </strong>
+          </span>
+         </span>
+        </p>
+        <p>
+         <span style="color: #000000;">
+          ・宿　　泊／マジェスティクグランドホテル
+         </span>
+        </p>
+        <p>
+         <span style="color: #000000;">
+          ・内　 容／バーンクイメー店舗視察、ワットポー観光、タイ式マッサージ、ウィークエンドマーケット視察、なぎ屋で夕食他
+         </span>
+        </p>
+        <p>
+         <strong>
+          <a href="http://www.shokuhyaku.jp/campaign/files/2014/12/6b4aab34068231a8fb4c604d381c7e2f.pdf" onclick="javascript:pageTracker._trackPageview('/outgoing/www.shokuhyaku.jp/campaign/files/2014/12/6b4aab34068231a8fb4c604d381c7e2f.pdf');">
+          </a>
+         </strong>
+         <strong>
+          <a href="http://www.shokuhyaku.jp/campaign/files/2015/04/081a5ae4a06e41b2f7b17bb294f82e2d.pdf" onclick="javascript:pageTracker._trackPageview('/outgoing/www.shokuhyaku.jp/campaign/files/2015/04/081a5ae4a06e41b2f7b17bb294f82e2d.pdf');">
+           詳細・申込書はこちらをご覧ください
+          </a>
+         </strong>
+        </p>
+        <p style="text-align: right;">
+         ◇食百年の会　事務局
+        </p>
+       </div>
+      </div>
+     </div>
+     <a name="535">
+     </a>
+     <div class="post_box">
+      <div class="post_date">
+       2015.03.30
+      </div>
+      <div class="post_title">
+       第七期総会　経営戦略セミナーのご案内
+      </div>
+      <div class="post_message">
+       <div>
+        <span style="color: #800080;">
+         <strong>
+          第七期総会（経営戦略セミナー・組織委員会）のご案内
+         </strong>
+        </span>
+       </div>
+       <div>
+        <div>
+         <div>
+          <p>
+           <strong>
+           </strong>
+           <br />
+           <span style="color: #000000;">
+            第七期経営戦略セミナーおよび、組織委員会研修を下記の通りご案内申し上げます。
+           </span>
+          </p>
+          <p>
+           <span style="color: #000000;">
+            ご多忙と存じますが、全会員の皆様にご参加いただきたくお願い申し上げます。
+           </span>
+          </p>
+          <p>
+           <span style="color: #000000;">
+            出欠につきましては別紙の出欠表にて、
+            <span style="color: #ff0000;">
+             <strong>
+              4月10日（金）
+             </strong>
+            </span>
+            必着でFAXにてご返送くださいませ。
+           </span>
+          </p>
+          <p>
+          </p>
+          <p>
+           <span style="color: #000000;">
+            ・日　時　　平成27年5月13日（水）～14日（木）
+           </span>
+          </p>
+          <p>
+           <span style="color: #000000;">
+            ・集　合　　リッツカールトンホテル大阪
+            <strong>
+             ４F
+            </strong>
+            ウェストルーム
+           </span>
+           <span style="color: #ff0000;">
+            <strong>
+             12時
+            </strong>
+           </span>
+          </p>
+          <p style="padding-left: 60px;">
+           <span style="color: #000000;">
+            大阪市北区梅田2−5−25　ＴＥＬ：　06-6343-7000
+           </span>
+          </p>
+          <p style="padding-left: 60px;">
+           <a href="https://www.ritz-carlton.co.jp/access/index.html" onclick="javascript:pageTracker._trackPageview('/outgoing/www.ritz-carlton.co.jp/access/index.html');">
+            https://www.ritz-carlton.co.jp/access/index.html
+           </a>
+          </p>
+          <p>
+           <span style="color: #000000;">
+            ・参加費　　16,000円(宿泊代)　（1社2名様からは、3万円　　1人部屋希望は1,8000円追加です。）
+           </span>
+          </p>
+          <p>
+           <strong>
+            <a href="http://www.shokuhyaku.jp/campaign/files/2015/03/e80b7b38f95d2b134aade046e5675731.pdf" onclick="javascript:pageTracker._trackPageview('/outgoing/www.shokuhyaku.jp/campaign/files/2015/03/e80b7b38f95d2b134aade046e5675731.pdf');">
+             詳細、出欠確認表はこちらをご覧下さい。
+            </a>
+           </strong>
+          </p>
+          <p style="text-align: right;">
+           <strong>
+           </strong>
+           ◇食百年の会　事務局
+          </p>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <a name="531">
+     </a>
+     <div class="post_box">
+      <div class="post_date">
+       2015.03.23
+      </div>
+      <div class="post_title">
+       親睦ゴルフ大会のお知らせ
+      </div>
+      <div class="post_message">
+       <p>
+        <span style="color: #993300;">
+         <strong>
+          親睦委員会　親睦ゴルフ大会
+         </strong>
+        </span>
+       </p>
+       <p>
+        <span style="color: #000000;">
+         <strong>
+         </strong>
+        </span>
+       </p>
+       <p>
+        <span style="color: #000000;">
+         親睦委員会主催のゴルフ大会が富士の麓の名門コースにて開催されます。
+        </span>
+       </p>
+       <p>
+        <span style="color: #000000;">
+         観光視察と親睦会も行われますので是非とも多数のご参加をお待ちしております。
+        </span>
+       </p>
+       <p>
+        <span style="color: #000000;">
+         お申込みは、既にお送りしております申込み用紙にて
+         <span style="color: #ff0000;">
+          <strong>
+           4月7日までに
+          </strong>
+         </span>
+         FAXくださいますようお願いいたします。
+        </span>
+       </p>
+       <p>
+       </p>
+       <p>
+        <span style="color: #000000;">
+         ・日　　　時／平成27年6月4日（木）～5日（金）
+        </span>
+       </p>
+       <p>
+        <span style="color: #000000;">
+         ・集合場所／東海道新幹線　三島駅
+         <strong>
+          北口　
+          <span style="color: #ff0000;">
+           13
+          </span>
+         </strong>
+        </span>
+        <span style="color: #000000;">
+         <span style="color: #ff0000;">
+          <strong>
+           時
+          </strong>
+          <span style="color: #000000;">
+           集合
+          </span>
+         </span>
+        </span>
+       </p>
+       <p>
+        <span style="color: #000000;">
+         ・ゴルフ場／太平洋クラブ御殿場コース　
+         <a href="http://www.taiheiyoclub.co.jp/course/gotenba/index.html" onclick="javascript:pageTracker._trackPageview('/outgoing/www.taiheiyoclub.co.jp/course/gotenba/index.html');">
+          http://www.taiheiyoclub.co.jp/course/gotenba/index.html
+         </a>
+        </span>
+       </p>
+       <p>
+        <span style="color: #000000;">
+         ・参　加　費／各自実費負担
+        </span>
+       </p>
+       <p>
+        <span style="color: #000000;">
+         <strong>
+          <a href="http://www.shokuhyaku.jp/campaign/files/2015/03/ce3dbda2841ed5fc6ca346021782a36d.pdf" onclick="javascript:pageTracker._trackPageview('/outgoing/www.shokuhyaku.jp/campaign/files/2015/03/ce3dbda2841ed5fc6ca346021782a36d.pdf');">
+           詳細・申込み用紙はこちらからご覧ください。
+          </a>
+         </strong>
+        </span>
+       </p>
+       <p style="text-align: right;">
+        ◇食百年の会　事務局
+       </p>
+      </div>
+     </div>
+     <a name="524">
+     </a>
+     <div class="post_box">
+      <div class="post_date">
+       2015.01.15
+      </div>
+      <div class="post_title">
+       第一回コスト削減委員会のご案内
+      </div>
+      <div class="post_message">
+       <p>
+        <span style="color: #008000;">
+         <strong>
+          コスト削減委員会のご案内
+         </strong>
+        </span>
+       </p>
+       <p>
+       </p>
+       <p>
+        <span style="color: #000000;">
+         今期第一回目のコスト削減委員会が2月17日に開催されます。
+        </span>
+       </p>
+       <p>
+        <span style="color: #000000;">
+         協議希望のリストを事前にご提出いただき、
+        </span>
+        <span style="color: #000000;">
+         内容の濃い会としたいと存知ます。
+        </span>
+       </p>
+       <p>
+        <span style="color: #000000;">
+         是非多くの皆様にご参加くださいますようご案内申し上げます。
+        </span>
+       </p>
+       <p>
+        <span style="color: #000000;">
+         出席等につきましては、
+        </span>
+        <strong>
+         <span style="color: #ff0000;">
+          1月25日必着
+         </span>
+         でFAX
+        </strong>
+        <span style="color: #000000;">
+         にてご返送をお願い申し上げます。
+        </span>
+       </p>
+       <p>
+       </p>
+       <p>
+        <span style="color: #000000;">
+         ■開催日時：　平成27年2月17日（火）　
+         <strong>
+          13：30
+         </strong>
+        </span>
+        <span style="color: #000000;">
+         ～
+         <strong>
+          17
+         </strong>
+         ：
+         <strong>
+          00
+         </strong>
+        </span>
+       </p>
+       <p>
+        <span style="color: #000000;">
+         ■場　　　所：　TKP東京八重洲カンファレンスセンター　
+         <strong>
+          7F
+         </strong>
+        </span>
+       </p>
+       <p style="padding-left: 90px;">
+        <span style="color: #000000;">
+         <a href="http://www.kashikaigishitsu.net/search-rooms/goannai?id=212" onclick="javascript:pageTracker._trackPageview('/outgoing/www.kashikaigishitsu.net/search-rooms/goannai?id=212');">
+          http://www.kashikaigishitsu.net/search-rooms/goannai?id=212
+         </a>
+        </span>
+       </p>
+       <p>
+        <span style="color: #000000;">
+         ■事前提出：協議希望品目リスト
+        </span>
+       </p>
+       <p>
+       </p>
+       <p>
+        <strong>
+         <a href="http://www.shokuhyaku.jp/campaign/files/2015/01/a07db34d3567bed3848a84e3ac817650.pdf" onclick="javascript:pageTracker._trackPageview('/outgoing/www.shokuhyaku.jp/campaign/files/2015/01/a07db34d3567bed3848a84e3ac817650.pdf');">
+          詳細及び出席申込書はこちらをご覧下さい。
+         </a>
+        </strong>
+       </p>
+       <p style="text-align: right;">
+        ◇食百年の会　事務局
+       </p>
+      </div>
+     </div>
+     <a name="515">
+     </a>
+     <div class="post_box">
+      <div class="post_date">
+       2014.12.29
+      </div>
+      <div class="post_title">
+       東京研修のご案内
+      </div>
+      <div class="post_message">
+       <div>
+        <span style="color: #ff6600;">
+         <strong>
+          食文化研究会　東京研修
+         </strong>
+        </span>
+       </div>
+       <div>
+        <div>
+         <div>
+          <div>
+           <div>
+            <div>
+             <div>
+              <div>
+               <p>
+                <span style="color: #000000;">
+                 今季の食文化研究会主催の国内研修は
+                 <strong>
+                  東京
+                 </strong>
+                 です。
+                </span>
+               </p>
+               <p>
+                <span style="color: #000000;">
+                 日本橋を中心としに江戸の繁榮に触れる旅です。
+                </span>
+                <span style="color: #000000;">
+                 皆様のご参加をお待ちしております！！
+                </span>
+               </p>
+               <p>
+                <span style="color: #000000;">
+                 お申込みは、既にお送りしております申込み用紙にて
+                 <span style="color: #ff0000;">
+                  <strong>
+                   1
+                  </strong>
+                 </span>
+                 <strong>
+                  <span style="color: #ff0000;">
+                   月20日必着
+                  </span>
+                  で
+                 </strong>
+                 FAXくださいますようお願いいたします。
+                </span>
+               </p>
+               <p>
+                <span style="color: #000000;">
+                </span>
+               </p>
+               <p>
+                <span style="color: #000000;">
+                 ・日　　　時／平成27年3月10日（火）～12日（木）　《二泊三日》
+                </span>
+               </p>
+               <p>
+                <span style="color: #000000;">
+                 ・集合場所／和食　懐石『京』
+                 <span style="color: #ff0000;">
+                  <strong>
+                   １４時集合
+                  </strong>
+                 </span>
+                </span>
+               </p>
+               <p style="padding-left: 60px;">
+                <span style="color: #000000;">
+                 東京都千代田区丸の内3-1-1 国際ビル2F
+                 <strong>
+                 </strong>
+                </span>
+               </p>
+               <p>
+                <span style="color: #000000;">
+                 ・宿　泊　先／帝国ホテル 　東京都千代田区内幸町1-1-1
+                </span>
+               </p>
+               <p>
+                <span style="color: #000000;">
+                 ・参　加　費／お一人様80,000円(現地食事．バス．宿泊費等)
+                </span>
+               </p>
+               <p>
+                <span style="color: #000000;">
+                 ※1社2名様からプラス1万円になります。
+                </span>
+                <span style="color: #000000;">
+                 ※１人部屋希望の方は１泊１万円追加となります。
+                </span>
+               </p>
+               <p>
+                <span style="color: #000000;">
+                 ・主な内容／講演（渋川祥子氏、笹田傳左衛門氏）、銀座みつばちプロジェクト路地裏散策、日本橋散策、玉ゐ、玉ひで、蛇の市視察、
+                </span>
+                <span style="color: #000000;">
+                 屋形船船上落語講演、築地　鮪セリ、場内外視察その他。
+                </span>
+               </p>
+               <p>
+               </p>
+               <p>
+                <strong>
+                 <a href="http://www.shokuhyaku.jp/campaign/files/2014/12/afa144f286b3c6fa9d1f6b1aa6e1a55a.pdf" onclick="javascript:pageTracker._trackPageview('/outgoing/www.shokuhyaku.jp/campaign/files/2014/12/afa144f286b3c6fa9d1f6b1aa6e1a55a.pdf');">
+                  詳細・申込み用紙はこちらからご覧ください。
+                 </a>
+                </strong>
+               </p>
+               <p style="text-align: right;">
+                <strong>
+                </strong>
+                ◇食百年の会　事務局
+               </p>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <a name="508">
+     </a>
+     <div class="post_box">
+      <div class="post_date">
+       2014.12.22
+      </div>
+      <div class="post_title">
+       伏龍会　三重研修のご案内
+      </div>
+      <div class="post_message">
+       <p>
+        <span style="color: #0000ff;">
+         <strong>
+          伏龍会　三重研修
+         </strong>
+        </span>
+       </p>
+       <p>
+        <span style="color: #000000;">
+        </span>
+       </p>
+       <p>
+        <span style="color: #000000;">
+         伏龍会では今期第2回目の勉強会として、三重研修を開催いたします。
+        </span>
+       </p>
+       <p>
+        <span style="color: #000000;">
+         皆様のご参加お待ちしております！！
+        </span>
+       </p>
+       <p>
+        <span style="color: #000000;">
+         ご参加申込みは、既にお送りしております申込み用紙にて
+         <span style="color: #ff0000;">
+          <strong>
+           1月15日必着
+          </strong>
+         </span>
+         で
+        </span>
+       </p>
+       <p>
+        <span style="color: #000000;">
+         FAXくださいますようお願いいたします。
+        </span>
+       </p>
+       <p>
+        <span style="color: #000000;">
+         ・日　 　時／平成27年2月25日（水）～26日（木）
+        </span>
+       </p>
+       <p>
+        <span style="color: #000000;">
+         ・集　　合／三重県　津駅　　
+         <strong>
+          12時00分
+         </strong>
+        </span>
+       </p>
+       <p>
+        <span style="color: #000000;">
+         ・宿　　　泊／伊勢シティホテルアネックス(各自支払)
+        </span>
+       </p>
+       <p>
+        <span style="color: #000000;">
+         ・内　 容／伊勢神宮外宮、内宮参拝、(株)ダイム農場、工場、店舗視察、上海四馬路伊勢店で夕食、
+        </span>
+       </p>
+       <p style="padding-left: 60px;">
+        <span style="color: #000000;">
+         (株)ダイム大西会長、大西社長、城塚常務講和、かつ勢視察　他
+        </span>
+       </p>
+       <p>
+        <strong>
+         <span style="color: #000000;">
+          <a href="http://www.shokuhyaku.jp/campaign/files/2014/12/6b4aab34068231a8fb4c604d381c7e2f.pdf" onclick="javascript:pageTracker._trackPageview('/outgoing/www.shokuhyaku.jp/campaign/files/2014/12/6b4aab34068231a8fb4c604d381c7e2f.pdf');">
+           詳細･確認表はこちらからご覧ください。
+          </a>
+         </span>
+        </strong>
+       </p>
+       <p style="text-align: right;">
+        ◇食百年の会　事務局
+       </p>
+      </div>
+     </div>
+     <a name="496">
+     </a>
+     <div class="post_box">
+      <div class="post_date">
+       2014.10.16
+      </div>
+      <div class="post_title">
+       伏龍会東京研修のご案内
+      </div>
+      <div class="post_message">
+       <div>
+        <span style="color: #0000ff;">
+         <strong>
+          伏龍会　東京研修
+         </strong>
+        </span>
+       </div>
+       <div>
+        <div>
+         <p>
+          <span style="color: #000000;">
+           若手経営者の会、伏龍会の第七期第1回目の勉強会が開催されることとなりました。
+          </span>
+         </p>
+         <p>
+          <span style="color: #000000;">
+           出欠は、既にお送りしております『東京研修確認表』にて
+          </span>
+          <span style="color: #ff0000;">
+           10
+           <strong>
+            月31日必着
+           </strong>
+          </span>
+          <span style="color: #000000;">
+           でFAXくださいますようお願いいたします。
+          </span>
+         </p>
+         <p>
+         </p>
+         <p>
+          <span style="color: #000000;">
+           ・日　時／１１月２６日（水）
+          </span>
+         </p>
+         <p style="padding-left: 90px;">
+          <span style="color: #000000;">
+           １３時３０分～１７時３０分
+          </span>
+         </p>
+         <p style="padding-left: 90px;">
+          <span style="color: #000000;">
+           １７時３０～　繁盛店視察
+          </span>
+         </p>
+         <p style="padding-left: 60px;">
+          <span style="color: #000000;">
+           １１月２７日（木）　繁盛店視察【希望者のみ】
+          </span>
+         </p>
+         <p>
+          <span style="color: #000000;">
+           ・場　所／野村證券大手町本社　6階　6－2会議室会議室
+          </span>
+         </p>
+         <p style="padding-left: 60px;">
+          <span style="color: #000000;">
+           東京都千代田区大手町2－2－2アーバンネット大手町ビル
+          </span>
+         </p>
+         <p style="padding-left: 60px;">
+          <a target="_blank" href="%20https://goo.gl/maps/9j6NO" title=" https://goo.gl/maps/9j6NO" onclick="javascript:pageTracker._trackPageview('/outgoing/goo.gl/maps/9j6NO');">
+           https://goo.gl/maps/9j6NO
+          </a>
+         </p>
+         <p>
+          <span style="color: #000000;">
+           ・予定内容／
+          </span>
+         </p>
+         <p style="padding-left: 30px;">
+          <span style="color: #000000;">
+           ①委員長、副委員長挨拶
+          </span>
+         </p>
+         <p style="padding-left: 30px;">
+          <span style="color: #000000;">
+           ②事業継承についての講和：山田FAS㈱　税理士　萩原春喜様
+          </span>
+         </p>
+         <p style="padding-left: 30px;">
+          <span style="color: #000000;">
+           ③参加各社の事業継承対策
+          </span>
+         </p>
+         <p style="padding-left: 30px;">
+          <span style="color: #000000;">
+           ④販促の共有
+          </span>
+         </p>
+         <p style="padding-left: 30px;">
+          <span style="color: #000000;">
+           ⑤懇親会：脇屋シェフのお店｢迎賓茶樓｣　
+           <a target="_blank" href="http://www.wakiya.co.jp/restaurants/guest/" title="http://www.wakiya.co.jp/restaurants/guest/" onclick="javascript:pageTracker._trackPageview('/outgoing/www.wakiya.co.jp/restaurants/guest/');">
+            http://www.wakiya.co.jp/restaurants/guest/
+           </a>
+          </span>
+         </p>
+         <p>
+          <strong>
+           <a href="http://www.shokuhyaku.jp/campaign/files/2014/10/e07535b2c2847e22da12668ccd88c97e.pdf" onclick="javascript:pageTracker._trackPageview('/outgoing/www.shokuhyaku.jp/campaign/files/2014/10/e07535b2c2847e22da12668ccd88c97e.pdf');">
+            詳細･確認表はこちらからご覧ください。
+           </a>
+          </strong>
+         </p>
+         <p style="text-align: right;">
+          ◇食百年の会　事務局
+         </p>
+        </div>
+       </div>
+      </div>
+     </div>
+     <a name="490">
+     </a>
+     <div class="post_box">
+      <div class="post_date">
+       2014.08.04
+      </div>
+      <div class="post_title">
+       第七期総会、懇親会のご案内
+      </div>
+      <div class="post_message">
+       <p>
+        <span style="color: #ff0000;">
+         <strong>
+          食百年の会
+         </strong>
+        </span>
+       </p>
+       <p>
+        <strong>
+        </strong>
+       </p>
+       <p>
+        <span style="color: #000000;">
+         会員皆様には時下いよいよご清栄のことと存じます。
+        </span>
+       </p>
+       <p>
+        <span style="color: #000000;">
+         下記日程で第七期の総会を開催することとなりました。
+        </span>
+       </p>
+       <p>
+        <span style="color: #000000;">
+         新委員長のご紹介と活動計画発表に加え、
+        </span>
+       </p>
+       <p>
+        <span style="color: #000000;">
+         講演も予定しておりますので、是非とも皆様方のご出席を賜りたいと存じます。
+        </span>
+       </p>
+       <p>
+        <span style="color: #000000;">
+         出欠は、既にお送りしております申込み用紙にて
+         <span style="color: #ff0000;">
+          <strong>
+           9月10日必着
+          </strong>
+         </span>
+         でFAXくださいますようお願いいたします。
+        </span>
+       </p>
+       <p>
+       </p>
+       <p>
+        <span style="color: #000000;">
+         ・日　　時／平成26年10月2日（木）
+        </span>
+       </p>
+       <p style="padding-left: 60px;">
+        <span style="color: #000000;">
+         11時30分～18時30分　（受付11時00分より）
+        </span>
+       </p>
+       <p>
+        <span style="color: #000000;">
+         ・場　　所／丸の内東京會舘　エメラルド
+        </span>
+       </p>
+       <p style="padding-left: 60px;">
+        <span style="color: #000000;">
+         <a href="http://www.kaikan.co.jp/" onclick="javascript:pageTracker._trackPageview('/outgoing/www.kaikan.co.jp/');">
+          http://www.kaikan.co.jp/
+         </a>
+        </span>
+       </p>
+       <p style="padding-left: 60px;">
+        <span style="color: #000000;">
+         東京都千代田区丸の内3-2-1　　TEL：03-3215-2111
+        </span>
+       </p>
+       <p>
+       </p>
+       <p>
+        <span style="color: #000000;">
+         【主なスケジュール】
+        </span>
+       </p>
+       <p>
+        <span style="color: #000000;">
+         ■　総　会
+        </span>
+       </p>
+       <p>
+        <span style="color: #000000;">
+         ■　講　演　一部　　　株式会社エフビー　フードビス　主幹　代表者　神山泉様
+        </span>
+       </p>
+       <p style="padding-left: 150px;">
+        <span style="color: #000000;">
+        </span>
+        <span style="color: #000000;">
+         テーマ　『外食産業の現状と今後』
+        </span>
+       </p>
+       <p>
+        <span style="color: #000000;">
+         ■　講　演　二部　　　株式会社セブン＆アイ・フードシステムズ　　代表取締役　大久保恒夫様
+        </span>
+       </p>
+       <p style="padding-left: 150px;">
+        <span style="color: #000000;">
+         テーマ　『未定』
+        </span>
+       </p>
+       <p>
+        <span style="color: #000000;">
+         ■　懇親会
+        </span>
+       </p>
+       <p>
+        <strong>
+        </strong>
+       </p>
+       <p>
+        <strong>
+         <a href="http://www.shokuhyaku.jp/campaign/files/2014/08/14bc3d7f5c0801ebfacfd80c202731d0.pdf" onclick="javascript:pageTracker._trackPageview('/outgoing/www.shokuhyaku.jp/campaign/files/2014/08/14bc3d7f5c0801ebfacfd80c202731d0.pdf');">
+          詳細・出欠確認表　はこちらからご覧ください。
+         </a>
+        </strong>
+       </p>
+       <p style="text-align: right;">
+        ◇食百年の会　事務局
+       </p>
+      </div>
+     </div>
+     <a name="478">
+     </a>
+     <div class="post_box">
+      <div class="post_date">
+       2014.07.28
+      </div>
+      <div class="post_title">
+       伏龍会　韓国研修のご案内
+      </div>
+      <div class="post_message">
+       <div>
+        <span style="color: #0000ff;">
+         <strong>
+          伏龍会　韓国研修
+         </strong>
+        </span>
+       </div>
+       <div>
+        <div>
+         <div>
+          <div>
+           <div>
+            <div>
+             <p>
+             </p>
+             <p>
+              <span style="color: #000000;">
+               伏龍会では今期第3回目の勉強会として、
+              </span>
+              <span style="color: #000000;">
+               韓国研修を9月に開催いたします。
+              </span>
+             </p>
+             <p>
+              <span style="color: #000000;">
+               皆様のご参加お待ちしております！！
+              </span>
+             </p>
+             <p>
+              <span style="color: #000000;">
+               ご参加申込みは、既にお送りしております申込み用紙にて
+               <span style="color: #ff0000;">
+                <strong>
+                 8月10日必着
+                </strong>
+               </span>
+               で
+              </span>
+             </p>
+             <p>
+              <span style="color: #000000;">
+               <strong>
+                FAX
+               </strong>
+               くださいますようお願いいたします。
+              </span>
+             </p>
+             <p>
+             </p>
+             <p>
+              <span style="color: #000000;">
+               ・日　 　時／平成26年9月16日（火）～18日（木）
+              </span>
+             </p>
+             <p>
+              <span style="color: #000000;">
+               ・集合場所／12：30　韓国仁川空港 　※集合場所の詳細は後日連絡
+              </span>
+             </p>
+             <p>
+              <span style="color: #000000;">
+               ・宿　　　泊／GANGNAM    HOTEL
+              </span>
+             </p>
+             <p>
+              <span style="color: #000000;">
+               ・内　 容／繁盛店（ボンピヤン、Byekje）視察、故宮観光、新村　赤から視察、南大門市場視察、
+              </span>
+             </p>
+             <p>
+              <span style="color: #000000;">
+               繁盛店（春川ダッカルビ、スラオン）視察、垢すり体験、高級デパートのフードコート視察、
+              </span>
+             </p>
+             <p>
+              <span style="color: #000000;">
+               中国青島視察（オプションツアー）
+              </span>
+              <span style="color: #000000;">
+               他
+              </span>
+             </p>
+             <p>
+              <strong>
+              </strong>
+             </p>
+             <p>
+              <strong>
+              </strong>
+             </p>
+             <p>
+              <strong>
+               <a href="http://www.shokuhyaku.jp/campaign/files/2014/07/662ff79ee3638a80e8d46e31cb0065b7.pdf" onclick="javascript:pageTracker._trackPageview('/outgoing/www.shokuhyaku.jp/campaign/files/2014/07/662ff79ee3638a80e8d46e31cb0065b7.pdf');">
+                詳細･申込み書はこちらからご覧ください。
+               </a>
+               <a href="http://www.shokuhyaku.jp/campaign/files/2013/01/e67ab39f6a75e74789706d477922c945.pdf" onclick="javascript:pageTracker._trackPageview('/outgoing/www.shokuhyaku.jp/campaign/files/2013/01/e67ab39f6a75e74789706d477922c945.pdf');">
+               </a>
+              </strong>
+             </p>
+             <p style="text-align: right;">
+              ◇食百年の会　事務局
+             </p>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <a name="469">
+     </a>
+     <div class="post_box">
+      <div class="post_date">
+       2014.07.18
+      </div>
+      <div class="post_title">
+       【最新版】福岡研修のご案内
+      </div>
+      <div class="post_message">
+       <div>
+        <span style="color: #0000ff;">
+         <strong>
+          組織委員会　福岡研修
+         </strong>
+        </span>
+       </div>
+       <div>
+        <p>
+        </p>
+        <p>
+         <span style="color: #000000;">
+          台風の影響で延期となりました７月9日～10日予定の本研修は
+         </span>
+        </p>
+        <p>
+         <span style="color: #000000;">
+          <span style="color: #0000ff;">
+           <strong>
+            ８月28日～29日
+           </strong>
+          </span>
+          で再開できることとなりました。
+         </span>
+        </p>
+        <p>
+         <span style="color: #000000;">
+          皆様お繰り合わせの上、ご参加いただけますようお願い申し上げます。
+         </span>
+        </p>
+        <p>
+         <span style="color: #000000;">
+          なお、お手数ですが出欠の確認を取り直しいたしますので、
+         </span>
+        </p>
+        <p>
+         <span style="color: #000000;">
+          既にお配りしております「出欠確認表」を
+          <span style="color: #ff0000;">
+           <strong>
+            7
+           </strong>
+           <strong>
+            <span style="color: #ff0000;">
+             月24日（木）必着
+            </span>
+           </strong>
+          </span>
+          でFAXにて
+         </span>
+        </p>
+        <p>
+         <span style="color: #000000;">
+          ご返送いただきますようお願い申し上げます。
+         </span>
+        </p>
+        <p>
+         <span style="color: #000000;">
+          ※集合場所・宿泊場所が変更しておりますので今一度ご確認くださいませ。
+         </span>
+        </p>
+        <p>
+         <span style="color: #000000;">
+         </span>
+        </p>
+        <p>
+        </p>
+        <p>
+         <span style="color: #000000;">
+          ・日　　　時／平成26年8月28日（木）～29日（金）
+         </span>
+        </p>
+        <p>
+         <span style="color: #000000;">
+          ・集合場所／ＴＫＰガーデンシティ博多　
+          <strong>
+           <span style="color: #ff0000;">
+            アネックス
+           </span>
+           13時集合
+          </strong>
+         </span>
+        </p>
+        <p style="padding-left: 90px;">
+         <span style="color: #000000;">
+          <a href="http://gc-hakata-annex.net/" onclick="javascript:pageTracker._trackPageview('/outgoing/gc-hakata-annex.net/');">
+           http://gc-hakata-annex.net/
+          </a>
+         </span>
+        </p>
+        <p>
+         <span style="color: #000000;">
+          ・宿　泊　先／ＴＫＰガーデンシティ博多　
+          <span style="color: #ff0000;">
+           <strong>
+            アネックス
+           </strong>
+          </span>
+         </span>
+        </p>
+        <p>
+         <span style="color: #000000;">
+          ・参　加　費／お一人様　25,000円(１社２名様からは35,000円)
+         </span>
+        </p>
+        <p>
+        </p>
+        <p>
+         <span style="color: #000000;">
+          <strong>
+           <a href="http://www.shokuhyaku.jp/campaign/files/2014/07/06f51d68d7e4afd78a083dea316ab9db.pdf" onclick="javascript:pageTracker._trackPageview('/outgoing/www.shokuhyaku.jp/campaign/files/2014/07/06f51d68d7e4afd78a083dea316ab9db.pdf');">
+            詳細・出欠確認表はこちらからご覧ください。
+           </a>
+          </strong>
+         </span>
+        </p>
+        <p style="text-align: right;">
+         <strong>
+         </strong>
+         ◇食百年の会　事務局
+        </p>
+       </div>
+      </div>
+     </div>
+     <a name="454">
+     </a>
+     <div class="post_box">
+      <div class="post_date">
+       2014.06.30
+      </div>
+      <div class="post_title">
+       函館研修のご案内
+      </div>
+      <div class="post_message">
+       <div>
+        <span style="color: #fe5b00;">
+         <strong>
+          食文化研究会　マレーシア研修
+         </strong>
+        </span>
+       </div>
+       <div>
+        <div>
+         <div>
+          <div>
+           <div>
+            <div>
+             <div>
+              <p>
+               <span style="color: #000000;">
+                食文化研究会主催の国内研修は
+                <strong>
+                 9月
+                </strong>
+                の開催で
+                <strong>
+                 北海道 函館
+                </strong>
+                です。
+               </span>
+              </p>
+              <p>
+               <span style="color: #000000;">
+                コリコリの「真イカ」や旨みたっぷりの「戸井マグロ」など好漁場の恵みをいただき、
+               </span>
+              </p>
+              <p>
+               <span style="color: #000000;">
+                貿易で栄えたエキゾチックな街並みを散策する旅です。
+               </span>
+              </p>
+              <p>
+               <span style="color: #000000;">
+                皆様のご参加をお待ちしております！！
+               </span>
+              </p>
+              <p>
+               <span style="color: #000000;">
+                お申込みは、既にお送りしております申込み用紙にて
+                <span style="color: #ff0000;">
+                 <strong>
+                  7
+                 </strong>
+                </span>
+                <strong>
+                 <span style="color: #ff0000;">
+                  月20日必着
+                 </span>
+                 で
+                </strong>
+                FAXくださいますようお願いいたします。
+               </span>
+              </p>
+              <p>
+              </p>
+              <p>
+               <span style="color: #000000;">
+                ・日　　　時／平成26年9月9日（火）～11日（木）　《二泊三日》
+               </span>
+              </p>
+              <p>
+               <span style="color: #000000;">
+                ・集合場所／
+                <span style="color: #ff0000;">
+                 <strong>
+                  函館空港
+                 </strong>
+                </span>
+                到着ロビー
+                <span style="color: #ff0000;">
+                 <strong>
+                  15時00分
+                 </strong>
+                </span>
+                集合
+               </span>
+              </p>
+              <p>
+               <span style="color: #000000;">
+                ・宿　泊　先／ラビスタ函館ベイ
+               </span>
+              </p>
+              <p>
+               <span style="color: #000000;">
+                ・参　加　費／お一人様 7万8千円(現地食事．バス．宿泊費等)
+               </span>
+              </p>
+              <p>
+               <span style="color: #000000;">
+                ※1社2名様から8万8千円になります。
+               </span>
+              </p>
+              <p>
+               <span style="color: #000000;">
+                ・主な内容／講演（深谷宏治氏、坂口あき子氏）、函館山夜景観光、市内観光、
+               </span>
+              </p>
+              <p>
+               <span style="color: #000000;">
+                五島軒、いか清、だいもん、函太郎等で食事と懇親会、その他。
+               </span>
+              </p>
+              <p>
+              </p>
+              <p>
+               <strong>
+                <a href="http://www.shokuhyaku.jp/campaign/files/2014/06/1f5098a4e59f88dce659b6120a3ab3e6.pdf" onclick="javascript:pageTracker._trackPageview('/outgoing/www.shokuhyaku.jp/campaign/files/2014/06/1f5098a4e59f88dce659b6120a3ab3e6.pdf');">
+                 詳細・申込み用紙はこちらからご覧ください。
+                </a>
+               </strong>
+              </p>
+              <p style="text-align: right;">
+               <strong>
+               </strong>
+               ◇食百年の会　事務局
+              </p>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <a name="438">
+     </a>
+     <div class="post_box">
+      <div class="post_date">
+       2014.05.15
+      </div>
+      <div class="post_title">
+       第二回コスト削減委員会のご案内
+      </div>
+      <div class="post_message">
+       <p>
+        <span style="color: #008000;">
+         <strong>
+          コスト削減委員会のご案内
+         </strong>
+        </span>
+       </p>
+       <div>
+        <div>
+         <div>
+          <div>
+           <p>
+           </p>
+           <p>
+            <span style="color: #000000;">
+             第二回のコスト削減委員会が6月10日に開催されます。
+            </span>
+           </p>
+           <p>
+            <span style="color: #000000;">
+             是非多くの皆様にご参加くださいますようご案内申し上げます。
+            </span>
+           </p>
+           <p>
+            <span style="color: #000000;">
+             ご参加の企業様は協議希望のリストを事前にご提出ください。
+            </span>
+           </p>
+           <p>
+            <span style="color: #000000;">
+             出席等につきましては、
+             <strong>
+              <span style="color: #ff0000;">
+               5月20日必着
+              </span>
+              で
+              <span style="color: #ff0000;">
+               FAX
+              </span>
+             </strong>
+             にてご返送をお願い申し上げます。
+            </span>
+           </p>
+           <p>
+           </p>
+           <p>
+            <span style="color: #000000;">
+             ■開催日時：　平成26年6月10日（火）　
+             <strong>
+              13：30
+             </strong>
+             ～
+             <strong>
+              16
+             </strong>
+             ：3
+             <strong>
+              0
+             </strong>
+            </span>
+           </p>
+           <p>
+            <span style="color: #000000;">
+             ■場　　　所：　JF
+             <strong>
+              浜松町セントラルビル　10F　（
+              <span style="color: #ff0000;">
+               前回と会場が異なりますのでご注意ください！
+              </span>
+              ）
+             </strong>
+            </span>
+           </p>
+           <p style="padding-left: 120px;">
+            <a target="_blank" href="http://www.jfnet.or.jp/access/access.html#accessmap" onclick="javascript:pageTracker._trackPageview('/outgoing/www.jfnet.or.jp/access/access.html#accessmap');">
+             <span style="color: #0000ff;">
+              http://www.jfnet.or.jp/access/access.html#accessmap
+             </span>
+            </a>
+           </p>
+           <p>
+            <span style="color: #000000;">
+             ■住　　　所：　東京都港区浜松町1-29-6
+            </span>
+           </p>
+           <p>
+            <span style="color: #000000;">
+             ■事前提出：協議希望品リスト
+            </span>
+           </p>
+           <p>
+           </p>
+           <p>
+            <strong>
+             <a href="http://www.shokuhyaku.jp/campaign/files/2014/05/5372b2bcd1bcda45fab1d51f9a9c90f4.pdf" onclick="javascript:pageTracker._trackPageview('/outgoing/www.shokuhyaku.jp/campaign/files/2014/05/5372b2bcd1bcda45fab1d51f9a9c90f4.pdf');">
+              詳細及び出席申込書はこちらをご覧下さい。
+             </a>
+            </strong>
+           </p>
+           <p style="text-align: right;">
+            ◇食百年の会　事務局
+           </p>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <a name="423">
+     </a>
+     <div class="post_box">
+      <div class="post_date">
+       2014.03.10
+      </div>
+      <div class="post_title">
+       経営戦略セミナーのご案内
+      </div>
+      <div class="post_message">
+       <div>
+        <div>
+         <p style="text-align: left;">
+          <span style="color: #800080;">
+           <strong>
+            第六期総会（経営戦略セミナー）のご案内
+           </strong>
+          </span>
+         </p>
+         <p>
+          <strong>
+          </strong>
+          <br />
+          <span style="color: #000000;">
+           第六期総会東京セミナーおよび、組織委員会研修を下記の通りご案内申し上げます。
+          </span>
+         </p>
+         <p>
+          <span style="color: #000000;">
+           ご多忙と存じますが、全会員の皆様にご参加いただきたくお願い申し上げます。
+          </span>
+         </p>
+         <p>
+          <span style="color: #000000;">
+           出欠につきましては別紙の出欠表にて、
+          </span>
+          <span style="color: #ff0000;">
+           <strong>
+            4月5日（土）
+           </strong>
+          </span>
+          <span style="color: #000000;">
+           必着でFAXにてご返送くださいませ。 
+          </span>
+         </p>
+         <p>
+          <span style="color: #000000;">
+          </span>
+         </p>
+         <p>
+          <span style="color: #000000;">
+           ・日　時　　平成26年5月14日（水）～15日（木）
+          </span>
+         </p>
+         <p>
+          <span style="color: #000000;">
+           ・集　合　　東京ベイコート倶楽部　12時
+          </span>
+         </p>
+         <p>
+          <span style="color: #000000;">
+           　　　　　　　東京都江東区有明3-1-15　ＴＥＬ：　03-6700-1111
+          </span>
+         </p>
+         <p>
+          <span style="color: #000000;">
+           <a href="https://baycourtclub.jp/" onclick="javascript:pageTracker._trackPageview('/outgoing/baycourtclub.jp/');">
+            https://baycourtclub.jp/
+           </a>
+          </span>
+         </p>
+         <p>
+          <span style="color: #000000;">
+           ・参加費　　無料
+          </span>
+          <span style="color: #000000;">
+           　（1社2名様からは28,000円）
+          </span>
+         </p>
+         <p>
+          <strong>
+           <a href="http://www.shokuhyaku.jp/campaign/files/2014/03/4099e385dc93db27b2526fcde51dd01b.pdf" onclick="javascript:pageTracker._trackPageview('/outgoing/www.shokuhyaku.jp/campaign/files/2014/03/4099e385dc93db27b2526fcde51dd01b.pdf');">
+            詳細、出欠確認表はこちらをご覧下さい。
+           </a>
+          </strong>
+         </p>
+         <p style="text-align: right;">
+          <strong>
+          </strong>
+          ◇食百年の会　事務局
+         </p>
+        </div>
+       </div>
+      </div>
+     </div>
+     <a name="411">
+     </a>
+     <div class="post_box">
+      <div class="post_date">
+       2014.01.16
+      </div>
+      <div class="post_title">
+       第一回コスト削減委員会のご案内
+      </div>
+      <div class="post_message">
+       <div>
+        <div>
+         <div>
+          <div>
+           <p>
+            <span style="color: #008000;">
+             <strong>
+              コスト削減委員会のご案内
+             </strong>
+            </span>
+           </p>
+           <p>
+           </p>
+           <p>
+            <span style="color: #000000;">
+             今期第一回のコスト削減委員会が2月18日に開催されます。
+            </span>
+           </p>
+           <p>
+            <span style="color: #000000;">
+             今回は消費税増税対応についての意見交換会も併せて行います。
+            </span>
+           </p>
+           <p>
+            <span style="color: #000000;">
+             コスト削減会議においては、協議希望のリストを事前にご提出いただき、
+            </span>
+           </p>
+           <p>
+            <span style="color: #000000;">
+             内容の濃い会としたいと存知ます。
+            </span>
+           </p>
+           <p>
+            <span style="color: #000000;">
+             是非多くの皆様にご参加くださいますようご案内申し上げます。
+            </span>
+           </p>
+           <p>
+            <span style="color: #000000;">
+             出席等につきましては、
+            </span>
+            <strong>
+             <span style="color: #ff0000;">
+              1月28日必着
+             </span>
+             <span style="color: #000000;">
+              でFAX　
+             </span>
+            </strong>
+            <span style="color: #000000;">
+             にてご返送をお願い申し上げます。
+            </span>
+           </p>
+           <p>
+            <span style="color: #000000;">
+            </span>
+           </p>
+           <p>
+            <span style="color: #000000;">
+             ■開催日時：　平成26年2月18日（火）　
+             <strong>
+              13：15
+             </strong>
+             ～
+             <strong>
+              17
+             </strong>
+             ：
+             <strong>
+              00
+             </strong>
+            </span>
+           </p>
+           <p>
+            <span style="color: #000000;">
+             ■場　　　所：　TKP東京駅前カンファレンスセンター　　　カンファレンスルーム
+             <strong>
+              ９Ａ
+             </strong>
+            </span>
+           </p>
+           <p>
+            <span style="color: #000000;">
+             ■住　　　所：　東京都中央区八重洲1-5-20 石塚八重洲ビル9F
+            </span>
+           </p>
+           <p>
+            <span style="color: #000000;">
+             　　　　　　　 　 東京駅八重洲北口より徒歩１分
+             <strong>
+             </strong>
+            </span>
+           </p>
+           <p>
+            <span style="color: #000000;">
+             ■事前提出：協議希望品リスト
+            </span>
+           </p>
+           <p>
+            <span style="color: #000000;">
+            </span>
+           </p>
+           <p>
+            <strong>
+             <a href="http://www.shokuhyaku.jp/campaign/files/2014/01/76a35b24fadf8343adda5115e3c7b1e92.pdf" onclick="javascript:pageTracker._trackPageview('/outgoing/www.shokuhyaku.jp/campaign/files/2014/01/76a35b24fadf8343adda5115e3c7b1e92.pdf');">
+              詳細及び出席申込書はこちらをご覧下さい。
+             </a>
+            </strong>
+           </p>
+           <p style="text-align: right;">
+            ◇食百年の会　事務局
+           </p>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <a name="406">
+     </a>
+     <div class="post_box">
+      <div class="post_date">
+       2013.12.30
+      </div>
+      <div class="post_title">
+       伏龍会　九州研修のご案内
+      </div>
+      <div class="post_message">
+       <div>
+        <div>
+         <div>
+          <div>
+           <div>
+            <p>
+             <span style="color: #0000ff;">
+              <strong>
+               伏龍会　九州研修
+              </strong>
+             </span>
+            </p>
+            <p>
+            </p>
+            <p>
+             <span style="color: #000000;">
+              伏龍会では今期第2回目の勉強会として、
+             </span>
+            </p>
+            <p>
+             <span style="color: #000000;">
+              九州研修を2月に開催いたします。皆様のご参加お待ちしております！！
+             </span>
+            </p>
+            <p>
+             <span style="color: #000000;">
+              ご参加申込みは、既にお送りしております申込み用紙にて
+             </span>
+             <span style="color: #ff0000;">
+              <strong>
+               1月18日必着
+              </strong>
+             </span>
+             <span style="color: #000000;">
+              で
+             </span>
+            </p>
+            <p>
+             <span style="color: #000000;">
+              <strong>
+               FAX
+              </strong>
+              くださいますようお願いいたします。
+             </span>
+            </p>
+            <p>
+             <span style="color: #000000;">
+             </span>
+            </p>
+            <p>
+             <span style="color: #000000;">
+              ・日　 　時／平成26年2月24日（月）～25日（火）
+             </span>
+            </p>
+            <p>
+             <span style="color: #000000;">
+              ・集合場所／10：30　福岡空港到着ロビー
+             </span>
+            </p>
+            <p>
+             <span style="color: #000000;">
+              　　　　　　　　11：00　JR博多駅立ち寄り
+             </span>
+            </p>
+            <p>
+             <span style="color: #000000;">
+              ・宿　　　泊：佐世保ワシントンホテル
+             </span>
+            </p>
+            <p>
+             <span style="color: #000000;">
+              ・内　 容／繁盛店（河太郎）視察、トリゼンフーズ　鶏加工工場視察、ヤマフ水産加工工場視察、
+             </span>
+            </p>
+            <p>
+             <span style="color: #000000;">
+              マルモ水産　牡蠣養殖場視察、繁盛店（井出ちゃんぽん）視察　他
+             </span>
+            </p>
+            <p>
+             <strong>
+             </strong>
+            </p>
+            <p>
+             <strong>
+              <a href="http://www.shokuhyaku.jp/campaign/files/2013/12/862dd4ab60e5730a14bf27b8455c6003.pdf" onclick="javascript:pageTracker._trackPageview('/outgoing/www.shokuhyaku.jp/campaign/files/2013/12/862dd4ab60e5730a14bf27b8455c6003.pdf');">
+               詳細･申込み書はこちらからご覧ください。　
+              </a>
+              <a href="http://www.shokuhyaku.jp/campaign/files/2013/01/e67ab39f6a75e74789706d477922c945.pdf" onclick="javascript:pageTracker._trackPageview('/outgoing/www.shokuhyaku.jp/campaign/files/2013/01/e67ab39f6a75e74789706d477922c945.pdf');">
+              </a>
+             </strong>
+            </p>
+            <p style="text-align: right;">
+             ◇食百年の会　事務局
+            </p>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <a name="399">
+     </a>
+     <div class="post_box">
+      <div class="post_date">
+       2013.12.30
+      </div>
+      <div class="post_title">
+       マレーシア研修のご案内
+      </div>
+      <div class="post_message">
+       <div>
+        <div>
+         <div>
+          <div>
+           <div>
+            <div>
+             <p>
+              <span style="color: #ff6600;">
+               <strong>
+                食文化研究会　マレーシア研修
+               </strong>
+              </span>
+             </p>
+             <p>
+              <strong>
+              </strong>
+             </p>
+             <p>
+              <span style="color: #000000;">
+               本年度の食文化研究会主催の海外研修は
+               <span style="color: #ff0000;">
+                <strong>
+                 3月
+                </strong>
+               </span>
+               の開催で
+               <strong>
+                マレーシア
+               </strong>
+               です。
+              </span>
+             </p>
+             <p>
+              <span style="color: #000000;">
+               海外勤務の商社マンがリタイア後に永住したい国、No1.のマレーシアで
+              </span>
+             </p>
+             <p>
+              <span style="color: #000000;">
+               その魅力と食文化にふれる企画です。皆様のご参加をお待ちしております！！
+              </span>
+             </p>
+             <p>
+              <span style="color: #000000;">
+               お申込みは、既にお送りしております申込み用紙にて
+               <span style="color: #ff0000;">
+                <strong>
+                 1
+                </strong>
+               </span>
+              </span>
+              <strong>
+               <span style="color: #000000;">
+                <span style="color: #ff0000;">
+                 月31日
+                </span>
+                必着で
+               </span>
+              </strong>
+              <span style="color: #000000;">
+               FAXくださいますようお願いいたします。
+              </span>
+             </p>
+             <p>
+              <span style="color: #000000;">
+              </span>
+             </p>
+             <p>
+              <span style="color: #000000;">
+               ・日　　　時／平成26
+              </span>
+              <span style="color: #000000;">
+               年3月4日（火）～8日（土）　《三泊五日》
+              </span>
+             </p>
+             <p>
+              <span style="color: #000000;">
+               ・集合場所／
+               <span style="color: #ff6600;">
+                <strong>
+                 クアラルンプール空港
+                </strong>
+               </span>
+               到着ロビー
+               <span style="color: #ff6600;">
+                <strong>
+                 17時30分
+                </strong>
+               </span>
+               集合
+              </span>
+             </p>
+             <p>
+              <span style="color: #000000;">
+               ・宿　泊　先／未定（決定次第連絡します）
+              </span>
+             </p>
+             <p>
+              <span style="color: #000000;">
+               ・参　加　費／お一人様 7万8千円(現地食事．バス．宿泊費等)
+              </span>
+             </p>
+             <p>
+              <span style="color: #000000;">
+               　　　　　　　　※1社2名様から8万8千円になります。
+              </span>
+             </p>
+             <p>
+              <span style="color: #000000;">
+               ・主な内容／マラッカ視察、客家でスチームボード（名物鍋）の夕食、
+              </span>
+             </p>
+             <p>
+              <span style="color: #000000;">
+               講演（イオンマレーシア社長）、麗賓軒で飲茶、プトラジャ観光
+              </span>
+              <span style="color: #000000;">
+               他。
+              </span>
+             </p>
+             <p>
+              <span style="color: #000000;">
+              </span>
+             </p>
+             <p>
+              <strong>
+               <a href="http://www.shokuhyaku.jp/campaign/files/2013/12/4914ed79a4a22952589472d8ca22a4e5.pdf" onclick="javascript:pageTracker._trackPageview('/outgoing/www.shokuhyaku.jp/campaign/files/2013/12/4914ed79a4a22952589472d8ca22a4e5.pdf');">
+                詳細・申込み用紙はこちらからご覧ください。
+               </a>
+              </strong>
+             </p>
+             <p style="text-align: right;">
+              <strong>
+              </strong>
+              ◇食百年の会　事務局
+             </p>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <a name="384">
+     </a>
+     <div class="post_box">
+      <div class="post_date">
+       2013.10.21
+      </div>
+      <div class="post_title">
+       伏龍会第1回勉強会のご案内
+      </div>
+      <div class="post_message">
+       <div>
+        <p>
+         <span style="color: #0000ff;">
+          <strong>
+           伏龍会　第1回勉強会
+          </strong>
+         </span>
+        </p>
+        <p>
+         <span style="color: #000000;">
+          若手経営者の会、伏龍会の第六期第1回目の勉強会が開催されることとなりました。
+         </span>
+        </p>
+        <p>
+         <span style="color: #000000;">
+          出欠は、既にお送りしております『11月度勉強会確認表』にて
+          <span style="color: #ff0000;">
+           <strong>
+            11月1日必着
+           </strong>
+          </span>
+          でFAXくださいますようお願いいたします。
+         </span>
+        </p>
+        <p>
+         <span style="color: #000000;">
+         </span>
+        </p>
+        <p>
+         <span style="color: #000000;">
+          ・日　　　時／１１月２７日（水）　　１３時３０分～１７時３０分
+         </span>
+        </p>
+        <p style="padding-left: 180px;">
+         <span style="color: #000000;">
+          １７時３０～　繁盛店視察
+         </span>
+        </p>
+        <p style="padding-left: 60px;">
+         <span style="color: #000000;">
+          　１１月２８日（木）　　都内自由視察【希望によっては同行視察】
+         </span>
+        </p>
+        <p>
+         <span style="color: #000000;">
+          ・場　　　所／ＲＤＣグループ　東京オフィス　会議室
+         </span>
+        </p>
+        <p style="padding-left: 60px;">
+         <span style="color: #000000;">
+           　東京都中央区京橋1-4-10大野屋京橋ビル１Ｆ　
+         </span>
+        </p>
+        <p style="padding-left: 60px;">
+         <span style="color: #000000;">
+          　電話　03-3527-9401         ※東京駅八重洲中央口から徒歩５
+         </span>
+        </p>
+        <p>
+         <span style="color: #000000;">
+          ・予定内容／①鈴木委員長　年間行動方針
+         </span>
+        </p>
+        <p style="padding-left: 60px;">
+         <span style="color: #000000;">
+          　 ②今期の年次計画報告
+         </span>
+        </p>
+        <p style="padding-left: 60px;">
+         <span style="color: #000000;">
+          　 ③現況報告
+         </span>
+        </p>
+        <p style="padding-left: 60px;">
+         <span style="color: #000000;">
+          　 ④情報交換会：世代交代について
+         </span>
+        </p>
+        <p style="padding-left: 60px;">
+         <span style="color: #000000;">
+          　 ⑤繁盛店視察（丸の内エリア商業施設）
+         </span>
+        </p>
+        <p>
+        </p>
+        <p>
+         <a href="http://www.shokuhyaku.jp/campaign/files/2013/10/f99df138508716ba548191cafe167413.pdf" onclick="javascript:pageTracker._trackPageview('/outgoing/www.shokuhyaku.jp/campaign/files/2013/10/f99df138508716ba548191cafe167413.pdf');">
+          <strong>
+           詳細･確認表はこちらからご覧ください。
+          </strong>
+         </a>
+        </p>
+        <p style="text-align: right;">
+         　◇食百年の会　事務局
+        </p>
+       </div>
+      </div>
+     </div>
+     <a name="380">
+     </a>
+     <div class="post_box">
+      <div class="post_date">
+       2013.09.24
+      </div>
+      <div class="post_title">
+       タイ研修の写真をアップしました
+      </div>
+      <div class="post_message">
+       <div>
+        <div>
+         <div>
+          <div>
+           <div>
+            <div>
+             <p>
+              <span style="color: #ff6600;">
+               <strong>
+                食文化研究会　タイ研修
+               </strong>
+              </span>
+             </p>
+             <p>
+              <span style="color: #000000;">
+               9月3日から行われました、タイ研修の写真をアップしました。
+              </span>
+             </p>
+             <p>
+              <span style="color: #000000;">
+               天候に恵まれ、ご参加の皆様の笑顔と、自然と歴史遺産の豊かな各地の様子を是非ご覧ください！
+              </span>
+             </p>
+             <p>
+              <strong>
+               <span style="color: #000000;">
+                <a href="http://www.shokuhyaku.jp/campaign/files/2013/09/4ab45195ab7b9b1b452fcfcafa911b38.pdf" onclick="javascript:pageTracker._trackPageview('/outgoing/www.shokuhyaku.jp/campaign/files/2013/09/4ab45195ab7b9b1b452fcfcafa911b38.pdf');">
+                 写真はこちらからどうぞ。
+                </a>
+               </span>
+              </strong>
+             </p>
+             <p style="text-align: right;">
+              <strong>
+              </strong>
+              ◇食百年の会　事務局
+             </p>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <a name="375">
+     </a>
+     <div class="post_box">
+      <div class="post_date">
+       2013.08.12
+      </div>
+      <div class="post_title">
+       第六期総会、懇親会のご案内
+      </div>
+      <div class="post_message">
+       <div>
+        <div>
+         <p>
+          <span style="color: #ff0000;">
+           <strong>
+            食百年の会
+           </strong>
+          </span>
+         </p>
+         <p>
+          <strong>
+          </strong>
+         </p>
+         <p>
+          <span style="color: #000000;">
+           会員皆様には時下いよいよご清栄のことと存じます。
+          </span>
+         </p>
+         <p>
+          <span style="color: #000000;">
+           下記日程で第六期の総会を開催することとなりました。
+          </span>
+         </p>
+         <p>
+          <span style="color: #000000;">
+           新委員長のご紹介と活動計画発表に加え、
+          </span>
+         </p>
+         <p>
+          <span style="color: #000000;">
+           講演も予定しておりますので、是非とも皆様方のご出席を賜りたいと存じます。
+          </span>
+         </p>
+         <p>
+          <span style="color: #000000;">
+           出欠は、既にお送りしております申込み用紙にて
+           <span style="color: #ff0000;">
+            <strong>
+             9月10日必着
+            </strong>
+           </span>
+           でFAXくださいますようお願いいたします。
+          </span>
+         </p>
+         <p>
+          <span style="color: #000000;">
+          </span>
+         </p>
+         <p>
+          <span style="color: #000000;">
+           ・日　　時／平成25年10月2日（水）
+          </span>
+         </p>
+         <p>
+          <span style="color: #000000;">
+           　　　　　　　　11時30分～18時30分　（受付10時30分より）
+          </span>
+         </p>
+         <p>
+          <span style="color: #000000;">
+           ・場　　所／丸の内東京會舘　エメラルド
+          </span>
+         </p>
+         <p>
+          <span style="color: #000000;">
+           　　　　　　　東京都千代田区丸の内3-2-1　　TEL：03-3215-2111
+          </span>
+         </p>
+         <p>
+          <span style="color: #000000;">
+          </span>
+         </p>
+         <p>
+          <span style="color: #000000;">
+           【主なスケジュール】 
+          </span>
+         </p>
+         <p>
+          <span style="color: #000000;">
+           ■　総　会
+          </span>
+         </p>
+         <p>
+          <span style="color: #000000;">
+           ■　講　演　一部　　　第一生命経済研究所　　主席エコノミスト　
+          </span>
+          <span style="color: #000000;">
+           永浜利廣様
+          </span>
+         </p>
+         <p>
+          <span style="color: #000000;">
+           　　　　　　　　　　　　　テーマ　『未定』
+          </span>
+         </p>
+         <p>
+          <span style="color: #000000;">
+           ■　講　演　二部　　　株式会社ねぎしフードサービス　　代表取締役　根岸榮治様
+          </span>
+         </p>
+         <p>
+          <span style="color: #000000;">
+           　　　　　　　　　　　　　テーマ　『未定』
+          </span>
+         </p>
+         <p>
+          <span style="color: #000000;">
+           ■　懇親会
+          </span>
+         </p>
+         <p>
+          <strong>
+          </strong>
+         </p>
+         <p>
+          <strong>
+           <a href="http://www.shokuhyaku.jp/campaign/files/2013/08/8269b6ed99604a1fcf8b3110c6716094.pdf" onclick="javascript:pageTracker._trackPageview('/outgoing/www.shokuhyaku.jp/campaign/files/2013/08/8269b6ed99604a1fcf8b3110c6716094.pdf');">
+            詳細・出欠確認表　はこちらからご覧ください。
+           </a>
+          </strong>
+         </p>
+         <p style="text-align: right;">
+          ◇食百年の会　事務局
+         </p>
+        </div>
+       </div>
+      </div>
+     </div>
+     <a name="362">
+     </a>
+     <div class="post_box">
+      <div class="post_date">
+       2013.08.05
+      </div>
+      <div class="post_title">
+       第三回コスト削減委員会のご案内
+      </div>
+      <div class="post_message">
+       <div>
+        <div>
+         <div>
+          <p>
+           <span style="color: #008000;">
+            <strong>
+             コスト削減委員会のご案内
+            </strong>
+           </span>
+          </p>
+          <p>
+          </p>
+          <p>
+           <span style="color: #000000;">
+            第
+            <strong>
+             三
+            </strong>
+            回のコスト削減委員会が9月24日に開催されます。
+           </span>
+          </p>
+          <p>
+           <span style="color: #000000;">
+            <span style="color: #0000ff;">
+             <span style="color: #000000;">
+              今回も　
+             </span>
+             <strong>
+              課題を事前に提出　
+             </strong>
+            </span>
+            いただき、内容の濃い会としたいと存知ます。
+           </span>
+          </p>
+          <p>
+           <span style="color: #000000;">
+            是非多くの皆様にご参加くださいますようご案内申し上げます。
+           </span>
+          </p>
+          <p>
+           <span style="color: #000000;">
+            出席につきましては、
+            <strong>
+             <span style="color: #ff0000;">
+              8
+             </span>
+             <span style="color: #ff0000;">
+              月15日必着でFAX　
+             </span>
+            </strong>
+            にてご返送をお願い申し上げます。
+           </span>
+          </p>
+          <p>
+           <span style="color: #000000;">
+           </span>
+          </p>
+          <p>
+           <span style="color: #000000;">
+            ■開催日時：　平成25年9月24日（火）　
+            <span style="color: #ff0000;">
+             <strong>
+              13：30
+             </strong>
+            </span>
+            ～17：00
+           </span>
+          </p>
+          <p>
+           <span style="color: #000000;">
+            ■場　　　所：　TKP東京駅前カンファレンスセンター　　　カンファレンスルーム
+           </span>
+           <span style="color: #0000ff;">
+            <strong>
+             ９Ａ
+            </strong>
+           </span>
+          </p>
+          <p>
+           <span style="color: #000000;">
+            ■住　　　所：　東京都中央区八重洲1-5-20 石塚八重洲ビル9F
+           </span>
+          </p>
+          <p>
+           <span style="color: #000000;">
+            　　　　　　　 　 東京駅八重洲北口より徒歩１分
+            <strong>
+            </strong>
+           </span>
+          </p>
+          <p>
+           <span style="color: #000000;">
+            ■事前課題：　後日、参加者に配布致します。
+           </span>
+          </p>
+          <p>
+           <span style="color: #000000;">
+           </span>
+          </p>
+          <p>
+           <strong>
+            <a href="http://www.shokuhyaku.jp/campaign/files/2013/08/581211e7fb9fa946eba67a481c423c93.pdf" onclick="javascript:pageTracker._trackPageview('/outgoing/www.shokuhyaku.jp/campaign/files/2013/08/581211e7fb9fa946eba67a481c423c93.pdf');">
+             詳細及び出席申込書はこちらをご覧下さい。
+            </a>
+           </strong>
+          </p>
+          <p style="text-align: right;">
+           ◇食百年の会　事務局
+          </p>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <a name="358">
+     </a>
+     <div class="post_box">
+      <div class="post_date">
+       2013.06.10
+      </div>
+      <div class="post_title">
+       タイ研修のご案内
+      </div>
+      <div class="post_message">
+       <div>
+        <div>
+         <div>
+          <div>
+           <div>
+            <p>
+             <span style="color: #ff6600;">
+              <strong>
+               食文化研究会　タイ研修
+              </strong>
+             </span>
+            </p>
+            <p>
+             <span style="color: #000000;">
+              <strong>
+              </strong>
+             </span>
+            </p>
+            <p>
+             <span style="color: #000000;">
+              本年度の食文化研究会主催の海外研修は、
+              <strong>
+               微笑みの国　タイ
+              </strong>
+              です。
+             </span>
+            </p>
+            <p>
+             <span style="color: #000000;">
+              食材の宝庫！そして外食率の高い食生活を送るタイの今を是非ご自分の目で確かめてください！多数のご参加をお待ちしております！！
+             </span>
+            </p>
+            <p>
+             <span style="color: #000000;">
+              お申込みは、既にお送りしております申込み用紙にて
+              <span style="color: #ff0000;">
+               <strong>
+                7月31日必着
+               </strong>
+              </span>
+              でFAXくださいますようお願いいたします。
+             </span>
+            </p>
+            <p>
+             <span style="color: #000000;">
+             </span>
+            </p>
+            <p>
+             <span style="color: #000000;">
+              ・日　　　時／平成25年9月3日（火）～7日（土）　《三泊五日》
+             </span>
+            </p>
+            <p>
+             <span style="color: #000000;">
+              ・集合場所／
+              <span style="color: #ff0000;">
+               <strong>
+                スワンナープ国際空港
+               </strong>
+              </span>
+              到着ロビー
+              <span style="color: #ff0000;">
+               <strong>
+                16時00分
+               </strong>
+              </span>
+              集合
+             </span>
+            </p>
+            <p>
+             <span style="color: #000000;">
+              ・宿　泊　先／未定
+             </span>
+            </p>
+            <p>
+             <span style="color: #000000;">
+              ・参　加　費／お一人様 9万8千円(現地食事．バス．宿泊費等)
+             </span>
+            </p>
+            <p>
+             <span style="color: #000000;">
+              　　　　　　　　※1社2名様から10万8千円になります。
+             </span>
+            </p>
+            <p>
+             <span style="color: #000000;">
+              ・主な内容／講演、日本料理『
+              <a target="_blank" href="http://www.nippontei.com/index_JP.html" title="日本亭" onclick="javascript:pageTracker._trackPageview('/outgoing/www.nippontei.com/index_JP.html');">
+               日本亭
+              </a>
+              』の夕食、水上マーケット・ローズガーデン見学、エメラルド寺院、フードコート視察、市内散策見学他。
+             </span>
+            </p>
+            <p>
+            </p>
+            <p>
+             <strong>
+              <a href="http://www.shokuhyaku.jp/campaign/files/2013/06/b7acf3b4cbd91ac348c4babe87aeaf39.pdf" onclick="javascript:pageTracker._trackPageview('/outgoing/www.shokuhyaku.jp/campaign/files/2013/06/b7acf3b4cbd91ac348c4babe87aeaf39.pdf');">
+               詳細・申込み用紙はこちらからご覧ください。
+              </a>
+             </strong>
+            </p>
+            <p style="text-align: right;">
+             <strong>
+             </strong>
+             ◇食百年の会　事務局
+            </p>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <a name="353">
+     </a>
+     <div class="post_box">
+      <div class="post_date">
+       2013.05.23
+      </div>
+      <div class="post_title">
+       岡山研修のご案内
+      </div>
+      <div class="post_message">
+       <div>
+        <div>
+         <div>
+          <div>
+           <p>
+            <span style="color: #0000ff;">
+             <strong>
+              組織委員会　岡山研修
+             </strong>
+            </span>
+           </p>
+           <p>
+           </p>
+           <p>
+            <span style="color: #000000;">
+             組織委員会主催で岡山研修会が開催されます。
+            </span>
+           </p>
+           <p>
+            <span style="color: #000000;">
+             講演会、講義、観光と盛りだくさんの内容となっております。
+            </span>
+           </p>
+           <p>
+            <span style="color: #000000;">
+             多くのご出席をお待ちしております。
+            </span>
+           </p>
+           <p>
+            <span style="color: #000000;">
+            </span>
+           </p>
+           <p>
+            <span style="color: #000000;">
+             出欠は、既にお送りしております申込み用紙にて
+            </span>
+            <span style="color: #ff0000;">
+             <strong>
+              5月31日必着
+             </strong>
+            </span>
+            <span style="color: #000000;">
+             でFAXくださいますようお願いいたします。
+            </span>
+           </p>
+           <p>
+           </p>
+           <p>
+            <span style="color: #000000;">
+             ・日　　　時／平成25年7月10日（水）～11日（木）
+            </span>
+           </p>
+           <p>
+            <span style="color: #000000;">
+             ・集合場所／岡山コンベンションセンター　
+            </span>
+            <span style="color: #ff0000;">
+             <strong>
+              13時集合
+             </strong>
+            </span>
+           </p>
+           <p>
+            <span style="color: #000000;">
+             ・宿　泊　先／岡山全日空ホテル
+            </span>
+           </p>
+           <p>
+            <span style="color: #000000;">
+             ・参　加　費／お一人様　講演料無料、懇親会5千円、直島観光1万円
+            </span>
+           </p>
+           <p>
+            <span style="color: #000000;">
+             ・主な内容／講演（CDLキャリアデザイン研究所　齊藤尚志氏）、講義（労務委員会山田先生）、甲羅本店にて懇親会、直島・坂出観光　他。
+            </span>
+           </p>
+           <p>
+            <span style="color: #000000;">
+            </span>
+           </p>
+           <p>
+            <span style="color: #0000ff;">
+             <strong>
+              <a href="http://www.shokuhyaku.jp/campaign/files/2013/05/1efcd85bb805ee5ed2f7e978c30096eb.pdf" onclick="javascript:pageTracker._trackPageview('/outgoing/www.shokuhyaku.jp/campaign/files/2013/05/1efcd85bb805ee5ed2f7e978c30096eb.pdf');">
+               詳細・申込み用紙はこちらからご覧ください。
+              </a>
+             </strong>
+            </span>
+           </p>
+           <p style="text-align: right;">
+            <strong>
+            </strong>
+            ◇食百年の会　事務局
+           </p>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div id="main_navi">
+     <div style="" id="login_form">
+      <img width="218" height="32" alt="会員の方　会員ルームログイン" src="http://www.shokuhyaku.jp/campaign/wp-content/themes/shoku1002/images/navi/login_title.png" id="login_title" />
+      <div id="login_input">
+       ID
+       <br />
+       <input type="text" id="login_form_id" />
+       <br />
+       パスワード
+       <br />
+       <input type="password" id="login_form_pass" />
+       <br />
+      </div>
+      <div id="login_information">
+       ID、パスワードを忘れてしまった方は
+       <a href="/inquiry/">
+        こちら
+       </a>
+      </div>
+      <a onclick="Login('/');" href="javascript:void(0);" id="login_button">
+       <img width="70" height="26" alt="LOGIN" src="http://www.shokuhyaku.jp/campaign/wp-content/themes/shoku1002/images/navi/login_button.png" />
+      </a>
+     </div>
+     <div style="display:none;" id="logout_form">
+      <img width="218" height="32" alt="ログアウト" src="http://www.shokuhyaku.jp/campaign/wp-content/themes/shoku1002/images/navi/logout_title.png" id="logout_title" />
+      <div id="logout_information">
+       ログアウトはこちら
+      </div>
+      <a onclick="Logout('/');" href="javascript:void(0);" id="logout_button">
+       <img width="70" height="26" alt="LOGOUT" src="http://www.shokuhyaku.jp/campaign/wp-content/themes/shoku1002/images/navi/logout_button.png" />
+      </a>
+     </div>
+     <div id="navi_banner">
+      <a href="/inquiry/">
+       <img width="220" height="175" alt="お問い合わせはこちら" src="http://www.shokuhyaku.jp/campaign/wp-content/themes/shoku1002/images/navi/inquiry.png" />
+      </a>
+     </div>
+     <div id="navi_banner">
+      <a href="/weekly-news/">
+       <img width="220" height="101" alt="週間外食ニュース" src="http://www.shokuhyaku.jp/campaign/wp-content/themes/shoku1002/images/navi/weekly-news.jpg" />
+      </a>
+     </div>
+     <div class="navi_wordpress">
+      <img width="226" height="32" alt="アーカイブ" src="http://www.shokuhyaku.jp/campaign/wp-content/themes/shoku1002/images/navi/wordpress_archive.png" />
+      <ul>
+       <li>
+        <a title="2015年12月" href="http://www.shokuhyaku.jp/campaign/2015/12/">
+         2015年12月
+        </a>
+       </li>
+       <li>
+        <a title="2015年11月" href="http://www.shokuhyaku.jp/campaign/2015/11/">
+         2015年11月
+        </a>
+       </li>
+       <li>
+        <a title="2015年8月" href="http://www.shokuhyaku.jp/campaign/2015/08/">
+         2015年8月
+        </a>
+       </li>
+       <li>
+        <a title="2015年7月" href="http://www.shokuhyaku.jp/campaign/2015/07/">
+         2015年7月
+        </a>
+       </li>
+       <li>
+        <a title="2015年6月" href="http://www.shokuhyaku.jp/campaign/2015/06/">
+         2015年6月
+        </a>
+       </li>
+       <li>
+        <a title="2015年5月" href="http://www.shokuhyaku.jp/campaign/2015/05/">
+         2015年5月
+        </a>
+       </li>
+       <li>
+        <a title="2015年4月" href="http://www.shokuhyaku.jp/campaign/2015/04/">
+         2015年4月
+        </a>
+       </li>
+       <li>
+        <a title="2015年3月" href="http://www.shokuhyaku.jp/campaign/2015/03/">
+         2015年3月
+        </a>
+       </li>
+       <li>
+        <a title="2015年1月" href="http://www.shokuhyaku.jp/campaign/2015/01/">
+         2015年1月
+        </a>
+       </li>
+       <li>
+        <a title="2014年12月" href="http://www.shokuhyaku.jp/campaign/2014/12/">
+         2014年12月
+        </a>
+       </li>
+       <li>
+        <a title="2014年10月" href="http://www.shokuhyaku.jp/campaign/2014/10/">
+         2014年10月
+        </a>
+       </li>
+       <li>
+        <a title="2014年8月" href="http://www.shokuhyaku.jp/campaign/2014/08/">
+         2014年8月
+        </a>
+       </li>
+       <li>
+        <a title="2014年7月" href="http://www.shokuhyaku.jp/campaign/2014/07/">
+         2014年7月
+        </a>
+       </li>
+       <li>
+        <a title="2014年6月" href="http://www.shokuhyaku.jp/campaign/2014/06/">
+         2014年6月
+        </a>
+       </li>
+       <li>
+        <a title="2014年5月" href="http://www.shokuhyaku.jp/campaign/2014/05/">
+         2014年5月
+        </a>
+       </li>
+       <li>
+        <a title="2014年3月" href="http://www.shokuhyaku.jp/campaign/2014/03/">
+         2014年3月
+        </a>
+       </li>
+       <li>
+        <a title="2014年1月" href="http://www.shokuhyaku.jp/campaign/2014/01/">
+         2014年1月
+        </a>
+       </li>
+       <li>
+        <a title="2013年12月" href="http://www.shokuhyaku.jp/campaign/2013/12/">
+         2013年12月
+        </a>
+       </li>
+       <li>
+        <a title="2013年10月" href="http://www.shokuhyaku.jp/campaign/2013/10/">
+         2013年10月
+        </a>
+       </li>
+       <li>
+        <a title="2013年9月" href="http://www.shokuhyaku.jp/campaign/2013/09/">
+         2013年9月
+        </a>
+       </li>
+       <li>
+        <a title="2013年8月" href="http://www.shokuhyaku.jp/campaign/2013/08/">
+         2013年8月
+        </a>
+       </li>
+       <li>
+        <a title="2013年6月" href="http://www.shokuhyaku.jp/campaign/2013/06/">
+         2013年6月
+        </a>
+       </li>
+       <li>
+        <a title="2013年5月" href="http://www.shokuhyaku.jp/campaign/2013/05/">
+         2013年5月
+        </a>
+       </li>
+       <li>
+        <a title="2013年4月" href="http://www.shokuhyaku.jp/campaign/2013/04/">
+         2013年4月
+        </a>
+       </li>
+       <li>
+        <a title="2013年1月" href="http://www.shokuhyaku.jp/campaign/2013/01/">
+         2013年1月
+        </a>
+       </li>
+       <li>
+        <a title="2012年9月" href="http://www.shokuhyaku.jp/campaign/2012/09/">
+         2012年9月
+        </a>
+       </li>
+       <li>
+        <a title="2012年7月" href="http://www.shokuhyaku.jp/campaign/2012/07/">
+         2012年7月
+        </a>
+       </li>
+       <li>
+        <a title="2012年6月" href="http://www.shokuhyaku.jp/campaign/2012/06/">
+         2012年6月
+        </a>
+       </li>
+       <li>
+        <a title="2012年4月" href="http://www.shokuhyaku.jp/campaign/2012/04/">
+         2012年4月
+        </a>
+       </li>
+       <li>
+        <a title="2012年3月" href="http://www.shokuhyaku.jp/campaign/2012/03/">
+         2012年3月
+        </a>
+       </li>
+       <li>
+        <a title="2012年1月" href="http://www.shokuhyaku.jp/campaign/2012/01/">
+         2012年1月
+        </a>
+       </li>
+       <li>
+        <a title="2011年12月" href="http://www.shokuhyaku.jp/campaign/2011/12/">
+         2011年12月
+        </a>
+       </li>
+       <li>
+        <a title="2011年9月" href="http://www.shokuhyaku.jp/campaign/2011/09/">
+         2011年9月
+        </a>
+       </li>
+       <li>
+        <a title="2011年8月" href="http://www.shokuhyaku.jp/campaign/2011/08/">
+         2011年8月
+        </a>
+       </li>
+       <li>
+        <a title="2011年6月" href="http://www.shokuhyaku.jp/campaign/2011/06/">
+         2011年6月
+        </a>
+       </li>
+       <li>
+        <a title="2011年5月" href="http://www.shokuhyaku.jp/campaign/2011/05/">
+         2011年5月
+        </a>
+       </li>
+       <li>
+        <a title="2011年3月" href="http://www.shokuhyaku.jp/campaign/2011/03/">
+         2011年3月
+        </a>
+       </li>
+       <li>
+        <a title="2011年2月" href="http://www.shokuhyaku.jp/campaign/2011/02/">
+         2011年2月
+        </a>
+       </li>
+       <li>
+        <a title="2011年1月" href="http://www.shokuhyaku.jp/campaign/2011/01/">
+         2011年1月
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="navi_wordpress">
+      <img width="226" height="32" alt="最近の記事" src="http://www.shokuhyaku.jp/campaign/wp-content/themes/shoku1002/images/navi/wordpress_lastest.png" />
+      <ul>
+       <li>
+        <a title="組織委員会　東京研修のご案内" href="http://www.shokuhyaku.jp/campaign/2015/12/%e7%b5%84%e7%b9%94%e5%a7%94%e5%93%a1%e4%bc%9a%e3%80%80%e6%9d%b1%e4%ba%ac%e7%a0%94%e4%bf%ae%e3%81%ae%e3%81%94%e6%a1%88%e5%86%85/">
+         組織委員会　東京研修のご案内
+        </a>
+       </li>
+       <li>
+        <a title="組織委員会　とんかつ部会のご案内" href="http://www.shokuhyaku.jp/campaign/2015/11/%e7%b5%84%e7%b9%94%e5%a7%94%e5%93%a1%e4%bc%9a%e3%80%80%e3%81%a8%e3%82%93%e3%81%8b%e3%81%a4%e9%83%a8%e4%bc%9a%e3%81%ae%e3%81%94%e6%a1%88%e5%86%85/">
+         組織委員会　とんかつ部会のご案内
+        </a>
+       </li>
+       <li>
+        <a title="第八期年間スケジュール表" href="http://www.shokuhyaku.jp/campaign/2015/11/%e7%ac%ac%e5%85%ab%e6%9c%9f%e5%b9%b4%e9%96%93%e3%82%b9%e3%82%b1%e3%82%b8%e3%83%a5%e3%83%bc%e3%83%ab%e8%a1%a8/">
+         第八期年間スケジュール表
+        </a>
+       </li>
+       <li>
+        <a title="伏龍会　金沢研修のご案内" href="http://www.shokuhyaku.jp/campaign/2015/08/%e4%bc%8f%e9%be%8d%e4%bc%9a%e3%80%80%e9%87%91%e6%b2%a2%e7%a0%94%e4%bf%ae%e3%81%ae%e3%81%94%e6%a1%88%e5%86%85/">
+         伏龍会　金沢研修のご案内
+        </a>
+       </li>
+       <li>
+        <a title="第八期総会、懇親会のご案内" href="http://www.shokuhyaku.jp/campaign/2015/07/%e7%ac%ac%e5%85%ab%e6%9c%9f%e7%b7%8f%e4%bc%9a%e3%80%81%e6%87%87%e8%a6%aa%e4%bc%9a%e3%81%ae%e3%81%94%e6%a1%88%e5%86%85/">
+         第八期総会、懇親会のご案内
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="navi_wordpress">
+      <img width="226" height="32" alt="カテゴリー" src="http://www.shokuhyaku.jp/campaign/wp-content/themes/shoku1002/images/navi/wordpress_category.png" />
+      <ul>
+       <li>
+        <a href="http://www.shokuhyaku.jp/campaign/blog/category/%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88">
+         イベント
+        </a>
+       </li>
+       <li>
+        <a href="http://www.shokuhyaku.jp/campaign/blog/category/%E3%82%BB%E3%83%9F%E3%83%8A%E3%83%BC">
+         セミナー
+        </a>
+       </li>
+       <li>
+        <a href="http://www.shokuhyaku.jp/campaign/blog/category/%E6%9C%AA%E5%88%86%E9%A1%9E">
+         未分類
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="navi_wordpress">
+      <img width="226" height="32" alt="管理者ページ" src="http://www.shokuhyaku.jp/campaign/wp-content/themes/shoku1002/images/navi/wordpress_admin.png" />
+      <ul>
+       <li>
+        <a href="http://www.shokuhyaku.jp/campaign/wp-admin/">
+         ログイン
+        </a>
+       </li>
+      </ul>
+     </div>
+    </div>
+    <div class="clear_div">
+    </div>
+    <div id="footer_banner">
+     <a href="/information/">
+      <img width="305" height="96" alt="新着情報" src="http://www.shokuhyaku.jp/campaign/wp-content/themes/shoku1002/images/footer/footer_banner1.jpg" />
+     </a>
+     <img width="3" height="96" alt="" src="http://www.shokuhyaku.jp/campaign/wp-content/themes/shoku1002/images/common/spacer.png" />
+     <a href="/campaign/">
+      <img width="305" height="96" alt="イベント・セミナー情報" src="http://www.shokuhyaku.jp/campaign/wp-content/themes/shoku1002/images/footer/footer_banner2.jpg" />
+     </a>
+     <img width="3" height="96" alt="" src="http://www.shokuhyaku.jp/campaign/wp-content/themes/shoku1002/images/common/spacer.png" />
+     <a href="/member_room/">
+      <img width="305" height="96" alt="会員ルーム" src="http://www.shokuhyaku.jp/campaign/wp-content/themes/shoku1002/images/footer/footer_banner3.jpg" />
+     </a>
+    </div>
+   </div>
+  </div>
+  <div id="footer">
+   <div id="footer_inner">
+    <div id="footer_inner2">
+     Copyright© 食百年の会 All Rights Reserved.
+    </div>
+   </div>
+  </div>
+  <script type="text/javascript">
+   $("#header_menu5").addClass("active");
+  </script>
+ </body>
+</html>

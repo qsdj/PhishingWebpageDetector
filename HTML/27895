@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta charset="utf-8" />
+  <title>
+   Carondelet Basketball
+  </title>
+  <link href="/css/user/style.css" type="text/css" rel="stylesheet" />
+  <script id="twitter-wjs" src="http://platform.twitter.com/widgets.js">
+  </script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js">
+  </script>
+  <meta content="width=device-width,initial-scale=1" name="viewport" />
+  <link href="/css/user/responsiveslides.css" type="text/css" rel="stylesheet" />
+  <script src="/js/user/responsiveslides.js" type="text/javascript">
+  </script>
+  <script>
+   // You can also use "$(window).load(function() {"
+    $(function () {
+
+      // Slideshow 1
+      $("#slider1").responsiveSlides({
+        maxwidth: 800,
+        speed: 800
+      });
+
+      // Slideshow 2
+      $("#slider2").responsiveSlides({
+        auto: false,
+        pager: true,
+        speed: 300,
+        maxwidth: 540
+      });
+
+      // Slideshow 3
+      $("#slider3").responsiveSlides({
+        manualControls: '#slider3-pager',
+        maxwidth: 540
+      });
+
+      // Slideshow 4
+      $("#slider4").responsiveSlides({
+        auto: true,
+        pager: false,
+        nav: true,
+        speed: 500,
+        namespace: "callbacks",
+        before: function () {
+          $('.events').append("&lt;li&gt;before event fired.&lt;/li&gt;");
+        },
+        after: function () {
+          $('.events').append("&lt;li&gt;after event fired.&lt;/li&gt;");
+        }
+      });
+
+    });
+  </script>
+  <script type="text/javascript" charset="utf-8" async="" src="https://platform.twitter.com/js/timeline.83885c9747a8d31859b5a04409e08170.js">
+  </script>
+ </head>
+ <body>
+  <div class="container">
+   <div class="shadow">
+    <div style="width:100%; float:left; border-bottom:8px solid #1c1c1c">
+    </div>
+    <div class="header">
+     <center>
+      <a href="/">
+       <img alt="" class="logo" src="/img/user/logo.jpg" />
+      </a>
+     </center>
+     <div class="headerRight">
+      <p>
+       Carondelet High School inspires excellence by preparing young women to live with heart, faith and courage in the Catholic tradition.
+      </p>
+     </div>
+    </div>
+    <div class="navigation">
+     <nav id="nav" style="display: block;">
+      <ul>
+       <li>
+        <a href="/home">
+         Home
+        </a>
+       </li>
+       <li>
+        <a href="/about-us">
+         About us
+        </a>
+       </li>
+       <li>
+        <a href="/team-members/team">
+         Team members (Roster)
+        </a>
+       </li>
+       <li>
+        <a href="/schedule">
+         Schedule
+        </a>
+       </li>
+       <li>
+        <a href="/events">
+         Upcoming Events
+        </a>
+       </li>
+       <li>
+        <a href="/results">
+         Game Result
+        </a>
+       </li>
+       <li>
+        <a href="/contact-us">
+         Contact Us
+        </a>
+       </li>
+      </ul>
+     </nav>
+    </div>
+    <div class="left">
+     <!-- Slideshow 4 -->
+     <div class="callbacks_container">
+      <ul id="slider4" class="rslides callbacks callbacks1">
+       <li id="callbacks1_s0" style="display: block; float: none; position: absolute; opacity: 0; z-index: 1; transition: opacity 500ms ease-in-out 0s;" class="">
+        <img alt="" src="/img/bannerimage/120150603092254.jpg" />
+        <p class="caption">
+         Discipline the bridge between goals and
+         <br />
+         accomplishments
+        </p>
+       </li>
+       <li id="callbacks1_s1" style="float: left; position: relative; opacity: 1; z-index: 2; display: list-item; transition: opacity 500ms ease-in-out 0s;" class="callbacks1_on">
+        <img alt="" src="/img/bannerimage/220150603092254.jpg" />
+        <p class="caption">
+         Discipline the bridge between goals and
+         <br />
+         accomplishments
+        </p>
+       </li>
+      </ul>
+      <a class="callbacks_nav callbacks1_nav prev" href="#">
+       Previous
+      </a>
+      <a class="callbacks_nav callbacks1_nav next" href="#">
+       Next
+      </a>
+     </div>
+     <div class="clear">
+     </div>
+     <br />
+     <div style="background-image:url(http://www.carondeletbasketball.com//img/user/z3.jpg); min-height:180px" class="half">
+      <h3>
+       Schedule
+      </h3>
+      <a class="redme" href="/courses/schedule">
+      </a>
+      <p class="sko">
+       Thursday  January - 01
+      </p>
+     </div>
+     <div style="background-image:url(http://www.carondeletbasketball.com//img/user/z4.jpg);float:right; min-height:180px" class="half">
+      <h3>
+       Upcomming Events
+      </h3>
+      <a class="redme" href="/events/event_detail">
+      </a>
+      <p class="sko">
+       Thursday  January - 01
+      </p>
+      <p class="sko">
+      </p>
+      <br />
+     </div>
+     <div class="clear">
+     </div>
+     <br />
+     <div class="half">
+      <h4>
+       Featured Coach
+      </h4>
+      <div class="borderlow">
+      </div>
+      <div class="clear">
+      </div>
+      <img class="lom" src="http://www.carondeletbasketball.com//img/bannerimage/20150826101537." />
+      <h5>
+       Coach Elgin Leslie
+      </h5>
+      <p>
+       Head Varsity Coach
+      </p>
+      ...
+      <br />
+      <a class="link" href="/coaches/coach_detail/1">
+       Know More
+      </a>
+     </div>
+     <div style="float:right" class="half">
+      <h4>
+       Featured player
+      </h4>
+      <div class="borderlow">
+      </div>
+      <div class="clear">
+      </div>
+      <img class="lom" src="http://www.carondeletbasketball.com//images/original/%20" style="" />
+      <h5>
+      </h5>
+      ...
+      <br />
+      <a class="link" href="/portraits/player_detail">
+       Know More
+      </a>
+     </div>
+     <div class="tweet">
+      <p>
+       <script>
+        (function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+       </script>
+      </p>
+      <p>
+      </p>
+      <p>
+       <iframe frameborder="0" id="twitter-widget-0" scrolling="no" allowtransparency="true" allowfullscreen="true" class="twitter-timeline twitter-timeline-rendered" style="position: static; visibility: visible; display: inline-block; width: 100%; height: 600px; padding: 0px; border: medium none; max-width: 520px; min-width: 180px; margin-top: 0px; margin-bottom: 0px; min-height: 200px;" data-widget-id="609461562462507009" data-user-id="3002935760" title="Twitter Timeline">
+       </iframe>
+       <script>
+        !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+       </script>
+      </p>
+     </div>
+    </div>
+    <div class="right">
+     <div class="show">
+      <p>
+       <strong>
+        Carondelet Basketball
+       </strong>
+       <br />
+       <br />
+      </p>
+     </div>
+     <div class="news">
+      <h4>
+       News
+      </h4>
+      <div class="borderlow">
+      </div>
+      <div class="clear">
+      </div>
+      <img alt="" style="float:left; max-width:22%;" src="/img/uploadfile/No" />
+      <div class="text">
+       <h6>
+        Try-out Schedule - November 2015
+       </h6>
+       <p>
+       </p>
+       <p>
+       </p>
+       <p>
+        <strong>
+         Monday:
+        </strong>
+       </p>
+       <p>
+        ·         8:30-11:00 AM: Varsity
+       </p>
+       <p...>
+       </p...>
+       <p>
+        <a class="link" href="/news/32">
+         Read More
+        </a>
+       </p>
+       <p>
+       </p>
+      </div>
+      <div style="float:left; border-bottom:4px dotted #eaeaea; width:100%; margin:20px 0">
+      </div>
+      <img alt="" style="float:left; max-width:22%;" src="/img/uploadfile/No" />
+      <div class="text">
+       <h6>
+        Open Gyms - September 2015
+       </h6>
+       <p>
+        Open gym Thursday 4 to 6 PM  and Saturday 10 - 12
+       </p>
+       ...
+       <p>
+        <a class="link" href="/news/29">
+         Read More
+        </a>
+       </p>
+      </div>
+      <div style="float:left; border-bottom:4px dotted #eaeaea; width:100%; margin:20px 0">
+      </div>
+     </div>
+     <div class="news">
+      <h4>
+       Video
+      </h4>
+      <div class="borderlow">
+      </div>
+      <div class="clear">
+      </div>
+      <iframe frameborder="0" allowfullscreen="" src="https://www.youtube.com/embed/NVyUJxf3TPc">
+      </iframe>
+     </div>
+     <div class="news">
+      <h4>
+       Get Social
+      </h4>
+      <div class="borderlow">
+      </div>
+      <div class="clear">
+      </div>
+      <a target="_blank" href="https://www.facebook.com/">
+       <img alt="" style="float:left; margin:3px;" src="/img/user/face.jpg" />
+      </a>
+      <a target="_blank" href="https://twitter.com/">
+       <img alt="" style="float:left; margin:3px;" src="/img/user/tweet.jpg" />
+      </a>
+      <a target="_blank" href="http://www.pinterest.com">
+       <img alt="" style="float:left; margin:3px;" src="/img/user/pin.jpg" />
+      </a>
+      <a target="_blank" href="https://in.youtube.com/">
+       <img alt="" style="float:left; margin:3px;" src="/img/user/you.jpg" />
+      </a>
+     </div>
+    </div>
+    <div class="clear">
+    </div>
+    <img alt="" style="float:left; margin:0 16px" src="/img/user/q1.jpg" />
+    <img alt="" style="float:left; margin:10px 16px" src="/img/user/q2.jpg" />
+    <img alt="" style="float:left; margin:20px 16px" src="/img/user/q3.jpg" />
+    <img alt="" style="float:left; margin:0 16px" src="/img/user/q4.jpg" />
+    <div class="clear">
+    </div>
+    <br />
+   </div>
+  </div>
+  <style>
+   .fm li:last-child{display:none;}
+  </style>
+  <div class="footer">
+   <div class="container">
+    <p>
+     Copyright © 2015
+     <br />
+     Coach Elgin. All Rights Reserved.
+    </p>
+    <ul class="fm">
+     <li>
+      <a href="/home">
+       Home
+      </a>
+     </li>
+     <li>
+      |
+     </li>
+     <li>
+      <a href="/about-us">
+       About us
+      </a>
+     </li>
+     <li>
+      |
+     </li>
+     <li>
+      <a href="/team-members/team">
+       Team members (Roster)
+      </a>
+     </li>
+     <li>
+      |
+     </li>
+     <li>
+      <a href="/schedule">
+       Schedule
+      </a>
+     </li>
+     <li>
+      |
+     </li>
+     <li>
+      <a href="/events">
+       Upcoming Events
+      </a>
+     </li>
+     <li>
+      |
+     </li>
+     <li>
+      <a href="/results">
+       Game Result
+      </a>
+     </li>
+     <li>
+      |
+     </li>
+     <li>
+      <a href="/contact-us">
+       Contact Us
+      </a>
+     </li>
+     <li>
+      |
+     </li>
+    </ul>
+   </div>
+  </div>
+  <script src="/js/user/jquery.meanmenu.js" type="text/javascript">
+  </script>
+  <script>
+   jQuery(document).ready(function () {
+	    jQuery('nav').meanmenu();
+	});
+  </script>
+ </body>
+</html>

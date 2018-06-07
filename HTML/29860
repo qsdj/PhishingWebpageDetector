@@ -1,0 +1,424 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="sr-yu" dir="ltr" xml:lang="sr-yu" xmlns="http://www.w3.org/1999/xhtml" slick-uniqueid="3" class="cufon-active cufon-ready">
+ <head>
+  <base href="http://www.medosan.rs/index.php/component/users/" />
+  <meta content="content-type" http-equiv="content-type" />
+  <meta content="o" name="description" />
+  <meta content="Joomla! - Open Source Content Management" name="generator" />
+  <title>
+   Medosan
+  </title>
+  <link type="image/vnd.microsoft.icon" rel="shortcut icon" href="/templates/jm-eco-cosmetics-store/favicon.ico" />
+  <link type="text/css" href="/templates/jm-eco-cosmetics-store/css/djmenu.css" rel="stylesheet" />
+  <link type="text/css" href="/templates/jm-eco-cosmetics-store/css/djmenu_fx.css" rel="stylesheet" />
+  <script type="text/javascript" src="/media/system/js/mootools-core.js">
+  </script>
+  <script type="text/javascript" src="/media/system/js/core.js">
+  </script>
+  <script type="text/javascript" src="/media/system/js/mootools-more.js">
+  </script>
+  <script type="text/javascript" src="/media/system/js/validate.js">
+  </script>
+  <script type="text/javascript" src="/modules/mod_djmenu/assets/js/dropline-helper.js">
+  </script>
+  <script type="text/javascript" src="/modules/mod_djmenu/assets/js/djmenu.js">
+  </script>
+  <script type="text/javascript">
+   function keepAlive() {	var myAjax = new Request({method: "get", url: "index.php"}).send();} window.addEvent("domready", function(){ keepAlive.periodical(840000); });
+window.addEvent('domready', function() {
+			$$('.hasTip').each(function(el) {
+				var title = el.get('title');
+				if (title) {
+					var parts = title.split('::', 2);
+					el.store('tip:title', parts[0]);
+					el.store('tip:text', parts[1]);
+				}
+			});
+			var JTooltips = new Tips($$('.hasTip'), { maxTitleChars: 50, fixed: false});
+		});
+
+	(function($){ // Mootools Safe Mode ON
+	
+	window.addEvent('domready',function(){
+		var DJMenusAll = $$('#dj-main77 li.dj-up');
+		var wrapper = $('jm-top');
+		DJMenusAll.each(function(djmenu){
+			if(djmenu.getElement('.dj-drop')) {
+				DJMenus.include(new DJMenu(djmenu,0,wrapper,{transition: 'linear', duration: 200, delay: 1200,
+		height_fx: true, width_fx: true, opacity_fx: true, mid: 77,
+		height_fx_sub: true, width_fx_sub: true, opacity_fx_sub: true }));
+			} else {
+				djmenu.addEvent('mouseenter',function(){
+					djmenu.addClass('hover');
+				});
+				djmenu.addEvent('mouseleave',function(){
+					djmenu.removeClass('hover');
+				});
+			}
+		});		
+	});
+	
+	})(document.id);
+  </script>
+  <link type="text/css" rel="stylesheet" href="http://www.medosan.rs//templates/jm-eco-cosmetics-store/css/details.css" />
+  <link type="text/css" rel="stylesheet" href="http://www.medosan.rs//templates/jm-eco-cosmetics-store/css/editor.css" />
+  <link type="text/css" rel="stylesheet" href="http://www.medosan.rs//templates/jm-eco-cosmetics-store/css/layout.css" />
+  <link type="text/css" rel="stylesheet" href="http://www.medosan.rs//templates/jm-eco-cosmetics-store/css/menus.css" />
+  <link type="text/css" rel="stylesheet" href="http://www.medosan.rs//templates/jm-eco-cosmetics-store/css/modules.css" />
+  <link type="text/css" rel="stylesheet" href="http://www.medosan.rs//templates/jm-eco-cosmetics-store/css/reset.css" />
+  <link type="text/css" rel="stylesheet" href="http://www.medosan.rs//templates/jm-eco-cosmetics-store/css/template.css" />
+  <link type="text/css" rel="stylesheet" href="http://www.medosan.rs//templates/jm-eco-cosmetics-store/css/vm.css" />
+  <link href="http://www.medosan.rs//templates/jm-eco-cosmetics-store/images/favicon.ico" rel="shortcut icon" />
+  <!--[if IE 7]>
+    <link href="http://www.medosan.rs//templates/jm-eco-cosmetics-store/css/ie7.css" rel="stylesheet" type="text/css"  />
+<![endif]-->
+  <!--[if IE 8]>
+    <link href="http://www.medosan.rs//templates/jm-eco-cosmetics-store/css/ie8.css" rel="stylesheet" type="text/css"  />
+<![endif]-->
+  <!--[if IE 9]>
+    <link href="http://www.medosan.rs//templates/jm-eco-cosmetics-store/css/ie9.css" rel="stylesheet" type="text/css"  />
+<![endif]-->
+  <!--[if gte IE 9]>
+	<style type="text/css">
+		input.button, button.validate, button, ul.pagenav li a, div.pagination li, div.pagination ul li span, div.pagination ul li a.pagenav:link, div.pagination ul li a.pagenav:visited {
+			filter: none;
+		}
+	</style>
+<![endif]-->
+  <script type="text/javascript" src="http://www.medosan.rs//templates/jm-eco-cosmetics-store/lib/js/cufon-yui.js">
+  </script>
+  <style type="text/css">
+   cufon{text-indent:0!important;}@media screen,projection{cufon{display:inline!important;display:inline-block!important;position:relative!important;vertical-align:middle!important;font-size:1px!important;line-height:1px!important;}cufon cufontext{display:-moz-inline-box!important;display:inline-block!important;width:0!important;height:0!important;overflow:hidden!important;text-indent:-10000in!important;}cufon canvas{position:relative!important;}}@media print{cufon{padding:0!important;}cufon canvas{display:none!important;}}
+  </style>
+  <script type="text/javascript" src="http://www.medosan.rs//templates/jm-eco-cosmetics-store/lib/js/Corbel_400.font.js">
+  </script>
+  <script type="text/javascript">
+   Cufon.DOM.ready(function() {
+			Cufon.replace('div.blog h1, div.blog-featured h1, div.item-page h1, div.archive h1, div.categories-list h1, div.category-list h1, div.search h1, .jm-module h3.jm-title, .jm-moduleR h3.jm-title, .jm-moduleT h3.jm-title, .jm-moduleRM h3.jm-title', { hover: true });
+		});
+  </script>
+  <script src="http://www.medosan.rs//templates/jm-eco-cosmetics-store/lib/js/set_height.js" type="text/javascript" language="javascript">
+  </script>
+  <script src="http://www.medosan.rs//templates/jm-eco-cosmetics-store/lib/js/change_bg.js" type="text/javascript" language="javascript">
+  </script>
+  <script type="text/javascript" src="http://www.skypeassets.com/i/scom/js/skype-analytics.js">
+  </script>
+ </head>
+ <body class="normal">
+  <div id="jm-allpage">
+   <div id="jm-wrapper">
+    <div style="position:absolute;top:0;left:-9999px;">
+     <a href="http://joomlall.ru">
+      шаблоны joomla 3.0
+     </a>
+     <a href="http://blog-domoseda.ru">
+      блог домоседа-лекаря
+     </a>
+     <a href="http://wd-art.com">
+      wd-art.com
+     </a>
+     <a href="http://www.pro-remontdoma.ru/">
+      ремонт квартиры своими руками
+     </a>
+    </div>
+    <div id="jm-top_bg">
+     <div id="jm-top_center">
+      <div id="jm-top_shadow">
+       <div class="clearfix" id="jm-top">
+        <div id="jm-logo-sitedesc">
+         <h1 id="jm-logo">
+          <a onfocus="blur()" href="http://www.medosan.rs/">
+           <img border="0" alt="" src="http://www.medosan.rs//images/medosan_Logo.PNG" />
+          </a>
+         </h1>
+        </div>
+        <div id="jm-topmenu">
+         <ul class="dj-main" id="dj-main77">
+          <li class="dj-up itemid465 first">
+           <a class="dj-up_a" href="/">
+            <span>
+             POČETNA
+            </span>
+           </a>
+          </li>
+          <li class="dj-up itemid480">
+           <a class="dj-up_a" href="/index.php/nega-kose">
+            <span>
+             NEGA KOSE
+            </span>
+           </a>
+          </li>
+          <li class="dj-up itemid558">
+           <a class="dj-up_a" href="/index.php/nega-tela">
+            <span>
+             NEGA TELA
+            </span>
+           </a>
+          </li>
+          <li class="dj-up itemid559">
+           <a class="dj-up_a" href="/index.php/regulisanje-tezine">
+            <span>
+             REGULISANJE TEŽINE
+            </span>
+           </a>
+          </li>
+          <li class="dj-up itemid500 last">
+           <a class="dj-up_a" href="/index.php/kontakt">
+            <span>
+             KONTAKT
+            </span>
+           </a>
+          </li>
+         </ul>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div id="jm-page">
+     <div class="noheader" id="jm-page_leaves2">
+      <div class="scheme_1 " id="jm-page_leaves">
+       <div id="jm-mainpage">
+        <div class="scheme_1  clearfix" id="jm-main">
+         <div class="clearfix" id="jm-left_content">
+          <div id="jm-content">
+           <div id="jm-content_top">
+           </div>
+           <div id="jm-content_in">
+            <div class="clearfix" id="jm-pathway">
+             <div class="moduletable">
+              <h3>
+               You are here:
+              </h3>
+              <div class="breadcrumbs">
+               <span>
+                Home
+               </span>
+              </div>
+             </div>
+            </div>
+            <div id="jm-mainbody">
+             <div id="system-message-container">
+             </div>
+             <div class="remind">
+              <form class="form-validate" method="post" action="/index.php/component/users/?task=remind.remind" id="user-registration">
+               <p>
+                Molim unesite adresu el. pošte vezanu za vaš korisnički nalog. Korisničko ime će vam biti prosleđeno na tu adresu.
+               </p>
+               <fieldset>
+                <dl>
+                 <dt>
+                  <label title="" class="hasTip required" for="jform_email" id="jform_email-lbl">
+                   Adresa el. pošte:
+                   <span class="star">
+                     *
+                   </span>
+                  </label>
+                 </dt>
+                 <dd>
+                  <input type="email" size="30" value="" id="jform_email" class="validate-email required" name="jform[email]" aria-required="true" required="required" />
+                 </dd>
+                 <dt>
+                 </dt>
+                 <dd>
+                 </dd>
+                </dl>
+               </fieldset>
+               <div>
+                <button class="validate" type="submit">
+                 Pošalji
+                </button>
+                <input type="hidden" value="1" name="506c587e38b7b6379cca5cfdeb820d9f" />
+               </div>
+              </form>
+             </div>
+            </div>
+           </div>
+           <div id="jm-content_bot">
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div id="jm-footer_wrap">
+    <div id="jm-footer_in">
+     <div id="jm-bottom-mods">
+      <div class="bottom count_3">
+       <div class="rowcount_3 clearfix">
+        <div class="bottom-in bottom-in-first bottom-row-first">
+         <div class="bottom-bg">
+          <div id="Mod187" class="jm-moduleB ">
+           <h3 class="jm-title">
+            Skype
+           </h3>
+           <div class="jm-module-content clearfix">
+            <div class="custom">
+             <style>
+              .skypebutton img {
+        margin: 10px 0 !important;
+        padding: 0 !important;
+        vertical-align: 0 !important;
+    }
+    .skypebutton a, .skypebutton a:link, .skypebutton a:visited, .skypebutton a:hover {
+        display: block !important;
+    }
+    ul#dropdown_SkypeButton_Dropdown_medosan.srbija_1 {
+        width: 100px !important;
+    }
+    ul#dropdown_SkypeButton_Dropdown_medosan.srbija_1 &gt;li {
+        line-height: 25px;;
+    }
+             </style>
+             <script src="http://www.skypeassets.com/i/scom/js/skype-uri.js" type="text/javascript">
+             </script>
+             <div class="skypebutton" id="SkypeButton_Dropdown_medosan.srbija_1">
+              <script type="text/javascript">
+               Skype.ui({
+      "name": "dropdown",
+      "element": "SkypeButton_Dropdown_medosan.srbija_1",
+      "participants": ["medosan.srbija"],
+      "imageSize": 32    });
+              </script>
+              <iframe style="display:none;" id="_detectSkypeClient_1451385355429">
+              </iframe>
+              <p id="SkypeButton_Dropdown_medosan.srbija_1_paraElement" style="font-size:30px; color:#444444">
+               <a style="cursor: text;" onfocus="Skype.showDropdown('dropdown_SkypeButton_Dropdown_medosan.srbija_1'); return false;" onblur="Skype.hideDropdown('dropdown_SkypeButton_Dropdown_medosan.srbija_1'); return false;" href="javascript://" onclick="return false;">
+                <img src="http://www.skypeassets.com/i/scom/images/skype-buttons/dropdowncallbutton_32px.png" alt="Call options" role="Pop up menu" style="border:0; margin:32px; vertical-align:-41px;" onmouseover="Skype.showDropdown('dropdown_SkypeButton_Dropdown_medosan.srbija_1'); return false;" onmouseout="Skype.hideDropdown('dropdown_SkypeButton_Dropdown_medosan.srbija_1'); return false;" />
+               </a>
+               <ul id="dropdown_SkypeButton_Dropdown_medosan.srbija_1" style="display: none; position: absolute; margin-top: -10px; margin-left: 15px; width: 200px; padding-left: 20px; padding-right: 20px; border: 2px solid #00AFF0; background-color: white; color: #00AFF0; line-height: 50px; list-style: none; list-style-type: none;" onmouseover="Skype.showDropdown('dropdown_SkypeButton_Dropdown_medosan.srbija_1'); return false;" onmouseout="Skype.hideDropdown('dropdown_SkypeButton_Dropdown_medosan.srbija_1'); return false;">
+                <li style="list-style: none; list-style-type: none;">
+                 <a href="javascript://" style="text-decoration: none; color: #00AFF0; font-size: 16px;" onclick="Skype.tryAnalyzeSkypeUri('dropdownCall', '0');Skype.trySkypeUri_Generic('skype:medosan.srbija?call', '_detectSkypeClient_1451385355429', '0'); return false;" onmouseover="this.style.textDecoration = 'underline'" onmouseout="this.style.textDecoration = 'none'" role="Menu item" onfocus="Skype.showDropdown('dropdown_SkypeButton_Dropdown_medosan.srbija_1'); return false;" onblur="Skype.hideDropdown('dropdown_SkypeButton_Dropdown_medosan.srbija_1'); return false;">
+                  Call
+                 </a>
+                </li>
+                <li style="list-style: none; list-style-type: none;">
+                 <a href="javascript://" style="text-decoration: none; color: #00AFF0; font-size: 16px;" onclick="Skype.tryAnalyzeSkypeUri('dropdownChat', '0');Skype.trySkypeUri_Generic('skype:medosan.srbija?chat', '_detectSkypeClient_1451385355429', '0'); return false;" onmouseover="this.style.textDecoration = 'underline'" onmouseout="this.style.textDecoration = 'none'" onfocus="Skype.showDropdown('dropdown_SkypeButton_Dropdown_medosan.srbija_1'); return false;" onblur="Skype.hideDropdown('dropdown_SkypeButton_Dropdown_medosan.srbija_1'); return false;">
+                  Chat
+                 </a>
+                </li>
+               </ul>
+              </p>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="bottom-in">
+         <div class="bottom-bg">
+          <div id="Mod78" class="jm-moduleB ">
+           <h3 class="jm-title">
+            Nadjite nas na:
+           </h3>
+           <div class="jm-module-content clearfix">
+            <div class="custom">
+             <div class="clearfix">
+              <div style="float: left; padding: 5px 10px 0 10px;">
+               <a title="Facebook" href="#">
+                <img border="0" alt="JM-Eco-Cosmetics" src="/images/modules/facebook.png" />
+               </a>
+              </div>
+              <div style="float: left; padding-top: 20px;">
+               Posetite nas na Facebooku
+              </div>
+             </div>
+             <div class="clearfix">
+              <div style="float: left; padding: 5px 10px 0 10px;">
+               <a title="Twitter" href="#">
+                <img border="0" alt="JM-Eco-Cosmetics" src="/images/modules/twitter.png" />
+               </a>
+              </div>
+              <div style="float: left; padding-top: 20px;">
+               Posetite nas na Twitterur
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="bottom-in bottom-in-last bottom-row-last">
+         <div class="bottom-bg">
+          <div id="Mod79" class="jm-moduleB ">
+           <h3 class="jm-title">
+            Kontakt informacije
+           </h3>
+           <div class="jm-module-content clearfix">
+            <div class="custom">
+             <div>
+              <br />
+              Stevana Brakusa 6
+              <br />
+              11030 Beograd
+             </div>
+             <div>
+              tel. 011 30 50 600
+              <br />
+              tel. 065 5 30 50 63
+             </div>
+             <div>
+              e-mail:
+              <a cloak3822="cloak3822">
+               Ova adresa el. pošte je zaštićena od spambotova. Omogućite JavaScript da biste je videli.
+               <script type="text/javascript">
+                //&lt;!--
+ document.getElementById('cloak3822').innerHTML = '';
+ var prefix = '&amp;#109;a' + 'i&amp;#108;' + '&amp;#116;o';
+ var path = 'hr' + 'ef' + '=';
+ var addy3822 = '&amp;#111;ff&amp;#105;c&amp;#101;' + '&amp;#64;';
+ addy3822 = addy3822 + 'm&amp;#101;d&amp;#111;s&amp;#97;n' + '&amp;#46;' + 'c&amp;#111;m';
+ document.getElementById('cloak3822').innerHTML += '&lt;a ' + path + '\'' + prefix + ':' + addy3822 + '\'&gt;' + addy3822+'&lt;\/a&gt;';
+ //--&gt;
+               </script>
+               "&gt;
+               <span id="cloak98026">
+               </span>
+              </a>
+              <a href="mailto:office@medosan.com">
+               office@medosan.com
+              </a>
+              <script type="text/javascript">
+               //&lt;!--
+ document.getElementById('cloak98026').innerHTML = '';
+ var prefix = '&amp;#109;a' + 'i&amp;#108;' + '&amp;#116;o';
+ var path = 'hr' + 'ef' + '=';
+ var addy98026 = '&amp;#111;ff&amp;#105;c&amp;#101;' + '&amp;#64;';
+ addy98026 = addy98026 + 'm&amp;#101;d&amp;#111;s&amp;#97;n' + '&amp;#46;' + 'c&amp;#111;m';
+ document.getElementById('cloak98026').innerHTML += '&lt;a ' + path + '\'' + prefix + ':' + addy98026 + '\'&gt;' + addy98026+'&lt;\/a&gt;';
+ //--&gt;
+              </script>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="clearfix" id="jm-footer">
+      <div id="jm-copyrights">
+       <div class="custom">
+        <p>
+         Medosan © All Rights Reserved
+        </p>
+       </div>
+      </div>
+      <div id="jm-poweredby">
+       <a title="Beo Hosting" target="_blank" onfocus="blur()" href="http://beohosting.com">
+        created by BeoHosting.com
+       </a>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <script type="text/javascript">
+   Cufon.now();
+  </script>
+ </body>
+</html>

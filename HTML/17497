@@ -1,0 +1,357 @@
+<!-- İletişim Yönetimi Scripti v1.2: BurakSimsek.com.tr & UzmanWeb.Net & Burak ŞİMŞEK -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta content="Content-Type" http-equiv="Content-Type" />
+  <meta content="Content-Type" http-equiv="Content-Type" />
+  <meta content="tr" http-equiv="Content-Language" />
+  <meta content="Akdağ Fm FM, İstek Paneli, Müzik dinle, Radyo İstek, 88.0, " name="keywords" />
+  <meta content="Akdağ Fm İstek Göndermek İçin Kullanılan Sayfa" name="description" />
+  <link href="Resim/stil.css" type="text/css" rel="stylesheet" />
+  <title>
+   Akdağ FM İstek Paneli
+  </title>
+  <style media="print" class="jx_ui_StyleSheet" __jx__id="___$_2" type="text/css">
+   .zopim { display: none !important }
+  </style>
+ </head>
+ <body text="#000000" background="istek.gif">
+  <div align="center">
+   <div style="width:60%;">
+    <div id="sonuc">
+    </div>
+    <form action="index.asp?islem=kaydet" method="POST">
+     <fieldset>
+      <legend align="center">
+       <b>
+        <font face="Arial" color="#FFFF00">
+         AKDAĞ FM İSTEK GÖNDER
+        </font>
+       </b>
+      </legend>
+      <p>
+      </p>
+      <table align="center">
+      </table>
+      <table align="center">
+       <tbody>
+        <tr>
+         <td align="right">
+          <font size="2" face="Arial">
+           <font color="#00FFFF">
+            * 
+            <label for="AD">
+             Adınız 
+	Soyadınız
+            </label>
+            : 
+           </font>
+          </font>
+         </td>
+         <td width="55%">
+          <font face="Arial" color="#00FFFF">
+           <input type="text" class="text" maxlength="250" size="30" name="AD" />
+          </font>
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <table align="center">
+       <tbody>
+        <tr>
+         <td align="right">
+          <font size="2" face="Arial">
+           <font color="#00FFFF">
+            * Yaşadığınız 
+	Şehir : 
+           </font>
+          </font>
+         </td>
+         <td width="55%">
+          <font face="Arial" color="#00FFFF">
+           <input type="text" class="text" maxlength="250" size="30" name="SEHIR" />
+          </font>
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <table align="center">
+       <tbody>
+        <tr>
+         <td align="right">
+          <font size="2" face="Arial">
+           <font color="#00FFFF">
+            * Armağan 
+	:
+           </font>
+          </font>
+         </td>
+         <td width="55%">
+          <font face="Arial">
+           <textarea cols="34" name="MESAJ" rows="5">
+           </textarea>
+          </font>
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <table align="center">
+       <tbody>
+        <tr>
+         <td align="right">
+          <font size="2" face="Arial" color="#00FFFF">
+           Şuanki Tarih : 
+          </font>
+         </td>
+         <td width="55%">
+          <font size="2" face="Arial" color="#00FFFF">
+           25.11.2015 16:27:52
+          </font>
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <table align="center">
+       <tbody>
+        <tr>
+         <td align="right">
+          <font size="2" face="Arial" color="#00FFFF">
+           IP Numaranız : 
+          </font>
+         </td>
+         <td width="55%">
+          <font size="2" face="Arial" color="#00FFFF">
+           192.167.131.1
+          </font>
+          <font face="Arial" color="#00FFFF">
+           <input type="hidden" value="192.167.131.1" size="30" name="IP" />
+          </font>
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <fieldset>
+       <legend align="center">
+        <font size="2" face="Arial">
+         Güvenlik Kodu Doğrulaması
+        </font>
+       </legend>
+       <table align="center">
+        <tbody>
+         <tr>
+          <td align="right">
+           <img border="0" src="Resim/guvenlikkodu/9.gif" />
+           <img border="0" src="Resim/guvenlikkodu/1.gif" />
+           <img border="0" src="Resim/guvenlikkodu/6.gif" />
+           <img border="0" src="Resim/guvenlikkodu/7.gif" />
+           <img border="0" src="Resim/guvenlikkodu/4.gif" />
+          </td>
+          <td width="55%">
+           <input type="text" class="text" maxlength="250" size="30" name="GUVENLIKDOGRULA" />
+          </td>
+         </tr>
+        </tbody>
+       </table>
+      </fieldset>
+      <table align="center">
+       <tbody>
+        <tr>
+         <td width="100%" align="center">
+          <font size="1" face="Arial" color="#008080">
+           <input type="submit" style="background-color: #C0C0C0" class="submit" name="Gönder" value="Mesajı Gönder" />
+          </font>
+         </td>
+        </tr>
+       </tbody>
+      </table>
+     </fieldset>
+    </form>
+   </div>
+  </div>
+  <p align="center">
+   <font face="Arial">
+    <b>
+     İstek Ve Armağan İçin Sms Numaramız :{ 0545 415 7965 } 
+    </b>
+   </font>
+  </p>
+  <p align="center">
+   <font face="Arial">
+    <b>
+     SabitTelefon: 
+{ 0354 415 7965} 
+    </b>
+   </font>
+  </p>
+  <p align="center">
+   <font face="Arial">
+    <b>
+      Reklam Ve İlan İçin: {0544 4157966}
+    </b>
+   </font>
+  </p>
+  <p align="center">
+   <script async="" charset="utf-8" src="//cdn.zopim.com/?EBC9I3GeElsNoJiQYwm7T7I6cP3dYIME" type="text/javascript">
+   </script>
+   <script type="text/javascript" async="" src="http://www.google-analytics.com/ga.js">
+   </script>
+   <script src="https://pagead2.googlesyndication.com/pub-config/ca-pub-1931777163926728.js">
+   </script>
+   <script src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" async="">
+   </script>
+   <!-- 728x90 -->
+   <ins data-ad-slot="2724050096" data-ad-client="ca-pub-1931777163926728" style="display:inline-block;width:728px;height:90px" class="adsbygoogle" data-adsbygoogle-status="done">
+    <ins style="display:inline-table;border:none;height:90px;margin:0;padding:0;position:relative;visibility:visible;width:728px;background-color:transparent" id="aswift_0_expand">
+     <ins style="display:block;border:none;height:90px;margin:0;padding:0;position:relative;visibility:visible;width:728px;background-color:transparent" id="aswift_0_anchor">
+      <iframe width="728" height="90" frameborder="0" style="left:0;position:absolute;top:0;" name="aswift_0" id="aswift_0" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&&s.handlers,h=H&&H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&&d&&(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" allowfullscreen="true" scrolling="no" allowtransparency="true" hspace="0" vspace="0" marginheight="0" marginwidth="0">
+      </iframe>
+     </ins>
+    </ins>
+   </ins>
+   <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+   </script>
+  </p>
+  <p>
+  </p>
+  <p>
+  </p>
+  <p>
+  </p>
+  <p>
+  </p>
+  <p align="center">
+  </p>
+  <p>
+  </p>
+  <p>
+  </p>
+  <p>
+  </p>
+  <p>
+  </p>
+  <p>
+  </p>
+  <p>
+  </p>
+  <p>
+  </p>
+  <p>
+  </p>
+  <p>
+  </p>
+  <p>
+  </p>
+  <p>
+  </p>
+  <p>
+  </p>
+  <p>
+  </p>
+  <p>
+  </p>
+  <p>
+  </p>
+  <p>
+  </p>
+  <script src="http://www.webtemsilcisi.com/online.php?url=yozgatsorgunfm.com/istek/&kenar=1&kenar_renk=333333&genislik=150&zemin_renk=CCFF00&yazi_renk=000000&gizlimi=hayir" type="text/javascript" language="JavaScript">
+  </script>
+  <center>
+   <style>
+    .webtem_onlineziyaretci { font-size: 10px; font-family: Verdana, Geneva, Arial, sans-serif; border-style:solid; border-color:#333333; border-width:1px ; color:black; width: 150px; height:58px; background-color:#CCFF00}
+   </style>
+   <div class="webtem_onlineziyaretci">
+    <center>
+     <a color="black">
+      <font>
+       <span style="font-size:10px;text-decoration:none; font-family: Verdana, Geneva, Arial, sans-serif; color:000000">
+        <font color="blue">
+         <b>
+          1
+         </b>
+        </font>
+        online ziyaretci
+       </span>
+       <br />
+       <span style="font-size:10px;text-decoration:none; font-family: Verdana, Geneva, Arial, sans-serif;  color:000000">
+        Bugün
+        <font color="red">
+         <b>
+          5
+         </b>
+        </font>
+        ziyaretci
+        <br />
+        Toplam :
+        <font color="green">
+         <b>
+          23994
+         </b>
+        </font>
+       </span>
+      </font>
+     </a>
+     <br />
+     <a style="font-size:11px; font-family:arial; text-decoration:none; color:#0066CC; " target="_blank" href="http://www.webtemsilcisi.com/rapor.php?urlid=53103">
+      Istatistikler
+     </a>
+    </center>
+    <center>
+     <a style="font-size:0px;text-decoration:underline; color:#FFF; font-family:Arial;" target="_blank" title="google reklam" href="http://www.trclick.com/">
+      google reklam
+     </a>
+    </center>
+    <center>
+     <a style="font-size:0px;text-decoration:underline; color:#FFF; font-family:Arial;" target="_blank" title="çeviri" href="http://www.trsozluk.net/ceviri">
+      çeviri
+     </a>
+    </center>
+   </div>
+   <script type="text/javascript" src="http://www.webtemsilcisi.com/urlal.php?service=counter&urlid=53103&url=www.akdagfm.com&refurl=">
+   </script>
+   <noscript>
+    &lt;a href="http://www.webtemsilcisi.com"&gt;Ücretsiz Online Ziyaretci Sayaci&lt;/a&gt;
+   </noscript>
+   <!--OnlineZiyaretci kodu sonu-->
+   <!-- Sayyac counter START v4.3 -->
+   <script type="text/javascript">
+    &lt;!--
+document.write(unescape("%3Cscript src='" + (("https:" == document.location.protocol) ? "https://" : "http://")
+ + "srv.sayyac.net/sa.js?_salogin=yozgatsorgunfmcomistek&amp;_sav=4.3' type='text/javascript'%3E%3C/script%3E"));
+//--&gt;
+   </script>
+   <script type="text/javascript" src="http://srv.sayyac.net/sa.js?_salogin=yozgatsorgunfmcomistek&_sav=4.3">
+   </script>
+   <script type="text/javascript">
+    &lt;!--
+sayyac.track('yozgatsorgunfmcomistek','srv.sayyac.net');
+//--&gt;
+   </script>
+   <img width="1" height="1" alt="" src="http://srv.sayyac.net/sa.gif?_salogin=yozgatsorgunfmcomistek&_sav=4.2&_saje=1&_sace=true&_sacol=24&_sares=1024x768&_saref=&_saa_u=1&_say_u=1&_sam_u=1&_saw_u=1&_sad_u=1&_sawd_u=1&_sadh_u=1&_sanv=1&_sarnd=0.10404236872630801" />
+   <a target="_blank" title="Bedava sayac,istatistik hizmeti" href="http://www.sayyac.com/tr/stats/unique_visitors/yozgatsorgunfmcomistek">
+    <img border="0" src="http://srv.sayyac.net/icon.gif" />
+   </a>
+   <script type="text/javascript" src="http://srv.sayyac.net/count.js">
+   </script>
+   <noscript>
+    &lt;a href="http://www.sayyac.com/" title=""&gt;&lt;img src="http://srv.sayyac.net/sa.gif?_salogin=yozgatsorgunfmcomistek&amp;amp;_sav=4.3" border="0" alt="" /&gt;&lt;/a&gt;
+   </noscript>
+   <!-- Sayyac counter END v4.3 -->
+   <!--Start of Zopim Live Chat Script-->
+   <script type="text/javascript">
+    window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
+d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
+_.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute('charset','utf-8');
+$.src='//cdn.zopim.com/?EBC9I3GeElsNoJiQYwm7T7I6cP3dYIME';z.t=+new Date;$.
+type='text/javascript';e.parentNode.insertBefore($,e)})(document,'script');
+   </script>
+   <!--End of Zopim Live Chat Script-->
+  </center>
+  <div style="position: absolute; visibility: hidden; margin: 0px; padding: 0px; border: 0px none; height: 0px; width: 0px;" class="zopim" __jx__id="___$_1">
+  </div>
+  <iframe style="background-color: transparent; position: absolute; height: 1px; width: 1px; top: -9999px; left: -9999px; border: 0px none;">
+  </iframe>
+  <iframe style="background-color: transparent; position: absolute; height: 1px; width: 1px; top: -9999px; left: -9999px; border: 0px none;">
+  </iframe>
+ </body>
+ <!--OnlineZiyaretci kodu baslangici-->
+</html>

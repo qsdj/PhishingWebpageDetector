@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" class="js">
+ <head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <meta content="Content-Type" http-equiv="Content-Type" />
+  <link type="image/png" href="http://www.socor.cl/sites/default/files/ico_48x48_0.png" rel="shortcut icon" />
+  <meta content="Drupal 7 (http://drupal.org)" name="Generator" />
+  <title>
+   Cuenta de usuario | Socor
+  </title>
+  <link media="all" href="http://www.socor.cl/sites/default/files/css/css_ogjvJnfni1_P_WxvXAHlUOgCs860b3ip9DNMapcIGeM.css" rel="stylesheet" type="text/css" />
+  <link media="all" href="http://www.socor.cl/sites/default/files/css/css_kvaqtp5WyrrHbRp04EMjxDRU1slGUfavu9v2bsvcoDU.css" rel="stylesheet" type="text/css" />
+  <link media="all" href="http://www.socor.cl/sites/default/files/css/css_pJRfwZZrQucmiUDBU4wiyeuKGmA43sCycXkRrt5U4J0.css" rel="stylesheet" type="text/css" />
+  <link media="all" href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css" rel="stylesheet" type="text/css" />
+  <link media="all" href="http://www.socor.cl/sites/default/files/css/css_sTB5ETJ7yJrAB3Lvu4DsP7QgPgnHsszlv_VrR9BWGjM.css" rel="stylesheet" type="text/css" />
+  <link media="all" href="http://www.socor.cl/sites/default/files/css/css_C_0R7qpHt8zWdTANNeD_xAZ54AWxgYlYjtigfwj2qew.css" rel="stylesheet" type="text/css" />
+  <script src="http://www.socor.cl/sites/default/files/js/js_0gj6QcpfRH2jzTbCQqf7kEkm4MXY0UA_sRhwPc8jC1o.js">
+  </script>
+  <script src="http://www.socor.cl/sites/default/files/js/js_2KlXA4Z5El1IQFVPxDN1aX5mIoMSFWGv3vwsP77K9yk.js">
+  </script>
+  <script src="http://www.socor.cl/sites/default/files/js/js_DxHxO6mbj4XJYnwmUiQyyzvtTWXGTnDLv1PQpgh4z2A.js">
+  </script>
+  <script src="https://platform.twitter.com/widgets.js">
+  </script>
+  <script src="http://www.socor.cl/sites/default/files/js/js_ELDtqHsmTC1x-z-D9PISbSUocO78mo-QMlnxfAX9bkA.js">
+  </script>
+  <script>
+   jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"stock","theme_token":"IKS9ayjK_WlERULU7yKqhnEav4UOZzyIGxQMcUhykfw","css":{"modules\/system\/system.base.css":1,"modules\/field\/theme\/field.css":1,"sites\/all\/modules\/views\/css\/views.css":1,"sites\/all\/modules\/ckeditor\/ckeditor.css":1,"sites\/all\/modules\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/widgets\/widgets.css":1,"sites\/all\/modules\/commerce\/modules\/line_item\/theme\/commerce_line_item.theme.css":1,"\/\/netdna.bootstrapcdn.com\/twitter-bootstrap\/2.3.1\/css\/bootstrap-combined.min.css":1,"sites\/all\/themes\/bootstrap\/css\/overrides.css":1,"sites\/all\/themes\/stock\/less\/style.less":1,"sites\/all\/themes\/stock\/color\/color.css":1,"sites\/all\/themes\/stock\/css\/style.css":1,"sites\/default\/files\/fontyourface\/font.css":1,"sites\/default\/files\/fontyourface\/fontsquirrel\/Droid-Sans-fontfacekit\/stylesheet.css":1,"sites\/default\/files\/fontyourface\/fontsquirrel\/Yanone-Kaffeesatz-fontfacekit\/stylesheet.css":1},"js":{"sites\/all\/modules\/jquery_update\/replace\/jquery\/1.7\/jquery.min.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"\/\/netdna.bootstrapcdn.com\/twitter-bootstrap\/2.3.1\/js\/bootstrap.min.js":1,"public:\/\/languages\/es_PBGbYDLSX_GZLVHBqldNT8OJ3-VqhtZxoHrNpfb8reg.js":1,"https:\/\/platform.twitter.com\/widgets.js":1,"sites\/all\/themes\/stock\/bootstrap\/js\/bootstrap-affix.js":1,"sites\/all\/themes\/stock\/bootstrap\/js\/bootstrap-alert.js":1,"sites\/all\/themes\/stock\/bootstrap\/js\/bootstrap-button.js":1,"sites\/all\/themes\/stock\/bootstrap\/js\/bootstrap-carousel.js":1,"sites\/all\/themes\/stock\/bootstrap\/js\/bootstrap-collapse.js":1,"sites\/all\/themes\/stock\/bootstrap\/js\/bootstrap-dropdown.js":1,"sites\/all\/themes\/stock\/bootstrap\/js\/bootstrap-modal.js":1,"sites\/all\/themes\/stock\/bootstrap\/js\/bootstrap-tooltip.js":1,"sites\/all\/themes\/stock\/bootstrap\/js\/bootstrap-popover.js":1,"sites\/all\/themes\/stock\/bootstrap\/js\/bootstrap-scrollspy.js":1,"sites\/all\/themes\/stock\/bootstrap\/js\/bootstrap-transition.js":1,"sites\/all\/themes\/stock\/bootstrap\/js\/bootstrap-typeahead.js":1,"sites\/all\/themes\/stock\/js\/retina.js":1}}});
+  </script>
+  <!-- HTML5 element support for IE6-8 -->
+  <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <!--[if lt IE 10]>
+    <link rel="stylesheet" href="sites/all/themes/stock/css/ie.css"  />
+  <![endif]-->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1.0, minimum-scale=1, user-scalable=no" name="viewport" />
+  <!-- iOS Icons -->
+  <link href="sites/all/themes/stock/apple-touch-icon-144-precomposed.png" sizes="144x144" rel="apple-touch-icon-precomposed" />
+  <link href="sites/all/themes/stock/apple-touch-icon-114-precomposed.png" sizes="114x114" rel="apple-touch-icon-precomposed" />
+  <link href="sites/all/themes/stock/apple-touch-icon-72-precomposed.png" sizes="72x72" rel="apple-touch-icon-precomposed" />
+  <link href="sites/all/themes/stock/apple-touch-icon-57-precomposed.png" sizes="57x57" rel="apple-touch-icon-precomposed" />
+  <script>
+   !function ($) {
+		          $(function(){
+		          	
+		            // Fix for dropdowns on mobile devices
+		            $('body').on('touchstart.dropdown', '.dropdown-menu', function (e) { 
+		                e.stopPropagation(); 
+		            });
+		            $(document).on('click','.dropdown-menu a',function(){
+		                document.location = $(this).attr('href');
+		            });
+					
+			  		/* Brands Fade Function */		
+			  		$('.view-instock-featured-brands .views-row').hover(function(){
+			  				$(this).siblings().addClass('fade');
+			  		}, function(){
+			  				$(this).siblings().removeClass('fade');
+			  		});
+					
+		          })
+		        }(window.jQuery)
+  </script>
+  <script type="text/javascript" charset="utf-8" async="" src="https://platform.twitter.com/js/timeline.2aa155a26b98cb156d16d48423139a74.js">
+  </script>
+ </head>
+ <body class="html not-front not-logged-in no-sidebars page-user page-user-password">
+  <div class="navbar navbar-inverse responsive-nav">
+   <div class="navbar-inner">
+    <div class="container">
+     <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+     <a data-target=".nav-collapse1" data-toggle="collapse" class="btn btn-navbar">
+      <i class="icon-shopping-cart icon-white">
+      </i>
+      Shopping Cart
+     </a>
+     <!-- Everything you want hidden at 940px or less, place within here -->
+     <div class="nav-collapse1 collapse">
+      <!-- .nav, .navbar-search, .navbar-form, etc -->
+      <div class="row-fluid">
+       <div class="span12">
+        <div class="region region-responsivecart">
+         <section class="block block-views clearfix" id="block-views-63abdd45cd9a19c89f5d2aed6b3727d0">
+          <div class="view view-responsive-shopping-cart-block view-id-responsive_shopping_cart_block view-display-id-block_1 view-dom-id-cfbf24c3d108d4477cbf7f2d130bb68d">
+           <div class="view-header">
+            <div class="line-item-summary">
+             <div class="line-item-total">
+              <span class="line-item-total-label">
+               Total:
+              </span>
+              <span class="line-item-total-raw">
+               $0.00
+              </span>
+             </div>
+            </div>
+           </div>
+           <div class="view-empty">
+            <div class="line-item-summary">
+             <div class="line-item-total">
+              <span class="line-item-total-label">
+               Total:
+              </span>
+              <span class="line-item-total-raw">
+               $0.00
+              </span>
+             </div>
+            </div>
+           </div>
+          </div>
+         </section>
+         <!-- /.block -->
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <div class="head-top-container">
+   <div class="container">
+    <div class="row">
+     <div class="span12">
+     </div>
+    </div>
+   </div>
+  </div>
+  <header class="navbar navbar-static-top" role="banner" id="navbar">
+   <div class="navbar-inner">
+    <div class="container">
+     <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+     <a data-target=".nav-collapse" data-toggle="collapse" class="btn btn-navbar">
+      <span class="icon-bar">
+      </span>
+      <span class="icon-bar">
+      </span>
+      <span class="icon-bar">
+      </span>
+     </a>
+     <a title="Inicio" href="/" class="logo pull-left">
+      <img alt="Inicio" src="http://www.socor.cl/sites/default/files/logo_socor_157x70.png" />
+     </a>
+     <div class="nav-collapse collapse">
+      <nav role="navigation">
+       <ul class="menu nav">
+        <li class="first leaf">
+         <a title="" href="/">
+          Inicio
+         </a>
+        </li>
+        <li class="leaf">
+         <a href="/socor">
+          Socor
+         </a>
+        </li>
+        <li class="leaf">
+         <a title="Ofertas y promociones" href="/ofertas-semana">
+          Ofertas
+         </a>
+        </li>
+        <li class="leaf">
+         <a href="/catalogo-agricola">
+          Catálogo agrícola
+         </a>
+        </li>
+        <li class="leaf">
+         <a href="/productos">
+          Productos
+         </a>
+        </li>
+        <li class="expanded dropdown">
+         <a data-target="#" data-toggle="dropdown" class="dropdown-toggle" title="" href="/servicios">
+          Servicios
+          <span class="caret">
+          </span>
+         </a>
+         <ul class="dropdown-menu">
+          <li class="first leaf">
+           <a title="" href="/servicios">
+            Ver todos
+           </a>
+          </li>
+          <li class="leaf">
+           <a href="/servicios/diseno-sistemas-riego">
+            Diseño de sistemas de riego
+           </a>
+          </li>
+          <li class="leaf">
+           <a href="/servicios/diseno-sistemas-presurizados">
+            Diseño de sistemas presurizados
+           </a>
+          </li>
+          <li class="leaf">
+           <a href="/servicios/elaboracion-tableros-electricos">
+            Elaboración de tableros eléctricos
+           </a>
+          </li>
+          <li class="leaf">
+           <a href="/servicios/instalaciones-riego">
+            Instalaciones de riego
+           </a>
+          </li>
+          <li class="leaf">
+           <a href="/servicios/instalaciones-sanitarias">
+            Instalaciones sanitarias
+           </a>
+          </li>
+          <li class="leaf">
+           <a href="/servicios/mantenciones-electricas-y-control">
+            Mantenciones eléctricas y control
+           </a>
+          </li>
+          <li class="leaf">
+           <a href="/servicios/mantencion-motobombas">
+            Mantención de motobombas
+           </a>
+          </li>
+          <li class="leaf">
+           <a href="/servicios/mantencion-sistemas-filtracion">
+            Mantención de sistemas de filtración
+           </a>
+          </li>
+          <li class="leaf">
+           <a href="/servicios/mantencion-sistemas-riego">
+            Mantención de sistemas de riego
+           </a>
+          </li>
+          <li class="leaf">
+           <a href="/servicios/obras-civiles">
+            Obras civiles
+           </a>
+          </li>
+          <li class="leaf">
+           <a href="/servicios/reingenieria">
+            Reingeniería
+           </a>
+          </li>
+          <li class="leaf">
+           <a href="/servicios/revestimiento-tranques-hdpe">
+            Revestimiento de tranques en HDPE
+           </a>
+          </li>
+          <li class="leaf">
+           <a href="/servicios/sistemas-control-inalambrico-telemetria">
+            Sistemas de control inalámbrico (telemetría)
+           </a>
+          </li>
+          <li class="leaf">
+           <a href="/servicios/sistemas-fertiriego">
+            Sistemas de fertiriego
+           </a>
+          </li>
+          <li class="last leaf">
+           <a href="/servicios/termofusion-hdpe">
+            Termofusión de HDPE
+           </a>
+          </li>
+         </ul>
+        </li>
+        <li class="leaf">
+         <a href="/nuestras-tiendas">
+          Nuestras tiendas
+         </a>
+        </li>
+        <li class="leaf">
+         <a href="/experiencias">
+          Experiencias
+         </a>
+        </li>
+        <li class="leaf">
+         <a href="/blog">
+          Blog
+         </a>
+        </li>
+        <li class="last leaf">
+         <a title="Get in touch with us!" href="/contact">
+          Contacto
+         </a>
+        </li>
+       </ul>
+      </nav>
+     </div>
+    </div>
+   </div>
+  </header>
+  <div class="main-container">
+   <header id="page-header" role="banner">
+   </header>
+   <!-- /#header -->
+   <div class="main-content container">
+    <div class="row">
+     <section class="span9 entry-container">
+      <div class="highlighted">
+       <div class="region region-highlighted">
+       </div>
+      </div>
+     </section>
+     <section class="block block-easy-breadcrumb clearfix" id="block-easy-breadcrumb-easy-breadcrumb">
+      <div class="easy-breadcrumb">
+       <a class="easy-breadcrumb_segment easy-breadcrumb_segment-front" href="/">
+        Inicio
+       </a>
+       <span class="easy-breadcrumb_segment-separator">
+        &gt;&gt;
+       </span>
+       <a class="easy-breadcrumb_segment easy-breadcrumb_segment-1" href="/user">
+        Cuenta de usuario
+       </a>
+       <span class="easy-breadcrumb_segment-separator">
+        &gt;&gt;
+       </span>
+       <span class="easy-breadcrumb_segment easy-breadcrumb_segment-title">
+        Cuenta de usuario
+       </span>
+      </div>
+     </section>
+     <!-- /.block -->
+    </div>
+   </div>
+   <a id="main-content">
+   </a>
+   <h1 class="page-header">
+    Cuenta de usuario
+   </h1>
+   <ul class="nav nav-tabs">
+    <li class="">
+     <a href="/user">
+      Iniciar sesión
+     </a>
+    </li>
+    <li class="active">
+     <a class="active" href="/user/password">
+      Solicitar una nueva contraseña
+      <span class="element-invisible">
+       (solapa activa)
+      </span>
+     </a>
+    </li>
+   </ul>
+   <form accept-charset="UTF-8" id="user-pass" method="post" action="/user/password">
+    <div>
+     <div class="control-group form-type-textfield form-item-name form-item">
+      <label class="control-label" for="edit-name">
+       Nombre de usuario o dirección de correo
+       <span title="Este campo es obligatorio." class="form-required">
+        *
+       </span>
+      </label>
+      <div class="controls">
+       <input type="text" class="form-text required" maxlength="254" size="60" value="" name="name" id="edit-name" />
+      </div>
+     </div>
+     <input type="hidden" value="form-WpDOnvxCirnPfARXWUYzanJF59IdhddX1W5m8c_bznU" name="form_build_id" />
+     <input type="hidden" value="user_pass" name="form_id" />
+     <button type="submit" value="Nueva contraseña por correo electrónico" name="op" id="edit-submit" class="btn form-submit">
+      Nueva contraseña por correo electrónico
+     </button>
+    </div>
+   </form>
+  </div>
+  <div class="footer-head-container">
+   <div class="container">
+    <div class="row">
+    </div>
+   </div>
+  </div>
+  <footer class="footer">
+   <div class="container">
+    <div class="row">
+     <div class="region region-footer">
+      <section class="span3 block block-block clearfix" id="block-block-3">
+       <h2 class="block-title">
+        Acerca de
+       </h2>
+      </section>
+      <p>
+       Socor es una 
+       <strong>
+        empresa familiar
+       </strong>
+        fundada en 1994 orientada a la entrega de soluciones integrales a través del diseño de proyectos, instalación de equipos, servicio de mantención, venta de materiales para la construcción y elementos de riego y ferretería.
+      </p>
+      <!-- /.block -->
+      <section class="span3 block block-views clearfix" id="block-views-instock-latest-news-block">
+       <h2 class="block-title">
+        Nuestro blog
+       </h2>
+       <div class="view view-instock-latest-news view-id-instock_latest_news view-display-id-block view-dom-id-a42c9cfbf4f8248c6edb3f50f6eb7601">
+        <div class="view-content">
+         <div class="views-row views-row-1 views-row-odd views-row-first">
+          <div class="views-field views-field-edit-node">
+           <span class="field-content">
+           </span>
+          </div>
+          <div class="views-field views-field-field-image">
+           <div class="field-content">
+            <a href="/blog/2015/11/24/que-necesita-primera-caja-herramientas">
+             <img width="60" height="40" alt="caja de herramientas" src="http://www.socor.cl/sites/default/files/styles/instock-footer-blog/public/field/image/caja_de_herramientas_blog.jpg?itok=ZPAp3P_i" typeof="foaf:Image" />
+            </a>
+           </div>
+          </div>
+          <div class="views-field views-field-title">
+           <h4 class="field-content">
+            <a href="/blog/2015/11/24/que-necesita-primera-caja-herramientas">
+             ¿Qué necesita la primera caja de herramientas?
+            </a>
+           </h4>
+          </div>
+          <div class="views-field views-field-created">
+           <span class="views-label views-label-created">
+            publicado
+           </span>
+           <span class="field-content">
+            hace
+            <em class="placeholder">
+             1 semana 21 horas
+            </em>
+           </span>
+          </div>
+         </div>
+         <div class="views-row views-row-2 views-row-even views-row-last">
+          <div class="views-field views-field-edit-node">
+           <span class="field-content">
+           </span>
+          </div>
+          <div class="views-field views-field-field-image">
+           <div class="field-content">
+            <a href="/blog/2014/10/15/instalar-riego-goteo-para-huerto-casero">
+             <img width="60" height="40" alt="" src="http://www.socor.cl/sites/default/files/styles/instock-footer-blog/public/field/image/riego_por_goteo_blog.jpg?itok=ZGUgOLr_" typeof="foaf:Image" />
+            </a>
+           </div>
+          </div>
+          <div class="views-field views-field-title">
+           <h4 class="field-content">
+            <a href="/blog/2014/10/15/instalar-riego-goteo-para-huerto-casero">
+             Instalar riego por goteo para el huerto casero
+            </a>
+           </h4>
+          </div>
+          <div class="views-field views-field-created">
+           <span class="views-label views-label-created">
+            publicado
+           </span>
+           <span class="field-content">
+            hace
+            <em class="placeholder">
+             1 año 1 mes
+            </em>
+           </span>
+          </div>
+         </div>
+        </div>
+       </div>
+      </section>
+      <!-- /.block -->
+      <section class="span3 block block-twitter-block clearfix" id="block-twitter-block-1">
+       <h2 class="block-title">
+        Twitter Chilemat
+       </h2>
+       <iframe frameborder="0" id="twitter-widget-0" scrolling="no" allowtransparency="true" allowfullscreen="true" class="twitter-timeline twitter-timeline-rendered" style="position: static; visibility: visible; display: inline-block; width: 100%; height: 182px; padding: 0px; border: medium none; max-width: 520px; min-width: 180px; margin-top: 0px; margin-bottom: 0px;" data-widget-id="481554596536401922" data-user-id="193772980" title="Cronología de Twitter">
+       </iframe>
+      </section>
+      <!-- /.block -->
+      <section class="span3 block block-views clearfix" id="block-views-payments-accepted-block">
+       <h2 class="block-title">
+        Métodos de pago
+       </h2>
+       <div class="view view-payments-accepted view-id-payments_accepted view-display-id-block view-dom-id-9c119f384cdfa203fde494fbafaac1f1">
+        <div class="view-content">
+         <div class="views-row views-row-1 views-row-odd views-row-first">
+          <div class="views-field views-field-field-image">
+           <div class="field-content">
+            <img width="60" height="32" alt="" src="http://www.socor.cl/sites/default/files/card-icon/paypal.gif" typeof="foaf:Image" />
+           </div>
+          </div>
+         </div>
+         <div class="views-row views-row-2 views-row-even">
+          <div class="views-field views-field-field-image">
+           <div class="field-content">
+            <img width="60" height="32" alt="" src="http://www.socor.cl/sites/default/files/card-icon/visa.gif" typeof="foaf:Image" />
+           </div>
+          </div>
+         </div>
+         <div class="views-row views-row-3 views-row-odd">
+          <div class="views-field views-field-field-image">
+           <div class="field-content">
+            <img width="60" height="32" alt="" src="http://www.socor.cl/sites/default/files/card-icon/mastercard.gif" typeof="foaf:Image" />
+           </div>
+          </div>
+         </div>
+         <div class="views-row views-row-4 views-row-even">
+          <div class="views-field views-field-field-image">
+           <div class="field-content">
+            <img width="60" height="32" alt="" src="http://www.socor.cl/sites/default/files/card-icon/americanexpress.gif" typeof="foaf:Image" />
+           </div>
+          </div>
+         </div>
+         <div class="views-row views-row-5 views-row-odd">
+          <div class="views-field views-field-field-image">
+           <div class="field-content">
+            <img width="60" height="32" alt="" src="http://www.socor.cl/sites/default/files/card-icon/magna.jpg" typeof="foaf:Image" />
+           </div>
+          </div>
+         </div>
+         <div class="views-row views-row-6 views-row-even">
+          <div class="views-field views-field-field-image">
+           <div class="field-content">
+            <img width="60" height="32" alt="" src="http://www.socor.cl/sites/default/files/card-icon/cmr_0.jpg" typeof="foaf:Image" />
+           </div>
+          </div>
+         </div>
+         <div class="views-row views-row-7 views-row-odd">
+          <div class="views-field views-field-field-image">
+           <div class="field-content">
+            <img width="60" height="32" alt="" src="http://www.socor.cl/sites/default/files/card-icon/ripley_0.jpg" typeof="foaf:Image" />
+           </div>
+          </div>
+         </div>
+         <div class="views-row views-row-8 views-row-even">
+          <div class="views-field views-field-field-image">
+           <div class="field-content">
+            <img width="60" height="32" alt="" src="http://www.socor.cl/sites/default/files/card-icon/diners_0.jpg" typeof="foaf:Image" />
+           </div>
+          </div>
+         </div>
+         <div class="views-row views-row-9 views-row-odd views-row-last">
+          <div class="views-field views-field-field-image">
+           <div class="field-content">
+            <img width="60" height="32" alt="" src="http://www.socor.cl/sites/default/files/card-icon/redcompra.jpg" typeof="foaf:Image" />
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="view-footer">
+         <div class="clear">
+         </div>
+         <p>
+          Socor Ltda. acepta cheques previo proceso de verificación.
+         </p>
+        </div>
+       </div>
+      </section>
+      <!-- /.block -->
+     </div>
+    </div>
+   </div>
+   <div class="closure-container">
+    <div class="container">
+     <div class="row">
+      <div class="region region-closure">
+       <section class="span6 block block-widgets clearfix" id="block-widgets-s-socialmedia-profile-buttons">
+        <div class="widgets widgets-set widgets-set-horizontal widgets-style-horizontal" id="widgets-element-socialmedia_profile-buttons">
+         <div class="widgets widgets-element widgets-element-horizontal widgets-style-horizontal" id="widgets-element-socialmedia_socialmedia-youtube-profile-button">
+          <a target="_blank" title="Visit chilematSA/videos on YouTube" href="http://www.youtube.com/user/chilematSA/videos">
+           <img alt="YouTube icon" src="/sites/all/modules/socialmedia/icons/levelten/glossy/16x16/youtube.png" />
+          </a>
+         </div>
+         <div class="widgets widgets-element widgets-element-horizontal widgets-style-horizontal" id="widgets-element-socialmedia_socialmedia-twitter-profile-button">
+          <a target="_blank" title="Visit @chilemat on Twitter" href="http://twitter.com/chilemat">
+           <img alt="Twitter icon" src="/sites/all/modules/socialmedia/icons/levelten/glossy/16x16/twitter.png" />
+          </a>
+         </div>
+         <div class="widgets widgets-element widgets-element-horizontal widgets-style-horizontal" id="widgets-element-socialmedia_socialmedia-facebook-profile-button">
+          <a target="_blank" title="Visit Chilemat on Facebook" href="http://www.facebook.com/Chilemat">
+           <img alt="Facebook icon" src="/sites/all/modules/socialmedia/icons/levelten/glossy/16x16/facebook.png" />
+          </a>
+         </div>
+         <div class="widgets-clear">
+         </div>
+        </div>
+       </section>
+       <!-- /.block -->
+      </div>
+     </div>
+    </div>
+   </div>
+  </footer>
+ </body>
+</html>

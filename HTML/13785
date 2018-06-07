@@ -1,0 +1,138 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <!-- InstanceBegin template="/Templates/mainpages.dwt" codeOutsideHTMLIsLocked="false" -->
+ <head>
+  <meta content="Content-Type" http-equiv="Content-Type" />
+  <!-- InstanceBeginEditable name="doctitle" -->
+  <title>
+   Martin Driscoll Irish Art - the Emerald Isle Experience
+  </title>
+  <!-- InstanceEndEditable -->
+  <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Uncial+Antiqua" />
+  <script src="scripts/jquery-1.2.6.min.js" type="text/javascript">
+  </script>
+  <script type="text/javascript">
+   /*** 
+    Simple jQuery Slideshow Script
+    Released by Jon Raasch (jonraasch.com) under FreeBSD license: free to use or modify, not responsible for anything, etc.  Please link out to me if you like it :)
+***/
+
+function slideSwitch() {
+    var $active = $('#slideshow IMG.active');
+
+    if ( $active.length == 0 ) $active = $('#slideshow IMG:last');
+
+    // use this to pull the images in the order they appear in the markup
+    var $next =  $active.next().length ? $active.next()
+        : $('#slideshow IMG:first');
+
+    // uncomment the 3 lines below to pull the images in random order
+    
+    // var $sibs  = $active.siblings();
+    // var rndNum = Math.floor(Math.random() * $sibs.length );
+    // var $next  = $( $sibs[ rndNum ] );
+
+
+    $active.addClass('last-active');
+
+    $next.css({opacity: 0.0})
+        .addClass('active')
+        .animate({opacity: 1.0}, 1000, function() {
+            $active.removeClass('active last-active');
+        });
+}
+
+$(function() {
+    setInterval( "slideSwitch()", 5000 );
+});
+  </script>
+  <link type="text/css" rel="stylesheet" href="styles.css" />
+  <style type="text/css">
+  </style>
+  <!-- InstanceBeginEditable name="head" -->
+  <style type="text/css">
+   .style1 {font-size: 14px}
+  </style>
+  <!-- InstanceEndEditable -->
+ </head>
+ <body>
+  <div id="wrapper">
+   <div id="header">
+   </div>
+   <div id="nav">
+    <div id="navigation">
+     <ul>
+      <li>
+       <a href="index.html">
+        Home
+       </a>
+      </li>
+      <li>
+       <a href="about.html">
+        About
+       </a>
+      </li>
+      <li>
+       <a href="gallery.html">
+        Gallery
+       </a>
+      </li>
+      <li>
+       <a href="licensing.html">
+        Licensing
+       </a>
+      </li>
+      <li>
+       <a href="collectibles.html">
+        Collectibles
+       </a>
+      </li>
+      <li>
+       <a href="contact.html">
+        Contact
+       </a>
+      </li>
+     </ul>
+    </div>
+   </div>
+   <div id="shadowtop">
+   </div>
+   <div id="containermain">
+    <div id="shadow">
+     <div id="content2">
+      <!-- InstanceBeginEditable name="maincontent" -->
+      <h1>
+       Collectibles
+      </h1>
+      <h2>
+       "The Emerald Isle Experience"™
+      </h2>
+      <div id="column1">
+       <img width="179" height="264" src="images/paintings/driscoll-portrait.jpg" />
+      </div>
+      <div id="column2long">
+       <p>
+        A brilliant  line of authorized, collectable gift, home decor and textile products are to be released  in 2013. Many knownDriscoll favorites along with premier never-before -seen  beauties will be available to collectors to discover the decade to come!  Now you can njoy the true magic of Ireland- the memories,  culture, lifestyle, heritage &amp; gorgeous landscape and lovely people- so accurately depicted in Master Driscoll's important oil paintings everyday.  Delight in the 'Emerald Isle Experience'  daily through items such as calendars, decorative plates, screensavers,  puzzles, tapestries, throws and much more.
+       </p>
+      </div>
+      <!-- InstanceEndEditable -->
+      <div id="footer">
+       <div id="social">
+        <div id="socialempty">
+        </div>
+       </div>
+       <div id="footerText">
+        Copyright © 2012 All Rights Reserved
+        <span style="color:#ffcc05">
+         •
+        </span>
+        Sunflower Fine Art
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+ <!-- InstanceEnd -->
+</html>

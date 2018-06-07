@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" class=" desktop landscape">
+ <head>
+  <title>
+   Caêmoura - Treinamento Multifuncional
+  </title>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <link type="image/x-icon" href="img/favicon.ico" rel="icon" />
+  <link type="image/x-icon" href="img/favicon.ico" rel="shortcut icon" />
+  <meta content="Your description" name="description" />
+  <meta content="Your keywords" name="keywords" />
+  <meta content="Your name" name="author" />
+  <meta content="telephone=no" name="format-detection" />
+  <!--CSS-->
+  <link href="css/bootstrap.css" rel="stylesheet" />
+  <link href="css/style.css" rel="stylesheet" />
+  <link href="css/animate.css" rel="stylesheet" />
+  <link href="fonts/font-awesome.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/movingboxes.css" />
+  <!--[if lt IE 9]>
+	<link href="css/movingboxes-ie.css" rel="stylesheet" media="screen"  />
+	<![endif]-->
+  <!-- Demo only -->
+  <link rel="stylesheet" href="demo/demo.css" />
+  <!--JS-->
+  <script async="" src="//www.google-analytics.com/analytics.js">
+  </script>
+  <script src="js/jquery.js">
+  </script>
+  <script src="js/jquery-migrate-1.2.1.min.js">
+  </script>
+  <script src="js/jquery.easing.1.3.js">
+  </script>
+  <script src="js/jquery.mobilemenu.js">
+  </script>
+  <script src="js/jquery.equalheights.js">
+  </script>
+  <script src="js/jquery.carouFredSel-6.1.0-packed.js">
+  </script>
+  <script src="js/jquery.touchSwipe.min.js">
+  </script>
+  <script src="js/jquery.movingboxes.js">
+  </script>
+  <script>
+   $(window).load(function() {
+        $(function() {
+            $('#foo1').carouFredSel({
+				auto: false,
+				responsive: true,
+				width: '100%',
+				scroll: 1,
+                prev: '#prev1',
+				next: '#next1',
+				items: {
+					height: 'auto',
+					width:320,
+					visible: {
+						min: 1,
+						max: 4
+					}
+				},
+				mousewheel: true,
+				swipe: {
+					onMouse: true,
+					onTouch: true
+				}
+			});
+		});  	 				
+      });
+  </script>
+  <!--[if (gt IE 9)|!(IE)]><!-->
+  <script src="js/wow/wow.js">
+  </script>
+  <script src="js/wow/device.min.js">
+  </script>
+  <script>
+   $(document).ready(function () {       
+      if ($('html').hasClass('desktop')) {
+        new WOW().init();
+      }   
+    });
+  </script>
+  <style>
+   /* Dimensions set via css in MovingBoxes version 2.2.2+ */
+		#slider { width: 90%; }
+		#slider li { width: 400px; }
+  </style>
+  <script>
+   $(function(){
+
+		$('#slider').movingBoxes({
+			/* width and panelWidth options deprecated, but still work to keep the plugin backwards compatible
+			width: 500,
+			panelWidth: 0.5,
+			*/
+			startPanel   : 3,      // start with this panel
+			wrap         : true,  // if true, the panel will infinitely loop
+			buildNav     : true,   // if true, navigation links will be added
+			navFormatter : function(){ return "&amp;#9679;"; } // function which returns the navigation text for each panel
+		});
+
+	});
+  </script>
+  <!--<![endif]-->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+
+    <div id="ie6-alert" style="width: 100%; text-align:center;">
+    <img src="http://beatie6.frontcube.com/images/ie6.jpg" alt="Upgrade IE 6" width="640" height="344" border="0" usemap="#Map" longdesc="http://die6.frontcube.com"  />
+      <map name="Map" id="Map"><area shape="rect" coords="496,201,604,329" href="http://www.microsoft.com/windows/internet-explorer/default.aspx" target="_blank" alt="Download Interent Explorer"  /><area shape="rect" coords="380,201,488,329" href="http://www.apple.com/safari/download/" target="_blank" alt="Download Apple Safari"  /><area shape="rect" coords="268,202,376,330" href="http://www.opera.com/download/" target="_blank" alt="Download Opera"  /><area shape="rect" coords="155,202,263,330" href="http://www.mozilla.com/" target="_blank" alt="Download Firefox"  />
+        <area shape="rect" coords="35,201,143,329" href="http://www.google.com/chrome" target="_blank" alt="Download Google Chrome"  />
+      </map>
+  </div>
+  <![endif]-->
+  <script>
+   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-65780043-1', 'auto');
+  ga('send', 'pageview');
+  </script>
+ </head>
+ <body>
+  <!--header-->
+  <header class="indent">
+   <div class="container">
+    <h1 data-wow-delay="0.3s" class="navbar-brand navbar-brand_ wow fadeInDown animated" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInDown;">
+     <a href="index.html">
+      <img width="100%" alt="" src="img/logo.png" />
+     </a>
+    </h1>
+   </div>
+   <nav role="navigation" data-wow-delay="0.1s" class="navbar navbar-default navbar-static-top tm_navbar clearfix wow fadeInUp animated" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
+    <div class="container">
+     <ul class="nav sf-menu clearfix sf-js-enabled sf-arrows">
+      <li style="text-align:center;">
+       <img align="middle" src="img/linhamenu.jpg" />
+      </li>
+      <li>
+       <a href="index.html">
+        HOME
+       </a>
+      </li>
+      <li>
+       <a href="institucional.html">
+        INSTITUCIONAL
+       </a>
+      </li>
+      <li class="active">
+       <a href="treinamento.html">
+        • TREINAMENTO FUNCIONAL
+       </a>
+      </li>
+      <li>
+       <a href="contato.html">
+        CONTATO
+       </a>
+      </li>
+      <li style="text-align:center;">
+       <img align="middle" src="img/linhamenu.jpg" />
+      </li>
+     </ul>
+     <select class="select-menu" style="display: inline-block;">
+      <option value="#">
+       NAVEGAR...
+      </option>
+      <option value="http://caemoura.com.br/index.html">
+       HOME
+      </option>
+      <option value="http://caemoura.com.br/institucional.html">
+       INSTITUCIONAL
+      </option>
+      <option value="http://caemoura.com.br/treinamento.html" selected="selected">
+       • TREINAMENTO FUNCIONAL
+      </option>
+      <option value="http://caemoura.com.br/contato.html">
+       CONTATO
+      </option>
+     </select>
+    </div>
+   </nav>
+  </header>
+  <!--content-->
+  <div class="treinamento">
+   <div class="container">
+    <div class="row">
+     <div class="col-lg-12 col-md-12 col-sm-12 wow fadeInUp" style="visibility: hidden; animation-name: none;">
+      <p class="description wow fadeInLeft" style="visibility: hidden; animation-name: none;">
+       <strong style="font:40px/0em 'DINPro-light'; color: #ffeb00; margin:0; padding:0; width:10px; height:10px;">
+        •
+       </strong>
+       <br />
+       TREINAMENTO FUNCIONAL
+      </p>
+      <ul class="list8">
+       <li class="wow fadeInUp" style="visibility: hidden; animation-name: none;">
+        <p style="color:#FFF; text-align:justify; font-size:18px; line-height:28px;">
+         O conceito de treinamento funcional é simples, nosso corpo foi feito para funcionar. A metodologia aplica-se, portanto, no conceito de sentar, agachar, correr, pular, girar e empurrar. Incluímos numa mesma sessão de treinamento diferentes capacidades físicas como: força, resistência, equilíbrio, flexibilidade e agilidade. Deixamos então de pensar no corpo como pequenos segmentos e passamos a englobar o corpo como um todo, onde cada "engrenagem" depende do bom funcionamento da anterior e assim sucessivamente.
+        </p>
+       </li>
+       <li class="wow fadeInUp" style="visibility: hidden; animation-name: none;">
+        <p style="color:#FFF; text-align:justify; font-size:18px; line-height:28px;">
+         O treinamento funcional é muito utilizado hoje como ferramenta auxiliar no treinamento de atletas de elite das mais diferentes modalidades esportivas, pela simplicidade e efetividade dos movimentos aplicados ele é indicado para pessoas com qualquer condicionamento físico e qualquer idade, de 8 a 108 anos.
+         <br />
+         <br />
+         Método CORE360, um dos mais respeitados cursos de treinamento funcional no Brasil e no exterior. Um sistema baseado na utilização das mais diversas metodologias de treinamento e na criação de estratégias para gerar como resultado um corpo mais inteligente, que produza movimentos mais precisos e eficientes.
+        </p>
+       </li>
+      </ul>
+      <div id="wrapper">
+       <div class="movingBoxes mb-wrapper" style="width: 648px;">
+        <a class="mb-scrollButtons mb-left">
+        </a>
+        <div class="mb-scroll" style="height: 260px;">
+         <ul id="slider" class="mb-slider" style="position: absolute; width: 5344px; height: 390px; padding-left: 144px;">
+          <li class="mb-panel cloned" style="width: 288px; font-size: 0.8em; height: auto;">
+           <div class="mb-inside">
+            <img alt="picture" src="demo/14.JPG" />
+           </div>
+          </li>
+          <li class="mb-panel" style="width: 288px; font-size: 0.8em; height: auto;">
+           <div class="mb-inside">
+            <img alt="picture" src="demo/1.JPG" />
+           </div>
+          </li>
+          <li class="mb-panel" style="width: 288px; font-size: 0.8em; height: auto;">
+           <div class="mb-inside">
+            <img alt="picture" src="demo/2.JPG" />
+           </div>
+          </li>
+          <li class="mb-panel current" style="width: 360px; font-size: 1em; height: auto;">
+           <div class="mb-inside">
+            <img alt="picture" src="demo/3.JPG" />
+           </div>
+          </li>
+          <li class="mb-panel" style="width: 288px; font-size: 0.8em; height: auto;">
+           <div class="mb-inside">
+            <img alt="picture" src="demo/7.JPG" />
+           </div>
+          </li>
+          <li class="mb-panel" style="width: 288px; font-size: 0.8em; height: auto;">
+           <div class="mb-inside">
+            <img alt="picture" src="demo/8.JPG" />
+           </div>
+          </li>
+          <li class="mb-panel" style="width: 288px; font-size: 0.8em; height: auto;">
+           <div class="mb-inside">
+            <img alt="picture" src="demo/9.JPG" />
+           </div>
+          </li>
+          <li class="mb-panel" style="width: 288px; font-size: 0.8em; height: auto;">
+           <div class="mb-inside">
+            <img alt="picture" src="demo/10.JPG" />
+           </div>
+          </li>
+          <li class="mb-panel" style="width: 288px; font-size: 0.8em; height: auto;">
+           <div class="mb-inside">
+            <img alt="picture" src="demo/11.JPG" />
+           </div>
+          </li>
+          <li class="mb-panel" style="width: 288px; font-size: 0.8em; height: auto;">
+           <div class="mb-inside">
+            <img alt="picture" src="demo/12.JPG" />
+           </div>
+          </li>
+          <li class="mb-panel" style="width: 288px; font-size: 0.8em; height: auto;">
+           <div class="mb-inside">
+            <img alt="picture" src="demo/13.JPG" />
+           </div>
+          </li>
+          <li class="mb-panel" style="width: 288px; font-size: 0.8em; height: auto;">
+           <div class="mb-inside">
+            <img alt="picture" src="demo/14.JPG" />
+           </div>
+          </li>
+          <li class="mb-panel cloned" style="width: 288px; font-size: 0.8em; height: auto;">
+           <div class="mb-inside">
+            <img alt="picture" src="demo/1.JPG" />
+           </div>
+          </li>
+         </ul>
+        </div>
+        <a class="mb-scrollButtons mb-right">
+        </a>
+        <div class="mb-left-shadow">
+        </div>
+        <div class="mb-right-shadow">
+        </div>
+       </div>
+       <!-- end Slider #1 -->
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <footer>
+   <div class="container">
+    <div style="padding: 40px 0px; visibility: hidden; animation-name: none;" class="col-lg-4 col-md-4 col-sm-4 wow fadeInUp">
+     <img width="100%" src="img/rodape1.png" />
+    </div>
+    <div style="padding: 40px 0px; visibility: hidden; animation-name: none;" class="col-lg-4 col-md-4 col-sm-4 wow fadeInUp">
+     <img width="100%" usemap="#Map" src="img/rodapemeio.png" id="my_image" />
+     <map name="Map">
+      <area target="_blank" href="https://www.facebook.com/caemourafuncional" coords="119,73,36" shape="circle">
+      </area>
+      <area target="_blank" href="https://instagram.com/Caemoura_/" coords="205,72,35" shape="circle">
+      </area>
+     </map>
+    </div>
+    <div style="padding: 40px 0px; visibility: hidden; animation-name: none;" class="col-lg-4 col-md-4 col-sm-4 wow fadeInUp">
+     <img width="100%" src="img/logoRodape.png" />
+    </div>
+   </div>
+  </footer>
+  <script src="js/bootstrap.min.js">
+  </script>
+  <script src="js/tm-scripts.js">
+  </script>
+  <script src="js/device.min.js">
+  </script>
+  <script src="js/superfish.js">
+  </script>
+  <script src="js/jquery.mousewheel.min.js">
+  </script>
+  <script src="js/jquery.simplr.smoothscroll.min.js">
+  </script>
+  <script src="js/stellar/jquery.stellar.js">
+  </script>
+  <script src="js/jquery.ui.totop.js">
+  </script>
+  <meta content="width=device-width,initial-scale=1.0,user-scalable=0" name="viewport" />
+  <a class="fa fa-arrow-circle-o-up" id="toTop" href="#" style="display: none;">
+  </a>
+ </body>
+</html>

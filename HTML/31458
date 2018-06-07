@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <title>
+   Garbo Rock
+  </title>
+  <!--[if lt IE 9]>
+<script src="js/html5shiv.js"></script>
+<![endif]-->
+  <meta charset="UTF-8" />
+  <link type="text/css" rel="stylesheet" href="estilo2.css" />
+  <link sizes="40x40" type="image/ico" href="img/favicon.ico" rel="icon" />
+  <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Rosario" />
+  <script src="js/jquery-1.10.2.min.js">
+  </script>
+  <script src="js/jquery.jplayer.js" type="text/javascript">
+  </script>
+  <script src="js/ttw-music-player-min.js" type="text/javascript">
+  </script>
+  <script src="js/myplaylist.js" type="text/javascript">
+  </script>
+  <link href="css/style.css" type="text/css" rel="stylesheet" />
+  <link href="css/demo.css" type="text/css" rel="stylesheet" />
+  <script type="text/javascript">
+   $(document).ready(function(){
+		$("#multimedia").hover(
+			function() {
+    			$(".submenu").slideDown(300)},
+    			
+    		function() {
+    				$(".submenu").stop( true, true ).slideUp(300)});
+		
+
+		$(".logo_inicio").click(
+			function() {
+				$('.super_wrapper_i').delay(10000).fadeOut(500).stop(true);
+				$('.super_wrapper').delay(10000).fadeIn(3000).stop(true);
+				$(".super_wrapper_i").fadeOut(500);
+				$(".super_wrapper").fadeIn(3000);
+			});
+
+		$('.super_wrapper_i').delay(10000).fadeOut(500);
+		$('.super_wrapper').delay(10000).fadeIn(3000);
+
+	});
+  </script>
+  <script type="text/javascript">
+   $(document).ready(function(){
+            var description = 'Martín Mansilla: Voz. Charly Gonzalez: Guitarras y mandolina. Antonio Morales: Batería y percusión. Andronico Diaz: Bajo.';
+
+            $('.contenido').ttwMusicPlayer(myPlaylist, {
+                autoPlay:false, 
+                description:description,
+                buyText:false,
+                tracksToShow:11,
+                jPlayer:{
+                    swfPath:'../plugin/jquery-jplayer' //You need to override the default swf path any time the directory structure changes
+                }
+            });
+        });
+  </script>
+  <script type="text/javascript">
+   $(document).ready(function(){
+		$("#L1").click(function() {
+    			$(".le1").css('opacity','1'),
+    			$(".le1").css('z-index','1');
+
+    		});
+		$("#L2").click(function() {
+    			$(".le2").css('opacity','1'),
+    			$(".le2").css('z-index','1');
+
+    		});
+		$("#L3").click(function() {
+    			$(".le3").css('opacity','1'),
+    			$(".le3").css('z-index','1');
+
+    		});
+		$("#L4").click(function() {
+    			$(".le4").css('opacity','1'),
+    			$(".le4").css('z-index','1');
+
+    		});
+		$("#L5").click(function() {
+    			$(".le5").css('opacity','1'),
+    			$(".le5").css('z-index','1');
+
+    		});
+		$("#L6").click(function() {
+    			$(".le6").css('opacity','1'),
+    			$(".le6").css('z-index','1');
+
+    		});
+		$("#L7").click(function() {
+    			$(".le7").css('opacity','1'),
+    			$(".le7").css('z-index','1');
+
+    		});
+		$("#L8").click(function() {
+    			$(".le8").css('opacity','1'),
+    			$(".le8").css('z-index','1');
+
+    		});
+		$("#L9").click(function() {
+    			$(".le9").css('opacity','1'),
+    			$(".le9").css('z-index','1');
+
+    		});
+		$("#L10").click(function() {
+    			$(".le10").css('opacity','1'),
+    			$(".le10").css('z-index','1');
+
+    		});
+
+		$("#L11").click(function() {
+    			$(".le11").css('opacity','1'),
+    			$(".le11").css('z-index','1');
+
+    		});
+
+
+
+
+		$(".cerrar").click(function() {
+    			$(this).parent().css('opacity','0'),
+    			$(this).parent().css('z-index','-2');
+
+    		});
+	});
+  </script>
+ </head>
+ <body>
+  <div class="super_wrapper_i" style="display: none;">
+   <div id="otro_wrapper">
+    <div class="wrapper_i">
+    </div>
+    <!--fin wrapper_i-->
+    <div class="logo_inicio">
+    </div>
+   </div>
+   <!--otro wrapper-->
+  </div>
+  <div class="super_wrapper" style="display: block; opacity: 0.99291;">
+   <div class="wrapper">
+    <div class="header">
+     <a href="index.html">
+      <div class="logo">
+      </div>
+     </a>
+     <div class="menu">
+      <ul class="nav">
+       <a href="biografia.html">
+       </a>
+       <li>
+        BIOGRAFIA
+       </li>
+       <a href="discografia.html">
+       </a>
+       <li>
+        DISCOGRAFIA
+       </li>
+       <span id="multimedia">
+       </span>
+       <li>
+        MULTIMEDIA
+        <ul class="submenu">
+         <a href="fotos.html">
+         </a>
+         <li>
+          FOTOS
+         </li>
+         <li>
+          VIDEOS
+         </li>
+        </ul>
+       </li>
+       <a href="prensa.html">
+       </a>
+       <li>
+        PRENSA
+       </li>
+       <a href="contacto.html">
+       </a>
+       <li>
+        CONTACTO
+       </li>
+      </ul>
+     </div>
+     <!--fin menu-->
+    </div>
+    <!--fin header-->
+    <div style="height:550px;" class="contenido">
+     <img src="img/discog.png" class="titulo_cat" />
+     <div class="letras le1">
+      <div class="cerrar">
+       x
+      </div>
+      <img src="img/teveobrillar.png" />
+     </div>
+     <div class="letras le2">
+      <div class="cerrar">
+       x
+      </div>
+      <img src="img/magiablanca.png" />
+     </div>
+     <div class="letras le3">
+      <div class="cerrar">
+       x
+      </div>
+      <img src="img/transportandome.png" />
+     </div>
+     <div class="letras le4">
+      <div class="cerrar">
+       x
+      </div>
+      <img src="img/eternosolitario.png" />
+     </div>
+     <div class="letras le5">
+      <div class="cerrar">
+       x
+      </div>
+      <img src="img/pormas.png" style="margin-top:40px" />
+     </div>
+     <div class="letras le6">
+      <div class="cerrar">
+       x
+      </div>
+      <img src="img/luzysombras.png" />
+     </div>
+     <div class="letras le7">
+      <div class="cerrar">
+       x
+      </div>
+      <img src="img/naufragio.png" />
+     </div>
+     <div class="letras le8">
+      <div class="cerrar">
+       x
+      </div>
+      <img src="img/trenfantasma.png" />
+     </div>
+     <div class="letras le9">
+      <div class="cerrar">
+       x
+      </div>
+      <img src="img/cuesteloquecueste.png" style="margin-top:115px" />
+     </div>
+     <div class="letras le10">
+      <div class="cerrar">
+       x
+      </div>
+      <img src="img/reydelossuenos.png" />
+     </div>
+     <div class="letras le11">
+      <div class="cerrar">
+       x
+      </div>
+      <img src="img/entusmanos.png" />
+     </div>
+     <a href="musica/Garbo.zip">
+      <div class="boton_descargar">
+      </div>
+     </a>
+     <ul id="botones_letras">
+      <li id="L1">
+       Ver Letra
+      </li>
+      <li id="L2">
+       Ver Letra
+      </li>
+      <li id="L3">
+       Ver Letra
+      </li>
+      <li id="L4">
+       Ver Letra
+      </li>
+      <li id="L5">
+       Ver Letra
+      </li>
+      <li id="L6">
+       Ver Letra
+      </li>
+      <li id="L7">
+       Ver Letra
+      </li>
+      <li id="L8">
+       Ver Letra
+      </li>
+      <li id="L9">
+       Ver Letra
+      </li>
+      <li id="L10">
+       Ver Letra
+      </li>
+      <li id="L11">
+       Ver Letra
+      </li>
+     </ul>
+     <div class="ttw-music-player" style="opacity: 1;">
+      <div class="player jp-interface">
+       <div class="album-cover">
+        <span class="img" style="opacity: 1;">
+         <img alt="album cover" src="img/disco.png" />
+        </span>
+        <span class="highlight">
+        </span>
+       </div>
+       <div class="track-info">
+        <p class="title">
+         Te Veo Brillar
+        </p>
+        <p class="artist-outer" style="opacity: 0;">
+         By
+         <span class="artist">
+         </span>
+        </p>
+        <div class="rating">
+         <span class="rating-level rating-star">
+         </span>
+         <span class="rating-level rating-star">
+         </span>
+         <span class="rating-level rating-star">
+         </span>
+         <span class="rating-level rating-star">
+         </span>
+         <span class="rating-level rating-star">
+         </span>
+        </div>
+       </div>
+       <div class="player-controls">
+        <div class="main">
+         <div class="previous jp-previous">
+         </div>
+         <div class="play jp-play">
+         </div>
+         <div class="pause jp-pause" style="display: none;">
+         </div>
+         <div class="next jp-next">
+         </div>
+         <!-- These controls aren't used by this plugin, but jPlayer seems to require that they exist -->
+         <span class="unused-controls">
+          <span class="jp-video-play" style="display: none;">
+          </span>
+          <span class="jp-stop">
+          </span>
+          <span class="jp-mute">
+          </span>
+          <span class="jp-unmute" style="display: none;">
+          </span>
+          <span class="jp-volume-bar">
+          </span>
+          <span class="jp-volume-bar-value" style="width: 80%;">
+          </span>
+          <span class="jp-volume-max">
+          </span>
+          <span class="jp-current-time">
+           00:00
+          </span>
+          <span class="jp-duration">
+           03:59
+          </span>
+          <span class="jp-full-screen">
+          </span>
+          <span class="jp-restore-screen" style="display: none;">
+          </span>
+          <span class="jp-repeat">
+          </span>
+          <span class="jp-repeat-off" style="display: none;">
+          </span>
+          <span class="jp-gui">
+          </span>
+         </span>
+        </div>
+        <div class="progress-wrapper">
+         <div class="progress jp-seek-bar" style="width: 100%;">
+          <div class="elapsed jp-play-bar" style="width: 0%;">
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <p class="description showing" style="">
+       Martín Mansilla: Voz. Charly Gonzalez: Guitarras y mandolina. Antonio Morales: Batería y percusión. Andronico Diaz: Bajo.
+      </p>
+      <div class="tracklist">
+       <ol class="tracks">
+        <li class="track">
+         <span class="title">
+          Te Veo Brillar
+         </span>
+         <span class="duration">
+          03:59
+         </span>
+         <span class="rating">
+          <span class="rating-level rating-bar">
+          </span>
+          <span class="rating-level rating-bar">
+          </span>
+          <span class="rating-level rating-bar">
+          </span>
+          <span class="rating-level rating-bar">
+          </span>
+          <span class="rating-level rating-bar">
+          </span>
+          <span class="rating-level rating-bar">
+          </span>
+          <span class="rating-level rating-bar">
+          </span>
+          <span class="rating-level rating-bar">
+          </span>
+          <span class="rating-level rating-bar">
+          </span>
+          <span class="rating-level rating-bar">
+          </span>
+         </span>
+         <a target="_blank" class="buy not-active" href="#">
+         </a>
+        </li>
+        <li class="track">
+         <span class="title">
+          Magia Blanca
+         </span>
+         <span class="duration">
+          03:36
+         </span>
+         <span class="rating">
+          <span class="rating-level rating-bar">
+          </span>
+          <span class="rating-level rating-bar">
+          </span>
+          <span class="rating-level rating-bar">
+          </span>
+          <span class="rating-level rating-bar">
+          </span>
+          <span class="rating-level rating-bar">
+          </span>
+          <span class="rating-level rating-bar">
+          </span>
+          <span class="rating-level rating-bar">
+          </span>
+          <span class="rating-level rating-bar">
+          </span>
+          <span class="rating-level rating-bar">
+          </span>
+          <span class="rating-level rating-bar">
+          </span>
+         </span>
+         <a target="_blank" class="buy not-active" href="#">
+         </a>
+        </li>
+        <li class="track">
+         <span class="title">
+          Transportandome
+         </span>
+         <span class="duration">
+          03:36
+         </span>
+         <span class="rating">
+          <span class="rating-level rating-bar">
+          </span>
+          <span class="rating-level rating-bar">
+          </span>
+          <span class="rating-level rating-bar">
+          </span>
+          <span class="rating-level rating-bar">
+          </span>
+          <span class="rating-level rating-bar">
+          </span>
+          <span class="rating-level rating-bar">
+          </span>
+          <span class="rating-level rating-bar">
+          </span>
+          <span class="rating-level rating-bar">
+          </span>
+          <span class="rating-level rating-bar">
+          </span>
+          <span class="rating-level rating-bar">
+          </span>
+         </span>
+         <a target="_blank" class="buy not-active" href="#">
+         </a>
+        </li>
+        <li class="track">
+         <span class="title">
+          Eterno Solitario
+         </span>
+         <span class="duration">
+          02:47
+         </span>
+         <span class="rating">
+          <span class="rating-level rating-bar">
+          </span>
+          <span class="rating-level rating-bar">
+          </span>
+          <span class="rating-level rating-bar">
+          </span>
+          <span class="rating-level rating-bar">
+          </span>
+          <span class="rating-level rating-bar">
+          </span>
+          <span class="rating-level rating-bar">
+          </span>
+          <span class="rating-level rating-bar">
+          </span>
+          <span class="rating-level rating-bar">
+          </span>
+          <span class="rating-level rating-bar">
+          </span>
+          <span class="rating-level rating-bar">
+          </span>
+         </span>
+         <a target="_blank" class="buy not-active" href="#">
+         </a>
+        </li>
+        <li class="track">
+         <span class="title">
+          Por Mas
+         </span>
+         <span class="duration">
+          02:20
+         </span>
+         <span class="rating">
+          <span class="rating-level rating-bar">
+          </span>
+          <span class="rating-level rating-bar">
+          </span>
+          <span class="rating-level rating-bar">
+          </span>
+          <span class="rating-level rating-bar">
+          </span>
+          <span class="rating-level rating-bar">
+          </span>
+          <span class="rating-level rating-bar">
+          </span>
+          <span class="rating-level rating-bar">
+          </span>
+          <span class="rating-level rating-bar">
+          </span>
+          <span class="rating-level rating-bar">
+          </span>
+          <span class="rating-level rating-bar">
+          </span>
+         </span>
+         <a target="_blank" class="buy not-active" href="#">
+         </a>
+        </li>
+        <li class="track">
+         <span class="title">
+          Luz y Sombras
+         </span>
+         <span class="duration">
+          04:11
+         </span>
+         <span class="rating">
+          <span class="rating-level rating-bar">
+          </span>
+          <span class="rating-level rating-bar">
+          </span>
+          <span class="rating-level rating-bar">
+          </span>
+          <span class="rating-level rating-bar">
+          </span>
+          <span class="rating-level rating-bar">
+          </span>
+          <span class="rating-level rating-bar">
+          </span>
+          <span class="rating-level rating-bar">
+          </span>
+          <span class="rating-level rating-bar">
+          </span>
+          <span class="rating-level rating-bar">
+          </span>
+          <span class="rating-level rating-bar">
+          </span>
+         </span>
+         <a target="_blank" class="buy not-active" href="#">
+         </a>
+        </li>
+        <li class="track">
+         <span class="title">
+          Naufragio
+         </span>
+         <span class="duration">
+          03:32
+         </span>
+         <span class="rating">
+          <span class="rating-level rating-bar">
+          </span>
+          <span class="rating-level rating-bar">
+          </span>
+          <span class="rating-level rating-bar">
+          </span>
+          <span class="rating-level rating-bar">
+          </span>
+          <span class="rating-level rating-bar">
+          </span>
+          <span class="rating-level rating-bar">
+          </span>
+          <span class="rating-level rating-bar">
+          </span>
+          <span class="rating-level rating-bar">
+          </span>
+          <span class="rating-level rating-bar">
+          </span>
+          <span class="rating-level rating-bar">
+          </span>
+         </span>
+         <a target="_blank" class="buy not-active" href="#">
+         </a>
+        </li>
+        <li class="track">
+         <span class="title">
+          Tren Fantasma
+         </span>
+         <span class="duration">
+          02:50
+         </span>
+         <span class="rating">
+          <span class="rating-level rating-bar">
+          </span>
+          <span class="rating-level rating-bar">
+          </span>
+          <span class="rating-level rating-bar">
+          </span>
+          <span class="rating-level rating-bar">
+          </span>
+          <span class="rating-level rating-bar">
+          </span>
+          <span class="rating-level rating-bar">
+          </span>
+          <span class="rating-level rating-bar">
+          </span>
+          <span class="rating-level rating-bar">
+          </span>
+          <span class="rating-level rating-bar">
+          </span>
+          <span class="rating-level rating-bar">
+          </span>
+         </span>
+         <a target="_blank" class="buy not-active" href="#">
+         </a>
+        </li>
+        <li class="track">
+         <span class="title">
+          Cueste Lo Que Cueste
+         </span>
+         <span class="duration">
+          03:46
+         </span>
+         <span class="rating">
+          <span class="rating-level rating-bar">
+          </span>
+          <span class="rating-level rating-bar">
+          </span>
+          <span class="rating-level rating-bar">
+          </span>
+          <span class="rating-level rating-bar">
+          </span>
+          <span class="rating-level rating-bar">
+          </span>
+          <span class="rating-level rating-bar">
+          </span>
+          <span class="rating-level rating-bar">
+          </span>
+          <span class="rating-level rating-bar">
+          </span>
+          <span class="rating-level rating-bar">
+          </span>
+          <span class="rating-level rating-bar">
+          </span>
+         </span>
+         <a target="_blank" class="buy not-active" href="#">
+         </a>
+        </li>
+        <li class="track">
+         <span class="title">
+          Rey De Los Sueños
+         </span>
+         <span class="duration">
+          05:41
+         </span>
+         <span class="rating">
+          <span class="rating-level rating-bar">
+          </span>
+          <span class="rating-level rating-bar">
+          </span>
+          <span class="rating-level rating-bar">
+          </span>
+          <span class="rating-level rating-bar">
+          </span>
+          <span class="rating-level rating-bar">
+          </span>
+          <span class="rating-level rating-bar">
+          </span>
+          <span class="rating-level rating-bar">
+          </span>
+          <span class="rating-level rating-bar">
+          </span>
+          <span class="rating-level rating-bar">
+          </span>
+          <span class="rating-level rating-bar">
+          </span>
+         </span>
+         <a target="_blank" class="buy not-active" href="#">
+         </a>
+        </li>
+        <li class="track">
+         <span class="title">
+          En Tus Manos
+         </span>
+         <span class="duration">
+          04:04
+         </span>
+         <span class="rating">
+          <span class="rating-level rating-bar">
+          </span>
+          <span class="rating-level rating-bar">
+          </span>
+          <span class="rating-level rating-bar">
+          </span>
+          <span class="rating-level rating-bar">
+          </span>
+          <span class="rating-level rating-bar">
+          </span>
+          <span class="rating-level rating-bar">
+          </span>
+          <span class="rating-level rating-bar">
+          </span>
+          <span class="rating-level rating-bar">
+          </span>
+          <span class="rating-level rating-bar">
+          </span>
+          <span class="rating-level rating-bar">
+          </span>
+         </span>
+         <a target="_blank" class="buy not-active" href="#">
+         </a>
+        </li>
+       </ol>
+       <div class="more">
+        View More...
+       </div>
+      </div>
+      <div class="jPlayer-container" id="jp_jplayer_0" style="width: 0px; height: 0px;">
+       <img id="jp_poster_0" style="width: 0px; height: 0px; display: none;" />
+       <audio id="jp_audio_0" preload="metadata" src="musica/01_TE_VEO_BRILLAR.ogg">
+       </audio>
+      </div>
+     </div>
+    </div>
+    <!--fin contenido-->
+   </div>
+   <!--fin wrapper-->
+   <div class="footer">
+    <div class="social_bar">
+     <ul class="lista_social">
+      <a href="https://www.facebook.com/pages/GARBO-GARBO/462938643835109?ref=hl">
+      </a>
+      <li class="icon_fb">
+      </li>
+      <a href="https://twitter.com/GarboRock">
+      </a>
+      <li class="icon_tw">
+      </li>
+      <a href="https://plus.google.com/108515281510218739105">
+      </a>
+      <li class="icon_gp">
+      </li>
+      <a href="http://www.youtube.com/channel/UCnQN0pZ1GBzB_buPwXYmdJw">
+      </a>
+      <li class="icon_yt">
+      </li>
+     </ul>
+    </div>
+   </div>
+   <!--fin footer-->
+  </div>
+  <!--fin super_wrapper-->
+ </body>
+</html>

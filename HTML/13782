@@ -1,0 +1,254 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <!-- InstanceBegin template="/Templates/mainpages.dwt" codeOutsideHTMLIsLocked="false" -->
+ <head>
+  <meta content="Content-Type" http-equiv="Content-Type" />
+  <!-- InstanceBeginEditable name="doctitle" -->
+  <title>
+   Martin Driscoll Irish Art - the Emerald Isle Experience
+  </title>
+  <!-- InstanceEndEditable -->
+  <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Uncial+Antiqua" />
+  <script src="scripts/jquery-1.2.6.min.js" type="text/javascript">
+  </script>
+  <script type="text/javascript">
+   /*** 
+    Simple jQuery Slideshow Script
+    Released by Jon Raasch (jonraasch.com) under FreeBSD license: free to use or modify, not responsible for anything, etc.  Please link out to me if you like it :)
+***/
+
+function slideSwitch() {
+    var $active = $('#slideshow IMG.active');
+
+    if ( $active.length == 0 ) $active = $('#slideshow IMG:last');
+
+    // use this to pull the images in the order they appear in the markup
+    var $next =  $active.next().length ? $active.next()
+        : $('#slideshow IMG:first');
+
+    // uncomment the 3 lines below to pull the images in random order
+    
+    // var $sibs  = $active.siblings();
+    // var rndNum = Math.floor(Math.random() * $sibs.length );
+    // var $next  = $( $sibs[ rndNum ] );
+
+
+    $active.addClass('last-active');
+
+    $next.css({opacity: 0.0})
+        .addClass('active')
+        .animate({opacity: 1.0}, 1000, function() {
+            $active.removeClass('active last-active');
+        });
+}
+
+$(function() {
+    setInterval( "slideSwitch()", 5000 );
+});
+  </script>
+  <link type="text/css" rel="stylesheet" href="styles.css" />
+  <style type="text/css">
+  </style>
+  <!-- InstanceBeginEditable name="head" -->
+  <style type="text/css">
+   .style1 {font-size: 14px}
+  </style>
+  <!-- InstanceEndEditable -->
+ </head>
+ <body>
+  <div id="wrapper">
+   <div id="header">
+   </div>
+   <div id="nav">
+    <div id="navigation">
+     <ul>
+      <li>
+       <a href="index.html">
+        Home
+       </a>
+      </li>
+      <li>
+       <a href="about.html">
+        About
+       </a>
+      </li>
+      <li>
+       <a href="gallery.html">
+        Gallery
+       </a>
+      </li>
+      <li>
+       <a href="licensing.html">
+        Licensing
+       </a>
+      </li>
+      <li>
+       <a href="collectibles.html">
+        Collectibles
+       </a>
+      </li>
+      <li>
+       <a href="contact.html">
+        Contact
+       </a>
+      </li>
+     </ul>
+    </div>
+   </div>
+   <div id="shadowtop">
+   </div>
+   <div id="containermain">
+    <div id="shadow">
+     <div id="content2">
+      <!-- InstanceBeginEditable name="maincontent" -->
+      <h1>
+       About Martin Driscoll™ 1939–2011
+      </h1>
+      <h2>
+       "The Emerald Isle Experience"™
+      </h2>
+      <div id="column1">
+       <img width="179" height="264" src="images/paintings/driscoll-portrait.jpg" />
+      </div>
+      <div id="column2long">
+       <p>
+        “For me, a successful painting is one that stands on its own visual merits. It requires no verbal explanation or justification. The image reflects an understanding of composition, shape, relationships, and color that is inherently obvious. The skill of the artist’s brush is evident in every stroke. And, the passion that went into creating the work is captured on the canvas and emanates to the viewer. This is what I am drawn to as an art enthusiast and what I strive for as a painter.”
+       </p>
+       <p>
+       </p>
+       <p>
+        "There came a point in my life when I knew I could paint, but had to give thought to what did I want to paint? This led me to examine my life and remember the joy I had in hearing the tales of Ireland from my relatives, especially my mom. I loved the Irish music and dancing and most especially the Irish people. With the world rapidly changing, I wanted to hold on to some of the memories, so I devoted myself to painting things Irish."
+       </p>
+       <p>
+       </p>
+       <p>
+        --"I hope you enjoy viewing my work as much as I enjoy painting it." --Martin
+       </p>
+       <p>
+       </p>
+       <h1>
+        Bio:
+       </h1>
+       <p>
+        Martin Driscoll began drawing as a youth in New York City. In the early 1960’s, after serving in the Air Force, he returned to New York and enrolled in the Art Students League. He studied under Frank Reilly, a renowned teacher who developed a systematic use of the color palette that continues to serve as a foundation for fine art instruction. Reilly’s classes became a cornerstone in the development of Martin’s style.
+       </p>
+       <p>
+       </p>
+       <p>
+        In the years that followed his studies, Martin balanced a career in the airline industry, raising a family, and developing as an artist. He intermittently exhibited at outdoor shows in New York, selling his original paintings and drawings, and accepting numerous portrait commissions. In the mid-1990’s he returned to art fulltime – teaching painting, giving art demonstrations, and selling his original work.
+       </p>
+       <p>
+       </p>
+       <p>
+        In early 2000, he opened the Driscoll Art Studio, a working studio and gallery aboard the Queen Mary. In his studio/gallery, Driscoll’s pastoral scenes of rural Irish life have received particular attention and accolades from collectors and fellow artists alike. Martin exhibited these Irish themed paintings at ArtExpo 2004 and 2005, and his original work nearly sold out.
+       </p>
+       <p>
+       </p>
+       <p>
+        Martin's marvelous Irish Art is now published by Sunflower Fine Art in New York; featuring his original oil paintings, studies, sketches as well as affordable, artist hand signed, limited edition giclees on canvas.
+       </p>
+       <p>
+       </p>
+       <p>
+        The ever-growing popularity of Driscoll's artwork has seen his work displayed in an ever expanding number of galleries across the US, UK and world wide. 
+       </p>
+       <p>
+       </p>
+       <p>
+        A brilliant  line of authorized,
+        <a href="collectibles.html">
+         collectable gift, home decor and textile products
+        </a>
+        are to be released  in 2013. Many knownDriscoll favorites along with premier never-before -seen  beauties will be available to collectors to discover the decade to come!  Now you can njoy the true magic of Ireland- the memories,  culture, lifestyle, heritage &amp; gorgeous landscape and lovely people- so accurately depicted in Master Driscoll's important oil paintings everyday.  Delight in the 'Emerald Isle Experience'  daily through items such as calendars, decorative plates, screensavers,  puzzles, tapestries, throws and much more.
+       </p>
+       <p>
+       </p>
+       <p>
+       </p>
+       <h1>
+        Martin Driscoll's paintings draw nourishment from both his Irish and American roots.
+       </h1>
+       <p>
+        by Marilyn Green, February 2010 Art Review Magazine
+       </p>
+       <p>
+       </p>
+       <p>
+        Born in New York, Driscoll has dual citizenship, thanks to his Gaelic-speaking mother, and his training is American, in the tradition of the great illustrators from Norman Rockwell to Frank Reilly, with whom he studied at the Art Students League. Reilly, a very prominent illustrator, photographer and cinematographer in his own right, developed a scientific approach to color that changed the way studio art has been taught since then, and his understanding of intensity emerges strongly in Driscoll's images.
+       </p>
+       <p>
+        Driscoll paid for his education with a night job at Pan Am Airlines that led to work in the airline industry for 27 years. "I went to art school not thinking of becoming a commercial artist," he said. "I wanted to learn something I would love all my life."
+       </p>
+       <p>
+       </p>
+       <p>
+        His first big commission in the art world was a mural for an Italian restaurant in New York, a canvas 56' X 6' long. He and his wife lived in one room of their railway apartment in Manhattan while the long canvas, unrolled on the floor, was painted with images of knights taken from stills he was able to collect from dozens of movies. He took a two-week vacation from his job and managed to finish in 18 days, working 18 hours a day. Shortly after it was installed, he took his parents there for dinner. His pleasure at seeing the piece in place was followed by a quick exit when his father recognized the mobsters who filled the restaurant, a revelation to Driscoll.
+       </p>
+       <p>
+       </p>
+       <p>
+        With his brother-in-law he bought a house in Hampton Bays, Long Island, and when he went into a shop to frame an oil portrait, the owner asked him if he did pastel work. He ended up doing fast pastel portraits on the lawn in front of the quaint building on weekends. "We'd schedule eight portraits a day and I'd work for 45 minutes with a 15 minute break," he recalls. "Thank God I was used to painting with a roomful of students because there would be 40 or 50 people watching."
+       </p>
+       <p>
+       </p>
+       <p>
+        Eventually, more responsibility with the airline industry made it impossible for him to continue in both worlds. In 1978 he stopped painting seriously, not resuming until 1996. When he began again he expected to have to find his technique again, but the results astonished him. "I had been painting in my mind all along and my body remembered what to do," he said. "I was much better than before." Other artists asked him if he taught, and he has since found teaching a wonderful experience. "I had to explain what and why, and I understood the whole process better," he said, although he has since had to cut the number of students to a session once a week. "I'm too busy painting to do more." he added.
+       </p>
+       <p>
+        It wasn't until a visit to Ireland with his mother that he settled on the themes that have become his hallmark, but he was always interested in people, what their thoughts were and how to achieve resemblance. His first memory of drawing was when at seven or eight he drew a portrait of his sister Mary, giving a simultaneous view from the front and side. Later he set up business in an ice cream parlor where other boys brought him pictures of their girlfriends to draw in return for ice cream sodas. Similarly, he did the artwork in his Air Force squadron "It kept me out of KP," he observed.
+       </p>
+       <p>
+       </p>
+       <p>
+        His Irish roots were already evident in New York when he was growing up. His mother told stories and on Sundays his relatives gathered for a ceilidh — singing, playing instruments, reciting poems, step dancing ("I only tried that for a little while," Driscoll said). So he was well grounded in Irish tradition when he took his mother back to Ireland in 1960. Warned ahead, his uncle had built an indoor "convenience" for the visit, but the rest of their world was very close to timeless Irish village life, right down to the pub with women seated by the door and men in the back. His aunt, who had a modern stove, still preferred to do her cooking in the fireplace and the fishermen set their nets as they had done for centuries. During that period, Driscoll discovered his subject matter.
+       </p>
+       <p>
+       </p>
+       <p>
+        His painting centers on traditional Irish life, which still exists in pockets and in the memories of the Irish, especially outside the cities. His intimate connection with his work is underlined by a painting of a group of three men digging potatoes; they are his grandfather and two uncles, and his images of daily life are timeless and strongly evocative.
+       </p>
+       <p>
+       </p>
+       <p>
+        "I wanted to stop time and change," he said. "I got a book of black and white photos on life there between the 1860s and 1940s — it resonates with me and with a lot of other people. I'm tied to memories, roots."
+       </p>
+       <p>
+       </p>
+       <p>
+        These roots were renewed when he took his sons to Ireland in the mid 1990s. Painting in plein air, Driscoll began recording Ireland today and yesterday. He paints the people of the Irish countryside putting boats to sea, bringing the cows home, walking to school, fiddling, shearing the sheep, playing games and gossiping in the village street, along with portraits. Many of his figures are presented from the back, transforming the individual aspect into a universal one. Driscoll often comes back to paint variations on an image, giving life to some of the ideas he had to put aside on a first rendering.
+       </p>
+       <p>
+        Others certainly find his haunting views of Irish life appealing; his exceptionally popular work is sold through several US and UK galleries, including his publisher —Sunflower Fine Art in Garden City, NY. He has been commissioned to paint international sports figures, a U.S. Federal Court Judge and received a recent portrait commission from the Winston Churchill Society.
+       </p>
+       <p>
+       </p>
+       <p>
+        Read Pat Rogers' March 2010
+        <a target="_blank" href="http://www.lipulse.com/art-music/article/art-irish-people-irish-places/">
+         Long Island Pulse Article here.
+        </a>
+       </p>
+       <h2>
+       </h2>
+      </div>
+      <!-- InstanceEndEditable -->
+      <div id="footer">
+       <div id="social">
+        <div id="socialempty">
+        </div>
+       </div>
+       <div id="footerText">
+        Copyright © 2012 All Rights Reserved
+        <span style="color:#ffcc05">
+         •
+        </span>
+        Sunflower Fine Art
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+ <!-- InstanceEnd -->
+</html>

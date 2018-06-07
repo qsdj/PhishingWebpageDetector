@@ -1,0 +1,583 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-US" dir="ltr" xmlns="http://www.w3.org/1999/xhtml">
+ <head profile="http://gmpg.org/xfn/11">
+  <meta content="Content-Type" http-equiv="Content-Type" />
+  <title>
+   Retired admiral warns against following through on proposed defense cuts «  National Defense Trust
+  </title>
+  <!--// Stylesheets //-->
+  <link media="screen" type="text/css" href="http://www.nationaldefensetrust.com/wp-content/themes/NDT/style.css" rel="stylesheet" />
+  <link rel="stylesheet" href="http://www.nationaldefensetrust.com/wp-content/themes/NDT/reset.css" />
+  <link rel="stylesheet" href="http://www.nationaldefensetrust.com/wp-content/themes/NDT/text.css" />
+  <!--// End Stylesheets //-->
+  <!--// RSS Feeds //-->
+  <link href="http://www.nationaldefensetrust.com/?feed=rss2" title="National Defense Trust RSS Feed" type="application/rss+xml" rel="alternate" />
+  <link href="http://www.nationaldefensetrust.com/?feed=atom" title="National Defense Trust Atom Feed" type="application/atom+xml" rel="alternate" />
+  <link href="http://www.nationaldefensetrust.com/xmlrpc.php" rel="pingback" />
+  <!--// End RSS Feeds //-->
+  <script type="text/javascript" src="http://www.nationaldefensetrust.com/wp-content/themes/NDT/rssticker.js">
+  </script>
+  <script type="text/javascript" src="http://www.nationaldefensetrust.com/wp-content/themes/NDT/Scripts/swfobject_modified.js">
+  </script>
+  <script type="text/javascript" language="JavaScript">
+   &lt;!--
+//v1.7
+// Flash Player Version Detection
+// Detect Client Browser type
+// Copyright 2005-2008 Adobe Systems Incorporated.  All rights reserved.
+var isIE  = (navigator.appVersion.indexOf("MSIE") != -1) ? true : false;
+var isWin = (navigator.appVersion.toLowerCase().indexOf("win") != -1) ? true : false;
+var isOpera = (navigator.userAgent.indexOf("Opera") != -1) ? true : false;
+function ControlVersion()
+{
+	var version;
+	var axo;
+	var e;
+	// NOTE : new ActiveXObject(strFoo) throws an exception if strFoo isn't in the registry
+	try {
+		// version will be set for 7.X or greater players
+		axo = new ActiveXObject("ShockwaveFlash.ShockwaveFlash.7");
+		version = axo.GetVariable("$version");
+	} catch (e) {
+	}
+	if (!version)
+	{
+		try {
+			// version will be set for 6.X players only
+			axo = new ActiveXObject("ShockwaveFlash.ShockwaveFlash.6");
+			
+			// installed player is some revision of 6.0
+			// GetVariable("$version") crashes for versions 6.0.22 through 6.0.29,
+			// so we have to be careful. 
+			
+			// default to the first public version
+			version = "WIN 6,0,21,0";
+			// throws if AllowScripAccess does not exist (introduced in 6.0r47)		
+			axo.AllowScriptAccess = "always";
+			// safe to call for 6.0r47 or greater
+			version = axo.GetVariable("$version");
+		} catch (e) {
+		}
+	}
+	if (!version)
+	{
+		try {
+			// version will be set for 4.X or 5.X player
+			axo = new ActiveXObject("ShockwaveFlash.ShockwaveFlash.3");
+			version = axo.GetVariable("$version");
+		} catch (e) {
+		}
+	}
+	if (!version)
+	{
+		try {
+			// version will be set for 3.X player
+			axo = new ActiveXObject("ShockwaveFlash.ShockwaveFlash.3");
+			version = "WIN 3,0,18,0";
+		} catch (e) {
+		}
+	}
+	if (!version)
+	{
+		try {
+			// version will be set for 2.X player
+			axo = new ActiveXObject("ShockwaveFlash.ShockwaveFlash");
+			version = "WIN 2,0,0,11";
+		} catch (e) {
+			version = -1;
+		}
+	}
+	
+	return version;
+}
+// JavaScript helper required to detect Flash Player PlugIn version information
+function GetSwfVer(){
+	// NS/Opera version &gt;= 3 check for Flash plugin in plugin array
+	var flashVer = -1;
+	
+	if (navigator.plugins != null &amp;&amp; navigator.plugins.length &gt; 0) {
+		if (navigator.plugins["Shockwave Flash 2.0"] || navigator.plugins["Shockwave Flash"]) {
+			var swVer2 = navigator.plugins["Shockwave Flash 2.0"] ? " 2.0" : "";
+			var flashDescription = navigator.plugins["Shockwave Flash" + swVer2].description;
+			var descArray = flashDescription.split(" ");
+			var tempArrayMajor = descArray[2].split(".");			
+			var versionMajor = tempArrayMajor[0];
+			var versionMinor = tempArrayMajor[1];
+			var versionRevision = descArray[3];
+			if (versionRevision == "") {
+				versionRevision = descArray[4];
+			}
+			if (versionRevision[0] == "d") {
+				versionRevision = versionRevision.substring(1);
+			} else if (versionRevision[0] == "r") {
+				versionRevision = versionRevision.substring(1);
+				if (versionRevision.indexOf("d") &gt; 0) {
+					versionRevision = versionRevision.substring(0, versionRevision.indexOf("d"));
+				}
+			}
+			var flashVer = versionMajor + "." + versionMinor + "." + versionRevision;
+		}
+	}
+	// MSN/WebTV 2.6 supports Flash 4
+	else if (navigator.userAgent.toLowerCase().indexOf("webtv/2.6") != -1) flashVer = 4;
+	// WebTV 2.5 supports Flash 3
+	else if (navigator.userAgent.toLowerCase().indexOf("webtv/2.5") != -1) flashVer = 3;
+	// older WebTV supports Flash 2
+	else if (navigator.userAgent.toLowerCase().indexOf("webtv") != -1) flashVer = 2;
+	else if ( isIE &amp;&amp; isWin &amp;&amp; !isOpera ) {
+		flashVer = ControlVersion();
+	}	
+	return flashVer;
+}
+// When called with reqMajorVer, reqMinorVer, reqRevision returns true if that version or greater is available
+function DetectFlashVer(reqMajorVer, reqMinorVer, reqRevision)
+{
+	versionStr = GetSwfVer();
+	if (versionStr == -1 ) {
+		return false;
+	} else if (versionStr != 0) {
+		if(isIE &amp;&amp; isWin &amp;&amp; !isOpera) {
+			// Given "WIN 2,0,0,11"
+			tempArray         = versionStr.split(" "); 	// ["WIN", "2,0,0,11"]
+			tempString        = tempArray[1];			// "2,0,0,11"
+			versionArray      = tempString.split(",");	// ['2', '0', '0', '11']
+		} else {
+			versionArray      = versionStr.split(".");
+		}
+		var versionMajor      = versionArray[0];
+		var versionMinor      = versionArray[1];
+		var versionRevision   = versionArray[2];
+        	// is the major.revision &gt;= requested major.revision AND the minor version &gt;= requested minor
+		if (versionMajor &gt; parseFloat(reqMajorVer)) {
+			return true;
+		} else if (versionMajor == parseFloat(reqMajorVer)) {
+			if (versionMinor &gt; parseFloat(reqMinorVer))
+				return true;
+			else if (versionMinor == parseFloat(reqMinorVer)) {
+				if (versionRevision &gt;= parseFloat(reqRevision))
+					return true;
+			}
+		}
+		return false;
+	}
+}
+function AC_AddExtension(src, ext)
+{
+  if (src.indexOf('?') != -1)
+    return src.replace(/\?/, ext+'?'); 
+  else
+    return src + ext;
+}
+function AC_Generateobj(objAttrs, params, embedAttrs) 
+{ 
+  var str = '';
+  if (isIE &amp;&amp; isWin &amp;&amp; !isOpera)
+  {
+    str += '&lt;object ';
+    for (var i in objAttrs)
+    {
+      str += i + '="' + objAttrs[i] + '" ';
+    }
+    str += '&gt;';
+    for (var i in params)
+    {
+      str += '&lt;param name="' + i + '" value="' + params[i] + '" /&gt; ';
+    }
+    str += '&lt;/object&gt;';
+  }
+  else
+  {
+    str += '&lt;embed ';
+    for (var i in embedAttrs)
+    {
+      str += i + '="' + embedAttrs[i] + '" ';
+    }
+    str += '&gt; &lt;/embed&gt;';
+  }
+  document.write(str);
+}
+function AC_FL_RunContent(){
+  var ret = 
+    AC_GetArgs
+    (  arguments, ".swf", "movie", "clsid:d27cdb6e-ae6d-11cf-96b8-444553540000"
+     , "application/x-shockwave-flash"
+    );
+  AC_Generateobj(ret.objAttrs, ret.params, ret.embedAttrs);
+}
+function AC_SW_RunContent(){
+  var ret = 
+    AC_GetArgs
+    (  arguments, ".dcr", "src", "clsid:166B1BCA-3F9C-11CF-8075-444553540000"
+     , null
+    );
+  AC_Generateobj(ret.objAttrs, ret.params, ret.embedAttrs);
+}
+function AC_GetArgs(args, ext, srcParamName, classid, mimeType){
+  var ret = new Object();
+  ret.embedAttrs = new Object();
+  ret.params = new Object();
+  ret.objAttrs = new Object();
+  for (var i=0; i &lt; args.length; i=i+2){
+    var currArg = args[i].toLowerCase();    
+    switch (currArg){	
+      case "classid":
+        break;
+      case "pluginspage":
+        ret.embedAttrs[args[i]] = args[i+1];
+        break;
+      case "src":
+      case "movie":	
+        args[i+1] = AC_AddExtension(args[i+1], ext);
+        ret.embedAttrs["src"] = args[i+1];
+        ret.params[srcParamName] = args[i+1];
+        break;
+      case "onafterupdate":
+      case "onbeforeupdate":
+      case "onblur":
+      case "oncellchange":
+      case "onclick":
+      case "ondblclick":
+      case "ondrag":
+      case "ondragend":
+      case "ondragenter":
+      case "ondragleave":
+      case "ondragover":
+      case "ondrop":
+      case "onfinish":
+      case "onfocus":
+      case "onhelp":
+      case "onmousedown":
+      case "onmouseup":
+      case "onmouseover":
+      case "onmousemove":
+      case "onmouseout":
+      case "onkeypress":
+      case "onkeydown":
+      case "onkeyup":
+      case "onload":
+      case "onlosecapture":
+      case "onpropertychange":
+      case "onreadystatechange":
+      case "onrowsdelete":
+      case "onrowenter":
+      case "onrowexit":
+      case "onrowsinserted":
+      case "onstart":
+      case "onscroll":
+      case "onbeforeeditfocus":
+      case "onactivate":
+      case "onbeforedeactivate":
+      case "ondeactivate":
+      case "type":
+      case "codebase":
+      case "id":
+        ret.objAttrs[args[i]] = args[i+1];
+        break;
+      case "width":
+      case "height":
+      case "align":
+      case "vspace": 
+      case "hspace":
+      case "class":
+      case "title":
+      case "accesskey":
+      case "name":
+      case "tabindex":
+        ret.embedAttrs[args[i]] = ret.objAttrs[args[i]] = args[i+1];
+        break;
+      default:
+        ret.embedAttrs[args[i]] = ret.params[args[i]] = args[i+1];
+    }
+  }
+  ret.objAttrs["classid"] = classid;
+  if (mimeType) ret.embedAttrs["type"] = mimeType;
+  return ret;
+}
+// --&gt;
+  </script>
+  <meta content="noindex,nofollow" name="robots" />
+  <link href="http://www.nationaldefensetrust.com/xmlrpc.php?rsd" title="RSD" type="application/rsd+xml" rel="EditURI" />
+  <link href="http://www.nationaldefensetrust.com/wp-includes/wlwmanifest.xml" type="application/wlwmanifest+xml" rel="wlwmanifest" />
+  <meta content="WordPress 2.7.1" name="generator" />
+  <link href="http://www.nationaldefensetrust.com/wp-content/plugins/accessible-news-ticker/includes/domnews.css" media="screen" type="text/css" rel="stylesheet" />
+ </head>
+ <body>
+  <div class="container_12" id="container">
+   <!--// Begin Wrapper //-->
+   <div id="wrapper">
+    <!--// Begin Header //-->
+    <div id="header">
+     <!--// Logo Here //-->
+     <div id="logo">
+      <img src="http://www.nationaldefensetrust.com/wp-content/themes/NDT/images/logo.jpg" />
+     </div>
+     <!--// End Logo //-->
+     <!--// Begin Navigation //-->
+     <div id="navbar">
+      <ul>
+       <li>
+        <a href="index.php">
+         Home
+        </a>
+       </li>
+       <li>
+        <a href="?page_id=2">
+         About
+        </a>
+       </li>
+       <li>
+        <a href="?page_id=33">
+         News
+        </a>
+       </li>
+       <li>
+        <a href="?page_id=36">
+         Contact
+        </a>
+       </li>
+      </ul>
+     </div>
+     <!--// End Navigation //-->
+     <!--// Begin Date //-->
+     <div id="date">
+      Monday December 14, 2015
+     </div>
+     <!--// End Date //-->
+    </div>
+    <!--// End Header //-->
+    <!--// Begin Grab //-->
+    <div id="grab">
+     <img src="http://www.nationaldefensetrust.com/wp-content/themes/NDT/banners/rotate.php" />
+    </div>
+    <!--// End Grab //-->
+    <!--// Begin RSS //-->
+    <script type="text/javascript">
+     //rssticker_ajax(RSS_id, cachetime, divId, divClass, delay, optionalswitch)
+//1) RSS_id: "Array key of RSS feed in PHP script"
+//2) cachetime: Time to cache the feed in minutes (0 for no cache)
+//3) divId: "ID of DIV to display ticker in. DIV dynamically created"
+//4) divClass: "Class name of this ticker, for styling purposes"
+//5) delay: delay between message change, in milliseconds
+//6) optionalswitch: "optional arbitrary" string to create additional logic in call back function
+
+document.write()
+new rssticker_ajax("FOX", 600, "rss_feed", "", 12000, "")
+    </script>
+    <div class="" id="rss_feed">
+     <div class="rsstitle">
+      <a href="http://feeds.foxnews.com/%7Er/foxnews/politics/%7E3/Ctz_0TjIgMM/supreme-court-blocks-alabama-court-order-in-adoption-case.html">
+       Supreme Court blocks Alabama court order in adoption case
+      </a>
+     </div>
+    </div>
+    <!--// End RSS //-->
+    <!--// Begin Main Content //-->
+    <div id="content">
+     <!--// Begin Left Content //-->
+     <div id="left_content">
+      <h2>
+       Retired admiral warns against following through on proposed defense cuts
+      </h2>
+      <p class="date">
+       September 23rd, 2011
+      </p>
+      <div id="entry">
+       <p>
+        <!--[if gte mso 9]><xml> <o:OfficeDocumentSettings> <o:AllowPNG  /> </o:OfficeDocumentSettings> </xml><![endif]-->
+        <!--[if gte mso 9]><xml> <w:WordDocument> <w:View>Normal</w:View> <w:Zoom>0</w:Zoom> <w:TrackMoves  /> <w:TrackFormatting  /> <w:PunctuationKerning  /> <w:ValidateAgainstSchemas  /> <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid> <w:IgnoreMixedContent>false</w:IgnoreMixedContent> <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText> <w:DoNotPromoteQF  /> <w:LidThemeOther>EN-US</w:LidThemeOther> <w:LidThemeAsian>X-NONE</w:LidThemeAsian> <w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript> <w:Compatibility> <w:BreakWrappedTables  /> <w:SnapToGridInCell  /> <w:WrapTextWithPunct  /> <w:UseAsianBreakRules  /> <w:DontGrowAutofit  /> <w:SplitPgBreakAndParaMark  /> <w:EnableOpenTypeKerning  /> <w:DontFlipMirrorIndents  /> <w:OverrideTableStyleHps  /> </w:Compatibility> <m:mathPr> <m:mathFont m:val="Cambria Math"  /> <m:brkBin m:val="before"  /> <m:brkBinSub m:val="&#45;-"  /> <m:smallFrac m:val="off"  /> <m:dispDef  /> <m:lMargin m:val="0"  /> <m:rMargin m:val="0"  /> <m:defJc m:val="centerGroup"  /> <m:wrapIndent m:val="1440"  /> <m:intLim m:val="subSup"  /> <m:naryLim m:val="undOvr"  /> </m:mathPr></w:WordDocument> </xml><![endif]-->
+        <!--[if gte mso 9]><xml> <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="true"   DefSemiHidden="true" DefQFormat="false" DefPriority="99"   LatentStyleCount="267"> <w:LsdException Locked="false" Priority="0" SemiHidden="false"    UnhideWhenUsed="false" QFormat="true" Name="Normal"  /> <w:LsdException Locked="false" Priority="9" SemiHidden="false"    UnhideWhenUsed="false" QFormat="true" Name="heading 1"  /> <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 2"  /> <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 3"  /> <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 4"  /> <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 5"  /> <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 6"  /> <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 7"  /> <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 8"  /> <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 9"  /> <w:LsdException Locked="false" Priority="39" Name="toc 1"  /> <w:LsdException Locked="false" Priority="39" Name="toc 2"  /> <w:LsdException Locked="false" Priority="39" Name="toc 3"  /> <w:LsdException Locked="false" Priority="39" Name="toc 4"  /> <w:LsdException Locked="false" Priority="39" Name="toc 5"  /> <w:LsdException Locked="false" Priority="39" Name="toc 6"  /> <w:LsdException Locked="false" Priority="39" Name="toc 7"  /> <w:LsdException Locked="false" Priority="39" Name="toc 8"  /> <w:LsdException Locked="false" Priority="39" Name="toc 9"  /> <w:LsdException Locked="false" Priority="35" QFormat="true" Name="caption"  /> <w:LsdException Locked="false" Priority="10" SemiHidden="false"    UnhideWhenUsed="false" QFormat="true" Name="Title"  /> <w:LsdException Locked="false" Priority="1" Name="Default Paragraph Font"  /> <w:LsdException Locked="false" Priority="11" SemiHidden="false"    UnhideWhenUsed="false" QFormat="true" Name="Subtitle"  /> <w:LsdException Locked="false" Priority="22" SemiHidden="false"    UnhideWhenUsed="false" QFormat="true" Name="Strong"  /> <w:LsdException Locked="false" Priority="20" SemiHidden="false"    UnhideWhenUsed="false" QFormat="true" Name="Emphasis"  /> <w:LsdException Locked="false" Priority="59" SemiHidden="false"    UnhideWhenUsed="false" Name="Table Grid"  /> <w:LsdException Locked="false" UnhideWhenUsed="false" Name="Placeholder Text"  /> <w:LsdException Locked="false" Priority="1" SemiHidden="false"    UnhideWhenUsed="false" QFormat="true" Name="No Spacing"  /> <w:LsdException Locked="false" Priority="60" SemiHidden="false"    UnhideWhenUsed="false" Name="Light Shading"  /> <w:LsdException Locked="false" Priority="61" SemiHidden="false"    UnhideWhenUsed="false" Name="Light List"  /> <w:LsdException Locked="false" Priority="62" SemiHidden="false"    UnhideWhenUsed="false" Name="Light Grid"  /> <w:LsdException Locked="false" Priority="63" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Shading 1"  /> <w:LsdException Locked="false" Priority="64" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Shading 2"  /> <w:LsdException Locked="false" Priority="65" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium List 1"  /> <w:LsdException Locked="false" Priority="66" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium List 2"  /> <w:LsdException Locked="false" Priority="67" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Grid 1"  /> <w:LsdException Locked="false" Priority="68" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Grid 2"  /> <w:LsdException Locked="false" Priority="69" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Grid 3"  /> <w:LsdException Locked="false" Priority="70" SemiHidden="false"    UnhideWhenUsed="false" Name="Dark List"  /> <w:LsdException Locked="false" Priority="71" SemiHidden="false"    UnhideWhenUsed="false" Name="Colorful Shading"  /> <w:LsdException Locked="false" Priority="72" SemiHidden="false"    UnhideWhenUsed="false" Name="Colorful List"  /> <w:LsdException Locked="false" Priority="73" SemiHidden="false"    UnhideWhenUsed="false" Name="Colorful Grid"  /> <w:LsdException Locked="false" Priority="60" SemiHidden="false"    UnhideWhenUsed="false" Name="Light Shading Accent 1"  /> <w:LsdException Locked="false" Priority="61" SemiHidden="false"    UnhideWhenUsed="false" Name="Light List Accent 1"  /> <w:LsdException Locked="false" Priority="62" SemiHidden="false"    UnhideWhenUsed="false" Name="Light Grid Accent 1"  /> <w:LsdException Locked="false" Priority="63" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Shading 1 Accent 1"  /> <w:LsdException Locked="false" Priority="64" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Shading 2 Accent 1"  /> <w:LsdException Locked="false" Priority="65" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium List 1 Accent 1"  /> <w:LsdException Locked="false" UnhideWhenUsed="false" Name="Revision"  /> <w:LsdException Locked="false" Priority="34" SemiHidden="false"    UnhideWhenUsed="false" QFormat="true" Name="List Paragraph"  /> <w:LsdException Locked="false" Priority="29" SemiHidden="false"    UnhideWhenUsed="false" QFormat="true" Name="Quote"  /> <w:LsdException Locked="false" Priority="30" SemiHidden="false"    UnhideWhenUsed="false" QFormat="true" Name="Intense Quote"  /> <w:LsdException Locked="false" Priority="66" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium List 2 Accent 1"  /> <w:LsdException Locked="false" Priority="67" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Grid 1 Accent 1"  /> <w:LsdException Locked="false" Priority="68" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Grid 2 Accent 1"  /> <w:LsdException Locked="false" Priority="69" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Grid 3 Accent 1"  /> <w:LsdException Locked="false" Priority="70" SemiHidden="false"    UnhideWhenUsed="false" Name="Dark List Accent 1"  /> <w:LsdException Locked="false" Priority="71" SemiHidden="false"    UnhideWhenUsed="false" Name="Colorful Shading Accent 1"  /> <w:LsdException Locked="false" Priority="72" SemiHidden="false"    UnhideWhenUsed="false" Name="Colorful List Accent 1"  /> <w:LsdException Locked="false" Priority="73" SemiHidden="false"    UnhideWhenUsed="false" Name="Colorful Grid Accent 1"  /> <w:LsdException Locked="false" Priority="60" SemiHidden="false"    UnhideWhenUsed="false" Name="Light Shading Accent 2"  /> <w:LsdException Locked="false" Priority="61" SemiHidden="false"    UnhideWhenUsed="false" Name="Light List Accent 2"  /> <w:LsdException Locked="false" Priority="62" SemiHidden="false"    UnhideWhenUsed="false" Name="Light Grid Accent 2"  /> <w:LsdException Locked="false" Priority="63" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Shading 1 Accent 2"  /> <w:LsdException Locked="false" Priority="64" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Shading 2 Accent 2"  /> <w:LsdException Locked="false" Priority="65" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium List 1 Accent 2"  /> <w:LsdException Locked="false" Priority="66" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium List 2 Accent 2"  /> <w:LsdException Locked="false" Priority="67" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Grid 1 Accent 2"  /> <w:LsdException Locked="false" Priority="68" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Grid 2 Accent 2"  /> <w:LsdException Locked="false" Priority="69" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Grid 3 Accent 2"  /> <w:LsdException Locked="false" Priority="70" SemiHidden="false"    UnhideWhenUsed="false" Name="Dark List Accent 2"  /> <w:LsdException Locked="false" Priority="71" SemiHidden="false"    UnhideWhenUsed="false" Name="Colorful Shading Accent 2"  /> <w:LsdException Locked="false" Priority="72" SemiHidden="false"    UnhideWhenUsed="false" Name="Colorful List Accent 2"  /> <w:LsdException Locked="false" Priority="73" SemiHidden="false"    UnhideWhenUsed="false" Name="Colorful Grid Accent 2"  /> <w:LsdException Locked="false" Priority="60" SemiHidden="false"    UnhideWhenUsed="false" Name="Light Shading Accent 3"  /> <w:LsdException Locked="false" Priority="61" SemiHidden="false"    UnhideWhenUsed="false" Name="Light List Accent 3"  /> <w:LsdException Locked="false" Priority="62" SemiHidden="false"    UnhideWhenUsed="false" Name="Light Grid Accent 3"  /> <w:LsdException Locked="false" Priority="63" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Shading 1 Accent 3"  /> <w:LsdException Locked="false" Priority="64" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Shading 2 Accent 3"  /> <w:LsdException Locked="false" Priority="65" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium List 1 Accent 3"  /> <w:LsdException Locked="false" Priority="66" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium List 2 Accent 3"  /> <w:LsdException Locked="false" Priority="67" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Grid 1 Accent 3"  /> <w:LsdException Locked="false" Priority="68" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Grid 2 Accent 3"  /> <w:LsdException Locked="false" Priority="69" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Grid 3 Accent 3"  /> <w:LsdException Locked="false" Priority="70" SemiHidden="false"    UnhideWhenUsed="false" Name="Dark List Accent 3"  /> <w:LsdException Locked="false" Priority="71" SemiHidden="false"    UnhideWhenUsed="false" Name="Colorful Shading Accent 3"  /> <w:LsdException Locked="false" Priority="72" SemiHidden="false"    UnhideWhenUsed="false" Name="Colorful List Accent 3"  /> <w:LsdException Locked="false" Priority="73" SemiHidden="false"    UnhideWhenUsed="false" Name="Colorful Grid Accent 3"  /> <w:LsdException Locked="false" Priority="60" SemiHidden="false"    UnhideWhenUsed="false" Name="Light Shading Accent 4"  /> <w:LsdException Locked="false" Priority="61" SemiHidden="false"    UnhideWhenUsed="false" Name="Light List Accent 4"  /> <w:LsdException Locked="false" Priority="62" SemiHidden="false"    UnhideWhenUsed="false" Name="Light Grid Accent 4"  /> <w:LsdException Locked="false" Priority="63" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Shading 1 Accent 4"  /> <w:LsdException Locked="false" Priority="64" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Shading 2 Accent 4"  /> <w:LsdException Locked="false" Priority="65" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium List 1 Accent 4"  /> <w:LsdException Locked="false" Priority="66" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium List 2 Accent 4"  /> <w:LsdException Locked="false" Priority="67" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Grid 1 Accent 4"  /> <w:LsdException Locked="false" Priority="68" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Grid 2 Accent 4"  /> <w:LsdException Locked="false" Priority="69" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Grid 3 Accent 4"  /> <w:LsdException Locked="false" Priority="70" SemiHidden="false"    UnhideWhenUsed="false" Name="Dark List Accent 4"  /> <w:LsdException Locked="false" Priority="71" SemiHidden="false"    UnhideWhenUsed="false" Name="Colorful Shading Accent 4"  /> <w:LsdException Locked="false" Priority="72" SemiHidden="false"    UnhideWhenUsed="false" Name="Colorful List Accent 4"  /> <w:LsdException Locked="false" Priority="73" SemiHidden="false"    UnhideWhenUsed="false" Name="Colorful Grid Accent 4"  /> <w:LsdException Locked="false" Priority="60" SemiHidden="false"    UnhideWhenUsed="false" Name="Light Shading Accent 5"  /> <w:LsdException Locked="false" Priority="61" SemiHidden="false"    UnhideWhenUsed="false" Name="Light List Accent 5"  /> <w:LsdException Locked="false" Priority="62" SemiHidden="false"    UnhideWhenUsed="false" Name="Light Grid Accent 5"  /> <w:LsdException Locked="false" Priority="63" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Shading 1 Accent 5"  /> <w:LsdException Locked="false" Priority="64" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Shading 2 Accent 5"  /> <w:LsdException Locked="false" Priority="65" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium List 1 Accent 5"  /> <w:LsdException Locked="false" Priority="66" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium List 2 Accent 5"  /> <w:LsdException Locked="false" Priority="67" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Grid 1 Accent 5"  /> <w:LsdException Locked="false" Priority="68" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Grid 2 Accent 5"  /> <w:LsdException Locked="false" Priority="69" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Grid 3 Accent 5"  /> <w:LsdException Locked="false" Priority="70" SemiHidden="false"    UnhideWhenUsed="false" Name="Dark List Accent 5"  /> <w:LsdException Locked="false" Priority="71" SemiHidden="false"    UnhideWhenUsed="false" Name="Colorful Shading Accent 5"  /> <w:LsdException Locked="false" Priority="72" SemiHidden="false"    UnhideWhenUsed="false" Name="Colorful List Accent 5"  /> <w:LsdException Locked="false" Priority="73" SemiHidden="false"    UnhideWhenUsed="false" Name="Colorful Grid Accent 5"  /> <w:LsdException Locked="false" Priority="60" SemiHidden="false"    UnhideWhenUsed="false" Name="Light Shading Accent 6"  /> <w:LsdException Locked="false" Priority="61" SemiHidden="false"    UnhideWhenUsed="false" Name="Light List Accent 6"  /> <w:LsdException Locked="false" Priority="62" SemiHidden="false"    UnhideWhenUsed="false" Name="Light Grid Accent 6"  /> <w:LsdException Locked="false" Priority="63" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Shading 1 Accent 6"  /> <w:LsdException Locked="false" Priority="64" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Shading 2 Accent 6"  /> <w:LsdException Locked="false" Priority="65" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium List 1 Accent 6"  /> <w:LsdException Locked="false" Priority="66" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium List 2 Accent 6"  /> <w:LsdException Locked="false" Priority="67" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Grid 1 Accent 6"  /> <w:LsdException Locked="false" Priority="68" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Grid 2 Accent 6"  /> <w:LsdException Locked="false" Priority="69" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Grid 3 Accent 6"  /> <w:LsdException Locked="false" Priority="70" SemiHidden="false"    UnhideWhenUsed="false" Name="Dark List Accent 6"  /> <w:LsdException Locked="false" Priority="71" SemiHidden="false"    UnhideWhenUsed="false" Name="Colorful Shading Accent 6"  /> <w:LsdException Locked="false" Priority="72" SemiHidden="false"    UnhideWhenUsed="false" Name="Colorful List Accent 6"  /> <w:LsdException Locked="false" Priority="73" SemiHidden="false"    UnhideWhenUsed="false" Name="Colorful Grid Accent 6"  /> <w:LsdException Locked="false" Priority="19" SemiHidden="false"    UnhideWhenUsed="false" QFormat="true" Name="Subtle Emphasis"  /> <w:LsdException Locked="false" Priority="21" SemiHidden="false"    UnhideWhenUsed="false" QFormat="true" Name="Intense Emphasis"  /> <w:LsdException Locked="false" Priority="31" SemiHidden="false"    UnhideWhenUsed="false" QFormat="true" Name="Subtle Reference"  /> <w:LsdException Locked="false" Priority="32" SemiHidden="false"    UnhideWhenUsed="false" QFormat="true" Name="Intense Reference"  /> <w:LsdException Locked="false" Priority="33" SemiHidden="false"    UnhideWhenUsed="false" QFormat="true" Name="Book Title"  /> <w:LsdException Locked="false" Priority="37" Name="Bibliography"  /> <w:LsdException Locked="false" Priority="39" QFormat="true" Name="TOC Heading"  /> </w:LatentStyles> </xml><![endif]-->
+        <!--[if gte mso 10]><br  />
+<mce:style><!/* Style Definitions */  table.MsoNormalTable 	{mso-style-name:"Table Normal"; 	mso-tstyle-rowband-size:0; 	mso-tstyle-colband-size:0; 	mso-style-noshow:yes; 	mso-style-priority:99; 	mso-style-parent:""; 	mso-padding-alt:0in 5.4pt 0in 5.4pt; 	mso-para-margin-top:0in; 	mso-para-margin-right:0in; 	mso-para-margin-bottom:10.0pt; 	mso-para-margin-left:0in; 	line-height:115%; 	mso-pagination:widow-orphan; 	font-size:11.0pt; 	font-family:"Calibri","sans-serif"; 	mso-ascii-font-family:Calibri; 	mso-ascii-theme-font:minor-latin; 	mso-hansi-font-family:Calibri; 	mso-hansi-theme-font:minor-latin; 	mso-bidi-font-family:"Times New Roman"; 	mso-bidi-theme-font:minor-bidi;} -->
+       </p>
+       <p>
+        <!--[endif] -->
+       </p>
+       <p style="line-height: normal;" class="MsoNormal">
+        <a href="http://newsok.com/retired-admiral-warns-against-following-through-on-proposed-defense-cuts/article/3606581#ixzz1YnHMbwck">
+         <strong>
+          <span style='font-size: 20pt; font-family: "Times New Roman","serif";'>
+           Retired admiral warns against following through on proposed defense cuts
+          </span>
+         </strong>
+        </a>
+       </p>
+       <p style="line-height: normal;" class="MsoNormal">
+        <span style='font-size: 12pt; font-family: "Times New Roman","serif";'>
+         BY GREG SLAVONIC
+        </span>
+       </p>
+       <p style="line-height: normal;" class="MsoNormal">
+        <span style='font-size: 12pt; font-family: "Times New Roman","serif";'>
+         Published: September 23, 2011
+        </span>
+       </p>
+       <p style="line-height: normal;" class="MsoNormal">
+        <span style='font-size: 12pt; font-family: "Times New Roman","serif";'>
+         The raid that took down Osama bin Laden had many heroes, starting with the Navy SEALs who risked their lives in Pakistan that night.
+        </span>
+       </p>
+       <p style="line-height: normal;" class="MsoNormal">
+        <span style='font-size: 12pt; font-family: "Times New Roman","serif";'>
+         But any military expert will tell you that if those SEALs were the mission’s teeth, America’s technological ingenuity was its backbone. From the satellites that identified bin Laden’s compound to the stealthy helicopter that brought our team through Pakistani radar unseen to the secure communications linking our forces across the globe with their superiors in Washington, D.C., victory at every turn depended on our dominance of air and space.
+        </span>
+       </p>
+       <p style="line-height: normal;" class="MsoNormal">
+        <span style='font-size: 12pt; font-family: "Times New Roman","serif";'>
+         Paradoxically, even as the defeat of bin Laden turned on aerospace technologies, some on Capitol Hill are using the decapitation of al-Qaida and the troop drawdown in Afghanistan and Iraq to justify massive budget rollbacks that would gut these very capabilities.
+        </span>
+       </p>
+       <p style="line-height: normal;" class="MsoNormal">
+        <span style='font-size: 12pt; font-family: "Times New Roman","serif";'>
+         As part of the debt ceiling deal, Congress has proposed cutting at least $350 billion from the defense budget over the next 10 years. Worse, if Congress fails to agree on those cuts, an additional $600 billion in across-the-board cuts will come out of defense.
+        </span>
+       </p>
+       <p style="line-height: normal;" class="MsoNormal">
+        <span style='font-size: 12pt; font-family: "Times New Roman","serif";'>
+         Cuts of that magnitude will have long-standing consequences — the troops of today and tomorrow will lack the kind of critical drones, helicopters, satellites and fighter jets that helped us get bin Laden.
+        </span>
+       </p>
+       <p style="line-height: normal;" class="MsoNormal">
+        <span style='font-size: 12pt; font-family: "Times New Roman","serif";'>
+         Americans should know that at $530 billion, the current defense budget is only about 4.7 percent of GDP — the lowest ever during wartime. In 1970, defense took up almost 40 percent of the federal budget, but it’s less than 16 percent of federal spending today.
+        </span>
+       </p>
+       <p style="line-height: normal;" class="MsoNormal">
+        <span style='font-size: 12pt; font-family: "Times New Roman","serif";'>
+         Moreover, the investment budget — the budget for procurement and for research and development — is only 27 percent of overall defense spending and only about 1.5 percent of our total GDP.
+        </span>
+       </p>
+       <p style="line-height: normal;" class="MsoNormal">
+        <span style='font-size: 12pt; font-family: "Times New Roman","serif";'>
+         Cutting $1 trillion from this budget will make it nearly impossible to replace the equipment worn out by a decade of war. Our fighter fleet is smaller and older than at any time since the service was created in 1947. U.S. military planners are warned of a 900-plane “fighter gap” by 2020 — while Russia and China are both developing fifth-generation stealth fighter jets to rival our F-22 and F-35.
+        </span>
+       </p>
+       <p style="line-height: normal;" class="MsoNormal">
+        <span style='font-size: 12pt; font-family: "Times New Roman","serif";'>
+         And for the first time in 100 years, the United States has no new manned civilian or military aircraft in design.
+        </span>
+       </p>
+       <p style="line-height: normal;" class="MsoNormal">
+        <span style='font-size: 12pt; font-family: "Times New Roman","serif";'>
+         Cuts to research are especially dangerous. From stealth technology to smart bombs to unmanned drones, America’s high-tech edge in air and space has ensured our security for decades, keeping us ahead of the pack and making our enemies think twice before crossing us.
+        </span>
+       </p>
+       <p style="line-height: normal;" class="MsoNormal">
+        <span style='font-size: 12pt; font-family: "Times New Roman","serif";'>
+         The reality is that our investment budgets — at 1.5 percent of our GDP — are not responsible for our debt, but they are entirely responsible for our superiority in defense and aerospace, and for innovative research that keeps us at the cutting edge of new technologies. Unilaterally ceding these capabilities to other nations would be a tragic sign that we have lost the long view on national security.
+        </span>
+       </p>
+       <p style="line-height: normal;" class="MsoNormal">
+        <span style='font-size: 12pt; font-family: "Times New Roman","serif";'>
+         Slavonic, a retired U.S. Navy rear admiral, lives in Oklahoma City.
+        </span>
+       </p>
+      </div>
+     </div>
+     <!--// End Left Content //-->
+     <!--// Begin Sidebar //-->
+     <div id="sidebar">
+      <ul>
+       <li class="widget widget_text" id="text-437690931">
+        <h2 class="widgettitle">
+         About Us
+        </h2>
+        <div class="textwidget">
+         <p>
+          The National Defense Trust is a coalition of Americans dedicated to a robust defense of the United States and our allies.
+         </p>
+         <a href="?page_id=2">
+          Find Out More
+         </a>
+        </div>
+       </li>
+       <li class="widget widget_text" id="text-437749302">
+        <h2 class="widgettitle">
+         Recent Video
+        </h2>
+        <div class="textwidget">
+         <object width="280" height="200">
+          <param value="http://www.youtube.com/v/mdRVbr1OfKc&hl=en&fs=1&rel=0" name="movie">
+          </param>
+          <param value="true" name="allowFullScreen">
+          </param>
+          <param value="always" name="allowscriptaccess">
+           <embed width="280" height="200" allowfullscreen="true" allowscriptaccess="always" type="application/x-shockwave-flash" src="http://www.youtube.com/v/mdRVbr1OfKc&hl=en&fs=1&rel=0">
+           </embed>
+          </param>
+         </object>
+        </div>
+       </li>
+       <li class="widget widget_recent_entries" id="recent-posts">
+        <h2 class="widgettitle">
+         Recent Updates
+        </h2>
+        <ul>
+         <li>
+          <a href="http://www.nationaldefensetrust.com/?p=221">
+           Pearl Harbor, Iran and North Korea
+          </a>
+         </li>
+         <li>
+          <a href="http://www.nationaldefensetrust.com/?p=217">
+           Fred Iklé: Missile Defense Champion
+          </a>
+         </li>
+         <li>
+          <a href="http://www.nationaldefensetrust.com/?p=211">
+           Retired admiral warns against following through on proposed defense cuts
+          </a>
+         </li>
+         <li>
+          <a href="http://www.nationaldefensetrust.com/?p=209">
+           George Will:  “At the Pentagon, the specter of a sequester”
+          </a>
+         </li>
+         <li>
+          <a href="http://www.nationaldefensetrust.com/?p=207">
+           Rumsfeld: Attack Imminent If Congress Cuts Defense
+          </a>
+         </li>
+         <li>
+          <a href="http://www.nationaldefensetrust.com/?p=204">
+           Michael Auslin: The Growing Threat From China’s Air Force
+          </a>
+         </li>
+         <li>
+          <a href="http://www.nationaldefensetrust.com/?p=202">
+           Lt. Gen. (Ret) William G. Boykin — More Special Operations Not the Answer
+          </a>
+         </li>
+         <li>
+          <a href="http://www.nationaldefensetrust.com/?p=199">
+           John Bolton: Why Tea Party should resist gutting defense
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </div>
+     <!--// End Sidebar //-->
+    </div>
+    <!--// End Main Content //-->
+    <div id="footer">
+     <p>
+      Copyright National Defense Trust © 2009-2010 | All Rights Reserved
+     </p>
+    </div>
+   </div>
+   <!--// End Wrapper //-->
+  </div>
+  <!-- Accessible News Ticker wordpress plugin 0.3 by Pixline - http://pixline.net -->
+  <script type="text/javascript">
+   var dn_startpos=0; 				// start position of the first item
+var dn_endpos=-600; 			// end of the 'cart'. more items = higher number
+var dn_speed=40;				// higher number = slower scroller 
+var dn_newsID='accessible-news-ticker';			
+var dn_classAdd='hasJS';		
+var dn_stopMessage='Stop scroller';	
+var dn_paraID='DOMnewsstopper';
+  </script>
+  <script src="http://www.nationaldefensetrust.com/wp-content/plugins/accessible-news-ticker/includes/domnews.js?ver=2.7.1" type="text/javascript">
+  </script>
+ </body>
+</html>

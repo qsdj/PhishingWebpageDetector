@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" style="">
+ <head>
+  <title>
+   Spanit residencial, Consultoría inmobiliaria personal, le ayudamos a invertir en España
+  </title>
+  <meta content="Spanit residencial, Consultoría inmobiliaria personal, le ayudamos a invertir en España" name="Title" />
+  <meta content="www.gf72.com" name="Author" />
+  <meta content="inversiones, comprar casa, invertir en España" name="Subject" />
+  <meta content="En Spanit ofrecemos servicios personalizados y especializados de alto nivel a inversores y particulares." name="Description" />
+  <meta content="inversiones, comprar casa, invertir en España, inversión personalizada, inversión España" name="Keywords" />
+  <meta content="Content-Type" http-equiv="Content-Type" />
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport" />
+  <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro" />
+  <link media="all" type="text/css" rel="stylesheet" href="css/style.css" />
+  <!--start slider -->
+  <link media="all" href="css/fwslider.css" rel="stylesheet" />
+  <script src="js/jquery.min.js">
+  </script>
+  <script src="js/jquery-ui.min.js">
+  </script>
+  <script src="js/css3-mediaqueries.js">
+  </script>
+  <script src="js/fwslider.js">
+  </script>
+  <!--end slider -->
+  <script src="js/jquery-hover-effect.js" type="text/javascript">
+  </script>
+  <script type="text/javascript">
+   //Image Hover
+jQuery(document).ready(function(){
+jQuery(function() {
+	jQuery('ul.da-thumbs &gt; li').hoverdir();
+});
+});
+  </script>
+  <!-- Add fancyBox main JS and CSS files -->
+  <script type="text/javascript" src="js/jquery.magnific-popup.js">
+  </script>
+  <link type="text/css" rel="stylesheet" href="css/magnific-popup.css" />
+  <script>
+   $(document).ready(function() {
+				$('.popup-with-zoom-anim').magnificPopup({
+					type: 'inline',
+					fixedContentPos: false,
+					fixedBgPos: true,
+					overflowY: 'auto',
+					closeBtnInside: true,
+					preloader: false,
+					midClick: true,
+					removalDelay: 300,
+					mainClass: 'my-mfp-zoom-in'
+			});
+		});
+  </script>
+  <!--nav-->
+  <script>
+   $(function() {
+			var pull 		= $('#pull');
+				menu 		= $('nav ul');
+				menuHeight	= menu.height();
+
+			$(pull).on('click', function(e) {
+				e.preventDefault();
+				menu.slideToggle();
+			});
+
+			$(window).resize(function(){
+        		var w = $(window).width();
+        		if(w &gt; 320 &amp;&amp; menu.is(':hidden')) {
+        			menu.removeAttr('style');
+        		}
+    		});
+		});
+  </script>
+ </head>
+ <body>
+  <div class="header_bg">
+   <div class="wrap">
+    <div class="header">
+     <div class="logo">
+      <a href="index.php">
+       <img width="250" border="0" alt="" src="images/logo.png" />
+      </a>
+     </div>
+     <div class="cssmenu">
+      <ul>
+       <li class="active">
+        <a href="index.php">
+         Inicio
+        </a>
+       </li>
+       <li>
+        <a href="spanit.php">
+         Spanit
+        </a>
+       </li>
+       <li>
+        <a href="consulting-inmobiliario-spanit.php">
+         Consulting Inmobiliario
+        </a>
+        <!--		      <ul>
+                             <li class="has-sub"><a href="portfolio.html">About</a></li>
+                             <li class="has-sub"><a href="service.html">Archives</a></li>
+                             <li class="has-sub"><a href="contact.html">Contact</a></li>
+                             <li class="has-sub"><a href="staff.html">Gallery</a></li>
+                          </ul> -->
+       </li>
+       <li>
+        <a href="otros-servicios-spanit.php">
+         Otros Servicios
+        </a>
+       </li>
+       <li>
+        <a href="zonas-actuacion-spanit.php">
+         Zonas de actuación
+        </a>
+       </li>
+       <li>
+        <a href="equipo-spanit.php">
+         Equipo
+        </a>
+       </li>
+       <li>
+        <a href="noticias-spanit.php">
+         Noticias
+        </a>
+       </li>
+       <li class="last">
+        <a href="contacta-spanit.php">
+         Contacta
+        </a>
+       </li>
+       <div class="clear">
+       </div>
+      </ul>
+     </div>
+     <div class="clear">
+     </div>
+     <div class="top-nav">
+      <nav class="clearfix">
+       <ul style="">
+        <li class="active">
+         <a href="index.php">
+          Inicio
+         </a>
+        </li>
+        <li>
+         <a href="spanit.php">
+          Spanit
+         </a>
+        </li>
+        <li>
+         <a href="consulting-inmobiliario-spanit.php">
+          Consulting Inmobiliario
+         </a>
+         <!--		      <ul>
+                             <li class="has-sub"><a href="portfolio.html">About</a></li>
+                             <li class="has-sub"><a href="service.html">Archives</a></li>
+                             <li class="has-sub"><a href="contact.html">Contact</a></li>
+                             <li class="has-sub"><a href="staff.html">Gallery</a></li>
+                          </ul> -->
+        </li>
+        <li>
+         <a href="otros-servicios-spanit.php">
+          Otros Servicios
+         </a>
+        </li>
+        <li>
+         <a href="zonas-actuacion-spanit.php">
+          Zonas de actuación
+         </a>
+        </li>
+        <li>
+         <a href="noticias-spanit.php">
+          Noticias
+         </a>
+        </li>
+        <li class="last">
+         <a href="contacta-spanit.php">
+          Contacta
+         </a>
+        </li>
+       </ul>
+       <a id="pull" href="#">
+        Menu
+       </a>
+      </nav>
+     </div>
+     <div class="clear">
+     </div>
+    </div>
+   </div>
+  </div>
+  <!-- start slider -->
+  <div id="fwslider" style="height: 430px;">
+   <div class="slider_container">
+    <div class="slide" style="display: none; z-index: 0;">
+     <!-- Slide image -->
+     <img src="images/slider1.jpg" />
+     <!-- /Slide image -->
+     <!-- Texts container -->
+     <div class="slide_content">
+      <div class="slide_content_wrap">
+       <!-- Text title -->
+       <h4 class="title" style="opacity: 0;">
+        Consultoría Inmobiliaria Personal
+       </h4>
+       <!-- /Text title -->
+       <!-- Text description -->
+       <p class="description" style="opacity: 0;">
+        Estamos orientados exclusivamente a nuestros clientes
+       </p>
+       <!-- /Text description -->
+      </div>
+     </div>
+     <!-- /Texts container -->
+    </div>
+    <!-- /Duplicate to create more slides -->
+    <div class="slide" style="opacity: 1; z-index: 1; display: block;">
+     <img src="images/slider2.jpg" />
+     <div class="slide_content">
+      <div class="slide_content_wrap">
+       <h4 class="title" style="opacity: 1;">
+        Nuestra única misión su total satisfacción
+       </h4>
+       <p class="description" style="opacity: 1;">
+        Servicios personalizados y especializados de alto nivel a inversores y particulares
+       </p>
+      </div>
+     </div>
+    </div>
+    <!--/slide -->
+    <div class="slide" style="z-index: 0; display: none;">
+     <img src="images/slider3.jpg" />
+     <div class="slide_content">
+      <div class="slide_content_wrap">
+       <h4 class="title" style="opacity: 0;">
+        Profesionales cualificados
+       </h4>
+       <p class="description" style="opacity: 0;">
+        Somos un grupo de profesionales con un alto grado de formación y especialización en el sector
+       </p>
+      </div>
+     </div>
+    </div>
+    <!--/slide -->
+    <div class="slide" style="z-index: 0; display: none;">
+     <img src="images/slider4.jpg" />
+     <div class="slide_content">
+      <div class="slide_content_wrap">
+       <h4 class="title" style="opacity: 0;">
+        Conocimiento del mercado
+       </h4>
+       <p class="description" style="opacity: 0;">
+        Hacemos una labor de consultoria, que abarca el diseño, seguimiento y gestión de las operaciones de compraventa
+       </p>
+      </div>
+     </div>
+    </div>
+    <!--/slide -->
+   </div>
+   <div class="timers" style="width: 225px;">
+    <div class="timer">
+     <div class="progress" style="width: 100%;">
+     </div>
+    </div>
+    <div class="timer">
+     <div class="progress" style="overflow: hidden; width: 75.46%;">
+     </div>
+    </div>
+    <div class="timer">
+     <div class="progress">
+     </div>
+    </div>
+    <div class="timer">
+     <div class="progress">
+     </div>
+    </div>
+   </div>
+   <div class="slidePrev" style="left: 0px; top: 190px;">
+    <span>
+    </span>
+   </div>
+   <div class="slideNext" style="right: 0px; top: 190px;">
+    <span>
+    </span>
+   </div>
+  </div>
+  <!--/slider -->
+  <!-- start mian -->
+  <div class="main_bg">
+   <div class="wrap">
+    <div class="grids_1_of_3">
+     <div class="grid_1_of_3 images_1_of_3">
+      <img alt="" src="images/icon1.png" />
+      <a href="zonas-actuacion-spanit.php">
+       <h3>
+        ¿Por qué ahora?
+       </h3>
+      </a>
+      <p>
+       El 
+       <strong>
+        mercado inmobiliario español
+       </strong>
+        se sitúa en valores fundamentales por debajo de niveles de 2005, previos al crecimiento y posterior crisis inmobiliaria. 
+       <br />
+       La estabilidad de 
+       <strong>
+        ciudades como Madrid y Barcelona
+       </strong>
+        está siendo detectada por todo tipo de 
+       <strong>
+        inversores
+       </strong>
+        desde finales de 2013.
+      </p>
+     </div>
+     <div class="grid_1_of_3 images_1_of_3">
+      <img alt="" src="images/icon2.png" />
+      <a href="zonas-actuacion-spanit.php">
+       <h3>
+        ¿Por qué Madrid?
+       </h3>
+      </a>
+      <p>
+       Desde hace unos meses la situación de la vivienda en España está permitiendo ajustar los precios de los inmuebles, sobre todo en las zonas más caras de Madrid se 
+       <a target="_self" href="http://www.spanit.es/zonas-actuacion.php">
+        garantizan rentabilidades a partir de tres años
+       </a>
+       .
+      </p>
+     </div>
+     <div class="grid_1_of_3 images_1_of_3">
+      <img alt="" src="images/icon3.png" />
+      <a href="zonas-actuacion-spanit.php">
+       <h3>
+        Zonas de actuación
+       </h3>
+      </a>
+      <p>
+       Disponemos de oficinas abiertas al público en 
+       <a target="_self" href="contacta-spanit.php">
+        Madrid
+       </a>
+        para cualquier duda que puedan tener.
+      </p>
+     </div>
+     <div class="clear">
+     </div>
+    </div>
+   </div>
+  </div>
+  <!-- start top_grid -->
+  <div class="top_grid_bg">
+   <!-- start mid_grid -->
+   <div class="mid_grid_bg">
+    <div class="wrap">
+     <div class="mid_grid">
+      <div class="mid_grid_left">
+       <h2>
+        Spanit
+       </h2>
+       <h3>
+        <em>
+         "En Spanit Residencial ofrecemos servicios personalizados y especializados de alto nivel a inversores y particulares que quieren adquirir propiedades inmobiliarias en España.
+        </em>
+        <br />
+        <br />
+        <em>
+         Estamos orientados exclusivamente a nuestros clientes; nuestra única misión su total satisfacción."
+        </em>
+       </h3>
+       <a class="btn" href="spanit.php">
+        Ver más
+       </a>
+      </div>
+      <div style="text-align:center;" class="mid_grid_right">
+       <img alt="Valentina de Paz" src="images/valentina-depaz.jpg" />
+       <br />
+       Valentina de Paz Garmendia
+      </div>
+      <div class="clear">
+      </div>
+     </div>
+    </div>
+   </div>
+   <!-- start mid_grid -->
+   <div class="btm_grid_bg">
+   </div>
+   <!-- start testimonial  -->
+   <div class="testimonial_bg">
+   </div>
+   <!-- start testimonial  -->
+   <div class="clients_bg">
+   </div>
+   <div class="clear">
+   </div>
+   <!-- start testimonial  -->
+   <div class="products_bg">
+    <div class="wrap">
+     <div class="products">
+      <h2>
+       Últimas operaciones de Spanit
+      </h2>
+      <div class="products_of_3">
+       <div class="product1_of_3">
+        <a href="operaciones-spanit.php">
+         <img alt="" src="images/LopedeRueda.jpg" />
+        </a>
+        <a href="operaciones-spanit.php">
+         <h3>
+          Lope de Rueda 15
+         </h3>
+        </a>
+        <h4>
+         Edificio clásico completo para promoción por rehabilitación.
+        </h4>
+       </div>
+       <div class="product1_of_3">
+        <a href="operaciones-spanit.php">
+         <img alt="" src="images/proj1.jpg" />
+        </a>
+        <a href="operaciones-spanit.php">
+         <h3>
+          Calle Villalar 7
+         </h3>
+        </a>
+        <h4>
+         Vivienda exclusiva en edificio clásico representativo residencial, con rehabilitación integral.
+        </h4>
+       </div>
+       <div class="product1_of_3">
+        <a href="operaciones-spanit.php">
+         <img alt="" src="images/proj2.jpg" />
+        </a>
+        <a href="operaciones-spanit.php">
+         <h3>
+          Calle Recoletos 9
+         </h3>
+        </a>
+        <h4>
+         Oficina en edificio clásico representativo.
+        </h4>
+       </div>
+       <div class="clear">
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <!-- start footer_top  -->
+   <div class="btm_grid_bg">
+    <div class="wrap">
+     <div class="footer_top">
+      <h2>
+       Spanit, consultoría inmobiliaria personal.
+       <br />
+       El valor añadido de nuestra compañía está en el conocimiento del mercado, acceso a todos los canales de venta y con ello a todo el producto disponible, así como en la selección y recomendación de producto y el diseño y gestión de procesos de compra.
+      </h2>
+     </div>
+    </div>
+   </div>
+   <!-- start footer  -->
+   <div class="footer_bg">
+    s
+    <div class="wrap">
+     <div class="footer">
+      <div class="span_of_4">
+       <div class="span1_of_4">
+        <h2>
+         Menú
+        </h2>
+        <ul class="f_nav1">
+         <li>
+          <a href="index.php">
+           Inicio
+          </a>
+         </li>
+         <br />
+         <li>
+          <a href="spanit.php">
+           Spanit
+          </a>
+         </li>
+         <br />
+         <li>
+          <a href="consulting-inmobiliario-spanit.php">
+           Consulting Inmobiliario
+          </a>
+         </li>
+         <br />
+         <li>
+          <a href="otros-servicios-spanit.php">
+           Otros Servicios
+          </a>
+         </li>
+         <br />
+         <li>
+          <a href="zonas-actuacion-spanit.php">
+           Zonas de actuación
+          </a>
+         </li>
+         <br />
+         <li>
+          <a href="equipo-spanit.php">
+           Equipo
+          </a>
+         </li>
+         <br />
+         <li>
+          <a href="noticias-spanit.php">
+           Noticias
+          </a>
+         </li>
+         <br />
+         <li>
+          <a href="contacta-spanit.php">
+           Contacta
+          </a>
+         </li>
+         <br />
+         <li>
+          <a target="_blank" href="http://www.spanit.es/login">
+           Area Privada
+          </a>
+         </li>
+         <br />
+         <li class="last">
+          <a href="nota-legal.php">
+           Contacta
+          </a>
+         </li>
+        </ul>
+       </div>
+       <div class="span1_of_4">
+        <h2>
+         Dónde estamos
+        </h2>
+        <ul class="f_nav1">
+         <li>
+          <iframe width="230" height="200" frameborder="0" style="border:0" src="https://www.google.com/maps/embed?pb=%211m18%211m12%211m3%211d3037.404983050375%212d-3.6903101999999994%213d40.42203049999993%212m3%211f0%212f0%213f0%213m2%211i1024%212i768%214f13.1%213m3%211m2%211s0xd42289af5a09525%3A0x158b9e6151ee3769%212sCalle+de+Recoletos%2C+9%215e0%213m2%211ses%212ses%214v1396360466387">
+          </iframe>
+         </li>
+        </ul>
+       </div>
+       <div class="span1_of_4">
+        <h2>
+         Etiquetas
+        </h2>
+        <ul class="f_nav2">
+         <li>
+          <a href="">
+           inversiones en España
+          </a>
+         </li>
+         <li>
+          <a href="">
+           comprar en Madrid
+          </a>
+         </li>
+         <li>
+          <a href="">
+           invertir en España
+          </a>
+         </li>
+         <li>
+          <a href="">
+           inversión personalizada
+          </a>
+         </li>
+         <li>
+          <a href="">
+           invertir Madrid
+          </a>
+         </li>
+        </ul>
+       </div>
+       <div class="span1_of_4">
+        <h2>
+         Contacta
+        </h2>
+        <ul class="f_nav1">
+         <li>
+          <a href="contacta.php">
+           Oficina de Madrid
+          </a>
+         </li>
+         <br />
+         <li>
+          <a href="contacta-spanit.php">
+           Calle de Recoletos 9, 2 Planta
+          </a>
+         </li>
+         <br />
+         <li>
+          <a href="contacta-spanit.php">
+           28001 - Madrid
+          </a>
+         </li>
+         <br />
+         <li>
+          <a href="tel:34910143150">
+           Tel.: 34 910 143 150
+          </a>
+         </li>
+         <br />
+         <li>
+          <a href="tel:34910143150">
+           Mv.: 34 690 622 121
+          </a>
+         </li>
+         <br />
+         <li>
+          <a href="contacta-spanit.php">
+           Email:
+          </a>
+          <a href="mailto:informacion@spanit.es">
+           informacion@spanit.es
+          </a>
+         </li>
+         <br />
+        </ul>
+       </div>
+       <div class="clear">
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>

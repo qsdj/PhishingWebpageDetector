@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<!--[if IE 7]>
+
+<html class="ie ie7" lang="en-US">
+
+<![endif]-->
+<!--[if IE 8]>
+
+<html class="ie ie8" lang="en-US">
+
+<![endif]-->
+<!--[if !(IE 7) | !(IE 8)  ]><!-->
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+ <!--<![endif]-->
+ <head>
+  <meta charset="UTF-8" />
+  <meta content="width=device-width" name="viewport" />
+  <title>
+   PROJECTS | Bill
+  </title>
+  <link href="http://gmpg.org/xfn/11" rel="profile" />
+  <link href="http://www.billkirchenbauer.com/xmlrpc.php" rel="pingback" />
+  <link type="text/css" rel="stylesheet" href="http://www.billkirchenbauer.com/wp-content/themes/bill/css/style.css" />
+  <script async="" src="//www.google-analytics.com/analytics.js">
+  </script>
+  <script src="http://www.billkirchenbauer.com/wp-content/themes/bill/js/html5shiv.js" type="text/javascript">
+  </script>
+  <script src="http://www.billkirchenbauer.com/wp-content/themes/bill/js/jquery-1.4.2.min.js" type="text/javascript">
+  </script>
+  <script src="http://www.billkirchenbauer.com/wp-content/themes/bill/js/jquery.jcarousel.pack.js" type="text/javascript">
+  </script>
+  <link href="http://www.billkirchenbauer.com/wp-content/themes/bill/css/jquery.jcarousel.css" type="text/css" rel="stylesheet" />
+  <link href="http://www.billkirchenbauer.com/wp-content/themes/bill/css/skin.css" type="text/css" rel="stylesheet" />
+  <link href="http://www.billkirchenbauer.com/wp-content/themes/bill/css/responsive.css" type="text/css" rel="stylesheet" />
+  <script type="text/javascript">
+   $(document).ready(function () {
+
+		
+
+		//jCarousel Plugin
+
+	    $('#carousel').jcarousel({
+
+			horizontal: true,
+
+			scroll: 1,
+
+			auto: 1,
+
+			wrap: 'last',
+
+			initCallback: mycarousel_initCallback
+
+	   	});
+
+
+
+	//Front page Carousel - Initial Setup
+
+   	$('div#slideshow-carousel a img').css({'opacity': '0.5'});
+
+   	$('div#slideshow-carousel a img:first').css({'opacity': '1.0'});
+
+   	$('div#slideshow-carousel li a:first').append('')
+
+
+
+  
+
+  	//Combine jCarousel with Image Display
+
+    $('div#slideshow-carousel li a').hover(
+
+       	function () {
+
+        		
+
+       		if (!$(this).has('span').length) {
+
+        		$('div#slideshow-carousel li a img').stop(true, true).css({'opacity': '0.5'});
+
+   	    		$(this).stop(true, true).children('img').css({'opacity': '1.0'});
+
+       		}		
+
+       	},
+
+       	function () {
+
+        		
+
+       		$('div#slideshow-carousel li a img').stop(true, true).css({'opacity': '0.5'});
+
+       		$('div#slideshow-carousel li a').each(function () {
+
+
+
+       			if ($(this).has('span').length) $(this).children('img').css({'opacity': '1.0'});
+
+
+
+       		});
+
+        		
+
+       	}
+
+	).click(function () {
+
+
+
+	      	$('span.arrow').remove();        
+
+		$(this).append('');
+
+       	$('div#slideshow-main li').removeClass('active');        
+
+       	$('div#slideshow-main li.' + $(this).attr('rel')).addClass('active');	
+
+        	
+
+       	return false;
+
+	});
+
+	function addactive(id)
+
+{
+
+  $("#active_main").each(function()
+
+   {
+
+     $(this).closest("#li").addClass("active");
+
+   });
+
+}
+
+
+
+
+
+});
+
+
+
+
+
+//Carousel Tweaking
+
+
+
+function mycarousel_initCallback(carousel) {
+
+	
+
+	// Pause autoscrolling if the user moves with the cursor over the clip.
+
+	carousel.clip.hover(function() {
+
+		carousel.stopAuto();
+
+	}, function() {
+
+		carousel.startAuto();
+
+	});
+
+}
+  </script>
+  <script>
+   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-66241779-1', 'auto');
+  ga('send', 'pageview');
+  </script>
+  <!--[if lt IE 9]>
+
+<script src="http://www.billkirchenbauer.com/wp-content/themes/bill/js/html5.js" type="text/javascript"></script>
+
+<![endif]-->
+  <!-- All in One SEO Pack 2.2.7.1 by Michael Torbert of Semper Fi Web Design[339,361] -->
+  <link href="http://www.billkirchenbauer.com/projects/" rel="canonical" />
+  <!-- /all in one seo pack -->
+  <link href="http://www.billkirchenbauer.com/feed/" title="Bill » Feed" type="application/rss+xml" rel="alternate" />
+  <link href="http://www.billkirchenbauer.com/comments/feed/" title="Bill » Comments Feed" type="application/rss+xml" rel="alternate" />
+  <link media="all" type="text/css" href="http://www.billkirchenbauer.com/wp-content/plugins/the-events-calendar/resources/events.css?ver=3.6.1" id="tribe-events-calendar-style-css" rel="stylesheet" />
+  <link media="all" type="text/css" href="http://www.billkirchenbauer.com/wp-content/plugins/contus-video-gallery/css/style.css?ver=3.6.1" id="videogallery_css-css" rel="stylesheet" />
+  <link media="all" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700&subset=latin,latin-ext" id="twentytwelve-fonts-css" rel="stylesheet" />
+  <link media="all" type="text/css" href="http://www.billkirchenbauer.com/wp-content/themes/bill/style.css?ver=3.6.1" id="twentytwelve-style-css" rel="stylesheet" />
+  <!--[if lt IE 9]>
+<link rel='stylesheet' id='twentytwelve-ie-css'  href='http://www.billkirchenbauer.com/wp-content/themes/bill/css/ie.css?ver=20121010' type='text/css' media='all'  />
+<![endif]-->
+  <script src="http://www.billkirchenbauer.com/wp-includes/js/jquery/jquery.js?ver=1.10.2" type="text/javascript">
+  </script>
+  <script src="http://www.billkirchenbauer.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1" type="text/javascript">
+  </script>
+  <script src="http://www.billkirchenbauer.com/wp-content/plugins/the-events-calendar/resources/jquery.pjax.js?ver=3.6.1" type="text/javascript">
+  </script>
+  <script src="http://www.billkirchenbauer.com/wp-content/plugins/the-events-calendar/resources/events.js?ver=3.6.1" type="text/javascript">
+  </script>
+  <script src="http://www.billkirchenbauer.com/wp-content/plugins/contus-video-gallery/js/script.js?ver=3.6.1" type="text/javascript">
+  </script>
+  <link href="http://www.billkirchenbauer.com/xmlrpc.php?rsd" title="RSD" type="application/rsd+xml" rel="EditURI" />
+  <link href="http://www.billkirchenbauer.com/wp-includes/wlwmanifest.xml" type="application/wlwmanifest+xml" rel="wlwmanifest" />
+  <link href="http://www.billkirchenbauer.com/legends-of-comedy/" title="LEGENDS OF COMEDY" rel="prev" />
+  <link href="http://www.billkirchenbauer.com/contact/" title="CONTACT" rel="next" />
+  <meta content="WordPress 3.6.1" name="generator" />
+  <style id="custom-background-css" type="text/css">
+   body.custom-background { background-color: #e6e6e6; }
+  </style>
+ </head>
+ <body class="page page-id-14 page-template-default custom-background custom-font-enabled single-author">
+  <article id="pg">
+   <section id="header">
+   </section>
+  </article>
+  <article class="header_content">
+   <aside class="logo">
+    <a href="http://www.billkirchenbauer.com">
+     <h1>
+      Bill
+      <span>
+       Kirchenbauer
+      </span>
+     </h1>
+    </a>
+   </aside>
+   <nav id="navigation">
+    <ul class="nav">
+     <div class="menu-menu-1-container">
+      <ul class="nav-menu" id="menu-menu-1">
+       <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-18" id="menu-item-18">
+        <a href="http://www.billkirchenbauer.com/">
+         Home
+        </a>
+       </li>
+       <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-33" id="menu-item-33">
+        <a href="http://www.billkirchenbauer.com/bio/">
+         BIO
+        </a>
+       </li>
+       <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-32" id="menu-item-32">
+        <a href="http://www.billkirchenbauer.com/tour/">
+         TOUR
+        </a>
+       </li>
+       <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-31" id="menu-item-31">
+        <a href="http://www.billkirchenbauer.com/photos/">
+         PHOTOS
+        </a>
+       </li>
+       <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-153" id="menu-item-153">
+        <a href="http://www.billkirchenbauer.com/video-home/">
+         VIDEOS
+        </a>
+       </li>
+       <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-228" id="menu-item-228">
+        <a href="http://legendsofcomedy.com/" target="_blank">
+         LEGENDS OF COMEDY
+        </a>
+       </li>
+       <li class="comedian_clas menu-item menu-item-type-custom menu-item-object-custom menu-item-248" id="menu-item-248">
+        <a href="#">
+         COMEDIAN
+        </a>
+        <ul class="sub-menu">
+         <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-247" id="menu-item-247">
+          <a href="http://www.billkirchenbauer.com/country-club-comedians/">
+           Country Club Comedians
+          </a>
+         </li>
+        </ul>
+       </li>
+       <li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-14 current_page_item menu-item-28" id="menu-item-28">
+        <a href="http://www.billkirchenbauer.com/projects/">
+         PROJECTS
+        </a>
+       </li>
+       <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-27" id="menu-item-27">
+        <a href="http://www.billkirchenbauer.com/contact/">
+         CONTACT
+        </a>
+       </li>
+      </ul>
+     </div>
+    </ul>
+   </nav>
+  </article>
+  <section id="article">
+   <article class="post-14 page type-page status-publish hentry" id="post-14">
+    <header class="entry-header">
+     <h1 class="entry-title">
+      PROJECTS
+     </h1>
+    </header>
+    <div class="entry-content">
+    </div>
+    <!-- .entry-content -->
+    <footer class="entry-meta">
+    </footer>
+    <!-- .entry-meta -->
+   </article>
+   <!-- #post -->
+   <!-- You can start editing here. -->
+   <!-- If comments are closed. -->
+   <p class="nocomments">
+    Comments are closed.
+   </p>
+  </section>
+  <footer id="footer">
+   <h3>
+    © 2014   billkirchenbauer.  All Rights Reserved.  Privacy Policy  |  Terms of Service
+   </h3>
+  </footer>
+  <script src="http://www.billkirchenbauer.com/wp-content/themes/bill/js/navigation.js?ver=1.0" type="text/javascript">
+  </script>
+ </body>
+</html>

@@ -1,0 +1,530 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta content="Content-Type" http-equiv="Content-Type" />
+  <title>
+   Ashwi Textile Company
+  </title>
+  <link type="text/css" rel="stylesheet" href="styles/global.css" />
+  <link type="text/css" rel="stylesheet" href="styles/mouse.over.styles.css" />
+  <link type="text/css" rel="stylesheet" href="styles/mouse.btn.css" />
+  <link type="text/css" rel="stylesheet" href="styles/ease.menu.css" />
+  <style type="text/css">
+   .content{ 
+				width:100%; 
+				height:300px;
+				background:url(images/bg.jpg) repeat top left;
+			}
+			span.reference{
+				position:fixed;
+				left:10px;
+				bottom:10px;
+				font-size:12px;
+			}
+			span.reference a{
+				color:#aaa;
+				text-transform:uppercase;
+				text-decoration:none;
+				text-shadow:1px 1px 1px #000;
+				margin-right:30px;
+			}
+			span.reference a:hover{
+				color:#ddd;
+			}
+  </style>
+  <link type="text/css" rel="stylesheet" href="styles/logo.slides.css" />
+ </head>
+ <body>
+  <h1 class="header">
+   <a href="#">
+    <img style="margin-top:15px;" class="left" alt="Ashwi Logo" src="images/logo.png" />
+   </a>
+  </h1>
+  <div class="right" style="width:400px; height:150px; display:block;">
+   <ul class="lang right">
+    <li>
+     <a href="#">
+      English
+     </a>
+    </li>
+    <li>
+     <a href="#">
+      Spanish
+     </a>
+    </li>
+    <li>
+     <a href="#">
+      Italy
+     </a>
+    </li>
+    <li>
+     <a href="#">
+      Germany
+     </a>
+    </li>
+    <li>
+     <a style="border:none" href="#">
+      French
+     </a>
+    </li>
+   </ul>
+   <br />
+   <div style="width:136px; margin:10px 60px 10px 10px;" class="download right">
+    <a target="_blank" href="downloads/Ashwi_Textile-Company_Broucher.pdf">
+     Download Brochure
+    </a>
+   </div>
+   <a href="#">
+    <img width="447" height="50" class="right" src="images/com-name.png" />
+   </a>
+  </div>
+  <div class="clear">
+  </div>
+  <div class="content">
+   <ul class="sdt_menu" id="sdt_menu">
+    <li>
+     <a href="designstudio.html">
+      <img alt="" src="images/hover/menu2.jpg" />
+      <span class="sdt_active">
+      </span>
+      <span class="sdt_wrap">
+       <span class="sdt_link">
+        design studio
+       </span>
+       <span class="sdt_descr">
+        some text here
+       </span>
+      </span>
+     </a>
+    </li>
+    <li>
+     <a href="tech-sampling.html">
+      <img alt="" src="images/hover/menu1.jpg" />
+      <span class="sdt_active">
+      </span>
+      <span class="sdt_wrap">
+       <span class="sdt_link">
+        tech. &amp; sampling
+       </span>
+       <span class="sdt_descr">
+        some text here
+       </span>
+      </span>
+     </a>
+     <!--<div class="sdt_box">
+							<a href="#">Tech Sheet</a>
+							<a href="#">Layouts</a>
+							<a href="#">Illustations</a>
+					</div> -->
+    </li>
+    <li>
+     <a href="production.html">
+      <img alt="" src="images/hover/menu3.jpg" />
+      <span class="sdt_active">
+      </span>
+      <span class="sdt_wrap">
+       <span class="sdt_link">
+        Production
+       </span>
+       <span class="sdt_descr">
+        some text here
+       </span>
+      </span>
+     </a>
+    </li>
+    <li>
+     <a href="merchandising.html">
+      <img alt="" src="images/hover/menu4.jpg" style="width: 170px; display: block; height: 170px; left: 0px;" />
+      <span class="sdt_active" style="height: 170px; display: block;">
+      </span>
+      <span class="sdt_wrap" style="top: 140px;">
+       <span class="sdt_link">
+        merchandising
+       </span>
+       <span class="sdt_descr">
+        some text here
+       </span>
+      </span>
+     </a>
+    </li>
+    <li>
+     <a href="qualitylab.html">
+      <img alt="" src="images/hover/menu5.jpg" />
+      <span class="sdt_active">
+      </span>
+      <span class="sdt_wrap">
+       <span class="sdt_link">
+        quality &amp; labs
+       </span>
+       <span class="sdt_descr">
+        some text here
+       </span>
+      </span>
+     </a>
+    </li>
+    <li>
+     <a href="shipping.html">
+      <img alt="" src="images/hover/menu6.jpg" />
+      <span class="sdt_active">
+      </span>
+      <span class="sdt_wrap">
+       <span class="sdt_link">
+        shipping
+       </span>
+       <span class="sdt_descr">
+        some text here
+       </span>
+      </span>
+     </a>
+    </li>
+   </ul>
+  </div>
+  <!-- The JavaScript -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript">
+  </script>
+  <script src="js/jquery.easing.1.3.js" type="text/javascript">
+  </script>
+  <script type="text/javascript">
+   $(function() {
+                $('#sdt_menu &gt; li').bind('mouseenter',function(){
+					var $elem = $(this);
+					$elem.find('img')
+						 .stop(true)
+						 .animate({
+							'width':'170px',
+							'height':'170px',
+							'left':'0px'
+						 },400,'easeOutBack')
+						 .andSelf()
+						 .find('.sdt_wrap')
+					     .stop(true)
+						 .animate({'top':'140px'},500,'easeOutBack')
+						 .andSelf()
+						 .find('.sdt_active')
+					     .stop(true)
+						 .animate({'height':'170px'},300,function(){
+						var $sub_menu = $elem.find('.sdt_box');
+						if($sub_menu.length){
+							var left = '170px';
+							if($elem.parent().children().length == $elem.index()+1)
+								left = '-170px';
+							$sub_menu.show().animate({'left':left},200);
+						}	
+					});
+				}).bind('mouseleave',function(){
+					var $elem = $(this);
+					var $sub_menu = $elem.find('.sdt_box');
+					if($sub_menu.length)
+						$sub_menu.hide().css('left','0px');
+					
+					$elem.find('.sdt_active')
+						 .stop(true)
+						 .animate({'height':'0px'},300)
+						 .andSelf().find('img')
+						 .stop(true)
+						 .animate({
+							'width':'0px',
+							'height':'0px',
+							'left':'85px'},400)
+						 .andSelf()
+						 .find('.sdt_wrap')
+						 .stop(true)
+						 .animate({'top':'25px'},500);
+				});
+            });
+  </script>
+  <div class="clear">
+  </div>
+  <div id="Main_Wrap">
+   <!--Wrapper Main-->
+   <div style="background:none;" id="Content_Container">
+    <!--Conten Container-->
+    <div class="leftcol left">
+     <!--Left Col Full-->
+     <h3 style="padding-left:0px;">
+      <span style="color:#09F">
+       merchandisign
+      </span>
+      department
+     </h3>
+     <p style=" padding-left:10px;">
+      Our motivated merchandising team understand the clients every need. Clients satisfaction and success becomes the motivating factor behind their performance.
+     </p>
+     <div style="height:30px;" class="clear">
+     </div>
+     <div style="width:100%" class="service">
+      <!--Services-->
+      <!--<h4>Lorem ipsum dolor sit amet.</h4> -->
+      <img class="left" src="images/merchandisign-1.jpg" />
+      <p style="float:left; width:73%; padding:0px 0px 0px 10px; display:block">
+       The team is swift in action and good in their decision making capabilities thus lending a completely secure and competitive environment for your clients
+      </p>
+      <div class="clear">
+      </div>
+      <p style="float:left; width:73%; padding:0px 10px 0px 0px; display:block">
+       We work to get the business and entail the business, so we better work hard to keep it. Our challenging customers drive us to give our best.
+      </p>
+      <img class="left" src="images/merchandisign-2.jpg" />
+     </div>
+     <!--Services-->
+     <!--Services-->
+     <!--Services-->
+     <div class="clear">
+     </div>
+    </div>
+    <!--Left Col Full-->
+    <div class="rightcol left">
+     <h2 style="font-size:26px; padding-left:28px;">
+      Gallery
+     </h2>
+     <div class="main">
+      <div class="view view-first">
+       <img src="images/hover/1.jpg" />
+       <div class="mask">
+        <h2>
+         mens
+        </h2>
+        <a class="info" href="mens.html">
+         view gallery
+        </a>
+       </div>
+      </div>
+      <div class="view view-first">
+       <img src="images/hover/2.jpg" />
+       <div class="mask">
+        <h2>
+         womens
+        </h2>
+        <a class="info" href="womens.html">
+         view gallery
+        </a>
+       </div>
+      </div>
+      <div class="view view-first">
+       <img src="images/hover/3.jpg" />
+       <div class="mask">
+        <h2>
+         kids
+        </h2>
+        <a class="info" href="kids.html">
+         view gallery
+        </a>
+       </div>
+      </div>
+      <div class="view view-first">
+       <img src="images/hover/4.jpg" />
+       <div class="mask">
+        <h2>
+         newborns
+        </h2>
+        <a class="info" href="newborns.html">
+         view gallery
+        </a>
+       </div>
+      </div>
+     </div>
+     <div class="clear">
+     </div>
+     <h3>
+      <span style="color:#0CF">
+       Useful
+      </span>
+      links
+     </h3>
+     <ul>
+      <li>
+       <a href="about-ashwi.html">
+        Our motivated team understand
+       </a>
+       your need
+      </li>
+      <li>
+       <a href="designstudio.html">
+        Fashion Illustration from
+       </a>
+       your mood
+      </li>
+      <li>
+       <a href="tech-sampling.html">
+        Uinque fashion
+       </a>
+       in world class
+      </li>
+      <li>
+       <a href="merchandising.html">
+        Motivation factor
+       </a>
+       behind their performance
+      </li>
+      <li>
+       <a href="merchandising.html">
+        Global Exposure
+       </a>
+       and specialized design
+      </li>
+     </ul>
+    </div>
+   </div>
+   <!--Wrapper Main-->
+  </div>
+  <div style="height:60px;" class="clear">
+  </div>
+  <div id="footer">
+   <div class="middle">
+    <div class="col_1 left">
+     <ul class="links">
+      <li>
+       <a href="index.html">
+        Home
+       </a>
+      </li>
+      <li>
+       <a href="about-ashwi.html">
+        about us
+       </a>
+      </li>
+      <li>
+       <a href="careers.html">
+        careers
+       </a>
+      </li>
+      <li>
+       <a href="testimonials.html">
+        clients testimonials
+       </a>
+      </li>
+      <li>
+       <a href="contactus.html">
+        reach us
+       </a>
+      </li>
+     </ul>
+     <ul class="morelinks">
+      <li>
+       <a href="production.html">
+        Key elements
+       </a>
+      </li>
+      <li>
+       <a href="tech-sampling.html">
+        German Technology
+       </a>
+      </li>
+      <li>
+       <a href="designstudio.html">
+        Tech Pack
+       </a>
+      </li>
+      <li>
+       <a href="about-ashwi.html">
+        Network &amp; resources
+       </a>
+      </li>
+      <li>
+       <a href="designstudio.html">
+        Presentation Sheet
+       </a>
+      </li>
+     </ul>
+     <ul class="morelinks">
+      <li>
+       <a href="merchandising.html">
+        Testing Lab
+       </a>
+      </li>
+      <li>
+       <a href="merchandising.html">
+        Online Evalution
+       </a>
+      </li>
+      <li>
+       <a href="mens.html">
+        Mens models
+       </a>
+      </li>
+      <li>
+       <a href="shipping.html">
+        Logistics
+       </a>
+      </li>
+      <li>
+       <a href="testimonials.html">
+        Our Clientele
+       </a>
+      </li>
+     </ul>
+     <ul class="morelinks">
+      <li>
+       <a href="designstudio.html">
+        Fashion Illustration
+       </a>
+      </li>
+      <li>
+       <a href="about-ashwi.html">
+        Ashwi Team
+       </a>
+      </li>
+      <li>
+       <a href="production.html">
+        Management Systems
+       </a>
+      </li>
+      <li>
+       <a href="#">
+        Current Projects
+       </a>
+      </li>
+      <li>
+       <a href="careers.html">
+        Join with us
+       </a>
+      </li>
+     </ul>
+    </div>
+    <div class="col_2 left">
+     <ul style="width:260px; border-bottom:none; margin-left:60px" class="connections">
+      <li>
+       <a target="_blank" href="http://www.youtube.com/watch?v=P40zvySB3lM&feature=youtu.be">
+        <img src="images/youtube.png" />
+       </a>
+      </li>
+      <li>
+       <a target="_blank" href="https://digg.com/">
+        <img src="images/digg.png" />
+       </a>
+      </li>
+      <li>
+       <a target="_blank" href="https://plus.google.com/109533217257258246423/posts">
+        <img src="images/google+.png" />
+       </a>
+      </li>
+      <li>
+       <a target="_blank" href="https://twitter.com/ashwitextile">
+        <img src="images/twitter.png" />
+       </a>
+      </li>
+      <li>
+       <a target="_blank" href="https://www.facebook.com/ashwitextilescompany">
+        <img src="images/facebook.png" />
+       </a>
+      </li>
+     </ul>
+    </div>
+    <div class="clear">
+    </div>
+    <div style="padding:5px; border-top:1px dashed #3c4b60; clear:both">
+     <p style="color:#496998" class="left">
+      © Ashwi Textile Company
+     </p>
+     <p style="color:#496998;" class="left right">
+      Designed by
+      <a target="_blank" class="colors" href="http://www.colorstechnology.in/">
+       Colors
+      </a>
+      Team
+     </p>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>

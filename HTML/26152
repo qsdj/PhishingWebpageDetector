@@ -1,0 +1,405 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta content="Content-Type" http-equiv="Content-Type" />
+  <title>
+   Aaron System
+  </title>
+  <link type="text/css" rel="stylesheet" href="css/css.css" />
+ </head>
+ <body>
+  <table width="752" border="0" bgcolor="#FFFFFF" align="center" cellspacing="0" cellpadding="0">
+   <tbody>
+    <tr>
+     <td colspan="3">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+       <tbody>
+        <tr>
+         <td>
+          <table width="100%" border="0" cellspacing="0" cellpadding="0">
+           <tbody>
+            <tr>
+             <td width="170" valign="top" height="90" align="center">
+              <a href="index.php">
+               <img width="94" height="87" border="0" src="images/logo.jpg" />
+              </a>
+             </td>
+             <td valign="top" align="right">
+              <table width="100%" border="0" cellspacing="0" cellpadding="0">
+               <tbody>
+                <tr>
+                 <td valign="bottom" height="33" bgcolor="#EAEAED" align="right" class="topLink">
+                  <table border="0" cellspacing="0" cellpadding="0">
+                   <tbody>
+                    <tr>
+                     <td style="padding-left:5px;">
+                      <a href="index.php">
+                       <img width="34" height="10" border="0" src="images/home.jpg" />
+                      </a>
+                     </td>
+                     <td width="16" valign="middle" align="center" class="menu_div">
+                     </td>
+                     <td>
+                      <a href="about_us.php">
+                       <img width="47" height="10" border="0" src="images/about_us.jpg" />
+                      </a>
+                     </td>
+                     <td width="16" valign="middle" align="center" class="menu_div">
+                     </td>
+                     <td>
+                      <a href="product_category.php">
+                       <img width="46" height="11" border="0" src="images/products.jpg" />
+                      </a>
+                     </td>
+                     <td width="16" valign="middle" align="center" class="menu_div">
+                     </td>
+                     <td>
+                      <a href="new_product.php">
+                       <img width="72" height="10" border="0" src="images/new_product.jpg" />
+                      </a>
+                     </td>
+                     <td width="16" valign="middle" align="center" class="menu_div">
+                     </td>
+                     <td>
+                      <a href="enquiry.php">
+                       <img width="40" height="11" border="0" src="images/enquiry.jpg" />
+                      </a>
+                      <a href="newsletter.php">
+                      </a>
+                     </td>
+                     <td width="16" valign="middle" align="center" class="menu_div">
+                     </td>
+                     <td>
+                      <a href="newsletter.php">
+                       <img width="57" height="10" border="0" src="images/news_letter.jpg" />
+                      </a>
+                      <a href="site_map.php">
+                      </a>
+                     </td>
+                     <td width="16" valign="middle" align="center" class="menu_div">
+                     </td>
+                     <td>
+                      <a href="history.php">
+                       <img width="73" height="12" border="0" src="images/history.jpg" />
+                      </a>
+                     </td>
+                     <td width="16" valign="middle" align="center" class="menu_div">
+                     </td>
+                     <td>
+                      <a href="contact_us.php">
+                       <img width="61" height="11" border="0" src="images/contact_us.jpg" />
+                      </a>
+                     </td>
+                    </tr>
+                   </tbody>
+                  </table>
+                 </td>
+                </tr>
+                <tr>
+                 <td valign="bottom" height="38" align="right">
+                  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                   <tbody>
+                    <tr>
+                     <form onsubmit="return scheck();" action="search.php" method="post" name="s_form" id="form1">
+                     </form>
+                     <td align="right">
+                      <input type="text" class="search_box" name="key" />
+                     </td>
+                     <td width="62" valign="middle" align="center">
+                      <input width="52" type="image" height="14" border="0" src="images/search.jpg" name="image" />
+                     </td>
+                    </tr>
+                   </tbody>
+                  </table>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </td>
+        </tr>
+        <tr>
+         <td>
+          <table width="100%" border="0" cellspacing="0" cellpadding="0">
+           <tbody>
+            <tr>
+             <td valign="top" align="center" class="flash_border">
+              <object width="730" height="205" align="middle" id="header" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000">
+               <param value="sameDomain" name="allowScriptAccess">
+               </param>
+               <param value="header.swf" name="movie">
+               </param>
+               <param value="high" name="quality">
+               </param>
+               <param value="#ffffff" name="bgcolor">
+                <embed width="730" height="205" align="middle" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" allowscriptaccess="sameDomain" name="header" bgcolor="#ffffff" quality="high" src="header.swf">
+                </embed>
+               </param>
+              </object>
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <script language="javascript">
+       function scheck()
+	{ 
+	if(document.s_form.key.value=="")
+		{
+		alert("Please Enter Keyword.");
+		document.s_form.key.focus();
+		return false;
+		}
+	}
+      </script>
+     </td>
+    </tr>
+    <tr>
+     <td colspan="3">
+      <table width="100%" cellspacing="0" cellpadding="0" style=" border-bottom:solid 5px #8d8585;">
+       <tbody>
+        <tr>
+         <td valign="bottom" height="20" align="left" class="our_brand_text">
+          <img width="91" height="20" src="images/our_brand.jpg" />
+         </td>
+        </tr>
+        <tr>
+         <td valign="middle" align="center">
+          <table width="726" border="0" cellspacing="0" cellpadding="0">
+           <tbody>
+            <tr>
+             <td width="8">
+              <img src="images/left_mid.jpg" />
+             </td>
+             <td bgcolor="#EBEAEF" style="padding:0 20px 0 20px;">
+              <table width="100%" border="0" cellspacing="0" cellpadding="0">
+               <tbody>
+                <tr>
+                 <td width="94" bgcolor="#ffffff" align="center" class="brand_box">
+                  <a class="bgdfg" href="product_category.php?b_brand_name=ORO%20Chairs">
+                   <img border="0" src="admin/logo/oro%20logo.jpg" />
+                  </a>
+                 </td>
+                 <td width="48">
+                 </td>
+                 <td width="94" bgcolor="#ffffff" align="center" class="brand_box">
+                  <a class="bgdfg" href="product_category.php?b_brand_name=MATRIX">
+                   <img border="0" src="admin/logo/brand4.jpg" />
+                  </a>
+                 </td>
+                 <td width="48">
+                 </td>
+                 <td width="94" bgcolor="#ffffff" align="center" class="brand_box">
+                  <a class="bgdfg" href="product_category.php?b_brand_name=TUFF">
+                   <img border="0" src="admin/logo/brand_1.jpg" />
+                  </a>
+                 </td>
+                 <td width="48">
+                 </td>
+                 <td width="94" bgcolor="#ffffff" align="center" class="brand_box">
+                  <a class="bgdfg" href="product_category.php?b_brand_name=SONATA">
+                   <img border="0" src="admin/logo/brand3.jpg" />
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </td>
+             <td width="12">
+              <img src="images/right_mid.jpg" />
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </td>
+        </tr>
+        <tr>
+         <td valign="middle" height="5" align="center">
+         </td>
+        </tr>
+        <tr>
+         <td valign="middle" align="center">
+          <table width="726" border="0" cellspacing="0" cellpadding="0">
+           <tbody>
+            <tr>
+             <td width="4">
+              <img src="images/left_one.jpg" />
+             </td>
+             <td bgcolor="#EBEAEF" style="padding:0 10px 0 10px;">
+              <div align="left">
+               <a target="_blank" href="http://www.godrejinterio.com">
+                <img border="0" style="margin-left:15px; margin-top:5px;" src="images/gothraje.png" alt="logo1" />
+               </a>
+              </div>
+             </td>
+             <td bgcolor="#EBEAEF">
+              <div id="div_menue">
+               <ul>
+                <li>
+                 <a target="_blank" href="http://www.godrejinterio.com/godrej/godrejInterio/products.aspx?id=29&menuid=311&catid=42&subcatid=110">
+                  Seating
+                 </a>
+                </li>
+                <li>
+                 <a target="_blank" href="http://www.godrejinterio.com/godrej/GodrejInterio/products.aspx?id=29&menuid=310&catid=41&subcatid=44">
+                  Living Room
+                 </a>
+                </li>
+                <li>
+                 <a target="_blank" href="http://www.godrejinterio.com/godrej/GodrejInterio/products.aspx?id=29&menuid=311&catid=42&subcatid=108">
+                  Desking
+                 </a>
+                </li>
+                <li>
+                 <a target="_blank" href="http://www.godrejinterio.com/godrej/GodrejInterio/products.aspx?id=29&menuid=310&catid=41&subcatid=45">
+                  Study Room
+                 </a>
+                </li>
+                <li>
+                 <a target="_blank" href="http://www.godrejinterio.com/godrej/GodrejInterio/products.aspx?id=29&menuid=311&catid=42&subcatid=109">
+                  Workstation
+                 </a>
+                </li>
+                <li>
+                 <a target="_blank" href="http://www.godrejinterio.com/godrej/GodrejInterio/products.aspx?id=29&menuid=311&catid=42&subcatid=111">
+                  Storage
+                 </a>
+                </li>
+                <li>
+                 <a target="_blank" href="http://www.godrejinterio.com/godrej/GodrejInterio/products.aspx?id=29&menuid=310&catid=41&subcatid=106">
+                  Kids Room
+                 </a>
+                </li>
+               </ul>
+              </div>
+             </td>
+             <td width="7">
+              <img src="images/right_one.jpg" />
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </td>
+        </tr>
+        <tr>
+         <td height="5" class="border">
+         </td>
+        </tr>
+       </tbody>
+      </table>
+     </td>
+    </tr>
+    <tr>
+     <td>
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+       <tbody>
+        <tr>
+         <td width="160" valign="top" align="center" class="footer_row_text" rowspan="2">
+          <table width="100%" border="0" cellspacing="0" cellpadding="0">
+           <tbody>
+            <tr>
+             <td align="center" style="padding:5px 5px 0px 0px;">
+              <img width="21" height="25" border="0" src="images/download.jpg" />
+             </td>
+            </tr>
+            <tr>
+             <td valign="middle" height="20" align="center" class="footer_row_text">
+              Download Catalogue
+             </td>
+            </tr>
+            <tr>
+             <td valign="bottom" align="center">
+              <form style="padding:0px; margin:0px;" name="change_lang" target="_blank" method="post" action="#">
+               <select onchange="return lang_change(this.value);" class="brands_combo_box" name="select">
+                <option value="" selected="selected">
+                 select
+                </option>
+                <option onclick="window.open" class="select_bor" value="oro.pdf">
+                 ORO
+                </option>
+                <option class="select_bor" value="sonata.pdf">
+                 SONATA
+                </option>
+                <option class="select_bor" value="topaz.pdf">
+                 TOPAZ
+                </option>
+                <option class="select_bor" value="tuff.pdf">
+                 TUFF
+                </option>
+                <option class="select_bor" value="matrix.pdf">
+                 MATRIX
+                </option>
+               </select>
+              </form>
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </td>
+         <td valign="middle" height="42" align="left" style="padding-left:70px;" colspan="2" class="footer_row_text">
+          <a href="index.php">
+           Home
+          </a>
+            |  
+          <a href="about_us.php">
+           About us
+          </a>
+            |  
+          <a href="site_map.php">
+           Site map
+          </a>
+            |  
+          <a href="contact_us.php">
+           Contact us
+          </a>
+         </td>
+        </tr>
+        <tr>
+         <td width="236" valign="top" height="20" align="right" class="footer_text">
+          Copyright 2008 All Right Reserved.
+         </td>
+         <td width="281" valign="top" align="right" style="padding-right:3px;" class="footer_company_name">
+          <a target="_blank" href="http://www.digisoftsolutions.com/">
+           Site Designed by DigiSoft Solutions.
+          </a>
+         </td>
+        </tr>
+        <tr>
+         <td valign="top" height="5" align="right" style="padding-right:3px;" class="footer_company_name" colspan="3">
+         </td>
+        </tr>
+       </tbody>
+      </table>
+     </td>
+    </tr>
+   </tbody>
+  </table>
+  <script language="javascript">
+   function lang_change(lang){
+
+document.change_lang.action=lang;
+
+document.change_lang.submit();
+
+//alert(lang);
+
+}
+  </script>
+  <script language="javascript">
+   function lang_change(lang){
+
+document.change_lang.action=lang;
+
+document.change_lang.submit();
+
+//alert(lang);
+
+}
+  </script>
+ </body>
+</html>

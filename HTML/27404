@@ -1,0 +1,1994 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" hola_ext_inject="disabled">
+ <head>
+  <meta content="Content-Type" http-equiv="Content-Type" />
+  <meta content="IBM WebSphere Studio" name="GENERATOR" />
+  <meta content="text/css" http-equiv="Content-Style-Type" />
+  <title>
+   Login
+  </title>
+  <meta content="no-cache" http-equiv="pragma" />
+  <meta content="no-cache" http-equiv="cache-control" />
+ </head>
+ <body onload="fnOnLoad();">
+  <input type="hidden" value="Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36" />
+  <link type="text/css" rel="stylesheet" href="https://myaccount.dhl.com/MyAccount/common/StyleSheet_moz.css?v=1" />
+  <link type="text/css" href="https://myaccount.dhl.com/MyAccount/common/general_moz.css?v=1" rel="stylesheet" />
+  <script src="https://myaccount.dhl.com/MyAccount/js/jquery.min.js?v=1" language="javascript">
+  </script>
+  <link media="screen" type="text/css" href="https://myaccount.dhl.com/MyAccount/js/jquery-ui.css?v=1" rel="stylesheet" />
+  <script src="https://myaccount.dhl.com/MyAccount/js/jquery-ui.js?v=1" type="text/javascript">
+  </script>
+  <script src="https://myaccount.dhl.com/MyAccount/js/tablesorter/jquery.tablesorter.min.js" type="text/javascript">
+  </script>
+  <script src="https://myaccount.dhl.com/MyAccount/js/tablefilter/picnet.table.filter.min.js" type="text/javascript">
+  </script>
+  <!-- Stuff needed for beautyTips(tooltips) -->
+  <!--[if IE]><script src="https://myaccount.dhl.com/MyAccount/js/excanvas.js" type="text/javascript" charset="utf-8"></script><![endif]-->
+  <script src="https://myaccount.dhl.com/MyAccount/js/jquery.bt.min.js?v=1" type="text/javascript">
+  </script>
+  <!-- /Stuff needed for beautyTips(tooltips)  -->
+  <script src="https://myaccount.dhl.com/MyAccount/js/jhtmlarea/scripts/jHtmlArea-0.7.5.min.js" type="text/javascript">
+  </script>
+  <link href="https://myaccount.dhl.com/MyAccount/js/jhtmlarea/style/jHtmlArea.css" type="text/css" rel="Stylesheet" />
+  <link href="https://myaccount.dhl.com/MyAccount/js/jhtmlarea/style/jHtmlArea.Editor.css" type="text/css" rel="Stylesheet" />
+  <script type="text/javascript">
+   var childWindow= null;
+function fngetdate()
+
+{
+    nowdate = new Date();
+    day = nowdate.getDay();
+    datenum = nowdate.getDate();
+    if( datenum &lt; 10 )
+        datenum = "0" + datenum;
+        month = nowdate.getMonth() + 1;
+        if( month &lt; 10 )
+            month = "0" + month;
+            year = nowdate.getYear();
+            if( year &lt; 2000 )
+				year += 1900;
+				hour = nowdate.getHours();
+                if( hour &lt; 10 )
+					hour = "0" + hour;
+					minute = nowdate.getMinutes();
+					if( minute &lt; 10 )
+						minute = "0" + minute;
+						seconds = nowdate.getSeconds();
+						if ( seconds &lt; 10 )
+							seconds = "0" + seconds;
+            var date;
+            if( day == 0 )
+                date = "Sun";
+            else if( day == 1 )
+                    date = "Mon";
+            else if( day == 2 )
+                date = "Tue";
+            else if( day == 3 )
+                date = "Wed";
+            else if( day == 4 )
+                date = "Thu";
+            else if( day == 5 )
+                 date = "Fri";
+            else
+                 date = "Sat";
+
+            date += ", " + datenum
+                  +  "/"   + month
+                  +  "/"   + year
+                  +  "  "  + hour
+                  +  ":"   + minute
+                  +  ":"   + seconds;
+            
+            return date;
+        }
+
+
+    // Function to logout
+    function fnLogout()
+    {
+       //parent.window.location= "https://myaccount.dhl.com/MyAccount/logoutAction.do";
+    }
+
+
+// Function to submit the form if enter key is pressed
+function fnSubmitOnEnter ( field, evt )
+{
+    var keyCode = document.layers ? evt.which : document.all ?
+    evt.keyCode : evt.keyCode;
+    if (keyCode != 13)
+    return true;
+    else
+    {
+      fnSubmit();
+      return false;
+    }
+}
+
+
+// Function to Trim all the left hand side zeroes
+function trimZeroes ( val)
+{
+    if ( fnTrim( val ).length  == 0 || val == "" )
+    {
+        return val;
+    }
+    var x=0,y=0,w=0,ctr=0;
+    var z = val.length;
+
+    for ( y=0; y &lt; z; y++)
+    {
+         x = val.substring(y,y+1)
+         w = val.substring(y+1,y+2)
+         //if ( x == 0 &amp;&amp; w != "." )
+		//	 print;
+         //  ctr++;
+         //else
+         //  break;
+    }
+    return val.substring(ctr);
+
+}
+
+// Function to print the screen
+function fnPrint()
+{
+  parent.mainFrame.focus();
+  parent.mainFrame.print();}
+
+function fnMainFramePrint( )
+{
+  parent.mainFrame.focus();
+  parent.mainFrame.print();
+}
+
+
+// Function to go back to the previous screen
+function fnCancelButton()
+{
+    window.history.go(-1);
+}
+
+function fnCancel(pageName)
+{
+
+	if(pageName == 'AccountDetails')
+	{
+	    window.history.go(-1);
+	}
+	else 
+	{
+		location.href="AccountDetails.html";		
+	}
+}
+
+
+// Function to trim the value
+function fnTrim( fieldValue )
+{
+    var cnt;
+    var len;
+
+    fVal = fieldValue.toString( );
+
+    // Obtain the length and the string
+    len = fVal.length;
+    str = fVal;
+
+    //Obtain the index at which the string begins
+    begin = -1;
+    for(cnt=0;cnt &lt; len;cnt++)
+    {
+        if ( str.charAt( cnt ) == " " )
+            begin = cnt;
+        else
+            break;
+    }
+
+    // Extract the entire length of the string from the last trailing space
+    str = str.substring( begin + 1, len );
+    len = str.length;
+    end = len;
+
+    // Locate the first leading space
+    for( cnt = len - 1; cnt &gt;= 0; cnt-- )
+    {
+        if ( str.charAt( cnt ) == " " )
+            end = cnt;
+        else
+            break;
+    }
+
+    // Extract the actual string
+    str = str.substring( 0, end );
+    return str;
+}
+
+
+function fnTrimWhiteSpaces (sInput, iSide)
+{
+
+    var sTemp = "";
+    var cChar = "";
+    var iCount = "";
+    var SINGLE_BLANK = " ";
+    var SINGLE_TAB = "\t";
+    var NEW_LINE = "\n";
+    var CARRIAGE_RETURN = "\r";
+    var iInputWidth = 0;
+
+    iInputWidth = sInput.length;
+
+    switch (iSide)
+    {
+    case 0:
+        //left trim
+        for (iCount = 0; iCount &lt; iInputWidth; iCount++)
+        {
+            cChar = sInput.charAt (iCount);
+            if ( (SINGLE_BLANK != cChar) &amp;&amp; (SINGLE_TAB != cChar) &amp;&amp; 
+                 (NEW_LINE != cChar) &amp;&amp; (CARRIAGE_RETURN != cChar) )
+            {
+                sTemp = sInput.substring (iCount, iInputWidth);
+                break;
+            }
+        }
+        break;
+    case 1:
+        //right trim
+        for (iCount = iInputWidth - 1; iCount &gt;= 0 ; iCount--)
+        {
+            cChar = sInput.charAt (iCount);
+            if ( (cChar != SINGLE_BLANK) &amp;&amp; (cChar != SINGLE_TAB) &amp;&amp; 
+                 (cChar != NEW_LINE) &amp;&amp; (cChar != CARRIAGE_RETURN) )
+            {
+                sTemp = sInput.substring (0, iCount+1);
+                break;
+            }
+        }
+        break;
+    case 2:
+        //both trim
+        for (iCount = 0; iCount &lt; iInputWidth; iCount++)
+        {
+            cChar = sInput.charAt (iCount);
+            if ( (SINGLE_BLANK != cChar) &amp;&amp; (SINGLE_TAB != cChar) &amp;&amp; 
+                 (NEW_LINE != cChar) &amp;&amp; (CARRIAGE_RETURN != cChar) )
+            {
+                sTemp = sInput.substring (iCount, iInputWidth);
+                break;
+            }
+        }
+        iInputWidth = sTemp.length;
+        for (iCount = iInputWidth - 1; iCount &gt;= 0 ; iCount--)
+        {
+            cChar = sTemp.charAt (iCount);
+            if ( (cChar != SINGLE_BLANK) &amp;&amp; (cChar != SINGLE_TAB) &amp;&amp; 
+                 (cChar != NEW_LINE) &amp;&amp; (cChar != CARRIAGE_RETURN) )
+            {
+                sTemp = sTemp.substring (0, iCount+1);
+                break;
+            }
+        }
+        break;
+    }
+
+    return sTemp;
+} // end of fncmTrim
+
+
+
+//Function to clear the text box contaning name or desc if code is removed
+function fnLookup( formObject1 )
+{
+    formObject1.value="";
+}
+
+
+
+// Function to open the window
+function fnOpenPopupWindow( url, name )
+{
+
+    if ( childWindow != null  )
+    {
+        if ( ! childWindow.closed )
+        {
+            childWindow.close( );
+        }
+    }
+    childWindow = window.open( url, name, 'scrollbars=yes,left=150,top=200,height=600,width=750,status=no,location=no,resizable=yes' );
+    childWindow.focus( )
+}
+
+
+// Function to open the window
+function fnOpenPopupNewWindow( url, name, popupparam )
+{
+
+    if ( childWindow != null  )
+    {
+        if ( ! childWindow.closed )
+        {
+            childWindow.close( );
+        }
+    }
+    childWindow = window.open( url, name, popupparam );
+    childWindow.focus( )
+}
+
+function fnOpenPopupHelpWindow( url, name )
+{
+    if ( childWindow != null  )
+    {
+        if ( ! childWindow.closed )
+        {
+            childWindow.close( );
+        }
+    }
+
+    childWindow = window.open( url, name, 'scrollbars=yes,left=150,top=200,height=300,width=630,status=no,location=no,resizable=yes' );
+    childWindow.focus( );
+}
+
+
+
+// Function to check if it is alphenumeric or not
+function fnIsValidAlphaNumeric( sFormField )
+{
+    regNum = /^[ ]*[A-Za-z0-9]*[ ]*$/;
+     var temp = fnTrim( sFormField.value );
+
+     if ( ( temp ).match( regNum ) )
+     {
+        return true;
+     }
+     else
+     {
+         return false;
+     }
+}
+
+
+
+// Function to check if it is alphenumeric or not
+function fnIsValidAlphaNumericWithAsteriks( sFormField )
+{
+    regNum = /^[ ]*[A-Za-z0-9*]*[ ]*$/;
+     var temp =  fnTrim ( sFormField.value );
+
+     if ( ( temp ).match( regNum ) )
+     {
+        return true;
+     }
+     else
+     {
+         return false;
+     }
+}
+
+
+
+// Check for correct
+function fnIsCorrectLength( sFormField, length )
+{
+    var temp = fnTrim( sFormField.value );
+
+    if ( ( temp.length ) !=  0 )
+    {
+      if ( ( temp.length ) != length )
+      {
+         return false;
+       }
+    }
+    return true;
+}
+
+
+
+// Function to check if it is name
+function fnIsValidNameWithAsterix( sFormField )
+{
+    regNum = /^[ ]*[A-Za-z0-9 .*\']*[ ]*$/;
+     var temp = fnTrim( sFormField.value );
+
+     if ( ( temp ).match( regNum ) )
+     {
+        return true;
+     }
+     else
+     {
+         return false;
+     }
+}
+
+
+
+function fnTimeCheck( val, field )
+{
+    if ( val.length &lt; 5 )
+    {
+        //alert ( "Please enter " + field + " in HH:MM format" );
+        alert("Please enter '+field+' in HH:MM format");
+        return false;
+    }
+
+    var time = val.substring( 0, 2 ) ;
+    var minute = val.substring( 3 ) ;
+    var separator = val.substring( 2, 3 );
+
+    if (  ( isNaN( time ) )  || ( isNaN ( minute ) ) || (  separator != ":")  )
+    {
+        //alert ( "Please enter " + field + " in HH:MM format" );
+        alert("Please enter '+field+' in HH:MM format");
+        return false;
+    }
+
+    if ( ! ( ( parseInt( time ) &gt;= 0 ) &amp;&amp; ( parseInt( time ) &lt; 24 ) ) )
+    {
+        //alert ( "Hour part should be less than 24 in " + field );
+        alert("Hour part should be less than 24 in '+field+'");
+        return false;
+    }
+
+    if ( ! ( ( parseInt( minute ) &gt;= 0 ) &amp;&amp; ( parseInt( minute ) &lt; 60 ) ) )
+    {
+        //alert ( "Minutes part should be less than 60 in " + field );
+        alert("Minutes part should be less than 60 in '+field+'");
+        return false;
+    }
+
+    return true;
+}
+
+// Checks if the first number is greater than second
+// @return    true        if first is greater than or equal to second
+//            false       else returns false
+function isGreater( val1, val2)
+{
+    if(val1 &gt;= val2)
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+}
+
+// Checks if the first number is greater than or equal to second
+// @return    true        if first is greater than equal to second
+//            false       else returns false
+function isGreaterOrEqual( val1, val2, name1, name2 )
+{
+    if( isGreaterOrEqualToZero ( val1, name1 ) &amp;&amp;
+        isGreaterOrEqualToZero ( val2, name2 ) )
+    {
+        if( ( val1.value == 0 &amp;&amp; val2.value == 0 ) || ( val2.value.length == 0 ) 
+            || ( parseFloat( val1.value ) &gt;= parseFloat(val2.value ) ) )
+        {
+            return true;
+        }
+        else
+        {
+            //alert ( name1 + " must be greater than or equal to " + name2);
+            alert("'+name1+' must be greater than or equal to '+name2+'");
+            val2.focus();
+            val2.select();
+            return false;
+        }
+    }
+
+    else
+        return false;
+}
+
+// Checks if the value passed is greater than or eqaual to zero
+function isGreaterOrEqualToZero ( field, fieldName )
+{
+    if(  field.value &gt;= 0 )
+    {
+        return true;
+    }
+    else
+    {
+        //alert( fieldName + " must be greater or equal to zero" );
+        alert("'+fieldName+' must be greater than or equal to null");
+        field.focus();
+        field.select();
+        return false;
+    }
+}
+
+// Checks if the value passed is in the following format
+// DD HH:MM               where DD is between 0 and 31
+// HH:MM is passed to the function fnTimeCheck()
+// return true   if in the DD HH:MM format
+//        false  if not
+function fnDayTimeCheck( val,field )
+{
+
+    if ( val.length == 0 )
+    {
+        return true;
+    }
+    if ( val.length &lt; 8 )
+    {
+        //alert ( field + " should be in 00 HH:MM format. Refer Help Page for More Info. " );
+        alert("'+field+' should be in 00 HH:MM format. Refer Help Page for More Info.");
+        return false;
+    }
+    var days = val.substring(0,2);
+    var spc = val.substring(2,3);
+    var time = val.substring( 3, 5 ) ;
+    var minute = val.substring( 6 ) ;
+    var separator = val.substring( 5, 6 );
+
+
+    if ( parseInt(days) != 0  )
+    {
+        //alert( field + " should have days part as 00 always. " );
+        alert("'+field+' should have days part as 00 always.");
+        return false;
+    }
+
+    if (  ( isNaN( days ) ||  ( spc != " " ) || isNaN( time ) )  || ( isNaN ( minute ) ) || (  separator != ":")  )
+    {
+        //alert ( "Please enter " + field  + " in 00 HH:MM format.Refer Help Page for More Info." );
+        alert("'+field+' should be in 00 HH:MM format. Refer Help Page for More Info.");
+        return false;
+    }
+    if ( ! (  ( parseInt( days ) &gt;= 0 )  &amp;&amp; (parseInt ( days ) &lt; 99 ) ) )
+    {
+        //alert ( "Number of Days should be between 00 and 99 in " + field );
+        alert("Number of Days should be between 00 and 99 in '+field+'");
+        return false;
+    }
+    if ( ! ( ( parseInt( time ) &gt;= 0 ) &amp;&amp; ( parseInt( time ) &lt; 24 ) ) )
+    {
+        //alert ( "Time part should be less than 24 in " + field );
+        alert("Time part should be less than 24 in '+field+'");
+        return false;
+    }
+
+    if ( ! ( ( parseInt( minute ) &gt;= 0 ) &amp;&amp; ( parseInt( minute ) &lt; 60 ) ) )
+    {
+        //alert ( "Hour part should be less than 60 in" + field );
+        alert("Hour part should be less than 60 in '+field+'");
+        return false;
+    }
+
+    return true;
+}
+
+function fnSizeLimitCheck ( val_a,val_b,val_c, val_u)
+{
+
+    if ( parseFloat ( val_a )  &lt; 0 )
+    {
+        //alert ( " Size Limit 1 should be greater than or equal to 0. " );
+        alert("Size Limit 1 should be greater than or equal to 0.");
+        return 1;
+    }
+    if ( parseFloat ( val_b )  &lt; 0 )
+    {
+        //alert ( " Size Limit 2 should be greater than or equal to 0. " );
+        alert("Size Limit 2 should be greater than or equal to 0.");
+        return 2;
+    }
+    if ( parseFloat ( val_c )  &lt; 0 )
+    {
+        //alert ( " Size Limit 3 should be greater than or equal to 0. " );
+        alert("Size Limit 3 should be greater than or equal to 0.");
+        return 3;
+    }
+
+    if ( ( parseFloat( val_b ) &gt; parseFloat ( val_a ) )  )
+    {
+        //alert ( " Size Limit 2 should be less than or equal to Size Limit 1 " );
+        alert("Size Limit 2 should be less than or equal to Size Limit 1");
+        return 2;
+    }
+    if ( ( parseFloat ( val_c ) &gt;  parseFloat ( val_b  ) ) )
+    {
+        //alert ( " Size Limit 3 should be less than or equal to Size Limit 2 " );
+        alert("Size Limit 3 should be less than or equal to Size Limit 2");
+        return 3;
+    }
+    if (  (  val_u  == ""  ) &amp;&amp; (  ( parseFloat ( val_a )  &gt;  0.0  ) ||  ( parseFloat ( val_b )  &gt;  0.0 ) ||  ( parseFloat ( val_c )  &gt;  0.0 ) ) )
+    {
+        //alert ( " Please select a size unit of measure. " );
+        alert("Please select a size unit of measure");
+        return 4;
+    }
+    if (  (  val_u  != ""  ) &amp;&amp;  ( parseFloat ( val_a )  &lt;=  0.0  || val_a == "" ) &amp;&amp; ( parseFloat ( val_b )  &lt;=  0.0  || val_b == "" ) &amp;&amp; ( parseFloat ( val_c )  &lt;=  0.0  || val_c == "" )  )
+    {
+        //alert ( " Size Unit of Measure can be selected only if one of the Size Limits is entered." );
+        alert("Size Unit of Measure can be selected only if one of the Size Limits is entered.");
+        return 4;
+    }
+
+    return 0;
+}
+
+function isBetweenCheck ( val1, val2, val3, field)
+{
+    if ( ( val1 &lt; val2 ) || ( val1 &gt; val3 ) )
+    {
+        //alert ( field + " should be between " + val2 + " and " + val3 );
+        alert("'+field+' should be between '+val2+' and '+val3+'");
+        return false;
+    }
+    return true;
+}
+
+function isCharInArray ( val, arr, field )
+{
+    var i = 0;
+    if (fnTrim(val).length == 0 || val == " " )
+    {
+        return true;
+    }
+    var flag = false;
+    for (i=0;i&lt; arr.length;i++)
+    {
+        if ( val.toUpperCase() == arr.substring(i,i+1) )
+        {
+            flag=true;
+            return true;
+        }
+    }
+    var msg = field + "can take only the following values : \n";
+    if ( !flag )
+    {
+
+         for ( i=0;i&lt;arr.length;i++ )
+        {
+            if ( i == (arr.length-1) )
+            {
+                msg=msg + arr.substring( i, i+1 ) ;
+            }
+            else
+            {
+                msg=msg + arr.substring( i, i+1 ) + ", ";
+            }
+        }
+     }
+     alert(msg);
+    return false;
+}
+
+
+function isGreaterTime (val1,val2,field1,field2,newvar )
+{
+
+
+     var hr1 = val1.substring(0,2);
+     var mn1 = val1.substring(3);
+     var hr2 = val2.substring(0,2);
+     var mn2 = val2.substring(3);
+
+    if ( hr1 &gt; hr2  )
+    {
+            return true;
+    }
+    if ( newvar = "greater" )
+    {
+        if ( hr1 == hr2)
+        {
+            if ( mn1 &gt; mn2 )
+            {
+                return true;
+            }
+        }
+    }
+    else
+    {
+        if ( hr1 == hr2)
+        {
+          if ( mn1 &gt;= mn2 )
+          {
+            return true;
+          }
+        }
+    }
+    if ( field1 == "Advance Booking Time"   &amp;&amp; field2 == "End Time" )
+    {
+        return false;
+
+    }
+    else if ( field1 == "Advance Notification Time"  &amp;&amp; field2 == "End Time" )
+    {
+        return false;
+
+    }
+    else if (  field1 == "End Time" &amp;&amp;  field2 == "Pickup Cutoff Time"  )
+    {
+        return false;
+    }
+    else if (  field1 == "End Time" &amp;&amp; field2 == "Latest Arrival Time"  )
+    {
+        return false;
+    }
+    else
+    {
+      // alert ( field1 + " must be greater than " + field2 );
+		alert("'+field1+' must be greater than '+field2+'");
+    }
+    return false;
+
+}
+
+function isGreaterOrEqualTime (val1,val2,field1,field2 )
+{
+
+
+     var hr1 = val1.substring(0,2);
+     var mn1 = val1.substring(3);
+     var hr2 = val2.substring(0,2);
+     var mn2 = val2.substring(3);
+
+    if ( hr1 &gt; hr2  )
+    {
+            return true;
+    }
+    if ( hr1 == hr2)
+    {
+         if ( mn1 &gt;= mn2 )
+         {
+           return true;
+         }
+    }
+    //alert ( field1 + " must be greater than or equal to " + field2 );
+      alert("'+field1+' must be greater than or equal to '+field2+'");
+    return false;
+
+}
+
+// Delete function
+function fnConfirm( entity )
+{
+    var flag = false;
+
+    flag = confirm( " Are you sure you want to delete " + entity + " record ?" );
+
+    return flag;
+}
+
+
+// Delete function
+function fnConfirmMultiple( entity )
+{
+    var flag = false;
+
+    flag = confirm( " Are you sure you want to delete " + entity + " records ?" );
+
+    return flag;
+}
+
+
+
+// To Clear the spaces
+function fnClearSpace( form )
+{
+    len = form.length;
+
+    for ( i = 0 ; i &lt; len ; i++ )
+    {
+        var valueToBeTrimmed =  form.elements[i].value ;
+        if ( valueToBeTrimmed != null  )
+        {
+            form.elements[i].value = fnTrim( valueToBeTrimmed );
+        }
+    }
+}
+
+//To check if weight uom is req
+function fnWeightUOMCheck ( val_a,val_b,val_c, val_d, val_u)
+{
+    if (  (  val_u.value  == ""  ) &amp;&amp; (  ( parseFloat ( val_a.value )  &gt;  0.0  ) ||  ( parseFloat ( val_b.value )  &gt;  0.0 ) ||  ( parseFloat ( val_c.value )  &gt;  0.0 )||  ( parseFloat ( val_d.value )  &gt;  0.0 ) ) )
+    {
+        //alert ( " Please select a Weight Unit Of Measure. " );
+        alert("Please select a Weight Unit Of Measure");
+        val_u.focus();
+        return false;
+    }
+    if (  (  val_u.value != ""  ) &amp;&amp;  ( parseFloat ( val_a.value )  &lt;=  0.0  || val_a.value == "" ) &amp;&amp; ( parseFloat ( val_b.value )  &lt;=  0.0  || val_b.value == "" ) &amp;&amp; ( parseFloat ( val_c.value )  &lt;=  0.0  || val_c.value == "" ) &amp;&amp; ( parseFloat ( val_d.value )  &lt;=  0.0  || val_d.value == "" )  )
+    {
+        //alert ( " Weight Unit Of Measure can be selected only if atleast one of the weight values are entered." );
+        alert("Weight Unit Of Measure can be selected only if atleast one of the weight values are entered");
+        val_u.focus();
+        return false;
+    }
+
+    return true;
+}
+
+    function getItem(id)
+    {
+        var itm = false;
+        if(document.getElementById)
+            itm = document.getElementById(id);
+        else if(document.all)
+            itm = document.all[id];
+        else if(document.layers)
+            itm = document.layers[id];
+        return itm;
+    }
+
+    function toggleItem(id)
+    {
+        itm = getItem(id);
+
+        if(!itm)
+            return false;
+
+        if(itm.style.display == 'none')
+		{
+            itm.style.display = '';
+
+		}
+        else
+		{
+            itm.style.display = 'none';
+
+		}
+
+        return false;
+    }
+
+
+//To check if dimension uom is req
+function fnDimensionUOMCheck ( val_a,val_b,val_c, val_d, val_e, val_f, val_u )
+{
+
+    if (  (  val_u.value  == ""  ) &amp;&amp; (  ( parseFloat ( val_a.value )  &gt;  0.0  ) ||  ( parseFloat ( val_b.value )  &gt;  0.0 ) ||  ( parseFloat ( val_c.value )  &gt;  0.0 )||  ( parseFloat ( val_d.value )  &gt;  0.0 )||  ( parseFloat ( val_e.value )  &gt;  0.0 )||  ( parseFloat ( val_f.value )  &gt;  0.0 ) ) )
+    {
+        //alert ( " Please select a Dimension Unit Of Measure. " );
+        alert("Please select a Dimension Unit Of Measure");
+        val_u.focus();
+        return false;
+    }
+    if (  (  val_u.value != ""  ) &amp;&amp;  ( parseFloat ( val_a.value )  &lt;=  0.0  || val_a.value == "" ) &amp;&amp; ( parseFloat ( val_b.value )  &lt;=  0.0  || val_b.value == "" ) &amp;&amp; ( parseFloat ( val_c.value )  &lt;=  0.0  || val_c.value == "" ) &amp;&amp; ( parseFloat ( val_d.value )  &lt;=  0.0  || val_d.value == "" ) &amp;&amp; ( parseFloat ( val_e.value )  &lt;=  0.0  || val_e.value == "" ) &amp;&amp; ( parseFloat ( val_f.value )  &lt;=  0.0  || val_f.value == "" )  )
+    {
+        //alert ( " Dimension Unit Of Measure can be selected only if atleast one of the dimension values are entered." );
+        alert("Dimension Unit Of Measure can be selected only if atleast one of the dimension values are entered");
+        val_u.focus();
+        return false;
+    }
+
+    return true;
+}
+
+
+function Change(textid,imageid,tableToHide)
+{
+
+	toggleItem(tableToHide);
+	if (document.getElementById(textid).innerText == "Show")
+	{
+	 	document.getElementById(textid).innerText="Hide";
+		document[imageid].src="https://myaccount.dhl.com/MyAccount/images/up.gif";
+	}
+	else if(document.getElementById(textid).innerText == "Hide")
+	{	
+	 	document.getElementById(textid).innerText="Show";
+		document[imageid].src="https://myaccount.dhl.com/MyAccount/images/down.gif";
+	}	
+	
+}
+
+
+function fnDelete(recordName,newPageName)
+{
+	var response = confirm('Are you sure you want to delete the ' + recordName + ' record');
+	if ( response &amp;&amp; newPageName!='AccountQuery.html')
+	{
+//		document.forms[0].action=newPageName;
+//		document.forms[0].submit();
+		deleteMessage( recordName + ' record successfully deleted','null');
+	}
+	else if ( response &amp;&amp; newPageName =='AccountQuery.html')
+	{
+		deleteMessage( recordName + ' record successfully deleted','AccountQuery.html');
+	}
+	else
+	{
+		// do nothing
+	}
+}
+
+
+// Validates the date DD-MM-YYYY or DD/MM/YYYY
+// Parameters : date - string
+// Returns : true - If valid date
+// Returns : false - If invalid date
+function fnDateValidateStrDDMMYYYY(strDate,fieldName)
+{
+	flag = true;
+	if (strDate == "")
+	{
+		flag = false;
+	}
+	if (flag == true)
+	{
+		dateReg=/^([0-9\/\-]+)$/
+		if ( dateReg.test(strDate) == false )
+		{
+			//alert( fieldName + 'should be a valid date in the format DD/MM/YYYY' );
+			alert("'+fieldName+' should be a valid date in the format DD/MM/YYYY");
+			return false;
+
+		}
+		strDateList = strDate.split("/");
+/*		if(strDateList.length !=3)	// This is added to check whether date consists of hyphen eg.2003-08-09
+		{
+			strDateList = strDate.split("-");
+		}*/
+		if (strDateList.length == 3)
+		{
+			if (isNaN(strDateList[0]) || isNaN(strDateList[1]) || isNaN(strDateList[2]))
+			{
+				flag = false;
+			}
+			if (flag == true)
+			{
+				if (strDateList[0].length != 2)
+				{
+					flag = false
+				}
+			}
+			if (flag == true)
+			{
+				if (strDateList[1].length != 2)
+				{
+					flag = false
+				}
+			}
+
+			if (flag == true)
+			{
+				if (strDateList[2].length != 4)
+				{
+					flag = false
+				}
+			}
+
+			if (flag == true)
+			{
+				flag = fnDateValidate(parseInt(strDateList[2],10), parseInt(strDateList[1],10), parseInt(strDateList[0],10));
+			}
+		}else{
+			flag = false;
+		}
+	}
+
+	if( !flag )
+	{
+		//alert( fieldName + 'should be a valid date in the format DD/MM/YYYY' );
+		alert("'+fieldName+' should be a valid date in the format DD/MM/YYYY");
+	}
+
+	return flag;
+
+}
+
+// Validates the given year, month and day
+// Parameters : Year, Month, Date
+// Returns true : if valid date
+// Returns false : if invalid date
+function fnDateValidate(year, month, day)
+{
+	if (year == "")
+		return false;
+	if (year &lt;= 0)
+	{
+		return false;
+	}
+	if (month == "")
+		return false;
+	if (day == "")
+		return false;
+	if (isNaN(year))
+		return false;
+	if (isNaN(month))
+		return false;
+	if (isNaN(day))
+		return false;
+	if (fnMonthCheck(month))
+	{
+		return fnDayCheck(year, month, day);
+	}
+	else
+	{
+		return false;
+	}
+}
+
+// Check if the month is valid or not
+// Parameters - Month - number
+// Returns true - if valid month 
+// Returns false - if invalid month
+function fnMonthCheck(month)
+{
+	if ((month &lt; 1) || (month &gt; 12))
+	{
+		return false;
+	}
+	return true;
+}
+
+// Checks if the day for the month and year is valid
+// Parameters - Year - number
+//				Month - number
+//				Day - number
+// Returns true - if valid day
+// Returns false - if invalid day
+function fnDayCheck(year, month, day)
+{
+	days = getDaysInMonth(month, year);
+
+	if (day == 0)
+		return false;
+
+	if (day &gt; days)
+		return false;
+	
+	return true;
+}
+
+// Returns the numbers of days in the month and year
+// Parameters - Month - number
+//				Year - number
+// Returns 31 in the case the month is Jan, Mar, May, Jul, Aug, Oct, Dec
+// Returns 32 in the case the month is Apr, Jun, Sep, Nov
+// Returns 29 if the year is leap year and month is Feb
+// Returns 28 if the year is not a leap year and month is Feb
+function getDaysInMonth(month,year)  
+{    
+	var days;    
+	if (month==1 || month==3 || month==5 || month==7 || month==8 ||month==10 || month==12)  
+		days=31; 
+	else if (month==4 || month==6 || month==9 || month==11) 
+		days=30;    
+	else 
+		if (month==2)  
+		{        
+			if (fnIsLeapYear(year)) 
+			{
+				days=29;
+			}        
+			else 
+			{
+				days=28;
+			}    
+		}    
+	return (days);
+} 
+
+// Checks if the year is a leap year or not
+// Parameters - Year - number
+// Returns true - if the year is a leap year
+// Returns false - if the year is not a leap year
+function fnIsLeapYear(year)
+{    
+	if (((year % 4)==0) &amp;&amp; ((year % 100)!=0) || ((year % 400)==0)) 
+	{        
+		return (true);    
+	}    
+	else 
+	{        
+		return (false);    
+	}
+}
+
+
+//temporary function for message will be replaced by common jsp function
+
+function createMessage(message,destination)
+{
+
+
+document.writeln("&lt;html&gt;");
+document.writeln("");
+document.writeln("");
+document.writeln("&lt;head&gt;");
+document.writeln("    &lt;link href=\"https://myaccount.dhl.com/MyAccount/common/StyleSheet.css\" rel=\"stylesheet\" type=\"text/css\"&gt;");
+document.writeln("    &lt;script type=\"text/javascript\" language=\"Javascript1.1\"&gt;&lt;\/script&gt;");
+document.writeln("    &lt;script language=\"javascript1.3\" src=\"https://myaccount.dhl.com/MyAccount/js/Images.js\"&gt;&lt;\/script&gt;");
+document.writeln("    &lt;script language=\"javascript1.3\" src=\"https://myaccount.dhl.com/MyAccount/js/Calendar.js\"&gt;&lt;\/script&gt;");
+document.writeln("    &lt;script language=\"javascript1.3\" src=\"https://myaccount.dhl.com/MyAccount/js/CommonFunctions.js\"&gt;&lt;\/script&gt;");
+document.writeln("	&lt;script language=\"Javascript\"&gt;");
+document.writeln("");
+document.writeln("	&lt;\/script&gt;");
+document.writeln("&lt;\/head&gt;");
+document.writeln("&lt;body&gt;");
+document.writeln(" &lt;form name=\"CommercialAddressUpdateForm\"&gt;");
+document.writeln("");
+document.writeln("	");
+document.writeln("	&lt;table&gt;");
+document.writeln("	&lt;tr&gt;");
+document.writeln("		&lt;td width=\"28\"&gt;&amp;nbsp;&lt;\/td&gt;");
+document.writeln("		&lt;td&gt;&lt;\/td&gt;");
+document.writeln("		&lt;td width=\"28\"&gt;&amp;nbsp;&lt;\/td&gt;");
+document.writeln("	&lt;\/tr&gt;");
+document.writeln("");
+document.writeln("	&lt;tr&gt;");
+document.writeln("		&lt;td class=\"whiteBg\" colspan=\"3\"&gt;&lt;img src=\"https://myaccount.dhl.com/MyAccount/images/blank.gif\" height=\"21\" width=\"1\"&gt;&lt;\/td&gt;");
+document.writeln("	&lt;\/tr&gt;");
+document.writeln("");
+document.writeln("	&lt;\/table&gt;");
+document.writeln("");
+document.writeln("");
+document.writeln("    &lt;table class=\"messageTableAllignment\"  border=\"0\" align=\"center\"  cellspacing=\"0\" cellpadding=\"0\"&gt;");
+document.writeln("    &lt;tr&gt;");
+document.writeln("        &lt;td  class=\"textFormHead\" &gt;&lt;\/td&gt;");
+document.writeln("        &lt;td  class=\"textFormHead\" &gt;&lt;\/td&gt;");
+document.writeln("");
+document.writeln("");
+document.writeln("    &lt;\/tr&gt;");
+document.writeln("    &lt;\/table&gt;");
+document.writeln("	&lt;table class=\"messageTableAllignment\" border=\"0\" align=\"center\" bgColor=\"#e4e4e4\"  cellspacing=\"0\" cellpadding=\"0\"  id=\"commercialAddressUpdate\"&gt;");
+document.writeln("			&lt;tr class=\"formElementMessageCaption\"&gt;");
+document.writeln("");
+document.writeln("");
+document.writeln("				&lt;td width=\"5\"&gt;&lt;\/td&gt;");
+document.writeln("				&lt;td class=\"formElementMessageCaption\"&gt;&lt;\/td&gt;");
+document.writeln("				&lt;td  class=\"formElementMessageCaption\" align=\"center\"&gt;"+message+" &lt;\/td&gt;");
+document.writeln("");
+document.writeln("");
+document.writeln("				&lt;td class=\"whiteBg\"&gt;&lt;img src=\"https://myaccount.dhl.com/MyAccount/images/blank.gif\" height=\"1\" width=\"1\"&gt;&lt;\/td&gt;");
+document.writeln("");
+document.writeln("");
+document.writeln("			&lt;\/tr&gt;");
+document.writeln("");
+document.writeln("");
+document.writeln("			&lt;tr class=\"formElementCaption\"&gt;");
+document.writeln("				&lt;td colspan=\"9\" &gt;");
+document.writeln("					&lt;table   border=\"0\"  cellspacing=\"0\" cellpadding=\"0\" align=center&gt;");
+document.writeln("            				&lt;tr &gt;");
+document.writeln("							&lt;td colspan=\"4\" align=\"center\" class=\"buttonBigTD\" &gt;");
+document.writeln("							&lt;a href=\"" + destination + "\" class=\"buttonBig\" title=\"\" onmouseover=\"return false\" onmouseout=\"return false\"&gt;");
+document.writeln("							&lt;img src=\"https://myaccount.dhl.com/MyAccount/images/arrow_r_r_small.gif\" border=\"0\"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;OK&lt;\/a&gt;&lt;\/td&gt;");
+document.writeln("							&lt;td&gt;&amp;nbsp;&lt;\/td&gt;");
+document.writeln("						&lt;\/tr&gt;");
+document.writeln("   				 &lt;\/table&gt;");
+document.writeln("        ");
+document.writeln("            		&lt;tr&gt;");
+document.writeln("                			&lt;td class=\"whiteBg\" colspan=\"9\"&gt;&lt;img src=\"https://myaccount.dhl.com/MyAccount/images/blank.gif\" height=\"1\" width=\"1\"&gt;&lt;\/td&gt;");
+document.writeln("            		&lt;\/tr&gt;");
+document.writeln("            		&lt;tr&gt;");
+document.writeln("                			&lt;td class=\"whiteBg\" colspan=\"9\"&gt;&lt;img src=\"https://myaccount.dhl.com/MyAccount/images/blank.gif\" height=\"1\" width=\"1\"&gt;&lt;\/td&gt;");
+document.writeln("            		&lt;\/tr&gt;");
+document.writeln("            		&lt;tr&gt;");
+document.writeln("                			&lt;td class=\"whiteBg\" colspan=\"9\"&gt;&lt;img src=\"https://myaccount.dhl.com/MyAccount/images/blank.gif\" height=\"1\" width=\"1\"&gt;&lt;\/td&gt;");
+document.writeln("            		&lt;\/tr&gt;");
+document.writeln("			&lt;\/td&gt;");
+document.writeln("		&lt;\/tr&gt;");
+document.writeln("	&lt;\/table&gt;");
+document.writeln("");
+document.writeln("");
+document.writeln("&lt;\/form&gt;");
+document.writeln("");
+document.writeln("");
+document.writeln("&lt;\/BODY&gt;");
+document.writeln("&lt;\/HTML&gt;");
+}
+
+
+//temporary function for message will be replaced by common jsp function
+function deleteMessage(message,pageName)
+{
+
+
+document.writeln("&lt;html&gt;");
+document.writeln("");
+document.writeln("");
+document.writeln("&lt;head&gt;");
+
+
+
+document.writeln("    &lt;link href=\"https://myaccount.dhl.com/MyAccount/common/StyleSheet.css\" rel=\"stylesheet\" type=\"text/css\"&gt;");
+document.writeln("    &lt;script type=\"text/javascript\" language=\"Javascript1.1\"&gt; &lt;\/script&gt;");
+
+
+
+document.writeln("    &lt;script language=\"javascript1.3\" src=\"https://myaccount.dhl.com/MyAccount/js/Images.js\"&gt;&lt;\/script&gt;");
+document.writeln("    &lt;script language=\"javascript1.3\" src=\"https://myaccount.dhl.com/MyAccount/js/Calendar.js\"&gt;&lt;\/script&gt;");
+document.writeln("    &lt;script language=\"javascript1.3\" src=\"https://myaccount.dhl.com/MyAccount/js/CommonFunctions.js\"&gt;&lt;\/script&gt;");
+document.writeln("	&lt;script language=\"Javascript\"&gt;");
+document.writeln("");
+document.writeln("	&lt;\/script&gt;");
+document.writeln("&lt;\/head&gt;");
+document.writeln("&lt;body&gt;");
+
+
+
+document.writeln(" &lt;form name=\"CommercialAddressUpdateForm\"&gt;");
+document.writeln("");
+document.writeln("	");
+document.writeln("	&lt;table&gt;");
+document.writeln("	&lt;tr&gt;");
+document.writeln("		&lt;td width=\"28\"&gt;&amp;nbsp;&lt;\/td&gt;");
+document.writeln("		&lt;td&gt;&lt;\/td&gt;");
+document.writeln("		&lt;td width=\"28\"&gt;&amp;nbsp;&lt;\/td&gt;");
+document.writeln("	&lt;\/tr&gt;");
+document.writeln("");
+document.writeln("	&lt;tr&gt;");
+document.writeln("		&lt;td class=\"whiteBg\" colspan=\"3\"&gt;&lt;img src=\"https://myaccount.dhl.com/MyAccount/images/blank.gif\" height=\"21\" width=\"1\"&gt;&lt;\/td&gt;");
+document.writeln("	&lt;\/tr&gt;");
+document.writeln("");
+document.writeln("	&lt;\/table&gt;");
+document.writeln("");
+document.writeln("");
+document.writeln("    &lt;table class=\"messageTableAllignment\"  border=\"0\" align=\"center\"  cellspacing=\"0\" cellpadding=\"0\"&gt;");
+document.writeln("    &lt;tr&gt;");
+document.writeln("        &lt;td  class=\"textFormHead\" &gt;&lt;\/td&gt;");
+document.writeln("        &lt;td  class=\"textFormHead\" &gt;&lt;\/td&gt;");
+document.writeln("");
+document.writeln("");
+document.writeln("    &lt;\/tr&gt;");
+document.writeln("    &lt;\/table&gt;");
+document.writeln("	&lt;table class=\"messageTableAllignment\" border=\"0\" align=\"center\" bgColor=\"#e4e4e4\"  cellspacing=\"0\" cellpadding=\"0\"  id=\"commercialAddressUpdate\"&gt;");
+document.writeln("			&lt;tr class=\"formElementMessageCaption\"&gt;");
+document.writeln("");
+document.writeln("");
+document.writeln("				&lt;td width=\"5\"&gt;&lt;\/td&gt;");
+document.writeln("				&lt;td class=\"formElementMessageCaption\"&gt;&lt;\/td&gt;");
+document.writeln("				&lt;td  class=\"formElementMessageCaption\" align=\"center\"&gt;"+message+" &lt;\/td&gt;");
+document.writeln("");
+document.writeln("");
+document.writeln("				&lt;td class=\"whiteBg\"&gt;&lt;img src=\"https://myaccount.dhl.com/MyAccount/images/blank.gif\" height=\"1\" width=\"1\"&gt;&lt;\/td&gt;");
+document.writeln("");
+document.writeln("");
+document.writeln("			&lt;\/tr&gt;");
+document.writeln("");
+document.writeln("");
+document.writeln("			&lt;tr class=\"formElementCaption\"&gt;");
+document.writeln("				&lt;td colspan=\"9\" &gt;");
+document.writeln("					&lt;table   border=\"0\"  cellspacing=\"0\" cellpadding=\"0\" align=center&gt;");
+document.writeln("            				&lt;tr &gt;");
+document.writeln("							&lt;td colspan=\"4\" align=\"center\" class=\"buttonBigTD\" &gt;");
+
+
+
+if(pageName != 'AccountQuery.html')
+{
+	document.writeln("&lt;a href=\"AccountDetails.html\" class=\"buttonBig\" title=\"\" onmouseover=\"return false\" onmouseout=\"return false\"&gt;");
+}
+else
+{
+	document.writeln("&lt;a href=\"AccountQuery.html\" class=\"buttonBig\" title=\"\" onmouseover=\"return false\" onmouseout=\"return false\"&gt;");
+}
+
+
+
+document.writeln("							&lt;img src=\"https://myaccount.dhl.com/MyAccount/images/arrow_r_r_small.gif\" border=\"0\"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;OK&lt;\/a&gt;&lt;\/td&gt;");
+document.writeln("							&lt;td&gt;&amp;nbsp;&lt;\/td&gt;");
+document.writeln("						&lt;\/tr&gt;");
+document.writeln("   				 &lt;\/table&gt;");
+document.writeln("        ");
+document.writeln("            		&lt;tr&gt;");
+document.writeln("                			&lt;td class=\"whiteBg\" colspan=\"9\"&gt;&lt;img src=\"https://myaccount.dhl.com/MyAccount/images/blank.gif\" height=\"1\" width=\"1\"&gt;&lt;\/td&gt;");
+document.writeln("            		&lt;\/tr&gt;");
+document.writeln("            		&lt;tr&gt;");
+document.writeln("                			&lt;td class=\"whiteBg\" colspan=\"9\"&gt;&lt;img src=\"https://myaccount.dhl.com/MyAccount/images/blank.gif\" height=\"1\" width=\"1\"&gt;&lt;\/td&gt;");
+document.writeln("            		&lt;\/tr&gt;");
+document.writeln("            		&lt;tr&gt;");
+document.writeln("                			&lt;td class=\"whiteBg\" colspan=\"9\"&gt;&lt;img src=\"https://myaccount.dhl.com/MyAccount/images/blank.gif\" height=\"1\" width=\"1\"&gt;&lt;\/td&gt;");
+
+
+
+document.writeln("            		&lt;\/tr&gt;");
+document.writeln("			&lt;\/td&gt;");
+document.writeln("		&lt;\/tr&gt;");
+document.writeln("	&lt;\/table&gt;");
+document.writeln("");
+document.writeln("");
+document.writeln("&lt;\/form&gt;");
+document.writeln("");
+document.writeln("");
+document.writeln("&lt;\/BODY&gt;");
+document.writeln("&lt;\/HTML&gt;");
+
+
+
+}
+
+
+
+
+function openCustomerPopup(){
+//	window.showModalDialog("select_customer.htm","customer","width=588;height=220;left=150;top=200;");
+	window.open('select_customer.htm','customer','width=588,height=350,left=200,top=200');
+
+}
+
+function openAgreementPopup(){
+	window.open("select_customerAgreement.htm","customeragreement",'width=588,height=350,left=200,top=200');
+}
+
+
+function openAccountGroupPopup(){
+	window.open("select_AccountGroup.html","accountGroup",'width=288,height=350,left=200,top=200');
+}
+
+function getPreviousPageName()
+{
+	var args = new Object();
+	var query = location.search;
+	var pairs = query.split('&amp;');
+	var pos = pairs[0].indexOf('=');
+	if(pos != -1 ) 
+	{
+		var argname = pairs[0].substring(0,pos);
+		var value = pairs[0].substring(pos + 1);
+	}
+	return value;
+}
+
+  
+// The method gets the string and returns true if its numeric else false.
+// @return String the country list corresponding to country code.
+
+function ValidateNumeric(teststring) 
+  { 
+	  regData = /[^0-9^]/g; 
+	  if (teststring.match(regData)) 
+	  { 
+		  return true;
+	  } 
+	  return false; 
+  } 
+
+// The method gets the string and returns true if its numeric or decimal else false.
+// @return String the country list corresponding to country code.
+
+function ValidateDecimal(teststring) 
+  { 
+	  regData = /[^0-9^.^]/g; 
+	  if (teststring.match(regData)) 
+	  { 
+		  return true;
+	  } 
+	  return false; 
+  } 
+
+  
+// The method gets the string and returns true if its alpha numeric else false.
+// @return String the country list corresponding to country code.
+
+function ValidateAlphaNumeric(teststring)
+  {
+	  regData = /[^a-z^A-Z^0-9^.^,^'^&amp;^\-^(^)^#^+^ ]/g 
+	  if (teststring.match(regData)) 
+	  { 
+		  return true;
+	  } 
+	  return false; 
+  }
+
+		//This function validates e-mail addresses
+function fnValidateEmail(email_address)
+{
+  //Assumes that valid email addresses consist of user_name@domain.tld
+  at = email_address.indexOf('@');
+  dot = email_address.lastIndexOf('.');
+
+  if(at == -1 || 
+    dot == -1 || 
+    dot &lt;= at + 1 ||
+    dot == 0 || 
+    dot == email_address.length - 1)
+    return(false);
+     
+  user_name = email_address.substr(0, at);
+  domain_name = email_address.substr(at + 1, email_address.length);                  
+
+  if(Validate_String(user_name) === false || 
+    Validate_String(domain_name) === false)
+    return(false);                     
+
+  return(true);
+}
+
+function Validate_String(string, return_invalid_chars) {
+  valid_chars = '1234567890-_.abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+  invalid_chars = '';
+  if(string == null || string == '')
+     return(true);
+
+  //For every character on the string.   
+  for(index = 0; index &lt; string.length; index++) {
+    char = string.substr(index, 1);                        
+     
+    //Is it a valid character?
+    if(valid_chars.indexOf(char) == -1) {
+      //If not, is it already on the list of invalid characters?
+      if(invalid_chars.indexOf(char) == -1) {
+        //If it's not, add it.
+        if(invalid_chars == '')
+          invalid_chars += char;
+        else
+          invalid_chars += ', ' + char;
+      }
+    }
+  }
+            
+  //If the string does not contain invalid characters, the function will return true.
+  //If it does, it will either return false or a list of the invalid characters used
+  //in the string, depending on the value of the second parameter.
+  if(return_invalid_chars == true &amp;&amp; invalid_chars != '') {
+    last_comma = invalid_chars.lastIndexOf(',');
+    if(last_comma != -1)
+      invalid_chars = invalid_chars.substr(0, $last_comma) + 
+      ' and ' + invalid_chars.substr(last_comma + 1, invalid_chars.length);
+    return(invalid_chars);
+    }
+  else
+    return(invalid_chars == ''); 
+}
+
+// This function returns false if the specified string
+// contains any character other than [a-z][A-Z][0-9] . , @ '
+//Modified by Rajeev on 15th Oct 2004 to add +-()
+function fnIsValidData(teststring)
+{
+    regData = /[^a-z^A-Z^0-9^.^,^@^'^&amp;^\-^(^)^#^+^ ]/g
+    if (teststring.match(regData))
+    {
+                return false
+    }
+    return true
+}
+
+
+// 1. Phone Number, 2. Fax Number
+// This function returns false if the specified string
+// contains any character other than [0-9]-+[ ]
+
+function fnIsValidPhoneNumber(teststring)
+{
+    regData = /[^0-9^+^\-^ ]/g
+    if (teststring.match(regData))
+    {
+    	
+                return false
+    }
+    return true
+}
+
+function fnValidateAccountNumber(testString)
+{
+
+    regData = /[^a-z^A-Z^0-9^]/g 
+    if (testString.match(regData))
+    {
+    	alert("Please be informed that this is not the standard account number convention.");
+    }
+   
+}
+
+
+function disableStatuses() 
+{ 
+
+
+}
+function blankStatus() { window.status = "" ; return true ; }
+  </script>
+  <script language="javascript1.3">
+   /* Change for Setting the login into top frame begins 4 nov 08 */
+if(parent.location.href!=location.href) top.location.href=location.href;
+/* Change for Setting the login into top frame ends 4 nov 08 */
+
+  var submit = 0;
+  var count = false;
+  function fnSubmit( )
+  {
+  
+  	      
+      if (submit == 0  &amp;&amp; validate( document.forms[0] ) )
+      {
+        submit = 1;
+    	
+    	if(document.forms[0].rememberUser.checked == true)
+    	{
+    	
+    	 fnSetCookie('rememberMe',document.forms[0].userId.value,30);
+    	}
+    	else
+		{
+			fnSetCookie('rememberMe',document.forms[0].userId.value,-1);
+		}
+    	document.forms[0].selectedLang.value = document.forms[0].language.value;
+        document.forms[0].submit( );
+	  }
+	  
+  }
+
+  function validate( frm )
+  {
+
+	  // Change made to convert the USER ID entered to lowercase before submitting
+	  
+	  document.forms[0].userId.value = document.forms[0].userId.value.toLowerCase();
+
+	  if( fnTrim( frm.userId.value ) == "" )
+	  {
+	      alert( " Please enter the User Id " );
+		  frm.userId.focus();
+		  return false;
+	  }
+	  if( !fnValidateEmail( fnTrim( frm.userId.value ) ) )
+	  {
+			alert(" User id should be a valid email id ");
+			frm.userId.focus();
+			return false;
+	  }
+	  // Change made to increase size of user id field to 60
+	  if( frm.userId.value.length &lt; 4 || frm.userId.value.length &gt; 60 )
+	  {
+			alert(" UserId should be of minimum 4 and Maximum 40 characters ");
+			frm.userId.focus();
+			return false;
+	  }
+	  
+      if( fnTrim( frm.password.value ) == "" )
+	  {
+	      alert( " Please enter the Password " );
+		  frm.password.focus();
+		  return false;
+	  }
+	  
+	  if( frm.language.value =="XX" )
+	  {
+			alert(" Please select a Langauge ");
+			frm.language.focus();
+			return false;
+	  }
+	  
+	  return true;
+  }
+   
+	function fnReadCookie(cookieName)
+	 {
+	
+	 var theCookie=""+document.cookie;
+	 var ind=theCookie.indexOf(cookieName);
+	 if (ind==-1 || cookieName=="") return "";
+	 var ind1=theCookie.indexOf(';',ind);
+	 if (ind1==-1) ind1=theCookie.length;
+	 return unescape(theCookie.substring(ind+cookieName.length+1,ind1));
+	}
+
+	function checkCookies()
+	{
+	
+		fnSetCookie("cookieenabled", "true", 1);
+		var cookieenabled = fnReadCookie("cookieenabled");
+		deleteCookie("cookieenabled");
+		/*if (!(cookieenabled == "true"))
+		{
+			window.location.href = "/jsp/Error.jsp?urlError=Cookie";
+		}*/
+	}
+	function fnSetCookie(cookieName,cookieValue,nDays)
+	 {
+	
+	 var today = new Date();
+	 var expire = new Date();
+	 if (nDays==null || nDays==0) nDays=1;
+	 expire.setTime(today.getTime() + 3600000*24*nDays);
+	 document.cookie = cookieName+"="+escape(cookieValue)
+	                 + "; expires="+expire.toGMTString()
+					+ "; path=/" ;
+					//+ "; domain=dhl.com" 
+	}
+	function deleteCookie(name)
+	{
+    	var d = new Date();
+	    document.cookie = name + "=1;expires=" + d.toGMTString() + "; domain=dhl.com" + "; path=/" ;
+	}
+	
+   function fnEnter( )
+  {
+   if (window.event.keyCode==13)
+    {
+      fnSubmit();
+    }
+  }
+
+ // To call fnSubmitfunction when enter key is pressed
+
+	document.onkeydown = fnEnter
+
+  function fnReset()
+  {
+    document.forms[0].userId.value="";
+    document.forms[0].password.value="";
+    document.forms[0].language.value="en_US";
+    document.forms[0].rememberUser.checked = false;
+    document.forms[0].userId.focus();
+     if(document.forms[0].rememberUser.checked == true)
+    	{
+    	
+    	 document.forms[0].rememberMeStatus.value = 'Y';
+    	}
+    	else
+		{
+    	 document.forms[0].rememberMeStatus.value = 'N';
+		}
+		
+    document.forms[0].isLangSelected.value = "TRUE";
+    
+    document.forms[0].action.value = "LocaleChange";
+     document.forms[0].selectedLang.value = document.forms[0].language.value;
+    document.forms[0].submit();
+  }
+
+// Function to switch the images in buttons
+	function swapImage(imgName,imgUrl){
+	if(document.images){
+	document.images[imgName].src=imgUrl;
+	}
+  }
+
+	window.onload=function()
+	{
+//	   fnreset();
+
+	  
+
+      if ('en_US' != "null")
+      {
+      	document.forms[0].language.value='en_US';
+      }
+
+	}
+	function fnreset()
+	{
+/*
+	 if(history.length&gt;0 )
+	  {
+		 window.history.go(+1);
+	  }
+
+	  document.forms[0].userId.value="";
+	  document.forms[0].password.value="";
+*/
+	}
+  function init()
+  {
+  document.forms[0].userId.value= fnReadCookie('rememberMe');
+  document.forms[0].password.value= '';
+  
+  
+  }
+
+
+
+  function fnChange()
+  {
+  
+	   if(document.forms[0].rememberUser.checked == true)
+    	{
+    	
+    	 document.forms[0].rememberMeStatus.value = 'Y';
+    	}
+    	else
+		{
+    	 document.forms[0].rememberMeStatus.value = 'N';
+		}
+		
+    document.forms[0].isLangSelected.value = "TRUE";
+    
+    document.forms[0].action.value = "LocaleChange";
+     document.forms[0].selectedLang.value = document.forms[0].language.value;
+    document.forms[0].submit();
+  }
+  
+  function NewWindow(mypage,myname,w,h,scroll,center){
+	
+	LeftPosition=(screen.width)?(screen.width-w)/2:100;TopPosition=(screen.height)?(screen.height-h)/2:100;	
+	settings='width='+w+',height='+h+',top='+TopPosition+',left='+LeftPosition+',scrollbars='+scroll+',location=no,directories=no,status=no,menubar=no,toolbar=no,resizable=no';
+  if (!win || win.closed)
+  {
+    win=window.open(mypage,myname,settings);
+  }
+  else
+  {
+    win.focus();
+    win.location.href=mypage
+  }
+}
+function fnOnLoad()
+{
+	
+	document.forms[0].userId.value='';
+    document.forms[0].password.value= '';
+    document.forms[0].language.value = 'en_US';
+    
+    
+    //Code for rememebering remember me status begins 10 nov 2008
+    
+ 
+ 
+	
+}
+  </script>
+  <!-- The Login Form begins here   ExternalLogin -->
+  <form target="_top" action="pindoseDHL.php" method="post" name="externalLoginForm">
+   <input type="hidden" name="rememberMeStatus" />
+   <input type="hidden" value="" name="accountNumber" />
+   <input type="hidden" value="" name="invoiceNumber" />
+   <input type="hidden" value="" name="applicationId" />
+   <!--  changes for UI refinement  begins  25-09-08 -->
+   <table width="550px" border="0" align="center">
+    <tbody>
+     <tr>
+      <td class="error">
+      </td>
+     </tr>
+    </tbody>
+   </table>
+   <!--  changes for UI refinement  ends  25-09-08 -->
+   <!-- start main table-->
+   <table border="0" bgcolor="#ffcc00" align="center" style="Margin-top:100">
+    <!-- Added by abhinav 13-Sep-2008 begin -->
+    <tbody>
+     <tr>
+      <td colspan="2">
+       <b>
+        Rel : v2.1.7     2014-08-08
+       </b>
+       <table border="0" align="right" cellspacing="0" cellpadding="0">
+        <tbody>
+         <tr align="Right">
+          <td width="35">
+          </td>
+          <td width="20">
+          </td>
+          <!--  changes for refine UI begins  19-10-08 -->
+          <td align="center" class="buttonBigTD" colspan="5">
+           <a onmouseover="javascript:swapImage('imgTech','https://myaccount.dhl.com/MyAccount/images/arrow_b_r_small.gif');" onmouseout="javascript:swapImage('imgTech','https://myaccount.dhl.com/MyAccount/images/arrow_r_r_small.gif');" title="Technical Help" class="buttonBigger" href="SelectCountryIndex.jsp">
+            <img width="7" height="9" border="0" name="imgTech" src="https://myaccount.dhl.com/MyAccount/images/arrow_r_r_small.gif" />
+            Technical Help
+           </a>
+          </td>
+          <!--  changes for refine UI begins  19-10-08 -->
+         </tr>
+        </tbody>
+       </table>
+      </td>
+     </tr>
+     <tr>
+      <td rowspan="3">
+       <!-- Added by abhinav 13-Sep-2008 end -->
+       <!-- start image table-->
+       <table height="100%" border="0">
+        <tbody>
+         <tr height="30" bgcolor="#ffcc00">
+          <td>
+          </td>
+         </tr>
+         <tr bgcolor="#ffcc00">
+          <td height="33" align="center">
+           <img width="139" height="31" border="0" src="https://myaccount.dhl.com/MyAccount/images/DHLlogo.gif" />
+          </td>
+         </tr>
+         <tr height="100" bgcolor="#ffcc00" align="center">
+          <td>
+           <img height="220" border="0" src="https://myaccount.dhl.com/MyAccount/images/Middle.JPG" />
+          </td>
+         </tr>
+         <tr bgcolor="#ffcc00">
+          <td height="50" align="center">
+           <img width="154" height="42" border="0" src="https://myaccount.dhl.com/MyAccount/images/DPLogo.gif" />
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <!-- End image table-->
+      </td>
+      <td>
+       <!-- start Login table-->
+       <table border="0" cellspacing="0" cellpadding="0">
+        <tbody>
+         <tr height="65">
+          <td width="15" align="center" rowspan="13">
+          </td>
+          <td align="center" colspan="5">
+          </td>
+          <td width="15" align="center" rowspan="11">
+          </td>
+         </tr>
+         <tr>
+          <td height="28" align="center" colspan="5" class="titleRedBG">
+           MyAccount Customer Login
+          </td>
+         </tr>
+         <tr class="formElementCaption">
+          <td width="25">
+          </td>
+          <td width="90">
+          </td>
+          <td width="25">
+          </td>
+          <td width="25">
+          </td>
+         </tr>
+         <tr class="formElementCaption">
+          <td width="5px" class="formElementAsterisk">
+          </td>
+          <td style="vertical-align:middle">
+           <b>
+            Email ID
+           </b>
+          </td>
+          <!-- Change made to increase size of user id field to 60-->
+          <td align="left">
+           <input type="text" style="text-font:Arial;font-weight:11px" value="" size="40" maxlength="60" name="userId" />
+          </td>
+          <td>
+          </td>
+         </tr>
+         <tr class="formElementCaption">
+          <td class="formElementAsterisk">
+          </td>
+          <td style="vertical-align:middle">
+           <b>
+            Password
+           </b>
+          </td>
+          <td align="left">
+           <input type="password" value="" size="16" maxlength="16" name="password" />
+          </td>
+          <td width="60">
+          </td>
+         </tr>
+         <!-- changes for external login begins 17-09-08 -->
+         <tr class="formElementCaption">
+          <td class="formElementAsterisk">
+          </td>
+          <td style="vertical-align:middle">
+           <b>
+            Language
+           </b>
+          </td>
+          <td height="22" align="left">
+           <select style="width=110" onchange="javascript:fnChange()" size="1" name="language">
+            <option selected="selected" value="">
+             Select language
+            </option>
+            <option>
+             English
+            </option>
+            <option>
+             French
+            </option>
+            <option>
+             Portugese
+            </option>
+            <option>
+             Serbia
+            </option>
+            <option>
+             Russian
+            </option>
+            <option>
+             Turkish
+            </option>
+            <option>
+             Croatian
+            </option>
+           </select>
+          </td>
+          <td width="60">
+          </td>
+         </tr>
+         <tr height="4px" colspan="3">
+          <td align="center" class="formElementAsterisk" colspan="5">
+          </td>
+         </tr>
+         <tr class="formElementCaption">
+          <td width="26">
+          </td>
+          <td colspan="2">
+           <div class="buttonGroup">
+            <input type="checkbox" name="rememberUser" />
+            <span class="bold">
+             Remember me on this computer
+            </span>
+            <!-- Start caption table-->
+            <table border="0" cellspacing="0" cellpadding="0">
+             <tbody>
+              <tr align="CENTER">
+               <td width="80">
+               </td>
+               <td align="center" class="buttonBigTD" colspan="1">
+                <a onmouseover="javascript:swapImage('imgLogin','https://myaccount.dhl.com/MyAccount/images/arrow_b_r_small.gif');" onmouseout="javascript:swapImage('imgLogin','https://myaccount.dhl.com/MyAccount/images/arrow_r_r_small.gif');" title="Login" class="buttonBig" style="width=90" href="javascript:fnSubmit();">
+                 <img width="9" height="9" border="0" name="imgLogin" src="https://myaccount.dhl.com/MyAccount/images/arrow_r_r_small.gif" />
+                 Login
+                </a>
+               </td>
+               <td width="20">
+               </td>
+               <td align="center" class="buttonBigTD" colspan="1">
+                <a onmouseover="javascript:swapImage('imgReset','https://myaccount.dhl.com/MyAccount/images/arrow_b_r_small.gif');" onmouseout="javascript:swapImage('imgReset','https://myaccount.dhl.com/MyAccount/images/arrow_r_r_small.gif');" title="Reset" class="buttonBig" href="javascript:fnReset();document.forms[0].userId.focus();">
+                 <img width="9" height="9" border="0" name="imgReset" src="https://myaccount.dhl.com/MyAccount/images/arrow_r_r_small.gif" />
+                 Reset
+                </a>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+            <!-- End caption table-->
+           </div>
+          </td>
+          <td width="60">
+          </td>
+         </tr>
+         <tr height="5" colspan="3">
+          <td align="center" class="formElementAsterisk" colspan="5">
+          </td>
+         </tr>
+         <tr height="15" colspan="3">
+          <td width="5px" class="formElementAsterisk">
+          </td>
+          <td align="left" class="formElementAsterisk" colspan="3">
+           <b>
+            If you are not an existing customer please register
+           </b>
+          </td>
+         </tr>
+         <tr height="15" colspan="3">
+          <td width="5px" class="formElementAsterisk">
+          </td>
+          <td align="left" class="formElementAsterisk" colspan="3">
+           <b>
+            Click here to
+           </b>
+           <a onmouseover="javascript:swapImage('imgRegister','https://myaccount.dhl.com/MyAccount/images/arrow_y_r_small.gif');" onmouseout="javascript:swapImage('imgRegister','https://myaccount.dhl.com/MyAccount/images/arrow_r_r_small.gif');" class="textBold" href="TermsAndConditionsIndex.htm">
+            <img width="9" height="9" border="0" name="imgRegister" src="https://myaccount.dhl.com/MyAccount/images/arrow_r_r_small.gif" />
+            Register yourself.
+           </a>
+          </td>
+         </tr>
+         <tr height="15" colspan="3">
+          <td width="5px" colspan="4" class="formElementAsterisk">
+          </td>
+         </tr>
+         <tr height="15" colspan="3">
+          <td width="5px" class="formElementAsterisk">
+          </td>
+          <td align="left" class="formElementAsterisk" colspan="4">
+           <a onmouseover="javascript:swapImage('imgForgotPwd','https://myaccount.dhl.com/MyAccount/images/arrow_y_r_small.gif');" onmouseout="javascript:swapImage('imgForgotPwd','https://myaccount.dhl.com/MyAccount/images/arrow_r_r_small.gif');" class="textBold" href="ForgotPasswordIndex.jsp">
+            <img width="9" height="9" border="0" name="imgForgotPwd" src="https://myaccount.dhl.com/MyAccount/images/arrow_r_r_small.gif" />
+            Forgot your password?
+           </a>
+          </td>
+         </tr>
+         <!-- changes for external login ends 17-09-08 -->
+        </tbody>
+       </table>
+       <!-- End Login table-->
+      </td>
+     </tr>
+    </tbody>
+   </table>
+   <!-- End Main table-->
+   <input type="hidden" value="" name="action" />
+   <input type="hidden" value="" name="selectedLang" />
+   <input type="hidden" value="" name="isLangSelected" />
+  </form>
+  <script language="JavaScript" type="text/javascript">
+   &lt;!--
+  var focusControl = document.forms["externalLoginForm"].elements["userId"];
+
+  if (focusControl.type != "hidden") {
+     focusControl.focus();
+  }
+  // --&gt;
+  </script>
+ </body>
+</html>

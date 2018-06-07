@@ -1,0 +1,308 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta content="Content-Type" http-equiv="Content-Type" />
+  <meta content="ja" http-equiv="Content-Language" />
+  <meta content="text/css" http-equiv="Content-Style-Type" />
+  <meta content="text/javascript" http-equiv="Content-Script-Type" />
+  <meta content="no" http-equiv="Imagetoolbar" />
+  <meta content="" name="description" />
+  <title>
+   お問い合せ | 食百年の会
+  </title>
+  <link href="http://www.shokuhyaku.jp/feed/" title="新着情報" type="application/rss+xml" rel="alternate" />
+  <link type="text/css" rel="stylesheet" href="http://www.shokuhyaku.jp/wp-content/themes/shoku100/common.css" />
+  <!--[if lt IE 7]> <link href="http://www.shokuhyaku.jp/wp-content/themes/shoku100/static_page_ie6.css" rel="stylesheet" type="text/css"  /> <![endif]-->
+  <link media="screen" type="text/css" rel="stylesheet" href="http://www.shokuhyaku.jp/wp-content/themes/shoku100/colorbox.css" />
+  <script type="text/javascript" src="http://www.shokuhyaku.jp/wp-content/themes/shoku100/javascript/swfobject.js">
+  </script>
+  <script type="text/javascript" src="http://www.shokuhyaku.jp/wp-content/themes/shoku100/javascript/jquery.min.js">
+  </script>
+  <script type="text/javascript" src="http://www.shokuhyaku.jp/wp-content/themes/shoku100/javascript/jquery.cookie.js">
+  </script>
+  <script type="text/javascript" src="http://www.shokuhyaku.jp/wp-content/themes/shoku100/javascript/jquery.getqueryparam.js">
+  </script>
+  <script type="text/javascript" src="http://www.shokuhyaku.jp/wp-content/themes/shoku100/javascript/jquery.urlEncode.js">
+  </script>
+  <script type="text/javascript" src="http://www.shokuhyaku.jp/wp-content/themes/shoku100/javascript/jquery.colorbox.js">
+  </script>
+  <script type="text/javascript" src="http://www.shokuhyaku.jp/wp-content/themes/shoku100/javascript/util.js">
+  </script>
+ </head>
+ <body>
+  <div id="cboxOverlay" style="display: none;">
+  </div>
+  <div id="colorbox" style="padding-bottom: 20px; padding-right: 0px; display: none;">
+   <div id="cboxWrapper">
+    <div>
+     <div id="cboxTopLeft" style="float: left;">
+     </div>
+     <div id="cboxTopCenter" style="float: left;">
+     </div>
+     <div id="cboxTopRight" style="float: left;">
+     </div>
+    </div>
+    <div>
+     <div id="cboxMiddleLeft" style="float: left;">
+     </div>
+     <div id="cboxContent" style="float: left;">
+      <div id="cboxLoadedContent" style="width: 0px; height: 0px;" class="">
+      </div>
+      <div id="cboxLoadingOverlay" class="">
+      </div>
+      <div id="cboxLoadingGraphic" class="">
+      </div>
+      <div id="cboxTitle" class="">
+      </div>
+      <div id="cboxCurrent" class="">
+      </div>
+      <div id="cboxSlideshow" class="">
+      </div>
+      <div id="cboxNext" class="">
+      </div>
+      <div id="cboxPrevious" class="">
+      </div>
+      <div id="cboxClose" class="">
+      </div>
+     </div>
+     <div id="cboxMiddleRight" style="float: left;">
+     </div>
+    </div>
+    <div>
+     <div id="cboxBottomLeft" style="float: left;">
+     </div>
+     <div id="cboxBottomCenter" style="float: left;">
+     </div>
+     <div id="cboxBottomRight" style="float: left;">
+     </div>
+    </div>
+   </div>
+   <div style="position:absolute; top:0; left:0; width:9999px; height:0;">
+   </div>
+  </div>
+  <div id="wallpaper">
+   <div id="header">
+    <div class="inner">
+     <div id="header_menu">
+      <a href="/" id="header_menu1">
+       <img width="108" height="53" alt="トップページ" src="http://www.shokuhyaku.jp/wp-content/themes/shoku100/images/common/spacer.png" />
+      </a>
+      <a href="/objective/" id="header_menu2">
+       <img width="82" height="53" alt="会の目的" src="http://www.shokuhyaku.jp/wp-content/themes/shoku100/images/common/spacer.png" />
+      </a>
+      <a href="/manage/" id="header_menu3">
+       <img width="86" height="53" alt="会の運営" src="http://www.shokuhyaku.jp/wp-content/themes/shoku100/images/common/spacer.png" />
+      </a>
+      <a href="/policy/" id="header_menu4">
+       <img width="86" height="53" alt="年度方針" src="http://www.shokuhyaku.jp/wp-content/themes/shoku100/images/common/spacer.png" />
+      </a>
+      <a href="/campaign/" id="header_menu5">
+       <img width="170" height="53" alt="イベント・セミナー情報" src="http://www.shokuhyaku.jp/wp-content/themes/shoku100/images/common/spacer.png" />
+      </a>
+      <a href="/member_list/" id="header_menu6">
+       <img width="114" height="53" alt="会員企業一覧" src="http://www.shokuhyaku.jp/wp-content/themes/shoku100/images/common/spacer.png" />
+      </a>
+      <a href="/member_room/" id="header_menu7">
+       <img width="96" height="53" alt="会員ルーム" src="http://www.shokuhyaku.jp/wp-content/themes/shoku100/images/common/spacer.png" />
+      </a>
+      <a href="/information/" id="header_menu8">
+       <img width="89" height="53" alt="新着情報" src="http://www.shokuhyaku.jp/wp-content/themes/shoku100/images/common/spacer.png" />
+      </a>
+      <a href="/inquiry/" id="header_menu9" class="active">
+       <img width="103" height="53" alt="お問い合わせ" src="http://www.shokuhyaku.jp/wp-content/themes/shoku100/images/common/spacer.png" />
+      </a>
+     </div>
+    </div>
+   </div>
+   <a name="page_top">
+   </a>
+   <div id="main">
+    <div id="main_content">
+     <div id="debug">
+     </div>
+     <h1>
+      <img width="259" height="48" alt="お問い合せ" src="http://www.shokuhyaku.jp/wp-content/uploads/2011/01/inquiry_title.png" />
+     </h1>
+     <div class="sentence_box">
+      <img width="509" height="14" alt="食百年へのお問い合せは" src="http://www.shokuhyaku.jp/wp-content/uploads/2011/01/inquiry_sentence1_image1.png" />
+      <br />
+      <br />
+     </div>
+     <div class="sentence_box">
+      <img width="509" height="23" alt="メールでのお問い合せはこちら（24時間受付）※メーラーが立ち上がります" src="http://www.shokuhyaku.jp/wp-content/uploads/2011/01/inquiry_sentence2_image1.png" />
+      <br />
+      <a href="mailto:info@shokuhyaku.jp" onclick="javascript:pageTracker._trackPageview('/mailto/info@shokuhyaku.jp');">
+       <img width="377" height="38" alt="メールアドレス" src="http://www.shokuhyaku.jp/wp-content/uploads/2011/01/inquiry_sentence2_image2.png" />
+      </a>
+      <div class="sentence_box_child">
+       <img width="453" height="14" alt="下記の項目をご記入の上送信下さい。" src="http://www.shokuhyaku.jp/wp-content/uploads/2011/01/inquiry_sentence2_image3.png" />
+       <br />
+       　貴社名／ご住所／ご担当者名／連絡先（※TEL/FAX）／貴社web／
+       <br />
+       　ご主旨（※お問い合せ内容をご記入下さい）
+      </div>
+     </div>
+     <div class="sentence_spacer">
+      <div>
+      </div>
+     </div>
+     <div class="sentence_box">
+      <img width="509" height="58" alt="お電話でのお問い合せはこちら（受付時間10:00～17:00/土日祝を除く）" src="http://www.shokuhyaku.jp/wp-content/uploads/2011/01/inquiry_sentence3_image1.png" />
+     </div>
+     <div class="sentence_spacer">
+      <div>
+      </div>
+     </div>
+     <div class="sentence_box">
+      <img width="509" height="61" alt="FAXでのお問い合せはこちら（24時間受付）" src="http://www.shokuhyaku.jp/wp-content/uploads/2011/01/inquiry_sentence4_image1.png" />
+      <br />
+      <div class="sentence_box_child">
+       <img width="453" height="14" alt="下記の項目をご記入の上送信下さい。" src="http://www.shokuhyaku.jp/wp-content/uploads/2011/01/inquiry_sentence4_image2.png" />
+       <br />
+       　貴社名／ご住所／ご担当者名／連絡先（※TEL/FAX）／貴社web／
+       <br />
+       　ご主旨（※お問い合せ内容をご記入下さい）
+      </div>
+     </div>
+     <div class="sentence_spacer">
+      <div>
+      </div>
+     </div>
+     <div class="sentence_box2">
+      　※お問い合せいただいた内容を確認し、事務局からご連絡致します。
+      <br />
+      　　お問い合せ内容によっては、回答までお時間をいただく場合がございます。
+      <br />
+      　　あらかじめご了承下さい。
+      <br />
+      <br />
+      　※食百年の会では、個人情報の保護について最大限の注意を払っております。
+      <br />
+      　　送信いただいた個人情報については、お問い合せいただいた内容以外で利用したり、
+      <br />
+      　　別の個人や団体に開示されることはありません。
+      <br />
+     </div>
+     <div class="register_button">
+      <a href="/register/">
+       <img width="202" height="39" alt="ご入会ご希望の方はこちら" src="http://www.shokuhyaku.jp/wp-content/uploads/2011/03/inquiry_sentence5_image1.png" />
+      </a>
+     </div>
+    </div>
+    <div id="main_navi">
+     <div style="" id="login_form">
+      <img width="218" height="32" alt="会員の方　会員ルームログイン" src="http://www.shokuhyaku.jp/wp-content/themes/shoku100/images/navi/login_title.png" id="login_title" />
+      <div id="login_input">
+       ID
+       <br />
+       <input type="text" id="login_form_id" />
+       <br />
+       パスワード
+       <br />
+       <input type="password" id="login_form_pass" />
+       <br />
+      </div>
+      <div id="login_information">
+       ID、パスワードを忘れてしまった方は
+       <a href="/inquiry/">
+        こちら
+       </a>
+      </div>
+      <a onclick="Login('/');" href="javascript:void(0);" id="login_button">
+       <img width="70" height="26" alt="LOGIN" src="http://www.shokuhyaku.jp/wp-content/themes/shoku100/images/navi/login_button.png" />
+      </a>
+     </div>
+     <div style="display:none;" id="logout_form">
+      <img width="218" height="32" alt="ログアウト" src="http://www.shokuhyaku.jp/wp-content/themes/shoku100/images/navi/logout_title.png" id="logout_title" />
+      <div id="logout_information">
+       ログアウトはこちら
+      </div>
+      <a onclick="Logout('/');" href="javascript:void(0);" id="logout_button">
+       <img width="70" height="26" alt="LOGOUT" src="http://www.shokuhyaku.jp/wp-content/themes/shoku100/images/navi/logout_button.png" />
+      </a>
+     </div>
+     <div id="navi_banner">
+      <a href="/inquiry/">
+       <img width="220" height="175" alt="お問い合わせはこちら" src="http://www.shokuhyaku.jp/wp-content/themes/shoku100/images/navi/inquiry.png" />
+      </a>
+     </div>
+     <div id="navi_banner">
+      <a href="/weekly-news/">
+       <img width="220" height="101" alt="週間外食ニュース" src="http://www.shokuhyaku.jp/wp-content/themes/shoku100/images/navi/weekly-news.jpg" />
+      </a>
+     </div>
+    </div>
+    <div class="clear_div">
+    </div>
+    <div id="footer_banner">
+     <a href="/information/">
+      <img width="305" height="96" alt="新着情報" src="http://www.shokuhyaku.jp/wp-content/themes/shoku100/images/footer/footer_banner1.jpg" />
+     </a>
+     <img width="3" height="96" alt="" src="http://www.shokuhyaku.jp/wp-content/themes/shoku100/images/common/spacer.png" />
+     <a href="/campaign/">
+      <img width="305" height="96" alt="イベント・セミナー情報" src="http://www.shokuhyaku.jp/wp-content/themes/shoku100/images/footer/footer_banner2.jpg" />
+     </a>
+     <img width="3" height="96" alt="" src="http://www.shokuhyaku.jp/wp-content/themes/shoku100/images/common/spacer.png" />
+     <a href="/member_room/">
+      <img width="305" height="96" alt="会員ルーム" src="http://www.shokuhyaku.jp/wp-content/themes/shoku100/images/footer/footer_banner3.jpg" />
+     </a>
+    </div>
+   </div>
+  </div>
+  <div id="footer">
+   <div id="footer_inner">
+    <div id="footer_inner2">
+     Copyright© 食百年の会 All Rights Reserved.
+    </div>
+   </div>
+  </div>
+  <style type="text/css">
+   .sentence_spacer
+{
+	width:660px;
+	margin-top:18px;
+	margin-bottom:12px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.sentence_spacer div
+{
+	width:100%;
+	height:1px;
+	border-bottom:dotted 1px #C7C7C7;
+}
+
+.sentence_box
+{
+	margin-left:106px;
+	margin-top:25px;
+}
+
+.sentence_box2
+{
+	margin-left:151px;
+	margin-top:25px;
+	line-height:160%;
+}
+
+.sentence_box_child
+{
+	margin-left:45px;
+	margin-top:5px;
+	line-height:160%;
+}
+
+.register_button
+{
+	width:259px;
+	margin-top:10px;
+	margin-left:180px;
+	text-align:center;
+}
+  </style>
+  <script type="text/javascript">
+   $("#header_menu9").addClass("active");
+  </script>
+ </body>
+</html>

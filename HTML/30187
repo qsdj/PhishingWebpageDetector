@@ -1,0 +1,177 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="pl-pl" xml:lang="pl-pl" xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta content="content-type" http-equiv="content-type" />
+  <meta content="index, follow" name="robots" />
+  <meta content="MARIX układy wydechowe spółka jawna, wydech, układy wydechowe polska, kolektory, tłumiki, tłumiki ostrow, tłumiki wielkopolska, dobre tłumiki, niezawodne tłumiki,tłumiki krajowe, tłumiki sportowe, wieszaki, obejmy, rury, ukady wydechowe, sportowe, ulter, hurtownia, dystrybucja, sklep tłumiki, detal tlumiki, katalizatory,  złącza ,Kwiecień tłumiki,kwiecien tlumiki elastyczne, Asmet, Walker, Tesh, Bosal, Eberspucher, Leistritz, Catko, Carsound, Lindo, Fischer, Plath, Mann, Jurid, Bendix, NGK, Norma,  polmoostrw,wydechy, rury wydechowe, kwiecien kolektory" name="keywords" />
+  <meta content="W siedzibie naszej firmy w Wysocku Wielkim w halach produkcyjno – magazynowych o powierzchni  5000 m2 wytwarzamy  około 2000 różnych rodzajów tłumików (tradycyjnych i skorupowych), rur kolektorowych oraz rur wydechowych mających zastosowanie w wielu  modelach  samochodów osobowych i dostawczych  światowych koncernów samochodowych. 
+Aby nasze produkty spełniały Państwa wysokie wymagania staramy się inwestować w infrastrukturę oraz materiały służące do produkcji. Nasze produkty wytwarzamy z blach dostarczanych przez koncern ThyssenKrupp Steel AG (Niemcy), rury otrzymujemy z firmy Plimet Częstochowa (Polska), Ruukki Carl Froh GmbH (Niemcy) a drut do uchwytów kupujemy w firmie Gabarro (Hiszpania). Do obróbki blach używamy maszyn firmy Comas (Włochy), w procesie obróbki rur stosujemy maszyny firmy Pedrazzoli (Włochy), w obróbce drutu używamy maszyn firmy Macsoft-Numalliance (Francja). Wewnątrz naszych produktów stosujemy technologię Advantex i Silentex firmy Owens Corning(Belgia, Francja). Niezbędne w procesach technologicznych ciśnienie powietrza zapewniają kompresory firmy Kaeser (Niemcy).  Całość procesów produkcyjnych nadzoruje wykwalifikowana i doświadczona kadra naszych pracowników." name="description" />
+  <meta content="Joomla! 1.5 - Open Source Content Management" name="generator" />
+  <title>
+   MARIX układy wydechowe spółka jawna
+  </title>
+  <link title="RSS 2.0" type="application/rss+xml" rel="alternate" href="/index.php?format=feed&type=rss&lang=pl" />
+  <link title="Atom 1.0" type="application/atom+xml" rel="alternate" href="/index.php?format=feed&type=atom&lang=pl" />
+  <link type="image/x-icon" rel="shortcut icon" href="/templates/marix_startowa/favicon.ico" />
+  <script src="/media/system/js/mootools.js" type="text/javascript">
+  </script>
+  <script src="/media/system/js/caption.js" type="text/javascript">
+  </script>
+  <link type="text/css" href="/templates/system/css/system.css" rel="stylesheet" />
+  <link type="text/css" href="/templates/system/css/general.css" rel="stylesheet" />
+  <meta content="Content-Type" http-equiv="Content-Type" />
+  <link type="text/css" href="/templates/marix_startowa/css/styleIE6.css" rel="stylesheet" />
+  <link type="text/css" href="/templates/marix_startowa/css/reset.css" rel="stylesheet" />
+  <link type="text/css" href="/templates/marix_startowa/css/style4.css" rel="stylesheet" />
+ </head>
+ <body>
+  <div id="content">
+   <div class="menuWrapper bg1" id="menuWrapper">
+    <ul id="menu" class="menu">
+     <li style="background-position:0 0;" class="bg1">
+      <a href="http://marix.pl/index.php?option=com_content&view=article&id=2&Itemid=3&lang=pl" id="bg1">
+       Polski
+      </a>
+      <ul style="background-position:-250 0;" class="sub1">
+      </ul>
+     </li>
+     <li style="background-position:-250px 0px;" class="bg1">
+      <a href="http://marix.pl/index.php?option=com_content&view=article&id=9&Itemid=9&lang=pl" id="bg2">
+       English
+      </a>
+      <ul style="background-position:-500px 0;" class="sub2">
+      </ul>
+     </li>
+     <li style="background-position:-500px 0px;" class="bg1">
+      <a href="http://marix.pl/index.php?option=com_content&view=article&id=10&Itemid=10&lang=pl" id="bg3">
+       Deutsch
+      </a>
+      <ul style="background-position:-750px 0;" class="sub3">
+      </ul>
+     </li>
+     <li style="background-position:-750px 0px;" class="last bg1">
+      <a href="http://marix.pl/index.php?option=com_content&view=article&id=11&Itemid=11&lang=pl" id="bg4">
+       Россию
+      </a>
+      <ul style="background-position:-1000px 0;" class="sub4">
+      </ul>
+     </li>
+    </ul>
+   </div>
+  </div>
+  <!-- The JavaScript -->
+  <script src="http://marix.home.pl/web/templates/marix_startowa/jquery-1.5.min.js" type="text/javascript">
+  </script>
+  <script src="http://marix.home.pl/web/templates/marix_startowa/jquery.bgpos.js" type="text/javascript">
+  </script>
+  <script type="text/javascript">
+   $(function() {
+                /* position of the &lt;li&gt; that is currently shown */
+                var current = 0;
+                
+                $('#bg1,#bg2,#bg3,#bg4').mouseover(function(e){
+                    
+                    var $this = $(this);
+                    /* if we hover the current one, then don't do anything */
+                    if($this.parent().index() == current)
+                        return;
+
+                    /* item is bg1 or bg2 or bg3, depending where we are hovering */
+                    var item = e.target.id;
+
+                    /*
+                    this is the sub menu overlay. Let's hide the current one
+                    if we hover the first &lt;li&gt; or if we come from the last one,
+                    then the overlay should move left -&gt; right,
+                    otherwise right-&gt;left
+                     */
+                    if(item == 'bg1' || ((current &gt; 1 &amp;&amp; current &lt; 4) &amp;&amp; item != 'bg4'))
+                        $('#menu .sub'+parseInt(current+1)).stop().animate({backgroundPosition:"(-500px 0)"},300,function(){
+                            $(this).find('li').hide();
+                        });
+                    else
+                        $('#menu .sub'+parseInt(current+1)).stop().animate({backgroundPosition:"(500px 0)"},300,function(){
+                            $(this).find('li').hide();
+                        });
+
+                    if(item == 'bg1' || ((current &gt; 1 &amp;&amp; current &lt; 4) &amp;&amp; item != 'bg4')){
+                        /* if we hover the first &lt;li&gt; or if we come from the last one, then the images should move left -&gt; right */
+                        $('#menu &gt; li').animate({backgroundPosition:"(-1000px 0)"},0).removeClass('bg1 bg2 bg3 bg4').addClass(item);
+                        move(1,item);
+                    }
+                    else {
+                        /* if we hover the first &lt;li&gt; or if we come from the last one, then the images should move right -&gt; left */
+                        $('#menu &gt; li').animate({backgroundPosition:"(1000px 0)"},0).removeClass('bg1 bg2 bg3 bg4').addClass(item);
+                        move(0,item);
+                    }
+                    
+                    /*THE FOLLOWING LOGIC, FROM THE ORIGINAL SCRIPT IS NO LONGER NEEDED*/
+
+                    /*
+                    We want that if we go from the first one to the last one (without hovering the middle one),
+                    or from the last one to the first one, the middle menu's overlay should also slide, either
+                    from left to right or right to left.
+                     */
+/*
+                    if(current == 2 &amp;&amp; item == 'bg1'){
+                        $('#menu .sub'+parseInt(current)).stop().animate({backgroundPosition:"(-266px 0)"},300);
+                    }
+                    if(current == 0 &amp;&amp; item == 'bg3'){
+                        $('#menu .sub'+parseInt(current+2)).stop().animate({backgroundPosition:"(266px 0)"},300);
+                    }
+*/
+
+					
+                    /* change the current element */
+                    current = $this.parent().index();
+					
+                    /* let's make the overlay of the current one appear */
+                   
+                    $('#menu .sub'+parseInt(current+1)).stop().animate({backgroundPosition:"(0 0)"},300,function(){
+                        $(this).find('li').fadeIn();
+                    });
+                });
+                /*
+                dir:1 - move left-&gt;right
+                dir:0 - move right-&gt;left
+                 */
+                function move(dir,item){
+                    if(dir){
+                        $('#bg1').parent().stop().animate({backgroundPosition:"(0 0)"},200);
+                        $('#bg2').parent().stop().animate({backgroundPosition:"(-250px 0)"},300);
+                        $('#bg3').parent().stop().animate({backgroundPosition:"(-500px 0)"},400);
+                        $('#bg4').parent().stop().animate({backgroundPosition:"(-750px 0)"},500,function(){
+                            $('#menuWrapper').removeClass('bg1 bg2 bg3 bg4').addClass(item);
+                        });
+                    }
+                    else{
+                        $('#bg1').parent().stop().animate({backgroundPosition:"(0 0)"},500,function(){
+                            $('#menuWrapper').removeClass('bg4 bg3 bg2 bg1').addClass(item);
+                        });
+                        $('#bg2').parent().stop().animate({backgroundPosition:"(-250px 0)"},400);
+                        $('#bg3').parent().stop().animate({backgroundPosition:"(-500px 0)"},300);
+                        $('#bg4').parent().stop().animate({backgroundPosition:"(-750px 0)"},200);
+                    }
+                }
+            });
+  </script>
+  <!-- Piwik -->
+  <script type="text/javascript">
+   var pkBaseURL = (("https:" == document.location.protocol) ? "https://www.futurysta.nazwa.pl/futurysta/piwik2/" : "http://www.futurysta.nazwa.pl/futurysta/piwik2/");
+document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+  </script>
+  <script type="text/javascript" src="http://www.futurysta.nazwa.pl/futurysta/piwik2/piwik.js">
+  </script>
+  <script type="text/javascript">
+   try {
+var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 10);
+piwikTracker.trackPageView();
+piwikTracker.enableLinkTracking();
+} catch( err ) {}
+  </script>
+  <noscript>
+   &lt;p&gt;&lt;img src="http://www.futurysta.nazwa.pl/futurysta/piwik2/piwik.php?idsite=10" style="border:0" alt="" /&gt;&lt;/p&gt;
+  </noscript>
+  <!-- End Piwik Tracking Code -->
+ </body>
+</html>

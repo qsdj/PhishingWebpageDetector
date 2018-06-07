@@ -1,0 +1,257 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta content="Content-Type" http-equiv="Content-Type" />
+  <title>
+   How It Works
+  </title>
+  <meta content="HOW IT WORKS" name="keywords" />
+  <meta content="HOW IT WORKS" name="description" />
+  <link type="text/css" rel="stylesheet" href="http://www.yourcube.com/css/font_css.css" />
+  <link type="text/css" rel="stylesheet" href="http://www.yourcube.com/css/style.css" />
+  <script src="http://www.yourcube.com/validation.js" type="text/javascript">
+  </script>
+  <script type="text/javascript">
+   function forcedownload(filename)
+{
+	//alert("");
+	
+	window.location='http://www.yourcube.com//download.php?dw_images='+filename;
+	return false;
+}
+  </script>
+ </head>
+ <body>
+  <div class="site">
+   <div class="layout">
+    <div class="header">
+     <div class="title">
+      DRIVE-THRU CONVENIENCE
+     </div>
+     <div class="logo">
+      <a href="http://www.yourcube.com/home">
+       <img alt="" src="http://www.yourcube.com/images/logo.png" />
+      </a>
+     </div>
+     <div class="hed-right-sec">
+      <div class="social">
+       Follow Us
+       <br />
+       <ul>
+        <li>
+         <a target="_blank" href="http://www.facebook.com/YourCubeOKC">
+          <img alt="" src="http://www.yourcube.com/images/fb_icon.png" />
+         </a>
+        </li>
+        <li>
+         <a target="_blank" href="http://instagram.com/yourcubeokc">
+          <img alt="" src="http://www.yourcube.com/images/ista_icon.png" />
+         </a>
+        </li>
+        <li>
+         <a target="_blank" href="http://twitter.com/YourCubeOKC">
+          <img alt="" src="http://www.yourcube.com/images/tweet_icon.png" />
+         </a>
+        </li>
+       </ul>
+      </div>
+      <div class="hed-top">
+       <form onsubmit="javascript:return valid_search();" enctype="multipart/form-data" id="search_frm" name="search_frm" method="post" action="http://www.yourcube.com/search">
+        <div id="search_keyword1" class="searchbox">
+         <input type="text" class="input1" value="" id="search_keyword" name="search_keyword" />
+         <input type="submit" onclick="javascript:return valid_search();" class="search" value="SEARCH" id="search_submit" name="search_submit" />
+        </div>
+       </form>
+       <script type="text/javascript">
+        function valid_search()
+            {
+                var val = true;
+            
+                if(document.getElementById("search_keyword").value == "" )
+                {
+                    //alert("Please enter eny keyword");
+                    document.getElementById("search_keyword1").style.border = "1px solid red";
+                    //document.getElementById("search_keyword").style.border = "1px solid red";
+                    document.getElementById("search_keyword").focus();
+                    val = false;
+                }
+                else
+                {
+                    
+                    document.getElementById("search_keyword1").style.border = "1px solid #b9b2ae";
+                    
+                }
+                
+                return val;
+                
+            }
+       </script>
+      </div>
+     </div>
+     <div class="nav">
+      <ul>
+       <li>
+        <a href="http://www.yourcube.com/home">
+         HOME
+        </a>
+       </li>
+       <li>
+        <a href="http://www.yourcube.com/about">
+         ABOUT US
+        </a>
+       </li>
+       <li>
+        <a class="active" href="http://www.yourcube.com/how-itworks">
+         HOW IT WORKS
+        </a>
+       </li>
+       <li>
+        <a href="http://www.yourcube.com/order">
+         ORDER
+        </a>
+       </li>
+       <li>
+        <a href="http://www.yourcube.com/contact">
+         CONTACT
+        </a>
+       </li>
+      </ul>
+     </div>
+    </div>
+    <div class="middle">
+     <div class="choose_items">
+      <div class="number">
+       <p>
+        1
+       </p>
+      </div>
+      <div class="content">
+       <h2 class="green">
+        CHOOSE YOUR ITEMS
+       </h2>
+       <div class="download">
+        <a onclick="return forcedownload('http://www.yourcube.com/static_page_image/1962279079cub-036fbmenu8.5x1102.pdf')" href="javascript:void();" class="btn">
+         Download our menu
+        </a>
+       </div>
+       <p>
+        Select the items you want from our downloadable menu.
+       </p>
+      </div>
+      <div class="imgpart">
+       <img alt="" src="http://www.yourcube.com/inc/resizeimage.php?image=http://www.yourcube.com/static_page_image/237971293step4illustration.png&width=255&height=191" />
+      </div>
+     </div>
+     <!--
+<div class="purchase_online">
+     	<div class="number"><p>2</p></div>
+          <div class="content">
+          <h2 class="green">PURCHASE ONLINE</h2>
+          <p>Coming Soon!</p>
+            </div>
+          <div class="imgpart"><img src="http://www.yourcube.com/inc/resizeimage.php?image=http://www.yourcube.com/static_page_image/1311473625step2illustration2.png&width=229&height=190"  alt=""  /></div>
+     </div>
+-->
+     <div class="pickup_dirve">
+      <div class="number">
+       <p>
+        2
+       </p>
+      </div>
+      <div class="content">
+       <h2 class="green">
+        PICK UP AT DRIVE-THRU
+       </h2>
+       <p>
+        <span style="line-height: 1.6em;">
+         Drive up. Get your goodies. Drive home. Enjoy goodies.
+        </span>
+       </p>
+       <p>
+       </p>
+       <p>
+        For more information click
+        <a target="_blank" href="http://www.oklahoman.com/article/5372598?access=3bfe2d0fdec9c36c3f225d0d8dd80af9">
+         here
+        </a>
+        !
+       </p>
+      </div>
+      <div class="imgpart">
+       <img alt="" src="http://www.yourcube.com/inc/resizeimage.php?image=http://www.yourcube.com/static_page_image/1501348817step3illustration2.png&width=288&height=128" />
+      </div>
+      <div class="address">
+       <span>
+        THE CUBE
+       </span>
+       <br />
+       1415 W. Main St.
+       <br />
+       Norman, OK 73069
+       <br />
+       844.OKC.CUBE
+       <a>
+        Map it
+       </a>
+      </div>
+     </div>
+    </div>
+    <style>
+     .ErrorMsg_red{color:red; font-family:cabinbold; font-size:12px;}
+.ErrorMsg_pass{color:red; font-family:cabinbold; font-size:13px; padding:0 5px 15px; text-align:center}
+.Success_Msg{ color:green;font-family:cabinbold; font-size:14px;padding:0 0 15px 44px; text-align:center }
+    </style>
+    <div class="footer">
+     <div class="footer_nav">
+      <ul>
+       <li>
+        <a href="http://www.yourcube.com/about">
+         About Us
+        </a>
+       </li>
+       <li>
+        <a href="http://www.yourcube.com/how-itworks">
+         How It Works
+        </a>
+       </li>
+       <li>
+        <a href="http://www.yourcube.com/order">
+         Order
+        </a>
+       </li>
+       <li>
+        <a href="http://www.yourcube.com/contact">
+         Contact
+        </a>
+       </li>
+       <li>
+        <a href="http://www.yourcube.com/job">
+         Jobs
+        </a>
+       </li>
+       <li>
+        <a href="http://www.yourcube.com/terms-of-service">
+         Terms of Service
+        </a>
+       </li>
+       <li>
+        <a href="http://www.yourcube.com/privacy-policy">
+         Privacy Policy
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="copyright">
+      © 2014  THE CUBE
+      <span>
+       SITE BY  
+       <a target="_blank" href="http://pinkjacketstudio.com/">
+        PINK JACKET STUDIO
+       </a>
+      </span>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>

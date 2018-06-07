@@ -1,0 +1,482 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta content="Content-Type" http-equiv="Content-Type" />
+  <link type="text/css" href="/Public/css/index.css" rel="stylesheet" />
+  <link type="text/css" href="/Public/css/bottom.css" rel="stylesheet" />
+  <link type="text/css" href="/Public/css/head.css" rel="stylesheet" />
+  <script src="/Public/js/js.js" type="text/javascript">
+  </script>
+  <script src="/Public/js/alertify.min.js" type="text/javascript">
+  </script>
+  <link href="/Public/alertify.core.css" type="text/css" rel="stylesheet" />
+  <link href="/Public/alertify.default.css" type="text/css" rel="stylesheet" />
+  <script src="/Public/js/jquery-1.8.3.min.js">
+  </script>
+  <script src="/Public/js/jquery.luara.0.0.1.min.js">
+  </script>
+  <!--Luara图片切换骨架end-->
+  <script type="text/javascript">
+   function AddFavorite(g,j){try{window.external.addFavorite(g,j)}catch(e){try{window.sidebar.addPanel(j,g,"")}catch(k){alert("您的浏览器不支持点击收藏，请按快捷键Ctrl + d添加到收藏夹")}}}
+  </script>
+  <script type="text/javascript">
+   $(function(){
+	 var x = navigator;
+	 var w=window.innerWidth
+	 || document.documentElement.clientWidth
+	 || document.body.clientWidth;
+	 var h=window.innerHeight
+	 || document.documentElement.clientHeight
+	 || document.body.clientHeight;
+	// var h = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+	// var w=window.screen.availWidth;
+	 var h=w/6;
+	 $(".example").luara({width:w,height:h,interval:5500,selected:"seleted",deriction:"left"});
+	
+	 $('#numbersub').bind('click',function(){
+		$('#queryform').submit();
+	});
+
+ })
+  </script>
+  <link type="image/x-icon" href="/Uploads/index/icon.gif" rel="shortcut icon" />
+  <title>
+   首页 -澳友速递
+  </title>
+  <meta content="澳友速递 " name="description" />
+  <meta content="澳友速递 " name="keywords" />
+ </head>
+ <body>
+  <div class="top_box">
+   <div class="f13 top">
+    <p class="fr">
+     <a href="/index.php/Index/login">
+      登录
+     </a>
+     |
+     <a href="/index.php/index/register.do">
+      注册
+     </a>
+     |
+     <a href="/index.php/page/agent.do">
+      网点查询
+     </a>
+     |
+     <a href="javascript:AddFavorite(location.href, document.title);">
+      点击收藏
+     </a>
+    </p>
+   </div>
+  </div>
+  <div class="logo_box">
+   <a style="display:block;height:100%;" target="_blank" href="/index.php/index">
+    <img width="260" height="115" src="/Uploads/index/logo.gif" />
+   </a>
+  </div>
+  <hr />
+  <div class="daohang">
+   <ul>
+    <li class="cl">
+     <a href="/index.php/Index/index">
+      首页
+     </a>
+    </li>
+    <li>
+     <a style="display:block;height:100%;" href="/index.php/page/product">
+      产品与服务
+     </a>
+    </li>
+    <li>
+     <a style="display:block;height:100%;" href="/index.php/index/take">
+      预约取件
+     </a>
+    </li>
+    <li>
+     <a style="display:block;height:100%;" href="/index.php/page/about">
+      关于我们
+     </a>
+    </li>
+    <li>
+     <a style="display:block;height:100%;" href="/index.php/index/account">
+      会员中心
+     </a>
+    </li>
+    <li>
+     <a style="display:block;height:100%;" href="/index.php/index/upload">
+      上传证件
+     </a>
+    </li>
+   </ul>
+  </div>
+  <hr />
+  <link type="text/css" href="/Public/css/luara.left.css" rel="stylesheet" />
+  <script type="text/javascript">
+   function setTab03Syn ( i )
+	{
+		selectTab03Syn(i);
+	}
+	
+	function selectTab03Syn ( i )
+	{
+		switch(i){
+			case 1:
+			document.getElementById("TabTab03Con1").style.display="block";
+			document.getElementById("TabTab03Con2").style.display="none";
+			document.getElementById("TabTab03Con3").style.display="none";
+			document.getElementById("font1").style.color="#ffffff";
+			document.getElementById("font2").style.color="#7b869c";
+			document.getElementById("font3").style.color="#7b869c";
+			document.getElementById("font1").style.height="33px";
+			document.getElementById("font2").style.height="27px";
+			document.getElementById("font3").style.height="27px";
+			document.getElementById("font1").style.backgroundImage="url(/Public/img/01.png)";
+			document.getElementById("font2").style.backgroundImage="url()";
+			document.getElementById("font3").style.backgroundImage="url()";
+			break;
+			case 2:
+			document.getElementById("TabTab03Con1").style.display="none";
+			document.getElementById("TabTab03Con2").style.display="block";
+			document.getElementById("TabTab03Con3").style.display="none";
+			document.getElementById("font1").style.color="#7b869c";
+			document.getElementById("font2").style.color="#ffffff";
+			document.getElementById("font3").style.color="#7b869c";
+			document.getElementById("font1").style.height="27px";
+			document.getElementById("font2").style.height="33px";
+			document.getElementById("font3").style.height="27px";
+			document.getElementById("font2").style.backgroundImage="url(/Public/img/01.png)";
+			document.getElementById("font1").style.backgroundImage="url()";
+			document.getElementById("font3").style.backgroundImage="url()";
+			break;
+			case 3:
+			document.getElementById("TabTab03Con1").style.display="none";
+			document.getElementById("TabTab03Con2").style.display="none";
+			document.getElementById("TabTab03Con3").style.display="block";
+			document.getElementById("font1").style.color="#7b869c";
+			document.getElementById("font2").style.color="#7b869c";
+			document.getElementById("font3").style.color="#ffffff";
+			document.getElementById("font1").style.height="27px";
+			document.getElementById("font2").style.height="27px";
+			document.getElementById("font3").style.height="33px";
+			document.getElementById("font3").style.backgroundImage="url(/Public/img/01.png)";
+			document.getElementById("font2").style.backgroundImage="url()";
+			document.getElementById("font1").style.backgroundImage="url()";
+			break;
+		}
+	}
+  </script>
+  <div class="banner">
+   <div class="example luara-left" style="width: 975px; height: 162.5px;">
+    <ul style="width: 2925px; height: 162.5px;">
+     <li style="width: 975px; height: 162.5px;">
+      <a style="position:relative;display:block;width:100%;height:100%;" target="_blank" href="http://auyex.com.au/">
+       <img style="position:relative;display:block;width:100%;height:100%;" src="/Uploads/20150409/552670045aeaa.jpg" />
+      </a>
+     </li>
+     <li style="width: 975px; height: 162.5px;">
+      <a style="position:relative;display:block;width:100%;height:100%;" target="_blank" href="http://auyex.com.au/">
+       <img style="position:relative;display:block;width:100%;height:100%;" src="/Uploads/20150409/552670045b44a.jpg" />
+      </a>
+     </li>
+     <li style="width: 975px; height: 162.5px;">
+      <a style="position:relative;display:block;width:100%;height:100%;" target="_blank" href="http://auyex.com.au/">
+       <img style="position:relative;display:block;width:100%;height:100%;" src="/Uploads/20150409/552670045baa2.jpg" />
+      </a>
+     </li>
+    </ul>
+    <ol>
+     <li class="seleted">
+     </li>
+     <li>
+     </li>
+     <li>
+     </li>
+    </ol>
+   </div>
+  </div>
+  <div class="home_main">
+   <form id="queryform" action="/index.php/Index/query" method="post">
+    <div class="tracking">
+     <div class="track">
+      <div class="t1">
+       <img width="238" height="30" src="/Public/img/index/index_02.gif" />
+      </div>
+      <div class="m10">
+       <textarea placeholder="您可以查询最多10个运单号请按Eenter键分隔运单号" class="bor" rows="" cols="" name="number" id="textarea">
+       </textarea>
+      </div>
+      <div class="query">
+       <a id="numbersub" href="javascript:;">
+        <img width="80" height="30" src="/Public/img/index/index_03.gif" />
+       </a>
+      </div>
+     </div>
+     <br />
+     <div class="server">
+      <img width="238" height="193" src="/Uploads/index/servicelogo.jpg" />
+     </div>
+    </div>
+   </form>
+   <div class="news">
+    <div class="about">
+     <hr />
+     <br />
+     <span class="span_us">
+      关于我们
+      <span class="m1">
+       <a href="/index.php/page/about.do">
+        <img width="46" height="16" src="/Public/img/index/index_16.gif" />
+       </a>
+      </span>
+     </span>
+     <br />
+     <br />
+     <hr />
+     <br />
+     <p>
+          澳友速递是一家 中国联通澳洲 澳洲联通亚太 澳洲联通世界的纽带 总部位于澳大利亚商业中心悉尼的快递物流公司。 为华人提供往来澳洲物流服务(小件快递,大宗...
+     </p>
+     <br />
+    </div>
+    <div class="new">
+     <div class="tab">
+      <div class="xixi1" id="bg">
+       <div onmouseover="setTab03Syn(1);document.getElementById('bg').className='xixi1'" class="tab1" id="font1">
+        新闻中心
+       </div>
+       <div onmouseover="setTab03Syn(2);document.getElementById('bg').className='xixi2'" class="tab2" id="font2">
+        行业动态
+       </div>
+       <div onmouseover="setTab03Syn(3);document.getElementById('bg').className='xixi3'" class="tab3" id="font3">
+        服务与帮助
+       </div>
+      </div>
+      <div id="TabTab03Con1">
+       <ul>
+        <li>
+         <a title="澳友速递带你了解澳洲消费者群体" target="_blank" href="/index.php/index/news/id/68.do">
+          • 澳友速递带你了解澳洲消费者群体
+         </a>
+        </li>
+        <li>
+         <a title="海关30年征税6.2万亿元 今年关税将超1.2万亿" target="_blank" href="/index.php/index/news/id/65.do">
+          • 海关30年征税6.2万亿元 今年关税将超1.2万亿
+         </a>
+        </li>
+        <li>
+         <a title="海关总署公告2010年第43号（关于调整进出境个人邮递物品管理措施有关事宜）" target="_blank" href="/index.php/index/news/id/51.do">
+          • 海关总署公告2010年第43号（关于调整进出境个
+         </a>
+        </li>
+        <li>
+         <a title="邮寄物进口税额起征点下调冲击奶粉海外代购" target="_blank" href="/index.php/index/news/id/48.do">
+          • 邮寄物进口税额起征点下调冲击奶粉海外代购
+         </a>
+        </li>
+        <li>
+         <a title="中国海关最新清关政策" target="_blank" href="/index.php/index/news/id/45.do">
+          • 中国海关最新清关政策
+         </a>
+        </li>
+        <li style="text-align:right">
+         <a href="/index.php/index/newslist/cid/3.do">
+          <img width="46" height="16" src="/Public/img/index/index_16.gif" />
+         </a>
+        </li>
+       </ul>
+      </div>
+      <div style="display:none" id="TabTab03Con2">
+       <ul>
+        <li>
+         <a title="海关最新通知" target="_blank" href="/index.php/index/news/id/69.do">
+          • 海关最新通知
+         </a>
+        </li>
+        <li>
+         <a title="提高清关速度通知" target="_blank" href="/index.php/index/news/id/66.do">
+          • 提高清关速度通知
+         </a>
+        </li>
+        <li>
+         <a title="请及时上传收件人身份证信息" target="_blank" href="/index.php/index/news/id/52.do">
+          • 请及时上传收件人身份证信息
+         </a>
+        </li>
+        <li>
+         <a title="入境旅客行李物品和个人邮递物品进口税税则归类表" target="_blank" href="/index.php/index/news/id/49.do">
+          • 入境旅客行李物品和个人邮递物品进口税税则
+         </a>
+        </li>
+        <li>
+         <a title="海关总署解读进出境个人邮递物品管理措施" target="_blank" href="/index.php/index/news/id/46.do">
+          • 海关总署解读进出境个人邮递物品管理措施
+         </a>
+        </li>
+        <li style="text-align:right">
+         <a href="/index.php/index/newslist/cid/4.do">
+          <img width="46" height="16" src="/Public/img/index/index_16.gif" />
+         </a>
+        </li>
+       </ul>
+      </div>
+      <div style="display:none" id="TabTab03Con3">
+       <ul>
+        <li>
+         <a title="身份证上传 紧急通知 " target="_blank" href="/index.php/index/news/id/70.do">
+          • 身份证上传 紧急通知
+         </a>
+        </li>
+        <li>
+         <a title="澳友速递常见问题" target="_blank" href="/index.php/index/news/id/67.do">
+          • 澳友速递常见问题
+         </a>
+        </li>
+        <li>
+         <a title="热烈庆祝澳友速递成立！" target="_blank" href="/index.php/index/news/id/53.do">
+          • 热烈庆祝澳友速递成立！
+         </a>
+        </li>
+        <li>
+         <a title="澳友速递提供EMS及其空运物流服务" target="_blank" href="/index.php/index/news/id/50.do">
+          • 澳友速递提供EMS及其空运物流服务
+         </a>
+        </li>
+        <li>
+         <a title="澳友速递货物超期或丢失赔偿政策" target="_blank" href="/index.php/index/news/id/47.do">
+          • 澳友速递货物超期或丢失赔偿政策
+         </a>
+        </li>
+        <li style="text-align:right">
+         <a href="/index.php/index/newslist/cid/5.do">
+          <img width="46" height="16" src="/Public/img/index/index_16.gif" />
+         </a>
+        </li>
+       </ul>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="service_center">
+    <div class="zchy">
+     <a href="/index.php/Index/register">
+      <img width="220" height="58" src="/Public/img/index/index_06.gif" />
+     </a>
+    </div>
+    <div class="zjsc">
+     <a href="/index.php/Index/upload">
+      <img width="220" height="58" src="/Public/img/index/index_05.gif" />
+     </a>
+    </div>
+    <div class="about_us">
+     <img width="220" height="30" src="/Public/img/index/index_07.gif" />
+    </div>
+    <p>
+     <span class="sp_us">
+      &gt;
+     </span>
+     服务电话：
+    </p>
+    <p>
+     <span class="sp_us">
+      &gt;
+     </span>
+     澳洲:+61 1300725599
+    </p>
+    <p>
+     <span class="sp_us">
+      &gt;
+     </span>
+     中国:+86 18126833678
+    </p>
+    <p>
+     <span class="sp_us">
+      &gt;
+     </span>
+     客服邮箱：
+    </p>
+    <p>
+     <span class="sp_us">
+      &gt;
+     </span>
+     service@auyex.com.au
+    </p>
+    <p>
+     <span class="sp_us">
+      &gt;
+     </span>
+     客服QQ：1919546488
+    </p>
+    <p class="p_ser">
+     <a href="http://wpa.qq.com/msgrd?v=3&uin=1919546488&site=qq&menu=yes">
+      <img width="130" height="34" src="/Public/img/index/index_17.gif" />
+     </a>
+    </p>
+    <p class="p_time">
+     周一至周六 09:00 - 18:00
+    </p>
+   </div>
+  </div>
+  <div class="partner">
+   <ul>
+    <li>
+     <a target="_blank" href="http://auspost.com.au">
+      <img width="120px" height="44px" src="/Uploads/20150410/5527cad41116e.jpg" />
+     </a>
+    </li>
+    <li>
+     <a target="_blank" href="http://www.cn.dhl.com/zh.html">
+      <img width="120px" height="44px" src="/Uploads/20150410/5527ca5b03d84.jpg" />
+     </a>
+    </li>
+    <li>
+     <a target="_blank" href="http://www.sf-express.com">
+      <img width="120px" height="44px" src="/Uploads/20150410/5527ca6762b0d.jpg" />
+     </a>
+    </li>
+    <li>
+     <a target="_blank" href="http://www.ems.cn">
+      <img width="120px" height="44px" src="/Uploads/20150410/5527cb4d48571.jpg" />
+     </a>
+    </li>
+    <li>
+     <a target="_blank" href="https://www.tntexpress.com.au/">
+      <img width="120px" height="44px" src="/Uploads/20150410/5527c9aad7b9a.jpg" />
+     </a>
+    </li>
+    <li>
+     <a target="_blank" href="http://www.fedex.com/">
+      <img width="120px" height="44px" src="/Uploads/20150410/5527c99de11fe.jpg" />
+     </a>
+    </li>
+   </ul>
+  </div>
+  <div class="bottom">
+   <div class="foot">
+    <ul>
+     <li>
+      <a style="display:block;height:100%;" href="/index.php/index/query">
+       货物跟踪
+      </a>
+     </li>
+     <li>
+      <a style="display:block;height:100%;" href="/index.php/page/job">
+       人才招聘
+      </a>
+     </li>
+     <li>
+      <a style="display:block;height:100%;" href="/index.php/page/contact">
+       联系我们
+      </a>
+     </li>
+     <li>
+      <a href="javascript:AddFavorite(location.href, document.title);">
+       收藏本站
+      </a>
+     </li>
+    </ul>
+   </div>
+   <div class="span_copyright">
+    © 版权所有 Copyright © 2015 AuyExpress澳友速递 All Right Reserved
+   </div>
+  </div>
+ </body>
+</html>

@@ -1,0 +1,276 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" class="">
+ <head>
+  <title>
+   SINPRAFARMA SP :: Sobre o SINPRAFARMA
+  </title>
+  <meta content="Content-Type" http-equiv="Content-Type" />
+  <link href="logo.jpg" rel="shortcut icon" />
+  <link rel="stylesheet" href="css/ui-lightness/jquery-ui-1.10.3.custom.css" type="text/css" />
+  <link href="style.css?ch=20160105225814" type="text/css" rel="stylesheet" />
+  <script src="js/jquery.js" type="text/javascript">
+  </script>
+  <script src="js/jquery-ui-1.10.3.custom.js" type="text/javascript">
+  </script>
+  <script src="js/jquery.form.js" type="text/javascript">
+  </script>
+  <script src="js/jquery.mask.js?ch=20160105225814" type="text/javascript">
+  </script>
+  <script src="js/js.js?ch=20160105225814" type="text/javascript">
+  </script>
+  <!-- Add mousewheel plugin (this is optional) -->
+  <script src="/fancybox/lib/jquery.mousewheel-3.0.6.pack.js" type="text/javascript">
+  </script>
+  <!-- Add fancyBox -->
+  <link media="screen" type="text/css" href="/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" />
+  <script src="/fancybox/source/jquery.fancybox.pack.js?v=2.1.5" type="text/javascript">
+  </script>
+  <!-- Optionally add helpers - button, thumbnail and/or media -->
+  <link media="screen" type="text/css" href="/fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" rel="stylesheet" />
+  <script src="/fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5" type="text/javascript">
+  </script>
+  <script src="/fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6" type="text/javascript">
+  </script>
+  <link media="screen" type="text/css" href="/fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" rel="stylesheet" />
+  <script src="/fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7" type="text/javascript">
+  </script>
+  <style type="text/css">
+   .fancybox-margin{margin-right:16px;}
+  </style>
+ </head>
+ <body>
+  <div id="conteudo" style="height: 235px;">
+   <div id="header">
+    <!--LOGOTIPO-->
+    <div id="logo">
+     <img src="animate/aminate/logo/01.png" style="z-index: 10; display: inline;" />
+     <img src="animate/aminate/logo/02.png" style="z-index: 10; display: inline;" />
+     <img src="animate/aminate/logo/03.png" style="z-index: 10; display: inline;" />
+     <img src="animate/aminate/logo/04.png" style="z-index: 10; display: inline;" />
+     <img src="animate/aminate/logo/05.png" style="z-index: 10; display: inline;" />
+     <img src="animate/aminate/logo/06.png" style="z-index: 10; display: inline;" />
+     <img src="animate/aminate/logo/07.png" style="z-index: 10;" />
+    </div>
+    <script type="text/javascript">
+     var an = 0;
+		var animelogo = "";		
+		var settimeee = setInterval(function(){
+		animelogo = setInterval(function(){
+				$('#logo &gt; img').css('z-index','10');
+				$('#logo &gt; img:eq('+an+')').css('z-index','20');
+				$('#logo &gt; img:eq('+an+')').fadeIn('slow');
+				if(an &lt; 7){
+					an++
+				}else{
+					an = 0;
+					clearInterval(animelogo);
+				}
+			},50);
+		},3000);
+    </script>
+    <!-- ÁREA RESTRITA -->
+    <div style="width:470px;" id="area_restrita">
+     <form class="formlogin" method="post" action="login.php" id="dados">
+      <input type="text" style="width:145px; height:15px;" placeholder="Usuário" name="usuario" />
+      <input type="password" style="width:120px; height:15px;" value="" placeholder="Senha" name="senha" />
+      <input type="submit" style="display:none" value="Logar" />
+      <a target="_self" class="bt_log" href="javascript:return false;">
+       Logar
+      </a>
+     </form>
+     <div style="margin-left:10px; margin-top:-5px;" class="cadastro">
+      ou cadastre-se
+      <a target="_self" href="cadastre_se.php">
+       AQUI
+      </a>
+      <br />
+      <a target="_self" href="rescue.php">
+       Esqueceu sua senha?
+      </a>
+     </div>
+    </div>
+    <!-- LINKS -->
+    <ul id="nav">
+     <li>
+      <a target="_self" href="./">
+       HOME
+      </a>
+     </li>
+     <li>
+      <a target="_self" href="pg.php?pg=23">
+       SOBRE O SINPRAFARMA
+      </a>
+     </li>
+     <li>
+      <a target="_self" href="pg.php?pg=62">
+       SERVIÇOS
+      </a>
+     </li>
+     <li>
+      <a style="color:#555; text-shadow:none;" target="_self" href="./">
+       PARA VOCÊ TRABALHADOR
+       <img src="images/vip.png" />
+      </a>
+      <ul>
+       <li>
+        <a target="_self" href="pg.php?pg=138">
+         Convênios
+        </a>
+       </li>
+       <li>
+        <a target="_self" href="colonia_v2.php">
+         Colônia de Férias
+        </a>
+       </li>
+       <li>
+        <a target="_self" href="empregos.php">
+         Empregos
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li>
+      <!--pg=4-->
+      <a style="color:#555; text-shadow:none;" target="_self" href="pg.php?pg=29">
+       PARA SEU ESTABELECIMENTO
+      </a>
+      <img src="images/vip.png" />
+      <ul>
+       <li>
+        <a target="_self" href="pg.php?pg=29">
+         Homologações
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li>
+      <a target="_self" href="noticias.php">
+       NOTÍCIAS
+      </a>
+     </li>
+     <li>
+      <a target="_self" href="localizacao.php">
+       LOCALIZAÇÃO
+      </a>
+     </li>
+     <li>
+      <a target="_self" href="contato.php">
+       CONTATO
+      </a>
+     </li>
+     <li style="float:right; margin-top:2px; margin-right:0;">
+      <a target="_blank" href="https://www.facebook.com/sinprafarmasp">
+       <img src="images/bt_facebook.png" />
+      </a>
+      <a target="_blank" href="#">
+       <img src="images/bt_twitter.png" />
+      </a>
+     </li>
+    </ul>
+   </div>
+   <script type="text/javascript">
+    $('.bt_log').click(function(){
+		if($('[name=usuario]').val()==''){
+			alert('Você deve fornecer um usuário!');
+			return false;
+		}else if($('[name=senha]').val()==''){
+			alert('Você deve fornecer uma senha!');
+			return false;
+		}else{
+			$('.formlogin').submit();
+		}
+	})
+	
+	$('.formlogin').submit(function(){
+		if($('[name=usuario]').val()==''){
+			alert('Você deve fornecer um usuário!');
+			return false;
+		}else if($('[name=senha]').val()==''){
+			alert('Você deve fornecer uma senha!');
+			return false;
+		}
+	})
+   </script>
+   <div class="int_titulo">
+    Sobre o SINPRAFARMA
+   </div>
+   <div class="int_content">
+    <!-- Save for Web Slices (quem_somos_slice.psd) -->
+    <table border="0" cellspacing="0" cellpadding="0" style="margin-top: 15px; height: 1239px;" id="Table_01">
+     <tbody>
+      <tr>
+       <td colspan="4">
+        <img width="1097" height="245" alt="" src="../uploads/images/quem_somos_slice_01.png" />
+       </td>
+      </tr>
+      <tr>
+       <td colspan="4">
+        <img width="1097" height="84" alt="" src="../uploads/images/quem_somos_slice_02.png" />
+       </td>
+      </tr>
+      <tr>
+       <td colspan="2">
+        <a href="pg.php?pg=65">
+         <img width="354" height="496" alt="sinprafarma_convenios" src="../uploads/images/quem_somos_slice_03.png" />
+        </a>
+       </td>
+       <td>
+        <a href="colonia_v2.php">
+         <img width="381" height="496" alt="sinprafarma_colonia_de_ferias" src="../uploads/images/quem_somos_slice_04.png" />
+        </a>
+       </td>
+       <td>
+        <a href="empregos.php">
+         <img width="362" height="496" alt="sinprafarma_empregos" src="../uploads/images/quem_somos_slice_05.png" />
+        </a>
+       </td>
+      </tr>
+      <tr>
+       <td colspan="4">
+        <img width="1097" height="98" alt="sinprafarma_para_sua_empresa" src="../uploads/images/quem_somos_slice_06.png" />
+       </td>
+      </tr>
+      <tr>
+       <td rowspan="2">
+        <a href="pg.php?pg=29">
+         <img width="343" height="331" alt="sinprafarma_homologacoes" src="../uploads/images/quem_somos_slice_07.png" />
+        </a>
+       </td>
+       <td colspan="3">
+        <img width="754" height="273" alt="sinprafarma_texto_homologacoes" src="../uploads/images/quem_somos_slice_08.png" />
+       </td>
+      </tr>
+      <tr>
+       <td colspan="3">
+        <a href="pg.php?pg=29">
+         <img width="754" height="58" alt="sinprafarma_mais_homologacoes" src="../uploads/images/quem_somos_slice_09.png" />
+        </a>
+       </td>
+      </tr>
+      <tr>
+       <td>
+        <img width="343" height="1" alt="" src="images/spacer.gif" />
+       </td>
+       <td>
+        <img width="11" height="1" alt="" src="images/spacer.gif" />
+       </td>
+       <td>
+        <img width="381" height="1" alt="" src="images/spacer.gif" />
+       </td>
+       <td>
+        <img width="362" height="1" alt="" src="images/spacer.gif" />
+       </td>
+      </tr>
+     </tbody>
+    </table>
+    <!-- End Save for Web Slices -->
+   </div>
+  </div>
+  <!--Rodape-->
+  <script type="text/javascript">
+   $(document).ready(function() {
+		$(".fancybox").fancybox();
+	});
+  </script>
+ </body>
+</html>

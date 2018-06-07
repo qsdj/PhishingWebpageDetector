@@ -1,0 +1,759 @@
+<html lang="tr-TR" xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta content="tr" http-equiv="Content-Language" />
+  <meta content="Content-Type" http-equiv="Content-Type" />
+  <title>
+   Özge Ulusoy Boyu Kaç cm-Özge Ulusoyun Boyu Kilosu
+  </title>
+  <meta content="Özge Ulusoy Boyu Kaç cm-Özge Ulusoyun Boyu Kilosu" name="keywords" />
+  <meta content="Özge Ulusoy Boyu Kaç cm-Özge Ulusoyun Boyu Kilosu" name="description" />
+  <meta content="Copyright (c) Ünlülerin Boyları Boyu Kilosu Kaç Boy Uzunluğu Cm-Ünlü Kişiler Boy Kilo " name="copyright" />
+  <meta content="index, follow" name="robots" />
+  <meta content="1 days" name="revisit-after" />
+  <base href="http://www.unlulerinboylari.com" />
+  <script src="https://pagead2.googlesyndication.com/pub-config/ca-pub-2283279837787898.js">
+  </script>
+  <script src="jquery.js" type="text/javascript">
+  </script>
+  <link href="css/reset.css" type="text/css" rel="stylesheet" />
+  <link href="css/style.css" type="text/css" rel="stylesheet" />
+  <script type="text/javascript">
+   function yorumyap(){
+		
+		var ad = $("#ad").val();
+		var email = $("#email").val();
+		var yorum = $("#yorum").val();
+		var gkodu = $("#gkodu").val();
+		var gkodu2 = $("#gkodu2").val();
+		var id = 1040;
+		
+		if(ad == ""){
+			$("#yorumsonuc").html("&lt;font color=red&gt;&lt;b&gt;Lütfen adınızı yazınız&lt;/b&gt;&lt;/font&gt;");
+		}
+		else if(email == ""){
+			$("#yorumsonuc").html("&lt;font color=red&gt;&lt;b&gt;Lütfen email adresinizi yazınız&lt;/b&gt;&lt;/font&gt;");
+		}
+		else if(yorum == ""){
+			$("#yorumsonuc").html("&lt;font color=red&gt;&lt;b&gt;Lütfen yorumunuzu yazınız&lt;/b&gt;&lt;/font&gt;");
+		}
+		else if(gkodu != gkodu2){
+			$("#yorumsonuc").html("&lt;font color=red&gt;&lt;b&gt;Güvenlik kodu hatalıdır&lt;/b&gt;&lt;/font&gt;");
+		}
+		else {
+			$("#yorumsonuc").html("&lt;img src='img/loading.gif' /&gt; &lt;font color=green&gt;&lt;b&gt;Bekleyin...&lt;/b&gt;&lt;/font&gt;");
+		
+			jQuery.ajax({
+				type: 'POST',
+				url: 'yorumyap.php',
+				data: 'id='+id+'&amp;ad='+ad+'&amp;email='+email+'&amp;yorum='+yorum,
+				success:function(sonuc){
+					if(sonuc == "ok"){
+						$("#yorumyap").html("&lt;p align='center'&gt;&lt;font color=green&gt;&lt;b&gt;Yorumunuz başarıyla gönderilmiştir, yöneticilerimiz tarafından incelendikten sonra yayınlanacaktır.&lt;br&gt;&lt;br&gt;Teşekkür ederiz...&lt;/b&gt;&lt;/font&gt;&lt;/p&gt;");
+					}
+					else {
+						$("#yorumsonuc").html("");
+						alert("Yorum gönderilemedi, lütfen tekrar deneyin");
+					}
+				}
+				
+			})
+		}
+		
+	}
+  </script>
+ </head>
+ <body>
+  <center>
+   <div class="main">
+    <div class="header">
+     <div class="logo">
+      <a href="index.php">
+       <img alt="ünlülerin boyları" src="img/logo.jpg" />
+      </a>
+     </div>
+     <a href="index.php">
+      <div class="reklam">
+       <script type="text/javascript">
+        &lt;!--
+google_ad_client = "ca-pub-2283279837787898";
+/* bilaharebüyükk */
+google_ad_slot = "9807145968";
+google_ad_width = 970;
+google_ad_height = 90;
+//--&gt;
+       </script>
+       <script src="http://pagead2.googlesyndication.com/pagead/show_ads.js" type="text/javascript">
+       </script>
+       <ins style="display:inline-table;border:none;height:90px;margin:0;padding:0;position:relative;visibility:visible;width:970px;background-color:transparent" id="aswift_0_expand">
+        <ins style="display:block;border:none;height:90px;margin:0;padding:0;position:relative;visibility:visible;width:970px;background-color:transparent" id="aswift_0_anchor">
+         <iframe width="970" height="90" frameborder="0" style="left:0;position:absolute;top:0;" name="aswift_0" id="aswift_0" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&&s.handlers,h=H&&H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&&d&&(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" allowfullscreen="true" scrolling="no" allowtransparency="true" hspace="0" vspace="0" marginheight="0" marginwidth="0">
+         </iframe>
+        </ins>
+       </ins>
+      </div>
+     </a>
+    </div>
+    <a href="index.php">
+    </a>
+    <div class="menu">
+     <a href="index.php">
+      <div class="sol">
+      </div>
+     </a>
+     <div class="orta">
+      <a href="index.php">
+      </a>
+      <ul>
+       <a href="index.php">
+       </a>
+       <li>
+        <a href="index.php">
+        </a>
+        <a title="Anasayfa" href="index.php">
+         Anasayfa
+        </a>
+       </li>
+       <li class="ayir">
+       </li>
+       <li>
+        <a title="Boy Uzatan Egzersizler" href="sayfa/boy-uzatan-egzersizler.html">
+         Boy Uzatan Egzersizler
+        </a>
+       </li>
+       <li class="ayir">
+       </li>
+       <li>
+        <a title="Boy Uzaması İçin Ne Yapmalı" href="sayfa/boy-uzamasi-icin-ne-yapmali.html">
+         Boy Uzaması İçin Ne Yapmalı
+        </a>
+       </li>
+       <li class="ayir">
+       </li>
+       <li>
+        <a title="RSS" href="rss.php">
+         RSS
+        </a>
+       </li>
+       <li class="ayir">
+       </li>
+       <li>
+        <a title="Bize Ulaşın" href="mailto:gokhanpeker94@gmail.com">
+         Bize ulaşın
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="sag">
+     </div>
+    </div>
+    <div class="govde">
+     <div class="sol">
+      <div class="ust">
+      </div>
+      <div class="baslik">
+       Kategorilerimiz
+      </div>
+      <div class="icerik">
+       <p>
+        <b>
+         Harfe Göre
+        </b>
+       </p>
+       <p class="harfler">
+        <a title="A harfi ile başlayan ünlüler" href="kategori/a/1.html">
+         A
+        </a>
+        |
+        <a title="B harfi ile başlayan ünlüler" href="kategori/b/1.html">
+         B
+        </a>
+        |
+        <a title="C harfi ile başlayan ünlüler" href="kategori/c/1.html">
+         C
+        </a>
+        |
+        <a title="D harfi ile başlayan ünlüler" href="kategori/d/1.html">
+         D
+        </a>
+        |
+        <a title="E harfi ile başlayan ünlüler" href="kategori/e/1.html">
+         E
+        </a>
+        |
+        <a title="F harfi ile başlayan ünlüler" href="kategori/f/1.html">
+         F
+        </a>
+        |
+        <a title="G harfi ile başlayan ünlüler" href="kategori/g/1.html">
+         G
+        </a>
+        |
+        <a title="H harfi ile başlayan ünlüler" href="kategori/h/1.html">
+         H
+        </a>
+        |
+        <a title="İ harfi ile başlayan ünlüler" href="kategori/i/1.html">
+         İ
+        </a>
+        |
+        <a title="J harfi ile başlayan ünlüler" href="kategori/j/1.html">
+         J
+        </a>
+        |
+        <a title="K harfi ile başlayan ünlüler" href="kategori/k/1.html">
+         K
+        </a>
+        |
+        <a title="L harfi ile başlayan ünlüler" href="kategori/l/1.html">
+         L
+        </a>
+        |
+        <a title="M harfi ile başlayan ünlüler" href="kategori/m/1.html">
+         M
+        </a>
+        |
+        <a title="N harfi ile başlayan ünlüler" href="kategori/n/1.html">
+         N
+        </a>
+        |
+        <a title="O harfi ile başlayan ünlüler" href="kategori/o/1.html">
+         O
+        </a>
+        |
+        <a title="P harfi ile başlayan ünlüler" href="kategori/p/1.html">
+         P
+        </a>
+        |
+        <a title="R harfi ile başlayan ünlüler" href="kategori/r/1.html">
+         R
+        </a>
+        |
+        <a title="S harfi ile başlayan ünlüler" href="kategori/s/1.html">
+         S
+        </a>
+        |
+        <a title="T harfi ile başlayan ünlüler" href="kategori/t/1.html">
+         T
+        </a>
+        |
+        <a title="U harfi ile başlayan ünlüler" href="kategori/u/1.html">
+         U
+        </a>
+        |
+        <a title="V harfi ile başlayan ünlüler" href="kategori/v/1.html">
+         V
+        </a>
+        |
+        <a title="Y harfi ile başlayan ünlüler" href="kategori/y/1.html">
+         Y
+        </a>
+        |
+        <a title="Z harfi ile başlayan ünlüler" href="kategori/z/1.html">
+         Z
+        </a>
+       </p>
+       <p>
+       </p>
+       <p>
+        <b>
+         Cinsiyete Göre
+        </b>
+       </p>
+       <p>
+        <a title="Bay Ünlüler" href="kategori/bay/1.html">
+         Bay
+        </a>
+       </p>
+       <p>
+        <a title="Bayan Ünlüler" href="kategori/bayan/1.html">
+         Bayan
+        </a>
+       </p>
+       <p>
+       </p>
+       <p>
+        <b>
+         Boya Göre
+        </b>
+       </p>
+       <p>
+        <a title="Çok Kısa" href="kategori/boy-cok-kisa/1.html">
+         Çok Kısa
+        </a>
+       </p>
+       <p>
+        <a title="Kısa" href="kategori/boy-kisa/1.html">
+         Kısa
+        </a>
+       </p>
+       <p>
+        <a title="Orta" href="kategori/boy-orta/1.html">
+         Orta
+        </a>
+       </p>
+       <p>
+        <a title="Uzun" href="kategori/boy-uzun/1.html">
+         Uzun
+        </a>
+       </p>
+       <p>
+        <a title="Çok Uzun" href="kategori/boy-cok-uzun/1.html">
+         Çok Uzun
+        </a>
+       </p>
+       <p>
+       </p>
+       <p>
+        <b>
+         Kiloya Göre
+        </b>
+       </p>
+       <p>
+        <a title="Çok Zayıf" href="kategori/kilo-cok-zayif/1.html">
+         Çok Zayıf
+        </a>
+       </p>
+       <p>
+        <a title="Zayıf" href="kategori/kilo-zayif/1.html">
+         Zayıf
+        </a>
+       </p>
+       <p>
+        <a title="Orta" href="kategori/kilo-orta/1.html">
+         Orta
+        </a>
+       </p>
+       <p>
+        <a title="Kilolu" href="kategori/kilo-sisman/1.html">
+         Kilolu
+        </a>
+       </p>
+       <p>
+        <a title="Çok Kilolu" href="kategori/kilo-cok-sisman/1.html">
+         Çok Kilolu
+        </a>
+       </p>
+       <p>
+       </p>
+       <p>
+        <b>
+         Kategoriler
+        </b>
+       </p>
+       <p>
+        <a title="Cemiyet Hayatı " href="kategori/cemiyet-hayati-/1.html">
+         Cemiyet Hayatı
+        </a>
+       </p>
+       <p>
+        <a title="Haberciler" href="kategori/haberciler/1.html">
+         Haberciler
+        </a>
+       </p>
+       <p>
+        <a title="Mankenler" href="kategori/mankenler/1.html">
+         Mankenler
+        </a>
+       </p>
+       <p>
+        <a title="Müzisyenler" href="kategori/muzisyenler/1.html">
+         Müzisyenler
+        </a>
+       </p>
+       <p>
+        <a title="Politikacılar" href="kategori/politikacilar/1.html">
+         Politikacılar
+        </a>
+       </p>
+       <p>
+        <a title="Sanatçılar (Sinema Hariç)" href="kategori/sanatcilar--sinema-haric-/1.html">
+         Sanatçılar (Sinema Hariç)
+        </a>
+       </p>
+       <p>
+        <a title="Sinema Dizi Oyuncuları" href="kategori/sinema-dizi-oyunculari/1.html">
+         Sinema Dizi Oyuncuları
+        </a>
+       </p>
+       <p>
+        <a title="Sporcular" href="kategori/sporcular/1.html">
+         Sporcular
+        </a>
+       </p>
+       <p>
+        <a title="Sunucular" href="kategori/sunucular/1.html">
+         Sunucular
+        </a>
+       </p>
+       <p>
+        <a title="Yapımcı ve Yönetmenler" href="kategori/yapimci-ve-yonetmenler/1.html">
+         Yapımcı ve Yönetmenler
+        </a>
+       </p>
+       <p>
+        <a title="İş Adamı" href="kategori/is-adami/1.html">
+         İş Adamı
+        </a>
+       </p>
+       <p>
+        <a title="Şarkıcılar" href="kategori/yerli-ve-yabanci-sarkicilarin-boylari-kilosu/1.html">
+         Şarkıcılar
+        </a>
+       </p>
+      </div>
+      <div class="alt">
+      </div>
+      <div class="reklam">
+       <img src="img/reklam-sol.jpg" />
+       <script type="text/javascript">
+        &lt;!--
+google_ad_client = "ca-pub-2283279837787898";
+/* neredeyan */
+google_ad_slot = "9650002362";
+google_ad_width = 160;
+google_ad_height = 600;
+//--&gt;
+       </script>
+       <script src="http://pagead2.googlesyndication.com/pagead/show_ads.js" type="text/javascript">
+       </script>
+       <ins style="display:inline-table;border:none;height:600px;margin:0;padding:0;position:relative;visibility:visible;width:160px;background-color:transparent" id="aswift_1_expand">
+        <ins style="display:block;border:none;height:600px;margin:0;padding:0;position:relative;visibility:visible;width:160px;background-color:transparent" id="aswift_1_anchor">
+         <iframe width="160" height="600" frameborder="0" style="left:0;position:absolute;top:0;" name="aswift_1" id="aswift_1" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&&s.handlers,h=H&&H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&&d&&(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" allowfullscreen="true" scrolling="no" allowtransparency="true" hspace="0" vspace="0" marginheight="0" marginwidth="0">
+         </iframe>
+        </ins>
+       </ins>
+      </div>
+     </div>
+     <div class="alan">
+      <div class="icerik">
+       <div class="baslik">
+        Özge Ulusoy Boyu Kaç cm-Özge Ulusoyun Boyu Kilosu
+       </div>
+       <div class="sanatci">
+        <div class="resim">
+         <a href="resimler/ozge-ulusoy-boyu-kac-cm-ozge-ulusoyun-boyu-kilosu-1040.jpg">
+          <img height="100" alt="Özge Ulusoy Boyu Kaç cm-Özge Ulusoyun Boyu Kilosu" src="resimler/ozge-ulusoy-boyu-kac-cm-ozge-ulusoyun-boyu-kilosu-1040.jpg" />
+         </a>
+        </div>
+        <div class="aciklama">
+         <p>
+          <span>
+           İsim
+          </span>
+          : Özge Ulusoy Boyu Kaç cm-Özge Ulusoyun Boyu Kilosu
+         </p>
+         <p>
+          <span>
+           Boy
+          </span>
+          : 178 cm
+         </p>
+         <p>
+          <span>
+           Kilo
+          </span>
+          : 55 kg
+         </p>
+        </div>
+       </div>
+       <div class="aciklama2">
+        <script type="text/javascript">
+         &lt;!--
+google_ad_client = "ca-pub-2283279837787898";
+/* Bilaharekare */
+google_ad_slot = "3900213164";
+google_ad_width = 336;
+google_ad_height = 280;
+//--&gt;
+        </script>
+        <script src="http://pagead2.googlesyndication.com/pagead/show_ads.js" type="text/javascript">
+        </script>
+        <ins style="display:inline-table;border:none;height:280px;margin:0;padding:0;position:relative;visibility:visible;width:336px;background-color:transparent" id="aswift_2_expand">
+         <ins style="display:block;border:none;height:280px;margin:0;padding:0;position:relative;visibility:visible;width:336px;background-color:transparent" id="aswift_2_anchor">
+          <iframe width="336" height="280" frameborder="0" style="left:0;position:absolute;top:0;" name="aswift_2" id="aswift_2" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&&s.handlers,h=H&&H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&&d&&(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" allowfullscreen="true" scrolling="no" allowtransparency="true" hspace="0" vspace="0" marginheight="0" marginwidth="0">
+          </iframe>
+         </ins>
+        </ins>
+        Özge Ulusoy Elite Model Look ve Mis Turkey ünvanlarının her ikisini de taşıyan istisnai yetenekteki mankenlerimizden birisidir. Sadece mankenlik değil, bale, sinema ve dizi oyunculuğu gibi alanlarda da yeteneğini ispatlamış tescilli güzelimiz. 
+
+Ankara 1982 doğumlu olan Özge Ulusoyun boyu 178 cm ve kilosu 55. Hem boy hem de kilo olarak mankenlere göre oldukça ideal ölçülere sahip Özge Ulusoy, Survivor Turkiye yarışmasına katıldı. Ayrıca Yok Böyle Dans yarışmasında finale kalarak birinci oldu. Son zamanlarda da "Bugün Ne Giysem" yarışma programının sunuculuğunu yapıyor. Kendisine başarılar diliyoruz.
+       </div>
+       <script type="text/javascript">
+        &lt;!--
+google_ad_client = "pub-9561339019645956";
+/* 250x250, oluşturulma 05.06.2011 */
+google_ad_slot = "5669952931";
+google_ad_width = 250;
+google_ad_height = 250;
+//--&gt;
+       </script>
+       <script src="http://pagead2.googlesyndication.com/pagead/show_ads.js" type="text/javascript">
+       </script>
+       <ins style="display:inline-table;border:none;height:250px;margin:0;padding:0;position:relative;visibility:visible;width:250px;background-color:transparent" id="aswift_3_expand">
+        <ins style="display:block;border:none;height:250px;margin:0;padding:0;position:relative;visibility:visible;width:250px;background-color:transparent" id="aswift_3_anchor">
+         <iframe width="250" height="250" frameborder="0" style="left:0;position:absolute;top:0;" name="aswift_3" id="aswift_3" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&&s.handlers,h=H&&H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&&d&&(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" allowfullscreen="true" scrolling="no" allowtransparency="true" hspace="0" vspace="0" marginheight="0" marginwidth="0">
+         </iframe>
+        </ins>
+       </ins>
+       <div class="cizgi">
+       </div>
+       <div class="baslik">
+        <u>
+         Yorum Yapın
+        </u>
+       </div>
+       <div id="yorumyap" class="yorumyap">
+        <p>
+         <span>
+          Adınız
+         </span>
+         :
+         <input type="text" size="40" class="inputs" id="ad" name="ad" />
+        </p>
+        <p>
+         <span>
+          Email Adresiniz
+         </span>
+         :
+         <input type="text" size="30" class="inputs" id="email" name="email" />
+         * Yayınlanmayacaktır.
+        </p>
+        <p>
+         <span>
+          Yorumunuz
+         </span>
+         :
+         <textarea class="inputs2" id="yorum" name="yorum">
+         </textarea>
+        </p>
+        <p>
+         <span>
+          Güvenlik Kodu
+         </span>
+         :
+         <input type="text" size="10" class="inputs" id="gkodu" name="gkodu" />
+         <b>
+          30947
+         </b>
+         yandaki kutucuğa yazınız.
+        </p>
+        <p>
+         <span>
+         </span>
+         <input type="hidden" value="30947" id="gkodu2" name="gkodu2" />
+         <input type="submit" onclick="yorumyap()" class="butons" value=" Yorumu Gönder " />
+         <label id="yorumsonuc">
+         </label>
+        </p>
+       </div>
+       <div class="cizgi">
+       </div>
+       <div class="baslik">
+        <u>
+         Yorumlar
+        </u>
+       </div>
+       <div class="yorumlar">
+        <p>
+         <b>
+          kemal
+         </b>
+         ,
+         <b>
+          05 Nisan 2012 21:00
+         </b>
+         sularında demiş ki;
+         <br />
+         ben geliyom aşkım erkekler özgeye göz koymayın
+        </p>
+        <div class="cizgi2">
+        </div>
+        <p>
+         <b>
+          beren
+         </b>
+         ,
+         <b>
+          13 Ağustos 2013 10:50
+         </b>
+         sularında demiş ki;
+         <br />
+         bence bilgiler doğrudur.
+        </p>
+        <div class="cizgi2">
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="sag">
+      <div class="Sponsor reklamlar">
+      </div>
+      <div style="height:5px">
+      </div>
+      <div class="baslik">
+       Son Yorumlar
+      </div>
+      <div class="icerik">
+       <p>
+        <b>
+         maxy
+        </b>
+        tarafından
+        <a title="Cengiz Kurtoğlu Boy Kilo - Cengiz Kurtoğlu  Boyu Kilosu Kaç" href="boyukilosukac/cengiz-kurtoglu-boy-kilo---cengiz-kurtoglu--boyu-kilosu-kac.html">
+         Cengiz Kurtoğlu Boy Kilo - Cengiz Kurtoğlu  Boyu Kilosu Kaç
+        </a>
+        adlı ünlüye yapıldı.
+       </p>
+       <p>
+        <b>
+         Mehmet AkİF Alakurt
+        </b>
+        tarafından
+        <a title="Enes KANTER Boyu Kilosu Kaç Cm-Enes KANTER Boy Kilo Ne Kadar" href="boyukilosukac/enes-kanter-boyu-kilosu-kac-cm-enes-kanter-boy-kilo-ne-kadar.html">
+         Enes KANTER Boyu Kilosu Kaç Cm-Enes KANTER Boy Kilo Ne Kadar
+        </a>
+        adlı ünlüye yapıldı.
+       </p>
+       <p>
+        <b>
+         eylül
+        </b>
+        tarafından
+        <a title="Justin Bieber Boyu Kilosu Ne Kadar-Justin Bieber'in Boyu Kilosu Kaç cm" href="boyukilosukac/justin-bieber-boyu-kilosu-ne-kadar-justin-bieberin-boyu-kilosu-kac-cm.html">
+         Justin Bieber Boyu Kilosu Ne Kadar-Justin Bieber'in Boyu Kilosu Kaç cm
+        </a>
+        adlı ünlüye yapıldı.
+       </p>
+       <p>
+        <b>
+         tugce
+        </b>
+        tarafından
+        <a title="Elif Ece Uzun Boy Kilo - Elif Ece Uzun Boyu Kilosu Kaç" href="boyukilosukac/elif-ece-uzun-boy-kilo---elif-ece-uzun-boyu-kilosu-kac.html">
+         Elif Ece Uzun Boy Kilo - Elif Ece Uzun Boyu Kilosu Kaç
+        </a>
+        adlı ünlüye yapıldı.
+       </p>
+       <p>
+        <b>
+         ilayda
+        </b>
+        tarafından
+        <a title="Sarp Levendoğlu Boy Kilo - Sarp Levendoğlu Boyu Kilosu Kaç" href="boyukilosukac/sarp-levendoglu-boy-kilo---sarp-levendoglu-boyu-kilosu-kac.html">
+         Sarp Levendoğlu Boy Kilo - Sarp Levendoğlu Boyu Kilosu Kaç
+        </a>
+        adlı ünlüye yapıldı.
+       </p>
+       <p>
+        <b>
+         saeed
+        </b>
+        tarafından
+        <a title="Ayça Ayşin Turan Boyu Kilosu Kaç Cm-Ayça Ayşin Turan Boy Kilo Ne Kadar" href="boyukilosukac/ayca-aysin-turan-boyu-kilosu-kac-cm-ayca-aysin-turan-boy-kilo-ne-kadar.html">
+         Ayça Ayşin Turan Boyu Kilosu Kaç Cm-Ayça Ayşin Turan Boy Kilo Ne Kadar
+        </a>
+        adlı ünlüye yapıldı.
+       </p>
+       <p>
+        <b>
+         Tuğçe
+        </b>
+        tarafından
+        <a title="Tuğba Melis Türk Boyu Ne Kadar Kaç CM-Tuğba Melis Türk Boy ve Kilosu " href="boyukilosukac/tugba-melis-turk-boyu-ne-kadar-kac-cm-tugba-melis-turk-boy-ve-kilosu-.html">
+         Tuğba Melis Türk Boyu Ne Kadar Kaç CM-Tuğba Melis Türk Boy ve Kilosu
+        </a>
+        adlı ünlüye yapıldı.
+       </p>
+       <p>
+        <b>
+         zuhal uygunözlü
+        </b>
+        tarafından
+        <a title="Şenay Gürler Boy Kilo - Şenay Gürler Boyu Kilosu Kaç" href="boyukilosukac/senay-gurler-boy-kilo---senay-gurler-boyu-kilosu-kac.html">
+         Şenay Gürler Boy Kilo - Şenay Gürler Boyu Kilosu Kaç
+        </a>
+        adlı ünlüye yapıldı.
+       </p>
+       <p>
+        <b>
+         Alya
+        </b>
+        tarafından
+        <a title="Murat Dalkılıç Boy Kilo - Murat Dalkılıç Boyu Kilosu Kaç" href="boyukilosukac/murat-dalkilic-boy-kilo---murat-dalkilic-boyu-kilosu-kac.html">
+         Murat Dalkılıç Boy Kilo - Murat Dalkılıç Boyu Kilosu Kaç
+        </a>
+        adlı ünlüye yapıldı.
+       </p>
+       <p>
+        <b>
+         cınar
+        </b>
+        tarafından
+        <a title="Hadise   Boy Kilo - Hadise  Boyu Kilosu Kaç" href="boyukilosukac/hadise---boy-kilo---hadise--boyu-kilosu-kac.html">
+         Hadise   Boy Kilo - Hadise  Boyu Kilosu Kaç
+        </a>
+        adlı ünlüye yapıldı.
+       </p>
+       <p>
+        <b>
+         riri
+        </b>
+        tarafından
+        <a title="Rihanna  Boy Kilo - Rihanna  Boyu Kilosu Kaç" href="boyukilosukac/rihanna--boy-kilo---rihanna--boyu-kilosu-kac.html">
+         Rihanna  Boy Kilo - Rihanna  Boyu Kilosu Kaç
+        </a>
+        adlı ünlüye yapıldı.
+       </p>
+       <p>
+        <b>
+         meryem
+        </b>
+        tarafından
+        <a title="Bülent Ersoy Boyu Kilosu Ne Kadar-Bülent Ersoy Boyu Kilosu Kaç Cm" href="boyukilosukac/bulent-ersoy-boyu-kilosu-ne-kadar-bulent-ersoy-boyu-kilosu-kac-cm.html">
+         Bülent Ersoy Boyu Kilosu Ne Kadar-Bülent Ersoy Boyu Kilosu Kaç Cm
+        </a>
+        adlı ünlüye yapıldı.
+       </p>
+       <p>
+        <b>
+         seher
+        </b>
+        tarafından
+        <a title="Serenay Sarıkaya Boy Kilo - Serenay Sarıkaya Boyu Kilosu Kaç" href="boyukilosukac/serenay-sarikaya-boy-kilo---serenay-sarikaya-boyu-kilosu-kac.html">
+         Serenay Sarıkaya Boy Kilo - Serenay Sarıkaya Boyu Kilosu Kaç
+        </a>
+        adlı ünlüye yapıldı.
+       </p>
+       <p>
+        <b>
+         isimsiz
+        </b>
+        tarafından
+        <a title="Rihanna  Boy Kilo - Rihanna  Boyu Kilosu Kaç" href="boyukilosukac/rihanna--boy-kilo---rihanna--boyu-kilosu-kac.html">
+         Rihanna  Boy Kilo - Rihanna  Boyu Kilosu Kaç
+        </a>
+        adlı ünlüye yapıldı.
+       </p>
+       <p>
+        <b>
+         melisa paşa lucky ke
+        </b>
+        tarafından
+        <a title="Katy Perry Boyu Kilosu Kaç-Katy Perry Boy Kilo" href="boyukilosukac/katy-perry-boyu-kilosu-kac,-katy-perrynin-boy-kilo-olculeri,katy-perry-boyu-kac.html">
+         Katy Perry Boyu Kilosu Kaç-Katy Perry Boy Kilo
+        </a>
+        adlı ünlüye yapıldı.
+       </p>
+      </div>
+      <div class="alt">
+      </div>
+     </div>
+    </div>
+    <div style="clear:both">
+    </div>
+   </div>
+  </center>
+  <iframe id="google_osd_static_frame_1534698036492" name="google_osd_static_frame" style="display: none; width: 0px; height: 0px;">
+  </iframe>
+ </body>
+</html>

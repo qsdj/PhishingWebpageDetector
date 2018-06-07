@@ -1,0 +1,182 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta content="Content-Type" http-equiv="Content-Type" />
+  <meta content="OneClickTennis service: Find your perfect opponent, arrange matches, track your progress, and compete with other players." name="DESCRIPTION" />
+  <meta content="tennis; play; match; play tennis; tennis partners; tennis partner; tennis opponent; tennis match; ladder; competition" name="KEYWORDS" />
+  <meta content="EN-US" name="MS.LOCALE" />
+  <meta content="EN-US" name="LANG" />
+  <meta content="tennis matching service" name="CATEGORY" />
+  <meta content="en" http-equiv="Content-Language" />
+  <meta content="text/javascript" http-equiv="Content-Script-Type" />
+  <title>
+   OneClickTennis
+  </title>
+  <base href="http://www.oneclicktennis.com/index.php" />
+  <link href="stylesheets/fixedsize/style.css" media="screen" type="text/css" rel="stylesheet" />
+  <link href="stylesheets/fixedsize/print.css" media="print" type="text/css" rel="stylesheet" />
+  <link href="js/jquery/css/south-street/jquery-ui-1.8.1.custom.css" media="all" type="text/css" rel="stylesheet" />
+  <script src="js/jquery/jquery-1.4.2.min.js" type="text/javascript">
+  </script>
+  <script src="js/jquery/jquery-ui-1.8.1.custom.min.js" type="text/javascript">
+  </script>
+  <script src="js/date.min.js" type="text/javascript">
+  </script>
+  <script src="js/common.js" type="text/javascript">
+  </script>
+ </head>
+ <body>
+  <div id="left-shadow">
+   <div id="right-shadow">
+    <div>
+     <div class="no-print">
+      <a href="index.php">
+       <img alt="[OneClickTennis Logo]" src="stylesheets/fixedsize/header/header-logo.gif" style="border: 0; display: block; height: 98px;" />
+      </a>
+     </div>
+     <div id="main_menu_strip">
+      <ul style="float: left">
+       <li>
+        <a class="first" href="http://www.oneclicktennis.com/index.php">
+         Home
+        </a>
+       </li>
+       <li>
+        <a href="http://www.oneclicktennis.com/index.php?choice=player&tab=history">
+         Sneak Peek
+        </a>
+       </li>
+       <li>
+        <a href="http://www.oneclicktennis.com/index.php?choice=module&module=court_finder&action=court_list_dynamic">
+         Courts
+        </a>
+       </li>
+       <li>
+        <a href="http://www.oneclicktennis.com/blog">
+         Blog
+        </a>
+       </li>
+       <li>
+        <a id="howTo" href="#">
+         How To
+        </a>
+       </li>
+       <li>
+        <a href="http://www.oneclicktennis.com/index.php?inf=partners">
+         Partners
+        </a>
+       </li>
+       <li>
+        <a href="http://www.oneclicktennis.com/index.php?choice=tell_a_friend">
+         Tell A Friend
+        </a>
+       </li>
+      </ul>
+      <ul style="float: right;">
+       <li>
+        <a class="first" href="http://www.oneclicktennis.com/index.php?choice=login">
+         Sign In
+        </a>
+       </li>
+       <li>
+        <a href="http://www.oneclicktennis.com/index.php?choice=register">
+         Register
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div style="clear: both">
+     </div>
+     <div id="content">
+      <script type="text/javascript">
+       // set focus on user name/address field
+	window.onload = function () { document.getElementsByName('reg_email')[0].focus(); }
+      </script>
+      <table width="100%" cellspacing="0" cellpadding="0" class="main-txt">
+       <tbody>
+        <tr>
+         <td class="tab_header">
+          New Member Registration
+         </td>
+        </tr>
+        <tr>
+         <td class="tab_contents">
+          <form method="post" action="http://www.oneclicktennis.com/index.php?choice=register">
+           After you register and log in for the first time, you get 30 days to try out our service
+			absolutely free.
+           <br />
+           Enter your email address below and you will receive a message with a link 
+			to complete your registration.
+           <br />
+           <br />
+           <table align="center" class="main-txt">
+            <tbody>
+             <tr>
+              <td>
+               Your email address:
+              </td>
+              <td>
+               <input type="Text" name="reg_email" />
+              </td>
+             </tr>
+             <tr height="20">
+              <td colspan="2">
+              </td>
+             </tr>
+             <tr>
+              <td align="center" colspan="2">
+               <input type="Submit" value="Submit" name="submit" class="white-bt" />
+               <input type="Button" onclick="window.location = ''" value="Cancel" name="cancel" class="white-bt" />
+              </td>
+             </tr>
+            </tbody>
+           </table>
+          </form>
+         </td>
+        </tr>
+       </tbody>
+      </table>
+     </div>
+     <div id="footer_strip">
+      © 2004-2015
+      <a href="mailto:webmaster@oneclicktennis.com">
+       One Click Tennis
+      </a>
+      . All rights reserved.
+      <a href="http://www.oneclicktennis.com/index.php?inf=about_us">
+       About Us
+      </a>
+      |
+      <a href="http://www.oneclicktennis.com/index.php?inf=disclaimer">
+       Terms of Use
+      </a>
+      |
+      <a href="http://www.oneclicktennis.com/index.php?inf=privacy">
+       Privacy Policy
+      </a>
+      |
+      <a href="http://www.oneclicktennis.com/index.php?choice=report_problem">
+       Feedback
+      </a>
+     </div>
+    </div>
+   </div>
+  </div>
+  <script type="text/javascript">
+   $(function() {
+	window.name = 'main';
+	$('#loginUsername').focus(); // focus, if element present
+	$('#howTo').bind('click', function() {
+		window.open('php/help/how_to/how_to.php','myWin', 'resizable, scrollbars, width=800,height=600');
+		return false;
+	});
+});
+  </script>
+  <script type="text/javascript" src="http://www.google-analytics.com/urchin.js">
+  </script>
+  <script type="text/javascript">
+   _uacct = "UA-274069-2";
+		urchinTracker();
+  </script>
+ </body>
+</html>

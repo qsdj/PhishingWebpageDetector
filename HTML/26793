@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es-es" dir="ltr" slick-uniqueid="3" class="firefox firefox15 desktop">
+ <head>
+  <style type="text/css">
+   #dummy
+{
+}
+
+.lv_liveadmin
+{
+}
+.lv_backblack
+{
+	position: fixed;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	left: 0px;
+	display: block;
+	z-index: 10000;
+}
+.lv_mainframe
+{
+	background-image: url('http://www.cocosparty.cl/chat/themes/n2_blue/scr02.png');
+	background-repeat: no-repeat;
+	background-position: 0px -60px;
+	position: fixed;
+	display: block;
+	z-index: 10100;
+	lv_extra_quirks:lv_mainframe;
+}
+.lv_baseiframe
+{
+	border: 0px none;
+	position: absolute;
+	display: block;
+	z-index: 10200;
+	top: 58px;
+	right: 45px;
+	bottom: 40px;
+	left: 25px;
+}
+.lv_maskiframe
+{
+	background-image: url('http://www.cocosparty.cl/chat/themes/default/alpha_50.png');
+	background-repeat: repeat;
+	position: absolute;
+	display: block;
+	z-index: 10400;
+	top: 58px;
+	right: 46px;
+	bottom: 41px;
+	left: 26px;
+}
+.lv_topframe
+{
+	position: absolute;
+	top: 29px;
+	right: 47px;
+	left: 26px;
+	height: 28px;
+	border: 0px none;
+	cursor: move;
+}
+.lv_closebutton
+{
+	background-image: url('http://www.cocosparty.cl/chat/themes/n2_blue/scr02.png');
+	background-position: -82px -522px;
+	position: absolute;
+	width: 29px;
+	height: 28px;
+	top: 0px;
+	left: 485px;
+	cursor: pointer;
+}
+.lv_chatmcap
+{
+	position: absolute;
+	top: 0px;
+	right: 30px;
+	bottom: 0px;
+	left: 0px;
+	height: 28px;
+}
+div.lv_closebutton:hover
+{
+	background-position: -82px -552px;
+}
+.lv_chattitle
+{
+	position: absolute;
+	height: 28px;
+	top: 7px;
+	left: 0px;
+	padding-left: 5px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+	font-weight: bold;
+	color: #222222;
+	vertical-align: middle;
+	width: 90%;
+}
+.lv_iframe
+{
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	left: 0px;
+	border-style: none;
+}
+
+div.lv_invite
+{
+	position: fixed;
+	display: block;
+	z-index: 10000;
+	lv_extra_quirks:lv_invite;
+}
+div.lv_invite_img
+{
+	position: relative;
+	background-image: url('http://www.cocosparty.cl/chat/themes/default/invite.jpg');
+	width: 478px;
+	height: 194px;
+}
+div.lv_invite div.lv_yes
+{
+	position: absolute;
+	left: 398px;
+	top: 154px;
+	width: 70px;
+	height: 31px;
+	cursor: pointer;
+}
+div.lv_invite div.lv_no
+{
+	position: absolute;
+	left: 322px;
+	top: 154px;
+	width: 70px;
+	height: 31px;
+	cursor: pointer;
+}
+
+
+
+.lv_chattitle
+{
+	position: absolute;
+	height: 28px;
+	top: 7px;
+	left: 0px;
+	padding-left: 5px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+	font-weight: bold;
+	color: #FFFFFF;
+	vertical-align: middle;
+	width: 90%;
+}
+  </style>
+  <script src="http://www.cocosparty.cl/chat/client.php?key=L1137B06E6V277F8E4BMAAC4282" type="text/javascript" language="javascript">
+  </script>
+  <base href="http://cocosparty.cl/" />
+  <meta content="content-type" http-equiv="content-type" />
+  <meta content="Joomla! - Open Source Content Management" name="generator" />
+  <title>
+   Inicio - Coco´s Party
+  </title>
+  <link type="image/vnd.microsoft.icon" rel="shortcut icon" href="/templates/cocostemp/favicon.ico" />
+  <script type="text/javascript" src="/media/system/js/mootools-core.js">
+  </script>
+  <script type="text/javascript" src="/media/system/js/core.js">
+  </script>
+  <script type="text/javascript" src="/media/system/js/caption.js">
+  </script>
+  <script type="text/javascript" src="/media/system/js/mootools-more.js">
+  </script>
+  <script type="text/javascript">
+   window.addEvent('load', function() {
+				new JCaption('img.caption');
+			});
+  </script>
+  <link href="/templates/system/css/system.css" rel="stylesheet" />
+  <link href="/templates/system/css/general.css" rel="stylesheet" />
+  <!-- Created by Artisteer v4.1.0.59861 -->
+  <!--[if lt IE 9]><script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <link media="screen" href="/templates/cocostemp/css/template.css" rel="stylesheet" />
+  <!--[if lte IE 7]><link rel="stylesheet" href="/templates/cocostemp/css/template.ie7.css" media="screen"  /><![endif]-->
+  <link href="http://fonts.googleapis.com/css?family=Salsa%7CPT+Sans&subset=latin" type="text/css" rel="stylesheet" />
+  <link type="image/x-icon" href="/favicon.ico" rel="shortcut icon" />
+  <script>
+   if ('undefined' != typeof jQuery) document._artxJQueryBackup = jQuery;
+  </script>
+  <script src="/templates/cocostemp/jquery.js">
+  </script>
+  <script>
+   jQuery.noConflict();
+  </script>
+  <script src="/templates/cocostemp/script.js">
+  </script>
+  <script>
+   if (document._artxJQueryBackup) jQuery = document._artxJQueryBackup;
+  </script>
+ </head>
+ <body>
+  <div id="art-main">
+   <header class="art-header">
+    <div class="art-shapes">
+    </div>
+    <div data-left="0.73%" class="art-textblock art-textblock-1323025812">
+     <div class="art-textblock-1323025812-text-container">
+      <div class="art-textblock-1323025812-text">
+       <a class="art-rss-tag-icon" href="/index.php" style="line-height: 200px;">
+       </a>
+      </div>
+     </div>
+    </div>
+    <div data-left="99.2%" class="art-textblock art-object1134359109">
+     <form method="post" action="/index.php" name="Search" class="art-search">
+      <input type="text" name="searchword" value="" />
+      <input type="hidden" value="search" name="task" />
+      <input type="hidden" value="com_search" name="option" />
+      <input type="submit" class="art-search-button" name="search" value="" />
+     </form>
+    </div>
+   </header>
+   <nav class="art-nav desktop-nav">
+    <ul class="art-hmenu">
+     <li class="item-101 current active">
+      <a href="/" class=" active">
+       Inicio
+      </a>
+     </li>
+     <li class="item-122">
+      <a href="/nosotros.html">
+       Nosotros
+      </a>
+     </li>
+     <li class="item-136">
+      <a href="/contacto.html">
+       Contacto
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div class="art-sheet clearfix">
+    <!-- begin nostyle -->
+    <div class="art-nostyle">
+     <!-- begin nostyle content -->
+     <div class="custom">
+      <p style="text-align: center;">
+       <object width="998" height="349" type="application/x-shockwave-flash" data="/images/cocos.swf">
+        <param value="transparent" name="wmode">
+        </param>
+        <param value="/images/cocos.swf" name="movie">
+        </param>
+       </object>
+      </p>
+     </div>
+     <!-- end nostyle content -->
+    </div>
+    <!-- end nostyle -->
+    <div class="art-layout-wrapper">
+     <div class="art-content-layout">
+      <div class="art-content-layout-row">
+       <div class="art-layout-cell art-content">
+        <article class="art-post art-messages" style="display: none;">
+         <div class="art-postcontent clearfix">
+          <div id="system-message-container">
+          </div>
+         </div>
+        </article>
+        <div class="item-page">
+         <article class="art-post">
+          <div class="art-postcontent clearfix">
+           <div class="art-article">
+            <p>
+             <span style="color: #ffffff;">
+              ..
+             </span>
+            </p>
+           </div>
+          </div>
+         </article>
+        </div>
+       </div>
+       <div class="art-layout-cell art-sidebar1">
+        <div class="art-block clearfix">
+         <div class="art-blockheader">
+          <h3 class="t">
+           Chat
+          </h3>
+         </div>
+         <div class="art-blockcontent">
+          <div class="custom">
+           <span id="liveadmin">
+            <img onclick="Live_6e452207748557c0ef7024854c90ca68_Admin.StartChatPanel();" src="http://cocosparty.cl/images/offline.png" id="liveadmin_status_image_liveadmin" style="cursor: pointer;" />
+           </span>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+    <footer class="art-footer">
+     <div class="art-content-layout">
+      <div class="art-content-layout-row">
+       <div style="width: 50%" class="art-layout-cell">
+        <p style="text-align: left;">
+         Información de contacto
+        </p>
+        <p style="text-align: left;">
+         E-mail: contacto@cocosparty.cl
+        </p>
+        <p style="text-align: left;">
+         Telefono: 9 51361884 | 02 2 728 16 52
+        </p>
+        <p style="text-align: left;">
+         Santiago, Region Metropolitana
+        </p>
+       </div>
+       <div style="width: 50%" class="art-layout-cell">
+        <p style="text-align: right;">
+         <img width="134" height="147" class="" src="/templates/cocostemp/images/rss.png" alt="" />
+         <br />
+        </p>
+       </div>
+      </div>
+     </div>
+     <div class="art-content-layout">
+      <div class="art-content-layout-row">
+       <div style="width: 100%" class="art-layout-cell">
+        <p>
+         Copyright Cocos Party © 2014. All Rights Reserved.
+         <br />
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+   <p class="art-page-footer">
+    <span id="art-footnote-links">
+     Designed by
+     <a target="_blank" href="http://www.cloudtech.cl">
+      Cloudtech Chile
+     </a>
+     .
+    </span>
+   </p>
+  </div>
+ </body>
+</html>

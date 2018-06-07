@@ -1,0 +1,1209 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+ <head>
+  <meta charset="UTF-8" />
+  <meta content="devn" name="generator" />
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
+  <meta content="yes" name="apple-mobile-web-app-capable" />
+  <meta content="" name="description" />
+  <meta content="" name="keywords" />
+  <meta content="en-us" http-equiv="content-language" />
+  <meta content="DEVN CO" name="author" />
+  <meta content="contact@devn.co" name="contact" />
+  <meta content="Copyright (c)1997-2004 DEVN CO. All Rights Reserved." name="copyright" />
+  <link href="http://isfsecurities.com/xmlrpc.php" rel="pingback" />
+  <title>
+   Page not found | ISF Securities
+  </title>
+  <script src="http://code.jquery.com/jquery-1.10.2.js">
+  </script>
+  <script src="http://code.jquery.com/ui/1.11.0/jquery-ui.js">
+  </script>
+  <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto+Slab:400,300,100,700" />
+  <link sizes="16x16" type="image/png" href="http://isfsecurities.com/wp-content/uploads/2015/01/sf-favicon.png" rel="icon" />
+  <script type="text/javascript">
+   var $ = jQuery.noConflict();
+	function refreshCaptchaReserv(){
+		$.ajax({
+			url:'http://isfsecurities.com/wp-content/themes/hoxa/ajax-captcha.php',
+			dataType:'json',
+			data:{
+				refresh	: 'refresh',
+			},
+			success:function(o){
+				$(".num11").val(o[0]);
+				$(".num22").val(o[1]);
+			}
+		});
+	}
+	$(function(){
+		refreshCaptchaReserv();
+		$(".num11").prop('disabled', true);
+		$(".num22").prop('disabled', true);
+	
+	});
+	
+	$(document).ready(function(){
+		$(".contact_get_btn_reserv").click(function(){
+			var txtval = $(".captchavalue_reserv").val();
+			var num1 = parseInt($(".num11").val());
+			var num2 = parseInt($(".num22").val());
+			var newtxtval = txtval;
+			var sumboth = num1+num2;
+			
+			if(newtxtval != '')
+			{
+				var totalsum = parseInt(newtxtval);
+				if(totalsum != sumboth)
+				{
+					$(".error_msg_reserv").css("display","inline-block");
+					return false;
+				}
+				else{
+					$(".error_msg_reserv").css("display","none");
+				}
+			}
+		});
+	});
+	
+	function refreshCaptchaQuick(){
+		$.ajax({
+			url:'http://isfsecurities.com/wp-content/themes/hoxa/ajax-captcha.php',
+			dataType:'json',
+			data:{
+				refresh	: 'refresh',
+			},
+			success:function(o){
+				$(".num1").val(o[0]);
+				$(".num2").val(o[1]);
+			}
+		});
+	}
+	$(function(){
+		refreshCaptchaQuick();
+		$(".num1").prop('disabled', true);
+		$(".num2").prop('disabled', true);
+	
+	});
+	
+	$(document).ready(function(){
+		$(".contact_get_btn_quick").click(function(){
+			var txtval = $(".captchavalue_quick").val();
+			var num1 = parseInt($(".num1").val());
+			var num2 = parseInt($(".num2").val());
+			var newtxtval = txtval;
+			var sumboth = num1+num2;
+			
+			if(newtxtval != '')
+			{
+				var totalsum = parseInt(newtxtval);
+				if(totalsum != sumboth)
+				{
+					$(".error_msg").css("display","inline-block");
+					return false;
+				}
+				else{
+					$(".error_msg").css("display","none");
+				}
+			}
+		});
+	});
+
+		function refreshCaptchaContactus(){
+		$.ajax({
+			url:'http://isfsecurities.com/wp-content/themes/hoxa/ajax-captcha.php',
+			dataType:'json',
+			data:{
+				refresh	: 'refresh',
+			},
+			success:function(o){
+				$(".num1-cont").val(o[0]);
+				$(".num2-cont").val(o[1]);
+			}
+		});
+	}
+	$(function(){
+		refreshCaptchaContactus();
+		 $(".num1-cont").prop('disabled', true);
+		$(".num2-cont").prop('disabled', true);
+	
+	});
+	
+	$(document).ready(function(){
+		$(".contact_get_btn_contactus").click(function(){
+			var txtval = $(".captchavalue_cont").val();
+			var num1 = parseInt($(".num1-cont").val());
+			var num2 = parseInt($(".num2-cont").val());
+			var newtxtval = txtval;
+			var sumboth = num1+num2;
+			
+			if(newtxtval != '')
+			{
+				var totalsum = parseInt(newtxtval);
+				if(totalsum != sumboth)
+				{
+					$(".error_msg_contact_us").css("display","inline-block");
+					return false;
+				}
+				else{
+					$(".error_msg_contact_us").css("display","none");
+				}
+			}
+		});
+	});
+	
+	
+$(document).ready(function(){
+	$("#scroll1").click(function(e){
+		  $(".form_apply").show();
+		$('html, body').animate({
+		scrollTop: $("#form-career-id-new").offset().top
+		  }, 2000);
+		return false;
+	});	
+		
+	$("#scroll2").click(function(e){
+ 
+	  $(".form_apply").show();
+	$('html, body').animate({
+	scrollTop: $("#form-career-id-new").offset().top
+      }, 2000);
+	return false;
+	});
+	$("#scroll3").click(function(e){
+	  $(".form_apply").show();
+	$('html, body').animate({
+	scrollTop: $("#form-career-id-new").offset().top
+      }, 2000);
+	return false;
+	});
+		$('div.devn-spoiler.devn-spoiler-style-default.devn-spoiler-icon-plus a').click(function(event){
+		  var jobtitle = $(this).text();
+				$('#position_apply').val(jobtitle);		
+		});
+			
+		
+
+});
+    
+
+ 
+  function validationform()
+  {
+    var c_fn = document.quick_quote_form.fname.value;
+  
+		if(c_fn==null || c_fn=="")
+			{
+				$("#fnameerror").text("Field is Reqiured");
+				$("#fname").css("border", "1px solid red");
+				document.quick_quote_form.fname.focus();
+				 return false; 	
+			}
+			else if(!isNaN(c_fn)){
+					$("#fnameerror").text("Number not allowed");
+					$("#fname").css("border", "1px solid red");
+				   document.quick_quote_form.fname.focus();
+					return false; 	
+			}
+			else {
+				$("#fnameerror").text("");
+				$("#fname").css("border", "1px solid #A2B38D");
+			}
+	var c_ln = document.quick_quote_form.lname.value;
+  
+	    if(c_ln==null || c_ln=="")
+			{
+				$("#lnameerror").text("Field is Reqiured");
+				$("#lname").css("border", "1px solid red");
+				document.quick_quote_form.lname.focus();
+				 return false; 	
+			}
+			else if(!isNaN(c_ln)){
+					$("#lnameerror").text("Number not allowed'");
+					$("#lname").css("border", "1px solid red");
+				   document.quick_quote_form.lname.focus();
+					return false; 	
+			}
+			else {
+				$("#lnameerror").text("");
+				$("#lname").css("border", "1px solid #A2B38D");
+			}
+	var c_mail = document.quick_quote_form.uemail.value;		
+	
+        var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+
+    if (!filter.test(c_mail)) {
+   $("#emailerror").text("please provide valid email address");
+				$("#uemail").css("border", "1px solid red");
+				document.quick_quote_form.uemail.focus();
+				return false;
+	}
+
+	var p_ph = document.quick_quote_form.uphone.value;
+
+	var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+	
+		if(p_ph==null || p_ph=="")
+	{
+		$("#error7").text("Field is reqiured");
+		$("#uphone").css("border", "1px solid red");
+		document.quick_quote_form.uphone.focus();
+         return false; 	
+	}
+	else if(isNaN(p_ph)){
+			$("#error7").text("'Alphabets not allowed'");
+			$("#uphone").css("border", "1px solid red");
+		   document.quick_quote_form.uphone.focus();
+		   
+		   
+			return false; 	
+		}
+	else {
+		$("#error7").text("");
+		$("#uphone").css("border", "1px solid #A2B38D");
+		}	
+/*-------------------validate new---------------*/
+	var c_position = document.quick_quote_form.position_apply.value;	
+	
+		if(c_position==null || c_position=="" )		
+		{				
+		$("#poserror").text("Field is reqiured");	
+		$("#poserror").css("border", "1px solid red");
+		document.quick_quote_form.position_apply.focus();	
+		return false; 			
+		} 
+		var c_location = document.quick_quote_form.clocation.value;		
+		if(c_location==null || c_location=="" )			{	
+		$("#cloc").text("Field is reqiured");		
+		$("#cloc").css("border", "1px solid red");	
+		document.quick_quote_form.clocation.focus();	
+		return false; 	
+		}	
+	/*-----------------------new validate end-------------------*/
+  /*   var c_datepicker = document.quick_quote_form.datepicu.value;		
+	if(c_datepicker==null || c_datepicker=="" )
+			{
+				$("#date_error").text("Field is reqiured");
+				$("#datepicu").css("border", "1px solid red");
+				document.quick_quote_form.datepicu.focus();
+				return false; 	
+			}
+	
+		else 
+			{
+				$("#date_error").text("");
+				$("#datepicu").css("border", "1px solid #A2B38D");
+			} */		
+
+
+		 var c_upload = document.quick_quote_form.file.value;
+				
+			if(c_upload==null || c_upload=="" )
+			{
+				$("#filerror").text("Field is reqiured");
+				$("#file").css("border", "1px solid red");
+				document.quick_quote_form.file.focus();
+				return false; 	
+			}
+	
+		
+               if (c_upload != '') {
+                   var valid_extensions = /(.doc|.docx|.pdf)$/i;
+                   if (valid_extensions.test(c_upload)) {
+                       
+					  
+                   }
+                   else {
+                      $("#filerror").text("Invalid File");
+				$("#file").css("border", "1px solid red");
+				document.quick_quote_form.file.focus();
+				return false;
+
+                   }
+               }			    			   			   
+                
+ }
+  
+$(document).ready(function(){
+
+	  $("#experience").click(function(){
+	  $("#screenprintapp").css("display","block");
+	 });
+	 $("#fresher").click(function(){
+	  $("#screenprintapp").css("display","none");
+	 });
+	
+		$("#popup-knowledge_title").click(function(){
+		$(".knowledge-popup").show();
+		$("#fade").show();
+			 });
+		 
+		$("#popup-knowledge_icon").click(function(){
+		$(".knowledge-popup").show();
+		$("#fade").show();
+			 });
+				 
+		$("#close_popup-knowledge").click(function(){
+		$(".knowledge-popup").hide();
+		$("#fade").hide();
+		return false;
+			 });
+			 
+		$("#popup-account_title").click(function(){
+		$(".account-popup").show();
+		$("#fade-account").show();
+			 });
+		 
+			 
+		$("#popup-account_icon").click(function(){
+		$(".account-popup").show();
+		$("#fade-account").show();
+			 });
+		 
+			 
+		$("#close_popup-account").click(function(){
+		$(".account-popup").hide();
+		$("#fade-account").hide();
+		return false;
+			 });	 
+			 
+  });
+
+
+$(document).ready(function()
+{
+$("#location").change(function()
+{
+var id=$(this).val();
+var dataString = id;
+$.ajax
+({
+/* type: "POST",
+url: "http://isfsecurities.com/wp-content/themes/hoxa/cities.php",
+data: dataString,
+cache: false,
+success: function(html)
+{
+$("#listCity").html(html);
+} */
+
+ url:"http://isfsecurities.com/wp-content/themes/hoxa/cities.php",
+type:"post",
+data:{city:id},
+success:function(response)
+{
+
+$("#place").html(response);
+}
+
+});
+
+});	$( ".aply select" ).change(function () {	var str = $('.aply select[name="apply"] :selected').val();     if( str == 'others'){	 $('.applyothr'). css('display','block');		}else{		$('.applyothr'). css('display','none');	}	});
+
+});
+  </script>
+  <link href="http://isfsecurities.com/feed/" title="ISF Securities » Feed" type="application/rss+xml" rel="alternate" />
+  <link href="http://isfsecurities.com/comments/feed/" title="ISF Securities » Comments Feed" type="application/rss+xml" rel="alternate" />
+  <link media="all" type="text/css" href="http://isfsecurities.com/wp-content/plugins/LayerSlider/static/css/layerslider.css" id="layerslider-css" rel="stylesheet" />
+  <link media="all" type="text/css" href="http://fonts.googleapis.com/css?family=Lato:100,300,regular,700,900%7COpen+Sans:300%7CIndie+Flower:regular%7COswald:300,regular,700&subset=latin,latin-ext" id="ls-google-fonts-css" rel="stylesheet" />
+  <link media="all" type="text/css" href="http://isfsecurities.com/wp-content/plugins/contact-form-7/includes/css/styles.css" id="contact-form-7-css" rel="stylesheet" />
+  <link media="screen" type="text/css" href="http://isfsecurities.com/wp-content/plugins/recent-tweets-widget/tp_twitter_plugin.css" id="tp_twitter_plugin_css-css" rel="stylesheet" />
+  <link media="all" type="text/css" href="http://isfsecurities.com/wp-content/themes/hoxa/SuperComposer/assets/css/bootstrap3/css/bootstrap.min.css" id="devn-bootstrap-css" rel="stylesheet" />
+  <link media="all" type="text/css" href="http://isfsecurities.com/wp-content/themes/hoxa/SuperComposer/assets/css/bootstrap_responsive.css" id="devn-bootstrap-resp-css" rel="stylesheet" />
+  <link media="all" type="text/css" href="http://isfsecurities.com/wp-content/themes/hoxa/style.css" id="devn-stylesheet-css" rel="stylesheet" />
+  <link media="all" type="text/css" href="http://isfsecurities.com/wp-content/themes/hoxa/css/flexslider.css" id="devn-flexslider-css-css" rel="stylesheet" />
+  <link media="all" type="text/css" href="http://isfsecurities.com/wp-content/themes/hoxa/css/options.css" id="devn-options-css" rel="stylesheet" />
+  <link media="all" type="text/css" href="http://isfsecurities.com/wp-content/themes/hoxa/css/responsive.css" id="devn-responsive-css" rel="stylesheet" />
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript">
+  </script>
+  <script src="http://isfsecurities.com/wp-content/plugins/LayerSlider/static/js/layerslider.kreaturamedia.jquery.js" type="text/javascript">
+  </script>
+  <script src="http://isfsecurities.com/wp-content/plugins/LayerSlider/static/js/greensock.js" type="text/javascript">
+  </script>
+  <script src="http://isfsecurities.com/wp-content/plugins/LayerSlider/static/js/layerslider.transitions.js" type="text/javascript">
+  </script>
+  <script src="http://isfsecurities.com/wp-content/themes/hoxa/js/custom.js" type="text/javascript">
+  </script>
+  <script src="http://isfsecurities.com/wp-content/themes/hoxa/js/viewportchecker.js" type="text/javascript">
+  </script>
+  <script src="http://isfsecurities.com/wp-content/themes/hoxa/js/pretty/js/jquery.prettyPhoto.js" type="text/javascript">
+  </script>
+  <script src="http://isfsecurities.com/wp-content/themes/hoxa/js/jquery.flexslider.js" type="text/javascript">
+  </script>
+  <link href="http://isfsecurities.com/xmlrpc.php?rsd" title="RSD" type="application/rsd+xml" rel="EditURI" />
+  <link href="http://isfsecurities.com/wp-includes/wlwmanifest.xml" type="application/wlwmanifest+xml" rel="wlwmanifest" />
+  <meta content="WordPress 4.0" name="generator" />
+  <style type="text/css">
+   .sysdevn0{min-height:90px;width:100% !important;margin-left:0% !important;}.sysdevn1{min-height:380px;width:100% !important;margin-left:0% !important;}.sysdevn2{min-height:380px;width:100% !important;margin-left:0% !important;}.blkheaderdevn0{min-height:100px;width:100% !important;margin-left:0% !important;}.blkheaderdevn1{min-height:70px;width:100% !important;margin-left:0% !important;}.blkfooterdevn0{min-height:90px;width:100% !important;margin-left:0% !important;}.blkfooterdevn1{min-height:90px;width:100% !important;margin-left:0% !important;}.blkfooterdevn2{min-height:90px;width:100% !important;margin-left:0% !important;}.blkfooterdevn3{min-height:220px;width:100% !important;margin-left:0% !important;}.blkfooterdevn4{min-height:220px;width:100% !important;margin-left:0% !important;}.blkfooterdevn5{min-height:220px;width:100% !important;margin-left:0% !important;}.blkfooterdevn6{min-height:210px;width:100% !important;margin-left:0% !important;}.blkfooterdevn7{min-height:70px;width:100% !important;margin-left:0% !important;}
+  </style>
+ </head>
+ <body class="error404">
+  <div class="layout-wide " id="main">
+   <div class="container-fluid container-set container-group-header groups[DS]header sidebardevn" id="container-group-header">
+    <div id="" class="devn-group container-group__header ">
+     <div class="knowledge-popup">
+      <a href="" id="close_popup-knowledge">
+      </a>
+      <h2 class="popup-content">
+       COMING SOON
+      </h2>
+     </div>
+     <div class="black_overlay" id="fade">
+     </div>
+     <div class="account-popup">
+      <a href="" id="close_popup-account">
+      </a>
+      <h2 class="account-popup-content">
+       <div lang="en-US" dir="ltr" id="wpcf7-f1536-o1" class="wpcf7">
+        <div class="screen-reader-response">
+        </div>
+        <form novalidate="novalidate" class="wpcf7-form" method="post" action="/mailto:contact@isfsecurities.com#wpcf7-f1536-o1" name="">
+         <div style="display: none;">
+          <input type="hidden" value="1536" name="_wpcf7" />
+          <input type="hidden" value="3.9.1" name="_wpcf7_version" />
+          <input type="hidden" value="en_US" name="_wpcf7_locale" />
+          <input type="hidden" value="wpcf7-f1536-o1" name="_wpcf7_unit_tag" />
+          <input type="hidden" value="e4a543faa9" name="_wpnonce" />
+         </div>
+         <div class="message" style="margin-top: -32px ! important;">
+          <div class="wpcf7-response-output wpcf7-display-none">
+          </div>
+         </div>
+         <div class="devn-form account ">
+          <header>
+           OPEN AN ACCOUNT
+          </header>
+          <fieldset>
+           <div class="row account_us">
+            <section class="col col-6 wpcf7-form-control-wrap text-name">
+             <label class="input">
+              <span class="wpcf7-form-control-wrap account-name">
+               <input type="text" placeholder="Enter Your Name" aria-invalid="false" aria-required="true" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required fields_text_account" size="30" value="" name="account-name" />
+              </span>
+             </label>
+            </section>
+            <section class="col col-6 wpcf7-form-control-wrap text-name">
+             <label class="input">
+              <span class="wpcf7-form-control-wrap account-mobile">
+               <input type="tel" placeholder="Enter Your Mobile No" aria-invalid="false" aria-required="true" class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-required wpcf7-validates-as-tel fields_text_account" size="30" value="" name="account-mobile" />
+              </span>
+             </label>
+            </section>
+           </div>
+           <div class="row account_us">
+            <section class="col col-6 wpcf7-form-control-wrap text-email">
+             <label class="input">
+              <span class="wpcf7-form-control-wrap account-email">
+               <input type="email" placeholder="Enter Your Email Address" aria-invalid="false" aria-required="true" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email fields_text_account" size="30" value="" name="account-email" />
+              </span>
+             </label>
+            </section>
+            <section class="col col-6 wpcf7-form-control-wrap text-name">
+             <label class="input">
+              <span class="wpcf7-form-control-wrap account-city">
+               <input type="text" placeholder="City" aria-invalid="false" aria-required="true" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required fields_text_account" size="30" value="" name="account-city" />
+              </span>
+             </label>
+            </section>
+           </div>
+           <section class="wpcf7-form-control-wrap text-description">
+           </section>
+           <section>
+            <label class="textarea">
+             <span class="wpcf7-form-control-wrap account-message">
+              <textarea placeholder="Your Description" aria-invalid="false" aria-required="true" class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required fields_textarea_account" rows="4" cols="30" name="account-message">
+              </textarea>
+             </span>
+            </label>
+           </section>
+          </fieldset>
+          <footer class="account_buttons">
+           <input type="submit" class="wpcf7-form-control wpcf7-submit submit_account" value="Submit" />
+           <img class="ajax-loader" src="http://isfsecurities.com/wp-content/plugins/contact-form-7/images/ajax-loader.gif" alt="Sending ..." style="visibility: hidden;" />
+           <input type="reset" class="account_reset" />
+          </footer>
+         </div>
+        </form>
+       </div>
+      </h2>
+     </div>
+     <div class="black_overlay_account" id="fade-account">
+     </div>
+     <div class="container-group container-group-header_x_system-1415612528 top_nav animated fadeIn logoarea" id="container-group-header_x_system-1415612528">
+      <div class="rowlevelone row-fluid row wrpestdevn rowFullWidth limit-width container  row-devn-system-row">
+       <div class="spanlevelone col-md-12">
+        <div id="sidebar-group-header_x_system-1415612528" class="widgetdevn sidebardevn blkheaderdevn0">
+         <aside class="widget widget_execphp" id="execphp-_x_system-1416726459">
+          <div class="execphpwidget">
+           <div class="right_links flipInX">
+            <ul>
+             <li class="link">
+              <a href="mailto:contact@isfsecurities.com" class="fancybox fancybox.ajax">
+               <i class="fa fa-envelope">
+               </i>
+               contact@isfsecurities.com
+              </a>
+             </li>
+             <li class="link">
+              <a href="#" class="fancybox fancybox.ajax">
+               <i class="fa fa-phone">
+               </i>
+               +11–43500300
+              </a>
+             </li>
+             <li class="link circular">
+              <a href="http://isfsecurities.com/circulars/">
+               Circulars
+              </a>
+             </li>
+             <li class="link downloads">
+              <a href="http://isfsecurities.com/downloads/">
+               Downloads
+              </a>
+             </li>
+             <li class="link exchange last-child">
+              <a href="http://isfsecurities.com/exchange-holidays/">
+               Exchange Holidays
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+         </aside>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="container-group container-group-header_x_system-1416736354" id="container-group-header_x_system-1416736354">
+      <div class="rowlevelone row-fluid row wrpestdevn rowFullWidth limit-width container  row-devn-system-row">
+       <div class="spanlevelone col-md-12">
+        <div id="sidebar-group-header_x_system-1416736354" class="widgetdevn menu_main animated fadeIn blkheaderdevn1">
+         <aside class="widget widget_execphp" id="execphp-_x_system-1416736370">
+          <div class="execphpwidget">
+           <div class="navbar yamm navbar-default">
+            <div class="container">
+             <div class="navbar-collapse collapse" id="navbar-collapse-1">
+              <div class="logo animated flipInX">
+               <a id="logo" href="http://isfsecurities.com">
+                <img width="300" height="50" src="%0Ahttp://isfsecurities.com/wp-content/uploads/2015/01/logoisf.png" />
+               </a>
+               <!--	<a href="http://isfsecurities.com" id="logo">
+<img src="http://isfsecurities.com/wp-content/uploads/2014/12/logoisf.png" alt="logo" class="" height="50" width="300">
+</a>--->
+              </div>
+              <div class="menu-main-menu-container">
+               <ul class="nav navbar-nav" id="devn-mainmenu">
+                <li class="menu-item menu-item-type-post_type menu-item-object-page dropdown menu-item-1545" id="menu-item-1545">
+                 <a href="http://isfsecurities.com/">
+                  <i class="menu-item menu-item-type-post_type menu-item-object-page dropdown menu-item-1545">
+                  </i>
+                  Home
+                 </a>
+                </li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown menu-item-1245" id="menu-item-1245">
+                 <a href="http://isfsecurities.com/about-us/">
+                  <i class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown menu-item-1245">
+                  </i>
+                  About Us
+                 </a>
+                 <ul class="dropdown-menu three">
+                  <li class="menu-item menu-item-type-post_type menu-item-object-page dropdown menu-item-1244" id="menu-item-1244">
+                   <a href="http://isfsecurities.com/vision-values/">
+                    <i class="menu-item menu-item-type-post_type menu-item-object-page dropdown menu-item-1244">
+                    </i>
+                    Vision &amp; Values
+                   </a>
+                  </li>
+                  <li class="menu-item menu-item-type-post_type menu-item-object-page dropdown menu-item-1243" id="menu-item-1243">
+                   <a href="http://isfsecurities.com/management/">
+                    <i class="menu-item menu-item-type-post_type menu-item-object-page dropdown menu-item-1243">
+                    </i>
+                    Management
+                   </a>
+                  </li>
+                 </ul>
+                </li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page dropdown menu-item-1379" id="menu-item-1379">
+                 <a href="http://isfsecurities.com/services/">
+                  <i class="menu-item menu-item-type-post_type menu-item-object-page dropdown menu-item-1379">
+                  </i>
+                  Services
+                 </a>
+                </li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page dropdown menu-item-1346" id="menu-item-1346">
+                 <a href="http://isfsecurities.com/careers/">
+                  <i class="menu-item menu-item-type-post_type menu-item-object-page dropdown menu-item-1346">
+                  </i>
+                  Careers
+                 </a>
+                </li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page dropdown menu-item-1378" id="menu-item-1378">
+                 <a href="http://isfsecurities.com/testimonials/">
+                  <i class="menu-item menu-item-type-post_type menu-item-object-page dropdown menu-item-1378">
+                  </i>
+                  Testimonials
+                 </a>
+                </li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page dropdown menu-item-1352" id="menu-item-1352">
+                 <a href="http://isfsecurities.com/news/">
+                  <i class="menu-item menu-item-type-post_type menu-item-object-page dropdown menu-item-1352">
+                  </i>
+                  News
+                 </a>
+                </li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page dropdown menu-item-1324" id="menu-item-1324">
+                 <a href="http://isfsecurities.com/contact-us/">
+                  <i class="menu-item menu-item-type-post_type menu-item-object-page dropdown menu-item-1324">
+                  </i>
+                  Contact Us
+                 </a>
+                </li>
+               </ul>
+              </div>
+             </div>
+             <select id="mainmenu-select">
+              <option selected="selected" value="">
+               Go to...
+              </option>
+              <option value="http://isfsecurities.com/">
+               Home
+              </option>
+              <option value="http://isfsecurities.com/about-us/">
+               About Us
+              </option>
+              <option value="http://isfsecurities.com/vision-values/">
+               __Vision &amp; Values
+              </option>
+              <option value="http://isfsecurities.com/management/">
+               __Management
+              </option>
+              <option value="http://isfsecurities.com/services/">
+               Services
+              </option>
+              <option value="http://isfsecurities.com/careers/">
+               Careers
+              </option>
+              <option value="http://isfsecurities.com/testimonials/">
+               Testimonials
+              </option>
+              <option value="http://isfsecurities.com/news/">
+               News
+              </option>
+              <option value="http://isfsecurities.com/contact-us/">
+               Contact Us
+              </option>
+             </select>
+            </div>
+           </div>
+          </div>
+         </aside>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="container-fluid container-set container-general_x_system-1416473114 breadcrumbs page_title career_banner" id="container-general_x_system-1416473114">
+    <div class="rowlevelone row-fluid row wrpestdevn rowFullWidth limit-width container  row-devn-system-row">
+     <div class="spanlevelone col-md-12">
+      <div id="sidebar-general_x_system-1416473114" class="widgetdevn sidebardevn sysdevn0">
+       <aside class="widget widget_execphp" id="execphp-_x_system-1416970420">
+        <div class="execphpwidget">
+         <div class="title">
+          <h1>
+           Page not found
+          </h1>
+         </div>
+         <div class="pagenation">
+          <div class="breadcrumbs">
+           <a href="http://isfsecurities.com">
+            Home
+           </a>
+           /
+           <span>
+            404 - Page not Found
+           </span>
+          </div>
+         </div>
+        </div>
+       </aside>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="container-fluid container-set container-content content sidebardevn" id="container-content">
+    <div class="rowlevelone row-fluid row wrpestdevn rowFullWidth limit-width container  row-content">
+     <div class="spanlevelone col-md-9">
+      <div id="sidebar-content" class="widgetdevn content sidebardevn sysdevn1">
+       <aside class="widget widget_contents-component" id="contents-2">
+        <div class="error_pagenotfound">
+         <strong>
+          404
+         </strong>
+         <br />
+         <b>
+          Oops... Page Not Found!
+         </b>
+         <em>
+          Sorry the Page Could not be Found here.
+         </em>
+         <p>
+          Try using the button below to go to main page of the site
+         </p>
+         <div class="clearfix margin_top3">
+         </div>
+         <a class="but_goback" href="http://isfsecurities.com">
+          <i class="fa fa-arrow-circle-left fa-lg">
+          </i>
+            Go to Back
+         </a>
+        </div>
+       </aside>
+      </div>
+     </div>
+     <div class="spanlevelone col-md-3">
+      <div id="sidebar-right-column" class="widgetdevn right-column sidebardevn sysdevn2">
+       <aside class="widget widget_execphp" id="execphp-4">
+        <div class="execphpwidget">
+         <div lang="en-US" dir="ltr" id="wpcf7-f1246-o2" class="wpcf7">
+          <div class="screen-reader-response">
+          </div>
+          <form novalidate="novalidate" class="wpcf7-form" method="post" action="/mailto:contact@isfsecurities.com#wpcf7-f1246-o2" name="">
+           <div style="display: none;">
+            <input type="hidden" value="1246" name="_wpcf7" />
+            <input type="hidden" value="3.9.1" name="_wpcf7_version" />
+            <input type="hidden" value="en_US" name="_wpcf7_locale" />
+            <input type="hidden" value="wpcf7-f1246-o2" name="_wpcf7_unit_tag" />
+            <input type="hidden" value="9d5cedc756" name="_wpnonce" />
+           </div>
+           <div class="wpcf7-response-output wpcf7-display-none">
+           </div>
+           <div class="devn-form quick_right_sidebar">
+            <header>
+             Quick
+             <strong style="color:#A31111;">
+              Contact
+             </strong>
+            </header>
+            <fieldset>
+             <div class="row">
+              <section class="col  wpcf7-form-control-wrap text-name">
+               <label class="input">
+                <i class="fa fa-user">
+                </i>
+                <span class="wpcf7-form-control-wrap quick_name">
+                 <input type="text" placeholder="Name" aria-invalid="false" aria-required="true" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" size="40" value="" name="quick_name" />
+                </span>
+               </label>
+              </section>
+              <section class="col  wpcf7-form-control-wrap text-email">
+               <label class="input">
+                <i class="fa fa-envelope">
+                </i>
+                <span class="wpcf7-form-control-wrap quick_email">
+                 <input type="email" placeholder="E-mail" aria-invalid="false" aria-required="true" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" size="40" value="" name="quick_email" />
+                </span>
+               </label>
+              </section>
+              <section class="col  wpcf7-form-control-wrap text-name">
+               <label class="input">
+                <i class="fa fa-phone">
+                </i>
+                <span class="wpcf7-form-control-wrap quick_phone">
+                 <input type="tel" placeholder="Phone" aria-invalid="false" aria-required="true" class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-required wpcf7-validates-as-tel" size="40" value="" name="quick_phone" />
+                </span>
+               </label>
+              </section>
+             </div>
+             <section class="wpcf7-form-control-wrap text-subject">
+              <label class="input">
+               <i class="fa fa-tag">
+               </i>
+               <span class="wpcf7-form-control-wrap subject_quick">
+                <input type="text" placeholder="Subject" aria-invalid="false" class="wpcf7-form-control wpcf7-text" size="40" value="" name="subject_quick" />
+               </span>
+              </label>
+             </section>
+             <section>
+              <label class="textarea">
+               <i class="fa fa-comment">
+               </i>
+               <span class="wpcf7-form-control-wrap quick_message">
+                <textarea placeholder="Message" aria-invalid="false" class="wpcf7-form-control wpcf7-textarea" rows="4" cols="40" name="quick_message">
+                </textarea>
+               </span>
+              </label>
+             </section>
+             <section class="captcha">
+              <label class="error_msg">
+               Captcha is not correct!
+              </label>
+              <span class="wpcf7-form-control-wrap captcha-num1">
+               <input type="text" aria-invalid="false" id="captcha-num1" class="wpcf7-form-control wpcf7-text num1" size="40" value="" name="captcha-num1" disabled="disabled" />
+              </span>
+              +
+              <span class="wpcf7-form-control-wrap captcha-num2">
+               <input type="text" aria-invalid="false" id="captcha-num2" class="wpcf7-form-control wpcf7-text num2" size="40" value="" name="captcha-num2" disabled="disabled" />
+              </span>
+              =
+              <span class="wpcf7-form-control-wrap text-66">
+               <input type="text" aria-invalid="false" aria-required="true" id="text-66" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required captchavalue_quick" size="40" value="" name="text-66" />
+              </span>
+             </section>
+             <p>
+             </p>
+            </fieldset>
+            <footer>
+             <input type="submit" class="wpcf7-form-control wpcf7-submit contact_get_btn_quick" value="Submit" />
+             <img class="ajax-loader" src="http://isfsecurities.com/wp-content/plugins/contact-form-7/images/ajax-loader.gif" alt="Sending ..." style="visibility: hidden;" />
+            </footer>
+           </div>
+          </form>
+         </div>
+        </div>
+       </aside>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="container-fluid container-set container-group-footer groups[DS]footer sidebardevn" id="container-group-footer">
+    <div id="" class="devn-group container-group__footer footer1">
+     <div class="container-group container-group-footer_x_system-6385234" id="container-group-footer_x_system-6385234">
+      <div class="rowlevelone row-fluid row wrpestdevn rowFullWidth limit-width container  row-devn-system-row">
+       <div class="spanlevelone col-md-6">
+        <div id="sidebar-group-footer_x_system-6385234" class="widgetdevn sidebardevn blkfooterdevn0">
+         <aside class="widget widget_tp_widget_recent_tweets" id="tp_widget_recent_tweets-_x_system-581703">
+          <h3 class="widget-title">
+           Twitter Feed!
+          </h3>
+          <!-- twitter cache has been updated! -->
+          <div class="tp_recent_tweets">
+           <ul>
+            <li>
+             <span>
+              Just setting up my Twitter.
+              <a target="_blank" title="Search #myfirstTweet" href="https://twitter.com/search?q=myfirstTweet">
+               #myfirstTweet
+              </a>
+             </span>
+             <br />
+             <a href="http://twitter.com/isfsecurities/statuses/557888143371042816" target="_blank" class="twitter_time">
+              314 days ago
+             </a>
+            </li>
+           </ul>
+          </div>
+         </aside>
+        </div>
+       </div>
+       <div class="spanlevelone col-md-6">
+        <div id="sidebar-group-footer_x_system-3779015" class="widgetdevn sidebardevn blkfooterdevn1">
+         <aside class="widget widget_newsletterwidget" id="newsletterwidget-_x_system-6258875">
+          <h3 class="widget-title">
+           Sign Up Newsletter
+          </h3>
+          <script type="text/javascript">
+           //&lt;![CDATA[
+if (typeof newsletter_check !== "function") {
+window.newsletter_check = function (f) {
+    var re = /^([a-zA-Z0-9_\.\-\+])+\@(([a-zA-Z0-9\-]{1,})+\.)+([a-zA-Z0-9]{2,})+$/;
+    if (!re.test(f.elements["ne"].value)) {
+        alert("The email is not correct");
+        return false;
+    }
+    if (f.elements["ny"] &amp;&amp; !f.elements["ny"].checked) {
+        alert("You must accept the privacy statement");
+        return false;
+    }
+    return true;
+}
+}
+//]]&gt;
+          </script>
+          <div class="newsletter newsletter-widget">
+           <script type="text/javascript">
+            //&lt;![CDATA[
+if (typeof newsletter_check !== "function") {
+window.newsletter_check = function (f) {
+    var re = /^([a-zA-Z0-9_\.\-\+])+\@(([a-zA-Z0-9\-]{1,})+\.)+([a-zA-Z0-9]{2,})+$/;
+    if (!re.test(f.elements["ne"].value)) {
+        alert("The email is not correct");
+        return false;
+    }
+    if (f.elements["ny"] &amp;&amp; !f.elements["ny"].checked) {
+        alert("You must accept the privacy statement");
+        return false;
+    }
+    return true;
+}
+}
+//]]&gt;
+           </script>
+           <form method="post" onsubmit="return newsletter_check(this)" action="http://isfsecurities.com/wp-content/plugins/newsletter/do/subscribe.php">
+            <input type="hidden" value="widget" name="nr" />
+            <p>
+             <input type="email" onblur="if (this.value=='') this.value=this.defaultValue" onclick="if (this.defaultValue==this.value) this.value=''" value="Please enter your Email Address" name="ne" required="" class="newsletter-email" />
+            </p>
+            <p>
+             <input type="submit" value="Subscribe Now!" class="newsletter-submit" />
+            </p>
+           </form>
+          </div>
+         </aside>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="container-group container-group-footer_x_system-7103752" id="container-group-footer_x_system-7103752">
+      <div class="rowlevelone row-fluid row wrpestdevn rowFullWidth limit-width container  row-devn-system-row">
+       <div class="spanlevelone col-md-12">
+        <div id="sidebar-group-footer_x_system-7103752" class="widgetdevn sidebardevn blkfooterdevn2">
+         <aside class="widget widget_execphp" id="execphp-_x_system-1418818493">
+          <div class="execphpwidget">
+           <div class="clearfix divider_dashed_first">
+           </div>
+          </div>
+         </aside>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="container-group container-group-footer_x_system-9714334 four_footer_sec" id="container-group-footer_x_system-9714334">
+      <div class="rowlevelone row-fluid row wrpestdevn rowFullWidth limit-width container  row-devn-system-row">
+       <div class="spanlevelone col-md-3">
+        <div id="sidebar-group-footer_x_system-9714334" class="widgetdevn sidebardevn blkfooterdevn3">
+         <aside class="widget widget_execphp" id="execphp-_x_system-1418814333">
+          <div class="execphpwidget">
+           <ul class="faddress">
+            <li class="devn-item">
+             <img width="228" height="50" src="%0Ahttp://isfsecurities.com/wp-content/themes/hoxa/images/footer_logo_isf.png" alt="" />
+            </li>
+            <li class="devn-item">
+             <i class="fa fa-map-marker fa-lg">
+             </i>
+             5A\4B, Ansari Road,
+             <br />
+             Darya Ganj, New Delhi – 110002
+            </li>
+            <li class="devn-item">
+             <i class="fa fa-phone">
+             </i>
+             011 – 43500300
+            </li>
+            <li class="devn-item">
+             <i class="fa fa-print">
+             </i>
+             011 – 43500314
+            </li>
+            <li class="devn-item">
+             <a href="mailto:contact@isfsecurities.com">
+              <i class="fa fa-envelope">
+              </i>
+              contact@isfsecurities.com
+             </a>
+            </li>
+            <li class="devn-item">
+             <img width="177" height="85" src="%0Ahttp://isfsecurities.com/wp-content/themes/hoxa/images/footer-wmap.png" alt="" />
+            </li>
+           </ul>
+          </div>
+         </aside>
+        </div>
+       </div>
+       <div class="spanlevelone col-md-3">
+        <div id="sidebar-group-footer_x_system-9374326" class="widgetdevn sidebardevn blkfooterdevn4">
+         <aside class="widget widget_execphp" id="execphp-_x_system-1418814402">
+          <div class="execphpwidget">
+           <h4 class="lmb">
+            Useful Links
+           </h4>
+           <ul class="qlinks">
+            <li class="devn-item">
+             <a href="http://isfsecurities.com/nse-arbitration-rules/">
+              <i class="fa fa-angle-right">
+              </i>
+              NSE Arbitration Rules
+             </a>
+            </li>
+            <li class="devn-item">
+             <a href="http://isfsecurities.com/pmla-policy/">
+              <i class="fa fa-angle-right">
+              </i>
+              PMLA Policy
+             </a>
+            </li>
+            <li class="devn-item">
+             <a href="http://isfsecurities.com/rights-obligations/">
+              <i class="fa fa-angle-right">
+              </i>
+              Rights &amp; Obligations
+             </a>
+            </li>
+            <li class="devn-item">
+             <a href="http://isfsecurities.com/risk-disclosure/">
+              <i class="fa fa-angle-right">
+              </i>
+              Risk Disclosure
+             </a>
+            </li>
+            <li class="devn-item">
+             <a href="http://isfsecurities.com/policies-procedures/">
+              <i class="fa fa-angle-right">
+              </i>
+              Policies &amp; Procedures
+             </a>
+            </li>
+            <li class="devn-item">
+             <a href="http://isfsecurities.com/investor-grievances/">
+              <i class="fa fa-angle-right">
+              </i>
+              Investor Grievances
+             </a>
+            </li>
+            <li class="devn-item">
+             <a href="http://isfsecurities.com/guidance-note/">
+              <i class="fa fa-angle-right">
+              </i>
+              Guidance Note
+             </a>
+            </li>
+           </ul>
+          </div>
+         </aside>
+        </div>
+       </div>
+       <div class="spanlevelone col-md-3">
+        <div id="sidebar-group-footer_x_system-8142357" class="widgetdevn sidebardevn blkfooterdevn5">
+         <aside class="widget widget_execphp" id="execphp-_x_system-1418814472">
+          <div class="execphpwidget">
+           <div class="siteinfo">
+            <h4 class="lmb">
+             About ISF Securities
+            </h4>
+            <p>
+             ISF SECURITIES LIMITED is a flagship group company of ISF Limited (formerly known as Inter State Finance Limited), which is a Non Banking Finance Company (NBFC) engaged in Commercial vehicle financing.
+            </p>
+            <br />
+            <a href="http://isfsecurities.com/about-us/">
+             Read more
+             <i class="fa fa-long-arrow-right">
+             </i>
+            </a>
+           </div>
+          </div>
+         </aside>
+        </div>
+       </div>
+       <div class="spanlevelone col-md-3">
+        <div id="sidebar-group-footer_x_system-5809745" class="widgetdevn sidebardevn blkfooterdevn6">
+         <aside class="widget widget_execphp" id="execphp-_x_system-1418814596">
+          <div class="execphpwidget">
+           <h4 class="lmb">
+            Be Social
+           </h4>
+           <ul class="footer_social_links">
+            <li class="social delay-200ms devn-item">
+             <a target="_blank" href="https://www.facebook.com/pages/isf-securities-ltd/123023927739206">
+              <i class="fa fa-facebook">
+              </i>
+             </a>
+            </li>
+            <li class="social delay-400ms devn-item">
+             <a target="_blank" href="https://twitter.com/isfsecurities">
+              <i class="fa fa-twitter">
+              </i>
+             </a>
+            </li>
+            <li class="social delay-1000ms devn-item">
+             <a target="_blank" href="https://in.linkedin.com/pub/soni-isf-securities/56/443/b5b">
+              <i class="fa fa-linkedin">
+              </i>
+             </a>
+            </li>
+           </ul>
+          </div>
+         </aside>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="container-group container-group-footer_x_system-1663907" id="container-group-footer_x_system-1663907">
+      <div class="rowlevelone row-fluid row wrpestdevn rowFullWidth limit-width container  row-devn-system-row">
+       <div class="spanlevelone col-md-12">
+        <div id="sidebar-group-footer_x_system-1663907" class="widgetdevn sidebardevn blkfooterdevn7">
+         <aside class="widget widget_execphp" id="execphp-_x_system-1418814885">
+          <div class="execphpwidget">
+           <div class="clearfix divider_dashed_member">
+           </div>
+           <p class="member_name">
+            Member: NSE: INB 230876338, INE 230876338, INF 230876338  |  BSE: INB 011465235, INF 011465235 | USE: INE 27876332  |  Depository Participant : CDSL: IN-CDSL-647-2011  |  AMFI : ARN 60942
+           </p>
+           <div class="clearfix divider_dashed_member2">
+            <p sclass="member_name">
+             <marquee width="100%" id="MarqueeId" onmouseover="this.stop()" onmouseout="this.start()" truespeed="truespeed" scrollamount="1" scrolldelay="40" direction="left" loop="repeat">
+              <b>
+               Attention Investors
+              </b>
+              "Prevent Unauthorized Transactions in your demat account --&gt; Update your Mobile Number with us. Receive alerts on your Registered Mobile for all debit and other important transactions in your demat account directly from CDSL on the same day
+              <b>
+               .......... Issued in the interest of investors."
+              </b>
+             </marquee>
+            </p>
+            <p sclass="member_name">
+             <marquee width="100%" id="MarqueeId" onmouseover="this.stop()" onmouseout="this.start()" truespeed="truespeed" scrollamount="1" scrolldelay="40" direction="left" loop="repeat">
+              "KYC is one time exercise while dealing in securities markets - once KYC is done through a SEBI registered intermediary (broker, DP, Mutual Fund etc.), you need not undergo the same process again when you approach another intermediary."
+             </marquee>
+            </p>
+            <div class="clearfix divider_dashed_member2">
+            </div>
+            <div class="copyright_info">
+             <div class="one_half">
+              Copyright © 2015 ISF
+			. All rights reserved.
+              <a href="http://isfsecurities.com/disclaimer/">
+               Disclaimer
+              </a>
+              |
+              <a href="http://isfsecurities.com/terms-conditions/">
+               Terms &amp; Conditions
+              </a>
+              |
+              <a href="http://isfsecurities.com/privacy-policy/">
+               Privacy Policy
+              </a>
+             </div>
+             <div class="one_half designed last">
+              Designed &amp; Developed by:
+              <span class="footer_ing">
+               <a style="color:#E72525;" target="_blank" href="http://ingeniousnetsoft.com/">
+                Ingenious Netsoft
+               </a>
+              </span>
+             </div>
+            </div>
+           </div>
+          </div>
+         </aside>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <!-- #main -->
+  <a style="display: none;" id="scrollup" class="scrollup" href="#">
+   Scroll
+  </a>
+  <script src="http://isfsecurities.com/wp-content/plugins/contact-form-7/includes/js/jquery.form.min.js" type="text/javascript">
+  </script>
+  <script type="text/javascript">
+   /* &lt;![CDATA[ */
+var _wpcf7 = {"loaderUrl":"http:\/\/isfsecurities.com\/wp-content\/plugins\/contact-form-7\/images\/ajax-loader.gif","sending":"Sending ..."};
+/* ]]&gt; */
+  </script>
+  <script src="http://isfsecurities.com/wp-content/plugins/contact-form-7/includes/js/scripts.js" type="text/javascript">
+  </script>
+ </body>
+</html>

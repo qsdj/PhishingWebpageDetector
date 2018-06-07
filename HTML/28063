@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+ <head>
+  <meta charset="utf-8" />
+  <title>
+   Tugun to Bilinga Oceanway - Home Page | Gold Coast Oceanway | Friends of Currumbin  | Gold Coast |
+  </title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <meta content="Oceanway, Tugun to Bilinga, Gold Coast Oceanway, Friends of Currumbin" name="description" />
+  <meta content="Tugun to Bilinga Oceanway, Oceanway, Gold Coast, Chris Robbins,  Gold Coast City Council, Friends of Currumbin, Pacific Parade, Cycleway, Tugun, Bilinga, Walking, Golden Four Drive, Environment, Qld Government" name="keywords" />
+  <meta content="Natalie Wain" name="author" />
+  <!-- Le styles -->
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.css" />
+  <link rel="stylesheet" href="bootstrap/css/bootstrap-responsive.css" />
+  <style>
+   /* GLOBAL STYLES
+    -------------------------------------------------- */
+    /* Padding below the footer and lighter body text */
+
+    body {
+      padding-bottom: 40px;
+      color: #5a5a5a;
+    }
+
+
+
+    /* CUSTOMIZE THE NAVBAR
+    -------------------------------------------------- */
+
+    /* Special class on .container surrounding .navbar, used for positioning it into place. */
+    .navbar-wrapper {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 10;
+      margin-top: 20px;
+      margin-bottom: -90px; /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
+    }
+    .navbar-wrapper .navbar {
+
+    }
+
+    /* Remove border and change up box shadow for more contrast */
+    .navbar .navbar-inner {
+	border: 0;
+	-webkit-box-shadow: 0 2px 10px rgba(0,0,0,.25);
+	-moz-box-shadow: 0 2px 10px rgba(0,0,0,.25);
+	box-shadow: 0 2px 10px rgba(0,0,0,.25);
+    }
+
+    /* Downsize the brand/project name a bit */
+    .navbar .brand {
+	padding: 14px 20px 16px; /* Increase vertical padding to match navbar links */
+	font-size: 16px;
+	font-weight: bold;
+	text-shadow: 0 -1px 0 rgba(0,0,0,.5);
+	background-color: #00AEEA;
+    }
+
+    /* Navbar links: increase padding for taller navbar */
+    .navbar .nav &gt; li &gt; a {
+      padding: 15px 20px;
+    }
+
+    /* Offset the responsive button for proper vertical alignment */
+    .navbar .btn-navbar {
+      margin-top: 10px;
+    }
+
+
+
+    /* CUSTOMIZE THE CAROUSEL
+    -------------------------------------------------- */
+
+    /* Carousel base class */
+    .carousel {
+      margin-bottom: 60px;
+    }
+
+    .carousel .container {
+      position: relative;
+      z-index: 9;
+    }
+
+    .carousel-control {
+      height: 80px;
+      margin-top: 0;
+      font-size: 120px;
+      text-shadow: 0 1px 1px rgba(0,0,0,.4);
+      background-color: transparent;
+      border: 0;
+      z-index: 10;
+    }
+
+    .carousel .item {
+      height: 500px;
+    }
+    .carousel img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      height: 500px;
+    }
+
+    .carousel-caption {
+      background-color: transparent;
+      position: static;
+      max-width: 550px;
+      padding: 0 20px;
+      margin-top: 200px;
+    }
+    .carousel-caption h1,
+    .carousel-caption .lead {
+      margin: 0;
+      line-height: 1.25;
+      color: #fff;
+      text-shadow: 0 1px 1px rgba(0,0,0,.4);
+    }
+    .carousel-caption .btn {
+      margin-top: 10px;
+    }
+
+
+
+    /* MARKETING CONTENT
+    -------------------------------------------------- */
+
+    /* Center align the text within the three columns below the carousel */
+    .marketing .span4 {
+	text-align: center;
+	padding-left: px;
+    }
+    .marketing h2 {
+      font-weight: normal;
+    }
+    .marketing .span4 p {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+
+
+    /* Featurettes
+    ------------------------- */
+
+    .featurette-divider {
+      margin: 80px 0; /* Space out the Bootstrap &lt;hr&gt; more */
+    }
+    .featurette {
+	padding-top: 120px; /* Vertically center images part 1: add padding above and below text. */
+	overflow: hidden;
+    }
+    .featurette-image {
+      margin-top: -120px; /* Vertically center images part 3: negative margin up the image the same amount of the padding to center it. */
+    }
+
+    /* Give some space on the sides of the floated elements so text doesn't run right into it. */
+    .featurette-image.pull-left {
+      margin-right: 40px;
+    }
+    .featurette-image.pull-right {
+	margin-left: 40px;
+	margin-right: 500px;
+    }
+
+    /* Thin out the marketing headings */
+    .featurette-heading {
+      font-size: 50px;
+      font-weight: 300;
+      line-height: 1;
+      letter-spacing: -1px;
+    }
+.featurette-image.pull-right_green {
+	background-color: #BCE064;
+}
+
+
+
+    /* RESPONSIVE CSS
+    -------------------------------------------------- */
+
+    @media (max-width: 979px) {
+
+      .container.navbar-wrapper {
+        margin-bottom: 0;
+        width: auto;
+      }
+      .navbar-inner {
+        border-radius: 0;
+        margin: -20px 0;
+      }
+
+      .carousel .item {
+        height: 500px;
+      }
+      .carousel img {
+        width: auto;
+        height: 500px;
+      }
+
+      .featurette {
+        height: auto;
+        padding: 0;
+      }
+      .featurette-image.pull-left,
+      .featurette-image.pull-right {
+        display: block;
+        float: none;
+        max-width: 40%;
+        margin: 0 auto 20px;
+      }
+    }
+
+
+    @media (max-width: 767px) {
+
+      .navbar-inner {
+        margin: -20px;
+      }
+
+      .carousel {
+        margin-left: -20px;
+        margin-right: -20px;
+      }
+      .carousel .container {
+
+      }
+      .carousel .item {
+        height: 300px;
+      }
+      .carousel img {
+        height: 300px;
+      }
+      .carousel-caption {
+        width: 65%;
+        padding: 0 70px;
+        margin-top: 100px;
+      }
+      .carousel-caption h1 {
+        font-size: 30px;
+      }
+      .carousel-caption .lead,
+      .carousel-caption .btn {
+        font-size: 18px;
+      }
+
+      .marketing .span4 + .span4 {
+        margin-top: 40px;
+      }
+
+      .featurette-heading {
+        font-size: 30px;
+      }
+      .featurette .lead {
+        font-size: 18px;
+        line-height: 1.5;
+      }
+	
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px; height: 0; overflow: hidden;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+    }
+  </style>
+  <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+  <!--[if lt IE 9]>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6/html5shiv.min.js"></script>
+    <![endif]-->
+  <!-- Fav and touch icons -->
+  <link href="bootstrap/ico/apple-touch-icon-144-precomposed.png" sizes="144x144" rel="apple-touch-icon-precomposed" />
+  <link href="bootstrap/ico/apple-touch-icon-114-precomposed.png" sizes="114x114" rel="apple-touch-icon-precomposed" />
+  <link href="bootstrap/ico/apple-touch-icon-72-precomposed.png" sizes="72x72" rel="apple-touch-icon-precomposed" />
+  <link href="bootstrap/ico/apple-touch-icon-57-precomposed.png" rel="apple-touch-icon-precomposed" />
+  <link href="bootstrap/ico/favicon.png" rel="shortcut icon" />
+  <link type="text/css" rel="stylesheet" href="css/screen.css" />
+  <script src="ScriptLibrary/jquery-latest.pack.js" type="text/javascript">
+  </script>
+  <script src="bootstrap/js/bootstrap.js" type="text/javascript">
+  </script>
+  <script type="text/javascript">
+   function MM_openBrWindow(theURL,winName,features) { //v2.0
+  window.open(theURL,winName,features);
+}
+  </script>
+  <style id="holderjs-style" type="text/css">
+   .holderjs-fluid {font-size:16px;font-weight:bold;text-align:center;font-family:sans-serif;margin:0}
+  </style>
+ </head>
+ <body>
+  <!-- NAVBAR
+    ================================================== -->
+  <div class="navbar-wrapper">
+   <!-- Wrap the .navbar in .container to center it within the absolutely positioned parent. -->
+   <div class="container">
+    <div class="navbar">
+     <div class="navbar-inner">
+      <!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
+      <button data-target=".nav-collapse" data-toggle="collapse" class="btn btn-navbar" type="button">
+       <span class="icon-bar">
+       </span>
+       <span class="icon-bar">
+       </span>
+       <span class="icon-bar">
+       </span>
+      </button>
+      <a href="#" class="brand">
+       <img alt="" src="Images/logo/logo3.jpg" />
+      </a>
+      <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
+      <div class="nav-collapse collapse">
+       <ul class="nav">
+        <li>
+         <a href="index.html">
+          Home
+         </a>
+        </li>
+        <li>
+         <a href="petition.html">
+          Petition
+         </a>
+        </li>
+        <li>
+         <a href="important_info.html">
+          Important Info
+         </a>
+        </li>
+        <li>
+         <a href="dune_care.html">
+          Beach Care
+         </a>
+        </li>
+        <li>
+         <a href="your_comments.html">
+          Your Comments
+         </a>
+        </li>
+        <li>
+         <a href="contact.html">
+          Contact
+         </a>
+        </li>
+       </ul>
+      </div>
+      <!--/.nav-collapse -->
+     </div>
+     <!-- /.navbar-inner -->
+    </div>
+    <!-- /.navbar -->
+   </div>
+   <!-- /.container -->
+  </div>
+  <!-- /.navbar-wrapper -->
+  <!-- Carousel
+    ================================================== -->
+  <div class="carousel slide" id="myCarousel">
+   <div class="carousel-inner">
+    <div class="item active">
+     <img alt="A lady walking her dog on the grass" src="Images/carousel/path_with_dog.jpg" />
+     <div class="container">
+      <div class="carousel-caption">
+       <h1>
+        <strong>
+         Tugun to Bilinga Oceanway
+         <br />
+         The MISSING Link
+        </strong>
+       </h1>
+       <p class="lead">
+       </p>
+       <!--   <a href="petition.html" class="btn btn-large btn-primary" >Sign the Petition</a> -->
+      </div>
+     </div>
+    </div>
+    <div class="item">
+     <img alt="a concrete path with a bicycle and stick figure walking engraved into the concrete." src="Images/carousel/path_sign.jpg" />
+     <div class="container">
+      <div class="carousel-caption">
+       <br />
+       <h1>
+        A city that connects people
+       </h1>
+      </div>
+     </div>
+    </div>
+    <div class="item">
+     <img alt="A view from the beach at Tugun looking down towards Coolangatta." src="Images/carousel/cooly_beach.jpg" />
+     <div class="container">
+      <div class="carousel-caption">
+       <br />
+       <h1>
+        A city loved for its green, gold and blue.
+       </h1>
+      </div>
+     </div>
+    </div>
+   </div>
+   <a data-slide="prev" href="#myCarousel" class="left carousel-control">
+    ‹
+   </a>
+   <a data-slide="next" href="#myCarousel" class="right carousel-control">
+    ›
+   </a>
+  </div>
+  <!-- /.carousel -->
+  <!-- Marketing messaging and featurettes
+    ================================================== -->
+  <!-- Wrap the rest of the page in another container to center all the content. -->
+  <div class="container marketing">
+   <div class="row">
+    <div class="span12">
+     <div class="text-center">
+      <iframe width="640" height="360" frameborder="0" allowfullscreen="" src="https://www.youtube.com/embed/01f_Kds-M_A?rel=0&controls=0">
+      </iframe>
+      <br />
+      <br />
+      <br />
+     </div>
+     <h4 class="text_drawing">
+      We Call on the City of Gold Coast,
+      <br />
+      <br />
+     </h4>
+     <h4 class="text_drawing">
+      In the Interests of the People of the Southern Gold Coast,
+      <br />
+      <br />
+      To Proceed With
+      <br />
+      <br />
+      The
+        Tugun to Bilinga Oceanway
+     </h4>
+     <br />
+     <br />
+     <br />
+     <h1>
+      Gold Coast Oceanway
+     </h1>
+     <p>
+      <span class="text_aqua">
+       The City of Gold Coast identified the Oceanway as a signature project for the city.
+       <br />
+       <br />
+       The Gold Coast Oceanway is a 36 kilometre stretch of magnificent beachside pathways that connects from The Spit at the north of the Gold Coast to Point Danger at the southern border.
+       <br />
+       <br />
+       Winner of multiple awards, such as the 2007 Gold Coast Urban Design Awards - Helen Josphson Award for innovation in Urban Design, the Gold Coast Oceanway path is where you'll encounter birds, dolphins, fish and whales as you journey along. Not to mention the everyday locals who will always give you a smile.
+       <br />
+       <br />
+       The pathway is for all age groups and abilities and showcases our magnificent beaches. A simple path for all to enjoy and encompases what makes the Gold Coast such a special place to live and visit.
+      </span>
+     </p>
+     <br />
+     <br />
+     <h1>
+      Tugun to Bilinga Oceanway - 1.7 km Missing Link
+     </h1>
+     <p class="prettyprint">
+      The Tugun to Bilinga section is a stretch of public road reserve that hugs the ocean foreshores between Bilinga SLSC and O'Connor Park at Tugun.
+      <br />
+      <br />
+      A path that is yet to be built and if our Mayor and Councillor has their way, will never be built.
+      <br />
+      <br />
+      The Gold Coast Oceanway is recognised as a regional significant project. Local businesses, residents, ratepayers, international and Australian tourists and many community groups have expressed support for the construction of the Tugun to Bilinga beachfront section of the Oceanway.
+      <br />
+      <br />
+      Council allocated funding through its budget and prepared a detailed Planning Report in October 2011 and then resolved to engage with the community, resulting in the Tugun to Bilinga Consultation Report, May 2012.
+      <span class="prettyprint">
+       <strong>
+        <br />
+        <br />
+        Community Consultation Results
+       </strong>
+      </span>
+     </p>
+     <p>
+      On the results of this report... as quoted by area Councillor, Chris Robbins in the
+      <a href="http://www.goldcoastbulletin.com.au/news/gold-coast/controversial-plans-for-an-oceanway-at-tugun-could-be-scrapped-for-a-bike-path/story-fnj94idh-1227221015335">
+       Gold Coast Bulletin
+      </a>
+      on 16 February 2015... "consultation process for an Oceanway at Tugun found 64.37% of people opposed the Oceanway... a further 84.74% of people showed strong support for bikeway upgrades along Golden Four Drive..."
+      <br />
+      <br />
+      But did the community consultation process, adopted by Council, comply with the normal standards of statistical rigour, independence and transparency necessary to justify the rejection of the Tugun to Bilinga Oceanway proposal?
+      <br />
+     </p>
+     <br />
+     <h4 class="text_drawing">
+      <strong>
+       <em>
+        An independent review of the
+        <br />
+        <br />
+       </em>
+      </strong>
+     </h4>
+     <h4 class="text_drawing">
+      <strong>
+       <em>
+        CONSULTATION REPORT declared the report as BIASED
+        <br />
+        <br />
+       </em>
+      </strong>
+     </h4>
+     <h4 class="text_drawing">
+      <strong>
+       <em>
+        and at best INCOMPETENT
+        <br />
+        <br />
+       </em>
+      </strong>
+     </h4>
+     <h4 class="text_drawing">
+      <strong>
+       <em>
+        and at worst DISINGENUOUS or
+        <br />
+        <br />
+       </em>
+      </strong>
+     </h4>
+     <h4 class="text_drawing">
+      <strong>
+       <em>
+        INTENTIONALLY MISLEADING!
+        <br />
+       </em>
+      </strong>
+     </h4>
+    </div>
+   </div>
+   <hr />
+   <div class="row">
+    <div class="span4">
+     <a href="important_info.html">
+      <img alt="A coloured box with the words important info written on it." src="Images/box/reports.jpg" />
+     </a>
+    </div>
+    <div class="span4">
+     <a href="your_comments.html">
+      <img alt="A coloured box with the words your comments written on it." src="Images/box/your_comments.jpg" />
+     </a>
+    </div>
+    <!-- /.span4 -->
+    <div class="span4">
+     <a href="petition.html">
+      <img alt="a coloured box with the words petition written on it." src="Images/box/petition.jpg" />
+     </a>
+    </div>
+    <!-- /.span4 -->
+   </div>
+   <!-- /.row -->
+   <div class="span12">
+    <div class="pagination-centered">
+     <br />
+     <br />
+     <br />
+     <br />
+     <a target="new" href="https://www.facebook.com/t2boceanway">
+      <img alt="A facebook icon, linking you to the facebook site." src="Images/Icons/facebook.jpg" />
+     </a>
+     <br />
+     <br />
+     <br />
+     <br />
+     <br />
+    </div>
+   </div>
+   <div class="span12">
+    <div class="pagination-large">
+     <blockquote>
+      <p>
+       <span class="pagination-centered">
+        <strong>
+         <em>
+          This website has been created with the view to show the city leaders that there is a vision and desire to have the Tugun to Bilinga Oceanway built.  We would ask our community to be respectful at all times to the residents who reside in the foreshore area. We will not condone any disrespectful or rude behaviour towards any residents, their families or visitors in this area, and ask that they be treated with the utmost respect during this campaign.
+         </em>
+        </strong>
+       </span>
+       <br />
+      </p>
+     </blockquote>
+    </div>
+   </div>
+   <!-- FOOTER -->
+   <footer>
+   </footer>
+   <p class="pull-right">
+    <a href="#">
+     Back to top
+    </a>
+   </p>
+   <p>
+    © 2015 Natalie Wain·
+    <a target="new" href="Images/privacy_policy.pdf">
+     Privacy
+    </a>
+    ·
+    <a target="new" href="https://www.facebook.com/t2boceanway">
+     Facebook
+    </a>
+   </p>
+  </div>
+  <!-- /.container -->
+  <script>
+   !function ($) {
+        $(function(){
+          // carousel demo
+          $('#myCarousel').carousel()
+        })
+      }(window.jQuery)
+  </script>
+  <script src="bootstrap/js/holder/holder.js">
+  </script>
+ </body>
+</html>

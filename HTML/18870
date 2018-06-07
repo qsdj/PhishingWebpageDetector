@@ -1,0 +1,180 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta content="Content-Type" http-equiv="Content-Type" />
+  <title>
+   Lori's Pet Salon Photo Gallery
+  </title>
+  <meta name="HandheldFriendly" content="True" />
+  <meta content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" name="viewport" />
+  <meta content="width=device-width" name="viewport" />
+  <!-- <script type="text/javascript" src="js/prototype.js"></script>
+<script type="text/javascript" src="js/scriptaculous.js?load=effects,builder"></script>
+<script type="text/javascript" src="js/lightbox.js"></script>
+<script language="javascript">
+		function wsa_include_js(){
+			var js = document.createElement('script');
+			js.setAttribute('language', 'javascript');
+			js.setAttribute('type', 'text/javascript');
+			js.setAttribute('src','http://a2.websitealive.com/723/Visitor/vTracker_v2.asp?websiteid=0&groupid=723');
+			document.getElementsByTagName('head').item(0).appendChild(js);
+		}
+		window.onload = wsa_include_js;
+</script> -->
+  <link href="style.css" rel="Stylesheet" type="text/css" />
+  <link media="screen" type="text/css" href="css/lightbox.css" rel="stylesheet" />
+  <link href="css/responsive.css" rel="Stylesheet" type="text/css" />
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+  </script>
+  <script type="text/javascript">
+   $(document).ready(function(){
+$('#open').click(function(){
+$('#hide').slideToggle();
+});
+});
+  </script>
+ </head>
+ <body>
+  <div align="center" id="header_container">
+   <div id="banner_container">
+    <div id="header_title_left">
+    </div>
+    <div id="header_title_right">
+     <a onclick="javascript:window.open('coupon.html','guest','width=480,height=480');" href="" class="header_title_right">
+     </a>
+    </div>
+    <div id="header_left">
+    </div>
+    <div id="header_right">
+     <div id="header_chat_button">
+      <a onclick="javascript:window.open('http://a2.websitealive.com/723/rRouter.asp?groupid=723&departmentid=0&websiteid=0','guest','width=400,height=400');" href="" class="header_chat_button">
+       <img alt="" src="images/ques.png" />
+      </a>
+     </div>
+     <div id="header_rightR">
+      <img class="show" alt="" src="images/br_right.png" />
+      <img class="hide" alt="" src="images/header_right_3.jpg" />
+     </div>
+    </div>
+   </div>
+   <ul id="menu_container">
+    <li id="home_button">
+     <a target="_self" href="index.php" class="home_button">
+     </a>
+    </li>
+    <li id="about_button">
+     <a target="_self" href="about.html" class="about_button">
+     </a>
+    </li>
+    <li id="services_button">
+     <a target="_self" href="services.html" class="services_button">
+     </a>
+    </li>
+    <li id="photo_button">
+     <a target="_self" href="#">
+     </a>
+    </li>
+    <li id="contact_button">
+     <a target="_self" href="contact.html" class="contact_button">
+     </a>
+    </li>
+   </ul>
+   <div class="mob">
+    <a id="open">
+     <img alt="" src="images/mnuPic.jpg" />
+    </a>
+    <div id="hide" class="mob_mnu">
+     <ul>
+      <li>
+       <a href="index.php">
+        Home
+       </a>
+      </li>
+      <li>
+       <a href="about.html">
+        About Us
+       </a>
+      </li>
+      <li>
+       <a href="services.html">
+        Services
+       </a>
+      </li>
+      <li>
+       <a href="gallery.html">
+        Photo Gallery
+       </a>
+      </li>
+      <li>
+       <a href="contact.html">
+        Contact Us
+       </a>
+      </li>
+     </ul>
+    </div>
+   </div>
+   <div id="menu_refelection_container">
+    <div id="menu_refelection">
+    </div>
+   </div>
+  </div>
+  <div align="center" id="content_container_gallery">
+   <div id="content_main_gallery">
+    <div id="title_1">
+     Photo Gallery
+    </div>
+    <object width="865" height="500" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,0,0" classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000">
+     <param value="true" name="allowFullScreen">
+     </param>
+     <param value="http://www.lorispetsalon.net/dfg/DfGallery.swf" name="movie">
+     </param>
+     <param value="high" name="quality">
+     </param>
+     <param value="xmlUrl=http://www.lorispetsalon.net/dfg/api/rest/get_gallery/1/json" name="FlashVars">
+      <embed width="865" height="500" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" allowfullscreen="true" flashvars="xmlUrl=http://www.lorispetsalon.net/dfg/api/rest/get_gallery/1/json" quality="high" src="http://www.lorispetsalon.net/dfg/DfGallery.swf">
+      </embed>
+     </param>
+    </object>
+   </div>
+  </div>
+  <div align="center" id="footer_container">
+   <div id="content_footer">
+    <div id="footer_menu">
+     <a target="_self" href="index.php" class="footer_menu">
+      home
+     </a>
+     |
+     <a target="_self" href="about.html" class="footer_menu">
+      about us
+     </a>
+     |
+     <a target="_self" href="services.html" class="footer_menu">
+      services
+     </a>
+     |
+     <a target="_self" href="#" class="footer_menu">
+      photo gallery
+     </a>
+     |
+     <a target="_self" href="contact.html" class="footer_menu">
+      contact us
+     </a>
+    </div>
+    <div id="footer_phone">
+     614-880-7387
+    </div>
+    <div id="footer_copyright">
+     Copyright ©2009 Lori’s Pet Salon. All rights reserved.
+    </div>
+    <div id="footer_freshpixel">
+     webdesign and development by
+     <a target="_blank" href="http://freshpixel.innuo.ro/" class="footer_freshpixel">
+      <b>
+       FreshPixel
+      </b>
+     </a>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>

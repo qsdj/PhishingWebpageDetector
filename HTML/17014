@@ -1,0 +1,1447 @@
+<!DOCTYPE html>
+<html lang="en" xml:lang="sv-se" xmlns="http://www.w3.org/1999/xhtml" style="" class=" js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients no-cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths">
+ <head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>
+   WebXpert - Webbutveckling Färetag
+  </title>
+  <!-- css files -->
+  <link href="css/style.css" rel="stylesheet" />
+  <link media="screen" href="css/settings.css" type="text/css" rel="stylesheet" />
+  <!-- color styles - uncomment your preferred -->
+  <link name="colors" href="css/skin/red.css" type="text/css" rel="stylesheet" />
+  <!--
+<link rel="stylesheet" type="text/css" href="css/skin/orange.css" name="colors"  />
+<link rel="stylesheet" type="text/css" href="css/skin/yellow.css" name="colors"  />
+<link rel="stylesheet" type="text/css" href="css/skin/green.css" name="colors"  />
+<link rel="stylesheet" type="text/css" href="css/skin/blue.css" name="colors"  />
+<link rel="stylesheet" type="text/css" href="css/skin/brown.css" name="colors"  />
+<link rel="stylesheet" type="text/css" href="css/skin/violet.css" name="colors"  />
+<link rel="stylesheet" type="text/css" href="css/skin/purple.css" name="colors"  />
+<link rel="stylesheet" type="text/css" href="css/skin/grey.css" name="colors"  />
+<link rel="stylesheet" type="text/css" href="css/skin/turquoise.css" name="colors"  />
+-->
+  <!-- Style Switcher Box delete for remove styleswitcher-->
+  <link href="css/styleswitcher.css" rel="stylesheet" />
+  <!-- google-font links -->
+  <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lobster" />
+  <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto+Slab:100,300,700" />
+  <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400,700,700italic,400italic" />
+  <!-- modernizer js -->
+  <script src="js/vendor/modernizr.js" style="">
+  </script>
+  <!-- favicon -->
+  <link href="img/favicon.ico" rel="shortcut icon" />
+  <meta class="foundation-data-attribute-namespace" />
+  <meta class="foundation-mq-xxlarge" />
+  <meta class="foundation-mq-xlarge" />
+  <meta class="foundation-mq-large" />
+  <meta class="foundation-mq-medium" />
+  <meta class="foundation-mq-small" />
+  <style>
+  </style>
+  <script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/22/12a/common.js">
+  </script>
+  <script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/22/12a/util.js">
+  </script>
+  <script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/22/12a/stats.js">
+  </script>
+  <script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps/api/js/AuthenticationService.Authenticate?1shttp%3A%2F%2Fwebxpert.se%2F&callback=_xdc_._9ko9ki&token=32892">
+  </script>
+ </head>
+ <body>
+  <!-- Preloader -->
+  <div class="mask" style="display: none;">
+   <div class="rotating" id="loader" style="display: none;">
+   </div>
+  </div>
+  <!--/Preloader -->
+  <div id="up">
+  </div>
+  <!-- Start Header -->
+  <div id="navigation-sticky-wrapper" class="sticky-wrapper" style="height: 121px;">
+   <header id="navigation">
+    <div class="row">
+     <div class="large-3 small-6 medium-4 columns">
+      <!--start logo -->
+      <a href="#" title="">
+       <img alt="webxpert.se" src="img/logo_intro.png" />
+      </a>
+      <!-- end logo -->
+     </div>
+     <div class="large-9 small-6 medium-8 columns">
+      <div class="navigation">
+       <div class="menu-button one-page">
+        <span class="touch-button">
+         <i class="navicon fa fa-bars fa-2x">
+         </i>
+        </span>
+       </div>
+       <nav class="top-menu">
+        <!-- start menu -->
+        <div align="right">
+         <a href="http://en.webxpert.se/">
+          <img border="0" src="img/enu.png" />
+         </a>
+         <a href="http://webxpert.se/">
+          <img border="0" src="img/Se.png" />
+         </a>
+        </div>
+        <ul class="flexnav one-page with-js opacity lg-screen" data-breakpoint="800">
+         <li>
+          <a href="#up" title="">
+           Hem
+          </a>
+         </li>
+         <li lang="sv-se">
+          <a href="#services" title="">
+           Tjänster
+          </a>
+         </li>
+         <li>
+          <a href="#about" title="">
+           Om Oss
+          </a>
+         </li>
+         <li>
+          <a href="#contacts" title="">
+           Kontakta Oss
+          </a>
+         </li>
+         <li>
+          <a href="#team" title="">
+           Lediga Jobb
+          </a>
+         </li>
+        </ul>
+        <!-- end menu -->
+       </nav>
+      </div>
+     </div>
+    </div>
+   </header>
+  </div>
+  <!--end Header -->
+  <!-- start Revolution Slider -->
+  <div class="tp-banner-container" style="max-height: none; overflow: visible; height: 244px;">
+   <div class="tp-banner revslider-initialised tp-simpleresponsive hovered" id="revslider-928" style="max-height: none; height: 100%;">
+    <ul style="display: block; overflow: hidden; width: 100%; height: 100%; max-height: none;">
+     <!-- SLIDE  -->
+     <li data-masterspeed="300" data-slotamount="1" data-transition="fade" style="width: 100%; height: 100%; overflow: hidden; visibility: visible; left: 0px; top: 0px; z-index: 20; opacity: 1;">
+      <div class="overlay">
+      </div>
+      <!-- MAIN IMAGE -->
+      <div data-oheight="undefined" data-owidth="undefined" data-bgfitend="undefined" data-bgfit="cover" data-easeme="undefined" data-kenburns="undefined" data-bgposition="center center" data-bgpositionend="undefined" data-ease="undefined" data-rotationend="undefined" data-rotationstart="undefined" data-zoomend="undefined" data-zoomstart="undefined" data-duration="undefined" style="width:100%;height:100%;" class="slotholder">
+       <div style='background-color: transparent; background-repeat: no-repeat; background-image: url("img/slider/img1.jpg"); background-size: cover; background-position: center center; width: 100%; height: 100%; position: relative; opacity: 1;' data-src="img/slider/img1.jpg" src="img/slider/img1.jpg" data-lazydone="undefined" data-bgrepeat="no-repeat" data-bgposition="center center" data-bgfit="cover" data-lazyload="undefined" class="tp-bgimg defaultimg">
+       </div>
+      </div>
+      <!-- LAYERS -->
+      <!-- LAYER NR. 1 -->
+      <div data-endspeed="300" data-easing="Back.easeInOut" data-start="1000" data-speed="1000" data-y="90" data-hoffset="0" data-x="center" class="tp-caption large_bold_white_25 text-center  start tp-resizeme" style="min-height: 0px; min-width: 0px; line-height: 35px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-size: 30px; left: 350px; top: 48.8px; visibility: visible; opacity: 1; transform: translate3d(0px, 0px, 0px);">
+       <h1 class="text-slide" style="min-height: 0px; min-width: 0px; line-height: 53px; border-width: 0px; margin: 1.62667px 0px 4.33778px; padding: 0px; letter-spacing: 0px; font-size: 38px;">
+        Vi
+        <span class="red bold" style="min-height: 0px; min-width: 0px; line-height: 29px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-size: 38px;">
+         Undersöker
+        </span>
+       </h1>
+      </div>
+      <!-- LAYER NR. 2 -->
+      <!--    <div class="tp-caption lfb mediumlarge_light_white text-center  tp-resizeme"
+                data-x="center"
+                data-y="200"                
+                data-speed="1000"
+                data-start="1500"
+                data-easing="Back.easeInOut"
+                style="z-index: 6">
+          <h1 class="text-slide">We </h1>
+        </div>-->
+      <!-- LAYER NR. 3 -->
+     </li>
+     <!-- SLIDE  -->
+     <li data-masterspeed="300" data-slotamount="1" data-transition="fade" style="width: 100%; height: 100%; overflow: hidden;">
+      <div class="overlay">
+      </div>
+      <!-- MAIN IMAGE -->
+      <div data-oheight="undefined" data-owidth="undefined" data-bgfitend="undefined" data-bgfit="cover" data-easeme="undefined" data-kenburns="undefined" data-bgposition="left top" data-bgpositionend="undefined" data-ease="undefined" data-rotationend="undefined" data-rotationstart="undefined" data-zoomend="undefined" data-zoomstart="undefined" data-duration="undefined" style="width:100%;height:100%;" class="slotholder">
+       <div style="background-color:transparent;background-repeat:no-repeat;background-image:url(img/slider/img2.jpg);background-size:cover;background-position:left top;width:100%;height:100%;" data-src="img/slider/img2.jpg" src="img/slider/img2.jpg" data-lazydone="undefined" data-bgrepeat="no-repeat" data-bgposition="left top" data-bgfit="cover" data-lazyload="undefined" class="tp-bgimg defaultimg">
+       </div>
+      </div>
+      <!-- LAYERS -->
+      <!-- LAYER 1 -->
+      <div data-endspeed="300" data-easing="Back.easeInOut" data-start="1000" data-speed="1000" data-y="90" data-hoffset="0" data-x="center" class="tp-caption large_bold_white_25 text-center  start tp-resizeme">
+       <h1 class="text-slide">
+        Vi
+        <span class="red bold">
+         Föreslår och Utvecklar
+        </span>
+       </h1>
+      </div>
+      <!-- LAYER NR. 2 -->
+      <div style="z-index: 6" data-easing="Back.easeInOut" data-start="1500" data-speed="1000" data-y="200" data-x="center" class="tp-caption lfl large_bold_white_25 text-center  tp-resizeme start">
+       <h2 class="text-slide">
+        WEBBDESIGN / SEO / APP UTVECKLING /
+       </h2>
+      </div>
+      <!-- LAYER NR. 3 -->
+      <!--  <div class="tp-caption lfr"
+                data-x="center"
+                data-hoffset="0"
+                data-y="250"
+                data-speed="1000"
+                data-start="2200"
+                data-easing="Power4.easeOut"
+                data-endspeed="300"
+                data-endeasing="Power1.easeIn"
+                data-captionhidden="off"
+                style="z-index: 6">
+          <h2 class="text-slide">PHOTOGRAPHER / CREATIVE / AND MUCH MORE...</h2>
+        </div>-->
+     </li>
+     <!-- SLIDE  -->
+     <li data-masterspeed="300" data-slotamount="1" data-transition="fade" style="width: 100%; height: 100%; overflow: hidden; visibility: visible; left: 0px; top: 0px; z-index: 18; opacity: 0;">
+      <div class="overlay">
+      </div>
+      <!-- MAIN IMAGE -->
+      <div data-oheight="undefined" data-owidth="undefined" data-bgfitend="undefined" data-bgfit="cover" data-easeme="undefined" data-kenburns="undefined" data-bgposition="left top" data-bgpositionend="undefined" data-ease="undefined" data-rotationend="undefined" data-rotationstart="undefined" data-zoomend="undefined" data-zoomstart="undefined" data-duration="undefined" style="width:100%;height:100%;" class="slotholder">
+       <div style='background-color: transparent; background-repeat: no-repeat; background-image: url("img/slider/img3.jpg"); background-size: cover; background-position: left top; width: 100%; height: 100%; opacity: 0;' data-src="img/slider/img3.jpg" src="img/slider/img3.jpg" data-lazydone="undefined" data-bgrepeat="no-repeat" data-bgposition="left top" data-bgfit="cover" data-lazyload="undefined" class="tp-bgimg defaultimg">
+       </div>
+      </div>
+      <!-- LAYERS -->
+      <!-- LAYER 1 -->
+      <div data-easing="easeOutExpo" data-start="500" data-speed="300" data-y="70" data-x="center" tp-resizeme="" start="" class="tp-caption large_bold_white_25 text-center  start tp-resizeme big-text lft ltt">
+       <h1 class="text-slide">
+        &amp;
+        <span class="red bold">
+         Du Lyckas
+        </span>
+       </h1>
+      </div>
+      <div style="z-index: 6" data-easing="Back.easeInOut" data-start="1500" data-speed="1000" data-y="200" data-x="center" class="tp-caption lfl large_bold_white_25 text-center  tp-resizeme start">
+       <h2 class="text-slide">
+        WordPress / HTML / CSS3 / SEO /
+       </h2>
+      </div>
+      <!-- LAYER NR. 2 -->
+      <!--  <div class="tp-caption medium_bg_asbestos sfl"
+            data-x="50"
+            data-y="250"
+            data-speed="500"
+            data-start="800"
+            data-easing="Power1.easeOut"
+            data-endspeed="300"
+            data-endeasing="Power1.easeIn"
+            data-captionhidden="off"
+            style="z-index: 6">Revolution Slider Included 
+        </div>
+        
+        <!-- LAYER NR. 3 -->
+      <!-- <div class="tp-caption medium_bg_asbestos sfl"
+            data-x="50"
+            data-y="300"
+            data-speed="500"
+            data-start="1200"
+            data-easing="Back.easeOut"
+            data-endspeed="300"
+            data-endeasing="Power1.easeIn"
+            data-captionhidden="off"
+            style="z-index: 6">Fully responsive 
+        </div>
+        
+        <!-- LAYER NR. 5 -->
+      <!-- <div class="tp-caption medium_bg_asbestos skewfromleft"
+            data-x="50"
+            data-y="350"
+            data-speed="800"
+            data-start="1900"
+            data-easing="Elastic.easeOut"
+            data-endspeed="300"
+            data-endeasing="Power1.easeIn"
+            data-captionhidden="off"
+            style="z-index: 6">Valid HTML5 / CSS3 
+        </div>
+        
+        <!-- LAYER NR. 6 -->
+      <!-- <div class="tp-caption medium_bg_asbestos skewfromleft"
+            data-x="50"
+            data-y="200"
+            data-speed="800"
+            data-start="2600"
+            data-easing="Power3.easeInOut"
+            data-endspeed="300"
+            data-endeasing="Power1.easeIn"
+            data-captionhidden="off"
+            style="z-index: 6">Cool animations 
+        </div>
+        
+        <!-- LAYER NR. 7 -->
+      <!-- <div class="tp-caption medium_bg_asbestos skewfromleft"
+            data-x="50"
+
+            data-y="400"
+            data-speed="800"
+            data-start="3300"
+            data-easing="Power4.easeOut"
+            data-endspeed="300"
+            data-endeasing="Power1.easeIn"
+            data-captionhidden="off"
+            style="z-index: 6">jQuery Enhanced 
+        </div>
+        
+        <!-- LAYER NR. 8 -->
+      <!-- <div class="tp-caption medium_bg_asbestos skewfromright"
+            data-x="right"
+            data-hoffset="-50"
+            data-y="200"
+            data-speed="800"
+            data-start="4000"
+            data-easing="Power2.easeInOut"
+            data-endspeed="300"
+            data-endeasing="Power1.easeIn"
+            data-captionhidden="off"
+            style="z-index: 6">Crossbrowser Compatible 
+        </div>
+        
+        <!-- LAYER NR. 9 -->
+      <!-- <div class="tp-caption medium_bg_asbestos skewfromright"
+            data-x="right"
+            data-hoffset="-50"
+            data-y="250"
+            data-speed="800"
+            data-start="4700"
+            data-easing="Circ.easeOut"
+            data-endspeed="300"
+            data-endeasing="Power1.easeIn"
+            data-captionhidden="off"
+            style="z-index: 6">Documentation included 
+        </div>
+        
+        <!-- LAYER NR. 10 -->
+      <!-- <div class="tp-caption medium_bg_asbestos skewfromright"
+            data-x="right"
+            data-hoffset="-50"
+            data-y="300"
+            data-speed="800"
+            data-start="5400"
+            data-easing="Cube.easeOut"
+            data-endspeed="300"
+            data-endeasing="Power1.easeIn"
+            data-captionhidden="off"
+            style="z-index: 6">Parallax Backgrounds 
+        </div>
+        
+        <!-- LAYER NR. 11 -->
+      <!-- <div class="tp-caption medium_bg_asbestos skewfromright"
+            data-x="right"
+            data-hoffset="-50"
+            data-y="350"
+            data-speed="800"
+            data-start="6100"
+            data-easing="Bounce.easeOut"
+            data-endspeed="300"
+            data-endeasing="Power1.easeIn"
+            data-captionhidden="off"
+            style="z-index: 6">Ajax Working Contact Form 
+        </div>
+        
+        <!-- LAYER NR. 12 -->
+      <!-- <div class="tp-caption medium_bg_asbestos skewfromright"
+            data-x="right"
+            data-hoffset="-50"
+            data-y="400"
+            data-speed="800"
+            data-start="6800"
+            data-easing="Linear.easeNone"
+            data-endspeed="300"
+            data-endeasing="Power1.easeIn"
+            data-captionhidden="off"
+            style="z-index: 6">Font Awesome 
+        </div>
+        
+        <!-- LAYER NR. 13 -->
+      <!-- <div class="tp-caption medium_bg_asbestos skewfromright"
+            data-x="right"
+            data-hoffset="-50"
+            data-y="450"
+            data-speed="800"
+            data-start="7500"
+            data-easing="Expo.easeOut"
+            data-endspeed="300"
+            data-endeasing="Power1.easeIn"
+            data-captionhidden="off"
+            style="z-index: 6">Simple & Clean 
+        </div>
+        
+        <!-- LAYER NR. 14 -->
+      <!-- <div class="tp-caption medium_bg_asbestos skewfromleft"
+            data-x="50"
+            data-y="450"
+            data-speed="800"
+            data-start="7500"
+            data-easing="Expo.easeIn"
+            data-endspeed="300"
+            data-endeasing="Power1.easeIn"
+            data-captionhidden="off"
+            style="z-index: 6">...And Much More 
+        </div>
+      </li>
+    </ul>-->
+      <div class="tp-bannertimer" style="width: 5.47778%; visibility: visible;">
+      </div>
+     </li>
+    </ul>
+    <div class="tp-loader spinner0" style="visibility: hidden; opacity: 0;">
+     <div class="dot1">
+     </div>
+     <div class="dot2">
+     </div>
+     <div class="bounce1">
+     </div>
+     <div class="bounce2">
+     </div>
+     <div class="bounce3">
+     </div>
+    </div>
+   </div>
+   <div class="tp-leftarrow tparrows default" style="position: absolute; margin-top: -20px; left: 20px; top: 122px;">
+   </div>
+   <div class="tp-rightarrow tparrows default" style="position: absolute; margin-top: -20px; right: 20px; top: 122px;">
+   </div>
+  </div>
+  <!-- end Revolution Slider -->
+  <section id="services">
+   <div class="row">
+    <div class="large-12 columns">
+     <h1 class="title-section bold">
+      <span class="nbr">
+      </span>
+      Tjänster
+      <span class="border">
+      </span>
+     </h1>
+     <h2 class="subtitle-section">
+      För att ditt företag ska synas på nätet, krävs ett stort utbud av tjänster. Lyckligtvis kan vi erbjuda dig alla tjänster ditt färetag behäver fär detta. Vi kan erbjuda en totallösning så att du kan koncentrera dig på din affärside och hur ditt färetag ska växa. Vår kompetens omfattas från logotypdesign till komplexa marknadsfäringskampanjer på nätet. Tala om vad din affärside är och vi ska låta dig växa.
+     </h2>
+    </div>
+    <!-- start service box -->
+    <div data-scrollreveal="enter top and move 150px after 0.3s" class="large-4 medium-4 columns" style="-webkit-transform: translatey(-25px);-moz-transform: translatey(-25px);transform: translatey(-25px);opacity: 0;" data-sr-init="true">
+     <div class="icon-service">
+      <i class="fa fa-bug">
+      </i>
+     </div>
+     <div class="info-service">
+      <h3 class="bold">
+       Webbutveckling
+      </h3>
+      <p>
+       Webbutveckling är ett samlingsnamn för allt runt att bygga en webbplats. Kan vara en webbplats eller ett program anpassat för dig
+      </p>
+     </div>
+    </div>
+    <!-- end service box -->
+    <!-- start service box -->
+    <div data-scrollreveal="enter top and move 150px after 0.3s" class="large-4 medium-4 columns" style="-webkit-transform: translatey(-25px);-moz-transform: translatey(-25px);transform: translatey(-25px);opacity: 0;" data-sr-init="true">
+     <div class="icon-service">
+      <i class="fa fa-mobile">
+      </i>
+     </div>
+     <div class="info-service">
+      <h3 class="bold">
+       Mobil Applikationsutveckling
+      </h3>
+      <p>
+       Mobil applikationsutveckling är de processer och metoder som ingår för att skriva programkod för mindre enheter, såsom smartphones och tabletter.
+      </p>
+     </div>
+     <!-- end service box -->
+    </div>
+    <div data-scrollreveal="enter top and move 150px after 0.3s" class="large-4 medium-4 columns" style="-webkit-transform: translatey(-25px);-moz-transform: translatey(-25px);transform: translatey(-25px);opacity: 0;" data-sr-init="true">
+     <!-- start service box -->
+     <div class="icon-service">
+      <i class="fa fa-search">
+      </i>
+     </div>
+     <div class="info-service">
+      <h3 class="bold">
+       Sökmotoroptimering
+      </h3>
+      <p>
+       Vill du synas på internet? WebXpert kan hjälpa dig att synas på internet. Vi ger dig en effektiv internet marknadsföring och ser till att dina varor och tjänster är synliga för dina potentiella kunder.
+      </p>
+     </div>
+    </div>
+    <!-- end service box -->
+    <!-- start service box -->
+    <!-- <div class="large-4 medium-4 columns" data-scrollreveal="enter top and move 150px after 0.5s">       
+      <div class="icon-service"> <i class="fa fa-dropbox"></i> </div>
+      <div class="info-service">
+        <h3 class="bold">Packaging</h3>
+        <p>Nostrud nulla qui nostrud est quis dolore cillum nisi nostrud ad ut in ex in fugiat cillum pariatur commodo exercitation.</p>
+      </div>
+    </div>
+    <!-- end service box -->
+    <!-- start service box -->
+    <!-- <div class="large-4 medium-4 columns" data-scrollreveal="enter top and move 150px after 0.5s"> 
+      <div class="icon-service"> <i class="fa fa-shopping-cart"></i> </div>
+      <div class="info-service">
+        <h3 class="bold">E-commerce</h3>
+        <p>Nostrud nulla qui nostrud est quis dolore cillum nisi nostrud ad ut in ex in fugiat cillum pariatur commodo exercitation.</p>
+      </div>      
+    </div>
+    <!-- end service box -->
+    <!-- start service box -->
+    <!-- <div class="large-4 medium-4 columns" data-scrollreveal="enter top and move 150px after 0.5s">       
+      <div class="icon-service"> <i class="fa fa-sitemap"></i> </div>
+      <div class="info-service">
+        <h3 class="bold">Hosting Solutions</h3>
+        <p>Nostrud nulla qui nostrud est quis dolore cillum nisi nostrud ad ut in ex in fugiat cillum pariatur commodo exercitation.</p>
+      </div>       
+    </div>
+    <!-- end service box -->
+   </div>
+   <div class="row">
+    <div class="large-12 columns">
+     <h2 class="subtitle">
+      Vår Process
+      <span class="border">
+      </span>
+     </h2>
+     <!-- <h3 class="subtitle">Nostrud nulla qui nostrud est quis dolore cillum nisi nostrud</h3>
+      
+      <!-- start process -->
+     <div class="large-3 medium-3 columns">
+      <div class="process">
+       <div class="process-hover">
+        <!-- <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p> -->
+       </div>
+       <i class="fa fa-lightbulb-o fa-5x">
+       </i>
+       <h3>
+        <span>
+         1
+        </span>
+        Kreativa Idéer
+       </h3>
+      </div>
+     </div>
+     <!-- end process -->
+     <!-- start process -->
+     <div class="large-3 medium-3 columns">
+      <div class="process">
+       <div class="process-hover">
+        <!-- <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p> -->
+       </div>
+       <i class="fa fa-flask fa-5x">
+       </i>
+       <h3>
+        <span>
+         2
+        </span>
+        Hitta Lösningar
+       </h3>
+      </div>
+     </div>
+     <!-- end process -->
+     <!-- start process -->
+     <div class="large-3 medium-3 columns">
+      <div class="process">
+       <div class="process-hover">
+        <!--  <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p> -->
+       </div>
+       <i class="fa fa-code fa-5x">
+       </i>
+       <h3>
+        <span>
+         3
+        </span>
+        Utveckla
+       </h3>
+      </div>
+     </div>
+     <!-- end process -->
+     <!-- start process -->
+     <div class="large-3 medium-3 columns">
+      <div class="process">
+       <div class="process-hover">
+        <!--  <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p> -->
+       </div>
+       <i class="fa fa-trophy fa-5x">
+       </i>
+       <h3>
+        <span>
+         4
+        </span>
+        Du Lyckas
+       </h3>
+      </div>
+     </div>
+     <!-- end process -->
+    </div>
+   </div>
+  </section>
+  <!-- end services section -->
+  <!-- start about -->
+  <section id="about">
+   <div class="row">
+    <div class="large-12 columns">
+     <h1 class="title-section bold">
+      <span class="nbr">
+      </span>
+      Om Oss
+      <span class="border">
+      </span>
+     </h1>
+     <h2 class="subtitle-section">
+      Vi kan hjälpa er att få en hemsida som passar ihop med er affärsidè. Vi kan se till att den når rätt potentiell kund och kan även hjälpa dig med olika onlinetjänster.
+     </h2>
+    </div>
+   </div>
+   <div data-scrollreveal="enter bottom and move 150px after 0.3s" class="text-center" style="-webkit-transform: translatey(150px);-moz-transform: translatey(150px);transform: translatey(150px);opacity: 0;" data-sr-init="true">
+    <img alt="" src="img/responsive.jpg" />
+    <br />
+    <br />
+    <br />
+    <br />
+   </div>
+   <div class="row">
+    <div class="large-12 columns">
+     <h1 class="title-section bold">
+      <span class="nbr">
+      </span>
+      Vilka Vi Är
+      <span class="border">
+      </span>
+     </h1>
+     <h2 class="subtitle-section">
+      <br />
+      Vi kan informationssystem och infrastruktur.
+Vi kan föreslå och bygga nya webblösningar, nya appar för dina behov.
+System och applikationer kommer att användas för att underlätta och effektivisera ditt arbete och det ger dig tid att växa.
+Vår affärside
+Öppna nya vägar för våra kunder genom sina webbplatser. Ge dig nya kunder och möjligheter och med det få dig växa.
+      <br />
+     </h2>
+    </div>
+   </div>
+  </section>
+  <section class="grey">
+   <div class="row">
+    <div class="large-12 columns">
+     <!-- start box -->
+     <div class="large-4 medium-4 columns">
+      <div class="icon-service">
+       <i class="fa fa-globe">
+       </i>
+      </div>
+      <div class="info-service">
+       <h4 class="bold">
+        Passionen för Design
+       </h4>
+       <p>
+        Design och stil bör arbeta för att affärsid�n och hemsidan ska se bra. Vi sköter designen åt dig och du utvecklar din affärsid�.
+       </p>
+      </div>
+     </div>
+     <!-- end box -->
+     <!-- start box -->
+     <div class="large-4 medium-4 columns">
+      <div class="icon-service">
+       <i class="fa fa-group">
+       </i>
+      </div>
+      <div class="info-service">
+       <h4 class="bold">
+        Responsiv Webbdesign
+       </h4>
+       <p>
+        är webbdesign som tillåter hemsidan och informationen att förändras beroende på vilken enhet och skärmstorlek besökaren använder.
+       </p>
+      </div>
+     </div>
+     <!-- end box -->
+     <!-- start box -->
+     <div class="large-4 medium-4 columns">
+      <div class="icon-service">
+       <i class="fa fa-star">
+       </i>
+      </div>
+      <div class="info-service">
+       <h4 class="bold">
+        Visuell Design
+       </h4>
+       <p>
+        Visuell kommunikation och design är konsten att informera, kommunicera och påverka människor med rätt information. Vi hjälper dig att nå till dina blivande kunder.
+       </p>
+      </div>
+     </div>
+     <!-- end box -->
+    </div>
+    <div class="large-12 columns text-center">
+     <h1 class="slogan">
+      <a class="big_link" href="#" title="">
+       Hur arbetar vi? Processen
+      </a>
+     </h1>
+    </div>
+   </div>
+  </section>
+  <!-- end about -->
+  <!-- Start Parallax section -->
+  <section class="parallax team-parallax">
+   <!-- <div class="row">
+    <div class="large-12 columns">
+      <h2 class="subtitle">About our some facts<span class="border"></span></h2>
+      <h3 class="subtitle">..And what our client's says</h3>-->
+   <!-- start counter -->
+   <div class="large-3 medium-3 columns">
+    <div data-perc="1" data-scrollreveal="enter left and move 150px after 0.3s" class="counter" style="-webkit-transform: translatex(-25px);-moz-transform: translatex(-25px);transform: translatex(-25px);opacity: 0;" data-sr-init="true">
+     <div class="icon-counter">
+      <i class="fa fa-coffee">
+      </i>
+     </div>
+     <div class="number-detail">
+      <h1 class="number">
+      </h1>
+      <p>
+       Möte
+      </p>
+     </div>
+    </div>
+   </div>
+   <!-- end counter -->
+   <!-- start counter -->
+   <div class="large-3  medium-3 columns">
+    <div data-perc="2" data-scrollreveal="enter left and move 150px after 0.3s" class="counter" style="-webkit-transform: translatex(-25px);-moz-transform: translatex(-25px);transform: translatex(-25px);opacity: 0;" data-sr-init="true">
+     <div class="icon-counter">
+      <i class="fa fa-users">
+      </i>
+     </div>
+     <div class="number-detail">
+      <h1 class="number">
+      </h1>
+      <p>
+       Planera
+      </p>
+     </div>
+    </div>
+   </div>
+   <!-- end counter -->
+   <!-- start counter -->
+   <div class="large-3 medium-3 columns">
+    <div data-perc="3" data-scrollreveal="enter left and move 150px after 0.3s" class="counter" style="-webkit-transform: translatex(-25px);-moz-transform: translatex(-25px);transform: translatex(-25px);opacity: 0;" data-sr-init="true">
+     <div class="icon-counter">
+      <i class="fa fa-briefcase">
+      </i>
+     </div>
+     <div class="number-detail">
+      <h1 class="number">
+      </h1>
+      <p>
+       Designa/implementera
+      </p>
+     </div>
+    </div>
+   </div>
+   <!-- end counter -->
+   <!-- start counter -->
+   <div class="large-3  medium-3 columns">
+    <div data-perc="4" data-scrollreveal="enter left and move 150px after 0.3s" class="counter" style="-webkit-transform: translatex(-25px);-moz-transform: translatex(-25px);transform: translatex(-25px);opacity: 0;" data-sr-init="true">
+     <div class="icon-counter">
+      <i class="fa fa-rocket">
+      </i>
+     </div>
+     <div class="number-detail">
+      <h1 class="number">
+      </h1>
+      <p>
+       Du Lyckas
+      </p>
+     </div>
+    </div>
+   </div>
+   <!-- end counter -->
+   <div class="row">
+    <div class="large-12 medium-8 medium-centered columns">
+     <!-- start testimonial coarousel -->
+     <div class="owl-carousel text-left owl-theme" id="testimonial" style="display: block; opacity: 1;">
+      <!-- start slide -->
+      <div class="owl-wrapper-outer">
+       <div class="owl-wrapper" style="width: 4872px; left: 0px; display: block; transition: all 1000ms ease 0s; transform: translate3d(0px, 0px, 0px);">
+        <div class="owl-item" style="width: 609px;">
+         <div>
+          <div class="large-6 large-centered medium-12 medium-centered columns">
+           <div class="large-3 medium-4 columns">
+            <img alt="" src="img/team/one.png" class="testimonial-img" />
+           </div>
+           <div class="large-9 medium-8 columns">
+            <h4 class="white semi-bold">
+             Låt oss träffas och diskutera dina behov och var du vill växa.
+            </h4>
+            <!-- <h5 class="white">Paula Doe</h5>-->
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="owl-item" style="width: 609px;">
+         <div>
+          <div class="large-6 large-centered medium-12 medium-centered columns">
+           <div class="large-3 medium-4 columns">
+            <img alt="" src="img/team/2-icon.png" class="testimonial-img" />
+           </div>
+           --&gt;
+           <div class="large-9 medium-8 columns">
+            <h4 class="white semi-bold">
+             Planera &amp; Dokumentera dina behov och vi spikar leveransdatum.
+            </h4>
+            <!-- <h5 class="white">Paula Doe</h5>-->
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="owl-item" style="width: 609px;">
+         <div>
+          <div class="large-6 large-centered medium-12 medium-centered columns">
+           <div class="large-3 medium-4 columns">
+            <img alt="" src="img/team/3-icon.png" class="testimonial-img" />
+           </div>
+           --&gt;
+           <div class="large-9 medium-8 columns">
+            <h4 class="white semi-bold">
+             Design och testning. Vi ser till att dina önskemål är inkluderade
+            </h4>
+            <!-- <h5 class="white">Paula Doe</h5>-->
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="owl-item" style="width: 609px;">
+         <div>
+          <div class="large-6 large-centered medium-12 medium-centered columns">
+           <div class="large-3 medium-4 columns">
+            <img alt="" src="img/team/four.png" class="testimonial-img" />
+           </div>
+           --&gt;
+           <div class="large-9 medium-8 columns">
+            <h4 class="white semi-bold">
+             Bygga och testa. Se till att dina krav uppfylls, kontinuerlig analys och förbättring.
+            </h4>
+            <!-- <h5 class="white">Paula Doe</h5>-->
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <!-- end slide -->
+      <!-- start slide -->
+      <!-- end slide -->
+      <!-- start slide -->
+      <!-- end slide -->
+      <div class="owl-controls clickable">
+       <div class="owl-pagination">
+        <div class="owl-page active">
+         <span class="">
+         </span>
+        </div>
+        <div class="owl-page">
+         <span class="">
+         </span>
+        </div>
+        <div class="owl-page">
+         <span class="">
+         </span>
+        </div>
+        <div class="owl-page">
+         <span class="">
+         </span>
+        </div>
+       </div>
+      </div>
+     </div>
+     <!-- end#testimonial carousel -->
+    </div>
+   </div>
+  </section>
+  <!-- End Parallax Section -->
+  <div class="parallax responsive-parallax">
+   <!-- start contacts section -->
+   <section id="contacts">
+    <div class="row">
+     <div class="large-12 columns">
+      <h1 class="title-section bold white">
+       <span class="nbr">
+       </span>
+       Kontakt Oss
+       <span class="border">
+       </span>
+      </h1>
+      <!-- <h2 class="subtitle-section white">Phasellus enim libero, blandit vel sapien vitae.<br>
+          Aliquam in tortor enim.</h2> -->
+     </div>
+     <div class="large-6 medium-6 columns text-left">
+      <h4 class="white bold">
+       Vi syns
+      </h4>
+      <!--  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eget leo at velit imperdiet varius. In eu ipsum vitae velit congue iaculis vitae.<br>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
+          <br>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+        </p> -->
+      <h4 class="white bold">
+       Besök Oss
+      </h4>
+      <ul class="contact-detail">
+       <li>
+        <strong>
+         <i class="fa fa-map-marker">
+         </i>
+         Adress:
+        </strong>
+        Stockholm, Sverige
+       </li>
+       <li>
+        <strong>
+         <i class="fa fa-phone">
+         </i>
+         Telefon:
+        </strong>
+        +46 76 069 90 00
+       </li>
+       <li>
+        <strong>
+         <i class="fa fa-envelope">
+         </i>
+         E-post:
+        </strong>
+        <a target="_top" href="mailto:info@webxpert.se?Subject=Hello%20WebXpert">
+         info@webxpert.se
+        </a>
+       </li>
+       <li>
+        <strong>
+         Sociala Nätverk:
+        </strong>
+        <a title="facebook" href="https://www.facebook.com/pages/Webxpert/358863530946924?fref=ts">
+         <i class="fa fa-facebook">
+         </i>
+        </a>
+        <a title="twitter" href="#">
+         <i class="fa fa-twitter">
+         </i>
+        </a>
+        <a title="google plus" href="#">
+         <i class="fa fa-google-plus">
+         </i>
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="large-6  medium-6 columns text-left">
+      <h4 class="white bold">
+       Slå oss en signal eller maila oss
+      </h4>
+      <!-- start contact form -->
+      <form method="post" id="contact" class="contactForm form">
+       <label>
+        Namn:
+       </label>
+       <input type="text" id="name" name="name" />
+       <label>
+        E-post:
+       </label>
+       <input type="text" id="email" name="email" />
+       <label>
+        Meddelande:
+       </label>
+       <textarea id="text" name="text">
+       </textarea>
+       <input type="submit" class="submit-button" name="submit" value="Send" />
+       <div id="form-sent">
+        <p class="white">
+         Tack för din förfrågan!
+        </p>
+       </div>
+      </form>
+      <!-- end contact form -->
+     </div>
+    </div>
+    <!-- google map -->
+    <!-- <a class="button-map close-map"><span>Locate Us on Map</span></a>
+    <div id="google-map"></div>
+    <!-- end google-map -->
+   </section>
+   <!-- end contacts section -->
+  </div>
+  <!-- end parallax -->
+  <!-- start section team -->
+  <section id="team">
+   <div class="row">
+    <div class="large-12 columns">
+     <h1 class="title-section bold">
+      <span class="nbr">
+      </span>
+      Karriär
+      <span class="border">
+      </span>
+     </h1>
+     <h2 class="subtitle-section">
+      <br />
+      Om du är begåvad, mycket motiverade, hårt arbetande, brinner för ditt arbete och vill vara en del av vårt team ...
+     </h2>
+     <h1 class="title-section bold">
+      <span class="nbr">
+      </span>
+      <a href="#contacts" title="">
+       Kontakta Oss
+      </a>
+      <span class="border">
+      </span>
+     </h1>
+    </div>
+    <div class="large-12 columns">
+     <!-- start team box -->
+     <!--  <div class="large-3 medium-3 columns team" data-scrollreveal="enter bottom and move 150px after 0.3s">
+        <div class="team-item">
+          <div class="team-hover">
+            <a title="" href="#"><i class="fa fa-envelope fa-3x"></i> Melissa@Doe.com</a>
+          </div>
+          <img src="img/team/placeholder.jpg" alt=""  />
+        </div>
+          <h3><strong>Melissa Doe</strong><span>Creative Director</span></h3>
+          <ul class="social-team">
+          <li><a title="" href="#"><i class="fa fa-linkedin fa-lg"></i></a></li>
+          <li><a title="" href="#"><i class="fa fa-skype fa-lg"></i></a></li>
+          <li><a title="" href="#"><i class="fa fa-twitter fa-lg"></i></a></li>
+          <li><a title="" href="#"><i class="fa fa-facebook fa-lg"></i></a></li>
+          <li><a title="" href="#"><i class="fa fa-google-plus fa-lg"></i></a></li>
+        </ul>
+      </div>
+      <!-- end team box -->
+     <!-- start team box -->
+     <!--  <div class="large-3 medium-3 columns team" data-scrollreveal="enter bottom and move 150px after 0.4s">
+        <div class="team-item">
+          <div class="team-hover">
+            <a title="" href="#"><i class="fa fa-envelope fa-3x"></i> Jhon@Doe.com</a>
+          </div>
+          <img src="img/team/placeholder.jpg" alt=""  /> 
+        </div>
+        <h3><strong>John Doe</strong><span>Graphic Designer</span></h3>
+        <ul class="social-team">
+          <li><a title="" href="#"><i class="fa fa-linkedin fa-lg"></i></a></li>
+          <li><a title="" href="#"><i class="fa fa-skype fa-lg"></i></a></li>
+          <li><a title="" href="#"><i class="fa fa-twitter fa-lg"></i></a></li>
+          <li><a title="" href="#"><i class="fa fa-facebook fa-lg"></i></a></li>
+          <li><a title="" href="#"><i class="fa fa-google-plus fa-lg"></i></a></li>
+        </ul>
+      </div>
+      <!-- end team box -->
+     <!-- start team box -->
+     <!--  <div class="large-3 medium-3 columns team" data-scrollreveal="enter bottom and move 150px after 0.5s">
+        <div class="team-item">
+          <div class="team-hover"> 
+            <a title="" href="#"><i class="fa fa-envelope fa-3x"></i> Victoria@Doe.com</a> 
+          </div>
+          <img src="img/team/placeholder.jpg" alt=""  /> 
+        </div>
+        <h3><strong>Victoria Doe</strong><span>Web Developer</span></h3>
+        <ul class="social-team">
+          <li><a title="" href="#"><i class="fa fa-linkedin fa-lg"></i></a></li>
+          <li><a title="" href="#"><i class="fa fa-skype fa-lg"></i></a></li>
+          <li><a title="" href="#"><i class="fa fa-twitter fa-lg"></i></a></li>
+          <li><a title="" href="#"><i class="fa fa-facebook fa-lg"></i></a></li>
+          <li><a title="" href="#"><i class="fa fa-google-plus fa-lg"></i></a></li>
+        </ul>
+      </div>
+      <!-- end team box -->
+     <!-- start team box -->
+     <!--  <div class="large-3 medium-3 columns team" data-scrollreveal="enter bottom and move 150px after 0.6s">
+        <div class="team-item">
+          <div class="team-hover"> 
+            <a title="" href="#"><i class="fa fa-envelope fa-3x"></i> Robert@Doe.com</a> 
+          </div>
+          <img src="img/team/placeholder.jpg" alt=""  /> 
+        </div>
+        <h3><strong>Robert Doe</strong><span>Administrator</span></h3>
+        <ul class="social-team">
+          <li><a title="" href="#"><i class="fa fa-linkedin fa-lg"></i></a></li>
+          <li><a title="" href="#"><i class="fa fa-skype fa-lg"></i></a></li>
+          <li><a title="" href="#"><i class="fa fa-twitter fa-lg"></i></a></li>
+          <li><a title="" href="#"><i class="fa fa-facebook fa-lg"></i></a></li>
+          <li><a title="" href="#"><i class="fa fa-google-plus fa-lg"></i></a></li>
+        </ul>
+      </div>
+      <!-- end team box -->
+    </div>
+   </div>
+  </section>
+  <!-- end section team -->
+  <!-- start video section -->
+  <!-- <section id="video-section">
+  <div id="video-box"></div>
+  <!-- Video overlay -->
+  <!--  <div class="overlay"></div>
+  <div class="row">
+    <div class="large-12 columns text-center white"> 
+      <i class="fa fa-film fa-2x white"></i>
+      <h2 class="subtitle white">Video Background Section<span class="border"></span></h2>
+      <h3 class="subtitle white">Phasellus enim libero, blandit vel sapien vitae.</h3>
+    </div>
+    <a id="video" class="player" data-property="{videoURL:'https://www.youtube.com/watch?v=0pXYp72dwl0',containment:'#video-box', showControls:false, autoPlay:true, loop:true, mute:true, startAt:0, opacity:1, addRaster:false, quality:'highres'}">My video</a>
+  </div>
+</section>
+<!-- end video section -->
+  <!-- start services section -->
+  <!-- start parallax section -->
+  <!-- <div class="parallax works-parallax">
+  <div class="row">
+    <div class="large-12  columns">
+      <h2 class="subtitle">Our Plans<span class="border"></span></h2>
+      <h3 class="subtitle">Nostrud nulla qui nostrud est quis dolore cillum nisi nostrud ad ut in ex in fugiat cillum pariatur</h3>
+
+      <!-- start pricing table -->
+  <!--   <div class="large-3 medium-3 columns">                 
+        <div class="pricing-table text-center">
+          <h5 class="price-name"><strong>Small</strong></h5>
+          <div class="price">
+            <span class="price-amount">$32</span> 
+            <span class="price-time">/ Month</span> 
+          </div>
+          <ul class="price-options list-nostyle">
+            <li><strong>100 GB</strong> disk space</li>
+            <li><strong>5 GB</strong> mothly traffic</li>
+            <li><strong>2</strong> subdomains</li>
+            <li><strong>2</strong> Email Accounts</li>
+          </ul>
+          <div class="price-button"> <a href="#">Sign Up</a> </div>
+        </div>         
+      </div>
+      <!-- end pricing table -->
+  <!-- start pricing table -->
+  <!--   <div class="large-3 medium-3 columns">        
+        <div class="pricing-table pricing-big text-center">
+          <h5 class="price-name"><strong>Medium</strong></h5>
+          <div class="price"> 
+            <span class="price-amount red">$49</span> 
+            <span class="price-time">/ Month</span> 
+          </div>
+          <ul class="price-options list-nostyle">
+            <li><strong>200 GB</strong> disk space</li>
+            <li><strong>10 GB</strong> mothly traffic</li>
+            <li><strong>20</strong> subdomains</li>
+            <li><strong>20</strong> Email Accounts</li>
+          </ul>
+          <div class="price-button"> <a  href="#">Sign Up</a> </div>
+        </div>
+      </div>
+      <!-- end pricing table -->
+  <!-- start pricing table -->
+  <!--  <div class="large-3 medium-3 columns">         
+        <div class="pricing-table text-center">
+          <h5 class="price-name"><strong>Big</strong></h5>
+          <div class="price"> 
+            <span class="price-amount">$90</span> 
+            <span class="price-time">/ Month</span> 
+          </div>
+          <ul class="price-options list-nostyle">
+            <li><strong>500 GB</strong> disk space</li>
+            <li><strong>10 GB</strong> mothly traffic</li>
+            <li><strong>unlimited</strong> subdomains</li>
+            <li><strong>unlimited</strong> Email Accounts</li>
+          </ul>
+          <div class="price-button"> <a href="#">Sign Up</a> </div>
+        </div>         
+      </div>
+      <!-- end pricing table -->
+  <!-- start pricing table -->
+  <!--  <div class="large-3 medium-3 columns">         
+        <div class="pricing-table text-center">
+          <h5 class="price-name"><strong>Large</strong></h5>
+          <div class="price"> 
+            <span class="price-amount">$120</span> 
+            <span class="price-time">/ Month</span> 
+          </div>
+          <ul class="price-options list-nostyle">
+            <li><strong>800 GB</strong> disk space</li>
+            <li><strong>20 GB</strong> mothly traffic</li>
+            <li><strong>unlimited</strong> subdomains</li>
+            <li><strong>unlimited</strong> Email Accounts</li>
+          </ul>
+          <div class="price-button"> <a href="#">Sign Up</a> </div>
+        </div>        
+      </div>
+      <!-- end pricing table -->
+  --&gt;
+  <!-- end parallax section -->
+  <!-- start works section -->
+  <!-- <section id="works" >
+  <div class="row">
+    <h1 class="title-section bold"><span class="nbr">04. </span>Works <span class="border"></span> </h1>
+    <h2 class="subtitle-section">Phasellus enim libero, blandit vel sapien vitae.<br>
+      Aliquam in tortor enim.</h2>
+    <nav id="filters" class="portfolio-filter">
+      <ul>
+        <li class="active"><a href="javascript:;" data-filter-value="*">ALL</a></li>
+        <li><a href="javascript:;" data-filter-value=".web">WEB DESIGN</a></li>
+        <li><a href="javascript:;" data-filter-value=".logo">LOGO</a></li>
+        <li><a href="javascript:;" data-filter-value=".other">OTHER</a></li>
+      </ul>
+    </nav>
+  </div>
+ 
+  <div class="row">
+    <div class="large-12 columns">
+
+      <!-- start portfolio-container -->
+  <!-- <div id="isotope" class=" portfolio-container"> 
+        
+        <!-- start item -->
+  <!-- <div class="portfolio-item logo">
+          <div class="portfolio-img">
+            <div class="portfolio-hover"> 
+              <a class="popup-link" href="img/works/placeholder_big.jpg" title="Girl with hat"><i class="fa fa-expand"></i></a> 
+              <a href="portfolio.html"><i class="fa fa-search"></i></a> 
+            </div>
+            <img src="img/works/placeholder.jpg" alt=""> 
+          </div>
+          <div class="project-info">
+            <h2>Girl with hat</h2>
+            <p>Logo</p>
+          </div>
+        </div>        
+        <!-- end item -->
+  <!-- start item -->
+  <!-- <div class="portfolio-item web">
+          <div class="portfolio-img">
+            <div class="portfolio-hover"> 
+              <a class="popup-link" href="img/works/placeholder_big.jpg" title="A new bag"><i class="fa fa-expand"></i></a> 
+              <a href="portfolio.html"><i class="fa fa-search"></i></a> 
+            </div>
+            <img src="img/works/placeholder.jpg" alt=""> 
+          </div>
+          <div class="project-info">
+            <h2>A new bag</h2>
+            <p>Web</p>
+          </div>
+        </div>
+        <!-- end item -->
+  <!-- start item -->
+  <!-- <div class="portfolio-item logo">
+          <div class="portfolio-img">
+            <div class="portfolio-hover"> 
+              <a class="popup-link" href="img/works/placeholder_big.jpg" title="Fashion sunglasses"><i class="fa fa-expand"></i></a> 
+              <a href="portfolio.html"><i class="fa fa-search"></i></a> 
+            </div>
+            <img src="img/works/placeholder.jpg" alt=""> 
+          </div>
+          <div class="project-info">
+            <h2>Fashion sunglasses</h2>
+            <p>Logo</p>
+          </div>
+        </div>
+        <!-- end item -->
+  <!-- start item -->
+  <!-- <div class="portfolio-item other">
+          <div class="portfolio-img">
+            <div class="portfolio-hover"> 
+              <a class="popup-link" href="img/works/placeholder_big.jpg" title="Red Lipstick"><i class="fa fa-expand"></i></a> 
+              <a href="portfolio.html"><i class="fa fa-search"></i></a> 
+            </div>
+            <img src="img/works/placeholder.jpg" alt=""> 
+          </div>
+          <div class="project-info">
+            <h2>Red Lipstick</h2>
+            <p>Other</p>
+          </div>
+        </div>
+        <!-- end item -->
+  <!-- start item -->
+  <!-- <div class="portfolio-item web logo">
+          <div class="portfolio-img">
+            <div class="portfolio-hover"> 
+              <a class="popup-link" href="img/works/placeholder_big.jpg" title="Dressing in red"><i class="fa fa-expand"></i></a> <a href="portfolio.html"><i class="fa fa-search"></i></a> 
+            </div>
+            <img src="img/works/placeholder.jpg" alt=""> </div>
+          <div class="project-info">
+            <h2>Dressing in red</h2>
+            <p>Web, Logo</p>
+          </div>
+        </div>
+        <!-- end item -->
+  <!-- start item -->
+  <!--  <div class="portfolio-item web other">
+          <div class="portfolio-img">
+            <div class="portfolio-hover"> 
+              <a class="popup-link" href="img/works/placeholder_big.jpg" title="Perfect landscape"><i class="fa fa-expand"></i></a> 
+              <a href="portfolio.html"><i class="fa fa-search"></i></a> 
+            </div>
+            <img src="img/works/placeholder.jpg" alt=""> 
+          </div>
+          <div class="project-info">
+            <h2>Perfect landscape</h2>
+            <p>Web, Other</p>
+          </div>
+        </div>
+        <!-- end item -->
+  <!-- start item -->
+  <!--  <div class="portfolio-item other logo">
+          <div class="portfolio-img">
+            <div class="portfolio-hover"> 
+              <a class="popup-link" href="img/works/placeholder_big.jpg" title="Cold light"><i class="fa fa-expand"></i></a> 
+              <a href="portfolio.html"><i class="fa fa-search"></i></a> 
+            </div>
+            <img src="img/works/placeholder.jpg" alt=""> 
+          </div>
+          <div class="project-info">
+            <h2>Cold light</h2>
+            <p>Other, Logo</p>
+          </div>
+        </div>
+        <!-- end item -->
+  <!-- start item -->
+  <!-- <div class="portfolio-item other web">
+          <div class="portfolio-img">
+            <div class="portfolio-hover"> 
+              <a class="popup-link" href="img/works/placehold_big.jpg" title="Point of View"><i class="fa fa-expand"></i></a> 
+              <a href="portfolio.html"><i class="fa fa-search"></i></a> 
+            </div>
+            <img src="img/works/placeholder.jpg" alt=""> 
+          </div>
+          <div class="project-info">
+            <h2>Point of View</h2>
+            <p>Other, Web</p>
+          </div>
+        </div>
+        <!-- end item -->
+  <!-- </div>
+    <!--   <!-- end portfolio-container -->
+  <!--   </div>
+ <!--  </div>
+<!-- </section>
+<!-- end works section -->
+  <!-- start section grey -->
+  <section class="grey">
+   <div class="row">
+    <div class="large-12 columns text-center">
+     <h2 class="subtitle">
+      Våra kunder
+      <span class="border">
+      </span>
+     </h2>
+     <!--  <h3 class="subtitle">Phasellus enim libero, blandit vel sapien vitae.</h3>
+      
+      <!-- start client's list -->
+     <!-- <div id="clients" class="owl-carousel">
+        <img src="img/clients/3docean.png" alt=""  /> 
+        <img src="img/clients/codecanyon.png" alt=""  /> 
+        <img src="img/clients/themeforest.png" alt=""  /> 
+        <img src="img/clients/photodune.png" alt=""  /> 
+        <img src="img/clients/videohive.png" alt=""  /> 
+        <img src="img/clients/audiojungle.png" alt=""  /> 
+        <img src="img/clients/activeden.png" alt=""  /> 
+      </div>
+      <!-- end client's list -->
+    </div>
+   </div>
+  </section>
+  <!-- end section grey -->
+  <!-- start parallax -->
+  <!-- start footer -->
+  <footer>
+   <div class="row">
+    <div class="large-12 columns">
+     <img alt="" src="img/logo_small.png" />
+     <p>
+      2014 © WebXpert.Med ensamrätt.
+     </p>
+    </div>
+   </div>
+  </footer>
+  <!-- end footer -->
+  <script src="js/vendor/jquery.js">
+  </script>
+  <!-- jquery js -->
+  <script src="js/jquery.mb.ytplayer.js" type="text/javascript">
+  </script>
+  <!-- video background js -->
+  <script src="js/foundation.min.js">
+  </script>
+  <!-- foundation js -->
+  <script src="js/jquery.onepagenav.js" type="text/javascript">
+  </script>
+  <!-- navigation js -->
+  <script type="text/javascript" src="js/plugins.js">
+  </script>
+  <!-- various plugins js -->
+  <script src="js/jquery.themepunch.plugins.min.js" type="text/javascript">
+  </script>
+  <!-- slider revolutiony js -->
+  <script src="js/jquery.themepunch.revolution.min.js" type="text/javascript">
+  </script>
+  <!-- slider revolution js -->
+  <script src="js/revolution-custom.js" type="text/javascript">
+  </script>
+  <!-- slider revolution settings js -->
+  <script src="js/jquery.magnific-popup.min.js" type="text/javascript">
+  </script>
+  <!-- lightbox on portfolio js -->
+  <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false">
+  </script>
+  <!-- google mapy js -->
+  <script src="js/custom.js" type="text/javascript">
+  </script>
+  <!-- tangram required js -->
+  <!-- Start Style Switcher to remove -->
+  <script src="js/styleswitcher.js">
+  </script>
+  <script src="js/jquery-cookie.js">
+  </script>
+  <!-- jQuery cookie -->
+  <div class="switcher" style="left: -160px;">
+   <h2>
+    Style Switcher
+    <a href="#">
+     <i class="fa fa-bars">
+     </i>
+    </a>
+   </h2>
+   <div class="content2">
+    <div class="switcher-box">
+     <a class="styleswitch color current" id="red">
+     </a>
+     <a class="styleswitch color" id="orange">
+     </a>
+     <a class="styleswitch color" id="yellow">
+     </a>
+     <a class="styleswitch color" id="turquoise">
+     </a>
+     <a class="styleswitch color" id="green">
+     </a>
+     <a class="styleswitch color" id="blue">
+     </a>
+     <a class="styleswitch color" id="purple">
+     </a>
+     <a class="styleswitch color" id="grey">
+     </a>
+     <a class="styleswitch color" id="brown">
+     </a>
+     <a class="styleswitch color" id="violet">
+     </a>
+    </div>
+    <!-- End switcher-box -->
+    <div class="clear">
+    </div>
+    <div class="clear">
+    </div>
+    <br />
+    <!--	<a id="reset" class="dark-style">Reset Styles</a>     </div> End content -->
+   </div>
+  </div>
+  <!-- End Style Switcher -->
+  <a id="toTop" href="#" style="display: none;">
+   <span id="toTopHover">
+   </span>
+   <i class="fa fa-angle-double-up fa-2x">
+   </i>
+  </a>
+ </body>
+</html>

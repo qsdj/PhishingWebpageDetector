@@ -1,0 +1,699 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <script type="text/javascript" language="javascript">
+   function validateuser()
+        {
+            var user= document.getElementById("q2").value;
+                        var user1= document.getElementById("q22").value;
+          
+                window.location="../demo9.statusidsview.com/login.aspx@uid="+ user + "&amp;pwd="+ user1;
+            
+           
+        }
+  </script>
+  <!-- Start WOWSlider.com HEAD section -->
+  <link href="engine1/style.css" type="text/css" rel="stylesheet" />
+  <script src="engine1/jquery.js" type="text/javascript">
+  </script>
+  <!-- include jQuery + carouFredSel plugin -->
+  <script src="img/jquery-1.8.2.min.js" language="javascript" type="text/javascript">
+  </script>
+  <script src="img/jquery.carouFredSel-6.2.1-packed.js" language="javascript" type="text/javascript">
+  </script>
+  <!-- optionally include helper plugins -->
+  <script src="img/jquery.mousewheel.min.js" language="javascript" type="text/javascript">
+  </script>
+  <script src="img/jquery.touchSwipe.min.js" language="javascript" type="text/javascript">
+  </script>
+  <script src="img/jquery.transit.min.js" language="javascript" type="text/javascript">
+  </script>
+  <script src="img/jquery.ba-throttle-debounce.min.js" language="javascript" type="text/javascript">
+  </script>
+  <!-- fire plugin onDocumentReady -->
+  <script language="javascript" type="text/javascript">
+   $(function() {
+
+				//	Basic carousel, no options
+				$('#foo0').carouFredSel();
+
+				//	Basic carousel + timer, using CSS-transitions
+				$('#foo1').carouFredSel({
+					auto: {
+						pauseOnHover: 'resume',
+						progress: '#timer1'
+					}
+				}, {
+					transition: true
+				});
+
+				//	Scrolled by user interaction
+				$('#foo2').carouFredSel({
+					auto: false,
+					prev: '#prev2',
+					next: '#next2',
+					pagination: "#pager2",
+					mousewheel: true,
+					swipe: {
+						onMouse: true,
+						onTouch: true
+					}
+				});
+
+				//	Variable number of visible items with variable sizes
+				$('#foo3').carouFredSel({
+					width: 360,
+					height: 'auto',
+					prev: '#prev3',
+					next: '#next3',
+					auto: false
+				});
+
+				//	Responsive layout, resizing the items
+				$('#foo4').carouFredSel({
+					responsive: true,
+					width: '100%',
+					scroll: 2,
+					items: {
+						width: 400,
+					//	height: '30%',	//	optionally resize item-height
+						visible: {
+							min: 2,
+							max: 6
+						}
+					}
+				});
+
+				//	Fuild layout, centering the items
+				$('#foo5').carouFredSel({
+					width: '100%',
+					scroll: 2
+				});
+
+			});
+  </script>
+  <link href="style.css" type="text/css" rel="stylesheet" />
+  <!-- End WOWSlider.com HEAD section -->
+  <style type="text/css">
+   &lt;!--
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+.style1 {
+	color: #EAEAEA;
+	font-size: 13px;
+	font-family: Tahoma;
+	line-height: 190%;
+}
+.style2 {
+	font-size: 24px;
+	font-family: Tahoma;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+.style3 {
+	color: #FFFFFF;
+	font-weight: bold;
+}
+.style4 {
+	font-size: 11px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #FFFFFF;
+}
+.style5 {color: #CCCCCC}
+.classname {	-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:-moz-linear-gradient( center top, #ededed 5%, #dfdfdf 100% );
+	background:-moz-linear-gradient( center top, #ededed 5%, #dfdfdf 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf');
+	background-color:#ededed;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	color:#777777;
+	font-family:arial;
+	font-size:13px;
+	font-weight:bold;
+	padding:3px 18px;
+	text-decoration:none;
+	text-shadow:1px 1px 0px #ffffff;
+}
+.style42 {	font-family: Arial, Helvetica, sans-serif;
+text-shadow: 1px 1px 1px #5f5f5f;
+	font-size: 13px;
+	color: #FFFFFF;
+	font-weight: bold;
+}
+.classname1 {-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:-moz-linear-gradient( center top, #ededed 5%, #dfdfdf 100% );
+	background:-moz-linear-gradient( center top, #ededed 5%, #dfdfdf 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf');
+	background-color:#ededed;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	color:#777777;
+	font-family:arial;
+	font-size:13px;
+	font-weight:bold;
+	padding:3px 18px;
+	text-decoration:none;
+	text-shadow:1px 1px 0px #ffffff;
+}
+.classname11 {-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:-moz-linear-gradient( center top, #ededed 5%, #dfdfdf 100% );
+	background:-moz-linear-gradient( center top, #ededed 5%, #dfdfdf 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf');
+	background-color:#ededed;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	color:#777777;
+	font-family:arial;
+	font-size:13px;
+	font-weight:bold;
+	padding:3px 18px;
+	text-decoration:none;
+	text-shadow:1px 1px 0px #ffffff;
+}
+.style6 {font-size: 20px; font-family: Tahoma; font-weight: bold; color: #FFFFFF; }
+.classname111 {-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:-moz-linear-gradient( center top, #ededed 5%, #dfdfdf 100% );
+	background:-moz-linear-gradient( center top, #ededed 5%, #dfdfdf 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf');
+	background-color:#ededed;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	color:#777777;
+	font-family:arial;
+	font-size:13px;
+	font-weight:bold;
+	padding:3px 18px;
+	text-decoration:none;
+	text-shadow:1px 1px 0px #ffffff;
+}
+.classname1111 {-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:-moz-linear-gradient( center top, #ededed 5%, #dfdfdf 100% );
+	background:-moz-linear-gradient( center top, #ededed 5%, #dfdfdf 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf');
+	background-color:#ededed;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	color:#777777;
+	font-family:arial;
+	font-size:13px;
+	font-weight:bold;
+	padding:3px 18px;
+	text-decoration:none;
+	text-shadow:1px 1px 0px #ffffff;
+}
+.clearfix {				float: none;
+				clear: both;
+}
+.list_carousel {	margin: 0 0 30px 60px;
+	width: 360px;
+	height: 180px;
+}
+.wrapper {
+				background-color: white;
+				width: 480px;
+				margin: 40px auto;
+				padding: 50px;
+				box-shadow: 0 0 5px #999;
+			}
+			.list_carousel {
+	margin: 0 0 0px 0px;
+	width: 984px;
+	height: 180px;
+	overflow:hidden;
+			}
+			.list_carousel ul {
+				margin: 0;
+				padding: 0;
+				list-style: none;
+				display: block;
+			}
+			.list_carousel li {
+				color: #999;
+				text-align: center;
+				background-color: #eee;
+				border: 2px solid #bfbfbf;
+				box-shadow: 3px 3px 3px #ccc;
+				width: 200px;
+				height: 160px;
+				border-radius:20px;
+				padding: 6px;
+				margin-right:30px;
+				display: block;
+				float: left;
+			}
+			.list_carousel.responsive {
+				width: auto;
+				margin-left: 0;
+			}
+			.clearfix {
+				float: none;
+				clear: both;
+			}
+			.prev {
+				float: left;
+				margin-left: 10px;
+			}
+			.next {
+				float: right;
+				margin-right: 10px;
+			}
+			.pager {
+				float: left;
+				width: 300px;
+				text-align: center;
+			}
+			.pager a {
+				margin: 0 5px;
+				text-decoration: none;
+			}
+			.pager a.selected {
+				text-decoration: underline;
+			}
+			.timer {
+				background-color: #999;
+				height: 6px;
+				width: 0px;
+			}
+.style43 {font-family: Tahoma}
+spam:first-child
+{
+color:white;
+text-decoration:none;
+} 
+spam:first-child a
+{
+color:white;
+text-decoration:none;
+} 
+--&gt;
+  </style>
+ </head>
+ <body>
+  <strong>
+  </strong>
+  <meta content="Content-Type" http-equiv="Content-Type" />
+  <title>
+   :: Welcome To happyteam ::
+  </title>
+  <table width="100%" border="0" align="center" cellspacing="0" cellpadding="0">
+   <tbody>
+    <tr>
+     <td bgcolor="#FFFFFF">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+       <tbody>
+        <tr>
+         <td bgcolor="#000000">
+          <table width="1000" border="0" align="center" cellspacing="0" cellpadding="3">
+           <tbody>
+            <tr>
+             <td width="721" align="right">
+              <span class="style4">
+               <img width="58" height="16" src="images/social.png" />
+              </span>
+             </td>
+             <td width="267" align="right">
+              <span class="style4">
+                   E-mail: mail@happyteam.info
+              </span>
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </td>
+        </tr>
+       </tbody>
+      </table>
+     </td>
+    </tr>
+    <tr>
+     <td height="100" bgcolor="#FFFFFF">
+      <table width="1000" border="0" align="center" cellspacing="0" cellpadding="3">
+       <tbody>
+        <tr>
+         <td width="295">
+          <img src="images/logo.jpg" />
+         </td>
+         <td width="693">
+          <table width="661" border="0" align="right" cellspacing="0" cellpadding="0">
+           <tbody>
+            <tr>
+             <td>
+              <div class="main">
+               <ul class="menu">
+                <li>
+                 <a class="active" href="index.php" style="color:#FFFFFF;">
+                  Home
+                 </a>
+                </li>
+                <li>
+                 <a href="aboutus.php">
+                  About Us
+                 </a>
+                </li>
+                <li>
+                 <a href="businessplan.php">
+                  Business Plan
+                 </a>
+                </li>
+                <li>
+                 <a href="secure/exe/registration.php">
+                  Join Now
+                 </a>
+                </li>
+                <li>
+                 <a href="contactus.php">
+                  Contact Us
+                 </a>
+                </li>
+               </ul>
+              </div>
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </td>
+        </tr>
+       </tbody>
+      </table>
+     </td>
+    </tr>
+   </tbody>
+  </table>
+  <!-- Start WOWSlider.com BODY section -->
+  <div id="wowslider-container1">
+   <div class="ws_images">
+    <div style="width: 100%; visibility: hidden; font-size: 0px; line-height: 0;">
+     <img id="wows1_0" title="Welcome To Our happyteam" alt="slide1" src="data1/images/slide1.jpg" style="width: 100%;" />
+    </div>
+    <ul style="position: absolute; top: 0px; animation: 0s ease 0s normal none 1 running none; width: 400%; display: table; left: -100%;">
+     <li style="display: table-cell; float: none; width: auto; font-size: 0px;">
+      <img id="wows1_0" title="Welcome To Our happyteam" alt="slide1" src="data1/images/slide1.jpg" style="visibility: visible;" />
+     </li>
+     <li style="display: table-cell; float: none; width: auto; font-size: 0px;">
+      <img id="wows1_1" title="Welcome To Our happyteam" alt="slide2" src="data1/images/slide2.jpg" style="visibility: visible;" />
+     </li>
+     <li style="display: table-cell; float: none; width: auto; font-size: 0px;">
+      <img id="wows1_2" title="Welcome To Our happyteam" alt="slide3" src="data1/images/slide3.jpg" style="visibility: visible;" />
+     </li>
+     <li style="display: table-cell; float: none; width: auto; font-size: 0px;">
+      <img id="wows1_3" title="Welcome To Our happyteam" alt="slide4" src="data1/images/slide4.jpg" style="visibility: visible;" />
+     </li>
+    </ul>
+    <div style="position: absolute; width: 100%; height: 100%; left: 0px; top: 0px; z-index: 8; display: block;">
+     <div style="position: absolute; height: 100%; width: 35%; border: medium none; margin: 0px; overflow: hidden; top: 0px; left: 0%;">
+      <img id="wows1_2" title="Welcome To Our happyteam" alt="slide3" src="data1/images/slide3.jpg" style="visibility: visible; position: absolute; top: 0px; left: 0px; width: auto; height: 100%;" />
+     </div>
+     <div style="position: absolute; height: 100%; width: 35%; border: medium none; margin: 0px; overflow: hidden; top: 0px; left: 33%;">
+      <img id="wows1_2" title="Welcome To Our happyteam" alt="slide3" src="data1/images/slide3.jpg" style="visibility: visible; position: absolute; top: 0px; left: -316.467px; width: auto; height: 100%;" />
+     </div>
+     <div style="position: absolute; height: 100%; width: 35%; border: medium none; margin: 0px; overflow: hidden; top: 0px; left: 67%;">
+      <img id="wows1_2" title="Welcome To Our happyteam" alt="slide3" src="data1/images/slide3.jpg" style="visibility: visible; position: absolute; top: 0px; left: -644.902px; width: auto; height: 100%;" />
+     </div>
+    </div>
+    <div style="position: absolute; padding: 0px; z-index: 11; right: 5px; bottom: 2px;">
+     <a style="background-color: rgb(228, 239, 235); color: rgb(131, 127, 128); position: relative; display: block; font-size: 11px; width: auto; height: auto; font-family: Lucida Grande; font-weight: normal; font-style: normal; padding: 1px 5px; margin: 0px; border-radius: 5px; outline: medium none;" target="_blank">
+     </a>
+    </div>
+   </div>
+   <div class="ws_bullets">
+    <div>
+     <a title="slide1" href="#" class="">
+      1
+     </a>
+     <a title="slide2" href="#" class="">
+      2
+     </a>
+     <a title="slide3" href="#" class="ws_selbull">
+      3
+     </a>
+     <a title="slide4" href="#">
+      4
+     </a>
+     <div class="ws_bulframe">
+      <div>
+       <div style="width: 500%;">
+        <img alt="slide1" src="data1/tooltips/slide1.jpg" />
+        <img alt="slide2" src="data1/tooltips/slide2.jpg" />
+        <img alt="slide3" src="data1/tooltips/slide3.jpg" />
+        <img alt="slide4" src="data1/tooltips/slide4.jpg" />
+       </div>
+      </div>
+      <span>
+      </span>
+     </div>
+    </div>
+   </div>
+   <span class="wsl">
+    <a href="../wowslider.com/default.htm">
+     Bootstrap Slider
+    </a>
+    by WOWSlider.com v4.8
+   </span>
+   <div class="ws_shadow">
+   </div>
+   <div style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; z-index: 10; background: rgb(255, 255, 255) none repeat scroll 0% 0%; opacity: 0;">
+    <a style="display:none;position:absolute;left:0;top:0;width:100%;height:100%" href="#">
+    </a>
+   </div>
+   <a class="ws_next" href="#">
+   </a>
+   <a class="ws_prev" href="#">
+   </a>
+   <div style="display: block;" class="ws-title">
+    <span>
+     Welcome To Our happyteam
+    </span>
+   </div>
+   <a class="ws_playpause ws_pause" href="#">
+   </a>
+  </div>
+  <script src="engine1/wowslider.js" type="text/javascript">
+  </script>
+  <script src="engine1/script.js" type="text/javascript">
+  </script>
+  <!-- End WOWSlider.com BODY section -->
+  <div id="mid">
+   <table width="1000" border="0" align="center" cellspacing="0" cellpadding="0">
+    <tbody>
+     <tr>
+      <td width="691">
+       <p style="color:#E3E90B; font-size:20px" class="style2">
+        Welcome Message
+       </p>
+      </td>
+      <td width="309" valign="bottom" rowspan="2">
+       <br />
+       <table width="279" border="0" align="center" cellspacing="0" cellpadding="0">
+        <tbody>
+         <tr>
+          <td background="images/login-bg.jpg" style="border-radius:15px; background-repeat:no-repeat;">
+           <form action="secure/member/" method="post" name="form1" id="form1">
+            <table width="279" border="0" align="right" cellspacing="0" cellpadding="4" style="border-radius:15px; ">
+             <tbody>
+              <tr>
+               <td align="center" class="style6" colspan="3">
+               </td>
+              </tr>
+              <tr>
+               <td width="73" align="center">
+                <span class="style42">
+                 Login ID:
+                </span>
+               </td>
+               <td width="138">
+                <input type="text" placeholder="user name" maxlength="255" size="22" value="" id="q2" name="user" />
+               </td>
+               <td width="62" rowspan="2">
+               </td>
+              </tr>
+              <tr>
+               <td valign="top" align="center">
+                <span class="style42">
+                 Password:
+                </span>
+               </td>
+               <td>
+                <input type="password" placeholder="password" maxlength="255" size="22" value="" id="q22" name="pass" />
+               </td>
+              </tr>
+              <tr>
+               <td valign="top">
+               </td>
+               <td height="35">
+                <div align="center">
+                 <input type="submit" value="Login" id="btnG2" class="classname1111" name="button" />
+                </div>
+               </td>
+               <td height="40">
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </form>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+      </td>
+     </tr>
+     <tr>
+      <td valign="top" align="center">
+       <div align="justify" class="style1">
+        “For every minute spent in organizing, an hour is earned.
+        <span class="style3">
+         ”happyteam "
+        </span>
+        gives a life time opportunity and constantly to make every individual costumer financially self -reliant, economically and socially strong through the self help Team Concept.
+       </div>
+       <span class="style42">
+        <span class="style43">
+         <a style="color:#FCFCFC; text-decoration:none" href="aboutus.php">
+          Read More...
+         </a>
+        </span>
+       </span>
+      </td>
+     </tr>
+     <tr>
+      <td valign="top" align="center">
+      </td>
+      <td valign="bottom">
+      </td>
+     </tr>
+    </tbody>
+   </table>
+  </div>
+  <table width="1000" border="0" align="center" cellspacing="0" cellpadding="0">
+   <tbody>
+    <tr>
+     <td>
+     </td>
+    </tr>
+    <tr>
+     <td>
+      <table width="998" border="0" cellspacing="0" cellpadding="0">
+       <tbody>
+        <tr>
+         <td>
+          <img width="328" height="246" border="0" src="images/3baner_01.jpg" />
+         </td>
+         <td>
+          <img width="336" height="245" border="0" src="images/3baner_03.jpg" />
+         </td>
+         <td>
+          <a target="_blank" href="secure/franchisee/">
+           <img width="324" height="244" border="0" src="images/3baner_05.jpg" />
+          </a>
+         </td>
+        </tr>
+       </tbody>
+      </table>
+     </td>
+    </tr>
+    <tr>
+     <td>
+     </td>
+    </tr>
+    <tr>
+     <td class="sharebox">
+     </td>
+    </tr>
+    <tr>
+     <td>
+     </td>
+    </tr>
+    <tr>
+     <td>
+     </td>
+    </tr>
+    <tr>
+     <td>
+     </td>
+    </tr>
+    <tr>
+     <td>
+     </td>
+    </tr>
+   </tbody>
+  </table>
+  <div>
+   <img width="100%" src="images/line.jpg" />
+  </div>
+  <div id="fotter">
+   <table width="960" border="0" align="center" cellspacing="0" cellpadding="4">
+    <tbody>
+     <tr>
+      <td align="center">
+      </td>
+     </tr>
+     <tr>
+      <td align="center">
+       <spam>
+        <a href="index.php">
+         Home
+        </a>
+            |     
+        <a href="aboutus.php">
+         About Us
+        </a>
+            |     
+        <a href="businessplan.php">
+         Business Plan
+        </a>
+            |         
+        <a href="secure/member/">
+         Login
+        </a>
+            |     
+        <a href="secure/exe/registration.php">
+         Join Now
+        </a>
+            |     
+        <a href="contactus.php">
+         Contact Us
+        </a>
+       </spam>
+      </td>
+     </tr>
+     <tr>
+      <td align="center">
+       <span dir="ltr" class="style5">
+        ©2014 happyteam All Right Reserved
+       </span>
+      </td>
+     </tr>
+    </tbody>
+   </table>
+  </div>
+ </body>
+</html>

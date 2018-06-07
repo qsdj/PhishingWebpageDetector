@@ -1,0 +1,3015 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta charset="utf-8" />
+  <title>
+   Ozzie Deals
+  </title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="/utils/css/bootstrap.min.css" />
+  <!--link href="/css/bootstrap-ie7.css" rel="stylesheet" -->
+  <link rel="stylesheet" href="/utils/css/style.css" />
+  <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Varela+Round" />
+  <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic" />
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="/utils/css/font-awesome.css" />
+  <link rel="stylesheet" href="/utils/css/styleadd.css" />
+  <link rel="stylesheet" href="/utils/js/select2/select2.css" />
+  <link rel="stylesheet" href="/utils/js/select2/select2-bootstrap.css" />
+  <link rel="stylesheet" href="/utils/css/datetime-picker.css" />
+  <link rel="stylesheet" href="/utils/css/autosuggest_inquisitor.css" />
+  <!--link href="/utils/js/magnific-popup/magnific-popup.css" rel="stylesheet" -->
+  <script id="facebook-jssdk" src="//connect.facebook.net/en_AU/sdk.js#xfbml=1&version=v2.4&appId=426307090883086">
+  </script>
+  <script src="/utils/js/jquery-2.0.3.min.js">
+  </script>
+  <script src="/utils/js/bootstrap.js">
+  </script>
+  <script src="/utils/js/bootbox.js">
+  </script>
+  <script src="/utils/js/select2/select2.min.js">
+  </script>
+  <script src="/utils/js/script.js">
+  </script>
+  <script src="/utils/js/external/jquery.validate.js">
+  </script>
+  <script src="/utils/js/bsn.AutoSuggest_c_2.0.js">
+  </script>
+  <script src="/admin/js/validations.js">
+  </script>
+  <style type="text/css">
+   .fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow-x:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset&gt;div{overflow:hidden}.fb_link img{border:none}
+.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}.fb_reset .fb_dialog_legacy{overflow:visible}.fb_dialog_advanced{padding:10px;-moz-border-radius:8px;-webkit-border-radius:8px;border-radius:8px}.fb_dialog_content{background:#fff;color:#333}.fb_dialog_close_icon{background:url(https://static.xx.fbcdn.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;_background-image:url(https://static.xx.fbcdn.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif);cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{top:5px;left:5px;right:auto}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(https://static.xx.fbcdn.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent;_background-image:url(https://static.xx.fbcdn.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif)}.fb_dialog_close_icon:active{background:url(https://static.xx.fbcdn.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent;_background-image:url(https://static.xx.fbcdn.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif)}.fb_dialog_loader{background-color:#f6f7f8;border:1px solid #606060;font-size:24px;padding:20px}.fb_dialog_top_left,.fb_dialog_top_right,.fb_dialog_bottom_left,.fb_dialog_bottom_right{height:10px;width:10px;overflow:hidden;position:absolute}.fb_dialog_top_left{background:url(https://static.xx.fbcdn.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 0;left:-10px;top:-10px}.fb_dialog_top_right{background:url(https://static.xx.fbcdn.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 -10px;right:-10px;top:-10px}.fb_dialog_bottom_left{background:url(https://static.xx.fbcdn.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 -20px;bottom:-10px;left:-10px}.fb_dialog_bottom_right{background:url(https://static.xx.fbcdn.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 -30px;right:-10px;bottom:-10px}.fb_dialog_vert_left,.fb_dialog_vert_right,.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{position:absolute;background:#525252;filter:alpha(opacity=70);opacity:.7}.fb_dialog_vert_left,.fb_dialog_vert_right{width:10px;height:100%}.fb_dialog_vert_left{margin-left:-10px}.fb_dialog_vert_right{right:0;margin-right:-10px}.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{width:100%;height:10px}.fb_dialog_horiz_top{margin-top:-10px}.fb_dialog_horiz_bottom{bottom:0;margin-bottom:-10px}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #3a5795;color:#fff;font-size:14px;font-weight:bold;margin:0}.fb_dialog_content .dialog_title&gt;span{background:url(https://static.xx.fbcdn.net/rsrc.php/v2/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{-webkit-transform:none;height:100%;margin:0;overflow:visible;position:absolute;top:-10000px;left:0;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(https://static.xx.fbcdn.net/rsrc.php/v2/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{width:auto;height:auto;min-height:initial;min-width:initial;background:none}.fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner{width:100%}.fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content{background:none}.loading.centered #fb_dialog_loader_close{color:#fff;display:block;padding-top:20px;clear:both;font-size:18px}#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .45);position:absolute;left:0;top:0;width:100%;min-height:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_content .dialog_header{-webkit-box-shadow:white 0 1px 1px -1px inset;background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#738ABA), to(#2C4987));border-bottom:1px solid;border-color:#1d4088;color:#fff;font:14px Helvetica, sans-serif;font-weight:bold;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{-webkit-font-smoothing:subpixel-antialiased;height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#4966A6), color-stop(.5, #355492), to(#2A4887));border:1px solid #2f477a;-webkit-background-clip:padding-box;-webkit-border-radius:3px;-webkit-box-shadow:rgba(0, 0, 0, .117188) 0 1px 1px inset, rgba(255, 255, 255, .167969) 0 1px 0;display:inline-block;margin-top:3px;max-width:85px;line-height:18px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{border:none;background:none;color:#fff;font:12px Helvetica, sans-serif;font-weight:bold;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(https://static.xx.fbcdn.net/rsrc.php/v2/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #555;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f6f7f8;border:1px solid #555;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_button{text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}#fb_dialog_loader_spinner{animation:rotateSpinner 1.2s linear infinite;background-color:transparent;background-image:url(https://static.xx.fbcdn.net/rsrc.php/v2/yD/r/t-wz8gw1xG1.png);background-repeat:no-repeat;background-position:50% 50%;height:24px;width:24px}@keyframes rotateSpinner{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_hide_iframes iframe{position:relative;left:-10000px}.fb_iframe_widget_loader{position:relative;display:inline-block}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}.fb_iframe_widget_loader iframe{min-height:32px;z-index:2;zoom:1}.fb_iframe_widget_loader .FB_Loader{background:url(https://static.xx.fbcdn.net/rsrc.php/v2/y9/r/jKEcVPZFk-2.gif) no-repeat;height:32px;width:32px;margin-left:-16px;position:absolute;left:50%;z-index:4}
+  </style>
+ </head>
+ <body>
+  <div id="fb-root" class=" fb_reset">
+   <div style="position: absolute; top: -10000px; height: 0px; width: 0px;">
+    <div>
+     <iframe frameborder="0" name="fb_xdm_frame_https" allowtransparency="true" allowfullscreen="true" scrolling="no" id="fb_xdm_frame_https" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tabindex="-1" style="border: medium none;" src="https://s-static.ak.facebook.com/connect/xd_arbiter/TlA_zCeMkxl.js?version=41#channel=f3292e9daf066e4&origin=https%3A%2F%2Fwww.ozziedeals.com.au">
+     </iframe>
+    </div>
+   </div>
+   <div style="position: absolute; top: -10000px; height: 0px; width: 0px;">
+    <div>
+    </div>
+   </div>
+  </div>
+  <script>
+   (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_AU/sdk.js#xfbml=1&amp;version=v2.4&amp;appId=426307090883086";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+  </script>
+  <script type="text/javascript">
+   jQuery(function($) {
+	$.box1;
+	$('#btn_small_access').click(function(e){
+		e.preventDefault();
+		$.post('/popup-login/view1', {}, function(data){
+			$.box1 = bootbox.dialog({message: data}).addClass("modal-popupsmall-login");
+		});
+	});
+
+	$('#btn_forgotten_password').click(function(e){
+		e.preventDefault();
+		$.post('/popup-forgotten/view1', {}, function(data){
+			$.box1 = bootbox.dialog({message: data}).addClass("modal-popup-login");
+		});
+	});
+	
+	$('#btn_forgotten_password_2').click(function(e){
+		e.preventDefault();
+		$.post('/popup-forgotten/view1', {}, function(data){
+			$.box1 = bootbox.dialog({message: data}).addClass("modal-popup-login");
+		});
+	});
+	
+	$.fn.forgotten = function() {
+		$.post('/popup-forgotten/view1', {}, function(data){
+			$.box1 = bootbox.dialog({message: data}).addClass("modal-popupsmall-login");
+		});
+	
+	}
+});
+  </script>
+  <div class="top_bar">
+   <section style="background:#333; position:relative;z-index:2000;">
+    <div class="logo_section_xs hidden-md hidden-lg">
+     <a href="/">
+      <img class="img-responsive" src="/utils/img/logo_header.png" />
+     </a>
+    </div>
+    <div class="col-xs-12 first_row hidden-lg text-right">
+     <div class="col-xs-1 col-md-1 hidden-xs hidden-md hidden-lg">
+     </div>
+     <div class="col-xs-8 col-md-9 hidden-xs no_padding_left no_padding_right">
+      <form method="post" action="/actions?_type=_access" id="form_access2">
+       <input type="hidden" value="617e75ddb9adb94381e4c4f8b94098e5" name="ACCESS_KEY" />
+       <div class="form-group">
+        <div class="col-sm-4 no_padding_left no_padding_right">
+         <label class="col-sm-5 no_padding_left text-right">
+          Login:
+         </label>
+         <div class="col-sm-7 no_padding_left">
+          <input type="text" autocomplete="off" class="access form-control input-sm" name="user_login" />
+          <span class="info-access">
+          </span>
+         </div>
+        </div>
+        <div class="col-sm-4 no_padding_left no_padding_right">
+         <label class="col-sm-5 no_padding_left text-right">
+          Password:
+         </label>
+         <div class="col-sm-7 no_padding_left">
+          <input type="password" autocomplete="off" class="access form-control input-sm" name="user_pass" />
+         </div>
+        </div>
+        <div class="col-sm-4 no_padding_left no_padding_right go_forgotten_password">
+         <div class="form-group">
+          <div class="col-xs-2 no_padding_left">
+           <button class="btn btn-sm btn-success btn_go" id="btn_access2">
+            GO
+           </button>
+          </div>
+          <div class="col-xs-10 no_padding_left no_padding_right forgotten_password_section">
+           <a class="forgotten_password" id="btn_forgotten_password_2" href="#">
+            Forgotten Password?
+           </a>
+          </div>
+          <div class="clearfix">
+          </div>
+         </div>
+        </div>
+       </div>
+      </form>
+     </div>
+     <div class="col-xs-3 col-md-2 cart no_padding_left no_padding_right pull-right hidden-md hidden-lg ">
+      <a href="/shopping-cart/view1">
+       <img src="/utils/img/cart.png" />
+      </a>
+      <span>
+       <span class="cart-item">
+        0
+       </span>
+        ITEM(s)
+      </span>
+      <span>
+       $
+       <span class="cart-total">
+        0
+       </span>
+      </span>
+      <div class="clearfix">
+      </div>
+     </div>
+     <div class="clearfix">
+     </div>
+    </div>
+    <div class="clearfix">
+    </div>
+   </section>
+   <section style="background:#333;">
+    <div class="col-sm-offset-1 col-sm-10 col-lg-offset-1 col-lg-11 first_row hidden-sm hidden-md hidden-xs">
+     <div class="col-lg-7 no_padding_left">
+      <form method="post" action="/actions?_type=_access" id="form_access">
+       <input type="hidden" value="617e75ddb9adb94381e4c4f8b94098e5" name="ACCESS_KEY" />
+       <div class="form-group">
+        <div class="col-sm-4 no_padding_left">
+         <label class="col-sm-4 col-lg-4 no_padding_left text-right">
+          Login:
+         </label>
+         <div class="col-sm-8 no_padding_left">
+          <input type="text" autocomplete="off" class="access form-control input-sm" name="user_login" />
+          <span class="info-access">
+          </span>
+         </div>
+        </div>
+        <div class="col-sm-4 no_padding_left">
+         <label class="col-sm-4 col-lg-4 no_padding_left text-right">
+          Password:
+         </label>
+         <div class="col-sm-8 no_padding_left">
+          <input type="password" autocomplete="off" class="access form-control input-sm" name="user_pass" />
+         </div>
+        </div>
+        <div class="col-sm-4 no_padding_left go_forgotten_password">
+         <div class="form-group">
+          <div class="col-xs-4 col-sm-4 no_padding_left">
+           <button class="btn btn-sm btn-success btn_go" id="btn_access">
+            GO
+           </button>
+          </div>
+          <div class="col-xs-8 col-sm-8 no_padding_left no_padding_right forgotten_password_section">
+           <a class="forgotten_password" id="btn_forgotten_password" href="#">
+            Forgotten Password?
+           </a>
+          </div>
+          <div class="clearfix">
+          </div>
+         </div>
+        </div>
+        <div class="clearfix">
+        </div>
+       </div>
+      </form>
+     </div>
+     <div class="col-sm-offset-3 col-sm-7 col-lg-offset-0 col-lg-5 member_cart no_padding_right">
+      <span>
+       <a href="/customer">
+        <img src="/utils/img/member.png" />
+       </a>
+      </span>
+      <span>
+       <a href="/shopping-cart/view1">
+        <img src="/utils/img/cart.png" />
+       </a>
+       <span>
+        <span class="cart-item">
+         0
+        </span>
+         ITEM(s)
+       </span>
+       <span>
+        $
+        <span class="cart-total">
+         0
+        </span>
+       </span>
+       <div class="clearfix">
+       </div>
+      </span>
+     </div>
+     <div class="clearfix">
+     </div>
+    </div>
+    <div class="clearfix">
+    </div>
+   </section>
+   <div class="clearfix">
+   </div>
+   <section class="logo_menu_bar_section">
+    <div class="logo_section hidden-xs hidden-sm">
+     <a href="/">
+      <img class="img-responsive" src="/utils/img/logo_header.png" />
+     </a>
+    </div>
+    <div style="background:#FF931E;position:relative;z-index:2;" class="col-sm-offset-0 col-sm-12 col-md-offset-1 col-md-11 col-lg-offset-1 col-lg-11 no_padding_left no_padding_right">
+     <div class="col-lg-offset-1 col-lg-10 no_padding_left no_padding_right hidden-sm hidden-md hidden-lg">
+      <nav style="border:0px;" role="navigation" class="navbar navbar-inverse no_margin_bottom navbar_xs">
+       <div class="container-fluid">
+        <div class="navbar-header">
+         <button data-target="#bs-example-navbar-collapse-1" data-toggle="collapse" class="navbar-toggle" type="button">
+          <span class="sr-only">
+           Toggle navigation
+          </span>
+          <span class="icon-bar">
+          </span>
+          <span class="icon-bar">
+          </span>
+          <span class="icon-bar">
+          </span>
+         </button>
+         <span style="padding-top:5px;padding-left:4px;" class="btn-group">
+          <button style="font-size:12px;" class="btn btn-default btn_login" type="button" id="btn_small_access">
+           Login
+          </button>
+          <a class="btn btn-default btn_register" href="/customer">
+           Register
+          </a>
+         </span>
+        </div>
+        <div style="border:0px;" id="bs-example-navbar-collapse-1" class="collapse navbar-collapse no_padding_left no_padding_right">
+         <ul style="border:0px; width:100%;" class="nav navbar-nav menu_orange">
+          <li style="max-width:100%;" class="">
+           <a href="/group/view1/dining">
+            <div>
+             <span>
+              <img style="margin:0px auto;" src="/utils/img/front/dining.png" />
+             </span>
+             <span>
+              DINING
+             </span>
+            </div>
+           </a>
+           <span class="divider">
+           </span>
+          </li>
+          <li style="max-width:100%;" class="active">
+           <a href="/group/view1/beauty-amp-wellness">
+            <div>
+             <span>
+              <img style="margin:0px auto;" src="/utils/img/front/beauty.png" />
+             </span>
+             <span>
+              BEAUTY &amp; WELLNESS
+             </span>
+            </div>
+           </a>
+           <span class="divider">
+           </span>
+          </li>
+          <li style="max-width:100%;" class="">
+           <a href="/group/view1/health-care">
+            <div>
+             <span>
+              <img style="margin:0px auto;" src="/utils/img/front/health_care.png" />
+             </span>
+             <span>
+              HEALTH CARE
+             </span>
+            </div>
+           </a>
+           <span class="divider">
+           </span>
+          </li>
+          <li style="max-width:100%;" class="">
+           <a href="/group/view1/leisure-amp-fitness">
+            <div>
+             <span>
+              <img style="margin:0px auto;" src="/utils/img/front/leisure.png" />
+             </span>
+             <span>
+              LEISURE &amp; FITNESS
+             </span>
+            </div>
+           </a>
+           <span class="divider">
+           </span>
+          </li>
+          <li style="max-width:100%;" class="">
+           <a href="/group/view1/tickets-amp-events">
+            <div>
+             <span>
+              <img style="margin:0px auto;" src="/utils/img/front/tickets.png" />
+             </span>
+             <span>
+              TICKETS &amp; EVENTS
+             </span>
+            </div>
+           </a>
+           <span class="divider">
+           </span>
+          </li>
+          <li style="max-width:100%;" class="">
+           <a href="/group/view1/services">
+            <div>
+             <span>
+              <img style="margin:0px auto;" src="/utils/img/front/services.png" />
+             </span>
+             <span>
+              SERVICES
+             </span>
+            </div>
+           </a>
+           <span class="divider">
+           </span>
+          </li>
+          <li style="max-width:100%;" class="">
+           <a href="/group/view1/classes-amp-training">
+            <div>
+             <span>
+              <img style="margin:0px auto;" src="/utils/img/front/classes.png" />
+             </span>
+             <span>
+              CLASSES &amp; TRAINING
+             </span>
+            </div>
+           </a>
+           <span class="divider">
+           </span>
+          </li>
+          <li style="max-width:100%;" class="">
+           <a href="/group/view1/travel">
+            <div>
+             <span>
+              <img style="margin:0px auto;" src="/utils/img/front/travel.png" />
+             </span>
+             <span>
+              TRAVEL
+             </span>
+            </div>
+           </a>
+           <span class="divider">
+           </span>
+          </li>
+          <li style="max-width:100%;" class="">
+           <a href="/group/view1/shopping">
+            <div>
+             <span>
+              <img style="margin:0px auto;" src="/utils/img/front/shopping.png" />
+             </span>
+             <span>
+              SHOPPING
+             </span>
+            </div>
+           </a>
+           <span class="divider">
+           </span>
+          </li>
+         </ul>
+        </div>
+       </div>
+      </nav>
+      <div class="clearfix">
+      </div>
+     </div>
+     <div class="col-lg-offset-1 col-lg-10 no_padding_left no_padding_right hidden-xs">
+      <div class="menu_bar_orange no_padding_left no_padding_right col-sm-12 col-lg-offset-1 col-lg-11">
+       <nav style="border:0px;" role="navigation" class="navbar navbar-default no_margin_bottom">
+        <div class="container-fluid">
+         <div class="navbar-header">
+          <button data-target="#bs-example-navbar-collapse-1" data-toggle="collapse" class="navbar-toggle" type="button">
+           <span class="sr-only">
+            Toggle navigation
+           </span>
+           <span class="icon-bar">
+           </span>
+           <span class="icon-bar">
+           </span>
+           <span class="icon-bar">
+           </span>
+          </button>
+         </div>
+         <div style="border:0px;" id="bs-example-navbar-collapse-1" class="collapse navbar-collapse no_padding_left no_padding_right">
+          <ul style="border:0px;height:90px;width:100%;" class="nav navbar-nav menu_orange">
+           <li class="">
+            <a href="/group/view1/dining">
+             <div>
+              <img style="margin:0px auto;" src="/utils/img/front/dining.png" />
+             </div>
+             <div>
+              DINING
+             </div>
+            </a>
+            <span class="divider">
+            </span>
+           </li>
+           <li class="active">
+            <a href="/group/view1/beauty-amp-wellness">
+             <div>
+              <img style="margin:0px auto;" src="/utils/img/front/beauty.png" />
+             </div>
+             <div>
+              BEAUTY &amp; WELLNESS
+             </div>
+            </a>
+            <span class="divider">
+            </span>
+           </li>
+           <li class="">
+            <a href="/group/view1/health-care">
+             <div>
+              <img style="margin:0px auto;" src="/utils/img/front/health_care.png" />
+             </div>
+             <div>
+              HEALTH CARE
+             </div>
+            </a>
+            <span class="divider">
+            </span>
+           </li>
+           <li class="">
+            <a href="/group/view1/leisure-amp-fitness">
+             <div>
+              <img style="margin:0px auto;" src="/utils/img/front/leisure.png" />
+             </div>
+             <div>
+              LEISURE &amp; FITNESS
+             </div>
+            </a>
+            <span class="divider">
+            </span>
+           </li>
+           <li class="">
+            <a href="/group/view1/tickets-amp-events">
+             <div>
+              <img style="margin:0px auto;" src="/utils/img/front/tickets.png" />
+             </div>
+             <div>
+              TICKETS &amp; EVENTS
+             </div>
+            </a>
+            <span class="divider">
+            </span>
+           </li>
+           <li class="">
+            <a href="/group/view1/services">
+             <div>
+              <img style="margin:0px auto;" src="/utils/img/front/services.png" />
+             </div>
+             <div>
+              SERVICES
+             </div>
+            </a>
+            <span class="divider">
+            </span>
+           </li>
+           <li class="">
+            <a href="/group/view1/classes-amp-training">
+             <div>
+              <img style="margin:0px auto;" src="/utils/img/front/classes.png" />
+             </div>
+             <div>
+              CLASSES &amp; TRAINING
+             </div>
+            </a>
+            <span class="divider">
+            </span>
+           </li>
+           <li class="">
+            <a href="/group/view1/travel">
+             <div>
+              <img style="margin:0px auto;" src="/utils/img/front/travel.png" />
+             </div>
+             <div>
+              TRAVEL
+             </div>
+            </a>
+            <span class="divider">
+            </span>
+           </li>
+           <li class="">
+            <a href="/group/view1/shopping">
+             <div>
+              <img style="margin:0px auto;" src="/utils/img/front/shopping.png" />
+             </div>
+             <div>
+              SHOPPING
+             </div>
+            </a>
+            <span class="divider">
+            </span>
+           </li>
+          </ul>
+         </div>
+        </div>
+       </nav>
+       <div class="clearfix">
+       </div>
+      </div>
+      <!--end of meu bar-->
+     </div>
+     <div class="clearfix">
+     </div>
+    </div>
+    <div class="clearfix">
+    </div>
+   </section>
+  </div>
+  <div class="clearfix">
+  </div>
+  <section>
+   <div class="col-md-1">
+   </div>
+   <div class="col-md-10 no_padding_left no_padding_right">
+    <div style="position:relative;" class="carousel slide" id="myCarousel">
+     <ol class="carousel-indicators hidden-sm hidden-xs">
+      <li class="active" data-slide-to="0" data-target="#myCarousel">
+      </li>
+      <li class="" data-slide-to="1" data-target="#myCarousel">
+      </li>
+      <li class="" data-slide-to="2" data-target="#myCarousel">
+      </li>
+      <li class="" data-slide-to="3" data-target="#myCarousel">
+      </li>
+      <li class="" data-slide-to="4" data-target="#myCarousel">
+      </li>
+      <li class="" data-slide-to="5" data-target="#myCarousel">
+      </li>
+      <li class="" data-slide-to="6" data-target="#myCarousel">
+      </li>
+      <li class="" data-slide-to="7" data-target="#myCarousel">
+      </li>
+      <li class="" data-slide-to="8" data-target="#myCarousel">
+      </li>
+      <li class="" data-slide-to="9" data-target="#myCarousel">
+      </li>
+      <li class="" data-slide-to="10" data-target="#myCarousel">
+      </li>
+      <li class="" data-slide-to="11" data-target="#myCarousel">
+      </li>
+      <li class="" data-slide-to="12" data-target="#myCarousel">
+      </li>
+      <li class="" data-slide-to="13" data-target="#myCarousel">
+      </li>
+      <li class="" data-slide-to="14" data-target="#myCarousel">
+      </li>
+      <li class="" data-slide-to="15" data-target="#myCarousel">
+      </li>
+      <li class="" data-slide-to="16" data-target="#myCarousel">
+      </li>
+      <li class="" data-slide-to="17" data-target="#myCarousel">
+      </li>
+      <li class="" data-slide-to="18" data-target="#myCarousel">
+      </li>
+      <li class="" data-slide-to="19" data-target="#myCarousel">
+      </li>
+     </ol>
+     <ol class="carousel-promotion hidden-sm hidden-xs">
+      <li class="active" data-slide-to="0" data-target="#myCarousel">
+      </li>
+      <li class="" data-slide-to="1" data-target="#myCarousel">
+      </li>
+      <li class="" data-slide-to="2" data-target="#myCarousel">
+      </li>
+      <li class="" data-slide-to="3" data-target="#myCarousel">
+      </li>
+      <li class="" data-slide-to="4" data-target="#myCarousel">
+      </li>
+      <li class="" data-slide-to="5" data-target="#myCarousel">
+      </li>
+      <li class="" data-slide-to="6" data-target="#myCarousel">
+      </li>
+      <li class="" data-slide-to="7" data-target="#myCarousel">
+      </li>
+      <li class="" data-slide-to="8" data-target="#myCarousel">
+      </li>
+      <li class="" data-slide-to="9" data-target="#myCarousel">
+      </li>
+      <li class="" data-slide-to="10" data-target="#myCarousel">
+      </li>
+      <li class="" data-slide-to="11" data-target="#myCarousel">
+      </li>
+      <li class="" data-slide-to="12" data-target="#myCarousel">
+      </li>
+      <li class="" data-slide-to="13" data-target="#myCarousel">
+      </li>
+      <li class="" data-slide-to="14" data-target="#myCarousel">
+      </li>
+      <li class="" data-slide-to="15" data-target="#myCarousel">
+      </li>
+      <li class="" data-slide-to="16" data-target="#myCarousel">
+      </li>
+      <li class="" data-slide-to="17" data-target="#myCarousel">
+      </li>
+      <li class="" data-slide-to="18" data-target="#myCarousel">
+      </li>
+      <li class="" data-slide-to="19" data-target="#myCarousel">
+      </li>
+     </ol>
+     <ol class="carousel-texter hidden-sm hidden-xs">
+      <li class="active text-hidden" data-slide-to="0" data-target="#myCarousel">
+      </li>
+      <li class=" text-hidden" data-slide-to="1" data-target="#myCarousel">
+      </li>
+      <li class=" text-hidden" data-slide-to="2" data-target="#myCarousel">
+      </li>
+      <li class=" text-hidden" data-slide-to="3" data-target="#myCarousel">
+      </li>
+      <li class=" text-hidden" data-slide-to="4" data-target="#myCarousel">
+      </li>
+      <li class=" text-hidden" data-slide-to="5" data-target="#myCarousel">
+      </li>
+      <li class=" text-hidden" data-slide-to="6" data-target="#myCarousel">
+      </li>
+      <li class=" text-hidden" data-slide-to="7" data-target="#myCarousel">
+      </li>
+      <li class=" text-hidden" data-slide-to="8" data-target="#myCarousel">
+      </li>
+      <li class=" text-hidden" data-slide-to="9" data-target="#myCarousel">
+      </li>
+      <li class=" text-hidden" data-slide-to="10" data-target="#myCarousel">
+      </li>
+      <li class=" text-hidden" data-slide-to="11" data-target="#myCarousel">
+      </li>
+      <li class=" text-hidden" data-slide-to="12" data-target="#myCarousel">
+      </li>
+      <li class=" text-hidden" data-slide-to="13" data-target="#myCarousel">
+      </li>
+      <li class=" text-hidden" data-slide-to="14" data-target="#myCarousel">
+      </li>
+      <li class=" text-hidden" data-slide-to="15" data-target="#myCarousel">
+      </li>
+      <li class=" text-hidden" data-slide-to="16" data-target="#myCarousel">
+      </li>
+      <li class=" text-hidden" data-slide-to="17" data-target="#myCarousel">
+      </li>
+      <li class=" text-hidden" data-slide-to="18" data-target="#myCarousel">
+      </li>
+      <li class=" text-hidden" data-slide-to="19" data-target="#myCarousel">
+      </li>
+     </ol>
+     <ol class="carousel-warms">
+      <li class="active warms-hidden" data-slide-to="0" data-target="#myCarousel">
+      </li>
+      <li class=" warms-hidden" data-slide-to="1" data-target="#myCarousel">
+      </li>
+      <li class=" warms-hidden" data-slide-to="2" data-target="#myCarousel">
+      </li>
+      <li class=" warms-hidden" data-slide-to="3" data-target="#myCarousel">
+      </li>
+      <li class=" warms-hidden" data-slide-to="4" data-target="#myCarousel">
+      </li>
+      <li class=" warms-hidden" data-slide-to="5" data-target="#myCarousel">
+      </li>
+      <li class=" warms-hidden" data-slide-to="6" data-target="#myCarousel">
+      </li>
+      <li class=" warms-hidden" data-slide-to="7" data-target="#myCarousel">
+      </li>
+      <li class=" warms-hidden" data-slide-to="8" data-target="#myCarousel">
+      </li>
+      <li class=" warms-hidden" data-slide-to="9" data-target="#myCarousel">
+      </li>
+      <li class=" warms-hidden" data-slide-to="10" data-target="#myCarousel">
+      </li>
+      <li class=" warms-hidden" data-slide-to="11" data-target="#myCarousel">
+      </li>
+      <li class=" warms-hidden" data-slide-to="12" data-target="#myCarousel">
+      </li>
+      <li class=" warms-hidden" data-slide-to="13" data-target="#myCarousel">
+      </li>
+      <li class=" warms-hidden" data-slide-to="14" data-target="#myCarousel">
+      </li>
+      <li class=" warms-hidden" data-slide-to="15" data-target="#myCarousel">
+      </li>
+      <li class=" warms-hidden" data-slide-to="16" data-target="#myCarousel">
+      </li>
+      <li class=" warms-hidden" data-slide-to="17" data-target="#myCarousel">
+      </li>
+      <li class=" warms-hidden" data-slide-to="18" data-target="#myCarousel">
+      </li>
+      <li class=" warms-hidden" data-slide-to="19" data-target="#myCarousel">
+      </li>
+     </ol>
+    </div>
+   </div>
+  </section>
+  <section class="carousel-inner">
+   <div class="item active">
+    <a title="Go to Deal" alt="Go to Deal" href="/deal/view1/leisure-amp-fitness/7">
+     <div>
+      <img class="img-responsive" src="/pictures/deal_7/crop/deal_7_20140815112828_p1210_a.JPG" />
+     </div>
+    </a>
+    <div class="clearfix">
+    </div>
+    <div class="carousel-caption carousel-description hidden-xs">
+     <div class="heading">
+      Clay Target Shooting for One ($98) or Two ($189) at Hitting Targets CECIL PARK
+     </div>
+     <div>
+      <p>
+       Shoot Real 12 Gauge Shotguns, Using Live Ammunition at Moving Clay Targets
+      </p>
+      <p>
+       You will feel exhilarated and empowered. No experience or licence necessary.
+      </p>
+     </div>
+     <div class="tag">
+      $98.00
+     </div>
+    </div>
+   </div>
+   <div class="item ">
+    <a title="Go to Deal" alt="Go to Deal" href="/deal/view1/leisure-amp-fitness/11">
+     <div style="width:50.04%;float:left;">
+      <img class="img-responsive" src="/pictures/deal_11/crop/deal_11_20140828030532_p111_a.jpg" />
+     </div>
+     <div style="width:49.96%;float:left;">
+      <img class="img-responsive" src="/pictures/deal_11/crop/deal_11_20140828031532_p111_b.jpg" />
+     </div>
+    </a>
+    <div class="clearfix">
+    </div>
+    <div class="carousel-caption carousel-description hidden-xs">
+     <div class="heading">
+      Extreme Aerobatic Flight In a powerful Warbird! with Aerohunter- HUNTER VALLEY or CESSNOCK
+     </div>
+     <div>
+      <p>
+       Go Flying with Australia's finest air-show pilots flying a powerful Military Warbird, you will loop, roll, twist and turn and feel 'G' Force of up to 5 times the force of Gravity!  
+      </p>
+     </div>
+     <div class="tag">
+      $299.00
+     </div>
+    </div>
+   </div>
+   <div class="item ">
+    <a title="Go to Deal" alt="Go to Deal" href="/deal/view1/leisure-amp-fitness/153">
+     <div style="width:50.13%;float:left;">
+      <img class="img-responsive" src="/pictures/deal_153/crop/deal_153_20140920062547_p20711_a.JPG" />
+     </div>
+     <div style="width:49.87%;float:left;">
+      <img class="img-responsive" src="/pictures/deal_153/crop/deal_153_20140920062848_p20711_b.JPG" />
+     </div>
+    </a>
+    <div class="clearfix">
+    </div>
+    <div class="carousel-caption carousel-description hidden-xs">
+     <div class="heading">
+      Full Day of Intense Paintball Action for Two People ($19) Five People ($29) or Ten People ($55) Incl All Equipment and 100 Paintballs at Delta Force Paintball MELBOURNE
+     </div>
+     <div>
+      <p>
+       A New Era of Paintball is Upon us. You may, or may not, have Played Paintball before BUT you haven't REALLY played Paintball until you have Experienced it the "Delta Force Way"
+      </p>
+     </div>
+     <div class="tag">
+      $19.00
+     </div>
+    </div>
+   </div>
+   <div class="item ">
+    <a title="Go to Deal" alt="Go to Deal" href="/deal/view1/health-care/87">
+     <div style="width:33.33%;float:left;">
+      <img class="img-responsive" src="/pictures/deal_87/crop/deal_87_20140829072711_p12712_a.JPG" />
+     </div>
+     <div style="width:33.33%;float:left;">
+      <img class="img-responsive" src="/pictures/deal_87/crop/deal_87_20150330023752_p12712_b.JPG" />
+     </div>
+     <div style="width:33.33%;float:left;">
+      <img class="img-responsive" src="/pictures/deal_87/crop/deal_87_20150330021051_p12712_c.JPG" />
+     </div>
+    </a>
+    <div class="clearfix">
+    </div>
+    <div class="carousel-caption carousel-description hidden-xs">
+     <div class="heading">
+      Fat Cavitation Sessions - Three ($89) Five ($139) or Ten Sessions ($249) at Fantastic Beauty MELBOURNE
+     </div>
+     <div>
+      <p>
+       Slim Down and Tone Up - Revolutionary Weight Loss Therapy - Non-Surgical 
+      </p>
+      <p>
+       Great Location on Swan Street in Richmond
+      </p>
+     </div>
+     <div class="tag">
+      $89.00
+     </div>
+    </div>
+   </div>
+   <div class="item ">
+    <a title="Go to Deal" alt="Go to Deal" href="/deal/view1/beauty-amp-wellness/289">
+     <div style="width:33.33%;float:left;">
+      <img class="img-responsive" src="/pictures/deal_289/crop/deal_289_20150424022042_p40612_a.png" />
+     </div>
+     <div style="width:33.33%;float:left;">
+      <img class="img-responsive" src="/pictures/deal_289/crop/deal_289_20150424025141_p40612_b.jpg" />
+     </div>
+     <div style="width:33.33%;float:left;">
+      <img class="img-responsive" src="/pictures/deal_289/crop/deal_289_20150424020242_p40612_c.jpg" />
+     </div>
+    </a>
+    <div class="clearfix">
+    </div>
+    <div class="carousel-caption carousel-description hidden-xs">
+     <div class="heading">
+      $5 for Underarm Laser Hair Removal at Catwalk Salon GLADESVILLE
+     </div>
+     <div>
+      <p>
+       Deal with Underarm Hair Quickly and Efficiently with this $5.00 Underarm Laser Treatment Deal.
+      </p>
+      <p>
+       You'll be placed in the safe hands of professionals using the latest Intense Pulse Technology at Catwalk Salon.
+      </p>
+     </div>
+     <div class="tag">
+      $5.00
+     </div>
+    </div>
+   </div>
+   <div class="item ">
+    <a title="Go to Deal" alt="Go to Deal" href="/deal/view1/classes-amp-training/322">
+     <div style="width:49.93%;float:left;">
+      <img class="img-responsive" src="/pictures/deal_322/crop/deal_322_20150806021250_p46511_a.JPG" />
+     </div>
+     <div style="width:49.94%;float:left;">
+      <img class="img-responsive" src="/pictures/deal_322/crop/deal_322_20150806020050_p46511_b.JPG" />
+     </div>
+    </a>
+    <div class="clearfix">
+    </div>
+    <div class="carousel-caption carousel-description hidden-xs">
+     <div class="heading">
+      One Month of Unlimited Yoga for One ($35), Two ($65) or Four People ($129) at Ripina Yoga Studio (Up to $560 Value)
+     </div>
+     <div>
+      <p>
+       Improve Core Strength, Balance and Endurance.
+      </p>
+      <p>
+       Reduce Stress and Eliminate Toxins at Ripina Yoga Studio BANKSTOWN
+      </p>
+     </div>
+     <div class="tag">
+      $35.00
+     </div>
+    </div>
+   </div>
+   <div class="item ">
+    <a title="Go to Deal" alt="Go to Deal" href="/deal/view1/beauty-amp-wellness/287">
+     <div style="width:33.33%;float:left;">
+      <img class="img-responsive" src="/pictures/deal_287/crop/deal_287_20150424120230_p40412_a.jpg" />
+     </div>
+     <div style="width:33.33%;float:left;">
+      <img class="img-responsive" src="/pictures/deal_287/crop/deal_287_20150424121830_p40412_b.jpg" />
+     </div>
+     <div style="width:33.33%;float:left;">
+      <img class="img-responsive" src="/pictures/deal_287/crop/deal_287_20150424123929_p40412_c.png" />
+     </div>
+    </a>
+    <div class="clearfix">
+    </div>
+    <div class="carousel-caption carousel-description hidden-xs">
+     <div class="heading">
+      $25 for a Spray Tan at Catwalk Salon GLADESVILLE
+     </div>
+     <div>
+      <p>
+       Want a Bronzed Tan for that Special Occasion? Then Reinvent yourself by Heading in to Catwalk Salon in Gladesville, Sydney.
+      </p>
+      <p>
+       Experience a Preimium Spray Tan leaving your Body Glowing and Bathed in the Finest Spray Tan Imaginable. 
+      </p>
+     </div>
+     <div class="tag">
+      $25.00
+     </div>
+    </div>
+   </div>
+   <div class="item ">
+    <a title="Go to Deal" alt="Go to Deal" href="/deal/view1/beauty-amp-wellness/288">
+     <div style="width:33.33%;float:left;">
+      <img class="img-responsive" src="/pictures/deal_288/crop/deal_288_20150424011614_p40512_a.JPG" />
+     </div>
+     <div style="width:33.33%;float:left;">
+      <img class="img-responsive" src="/pictures/deal_288/crop/deal_288_20150424013015_p40512_b.JPG" />
+     </div>
+     <div style="width:33.33%;float:left;">
+      <img class="img-responsive" src="/pictures/deal_288/crop/deal_288_20150424011613_p40512_c.JPG" />
+     </div>
+    </a>
+    <div class="clearfix">
+    </div>
+    <div class="carousel-caption carousel-description hidden-xs">
+     <div class="heading">
+      $39 Laser Hair Removal on Three Areas for Silky, Soft Skin at Catwalk Design Team GLADESVILLE
+     </div>
+     <div>
+      <p>
+       The Experienced Staff at Catwalk Design Team utilise State-of-the-Art Laser Hair Removal Technologies to free Bodies of Unwelcome Fuzz and Create Silky Smooth Surfaces.
+      </p>
+      <p>
+       Book your Treatment in during your Lunch Break!
+      </p>
+     </div>
+     <div class="tag">
+      $39.00
+     </div>
+    </div>
+   </div>
+   <div class="item ">
+    <a title="Go to Deal" alt="Go to Deal" href="/deal/view1/classes-amp-training/308">
+     <div style="width:49.94%;float:left;">
+      <img class="img-responsive" src="/pictures/deal_308/crop/deal_308_20150629010932_p44611_a.jpg" />
+     </div>
+     <div style="width:49.96%;float:left;">
+      <img class="img-responsive" src="/pictures/deal_308/crop/deal_308_20150629013231_p44611_b.jpg" />
+     </div>
+    </a>
+    <div class="clearfix">
+    </div>
+    <div class="carousel-caption carousel-description hidden-xs">
+     <div class="heading">
+      $20 for Five Jiu Jitsu Kids Classes at Gracie Humaita MONA VALE
+     </div>
+     <div>
+      <p>
+       It's School Holiday Time and what better way to get them Active, Fit and Learn Self-Defence by doing Jiu Jitsu Classes.
+      </p>
+      <p>
+       The Gracie Humaita Academy is regarded as the Highest Technical Jiu Jitsu School in the World.
+      </p>
+     </div>
+     <div class="tag">
+      $20.00
+     </div>
+    </div>
+   </div>
+   <div class="item ">
+    <a title="Go to Deal" alt="Go to Deal" href="/deal/view1/beauty-amp-wellness/329">
+     <div style="width:50.04%;float:left;">
+      <img class="img-responsive" src="/pictures/deal_329/crop/deal_329_20151007013200_p47211_a.jpg" />
+     </div>
+     <div style="width:49.96%;float:left;">
+      <img class="img-responsive" src="/pictures/deal_329/crop/deal_329_20151007011211_p47211_b.jpg" />
+     </div>
+    </a>
+    <div class="clearfix">
+    </div>
+    <div class="carousel-caption carousel-description hidden-xs">
+     <div class="heading">
+      Essential Facial Rejuvenation Package for One ($29) at Euphoria Skin Clinic (Up to $130 Value)
+     </div>
+     <div>
+      <p>
+       1-Hour Facial Pamper Package at Euphoria Skin Clinic CASTLE HILL.
+      </p>
+      <p>
+       Treat yourself to this Essential Facial Rejuvenation for only $29.00
+      </p>
+     </div>
+     <div class="tag">
+      $29.00
+     </div>
+    </div>
+   </div>
+   <div class="item ">
+    <a title="Go to Deal" alt="Go to Deal" href="/deal/view1/leisure-amp-fitness/86">
+     <div style="width:33.33%;float:left;">
+      <img class="img-responsive" src="/pictures/deal_86/crop/deal_86_20140829070819_p12812_c.jpg" />
+     </div>
+     <div style="width:33.33%;float:left;">
+      <img class="img-responsive" src="/pictures/deal_86/crop/deal_86_20140829071919_p12812_b.jpg" />
+     </div>
+     <div style="width:33.33%;float:left;">
+      <img class="img-responsive" src="/pictures/deal_86/crop/deal_86_20140829075519_p12812_a.jpg" />
+     </div>
+    </a>
+    <div class="clearfix">
+    </div>
+    <div class="carousel-caption carousel-description hidden-xs">
+     <div class="heading">
+      Scenic Gyrocopter Flight 30-Min ($69) or 60-Min ($109) with Gyrocopter Illawarra - SYDNEY
+     </div>
+     <div>
+      <p>
+       It's called 'The Motor Bike of the Sky" Experience the New Age Auto Gyrocopter MTO3 as it takes you over Hidden Valleys, Waterfalls and arguably the most Pristine Coastline you will ever see.
+      </p>
+     </div>
+     <div class="tag">
+      $69.00
+     </div>
+    </div>
+   </div>
+   <div class="item ">
+    <a title="Go to Deal" alt="Go to Deal" href="/deal/view1/beauty-amp-wellness/112">
+     <div style="width:50.04%;float:left;">
+      <img class="img-responsive" src="/pictures/deal_112/crop/deal_112_20140901025246_p15311_a.JPG" />
+     </div>
+     <div style="width:49.96%;float:left;">
+      <img class="img-responsive" src="/pictures/deal_112/crop/deal_112_20140901035107_p15311_b.JPG" />
+     </div>
+    </a>
+    <div class="clearfix">
+    </div>
+    <div class="carousel-caption carousel-description hidden-xs">
+     <div class="heading">
+      Brazilian Cacau Keratin Smoothing/Straightening Treatment ($99) at BSK3 PARRAMATTA
+     </div>
+     <div>
+      <p>
+       Tame Unruly Hair at BSK3 Hair Design with this Brazilian Cacau Keratin Hair Smoothing Treatment.
+      </p>
+      <p>
+       With this exclusive offer even the Wildest Hair can be Controlled!
+      </p>
+     </div>
+     <div class="tag">
+      $99.00
+     </div>
+    </div>
+   </div>
+   <div class="item ">
+    <a title="Go to Deal" alt="Go to Deal" href="/deal/view1/services/110">
+     <div style="width:33.33%;float:left;">
+      <img class="img-responsive" src="/pictures/deal_110/crop/deal_110_20141203020053_p15212_a.JPG" />
+     </div>
+     <div style="width:33.33%;float:left;">
+      <img class="img-responsive" src="/pictures/deal_110/crop/deal_110_20141201020906_p15212_c.JPG" />
+     </div>
+     <div style="width:33.33%;float:left;">
+      <img class="img-responsive" src="/pictures/deal_110/crop/deal_110_20141203024552_p15212_b.JPG" />
+     </div>
+    </a>
+    <div class="clearfix">
+    </div>
+    <div class="carousel-caption carousel-description hidden-xs">
+     <div class="heading">
+      $19 for One-Hour Photo Shoot with 6 Take home Prints and High Res Softcopy for Up to 6 People at Paul Photos ($640 Value)
+     </div>
+     <div>
+      <p>
+       Memorable Way to Celebrate a Special Occasion or Milestone.
+      </p>
+      <p>
+       Doonside Studio open Seven Days a Week for Your Convenience
+      </p>
+     </div>
+     <div class="tag">
+      $19.00
+     </div>
+    </div>
+   </div>
+   <div class="item ">
+    <a title="Go to Deal" alt="Go to Deal" href="/deal/view1/beauty-amp-wellness/327">
+     <div style="width:50%;float:left;">
+      <img class="img-responsive" src="/pictures/deal_327/crop/deal_327_20150924013522_p46911_a.jpg" />
+     </div>
+     <div style="width:50%;float:left;">
+      <img class="img-responsive" src="/pictures/deal_327/crop/deal_327_20150924011622_p46911_b.jpg" />
+     </div>
+    </a>
+    <div class="clearfix">
+    </div>
+    <div class="carousel-caption carousel-description hidden-xs">
+     <div class="heading">
+      $160  for Lipo-Dissolve or Fat Burning with Ultracavitation and Vacuum (Value $960) EDGECLIFF
+     </div>
+     <div>
+      <p>
+       $160 for Lipodissolve or Fat-Burning with Ultracavitation and Vacuum (Value $960)
+      </p>
+      <p>
+       Natural Cosmetic Clinic in Sydney, offers a natural approach to beauty - Our cosmetic strategies combat the unwanted effects of age. 
+      </p>
+      <p>
+      </p>
+     </div>
+     <div class="tag">
+      $160.00
+     </div>
+    </div>
+   </div>
+   <div class="item ">
+    <a title="Go to Deal" alt="Go to Deal" href="/deal/view1/classes-amp-training/331">
+     <div style="width:49.92%;float:left;">
+      <img class="img-responsive" src="/pictures/deal_331/crop/deal_331_20151026011603_p47911_a.jpg" />
+     </div>
+     <div style="width:50.02%;float:left;">
+      <img class="img-responsive" src="/pictures/deal_331/crop/deal_331_20151026010503_p47911_b.jpg" />
+     </div>
+    </a>
+    <div class="clearfix">
+    </div>
+    <div class="carousel-caption carousel-description hidden-xs">
+     <div class="heading">
+      $69 for a Full-Day Intensive TV &amp; Video Presenter Taster Course with TV Training Academy, Four Locations ($490 Value)
+     </div>
+     <div>
+      <p>
+       Learn the art of Understanding Camera Communication, Down-the-Line Presentation Skills, Auto-Cue, Camera Angles and Green Screen Filming.
+      </p>
+      <p>
+       Training Facility that has Trained BBC, ITV, Sky and Major TV presenters.
+      </p>
+     </div>
+     <div class="tag">
+      $69.00
+     </div>
+    </div>
+   </div>
+   <div class="item ">
+    <a title="Go to Deal" alt="Go to Deal" href="/deal/view1/classes-amp-training/332">
+     <div style="width:49.95%;float:left;">
+      <img class="img-responsive" src="/pictures/deal_332/crop/deal_332_20151026052603_p48111_a.jpg" />
+     </div>
+     <div style="width:50.05%;float:left;">
+      <img class="img-responsive" src="/pictures/deal_332/crop/deal_332_20151026052904_p48111_b.jpg" />
+     </div>
+    </a>
+    <div class="clearfix">
+    </div>
+    <div class="carousel-caption carousel-description hidden-xs">
+     <div class="heading">
+      Online Candle Making Business Diploma Course ($40)
+     </div>
+     <div>
+      <p>
+       If you are Passionate and really Enjoy making Candles, you could Certainly Consider Pursuing this Exciting Hobby as a Full-Time Career by Setting up your Own Candle Making Business.
+      </p>
+      <p>
+       Limited Time at this Price!
+      </p>
+     </div>
+     <div class="tag">
+      $40.00
+     </div>
+    </div>
+   </div>
+   <div class="item ">
+    <a title="Go to Deal" alt="Go to Deal" href="/deal/view1/travel/294">
+     <div style="width:50.04%;float:left;">
+      <img class="img-responsive" src="/pictures/deal_294/crop/deal_294_20151007034630_p42011_a.jpg" />
+     </div>
+     <div style="width:49.96%;float:left;">
+      <img class="img-responsive" src="/pictures/deal_294/crop/deal_294_20151007030230_p42011_b.jpg" />
+     </div>
+    </a>
+    <div class="clearfix">
+    </div>
+    <div class="carousel-caption carousel-description hidden-xs">
+     <div class="heading">
+      NOOSA: Three-Night Beach Break For Two
+     </div>
+     <div>
+      <p>
+       $59 for a Three-Night Getaway for Two
+      </p>
+      <p>
+       Includes Daily Breakfast and Couple's Spa Package.
+      </p>
+     </div>
+     <div class="tag">
+      $59.00
+     </div>
+    </div>
+   </div>
+   <div class="item ">
+    <a title="Go to Deal" alt="Go to Deal" href="/deal/view1/travel/293">
+     <div style="width:49.95%;float:left;">
+      <img class="img-responsive" src="/pictures/deal_293/crop/deal_293_20150501014730_p41711_a.jpg" />
+     </div>
+     <div style="width:50.05%;float:left;">
+      <img class="img-responsive" src="/pictures/deal_293/crop/deal_293_20150501015730_p41711_b.jpg" />
+     </div>
+    </a>
+    <div class="clearfix">
+    </div>
+    <div class="carousel-caption carousel-description hidden-xs">
+     <div class="heading">
+      Phuket: $99 For a Seven Night Stay For Two People at Absolute Twin Sands Resort &amp; Spa
+     </div>
+     <div>
+      <p>
+       Travellers, Do You have your Passport Ready, For Sandy Beaches at this Tropical Haven Resort in Phuket, Thailand?
+      </p>
+      <p>
+       Enjoy Seven Nights in Bustling Phuket, with Sea &amp; Mountain Views on Patong Bay.
+      </p>
+      <p>
+      </p>
+     </div>
+     <div class="tag">
+      $99.00
+     </div>
+    </div>
+   </div>
+   <div class="item ">
+    <a title="Go to Deal" alt="Go to Deal" href="/deal/view1/travel/291">
+     <div style="width:50.05%;float:left;">
+      <img class="img-responsive" src="/pictures/deal_291/crop/deal_291_20151007044820_p40811_b.jpg" />
+     </div>
+     <div style="width:49.95%;float:left;">
+      <img class="img-responsive" src="/pictures/deal_291/crop/deal_291_20150501115739_p40811_a.jpg" />
+     </div>
+    </a>
+    <div class="clearfix">
+    </div>
+    <div class="carousel-caption carousel-description hidden-xs">
+     <div class="heading">
+      Phuket: $99 For a Seven-Night Stay For Two at Absolute Bangla Suites Resort
+     </div>
+     <div>
+      <p>
+       Experience the Vibrance of Patong with a Studio Apartment for Two People with Saturday Check-In
+      </p>
+      <p>
+       Looking for a holiday just minutes from the beach? You've come to the right place with Absolute Bangla Suites. 
+      </p>
+     </div>
+     <div class="tag">
+      $99.00
+     </div>
+    </div>
+   </div>
+   <div class="item ">
+    <a title="Go to Deal" alt="Go to Deal" href="/deal/view1/travel/292">
+     <div style="width:50.05%;float:left;">
+      <img class="img-responsive" src="/pictures/deal_292/crop/deal_292_20150501122901_p41111_a.jpg" />
+     </div>
+     <div style="width:49.95%;float:left;">
+      <img class="img-responsive" src="/pictures/deal_292/crop/deal_292_20150501123601_p41111_b.jpg" />
+     </div>
+    </a>
+    <div class="clearfix">
+    </div>
+    <div class="carousel-caption carousel-description hidden-xs">
+     <div class="heading">
+      Phuket: $99 For a Seven-Night Stay For Two at Absolute Nakalay Boutique Resort
+     </div>
+     <div>
+      <p>
+       Experience Patong with a Luxury Beachfront Apartment with Breath taking Panoramic Views of the Andaman Sea.
+      </p>
+      <p>
+       Perfect for a Couples Romantic Getaway.
+      </p>
+     </div>
+     <div class="tag">
+      $99.00
+     </div>
+    </div>
+   </div>
+  </section>
+  <!--carousel-inner-->
+  <a data-slide="prev" class="left carousel-control hidden-sm hidden-xs" href="#myCarousel">
+   <span class="slide_left_arrow">
+    <img src="/utils/img/slide_arrow_left.png" />
+   </span>
+  </a>
+  <a data-slide="next" class="right carousel-control hidden-sm hidden-xs" href="#myCarousel">
+   <span class="slide_right_arrow">
+    <img src="/utils/img/slide_arrow_right.png" />
+   </span>
+  </a>
+  <div class="clearfix">
+  </div>
+  <!-- div class="adv_banner_xs_screen col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8 hidden-sm hidden-md hidden-lg">
+		<div class="heading col-xs-9"> Pullman Bali Beach Escape</div>
+		<div class="tag col-xs-3" style="position:absolute; right:0px; bottom:0px;">
+			$1234
+		</div>
+		<div class="clearfix"></div>
+	</div -->
+  <div class="col-md-1">
+  </div>
+  <div class="search_bar hidden-sm hidden-md hidden-lg">
+   <div class="col-sm-12 col-md-offset-1 col-md-10 no_padding_left no_padding_right">
+    <div class="col-sm-8 no_padding_left">
+     <form method="get" action="/view2" id="fsearch_small">
+      <div class="col-xs-12 col-sm-3 search_for">
+       Search For
+      </div>
+      <div class="col-xs-10 col-sm-4">
+       <div class="form-group">
+        <input type="text" style="height:25px" class="form-control input-sm" name="search_keyword" id="search_keyword_small" />
+        <div class="clearfix">
+        </div>
+       </div>
+      </div>
+      <div class="col-xs-2 col-sm-1 in no_padding_left">
+       in
+      </div>
+      <div class="col-xs-12 col-sm-12 no_padding_left">
+       <div class="col-xs-11 no_padding_left">
+        <div class="col-xs-4">
+         <div class="form-group">
+          <label class="control-label col-sm-12  text-left no_padding_left">
+           State
+          </label>
+          <div class="col-sm-12 no_padding_left">
+           <select style="min-width:80px;" class="form-control input-sm select-search-state">
+            <option>
+             - All States -
+            </option>
+            <option value="1">
+             Australian Capital Territory
+            </option>
+            <option value="2">
+             New South Wales
+            </option>
+            <option value="3">
+             Northen Territory
+            </option>
+            <option value="4">
+             Queensland
+            </option>
+            <option value="5">
+             South Australia
+            </option>
+            <option value="6">
+             Tasmania
+            </option>
+            <option value="7">
+             Victoria
+            </option>
+            <option value="8">
+             Western Australia
+            </option>
+           </select>
+          </div>
+          <div class="clearfix">
+          </div>
+         </div>
+        </div>
+        <div class="col-xs-4">
+         <div class="form-group">
+          <label class="control-label col-sm-12  text-left no_padding_left">
+           Region
+          </label>
+          <div class="col-sm-12 no_padding_left">
+           <select style="min-width:80px;" class="form-control input-sm select-search-region">
+            <option value="">
+             - All Regions -
+            </option>
+           </select>
+          </div>
+          <div class="clearfix">
+          </div>
+         </div>
+        </div>
+        <div class="col-xs-4">
+         <div class="form-group">
+          <label class="control-label col-sm-12  text-left no_padding_left">
+           Suburb
+          </label>
+          <div class="col-sm-12 no_padding_left">
+           <select style="min-width:80px;" class="form-control input-sm select-search-suburb">
+            <option>
+             - All Suburb -
+            </option>
+           </select>
+          </div>
+          <div class="clearfix">
+          </div>
+         </div>
+        </div>
+       </div>
+       <div style="padding-top:15px;" class="col-xs-1 col-lg-2 no_padding_left no_padding_right">
+        <button class="btn btn-sm btn-success btn_go" id="go_small" type="submit">
+         GO
+        </button>
+       </div>
+      </div>
+     </form>
+    </div>
+   </div>
+   <div class="clearfix">
+   </div>
+  </div>
+  <div class="search_bar_xs_screen hidden-xs search_bar col-md-offset-1 col-md-10">
+   <div class="col-sm-12 col-md-12 col-lg-12 no_padding_left">
+    <div class="col-sm-11 col-md-11 col-lg-11">
+     <form method="get" action="/view2" id="fsearch">
+      <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 search_for no_padding_left">
+       <div class="col-sm-10">
+        <div class="form-group">
+         <label class="control-label col-sm-12  text-left">
+          Search For
+         </label>
+         <div class="col-sm-12  no_padding_right">
+          <input type="text" class="form-control input-sm" name="search_keyword" id="search_keyword_go" />
+         </div>
+         <div class="clearfix">
+         </div>
+        </div>
+       </div>
+       <div style="padding-top:20px;" class="col-sm-2">
+        in
+       </div>
+      </div>
+      <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 no_padding_left no_padding_right">
+       <div class="col-sm-11 no_padding_left no_padding_right">
+        <div class="col-sm-4 no_padding_left">
+         <div class="form-group">
+          <label class="control-label col-sm-12 no_padding_left text-left">
+           State
+          </label>
+          <select class="form-control input-sm select-search-state">
+           <option>
+            - All States -
+           </option>
+           <option value="1">
+            Australian Capital Territory
+           </option>
+           <option value="2">
+            New South Wales
+           </option>
+           <option value="3">
+            Northen Territory
+           </option>
+           <option value="4">
+            Queensland
+           </option>
+           <option value="5">
+            South Australia
+           </option>
+           <option value="6">
+            Tasmania
+           </option>
+           <option value="7">
+            Victoria
+           </option>
+           <option value="8">
+            Western Australia
+           </option>
+          </select>
+          <div class="clearfix">
+          </div>
+         </div>
+        </div>
+        <div class="col-sm-4 no_padding_left">
+         <div class="form-group">
+          <label class="control-label col-sm-12 no_padding_left text-left">
+           Region
+          </label>
+          <select class="form-control input-sm select-search-region">
+           <option value="">
+            - All Regions -
+           </option>
+          </select>
+          <div class="clearfix">
+          </div>
+         </div>
+        </div>
+        <div class="col-sm-4 no_padding_left">
+         <div class="form-group">
+          <label class="control-label col-sm-12 no_padding_left text-left">
+           Suburb
+          </label>
+          <select class="form-control input-sm select-search-suburb">
+           <option>
+            - All Suburb -
+           </option>
+          </select>
+          <div class="clearfix">
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="col-sm-1 text-left no_padding_left btn_go_section">
+        <button class="btn btn-sm btn-success btn_go" id="go_search" type="submit">
+         GO
+        </button>
+       </div>
+      </div>
+     </form>
+    </div>
+    <div class="hidden-xs col-sm-1 col-md-1 col-lg-1 no_padding_left no_padding_right view_section text-right">
+     <label class="view col-sm-12 control-label text-center">
+      View:
+     </label>
+     <div class="col-sm-12 no_padding_left no_padding_right ">
+      <span class="col-sm-6 text-right no_padding_right">
+       <a href="/view1">
+        <img src="/utils/img/block_s.png" />
+       </a>
+      </span>
+      <span class="col-sm-6 text-left">
+       <a href="/view2">
+        <img src="/utils/img/block_2_u.png" />
+       </a>
+      </span>
+     </div>
+    </div>
+   </div>
+   <div class="clearfix">
+   </div>
+  </div>
+  <script>
+   jQuery(function($){
+	$('.select-search-state').change(function(){
+		$.post('/actions?_type=_change_state', {id_state:$(this).val()}, function(data){
+			location.reload();
+		},'json');
+	});
+	$('.select-search-region').change(function(){
+		$.post('/actions?_type=_change_region', {id_region:$(this).val()}, function(data){
+			location.reload();
+		},'json');
+	});
+	$('.select-search-suburb').change(function(){
+		$.post('/actions?_type=_change_suburb', {id_suburb:$(this).val()}, function(data){
+			location.reload();
+		},'json');
+	});
+	
+	$('#go_search').click(function(event){
+		event.preventDefault();
+		if (($('#search_keyword_go').val()).trim() != ""){
+			$('#fsearch').submit();
+		}
+	});
+	$('#go_small').click(function(event){
+		event.preventDefault();
+		if (($('#search_keyword_small').val()).trim() != ""){
+			$('#fsearch_small').submit();
+		}
+	});
+});
+  </script>
+  <div class="col-md-offset-1 col-md-10 content">
+   <section>
+    <div class="col-xs-12 hidden-sm hidden-md hidden-lg">
+     <div class="media_icons">
+      <ul class="media">
+       <li class="list">
+        <a title="Facebook" alt="Facebook" target="_new" href="https://www.facebook.com/OzzieDeals.com.au">
+         <i class="fa fa-facebook fa-2x fa_media_icon">
+         </i>
+        </a>
+       </li>
+       <li class="list">
+        <a title="Twitter" alt="Twitter" target="_new" href="https://twitter.com/Ozziedeals">
+         <i class="fa fa-twitter fa-2x fa_media_icon">
+         </i>
+        </a>
+       </li>
+       <li class="list">
+        <a title="Google Plus" alt="Google Plus" target="_new" href="https://plus.google.com/u/0/102643929358603059867/posts">
+         <i class="fa fa-google-plus fa-2x fa_media_icon">
+         </i>
+        </a>
+       </li>
+       <li class="list">
+        <a title="Youtube" alt="Youtube" target="_new" href="https://www.youtube.com/user/OzzieDeals">
+         <i class="fa fa-youtube fa-2x fa_media_icon">
+         </i>
+        </a>
+       </li>
+       <li class="list">
+        <a title="Share it" alt="Share it" target="_new" href="http://www.shareit.com">
+         <i class="fa fa-envelope fa-2x fa_media_icon">
+         </i>
+        </a>
+       </li>
+      </ul>
+      <div class="clearfix">
+      </div>
+     </div>
+     <select class="form-control input-sm" id="category_small" name="category">
+      <option value="">
+       View All Deals
+      </option>
+      <option value="/group/view1/dining">
+       DINING
+      </option>
+      <option selected="selected" value="/group/view1/beauty-amp-wellness">
+       BEAUTY &amp; WELLNESS
+      </option>
+      <option value="/group/view1/health-care">
+       HEALTH CARE
+      </option>
+      <option value="/group/view1/leisure-amp-fitness">
+       LEISURE &amp; FITNESS
+      </option>
+      <option value="/group/view1/tickets-amp-events">
+       TICKETS &amp; EVENTS
+      </option>
+      <option value="/group/view1/services">
+       SERVICES
+      </option>
+      <option value="/group/view1/classes-amp-training">
+       CLASSES &amp; TRAINING
+      </option>
+      <option value="/group/view1/travel">
+       TRAVEL
+      </option>
+      <option value="/group/view1/shopping">
+       SHOPPING
+      </option>
+     </select>
+    </div>
+    <div class="col-sm-12 no_padding_left no_padding_right hidden-xs hidden-sm hidden-md hidden-lg padding_top_20">
+     <img class="img-responsive" src="/utils/img/fathers_day_icon.png" />
+    </div>
+    <div class="hidden-xs col-sm-3 col-lg-2 left_side_bar">
+     <div class="media_icons">
+      <ul class="media">
+       <li class="list">
+        <a title="Facebook" alt="Facebook" target="_new" href="https://www.facebook.com/OzzieDeals.com.au">
+         <i class="fa fa-facebook fa-2x fa_media_icon">
+         </i>
+        </a>
+       </li>
+       <li class="list">
+        <a title="Twitter" alt="Twitter" target="_new" href="https://twitter.com/Ozziedeals">
+         <i class="fa fa-twitter fa-2x fa_media_icon">
+         </i>
+        </a>
+       </li>
+       <li class="list">
+        <a title="Google Plus" alt="Google Plus" target="_new" href="https://plus.google.com/u/0/102643929358603059867/posts">
+         <i class="fa fa-google-plus fa-2x fa_media_icon">
+         </i>
+        </a>
+       </li>
+       <li class="list">
+        <a title="Youtube" alt="Youtube" target="_new" href="https://www.youtube.com/user/OzzieDeals">
+         <i class="fa fa-youtube fa-2x fa_media_icon">
+         </i>
+        </a>
+       </li>
+       <li class="list">
+        <a title="Share it" alt="Share it" target="_new" href="http://www.shareit.com">
+         <i class="fa fa-envelope fa-2x fa_media_icon">
+         </i>
+        </a>
+       </li>
+      </ul>
+      <div class="clearfix">
+      </div>
+     </div>
+     <div class="wrapper">
+      <div class="heading_sidebar">
+       <a>
+        BEAUTY &amp; WELLNESS DEALS
+       </a>
+      </div>
+      <div class="orange_arrow_right">
+       <img class="img-responsive" src="/utils/img/orange_arrow_right.png" />
+      </div>
+     </div>
+     <table style="position:relative;margin-top:0px;" class="deal_list_table">
+      <tbody>
+       <tr>
+        <td>
+         <a href="/category/view1/beauty-amp-wellness/23">
+          Hairdresser
+         </a>
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <a href="/category/view1/beauty-amp-wellness/21">
+          Facials
+         </a>
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <a href="/category/view1/beauty-amp-wellness/22">
+          Hair Removal
+         </a>
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <a href="/category/view1/beauty-amp-wellness/spray-tans">
+          Spray Tans
+         </a>
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <a href="/category/view1/beauty-amp-wellness/other">
+          Other
+         </a>
+        </td>
+       </tr>
+      </tbody>
+     </table>
+     <div class="col-sm-12 no_padding_left no_padding_right suggested_deals_section">
+      <div class="suggested_deals_bar">
+       Suggested Deals
+      </div>
+      <div class="advertisement ">
+       <a href="/deal/view1/shopping/63">
+        <div>
+         <img class="img-responsive" src="/pictures/deal_63/crop/deal_63_20141115071825_main.JPG" />
+        </div>
+        <!--div class="tag">New</div -->
+       </a>
+      </div>
+     </div>
+    </div>
+   </section>
+   <section class="para_section col-sm-12  no_padding_left no_padding_right">
+    <div class="col-sm-12 para_top">
+     <h4>
+      Heart Candie Necklace and Earring Set with Swarovski Elements by Romatco
+     </h4>
+     <p>
+     </p>
+     <p>
+      Spoil your Special Someone this Christmas with this Gorgeous Necklace and Earring Set made with Swarovski Elements
+     </p>
+     <p>
+      Only $40.00 (Valued at $63.00) Delivery within 10 days from purchase
+     </p>
+     <p>
+     </p>
+    </div>
+    <div class="para_bottom col-sm-12 no_padding_right">
+    </div>
+   </section>
+   <section>
+   </section>
+   <p class="no_margin_bottom">
+    Available for 25 days 11 more hours  
+								  
+   </p>
+   <span>
+    Save 56%
+   </span>
+   <div style="position:relative;" class="col-sm-12 no_padding_left no_padding_right">
+    <span style="padding-left:15px;" class="price_strike">
+     $90.00
+    </span>
+    <span>
+     <div class="btn-sm btn_price_tag">
+      $40.00
+     </div>
+    </span>
+   </div>
+   <div class="clearfix">
+   </div>
+  </div>
+  <div class="advertisement margin_top_10">
+   <a href="/deal/view1/beauty-amp-wellness/115">
+    <div>
+     <img class="img-responsive" src="/pictures/deal_115/crop/deal_115_20140916102840_main.jpg" />
+    </div>
+    <!--div class="tag">New</div -->
+    <section class="para_section col-sm-12  no_padding_left no_padding_right">
+     <div class="col-sm-12 para_top">
+      <h4>
+       Beauty Eyelash Extension Silk or Mink $49 at BSK3 Hair Design - PARRAMATTA
+      </h4>
+      <p>
+      </p>
+      <p>
+       With expert Eyelash Technicians BSK3 Hair Design are offering a full set of Silk or Mink Eyelash extensions perfect for every day use or that big night on the town!
+      </p>
+      <p>
+      </p>
+     </div>
+     <div class="para_bottom col-sm-12 no_padding_right">
+     </div>
+    </section>
+    <section>
+    </section>
+   </a>
+   <p class="no_margin_bottom">
+    Available for 1 months 3 days 23 more hours  
+								  
+   </p>
+   <span>
+    Save 66%
+   </span>
+   <div style="position:relative;" class="col-sm-12 no_padding_left no_padding_right">
+    <span style="padding-left:15px;" class="price_strike">
+     $145.00
+    </span>
+    <span>
+     <div class="btn-sm btn_price_tag">
+      $49.00
+     </div>
+    </span>
+   </div>
+   <div class="clearfix">
+   </div>
+  </div>
+  <script>
+   jQuery(function($){
+	$('#category_small').change(function(){
+		window.location = $(this).val();
+	});
+});
+  </script>
+  <div class="col-sm-9 col-md-9 col-lg-10 no_padding_left no_padding_right">
+   <div class="deal_promo margin_top_30">
+    <div class="col-sm-6 col-md-6 col-lg-4">
+     <div class="form-group">
+      <a href="/deal/view1/beauty-amp-wellness/114">
+       <div class="box">
+        <div>
+         <img class="img-responsive" src="/pictures/deal_114/crop/deal_114_20140901033609_main.JPG" />
+        </div>
+        <!--span class="new_tag">NEW</span -->
+        <div class="pointer_up">
+         <img src="/utils/img/white_arrow_up.png" />
+        </div>
+       </div>
+       <div class="bottom_content">
+        <div class="col-sm-12 text no_padding_left no_padding_right">
+         <div class="form-group">
+          <div class="col-sm-12 wrapper">
+           <section style="height:190px;overflow-y:auto;">
+            <div class="heading">
+             Japanese Chemical Straightening ($99) at BSK3 Hair Design PARRAMATTA
+            </div>
+           </section>
+           <p>
+           </p>
+           <p>
+            This Japanese hair straightening treatment allows you to get salon style, silky frizz free and poker straight hair without the harsh chemicals! It's perfect for unruly hair that won't damage your locks. 
+           </p>
+           <p>
+           </p>
+           <section class="wrapper_with_border">
+            <div>
+             <p class="margin_bottom_5">
+              Available for 28 days 14 more hours
+              <br />
+             </p>
+             <div class="save">
+              Save 67%
+             </div>
+             <div class="col-sm-2 no_padding_left no_padding_right">
+              <div data-layout="button" data-href="https://www.ozziedeals.com.au/deal/view1/beauty-amp-wellness/114?s=100&p[url]=https://www.ozziedeals.com.au/deal/view1/beauty-amp-wellness/114?m2w&s=100&p[title]=Japanese Chemical Straightening ($99) at BSK3 Hair Design PARRAMATTA &p[images][0]=https://www.ozziedeals.com.au/pictures/deal_114/crop/deal_114_20140901033609_main.JPG" class="fb-share-button fb_iframe_widget" fb-xfbml-state="rendered" fb-iframe-plugin-query="app_id=426307090883086&container_width=50&href=https%3A%2F%2Fwww.ozziedeals.com.au%2Fdeal%2Fview1%2Fbeauty-amp-wellness%2F114%3Fs%3D100%26p%5Burl%5D%3Dhttps%3A%2F%2Fwww.ozziedeals.com.au%2Fdeal%2Fview1%2Fbeauty-amp-wellness%2F114%3Fm2w%26s%3D100%26p%5Btitle%5D%3DJapanese%2520Chemical%2520Straightening%2520(%2499)%2520at%2520BSK3%2520Hair%2520Design%2520PARRAMATTA%2520%26p%5Bimages%5D%5B0%5D%3Dhttps%3A%2F%2Fwww.ozziedeals.com.au%2Fpictures%2Fdeal_114%2Fcrop%2Fdeal_114_20140901033609_main.JPG&layout=button&locale=en_US&sdk=joey">
+               <span style="vertical-align: bottom; width: 60px; height: 20px;">
+                <iframe width="1000px" height="1000px" frameborder="0" name="f23a3798bd674d" allowtransparency="true" allowfullscreen="true" scrolling="no" title="fb:share_button Facebook Social Plugin" style="border: medium none; visibility: visible; width: 60px; height: 20px;" src="https://www.facebook.com/v2.4/plugins/share_button.php?app_id=426307090883086&channel=https%3A%2F%2Fs-static.ak.facebook.com%2Fconnect%2Fxd_arbiter%2FTlA_zCeMkxl.js%3Fversion%3D41%23cb%3Df125e0efde9ac4c%26domain%3Dwww.ozziedeals.com.au%26origin%3Dhttps%253A%252F%252Fwww.ozziedeals.com.au%252Ff3292e9daf066e4%26relation%3Dparent.parent&container_width=50&href=https%3A%2F%2Fwww.ozziedeals.com.au%2Fdeal%2Fview1%2Fbeauty-amp-wellness%2F114%3Fs%3D100%26p%5Burl%5D%3Dhttps%3A%2F%2Fwww.ozziedeals.com.au%2Fdeal%2Fview1%2Fbeauty-amp-wellness%2F114%3Fm2w%26s%3D100%26p%5Btitle%5D%3DJapanese%2520Chemical%2520Straightening%2520%28%2499%29%2520at%2520BSK3%2520Hair%2520Design%2520PARRAMATTA%2520%26p%5Bimages%5D%5B0%5D%3Dhttps%3A%2F%2Fwww.ozziedeals.com.au%2Fpictures%2Fdeal_114%2Fcrop%2Fdeal_114_20140901033609_main.JPG&layout=button&locale=en_US&sdk=joey" class="">
+                </iframe>
+               </span>
+              </div>
+             </div>
+             <div class="col-sm-10 no_padding_left no_padding_right">
+              <div class="price_strike col-xs-9 col-sm-9 text-right">
+               $300.00
+              </div>
+              <div class="price_tag col-xs-3 col-sm-3 no_padding_right">
+               $99.00
+              </div>
+              <div class="clearfix">
+              </div>
+             </div>
+            </div>
+           </section>
+          </div>
+          <div class="clearfix">
+          </div>
+         </div>
+        </div>
+        <div class="clearfix">
+        </div>
+       </div>
+      </a>
+      <div class="clearfix">
+      </div>
+     </div>
+    </div>
+    <div class="col-sm-6 col-md-6 col-lg-4">
+     <div class="form-group">
+      <a href="/deal/view1/beauty-amp-wellness/115">
+       <div class="box">
+        <div>
+         <img class="img-responsive" src="/pictures/deal_115/crop/deal_115_20140916102840_main.jpg" />
+        </div>
+        <!--span class="new_tag">NEW</span -->
+        <div class="pointer_up">
+         <img src="/utils/img/white_arrow_up.png" />
+        </div>
+       </div>
+       <div class="bottom_content">
+        <div class="col-sm-12 text no_padding_left no_padding_right">
+         <div class="form-group">
+          <div class="col-sm-12 wrapper">
+           <section style="height:190px;overflow-y:auto;">
+            <div class="heading">
+             Beauty Eyelash Extension Silk or Mink $49 at BSK3 Hair Design - PARRAMATTA
+            </div>
+           </section>
+           <p>
+           </p>
+           <p>
+            With expert Eyelash Technicians BSK3 Hair Design are offering a full set of Silk or Mink Eyelash extensions perfect for every day use or that big night on the town!
+           </p>
+           <p>
+           </p>
+           <section class="wrapper_with_border">
+            <div>
+             <p class="margin_bottom_5">
+              Available for 1 months 3 days 23 more hours
+              <br />
+             </p>
+             <div class="save">
+              Save 66%
+             </div>
+             <div class="col-sm-2 no_padding_left no_padding_right">
+              <div data-layout="button" data-href="https://www.ozziedeals.com.au/deal/view1/beauty-amp-wellness/115?s=100&p[url]=https://www.ozziedeals.com.au/deal/view1/beauty-amp-wellness/115?m2w&s=100&p[title]=Beauty Eyelash Extension Silk or Mink $49 at BSK3 Hair Design - PARRAMATTA&p[images][0]=https://www.ozziedeals.com.au/pictures/deal_115/crop/deal_115_20140916102840_main.jpg" class="fb-share-button fb_iframe_widget" fb-xfbml-state="rendered" fb-iframe-plugin-query="app_id=426307090883086&container_width=50&href=https%3A%2F%2Fwww.ozziedeals.com.au%2Fdeal%2Fview1%2Fbeauty-amp-wellness%2F115%3Fs%3D100%26p%5Burl%5D%3Dhttps%3A%2F%2Fwww.ozziedeals.com.au%2Fdeal%2Fview1%2Fbeauty-amp-wellness%2F115%3Fm2w%26s%3D100%26p%5Btitle%5D%3DBeauty%2520Eyelash%2520Extension%2520Silk%2520or%2520Mink%2520%2449%2520at%2520BSK3%2520Hair%2520Design%2520-%2520PARRAMATTA%26p%5Bimages%5D%5B0%5D%3Dhttps%3A%2F%2Fwww.ozziedeals.com.au%2Fpictures%2Fdeal_115%2Fcrop%2Fdeal_115_20140916102840_main.jpg&layout=button&locale=en_US&sdk=joey">
+               <span style="vertical-align: bottom; width: 60px; height: 20px;">
+                <iframe width="1000px" height="1000px" frameborder="0" name="f20a675307c755a" allowtransparency="true" allowfullscreen="true" scrolling="no" title="fb:share_button Facebook Social Plugin" style="border: medium none; visibility: visible; width: 60px; height: 20px;" src="https://www.facebook.com/v2.4/plugins/share_button.php?app_id=426307090883086&channel=https%3A%2F%2Fs-static.ak.facebook.com%2Fconnect%2Fxd_arbiter%2FTlA_zCeMkxl.js%3Fversion%3D41%23cb%3Df1402cd1457776%26domain%3Dwww.ozziedeals.com.au%26origin%3Dhttps%253A%252F%252Fwww.ozziedeals.com.au%252Ff3292e9daf066e4%26relation%3Dparent.parent&container_width=50&href=https%3A%2F%2Fwww.ozziedeals.com.au%2Fdeal%2Fview1%2Fbeauty-amp-wellness%2F115%3Fs%3D100%26p%5Burl%5D%3Dhttps%3A%2F%2Fwww.ozziedeals.com.au%2Fdeal%2Fview1%2Fbeauty-amp-wellness%2F115%3Fm2w%26s%3D100%26p%5Btitle%5D%3DBeauty%2520Eyelash%2520Extension%2520Silk%2520or%2520Mink%2520%2449%2520at%2520BSK3%2520Hair%2520Design%2520-%2520PARRAMATTA%26p%5Bimages%5D%5B0%5D%3Dhttps%3A%2F%2Fwww.ozziedeals.com.au%2Fpictures%2Fdeal_115%2Fcrop%2Fdeal_115_20140916102840_main.jpg&layout=button&locale=en_US&sdk=joey" class="">
+                </iframe>
+               </span>
+              </div>
+             </div>
+             <div class="col-sm-10 no_padding_left no_padding_right">
+              <div class="price_strike col-xs-9 col-sm-9 text-right">
+               $145.00
+              </div>
+              <div class="price_tag col-xs-3 col-sm-3 no_padding_right">
+               $49.00
+              </div>
+              <div class="clearfix">
+              </div>
+             </div>
+            </div>
+           </section>
+          </div>
+          <div class="clearfix">
+          </div>
+         </div>
+        </div>
+        <div class="clearfix">
+        </div>
+       </div>
+      </a>
+      <div class="clearfix">
+      </div>
+     </div>
+    </div>
+    <div class="col-sm-6 col-md-6 col-lg-4">
+     <div class="form-group">
+      <a href="/deal/view1/beauty-amp-wellness/28">
+       <div class="box">
+        <div>
+         <img class="img-responsive" src="/pictures/deal_28/crop/deal_28_20140825042138_main.jpg" />
+        </div>
+        <!--span class="new_tag">NEW</span -->
+        <div class="pointer_up">
+         <img src="/utils/img/white_arrow_up.png" />
+        </div>
+       </div>
+       <div class="bottom_content">
+        <div class="col-sm-12 text no_padding_left no_padding_right">
+         <div class="form-group">
+          <div class="col-sm-12 wrapper">
+           <section style="height:190px;overflow-y:auto;">
+            <div class="heading">
+             Boost Respiratory &amp; Immune Systems with a 45-Minute Salt Therapy Session at Salt Rooms BONDI JUNCTION
+            </div>
+           </section>
+           <p>
+           </p>
+           <p>
+            The Holistic Healers at Sydney's Salt Rooms help Bodies Embrace better Health &amp; Wellbeing via Natural, Non-Invasive &amp; Drug-Free Means.
+           </p>
+           <p>
+            Settle into the Specially-Built Salt Room, made from 300-metre Underground Solid Rock Salt. 
+           </p>
+           <p>
+           </p>
+           <section class="wrapper_with_border">
+            <div>
+             <p class="margin_bottom_5">
+              Available for 24 days 23 more hours
+              <br />
+             </p>
+             <div class="save">
+              Save 50%
+             </div>
+             <div class="col-sm-2 no_padding_left no_padding_right">
+              <div data-layout="button" data-href="https://www.ozziedeals.com.au/deal/view1/beauty-amp-wellness/28?s=100&p[url]=https://www.ozziedeals.com.au/deal/view1/beauty-amp-wellness/28?m2w&s=100&p[title]=Boost Respiratory & Immune Systems with a 45-Minute Salt Therapy Session at Salt Rooms BONDI JUNCTION&p[images][0]=https://www.ozziedeals.com.au/pictures/deal_28/crop/deal_28_20140825042138_main.jpg" class="fb-share-button fb_iframe_widget" fb-xfbml-state="rendered" fb-iframe-plugin-query="app_id=426307090883086&container_width=50&href=https%3A%2F%2Fwww.ozziedeals.com.au%2Fdeal%2Fview1%2Fbeauty-amp-wellness%2F28%3Fs%3D100%26p%5Burl%5D%3Dhttps%3A%2F%2Fwww.ozziedeals.com.au%2Fdeal%2Fview1%2Fbeauty-amp-wellness%2F28%3Fm2w%26s%3D100%26p%5Btitle%5D%3DBoost%2520Respiratory%2520%26%2520Immune%2520Systems%2520with%2520a%252045-Minute%2520Salt%2520Therapy%2520Session%2520at%2520Salt%2520Rooms%2520BONDI%2520JUNCTION%26p%5Bimages%5D%5B0%5D%3Dhttps%3A%2F%2Fwww.ozziedeals.com.au%2Fpictures%2Fdeal_28%2Fcrop%2Fdeal_28_20140825042138_main.jpg&layout=button&locale=en_US&sdk=joey">
+               <span style="vertical-align: bottom; width: 60px; height: 20px;">
+                <iframe width="1000px" height="1000px" frameborder="0" name="f39ff0a258e8282" allowtransparency="true" allowfullscreen="true" scrolling="no" title="fb:share_button Facebook Social Plugin" style="border: medium none; visibility: visible; width: 60px; height: 20px;" src="https://www.facebook.com/v2.4/plugins/share_button.php?app_id=426307090883086&channel=https%3A%2F%2Fs-static.ak.facebook.com%2Fconnect%2Fxd_arbiter%2FTlA_zCeMkxl.js%3Fversion%3D41%23cb%3Dfbcb4ba995c76c%26domain%3Dwww.ozziedeals.com.au%26origin%3Dhttps%253A%252F%252Fwww.ozziedeals.com.au%252Ff3292e9daf066e4%26relation%3Dparent.parent&container_width=50&href=https%3A%2F%2Fwww.ozziedeals.com.au%2Fdeal%2Fview1%2Fbeauty-amp-wellness%2F28%3Fs%3D100%26p%5Burl%5D%3Dhttps%3A%2F%2Fwww.ozziedeals.com.au%2Fdeal%2Fview1%2Fbeauty-amp-wellness%2F28%3Fm2w%26s%3D100%26p%5Btitle%5D%3DBoost%2520Respiratory%2520%26%2520Immune%2520Systems%2520with%2520a%252045-Minute%2520Salt%2520Therapy%2520Session%2520at%2520Salt%2520Rooms%2520BONDI%2520JUNCTION%26p%5Bimages%5D%5B0%5D%3Dhttps%3A%2F%2Fwww.ozziedeals.com.au%2Fpictures%2Fdeal_28%2Fcrop%2Fdeal_28_20140825042138_main.jpg&layout=button&locale=en_US&sdk=joey" class="">
+                </iframe>
+               </span>
+              </div>
+             </div>
+             <div class="col-sm-10 no_padding_left no_padding_right">
+              <div class="price_strike col-xs-9 col-sm-9 text-right">
+               $44.00
+              </div>
+              <div class="price_tag col-xs-3 col-sm-3 no_padding_right">
+               $22.00
+              </div>
+              <div class="clearfix">
+              </div>
+             </div>
+            </div>
+           </section>
+          </div>
+          <div class="clearfix">
+          </div>
+         </div>
+        </div>
+        <div class="clearfix">
+        </div>
+       </div>
+      </a>
+      <div class="clearfix">
+      </div>
+     </div>
+    </div>
+    <div class="col-sm-6 col-md-6 col-lg-4">
+     <div class="form-group">
+      <a href="/deal/view1/beauty-amp-wellness/85">
+       <div class="box">
+        <div>
+         <img class="img-responsive" src="/pictures/deal_85/crop/deal_85_20140831103340_main.JPG" />
+        </div>
+        <!--span class="new_tag">NEW</span -->
+        <div class="pointer_up">
+         <img src="/utils/img/white_arrow_up.png" />
+        </div>
+       </div>
+       <div class="bottom_content">
+        <div class="col-sm-12 text no_padding_left no_padding_right">
+         <div class="form-group">
+          <div class="col-sm-12 wrapper">
+           <section style="height:190px;overflow-y:auto;">
+            <div class="heading">
+             IPL Hair Reduction at Fantastic Beauty 3 Months ($99) 6 Months ($169) 9 Months ($249) Save Over 90% MELBOURNE
+            </div>
+           </section>
+           <p>
+           </p>
+           <p>
+            Go Hair Free with these fantastic Deals from Fantastic Beauty!
+           </p>
+           <p>
+            Head in for your treatment every 4 weeks - Available for appointments 7 Days a Week!
+           </p>
+           <p>
+           </p>
+           <section class="wrapper_with_border">
+            <div>
+             <p class="margin_bottom_5">
+              Available for 25 days 14 more hours
+              <br />
+             </p>
+             <div class="save">
+              Save 82%
+             </div>
+             <div class="col-sm-2 no_padding_left no_padding_right">
+              <div data-layout="button" data-href="https://www.ozziedeals.com.au/deal/view1/beauty-amp-wellness/85?s=100&p[url]=https://www.ozziedeals.com.au/deal/view1/beauty-amp-wellness/85?m2w&s=100&p[title]=IPL Hair Reduction at Fantastic Beauty 3 Months ($99) 6 Months ($169) 9 Months ($249) Save Over 90% MELBOURNE&p[images][0]=https://www.ozziedeals.com.au/pictures/deal_85/crop/deal_85_20140831103340_main.JPG" class="fb-share-button fb_iframe_widget" fb-xfbml-state="rendered" fb-iframe-plugin-query="app_id=426307090883086&container_width=50&href=https%3A%2F%2Fwww.ozziedeals.com.au%2Fdeal%2Fview1%2Fbeauty-amp-wellness%2F85%3Fs%3D100%26p%5Burl%5D%3Dhttps%3A%2F%2Fwww.ozziedeals.com.au%2Fdeal%2Fview1%2Fbeauty-amp-wellness%2F85%3Fm2w%26s%3D100%26p%5Btitle%5D%3DIPL%2520Hair%2520Reduction%2520at%2520Fantastic%2520Beauty%25203%2520Months%2520(%2499)%25206%2520Months%2520(%24169)%25209%2520Months%2520(%24249)%2520Save%2520Over%252090%25%2520MELBOURNE%26p%5Bimages%5D%5B0%5D%3Dhttps%3A%2F%2Fwww.ozziedeals.com.au%2Fpictures%2Fdeal_85%2Fcrop%2Fdeal_85_20140831103340_main.JPG&layout=button&locale=en_US&sdk=joey">
+               <span style="vertical-align: bottom; width: 60px; height: 20px;">
+                <iframe width="1000px" height="1000px" frameborder="0" name="f51527481f72d8" allowtransparency="true" allowfullscreen="true" scrolling="no" title="fb:share_button Facebook Social Plugin" style="border: medium none; visibility: visible; width: 60px; height: 20px;" src="https://www.facebook.com/v2.4/plugins/share_button.php?app_id=426307090883086&channel=https%3A%2F%2Fs-static.ak.facebook.com%2Fconnect%2Fxd_arbiter%2FTlA_zCeMkxl.js%3Fversion%3D41%23cb%3Df2436850254e972%26domain%3Dwww.ozziedeals.com.au%26origin%3Dhttps%253A%252F%252Fwww.ozziedeals.com.au%252Ff3292e9daf066e4%26relation%3Dparent.parent&container_width=50&href=https%3A%2F%2Fwww.ozziedeals.com.au%2Fdeal%2Fview1%2Fbeauty-amp-wellness%2F85%3Fs%3D100%26p%5Burl%5D%3Dhttps%3A%2F%2Fwww.ozziedeals.com.au%2Fdeal%2Fview1%2Fbeauty-amp-wellness%2F85%3Fm2w%26s%3D100%26p%5Btitle%5D%3DIPL%2520Hair%2520Reduction%2520at%2520Fantastic%2520Beauty%25203%2520Months%2520%28%2499%29%25206%2520Months%2520%28%24169%29%25209%2520Months%2520%28%24249%29%2520Save%2520Over%252090%25%2520MELBOURNE%26p%5Bimages%5D%5B0%5D%3Dhttps%3A%2F%2Fwww.ozziedeals.com.au%2Fpictures%2Fdeal_85%2Fcrop%2Fdeal_85_20140831103340_main.JPG&layout=button&locale=en_US&sdk=joey" class="">
+                </iframe>
+               </span>
+              </div>
+             </div>
+             <div class="col-sm-10 no_padding_left no_padding_right">
+              <div class="price_strike col-xs-9 col-sm-9 text-right">
+               $561.00
+              </div>
+              <div class="price_tag col-xs-3 col-sm-3 no_padding_right">
+               $99.00
+              </div>
+              <div class="clearfix">
+              </div>
+             </div>
+            </div>
+           </section>
+          </div>
+          <div class="clearfix">
+          </div>
+         </div>
+        </div>
+        <div class="clearfix">
+        </div>
+       </div>
+      </a>
+      <div class="clearfix">
+      </div>
+     </div>
+    </div>
+    <div class="col-sm-6 col-md-6 col-lg-4">
+     <div class="form-group">
+      <a href="/deal/view1/beauty-amp-wellness/277">
+       <div class="box">
+        <div>
+         <img class="img-responsive" src="/pictures/deal_277/crop/deal_277_20150410035526_main.jpg" />
+        </div>
+        <!--span class="new_tag">NEW</span -->
+        <div class="pointer_up">
+         <img src="/utils/img/white_arrow_up.png" />
+        </div>
+       </div>
+       <div class="bottom_content">
+        <div class="col-sm-12 text no_padding_left no_padding_right">
+         <div class="form-group">
+          <div class="col-sm-12 wrapper">
+           <section style="height:190px;overflow-y:auto;">
+            <div class="heading">
+             Men's Style Cut Package ($19) With Colour ($45) at Aristocuts Hair &amp; Beauty ACT
+            </div>
+           </section>
+           <p>
+           </p>
+           <p>
+            Get that George Clooney Look that Women Adore! Emulate his Style with this Great Deal!
+           </p>
+           <p>
+            Pamper Yourself and feel Like a Million Dollars when you Walk out of Aristocuts!
+           </p>
+           <p>
+           </p>
+           <section class="wrapper_with_border">
+            <div>
+             <p class="margin_bottom_5">
+              Available for 25 days 14 more hours
+              <br />
+             </p>
+             <div class="save">
+              Save 73%
+             </div>
+             <div class="col-sm-2 no_padding_left no_padding_right">
+              <div data-layout="button" data-href="https://www.ozziedeals.com.au/deal/view1/beauty-amp-wellness/277?s=100&p[url]=https://www.ozziedeals.com.au/deal/view1/beauty-amp-wellness/277?m2w&s=100&p[title]=Men's Style Cut Package ($19) With Colour ($45) at Aristocuts Hair & Beauty ACT&p[images][0]=https://www.ozziedeals.com.au/pictures/deal_277/crop/deal_277_20150410035526_main.jpg" class="fb-share-button fb_iframe_widget" fb-xfbml-state="rendered" fb-iframe-plugin-query="app_id=426307090883086&container_width=50&href=https%3A%2F%2Fwww.ozziedeals.com.au%2Fdeal%2Fview1%2Fbeauty-amp-wellness%2F277%3Fs%3D100%26p%5Burl%5D%3Dhttps%3A%2F%2Fwww.ozziedeals.com.au%2Fdeal%2Fview1%2Fbeauty-amp-wellness%2F277%3Fm2w%26s%3D100%26p%5Btitle%5D%3DMen%2527s%2520Style%2520Cut%2520Package%2520(%2419)%2520With%2520Colour%2520(%2445)%2520at%2520Aristocuts%2520Hair%2520%26%2520Beauty%2520ACT%26p%5Bimages%5D%5B0%5D%3Dhttps%3A%2F%2Fwww.ozziedeals.com.au%2Fpictures%2Fdeal_277%2Fcrop%2Fdeal_277_20150410035526_main.jpg&layout=button&locale=en_US&sdk=joey">
+               <span style="vertical-align: bottom; width: 60px; height: 20px;">
+                <iframe width="1000px" height="1000px" frameborder="0" name="f16d43844739afa" allowtransparency="true" allowfullscreen="true" scrolling="no" title="fb:share_button Facebook Social Plugin" style="border: medium none; visibility: visible; width: 60px; height: 20px;" src="https://www.facebook.com/v2.4/plugins/share_button.php?app_id=426307090883086&channel=https%3A%2F%2Fs-static.ak.facebook.com%2Fconnect%2Fxd_arbiter%2FTlA_zCeMkxl.js%3Fversion%3D41%23cb%3Df28ed2182080d%26domain%3Dwww.ozziedeals.com.au%26origin%3Dhttps%253A%252F%252Fwww.ozziedeals.com.au%252Ff3292e9daf066e4%26relation%3Dparent.parent&container_width=50&href=https%3A%2F%2Fwww.ozziedeals.com.au%2Fdeal%2Fview1%2Fbeauty-amp-wellness%2F277%3Fs%3D100%26p%5Burl%5D%3Dhttps%3A%2F%2Fwww.ozziedeals.com.au%2Fdeal%2Fview1%2Fbeauty-amp-wellness%2F277%3Fm2w%26s%3D100%26p%5Btitle%5D%3DMen%2527s%2520Style%2520Cut%2520Package%2520%28%2419%29%2520With%2520Colour%2520%28%2445%29%2520at%2520Aristocuts%2520Hair%2520%26%2520Beauty%2520ACT%26p%5Bimages%5D%5B0%5D%3Dhttps%3A%2F%2Fwww.ozziedeals.com.au%2Fpictures%2Fdeal_277%2Fcrop%2Fdeal_277_20150410035526_main.jpg&layout=button&locale=en_US&sdk=joey" class="">
+                </iframe>
+               </span>
+              </div>
+             </div>
+             <div class="col-sm-10 no_padding_left no_padding_right">
+              <div class="price_strike col-xs-9 col-sm-9 text-right">
+               $70.00
+              </div>
+              <div class="price_tag col-xs-3 col-sm-3 no_padding_right">
+               $19.00
+              </div>
+              <div class="clearfix">
+              </div>
+             </div>
+            </div>
+           </section>
+          </div>
+          <div class="clearfix">
+          </div>
+         </div>
+        </div>
+        <div class="clearfix">
+        </div>
+       </div>
+      </a>
+      <div class="clearfix">
+      </div>
+     </div>
+    </div>
+    <div class="col-sm-6 col-md-6 col-lg-4">
+     <div class="form-group">
+      <a href="/deal/view1/beauty-amp-wellness/287">
+       <div class="box">
+        <div>
+         <img class="img-responsive" src="/pictures/deal_287/crop/deal_287_20150424125129_main.jpg" />
+        </div>
+        <!--span class="new_tag">NEW</span -->
+        <div class="pointer_up">
+         <img src="/utils/img/white_arrow_up.png" />
+        </div>
+       </div>
+       <div class="bottom_content">
+        <div class="col-sm-12 text no_padding_left no_padding_right">
+         <div class="form-group">
+          <div class="col-sm-12 wrapper">
+           <section style="height:190px;overflow-y:auto;">
+            <div class="heading">
+             $25 for a Spray Tan at Catwalk Salon GLADESVILLE
+            </div>
+           </section>
+           <p>
+           </p>
+           <p>
+            Want a Bronzed Tan for that Special Occasion? Then Reinvent yourself by Heading in to Catwalk Salon in Gladesville, Sydney.
+           </p>
+           <p>
+            Experience a Preimium Spray Tan leaving your Body Glowing and Bathed in the Finest Spray Tan Imaginable. 
+           </p>
+           <p>
+           </p>
+           <section class="wrapper_with_border">
+            <div>
+             <p class="margin_bottom_5">
+              Available for 25 days 14 more hours
+              <br />
+             </p>
+             <div class="save">
+              Save 44%
+             </div>
+             <div class="col-sm-2 no_padding_left no_padding_right">
+              <div data-layout="button" data-href="https://www.ozziedeals.com.au/deal/view1/beauty-amp-wellness/287?s=100&p[url]=https://www.ozziedeals.com.au/deal/view1/beauty-amp-wellness/287?m2w&s=100&p[title]=$25 for a Spray Tan at Catwalk Salon GLADESVILLE&p[images][0]=https://www.ozziedeals.com.au/pictures/deal_287/crop/deal_287_20150424125129_main.jpg" class="fb-share-button fb_iframe_widget" fb-xfbml-state="rendered" fb-iframe-plugin-query="app_id=426307090883086&container_width=50&href=https%3A%2F%2Fwww.ozziedeals.com.au%2Fdeal%2Fview1%2Fbeauty-amp-wellness%2F287%3Fs%3D100%26p%5Burl%5D%3Dhttps%3A%2F%2Fwww.ozziedeals.com.au%2Fdeal%2Fview1%2Fbeauty-amp-wellness%2F287%3Fm2w%26s%3D100%26p%5Btitle%5D%3D%2425%2520for%2520a%2520Spray%2520Tan%2520at%2520Catwalk%2520Salon%2520GLADESVILLE%26p%5Bimages%5D%5B0%5D%3Dhttps%3A%2F%2Fwww.ozziedeals.com.au%2Fpictures%2Fdeal_287%2Fcrop%2Fdeal_287_20150424125129_main.jpg&layout=button&locale=en_US&sdk=joey">
+               <span style="vertical-align: bottom; width: 60px; height: 20px;">
+                <iframe width="1000px" height="1000px" frameborder="0" name="f3cd7a3e77c0b22" allowtransparency="true" allowfullscreen="true" scrolling="no" title="fb:share_button Facebook Social Plugin" style="border: medium none; visibility: visible; width: 60px; height: 20px;" src="https://www.facebook.com/v2.4/plugins/share_button.php?app_id=426307090883086&channel=https%3A%2F%2Fs-static.ak.facebook.com%2Fconnect%2Fxd_arbiter%2FTlA_zCeMkxl.js%3Fversion%3D41%23cb%3Df11c0f9f2c4ccfc%26domain%3Dwww.ozziedeals.com.au%26origin%3Dhttps%253A%252F%252Fwww.ozziedeals.com.au%252Ff3292e9daf066e4%26relation%3Dparent.parent&container_width=50&href=https%3A%2F%2Fwww.ozziedeals.com.au%2Fdeal%2Fview1%2Fbeauty-amp-wellness%2F287%3Fs%3D100%26p%5Burl%5D%3Dhttps%3A%2F%2Fwww.ozziedeals.com.au%2Fdeal%2Fview1%2Fbeauty-amp-wellness%2F287%3Fm2w%26s%3D100%26p%5Btitle%5D%3D%2425%2520for%2520a%2520Spray%2520Tan%2520at%2520Catwalk%2520Salon%2520GLADESVILLE%26p%5Bimages%5D%5B0%5D%3Dhttps%3A%2F%2Fwww.ozziedeals.com.au%2Fpictures%2Fdeal_287%2Fcrop%2Fdeal_287_20150424125129_main.jpg&layout=button&locale=en_US&sdk=joey" class="">
+                </iframe>
+               </span>
+              </div>
+             </div>
+             <div class="col-sm-10 no_padding_left no_padding_right">
+              <div class="price_strike col-xs-9 col-sm-9 text-right">
+               $45.00
+              </div>
+              <div class="price_tag col-xs-3 col-sm-3 no_padding_right">
+               $25.00
+              </div>
+              <div class="clearfix">
+              </div>
+             </div>
+            </div>
+           </section>
+          </div>
+          <div class="clearfix">
+          </div>
+         </div>
+        </div>
+        <div class="clearfix">
+        </div>
+       </div>
+      </a>
+      <div class="clearfix">
+      </div>
+     </div>
+    </div>
+    <div class="col-sm-6 col-md-6 col-lg-4">
+     <div class="form-group">
+      <a href="/deal/view1/beauty-amp-wellness/288">
+       <div class="box">
+        <div>
+         <img class="img-responsive" src="/pictures/deal_288/crop/deal_288_20150424014315_main.JPG" />
+        </div>
+        <!--span class="new_tag">NEW</span -->
+        <div class="pointer_up">
+         <img src="/utils/img/white_arrow_up.png" />
+        </div>
+       </div>
+       <div class="bottom_content">
+        <div class="col-sm-12 text no_padding_left no_padding_right">
+         <div class="form-group">
+          <div class="col-sm-12 wrapper">
+           <section style="height:190px;overflow-y:auto;">
+            <div class="heading">
+             $39 Laser Hair Removal on Three Areas for Silky, Soft Skin at Catwalk Design Team GLADESVILLE
+            </div>
+           </section>
+           <p>
+           </p>
+           <p>
+            The Experienced Staff at Catwalk Design Team utilise State-of-the-Art Laser Hair Removal Technologies to free Bodies of Unwelcome Fuzz and Create Silky Smooth Surfaces.
+           </p>
+           <p>
+            Book your Treatment in during your Lunch Break!
+           </p>
+           <p>
+           </p>
+           <section class="wrapper_with_border">
+            <div>
+             <p class="margin_bottom_5">
+              Available for 25 days 14 more hours
+              <br />
+             </p>
+             <div class="save">
+              Save 68%
+             </div>
+             <div class="col-sm-2 no_padding_left no_padding_right">
+              <div data-layout="button" data-href="https://www.ozziedeals.com.au/deal/view1/beauty-amp-wellness/288?s=100&p[url]=https://www.ozziedeals.com.au/deal/view1/beauty-amp-wellness/288?m2w&s=100&p[title]=$39 Laser Hair Removal on Three Areas for Silky, Soft Skin at Catwalk Design Team GLADESVILLE&p[images][0]=https://www.ozziedeals.com.au/pictures/deal_288/crop/deal_288_20150424014315_main.JPG" class="fb-share-button fb_iframe_widget" fb-xfbml-state="rendered" fb-iframe-plugin-query="app_id=426307090883086&container_width=50&href=https%3A%2F%2Fwww.ozziedeals.com.au%2Fdeal%2Fview1%2Fbeauty-amp-wellness%2F288%3Fs%3D100%26p%5Burl%5D%3Dhttps%3A%2F%2Fwww.ozziedeals.com.au%2Fdeal%2Fview1%2Fbeauty-amp-wellness%2F288%3Fm2w%26s%3D100%26p%5Btitle%5D%3D%2439%2520Laser%2520Hair%2520Removal%2520on%2520Three%2520Areas%2520for%2520Silky%2C%2520Soft%2520Skin%2520at%2520Catwalk%2520Design%2520Team%2520GLADESVILLE%26p%5Bimages%5D%5B0%5D%3Dhttps%3A%2F%2Fwww.ozziedeals.com.au%2Fpictures%2Fdeal_288%2Fcrop%2Fdeal_288_20150424014315_main.JPG&layout=button&locale=en_US&sdk=joey">
+               <span style="vertical-align: bottom; width: 60px; height: 20px;">
+                <iframe width="1000px" height="1000px" frameborder="0" name="f3ae00a4a4708d4" allowtransparency="true" allowfullscreen="true" scrolling="no" title="fb:share_button Facebook Social Plugin" style="border: medium none; visibility: visible; width: 60px; height: 20px;" src="https://www.facebook.com/v2.4/plugins/share_button.php?app_id=426307090883086&channel=https%3A%2F%2Fs-static.ak.facebook.com%2Fconnect%2Fxd_arbiter%2FTlA_zCeMkxl.js%3Fversion%3D41%23cb%3Df39ed719d3ac04c%26domain%3Dwww.ozziedeals.com.au%26origin%3Dhttps%253A%252F%252Fwww.ozziedeals.com.au%252Ff3292e9daf066e4%26relation%3Dparent.parent&container_width=50&href=https%3A%2F%2Fwww.ozziedeals.com.au%2Fdeal%2Fview1%2Fbeauty-amp-wellness%2F288%3Fs%3D100%26p%5Burl%5D%3Dhttps%3A%2F%2Fwww.ozziedeals.com.au%2Fdeal%2Fview1%2Fbeauty-amp-wellness%2F288%3Fm2w%26s%3D100%26p%5Btitle%5D%3D%2439%2520Laser%2520Hair%2520Removal%2520on%2520Three%2520Areas%2520for%2520Silky%2C%2520Soft%2520Skin%2520at%2520Catwalk%2520Design%2520Team%2520GLADESVILLE%26p%5Bimages%5D%5B0%5D%3Dhttps%3A%2F%2Fwww.ozziedeals.com.au%2Fpictures%2Fdeal_288%2Fcrop%2Fdeal_288_20150424014315_main.JPG&layout=button&locale=en_US&sdk=joey" class="">
+                </iframe>
+               </span>
+              </div>
+             </div>
+             <div class="col-sm-10 no_padding_left no_padding_right">
+              <div class="price_strike col-xs-9 col-sm-9 text-right">
+               $120.00
+              </div>
+              <div class="price_tag col-xs-3 col-sm-3 no_padding_right">
+               $39.00
+              </div>
+              <div class="clearfix">
+              </div>
+             </div>
+            </div>
+           </section>
+          </div>
+          <div class="clearfix">
+          </div>
+         </div>
+        </div>
+        <div class="clearfix">
+        </div>
+       </div>
+      </a>
+      <div class="clearfix">
+      </div>
+     </div>
+    </div>
+    <div class="col-sm-6 col-md-6 col-lg-4">
+     <div class="form-group">
+      <a href="/deal/view1/beauty-amp-wellness/289">
+       <div class="box">
+        <div>
+         <img class="img-responsive" src="/pictures/deal_289/crop/deal_289_20150424020242_main.jpg" />
+        </div>
+        <!--span class="new_tag">NEW</span -->
+        <div class="pointer_up">
+         <img src="/utils/img/white_arrow_up.png" />
+        </div>
+       </div>
+       <div class="bottom_content">
+        <div class="col-sm-12 text no_padding_left no_padding_right">
+         <div class="form-group">
+          <div class="col-sm-12 wrapper">
+           <section style="height:190px;overflow-y:auto;">
+            <div class="heading">
+             $5 for Underarm Laser Hair Removal at Catwalk Salon GLADESVILLE
+            </div>
+           </section>
+           <p>
+           </p>
+           <p>
+            Deal with Underarm Hair Quickly and Efficiently with this $5.00 Underarm Laser Treatment Deal.
+           </p>
+           <p>
+            You'll be placed in the safe hands of professionals using the latest Intense Pulse Technology at Catwalk Salon.
+           </p>
+           <p>
+           </p>
+           <section class="wrapper_with_border">
+            <div>
+             <p class="margin_bottom_5">
+              Available for 25 days 14 more hours
+              <br />
+             </p>
+             <div class="save">
+              Save 91%
+             </div>
+             <div class="col-sm-2 no_padding_left no_padding_right">
+              <div data-layout="button" data-href="https://www.ozziedeals.com.au/deal/view1/beauty-amp-wellness/289?s=100&p[url]=https://www.ozziedeals.com.au/deal/view1/beauty-amp-wellness/289?m2w&s=100&p[title]=$5 for Underarm Laser Hair Removal at Catwalk Salon GLADESVILLE&p[images][0]=https://www.ozziedeals.com.au/pictures/deal_289/crop/deal_289_20150424020242_main.jpg" class="fb-share-button fb_iframe_widget" fb-xfbml-state="rendered" fb-iframe-plugin-query="app_id=426307090883086&container_width=50&href=https%3A%2F%2Fwww.ozziedeals.com.au%2Fdeal%2Fview1%2Fbeauty-amp-wellness%2F289%3Fs%3D100%26p%5Burl%5D%3Dhttps%3A%2F%2Fwww.ozziedeals.com.au%2Fdeal%2Fview1%2Fbeauty-amp-wellness%2F289%3Fm2w%26s%3D100%26p%5Btitle%5D%3D%245%2520for%2520Underarm%2520Laser%2520Hair%2520Removal%2520at%2520Catwalk%2520Salon%2520GLADESVILLE%26p%5Bimages%5D%5B0%5D%3Dhttps%3A%2F%2Fwww.ozziedeals.com.au%2Fpictures%2Fdeal_289%2Fcrop%2Fdeal_289_20150424020242_main.jpg&layout=button&locale=en_US&sdk=joey">
+               <span style="vertical-align: bottom; width: 60px; height: 20px;">
+                <iframe width="1000px" height="1000px" frameborder="0" name="f2cf3ab4774f1dc" allowtransparency="true" allowfullscreen="true" scrolling="no" title="fb:share_button Facebook Social Plugin" style="border: medium none; visibility: visible; width: 60px; height: 20px;" src="https://www.facebook.com/v2.4/plugins/share_button.php?app_id=426307090883086&channel=https%3A%2F%2Fs-static.ak.facebook.com%2Fconnect%2Fxd_arbiter%2FTlA_zCeMkxl.js%3Fversion%3D41%23cb%3Df74bce5c0282ce%26domain%3Dwww.ozziedeals.com.au%26origin%3Dhttps%253A%252F%252Fwww.ozziedeals.com.au%252Ff3292e9daf066e4%26relation%3Dparent.parent&container_width=50&href=https%3A%2F%2Fwww.ozziedeals.com.au%2Fdeal%2Fview1%2Fbeauty-amp-wellness%2F289%3Fs%3D100%26p%5Burl%5D%3Dhttps%3A%2F%2Fwww.ozziedeals.com.au%2Fdeal%2Fview1%2Fbeauty-amp-wellness%2F289%3Fm2w%26s%3D100%26p%5Btitle%5D%3D%245%2520for%2520Underarm%2520Laser%2520Hair%2520Removal%2520at%2520Catwalk%2520Salon%2520GLADESVILLE%26p%5Bimages%5D%5B0%5D%3Dhttps%3A%2F%2Fwww.ozziedeals.com.au%2Fpictures%2Fdeal_289%2Fcrop%2Fdeal_289_20150424020242_main.jpg&layout=button&locale=en_US&sdk=joey" class="">
+                </iframe>
+               </span>
+              </div>
+             </div>
+             <div class="col-sm-10 no_padding_left no_padding_right">
+              <div class="price_strike col-xs-9 col-sm-9 text-right">
+               $55.00
+              </div>
+              <div class="price_tag col-xs-3 col-sm-3 no_padding_right">
+               $5.00
+              </div>
+              <div class="clearfix">
+              </div>
+             </div>
+            </div>
+           </section>
+          </div>
+          <div class="clearfix">
+          </div>
+         </div>
+        </div>
+        <div class="clearfix">
+        </div>
+       </div>
+      </a>
+      <div class="clearfix">
+      </div>
+     </div>
+    </div>
+    <div class="col-sm-6 col-md-6 col-lg-4">
+     <div class="form-group">
+      <a href="/deal/view1/beauty-amp-wellness/290">
+       <div class="box">
+        <div>
+         <img class="img-responsive" src="/pictures/deal_290/crop/deal_290_20150424035609_main.jpg" />
+        </div>
+        <!--span class="new_tag">NEW</span -->
+        <div class="pointer_up">
+         <img src="/utils/img/white_arrow_up.png" />
+        </div>
+       </div>
+       <div class="bottom_content">
+        <div class="col-sm-12 text no_padding_left no_padding_right">
+         <div class="form-group">
+          <div class="col-sm-12 wrapper">
+           <section style="height:190px;overflow-y:auto;">
+            <div class="heading">
+             $25 for One Brazilian Laser Hair Removal Treatment for Males at Catwalk Salon GLADESVILLE
+            </div>
+           </section>
+           <p>
+           </p>
+           <p>
+            Take Control of Unwanted Hair!  For the Man who has Nothing to Hide.
+           </p>
+           <p>
+            Only $25 for a Brazilian Laser Hair Removal Treatment Session located at Gladesville.
+           </p>
+           <p>
+           </p>
+           <section class="wrapper_with_border">
+            <div>
+             <p class="margin_bottom_5">
+              Available for 25 days 14 more hours
+              <br />
+             </p>
+             <div class="save">
+              Save 83%
+             </div>
+             <div class="col-sm-2 no_padding_left no_padding_right">
+              <div data-layout="button" data-href="https://www.ozziedeals.com.au/deal/view1/beauty-amp-wellness/290?s=100&p[url]=https://www.ozziedeals.com.au/deal/view1/beauty-amp-wellness/290?m2w&s=100&p[title]=$25 for One Brazilian Laser Hair Removal Treatment for Males at Catwalk Salon GLADESVILLE&p[images][0]=https://www.ozziedeals.com.au/pictures/deal_290/crop/deal_290_20150424035609_main.jpg" class="fb-share-button fb_iframe_widget" fb-xfbml-state="rendered" fb-iframe-plugin-query="app_id=426307090883086&container_width=50&href=https%3A%2F%2Fwww.ozziedeals.com.au%2Fdeal%2Fview1%2Fbeauty-amp-wellness%2F290%3Fs%3D100%26p%5Burl%5D%3Dhttps%3A%2F%2Fwww.ozziedeals.com.au%2Fdeal%2Fview1%2Fbeauty-amp-wellness%2F290%3Fm2w%26s%3D100%26p%5Btitle%5D%3D%2425%2520for%2520One%2520Brazilian%2520Laser%2520Hair%2520Removal%2520Treatment%2520for%2520Males%2520at%2520Catwalk%2520Salon%2520GLADESVILLE%26p%5Bimages%5D%5B0%5D%3Dhttps%3A%2F%2Fwww.ozziedeals.com.au%2Fpictures%2Fdeal_290%2Fcrop%2Fdeal_290_20150424035609_main.jpg&layout=button&locale=en_US&sdk=joey">
+               <span style="vertical-align: bottom; width: 60px; height: 20px;">
+                <iframe width="1000px" height="1000px" frameborder="0" name="f5a9ef147e49dc" allowtransparency="true" allowfullscreen="true" scrolling="no" title="fb:share_button Facebook Social Plugin" style="border: medium none; visibility: visible; width: 60px; height: 20px;" src="https://www.facebook.com/v2.4/plugins/share_button.php?app_id=426307090883086&channel=https%3A%2F%2Fs-static.ak.facebook.com%2Fconnect%2Fxd_arbiter%2FTlA_zCeMkxl.js%3Fversion%3D41%23cb%3Dfd77b2aea70ba%26domain%3Dwww.ozziedeals.com.au%26origin%3Dhttps%253A%252F%252Fwww.ozziedeals.com.au%252Ff3292e9daf066e4%26relation%3Dparent.parent&container_width=50&href=https%3A%2F%2Fwww.ozziedeals.com.au%2Fdeal%2Fview1%2Fbeauty-amp-wellness%2F290%3Fs%3D100%26p%5Burl%5D%3Dhttps%3A%2F%2Fwww.ozziedeals.com.au%2Fdeal%2Fview1%2Fbeauty-amp-wellness%2F290%3Fm2w%26s%3D100%26p%5Btitle%5D%3D%2425%2520for%2520One%2520Brazilian%2520Laser%2520Hair%2520Removal%2520Treatment%2520for%2520Males%2520at%2520Catwalk%2520Salon%2520GLADESVILLE%26p%5Bimages%5D%5B0%5D%3Dhttps%3A%2F%2Fwww.ozziedeals.com.au%2Fpictures%2Fdeal_290%2Fcrop%2Fdeal_290_20150424035609_main.jpg&layout=button&locale=en_US&sdk=joey" class="">
+                </iframe>
+               </span>
+              </div>
+             </div>
+             <div class="col-sm-10 no_padding_left no_padding_right">
+              <div class="price_strike col-xs-9 col-sm-9 text-right">
+               $150.00
+              </div>
+              <div class="price_tag col-xs-3 col-sm-3 no_padding_right">
+               $25.00
+              </div>
+              <div class="clearfix">
+              </div>
+             </div>
+            </div>
+           </section>
+          </div>
+          <div class="clearfix">
+          </div>
+         </div>
+        </div>
+        <div class="clearfix">
+        </div>
+       </div>
+      </a>
+      <div class="clearfix">
+      </div>
+     </div>
+    </div>
+    <div class="col-sm-6 col-md-6 col-lg-4">
+     <div class="form-group">
+      <a href="/deal/view1/beauty-amp-wellness/329">
+       <div class="box">
+        <div>
+         <img class="img-responsive" src="/pictures/deal_329/crop/deal_329_20151007010000_main.png" />
+        </div>
+        <!--span class="new_tag">NEW</span -->
+        <div class="pointer_up">
+         <img src="/utils/img/white_arrow_up.png" />
+        </div>
+       </div>
+       <div class="bottom_content">
+        <div class="col-sm-12 text no_padding_left no_padding_right">
+         <div class="form-group">
+          <div class="col-sm-12 wrapper">
+           <section style="height:190px;overflow-y:auto;">
+            <div class="heading">
+             Essential Facial Rejuvenation Package for One ($29) at Euphoria Skin Clinic (Up to $130 Value)
+            </div>
+           </section>
+           <p>
+           </p>
+           <p>
+            1-Hour Facial Pamper Package at Euphoria Skin Clinic CASTLE HILL.
+           </p>
+           <p>
+            Treat yourself to this Essential Facial Rejuvenation for only $29.00
+           </p>
+           <p>
+           </p>
+           <section class="wrapper_with_border">
+            <div>
+             <p class="margin_bottom_5">
+              Available for 7 days 14 more hours
+              <br />
+             </p>
+             <div class="save">
+              Save 78%
+             </div>
+             <div class="col-sm-2 no_padding_left no_padding_right">
+              <div data-layout="button" data-href="https://www.ozziedeals.com.au/deal/view1/beauty-amp-wellness/329?s=100&p[url]=https://www.ozziedeals.com.au/deal/view1/beauty-amp-wellness/329?m2w&s=100&p[title]=Essential Facial Rejuvenation Package for One ($29) at Euphoria Skin Clinic (Up to $130 Value)&p[images][0]=https://www.ozziedeals.com.au/pictures/deal_329/crop/deal_329_20151007010000_main.png" class="fb-share-button fb_iframe_widget" fb-xfbml-state="rendered" fb-iframe-plugin-query="app_id=426307090883086&container_width=50&href=https%3A%2F%2Fwww.ozziedeals.com.au%2Fdeal%2Fview1%2Fbeauty-amp-wellness%2F329%3Fs%3D100%26p%5Burl%5D%3Dhttps%3A%2F%2Fwww.ozziedeals.com.au%2Fdeal%2Fview1%2Fbeauty-amp-wellness%2F329%3Fm2w%26s%3D100%26p%5Btitle%5D%3DEssential%2520Facial%2520Rejuvenation%2520Package%2520for%2520One%2520(%2429)%2520at%2520Euphoria%2520Skin%2520Clinic%2520(Up%2520to%2520%24130%2520Value)%26p%5Bimages%5D%5B0%5D%3Dhttps%3A%2F%2Fwww.ozziedeals.com.au%2Fpictures%2Fdeal_329%2Fcrop%2Fdeal_329_20151007010000_main.png&layout=button&locale=en_US&sdk=joey">
+               <span style="vertical-align: bottom; width: 60px; height: 20px;">
+                <iframe width="1000px" height="1000px" frameborder="0" name="f218898c81a87b2" allowtransparency="true" allowfullscreen="true" scrolling="no" title="fb:share_button Facebook Social Plugin" style="border: medium none; visibility: visible; width: 60px; height: 20px;" src="https://www.facebook.com/v2.4/plugins/share_button.php?app_id=426307090883086&channel=https%3A%2F%2Fs-static.ak.facebook.com%2Fconnect%2Fxd_arbiter%2FTlA_zCeMkxl.js%3Fversion%3D41%23cb%3Df11fcd23eca5772%26domain%3Dwww.ozziedeals.com.au%26origin%3Dhttps%253A%252F%252Fwww.ozziedeals.com.au%252Ff3292e9daf066e4%26relation%3Dparent.parent&container_width=50&href=https%3A%2F%2Fwww.ozziedeals.com.au%2Fdeal%2Fview1%2Fbeauty-amp-wellness%2F329%3Fs%3D100%26p%5Burl%5D%3Dhttps%3A%2F%2Fwww.ozziedeals.com.au%2Fdeal%2Fview1%2Fbeauty-amp-wellness%2F329%3Fm2w%26s%3D100%26p%5Btitle%5D%3DEssential%2520Facial%2520Rejuvenation%2520Package%2520for%2520One%2520%28%2429%29%2520at%2520Euphoria%2520Skin%2520Clinic%2520%28Up%2520to%2520%24130%2520Value%29%26p%5Bimages%5D%5B0%5D%3Dhttps%3A%2F%2Fwww.ozziedeals.com.au%2Fpictures%2Fdeal_329%2Fcrop%2Fdeal_329_20151007010000_main.png&layout=button&locale=en_US&sdk=joey" class="">
+                </iframe>
+               </span>
+              </div>
+             </div>
+             <div class="col-sm-10 no_padding_left no_padding_right">
+              <div class="price_strike col-xs-9 col-sm-9 text-right">
+               $132.00
+              </div>
+              <div class="price_tag col-xs-3 col-sm-3 no_padding_right">
+               $29.00
+              </div>
+              <div class="clearfix">
+              </div>
+             </div>
+            </div>
+           </section>
+          </div>
+          <div class="clearfix">
+          </div>
+         </div>
+        </div>
+        <div class="clearfix">
+        </div>
+       </div>
+      </a>
+      <div class="clearfix">
+      </div>
+     </div>
+    </div>
+    <div class="col-sm-6 col-md-6 col-lg-4">
+     <div class="form-group">
+      <a href="/deal/view1/beauty-amp-wellness/112">
+       <div class="box">
+        <div>
+         <img class="img-responsive" src="/pictures/deal_112/crop/deal_112_20140901033406_main.JPG" />
+        </div>
+        <!--span class="new_tag">NEW</span -->
+        <div class="pointer_up">
+         <img src="/utils/img/white_arrow_up.png" />
+        </div>
+       </div>
+       <div class="bottom_content">
+        <div class="col-sm-12 text no_padding_left no_padding_right">
+         <div class="form-group">
+          <div class="col-sm-12 wrapper">
+           <section style="height:190px;overflow-y:auto;">
+            <div class="heading">
+             Brazilian Cacau Keratin Smoothing/Straightening Treatment ($99) at BSK3 PARRAMATTA
+            </div>
+           </section>
+           <p>
+           </p>
+           <p>
+            Tame Unruly Hair at BSK3 Hair Design with this Brazilian Cacau Keratin Hair Smoothing Treatment.
+           </p>
+           <p>
+            With this exclusive offer even the Wildest Hair can be Controlled!
+           </p>
+           <p>
+           </p>
+           <section class="wrapper_with_border">
+            <div>
+             <p class="margin_bottom_5">
+              Available for 1 months 3 days 14 more hours
+              <br />
+             </p>
+             <div class="save">
+              Save 70%
+             </div>
+             <div class="col-sm-2 no_padding_left no_padding_right">
+              <div data-layout="button" data-href="https://www.ozziedeals.com.au/deal/view1/beauty-amp-wellness/112?s=100&p[url]=https://www.ozziedeals.com.au/deal/view1/beauty-amp-wellness/112?m2w&s=100&p[title]=Brazilian Cacau Keratin Smoothing/Straightening Treatment ($99) at BSK3 PARRAMATTA&p[images][0]=https://www.ozziedeals.com.au/pictures/deal_112/crop/deal_112_20140901033406_main.JPG" class="fb-share-button fb_iframe_widget" fb-xfbml-state="rendered" fb-iframe-plugin-query="app_id=426307090883086&container_width=50&href=https%3A%2F%2Fwww.ozziedeals.com.au%2Fdeal%2Fview1%2Fbeauty-amp-wellness%2F112%3Fs%3D100%26p%5Burl%5D%3Dhttps%3A%2F%2Fwww.ozziedeals.com.au%2Fdeal%2Fview1%2Fbeauty-amp-wellness%2F112%3Fm2w%26s%3D100%26p%5Btitle%5D%3DBrazilian%2520Cacau%2520Keratin%2520Smoothing%2FStraightening%2520Treatment%2520(%2499)%2520at%2520BSK3%2520PARRAMATTA%26p%5Bimages%5D%5B0%5D%3Dhttps%3A%2F%2Fwww.ozziedeals.com.au%2Fpictures%2Fdeal_112%2Fcrop%2Fdeal_112_20140901033406_main.JPG&layout=button&locale=en_US&sdk=joey">
+               <span style="vertical-align: bottom; width: 60px; height: 20px;">
+                <iframe width="1000px" height="1000px" frameborder="0" name="ff98bcab734bf4" allowtransparency="true" allowfullscreen="true" scrolling="no" title="fb:share_button Facebook Social Plugin" style="border: medium none; visibility: visible; width: 60px; height: 20px;" src="https://www.facebook.com/v2.4/plugins/share_button.php?app_id=426307090883086&channel=https%3A%2F%2Fs-static.ak.facebook.com%2Fconnect%2Fxd_arbiter%2FTlA_zCeMkxl.js%3Fversion%3D41%23cb%3Df3f2ecaf0aba898%26domain%3Dwww.ozziedeals.com.au%26origin%3Dhttps%253A%252F%252Fwww.ozziedeals.com.au%252Ff3292e9daf066e4%26relation%3Dparent.parent&container_width=50&href=https%3A%2F%2Fwww.ozziedeals.com.au%2Fdeal%2Fview1%2Fbeauty-amp-wellness%2F112%3Fs%3D100%26p%5Burl%5D%3Dhttps%3A%2F%2Fwww.ozziedeals.com.au%2Fdeal%2Fview1%2Fbeauty-amp-wellness%2F112%3Fm2w%26s%3D100%26p%5Btitle%5D%3DBrazilian%2520Cacau%2520Keratin%2520Smoothing%2FStraightening%2520Treatment%2520%28%2499%29%2520at%2520BSK3%2520PARRAMATTA%26p%5Bimages%5D%5B0%5D%3Dhttps%3A%2F%2Fwww.ozziedeals.com.au%2Fpictures%2Fdeal_112%2Fcrop%2Fdeal_112_20140901033406_main.JPG&layout=button&locale=en_US&sdk=joey" class="">
+                </iframe>
+               </span>
+              </div>
+             </div>
+             <div class="col-sm-10 no_padding_left no_padding_right">
+              <div class="price_strike col-xs-9 col-sm-9 text-right">
+               $330.00
+              </div>
+              <div class="price_tag col-xs-3 col-sm-3 no_padding_right">
+               $99.00
+              </div>
+              <div class="clearfix">
+              </div>
+             </div>
+            </div>
+           </section>
+          </div>
+          <div class="clearfix">
+          </div>
+         </div>
+        </div>
+        <div class="clearfix">
+        </div>
+       </div>
+      </a>
+      <div class="clearfix">
+      </div>
+     </div>
+    </div>
+    <div class="col-sm-6 col-md-6 col-lg-4">
+     <div class="form-group">
+      <a href="/deal/view1/beauty-amp-wellness/276">
+       <div class="box">
+        <div>
+         <img class="img-responsive" src="/pictures/deal_276/crop/deal_276_20150410023201_main.jpg" />
+        </div>
+        <!--span class="new_tag">NEW</span -->
+        <div class="pointer_up">
+         <img src="/utils/img/white_arrow_up.png" />
+        </div>
+       </div>
+       <div class="bottom_content">
+        <div class="col-sm-12 text no_padding_left no_padding_right">
+         <div class="form-group">
+          <div class="col-sm-12 wrapper">
+           <section style="height:190px;overflow-y:auto;">
+            <div class="heading">
+             $29 Style Cut Package, $69 with Colour Regrowth, $59 for Half-Head Foils or $99 for Full-Head Foils at Aristocuts Hair &amp; Beauty ACT
+            </div>
+           </section>
+           <p>
+           </p>
+           <p>
+            Refresh your Look with a Style Cut Package with Wash and Blow Dry.
+           </p>
+           <p>
+            Bring Dull Hair back to Life with a Colour Regrowth or add a Half-Head or Full-Head of Foils for Natural Looking Colour and Extra Depth to your Hair
+           </p>
+           <p>
+           </p>
+           <section class="wrapper_with_border">
+            <div>
+             <p class="margin_bottom_5">
+              Available for 25 days 14 more hours
+              <br />
+             </p>
+             <div class="save">
+              Save 47%
+             </div>
+             <div class="col-sm-2 no_padding_left no_padding_right">
+              <div data-layout="button" data-href="https://www.ozziedeals.com.au/deal/view1/beauty-amp-wellness/276?s=100&p[url]=https://www.ozziedeals.com.au/deal/view1/beauty-amp-wellness/276?m2w&s=100&p[title]=$29 Style Cut Package, $69 with Colour Regrowth, $59 for Half-Head Foils or $99 for Full-Head Foils at Aristocuts Hair & Beauty ACT&p[images][0]=https://www.ozziedeals.com.au/pictures/deal_276/crop/deal_276_20150410023201_main.jpg" class="fb-share-button fb_iframe_widget" fb-xfbml-state="rendered" fb-iframe-plugin-query="app_id=426307090883086&container_width=50&href=https%3A%2F%2Fwww.ozziedeals.com.au%2Fdeal%2Fview1%2Fbeauty-amp-wellness%2F276%3Fs%3D100%26p%5Burl%5D%3Dhttps%3A%2F%2Fwww.ozziedeals.com.au%2Fdeal%2Fview1%2Fbeauty-amp-wellness%2F276%3Fm2w%26s%3D100%26p%5Btitle%5D%3D%2429%2520Style%2520Cut%2520Package%2C%2520%2469%2520with%2520Colour%2520Regrowth%2C%2520%2459%2520for%2520Half-Head%2520Foils%2520or%2520%2499%2520for%2520Full-Head%2520Foils%2520at%2520Aristocuts%2520Hair%2520%26%2520Beauty%2520ACT%26p%5Bimages%5D%5B0%5D%3Dhttps%3A%2F%2Fwww.ozziedeals.com.au%2Fpictures%2Fdeal_276%2Fcrop%2Fdeal_276_20150410023201_main.jpg&layout=button&locale=en_US&sdk=joey">
+               <span style="vertical-align: bottom; width: 60px; height: 20px;">
+                <iframe width="1000px" height="1000px" frameborder="0" name="f2102234958fdbc" allowtransparency="true" allowfullscreen="true" scrolling="no" title="fb:share_button Facebook Social Plugin" style="border: medium none; visibility: visible; width: 60px; height: 20px;" src="https://www.facebook.com/v2.4/plugins/share_button.php?app_id=426307090883086&channel=https%3A%2F%2Fs-static.ak.facebook.com%2Fconnect%2Fxd_arbiter%2FTlA_zCeMkxl.js%3Fversion%3D41%23cb%3Df31ff7efa638e46%26domain%3Dwww.ozziedeals.com.au%26origin%3Dhttps%253A%252F%252Fwww.ozziedeals.com.au%252Ff3292e9daf066e4%26relation%3Dparent.parent&container_width=50&href=https%3A%2F%2Fwww.ozziedeals.com.au%2Fdeal%2Fview1%2Fbeauty-amp-wellness%2F276%3Fs%3D100%26p%5Burl%5D%3Dhttps%3A%2F%2Fwww.ozziedeals.com.au%2Fdeal%2Fview1%2Fbeauty-amp-wellness%2F276%3Fm2w%26s%3D100%26p%5Btitle%5D%3D%2429%2520Style%2520Cut%2520Package%2C%2520%2469%2520with%2520Colour%2520Regrowth%2C%2520%2459%2520for%2520Half-Head%2520Foils%2520or%2520%2499%2520for%2520Full-Head%2520Foils%2520at%2520Aristocuts%2520Hair%2520%26%2520Beauty%2520ACT%26p%5Bimages%5D%5B0%5D%3Dhttps%3A%2F%2Fwww.ozziedeals.com.au%2Fpictures%2Fdeal_276%2Fcrop%2Fdeal_276_20150410023201_main.jpg&layout=button&locale=en_US&sdk=joey" class="">
+                </iframe>
+               </span>
+              </div>
+             </div>
+             <div class="col-sm-10 no_padding_left no_padding_right">
+              <div class="price_strike col-xs-9 col-sm-9 text-right">
+               $55.00
+              </div>
+              <div class="price_tag col-xs-3 col-sm-3 no_padding_right">
+               $29.00
+              </div>
+              <div class="clearfix">
+              </div>
+             </div>
+            </div>
+           </section>
+          </div>
+          <div class="clearfix">
+          </div>
+         </div>
+        </div>
+        <div class="clearfix">
+        </div>
+       </div>
+      </a>
+      <div class="clearfix">
+      </div>
+     </div>
+    </div>
+    <div class="col-sm-6 col-md-6 col-lg-4">
+     <div class="form-group">
+      <a href="/deal/view1/beauty-amp-wellness/327">
+       <div class="box">
+        <div>
+         <img class="img-responsive" src="/pictures/deal_327/crop/deal_327_20150924010523_main.jpg" />
+        </div>
+        <!--span class="new_tag">NEW</span -->
+        <div class="pointer_up">
+         <img src="/utils/img/white_arrow_up.png" />
+        </div>
+       </div>
+       <div class="bottom_content">
+        <div class="col-sm-12 text no_padding_left no_padding_right">
+         <div class="form-group">
+          <div class="col-sm-12 wrapper">
+           <section style="height:190px;overflow-y:auto;">
+            <div class="heading">
+             $160  for Lipo-Dissolve or Fat Burning with Ultracavitation and Vacuum (Value $960) EDGECLIFF
+            </div>
+           </section>
+           <p>
+           </p>
+           <p>
+            $160 for Lipodissolve or Fat-Burning with Ultracavitation and Vacuum (Value $960)
+           </p>
+           <p>
+            Natural Cosmetic Clinic in Sydney, offers a natural approach to beauty - Our cosmetic strategies combat the unwanted effects of age. 
+           </p>
+           <p>
+           </p>
+           <section class="wrapper_with_border">
+            <div>
+             <p class="margin_bottom_5">
+              Available for 7 days 2 more hours
+              <br />
+             </p>
+             <div class="save">
+              Save 83%
+             </div>
+             <div class="col-sm-2 no_padding_left no_padding_right">
+              <div data-layout="button" data-href="https://www.ozziedeals.com.au/deal/view1/beauty-amp-wellness/327?s=100&p[url]=https://www.ozziedeals.com.au/deal/view1/beauty-amp-wellness/327?m2w&s=100&p[title]=$160  for Lipo-Dissolve or Fat Burning with Ultracavitation and Vacuum (Value $960) EDGECLIFF&p[images][0]=https://www.ozziedeals.com.au/pictures/deal_327/crop/deal_327_20150924010523_main.jpg" class="fb-share-button fb_iframe_widget" fb-xfbml-state="rendered" fb-iframe-plugin-query="app_id=426307090883086&container_width=50&href=https%3A%2F%2Fwww.ozziedeals.com.au%2Fdeal%2Fview1%2Fbeauty-amp-wellness%2F327%3Fs%3D100%26p%5Burl%5D%3Dhttps%3A%2F%2Fwww.ozziedeals.com.au%2Fdeal%2Fview1%2Fbeauty-amp-wellness%2F327%3Fm2w%26s%3D100%26p%5Btitle%5D%3D%24160%2520%2520for%2520Lipo-Dissolve%2520or%2520Fat%2520Burning%2520with%2520Ultracavitation%2520and%2520Vacuum%2520(Value%2520%24960)%2520EDGECLIFF%26p%5Bimages%5D%5B0%5D%3Dhttps%3A%2F%2Fwww.ozziedeals.com.au%2Fpictures%2Fdeal_327%2Fcrop%2Fdeal_327_20150924010523_main.jpg&layout=button&locale=en_US&sdk=joey">
+               <span style="vertical-align: bottom; width: 60px; height: 20px;">
+                <iframe width="1000px" height="1000px" frameborder="0" name="f2b1d51c2f85f06" allowtransparency="true" allowfullscreen="true" scrolling="no" title="fb:share_button Facebook Social Plugin" style="border: medium none; visibility: visible; width: 60px; height: 20px;" src="https://www.facebook.com/v2.4/plugins/share_button.php?app_id=426307090883086&channel=https%3A%2F%2Fs-static.ak.facebook.com%2Fconnect%2Fxd_arbiter%2FTlA_zCeMkxl.js%3Fversion%3D41%23cb%3Df1d18d52f3f3fb6%26domain%3Dwww.ozziedeals.com.au%26origin%3Dhttps%253A%252F%252Fwww.ozziedeals.com.au%252Ff3292e9daf066e4%26relation%3Dparent.parent&container_width=50&href=https%3A%2F%2Fwww.ozziedeals.com.au%2Fdeal%2Fview1%2Fbeauty-amp-wellness%2F327%3Fs%3D100%26p%5Burl%5D%3Dhttps%3A%2F%2Fwww.ozziedeals.com.au%2Fdeal%2Fview1%2Fbeauty-amp-wellness%2F327%3Fm2w%26s%3D100%26p%5Btitle%5D%3D%24160%2520%2520for%2520Lipo-Dissolve%2520or%2520Fat%2520Burning%2520with%2520Ultracavitation%2520and%2520Vacuum%2520%28Value%2520%24960%29%2520EDGECLIFF%26p%5Bimages%5D%5B0%5D%3Dhttps%3A%2F%2Fwww.ozziedeals.com.au%2Fpictures%2Fdeal_327%2Fcrop%2Fdeal_327_20150924010523_main.jpg&layout=button&locale=en_US&sdk=joey" class="">
+                </iframe>
+               </span>
+              </div>
+             </div>
+             <div class="col-sm-10 no_padding_left no_padding_right">
+              <div class="price_strike col-xs-9 col-sm-9 text-right">
+               $960.00
+              </div>
+              <div class="price_tag col-xs-3 col-sm-3 no_padding_right">
+               $160.00
+              </div>
+              <div class="clearfix">
+              </div>
+             </div>
+            </div>
+           </section>
+          </div>
+          <div class="clearfix">
+          </div>
+         </div>
+        </div>
+        <div class="clearfix">
+        </div>
+       </div>
+      </a>
+      <div class="clearfix">
+      </div>
+     </div>
+    </div>
+    <div class="col-sm-6 col-md-6 col-lg-4">
+     <div class="form-group">
+      <a href="/deal/view1/beauty-amp-wellness/111">
+       <div class="box">
+        <div>
+         <img class="img-responsive" src="/pictures/deal_111/crop/deal_111_20140901034104_main.JPG" />
+        </div>
+        <!--span class="new_tag">NEW</span -->
+        <div class="pointer_up">
+         <img src="/utils/img/white_arrow_up.png" />
+        </div>
+       </div>
+       <div class="bottom_content">
+        <div class="col-sm-12 text no_padding_left no_padding_right">
+         <div class="form-group">
+          <div class="col-sm-12 wrapper">
+           <section style="height:190px;overflow-y:auto;">
+            <div class="heading">
+             From $49 - Receive a Full Treatment - Blow Dry/Style Cut/ Foils/Colour/Treatment at BSK3 Hair Design  PARRAMATTA
+            </div>
+           </section>
+           <p>
+           </p>
+           <p>
+            If you want your hair to be glamorous and ready for any occasion BSK3 Hair Design have you covered. Whatever your next look the highly trained stylists can take you there!
+           </p>
+           <p>
+           </p>
+           <section class="wrapper_with_border">
+            <div>
+             <p class="margin_bottom_5">
+              Available for 1 months 25 days 14 more hours
+              <br />
+             </p>
+             <div class="save">
+              Save 64%
+             </div>
+             <div class="col-sm-2 no_padding_left no_padding_right">
+              <div data-layout="button" data-href="https://www.ozziedeals.com.au/deal/view1/beauty-amp-wellness/111?s=100&p[url]=https://www.ozziedeals.com.au/deal/view1/beauty-amp-wellness/111?m2w&s=100&p[title]=From $49 - Receive a Full Treatment - Blow Dry/Style Cut/ Foils/Colour/Treatment at BSK3 Hair Design  PARRAMATTA&p[images][0]=https://www.ozziedeals.com.au/pictures/deal_111/crop/deal_111_20140901034104_main.JPG" class="fb-share-button fb_iframe_widget" fb-xfbml-state="rendered" fb-iframe-plugin-query="app_id=426307090883086&container_width=50&href=https%3A%2F%2Fwww.ozziedeals.com.au%2Fdeal%2Fview1%2Fbeauty-amp-wellness%2F111%3Fs%3D100%26p%5Burl%5D%3Dhttps%3A%2F%2Fwww.ozziedeals.com.au%2Fdeal%2Fview1%2Fbeauty-amp-wellness%2F111%3Fm2w%26s%3D100%26p%5Btitle%5D%3DFrom%2520%2449%2520-%2520Receive%2520a%2520Full%2520Treatment%2520-%2520Blow%2520Dry%2FStyle%2520Cut%2F%2520Foils%2FColour%2FTreatment%2520at%2520BSK3%2520Hair%2520Design%2520%2520PARRAMATTA%26p%5Bimages%5D%5B0%5D%3Dhttps%3A%2F%2Fwww.ozziedeals.com.au%2Fpictures%2Fdeal_111%2Fcrop%2Fdeal_111_20140901034104_main.JPG&layout=button&locale=en_US&sdk=joey">
+               <span style="vertical-align: bottom; width: 60px; height: 20px;">
+                <iframe width="1000px" height="1000px" frameborder="0" name="ff970127707de8" allowtransparency="true" allowfullscreen="true" scrolling="no" title="fb:share_button Facebook Social Plugin" style="border: medium none; visibility: visible; width: 60px; height: 20px;" src="https://www.facebook.com/v2.4/plugins/share_button.php?app_id=426307090883086&channel=https%3A%2F%2Fs-static.ak.facebook.com%2Fconnect%2Fxd_arbiter%2FTlA_zCeMkxl.js%3Fversion%3D41%23cb%3Dfb56b5c7c1a9b%26domain%3Dwww.ozziedeals.com.au%26origin%3Dhttps%253A%252F%252Fwww.ozziedeals.com.au%252Ff3292e9daf066e4%26relation%3Dparent.parent&container_width=50&href=https%3A%2F%2Fwww.ozziedeals.com.au%2Fdeal%2Fview1%2Fbeauty-amp-wellness%2F111%3Fs%3D100%26p%5Burl%5D%3Dhttps%3A%2F%2Fwww.ozziedeals.com.au%2Fdeal%2Fview1%2Fbeauty-amp-wellness%2F111%3Fm2w%26s%3D100%26p%5Btitle%5D%3DFrom%2520%2449%2520-%2520Receive%2520a%2520Full%2520Treatment%2520-%2520Blow%2520Dry%2FStyle%2520Cut%2F%2520Foils%2FColour%2FTreatment%2520at%2520BSK3%2520Hair%2520Design%2520%2520PARRAMATTA%26p%5Bimages%5D%5B0%5D%3Dhttps%3A%2F%2Fwww.ozziedeals.com.au%2Fpictures%2Fdeal_111%2Fcrop%2Fdeal_111_20140901034104_main.JPG&layout=button&locale=en_US&sdk=joey" class="">
+                </iframe>
+               </span>
+              </div>
+             </div>
+             <div class="col-sm-10 no_padding_left no_padding_right">
+              <div class="price_strike col-xs-9 col-sm-9 text-right">
+               $135.00
+              </div>
+              <div class="price_tag col-xs-3 col-sm-3 no_padding_right">
+               $49.00
+              </div>
+              <div class="clearfix">
+              </div>
+             </div>
+            </div>
+           </section>
+          </div>
+          <div class="clearfix">
+          </div>
+         </div>
+        </div>
+        <div class="clearfix">
+        </div>
+       </div>
+      </a>
+      <div class="clearfix">
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <script type="text/javascript">
+   jQuery(function($) {
+	$('#myCarousel').carousel();
+});
+  </script>
+  <div class="clearfix">
+  </div>
+  <div class="clearfix">
+  </div>
+  <div class="footer footer_deals">
+   <div class="col-md-offset-1 col-md-10 footer_wrapper">
+    <div class="logo_section hidden-xs">
+     <img class="img-responsive" src="/utils/img/logo_footer.png" />
+    </div>
+    <div class="col-sm-offset-3 col-sm-9">
+     <div class="col-xs-3">
+      <ul>
+       <li>
+        <a href="/about">
+         About Ozzie Deals
+        </a>
+       </li>
+       <li>
+        <a href="/apply-for-job">
+         Jobs
+        </a>
+       </li>
+       <!--<li><a href="javascript:void(0)">Blog</a></li>-->
+       <!--<li><a href="/press">Press</a></li>-->
+       <!--<li><a href="/gift-cards">Gift Cards</a></li>-->
+       <!--<li><a href="/coupons">Coupons</a></li>-->
+       <li>
+        <a href="/faq">
+         FAQ
+        </a>
+       </li>
+       <!--<li><a href="/referral-program">Referral Program</a></li>-->
+       <li>
+        <a href="/contact">
+         Contact Us
+        </a>
+       </li>
+       <li>
+        <a href="/site-map">
+         Site Map
+        </a>
+       </li>
+      </ul>
+      <div class="clearfix">
+      </div>
+     </div>
+     <div class="col-xs-3">
+      <ul>
+       <!--<li><a href="/contact">Customer Support</a> </li>-->
+       <li>
+        <a href="/terms-and-conditions">
+         Terms of Use
+        </a>
+       </li>
+       <li>
+        <a href="/privacy-policy">
+         Privacy Policy
+        </a>
+       </li>
+       <li>
+        <a href="/refund-policy">
+         Refund Policy
+        </a>
+       </li>
+       <li>
+        <a href="/media">
+         Media
+        </a>
+       </li>
+       <!--<li><a href="/run-an-ozzie-deal">Run An Ozzie Deal</a></li>-->
+       <!--<li><a href="/advertise-with-ozzie-deal">Advertise with Ozzie Deal</a></li>-->
+      </ul>
+      <div class="clearfix">
+      </div>
+     </div>
+     <div class="col-xs-3">
+      <ul>
+       <!--<li><a href="/universal-fine-print">Universal Fine Print</a> </li>-->
+       <!--<li><a href="javascript:void(0)">Sign in</a></li>-->
+       <li>
+        <a href="/merchant">
+         Merchant Login
+        </a>
+       </li>
+       <li>
+        <a href="/customer">
+         Sign up
+        </a>
+       </li>
+       <li>
+        <a href="/offer-a-deal">
+         Add a Deal
+        </a>
+       </li>
+       <li>
+        <a href="/feedback">
+         Feedback
+        </a>
+       </li>
+       <!--<li><a href="javascript:void(0)">Offers Page</a></li>-->
+      </ul>
+      <div class="clearfix">
+      </div>
+     </div>
+     <div class="col-xs-3">
+      <ul>
+       <!--<li><a href="javascript:void(0)">User Portal</a> </li>
+					<li><a href="javascript:void(0)">Provider Portal</a></li>
+					<li><a href="javascript:void(0)">Applicant Portal</a></li>
+					<li><a href="javascript:void(0)">Sales Portal</a></li>-->
+      </ul>
+      <div class="clearfix">
+      </div>
+     </div>
+     <div class="clearfix">
+     </div>
+    </div>
+   </div>
+   <div class="clearfix">
+   </div>
+   <div style="text-align: center; color: #FFFFFF;" class="col-md-offset-1 col-md-10 margin_top_20 padding_top_20 border_top_ccc ">
+    Web site construction, hosting and development by Visual Link Pty Ltd
+    <a style="color: #FFFFFF;" href="mailto:info@visuallink.com.au">
+     info@visuallink.com.au
+    </a>
+    © All work Copyright 2014 - 2015
+   </div>
+  </div>
+  <!--end of footer-->
+  <div class="footer_bottom_green">
+  </div>
+ </body>
+</html>

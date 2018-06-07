@@ -1,0 +1,589 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta content="Content-Type" http-equiv="Content-Type" />
+  <meta content="OneClickTennis service: Find your perfect opponent, arrange matches, track your progress, and compete with other players." name="DESCRIPTION" />
+  <meta content="tennis; play; match; play tennis; tennis partners; tennis partner; tennis opponent; tennis match; ladder; competition" name="KEYWORDS" />
+  <meta content="EN-US" name="MS.LOCALE" />
+  <meta content="EN-US" name="LANG" />
+  <meta content="tennis matching service" name="CATEGORY" />
+  <meta content="en" http-equiv="Content-Language" />
+  <meta content="text/javascript" http-equiv="Content-Script-Type" />
+  <title>
+   OneClickTennis
+  </title>
+  <base href="http://www.oneclicktennis.com/index.php" />
+  <link href="stylesheets/fixedsize/style.css" media="screen" type="text/css" rel="stylesheet" />
+  <link href="stylesheets/fixedsize/print.css" media="print" type="text/css" rel="stylesheet" />
+  <link href="js/jquery/css/south-street/jquery-ui-1.8.1.custom.css" media="all" type="text/css" rel="stylesheet" />
+  <script src="js/jquery/jquery-1.4.2.min.js" type="text/javascript">
+  </script>
+  <script src="js/jquery/jquery-ui-1.8.1.custom.min.js" type="text/javascript">
+  </script>
+  <script src="js/date.min.js" type="text/javascript">
+  </script>
+  <script src="js/common.js" type="text/javascript">
+  </script>
+ </head>
+ <body>
+  <div id="left-shadow">
+   <div id="right-shadow">
+    <div>
+     <div class="no-print">
+      <a href="index.php">
+       <img alt="[OneClickTennis Logo]" src="stylesheets/fixedsize/header/header-logo.gif" style="border: 0; display: block; height: 98px;" />
+      </a>
+     </div>
+     <div id="main_menu_strip">
+      <ul style="float: left">
+       <li>
+        <a class="first" href="http://www.oneclicktennis.com/index.php">
+         Home
+        </a>
+       </li>
+       <li>
+        <a href="http://www.oneclicktennis.com/index.php?choice=player&tab=history">
+         Sneak Peek
+        </a>
+       </li>
+       <li>
+        <a href="http://www.oneclicktennis.com/index.php?choice=module&module=court_finder&action=court_list_dynamic">
+         Courts
+        </a>
+       </li>
+       <li>
+        <a href="http://www.oneclicktennis.com/blog">
+         Blog
+        </a>
+       </li>
+       <li>
+        <a id="howTo" href="#">
+         How To
+        </a>
+       </li>
+       <li>
+        <a href="http://www.oneclicktennis.com/index.php?inf=partners">
+         Partners
+        </a>
+       </li>
+       <li>
+        <a href="http://www.oneclicktennis.com/index.php?choice=tell_a_friend">
+         Tell A Friend
+        </a>
+       </li>
+      </ul>
+      <ul style="float: right;">
+       <li>
+        <a class="first" href="http://www.oneclicktennis.com/index.php?choice=login">
+         Sign In
+        </a>
+       </li>
+       <li>
+        <a href="http://www.oneclicktennis.com/index.php?choice=register">
+         Register
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div style="clear: both">
+     </div>
+     <div id="content">
+      <table width="100%" cellspacing="4" cellpadding="0" style="background-color: #fbfaf4;">
+       <tbody>
+        <tr>
+         <td width="200" valign="top">
+          <form action="index.php?do=login" method="post" name="logging">
+           <table width="100%" style="margin-bottom: 5px; padding: 8px;" class="login">
+            <tbody>
+             <tr>
+              <td align="right">
+               Username:
+              </td>
+              <td>
+               <input type="text" class="login_border" tabindex="1" name="username" id="loginUsername" />
+              </td>
+             </tr>
+             <tr>
+              <td align="right">
+               Password:
+              </td>
+              <td>
+               <input type="password" class="login_border" tabindex="2" name="password" />
+              </td>
+             </tr>
+             <tr>
+              <td align="center" colspan="2">
+               <input type="Checkbox" tabindex="3" name="remember" />
+               Remember Me 
+							   
+               <input type="submit" tabindex="4" value="Sign In" style="background-color: #FFF" class="white-bt" name="login" />
+              </td>
+             </tr>
+             <tr>
+              <td align="center" colspan="2">
+               <a tabindex="5" href="index.php?choice=forgot">
+                Forgot It?
+               </a>
+               <a tabindex="6" href="index.php?choice=register">
+                New Member?
+               </a>
+              </td>
+             </tr>
+            </tbody>
+           </table>
+          </form>
+          <div style="margin-bottom: 5px;">
+           <table height="25" cellspacing="0" cellpadding="0" style="border: 0">
+            <tbody>
+             <tr height="25" align="left">
+              <td width="12" style="background: url(stylesheets/fixedsize/tabs/tab_active_left.gif) no-repeat;">
+              </td>
+              <td class="tab" style="background: url(stylesheets/fixedsize/tabs/tab_active_middle.gif) repeat-x;">
+               events
+              </td>
+              <td width="18" style="background: url(stylesheets/fixedsize/tabs/tab_active_right.gif) no-repeat;">
+              </td>
+             </tr>
+            </tbody>
+           </table>
+           <table width="100%" style="border-collapse: collapse;">
+            <tbody>
+             <tr>
+              <td valign="top" class="tab_contents_no_grad">
+               <ul style="list-style: none; margin: 0; padding: 1em; padding-top: 0; text-indent: -1em;">
+                <li>
+                 »
+                 <a href="index.php?inf=cal_2011">
+                  2011 Calendar of OneClick Competition Events
+                 </a>
+                </li>
+                <li>
+                 »
+                 <a href="index.php?inf=activity_2010_fall">
+                  2010 Fall Activity Contest Winners
+                 </a>
+                </li>
+                <li>
+                 »
+                 <a href="index.php?inf=masters_2010_summer">
+                  2010 Summer Masters Winners
+                 </a>
+                </li>
+                <li>
+                 »
+                 <a href="index.php?inf=masters_2010_spring">
+                  2010 Spring Masters Winners
+                 </a>
+                </li>
+                <li>
+                 »
+                 <a href="index.php?inf=cal_2010">
+                  2010 Calendar of Competition Events
+                 </a>
+                </li>
+                <li>
+                 »
+                 <a href="index.php?inf=masters_2009_fall">
+                  2009 Fall Masters winners
+                 </a>
+                </li>
+                <li>
+                 »
+                 <a href="index.php?inf=activity_2009_fall">
+                  2009 Fall Activity Contest Winners
+                 </a>
+                </li>
+               </ul>
+               <div style="float: right">
+                <a href="index.php?inf=event_archive">
+                 Past Events
+                </a>
+               </div>
+              </td>
+             </tr>
+            </tbody>
+           </table>
+          </div>
+          <div style="margin-bottom: 5px;">
+           <table height="25" cellspacing="0" cellpadding="0" style="border: 0">
+            <tbody>
+             <tr height="25" align="left">
+              <td width="12" style="background: url(stylesheets/fixedsize/tabs/tab_active_left.gif) no-repeat;">
+              </td>
+              <td class="tab" style="background: url(stylesheets/fixedsize/tabs/tab_active_middle.gif) repeat-x;">
+               oneClick blog
+              </td>
+              <td width="18" style="background: url(stylesheets/fixedsize/tabs/tab_active_right.gif) no-repeat;">
+              </td>
+             </tr>
+            </tbody>
+           </table>
+           <table width="100%" style="border-collapse: collapse;">
+            <tbody>
+             <tr>
+              <td valign="top" class="tab_contents_no_grad">
+               <b>
+                2012 Spring Masters Underway
+               </b>
+               <br />
+               <span style="font-size: 9px;">
+                2012-02-26 17:03:59
+               </span>
+               <p>
+               </p>
+               <p class="entry">
+                <span style="line-height: 115%; font-family: 'Verdana', 'sans-serif'; font-size: 9pt">
+                 <span style="line-height: 115%; font-family: 'Verdana', 'sans-serif'; font-size: 8pt">
+                  The 2012
+                  <span style="color: #009900">
+                   <strong>
+                    One Click Spring Masters
+                   </strong>
+                  </span>
+                  just started.
+                  <span>
+                    Tens of players are competing in several regional groups.
+                  </span>
+                  <span>
+                  </span>
+                  Occasional rains don’t seem to stop One Clickers from playing a lot of tennis....
+                 </span>
+                </span>
+               </p>
+               Read more at
+               <a href="http://www.oneclicktennis.com/blog">
+                OneClick blog!
+               </a>
+              </td>
+             </tr>
+            </tbody>
+           </table>
+          </div>
+          <div style="margin-bottom: 5px;">
+           <table height="25" cellspacing="0" cellpadding="0" style="border: 0">
+            <tbody>
+             <tr height="25" align="left">
+              <td width="12" style="background: url(stylesheets/fixedsize/tabs/tab_active_left.gif) no-repeat;">
+              </td>
+              <td class="tab" style="background: url(stylesheets/fixedsize/tabs/tab_active_middle.gif) repeat-x;">
+               Tips &amp; Tricks
+              </td>
+              <td width="18" style="background: url(stylesheets/fixedsize/tabs/tab_active_right.gif) no-repeat;">
+              </td>
+             </tr>
+            </tbody>
+           </table>
+           <table width="100%" style="border-collapse: collapse;">
+            <tbody>
+             <tr>
+              <td valign="top" class="tab_contents_no_grad">
+               <p>
+                Select your favorite courts using a map. Missing? Click anywhere on the map to add a new one.
+               </p>
+               <p>
+                You can set your preference to play exclusively singles, exclusively doubles, or both.
+               </p>
+               <p>
+                We care about your privacy. You can choose to hide your real name, gender, age, and phone numbers.
+               </p>
+               <p>
+                You can declare recurring availability, e.g. same time every Saturday, if you are a frequent player.
+               </p>
+               <p>
+                On average, you burn over 370 calories per hour playing doubles and over 510 playing singles. Great workout!
+               </p>
+               <p>
+                Challenge yourself - participate in one of our many tournaments and earn your place in our Hall of Fame.
+               </p>
+              </td>
+             </tr>
+            </tbody>
+           </table>
+          </div>
+         </td>
+         <td width="377" valign="top">
+          <table height="25" cellspacing="0" cellpadding="0" style="border: 0">
+           <tbody>
+            <tr height="25" align="left">
+             <td width="12" style="background: url(stylesheets/fixedsize/tabs/tab_active_left.gif) no-repeat;">
+             </td>
+             <td class="tab" style="background: url(stylesheets/fixedsize/tabs/tab_active_middle.gif) repeat-x;">
+              Welcome to One Click Tennis
+             </td>
+             <td width="18" style="background: url(stylesheets/fixedsize/tabs/tab_active_right.gif) no-repeat;">
+             </td>
+            </tr>
+           </tbody>
+          </table>
+          <table width="100%" style="border-collapse: collapse;">
+           <tbody>
+            <tr>
+             <td valign="top" class="tab_contents_no_grad">
+              <div style="width: 235px; float: left;">
+               <p style="margin-top: 0.5em;">
+                <strong>
+                 Find your match.
+                </strong>
+                Choose your courts and time to play 
+		- we do the rest. Whatever your skill level, we find you a perfect opponent based 
+		on your dynamic rating, so every game is fun.*
+               </p>
+               <p>
+                <strong>
+                 Stay in the game.
+                </strong>
+                Enter any played matches and watch your history
+		grow. We will update your rating right away. Compare your progress to any other
+		player on your statistics chart instantly.
+               </p>
+               <p>
+                <strong>
+                 Bring it on.
+                </strong>
+                If you are a competitive type, check out one of many
+    	tournaments we organize every year. Play by yourself, or sign up with 
+    	your tennis buddy for a doubles challenge.
+               </p>
+              </div>
+              <div id="screenshots">
+               <div>
+                <div>
+                 <img src="images/about_us/magnify.gif" class="magnify" id="screenshot_courts" />
+                </div>
+                <img title="Courts" src="images/about_us/screenshot_courts_small.gif" id="courtsImg" />
+               </div>
+               <div>
+                <div>
+                 <img src="images/about_us/magnify.gif" class="magnify" id="screenshot_schedule" />
+                </div>
+                <img title="Schedule" src="images/about_us/screenshot_schedule_small.gif" id="scheduleImg" />
+               </div>
+               <div>
+                <div>
+                 <img src="images/about_us/magnify.gif" class="magnify" id="screenshot_charts" />
+                </div>
+                <img title="History" src="images/about_us/screenshot_charts_small.gif" id="chartsImg" />
+               </div>
+              </div>
+              <div id="closeup">
+              </div>
+              <p>
+               <a href="index.php?choice=register">
+                Register
+               </a>
+               and enjoy free features: logging matches,
+	maintaining your court base, keeping track of your progress. You also get 30 days to try out our
+	premium package, including arranging matches, for free. Our guarantee: 
+	It's free until we find you a match. And then, it's only $5 per month.
+              </p>
+              <p>
+               Know someone who would like our service?
+               <a href="index.php?choice=tell_a_friend">
+                Tell them
+               </a>
+               about us and get a free month of premium service.
+              </p>
+              <p>
+               Questions? Comments?
+               <a href="index.php?choice=report_problem">
+                Send us feedback
+               </a>
+               or
+               <a href="mailto:webmaster@oneclicktennis.com">
+                email us
+               </a>
+               .
+              </p>
+              <br />
+              <br />
+              <p>
+               * Match arrangement currently available mostly in San Francisco Bay Area.
+              </p>
+              <script type="text/javascript">
+               $(document).ready(function() {
+	$('.magnify').bind('mouseover', function() {
+		var pos = $(this).offset();
+		$('#closeup').html('&lt;img src="images/about_us/'+this.id+'.gif" /&gt;').css('top', pos.top+40).css('left', pos.left-600).fadeIn();
+	}).bind('mouseout', function() {
+		$('#closeup').hide().html('');
+	});
+});
+              </script>
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </td>
+         <td width="200" valign="top">
+          <div style="margin-bottom: 5px;" title="[ Quote of the Day ]" class="quote">
+           “The fifth set is not about tennis, it's about nerves.”
+           <br />
+           <div align="right">
+            Boris Becker
+           </div>
+          </div>
+          <div style="margin-bottom: 5px;">
+           <table height="25" cellspacing="0" cellpadding="0" style="border: 0">
+            <tbody>
+             <tr height="25" align="left">
+              <td width="12" style="background: url(stylesheets/fixedsize/tabs/tab_active_left.gif) no-repeat;">
+              </td>
+              <td class="tab" style="background: url(stylesheets/fixedsize/tabs/tab_active_middle.gif) repeat-x;">
+               courts
+              </td>
+              <td width="18" style="background: url(stylesheets/fixedsize/tabs/tab_active_right.gif) no-repeat;">
+              </td>
+             </tr>
+            </tbody>
+           </table>
+           <table width="100%" style="border-collapse: collapse;">
+            <tbody>
+             <tr>
+              <td valign="top" class="tab_contents_no_grad">
+               <p>
+                Enter your address or zip code to see tennis courts in your area:
+               </p>
+               <form style="padding-bottom: 1em;" method="POST" action="index.php?module=court_finder&action=do_find&suppressAll=true">
+                <div style="text-align: center">
+                 <input type="text" style="border: 1px solid #ccc; margin: 3px;" name="address" />
+                 <input type="Submit" class="white-bt" value="Show" />
+                </div>
+               </form>
+              </td>
+             </tr>
+            </tbody>
+           </table>
+          </div>
+          <div style="margin-bottom: 5px;">
+           <table height="25" cellspacing="0" cellpadding="0" style="border: 0">
+            <tbody>
+             <tr height="25" align="left">
+              <td width="12" style="background: url(stylesheets/fixedsize/tabs/tab_active_left.gif) no-repeat;">
+              </td>
+              <td class="tab" style="background: url(stylesheets/fixedsize/tabs/tab_active_middle.gif) repeat-x;">
+               visit
+              </td>
+              <td width="18" style="background: url(stylesheets/fixedsize/tabs/tab_active_right.gif) no-repeat;">
+              </td>
+             </tr>
+            </tbody>
+           </table>
+           <table width="100%" style="border-collapse: collapse;">
+            <tbody>
+             <tr>
+              <td valign="top" class="tab_contents_no_grad">
+               <p>
+                Not registered yet? Take a
+                <a href="http://www.oneclicktennis.com/index.php?choice=player&tab=history">
+                 sneak peek
+                </a>
+                and see how your friends are doing!
+               </p>
+              </td>
+             </tr>
+            </tbody>
+           </table>
+          </div>
+          <div style="margin-bottom: 5px;">
+           <table height="25" cellspacing="0" cellpadding="0" style="border: 0">
+            <tbody>
+             <tr height="25" align="left">
+              <td width="12" style="background: url(stylesheets/fixedsize/tabs/tab_active_left.gif) no-repeat;">
+              </td>
+              <td class="tab" style="background: url(stylesheets/fixedsize/tabs/tab_active_middle.gif) repeat-x;">
+               oneClick in numbers
+              </td>
+              <td width="18" style="background: url(stylesheets/fixedsize/tabs/tab_active_right.gif) no-repeat;">
+              </td>
+             </tr>
+            </tbody>
+           </table>
+           <table width="100%" style="border-collapse: collapse;">
+            <tbody>
+             <tr>
+              <td valign="top" class="tab_contents_no_grad">
+               <ul style="list-style: none; margin: 0; padding: 1em;">
+                <li>
+                 <strong>
+                  6,109
+                 </strong>
+                 registered members
+                </li>
+                <li>
+                 <strong>
+                  991
+                 </strong>
+                 tennis courts available
+                </li>
+                <li>
+                 <strong>
+                  47
+                 </strong>
+                 matches last week
+                </li>
+                <li>
+                 <strong>
+                  222
+                 </strong>
+                 matches last month
+                </li>
+                <li>
+                 <strong>
+                  70,149
+                 </strong>
+                 matches so far
+                </li>
+               </ul>
+              </td>
+             </tr>
+            </tbody>
+           </table>
+          </div>
+         </td>
+        </tr>
+       </tbody>
+      </table>
+     </div>
+     <div id="footer_strip">
+      © 2004-2015
+      <a href="mailto:webmaster@oneclicktennis.com">
+       One Click Tennis
+      </a>
+      . All rights reserved.
+      <a href="http://www.oneclicktennis.com/index.php?inf=about_us">
+       About Us
+      </a>
+      |
+      <a href="http://www.oneclicktennis.com/index.php?inf=disclaimer">
+       Terms of Use
+      </a>
+      |
+      <a href="http://www.oneclicktennis.com/index.php?inf=privacy">
+       Privacy Policy
+      </a>
+      |
+      <a href="http://www.oneclicktennis.com/index.php?choice=report_problem">
+       Feedback
+      </a>
+     </div>
+    </div>
+   </div>
+  </div>
+  <script type="text/javascript">
+   $(function() {
+	window.name = 'main';
+	$('#loginUsername').focus(); // focus, if element present
+	$('#howTo').bind('click', function() {
+		window.open('php/help/how_to/how_to.php','myWin', 'resizable, scrollbars, width=800,height=600');
+		return false;
+	});
+});
+  </script>
+  <script type="text/javascript" src="http://www.google-analytics.com/urchin.js">
+  </script>
+  <script type="text/javascript">
+   _uacct = "UA-274069-2";
+		urchinTracker();
+  </script>
+ </body>
+</html>

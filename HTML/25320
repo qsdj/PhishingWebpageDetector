@@ -1,0 +1,561 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-US" dir="ltr" xmlns="http://www.w3.org/1999/xhtml">
+ <head profile="http://gmpg.org/xfn/11">
+  <meta content="Content-Type" http-equiv="Content-Type" />
+  <title>
+   Pearl Harbor, Iran and North Korea  «  National Defense Trust
+  </title>
+  <!--// Stylesheets //-->
+  <link media="screen" type="text/css" href="http://www.nationaldefensetrust.com/wp-content/themes/NDT/style.css" rel="stylesheet" />
+  <link rel="stylesheet" href="http://www.nationaldefensetrust.com/wp-content/themes/NDT/reset.css" />
+  <link rel="stylesheet" href="http://www.nationaldefensetrust.com/wp-content/themes/NDT/text.css" />
+  <!--// End Stylesheets //-->
+  <!--// RSS Feeds //-->
+  <link href="http://www.nationaldefensetrust.com/?feed=rss2" title="National Defense Trust RSS Feed" type="application/rss+xml" rel="alternate" />
+  <link href="http://www.nationaldefensetrust.com/?feed=atom" title="National Defense Trust Atom Feed" type="application/atom+xml" rel="alternate" />
+  <link href="http://www.nationaldefensetrust.com/xmlrpc.php" rel="pingback" />
+  <!--// End RSS Feeds //-->
+  <script type="text/javascript" src="http://www.nationaldefensetrust.com/wp-content/themes/NDT/rssticker.js">
+  </script>
+  <script type="text/javascript" src="http://www.nationaldefensetrust.com/wp-content/themes/NDT/Scripts/swfobject_modified.js">
+  </script>
+  <script type="text/javascript" language="JavaScript">
+   &lt;!--
+//v1.7
+// Flash Player Version Detection
+// Detect Client Browser type
+// Copyright 2005-2008 Adobe Systems Incorporated.  All rights reserved.
+var isIE  = (navigator.appVersion.indexOf("MSIE") != -1) ? true : false;
+var isWin = (navigator.appVersion.toLowerCase().indexOf("win") != -1) ? true : false;
+var isOpera = (navigator.userAgent.indexOf("Opera") != -1) ? true : false;
+function ControlVersion()
+{
+	var version;
+	var axo;
+	var e;
+	// NOTE : new ActiveXObject(strFoo) throws an exception if strFoo isn't in the registry
+	try {
+		// version will be set for 7.X or greater players
+		axo = new ActiveXObject("ShockwaveFlash.ShockwaveFlash.7");
+		version = axo.GetVariable("$version");
+	} catch (e) {
+	}
+	if (!version)
+	{
+		try {
+			// version will be set for 6.X players only
+			axo = new ActiveXObject("ShockwaveFlash.ShockwaveFlash.6");
+			
+			// installed player is some revision of 6.0
+			// GetVariable("$version") crashes for versions 6.0.22 through 6.0.29,
+			// so we have to be careful. 
+			
+			// default to the first public version
+			version = "WIN 6,0,21,0";
+			// throws if AllowScripAccess does not exist (introduced in 6.0r47)		
+			axo.AllowScriptAccess = "always";
+			// safe to call for 6.0r47 or greater
+			version = axo.GetVariable("$version");
+		} catch (e) {
+		}
+	}
+	if (!version)
+	{
+		try {
+			// version will be set for 4.X or 5.X player
+			axo = new ActiveXObject("ShockwaveFlash.ShockwaveFlash.3");
+			version = axo.GetVariable("$version");
+		} catch (e) {
+		}
+	}
+	if (!version)
+	{
+		try {
+			// version will be set for 3.X player
+			axo = new ActiveXObject("ShockwaveFlash.ShockwaveFlash.3");
+			version = "WIN 3,0,18,0";
+		} catch (e) {
+		}
+	}
+	if (!version)
+	{
+		try {
+			// version will be set for 2.X player
+			axo = new ActiveXObject("ShockwaveFlash.ShockwaveFlash");
+			version = "WIN 2,0,0,11";
+		} catch (e) {
+			version = -1;
+		}
+	}
+	
+	return version;
+}
+// JavaScript helper required to detect Flash Player PlugIn version information
+function GetSwfVer(){
+	// NS/Opera version &gt;= 3 check for Flash plugin in plugin array
+	var flashVer = -1;
+	
+	if (navigator.plugins != null &amp;&amp; navigator.plugins.length &gt; 0) {
+		if (navigator.plugins["Shockwave Flash 2.0"] || navigator.plugins["Shockwave Flash"]) {
+			var swVer2 = navigator.plugins["Shockwave Flash 2.0"] ? " 2.0" : "";
+			var flashDescription = navigator.plugins["Shockwave Flash" + swVer2].description;
+			var descArray = flashDescription.split(" ");
+			var tempArrayMajor = descArray[2].split(".");			
+			var versionMajor = tempArrayMajor[0];
+			var versionMinor = tempArrayMajor[1];
+			var versionRevision = descArray[3];
+			if (versionRevision == "") {
+				versionRevision = descArray[4];
+			}
+			if (versionRevision[0] == "d") {
+				versionRevision = versionRevision.substring(1);
+			} else if (versionRevision[0] == "r") {
+				versionRevision = versionRevision.substring(1);
+				if (versionRevision.indexOf("d") &gt; 0) {
+					versionRevision = versionRevision.substring(0, versionRevision.indexOf("d"));
+				}
+			}
+			var flashVer = versionMajor + "." + versionMinor + "." + versionRevision;
+		}
+	}
+	// MSN/WebTV 2.6 supports Flash 4
+	else if (navigator.userAgent.toLowerCase().indexOf("webtv/2.6") != -1) flashVer = 4;
+	// WebTV 2.5 supports Flash 3
+	else if (navigator.userAgent.toLowerCase().indexOf("webtv/2.5") != -1) flashVer = 3;
+	// older WebTV supports Flash 2
+	else if (navigator.userAgent.toLowerCase().indexOf("webtv") != -1) flashVer = 2;
+	else if ( isIE &amp;&amp; isWin &amp;&amp; !isOpera ) {
+		flashVer = ControlVersion();
+	}	
+	return flashVer;
+}
+// When called with reqMajorVer, reqMinorVer, reqRevision returns true if that version or greater is available
+function DetectFlashVer(reqMajorVer, reqMinorVer, reqRevision)
+{
+	versionStr = GetSwfVer();
+	if (versionStr == -1 ) {
+		return false;
+	} else if (versionStr != 0) {
+		if(isIE &amp;&amp; isWin &amp;&amp; !isOpera) {
+			// Given "WIN 2,0,0,11"
+			tempArray         = versionStr.split(" "); 	// ["WIN", "2,0,0,11"]
+			tempString        = tempArray[1];			// "2,0,0,11"
+			versionArray      = tempString.split(",");	// ['2', '0', '0', '11']
+		} else {
+			versionArray      = versionStr.split(".");
+		}
+		var versionMajor      = versionArray[0];
+		var versionMinor      = versionArray[1];
+		var versionRevision   = versionArray[2];
+        	// is the major.revision &gt;= requested major.revision AND the minor version &gt;= requested minor
+		if (versionMajor &gt; parseFloat(reqMajorVer)) {
+			return true;
+		} else if (versionMajor == parseFloat(reqMajorVer)) {
+			if (versionMinor &gt; parseFloat(reqMinorVer))
+				return true;
+			else if (versionMinor == parseFloat(reqMinorVer)) {
+				if (versionRevision &gt;= parseFloat(reqRevision))
+					return true;
+			}
+		}
+		return false;
+	}
+}
+function AC_AddExtension(src, ext)
+{
+  if (src.indexOf('?') != -1)
+    return src.replace(/\?/, ext+'?'); 
+  else
+    return src + ext;
+}
+function AC_Generateobj(objAttrs, params, embedAttrs) 
+{ 
+  var str = '';
+  if (isIE &amp;&amp; isWin &amp;&amp; !isOpera)
+  {
+    str += '&lt;object ';
+    for (var i in objAttrs)
+    {
+      str += i + '="' + objAttrs[i] + '" ';
+    }
+    str += '&gt;';
+    for (var i in params)
+    {
+      str += '&lt;param name="' + i + '" value="' + params[i] + '" /&gt; ';
+    }
+    str += '&lt;/object&gt;';
+  }
+  else
+  {
+    str += '&lt;embed ';
+    for (var i in embedAttrs)
+    {
+      str += i + '="' + embedAttrs[i] + '" ';
+    }
+    str += '&gt; &lt;/embed&gt;';
+  }
+  document.write(str);
+}
+function AC_FL_RunContent(){
+  var ret = 
+    AC_GetArgs
+    (  arguments, ".swf", "movie", "clsid:d27cdb6e-ae6d-11cf-96b8-444553540000"
+     , "application/x-shockwave-flash"
+    );
+  AC_Generateobj(ret.objAttrs, ret.params, ret.embedAttrs);
+}
+function AC_SW_RunContent(){
+  var ret = 
+    AC_GetArgs
+    (  arguments, ".dcr", "src", "clsid:166B1BCA-3F9C-11CF-8075-444553540000"
+     , null
+    );
+  AC_Generateobj(ret.objAttrs, ret.params, ret.embedAttrs);
+}
+function AC_GetArgs(args, ext, srcParamName, classid, mimeType){
+  var ret = new Object();
+  ret.embedAttrs = new Object();
+  ret.params = new Object();
+  ret.objAttrs = new Object();
+  for (var i=0; i &lt; args.length; i=i+2){
+    var currArg = args[i].toLowerCase();    
+    switch (currArg){	
+      case "classid":
+        break;
+      case "pluginspage":
+        ret.embedAttrs[args[i]] = args[i+1];
+        break;
+      case "src":
+      case "movie":	
+        args[i+1] = AC_AddExtension(args[i+1], ext);
+        ret.embedAttrs["src"] = args[i+1];
+        ret.params[srcParamName] = args[i+1];
+        break;
+      case "onafterupdate":
+      case "onbeforeupdate":
+      case "onblur":
+      case "oncellchange":
+      case "onclick":
+      case "ondblclick":
+      case "ondrag":
+      case "ondragend":
+      case "ondragenter":
+      case "ondragleave":
+      case "ondragover":
+      case "ondrop":
+      case "onfinish":
+      case "onfocus":
+      case "onhelp":
+      case "onmousedown":
+      case "onmouseup":
+      case "onmouseover":
+      case "onmousemove":
+      case "onmouseout":
+      case "onkeypress":
+      case "onkeydown":
+      case "onkeyup":
+      case "onload":
+      case "onlosecapture":
+      case "onpropertychange":
+      case "onreadystatechange":
+      case "onrowsdelete":
+      case "onrowenter":
+      case "onrowexit":
+      case "onrowsinserted":
+      case "onstart":
+      case "onscroll":
+      case "onbeforeeditfocus":
+      case "onactivate":
+      case "onbeforedeactivate":
+      case "ondeactivate":
+      case "type":
+      case "codebase":
+      case "id":
+        ret.objAttrs[args[i]] = args[i+1];
+        break;
+      case "width":
+      case "height":
+      case "align":
+      case "vspace": 
+      case "hspace":
+      case "class":
+      case "title":
+      case "accesskey":
+      case "name":
+      case "tabindex":
+        ret.embedAttrs[args[i]] = ret.objAttrs[args[i]] = args[i+1];
+        break;
+      default:
+        ret.embedAttrs[args[i]] = ret.params[args[i]] = args[i+1];
+    }
+  }
+  ret.objAttrs["classid"] = classid;
+  if (mimeType) ret.embedAttrs["type"] = mimeType;
+  return ret;
+}
+// --&gt;
+  </script>
+  <meta content="noindex,nofollow" name="robots" />
+  <link href="http://www.nationaldefensetrust.com/xmlrpc.php?rsd" title="RSD" type="application/rsd+xml" rel="EditURI" />
+  <link href="http://www.nationaldefensetrust.com/wp-includes/wlwmanifest.xml" type="application/wlwmanifest+xml" rel="wlwmanifest" />
+  <meta content="WordPress 2.7.1" name="generator" />
+  <link href="http://www.nationaldefensetrust.com/wp-content/plugins/accessible-news-ticker/includes/domnews.css" media="screen" type="text/css" rel="stylesheet" />
+ </head>
+ <body>
+  <div class="container_12" id="container">
+   <!--// Begin Wrapper //-->
+   <div id="wrapper">
+    <!--// Begin Header //-->
+    <div id="header">
+     <!--// Logo Here //-->
+     <div id="logo">
+      <img src="http://www.nationaldefensetrust.com/wp-content/themes/NDT/images/logo.jpg" />
+     </div>
+     <!--// End Logo //-->
+     <!--// Begin Navigation //-->
+     <div id="navbar">
+      <ul>
+       <li>
+        <a href="index.php">
+         Home
+        </a>
+       </li>
+       <li>
+        <a href="?page_id=2">
+         About
+        </a>
+       </li>
+       <li>
+        <a href="?page_id=33">
+         News
+        </a>
+       </li>
+       <li>
+        <a href="?page_id=36">
+         Contact
+        </a>
+       </li>
+      </ul>
+     </div>
+     <!--// End Navigation //-->
+     <!--// Begin Date //-->
+     <div id="date">
+      Monday December 14, 2015
+     </div>
+     <!--// End Date //-->
+    </div>
+    <!--// End Header //-->
+    <!--// Begin Grab //-->
+    <div id="grab">
+     <img src="http://www.nationaldefensetrust.com/wp-content/themes/NDT/banners/rotate.php" />
+    </div>
+    <!--// End Grab //-->
+    <!--// Begin RSS //-->
+    <script type="text/javascript">
+     //rssticker_ajax(RSS_id, cachetime, divId, divClass, delay, optionalswitch)
+//1) RSS_id: "Array key of RSS feed in PHP script"
+//2) cachetime: Time to cache the feed in minutes (0 for no cache)
+//3) divId: "ID of DIV to display ticker in. DIV dynamically created"
+//4) divClass: "Class name of this ticker, for styling purposes"
+//5) delay: delay between message change, in milliseconds
+//6) optionalswitch: "optional arbitrary" string to create additional logic in call back function
+
+document.write()
+new rssticker_ajax("FOX", 600, "rss_feed", "", 12000, "")
+    </script>
+    <div class="" id="rss_feed">
+     <div class="rsstitle">
+      <a href="http://feeds.foxnews.com/%7Er/foxnews/politics/%7E3/Ctz_0TjIgMM/supreme-court-blocks-alabama-court-order-in-adoption-case.html">
+       Supreme Court blocks Alabama court order in adoption case
+      </a>
+     </div>
+    </div>
+    <!--// End RSS //-->
+    <!--// Begin Main Content //-->
+    <div id="content">
+     <!--// Begin Left Content //-->
+     <div id="left_content">
+      <h2>
+       Pearl Harbor, Iran and North Korea
+      </h2>
+      <p class="date">
+       December 7th, 2011
+      </p>
+      <div id="entry">
+       <h1>
+        <strong>
+         <a href="http://online.wsj.com/article/SB10001424052970204903804577082441532803110.html?mod=googlenews_wsj">
+          Pearl Harbor, Iran and North Korea
+         </a>
+        </strong>
+       </h1>
+       <h3>
+        <strong>
+         Don’t be surprised if one of our underestimated adversaries does the unthinkable.
+        </strong>
+       </h3>
+       <p>
+        <strong>
+         <br />
+        </strong>
+       </p>
+       <h3 class="byline">
+        By
+        <a href="http://online.wsj.com/search/term.html?KEYWORDS=WARREN+KOZAK&bylinesearch=true">
+         WARREN KOZAK
+        </a>
+       </h3>
+       <p>
+        On Dec. 7, 1941 the United States suffered the worst intelligence failure in its history-before or since-when Japanese planes destroyed much of the U.S. Pacific Fleet at Pearl Harbor.
+       </p>
+       <p>
+        The most astounding aspect of the Pearl Harbor attack was that the U.S. had already broken the Japanese code and was listening to its communications. The U.S. had hundreds of cryptologists and linguists, mostly from the Navy, listening to Japanese wireless communications. But it wasn’t enough.
+       </p>
+       <p>
+        “We knew something was going to happen on Sunday, December 7th at around noon Washington time,” Henry Kissinger said at a speech I attended two years ago in New York City. “The problem is that nobody knew that when it’s noon in Washington, it’s around 7 a.m. in Hawaii.”
+       </p>
+       <p>
+        In other words, despite being on a war footing with Japan and knowing from intercepted communications that the Japanese were planning for a significant event to affect Japanese-U.S. relations that Sunday, our government couldn’t conceive of-and didn’t defend against-an attack on its largest Pacific naval facility, Pearl Harbor.
+       </p>
+       <p>
+        This was a failure to think outside the box, coupled with a strong belief that the Japanese were inferior and incapable of mounting such an attack. Eight U.S. battleships, three cruisers and three destroyers were either damaged or sunk, 188 aircraft were destroyed (almost all on the ground), and 2,402 Americans were killed. All of this was accomplished in 90 minutes with 353 small Japanese planes.
+       </p>
+       <p>
+        Twenty years earlier in a highly publicized demonstration, Gen. Billy Mitchell had proven the vulnerability of naval vessels to airplanes in the waters off Virginia. In July 1921, Mitchell’s planes sank a surplus German destroyer, a light cruiser and the battleship Ostfreisland in full view of hundreds of visitors who were brought to see the exercise.
+       </p>
+       <p>
+        One of those visitors was Osami Nagano, a Japanese naval captain who was part of Japan’s diplomatic corps. Nagano clearly understood the demonstration’s implications. But the U.S. wasn’t in the mood for military spending after World War I, when a strong sense of isolationism took hold of the country.
+       </p>
+       <p>
+        Just as the lessons of Vietnam shaped today’s U.S. military, the lessons of Pearl Harbor shaped our armed services through the 1960s. In 1942, only months after the attack, then-Colonel Curtis LeMay was forced to take ill-trained troops into combat and watched hundreds of them die. He never wanted to see the U.S. in that position again, a goal that guided his creation of the Strategic Air Command-America’s nuclear punch-during the earliest years of the Cold War.
+       </p>
+       <p>
+        LeMay understood that in a nuclear war the U.S. wouldn’t have the luxury of two years to build the Army, Navy and Air Force that it needed in World War II but didn’t yet have in December 1941. LeMay drilled into his crews the idea that their first mission might well be their only mission, which is why they had to be constantly prepared. Partly because of that strength, there was never a nuclear exchange between the U.S. and U.S.S.R.
+       </p>
+       <p>
+        Seventy years after Pearl Harbor, the U.S. finds itself in much the same situation that it was in prior to World War II. There is a great effort to cut military spending, bring troops home from abroad, and scale back our international exposure. The country’s critical financial situation is one reason. Yet a nuclear-obsessed Iran, an emerging China and Russia, along with smaller rogue actors are enough of a threat to justify a vigilant and even aggressive guard. Add to this the weariness of two prolonged wars in Afghanistan and Iraq and the comparison is complete.
+       </p>
+       <p>
+        Two weeks ago, National Public Radio’s “All Things Considered” examined Republican presidential candidate Newt Gingrich’s statement of concern about the possibility of an “EMP” attack on America. That’s an electro-magnetic-pulse attack-a huge shock wave of electricity that could come from a nuclear weapon detonated high in the atmosphere above the homeland. Such a wave could destroy the country’s electrical grid, stop almost all cars and trucks, cause sewage to back up in every city, and disrupt the food and water supply-essentially sending us back 250 years.
+       </p>
+       <p>
+        NPR’s guest, Wired magazine reporter Noah Shachtman, was skeptical. He called Mr. Gingrich a “charter member” of the “professional EMP, scare-monger, worry-wart crowd,” and he wondered if it really made any sense that “Iran or North Korea or some other country is going to be so mad at us” that they would actually do something like this.
+       </p>
+       <p>
+        The doubters may indeed be right. But 70 years ago similar doubters believed Japan would never be so foolish as to take on the United States of America-until, of course, it did.
+       </p>
+       <p>
+        <em>
+         Mr. Kozak is the author of “LeMay: The Life and Wars of General Curtis LeMay” (Regnery, 2009).
+        </em>
+       </p>
+      </div>
+     </div>
+     <!--// End Left Content //-->
+     <!--// Begin Sidebar //-->
+     <div id="sidebar">
+      <ul>
+       <li class="widget widget_text" id="text-437690931">
+        <h2 class="widgettitle">
+         About Us
+        </h2>
+        <div class="textwidget">
+         <p>
+          The National Defense Trust is a coalition of Americans dedicated to a robust defense of the United States and our allies.
+         </p>
+         <a href="?page_id=2">
+          Find Out More
+         </a>
+        </div>
+       </li>
+       <li class="widget widget_text" id="text-437749302">
+        <h2 class="widgettitle">
+         Recent Video
+        </h2>
+        <div class="textwidget">
+         <object width="280" height="200">
+          <param value="http://www.youtube.com/v/mdRVbr1OfKc&hl=en&fs=1&rel=0" name="movie">
+          </param>
+          <param value="true" name="allowFullScreen">
+          </param>
+          <param value="always" name="allowscriptaccess">
+           <embed width="280" height="200" allowfullscreen="true" allowscriptaccess="always" type="application/x-shockwave-flash" src="http://www.youtube.com/v/mdRVbr1OfKc&hl=en&fs=1&rel=0">
+           </embed>
+          </param>
+         </object>
+        </div>
+       </li>
+       <li class="widget widget_recent_entries" id="recent-posts">
+        <h2 class="widgettitle">
+         Recent Updates
+        </h2>
+        <ul>
+         <li>
+          <a href="http://www.nationaldefensetrust.com/?p=221">
+           Pearl Harbor, Iran and North Korea
+          </a>
+         </li>
+         <li>
+          <a href="http://www.nationaldefensetrust.com/?p=217">
+           Fred Iklé: Missile Defense Champion
+          </a>
+         </li>
+         <li>
+          <a href="http://www.nationaldefensetrust.com/?p=211">
+           Retired admiral warns against following through on proposed defense cuts
+          </a>
+         </li>
+         <li>
+          <a href="http://www.nationaldefensetrust.com/?p=209">
+           George Will:  “At the Pentagon, the specter of a sequester”
+          </a>
+         </li>
+         <li>
+          <a href="http://www.nationaldefensetrust.com/?p=207">
+           Rumsfeld: Attack Imminent If Congress Cuts Defense
+          </a>
+         </li>
+         <li>
+          <a href="http://www.nationaldefensetrust.com/?p=204">
+           Michael Auslin: The Growing Threat From China’s Air Force
+          </a>
+         </li>
+         <li>
+          <a href="http://www.nationaldefensetrust.com/?p=202">
+           Lt. Gen. (Ret) William G. Boykin — More Special Operations Not the Answer
+          </a>
+         </li>
+         <li>
+          <a href="http://www.nationaldefensetrust.com/?p=199">
+           John Bolton: Why Tea Party should resist gutting defense
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </div>
+     <!--// End Sidebar //-->
+    </div>
+    <!--// End Main Content //-->
+    <div id="footer">
+     <p>
+      Copyright National Defense Trust © 2009-2010 | All Rights Reserved
+     </p>
+    </div>
+   </div>
+   <!--// End Wrapper //-->
+  </div>
+  <!-- Accessible News Ticker wordpress plugin 0.3 by Pixline - http://pixline.net -->
+  <script type="text/javascript">
+   var dn_startpos=0; 				// start position of the first item
+var dn_endpos=-600; 			// end of the 'cart'. more items = higher number
+var dn_speed=40;				// higher number = slower scroller 
+var dn_newsID='accessible-news-ticker';			
+var dn_classAdd='hasJS';		
+var dn_stopMessage='Stop scroller';	
+var dn_paraID='DOMnewsstopper';
+  </script>
+  <script src="http://www.nationaldefensetrust.com/wp-content/plugins/accessible-news-ticker/includes/domnews.js?ver=2.7.1" type="text/javascript">
+  </script>
+ </body>
+</html>

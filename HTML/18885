@@ -1,0 +1,628 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="ru" xml:lang="ru" dir="ltr" xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta content="content-type" http-equiv="content-type" />
+  <meta content="ru" http-equiv="content-language" />
+  <meta content="text/css" http-equiv="content-style-type" />
+  <meta content="no" http-equiv="imagetoolbar" />
+  <meta content="document" name="resource-type" />
+  <meta content="global" name="distribution" />
+  <meta content="" name="keywords" />
+  <meta content="" name="description" />
+  <title>
+   www.intseti.ru • Главная страница
+  </title>
+  <link type="text/css" href="./styles/subsilver2/theme/stylesheet.css" rel="stylesheet" />
+  <script type="text/javascript">
+   // &lt;![CDATA[
+
+
+function popup(url, width, height, name)
+{
+	if (!name)
+	{
+		name = '_popup';
+	}
+
+	window.open(url.replace(/&amp;amp;/g, '&amp;'), name, 'height=' + height + ',resizable=yes,scrollbars=yes,width=' + width);
+	return false;
+}
+
+function jumpto()
+{
+	var page = prompt('Введите номер страницы, на которую хотите перейти:', '');
+	var per_page = '';
+	var base_url = '';
+
+	if (page !== null &amp;&amp; !isNaN(page) &amp;&amp; page == Math.floor(page) &amp;&amp; page &gt; 0)
+	{
+		if (base_url.indexOf('?') == -1)
+		{
+			document.location.href = base_url + '?start=' + ((page - 1) * per_page);
+		}
+		else
+		{
+			document.location.href = base_url.replace(/&amp;amp;/g, '&amp;') + '&amp;start=' + ((page - 1) * per_page);
+		}
+	}
+}
+
+/**
+* Find a member
+*/
+function find_username(url)
+{
+	popup(url, 760, 570, '_usersearch');
+	return false;
+}
+
+/**
+* Mark/unmark checklist
+* id = ID of parent container, name = name prefix, state = state [true/false]
+*/
+function marklist(id, name, state)
+{
+	var parent = document.getElementById(id);
+	if (!parent)
+	{
+		eval('parent = document.' + id);
+	}
+
+	if (!parent)
+	{
+		return;
+	}
+
+	var rb = parent.getElementsByTagName('input');
+	
+	for (var r = 0; r &lt; rb.length; r++)
+	{
+		if (rb[r].name.substr(0, name.length) == name)
+		{
+			rb[r].checked = state;
+		}
+	}
+}
+
+
+
+// ]]&gt;
+  </script>
+ </head>
+ <body class="ltr">
+  <a name="top">
+  </a>
+  <div id="wrapheader">
+   <div id="logodesc">
+    <table width="100%" cellspacing="0">
+     <tbody>
+      <tr>
+       <td>
+        <a href="./index.php?sid=0f62ad4588f08ccacec6626c4f1b59ed">
+         <img width="257" height="72" title="" alt="" src="./styles/subsilver2/imageset/site_logo.png" />
+        </a>
+       </td>
+       <td width="100%" align="center">
+        <h1>
+         www.intseti.ru
+        </h1>
+        <span class="gen">
+         Форум оператора связи "ИНТЕРНЕТ СЕТИ"
+        </span>
+       </td>
+      </tr>
+     </tbody>
+    </table>
+   </div>
+   <div id="menubar">
+    <table width="100%" cellspacing="0">
+     <tbody>
+      <tr>
+       <td class="genmed">
+        <a href="./ucp.php?mode=login&sid=0f62ad4588f08ccacec6626c4f1b59ed">
+         <img width="12" height="13" alt="*" src="./styles/subsilver2/theme/images/icon_mini_login.gif" />
+         Вход
+        </a>
+       </td>
+       <td align="right" class="genmed">
+        <a href="./faq.php?sid=0f62ad4588f08ccacec6626c4f1b59ed">
+         <img width="12" height="13" alt="*" src="./styles/subsilver2/theme/images/icon_mini_faq.gif" />
+         FAQ
+        </a>
+        <a href="./search.php?sid=0f62ad4588f08ccacec6626c4f1b59ed">
+         <img width="12" height="13" alt="*" src="./styles/subsilver2/theme/images/icon_mini_search.gif" />
+         Поиск
+        </a>
+       </td>
+      </tr>
+     </tbody>
+    </table>
+   </div>
+   <div id="datebar">
+    <table width="100%" cellspacing="0">
+     <tbody>
+      <tr>
+       <td class="gensmall">
+       </td>
+       <td align="right" class="gensmall">
+        Текущее время: 26 ноя 2015, 12:25
+        <br />
+       </td>
+      </tr>
+     </tbody>
+    </table>
+   </div>
+  </div>
+  <div id="wrapcentre">
+   <p class="searchbar">
+    <span style="float: left;">
+     <a href="./search.php?search_id=unanswered&sid=0f62ad4588f08ccacec6626c4f1b59ed">
+      Сообщения без ответов
+     </a>
+     |
+     <a href="./search.php?search_id=active_topics&sid=0f62ad4588f08ccacec6626c4f1b59ed">
+      Активные темы
+     </a>
+    </span>
+   </p>
+   <br style="clear: both;" />
+   <table width="100%" cellspacing="1" cellpadding="0" style="margin-top: 5px;" class="tablebg">
+    <tbody>
+     <tr>
+      <td class="row1">
+       <p class="breadcrumbs">
+        <a href="./index.php?sid=0f62ad4588f08ccacec6626c4f1b59ed">
+         Список форумов
+        </a>
+       </p>
+       <p class="datetime">
+        Часовой пояс: UTC + 6 часов [ Летнее время ]
+       </p>
+      </td>
+     </tr>
+    </tbody>
+   </table>
+   <br />
+   <table width="100%" cellspacing="1" class="tablebg">
+    <tbody>
+     <tr>
+      <td align="right" colspan="5" class="cat">
+      </td>
+     </tr>
+     <tr>
+      <th colspan="2">
+        Форум 
+      </th>
+      <th width="50">
+        Темы 
+      </th>
+      <th width="50">
+        Сообщения 
+      </th>
+      <th>
+        Последнее сообщение 
+      </th>
+     </tr>
+     <tr>
+      <td width="50" align="center" class="row1">
+       <img width="46" height="25" title="Нет непрочитанных сообщений" alt="Нет непрочитанных сообщений" src="./styles/subsilver2/imageset/forum_read_subforum.gif" />
+      </td>
+      <td width="100%" class="row1">
+       <a href="./viewforum.php?f=3&sid=0f62ad4588f08ccacec6626c4f1b59ed" class="forumlink">
+        Оператор связи "ИНТЕРНЕТ СЕТИ"
+       </a>
+       <p class="forumdesc">
+        все вопросы связанные с работой оператора связи а так же ваши пожелания и предложения
+       </p>
+      </td>
+      <td align="center" class="row2">
+       <p class="topicdetails">
+        24
+       </p>
+      </td>
+      <td align="center" class="row2">
+       <p class="topicdetails">
+        87
+       </p>
+      </td>
+      <td nowrap="nowrap" align="center" class="row2">
+       <p class="topicdetails">
+        24 июл 2015, 11:06
+       </p>
+       <p class="topicdetails">
+        <a href="./memberlist.php?mode=viewprofile&u=54&sid=0f62ad4588f08ccacec6626c4f1b59ed">
+         solo
+        </a>
+        <a href="./viewtopic.php?f=18&p=112286&sid=0f62ad4588f08ccacec6626c4f1b59ed#p112286">
+         <img width="18" height="9" title="Перейти к последнему сообщению" alt="Перейти к последнему сообщению" src="./styles/subsilver2/imageset/icon_topic_latest.gif" />
+        </a>
+       </p>
+      </td>
+     </tr>
+     <tr>
+      <td width="50" align="center" class="row1">
+       <img width="46" height="25" title="Нет непрочитанных сообщений" alt="Нет непрочитанных сообщений" src="./styles/subsilver2/imageset/forum_read_subforum.gif" />
+      </td>
+      <td width="100%" class="row1">
+       <a href="./viewforum.php?f=6&sid=0f62ad4588f08ccacec6626c4f1b59ed" class="forumlink">
+        Медиа портал "ИНТЕРНЕТ СЕТИ"
+       </a>
+       <p class="forumdesc">
+        работа портала заявки на файлы и предложения вашего контента
+       </p>
+      </td>
+      <td align="center" class="row2">
+       <p class="topicdetails">
+        73
+       </p>
+      </td>
+      <td align="center" class="row2">
+       <p class="topicdetails">
+        128
+       </p>
+      </td>
+      <td nowrap="nowrap" align="center" class="row2">
+       <p class="topicdetails">
+        10 май 2012, 20:46
+       </p>
+       <p class="topicdetails">
+        <a href="./memberlist.php?mode=viewprofile&u=114&sid=0f62ad4588f08ccacec6626c4f1b59ed">
+         Gleb
+        </a>
+        <a href="./viewtopic.php?f=7&p=1829&sid=0f62ad4588f08ccacec6626c4f1b59ed#p1829">
+         <img width="18" height="9" title="Перейти к последнему сообщению" alt="Перейти к последнему сообщению" src="./styles/subsilver2/imageset/icon_topic_latest.gif" />
+        </a>
+       </p>
+      </td>
+     </tr>
+     <tr>
+      <td width="50" align="center" class="row1">
+       <img width="46" height="25" title="Нет непрочитанных сообщений" alt="Нет непрочитанных сообщений" src="./styles/subsilver2/imageset/forum_read_subforum.gif" />
+      </td>
+      <td width="100%" class="row1">
+       <a href="./viewforum.php?f=10&sid=0f62ad4588f08ccacec6626c4f1b59ed" class="forumlink">
+        Игровые сервера "ИНТЕРНЕТ СЕТИ"
+       </a>
+       <p class="forumdesc">
+        предложения по улучшению и расширению игровых серверов
+       </p>
+      </td>
+      <td align="center" class="row2">
+       <p class="topicdetails">
+        14
+       </p>
+      </td>
+      <td align="center" class="row2">
+       <p class="topicdetails">
+        78
+       </p>
+      </td>
+      <td nowrap="nowrap" align="center" class="row2">
+       <p class="topicdetails">
+        15 фев 2012, 15:41
+       </p>
+       <p class="topicdetails">
+        <a class="username-coloured" style="color: #AA0000;" href="./memberlist.php?mode=viewprofile&u=2&sid=0f62ad4588f08ccacec6626c4f1b59ed">
+         NightKnight
+        </a>
+        <a href="./viewtopic.php?f=12&p=1825&sid=0f62ad4588f08ccacec6626c4f1b59ed#p1825">
+         <img width="18" height="9" title="Перейти к последнему сообщению" alt="Перейти к последнему сообщению" src="./styles/subsilver2/imageset/icon_topic_latest.gif" />
+        </a>
+       </p>
+      </td>
+     </tr>
+     <tr>
+      <td width="50" align="center" class="row1">
+       <img width="46" height="25" title="Нет непрочитанных сообщений" alt="Нет непрочитанных сообщений" src="./styles/subsilver2/imageset/forum_read.gif" />
+      </td>
+      <td width="100%" class="row1">
+       <a href="./viewforum.php?f=15&sid=0f62ad4588f08ccacec6626c4f1b59ed" class="forumlink">
+        ФЛУДИЛЬНЯ
+       </a>
+       <p class="forumdesc">
+        здесь общаюются клиенты оператора связи "ИНТЕРНЕТ СЕТИ"
+       </p>
+      </td>
+      <td align="center" class="row2">
+       <p class="topicdetails">
+        9
+       </p>
+      </td>
+      <td align="center" class="row2">
+       <p class="topicdetails">
+        93
+       </p>
+      </td>
+      <td nowrap="nowrap" align="center" class="row2">
+       <p class="topicdetails">
+        01 окт 2011, 15:01
+       </p>
+       <p class="topicdetails">
+        <a href="./memberlist.php?mode=viewprofile&u=82&sid=0f62ad4588f08ccacec6626c4f1b59ed">
+         Kalel
+        </a>
+        <a href="./viewtopic.php?f=15&p=793&sid=0f62ad4588f08ccacec6626c4f1b59ed#p793">
+         <img width="18" height="9" title="Перейти к последнему сообщению" alt="Перейти к последнему сообщению" src="./styles/subsilver2/imageset/icon_topic_latest.gif" />
+        </a>
+       </p>
+      </td>
+     </tr>
+     <tr>
+      <td width="50" align="center" class="row1">
+       <img width="46" height="25" title="Нет непрочитанных сообщений" alt="Нет непрочитанных сообщений" src="./styles/subsilver2/imageset/forum_read.gif" />
+      </td>
+      <td width="100%" class="row1">
+       <a href="./viewforum.php?f=16&sid=0f62ad4588f08ccacec6626c4f1b59ed" class="forumlink">
+        Развлечения
+       </a>
+       <p class="forumdesc">
+       </p>
+      </td>
+      <td align="center" class="row2">
+       <p class="topicdetails">
+        0
+       </p>
+      </td>
+      <td align="center" class="row2">
+       <p class="topicdetails">
+        0
+       </p>
+      </td>
+      <td nowrap="nowrap" align="center" class="row2">
+       <p class="topicdetails">
+        Нет сообщений
+       </p>
+      </td>
+     </tr>
+     <tr>
+      <td width="50" align="center" class="row1">
+       <img width="46" height="25" title="Нет непрочитанных сообщений" alt="Нет непрочитанных сообщений" src="./styles/subsilver2/imageset/forum_read.gif" />
+      </td>
+      <td width="100%" class="row1">
+       <a href="./viewforum.php?f=17&sid=0f62ad4588f08ccacec6626c4f1b59ed" class="forumlink">
+        Чат Commfort
+       </a>
+       <p class="forumdesc">
+       </p>
+      </td>
+      <td align="center" class="row2">
+       <p class="topicdetails">
+        0
+       </p>
+      </td>
+      <td align="center" class="row2">
+       <p class="topicdetails">
+        0
+       </p>
+      </td>
+      <td nowrap="nowrap" align="center" class="row2">
+       <p class="topicdetails">
+        Нет сообщений
+       </p>
+      </td>
+     </tr>
+    </tbody>
+   </table>
+   <span class="gensmall">
+    <a href="./ucp.php?mode=delete_cookies&sid=0f62ad4588f08ccacec6626c4f1b59ed">
+     Удалить cookies конференции
+    </a>
+    |
+    <a href="./memberlist.php?mode=leaders&sid=0f62ad4588f08ccacec6626c4f1b59ed">
+     Наша команда
+    </a>
+   </span>
+   <br />
+   <br clear="all" />
+   <table width="100%" cellspacing="1" cellpadding="0" style="margin-top: 5px;" class="tablebg">
+    <tbody>
+     <tr>
+      <td class="row1">
+       <p class="breadcrumbs">
+        <a href="./index.php?sid=0f62ad4588f08ccacec6626c4f1b59ed">
+         Список форумов
+        </a>
+       </p>
+       <p class="datetime">
+        Часовой пояс: UTC + 6 часов [ Летнее время ]
+       </p>
+      </td>
+     </tr>
+    </tbody>
+   </table>
+   <br clear="all" />
+   <table width="100%" cellspacing="1" class="tablebg">
+    <tbody>
+     <tr>
+      <td colspan="2" class="cat">
+       <h4>
+        Кто сейчас на конференции
+       </h4>
+      </td>
+     </tr>
+     <tr>
+      <td valign="middle" align="center" rowspan="2" class="row1">
+       <img alt="Кто сейчас на конференции" src="./styles/subsilver2/theme/images/whosonline.gif" />
+      </td>
+      <td width="100%" class="row1">
+       <span class="genmed">
+        Всего посетителей:
+        <strong>
+         1
+        </strong>
+        , из них зарегистрированных: 0, скрытых: 0 и гостей: 1 (основано на активности пользователей за последние 5 минут)
+        <br />
+        Больше всего посетителей (
+        <strong>
+         107
+        </strong>
+        ) здесь было 22 ноя 2013, 06:51
+        <br />
+        <br />
+        Зарегистрированные пользователи: нет зарегистрированных пользователей
+       </span>
+      </td>
+     </tr>
+     <tr>
+      <td class="row1">
+       <b class="gensmall">
+        Легенда ::
+        <a href="./memberlist.php?mode=group&g=5&sid=0f62ad4588f08ccacec6626c4f1b59ed" style="color:#AA0000">
+         Администраторы
+        </a>
+        ,
+        <a href="./memberlist.php?mode=group&g=4&sid=0f62ad4588f08ccacec6626c4f1b59ed" style="color:#00AA00">
+         Супермодераторы
+        </a>
+       </b>
+      </td>
+     </tr>
+    </tbody>
+   </table>
+   <br clear="all" />
+   <table width="100%" cellspacing="1" class="tablebg">
+    <tbody>
+     <tr>
+      <td colspan="2" class="cat">
+       <h4>
+        Дни рождения
+       </h4>
+      </td>
+     </tr>
+     <tr>
+      <td valign="middle" align="center" class="row1">
+       <img alt="Дни рождения" src="./styles/subsilver2/theme/images/whosonline.gif" />
+      </td>
+      <td width="100%" class="row1">
+       <p class="genmed">
+        Сегодня нет дней рождения.
+       </p>
+      </td>
+     </tr>
+    </tbody>
+   </table>
+   <br clear="all" />
+   <table width="100%" cellspacing="1" class="tablebg">
+    <tbody>
+     <tr>
+      <td colspan="2" class="cat">
+       <h4>
+        Статистика
+       </h4>
+      </td>
+     </tr>
+     <tr>
+      <td class="row1">
+       <img alt="Статистика" src="./styles/subsilver2/theme/images/whosonline.gif" />
+      </td>
+      <td width="100%" valign="middle" class="row1">
+       <p class="genmed">
+        Всего сообщений:
+        <strong>
+         369
+        </strong>
+        | Тем:
+        <strong>
+         120
+        </strong>
+        | Пользователей:
+        <strong>
+         100
+        </strong>
+        | Новый пользователь:
+        <strong>
+         <a href="./memberlist.php?mode=viewprofile&u=19300&sid=0f62ad4588f08ccacec6626c4f1b59ed">
+          anoxilsomia
+         </a>
+        </strong>
+       </p>
+      </td>
+     </tr>
+    </tbody>
+   </table>
+   <br clear="all" />
+   <form action="./ucp.php?mode=login&sid=0f62ad4588f08ccacec6626c4f1b59ed" method="post">
+    <table width="100%" cellspacing="1" class="tablebg">
+     <tbody>
+      <tr>
+       <td class="cat">
+        <h4>
+         <a href="./ucp.php?mode=login&sid=0f62ad4588f08ccacec6626c4f1b59ed">
+          Вход
+         </a>
+        </h4>
+       </td>
+      </tr>
+      <tr>
+       <td align="center" class="row1">
+        <span class="genmed">
+         Имя пользователя:
+        </span>
+        <input type="text" size="10" name="username" class="post" />
+        <span class="genmed">
+         Пароль:
+        </span>
+        <input type="password" size="10" name="password" class="post" />
+        <span class="gensmall">
+         Автоматически входить при каждом посещении
+        </span>
+        <input type="checkbox" name="autologin" class="radio" />
+        <input type="submit" value="Вход" name="login" class="btnmain" />
+       </td>
+      </tr>
+     </tbody>
+    </table>
+    <input type="hidden" value="./index.php?sid=0f62ad4588f08ccacec6626c4f1b59ed" name="redirect" />
+   </form>
+   <br clear="all" />
+   <table class="legend">
+    <tbody>
+     <tr>
+      <td width="20" align="center">
+       <img width="46" height="25" title="Непрочитанные сообщения" alt="Непрочитанные сообщения" src="./styles/subsilver2/imageset/forum_unread.gif" />
+      </td>
+      <td>
+       <span class="gensmall">
+        Непрочитанные сообщения
+       </span>
+      </td>
+      <td>
+      </td>
+      <td width="20" align="center">
+       <img width="46" height="25" title="Нет непрочитанных сообщений" alt="Нет непрочитанных сообщений" src="./styles/subsilver2/imageset/forum_read.gif" />
+      </td>
+      <td>
+       <span class="gensmall">
+        Нет непрочитанных сообщений
+       </span>
+      </td>
+      <td>
+      </td>
+      <td width="20" align="center">
+       <img width="46" height="25" title="Нет непрочитанных сообщений [ Тема закрыта ]" alt="Нет непрочитанных сообщений [ Тема закрыта ]" src="./styles/subsilver2/imageset/forum_read_locked.gif" />
+      </td>
+      <td>
+       <span class="gensmall">
+        Форум закрыт
+       </span>
+      </td>
+     </tr>
+    </tbody>
+   </table>
+   <img width="1" height="1" alt="cron" src="./cron.php?cron_type=tidy_cache&sid=0f62ad4588f08ccacec6626c4f1b59ed" />
+  </div>
+  <div id="wrapfooter">
+   <span class="copyright">
+    Создано на основе
+    <a href="https://www.phpbb.com/">
+     phpBB
+    </a>
+    ® Forum Software © phpBB Group
+    <br />
+    <a href="http://www.phpbbguru.net/">
+     Русская поддержка phpBB
+    </a>
+   </span>
+  </div>
+ </body>
+</html>

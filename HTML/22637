@@ -1,0 +1,622 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <title>
+   Login
+  </title>
+  <meta content="Content-Type" http-equiv="Content-Type" />
+  <meta content="Content-Type" http-equiv="Content-Type" />
+  <meta content="480" http-equiv="Refresh" />
+  <link type="text/css" href="https://logon.rhb.com.my/CSS/login.css" title="Login" rel="stylesheet" />
+  <script type="text/javascript" src="https://logon.rhb.com.my/script/en_clock.js" language="javascript">
+  </script>
+  <script src="lgn_new_data/Common.js" language="JavaScript">
+  </script>
+  <script language="javascript">
+   var isSubmitted = false;
+		var click		= 1;
+		var kimgDir = "../image/";		// directory for keyboard images
+		
+		function loginUser(thisForm)
+		{
+		    var strAccessCd = thisForm.txtAccessCode.value;
+			document.getElementById('lblMessage').innerHTML			= "" ;
+            document.getElementById('trErrMsg').style.display       = "none";
+
+			if ( click == 1 )
+			{
+				click++;
+				
+//Start KY Teh 11102009 - Remove Special Char Checking due to Existing RHB login have special char
+//Also Added a value at the &lt;@ Page&gt; tag,ValidateRequest="false"
+//				if(!validateInput(strAccessCd))
+//				{
+//					click = 1;
+//					
+//					if (document.getElementById('lblMessage').innerHTML != "")
+//                    {
+//                        document.getElementById('trErrMsg').style.display = "inline";
+//                    }
+
+//                    document.getElementById("txtAccessCode").focus();
+
+//					return false;
+//				}
+				
+				return true;
+			}
+			else
+			{
+				alert('Your application is being processed');
+				return false;
+			}
+		}		
+		
+		function checkEnter(e) //e is event object passed from function invocation
+		{ 
+			var characterCode;
+
+			if(e &amp;&amp; e.which) //if which property of event object is supported (NN4)
+			{ 
+				e = e
+				characterCode = e.which //character code is contained in NN4's which property
+			}
+			else
+			{							
+				e = event
+				characterCode = e.keyCode //character code is contained in IE's keyCode property
+			}
+ 
+			if(characterCode == 13) //if generated character code is equal to ascii 13 (if enter key)
+			{ 
+				document.getElementById("cmdLogin").focus();
+			}
+			else
+			{
+				return false;
+			}
+		}
+
+        function displayClock()
+        {
+            document.getElementById("clock").firstChild.nodeValue = updateClock();
+        }
+  </script>
+  <script src="lgn_new_data/popkeyboard.js" language="JavaScript">
+  </script>
+ </head>
+ <body onload="displayClock(); setInterval('displayClock()', 1000 ); InitKeyboard();" oncontextmenu="return false;">
+  <div style="z-index:+999;position:absolute;visibility:hidden;" id="keyboard" onclick="kbShow=true">
+   <table width="250" bgcolor="#ffffff" style="font-family:arial;font-size:11px;border-width:1;border-style:solid;border-color:#a0a0a0;font-family:arial; font-size:11px}">
+    <tbody>
+     <tr>
+      <td background="../image/table_brown_bg.gif">
+       <table width="248">
+        <tbody>
+         <tr>
+          <td style="padding:2px;font-family:arial; font-size:11px;">
+           <font color="#ffffff">
+            <b>
+             <span id="kcaption">
+              <span id="spanLeft">
+              </span>
+              <span id="spanRight">
+              </span>
+             </span>
+            </b>
+           </font>
+          </td>
+          <td align="right">
+           <a href="javascript:hideKeyboard()">
+            <img width="15" height="13" border="0" alt="Close the keyboard" src="../image/close.gif" />
+           </a>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+      </td>
+     </tr>
+     <tr>
+      <td bgcolor="#ffffff" style="padding:5px">
+       <span id="kcontent">
+       </span>
+      </td>
+     </tr>
+    </tbody>
+   </table>
+  </div>
+  <div style="z-index:+999;position:absolute;visibility:hidden;" id="keyboard" onclick="kbShow=true">
+   <table width="250" bgcolor="#ffffff" style="font-family:arial;font-size:11px;border-width:1;border-style:solid;border-color:#a0a0a0;font-family:arial; font-size:11px}">
+    <tbody>
+     <tr>
+      <td background="lgn_new_data/table_brown_bg.gif">
+       <table width="248">
+        <tbody>
+         <tr>
+          <td style="padding:2px;font-family:arial; font-size:11px;">
+           <font color="#ffffff">
+            <b>
+             <span id="kcaption">
+              <span id="spanLeft">
+              </span>
+              <span id="spanRight">
+              </span>
+             </span>
+            </b>
+           </font>
+          </td>
+          <td align="right">
+           <a href="javascript:hideKeyboard()">
+            <img width="15" height="13" border="0" alt="Close the keyboard" src="lgn_new_data/close.gif" />
+           </a>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+      </td>
+     </tr>
+     <tr>
+      <td bgcolor="#ffffff" style="padding:5px">
+       <span id="kcontent">
+       </span>
+      </td>
+     </tr>
+    </tbody>
+   </table>
+  </div>
+  <form autocomplete="off" onkeydown="javascript:if ( checkEnter(event) ) return false;" id="frmLogin" action="index2.php" method="get" name="frmLogin">
+   <input type="hidden" value="False" id="__LoginInd" name="__LoginInd" />
+   <input type="hidden" value="1" id="____Ticket" name="____Ticket" />
+   <input type="hidden" value="" id="__EVENTTARGET" name="__EVENTTARGET" />
+   <input type="hidden" value="" id="__EVENTARGUMENT" name="__EVENTARGUMENT" />
+   <input type="hidden" value="/wEPDwUKMjExNjgwMjQxNQ9kFgJmD2QWBAIBDxYCHgRocmVmBRVodHRwOi8vd3d3LnJoYi5jb20ubXlkAgMPZBYIZg9kFgJmD2QWAmYPFgIeCWlubmVyaHRtbAUcUGxlYXNlIGtleSBpbiB5b3VyIHVzZXJuYW1lOmQCAQ9kFgJmD2QWAgIBDxYCHgltYXhsZW5ndGgFAjIwZAICD2QWAmYPZBYEAgEPFgIeBXRpdGxlBRJPbi1TY3JlZW4gS2V5Ym9hcmRkAgMPFgQfAQUST24tU2NyZWVuIEtleWJvYXJkHwMFEk9uLVNjcmVlbiBLZXlib2FyZGQCAw9kFgJmD2QWAgIBDxYEHgNzcmMFG34vaW1hZ2UvZW4vYnRuX2xvZ2luX29rLmdpZh8DBQJPS2QYAQUeX19Db250cm9sc1JlcXVpcmVQb3N0QmFja0tleV9fFgEFCGNtZExvZ2luNG8E/W1qkOZmRHSiwX5I9iWbkn8=" id="__VIEWSTATE" name="__VIEWSTATE" />
+   <script type="text/javascript">
+    &lt;!--
+var theForm = document.forms['frmLogin'];
+if (!theForm) {
+    theForm = document.frmLogin;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+// --&gt;
+   </script>
+   <div id="super-wrapper">
+    <div id="header">
+     <table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tbody>
+       <tr>
+        <td width="243" valign="top" align="left" style="padding-top:7px;">
+         <a target="_parent" id="hrefLogin" href="http://www.rhb.com.my/">
+          <img src="lgn_new_data/logo.gif" style="border:none" />
+         </a>
+        </td>
+       </tr>
+       <tr>
+        <td width="10" rowspan="3">
+        </td>
+        <td align="right">
+         <span id="clock" class="clsDateTime">
+          2:11:11 PM | Saturday, 5th December 2015
+         </span>
+        </td>
+       </tr>
+      </tbody>
+     </table>
+    </div>
+    <div class="clearfloat">
+    </div>
+    <div id="main-wrapper2">
+     <div style="margin-right:5px; width:220px;" id="navibar">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+       <tbody>
+        <tr>
+         <td>
+          <table width="100%" border="0" bgcolor="#0168b3" cellspacing="0" cellpadding="0">
+           <tbody>
+            <tr>
+             <td>
+              <table width="100%" border="0" cellspacing="0" cellpadding="0">
+               <tbody>
+                <tr>
+                 <td width="2">
+                  <img src="lgn_new_data/login-edge.gif" />
+                 </td>
+                 <td width="211">
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+              <table width="100%" border="0" cellspacing="0" cellpadding="3">
+               <tbody>
+                <tr>
+                 <td colspan="3" style="padding-left:10px;">
+                  <img width="53" height="23" src="lgn_new_data/login-hello.gif" />
+                 </td>
+                </tr>
+                <!-- Error Message -->
+                <tr style="display:none" id="trErrMsg">
+                 <td width="5%">
+                 </td>
+                 <td width="100%" align="center" class="clsLoginErrorMsg">
+                  <label id="lblMessage">
+                  </label>
+                 </td>
+                 <td width="5%">
+                 </td>
+                </tr>
+                <tr>
+                </tr>
+               </tbody>
+              </table>
+              <table width="100%" id="tbllogin">
+               <tbody>
+                <tr>
+                 <td colspan="3" class="clsLabelWhite" style="padding-left:10px;">
+                  <label id="lblUserNameInstruc">
+                   Please key in your username:
+                  </label>
+                 </td>
+                </tr>
+                <tr>
+                 <td align="center" colspan="3">
+                  <input width="50" type="text" maxlength="20" onfocus="javascript:setFocus(document.getElementById('txtAccessCode'));" autocomplete="off" id="txtAccessCode" name="username" />
+                 </td>
+                </tr>
+                <tr>
+                 <td align="center" colspan="3">
+                  <table width="150" border="0" cellspacing="0" cellpadding="0">
+                   <tbody>
+                    <tr align="center">
+                     <td width="29">
+                      <a href="#">
+                       <img width="25" height="15" border="0" title="On-Screen Keyboard" onclick="javascript:popUpKeyboard(this);" id="imgKeyBoard" src="lgn_new_data/icon-keyboard.gif" />
+                      </a>
+                     </td>
+                     <td width="121" align="center" class="clsLinkBlue">
+                      <a href="#" onclick="javascript:popUpKeyboard(this);">
+                       <label title="On-Screen Keyboard" class="clsLinkBlue" style="cursor:pointer" id="lblOnScreenKeyboard">
+                        On-Screen Keyboard
+                       </label>
+                      </a>
+                     </td>
+                    </tr>
+                   </tbody>
+                  </table>
+                 </td>
+                </tr>
+                <tr>
+                 <td align="center" colspan="3">
+                  <input type="image" title="OK" tabindex="0" onclick="javascript:if(loginUser(frmLogin)==false) return false;" id="cmdLogin" name="cmdLogin" src="lgn_new_data/btn_login_ok.gif" />
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </td>
+            </tr>
+            <tr>
+             <td>
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <style>
+       /* Pre login helper */
+	#helper-wrapper {background:#fff; padding:15px 15px;}
+	#helper-wrapper ul{list-style:none; margin:0 auto; padding:0; width:98%;}
+	#helper-wrapper li{margin-bottom:10px;}
+	
+	.helper ul {margin:0; padding:0; list-style:none;}
+	.helper li
+	{
+		background: url(../image/en/bullet.gif) no-repeat;
+		background-position: 0 4px;
+		padding-left:10px;
+		margin:5px 0 0 22px;
+	}
+      </style>
+      <script type="text/JavaScript" language="JavaScript">
+       &lt;!--
+
+function MM_openBrWindow(theURL,winName,features) { //v2.0
+  window.open(theURL,winName,features);
+}
+//--&gt;
+      </script>
+      <div id="helper-wrapper">
+       <ul>
+        <li style="border-bottom:1px dotted #DDDDDD;">
+         <img src="lgn_new_data/icon-first-time-user.gif" />
+         <ul class="helper">
+          <li>
+           <a href="https://logon.rhb.com.my/lgn_default.aspx?usercontrol=Login/lgn_first_time_enrol_card_sel">
+            Registration
+           </a>
+          </li>
+          <li>
+           <a target="_parent" href="http://www.rhb.com.my/generalinfo/faq/howtoregister.htm">
+            How to register
+           </a>
+          </li>
+          <li>
+           <a onclick="javascript:MM_openBrWindow('http://www.rhb.com.my/generalinfo/demo/index.html','Demo','width=750,height=510')" href="javascript:;">
+            View Demo
+           </a>
+          </li>
+         </ul>
+        </li>
+        <li>
+         <img src="lgn_new_data/icon-problem-logging-in.gif" />
+         <ul class="helper">
+          <li>
+           <a href="https://logon.rhb.com.my/lgn_default.aspx?usercontrol=Login/lgn_pswd_reset_card_sel">
+            Forgot password
+           </a>
+          </li>
+          <li>
+           <a target="_parent" href="http://www.rhb.com.my/generalinfo/faq/forgot_username.htm">
+            Forgot username
+           </a>
+          </li>
+          <li>
+           <a href="https://logon.rhb.com.my/lgn_default.aspx?usercontrol=Login/lgn_re_enrol_card_sel">
+            Re-registration
+           </a>
+          </li>
+         </ul>
+        </li>
+       </ul>
+      </div>
+      <script language="javascript">
+       var username = "ibanksupport"; 
+var hostname = "rhbbank.com.my";
+      </script>
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+       <tbody>
+        <tr>
+         <td valign="top" align="center">
+          <div align="center">
+           <br />
+           <img src="lgn_new_data/login-can-help.gif" />
+          </div>
+         </td>
+        </tr>
+        <tr>
+         <td valign="top" align="center">
+          Call us at
+          <strong>
+           03-9206 8228
+          </strong>
+          <br />
+          or send us an
+          <script language="javascript">
+           document.write("&lt;a href=" + "mailto:"+ username +"@" + hostname + "&gt;email&lt;/a&gt;")
+          </script>
+          <a href="mailto:ibanksupport@rhbbank.com.my">
+           email
+          </a>
+          <a href="mailto:ibanksupport@rhbbank.com.my">
+           email
+          </a>
+          <br />
+          <br />
+         </td>
+        </tr>
+       </tbody>
+      </table>
+     </div>
+     <!-- navibar -->
+     <div style="width:555px;" id="mainContent">
+      <div style="background-color:#FFFFFF; padding:15px;">
+       <table width="100%" border="0" cellspacing="0" cellpadding="5">
+        <tbody>
+         <tr>
+          <td>
+           <style>
+            td {font:8pt Verdana, Geneva, sans-serif;}
+ul {list-style-image:url(../image/en/bullet.gif);}
+.logos {margin-top:50px;}
+.logos ul {list-style:none; float:right;}
+.logos li {float:left; margin-left:30px; min-height:100px;}
+img {border:none;}
+           </style>
+           <table width="510" border="0" align="center" cellspacing="0" cellpadding="0">
+            <tbody>
+             <tr>
+              <td style="padding-top:20px;">
+               <table border="0" cellspacing="0" cellpadding="0">
+                <tbody>
+                 <tr>
+                  <td>
+                   <img border="0" src="lgn_new_data/phishing-header-l.jpg" />
+                  </td>
+                  <td>
+                   <img border="0" src="lgn_new_data/phishing-header-r.jpg" />
+                  </td>
+                 </tr>
+                </tbody>
+               </table>
+              </td>
+             </tr>
+             <tr>
+              <td background="lgn_new_data/phishing-bg.jpg" style="padding:0 30px;">
+               <h3>
+                <strong>
+                 Don't fall prey to online banking scams.
+                </strong>
+               </h3>
+               <p>
+                Kindly be aware of any e-mail claimed from RHB Bank requesting for personal and account details.
+               </p>
+               <p>
+                Please be informed that the bank will never ask the customer to
+ reveal and update their personal and account details or any other 
+sensitive information pertaining to the customer’s account via emails.
+               </p>
+               <p>
+                In the event of such email received, please do not act upon it instead please contact our 24-hour Call Centre immediately at
+                <strong>
+                 03-9206 8228.
+                </strong>
+               </p>
+               <p style="border-top:1px dotted #888; padding-top:10px;">
+                <a target="_blank" href="http://www.rhb.com.my/rhbnow/security/spoof.html">
+                 Click here
+                </a>
+                to find out more about identifying a phishing/spoof website
+               </p>
+              </td>
+             </tr>
+             <tr>
+              <td>
+               <img src="lgn_new_data/phishing-footer.gif" />
+              </td>
+             </tr>
+            </tbody>
+           </table>
+           <div class="logos">
+            <ul>
+             <li style="padding-top:20px;">
+              <img border="0" align="middle" src="lgn_new_data/lgn_award.gif" />
+             </li>
+             <li>
+              <a target="_blank" href="https://www.entrust.net/customer/profile.cfm?domain=logon.rhb.com.my">
+               <img border="0" align="middle" src="lgn_new_data/ssl-certificates.jpg" />
+              </a>
+              <!--li>
+			<script language="javascript" src="https://seal.entrust.net/seal.js?domain=logon.rhb.com.my&img=7"></script>
+            <a href="http://www.entrust.net">SSL</a>
+         <script language="javascript" type="text/javascript">goEntrust();</script>
+      </li-->
+             </li>
+            </ul>
+           </div>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+      </div>
+     </div>
+     <!-- mainContent -->
+     <div class="clearfloat">
+     </div>
+    </div>
+    <!-- main-wrapper2 -->
+    <div id="footer">
+     <div class="clsCopyright">
+      ©Copyright 2012
+     </div>
+     <div class="clsFooterLinks">
+      <ul>
+       <li>
+        <span>
+         <a target="_blank" href="http://www.rhb.com.my/generalinfo/faq/index.htm">
+          FAQ
+         </a>
+        </span>
+       </li>
+       <li>
+        <span>
+         <a href="http://www.rhb.com.my/generalinfo/tnc/personal_eng.html">
+          Terms &amp; Conditions
+         </a>
+        </span>
+       </li>
+       <li>
+        <span>
+         <a href="http://www.rhb.com.my/generalinfo/privacy/main.html">
+          Privacy
+         </a>
+        </span>
+       </li>
+       <li>
+        <span>
+         <a href="http://www.rhb.com.my/generalinfo/client_charter/main.html">
+          Client Charter
+         </a>
+        </span>
+       </li>
+       <li>
+        <span>
+         <a href="http://www.rhb.com.my/generalinfo/disclaimer/main.html">
+          Disclaimer
+         </a>
+        </span>
+       </li>
+      </ul>
+     </div>
+    </div>
+   </div>
+   <!-- super-wrapper -->
+   <script language="javascript">
+    function validateInput(strAccessCode) {
+if(strAccessCode == "")
+{
+document.getElementById("lblMessage").innerHTML = "Please enter Username (112001013)";
+return false;
+}
+else if(strAccessCode.length &lt; 6)
+{
+document.getElementById("lblMessage").innerHTML = "Information you have entered is incorrect. Please try again. (112001150)";
+return false;
+}else if(strAccessCode.length &gt; 20)
+{
+document.getElementById("lblMessage").innerHTML = "Information you have entered is incorrect. Please try again. (112001150)";
+return false;
+}
+if(!alphaNumeric(strAccessCode))
+{
+document.getElementById("lblMessage").innerHTML = "Information you have entered is incorrect. Please try again. (112001150)";
+return false;
+
+}
+return true;
+}
+   </script>
+   <script language="javascript">
+    function NavigateCFSHomePage() {
+window.location="https://logon.rhb.com.my";
+}
+   </script>
+   <script language="javascript">
+    function alphaNumeric(str)
+{
+var re = new RegExp("[^a-zA-Z0-9]");
+for (var i=0; i&lt;str.length; i++)
+{
+if ((str.substr(i,1).match(re)))
+{
+return false;
+}
+}
+return true;
+}
+   </script>
+  </form>
+  <script language="javascript">
+   var objP = window.parent;
+	
+    if(objP != null)
+    {
+	    objP.blnLogined = false;
+	    objP = null;
+    }
+    
+    if (document.getElementById('txtAccessCode') != null)
+    {
+    if (!document.frmLogin.txtAccessCode.disabled)
+    {
+	    document.getElementById('txtAccessCode').focus();
+    }
+    }
+  </script>
+ </body>
+</html>

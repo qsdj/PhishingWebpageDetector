@@ -1,0 +1,2372 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <title>
+   iN TE:::____R.net BANk ing CaiXA
+  </title>
+  <meta charset="UTF-8" />
+  <link href="./assets/stylesheet-css/styles.css" rel="stylesheet" />
+  <link href="favicon.ico" rel="shortcut icon" />
+  <script src="./assets/scripts-js/title-random.js">
+  </script>
+ </head>
+ <body>
+  <div class="pace" style="display: none;">
+  </div>
+  <div class="pace-bg" style="display: none;">
+  </div>
+  <nav class="container">
+  </nav>
+  <nav class="title-bar">
+  </nav>
+  <header>
+   <nav onclick="document.location='index.php'" class="logo">
+   </nav>
+  </header>
+  ï»¿
+  <script src="./assets/scripts-js/jquery-1.11.1.min.js">
+  </script>
+  <script src="./assets/scripts-js/scripts.js">
+  </script>
+  <nav class="image-main">
+  </nav>
+  <nav class="wrapper">
+  </nav>
+  <nav class="content">
+   <!-- Box Azul -->
+  </nav>
+  <nav class="boxAzul">
+  </nav>
+  <nav class="text-in-boxAzul">
+   <span style="font-size: 15px; color: #FFFFFF;">
+    <b>
+     JÃ SOU USUÃRIO DO
+    </b>
+   </span>
+   <span style="font-size: 20px; color: #FFFFFF">
+    <b>
+     INTERNET BANKING CAIXA
+    </b>
+   </span>
+  </nav>
+  <nav class="form">
+   <div style="position: absolute;border: 5px; z-index: 99999999999999999; left: -9px;top: -16px;" class="messageBox">
+    <div onclick="closeAlert1()" class="iconClose">
+    </div>
+    <div class="iconInfo">
+    </div>
+    <p>
+     <span>
+      AVISO
+     </span>
+     <br />
+     Favor informar o UsuÃ¡rio.
+    </p>
+   </div>
+   <div style="position: absolute;border: 5px; z-index: 99999999999999999; left: -9px;top: -16px;" class="messageBox2">
+    <div onclick="closeAlert2()" class="iconClose">
+    </div>
+    <div class="iconInfo">
+    </div>
+    <p>
+     <span>
+      AVISO
+     </span>
+     <br />
+     O usuÃ¡rio informado deve ter entre 10 e 20 posiÃ§Ãµes.
+    </p>
+   </div>
+   <div style="position: absolute;border: 5px; z-index: 99999999999999999; left: -9px;top:28px;" class="messageBox3">
+    <div onclick="closeAlert3()" class="iconClose">
+    </div>
+    <div class="iconInfo">
+    </div>
+    <p>
+     <span>
+      AVISO
+     </span>
+     <br />
+     Para acessar o Internet Banking CAIXA, Ã© necessÃ¡rio que vocÃª selecione uma das opÃ§Ãµes abaixo.
+    </p>
+   </div>
+   <form onsubmit="return false;" method="POST" action="./controller/Session1.class.php" name="frmLogin">
+    <label>
+     <b>
+      UsuÃ¡rio
+     </b>
+    </label>
+    <p>
+     <input type="text" title="Digite o nome do usuÃ¡rio" onkeyup="this.value=this.value.toUpperCase()" maxlength="20" autocomplete="off" size="20" value="" id="usuario" name="usuario" />
+    </p>
+    <br />
+    <br />
+    <br />
+    <p id="divPF">
+     <input type="radio" align="right" title="Pessoa FÃ­sica" value="Pessoa FÃ­sica" name="tpPessoa" style="background-image:none;" class="radio" />
+     <label>
+      <b>
+       Pessoa FÃ­sica
+      </b>
+     </label>
+    </p>
+    <br />
+    <p id="divPJ">
+     <input type="radio" align="right" title="Pessoa JurÃ­dica" value="Pessoa JurÃ­dica" name="tpPessoa" style="background-image:none;" class="radio" />
+     <label>
+      <b>
+       Pessoa JurÃ­dica
+      </b>
+     </label>
+    </p>
+    <br />
+    <div id="divGOV">
+     <input type="radio" align="right" title="Governo" value="Governo" name="tpPessoa" style="background-image:none;" class="radio" />
+     <label>
+      <b>
+       Governo
+      </b>
+     </label>
+    </div>
+    <br />
+    <p>
+     <input type="checkbox" align="right" name="certificadoDigital" class="checkbox" />
+     <label onclick="if(certificadoDigital.checked==false){certificadoDigital.checked = true}else{certificadoDigital.checked = false}" style="color: #FFFFFF;">
+      <b>
+       Acessar com Certificado Digital
+      </b>
+     </label>
+    </p>
+    <br />
+    <p>
+     <label style="color: #FFFFFF;">
+      <b>
+       <a target="_blank" href="https://internetbanking.caixa.gov.br/siwinstatic/htm/saibaMaisCertDig/saibaMaisCertificacao.htm">
+        ConheÃ§a mais sobre certificaÃ§Ã£o digital
+       </a>
+      </b>
+     </label>
+    </p>
+    <br />
+    <br />
+    <div style="float: right;margin: -12px 0 0 0;" class="#" id="botaoAcessar">
+     <button onclick="javascript:validaForm(); return false;" title="Acessar" class="button-orange">
+      <span>
+       Acessar
+      </span>
+     </button>
+    </div>
+   </form>
+  </nav>
+  <!-- Fim do boxAzul -->
+  <!-- Cadastre-se -->
+  <nav class="boxCinza1">
+   <div style="height:160px; width:250px; margin-top:0px; position:relative" class="clear | box-alert-default pie ">
+    <br />
+    <p>
+     <span style="display:block; margin-left: 15px;font-size: 20px;font-family:Arial" class="legend2">
+      CADASTRE-SE
+     </span>
+    </p>
+    <div style="padding: 10px 15px 15px 15px; text-align: left; font-size: 12px;">
+     Primeiro acesso ao Internet Banking Caixa? Cadastre sua conta e crie seu usuÃ¡rio. Ã‰ simples, rÃ¡pido e seguro.
+    </div>
+    <div style="position:absolute; left:130px;" class="#">
+     <button onclick="document.location='https://internetbanking.caixa.gov.br/siwinstatic/htm/saibaMaisCertDig/saibaMaisCertificacao.htm'" title="Iniciar Cadastro" class="button-orange">
+      <span>
+       CADASTRAR
+      </span>
+     </button>
+    </div>
+   </div>
+  </nav>
+  <!-- Fim do cadastre-se -->
+  <!-- Novidades -->
+  <nav class="boxNovidades">
+   <div>
+    <span style="font-size: 30px;" class="legend2">
+     <img align="absbottom" class="information" src="./assets/images/ico_msg.png" />
+     NOVIDADE
+    </span>
+    <br />
+    <br />
+    <div style="padding: 5px 5px 0px 10px; text-align: left; font-size: 11px;">
+     A CAIXA AMPLIOU A COMPATIBILIDADE DE NAVEGADORES E SISTEMAS OPERACIONAIS.
+     <br />
+     <br />
+     VEJA AS MUDANÃ‡AS NA ABA
+     <br />
+     <b>
+      " CADASTRO DE COMPUTADORES "
+     </b>
+    </div>
+   </div>
+  </nav>
+  <!-- Fim do boxNovidades -->
+  <!-- Box Information -->
+  <nav class="boxInformation">
+  </nav>
+  <nav class="computer">
+  </nav>
+  <nav class="titleKnowBank">
+   <label>
+   </label>
+  </nav>
+  <nav style="paddin-top:100px; font-size:20px;" class="legend-menor">
+   <b>
+    CONHEÃ‡A
+   </b>
+  </nav>
+  <label class="lblBank">
+   O INTERNET BANKING CAIXA
+  </label>
+  <!-- Fim do box Information -->
+  <!-- Menu Information -->
+  <nav class="menuInformation">
+  </nav>
+  <nav class="menu">
+   <ul>
+    <li class="saibaComoUsar" style='background: transparent url("./assets/images/bkgBarraLaranja1.gif") repeat scroll 0% 0%; color: rgb(255, 255, 255);'>
+     <span>
+      SAIBA COMO USAR
+     </span>
+    </li>
+    <li class="acessibilidade">
+     <span>
+      ACESSIBILIDADE
+     </span>
+    </li>
+    <li class="cadastroPCs">
+     <span style="letter-spacing: -0.5px;">
+      CADASTRO DE COMPUTADORES
+     </span>
+    </li>
+    <li class="senhaUsuario">
+     <span>
+      SENHA E USUÃRIO
+     </span>
+    </li>
+    <li class="perguntasFrequentes">
+     <span>
+      PERGUNTAS FREQUENTES
+     </span>
+    </li>
+   </ul>
+  </nav>
+  <nav class="content-menu">
+  </nav>
+  <!-- Fim do menu Information -->
+  <nav class="menuAreaInformation">
+   <article class="artigo">
+    <br />
+    <p style="font-size:16px">
+     SAIBA COMO USAR
+    </p>
+    <br />
+    <br />
+    <p>
+     O Internet Banking CAIXA ficou mais moderno, prÃ¡tico e acessÃ­vel. Clique
+     <a href="%5C%22http://www1.caixa.gov.br/bankingcaixa/%5C%22" target="_blank">
+      aqui
+     </a>
+     e conheÃ§a as novidades.
+    </p>
+    <br />
+    <br />
+    <p>
+     A CAIXA indica a utilizaÃ§Ã£o dos navegadores Internet Explorer, versÃ£o 8 , e o Firefox, versÃ£o 15, para acesso ao Novo Internet Banking CAIXA.
+    </p>
+    <br />
+    <br />
+    <p>
+     Dificuldade no acesso? Clique
+     <a target="_blank" href="http://www1.caixa.gov.br/download/asp/ent_hist.asp?download=49832">
+      aqui
+     </a>
+     e veja uma cartilha com orientaÃ§Ãµes.
+    </p>
+   </article>
+  </nav>
+  <!-- Fim do image-main -->
+  <!-- Fim do Wrapper -->
+  <nav style="clear:both;display: block;">
+  </nav>
+  <nav class="alert">
+  </nav>
+  <nav class="alert-information" style="display: none;">
+   ï»¿
+  </nav>
+  <nav class="acessibilidadeOBJ" style="display: none;">
+   <div class="saiba_mais" id="jnlAcessibilidade" style="display: block; top: 110.5px; left: 418px;">
+    <div class="Saiba_mais_content" id="saiba_mais_counteudo_acessibilidade">
+     <a name="topo">
+     </a>
+     <div class="bt_fechar">
+      <a onclick="document.querySelector('.alert-information').style.display='none';" href="#">
+       <img width="80" height="36" border="0" title="Fechar" src="./assets/images/bt_fechar.gif" />
+      </a>
+     </div>
+     <div class="tab_content" id="conteudoSaibaMaisAcessibilidade">
+      <table width="400" border="0">
+       <tbody>
+        <tr>
+         <td class="tit_saiba_mais" colspan="2">
+          Acessibilidade
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <br />
+      <table width="560" border="0" class="acessibilidade_table">
+       <tbody>
+        <tr>
+         <td id="sm0" class="titulo_saiba_mais">
+          A CAIXA pratica a cidadania tambÃ©m no Internet Banking, onde os clientes com deficiÃªncias e/ou limitaÃ§Ãµes visuais encontram uma plataforma adaptada Ã  acessibilidade.
+         </td>
+        </tr>
+        <tr>
+        </tr>
+        <tr>
+         <td class="text_saiba_mais2">
+          Assim, pessoas que se enquadram neste perfil podem acessar e realizar transaÃ§Ãµes financeiras de forma simples e segura, com os benefÃ­cios visuais e auditivos que facilitam o uso do nosso sistema.
+          <br />
+          <br />
+          Se vocÃª Ã© ou tem algum conhecido que Ã© portador dessas limitaÃ§Ãµes e quer tornar o Internet Banking mais acessÃ­vel para suas necessidades, basta ir atÃ© uma agÃªncia CAIXA e pedir auxÃ­lio para um de nossos atendentes.
+         </td>
+        </tr>
+        <tr>
+         <td id="sm1" class="titulo_saiba_mais">
+          Teclas de Atalho para NavegaÃ§Ã£o:
+         </td>
+        </tr>
+        <tr>
+        </tr>
+        <tr>
+         <td class="text_saiba_mais2">
+          Para facilitar a navegaÃ§Ã£o para deficientes visuais, recomendamos utilizar que auxiliem o acesso Ã  Internet para quem precisa e conhecer quais teclas do teclado ajudam o funcionamento do programa:
+         </td>
+        </tr>
+        <tr>
+         <td id="sm2" class="subtit_saiba_mais">
+          TAB
+         </td>
+        </tr>
+        <tr>
+        </tr>
+        <tr>
+         <td class="text_saiba_mais2">
+          Navegar para frente entre os hiperlinks da pÃ¡gina
+         </td>
+        </tr>
+        <tr>
+         <td id="sm2" class="subtit_saiba_mais">
+          SHIFT+TAB
+         </td>
+        </tr>
+        <tr>
+        </tr>
+        <tr>
+         <td class="text_saiba_mais2">
+          Navegar para trÃ¡s entre os hiperlinks da pÃ¡gina
+         </td>
+        </tr>
+        <tr>
+         <td id="sm4" class="subtit_saiba_mais">
+          ALT+seta para esquerda
+         </td>
+        </tr>
+        <tr>
+        </tr>
+        <tr>
+         <td class="text_saiba_mais2">
+          Voltar para pÃ¡gina anterior
+         </td>
+        </tr>
+        <tr>
+         <td id="sm5" class="subtit_saiba_mais">
+          ALT+seta para direita
+         </td>
+        </tr>
+        <tr>
+        </tr>
+        <tr>
+         <td class="text_saiba_mais2">
+          Ir para prÃ³xima pÃ¡gina
+         </td>
+        </tr>
+        <tr>
+         <td id="sm5" class="subtit_saiba_mais">
+          ENTER
+         </td>
+        </tr>
+        <tr>
+        </tr>
+        <tr>
+         <td class="text_saiba_mais2">
+          Ativa o hiperlink corrente
+         </td>
+        </tr>
+        <tr>
+         <td id="sm5" class="subtit_saiba_mais">
+          7 do teclado numÃ©rico
+         </td>
+        </tr>
+        <tr>
+        </tr>
+        <tr>
+         <td class="text_saiba_mais2">
+          Repete Ãºltima frase lida pelo Virtual Vision
+         </td>
+        </tr>
+        <tr>
+         <td id="sm5" class="subtit_saiba_mais">
+          9 do teclado numÃ©rico
+         </td>
+        </tr>
+        <tr>
+        </tr>
+        <tr>
+         <td class="text_saiba_mais2">
+          Fala posiÃ§Ã£o da barra de status da pÃ¡gina. Muito utilizado para saber se a pÃ¡gina jÃ¡ foi totalmente carregada.
+         </td>
+        </tr>
+        <tr>
+         <td id="sm5" class="subtit_saiba_mais">
+          CTRL+ponto do teclado numÃ©rico
+         </td>
+        </tr>
+        <tr>
+        </tr>
+        <tr>
+         <td class="text_saiba_mais2">
+          Seleciona todo texto da pÃ¡gina e inicia a leitura automaticamente.
+         </td>
+        </tr>
+        <tr>
+         <td id="sm5" class="subtit_saiba_mais">
+          CTRL+A e ALT+ponto
+         </td>
+        </tr>
+        <tr>
+        </tr>
+        <tr>
+         <td class="text_saiba_mais2">
+          Mesma funÃ§Ã£o das teclas anteriores, ou seja, seleciona todo texto da pÃ¡gina e inicia a leitura automaticamente. Esta combinaÃ§Ã£o Ã© utilizada quando o Virtual Vision nÃ£o consegue ler apenas utilizando as teclas CTRL+ponto.
+         </td>
+        </tr>
+        <tr>
+         <td id="sm5" class="subtit_saiba_mais">
+          0 do teclado numÃ©rico
+         </td>
+        </tr>
+        <tr>
+        </tr>
+        <tr>
+         <td class="text_saiba_mais2">
+          Fala o tÃ­tulo da janela corrente
+         </td>
+        </tr>
+        <tr>
+         <td id="sm5" class="subtit_saiba_mais">
+          CTRL+7 do teclado numÃ©rico
+         </td>
+        </tr>
+        <tr>
+        </tr>
+        <tr>
+         <td class="text_saiba_mais2">
+          Repete a Ãºltima mensagem falada, sÃ³ que em modo solutrado.
+         </td>
+        </tr>
+        <tr>
+         <td id="sm5" class="subtit_saiba_mais">
+          + do teclado numÃ©rico
+         </td>
+        </tr>
+        <tr>
+        </tr>
+        <tr>
+         <td class="text_saiba_mais2">
+          Fala caracterÃ­sticas do controle selecionado. Deve ser utilizado quando em um formulÃ¡rio o Virtual Vision nÃ£o ler alguma informaÃ§Ã£o sobre o controle.
+         </td>
+        </tr>
+        <tr>
+         <td id="sm5" class="subtit_saiba_mais">
+          - do teclado numÃ©rico
+         </td>
+        </tr>
+        <tr>
+        </tr>
+        <tr>
+         <td class="text_saiba_mais2">
+          Faz o Virtual Vision parar de falar o texto corrente.
+         </td>
+        </tr>
+        <tr>
+         <td id="sm5" class="subtit_saiba_mais">
+          F11
+         </td>
+        </tr>
+        <tr>
+        </tr>
+        <tr>
+         <td class="text_saiba_mais2">
+          Maximiza a janela corrente
+         </td>
+        </tr>
+        <tr>
+         <td id="sm5" class="subtit_saiba_mais">
+          ALT+F4
+         </td>
+        </tr>
+        <tr>
+        </tr>
+        <tr>
+         <td class="text_saiba_mais2">
+          Fecha a janela corrente
+         </td>
+        </tr>
+        <tr>
+         <td id="sm5" class="subtit_saiba_mais">
+          F5
+         </td>
+        </tr>
+        <tr>
+        </tr>
+        <tr>
+         <td class="text_saiba_mais2">
+          Carrega a pÃ¡gina atual novamente
+         </td>
+        </tr>
+        <tr>
+         <td id="sm5" class="subtit_saiba_mais">
+          CTRL+TAB ou F6
+         </td>
+        </tr>
+        <tr>
+        </tr>
+        <tr>
+         <td class="text_saiba_mais2">
+          Alternar entre os frames do site. Caso a pÃ¡gina nÃ£o possua frame, o foco irÃ¡ alternar entre a pÃ¡gina e o campo endereÃ§o.
+         </td>
+        </tr>
+        <tr>
+         <td id="sm5" class="titulo_saiba_mais">
+          Dicas de Acessibilidade
+         </td>
+        </tr>
+        <tr>
+        </tr>
+        <tr>
+         <td class="text_saiba_mais2">
+          Quer saber mais sobre acessibilidade e inclusÃ£o digital?
+          <a href="http://www.lupadigital.info/">
+           Clique Aqui.
+          </a>
+         </td>
+        </tr>
+        <tr>
+        </tr>
+        <tr>
+         <td class="text_saiba_mais2">
+          Veja uma lista de aplicativos e ferramentas que facilitam o acesso na web
+          <a href="http://acessibilidadelegal.com/30-assistivas.php">
+           aqui.
+          </a>
+         </td>
+        </tr>
+        <tr>
+        </tr>
+        <tr>
+         <td class="subtit_saiba_mais">
+          EsclareÃ§a dÃºvidas e receba suporte tÃ©cnico para Deficientes Auditivos: 0800 726 2492
+         </td>
+        </tr>
+        <tr>
+        </tr>
+        <tr>
+         <td class="text_saiba_mais2">
+          <a onclick="scrollSaibaMais('#saiba_mais_counteudo_acessibilidade');" href="javascript:void(0);">
+           topo
+          </a>
+         </td>
+        </tr>
+        <tr>
+         <td>
+         </td>
+        </tr>
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+  </nav>
+  ï»¿
+  <nav class="cadastro-pcOBJ" style="display: none;">
+   <div class="bt_fechar">
+    <a onclick="document.querySelector('.alert-information').style.display='none';" href="#">
+     <img width="80" height="36" border="0" title="Fechar" src="./assets/images/bt_fechar.gif" />
+    </a>
+   </div>
+   <br />
+   <br />
+   <br />
+   <br />
+   <table width="400" border="0">
+    <tbody>
+     <tr>
+      <td class="tit_saiba_mais" colspan="2">
+       CAIXA Acesso Seguro
+      </td>
+     </tr>
+     <tr>
+     </tr>
+     <tr>
+      <td class="titulo_saiba_mais" colspan="2">
+       Sobre o Cadastramento de Computadores
+      </td>
+     </tr>
+    </tbody>
+   </table>
+   <table width="560" border="0">
+    <tbody>
+     <tr>
+      <td id="sm2" class="subtit_saiba_mais">
+       1. O que Ã©?
+      </td>
+     </tr>
+     <tr>
+     </tr>
+     <tr>
+      <td class="text_saiba_mais2">
+       Ã‰ uma ferramenta denominada adicional de seguranÃ§a para os usuÃ¡rios do Internet Banking CAIXA cadastrarem o computador utilizado.
+      </td>
+     </tr>
+     <tr>
+      <td id="sm2" class="subtit_saiba_mais">
+       2. Como funciona?
+      </td>
+     </tr>
+     <tr>
+     </tr>
+     <tr>
+      <td class="text_saiba_mais2">
+       O cadastro do computador serÃ¡ automaticamente requerido durante o primeiro acesso
+            ao Internet Banking, ou quando ele for acessÃ¡-lo de um  computador ainda nÃ£o cadastrado.
+       <br />
+       <br />
+       Caso seja necessÃ¡rio, o Banking farÃ¡ a instalaÃ§Ã£o da ferramenta que permitirÃ¡ o cadastramento do
+            computador, ou indicarÃ¡ os requisitos necessÃ¡rios.
+       <br />
+       <br />
+       O prÃ³prio Internet Banking CAIXA verificarÃ¡ de modo automÃ¡tico e apresentarÃ¡ as telas para o cadastramento.
+       <br />
+       <br />
+       ApÃ³s entrar no Internet Banking CAIXA, o usuÃ¡rio serÃ¡ levado a cadastrar o computador que estÃ¡
+            utilizando, escolhendo um apelido para o equipamento (ex: ComputadorX) e o tempo que deseja
+            mantÃª-lo cadastrado. Uma vez cadastrado o computador, haverÃ¡ uma seguranÃ§a adicional, alÃ©m
+            daquelas jÃ¡ existentes para todos os usuÃ¡rios.
+       <br />
+      </td>
+     </tr>
+     <tr>
+      <td id="sm4" class="subtit_saiba_mais">
+       3. Para que serve?
+      </td>
+     </tr>
+     <tr>
+     </tr>
+     <tr>
+      <td class="text_saiba_mais2">
+       Adicionar mais seguranÃ§a nos acessos ao Internet Banking CAIXA.
+      </td>
+     </tr>
+     <tr>
+      <td id="sm5" class="subtit_saiba_mais">
+       4. Quem deve usar?
+      </td>
+     </tr>
+     <tr>
+     </tr>
+     <tr>
+      <td class="text_saiba_mais2">
+       Todo usuÃ¡rio que esteja acessando o Internet Banking CAIXA de um computador que atenda os requisitos abaixo:
+       <br />
+       <br />
+       Windows 2000 ou versÃµes mais recentes: (Windows XP, Windows 7, Windows 8)
+       <br />
+           - Navegadores:
+       <br />
+                 Internet Explorer  a partir da versÃ£o 7;
+       <br />
+                 Mozilla Firefox a partir da versÃ£o 4.0;
+       <br />
+                 Google Chrome a partir da versÃ£o 4.0;
+       <br />
+                 Opera a partir da versÃ£o 15;
+       <br />
+       <br />
+       MacOs:
+       <br />
+           - Navegadores:
+       <br />
+             Safari a partir da versÃ£o 5.0;
+       <br />
+             Mozilla Firefox a partir da versÃ£o 4.0;
+       <br />
+             Google Chrome a partir da versÃ£o 4.0;
+       <br />
+             Opera a partir da versÃ£o 15;
+       <br />
+       <br />
+       GNU/Linux (Kernel 2.6) com a JVM Oficial SUN:
+       <br />
+           - Navegadores:
+       <br />
+                 Mozilla Firefox a partir da versÃ£o 4.0;
+       <br />
+                 Google Chrome a partir da versÃ£o 4.0;
+       <br />
+                 Opera a partir da versÃ£o 15;
+       <br />
+       <br />
+       Para alguns dos requisitos citados acima, serÃ¡ necessÃ¡rio instalaÃ§Ã£o de
+            complemento Java. Nestes casos, serÃ¡ sugerido local para obtenÃ§Ã£o, em tela
+            posterior ao preenchimento do usuÃ¡rio.
+       <br />
+       <br />
+       O acesso por TABLET  Android ou IOS deverÃ¡ ser feito por aplicativos obtidos nas
+            lojas oficiais do Google ou Apple, respectivamente e deverÃ£o passar pelo processo
+            de cadastramento.
+      </td>
+     </tr>
+     <tr>
+      <td id="sm5" class="subtit_saiba_mais">
+       5. Como saberei da necessidade de cadastrar o computador?
+      </td>
+     </tr>
+     <tr>
+      <td class="text_saiba_mais2">
+       O prÃ³prio Internet Banking CAIXA verificarÃ¡ de modo automÃ¡tico e apresentarÃ¡ as telas para o
+            cadastramento. Caso seja necessÃ¡rio, o Internet Banking CAIXA farÃ¡ a instalaÃ§Ã£o do adicional de
+            seguranÃ§a que permitirÃ¡ o cadastramento do computador, o que ocorre em alguns segundos.
+            Para alguns dos requisitos citados acima, serÃ¡ necessÃ¡rio instalaÃ§Ã£o e/ou atualizaÃ§Ã£o de
+            complemento Java. Nestes casos, serÃ¡ sugerido local para obtenÃ§Ã£o.
+      </td>
+     </tr>
+     <tr>
+      <td id="sm1" class="titulo_saiba_mais">
+       Sobre os prÃ©-requisitos para utilizar a ferramenta
+      </td>
+     </tr>
+     <tr>
+     </tr>
+     <tr>
+      <td>
+      </td>
+     </tr>
+     <tr>
+      <td id="sm5" class="subtit_saiba_mais">
+       1. Como saberei se tenho que cadastrar o computador?
+      </td>
+     </tr>
+     <tr>
+     </tr>
+     <tr>
+      <td class="text_saiba_mais2">
+       O Internet Banking identificarÃ¡ automaticamente se o computador necessita ser cadastrado. ApÃ³s
+            a sua identificaÃ§Ã£o ao entrar no Banking, aparecerÃ¡ um documento intitulado "Aceite de
+            UtilizaÃ§Ã£o", que apÃ³s a concordÃ¢ncia dos termos apresentarÃ¡ pÃ¡ginas solicitando seus dados
+            pessoais, um apelido para aquele computador e o tempo de cadastramento para o equipamento.
+            Caso seja necessÃ¡rio, o Internet Banking farÃ¡ a instalaÃ§Ã£o da ferramenta que permitirÃ¡ o
+            cadastramento do computador, permitindo ao usuÃ¡rio realizar suas consultas e transaÃ§Ãµes
+            bancÃ¡rias com seguranÃ§a.
+      </td>
+     </tr>
+     <tr>
+      <td class="text_saiba_mais2">
+       Em alguns casos, serÃ¡ necessÃ¡rio instalaÃ§Ã£o e/ou atualizaÃ§Ã£o de complemento Java. Nestes casos,
+            serÃ¡ sugerido local para obtenÃ§Ã£o.
+      </td>
+     </tr>
+     <tr>
+      <td id="sm5" class="subtit_saiba_mais">
+       2. Todos os usuÃ¡rios deverÃ£o aderir ao Adicional de SeguranÃ§a ? Cadastramento de Computadores?
+      </td>
+     </tr>
+     <tr>
+     </tr>
+     <tr>
+      <td class="text_saiba_mais2">
+       Sim. Todos os clientes que utilizarem um computador com as configuraÃ§Ãµes exigidas deverÃ£o
+            realizar o cadastramento para utilizar o Internet Banking CAIXA.
+      </td>
+     </tr>
+     <tr>
+      <td id="sm5" class="subtit_saiba_mais">
+       3. Posso utilizar essa ferramenta em qualquer computador?
+      </td>
+     </tr>
+     <tr>
+     </tr>
+     <tr>
+      <td class="text_saiba_mais2">
+       NÃ£o. Por enquanto, sÃ³ deverÃ£o ser cadastrados os computadores com as configuraÃ§Ãµes
+            mencionadas anteriormente.
+       <br />
+       A ferramenta tambÃ©m estÃ¡ disponÃ­vel no aplicativo para tablet com sistema operacional Android
+            e/ou IOS.
+      </td>
+     </tr>
+     <tr>
+      <td id="sm5" class="subtit_saiba_mais">
+       4. Para utilizar o Adicional de SeguranÃ§a - Cadastramento de Computadores serÃ¡ necessÃ¡rio instalar algum programa? Por quÃª?
+      </td>
+     </tr>
+     <tr>
+     </tr>
+     <tr>
+      <td class="text_saiba_mais2">
+       Depende. Se o computador jÃ¡ possuir os recursos necessÃ¡rios, vocÃª digitarÃ¡ a senha Internet e
+            serÃ¡ apresentado ao documento "Aceite de UtilizaÃ§Ã£o". ApÃ³s a concordÃ¢ncia, vocÃª poderÃ¡ fazer o
+            cadastramento do computador, informando alguns dados pessoais, escolhendo um apelido para o
+            equipamento e o tempo que gostaria que permanecesse apto para utilizaÃ§Ã£o.
+            Caso seja necessÃ¡rio, o Banking farÃ¡ a instalaÃ§Ã£o da ferramenta adicional de seguranÃ§a que
+            permitirÃ¡ o cadastramento do computador, ou indicarÃ¡ os requisitos necessÃ¡rios.
+            ApÃ³s a instalaÃ§Ã£o serÃ¡ solicitada a senha Internet e, em seguida o "Aceite de UtilizaÃ§Ã£o".
+      </td>
+     </tr>
+     <tr>
+      <td id="sm5" class="subtit_saiba_mais">
+       5. O que Ã© o "Aceite de UtilizaÃ§Ã£o"?
+      </td>
+     </tr>
+     <tr>
+     </tr>
+     <tr>
+      <td class="text_saiba_mais2">
+       Ã‰ um documento onde a CAIXA esclarece o que Ã© o Cadastramento de Computadores e registra o
+            compromisso de nÃ£o-monitoramento de seus arquivos, e-mails ou navegaÃ§Ã£o pela Internet.
+            Lembre-se que todos os computadores que tiverem as configuraÃ§Ãµes necessÃ¡rias deverÃ£o ser
+            cadastrados para poder acessar o Internet Banking CAIXA.
+      </td>
+     </tr>
+     <tr>
+      <td id="sm5" class="subtit_saiba_mais">
+       6. E se eu nÃ£o concordar com o "Aceite de UtilizaÃ§Ã£o"?
+      </td>
+     </tr>
+     <tr>
+     </tr>
+     <tr>
+      <td class="text_saiba_mais2">
+       VocÃª sÃ³ estarÃ¡ apto a acessar o Internet Banking CAIXA apÃ³s a sua anuÃªncia com o
+            Cadastramento de Computadores.
+       <br />
+       Em todos os casos em que for oferecido o "Aceite de UtilizaÃ§Ã£o", se vocÃª nÃ£o concordar, serÃ¡
+            remetido Ã  primeira pÃ¡gina de acesso ao Internet Banking CAIXA e todo o procedimento se
+            repetirÃ¡, atÃ© que vocÃª concorde com os termos do Aceite de UtilizaÃ§Ã£o.
+      </td>
+     </tr>
+     <tr>
+      <td id="sm5" class="subtit_saiba_mais">
+       7. O programa irÃ¡ monitorar meus arquivos?
+      </td>
+     </tr>
+     <tr>
+     </tr>
+     <tr>
+      <td class="text_saiba_mais2">
+       NÃ£o. Nem arquivos, e-mails ou navegaÃ§Ã£o pela internet. O adicional de seguranÃ§a nÃ£o Ã© invasivo e
+            nÃ£o possui como objetivo monitorar os usuÃ¡rios do Internet Banking CAIXA, pois a CAIXA respeita
+            a privacidade de seus clientes.
+      </td>
+     </tr>
+     <tr>
+      <td id="sm5" class="subtit_saiba_mais">
+       8. O Cadastramento de Computadores CAIXA estÃ¡ relacionado a algum endereÃ§o IP?
+      </td>
+     </tr>
+     <tr>
+     </tr>
+     <tr>
+      <td class="text_saiba_mais2">
+       NÃ£o. IP Ã© um endereÃ§o em forma de nÃºmero utilizado por um computador ligado Ã  Internet. No
+            caso do adicional de seguranÃ§a que permite o cadastramento de computadores Ã© utilizada uma
+            identificaÃ§Ã£o Ãºnica, gerada a partir de dados de hardware (componentes fÃ­sicos) de cada
+            computador.
+      </td>
+     </tr>
+     <tr>
+      <td id="sm5" class="subtit_saiba_mais">
+       9. Quando fui fazer o registro, apareceu uma opÃ§Ã£o de sÃ³ acessar computadores cadastrados. O que isso quer dizer?
+      </td>
+     </tr>
+     <tr>
+     </tr>
+     <tr>
+      <td class="text_saiba_mais2">
+       Essa Ã© a melhor maneira de garantir seu Adicional de SeguranÃ§a - Cadastramento de
+            Computadores trabalhando a seu favor. Com essa opÃ§Ã£o vocÃª sÃ³ irÃ¡ acessar seu Internet Banking
+            CAIXA, por meio de um computador que possa ser cadastrado, evitando vulnerabilidade nos
+            acessos realizados por meio de equipamentos nÃ£o cadastrados.
+      </td>
+     </tr>
+     <tr>
+      <td id="sm5" class="subtit_saiba_mais">
+       10. Acessei o Banking por um computador que nÃ£o estava cadastrado e nÃ£o apareceu nenhuma mensagem solicitando o cadastramento. Por quÃª?
+      </td>
+     </tr>
+     <tr>
+     </tr>
+     <tr>
+      <td class="text_saiba_mais2">
+       Quando vocÃª utiliza um computador que nÃ£o reÃºne as configuraÃ§Ãµes necessÃ¡rias para o
+            cadastramento, e vocÃª nÃ£o optou por acessar somente por computadores cadastrados, a
+            mensagem solicitando seu cadastramento nÃ£o aparece.
+      </td>
+     </tr>
+     <tr>
+      <td id="sm5" class="subtit_saiba_mais">
+       11. Os computadores que nÃ£o apresentam as configuraÃ§Ãµes necessÃ¡rias para o cadastramento, possuem acessos seguros tambÃ©m?
+      </td>
+     </tr>
+     <tr>
+     </tr>
+     <tr>
+      <td class="text_saiba_mais2">
+       O Internet Banking CAIXA possui os mais variados recursos de seguranÃ§a para garantir que, apÃ³s
+            o acesso a seu ambiente, o usuÃ¡rio possa navegar e utilizar-se de todos os serviÃ§os com total
+            seguranÃ§a.
+            O acesso seguro, em qualquer computador, depende da adoÃ§Ã£o de medidas de rotina por parte do
+            usuÃ¡rio, tais como:
+       <br />
+       <br />
+       - atualizaÃ§Ã£o contÃ­nua do navegador (browser) e do sistema operacional;
+       <br />
+       <br />
+       - utilizaÃ§Ã£o de versÃµes atualizadas, em seu computador, de programas antivÃ­rus, antispyware e contra intrusÃ£o (firewall);
+       <br />
+       <br />
+       - evitar acesso Ã  sua conta bancÃ¡ria em computadores pÃºblicos;
+       <br />
+       <br />
+       - trocar periodicamente suas senhas de acesso.
+       <br />
+       <br />
+       O Cadastramento de Computadores visa proporcionar um adicional de seguranÃ§a aos acessos efetuados a
+            partir de computadores cadastrados pela CAIXA.
+      </td>
+     </tr>
+     <tr>
+      <td id="sm1" class="titulo_saiba_mais">
+       Sobre os apelidos e o tempo de validade para o cadastramento
+      </td>
+     </tr>
+     <tr>
+     </tr>
+     <tr>
+      <td>
+      </td>
+     </tr>
+     <tr>
+      <td id="sm5" class="subtit_saiba_mais">
+       1. Como devo definir um apelido?
+      </td>
+     </tr>
+     <tr>
+     </tr>
+     <tr>
+      <td class="text_saiba_mais2">
+       O apelido de seu equipamento ficarÃ¡ a seu critÃ©rio e poderÃ¡ ter de 1 a 20 caracteres (letras,
+            nÃºmeros, espaÃ§os e sÃ­mbolos). O apelido com 1 caractere nÃ£o poderÃ¡ estar em branco.
+      </td>
+     </tr>
+     <tr>
+      <td id="sm5" class="subtit_saiba_mais">
+       2. Existe restriÃ§Ã£o no uso do apelido?
+      </td>
+     </tr>
+     <tr>
+     </tr>
+     <tr>
+      <td class="text_saiba_mais2">
+       NÃ£o, porÃ©m recomenda-se a utilizaÃ§Ã£o de um apelido de fÃ¡cil reconhecimento pelo o usuÃ¡rio,
+            evitando-se apelidos Ã³bvios, como "PC do trabalho", "Meu notebook" ou "casa".
+      </td>
+     </tr>
+     <tr>
+      <td id="sm5" class="subtit_saiba_mais">
+       3. Posso repetir os apelidos dos computadores?
+      </td>
+     </tr>
+     <tr>
+     </tr>
+     <tr>
+      <td class="text_saiba_mais2">
+       Os apelidos nÃ£o ser repetidos. Uma vez escolhido um apelido para um determinado
+            computador, ele nÃ£o poderÃ¡ ser reutilizado para outro do mesmo usuÃ¡rio.
+      </td>
+     </tr>
+     <tr>
+      <td id="sm5" class="subtit_saiba_mais">
+       4. Quantas vezes devo cadastrar meu computador?
+      </td>
+     </tr>
+     <tr>
+     </tr>
+     <tr>
+      <td class="text_saiba_mais2">
+       Depende do prazo que vocÃª definir. A CAIXA lhe dÃ¡ as seguintes opÃ§Ãµes:
+       <br />
+       <br />
+       - por tempo indeterminado (nÃ£o necessita novo cadastramento)
+            - atÃ© 365 dias (apÃ³s expirado o prazo, vocÃª deverÃ¡ fazer novo cadastramento); ou
+            - somente para um acesso (quando utilizar um equipamento que comumente nÃ£o o utiliza).
+      </td>
+     </tr>
+     <tr>
+      <td id="sm5" class="subtit_saiba_mais">
+       5. Quantos computadores posso cadastrar?
+      </td>
+     </tr>
+     <tr>
+     </tr>
+     <tr>
+      <td class="text_saiba_mais2">
+       Quantos vocÃª desejar. PorÃ©m, somente quatro equipamentos poderÃ£o constar como Cadastrados
+            para serem usados.
+            No caso de vocÃª cadastrar um quinto equipamento, aquele que possuir o acesso mais
+            antigo da lista dos "cadastrados" assumirÃ¡ a situaÃ§Ã£o de inativo e darÃ¡ lugar ao seu novo
+            equipamento.
+      </td>
+     </tr>
+    </tbody>
+   </table>
+   <span class="clear">
+    <table width="560px" border="1" cellspacing="2" cellpadding="5" style="text-align: center;font-size: 11px;">
+     <tbody>
+      <tr bgcolor="#064EA2">
+       <th style="font-weight: bold;color: #FFFFFF;text-align: center;" colspan="2">
+        Lista Atual
+       </th>
+       <th style="font-weight: bold;color: #FFFFFF;text-align: center;" colspan="2">
+        Novo Cadastro
+       </th>
+       <th style="font-weight: bold;color: #FFFFFF;text-align: center;" colspan="2">
+        Nova Lista
+       </th>
+      </tr>
+      <tr bgcolor="#d6e1ee" style="font-size: 11px;font-weight: bold;">
+       <th style="font-weight: bold;text-align: center; width: 20%">
+        Computadores Cadastrados
+       </th>
+       <th style="font-weight: bold;text-align: center;">
+        Acesso
+       </th>
+       <th style="font-weight: bold;text-align: center;">
+        Computador
+       </th>
+       <th style="font-weight: bold;text-align: center;">
+        Cadastro
+       </th>
+       <th style="font-weight: bold;text-align: center;">
+        Computadores Ativos
+       </th>
+       <th style="font-weight: bold;text-align: center;">
+        Acesso
+       </th>
+      </tr>
+      <tr bgcolor="#cbdbee">
+       <td style="text-align: center;">
+        Computador 01
+       </td>
+       <td style="text-align: center;">
+        15/04/2012
+       </td>
+       <td style="text-align: center;" rowspan="10">
+        Computador 11
+       </td>
+       <td style="text-align: center;" rowspan="10">
+        01/09/2012
+       </td>
+       <td style="text-align: center;">
+        Computador 01
+       </td>
+       <td style="text-align: center;">
+        15/04/2012
+       </td>
+      </tr>
+      <tr bgcolor="#d6e1ee">
+       <td style="text-align: center;">
+        Computador 02
+       </td>
+       <td style="text-align: center;">
+        22/08/2012
+       </td>
+       <td style="text-align: center;">
+        Computador 03
+       </td>
+       <td style="text-align: center;">
+        22/08/2012
+       </td>
+      </tr>
+      <tr bgcolor="#cbdbee">
+       <td style="text-align: center;">
+        Computador 03
+       </td>
+       <td style="text-align: center;">
+        22/08/2012
+       </td>
+       <td style="text-align: center;">
+        Computador 04
+       </td>
+       <td style="text-align: center;">
+        30/08/2012
+       </td>
+      </tr>
+      <tr bgcolor="#d6e1ee">
+       <td style="text-align: center;">
+        Computador 04
+       </td>
+       <td style="text-align: center;">
+        30/08/2012
+       </td>
+       <td style="text-align: center;">
+        Computador 05
+       </td>
+       <td style="text-align: center;">
+        15/04/2012
+       </td>
+      </tr>
+      <tr bgcolor="#cbdbee">
+       <td style="text-align: center;">
+        Computador 05
+       </td>
+       <td style="text-align: center;">
+        15/04/2012
+       </td>
+       <td style="text-align: center;">
+        Computador 06
+       </td>
+       <td style="text-align: center;">
+        02/02/2012
+       </td>
+      </tr>
+      <tr bgcolor="#d6e1ee">
+       <td style="text-align: center;">
+        Computador 06
+       </td>
+       <td style="text-align: center;">
+        02/02/2012
+       </td>
+       <td style="text-align: center;">
+        Computador 07
+       </td>
+       <td style="text-align: center;">
+        22/08/2012
+       </td>
+      </tr>
+      <tr bgcolor="#cbdbee">
+       <td style="text-align: center;">
+        Computador 07
+       </td>
+       <td style="text-align: center;">
+        22/08/2012
+       </td>
+       <td style="text-align: center;">
+        Computador 08
+       </td>
+       <td style="text-align: center;">
+        30/08/2012
+       </td>
+      </tr>
+      <tr bgcolor="#d6e1ee">
+       <td style="text-align: center;">
+        Computador 08
+       </td>
+       <td style="text-align: center;">
+        30/08/2012
+       </td>
+       <td style="text-align: center;">
+        Computador 09
+       </td>
+       <td style="text-align: center;">
+        30/08/2012
+       </td>
+      </tr>
+      <tr bgcolor="#cbdbee">
+       <td style="text-align: center;">
+        Computador 09
+       </td>
+       <td style="text-align: center;">
+        30/08/2012
+       </td>
+       <td style="text-align: center;">
+        Computador 10
+       </td>
+       <td style="text-align: center;">
+        30/08/2012
+       </td>
+      </tr>
+      <tr bgcolor="#d6e1ee">
+       <td style="text-align: center;">
+        Computador 10
+       </td>
+       <td style="text-align: center;">
+        30/08/2012
+       </td>
+       <td style="text-align: center;">
+        Computador 11
+       </td>
+       <td style="text-align: center;">
+        01/09/2012
+       </td>
+      </tr>
+     </tbody>
+    </table>
+    <table>
+     <tbody>
+      <tr>
+       <td style="color:red">
+        Retirada do "Computador 02" da lista de "Cadastrados", por possuir o Ãºltimo acesso mais antigo
+       </td>
+      </tr>
+     </tbody>
+    </table>
+   </span>
+   <br />
+   <br />
+   <br />
+   <br />
+   <br />
+   <table width="560" border="0">
+    <tbody>
+     <tr>
+      <td id="sm5" class="subtit_saiba_mais">
+       <br />
+       <br />
+       6. Como saber quantos computadores jÃ¡ cadastrei?
+      </td>
+     </tr>
+     <tr>
+     </tr>
+     <tr>
+      <td class="text_saiba_mais2">
+       Na pÃ¡gina principal do Banking vocÃª verÃ¡ um quadro com as informaÃ§Ãµes de todos seus
+            computadores Cadastrados para serem utilizados, totalizando atÃ© 10 computadores por usuÃ¡rio.
+            VocÃª poderÃ¡ ver a lista completa:
+       <br />
+       <br />
+       - No acesso a conta de Pessoa FÃ­sica - por meio da opÃ§Ã£o Gerenciar Acesso &gt;
+            Computadores/Dispositivos (localizada na barra superior da pÃ¡gina principal do Banking, Ã 
+            direita).
+       <br />
+       <br />
+       - No acesso a conta de Pessoa JurÃ­dica - por meio do menu GERENCIAR &gt; Computadores
+            (localizado na pÃ¡gina principal do Banking, canto inferior esquerdo).
+       <br />
+       <br />
+      </td>
+     </tr>
+     <tr>
+      <td id="sm5" class="subtit_saiba_mais">
+       7. O que posso fazer depois que eu cadastrar um computador para acessar o Internet Banking CAIXA?
+      </td>
+     </tr>
+     <tr>
+     </tr>
+     <tr>
+      <td class="text_saiba_mais2">
+       VocÃª poderÃ¡ acessar todas as informaÃ§Ãµes sobre produtos e suas contas, alÃ©m de utilizar todos os
+            serviÃ§os fornecidos pelo Internet Banking, com adicionais de seguranÃ§a.
+      </td>
+     </tr>
+     <tr>
+      <td id="sm5" class="subtit_saiba_mais">
+       8. Meu computador estava cadastrado e agora estÃ¡ me pedindo novo cadastramento. O que aconteceu?
+      </td>
+     </tr>
+     <tr>
+     </tr>
+     <tr>
+      <td class="text_saiba_mais2">
+       O mais comum Ã© que o prazo determinado no momento do cadastramento tenha expirado. Mas
+            pode ser que tenha ocorrido alguma alteraÃ§Ã£o no hardware de seu computador, como mudanÃ§a de
+            placa-mÃ£e, expansÃ£o de memÃ³ria, etc.
+      </td>
+     </tr>
+     <tr>
+      <td id="sm1" class="titulo_saiba_mais">
+       Sobre o gerenciamento dos computadores cadastrados
+      </td>
+     </tr>
+     <tr>
+     </tr>
+     <tr>
+      <td>
+      </td>
+     </tr>
+     <tr>
+      <td id="sm5" class="subtit_saiba_mais">
+       1. Como faÃ§o para gerenciar meus computadores cadastrados?
+      </td>
+     </tr>
+     <tr>
+     </tr>
+     <tr>
+      <td class="text_saiba_mais2">
+       VocÃª poderÃ¡ ter acesso a todas as informaÃ§Ãµes sobre os cadastramentos realizados:
+            - No acesso a conta de Pessoa FÃ­sica - por meio da opÃ§Ã£o Gerenciar Acesso &gt;
+            Computadores/Dispositivos (localizada na barra superior da pÃ¡gina principal do Banking, Ã 
+            direita).
+       <br />
+       <br />
+       - No acesso a conta de Pessoa JurÃ­dica - por meio do menu GERENCIAR &gt; Computadores
+            (localizado na pÃ¡gina principal do Banking, canto inferior esquerdo).
+      </td>
+     </tr>
+     <tr>
+      <td id="sm5" class="subtit_saiba_mais">
+       2. Quais as informaÃ§Ãµes contidas na pÃ¡gina "Gerenciar Acesso &gt; Computadores/Dispositivos" e na pÃ¡gina "Gerenciar &gt; Computadores"?
+      </td>
+     </tr>
+     <tr>
+     </tr>
+     <tr>
+      <td class="text_saiba_mais2">
+       Ã‰ uma pÃ¡gina que possui a lista completa de todos os computadores jÃ¡ cadastrados, contendo
+            apelido, data de cadastramento, data de expiraÃ§Ã£o e situaÃ§Ã£o.
+      </td>
+     </tr>
+     <tr>
+      <td id="sm5" class="subtit_saiba_mais">
+       3. Quais as situaÃ§Ãµes que poderÃ£o ser apresentadas para cada equipamento?
+      </td>
+     </tr>
+     <tr>
+     </tr>
+     <tr>
+      <td class="text_saiba_mais2">
+       Cada equipamento apresentado possuirÃ¡ um tipo de situaÃ§Ã£o conforme o caso:
+       <br />
+       <br />
+       -
+       <b>
+        Em uso
+       </b>
+       - equipamento registrado e sendo utilizado naquele momento pelo usuÃ¡rio (virÃ¡ realÃ§ado dos demais)
+       <br />
+       <br />
+       -
+       <b>
+        Cadastrado
+       </b>
+       - equipamento registrado e dentro do prazo de validade escolhido pelo usuÃ¡rio no momento do cadastramento.
+       <br />
+       <br />
+       -
+       <b>
+        Inativo
+       </b>
+       - equipamento registrado, porÃ©m com o prazo expirado.
+       <br />
+       <br />
+       -
+       <b>
+        Bloqueado
+       </b>
+       - equipamento registrado e bloqueado pelo usuÃ¡rio.
+      </td>
+     </tr>
+     <tr>
+      <td id="sm5" class="subtit_saiba_mais">
+       4. Posso excluir da lista algum computador que cadastrei?
+      </td>
+     </tr>
+     <tr>
+     </tr>
+     <tr>
+      <td class="text_saiba_mais2">
+       NÃ£o. Os computadores cadastrados serÃ£o excluÃ­dos da lista de modo automÃ¡tico, 3 meses apÃ³s
+            assumirem a situaÃ§Ã£o de "Inativo" ou "Bloqueado".
+      </td>
+     </tr>
+     <tr>
+      <td id="sm5" class="subtit_saiba_mais">
+       5. Quando um equipamento poderÃ¡ ser bloqueado?
+      </td>
+     </tr>
+     <tr>
+     </tr>
+     <tr>
+      <td class="text_saiba_mais2">
+       Existem duas maneiras de se bloquear um equipamento: por decisÃ£o do usuÃ¡rio ou, de modo
+            involuntÃ¡rio, por digitaÃ§Ã£o equivocada de seus dados pessoais.
+      </td>
+     </tr>
+     <tr>
+      <td id="sm5" class="subtit_saiba_mais">
+       6. O que faÃ§o para bloquear um equipamento?
+      </td>
+     </tr>
+     <tr>
+     </tr>
+     <tr>
+      <td class="text_saiba_mais2">
+       Ã‰ muito simples.
+       <br />
+       <br />
+       - No acesso a conta de Pessoa FÃ­sica - por meio da opÃ§Ã£o Gerenciar Acesso &gt;
+            Computadores/Dispositivos (localizada na barra superior da pÃ¡gina principal, Ã  direita).
+       <br />
+       <br />
+       - No acesso a conta de Pessoa JurÃ­dica - por meio do menu GERENCIAR &gt; Computadores
+            (localizado na pÃ¡gina principal do Banking, canto inferior esquerdo).
+      </td>
+     </tr>
+     <tr>
+      <td id="sm5" class="subtit_saiba_mais">
+       7. Como faÃ§o para desbloquear um computador?
+      </td>
+     </tr>
+     <tr>
+     </tr>
+     <tr>
+      <td class="text_saiba_mais2">
+       O desbloqueio de qualquer equipamento sÃ³ poderÃ¡ ser realizado por meio do telefone 0800 726
+            0104 ou numa agÃªncia da CAIXA
+            Ao desbloquear um equipamento, ele assume a situaÃ§Ã£o de "Inativo", precisando ser cadastrado
+            novamente.
+      </td>
+     </tr>
+     <tr>
+      <td id="sm5" class="subtit_saiba_mais">
+       8. Posso reativar um equipamento jÃ¡ cadastrado?
+      </td>
+     </tr>
+     <tr>
+     </tr>
+     <tr>
+      <td class="text_saiba_mais2">
+       Sim. Se ele possuir a situaÃ§Ã£o de Inativo, basta acessar o equipamento e cadastrÃ¡-lo novamente.
+      </td>
+     </tr>
+     <tr>
+      <td id="sm5" class="subtit_saiba_mais">
+       9. O que acontece com aqueles equipamentos em que eu cadastrei para um Ãºnico acesso?
+      </td>
+     </tr>
+     <tr>
+     </tr>
+     <tr>
+      <td class="text_saiba_mais2">
+       Ele continuarÃ¡ em sua lista de computadores cadastrados, porÃ©m com a situaÃ§Ã£o de
+       <b>
+        "Inativo"
+       </b>
+       <b>
+        .
+       </b>
+      </td>
+     </tr>
+     <tr>
+      <td id="sm1" class="titulo_saiba_mais">
+       UtilizaÃ§Ã£o de um equipamento por vÃ¡rios usuÃ¡rios.
+      </td>
+     </tr>
+     <tr>
+     </tr>
+     <tr>
+      <td class="text_saiba_mais2">
+      </td>
+     </tr>
+     <tr>
+      <td id="sm5" class="subtit_saiba_mais">
+       1. Na minha casa hÃ¡ trÃªs pessoas que utilizam o Internet Banking CAIXA. Como fica o cadastramento?
+      </td>
+     </tr>
+     <tr>
+     </tr>
+     <tr>
+      <td class="text_saiba_mais2">
+       Para cada CPF, o equipamento terÃ¡ um apelido. Assim, se trÃªs pessoas acessam o mesmo
+            equipamento, quando acessÃ¡-lo pela primeira vez, cada uma escolherÃ¡ um apelido e o prazo de
+            duraÃ§Ã£o do cadastramento para aquele equipamento.
+      </td>
+     </tr>
+     <tr>
+      <td id="sm5" class="subtit_saiba_mais">
+       2. Eu nÃ£o quero me cadastrar. O que eu faÃ§o?
+      </td>
+     </tr>
+     <tr>
+     </tr>
+     <tr>
+      <td class="text_saiba_mais2">
+       Para garantir o adicional de seguranÃ§a, a CAIXA sÃ³ permitirÃ¡ o acesso ao Banking para os
+            equipamentos que possuam as configuraÃ§Ãµes jÃ¡ descritas e que estejam cadastrados.
+      </td>
+     </tr>
+     <tr>
+      <td id="sm5" class="subtit_saiba_mais">
+       3. Meu computador nÃ£o possui as configuraÃ§Ãµes exigidas pela CAIXA, mas eu quero cadastrÃ¡-las mesmo assim. Ã‰ possÃ­vel?
+      </td>
+     </tr>
+     <tr>
+     </tr>
+     <tr>
+      <td class="text_saiba_mais2">
+       NÃ£o. A CAIXA sÃ³ irÃ¡ garantir o cadastramento para aqueles computadores cujas configuraÃ§Ãµes
+            sejam as jÃ¡ descritas para o processo.
+      </td>
+     </tr>
+     <tr>
+      <td id="sm5" class="subtit_saiba_mais">
+       4. Fui utilizar o meu computador e recebi um aviso que "NÃ£o foi possÃ­vel acessar o Banking deste computador." O que eu faÃ§o?
+      </td>
+     </tr>
+     <tr>
+     </tr>
+     <tr>
+      <td class="text_saiba_mais2">
+       Ligue imediatamente para 3004 1104, para capitais e regiÃµes metropolitanas, ou 0800 726 0104, para demais regiÃµes, e informe o cÃ³digo que aparece na mensagem. Ã‰ rÃ¡pido e vocÃª
+            poderÃ¡ fazÃª-lo 24 horas por dia, sete dias na semana.
+      </td>
+     </tr>
+     <tr>
+      <td id="sm5" class="subtit_saiba_mais">
+       5. Tenho conta conjunta e sÃ³ utilizo equipamentos passÃ­veis de cadstramento. O que
+            acontece se o outro titular quiser acessar de um computador sem as configuraÃ§Ãµes exigidas?
+      </td>
+     </tr>
+     <tr>
+     </tr>
+     <tr>
+      <td class="text_saiba_mais2">
+       O cadastramento Ã© realizado por CPF. Assim, os dois terÃ£o acessos individuais diferenciÃ¡veis. No
+            entanto, a conta poderÃ¡ ser acessada de duas maneiras: com a seguranÃ§a usual do Internet
+            Banking CAIXA e com o Adicional de SeguranÃ§a - Cadastramento de Computadores. A CAIXA
+            recomenda que todos os acessos sejam realizados somente de computadores que possam ser
+            cadastrados. Caso isso seja impossÃ­vel, reforce as aÃ§Ãµes de seguranÃ§a com a utilizaÃ§Ã£o de
+            antivÃ­rus atualizados e firewall.
+      </td>
+     </tr>
+     <tr>
+      <td id="sm5" class="subtit_saiba_mais">
+       6. Se eu viajar, o que faÃ§o para acessar minha conta pela Internet?
+      </td>
+     </tr>
+     <tr>
+     </tr>
+     <tr>
+      <td class="text_saiba_mais2">
+       Se vocÃª ainda nÃ£o estiver cadastrado no Internet Banking, antes de viajar, cadastre-se para obter
+            acesso, definindo um UsuÃ¡rio e Senha Internet, a partir de sua senha de quatro dÃ­gitos. Caso
+            deseje, alÃ©m de consultar, efetuar pagamentos/transferÃªncias via internet, solicite ao seu gerente
+            a Assinatura EletrÃ´nica.
+      </td>
+     </tr>
+     <tr>
+      <td id="sm5" class="subtit_saiba_mais">
+       7. Qual o procedimento para o cadastramento em caso de viagem?
+      </td>
+     </tr>
+     <tr>
+     </tr>
+     <tr>
+      <td class="text_saiba_mais2">
+       Ao acessar o Internet Banking durante a viagem, caso o computador que vocÃª esteja utilizando
+            permita o Adicional de SeguranÃ§a, serÃ¡ exigido que vocÃª efetue o cadastramento do computador.
+            Nesse caso, selecione a opÃ§Ã£o "Apenas para esse acesso" ou, caso vocÃª conheÃ§a a procedÃªncia do
+            computador e das rotinas de seguranÃ§a utilizada (casa de familiares, amigos), defina um nÃºmero
+            de dias, se preferir. Evite ao mÃ¡ximo o uso de computadores em locais pÃºblicos. Sempre que
+            possÃ­vel, agende seus pagamentos pelo Internet Banking.
+      </td>
+     </tr>
+     <tr>
+      <td id="sm5" class="subtit_saiba_mais">
+       8. Poderei cadastrar computadores localizados no exterior?
+      </td>
+     </tr>
+     <tr>
+     </tr>
+     <tr>
+      <td class="text_saiba_mais2">
+       Sim. Caso vocÃª esteja fora do Brasil poderÃ¡ fazer o cadastramento dos computadores durante o
+            acesso ao Internet Banking CAIXA. Caso necessite sanar dÃºvidas ou de ajuda no exterior, entre
+            em contato com o Help-desk CAIXA com chamada a cobrar para o nÃºmero 55 71 3206 9900 e
+            informe tratar-se de cadastramento de computadores no Internet Banking CAIXA.
+      </td>
+     </tr>
+     <tr>
+      <td id="sm1" class="titulo_saiba_mais">
+       Outras InformaÃ§Ãµes sobre o produto
+      </td>
+     </tr>
+     <tr>
+      <td class="subtit_saiba_mais">
+       Fique atento:
+      </td>
+     </tr>
+     <tr>
+      <td class="text_saiba_mais2">
+       - A CAIXA nÃ£o enviarÃ¡ e-mails solicitando quaisquer tipos de informaÃ§Ãµes para o cliente. Seja de seu
+            computador ou de sua(s) conta(s), como usuÃ¡rio e senhas.
+       <br />
+       <br />
+       - O Internet Banking CAIXA nÃ£o envia e-mails com links.
+       <br />
+       <br />
+       - Na dÃºvida de estar numa pÃ¡gina segura da CAIXA, verifique se hÃ¡ um pequeno cadeado do lado
+            direito do rodapÃ© da pÃ¡gina do Internet Banking. Clique duas vezes para abrir o "Certificado" e
+            verificar para quem foi emitido. Verifique tambÃ©m, clicando na aba "Caminho de certificaÃ§Ã£o".
+       <br />
+       <br />
+       - Em caso de suspeita, ligue para o Suporte CAIXA, por meio do telefone 3004 1104, para capitais e regiÃµes metropolitanas, ou 0800 726 0104, para demais regiÃµes.
+       <br />
+       <br />
+       - Aprenda mais sobre seguranÃ§a, clicando
+       <a href="http://www.caixa.gov.br/">
+        aqui
+       </a>
+       .
+       <br />
+       <br />
+       - Procure utilizar o Internet Banking CAIXA a partir de computadores conhecidos.
+      </td>
+     </tr>
+     <tr>
+      <td>
+      </td>
+     </tr>
+    </tbody>
+   </table>
+  </nav>
+  ï»¿
+  <nav id="saiba_mais_counteudo" class="perguntas-frequentesOBJ margem-esquerda">
+   <div class="bt_fechar">
+    <a onclick="document.querySelector('.alert-information').style.display='none';" href="#">
+     <img width="80" height="36" border="0" title="Fechar" src="./assets/images/bt_fechar.gif" />
+    </a>
+   </div>
+   <table width="400" border="0">
+    <tbody>
+     <tr>
+      <td class="tit_saiba_mais" colspan="2">
+       DÃºvidas mais freqÃ¼entes
+      </td>
+     </tr>
+     <tr>
+     </tr>
+     <tr>
+      <td class="titulo_saiba_mais" colspan="2">
+       <br />
+       <br />
+       <a onclick="scrollSaibaMais('#sm_1_1');" href="javascript:void(0);">
+        1.1. O que devo fazer para acessar o Internet Banking?
+       </a>
+       <br />
+       <br />
+       <a onclick="scrollSaibaMais('#sm_1_2');" href="javascript:void(0);">
+        1.2. O que Ã© criar um UsuÃ¡rio?
+       </a>
+       <br />
+       <br />
+       <a onclick="scrollSaibaMais('#sm_2_1');" href="javascript:void(0);">
+        2.1. Como ocorre o  acesso a uma conta conjunta?
+       </a>
+       <br />
+       <br />
+       <a onclick="scrollSaibaMais('#sm_2_2');" href="javascript:void(0);">
+        2.2. Preciso logar novamente para acessar uma conta com perfil PJ, estando em uma conta com perfil PF e vice versa?
+       </a>
+       <br />
+       <br />
+       <a onclick="scrollSaibaMais('#sm_3_1');" href="javascript:void(0);">
+        3.1. "Minhas TransaÃ§Ãµes" Ã© uma consulta das transaÃ§Ãµes efetivadas?
+       </a>
+       <br />
+       <br />
+       <a onclick="scrollSaibaMais('#sm_3_2');" href="javascript:void(0);">
+        3.2. Para que serve "Minhas TransaÃ§Ãµes"?
+       </a>
+       <br />
+       <br />
+       <a onclick="scrollSaibaMais('#sm_3_3');" href="javascript:void(0);">
+        3.3. Para que serve o "AVISO"?
+       </a>
+       <br />
+       <br />
+       <a onclick="scrollSaibaMais('#sm_4_1');" href="javascript:void(0);">
+        4.1. Qual a diferenÃ§a entre Senha Internet e Assinatura EletrÃ´nica ?
+       </a>
+       <br />
+       <br />
+       <a onclick="scrollSaibaMais('#sm_4_2');" href="javascript:void(0);">
+        4.2. Qual a diferenÃ§a entre Assinatura EletrÃ´nica simples e Assinatura EletrÃ´nica MÃºltipla?
+       </a>
+       <br />
+       <br />
+       <a onclick="scrollSaibaMais('#sm_4_3');" href="javascript:void(0);">
+        4.3 O que faÃ§o se eu esquecer ou bloquear minha Senha Internet?
+       </a>
+       <br />
+       <br />
+       <a onclick="scrollSaibaMais('#sm_4_4');" href="javascript:void(0);">
+        4.4 Se eu esquecer ou bloquear a Assinatura EletrÃ´nica, posso cadastrar outra ou efetuar o desbloqueio ?
+       </a>
+       <br />
+       <br />
+       <a onclick="scrollSaibaMais('#sm_4_4');" href="javascript:void(0);">
+        4.4. Como o usuÃ¡rio pode vir a bloquear sua Assinatura EletrÃ´nica?
+       </a>
+       <br />
+       <br />
+       <a onclick="scrollSaibaMais('#sm_4_5');" href="javascript:void(0);">
+        4.5. Como o usuÃ¡rio pode vir a bloquear sua Assinatura EletrÃ´nica?
+       </a>
+       <br />
+       <br />
+       <a onclick="scrollSaibaMais('#sm_4_6');" href="javascript:void(0);">
+        4.6. Para alterar a Senha Internet ou a Assinatura EletrÃ´nica, Ã© preciso ir Ã  agÃªncia?
+       </a>
+       <br />
+       <br />
+       <a onclick="scrollSaibaMais('#sm_4_7');" href="javascript:void(0);">
+        4.7. O nome atribuÃ­do ao UsuÃ¡rio pode ser alterado?
+       </a>
+       <br />
+       <br />
+       <a onclick="scrollSaibaMais('#sm_4_8');" href="javascript:void(0);">
+        4.8 A alteraÃ§Ã£o do nome do UsuÃ¡rio implica na perda de todas as informaÃ§Ãµes e dados jÃ¡ cadastrados?
+       </a>
+       <br />
+       <br />
+       <a onclick="scrollSaibaMais('#sm_5_1');" href="javascript:void(0);">
+        5.1. Como fica o acesso ao GovConta?
+       </a>
+       <br />
+       <br />
+       <a onclick="scrollSaibaMais('#sm_6_1');" href="javascript:void(0);">
+        6.1. O que Ã©?
+       </a>
+       <br />
+       <br />
+       <a onclick="scrollSaibaMais('#sm_6_2');" href="javascript:void(0);">
+        6.2. Como funciona?
+       </a>
+       <br />
+       <br />
+       <a onclick="scrollSaibaMais('#sm_6_3');" href="javascript:void(0);">
+        6.3. Quem precisa cadastrar?
+       </a>
+       <br />
+       <br />
+       <a onclick="scrollSaibaMais('#sm_6_4');" href="javascript:void(0);">
+        6.4. Onde posso encontrar informaÃ§Ãµes adicionais sobre o cadastramento de computador?
+       </a>
+       <br />
+       <br />
+       <a onclick="scrollSaibaMais('#sm_7');" href="javascript:void(0);">
+        7. Fique atento
+       </a>
+      </td>
+     </tr>
+    </tbody>
+   </table>
+   <!-- ITEM 1 -->
+   <table width="560" border="0">
+    <tbody>
+     <tr>
+      <td class="titulo_saiba_mais">
+       1. Sobre AdesÃ£o
+      </td>
+     </tr>
+     <tr>
+      <td id="sm_1_1" class="subtit_saiba_mais">
+       1.1. O que devo fazer para acessar o Internet Banking?
+      </td>
+     </tr>
+     <tr>
+      <td class="text_saiba_mais2">
+       O acesso ao Internet Banking Ã© feito atravÃ©s de UsuÃ¡rio e Senha Internet.
+                Para o primeiro acesso, deve-se fazer o cadastramento da seguinte forma:
+       <br />
+       <br />
+       - Clique no botÃ£o INICIAR CADASTRO;
+       <br />
+       <br />
+       - Preencha todos os campos da pÃ¡gina de Dados Pessoais e selecione Continuar;
+       <br />
+       <br />
+       - Na prÃ³xima tela preencha os campos com os dados da conta e tecle em Continuar;
+       <br />
+       <br />
+       - Em seguida cadastre um UsuÃ¡rio e a Senha Internet;
+       <br />
+       <br />
+       - Na tela seguinte leia o Termo de AdesÃ£o, preencha os campos solicitados e tecle em Continuar. Recomenda-se a impressÃ£o do Termo;
+       <br />
+       <br />
+       - Na prÃ³xima tela as informaÃ§Ãµes sÃ£o apresentadas para confirmaÃ§Ã£o, caso precisem ser alteradas selecione Retornar, faÃ§a os ajustes necessÃ¡rios e confirme;
+       <br />
+       <br />
+       <br />
+       <a onclick="scrollSaibaMais('#saiba_mais_counteudo');" href="javascript:void(0);">
+        topo
+       </a>
+      </td>
+     </tr>
+     <tr>
+      <td id="sm_1_2" class="subtit_saiba_mais">
+       1.2. O que Ã© criar um UsuÃ¡rio?
+      </td>
+     </tr>
+     <tr>
+      <td class="text_saiba_mais2">
+       Ã‰ definir uma chave de login para acesso ao Internet Banking proporcionando maior seguranÃ§a.
+                Quem define o UsuÃ¡rio Ã© o titular Pessoa FÃ­sica (001 ou 013) ou o representante de Pessoa JurÃ­dica (003) / Governo (006).
+       <br />
+       <a onclick="scrollSaibaMais('#saiba_mais_counteudo');" href="javascript:void(0);">
+        topo
+       </a>
+      </td>
+     </tr>
+    </tbody>
+   </table>
+   <br />
+   <!-- ITEM 2 -->
+   <table width="560" border="0">
+    <tbody>
+     <tr>
+      <td class="titulo_saiba_mais">
+       2. Sobre Acesso
+      </td>
+     </tr>
+     <tr>
+      <td id="sm_2_1" class="subtit_saiba_mais">
+       2.1. Como ocorre  o acesso a uma conta conjunta?
+      </td>
+     </tr>
+     <tr>
+      <td class="text_saiba_mais2">
+       Cada CPF tem um UsuÃ¡rio e Senha Internet diferentes para essa mesma conta.
+       <br />
+       <a onclick="scrollSaibaMais('#saiba_mais_counteudo');" href="javascript:void(0);">
+        topo
+       </a>
+      </td>
+     </tr>
+     <tr>
+      <td id="sm_2_2" class="subtit_saiba_mais">
+       2.2. Preciso logar novamente para acessar uma conta 003, estando em uma conta 001 e vice versa?
+      </td>
+     </tr>
+     <tr>
+      <td class="text_saiba_mais2">
+       NÃ£o, desde que as duas contas estejam cadastradas no mesmo UsuÃ¡rio.  O
+                cadastramento de contas vinculadas ao CPF do titular se dÃ¡:
+       <br />
+       <br />
+       - No acesso a conta de Pessoa FÃ­sica - por meio da opÃ§Ã£o Gerenciar Acesso &gt; Contas
+                (localizada na barra superior da pÃ¡gina principal do Banking, Ã  direita).
+       <br />
+       <br />
+       - No acesso a conta de Pessoa JurÃ­dica - por meio do menu GERENCIAR &gt; Senhas
+                (localizado na pÃ¡gina principal do Banking, canto inferior esquerdo).
+       <br />
+       <a onclick="scrollSaibaMais('#saiba_mais_counteudo');" href="javascript:void(0);">
+        topo
+       </a>
+      </td>
+     </tr>
+    </tbody>
+   </table>
+   <br />
+   <!-- ITEM 3 -->
+   <table width="560" border="0">
+    <tbody>
+     <tr>
+      <td class="titulo_saiba_mais">
+       3. Sobre Relacionamento
+      </td>
+     </tr>
+     <tr>
+      <td id="sm_3_1" class="subtit_saiba_mais">
+       3.1. "Minhas TransaÃ§Ãµes" Ã© uma consulta das transaÃ§Ãµes efetivadas?
+      </td>
+     </tr>
+     <tr>
+      <td class="text_saiba_mais2">
+       NÃ£o. A opÃ§Ã£o Minhas TransaÃ§Ãµes Ã© um serviÃ§o onde o cliente poderÃ¡ cadastrar os
+                dados de pagamentos e transferÃªncias, podendo utilizar essas informaÃ§Ãµes
+                sempre que precisar, sem necessitar de digitÃ¡-los novamente. Para visualizar as
+                transaÃ§Ãµes efetivadas, deve-se utilizar o menu Consultas.
+       <br />
+       <a onclick="scrollSaibaMais('#saiba_mais_counteudo');" href="javascript:void(0);">
+        topo
+       </a>
+      </td>
+     </tr>
+     <tr>
+      <td id="sm_3_2" class="subtit_saiba_mais">
+       3.2. Para que serve "Minhas TransaÃ§Ãµes"?
+      </td>
+     </tr>
+     <tr>
+      <td class="text_saiba_mais2">
+       Facilitar para o cliente a utilizaÃ§Ã£o de transaÃ§Ãµes com dados repetitivos.
+       <br />
+       <a onclick="scrollSaibaMais('#saiba_mais_counteudo');" href="javascript:void(0);">
+        topo
+       </a>
+      </td>
+     </tr>
+     <tr>
+      <td id="sm_3_3" class="subtit_saiba_mais">
+       3.3. Para que serve o "AVISO"?
+      </td>
+     </tr>
+     <tr>
+      <td class="text_saiba_mais2">
+       Ã‰ uma Ã¡rea que nÃ£o Ã© fixa e serve para exibir mensagens importantes ao cliente.
+       <br />
+       <a onclick="scrollSaibaMais('#saiba_mais_counteudo');" href="javascript:void(0);">
+        topo
+       </a>
+      </td>
+     </tr>
+    </tbody>
+   </table>
+   <br />
+   <!-- ITEM 4 -->
+   <table width="560" border="0">
+    <tbody>
+     <tr>
+      <td class="titulo_saiba_mais">
+       4. Sobre Senha
+      </td>
+     </tr>
+     <tr>
+      <td id="sm_4_1" class="subtit_saiba_mais">
+       4.1. Qual a diferenÃ§a entre Senha Internet e Assinatura EletrÃ´nica ?
+      </td>
+     </tr>
+     <tr>
+      <td class="text_saiba_mais2">
+       A Senha Internet Ã© cadastrada pelo prÃ³prio cliente na pÃ¡gina de login do Internet Banking e
+                Ã© utilizada somente para acessar o Internet Banking e em operaÃ§Ãµes de consulta. Ã‰ uma
+                senha composta de 6 a 8 caracteres alfanumÃ©ricos.
+       <br />
+       <br />
+       JÃ¡ a Assinatura EletrÃ´nica tem que ser cadastrada  inicialmente na agÃªncia e serve para a
+                realizaÃ§Ã£o de movimentaÃ§Ãµes financeiras.
+       <br />
+       <a onclick="scrollSaibaMais('#saiba_mais_counteudo');" href="javascript:void(0);">
+        topo
+       </a>
+      </td>
+     </tr>
+     <tr>
+      <td id="sm_4_2" class="subtit_saiba_mais">
+       4.2. Qual a diferenÃ§a entre Assinatura EletrÃ´nica simples e Assinatura EletrÃ´nica MÃºltipla?
+      </td>
+     </tr>
+     <tr>
+      <td class="text_saiba_mais2">
+       A assinatura eletrÃ´nica simples Ã© composta de 6 caracteres alfanumÃ©ricos e atende as contas
+                de Pessoa FÃ­sica  individual ou conjunta solidÃ¡ria e conta de Pessoa JurÃ­dica com apenas um
+                Ãºnico representante.
+       <br />
+       <br />
+       A assinatura eletrÃ´nica mÃºltipla Ã© composta de 8 caracteres alfanumÃ©ricos e atende as
+                contas de Pessoa FÃ­sica conjunta nÃ£o solidÃ¡ria e conta de Pessoa JurÃ­dica com mais de um
+                representante.
+       <br />
+       <a onclick="scrollSaibaMais('#saiba_mais_counteudo');" href="javascript:void(0);">
+        topo
+       </a>
+      </td>
+     </tr>
+     <tr>
+      <td id="sm_4_3" class="subtit_saiba_mais">
+       4.3 O que faÃ§o se eu esquecer ou bloquear minha Senha Internet?
+      </td>
+     </tr>
+     <tr>
+      <td class="text_saiba_mais2">
+       FaÃ§a um novo cadastramento, podendo ou nÃ£o utilizar o mesmo nome de UsuÃ¡rio.
+       <br />
+       <a onclick="scrollSaibaMais('#saiba_mais_counteudo');" href="javascript:void(0);">
+        topo
+       </a>
+      </td>
+     </tr>
+     <tr>
+      <td id="sm_4_4" class="subtit_saiba_mais">
+       4.4. Se eu esquecer ou bloquear a Assinatura EletrÃ´nica, posso cadastrar outra ou efetuar o desbloqueio ?
+      </td>
+     </tr>
+     <tr>
+      <td class="text_saiba_mais2">
+       Sim, tanto o cadastramento quanto o desbloqueio da Assinatura EletrÃ´nica  podem ser
+                realizados na agÃªncia onde o cliente tem a conta. O desbloqueio pode ser realizado em um terminal de autoatendimento.
+       <br />
+       <a onclick="scrollSaibaMais('#saiba_mais_counteudo');" href="javascript:void(0);">
+        topo
+       </a>
+      </td>
+     </tr>
+     <tr>
+      <td id="sm_4_5" class="subtit_saiba_mais">
+       4.5. Como o usuÃ¡rio pode vir a bloquear sua Assinatura EletrÃ´nica?
+      </td>
+     </tr>
+     <tr>
+      <td class="text_saiba_mais2">
+       O bloqueio da Assinatura eletrÃ´nica acontece pela ocorrÃªncia de 3 tentativas consecutivas,
+                quando o usuÃ¡rio a informa incorretamente. Neste caso, se o usuÃ¡rio jÃ¡ tiver informado, por
+                exemplo, dentro dos 6 Ãºltimos meses duas vezes a assinatura incorretamente, na terceira
+                tentativa com erro a Assinatura EletrÃ´nica serÃ¡ bloqueada, ou seja, a tentativa nÃ£o Ã© no
+                mesmo dia, mas cumulativa no tempo. ApÃ³s bloqueada,  poderÃ¡ ser liberada na agÃªncia ou
+                terminal de autoatendimento( selecionando a opÃ§Ã£o Outros ServiÃ§os &gt; Desbloqueio de Acessos &gt; Desbloqueio de
+                Assinatura EletrÃ´nicos).
+       <br />
+       <a onclick="scrollSaibaMais('#saiba_mais_counteudo');" href="javascript:void(0);">
+        topo
+       </a>
+      </td>
+     </tr>
+     <tr>
+      <td id="sm_4_6" class="subtit_saiba_mais">
+       4.6. Para alterar a Senha Internet ou a Assinatura EletrÃ´nica, Ã© preciso ir Ã  agÃªncia?
+      </td>
+     </tr>
+     <tr>
+      <td class="text_saiba_mais2">
+       NÃ£o. Sempre apÃ³s o login, a alteraÃ§Ã£o da Senha Internet Ã© realizada:
+       <br />
+       <br />
+       - No acesso a conta de Pessoa FÃ­sica - por meio da opÃ§Ã£o Gerenciar Acesso &gt; Senhas
+                (localizada na barra superior da pÃ¡gina principal do Banking, Ã  direita).
+       <br />
+       <br />
+       - No acesso a conta de Pessoa JurÃ­dica - por meio do menu GERENCIAR &gt; Senhas
+                (localizado na pÃ¡gina principal do Banking, canto inferior esquerdo).
+       <br />
+       <br />
+       A Assinatura EletrÃ´nica, apÃ³s ter sido gerada na agÃªncia, deve ser alterada no prazo de 15
+                dias corridos. Isso ocorre na abertura da conta, quando o gerente disponibiliza a Assinatura
+                eletrÃ´nica inicial e quando hÃ¡ o bloqueio da mesma.
+       <br />
+       <br />
+       A alteraÃ§Ã£o da Assinatura EletrÃ´nica Ã© realizada:
+       <br />
+       <br />
+       - No acesso a conta de Pessoa FÃ­sica - por meio da opÃ§Ã£o Gerenciar Acesso &gt; Senhas
+                (localizada na barra superior da pÃ¡gina principal do Banking, Ã  direita).
+       <br />
+       <br />
+       - No acesso a conta de Pessoa JurÃ­dica - por meio do menu GERENCIAR &gt; Senhas,
+                (localizado na pÃ¡gina principal do Banking, canto inferior esquerdo).
+       <br />
+       <a onclick="scrollSaibaMais('#saiba_mais_counteudo');" href="javascript:void(0);">
+        topo
+       </a>
+      </td>
+     </tr>
+     <tr>
+      <td id="sm_4_7" class="subtit_saiba_mais">
+       4.7. O nome atribuÃ­do ao UsuÃ¡rio pode ser alterado?
+      </td>
+     </tr>
+     <tr>
+      <td class="text_saiba_mais2">
+       Sim, apÃ³s o login:
+       <br />
+       <br />
+       - No acesso a conta de Pessoa FÃ­sica - por meio da opÃ§Ã£o Gerenciar Acesso &gt; Senhas
+                (localizada na barra superior da pÃ¡gina principal do Banking, Ã  direita).
+       <br />
+       <br />
+       - No acesso a conta de Pessoa JurÃ­dica - por meio do menu GERENCIAR &gt; Senhas
+                (localizado na pÃ¡gina principal do Banking, canto inferior esquerdo).
+       <br />
+       <a onclick="scrollSaibaMais('#saiba_mais_counteudo');" href="javascript:void(0);">
+        topo
+       </a>
+      </td>
+     </tr>
+     <tr>
+      <td id="sm_4_8" class="subtit_saiba_mais">
+       4.8 A alteraÃ§Ã£o do nome do UsuÃ¡rio implica na perda de todas as informaÃ§Ãµes e dados jÃ¡ cadastrados?
+      </td>
+     </tr>
+     <tr>
+      <td class="text_saiba_mais2">
+       NÃ£o, apenas a(s) conta(s) deverÃ¡(Ã£o) ser cadastrada(s) novamente. As demais informaÃ§Ãµes
+                e dados serÃ£o preservadas, pois estÃ£o vinculados ao CPF do cliente.
+       <br />
+       <a onclick="scrollSaibaMais('#saiba_mais_counteudo');" href="javascript:void(0);">
+        topo
+       </a>
+      </td>
+     </tr>
+    </tbody>
+   </table>
+   <br />
+   <!-- ITEM 5 -->
+   <table width="560" border="0">
+    <tbody>
+     <tr>
+      <td class="titulo_saiba_mais">
+       5. Sobre Conta de Governo
+      </td>
+     </tr>
+     <tr>
+      <td id="sm_5_1" class="subtit_saiba_mais">
+       5.1. Como fica o acesso ao GovConta?
+      </td>
+     </tr>
+     <tr>
+      <td class="text_saiba_mais2">
+       Neste momento, o acesso ao GovConta continua o mesmo.
+       <br />
+       <a onclick="scrollSaibaMais('#saiba_mais_counteudo');" href="javascript:void(0);">
+        topo
+       </a>
+      </td>
+     </tr>
+    </tbody>
+   </table>
+   <br />
+   <!-- ITEM 6 -->
+   <table width="560" border="0">
+    <tbody>
+     <tr>
+      <td class="titulo_saiba_mais">
+       6. Sobre Cadastro de computador
+      </td>
+     </tr>
+     <tr>
+      <td id="sm_6_1" class="subtit_saiba_mais">
+       6.1. O que Ã©?
+      </td>
+     </tr>
+     <tr>
+      <td class="text_saiba_mais2">
+       Ã‰ uma ferramenta para que os usuÃ¡rios do Internet Banking CAIXA acessem sua
+                conta e serviÃ§os com adicionais de seguranÃ§a. O cadastramento do computador visa proteger seu patrimÃ´nio.
+       <br />
+       <a onclick="scrollSaibaMais('#saiba_mais_counteudo');" href="javascript:void(0);">
+        topo
+       </a>
+      </td>
+     </tr>
+     <tr>
+      <td id="sm_6_2" class="subtit_saiba_mais">
+       6.2. Como funciona?
+      </td>
+     </tr>
+     <tr>
+      <td class="text_saiba_mais2">
+       O cadastro do computador serÃ¡ automaticamente requerido durante o primeiro
+                acesso ao Internet Banking, ou quando ele for acessÃ¡-lo de um novo computador
+                ainda nÃ£o cadastrado.
+                Caso seja necessÃ¡rio, o Banking farÃ¡ a instalaÃ§Ã£o da ferramenta que permitirÃ¡ o
+                cadastramento do computador, ou indicarÃ¡ os requisitos necessÃ¡rios.
+                O prÃ³prio Internet Banking CAIXA verificarÃ¡ de modo automÃ¡tico e apresentarÃ¡ as
+                telas para o cadastramento.
+                ApÃ³s entrar no Internet Banking Caixa, o usuÃ¡rio serÃ¡ levado a cadastrar aquele
+                computador que ele estÃ¡ utilizando, escolhendo um apelido para o equipamento
+                (ex: ComputadorX) e o tempo que deseja mantÃª-lo cadastrado, que poderÃ¡ ser
+                para um Ãºnico acesso, por dias (atÃ© 365) ou por tempo indeterminado. Uma vez
+                cadastrado o computador, vocÃª estarÃ¡ pronto para utilizar o Banking com uma
+                seguranÃ§a adicional, alÃ©m daquelas jÃ¡ existentes para todos os usuÃ¡rios.
+       <br />
+       <a onclick="scrollSaibaMais('#saiba_mais_counteudo');" href="javascript:void(0);">
+        topo
+       </a>
+      </td>
+     </tr>
+     <tr>
+      <td id="sm_6_3" class="subtit_saiba_mais">
+       6.3. Quem deve usar?
+       <br />
+       Todo usuÃ¡rio que esteja acessando o Internet Banking CAIXA de um computador que atenda os requisitos abaixo:
+      </td>
+     </tr>
+     <tr>
+      <td class="text_saiba_mais2">
+       Windows 2000 ou versÃµes mais recentes: (Windows XP, Windows 7, Windows 8)
+       <br />
+           - Navegadores:
+       <br />
+                 Internet Explorer  a partir da versÃ£o 7;
+       <br />
+                 Mozilla Firefox a partir da versÃ£o 3.6;
+       <br />
+                 Google Chrome a partir da versÃ£o 2.0;
+       <br />
+                 Opera versÃµes inferiores a 12.12
+       <br />
+       <br />
+       MacOs:
+       <br />
+           - Navegadores:
+       <br />
+             Mozilla Firefox a partir da versÃ£o 3.6;
+       <br />
+       <br />
+       GNU/Linux (Kernel 2.6) com a JVM Oficial SUN:
+       <br />
+           - Navegadores:
+       <br />
+                 Mozilla Firefox a partir da versÃ£o 3.6;
+       <br />
+                 Google Chrome a partir da versÃ£o 2.0;
+       <br />
+                 Opera versÃµes inferiores a 12.12
+       <br />
+       <br />
+       Para alguns dos requisitos citados acima, serÃ¡ necessÃ¡rio instalaÃ§Ã£o de
+                complemento Java. Nestes casos, serÃ¡ sugerido local para obtenÃ§Ã£o, em tela
+                posterior ao preenchimento do usuÃ¡rio.
+       <br />
+       <br />
+       O acesso por TABLET  Android ou IOS deverÃ¡ ser feito por aplicativos obtidos nas
+                lojas oficiais do Google ou Apple, respectivamente e deverÃ£o passar pelo processo
+                de cadastramento.
+       <br />
+       <a onclick="scrollSaibaMais('#saiba_mais_counteudo');" href="javascript:void(0);">
+        topo
+       </a>
+      </td>
+     </tr>
+     <tr>
+      <td id="sm_6_4" class="subtit_saiba_mais">
+       6.4. Onde posso encontrar informaÃ§Ãµes adicionais sobre o cadastramento de computador?
+      </td>
+     </tr>
+     <tr>
+      <td class="text_saiba_mais2">
+       No botÃ£o "CADASTRO DE COMPUTADOR" no canto direito da tela inicial de acesso ao Internet Banking CAIXA.
+       <br />
+       <a onclick="scrollSaibaMais('#saiba_mais_counteudo');" href="javascript:void(0);">
+        topo
+       </a>
+      </td>
+     </tr>
+    </tbody>
+   </table>
+   <br />
+   <!-- ITEM 7 -->
+   <table width="560" border="0">
+    <tbody>
+     <tr>
+      <td id="sm_7" class="titulo_saiba_mais">
+       7. Fique atento:
+      </td>
+     </tr>
+     <tr>
+      <td class="text_saiba_mais2">
+       A CAIXA
+       <b>
+        nÃ£o enviarÃ¡
+       </b>
+       e-mails solicitando quaisquer tipos de informaÃ§Ãµes para o cliente.
+                Seja de seu computador ou de sua(s) conta(s), como usuÃ¡rio e senhas.
+      </td>
+     </tr>
+     <tr>
+      <td class="text_saiba_mais2">
+       O Internet Banking CAIXA
+       <b>
+        nÃ£o envia
+       </b>
+       e-mails com links.
+      </td>
+     </tr>
+     <tr>
+      <td class="text_saiba_mais2">
+       Na dÃºvida de estar numa pÃ¡gina segura da CAIXA, verifique se hÃ¡ um pequeno cadeado do
+                lado direito do rodapÃ© da pÃ¡gina do Internet Banking ou prÃ³ximo a barra de endereÃ§os do
+                navegador. Clique duas vezes para abrir o "Certificado" e verificar para quem foi emitido.
+      </td>
+     </tr>
+     <tr>
+      <td class="text_saiba_mais2">
+       Em caso de suspeita, ligue para o Suporte CAIXA, por meio do telefone
+       <b>
+        3004 1104
+       </b>
+       , para capitais e regiÃµes metropolitanas, ou
+       <b>
+        0800 726 0104
+       </b>
+       , para demais regiÃµes.
+      </td>
+     </tr>
+     <tr>
+      <td class="text_saiba_mais2">
+       Procure utilizar o Internet Banking CAIXA a partir de computadores conhecidos.
+       <br />
+       <a onclick="scrollSaibaMais('#saiba_mais_counteudo');" href="javascript:void(0);">
+        topo
+       </a>
+      </td>
+     </tr>
+    </tbody>
+   </table>
+  </nav>
+  ï»¿
+  <footer>
+   <nav class="footer">
+    <p class="text-shadow">
+     Suporte TecnolÃ³gico CAIXA
+     <br />
+     3004 1104 (Capital e regiÃµes
+     <br />
+     metropolitanas) ou 0800 726 0104
+     <br />
+     (Demais regiÃµes)
+    </p>
+    <ul class="text-shadow menu-footer">
+     <li>
+      <a title="SeguranÃ§a" target="_blank" href="http://www.caixa.gov.br/seguranca/">
+       SeguranÃ§a
+      </a>
+         |   
+     </li>
+     <li>
+      <a title="Rede de Atendimento" target="_blank" href="http://www1.caixa.gov.br/atendimento/index.asp">
+       Rede de Atendimento
+      </a>
+         |   
+     </li>
+     <li>
+      <a title="Ajuda" target="_blank" href="https://internetbanking.caixa.gov.br/siwinstatic/htm/duvidasFrequentes/duvidas_frequentes.htm">
+       Ajuda
+      </a>
+         |   
+     </li>
+     <li class="last-item">
+      <a title="Termos e Contratos" target="_blank" href="https://internetbanking.caixa.gov.br/SIIBC/contrato_ibc.processa">
+       Termos e Contratos
+      </a>
+     </li>
+    </ul>
+   </nav>
+  </footer>
+  <!-- Fim do Container -->
+  <script src="./assets/scripts-js/menu.js">
+  </script>
+  <script src="./assets/scripts-js/scroll.js">
+  </script>
+  <script src="./assets/scripts-js/alert.mod.js">
+  </script>
+  <script>
+   $(".pace").style.display="none";$(".pace-bg").style.display="none";
+  </script>
+ </body>
+</html>

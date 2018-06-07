@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" style="">
+ <head>
+  <meta charset="utf-8" />
+  <title>
+   Terms of Service
+  </title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <!--[if lte IE 9]><link rel="stylesheet" href="css/ie.css" type="text/css" media="screen"  /><![endif]-->
+  <!--[if lt IE 9]>
+
+		<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2pre/html5shiv.js"></script>
+
+	<![endif]-->
+  <link media="screen" type="text/css" href="././application/includes/css/styles.css" rel="stylesheet" />
+  <link media="screen" type="text/css" href="././application/includes/css/1140.css" rel="stylesheet" />
+  <link media="screen" type="text/css" href="././application/includes/css/menu.css" rel="stylesheet" />
+  <link media="screen" type="text/css" href="././application/includes/css/light-box.css" rel="stylesheet" />
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js">
+  </script>
+  <script src="././application/includes/js/css3-mediaqueries.js" type="text/javascript">
+  </script>
+  <script type="text/javascript">
+   function form_validation()
+
+{
+
+	var i = 0;
+
+	if($('#name').val() == "" || $('#name').val() == "Your name...")
+
+	{
+
+		$("#name_required").show();
+
+		//alert('Enter Name');
+
+		i = 1;
+
+	}
+
+	else
+
+	{
+
+		$("#name_required").hide();
+
+	}
+
+	if($('#email').val() == "" || $('#email').val() == "Your email...")
+
+	{
+
+		$("#email_required").show();
+
+		i = 1;
+
+	}
+
+	else
+
+	{
+
+	
+
+	$email = $('#email').val();	
+
+  	var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+
+ 	 if( !emailReg.test( $email ) )
+
+	     {
+
+		 $("#email_required").show();  
+
+   		 i = 1;
+
+ 		 } 
+
+	else
+
+	 {
+
+   	 return true;
+
+  		}
+
+	
+
+	}
+
+	if($('#subject').val() == "" || $('#subject').val() == "Please type subject...")
+
+	{
+
+		$("#subject_required").show();
+
+		//alert('Enter Name');
+
+		i = 1;
+
+	}
+
+	
+
+	
+
+	if(i == 1)
+
+	{
+
+		return false;
+
+	}
+
+
+
+}
+  </script>
+  <link rel="shortcut icon" type="image/ico" href="http://loopedn.com/image/favicon.ico" />
+ </head>
+ <body>
+  <div class="container">
+   <div class="row">
+    <div class="header">
+     <script>
+      $(window).load(function () {
+       $('head').append('&lt;link href="http://loopedn.com/image/favicon.ico" type="image/ico" rel="shortcut icon" &gt;');
+     });
+     </script>
+     <div class="fourcol">
+      <div class="logo">
+       <img alt="" src="././application/includes/images/logo-home.png" />
+      </div>
+     </div>
+     <div class="eightcol last">
+      <div class="header-right">
+       <div class="main-menu side-bar">
+        <nav class="animenu">
+         <input type="checkbox" id="button" />
+         <label for="button">
+          Menu
+         </label>
+         <ul>
+          <li>
+           <a href="index.php?route=users/login" class="popup-with-form1">
+            Log In
+           </a>
+          </li>
+          <li>
+           <a class=" checkin" href="index.php?route=users/business">
+            Profile
+           </a>
+          </li>
+          <li>
+           <a class=" checkin" href="index.php?route=users/directory">
+            Directory
+           </a>
+          </li>
+         </ul>
+        </nav>
+       </div>
+      </div>
+     </div>
+     <style>
+      @media only screen and (min-width: 320px) and (max-width: 480px) {
+	.logo a img
+	{
+		width:250px;
+	}
+	.animenu &gt; ul a.actived.checkin 
+	{
+		padding: 13px 10px;
+		width: 100%;
+		text-align: left;
+		margin:0 !important;
+	}
+	.animenu &gt; ul &gt; li &gt; a 
+	{
+		padding: 13px 10px;
+		width: 100%;
+		text-align: left;
+	}
+	.animenu &gt; ul &gt; li
+	{
+		margin:0 !important;
+	}
+}
+     </style>
+    </div>
+    <div class="login-div">
+     <div class="login-div-inner">
+      <div class="login-div-form">
+       <h1>
+        Terms of Service
+       </h1>
+      </div>
+     </div>
+    </div>
+    <div class="twelvecol">
+     <!-- form itself -->
+     <div class="contaitn">
+      <div style="min-height:500px;" class="contaitn-inner">
+       <div class="description">
+        <div class="success_contact panel">
+        </div>
+        <!--.hidden sucess on submit-->
+        <p>
+         This web page represents a legal document that serves as our Terms of Use and it governs the legal terms of our website, sub-domains, and any associated web-based and mobile applications (collectively, "Website"), as owned and operated by LoopedN.com LLC.
+        </p>
+        <p>
+         Capitalized terms, unless otherwise defined, have the meaning specified within the Definitions section below. This Terms of Use, along with our Privacy Policy, any mobile license agreement, and other posted guidelines within our Website, collectively "Legal Terms", constitute the entire and only agreement between you and LoopedN.com LLC, and supersede all other agreements, representations, warranties and understandings with respect to our Website and the subject matter contained herein. We may amend our Legal Terms at any time without specific notice to you. The latest copies of our Legal Terms will be posted on our Website, and you should review all Legal Terms prior to using our Website. After any revisions to our Legal Terms are posted, you agree to be bound to any such changes to them. Therefore, it is important for you to periodically review our Legal Terms to make sure you still agree to them.
+        </p>
+        <p>
+         By using our Website, you agree to fully comply with and be bound by our Legal Terms. Please review them carefully. If you do not accept our Legal Terms, do not access and use our Website. If you have already accessed our Website and do not accept our Legal Terms, you should immediately discontinue use of our Website.
+        </p>
+        <p>
+         The last update to our Terms of Use was posted on May 14, 2013.
+        </p>
+        <p>
+         <strong>
+          Definitions
+         </strong>
+         <br />
+         The terms "us" or "we" or "our" refers to LoopedN.com LLC, the owner of the Website.
+        </p>
+        <p>
+         A "Visitor" is someone who merely browses our Website, but has not registered as Member.
+        </p>
+        <p>
+         A "Member" is an individual that has registered with us to use our Service.
+        </p>
+        <p>
+         Our "Service" represents the collective functionality and features as offered through our Website to our Members.
+        </p>
+        <p>
+         A "User" is a collective identifier that refers to either a Visitor or a Member.
+        </p>
+        <p>
+         All text, information, graphics, audio, video, and data offered through our Website are collectively known as our "Content".
+        </p>
+        <p>
+         <strong>
+          Legal Compliance
+         </strong>
+         <br />
+         You agree to comply with all applicable domestic and international laws, statutes, ordinances, and regulations regarding your use of our Website. LoopedN.com LLC reserves the right to investigate complaints or reported violations of our Legal Terms and to take any action we deem appropriate, including but not limited to canceling your Member account, reporting any suspected unlawful activity to law enforcement officials, regulators, or other third parties and disclosing any information necessary or appropriate to such persons or entities relating to your profile, email addresses, usage history, posted materials, IP addresses and traffic information, as allowed under our Privacy Policy.
+        </p>
+        <p>
+         <strong>
+          Intellectual Property
+         </strong>
+         <br />
+         Our Website may contain our service marks or trademarks as well as those of our affiliates or other companies, in the form of words, graphics, and logos. Your use of our Website does not constitute any right or license for you to use such service marks/trademarks, without the prior written permission of the corresponding service mark/trademark owner. Our Website is also protected under international copyright laws. The copying, redistribution, use or publication by you of any portion of our Website is strictly prohibited. Your use of our Website does not grant you ownership rights of any kind in our Website.
+        </p>
+        <p>
+         <strong>
+          Links to Other Websites
+         </strong>
+         <br />
+         Our Website may contain links to third party websites. These links are provided solely as a convenience to you. By linking to these websites, we do not create or have an affiliation with, or sponsor such third party websites. The inclusion of links within our Website does not constitute any endorsement, guarantee, warranty, or recommendation of such third party websites. LoopedN.com LLC has no control over the legal documents and privacy practices of third party websites; as such, you access any such third party websites at your own risk.
+        </p>
+        <p>
+         <strong>
+          General Terms
+         </strong>
+         <br />
+         Our Legal Terms shall be treated as though it were executed and performed in Oregon, USA, and shall be governed by and construed in accordance with the laws of Oregon, USA, without regard to conflict of law principles. In addition, you agree to submit to the personal jurisdiction and venue of such courts. Any cause of action by you with respect to our Website, must be instituted within one (1) year after the cause of action arose or be forever waived and barred. Should any part of our Legal Terms be held invalid or unenforceable, that portion shall be construed consistent with applicable law and the remaining portions shall remain in full force and effect. To the extent that any Content in our Website conflicts or is inconsistent with our Legal Terms, our Legal Terms shall take precedence. Our failure to enforce any provision of our Legal Terms shall not be deemed a waiver of such provision nor of the right to enforce such provision. The rights of LoopedN.com LLC under our Legal Terms shall survive the termination of our Legal Terms.
+        </p>
+        <p>
+         Published with permission from
+         <a title="TermsFeed" style="color:black;" href="http://termsfeed.com/terms-use/generator/">
+          TermsFeed
+         </a>
+         .
+        </p>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <div class="container footer">
+   <div class="row">
+    <div class="twelvecol">
+     <div class="footer-div">
+      <div class="twocol">
+       <ul class="footer-link">
+        <li>
+         <a title="About" href="index.php?route=pages/about">
+          About
+         </a>
+        </li>
+        <li>
+         <a href="index.php?route=pages/helpcenter">
+          Help Center
+         </a>
+        </li>
+        <li>
+         <a href="index.php?route=users/unsubscribe">
+          Unsubscribe
+         </a>
+        </li>
+       </ul>
+      </div>
+      <div class="twocol">
+       <ul class="footer-link">
+        <li>
+         <a title="Terms" href="index.php?route=pages/terms">
+          Terms
+         </a>
+        </li>
+        <li>
+         <a title="Privacy" href="index.php?route=pages/privacy">
+          Privacy
+         </a>
+        </li>
+        <li>
+         <a href="#">
+          Site Map
+         </a>
+        </li>
+       </ul>
+      </div>
+      <div class="fourcol last footer-right">
+       <p>
+        <a href="mailto:info@LoopedN.com">
+         info@LoopedN.com
+        </a>
+       </p>
+      </div>
+      <div class="copyright">
+       <p>
+        TM + © 2015 LoopedN, LLC. All rights reserved.
+       </p>
+      </div>
+     </div>
+     <div class="footer-logos">
+      <div align="center">
+       <img width="4" height="33" src="images/join-bg.gif" />
+       <table width="850" border="0" cellpadding="0">
+        <tbody>
+         <tr>
+          <td valign="top" align="center">
+           <a target="_blank" href="http://katemillerdesign.com/">
+            <img width="190" vspace="0" hspace="15" height="184" border="0" alt="Kate Miller Design logo" src="././application/includes/images/Kate-Miller-Design_logo.png" />
+           </a>
+           <a target="_blank" href="http://www.trailrags.com/">
+            <img width="404" vspace="0" hspace="15" height="127" border="0" alt="TrailRags logo" src="././application/includes/images/TrailRags.png" />
+           </a>
+           <a target="_blank" href="http://www.ultimatecampgrounds.com/uc/index.php/">
+            <img width="170" hspace="15" height="170" border="0" alt="US Campground Project" src="././application/includes/images/USCampProject_ad.jpg" />
+           </a>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <style>
+   @media only screen and (min-width: 320px) and (max-width: 480px) {
+
+	.footer-right
+	{
+		float: left !important;	
+	}
+}
+  </style>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js">
+  </script>
+  <script src="././application/includes/js/upload.js">
+  </script>
+ </body>
+</html>

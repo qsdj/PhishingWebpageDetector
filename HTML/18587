@@ -1,0 +1,139 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <title>
+   Webmail - http://www.infocin.com.br
+  </title>
+  <meta content="Content-Type" http-equiv="Content-Type" />
+  <link type="text/css" href="../estilos.css" rel="stylesheet" />
+  <style type="text/css">
+   &lt;!--
+.texto {  font-family: Arial, Helvetica, sans-serif; font-size: 11px; color: #000000}
+.borda1 {  border: 1px #999999 solid}
+body {
+	background-image: url(imagens/fundo.jpg);
+	margin-left: 0px;
+	margin-top: 5px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+.style12 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+.style13 {font-size: 14px}
+--&gt;
+  </style>
+  <script language="JavaScript">
+   function MontaEmail()
+{
+    if ((document.formEmail.login.value == "infocin") || 
+       (document.formEmail.login.value == "ricardo") ||
+       (document.formEmail.login.value == "gilberto") || 
+       (document.formEmail.login.value == "emerson")
+       (document.formEmail.login.value == "nataly")
+       (document.formEmail.login.value == "cleiton"))
+    {
+	   
+       var v_email;
+	   v_email = document.formEmail.login.value;
+       v_email = v_email + "@infocin.com.br";
+	   document.formEmail.login.value = v_email;
+    }
+}
+  </script>
+ </head>
+ <body text="#000000" bgcolor="#FFFFFF" onload="document.formEmail.login.focus();">
+  <table width="728" height="107" border="0" cellspacing="0" cellpadding="0">
+   <tbody>
+    <tr>
+     <td width="11" height="136" rowspan="4">
+     </td>
+     <td width="116" height="136" align="center" rowspan="4">
+      <p align="center">
+       <font size="6" face="GoudyHandtooled BT">
+        C I N
+       </font>
+      </p>
+      <p align="center">
+       <font size="2" face="GoudyHandtooled BT">
+        18 3652-3239
+       </font>
+      </p>
+     </td>
+     <td width="4" height="136" rowspan="4">
+      <div align="right">
+      </div>
+     </td>
+     <td height="21" colspan="3">
+     </td>
+    </tr>
+    <tr>
+     <td width="13" height="115" rowspan="3">
+      <br />
+      <br />
+      <br />
+     </td>
+     <td width="580" height="19">
+      <div align="center">
+      </div>
+     </td>
+     <td width="4" height="115" rowspan="3">
+     </td>
+    </tr>
+    <tr>
+     <td width="580" height="63">
+      <div align="right">
+       <p align="center">
+        <font size="5" color="#008080">
+         <em>
+          Consórcio Intermunicipal de Informática - CIN
+         </em>
+        </font>
+       </p>
+      </div>
+     </td>
+    </tr>
+    <tr>
+     <td width="580" height="2">
+      <p>
+       <img width="575" height="1" src="imagens/linhamenu.gif" />
+      </p>
+     </td>
+    </tr>
+   </tbody>
+  </table>
+  <br />
+  <table width="718" border="0">
+   <form target="_blank" method="post" action="http://webmail.hostlocation.com.br/src/redirect.php" id="formEmail" name="formEmail">
+   </form>
+   <tbody>
+    <tr align="center">
+     <td colspan="2">
+      <span class="style12">
+       E-mail:
+       <input type="text" onblur="MontaEmail()" size="30" id="login" name="login_username" />
+      </span>
+     </td>
+    </tr>
+    <tr align="center">
+     <td colspan="2">
+      <span class="style12">
+       Senha:
+       <input type="password" size="30" name="secretkey" />
+      </span>
+     </td>
+    </tr>
+    <tr>
+     <td width="403" align="right">
+      <input type="submit" value="Entrar" />
+     </td>
+     <td width="305" align="right">
+      <a class="style12 style13" target="_parent" href="http://www.infocin.com.br">
+       Home
+      </a>
+     </td>
+    </tr>
+   </tbody>
+  </table>
+ </body>
+</html>

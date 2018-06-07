@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="it">
+ <head>
+  <meta charset="utf-8" />
+  <title>
+   A-CLASS - KREOS - LAIKA
+  </title>
+  <meta content="laika" name="keywords" />
+  <meta content="Laika" name="description" />
+  <meta content="QeuRdHlrOQ8JLokV2xqM10-iSTOmGJxSyMh3dFm20sI" name="google-site-verification" />
+  <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900" />
+  <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,700,300" />
+  <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,700,300,500" />
+  <link type="image/x-icon" rel="shortcut icon" href="http://www.laika.it/img/favicon-laika-1.png" />
+  <link type="text/css" href="http://www.laika.it/css/style.css?v=1" rel="stylesheet" />
+  <link type="text/css" href="http://www.laika.it/css/jNice.css" rel="stylesheet" />
+  <link type="text/css" href="http://www.laika.it/css/jquery.jscrollpane.css" rel="stylesheet" />
+  <link type="text/css" href="http://www.laika.it/css/smoothness/jquery-ui-1.8.21.custom.css" rel="stylesheet" />
+  <link href="http://www.laika.it/css/jquery.cookiebar.css" type="text/css" rel="stylesheet" />
+  <script async="" src="//www.google-analytics.com/analytics.js">
+  </script>
+  <script type="text/javascript">
+   var URL_SITE = 'http://www.laika.it/';
+var ITEMID = 17;
+var CAMPERID = 0;
+var LANGTEXT = 'en';
+var CAMPER_PATHCATEGORIA = 0;
+var HOMEPREFIX = '/';
+var SUFFIXPAGE = '.html';
+var IDUTENTE_PRESS = 0;
+  </script>
+  <script src="http://www.laika.it/js/lang/en.js" type="text/javascript">
+  </script>
+  <script type="text/javascript" src="http://www.laika.it/js/TweenLite.min.js">
+  </script>
+  <script type="text/javascript" src="http://www.laika.it/js/jquery-1.7.2.min.js">
+  </script>
+  <script type="text/javascript" src="http://www.laika.it/js/jquery-ui-1.8.21.custom.min.js">
+  </script>
+  <script type="text/javascript" src="http://www.laika.it/js/utility.js?v=1">
+  </script>
+  <script type="text/javascript" src="http://www.laika.it/js/jquery.jNice.js">
+  </script>
+  <script type="text/javascript" src="http://www.laika.it/js/jquery.alert.js?v=1">
+  </script>
+  <script type="text/javascript" src="http://www.laika.it/js/jquery.scrollTo-min.js">
+  </script>
+  <script type="text/javascript" src="http://www.laika.it/js/slider-home.js?v=1">
+  </script>
+  <script type="text/javascript" src="http://www.laika.it/js/jquery.hammer.js">
+  </script>
+  <script type="text/javascript" src="http://www.laika.it/js/iscroll.js">
+  </script>
+  <script type="text/javascript" src="http://www.laika.it/js/jquery.address-1.5.min.js">
+  </script>
+  <script type="text/javascript" src="http://www.laika.it/js/menu.js?v=1">
+  </script>
+  <script src="http://www.laika.it/js/jquery.mousewheel.js" type="text/javascript">
+  </script>
+  <script src="http://www.laika.it/js/gallery.js" type="text/javascript">
+  </script>
+  <script src="http://www.laika.it/js/jquery.base64.js" type="text/javascript">
+  </script>
+  <script src="http://www.laika.it/js/jquery.cookiebar.js" type="text/javascript">
+  </script>
+  <script>
+   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-49476997-2', 'auto');
+  ga('set', 'anonymizeIp', true);
+  ga('send', 'pageview');
+$(document).ready(function(){
+      var path=window.location.href+'/privacy-and-cookie-policy.html';
+      var langSite = 'en';
+      var mex  = '';
+      switch(langSite) {
+        case 'it':
+          mex = '&lt;strong&gt;Questo sito utilizza i cookie per migliorare la vostra esperienza&lt;/strong&gt;. &lt;span class="cookie-style"&gt;Continuando a navigare nel nostro sito accettate la nostra politica dei cookie &lt;a href="'+path+'" target="_blank" class="learnMore"&gt;Leggi&lt;/a&gt;&lt;/span&gt;';
+          break;
+        case 'en':
+          mex = '&lt;strong&gt;This site uses cookies to improve your experience&lt;/strong&gt;. &lt;span class="cookie-style"&gt;By continuing to browse our site you accept our cookie policy &lt;a href="'+path+'" target="_blank" class="learnMore"&gt;Learn&amp;nbsp;more.&lt;/a&gt;&lt;/span&gt;';
+          break;
+        case 'de':
+          mex = '&lt;strong&gt;This site uses cookies to improve your experience&lt;/strong&gt;. &lt;span class="cookie-style"&gt;By continuing to browse our site you accept our cookie policy &lt;a href="'+path+'" target="_blank" class="learnMore"&gt;Learn&amp;nbsp;more.&lt;/a&gt;&lt;/span&gt;';
+          break;
+        default:
+          mex = '&lt;strong&gt;This site uses cookies to improve your experience&lt;/strong&gt;. &lt;span class="cookie-style"&gt;By continuing to browse our site you accept our cookie policy &lt;a href="'+path+'" target="_blank" class="learnMore"&gt;Learn&amp;nbsp;more.&lt;/a&gt;&lt;/span&gt;';
+          break;
+      }
+      $.cookieBar({
+            fixed: true,
+            acceptOnScroll: 200,
+            declineButton: false,
+            message: mex
+      });
+});
+  </script>
+ </head>
+ <body>
+  <div class="fixed" id="cookie-bar">
+   <p>
+    <strong>
+     This site uses cookies to improve your experience
+    </strong>
+    .
+    <span class="cookie-style">
+     By continuing to browse our site you accept our cookie policy
+     <a class="learnMore" target="_blank" href="http://www.laika.it/en/a-class-kreos.html/privacy-and-cookie-policy.html">
+      Learn more.
+     </a>
+    </span>
+    <a class="cb-enable" href="">
+     Accept
+    </a>
+   </p>
+  </div>
+  <div class="total_container" style="visibility: visible; width: 980px; height: 600px;">
+   <!-- MENU -->
+   <div class="menu_container menu_container_small" style="position: absolute; width: 980px;">
+    <a class="legalinfo" title="Legal Info" href="http://www.laika.it/en/privacy-and-cookie-policy.html">
+     Legal Info
+     <font>
+     </font>
+    </a>
+    <a class="youtube" title="YouTube" target="_blank" href="https://www.youtube.com/user/LaikaCaravansSpa">
+    </a>
+    <a class="instagram" title="Instagram" target="_blank" href="http://instagram.com/laika_caravans">
+    </a>
+    <a class="facebook" title="Facebook" target="_blank" href="https://it-it.facebook.com/LaikaCaravan">
+    </a>
+    <span>
+     Follow us
+    </span>
+    <a class="newsletter" title="Newsletter" href="javascript:openNewsletter()">
+     Newsletter
+     <font>
+     </font>
+    </a>
+    <a class="change" title="Change Language " href="javascript:openChangeLanguage()">
+     Change Language
+     <font>
+     </font>
+    </a>
+    <a class="highlights" title="Highlights" href="javascript:openMenuVeloce()">
+     Highlights
+     <font>
+     </font>
+    </a>
+   </div>
+   <!-- FINE MENU -->
+   <div class="site_container" style="width: 980px; height: 500px;">
+    <!-- PARTE SEMPRE PRESENTE -->
+    <a class="logo" href="http://www.laika.it/en">
+    </a>
+    <a title="TYPES 2016" href="javascript:openCamperMenu()" class="opencampermenu">
+     TYPES 2016
+    </a>
+    <div class="camper_menu_container" style="height: 460px; width: 210px; left: -210px; visibility: visible;">
+     <div class="camper_menu_container_content" style="height: 460px; width: 210px;">
+      <div class="logo" style="height: 125px;">
+       <a class="" href="http://www.laika.it/en">
+        <img src="http://www.laika.it/img/logo_popup.png" initw="190" inith="110" style="width: 190px; height: 110px; margin-left: 10px;" />
+       </a>
+      </div>
+      <div class="camper_menu_container_content_camper" style="height: 335px;">
+       <div class="element" style="height: 48px;">
+        <a title="A-Class - Rexosline" href="http://www.laika.it/en/a-class-rexosline.html" class="categoria1">
+        </a>
+        <a class="over" title="A-Class - Rexosline" href="http://www.laika.it/en/a-class-rexosline.html" style="line-height: 47px;">
+         A-Class
+         <font>
+          Rexosline
+         </font>
+        </a>
+       </div>
+       <div class="element" style="height: 48px;">
+        <a title="A-Class - Kreos" href="http://www.laika.it/en/a-class-kreos.html" class="categoria2">
+        </a>
+        <a class="over selected" title="A-Class - Kreos" href="http://www.laika.it/en/a-class-kreos.html" style="line-height: 47px;">
+         A-Class
+         <font>
+          Kreos
+         </font>
+        </a>
+       </div>
+       <div class="element" style="height: 48px;">
+        <a title="Low-profile - Kreos" href="http://www.laika.it/en/low-profile-kreos.html" class="categoria3">
+        </a>
+        <a class="over" title="Low-profile - Kreos" href="http://www.laika.it/en/low-profile-kreos.html" style="line-height: 47px;">
+         Low-profile
+         <font>
+          Kreos
+         </font>
+        </a>
+       </div>
+       <div class="element" style="height: 48px;">
+        <a title="Coachbuilt - Kreos" href="http://www.laika.it/en/coachbuilt-kreos.html" class="categoria4">
+        </a>
+        <a class="over" title="Coachbuilt - Kreos" href="http://www.laika.it/en/coachbuilt-kreos.html" style="line-height: 47px;">
+         Coachbuilt
+         <font>
+          Kreos
+         </font>
+        </a>
+       </div>
+       <div class="element" style="height: 48px;">
+        <a title="A-Class - Ecovip" href="http://www.laika.it/en/a-class-ecovip.html" class="categoria5">
+        </a>
+        <a class="over" title="A-Class - Ecovip" href="http://www.laika.it/en/a-class-ecovip.html" style="line-height: 47px;">
+         A-Class
+         <font>
+          Ecovip
+         </font>
+        </a>
+       </div>
+       <div class="element" style="height: 48px;">
+        <a title="Low-profile - Ecovip" href="http://www.laika.it/en/low-profile-ecovip.html" class="categoria6">
+        </a>
+        <a class="over" title="Low-profile - Ecovip" href="http://www.laika.it/en/low-profile-ecovip.html" style="line-height: 47px;">
+         Low-profile
+         <font>
+          Ecovip
+         </font>
+        </a>
+       </div>
+       <div class="element" style="height: 48px;">
+        <a title="Coachbuilt - Ecovip" href="http://www.laika.it/en/coachbuilt-ecovip.html" class="categoria7">
+        </a>
+        <a class="over" title="Coachbuilt - Ecovip" href="http://www.laika.it/en/coachbuilt-ecovip.html" style="line-height: 47px;">
+         Coachbuilt
+         <font>
+          Ecovip
+         </font>
+        </a>
+       </div>
+      </div>
+      <a title="Close" href="javascript:openCamperMenu()" class="closecampermenu">
+      </a>
+     </div>
+    </div>
+    <!-- FINE PARTE SEMPRE PRESENTE -->
+    <!-- BACKGROUND -->
+    <!-- BACKGROUND -->
+    <div class="background">
+     <img class="bkg" center="1" src="http://www.laika.it/img/sfondi/Kreos_7010-032_web.jpg" initw="2000" inith="1333" style="width: 980px; height: 654px; left: 0px; top: -77px; display: none; visibility: visible;" />
+     <img class="bkg next_bkg" center="1" src="http://www.laika.it/img/sfondi/MK1_443806052.jpg" initw="2400" inith="1436" style="width: 980px; height: 587px; left: 0px; top: -43px; display: block; visibility: visible; opacity: 1;" />
+     <img class="bkg next_bkg" center="1" src="http://www.laika.it/img/sfondi/MK2_1188136533.jpg" initw="2400" inith="1436" style="width: 980px; height: 587px; left: 0px; top: -43px; display: none; visibility: visible;" />
+     <img class="bkg next_bkg" center="1" src="http://www.laika.it/img/sfondi/LAIKA-K-7010-076_web.jpg" initw="1335" inith="2000" style="width: 980px; height: 1469px; left: 0px; top: -484px; display: none; visibility: visible;" />
+     <img class="bkg next_bkg" center="1" src="http://www.laika.it/img/sfondi/LAIKA-K-7010-127_web.jpg" initw="2400" inith="3597" style="width: 980px; height: 1469px; left: 0px; top: -484px; display: none; visibility: visible;" />
+    </div>
+    <div class="background_ball" style="visibility: visible;">
+     <a class="" href="javascript:changeBackground(0)">
+     </a>
+     <a href="javascript:changeBackground(1)" class="">
+     </a>
+     <a href="javascript:changeBackground(2)" class="selected">
+     </a>
+     <a href="javascript:changeBackground(3)">
+     </a>
+     <a class="last" href="javascript:changeBackground(4)">
+     </a>
+    </div>
+    <div class="categoria_camper_info">
+     <p class="tipologia">
+      A-Class
+     </p>
+     <p>
+      Kreos
+     </p>
+     <p class="text">
+      STYLE INSPIRED BY EXCELLENCE
+     </p>
+    </div>
+    <a title="VIEW TYPES 2016 Kreos" href="javascript:apriElencoCamper()" class="link_page elenco_camper">
+     VIEW TYPES 2016 Kreos
+    </a>
+   </div>
+   <!-- FOOTER -->
+   <div class="footer_container" style="position: absolute; width: 980px;">
+    <a class="logo" href="http://www.laika.it/en">
+    </a>
+    <ul>
+     <li>
+      <a title="MOTORHOME TYPES 2016" href="javascript:openCamperMenu()" class="gamma selected block">
+       MOTORHOME TYPES 2016
+      </a>
+      <ul class="submenu" style="width: 852px; display: none; visibility: visible;">
+       <li>
+        <a title="A-Class - Rexosline" href="http://www.laika.it/en/a-class-rexosline.html">
+         A-Class
+         <font>
+          Rexosline
+         </font>
+        </a>
+       </li>
+       <li>
+        <a title="A-Class - Kreos" href="http://www.laika.it/en/a-class-kreos.html" class="selected">
+         A-Class
+         <font>
+          Kreos
+         </font>
+        </a>
+       </li>
+       <li>
+        <a title="Low-profile - Kreos" href="http://www.laika.it/en/low-profile-kreos.html">
+         Low-profile
+         <font>
+          Kreos
+         </font>
+        </a>
+       </li>
+       <li>
+        <a title="Coachbuilt - Kreos" href="http://www.laika.it/en/coachbuilt-kreos.html">
+         Coachbuilt
+         <font>
+          Kreos
+         </font>
+        </a>
+       </li>
+       <li>
+        <a title="A-Class - Ecovip" href="http://www.laika.it/en/a-class-ecovip.html">
+         A-Class
+         <font>
+          Ecovip
+         </font>
+        </a>
+       </li>
+       <li>
+        <a title="Low-profile - Ecovip" href="http://www.laika.it/en/low-profile-ecovip.html">
+         Low-profile
+         <font>
+          Ecovip
+         </font>
+        </a>
+       </li>
+       <li class="last">
+        <a title="Coachbuilt - Ecovip" href="http://www.laika.it/en/coachbuilt-ecovip.html">
+         Coachbuilt
+         <font>
+          Ecovip
+         </font>
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li>
+      <a title="Laika World" href="javascript:void(0)">
+       Laika World
+      </a>
+      <ul class="submenu" style="width: 367px; display: none; visibility: visible;">
+       <li>
+        <a title="Dealers" href="http://www.laika.it/en/laika-world/dealers.html">
+         Dealers
+        </a>
+       </li>
+       <li>
+        <a title="History" href="http://www.laika.it/en/laika-world/history.html">
+         History
+        </a>
+       </li>
+       <li>
+        <a title="Mission" href="http://www.laika.it/en/laika-world/mission.html">
+         Mission
+        </a>
+       </li>
+       <li>
+        <a title="Work with us" href="http://www.laika.it/en/laika-world/work-with-us.html">
+         Work with us
+        </a>
+       </li>
+       <li class="last">
+        <a title="5 Excellence" href="http://www.laika.it/en/laika-world/5-excellence.html">
+         5 Excellence
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li>
+      <a title="Customer Service" href="javascript:void(0)">
+       Customer Service
+      </a>
+      <ul class="submenu" style="width: 514px; display: none; visibility: visible;">
+       <li>
+        <a title="Request Use and Maintenance Manual" href="http://www.laika.it/en/customer-service/request-use-and-maintenance-manual.html">
+         Request Use and Maintenance Manual
+        </a>
+       </li>
+       <li>
+        <a title="Request a catalogue" href="http://www.laika.it/en/customer-service/request-a-catalogue.html">
+         Request a catalogue
+        </a>
+       </li>
+       <li class="last">
+        <a title="LAIKA – SPECIAL BOOK" href="http://www.laika.it/en/customer-service/laika-special-book.html">
+         LAIKA – SPECIAL BOOK
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li>
+      <a title="NEWS" href="http://www.laika.it/en/news.html">
+       NEWS
+      </a>
+     </li>
+     <li>
+      <a title="Press Area" href="http://www.laika.it/en/laika-world/press-area.html">
+       Press Area
+      </a>
+     </li>
+     <li class="last">
+      <a title="contacts" href="http://www.laika.it/en/contacts.html">
+       contacts
+      </a>
+     </li>
+    </ul>
+    <a class="menupopup" title="apri" href="javascript:openMenuVeloce()">
+    </a>
+    <a class="laikarent external" title="LaikaRent" target="_blank" href="http://www.laikarent.it/">
+    </a>
+    <!--<a href="javascript:void(0)" target="_blank" title="Enjoy The Dolce vita" class="enjoy external"></a>-->
+   </div>
+   <!-- FINE FOOTER -->
+  </div>
+  <div class="dinamic_alert alert_panel" id="dinamic_alert" style="margin-top: -109px; position: fixed;">
+   <div class="bkg_dinamic_alert">
+    <div class="dinamic_alert_container">
+     <a title="Chiudi" href="javascript:closeAlert('dinamic_alert')" class="close">
+     </a>
+     <h1 id="title_dinamic_alert">
+      <font>
+       Attenzione
+      </font>
+     </h1>
+     <span id="text_dinamic_alert">
+     </span>
+    </div>
+    <a title="Close" class="chiudi" href="javascript:closeAlert('dinamic_alert')">
+     CLOSE
+    </a>
+   </div>
+  </div>
+  <div class="dinamic_alert alert_panel" id="popup_livestream" style="margin-top: -160px; position: absolute;">
+   <div class="bkg_dinamic_alert">
+    <div class="dinamic_alert_container">
+     <a title="Chiudi" class="close" href="javascript:closeAlert('popup_livestream')">
+     </a>
+     <iframe width="692" height="391" frameborder="0" style="overflow: hidden; display: none;" scrolling="no" allowfullscreen="" mozallowfullscreen="" webkitallowfullscreen="" data-src="https://www.wim.tv:443/wimtv-webapp/rest/liveStreamEmbed/urn:wim:tv:livestream:f91d4dde-28f7-43ee-839f-202cc76b0452/player?width=692&height=391&autostart=false" src="" name="com-wimlabs-player" id="com-wimlabs-player">
+     </iframe>
+    </div>
+   </div>
+  </div>
+  <div class="dinamic_alert alert_panel" id="popup_newsletter" style="margin-top: -125px; position: fixed;">
+   <div class="bkg_dinamic_alert">
+    <div class="dinamic_alert_container">
+     <a title="Chiudi" class="close" href="javascript:closeAlert('popup_newsletter')">
+     </a>
+     <h1>
+      Newsletter
+     </h1>
+     <p>
+      Please enter your email address and subscribe to the service
+     </p>
+     <div class="popup_newsletter_input">
+      <input type="text" value="E-mail" onfocus="resetStepText(this.id, 'E-mail', '');" color="#707173" default="E-mail" onblur="resetStepText(this.id, 'E-mail', ''); " bordercolor="#E4E4E4" maxlength="255" name="newsletter_email" autocomplete="off" id="newsletter_email" />
+     </div>
+     <a title="SUBMIT" class="chiudi send" href="javascript:checkNewsletter()">
+      SUBMIT
+     </a>
+    </div>
+   </div>
+  </div>
+  <div class="dinamic_alert alert_panel" id="recupera_password" style="margin-top: -125px; position: fixed;">
+   <div class="bkg_dinamic_alert">
+    <div class="dinamic_alert_container">
+     <a title="Chiudi" class="close" href="javascript:closeAlert('recupera_password')">
+     </a>
+     <h1>
+      Recover Password
+     </h1>
+     <p>
+      Please enter your email address and request a new password
+     </p>
+     <div class="popup_newsletter_input">
+      <input type="text" value="E-mail" onfocus="resetStepText(this.id, 'E-mail', '');" color="#707173" default="E-mail" onblur="resetStepText(this.id, 'E-mail', ''); " bordercolor="#E4E4E4" maxlength="255" name="account_email" autocomplete="off" id="account_email" />
+     </div>
+     <a title="SUBMIT" class="chiudi send" href="javascript:checkRecoveryPassword()">
+      SUBMIT
+     </a>
+    </div>
+   </div>
+  </div>
+  <div class="dinamic_alert alert_panel" id="popup_lingua" style="margin-top: -160px; position: absolute;">
+   <div class="bkg_dinamic_alert">
+    <div class="dinamic_alert_container">
+     <a title="Chiudi" class="close" href="javascript:closeAlert('popup_lingua')">
+     </a>
+     <h1>
+      SELECT LANGUAGE
+     </h1>
+     <div class="container_lingue">
+      <div class="container_lingue_column">
+       <a title="Andorra" href="javascript:selectedLangPopup(1, true)" idel="1">
+        Andorra
+       </a>
+       <a title="Austria" href="javascript:selectedLangPopup(2, true)" idel="2">
+        Austria
+       </a>
+       <a title="Belgium" href="javascript:selectedLangPopup(3, true)" idel="3">
+        Belgium
+       </a>
+       <a title="Bosnia-Serbia-Croatia" href="javascript:selectedLangPopup(4, true)" idel="4">
+        Bosnia-Serbia-Croatia
+       </a>
+       <a title="Bulgaria" href="javascript:selectedLangPopup(5, true)" idel="5">
+        Bulgaria
+       </a>
+       <a title="Czech Republic" href="javascript:selectedLangPopup(6, true)" idel="6">
+        Czech Republic
+       </a>
+       <a title="Denmark" href="javascript:selectedLangPopup(7, true)" idel="7">
+        Denmark
+       </a>
+       <a title="Estonia" href="javascript:selectedLangPopup(8, true)" idel="8">
+        Estonia
+       </a>
+       <a title="Finland" href="javascript:selectedLangPopup(9, true)" idel="9">
+        Finland
+       </a>
+       <a title="France" href="javascript:selectedLangPopup(10, true)" idel="10">
+        France
+       </a>
+       <a title="Germany" href="javascript:selectedLangPopup(11, true)" idel="11">
+        Germany
+       </a>
+       <a title="Greece" href="javascript:selectedLangPopup(12, true)" idel="12">
+        Greece
+       </a>
+       <a title="Holland" href="javascript:selectedLangPopup(13, true)" idel="13">
+        Holland
+       </a>
+      </div>
+      <div class="container_lingue_column last">
+       <a title="Ireland" href="javascript:selectedLangPopup(14, true)" idel="14">
+        Ireland
+       </a>
+       <a title="Italy" href="javascript:selectedLangPopup(15, true)" idel="15">
+        Italy
+       </a>
+       <a title="Luxembourg" href="javascript:selectedLangPopup(16, true)" idel="16">
+        Luxembourg
+       </a>
+       <a title="Norway" href="javascript:selectedLangPopup(17, true)" idel="17">
+        Norway
+       </a>
+       <a title="Poland" href="javascript:selectedLangPopup(18, true)" idel="18">
+        Poland
+       </a>
+       <a title="Portugal" href="javascript:selectedLangPopup(19, true)" idel="19">
+        Portugal
+       </a>
+       <a title="Slovacchia" href="javascript:selectedLangPopup(20, true)" idel="20">
+        Slovacchia
+       </a>
+       <a title="Slovenia" href="javascript:selectedLangPopup(21, true)" idel="21">
+        Slovenia
+       </a>
+       <a title="Spain" href="javascript:selectedLangPopup(22, true)" idel="22">
+        Spain
+       </a>
+       <a title="Sweden" href="javascript:selectedLangPopup(23, true)" idel="23">
+        Sweden
+       </a>
+       <a title="Switzerland" href="javascript:selectedLangPopup(24, true)" idel="24">
+        Switzerland
+       </a>
+       <a title="Ukraine" href="javascript:selectedLangPopup(25, true)" idel="25">
+        Ukraine
+       </a>
+       <a title="United Kingdom" href="javascript:selectedLangPopup(26, true)" idel="26" class="current">
+        United Kingdom
+       </a>
+      </div>
+     </div>
+    </div>
+    <!--<a href="javascript:changeLanguage()" class="chiudi" title="OK">OK</a>-->
+   </div>
+  </div>
+  <div class="dinamic_alert alert_panel" id="menu_veloce_popup" style="margin-top: -165px; position: fixed; height: 329px; width: 359px; margin-left: -180px;">
+   <a title="Chiudi" class="close" href="javascript:closeAlert('menu_veloce_popup')">
+   </a>
+   <div class="bkg_dinamic_alert">
+    <div class="dinamic_alert_container">
+     <div class="menu_veloce_row">
+      <div class="menu_veloce_box one" style="height: 73px; width: 83px;">
+       <p class="title">
+        A-CLASS REXOSLINE
+       </p>
+       <span style="background-image:url(http://www.laika.it/img/menuveloce/integrali_rexosline.png)" class="all camper">
+       </span>
+       <a class="over" target="_self" href="http://www.laika.it/en/a-class-rexosline.html" style="height: 103px; width: 113px;">
+       </a>
+      </div>
+      <div class="menu_veloce_box one" style="height: 73px; width: 83px;">
+       <span style="background-image:url(http://www.laika.it/img/menuveloce/benvenuti_en.png)" class="all camper">
+       </span>
+       <a class="over" target="_self" href="http://www.laika.it/en/laika-world/mission.html" style="height: 103px; width: 113px;">
+       </a>
+      </div>
+      <div class="menu_veloce_box one last" style="height: 73px; width: 83px;">
+       <span style="background-image:url(http://www.laika.it/img/menuveloce/5_eccellenze_en.png)" class="all">
+       </span>
+       <a class="over" target="_self" href="http://www.laika.it/en/laika-world/5-excellence.html" style="height: 103px; width: 113px;">
+       </a>
+      </div>
+     </div>
+     <div class="menu_veloce_row last">
+      <div class="menu_veloce_row_column" style="width: 113px;">
+       <div class="menu_veloce_box one" style="height: 73px; width: 83px;">
+        <p class="title">
+         A-CLASS KREOS
+        </p>
+        <span style="background-image:url(http://www.laika.it/img/menuveloce/integrali_kreos.png)" class="all">
+        </span>
+        <a class="over" target="_self" href="http://www.laika.it/en/a-class-kreos.html" style="height: 103px; width: 113px;">
+        </a>
+       </div>
+       <div class="menu_veloce_box one last" style="height: 73px; width: 83px;">
+        <p class="title">
+         A-CLASS ECOVIP
+        </p>
+        <span style="background-image:url(http://www.laika.it/img/menuveloce/integrali_ecovip.png)" class="all">
+        </span>
+        <a class="over" target="_self" href="http://www.laika.it/en/a-class-ecovip.html" style="height: 103px; width: 113px;">
+        </a>
+       </div>
+      </div>
+      <div class="menu_veloce_row_column" style="width: 113px;">
+       <div class="menu_veloce_box one" style="height: 73px; width: 83px;">
+        <p class="title">
+         LOW PROFILE KREOS
+        </p>
+        <span style="background-image:url(http://www.laika.it/img/menuveloce/profilati_kreos.png)" class="all">
+        </span>
+        <a class="over" target="_self" href="http://www.laika.it/en/low-profile-kreos.html" style="height: 103px; width: 113px;">
+        </a>
+       </div>
+       <div class="menu_veloce_box one last" style="height: 73px; width: 83px;">
+        <p class="title">
+         LOW PROFILE ECOVIP
+        </p>
+        <span style="background-image:url(http://www.laika.it/img/menuveloce/profilati_ecovip.png)" class="all">
+        </span>
+        <a class="over" target="_self" href="http://www.laika.it/en/low-profile-ecovip.html" style="height: 103px; width: 113px;">
+        </a>
+       </div>
+      </div>
+      <div class="menu_veloce_row_column last" style="width: 113px;">
+       <div class="menu_veloce_box one" style="height: 73px; width: 83px;">
+        <p class="title">
+         COACHBUILT KREOS
+        </p>
+        <span style="background-image:url(http://www.laika.it/img/menuveloce/mansardati_kreos.png)" class="all">
+        </span>
+        <a class="over" target="_self" href="http://www.laika.it/en/coachbuilt-kreos.html" style="height: 103px; width: 113px;">
+        </a>
+       </div>
+       <div class="menu_veloce_box one last" style="height: 73px; width: 83px;">
+        <p class="title">
+         COACHBUILT ECOVIP
+        </p>
+        <span style="background-image:url(http://www.laika.it/img/menuveloce/mansardati_ecovip.png)" class="all">
+        </span>
+        <a class="over" target="_self" href="http://www.laika.it/en/coachbuilt-ecovip.html" style="height: 103px; width: 113px;">
+        </a>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <form action="http://www.laika.it/" method="post" name="change_lang" id="change_lang">
+   <input type="hidden" value="0" name="change_lang_id" id="change_lang_id" />
+   <input type="hidden" value="17" name="change_lang_itemid" id="change_lang_itemid" />
+  </form>
+  <div class="opacity_layer" id="opacity_layer">
+   <img width="100%" src="http://www.laika.it/img/spacer.gif" />
+  </div>
+  <div class="alert_panel" id="loading_layer" style="margin-top: -55px; position: fixed;">
+  </div>
+ </body>
+</html>

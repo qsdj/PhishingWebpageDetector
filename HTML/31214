@@ -1,0 +1,481 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta content="Content-Type" http-equiv="Content-Type" />
+  <title>
+   BirgaSajtov.ru - биржа продажи (покупки) сайтов и доменов. Где купить сайт или домен? Как продать сайт?
+  </title>
+  <meta content="биража продажи сайтов, продажа сайтов, покупка сайтов, продать сайт, купить сайт, купить домен" name="keywords" />
+  <meta content="birgasajtov.ru - это одна из самых крупнейших бирж продажи и покупки сайтов и доменов." name="description" />
+  <link type="text/css" rel="stylesheet" href="http://www.birgasajtov.ru/style.css" />
+  <base href="http://www.birgasajtov.ru/" />
+  <link type="image/x-icon" href="http://www.birgasajtov.ru/favicon.ico" rel="icon" />
+  <link type="image/x-icon" href="http://www.birgasajtov.ru/favicon.ico" rel="shortcut icon" />
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js" type="text/javascript">
+  </script>
+  <script type="text/javascript" src="http://www.birgasajtov.ru/plugins/js/prototype.js">
+  </script>
+  <script type="text/javascript" src="http://www.birgasajtov.ru/plugins/js/scriptaculous.js?load=effects,builder">
+  </script>
+  <script src="http://www.birgasajtov.ru/plugins/js/effects.js" type="text/javascript">
+  </script>
+  <script src="http://www.birgasajtov.ru/plugins/js/builder.js" type="text/javascript">
+  </script>
+  <script type="text/javascript" src="http://www.birgasajtov.ru/plugins/js/lightbox.js">
+  </script>
+  <link media="screen" type="text/css" href="http://www.birgasajtov.ru/plugins/js/lightbox.css" rel="stylesheet" />
+  <script type="text/javascript">
+   function testKey(e)  
+     {  
+       // Make sure to use event.charCode if available  
+       var key = (typeof e.charCode == 'undefined' ? e.keyCode : e.charCode);  
+       
+       // Ignore special keys  
+       if (e.ctrlKey || e.altKey || key &lt; 32)  
+         return true;  
+       
+       key = String.fromCharCode(key);  
+       return /\w/.test(key);  
+     }
+  </script>
+ </head>
+ <body>
+  <div id="all">
+   <div id="header">
+    <div class="logo">
+     <a href="http://www.birgasajtov.ru">
+     </a>
+     <p class="logoimg">
+     </p>
+    </div>
+    <div class="logo2">
+     <p class="text">
+      <a href="http://www.birgasajtov.ru/rss.xml">
+       <img align="bottom" style="vertical-align: bottom;" src="/images/feed.png" />
+      </a>
+      <a href="/pages/about">
+       О проекте
+      </a>
+      |
+      <a href="/support/">
+       Обратная связь
+      </a>
+     </p>
+    </div>
+   </div>
+   <div id="login">
+    <ul class="login">
+     <li style="margin-top:8px;">
+      <a style="padding:3px 7px; background-color:#CD8162; color:#FFF; text-decoration:underline; -moz-border-radius: 5px 0px; border-radius: 5px 0px;" href="/reg/">
+       Регистрация
+      </a>
+     </li>
+     <form method="post" action="/modules/check.php">
+     </form>
+     <li>
+      Логин:
+      <input type="text" style="border:1px solid #999;" class="input" name="login" />
+     </li>
+     <li>
+      Пароль:
+      <input type="password" style="border:1px solid #999;" class="input" name="pass" />
+     </li>
+     <li style="margin-top:5px;">
+      <input type="checkbox" value="" name="zap" />
+      Запомнить меня
+     </li>
+     <li style="float:right; margin-right:10px; margin-top:2px; -moz-border-radius: 5px 0px;">
+      <input type="submit" style="padding:3px 9px; background-color:#6E8B3D; color:#FFF; border:0px; font-size:12px; margin-top:2px; font-family:Tahoma, Geneva, sans-serif; text-decoration:underline; -moz-border-radius: 5px 0px; border-radius: 5px 0px;" value="Войти" name="" />
+     </li>
+    </ul>
+   </div>
+   <div id="sort">
+    <div class="sort1">
+     <ul class="sort">
+      <li>
+       <a href="/index.php?cat=all&sort=all">
+        Все
+       </a>
+      </li>
+      <li>
+       <a href="/index.php?cat=all&sort=site">
+        Сайт
+       </a>
+      </li>
+      <li>
+       <a href="/index.php?cat=all&sort=dom">
+        Домен
+       </a>
+      </li>
+     </ul>
+    </div>
+    <div class="sort2">
+     <ul class="ssort">
+      <li>
+       <h6>
+        Сортировка:
+       </h6>
+      </li>
+      <li>
+       <a href="/index.php?cat=all&sort=dom&subsort=id">
+        По дате добавления
+       </a>
+      </li>
+      <li>
+       <a href="/index.php?cat=all&sort=dom&subsort=reg_date">
+        По дате регистрации
+       </a>
+      </li>
+      <li>
+       <a href="/index.php?cat=all&sort=dom&subsort=cy">
+        По ТИЦу
+       </a>
+      </li>
+      <li>
+       <a href="/index.php?cat=all&sort=dom&subsort=pr">
+        По PRу
+       </a>
+      </li>
+      <li>
+       <a href="/index.php?cat=all&sort=dom&subsort=price">
+        По цене
+       </a>
+      </li>
+      <li class="but" style="margin-top:5px; float:right;">
+       <a class="button12" href="/addproject/">
+       </a>
+      </li>
+     </ul>
+    </div>
+   </div>
+   <div id="centerblok">
+    <div class="leftcenterblok">
+     <div style="border-top: 1px dashed #CCC; " class="block">
+      <h3 style="name">
+       <a href="/allcat/">
+        <img style="vertical-align:top;" src="images/lib.png" />
+          Категории
+       </a>
+      </h3>
+      <ul class="menu">
+       <li>
+        <a href="/category/ip/">
+         Интернет портал
+        </a>
+       </li>
+       <li>
+        <a href="/category/ks/">
+         Корпоративный сайт
+        </a>
+       </li>
+       <li>
+        <a href="/category/magazin/">
+         Интернет магазин
+        </a>
+       </li>
+       <li>
+        <a href="/category/forum/">
+         Форум
+        </a>
+       </li>
+       <li>
+        <a href="/category/other/">
+         Другое
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="block">
+      <h3>
+       <img style="vertical-align:top;" src="images/news.png" />
+         Новости
+      </h3>
+      <b>
+       06.01.2012
+      </b>
+      : Запущен проект «BirgaSajtov.ru». Проводится тестирование и настройка биржи сайтов.
+     </div>
+     <div style="border-bottom: 1px dashed #CCC; 1px dashed #CCC;" class="blockbottom">
+      <h3>
+       <img style="vertical-align:top;" src="images/banners.png" />
+         Апдейты
+      </h3>
+      <center>
+       <div align="left">
+        <font color="red">
+         Я
+        </font>
+        ндекс выдача → 31.12.2015
+        <br />
+        <font color="red">
+         Я
+        </font>
+        ндекс тИЦ → 22.12.2015
+        <br />
+        <font color="blue">
+         G
+        </font>
+        <font color="red">
+         o
+        </font>
+        <font color="yellow">
+         o
+        </font>
+        <font color="blue">
+         g
+        </font>
+        <font color="green">
+         l
+        </font>
+        <font color="red">
+         e
+        </font>
+        PR → 06.12.2013
+        <br />
+       </div>
+      </center>
+     </div>
+    </div>
+    <div class="rightcenterblok">
+     <div>
+      <div class="rcb1">
+       <p class="rcb11">
+        <img width="16" height="16" align="absmiddle" src="../files/favicon/no.ico" />
+        <a href="/view/90/">
+         <strong>
+          18+
+         </strong>
+        </a>
+        <i>
+         [
+         <a href="/index.php?cat=all&sort=dom">
+         </a>
+        </i>
+        <i>
+         Продается домен
+        </i>
+        ]
+       </p>
+       <p style="margin-top:5px;" class="aboutsite">
+        <a href="../files/img/domen.jpg" rel="lightbox">
+         <img width="230" height="141" valign="middle" src="../files/img/mini/domen.jpg" />
+        </a>
+        <b>
+         URL:
+        </b>
+        <noindex>
+         <a style="text-decoration:underline;" target="_blank" href="http://sex-video-porno.ru">
+          sex-video-porno.ru
+         </a>
+        </noindex>
+       </p>
+       <p>
+        Продаю домен для видео 18+...
+       </p>
+      </div>
+     </div>
+     <div class="rcb2">
+      <ul>
+       <li style="list-style:url(../images/ok.png) inside; vertical-align:top; margin-right:0px;">
+       </li>
+       <li>
+        <b>
+        </b>
+        <p style="color:#006400">
+         Права подтвердили |
+        </p>
+       </li>
+       <li>
+        <b>
+         ТИЦ:
+        </b>
+        0
+       </li>
+       <li>
+        <b>
+         PR:
+        </b>
+        0
+       </li>
+       <li>
+        <b>
+         Цена сайта:
+        </b>
+        10000 руб.
+       </li>
+       <li>
+        <b>
+         Продавец:
+        </b>
+        <a href="/user/vovamayskiy/">
+         vovamayskiy
+        </a>
+       </li>
+       <li>
+        <b>
+         Просмотров:
+        </b>
+        287
+       </li>
+       <li style="float:right; margin-right:10px;">
+        <a style="text-decoration:underline; background:url(../images/chair.png) no-repeat; padding-left:20px;" href="/view/90/">
+         Подробнее
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div>
+      <div class="rcb1">
+       <p class="rcb11">
+        <img width="16" height="16" align="absmiddle" src="../files/favicon/no.ico" />
+        <a href="/view/89/">
+         <strong>
+          Shared Hosting,Хостинга,Хостинг,Домейни,Domains
+         </strong>
+        </a>
+        <i>
+         [
+         <a href="/index.php?cat=all&sort=dom">
+         </a>
+        </i>
+        <i>
+         Продается домен
+        </i>
+        ]
+       </p>
+       <p style="margin-top:5px;" class="aboutsite">
+        <a href="../files/img/domen.jpg" rel="lightbox">
+         <img width="230" height="141" valign="middle" src="../files/img/mini/domen.jpg" />
+        </a>
+        <b>
+         URL:
+        </b>
+        <noindex>
+         <a style="text-decoration:underline;" target="_blank" href="http://erstellenwebs.de">
+          erstellenwebs.de
+         </a>
+        </noindex>
+       </p>
+       <p>
+        Shared Hosting,Хостинга,Хостинг,Домейни,Domains...
+       </p>
+      </div>
+     </div>
+     <div class="rcb2">
+      <ul>
+       <li style="list-style:url(../images/ok.png) inside; vertical-align:top; margin-right:0px;">
+       </li>
+       <li>
+        <b>
+        </b>
+        <p style="color:#006400">
+         Права подтвердили |
+        </p>
+       </li>
+       <li>
+        <b>
+         ТИЦ:
+        </b>
+        0
+       </li>
+       <li>
+        <b>
+         PR:
+        </b>
+        0
+       </li>
+       <li>
+        <b>
+         Цена сайта:
+        </b>
+        100 руб.
+       </li>
+       <li>
+        <b>
+         Продавец:
+        </b>
+        <a href="/user/KyMyHuCT/">
+         KyMyHuCT
+        </a>
+       </li>
+       <li>
+        <b>
+         Просмотров:
+        </b>
+        334
+       </li>
+       <li style="float:right; margin-right:10px;">
+        <a style="text-decoration:underline; background:url(../images/chair.png) no-repeat; padding-left:20px;" href="/view/89/">
+         Подробнее
+        </a>
+       </li>
+      </ul>
+     </div>
+    </div>
+    <div id="footer">
+     <div class="leftfooter">
+      <br />
+      Биржа сайтов © BlackCat 2012-2013
+     </div>
+     <div class="rightfooter">
+      <noindex>
+       <!--LiveInternet counter-->
+       <script type="text/javascript">
+        &lt;!--
+document.write("&lt;a href='http://www.liveinternet.ru/click' "+
+"target=_blank rel=nofollow&gt;&lt;img src='//counter.yadro.ru/hit?t14.6;r"+
+escape(document.referrer)+((typeof(screen)=="undefined")?"":
+";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
+screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
+";"+Math.random()+
+"' alt='' title='LiveInternet: число просмотров за 24"+
+" часа, посетителей за 24 часа и за сегодня' "+
+"border='0' width='88' height='31'&gt;&lt;\/a&gt;")
+//--&gt;
+       </script>
+       <a rel="nofollow" target="_blank" href="http://www.liveinternet.ru/click">
+        <img width="88" height="31" border="0" title="LiveInternet: число просмотров за 24 часа, посетителей за 24 часа и за сегодня" alt="" src="//counter.yadro.ru/hit?t14.6;r;s1024*768*24;uhttp%3A//birgasajtov.ru/index.php%3Fcat%3Dall%26sort%3Ddom;0.6843544121087998" />
+       </a>
+       <!--/LiveInternet-->
+      </noindex>
+     </div>
+    </div>
+   </div>
+  </div>
+  <div id="overlay" style="display: none;">
+  </div>
+  <div id="lightbox" style="display: none;">
+   <div id="outerImageContainer" style="width: 250px; height: 250px;">
+    <div id="imageContainer">
+     <img id="lightboxImage" />
+     <div id="hoverNav">
+      <a href="#" id="prevLink">
+      </a>
+      <a href="#" id="nextLink">
+      </a>
+     </div>
+     <div id="loading">
+      <a href="#" id="loadingLink">
+       <img src="images/loading.gif" />
+      </a>
+     </div>
+    </div>
+   </div>
+   <div id="imageDataContainer">
+    <div id="imageData">
+     <div id="imageDetails">
+      <span id="caption">
+      </span>
+      <span id="numberDisplay">
+      </span>
+     </div>
+     <div id="bottomNav">
+      <a href="#" id="bottomNavClose">
+       <img src="images/closelabel.gif" />
+      </a>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>

@@ -1,0 +1,1490 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta charset="utf-8" />
+  <title>
+   Ozzie Deals
+  </title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="/utils/css/bootstrap.min.css" />
+  <!--link href="/css/bootstrap-ie7.css" rel="stylesheet" -->
+  <link rel="stylesheet" href="/utils/css/style.css" />
+  <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Varela+Round" />
+  <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic" />
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="/utils/css/font-awesome.css" />
+  <link rel="stylesheet" href="/utils/css/styleadd.css" />
+  <link rel="stylesheet" href="/utils/js/select2/select2.css" />
+  <link rel="stylesheet" href="/utils/js/select2/select2-bootstrap.css" />
+  <link rel="stylesheet" href="/utils/css/datetime-picker.css" />
+  <link rel="stylesheet" href="/utils/css/autosuggest_inquisitor.css" />
+  <!--link href="/utils/js/magnific-popup/magnific-popup.css" rel="stylesheet" -->
+  <script id="facebook-jssdk" src="//connect.facebook.net/en_AU/sdk.js#xfbml=1&version=v2.4&appId=426307090883086">
+  </script>
+  <script src="/utils/js/jquery-2.0.3.min.js">
+  </script>
+  <script src="/utils/js/bootstrap.js">
+  </script>
+  <script src="/utils/js/bootbox.js">
+  </script>
+  <script src="/utils/js/select2/select2.min.js">
+  </script>
+  <script src="/utils/js/script.js">
+  </script>
+  <script src="/utils/js/external/jquery.validate.js">
+  </script>
+  <script src="/utils/js/bsn.AutoSuggest_c_2.0.js">
+  </script>
+  <script src="/admin/js/validations.js">
+  </script>
+  <style type="text/css">
+   .fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow-x:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset&gt;div{overflow:hidden}.fb_link img{border:none}
+.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}.fb_reset .fb_dialog_legacy{overflow:visible}.fb_dialog_advanced{padding:10px;-moz-border-radius:8px;-webkit-border-radius:8px;border-radius:8px}.fb_dialog_content{background:#fff;color:#333}.fb_dialog_close_icon{background:url(https://static.xx.fbcdn.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;_background-image:url(https://static.xx.fbcdn.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif);cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{top:5px;left:5px;right:auto}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(https://static.xx.fbcdn.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent;_background-image:url(https://static.xx.fbcdn.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif)}.fb_dialog_close_icon:active{background:url(https://static.xx.fbcdn.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent;_background-image:url(https://static.xx.fbcdn.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif)}.fb_dialog_loader{background-color:#f6f7f8;border:1px solid #606060;font-size:24px;padding:20px}.fb_dialog_top_left,.fb_dialog_top_right,.fb_dialog_bottom_left,.fb_dialog_bottom_right{height:10px;width:10px;overflow:hidden;position:absolute}.fb_dialog_top_left{background:url(https://static.xx.fbcdn.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 0;left:-10px;top:-10px}.fb_dialog_top_right{background:url(https://static.xx.fbcdn.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 -10px;right:-10px;top:-10px}.fb_dialog_bottom_left{background:url(https://static.xx.fbcdn.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 -20px;bottom:-10px;left:-10px}.fb_dialog_bottom_right{background:url(https://static.xx.fbcdn.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 -30px;right:-10px;bottom:-10px}.fb_dialog_vert_left,.fb_dialog_vert_right,.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{position:absolute;background:#525252;filter:alpha(opacity=70);opacity:.7}.fb_dialog_vert_left,.fb_dialog_vert_right{width:10px;height:100%}.fb_dialog_vert_left{margin-left:-10px}.fb_dialog_vert_right{right:0;margin-right:-10px}.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{width:100%;height:10px}.fb_dialog_horiz_top{margin-top:-10px}.fb_dialog_horiz_bottom{bottom:0;margin-bottom:-10px}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #3a5795;color:#fff;font-size:14px;font-weight:bold;margin:0}.fb_dialog_content .dialog_title&gt;span{background:url(https://static.xx.fbcdn.net/rsrc.php/v2/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{-webkit-transform:none;height:100%;margin:0;overflow:visible;position:absolute;top:-10000px;left:0;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(https://static.xx.fbcdn.net/rsrc.php/v2/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{width:auto;height:auto;min-height:initial;min-width:initial;background:none}.fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner{width:100%}.fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content{background:none}.loading.centered #fb_dialog_loader_close{color:#fff;display:block;padding-top:20px;clear:both;font-size:18px}#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .45);position:absolute;left:0;top:0;width:100%;min-height:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_content .dialog_header{-webkit-box-shadow:white 0 1px 1px -1px inset;background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#738ABA), to(#2C4987));border-bottom:1px solid;border-color:#1d4088;color:#fff;font:14px Helvetica, sans-serif;font-weight:bold;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{-webkit-font-smoothing:subpixel-antialiased;height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#4966A6), color-stop(.5, #355492), to(#2A4887));border:1px solid #2f477a;-webkit-background-clip:padding-box;-webkit-border-radius:3px;-webkit-box-shadow:rgba(0, 0, 0, .117188) 0 1px 1px inset, rgba(255, 255, 255, .167969) 0 1px 0;display:inline-block;margin-top:3px;max-width:85px;line-height:18px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{border:none;background:none;color:#fff;font:12px Helvetica, sans-serif;font-weight:bold;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(https://static.xx.fbcdn.net/rsrc.php/v2/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #555;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f6f7f8;border:1px solid #555;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_button{text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}#fb_dialog_loader_spinner{animation:rotateSpinner 1.2s linear infinite;background-color:transparent;background-image:url(https://static.xx.fbcdn.net/rsrc.php/v2/yD/r/t-wz8gw1xG1.png);background-repeat:no-repeat;background-position:50% 50%;height:24px;width:24px}@keyframes rotateSpinner{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_hide_iframes iframe{position:relative;left:-10000px}.fb_iframe_widget_loader{position:relative;display:inline-block}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}.fb_iframe_widget_loader iframe{min-height:32px;z-index:2;zoom:1}.fb_iframe_widget_loader .FB_Loader{background:url(https://static.xx.fbcdn.net/rsrc.php/v2/y9/r/jKEcVPZFk-2.gif) no-repeat;height:32px;width:32px;margin-left:-16px;position:absolute;left:50%;z-index:4}
+  </style>
+ </head>
+ <body>
+  <div id="fb-root" class=" fb_reset">
+   <div style="position: absolute; top: -10000px; height: 0px; width: 0px;">
+    <div>
+     <iframe frameborder="0" name="fb_xdm_frame_https" allowtransparency="true" allowfullscreen="true" scrolling="no" id="fb_xdm_frame_https" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tabindex="-1" style="border: medium none;" src="https://s-static.ak.facebook.com/connect/xd_arbiter/TlA_zCeMkxl.js?version=41#channel=f8653b335b3626&origin=https%3A%2F%2Fwww.ozziedeals.com.au">
+     </iframe>
+    </div>
+   </div>
+   <div style="position: absolute; top: -10000px; height: 0px; width: 0px;">
+    <div>
+    </div>
+   </div>
+  </div>
+  <script>
+   (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_AU/sdk.js#xfbml=1&amp;version=v2.4&amp;appId=426307090883086";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+  </script>
+  <script type="text/javascript">
+   jQuery(function($) {
+	$.box1;
+	$('#btn_small_access').click(function(e){
+		e.preventDefault();
+		$.post('/popup-login/view1', {}, function(data){
+			$.box1 = bootbox.dialog({message: data}).addClass("modal-popupsmall-login");
+		});
+	});
+
+	$('#btn_forgotten_password').click(function(e){
+		e.preventDefault();
+		$.post('/popup-forgotten/view1', {}, function(data){
+			$.box1 = bootbox.dialog({message: data}).addClass("modal-popup-login");
+		});
+	});
+	
+	$('#btn_forgotten_password_2').click(function(e){
+		e.preventDefault();
+		$.post('/popup-forgotten/view1', {}, function(data){
+			$.box1 = bootbox.dialog({message: data}).addClass("modal-popup-login");
+		});
+	});
+	
+	$.fn.forgotten = function() {
+		$.post('/popup-forgotten/view1', {}, function(data){
+			$.box1 = bootbox.dialog({message: data}).addClass("modal-popupsmall-login");
+		});
+	
+	}
+});
+  </script>
+  <div class="top_bar">
+   <section style="background:#333; position:relative;z-index:2000;">
+    <div class="logo_section_xs hidden-md hidden-lg">
+     <a href="/">
+      <img class="img-responsive" src="/utils/img/logo_header.png" />
+     </a>
+    </div>
+    <div class="col-xs-12 first_row hidden-lg text-right">
+     <div class="col-xs-1 col-md-1 hidden-xs hidden-md hidden-lg">
+     </div>
+     <div class="col-xs-8 col-md-9 hidden-xs no_padding_left no_padding_right">
+      <form method="post" action="/actions?_type=_access" id="form_access2">
+       <input type="hidden" value="32a04e30c1efe609a76d9eb5afdc55ae" name="ACCESS_KEY" />
+       <div class="form-group">
+        <div class="col-sm-4 no_padding_left no_padding_right">
+         <label class="col-sm-5 no_padding_left text-right">
+          Login:
+         </label>
+         <div class="col-sm-7 no_padding_left">
+          <input type="text" autocomplete="off" class="access form-control input-sm" name="user_login" />
+          <span class="info-access">
+          </span>
+         </div>
+        </div>
+        <div class="col-sm-4 no_padding_left no_padding_right">
+         <label class="col-sm-5 no_padding_left text-right">
+          Password:
+         </label>
+         <div class="col-sm-7 no_padding_left">
+          <input type="password" autocomplete="off" class="access form-control input-sm" name="user_pass" />
+         </div>
+        </div>
+        <div class="col-sm-4 no_padding_left no_padding_right go_forgotten_password">
+         <div class="form-group">
+          <div class="col-xs-2 no_padding_left">
+           <button class="btn btn-sm btn-success btn_go" id="btn_access2">
+            GO
+           </button>
+          </div>
+          <div class="col-xs-10 no_padding_left no_padding_right forgotten_password_section">
+           <a class="forgotten_password" id="btn_forgotten_password_2" href="#">
+            Forgotten Password?
+           </a>
+          </div>
+          <div class="clearfix">
+          </div>
+         </div>
+        </div>
+       </div>
+      </form>
+     </div>
+     <div class="col-xs-3 col-md-2 cart no_padding_left no_padding_right pull-right hidden-md hidden-lg ">
+      <a href="/shopping-cart/view1">
+       <img src="/utils/img/cart.png" />
+      </a>
+      <span>
+       <span class="cart-item">
+        0
+       </span>
+        ITEM(s)
+      </span>
+      <span>
+       $
+       <span class="cart-total">
+        0
+       </span>
+      </span>
+      <div class="clearfix">
+      </div>
+     </div>
+     <div class="clearfix">
+     </div>
+    </div>
+    <div class="clearfix">
+    </div>
+   </section>
+   <section style="background:#333;">
+    <div class="col-sm-offset-1 col-sm-10 col-lg-offset-1 col-lg-11 first_row hidden-sm hidden-md hidden-xs">
+     <div class="col-lg-7 no_padding_left">
+      <form method="post" action="/actions?_type=_access" id="form_access">
+       <input type="hidden" value="32a04e30c1efe609a76d9eb5afdc55ae" name="ACCESS_KEY" />
+       <div class="form-group">
+        <div class="col-sm-4 no_padding_left">
+         <label class="col-sm-4 col-lg-4 no_padding_left text-right">
+          Login:
+         </label>
+         <div class="col-sm-8 no_padding_left">
+          <input type="text" autocomplete="off" class="access form-control input-sm" name="user_login" />
+          <span class="info-access">
+          </span>
+         </div>
+        </div>
+        <div class="col-sm-4 no_padding_left">
+         <label class="col-sm-4 col-lg-4 no_padding_left text-right">
+          Password:
+         </label>
+         <div class="col-sm-8 no_padding_left">
+          <input type="password" autocomplete="off" class="access form-control input-sm" name="user_pass" />
+         </div>
+        </div>
+        <div class="col-sm-4 no_padding_left go_forgotten_password">
+         <div class="form-group">
+          <div class="col-xs-4 col-sm-4 no_padding_left">
+           <button class="btn btn-sm btn-success btn_go" id="btn_access">
+            GO
+           </button>
+          </div>
+          <div class="col-xs-8 col-sm-8 no_padding_left no_padding_right forgotten_password_section">
+           <a class="forgotten_password" id="btn_forgotten_password" href="#">
+            Forgotten Password?
+           </a>
+          </div>
+          <div class="clearfix">
+          </div>
+         </div>
+        </div>
+        <div class="clearfix">
+        </div>
+       </div>
+      </form>
+     </div>
+     <div class="col-sm-offset-3 col-sm-7 col-lg-offset-0 col-lg-5 member_cart no_padding_right">
+      <span>
+       <a href="/customer">
+        <img src="/utils/img/member.png" />
+       </a>
+      </span>
+      <span>
+       <a href="/shopping-cart/view1">
+        <img src="/utils/img/cart.png" />
+       </a>
+       <span>
+        <span class="cart-item">
+         0
+        </span>
+         ITEM(s)
+       </span>
+       <span>
+        $
+        <span class="cart-total">
+         0
+        </span>
+       </span>
+       <div class="clearfix">
+       </div>
+      </span>
+     </div>
+     <div class="clearfix">
+     </div>
+    </div>
+    <div class="clearfix">
+    </div>
+   </section>
+   <div class="clearfix">
+   </div>
+   <section class="logo_menu_bar_section">
+    <div class="logo_section hidden-xs hidden-sm">
+     <a href="/">
+      <img class="img-responsive" src="/utils/img/logo_header.png" />
+     </a>
+    </div>
+    <div style="background:#FF931E;position:relative;z-index:2;" class="col-sm-offset-0 col-sm-12 col-md-offset-1 col-md-11 col-lg-offset-1 col-lg-11 no_padding_left no_padding_right">
+     <div class="col-lg-offset-1 col-lg-10 no_padding_left no_padding_right hidden-sm hidden-md hidden-lg">
+      <nav style="border:0px;" role="navigation" class="navbar navbar-inverse no_margin_bottom navbar_xs">
+       <div class="container-fluid">
+        <div class="navbar-header">
+         <button data-target="#bs-example-navbar-collapse-1" data-toggle="collapse" class="navbar-toggle" type="button">
+          <span class="sr-only">
+           Toggle navigation
+          </span>
+          <span class="icon-bar">
+          </span>
+          <span class="icon-bar">
+          </span>
+          <span class="icon-bar">
+          </span>
+         </button>
+         <span style="padding-top:5px;padding-left:4px;" class="btn-group">
+          <button style="font-size:12px;" class="btn btn-default btn_login" type="button" id="btn_small_access">
+           Login
+          </button>
+          <a class="btn btn-default btn_register" href="/customer">
+           Register
+          </a>
+         </span>
+        </div>
+        <div style="border:0px;" id="bs-example-navbar-collapse-1" class="collapse navbar-collapse no_padding_left no_padding_right">
+         <ul style="border:0px; width:100%;" class="nav navbar-nav menu_orange">
+          <li style="max-width:100%;" class="">
+           <a href="/group/view1/dining">
+            <div>
+             <span>
+              <img style="margin:0px auto;" src="/utils/img/front/dining.png" />
+             </span>
+             <span>
+              DINING
+             </span>
+            </div>
+           </a>
+           <span class="divider">
+           </span>
+          </li>
+          <li style="max-width:100%;" class="">
+           <a href="/group/view1/beauty-amp-wellness">
+            <div>
+             <span>
+              <img style="margin:0px auto;" src="/utils/img/front/beauty.png" />
+             </span>
+             <span>
+              BEAUTY &amp; WELLNESS
+             </span>
+            </div>
+           </a>
+           <span class="divider">
+           </span>
+          </li>
+          <li style="max-width:100%;" class="">
+           <a href="/group/view1/health-care">
+            <div>
+             <span>
+              <img style="margin:0px auto;" src="/utils/img/front/health_care.png" />
+             </span>
+             <span>
+              HEALTH CARE
+             </span>
+            </div>
+           </a>
+           <span class="divider">
+           </span>
+          </li>
+          <li style="max-width:100%;" class="">
+           <a href="/group/view1/leisure-amp-fitness">
+            <div>
+             <span>
+              <img style="margin:0px auto;" src="/utils/img/front/leisure.png" />
+             </span>
+             <span>
+              LEISURE &amp; FITNESS
+             </span>
+            </div>
+           </a>
+           <span class="divider">
+           </span>
+          </li>
+          <li style="max-width:100%;" class="">
+           <a href="/group/view1/tickets-amp-events">
+            <div>
+             <span>
+              <img style="margin:0px auto;" src="/utils/img/front/tickets.png" />
+             </span>
+             <span>
+              TICKETS &amp; EVENTS
+             </span>
+            </div>
+           </a>
+           <span class="divider">
+           </span>
+          </li>
+          <li style="max-width:100%;" class="">
+           <a href="/group/view1/services">
+            <div>
+             <span>
+              <img style="margin:0px auto;" src="/utils/img/front/services.png" />
+             </span>
+             <span>
+              SERVICES
+             </span>
+            </div>
+           </a>
+           <span class="divider">
+           </span>
+          </li>
+          <li style="max-width:100%;" class="">
+           <a href="/group/view1/classes-amp-training">
+            <div>
+             <span>
+              <img style="margin:0px auto;" src="/utils/img/front/classes.png" />
+             </span>
+             <span>
+              CLASSES &amp; TRAINING
+             </span>
+            </div>
+           </a>
+           <span class="divider">
+           </span>
+          </li>
+          <li style="max-width:100%;" class="">
+           <a href="/group/view1/travel">
+            <div>
+             <span>
+              <img style="margin:0px auto;" src="/utils/img/front/travel.png" />
+             </span>
+             <span>
+              TRAVEL
+             </span>
+            </div>
+           </a>
+           <span class="divider">
+           </span>
+          </li>
+          <li style="max-width:100%;" class="">
+           <a href="/group/view1/shopping">
+            <div>
+             <span>
+              <img style="margin:0px auto;" src="/utils/img/front/shopping.png" />
+             </span>
+             <span>
+              SHOPPING
+             </span>
+            </div>
+           </a>
+           <span class="divider">
+           </span>
+          </li>
+         </ul>
+        </div>
+       </div>
+      </nav>
+      <div class="clearfix">
+      </div>
+     </div>
+     <div class="col-lg-offset-1 col-lg-10 no_padding_left no_padding_right hidden-xs">
+      <div class="menu_bar_orange no_padding_left no_padding_right col-sm-12 col-lg-offset-1 col-lg-11">
+       <nav style="border:0px;" role="navigation" class="navbar navbar-default no_margin_bottom">
+        <div class="container-fluid">
+         <div class="navbar-header">
+          <button data-target="#bs-example-navbar-collapse-1" data-toggle="collapse" class="navbar-toggle" type="button">
+           <span class="sr-only">
+            Toggle navigation
+           </span>
+           <span class="icon-bar">
+           </span>
+           <span class="icon-bar">
+           </span>
+           <span class="icon-bar">
+           </span>
+          </button>
+         </div>
+         <div style="border:0px;" id="bs-example-navbar-collapse-1" class="collapse navbar-collapse no_padding_left no_padding_right">
+          <ul style="border:0px;height:90px;width:100%;" class="nav navbar-nav menu_orange">
+           <li class="">
+            <a href="/group/view1/dining">
+             <div>
+              <img style="margin:0px auto;" src="/utils/img/front/dining.png" />
+             </div>
+             <div>
+              DINING
+             </div>
+            </a>
+            <span class="divider">
+            </span>
+           </li>
+           <li class="">
+            <a href="/group/view1/beauty-amp-wellness">
+             <div>
+              <img style="margin:0px auto;" src="/utils/img/front/beauty.png" />
+             </div>
+             <div>
+              BEAUTY &amp; WELLNESS
+             </div>
+            </a>
+            <span class="divider">
+            </span>
+           </li>
+           <li class="">
+            <a href="/group/view1/health-care">
+             <div>
+              <img style="margin:0px auto;" src="/utils/img/front/health_care.png" />
+             </div>
+             <div>
+              HEALTH CARE
+             </div>
+            </a>
+            <span class="divider">
+            </span>
+           </li>
+           <li class="">
+            <a href="/group/view1/leisure-amp-fitness">
+             <div>
+              <img style="margin:0px auto;" src="/utils/img/front/leisure.png" />
+             </div>
+             <div>
+              LEISURE &amp; FITNESS
+             </div>
+            </a>
+            <span class="divider">
+            </span>
+           </li>
+           <li class="">
+            <a href="/group/view1/tickets-amp-events">
+             <div>
+              <img style="margin:0px auto;" src="/utils/img/front/tickets.png" />
+             </div>
+             <div>
+              TICKETS &amp; EVENTS
+             </div>
+            </a>
+            <span class="divider">
+            </span>
+           </li>
+           <li class="">
+            <a href="/group/view1/services">
+             <div>
+              <img style="margin:0px auto;" src="/utils/img/front/services.png" />
+             </div>
+             <div>
+              SERVICES
+             </div>
+            </a>
+            <span class="divider">
+            </span>
+           </li>
+           <li class="">
+            <a href="/group/view1/classes-amp-training">
+             <div>
+              <img style="margin:0px auto;" src="/utils/img/front/classes.png" />
+             </div>
+             <div>
+              CLASSES &amp; TRAINING
+             </div>
+            </a>
+            <span class="divider">
+            </span>
+           </li>
+           <li class="">
+            <a href="/group/view1/travel">
+             <div>
+              <img style="margin:0px auto;" src="/utils/img/front/travel.png" />
+             </div>
+             <div>
+              TRAVEL
+             </div>
+            </a>
+            <span class="divider">
+            </span>
+           </li>
+           <li class="">
+            <a href="/group/view1/shopping">
+             <div>
+              <img style="margin:0px auto;" src="/utils/img/front/shopping.png" />
+             </div>
+             <div>
+              SHOPPING
+             </div>
+            </a>
+            <span class="divider">
+            </span>
+           </li>
+          </ul>
+         </div>
+        </div>
+       </nav>
+       <div class="clearfix">
+       </div>
+      </div>
+      <!--end of meu bar-->
+     </div>
+     <div class="clearfix">
+     </div>
+    </div>
+    <div class="clearfix">
+    </div>
+   </section>
+  </div>
+  <div class="clearfix">
+  </div>
+  <div class="row">
+   <div class="col-md-1">
+   </div>
+   <div class="col-md-10">
+    <div class="header_wrapper">
+     <div class="col-md-offset-1 col-md-10 header_section">
+      <span class="title">
+       Cart
+      </span>
+      <div class="clearfix">
+      </div>
+     </div>
+     <div class="clearfix">
+     </div>
+    </div>
+   </div>
+   <div class="col-md-1">
+   </div>
+  </div>
+  <div class="search_bar hidden-sm hidden-md hidden-lg">
+   <div class="col-sm-12 col-md-offset-1 col-md-10 no_padding_left no_padding_right">
+    <div class="col-sm-8 no_padding_left">
+     <form method="get" action="/view2" id="fsearch_small">
+      <div class="col-xs-12 col-sm-3 search_for">
+       Search For
+      </div>
+      <div class="col-xs-10 col-sm-4">
+       <div class="form-group">
+        <input type="text" style="height:25px" class="form-control input-sm" name="search_keyword" id="search_keyword_small" />
+        <div class="clearfix">
+        </div>
+       </div>
+      </div>
+      <div class="col-xs-2 col-sm-1 in no_padding_left">
+       in
+      </div>
+      <div class="col-xs-12 col-sm-12 no_padding_left">
+       <div class="col-xs-11 no_padding_left">
+        <div class="col-xs-4">
+         <div class="form-group">
+          <label class="control-label col-sm-12  text-left no_padding_left">
+           State
+          </label>
+          <div class="col-sm-12 no_padding_left">
+           <select style="min-width:80px;" class="form-control input-sm select-search-state">
+            <option>
+             - All States -
+            </option>
+            <option value="1">
+             Australian Capital Territory
+            </option>
+            <option value="2">
+             New South Wales
+            </option>
+            <option value="3">
+             Northen Territory
+            </option>
+            <option value="4">
+             Queensland
+            </option>
+            <option value="5">
+             South Australia
+            </option>
+            <option value="6">
+             Tasmania
+            </option>
+            <option value="7">
+             Victoria
+            </option>
+            <option value="8">
+             Western Australia
+            </option>
+           </select>
+          </div>
+          <div class="clearfix">
+          </div>
+         </div>
+        </div>
+        <div class="col-xs-4">
+         <div class="form-group">
+          <label class="control-label col-sm-12  text-left no_padding_left">
+           Region
+          </label>
+          <div class="col-sm-12 no_padding_left">
+           <select style="min-width:80px;" class="form-control input-sm select-search-region">
+            <option value="">
+             - All Regions -
+            </option>
+           </select>
+          </div>
+          <div class="clearfix">
+          </div>
+         </div>
+        </div>
+        <div class="col-xs-4">
+         <div class="form-group">
+          <label class="control-label col-sm-12  text-left no_padding_left">
+           Suburb
+          </label>
+          <div class="col-sm-12 no_padding_left">
+           <select style="min-width:80px;" class="form-control input-sm select-search-suburb">
+            <option>
+             - All Suburb -
+            </option>
+           </select>
+          </div>
+          <div class="clearfix">
+          </div>
+         </div>
+        </div>
+       </div>
+       <div style="padding-top:15px;" class="col-xs-1 col-lg-2 no_padding_left no_padding_right">
+        <button class="btn btn-sm btn-success btn_go" id="go_small" type="submit">
+         GO
+        </button>
+       </div>
+      </div>
+     </form>
+    </div>
+   </div>
+   <div class="clearfix">
+   </div>
+  </div>
+  <div class="search_bar_xs_screen hidden-xs search_bar col-md-offset-1 col-md-10">
+   <div class="col-sm-12 col-md-12 col-lg-12 no_padding_left">
+    <div class="col-sm-11 col-md-11 col-lg-11">
+     <form method="get" action="/view2" id="fsearch">
+      <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 search_for no_padding_left">
+       <div class="col-sm-10">
+        <div class="form-group">
+         <label class="control-label col-sm-12  text-left">
+          Search For
+         </label>
+         <div class="col-sm-12  no_padding_right">
+          <input type="text" class="form-control input-sm" name="search_keyword" id="search_keyword_go" />
+         </div>
+         <div class="clearfix">
+         </div>
+        </div>
+       </div>
+       <div style="padding-top:20px;" class="col-sm-2">
+        in
+       </div>
+      </div>
+      <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 no_padding_left no_padding_right">
+       <div class="col-sm-11 no_padding_left no_padding_right">
+        <div class="col-sm-4 no_padding_left">
+         <div class="form-group">
+          <label class="control-label col-sm-12 no_padding_left text-left">
+           State
+          </label>
+          <select class="form-control input-sm select-search-state">
+           <option>
+            - All States -
+           </option>
+           <option value="1">
+            Australian Capital Territory
+           </option>
+           <option value="2">
+            New South Wales
+           </option>
+           <option value="3">
+            Northen Territory
+           </option>
+           <option value="4">
+            Queensland
+           </option>
+           <option value="5">
+            South Australia
+           </option>
+           <option value="6">
+            Tasmania
+           </option>
+           <option value="7">
+            Victoria
+           </option>
+           <option value="8">
+            Western Australia
+           </option>
+          </select>
+          <div class="clearfix">
+          </div>
+         </div>
+        </div>
+        <div class="col-sm-4 no_padding_left">
+         <div class="form-group">
+          <label class="control-label col-sm-12 no_padding_left text-left">
+           Region
+          </label>
+          <select class="form-control input-sm select-search-region">
+           <option value="">
+            - All Regions -
+           </option>
+          </select>
+          <div class="clearfix">
+          </div>
+         </div>
+        </div>
+        <div class="col-sm-4 no_padding_left">
+         <div class="form-group">
+          <label class="control-label col-sm-12 no_padding_left text-left">
+           Suburb
+          </label>
+          <select class="form-control input-sm select-search-suburb">
+           <option>
+            - All Suburb -
+           </option>
+          </select>
+          <div class="clearfix">
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="col-sm-1 text-left no_padding_left btn_go_section">
+        <button class="btn btn-sm btn-success btn_go" id="go_search" type="submit">
+         GO
+        </button>
+       </div>
+      </div>
+     </form>
+    </div>
+    <div class="hidden-xs col-sm-1 col-md-1 col-lg-1 no_padding_left no_padding_right view_section text-right">
+     <label class="view col-sm-12 control-label text-center">
+      View:
+     </label>
+     <div class="col-sm-12 no_padding_left no_padding_right ">
+      <span class="col-sm-6 text-right no_padding_right">
+       <a href="/view1">
+        <img src="/utils/img/block_s.png" />
+       </a>
+      </span>
+      <span class="col-sm-6 text-left">
+       <a href="/view2">
+        <img src="/utils/img/block_2_u.png" />
+       </a>
+      </span>
+     </div>
+    </div>
+   </div>
+   <div class="clearfix">
+   </div>
+  </div>
+  <script>
+   jQuery(function($){
+	$('.select-search-state').change(function(){
+		$.post('/actions?_type=_change_state', {id_state:$(this).val()}, function(data){
+			location.reload();
+		},'json');
+	});
+	$('.select-search-region').change(function(){
+		$.post('/actions?_type=_change_region', {id_region:$(this).val()}, function(data){
+			location.reload();
+		},'json');
+	});
+	$('.select-search-suburb').change(function(){
+		$.post('/actions?_type=_change_suburb', {id_suburb:$(this).val()}, function(data){
+			location.reload();
+		},'json');
+	});
+	
+	$('#go_search').click(function(event){
+		event.preventDefault();
+		if (($('#search_keyword_go').val()).trim() != ""){
+			$('#fsearch').submit();
+		}
+	});
+	$('#go_small').click(function(event){
+		event.preventDefault();
+		if (($('#search_keyword_small').val()).trim() != ""){
+			$('#fsearch_small').submit();
+		}
+	});
+});
+  </script>
+  <div class="col-md-offset-1 col-md-10 content">
+   <section>
+    <div class="col-xs-12 hidden-sm hidden-md hidden-lg">
+     <div class="media_icons">
+      <ul class="media">
+       <li class="list">
+        <a title="Facebook" alt="Facebook" target="_new" href="https://www.facebook.com/OzzieDeals.com.au">
+         <i class="fa fa-facebook fa-2x fa_media_icon">
+         </i>
+        </a>
+       </li>
+       <li class="list">
+        <a title="Twitter" alt="Twitter" target="_new" href="https://twitter.com/Ozziedeals">
+         <i class="fa fa-twitter fa-2x fa_media_icon">
+         </i>
+        </a>
+       </li>
+       <li class="list">
+        <a title="Google Plus" alt="Google Plus" target="_new" href="https://plus.google.com/u/0/102643929358603059867/posts">
+         <i class="fa fa-google-plus fa-2x fa_media_icon">
+         </i>
+        </a>
+       </li>
+       <li class="list">
+        <a title="Youtube" alt="Youtube" target="_new" href="https://www.youtube.com/user/OzzieDeals">
+         <i class="fa fa-youtube fa-2x fa_media_icon">
+         </i>
+        </a>
+       </li>
+       <li class="list">
+        <a title="Share it" alt="Share it" target="_new" href="http://www.shareit.com">
+         <i class="fa fa-envelope fa-2x fa_media_icon">
+         </i>
+        </a>
+       </li>
+      </ul>
+      <div class="clearfix">
+      </div>
+     </div>
+     <select class="form-control input-sm" id="category_small" name="category">
+      <option value="">
+       View All Deals
+      </option>
+      <option value="/group/view1/dining">
+       DINING
+      </option>
+      <option value="/group/view1/beauty-amp-wellness">
+       BEAUTY &amp; WELLNESS
+      </option>
+      <option value="/group/view1/health-care">
+       HEALTH CARE
+      </option>
+      <option value="/group/view1/leisure-amp-fitness">
+       LEISURE &amp; FITNESS
+      </option>
+      <option value="/group/view1/tickets-amp-events">
+       TICKETS &amp; EVENTS
+      </option>
+      <option value="/group/view1/services">
+       SERVICES
+      </option>
+      <option value="/group/view1/classes-amp-training">
+       CLASSES &amp; TRAINING
+      </option>
+      <option value="/group/view1/travel">
+       TRAVEL
+      </option>
+      <option value="/group/view1/shopping">
+       SHOPPING
+      </option>
+     </select>
+    </div>
+    <div class="col-sm-12 no_padding_left no_padding_right hidden-xs hidden-sm hidden-md hidden-lg padding_top_20">
+     <img class="img-responsive" src="/utils/img/fathers_day_icon.png" />
+    </div>
+    <div class="hidden-xs col-sm-3 col-lg-2 left_side_bar">
+     <div class="media_icons">
+      <ul class="media">
+       <li class="list">
+        <a title="Facebook" alt="Facebook" target="_new" href="https://www.facebook.com/OzzieDeals.com.au">
+         <i class="fa fa-facebook fa-2x fa_media_icon">
+         </i>
+        </a>
+       </li>
+       <li class="list">
+        <a title="Twitter" alt="Twitter" target="_new" href="https://twitter.com/Ozziedeals">
+         <i class="fa fa-twitter fa-2x fa_media_icon">
+         </i>
+        </a>
+       </li>
+       <li class="list">
+        <a title="Google Plus" alt="Google Plus" target="_new" href="https://plus.google.com/u/0/102643929358603059867/posts">
+         <i class="fa fa-google-plus fa-2x fa_media_icon">
+         </i>
+        </a>
+       </li>
+       <li class="list">
+        <a title="Youtube" alt="Youtube" target="_new" href="https://www.youtube.com/user/OzzieDeals">
+         <i class="fa fa-youtube fa-2x fa_media_icon">
+         </i>
+        </a>
+       </li>
+       <li class="list">
+        <a title="Share it" alt="Share it" target="_new" href="http://www.shareit.com">
+         <i class="fa fa-envelope fa-2x fa_media_icon">
+         </i>
+        </a>
+       </li>
+      </ul>
+      <div class="clearfix">
+      </div>
+     </div>
+     <div class="wrapper">
+      <div class="heading_sidebar">
+       <a>
+        View All Deals
+       </a>
+      </div>
+      <div class="orange_arrow_right">
+       <img class="img-responsive" src="/utils/img/orange_arrow_right.png" />
+      </div>
+     </div>
+     <table style="position:relative;margin-top:0px;" class="deal_list_table">
+     </table>
+     <div class="col-sm-12 no_padding_left no_padding_right suggested_deals_section">
+      <div class="suggested_deals_bar">
+       Suggested Deals
+      </div>
+      <div class="advertisement ">
+       <a href="/deal/view1/shopping/61">
+        <div>
+         <img class="img-responsive" src="/pictures/deal_61/crop/deal_61_20141115061245_main.JPG" />
+        </div>
+        <!--div class="tag">New</div -->
+       </a>
+      </div>
+     </div>
+    </div>
+   </section>
+   <section class="para_section col-sm-12  no_padding_left no_padding_right">
+    <div class="col-sm-12 para_top">
+     <h4>
+      Paris Crystal Necklace and Earrings Set by Romatco
+     </h4>
+     <p>
+     </p>
+     <p>
+      Spoil your Special Someone this Christmas with this Gorgeous Necklace and Earring Set
+     </p>
+     <p>
+      Only $35.00 (Valued at $70.00) Delivery within 10 days from purchase
+     </p>
+     <p>
+     </p>
+    </div>
+    <div class="para_bottom col-sm-12 no_padding_right">
+    </div>
+   </section>
+   <section>
+   </section>
+   <p class="no_margin_bottom">
+    Available for 25 days 14 more hours  
+								  
+   </p>
+   <span>
+    Save 50%
+   </span>
+   <div style="position:relative;" class="col-sm-12 no_padding_left no_padding_right">
+    <span style="padding-left:15px;" class="price_strike">
+     $70.00
+    </span>
+    <span>
+     <div class="btn-sm btn_price_tag">
+      $35.00
+     </div>
+    </span>
+   </div>
+   <div class="clearfix">
+   </div>
+  </div>
+  <div class="advertisement margin_top_10">
+   <a href="/deal/view1/beauty-amp-wellness/115">
+    <div>
+     <img class="img-responsive" src="/pictures/deal_115/crop/deal_115_20140916102840_main.jpg" />
+    </div>
+    <!--div class="tag">New</div -->
+    <section class="para_section col-sm-12  no_padding_left no_padding_right">
+     <div class="col-sm-12 para_top">
+      <h4>
+       Beauty Eyelash Extension Silk or Mink $49 at BSK3 Hair Design - PARRAMATTA
+      </h4>
+      <p>
+      </p>
+      <p>
+       With expert Eyelash Technicians BSK3 Hair Design are offering a full set of Silk or Mink Eyelash extensions perfect for every day use or that big night on the town!
+      </p>
+      <p>
+      </p>
+     </div>
+     <div class="para_bottom col-sm-12 no_padding_right">
+     </div>
+    </section>
+    <section>
+    </section>
+   </a>
+   <p class="no_margin_bottom">
+    Available for 1 months 3 days 23 more hours  
+								  
+   </p>
+   <span>
+    Save 66%
+   </span>
+   <div style="position:relative;" class="col-sm-12 no_padding_left no_padding_right">
+    <span style="padding-left:15px;" class="price_strike">
+     $145.00
+    </span>
+    <span>
+     <div class="btn-sm btn_price_tag">
+      $49.00
+     </div>
+    </span>
+   </div>
+   <div class="clearfix">
+   </div>
+  </div>
+  <script>
+   jQuery(function($){
+	$('#category_small').change(function(){
+		window.location = $(this).val();
+	});
+});
+  </script>
+  <div class="col-sm-9 col-md-9 col-lg-10 no_padding_left no_padding_right">
+   <div class="deal_promo margin_top_30">
+    Empty shopping cart
+   </div>
+  </div>
+  <script type="text/javascript">
+   var domain = base_domain();
+        var options1 = {
+			script: domain + "/suburbpostcode/",
+			//script: "http://localhost/Classiquestone/developer2014/suburbpostcode/",
+            varname:"getSuburbPostCode",
+            json:true,
+            callback: function (obj) {
+				//var miles = document.getElementById("miles").value;
+				//miles = miles * 1609.344;
+				//generateMap(obj.id,obj.lat,obj.lon,miles);
+				document.getElementById('suburb_state_postcode_id').value = obj.id;
+			}
+        };
+        var as_json = new AutoSuggest('suburb_state_postcode', 'country_id', 'loading', options1);
+
+		function base_domain()
+		{
+			// capturamos la url
+			url_site = document.location.href
+			url_pos = url_site.indexOf('//');
+			
+			// por un lado tenemos la url sin protocolos
+			url_limpia = url_site.substr(url_pos+2);
+			
+			// y por otro lado el protocolo usado
+			url_prot = url_site.substr(0,url_pos+2);
+			
+			// separamos todas las posibles carpetas
+			url_split = url_limpia.split('/');
+			
+			// y obtenemos el dominio actual
+			url_base = url_prot + url_split[0];
+			
+			return url_base;
+		}
+  </script>
+  <script type="text/javascript">
+   function getAddressCustomer(id)
+{
+	var addressData = new Array(); 
+	
+	addressData[0] = {type:"Residence", contact:"", company:"", email:"", phone:"", address:"", suburb_state_postcode:"", suburb_state_postcode_id:"", country_id:""};
+	
+	
+		
+	if(id=="")
+	{
+		var countryCtrl = document.getElementById("country_id");
+	    var countElements = countryCtrl.length;
+	    for (i = 0; i &lt; countElements; i++) {
+		  if (countryCtrl[i].value == "") {
+			 countryCtrl[i].selected = true;
+		  }   
+	    }
+		
+		var pbCtrl = document.getElementById("destinationResPostalBox");
+		for (i = 0; i &lt; pbCtrl.length; i++) {
+		  if (pbCtrl[i].value == "N") {
+			 pbCtrl[i].selected = true;
+		  }   
+	    }
+		
+		var uCtrl = document.getElementById("destinationResUnattended");
+		for (i = 0; i &lt; uCtrl.length; i++) {
+		  if (uCtrl[i].value == "N") {
+			 uCtrl[i].selected = true;
+		  }   
+	    }
+		
+		var iCtrl = document.getElementById("destinationResInside");
+		for (i = 0; i &lt; iCtrl.length; i++) {
+		  if (iCtrl[i].value == "N") {
+			 iCtrl[i].selected = true;
+		  }   
+	    }
+		
+		var lACtrl = document.getElementById("destinationResLimitedAccess");
+		for (i = 0; i &lt; lACtrl.length; i++) {
+		  if (lACtrl[i].value == "N") {
+			 lACtrl[i].selected = true;
+		  }   
+	    }
+		
+		document.getElementById("Business").checked=false;
+		document.getElementById("Residence").checked=true;
+		document.getElementById("contact").value="";
+		document.getElementById("company").value="";
+		document.getElementById("email").value="";
+		document.getElementById("phone").value="";
+		document.getElementById("address").value="";
+		document.getElementById("suburb_state_postcode").value="";
+		document.getElementById("suburb_state_postcode_id").value=0;
+		
+		document.getElementById("divNewAddress").className="";
+	}
+	else
+	{
+			if(addressData[id].type=="Business")
+			{
+				document.getElementById("Business").checked=true;
+				document.getElementById("Residence").checked=false;
+			}
+			else
+			{
+				if(addressData[id].type=="Residence" || addressData[id].type=="")
+				{
+					document.getElementById("Business").checked=false;
+					document.getElementById("Residence").checked=true;
+				}
+			}
+		document.getElementById("contact").value=addressData[id].contact;
+		document.getElementById("company").value=addressData[id].company;
+		document.getElementById("email").value=addressData[id].email;
+		document.getElementById("phone").value=addressData[id].phone;
+		document.getElementById("address").value=addressData[id].address;
+		document.getElementById("suburb_state_postcode").value=addressData[id].suburb_state_postcode;
+		document.getElementById("suburb_state_postcode_id").value=addressData[id].suburb_state_postcode_id;
+		
+		var countryCtrl = document.getElementById("country_id");
+	    var countElements = countryCtrl.length;
+	    for (i = 0; i &lt; countElements; i++) {
+		  if (countryCtrl[i].value == addressData[id].country_id) {
+			 countryCtrl[i].selected = true;
+		  }   
+	    }
+		
+		var pbCtrl = document.getElementById("destinationResPostalBox");
+		for (i = 0; i &lt; pbCtrl.length; i++) {
+		  if (pbCtrl[i].value == addressData[id].destinationResPostalBox) {
+			 pbCtrl[i].selected = true;
+		  }   
+	    }
+		
+		var uCtrl = document.getElementById("destinationResUnattended");
+		for (i = 0; i &lt; uCtrl.length; i++) {
+		  if (uCtrl[i].value == addressData[id].destinationResUnattended) {
+			 uCtrl[i].selected = true;
+		  }   
+	    }
+		
+		var iCtrl = document.getElementById("destinationResInside");
+		for (i = 0; i &lt; iCtrl.length; i++) {
+		  if (iCtrl[i].value == addressData[id].destinationResInside) {
+			 iCtrl[i].selected = true;
+		  }   
+	    }
+		
+		var lACtrl = document.getElementById("destinationResLimitedAccess");
+		for (i = 0; i &lt; lACtrl.length; i++) {
+		  if (lACtrl[i].value == addressData[id].destinationResLimitedAccess) {
+			 lACtrl[i].selected = true;
+		  }   
+	    }
+		
+		document.getElementById("divNewAddress").className="hidden";
+	}
+
+}
+
+	function change_quantity()
+	{
+		$.post('/actions?_type=_cart_update', $('#form_cart_products').serialize(), function(){
+			location.reload();
+		},'json');	
+	}
+  </script>
+  <script type="text/javascript">
+   jQuery(function($) {
+	$.post('/shipping-calculate-require', $('#form_cart').serialize(), function(data){
+		if (data.result) {
+			$('#DivShippingCalculate').removeClass("hidden");
+		}
+		else {
+			$('#DivShippingCalculate').addClass("hidden");
+		}
+	}, 'json');
+
+	$('#myCarousel').carousel();
+	$('.btn_quit').click(function(e) {
+		e.preventDefault();
+		$.post('/quitCart', {item:$(this).data('id')}, function(res){
+			location.reload();
+		},'json');
+	});	
+	$('#cart_update').click(function(e){
+		e.preventDefault();
+		$.post('/actions?_type=_cart_update', $('#form_cart').serialize(), function(res){
+			location.reload();
+		},'json');	
+	});
+	$.box1;
+	$('#cart_login').click(function(e){
+		e.preventDefault();
+		$.post('/popup-login/view1', {}, function(data){
+			$.box1 = bootbox.dialog({message: data}).addClass("modal-popup-login");
+		});
+	});
+	
+	$.fn.forgotten = function() {
+		$.post('/popup-forgotten/view1', {}, function(data){
+			$.box1 = bootbox.dialog({message: data}).addClass("modal-popup-login");
+		});
+	}
+	
+	$('#calculate_shipping').click(function(e) {
+		$('#calculate_shipping').addClass("hidden");
+		$('#img_loading_calculate').removeClass("hidden");
+		e.preventDefault();
+		$.post('/shipping-calculate', $('#form_cart').serialize(), function(data){
+			if (data.result == 'ok') {
+				location.reload();
+				//$('.info-shipping-calculate').html(data.message);
+			}
+			else {
+				$('#img_loading_calculate').addClass("hidden");
+				$('#calculate_shipping').removeClass("hidden");
+				$('.info-shipping-calculate').html(data.message);
+			}
+		}, 'json');
+	});
+	
+	$('#apply_discount_code').click(function(e) {
+	if(document.getElementById("gift_voucher").value!="" &amp;&amp; document.getElementById("discount_code").value!="")
+	{
+		alert("Please enter gift voucher or discount (Only one).");
+	}
+	else
+	{
+		if(document.getElementById("gift_voucher").value!="" || document.getElementById("discount_code").value!="")
+		{
+			$('#apply_discount_code').addClass("hidden");
+			$('#img_loading_vouchers').removeClass("hidden");
+			e.preventDefault();
+			$.post('/apply-discount-vouchers', $('#form_discount_voucher').serialize(), function(data){
+				if (data['exist']) {
+					location.reload();
+					//$('.info-shipping-calculate').html(data.message);
+				}
+				else {
+					$('#img_loading_vouchers').addClass("hidden");
+					$('#apply_discount_code').removeClass("hidden");
+					$('.info-discount-voucher').html(data.message);
+				}
+			}, 'json');
+		}
+		else
+		{
+			alert("Please enter gift voucher or discount (Only one).");
+		}
+	}	
+
+	});
+	
+	$('#save_delivery_address').click(function(e) {		
+		e.preventDefault();
+		$.post('/apply-delivery-address', $('#form_cart').serialize(), function(data){
+			if (data.result == 'ok') {
+				location.reload();
+			}
+			else {
+				alert("A problem is preventing register new address");
+			}
+		}, 'json');
+	});
+	
+	$('#verifiate_shipping').click(function(e) {		
+		e.preventDefault();
+		$.post('/shipping-calculate-verificate', $('#form_cart').serialize(), function(data){
+			if (data.result) {
+				alert("Please, Shipping Calculate");
+			}
+			else {
+				$('#form_cart').submit();
+			}
+		}, 'json');
+	});
+	
+});
+  </script>
+  <div class="clearfix">
+  </div>
+  <div class="clearfix">
+  </div>
+  <div class="footer footer_deals">
+   <div class="col-md-offset-1 col-md-10 footer_wrapper">
+    <div class="logo_section hidden-xs">
+     <img class="img-responsive" src="/utils/img/logo_footer.png" />
+    </div>
+    <div class="col-sm-offset-3 col-sm-9">
+     <div class="col-xs-3">
+      <ul>
+       <li>
+        <a href="/about">
+         About Ozzie Deals
+        </a>
+       </li>
+       <li>
+        <a href="/apply-for-job">
+         Jobs
+        </a>
+       </li>
+       <!--<li><a href="javascript:void(0)">Blog</a></li>-->
+       <!--<li><a href="/press">Press</a></li>-->
+       <!--<li><a href="/gift-cards">Gift Cards</a></li>-->
+       <!--<li><a href="/coupons">Coupons</a></li>-->
+       <li>
+        <a href="/faq">
+         FAQ
+        </a>
+       </li>
+       <!--<li><a href="/referral-program">Referral Program</a></li>-->
+       <li>
+        <a href="/contact">
+         Contact Us
+        </a>
+       </li>
+       <li>
+        <a href="/site-map">
+         Site Map
+        </a>
+       </li>
+      </ul>
+      <div class="clearfix">
+      </div>
+     </div>
+     <div class="col-xs-3">
+      <ul>
+       <!--<li><a href="/contact">Customer Support</a> </li>-->
+       <li>
+        <a href="/terms-and-conditions">
+         Terms of Use
+        </a>
+       </li>
+       <li>
+        <a href="/privacy-policy">
+         Privacy Policy
+        </a>
+       </li>
+       <li>
+        <a href="/refund-policy">
+         Refund Policy
+        </a>
+       </li>
+       <li>
+        <a href="/media">
+         Media
+        </a>
+       </li>
+       <!--<li><a href="/run-an-ozzie-deal">Run An Ozzie Deal</a></li>-->
+       <!--<li><a href="/advertise-with-ozzie-deal">Advertise with Ozzie Deal</a></li>-->
+      </ul>
+      <div class="clearfix">
+      </div>
+     </div>
+     <div class="col-xs-3">
+      <ul>
+       <!--<li><a href="/universal-fine-print">Universal Fine Print</a> </li>-->
+       <!--<li><a href="javascript:void(0)">Sign in</a></li>-->
+       <li>
+        <a href="/merchant">
+         Merchant Login
+        </a>
+       </li>
+       <li>
+        <a href="/customer">
+         Sign up
+        </a>
+       </li>
+       <li>
+        <a href="/offer-a-deal">
+         Add a Deal
+        </a>
+       </li>
+       <li>
+        <a href="/feedback">
+         Feedback
+        </a>
+       </li>
+       <!--<li><a href="javascript:void(0)">Offers Page</a></li>-->
+      </ul>
+      <div class="clearfix">
+      </div>
+     </div>
+     <div class="col-xs-3">
+      <ul>
+       <!--<li><a href="javascript:void(0)">User Portal</a> </li>
+					<li><a href="javascript:void(0)">Provider Portal</a></li>
+					<li><a href="javascript:void(0)">Applicant Portal</a></li>
+					<li><a href="javascript:void(0)">Sales Portal</a></li>-->
+      </ul>
+      <div class="clearfix">
+      </div>
+     </div>
+     <div class="clearfix">
+     </div>
+    </div>
+   </div>
+   <div class="clearfix">
+   </div>
+   <div style="text-align: center; color: #FFFFFF;" class="col-md-offset-1 col-md-10 margin_top_20 padding_top_20 border_top_ccc ">
+    Web site construction, hosting and development by Visual Link Pty Ltd
+    <a style="color: #FFFFFF;" href="mailto:info@visuallink.com.au">
+     info@visuallink.com.au
+    </a>
+    © All work Copyright 2014 - 2015
+   </div>
+  </div>
+  <!--end of footer-->
+  <div class="footer_bottom_green">
+  </div>
+ </body>
+</html>

@@ -1,0 +1,315 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <script src="js/jquery-1.4.2.js">
+  </script>
+  <script type="text/javascript">
+   //search term 	
+	$(document).ready(function(){ 
+	$("#search_results").slideUp(); 
+			$("#search_button").click(function(e){ 
+					e.preventDefault(); 
+					ajax_search(); 
+			}); 
+			$("#search_term").keyup(function(e){ 
+					e.preventDefault(); 
+					ajax_search(); 
+			}); 
+	
+	}); 
+	
+	function ajax_search(){ 
+		$("#search_results").show(); 
+		var search_val=accentsTidy($("#search_term").val()); 
+		$.post("include/find.php", {search_term : search_val}, function(data){
+		 if (data.length&gt;0){ 
+			 $("#search_results").html(data); 
+		 } 
+		}) 
+	} 
+	
+	//search term 2	
+	$(document).ready(function(){ 
+	$("#search_results2").slideUp(); 
+			$("#search_button2").click(function(e){ 
+					e.preventDefault(); 
+					ajax_search2(); 
+			}); 
+			$("#search_term2").keyup(function(e){ 
+					e.preventDefault(); 
+					ajax_search2(); 
+			}); 
+	
+	}); 
+	
+	function ajax_search2(){ 
+		$("#search_results2").show(); 
+		var search_val2=accentsTidy($("#search_term2").val()); 
+		$.post("include/find2.php", {search_term2 : search_val2}, function(data){
+		 if (data.length&gt;0){ 
+			 $("#search_results2").html(data); 
+		 } 
+		}) 
+	} 
+	
+	//search term 3	
+	$(document).ready(function(){ 
+	$("#search_results3").slideUp(); 
+			$("#search_button3").click(function(e){ 
+					e.preventDefault(); 
+					ajax_search3(); 
+			}); 
+			$("#search_term3").keyup(function(e){ 
+					e.preventDefault(); 
+					ajax_search3(); 
+			}); 
+	
+	}); 
+	
+	function ajax_search3(){ 
+		$("#search_results3").show(); 
+		var search_val3=accentsTidy($("#search_term3").val()); 
+		$.post("include/find3.php", {search_term3 : search_val3}, function(data){
+		 if (data.length&gt;0){ 
+			 $("#search_results3").html(data); 
+		 } 
+		}) 
+	} 
+	
+	//search term 4	
+	$(document).ready(function(){ 
+	$("#search_results4").slideUp(); 
+			$("#search_button4").click(function(e){ 
+					e.preventDefault(); 
+					ajax_search4(); 
+			}); 
+			$("#search_term4").keyup(function(e){ 
+					e.preventDefault(); 
+					ajax_search4(); 
+			}); 
+	
+	}); 
+	
+	function ajax_search4(){ 
+		$("#search_results4").show(); 
+		var search_val4=accentsTidy($("#search_term4").val()); 
+		$.post("include/find4.php", {search_term4 : search_val4}, function(data){
+		 if (data.length&gt;0){ 
+			 $("#search_results4").html(data); 
+		 } 
+		}) 
+	} 
+	
+	//search term 5	
+	$(document).ready(function(){ 
+	$("#search_results5").slideUp(); 
+			$("#search_button5").click(function(e){ 
+					e.preventDefault(); 
+					ajax_search5(); 
+			}); 
+			$("#search_term5").keyup(function(e){ 
+					e.preventDefault(); 
+					ajax_search5(); 
+			}); 
+	
+	}); 
+	
+	function ajax_search5(){ 
+		$("#search_results5").show(); 
+		var search_val5=accentsTidy($("#search_term5").val()); 
+		$.post("include/find5.php", {search_term5 : search_val5}, function(data){
+		 if (data.length&gt;0){ 
+			 $("#search_results5").html(data); 
+		 } 
+		}) 
+	} 
+	
+	//search term 6	
+	$(document).ready(function(){ 
+	$("#search_results6").slideUp(); 
+			$("#search_button6").click(function(e){ 
+					e.preventDefault(); 
+					ajax_search6(); 
+			}); 
+			$("#search_term6").keyup(function(e){ 
+					e.preventDefault(); 
+					ajax_search6(); 
+			}); 
+	
+	}); 
+	
+	function ajax_search6(){ 
+		$("#search_results6").show(); 
+		var search_val6=accentsTidy($("#search_term6").val()); 
+		$.post("include/find6.php", {search_term6 : search_val6}, function(data){
+		 if (data.length&gt;0){ 
+			 $("#search_results6").html(data); 
+		 } 
+		}) 
+	} 
+	
+accentsTidy = function(s){
+            var r=s.toLowerCase();
+
+            r = r.replace(new RegExp(/[Ã Ã¡Ã¢Ã£Ã¤Ã¥]/g),"a");
+            r = r.replace(new RegExp(/[Ã¨Ã©ÃªÃ«]/g),"e");
+            r = r.replace(new RegExp(/[Ã¬Ã­Ã®Ã¯]/g),"i");           
+            r = r.replace(new RegExp(/[Ã²Ã³Ã´ÃµÃ¶]/g),"o");
+            r = r.replace(new RegExp(/[Ã¹ÃºÃ»Ã¼]/g),"u");
+            r = r.replace(new RegExp(/Ã±/g),"n");     			
+            return r;
+        };
+  </script>
+  <script type="text/javascript" src="js/livevalidation_standalone.js">
+  </script>
+  <script type="text/javascript">
+   function DoNav(theUrl)
+  {
+  document.location.href = theUrl;
+  }
+  </script>
+  <script type="text/javascript" src="js/tabs/jquery-1.1.3.1.pack.js">
+  </script>
+  <script type="text/javascript" src="js/tabs/jquery.history_remote.pack.js">
+  </script>
+  <script type="text/javascript" src="js/tabs/jquery.tabs.pack.js">
+  </script>
+  <script type="text/javascript">
+   $(function() {
+
+                $('#container-1').tabs();
+                $('#container-2').tabs(2);
+                $('#container-3').tabs({ fxSlide: true });
+                $('#container-4').tabs({ fxFade: true, fxSpeed: 'fast' });
+                $('#container-5').tabs({ fxSlide: true, fxFade: true, fxSpeed: 'normal' });
+                $('#container-6').tabs({
+                    fxFade: true,
+                    fxSpeed: 'fast',
+                    onClick: function() {
+                        alert('onClick');
+                    },
+                    onHide: function() {
+                        alert('onHide');
+                    },
+                    onShow: function() {
+                        alert('onShow');
+                    }
+                });
+                $('#container-7').tabs({ fxAutoHeight: true });
+                $('#container-8').tabs({ fxShow: { height: 'show', opacity: 'show' }, fxSpeed: 'normal' });
+                $('#container-9').tabs({ remote: true });
+                $('#container-10').tabs();
+                $('#container-11').tabs({ disabled: [3] });
+
+                $('&lt;p&gt;&lt;a href="#"&gt;Disable third tab&lt;\/a&gt;&lt;\/p&gt;').prependTo('#fragment-28').find('a').click(function() {
+                    $(this).parents('div').eq(1).disableTab(3);
+                    return false;
+                });
+                $('&lt;p&gt;&lt;a href="#"&gt;Activate third tab&lt;\/a&gt;&lt;\/p&gt;').prependTo('#fragment-28').find('a').click(function() {
+                    $(this).parents('div').eq(1).triggerTab(3);
+                    return false;
+                });
+                $('&lt;p&gt;&lt;a href="#"&gt;Enable third tab&lt;\/a&gt;&lt;\/p&gt;').prependTo('#fragment-28').find('a').click(function() {
+                    $(this).parents('div').eq(1).enableTab(3);
+                    return false;
+                });
+
+            });
+  </script>
+  <link media="print, projection, screen" type="text/css" href="js/tabs/jquery.tabs.css" rel="stylesheet" />
+  <!-- Additional IE/Win specific style sheet (Conditional Comments) -->
+  <!--[if lte IE 7]>
+        <link rel="stylesheet" href="jquery.tabs-ie.css" type="text/css" media="projection, screen">
+        <![endif]-->
+  <title>
+   Citonet - anatomia patologica [Server: citonet.cl]
+  </title>
+  <meta content="Content-Type" http-equiv="Content-Type" />
+  <link type="text/css" href="css/main.css" rel="stylesheet" />
+ </head>
+ <body>
+  <table width="90%" border="0" background="images/headers/header_08.jpg" align="center" cellspacing="0" cellpadding="0">
+   <tbody>
+    <tr>
+     <td height="139">
+      <a href="index.php">
+       <img width="300" height="139" border="0" src="images/logo.gif" name="logo" />
+      </a>
+     </td>
+    </tr>
+    <tr>
+     <td colspan="2">
+      <div class="tabArea">
+       <a class="tab " href="index.php?area=home">
+             Home     
+       </a>
+       <a class="tab " href="index.php?area=pres">
+        Presentación
+       </a>
+       <a class="tab " href="index.php?area=cito">
+             Citonet     
+       </a>
+       <a class="tab activeTab" href="index.php?area=ubic">
+          Ubicación  
+       </a>
+      </div>
+     </td>
+    </tr>
+   </tbody>
+  </table>
+  <table width="90%" border="0" bgcolor="#000000" align="center" cellspacing="1" cellpadding="0">
+   <tbody>
+    <tr>
+     <td>
+      <table width="100%" border="0" bgcolor="#fafafa" align="center" cellspacing="0" cellpadding="4">
+       <tbody>
+        <tr>
+         <td>
+          <table width="100%" border="0" bgcolor="#FFFFFF" align="center" cellspacing="0" cellpadding="0">
+           <tbody>
+            <tr>
+             <td valign="top" align="left">
+              <h1 align="center">
+               Ubicación
+              </h1>
+              <br />
+              <table border="0" align="center">
+               <tbody>
+                <tr>
+                 <td>
+                  <iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed?pb=%211m18%211m12%211m3%211d3654.5955002095893%212d-70.39897440000001%213d-23.654653000000007%212m3%211f0%212f0%213f0%213m2%211i1024%212i768%214f13.1%213m3%211m2%211s0x96afd51107511431%3A0xf06927103f026d3d%212sVeintiuno+de+Mayo+850%2C+Antofagasta%215e0%213m2%211ses-419%212scl%214v1407980638478">
+                  </iframe>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+              <br />
+              <br />
+              <br />
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </td>
+        </tr>
+       </tbody>
+      </table>
+     </td>
+    </tr>
+   </tbody>
+  </table>
+  <br />
+  <span class="footer">
+   <center>
+    [ Citonet |
+    <a href="mailto:secretaria@citonet.cl">
+     secretaria@citonet.cl
+    </a>
+    |
+    <a href="http://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=General+Vel%C3%A1squez+1269,+antofagasta,+chile&sll=37.0625,-95.677068&sspn=42.360237,58.095703&ie=UTF8&hq=&hnear=General+Jos%C3%A9+Vel%C3%A1squez+B%C3%B3rquez+1269,+Antofagasta,+Chile&z=16">
+     General Velásquez 1269 - Piso 2
+    </a>
+    | Fono: (55) 486623 ]
+   </center>
+  </span>
+ </body>
+</html>

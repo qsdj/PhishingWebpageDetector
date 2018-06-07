@@ -1,0 +1,668 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-US" dir="ltr" xmlns="http://www.w3.org/1999/xhtml">
+ <head profile="http://gmpg.org/xfn/11">
+  <meta content="Content-Type" http-equiv="Content-Type" />
+  <title>
+   John Bolton: Why Tea Party should resist gutting defense «  National Defense Trust
+  </title>
+  <!--// Stylesheets //-->
+  <link media="screen" type="text/css" href="http://www.nationaldefensetrust.com/wp-content/themes/NDT/style.css" rel="stylesheet" />
+  <link rel="stylesheet" href="http://www.nationaldefensetrust.com/wp-content/themes/NDT/reset.css" />
+  <link rel="stylesheet" href="http://www.nationaldefensetrust.com/wp-content/themes/NDT/text.css" />
+  <!--// End Stylesheets //-->
+  <!--// RSS Feeds //-->
+  <link href="http://www.nationaldefensetrust.com/?feed=rss2" title="National Defense Trust RSS Feed" type="application/rss+xml" rel="alternate" />
+  <link href="http://www.nationaldefensetrust.com/?feed=atom" title="National Defense Trust Atom Feed" type="application/atom+xml" rel="alternate" />
+  <link href="http://www.nationaldefensetrust.com/xmlrpc.php" rel="pingback" />
+  <!--// End RSS Feeds //-->
+  <script type="text/javascript" src="http://www.nationaldefensetrust.com/wp-content/themes/NDT/rssticker.js">
+  </script>
+  <script type="text/javascript" src="http://www.nationaldefensetrust.com/wp-content/themes/NDT/Scripts/swfobject_modified.js">
+  </script>
+  <script type="text/javascript" language="JavaScript">
+   &lt;!--
+//v1.7
+// Flash Player Version Detection
+// Detect Client Browser type
+// Copyright 2005-2008 Adobe Systems Incorporated.  All rights reserved.
+var isIE  = (navigator.appVersion.indexOf("MSIE") != -1) ? true : false;
+var isWin = (navigator.appVersion.toLowerCase().indexOf("win") != -1) ? true : false;
+var isOpera = (navigator.userAgent.indexOf("Opera") != -1) ? true : false;
+function ControlVersion()
+{
+	var version;
+	var axo;
+	var e;
+	// NOTE : new ActiveXObject(strFoo) throws an exception if strFoo isn't in the registry
+	try {
+		// version will be set for 7.X or greater players
+		axo = new ActiveXObject("ShockwaveFlash.ShockwaveFlash.7");
+		version = axo.GetVariable("$version");
+	} catch (e) {
+	}
+	if (!version)
+	{
+		try {
+			// version will be set for 6.X players only
+			axo = new ActiveXObject("ShockwaveFlash.ShockwaveFlash.6");
+			
+			// installed player is some revision of 6.0
+			// GetVariable("$version") crashes for versions 6.0.22 through 6.0.29,
+			// so we have to be careful. 
+			
+			// default to the first public version
+			version = "WIN 6,0,21,0";
+			// throws if AllowScripAccess does not exist (introduced in 6.0r47)		
+			axo.AllowScriptAccess = "always";
+			// safe to call for 6.0r47 or greater
+			version = axo.GetVariable("$version");
+		} catch (e) {
+		}
+	}
+	if (!version)
+	{
+		try {
+			// version will be set for 4.X or 5.X player
+			axo = new ActiveXObject("ShockwaveFlash.ShockwaveFlash.3");
+			version = axo.GetVariable("$version");
+		} catch (e) {
+		}
+	}
+	if (!version)
+	{
+		try {
+			// version will be set for 3.X player
+			axo = new ActiveXObject("ShockwaveFlash.ShockwaveFlash.3");
+			version = "WIN 3,0,18,0";
+		} catch (e) {
+		}
+	}
+	if (!version)
+	{
+		try {
+			// version will be set for 2.X player
+			axo = new ActiveXObject("ShockwaveFlash.ShockwaveFlash");
+			version = "WIN 2,0,0,11";
+		} catch (e) {
+			version = -1;
+		}
+	}
+	
+	return version;
+}
+// JavaScript helper required to detect Flash Player PlugIn version information
+function GetSwfVer(){
+	// NS/Opera version &gt;= 3 check for Flash plugin in plugin array
+	var flashVer = -1;
+	
+	if (navigator.plugins != null &amp;&amp; navigator.plugins.length &gt; 0) {
+		if (navigator.plugins["Shockwave Flash 2.0"] || navigator.plugins["Shockwave Flash"]) {
+			var swVer2 = navigator.plugins["Shockwave Flash 2.0"] ? " 2.0" : "";
+			var flashDescription = navigator.plugins["Shockwave Flash" + swVer2].description;
+			var descArray = flashDescription.split(" ");
+			var tempArrayMajor = descArray[2].split(".");			
+			var versionMajor = tempArrayMajor[0];
+			var versionMinor = tempArrayMajor[1];
+			var versionRevision = descArray[3];
+			if (versionRevision == "") {
+				versionRevision = descArray[4];
+			}
+			if (versionRevision[0] == "d") {
+				versionRevision = versionRevision.substring(1);
+			} else if (versionRevision[0] == "r") {
+				versionRevision = versionRevision.substring(1);
+				if (versionRevision.indexOf("d") &gt; 0) {
+					versionRevision = versionRevision.substring(0, versionRevision.indexOf("d"));
+				}
+			}
+			var flashVer = versionMajor + "." + versionMinor + "." + versionRevision;
+		}
+	}
+	// MSN/WebTV 2.6 supports Flash 4
+	else if (navigator.userAgent.toLowerCase().indexOf("webtv/2.6") != -1) flashVer = 4;
+	// WebTV 2.5 supports Flash 3
+	else if (navigator.userAgent.toLowerCase().indexOf("webtv/2.5") != -1) flashVer = 3;
+	// older WebTV supports Flash 2
+	else if (navigator.userAgent.toLowerCase().indexOf("webtv") != -1) flashVer = 2;
+	else if ( isIE &amp;&amp; isWin &amp;&amp; !isOpera ) {
+		flashVer = ControlVersion();
+	}	
+	return flashVer;
+}
+// When called with reqMajorVer, reqMinorVer, reqRevision returns true if that version or greater is available
+function DetectFlashVer(reqMajorVer, reqMinorVer, reqRevision)
+{
+	versionStr = GetSwfVer();
+	if (versionStr == -1 ) {
+		return false;
+	} else if (versionStr != 0) {
+		if(isIE &amp;&amp; isWin &amp;&amp; !isOpera) {
+			// Given "WIN 2,0,0,11"
+			tempArray         = versionStr.split(" "); 	// ["WIN", "2,0,0,11"]
+			tempString        = tempArray[1];			// "2,0,0,11"
+			versionArray      = tempString.split(",");	// ['2', '0', '0', '11']
+		} else {
+			versionArray      = versionStr.split(".");
+		}
+		var versionMajor      = versionArray[0];
+		var versionMinor      = versionArray[1];
+		var versionRevision   = versionArray[2];
+        	// is the major.revision &gt;= requested major.revision AND the minor version &gt;= requested minor
+		if (versionMajor &gt; parseFloat(reqMajorVer)) {
+			return true;
+		} else if (versionMajor == parseFloat(reqMajorVer)) {
+			if (versionMinor &gt; parseFloat(reqMinorVer))
+				return true;
+			else if (versionMinor == parseFloat(reqMinorVer)) {
+				if (versionRevision &gt;= parseFloat(reqRevision))
+					return true;
+			}
+		}
+		return false;
+	}
+}
+function AC_AddExtension(src, ext)
+{
+  if (src.indexOf('?') != -1)
+    return src.replace(/\?/, ext+'?'); 
+  else
+    return src + ext;
+}
+function AC_Generateobj(objAttrs, params, embedAttrs) 
+{ 
+  var str = '';
+  if (isIE &amp;&amp; isWin &amp;&amp; !isOpera)
+  {
+    str += '&lt;object ';
+    for (var i in objAttrs)
+    {
+      str += i + '="' + objAttrs[i] + '" ';
+    }
+    str += '&gt;';
+    for (var i in params)
+    {
+      str += '&lt;param name="' + i + '" value="' + params[i] + '" /&gt; ';
+    }
+    str += '&lt;/object&gt;';
+  }
+  else
+  {
+    str += '&lt;embed ';
+    for (var i in embedAttrs)
+    {
+      str += i + '="' + embedAttrs[i] + '" ';
+    }
+    str += '&gt; &lt;/embed&gt;';
+  }
+  document.write(str);
+}
+function AC_FL_RunContent(){
+  var ret = 
+    AC_GetArgs
+    (  arguments, ".swf", "movie", "clsid:d27cdb6e-ae6d-11cf-96b8-444553540000"
+     , "application/x-shockwave-flash"
+    );
+  AC_Generateobj(ret.objAttrs, ret.params, ret.embedAttrs);
+}
+function AC_SW_RunContent(){
+  var ret = 
+    AC_GetArgs
+    (  arguments, ".dcr", "src", "clsid:166B1BCA-3F9C-11CF-8075-444553540000"
+     , null
+    );
+  AC_Generateobj(ret.objAttrs, ret.params, ret.embedAttrs);
+}
+function AC_GetArgs(args, ext, srcParamName, classid, mimeType){
+  var ret = new Object();
+  ret.embedAttrs = new Object();
+  ret.params = new Object();
+  ret.objAttrs = new Object();
+  for (var i=0; i &lt; args.length; i=i+2){
+    var currArg = args[i].toLowerCase();    
+    switch (currArg){	
+      case "classid":
+        break;
+      case "pluginspage":
+        ret.embedAttrs[args[i]] = args[i+1];
+        break;
+      case "src":
+      case "movie":	
+        args[i+1] = AC_AddExtension(args[i+1], ext);
+        ret.embedAttrs["src"] = args[i+1];
+        ret.params[srcParamName] = args[i+1];
+        break;
+      case "onafterupdate":
+      case "onbeforeupdate":
+      case "onblur":
+      case "oncellchange":
+      case "onclick":
+      case "ondblclick":
+      case "ondrag":
+      case "ondragend":
+      case "ondragenter":
+      case "ondragleave":
+      case "ondragover":
+      case "ondrop":
+      case "onfinish":
+      case "onfocus":
+      case "onhelp":
+      case "onmousedown":
+      case "onmouseup":
+      case "onmouseover":
+      case "onmousemove":
+      case "onmouseout":
+      case "onkeypress":
+      case "onkeydown":
+      case "onkeyup":
+      case "onload":
+      case "onlosecapture":
+      case "onpropertychange":
+      case "onreadystatechange":
+      case "onrowsdelete":
+      case "onrowenter":
+      case "onrowexit":
+      case "onrowsinserted":
+      case "onstart":
+      case "onscroll":
+      case "onbeforeeditfocus":
+      case "onactivate":
+      case "onbeforedeactivate":
+      case "ondeactivate":
+      case "type":
+      case "codebase":
+      case "id":
+        ret.objAttrs[args[i]] = args[i+1];
+        break;
+      case "width":
+      case "height":
+      case "align":
+      case "vspace": 
+      case "hspace":
+      case "class":
+      case "title":
+      case "accesskey":
+      case "name":
+      case "tabindex":
+        ret.embedAttrs[args[i]] = ret.objAttrs[args[i]] = args[i+1];
+        break;
+      default:
+        ret.embedAttrs[args[i]] = ret.params[args[i]] = args[i+1];
+    }
+  }
+  ret.objAttrs["classid"] = classid;
+  if (mimeType) ret.embedAttrs["type"] = mimeType;
+  return ret;
+}
+// --&gt;
+  </script>
+  <meta content="noindex,nofollow" name="robots" />
+  <link href="http://www.nationaldefensetrust.com/xmlrpc.php?rsd" title="RSD" type="application/rsd+xml" rel="EditURI" />
+  <link href="http://www.nationaldefensetrust.com/wp-includes/wlwmanifest.xml" type="application/wlwmanifest+xml" rel="wlwmanifest" />
+  <meta content="WordPress 2.7.1" name="generator" />
+  <link href="http://www.nationaldefensetrust.com/wp-content/plugins/accessible-news-ticker/includes/domnews.css" media="screen" type="text/css" rel="stylesheet" />
+ </head>
+ <body>
+  <div class="container_12" id="container">
+   <!--// Begin Wrapper //-->
+   <div id="wrapper">
+    <!--// Begin Header //-->
+    <div id="header">
+     <!--// Logo Here //-->
+     <div id="logo">
+      <img src="http://www.nationaldefensetrust.com/wp-content/themes/NDT/images/logo.jpg" />
+     </div>
+     <!--// End Logo //-->
+     <!--// Begin Navigation //-->
+     <div id="navbar">
+      <ul>
+       <li>
+        <a href="index.php">
+         Home
+        </a>
+       </li>
+       <li>
+        <a href="?page_id=2">
+         About
+        </a>
+       </li>
+       <li>
+        <a href="?page_id=33">
+         News
+        </a>
+       </li>
+       <li>
+        <a href="?page_id=36">
+         Contact
+        </a>
+       </li>
+      </ul>
+     </div>
+     <!--// End Navigation //-->
+     <!--// Begin Date //-->
+     <div id="date">
+      Monday December 14, 2015
+     </div>
+     <!--// End Date //-->
+    </div>
+    <!--// End Header //-->
+    <!--// Begin Grab //-->
+    <div id="grab">
+     <img src="http://www.nationaldefensetrust.com/wp-content/themes/NDT/banners/rotate.php" />
+    </div>
+    <!--// End Grab //-->
+    <!--// Begin RSS //-->
+    <script type="text/javascript">
+     //rssticker_ajax(RSS_id, cachetime, divId, divClass, delay, optionalswitch)
+//1) RSS_id: "Array key of RSS feed in PHP script"
+//2) cachetime: Time to cache the feed in minutes (0 for no cache)
+//3) divId: "ID of DIV to display ticker in. DIV dynamically created"
+//4) divClass: "Class name of this ticker, for styling purposes"
+//5) delay: delay between message change, in milliseconds
+//6) optionalswitch: "optional arbitrary" string to create additional logic in call back function
+
+document.write()
+new rssticker_ajax("FOX", 600, "rss_feed", "", 12000, "")
+    </script>
+    <div class="" id="rss_feed">
+     <div class="rsstitle">
+      <a href="http://feeds.foxnews.com/%7Er/foxnews/politics/%7E3/Ctz_0TjIgMM/supreme-court-blocks-alabama-court-order-in-adoption-case.html">
+       Supreme Court blocks Alabama court order in adoption case
+      </a>
+     </div>
+    </div>
+    <!--// End RSS //-->
+    <!--// Begin Main Content //-->
+    <div id="content">
+     <!--// Begin Left Content //-->
+     <div id="left_content">
+      <h2>
+       John Bolton: Why Tea Party should resist gutting defense
+      </h2>
+      <p class="date">
+       August 18th, 2011
+      </p>
+      <div id="entry">
+       <p style="margin: 0in 0in 0pt;" class="MsoNormal">
+        <span style="font-family: Times New Roman;">
+         <a target="_blank" href="http://www.washingtontimes.com/news/2011/aug/17/why-tea-party-should-resist-gutting-defense/">
+          <span class="apple-style-span">
+           <strong>
+            <span style="color: #a10000; font-size: 21pt;">
+             BOLTON: Why Tea Party should resist gutting defense
+            </span>
+           </strong>
+          </span>
+          <span style="color: black; font-size: 10.5pt;">
+          </span>
+         </a>
+        </span>
+       </p>
+       <p style="margin: 0in 0in 0pt;" class="MsoNormal">
+        <span style="font-family: Times New Roman;">
+         <span class="apple-style-span">
+          <strong>
+          </strong>
+         </span>
+        </span>
+       </p>
+       <p style="margin: 0in 0in 0pt;" class="MsoNormal">
+        <span style="font-family: Times New Roman;">
+         <span class="apple-style-span">
+          <strong>
+           <span style="color: #130097; font-size: 16pt;">
+            Automatic cuts would undermine constitutionally mandated mission
+           </span>
+          </strong>
+         </span>
+        </span>
+       </p>
+       <p style="margin: 0in 0in 0pt;" class="MsoNormal">
+        <span style="font-family: Times New Roman;">
+         <span class="apple-style-span">
+          <strong>
+          </strong>
+         </span>
+        </span>
+       </p>
+       <p style="margin: 0in 0in 0pt;" class="MsoNormal">
+        <span style="font-family: Times New Roman;">
+         <span class="apple-style-span">
+          <strong>
+           <span style="color: #130097; font-size: 16pt;">
+            Washington Times
+           </span>
+          </strong>
+         </span>
+        </span>
+       </p>
+       <p style="margin: 0in 0in 0pt;" class="MsoNormal">
+        <span style="font-family: Times New Roman;">
+         <span class="apple-style-span">
+          <strong>
+           <span style="color: #130097; font-size: 16pt;">
+            Thursday, August 18, 2011
+           </span>
+          </strong>
+         </span>
+         <span style="color: black; font-size: 10.5pt;">
+         </span>
+        </span>
+       </p>
+       <p style="margin: 0in 0in 0pt;" class="MsoNormal">
+        <span style="color: black; font-size: 10.5pt;">
+         <span style="font-family: Times New Roman;">
+         </span>
+        </span>
+       </p>
+       <p>
+        <span style="color: black; font-size: 10.5pt;">
+         <span style="font-family: Times New Roman;">
+          Two recent, seemingly unrelated events weigh heavily on the question of whether America will remain able to protect its national security or languish in failed policies and a federal debt crisis that has led to our credit rating being downgraded.
+         </span>
+        </span>
+       </p>
+       <p>
+        <span style="color: black; font-size: 10.5pt;">
+         <span style="font-family: Times New Roman;">
+          First was the downing by Taliban guerrillas in Afghanistan of a Chinook helicopter carrying members of Navy SEAL Team 6, inflicting the greatest loss of life ever suffered by that elite military unit.
+         </span>
+        </span>
+       </p>
+       <p>
+        <span style="color: black; font-size: 10.5pt;">
+         <span style="font-family: Times New Roman;">
+          Second was the appointment of a bipartisan congressional “supercommittee” charged with finding $1.5 trillion in spending cuts. If the committee fails to do so, a “trigger” in the debt deal will force mandatory across-the-board cuts, half to come from defense.
+         </span>
+        </span>
+       </p>
+       <p>
+        <span style="color: black; font-size: 10.5pt;">
+         <span style="font-family: Times New Roman;">
+          This would mean cutting $500 billion to $600 billion from the Pentagon’s budget over the next decade. Those cuts would take place without respect to risk assessments or security needs, in spite of military operations in Iraq, Afghanistan and Libya; an increasingly menacing Iran intent on possessing nuclear weapons, as North Korea already does; an “Arab Spring” that may lead to a destabilized Middle East; and an ongoing global war on terrorism.
+         </span>
+        </span>
+       </p>
+       <p>
+        <span style="color: black; font-size: 10.5pt;">
+         <span style="font-family: Times New Roman;">
+          Many Tea Party supporters opposed the debt deal because they thought the spending cuts were largely illusory, postponed well into the deal’s later years. But now, with the deal in place, Tea Party activists and their allies must make clear that it undermines national defense, one of the few powers our Founders saw as truly critical for the federal government.
+         </span>
+        </span>
+       </p>
+       <p>
+        <span style="color: black; font-size: 10.5pt;">
+         <span style="font-family: Times New Roman;">
+          The Tea Party has had a major impact on Washington, shifting the terms of the national debate from how much to spend to how much to cut. This is a significant achievement. American liberty is only as strong as our ability to defend it, and a hollowed-out military is a disservice to both the cause of freedom and the Framers’ vision of the Constitution.
+         </span>
+        </span>
+       </p>
+       <p>
+        <span style="color: black; font-size: 10.5pt;">
+         <span style="font-family: Times New Roman;">
+          The Constitution clearly lays out the federal government’s responsibility to “provide for the common defense.” Of the 18 paragraphs in Article I, Section 8 of the Constitution, enumerating the powers the Congress, six - fully one-third - explicitly bear on national defense. Article II states expressly, “The President shall be Commander in Chief of the Army and Navy of the United States, and of the Militia of the several States [when in federal service].”
+         </span>
+        </span>
+       </p>
+       <p>
+        <span style="color: black; font-size: 10.5pt;">
+         <span style="font-family: Times New Roman;">
+          In Federalist No. 41, James Madison explained, “Security against foreign danger is one of the primitive objects of civil society. It is an avowed and essential object of the American Union.” To treat national defense as just another wasteful government program is not only unwise policy, it runs counter to the Framers’ basic constitutional priorities.
+         </span>
+        </span>
+       </p>
+       <p>
+        <span style="color: black; font-size: 10.5pt;">
+         <span style="font-family: Times New Roman;">
+          Madison explained further in Federalist No. 45 that the national government’s muscular exercise of its responsibility for national security made it less likely to infringe on the liberties of the people or the states. “The more adequate, indeed, the federal powers may be rendered to the national defense,” he argued, “the less frequent will be those scenes of danger which might favor their ascendancy over the governments of the particular States.”
+         </span>
+        </span>
+       </p>
+       <p>
+        <span style="color: black; font-size: 10.5pt;">
+         <span style="font-family: Times New Roman;">
+          It makes no sense to put our military on the chopping block when any objective analysis shows the real culprit is entitlement spending. The Heritage Foundation predicts that between 2010 and 2015, total defense spending will fall from 4.9 percent to 3.6 percent of gross domestic product. Meanwhile, Social Security, Medicare and Medicaid surpassed defense spending in 1976 and have grown unchecked since. These three programs alone risk completely crowding out the government’s primary constitutional obligation: defending our country.
+         </span>
+        </span>
+       </p>
+       <p>
+        <span style="color: black; font-size: 10.5pt;">
+         <span style="font-family: Times New Roman;">
+          That brings me back to the tragic loss of Navy SEALS recently in Afghanistan. This attack should have been a wake-up call to those who think special operations are fail-safe and the war on terrorism can be won on the cheap. Nothing could be further from the truth.
+         </span>
+        </span>
+       </p>
+       <p>
+        <span style="color: black; font-size: 10.5pt;">
+         <span style="font-family: Times New Roman;">
+          Some in Washington believe we can fight guerrillas with a hollowed-out military geared toward special operations. But the elite forces that target terrorists on dangerous night missions require next-generation attack helicopters to transport them, drones to track the enemy, fighter aircraft like the F-18 and the F-35 to protect them, modern tankers to refuel the jets and bombers providing air support, and sophisticated command-control communications and intelligence systems to support them. Cutting those programs will leave our best soldiers, sailors and Marines sitting ducks in the most dangerous parts of the world.
+         </span>
+        </span>
+       </p>
+       <p>
+        <span style="color: black; font-size: 10.5pt;">
+         <span style="font-family: Times New Roman;">
+          George Washington said, “To be prepared for war is one of the most effectual means of preserving peace.” He was right, and his wisdom should inspire Tea Party members and other conservatives to oppose gutting our military.
+         </span>
+        </span>
+       </p>
+       <p>
+        <em>
+         <span style="color: black; font-size: 10.5pt;">
+          <span style="font-family: Times New Roman;">
+           John R. Bolton, a former U.S. ambassador to the United Nations, is a senior fellow at the American Enterprise Institute and author of “Surrender Is Not an Option: Defending America at the United Nations and Abroad” (Simon &amp; Schuster, 2007).
+          </span>
+         </span>
+        </em>
+        <span style="color: black; font-size: 10.5pt;">
+        </span>
+       </p>
+      </div>
+     </div>
+     <!--// End Left Content //-->
+     <!--// Begin Sidebar //-->
+     <div id="sidebar">
+      <ul>
+       <li class="widget widget_text" id="text-437690931">
+        <h2 class="widgettitle">
+         About Us
+        </h2>
+        <div class="textwidget">
+         <p>
+          The National Defense Trust is a coalition of Americans dedicated to a robust defense of the United States and our allies.
+         </p>
+         <a href="?page_id=2">
+          Find Out More
+         </a>
+        </div>
+       </li>
+       <li class="widget widget_text" id="text-437749302">
+        <h2 class="widgettitle">
+         Recent Video
+        </h2>
+        <div class="textwidget">
+         <object width="280" height="200">
+          <param value="http://www.youtube.com/v/mdRVbr1OfKc&hl=en&fs=1&rel=0" name="movie">
+          </param>
+          <param value="true" name="allowFullScreen">
+          </param>
+          <param value="always" name="allowscriptaccess">
+           <embed width="280" height="200" allowfullscreen="true" allowscriptaccess="always" type="application/x-shockwave-flash" src="http://www.youtube.com/v/mdRVbr1OfKc&hl=en&fs=1&rel=0">
+           </embed>
+          </param>
+         </object>
+        </div>
+       </li>
+       <li class="widget widget_recent_entries" id="recent-posts">
+        <h2 class="widgettitle">
+         Recent Updates
+        </h2>
+        <ul>
+         <li>
+          <a href="http://www.nationaldefensetrust.com/?p=221">
+           Pearl Harbor, Iran and North Korea
+          </a>
+         </li>
+         <li>
+          <a href="http://www.nationaldefensetrust.com/?p=217">
+           Fred Iklé: Missile Defense Champion
+          </a>
+         </li>
+         <li>
+          <a href="http://www.nationaldefensetrust.com/?p=211">
+           Retired admiral warns against following through on proposed defense cuts
+          </a>
+         </li>
+         <li>
+          <a href="http://www.nationaldefensetrust.com/?p=209">
+           George Will:  “At the Pentagon, the specter of a sequester”
+          </a>
+         </li>
+         <li>
+          <a href="http://www.nationaldefensetrust.com/?p=207">
+           Rumsfeld: Attack Imminent If Congress Cuts Defense
+          </a>
+         </li>
+         <li>
+          <a href="http://www.nationaldefensetrust.com/?p=204">
+           Michael Auslin: The Growing Threat From China’s Air Force
+          </a>
+         </li>
+         <li>
+          <a href="http://www.nationaldefensetrust.com/?p=202">
+           Lt. Gen. (Ret) William G. Boykin — More Special Operations Not the Answer
+          </a>
+         </li>
+         <li>
+          <a href="http://www.nationaldefensetrust.com/?p=199">
+           John Bolton: Why Tea Party should resist gutting defense
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </div>
+     <!--// End Sidebar //-->
+    </div>
+    <!--// End Main Content //-->
+    <div id="footer">
+     <p>
+      Copyright National Defense Trust © 2009-2010 | All Rights Reserved
+     </p>
+    </div>
+   </div>
+   <!--// End Wrapper //-->
+  </div>
+  <!-- Accessible News Ticker wordpress plugin 0.3 by Pixline - http://pixline.net -->
+  <script type="text/javascript">
+   var dn_startpos=0; 				// start position of the first item
+var dn_endpos=-600; 			// end of the 'cart'. more items = higher number
+var dn_speed=40;				// higher number = slower scroller 
+var dn_newsID='accessible-news-ticker';			
+var dn_classAdd='hasJS';		
+var dn_stopMessage='Stop scroller';	
+var dn_paraID='DOMnewsstopper';
+  </script>
+  <script src="http://www.nationaldefensetrust.com/wp-content/plugins/accessible-news-ticker/includes/domnews.js?ver=2.7.1" type="text/javascript">
+  </script>
+ </body>
+</html>

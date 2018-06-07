@@ -1,0 +1,1598 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr" style="margin-right: 16px; overflow: hidden;">
+ <head>
+  <meta charset="UTF-8" />
+  <title>
+   Little Kokoro
+  </title>
+  <base href="http://www.littlekokoro.com/" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <link rel="icon" href="http://www.littlekokoro.com/image/data/android-icon-36x36.png" />
+  <link href="catalog/view/theme/bt_parallax/stylesheet/bossthemes/bootstrap.css" type="text/css" rel="stylesheet" />
+  <link href="catalog/view/theme/bt_parallax/stylesheet/bossthemes/bootstrap-custom.css" type="text/css" rel="stylesheet" />
+  <link href="catalog/view/theme/bt_parallax/stylesheet/stylesheet.css" type="text/css" rel="stylesheet" />
+  <link href="catalog/view/theme/bt_parallax/stylesheet/bossthemes/cs.animate.css" type="text/css" rel="stylesheet" />
+  <link href="catalog/view/theme/bt_parallax/stylesheet/bossthemes/jquery.jgrowl.css" type="text/css" rel="stylesheet" />
+  <link href="catalog/view/theme/bt_parallax/stylesheet/bossthemes/swipebox.css" type="text/css" rel="stylesheet" />
+  <link media="screen" href="catalog/view/theme/bt_parallax/stylesheet/bossthemes/boss_megamenu.css" type="text/css" rel="stylesheet" />
+  <link href="catalog/view/theme/bt_parallax/stylesheet/bossthemes/responsive.css" type="text/css" rel="stylesheet" />
+  <script src="catalog/view/javascript/jquery/jquery-1.7.1.min.js" type="text/javascript">
+  </script>
+  <script src="catalog/view/javascript/jquery/ui/jquery-ui-1.8.16.custom.min.js" type="text/javascript">
+  </script>
+  <link href="catalog/view/javascript/jquery/ui/themes/ui-lightness/jquery-ui-1.8.16.custom.css" type="text/css" rel="stylesheet" />
+  <script src="catalog/view/javascript/bossthemes/jquery.jgrowl.js" type="text/javascript">
+  </script>
+  <script src="catalog/view/javascript/bossthemes/bootstrap.min.js" type="text/javascript">
+  </script>
+  <link type="text/css" rel="stylesheet" href="catalog/view/javascript/font-awesome/css/font-awesome.min.css" />
+  <script src="catalog/view/javascript/common.js" type="text/javascript">
+  </script>
+  <script src="catalog/view/javascript/bossthemes/bossthemes.js" type="text/javascript">
+  </script>
+  <script src="catalog/view/javascript/bossthemes/getwidthbrowser.js" type="text/javascript">
+  </script>
+  <script src="catalog/view/javascript/bossthemes/jquery.appear.js" type="text/javascript">
+  </script>
+  <script src="catalog/view/javascript/bossthemes/jquery.smoothscroll.js" type="text/javascript">
+  </script>
+  <script src="catalog/view/javascript/bossthemes/jquery.touchSwipe.min.js" type="text/javascript">
+  </script>
+  <script src="catalog/view/javascript/bossthemes/jquery.swipebox.js" type="text/javascript">
+  </script>
+  <!--[if lt IE 9]>
+  <script type="text/javascript" src="catalog/view/javascript/bossthemes/html5shiv.js"></script>
+<script type="text/javascript" src="catalog/view/javascript/bossthemes/respond.min.js"></script>
+<![endif]-->
+  <!--[if IE 8]>
+<link rel="stylesheet" type="text/css" href="catalog/view/theme/bt_parallax/stylesheet/ie8.css"  />
+<![endif]-->
+  <!--[if IE 9]>
+<link rel="stylesheet" type="text/css" href="catalog/view/theme/bt_parallax/stylesheet/ie9.css"  />
+<![endif]-->
+  <!--[if IE 7]> 
+<link rel="stylesheet" type="text/css" href="catalog/view/theme/bt_parallax/stylesheet/ie7.css"  />
+<![endif]-->
+  <!--[if lt IE 7]>
+<link rel="stylesheet" type="text/css" href="catalog/view/theme/bt_parallax/stylesheet/ie6.css"  />
+<script type="text/javascript" src="catalog/view/javascript/DD_belatedPNG_0.0.8a-min.js"></script>
+<script type="text/javascript">
+DD_belatedPNG.fix('#logo img');
+</script>
+<![endif]-->
+  <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:300,400,700,900,400italic" />
+  <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,700" />
+  <script>
+   if (/*@cc_on!@*/false) {  
+    document.documentElement.className+=' ie10';  
+}
+  </script>
+  <link type="text/css" rel="stylesheet" href="//fonts.googleapis.com/css?family=Didact+Gothic" />
+  <link type="text/css" rel="stylesheet" href="//fonts.googleapis.com/css?family=Didact+Gothic" />
+  <link type="text/css" rel="stylesheet" href="//fonts.googleapis.com/css?family=Spinnaker" />
+  <link type="text/css" rel="stylesheet" href="//fonts.googleapis.com/css?family=PT+Sans+Caption" />
+  <style type="text/css">
+   body,a, div.jGrowl div.jGrowl-notification div.jGrowl-message h3,.form-control,.boss-alphabet a,.cart-total td.right.price,div.jGrowl div.jGrowl-notification div.jGrowl-message h3 a  { 
+								font-family: Didact Gothic;
+								 
+				font-size: 14px;
+												font-weight: normal;
+											}
+												.btn { 
+								font-family: Didact Gothic;
+																			}
+												#welcome,.right_header .link a,.right_header .link,#search input,#welcome a { 
+								font-family: Helvetica;
+								 
+				font-size: 10px;
+																text-transform: uppercase;
+							}
+												.footer-block-shipping .text span,.footer_column ul li a,.footer-about p,.footer-contact p,#powered p,.powered span,.powered a { 
+								font-family: Helvetica;
+																				text-transform: lowercase;
+							}
+												.footer-block-shipping h3,footer .column h3 { 
+								font-family: Verdana;
+																				text-transform: lowercase;
+							}
+												.boss-menu .menu_item &gt; a, .boss-menu .navbar-nav &gt; li &gt; a,#language span, #currency span,.btn-dropdown-cart { 
+								font-family: Spinnaker;
+								 
+				font-size: 17px;
+																text-transform: lowercase;
+							}
+												.dropdown-menu-inner .option a.parent, .dropdown-menu-inner .option p.parent { 
+																			}
+												.dropdown-menu-inner .option ul li a, .dropdown-menu-inner .option .staticblock p,.dropdown-menu-inner .staticblock .menu-block-main span,.sub_menu_default ul li a { 
+																			}
+												.name a { 
+								font-family: PT Sans Caption;
+								 
+				font-size: 15px;
+																text-transform: lowercase;
+							}
+												.product-list .description { 
+								font-family: Verdana;
+								 
+				font-size: 13px;
+																text-transform: lowercase;
+							}
+												.price-old,.price-new,.price,.price-tax,.checkout-product tbody td.total,.compare-info td.price,.compare-info td.price .price-old,.compare-info td.price .price-new { 
+																			}
+												h1, h2, h3, div.jGrowl div.jGrowl-notification div.jGrowl-header,.htabs a,.home2 .boss-blog-featured .block-heading,.home2 .boss-custom-pro .title h3,.boss_homefilter_tabs .tabs-headings a,.home4 .block-provide-detail .provide span,.home5.block-home-services span { 
+								font-family: Verdana;
+																				text-transform: lowercase;
+							}
+												.box .box-heading { 
+								font-family: Verdana;
+																				text-transform: lowercase;
+							}
+												.breadcrumb a { 
+								font-family: Verdana;
+																				text-transform: lowercase;
+							}
+  </style>
+  <style type="text/css">
+   /************* Header Setting Colors ****************/
+												.newletter span,#page-container.wide,#page-container.boxed { 
+																														background-position: left top ;
+					background-repeat: repeat;
+							}
+								body { 
+																														background-position: left top ;
+					background-repeat: repeat;
+							}
+															body, a,a b, button, select, textarea,#language .dropdown-menu &gt; li a, #currency .dropdown-menu &gt; li a,.success, .warning, .attention, .information,.attribute td,div.jGrowl div.jGrowl-notification div.jGrowl-message h3,.checkout-product thead td,.cart-info thead td,.boss-alphabet a,.form-comment label,.box .box-content ul li a { 
+																}
+															a:hover,.block-home-testimonial p,table.list thead td a, .list thead td,.product-info .review a,.attribute tr td:first-child,.attribute thead td, .attribute thead tr td:first-child,div.jGrowl div.jGrowl-notification div.jGrowl-message h3 a,.cart-total td.left b,.cart-total td.right,.product-filter .sort select, .product-filter .limit select, .b_manufacture select, .article-filter .sort select, .article-filter .limit select,#cart .minicart_total tr td,#megamenu-responsive .root ul li a, #megamenu-responsive .root &gt; ul &gt; li &gt; ul &gt; li &gt; a,.box .box-content ul li.active a,.boss_article-action .tags li a,.compare-info td.price,.boss_article-detail .article-title p, .cart-info tbody td.quantity input ,.box .box-content ul li a.active, .box .box-content ul li a:hover,.checkout-content .buttons a b,.article-name a,.article-name a:hover,.post-by span,.box .article-title, .box .comment-title,.comment-by span,.article-related li a { 
+																}
+															.block-hompage-special p,.newletter p, .form-control,.boss_homefilter_tabs .tabs-headings a,.popular-cate .sub_item a,.block-home-testimonial span,.footer-block-shipping .text span,.htabs a,.checkout-heading,.time-stamp,.post-by,.comment-count, .comment-count a,.comment-by { 
+																}
+															.btn { 
+																}
+								.btn:hover { 
+																}
+								.btn { 
+																}
+								.btn:hover { 
+																}
+															.btn-primary { 
+																}
+								.btn-primary:hover { 
+																}
+								.btn-primary { 
+																}
+								.btn-primary:hover { 
+																}
+															header,#search input { 
+																														background-position: left top ;
+					background-repeat: repeat;
+							}
+															#welcome,#welcome a,.right_header .link a,#search input { 
+																}
+								.right_header .link a:hover span,#welcome a:hover { 
+																}
+															footer,.contact-us .address .image,.contact-us .email .image,.contact-us .font .image { 
+																														background-position: left top ;
+					background-repeat: repeat;
+							}
+															.footer-block-shipping h3, footer .column h3,.powered a,.powered a:hover { 
+																}
+															.footer_column ul li a,.footer_column p,#powered p { 
+																}
+								footer .column a:hover { 
+																}
+															.menubar,div.menubar.show { 
+																														background-position: left top ;
+					background-repeat: repeat;
+							}
+															.dropdown-menu { 
+																														background-position: left top ;
+					background-repeat: repeat;
+							}
+															.boss-menu .menu_item &gt; a, .boss-menu .navbar-nav &gt; li &gt; a,#language span, #currency span,.btn-dropdown-cart { 
+																}
+								#language:hover span, #currency:hover span,.btn-dropdown-cart:hover,.boss-menu .menu_item &gt; a:hover, .boss-menu .navbar-nav &gt; li &gt; a:hover { 
+																}
+															.dropdown-menu-inner .option a.parent, .dropdown-menu-inner .option p.parent,.dropdown-menu-inner .staticblock .menu-block-main span,.dropdown-menu-inner .option .staticblock p.parent { 
+																}
+								.dropdown-menu-inner .option a.parent:hover, .dropdown-menu-inner .option p.parent:hover { 
+																}
+															.dropdown-menu-inner .option ul li a, .dropdown-menu-inner .option .staticblock p, .sub_menu_default ul li a { 
+																}
+								.dropdown-menu-inner .option ul li a:hover, .sub_menu_default ul li a:hover { 
+																}
+															.name a { 
+																}
+								.name a:hover { 
+																}
+															.product-list .description p { 
+																}
+															.price,.price-old,.price-tax,.checkout-product tbody td.total,.product-info .price, .product-info .price-old { 
+																}
+															.price-new { 
+																}
+															.compare a,.wishlist a { 
+																}
+								.compare a:hover,.wishlist a:hover { 
+																}
+															h1,h2,h3,.newletter span,.block-hompage-special h3,.popular-cate .box-heading h2,.block-home-testimonial h3,.boss_homefilter_tabs .tabs-headings li.active a,.boss_homefilter_tabs .tabs-headings li a:hover,.htabs a.selected, .htabs a:hover,.gallery-title h3,.home2 .boss-blog-featured .block-heading,.home2 .boss-custom-pro .title h3,.home4 .block-provide-detail .provide span,.home5.block-home-services span { 
+																}
+															.breadcrumb a { 
+																}
+								.breadcrumb &gt; li:last-child a,.breadcrumb &gt; li a:hover { 
+																}
+															.box .box-heading,.box .box-content { 
+																}
+								.box .box-heading { 
+																}
+  </style>
+ </head>
+ <body class="home_page notouch">
+  <div class="mfp-bg mfp-zoom-in mfp-ready">
+  </div>
+  <div class="mfp-wrap  mfp-close-btn-in mfp-auto-cursor mfp-zoom-in mfp-ready" tabindex="-1" style="overflow-x: hidden; overflow-y: auto;">
+   <div class="mfp-container mfp-s-ready mfp-inline-holder">
+    <div class="mfp-content">
+     <div style=" height: 425px !important; width: 600px;" class="white-popup-hb mfp-with-anim" id="hb-nl-popup">
+      <h2 style=" display: none">
+       Subscribe to our Newsletter
+      </h2>
+      <div style=" float: right; margin-top: 102px; text-align: justify; width: 200px" id="nl_form">
+       <!--Enter your email address to get the hottest deals Online. You will be the first to know about our offers, new arrivals, and more!-->
+       <br />
+       <input type="text" placeholder="First name, last name" title="Child's Name" value="" id="hbnp_childname" name="hbnp_childname" />
+       <input type="text" style=" display: none" placeholder="Child's Age" title="Child's Age" value="" id="hbnp_childage" name="hbnp_childage" />
+       <br />
+       <input type="text" placeholder="Your Email Address" title="Enter your Email Address" value="" id="hbnp_email" name="hbnp_email" />
+       <br />
+       <input type="button" value="Subscribe" class="button" name="hbnp_subscribe" id="hbnp_subscribe" />
+       <br />
+       <hr style=" display: none" />
+       <span class="hbnp-sub-text" style=" display: none">
+        We value our customers and will not share your email address to any third party. And don't worry you'll not be spammed.
+       </span>
+       <hr style=" display: none" />
+       <br />
+       <a id="hbnp_skip" style=" display: none">
+        Not interested to recieve newsletter. Don't show this popup again.
+       </a>
+      </div>
+      <div style="display:none" id="loadgif_hbnp">
+       <img src="catalog/view/theme/default/image/loading.gif" />
+      </div>
+      <div id="hbnp_msg">
+      </div>
+      <br />
+      <div style="display:none;" id="hbnp_register">
+       <table>
+        <tbody>
+         <tr>
+          <td>
+           First Name:
+          </td>
+          <td>
+           <input type="text" id="fname" name="fname" />
+          </td>
+         </tr>
+         <tr>
+          <td>
+           Last Name:
+          </td>
+          <td>
+           <input type="text" id="lname" name="lname" />
+          </td>
+         </tr>
+         <tr>
+          <td>
+           Password
+          </td>
+          <td>
+           <input type="password" id="pwd" name="pwd" />
+          </td>
+         </tr>
+         <tr>
+          <td>
+           Confirm Password
+          </td>
+          <td>
+           <input type="password" id="cpwd" name="cpwd" />
+           <span id="match">
+           </span>
+          </td>
+         </tr>
+         <tr>
+          <td>
+          </td>
+          <td>
+           <input type="button" value="REGISTER" class="button" name="hbnp_btn_register" id="hbnp_btn_register" />
+          </td>
+         </tr>
+        </tbody>
+       </table>
+      </div>
+      <button class="mfp-close" type="button" title="Close (Esc)">
+       ×
+      </button>
+     </div>
+    </div>
+    <div class="mfp-preloader">
+     Loading...
+    </div>
+   </div>
+  </div>
+  <div class="wide" id="page-container">
+   <div>
+    <header id="page-header">
+     <div class="container">
+      <div class="row">
+       <div class="col-sm-8 col-xs-24">
+        <div id="logo">
+         <a href="http://www.littlekokoro.com/index.php?route=common/home">
+          <img alt="Little Kokoro" title="Little Kokoro" src="http://www.littlekokoro.com/image/data/web_logo1.png" />
+         </a>
+        </div>
+       </div>
+       <div class="col-sm-16 col-xs-24">
+        <div class="right_header">
+         <div class="link">
+          <a id="wishlist-total" href="http://www.littlekokoro.com/index.php?route=account/wishlist">
+           <span>
+            Wish List (0)
+           </span>
+          </a>
+          <a href="http://www.littlekokoro.com/index.php?route=checkout/cart">
+           <span>
+            Your Basket
+           </span>
+          </a>
+          <a href="http://www.littlekokoro.com/index.php?route=checkout/checkout">
+           <span>
+            Checkout
+           </span>
+          </a>
+          <a href="http://www.littlekokoro.com/index.php?route=account/account" style=" display: none">
+           <span>
+            My Account
+           </span>
+          </a>
+         </div>
+         <div id="welcome">
+          <a href="http://www.littlekokoro.com/index.php?route=account/login">
+           login
+          </a>
+          or
+          <a href="http://www.littlekokoro.com/index.php?route=account/register">
+           Register
+          </a>
+         </div>
+         <div id="search">
+          <div class="button-search">
+          </div>
+          <input type="text" value="" placeholder="Product Search" name="search" />
+         </div>
+         <div style=" float: right">
+          <!--<img src="http://littlekokoro.com/image/data/heartoffer.png" style=" width: 105px; height:103px" />-->
+          <a target="_blank" href="http://www.cwb-online.co.uk/Articles/Bubble-unveils-Rising-Star-finalists.aspx">
+           <img style=" width: 105px; height:103px" src="http://littlekokoro.com/image/data/rising_star.png" />
+          </a>
+          <a target="_blank" href="http://www.facebook.com/littlekokoro">
+           <img style=" width: 34px; height:34px" src="http://littlekokoro.com/image/cache/data/social-icons/fb-100x100.png" />
+          </a>
+          <a target="_blank" href="https://twitter.com/littlekokoro">
+           <img style=" width: 34px; height:34px" src="http://littlekokoro.com/image/cache/data/social-icons/twittre-100x100.png" />
+          </a>
+          <a target="_blank" href="https://instagram.com/mylittlekokoro/">
+           <img style=" width: 34px; height:34px" src="http://littlekokoro.com/image/cache/data/social-icons/instagram-100x100.png" />
+          </a>
+          <!--<a href="mailto:info@littlekokoro.com" target="_blank"><img src="http://littlekokoro.com/image/cache/data/social-icons/email-100x100.png" style=" width: 34px; height:34px" /></a>-->
+          <!--<a>
+				<img src="http://littlekokoro.com/image/cache/data/social-icons/cart-100x100.png" style=" width: 34px; height: 34px" />
+				</a>-->
+          <div class="dropdown_cart" id="cart">
+           <button class="btn-dropdown-cart dropdown-toggle" onclick="$('#cart').load('index.php?route=module/cart #cart > *');">
+            *');" data-toggle="dropdown" type="button">
+            <span id="cart-total">
+             0 item(s) - £0.00
+            </span>
+           </button>
+           <ul class="dropdown-menu pull-right">
+            <li>
+             <p class="text-center">
+              Your shopping cart is empty!
+             </p>
+            </li>
+           </ul>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div style=" float: right; width: 190px; display: none">
+        <img src="http://littlekokoro.com/image/data/rising_star.png" />
+       </div>
+      </div>
+     </div>
+    </header>
+    <!-- megamenu position-->
+    <div class="menubar fadeInDown">
+     <div class="container">
+      <div class="bossmenu">
+       <div class="row">
+        <div style=" display: none" class="local col-sm-8 col-xs-24 col-md-6">
+         <div class="dropdown_cart" id="cart">
+          <button class="btn-dropdown-cart dropdown-toggle" onclick="$('#cart').load('index.php?route=module/cart #cart > *');">
+           *');" data-toggle="dropdown" type="button">
+           <span id="cart-total">
+            0 item(s) - £0.00
+           </span>
+          </button>
+          <ul class="dropdown-menu pull-right">
+           <li>
+            <p class="text-center">
+             Your shopping cart is empty!
+            </p>
+           </li>
+          </ul>
+         </div>
+         <div>
+          <img style=" width: 34px; height: 34px" src="http://littlekokoro.com/image/cache/data/social-icons/cart-100x100.png" />
+          <!-- <form action="http://www.littlekokoro.com/index.php?route=module/language" method="post" enctype="multipart/form-data" id="language">
+  <div class="">
+    <button class="btn-language dropdown-toggle" data-toggle="dropdown">
+        	 <span>en</span>
+                    <span class="hidden-xs hidden-sm hidden-md"></span></button>
+    <ul class="dropdown-menu">
+            <li><a href="en">en</a></li>
+            <li><a href="de">de</a></li>
+          </ul>
+  </div>
+  <input type="hidden" name="language_code" value=""  />
+  <input type="hidden" name="redirect" value="http://www.littlekokoro.com/index.php?route=common/home"  />
+</form>
+-->
+          <!-- <form action="http://www.littlekokoro.com/index.php?route=module/currency" method="post" enctype="multipart/form-data" id="currency">
+  <div class="">
+    <button class="btn-currency" data-toggle="dropdown">
+                <span>GBP</span>
+            <span class="hidden-xs hidden-sm hidden-md"></span></button>
+    <ul class="dropdown-menu">
+            <li><a href="EUR" title="Euro">EUR </a></li>
+            <li><a href="GBP" title="Pound Sterling">GBP </a></li>
+            <li><a href="USD" title="US Dollar">USD </a></li>
+          </ul>
+  </div>
+  <input type="hidden" name="currency_code" value=""  />
+  <input type="hidden" name="redirect" value="http://www.littlekokoro.com/index.php?route=common/home"  />
+</form>
+-->
+         </div>
+        </div>
+        <nav class="navbar col-sm-16 col-xs-24  col-md-19" id="megamenu">
+         <!-- Mega menu -->
+         <div>
+          <div class="boss-menu">
+           <div>
+            <div>
+             <div class="cs_mega_menu hidden-xs">
+              <ul class="nav navbar-nav ul_mega_menu">
+               <li class="menu_item level-1 parent dropdown">
+                <a href="http://www.littlekokoro.com/index.php" class="title_menu_parent dropdown-toggle">
+                 <span class="menu-title">
+                  Home
+                 </span>
+                </a>
+               </li>
+               <li class="menu_item level-1 parent dropdown">
+                <a href="http://www.littlekokoro.com/about_us" class="title_menu_parent sub_child dropdown-toggle">
+                 <span class="menu-title">
+                  About
+                 </span>
+                 <b>
+                 </b>
+                </a>
+                <div style="width: 121px; margin-left: 0px;" class="options_list dropdown-menu">
+                 <div class="dropdown-menu-inner">
+                  <div style="width: 120.102px; float: left;" class="option">
+                   <!-- url-->
+                   <div class="url">
+                    <a title="our story" href="http://www.littlekokoro.com/about_us">
+                     our story
+                    </a>
+                   </div>
+                  </div>
+                  <span style="width: 197px;" class="spanOption">
+                  </span>
+                  <div style="width: 120.102px; float: left;" class="option">
+                   <!-- url-->
+                   <div class="url">
+                    <a title="press" href="http://www.littlekokoro.com/press">
+                     press
+                    </a>
+                   </div>
+                  </div>
+                  <span style="width: 197px;" class="spanOption">
+                  </span>
+                  <div style="width: 120.102px; float: left;" class="option">
+                   <!-- url-->
+                   <div class="url">
+                    <a title="blog" href="index.php?route=bossblog/bossblog">
+                     blog
+                    </a>
+                   </div>
+                  </div>
+                  <span style="width: 197px;" class="spanOption">
+                  </span>
+                 </div>
+                </div>
+                <span style="width: 197px;" class="spanOptionList">
+                </span>
+               </li>
+               <li class="menu_item level-1 parent dropdown">
+                <a href="http://www.littlekokoro.com/shop" class="title_menu_parent sub_child dropdown-toggle">
+                 <span class="menu-title">
+                  Shop
+                 </span>
+                 <b>
+                 </b>
+                </a>
+                <div style="width: 121px; margin-left: 0px;" class="options_list dropdown-menu">
+                 <div class="dropdown-menu-inner">
+                  <div style="width: 120.102px; float: left;" class="option">
+                   <!-- url-->
+                   <div class="url">
+                    <a title="baby" href="http://www.littlekokoro.com/baby">
+                     baby
+                    </a>
+                   </div>
+                  </div>
+                  <span style="width: 197px;" class="spanOption">
+                  </span>
+                  <div style="width: 120.102px; float: left;" class="option">
+                   <!-- url-->
+                   <div class="url">
+                    <a title="boys" href="http://www.littlekokoro.com/boys">
+                     boys
+                    </a>
+                   </div>
+                  </div>
+                  <span style="width: 197px;" class="spanOption">
+                  </span>
+                  <div style="width: 120.102px; float: left;" class="option">
+                   <!-- url-->
+                   <div class="url">
+                    <a title="girls" href="http://www.littlekokoro.com/girls">
+                     girls
+                    </a>
+                   </div>
+                  </div>
+                  <span style="width: 197px;" class="spanOption">
+                  </span>
+                 </div>
+                </div>
+                <span style="width: 197px;" class="spanOptionList">
+                </span>
+               </li>
+               <li class="menu_item level-1 parent dropdown">
+                <a href="http://www.littlekokoro.com/baby" class="title_menu_parent dropdown-toggle">
+                 <span class="menu-title">
+                  Baby
+                 </span>
+                </a>
+               </li>
+               <li class="menu_item level-1 parent dropdown">
+                <a href="http://www.littlekokoro.com/boys" class="title_menu_parent dropdown-toggle">
+                 <span class="menu-title">
+                  Boys
+                 </span>
+                </a>
+               </li>
+               <li class="menu_item level-1 parent dropdown">
+                <a href="http://www.littlekokoro.com/girls" class="title_menu_parent dropdown-toggle">
+                 <span class="menu-title">
+                  Girls
+                 </span>
+                </a>
+               </li>
+               <li class="menu_item level-1 parent dropdown">
+                <a href="http://www.littlekokoro.com/unisex" class="title_menu_parent dropdown-toggle">
+                 <span class="menu-title">
+                  unisex
+                 </span>
+                </a>
+               </li>
+               <li class="menu_item level-1 parent dropdown">
+                <a href="http://www.littlekokoro.com/gifting" class="title_menu_parent sub_child dropdown-toggle">
+                 <span class="menu-title">
+                  Gifting
+                 </span>
+                 <b>
+                 </b>
+                </a>
+                <div style="width: 121px; margin-left: 0px;" class="options_list dropdown-menu">
+                 <div class="dropdown-menu-inner">
+                  <div style="width: 120.102px; float: left;" class="option">
+                   <!-- url-->
+                   <div class="url">
+                    <a title="gift sets" href="http://www.littlekokoro.com/gift_sets">
+                     gift sets
+                    </a>
+                   </div>
+                  </div>
+                  <span style="width: 197px;" class="spanOption">
+                  </span>
+                  <div style="width: 120.102px; float: left;" class="option">
+                   <!-- url-->
+                   <div class="url">
+                    <a title="gift vouchers" href="http://www.littlekokoro.com/index.php?route=account/voucher">
+                     gift vouchers
+                    </a>
+                   </div>
+                  </div>
+                  <span style="width: 197px;" class="spanOption">
+                  </span>
+                 </div>
+                </div>
+                <span style="width: 197px;" class="spanOptionList">
+                </span>
+               </li>
+               <li class="menu_item level-1 parent dropdown">
+                <a href="http://www.littlekokoro.com/gallery-images" class="title_menu_parent dropdown-toggle">
+                 <span class="menu-title">
+                  Gallery
+                 </span>
+                </a>
+               </li>
+               <li class="menu_item level-1 parent dropdown">
+                <a href="http://www.littlekokoro.com/index.php?route=information/contact" class="title_menu_parent dropdown-toggle">
+                 <span class="menu-title">
+                  Contact Us
+                 </span>
+                </a>
+               </li>
+              </ul>
+             </div>
+            </div>
+            <div class="visible-xs col-xs-24 navbar" id="megamenu-responsive">
+             <!-- Menu Responsive-->
+             <div class="navbar navbar-inverse">
+              <div id="megamenu-responsive-root">
+               <div class="navbar-header">
+                <a class="navbar-toggle">
+                 <span class="icon-bar">
+                 </span>
+                 <span class="icon-bar">
+                 </span>
+                 <span class="icon-bar">
+                 </span>
+                </a>
+                <b>
+                 Navigation
+                </b>
+               </div>
+               <div class="root">
+                <ul>
+                 <li>
+                  <a href="index.php">
+                   home
+                  </a>
+                 </li>
+                 <li>
+                  <a href="http://www.littlekokoro.com/about_us">
+                   about
+                  </a>
+                 </li>
+                 <li>
+                  <a href="http://www.littlekokoro.com/shop">
+                   shop
+                  </a>
+                 </li>
+                 <li>
+                  <a href="http://www.littlekokoro.com/baby">
+                   baby
+                  </a>
+                 </li>
+                 <li>
+                  <a href="http://www.littlekokoro.com/boys">
+                   boys
+                  </a>
+                 </li>
+                 <li>
+                  <a href="http://www.littlekokoro.com/girls">
+                   girls
+                  </a>
+                 </li>
+                 <li>
+                  <a href="http://www.littlekokoro.com/unisex">
+                   unisex
+                  </a>
+                 </li>
+                 <li>
+                  <a href="http://www.littlekokoro.com/littlekokoro-gifting">
+                   gifting
+                  </a>
+                 </li>
+                 <li>
+                  <a href="http://www.littlekokoro.com/gallery-images">
+                   gallery
+                  </a>
+                 </li>
+                 <li>
+                  <a href="http://www.littlekokoro.com/index.php?route=information/contact">
+                   contact us
+                  </a>
+                 </li>
+                 <li>
+                  <a href="index.php?route=bossblog/bossblog">
+                   Blog
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </div>
+              <script type="text/javascript">
+               $('document').ready(function(){
+					$('#megamenu-responsive-root li.parent').prepend('&lt;p&gt;+&lt;/p&gt;');
+					
+					$('a.navbar-toggle').click(function(){
+						$('.root').toggleClass('open');
+					});
+					
+					$('#megamenu-responsive-root li.parent &gt; p').click(function(){
+
+						if ($(this).text() == '+'){
+							$(this).parent('li').children('ul').slideDown(300);
+							$(this).text('-');
+						}else{
+							$(this).parent('li').children('ul').slideUp(300);
+							$(this).text('+');
+						}  
+						
+					});
+				});
+              </script>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </nav>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="container">
+    </div>
+    <div id="notification">
+    </div>
+   </div>
+   <!--Revolution slider-->
+   <script src="catalog/view/javascript/bossthemes/boss_revolutionslider/jquery.themepunch.plugins.min.js" type="text/javascript">
+   </script>
+   <script src="catalog/view/javascript/bossthemes/boss_revolutionslider/jquery.themepunch.revolution.min.js" type="text/javascript">
+   </script>
+   <link media="screen" href="catalog/view/theme/bt_parallax/stylesheet/bossthemes/boss_revolutionslider/css/settings.css" type="text/css" rel="stylesheet" />
+   <section id="boss_slider">
+    <div class="bannercontainer ">
+     <div class="container">
+      <div class="row">
+       <div class="col-sm-24 col-xs-24 col-md-24">
+        <div class="banner revslider-initialised tp-simpleresponsive" style="height: 293px;">
+         <ul class="boss_res" style="display: block;">
+          <li data-thumb="http://www.littlekokoro.com/image/cache/data/sliders/Banner-1-50x50.jpg" data-delay="4500" data-masterspeed="1200" data-slotamount="7" data-transition="fade" data-target="_self" data-link="#" style="visibility: visible; left: 0px; top: 0px; z-index: 18; opacity: 1;">
+           <div class="slotholder">
+            <img src="http://www.littlekokoro.com/image/cache/data/sliders/Banner-1-1180x483.jpg" alt="" class="defaultimg" style="width: 720px; height: 294.712px; opacity: 0; position: relative;" />
+           </div>
+           <div data-start="0" data-linktoslide="no" data-y="0" data-x="0" style="z-index: 2; cursor: pointer; font-size: 8.54237px; padding: 0px; margin: 0px; border-width: 0px; border-style: none; border-color: -moz-use-text-color; line-height: 12.2083px; white-space: nowrap; opacity: 0; left: 0px; top: -50px; transform: scale(1, 1) rotate(0deg); visibility: hidden;" class="tp-caption sft slidelink">
+            <a href="#" target="_self">
+             <div>
+             </div>
+            </a>
+           </div>
+          </li>
+          <li data-thumb="http://www.littlekokoro.com/image/cache/data/sliders/01.-50x50.jpg" data-delay="4500" data-masterspeed="1200" data-slotamount="7" data-transition="fade" data-target="_self" data-link="#" style="visibility: visible; left: 0px; top: 0px; z-index: 18; opacity: 1;">
+           <div class="slotholder">
+            <img src="http://www.littlekokoro.com/image/cache/data/sliders/01.-1180x483.jpg" alt="" class="defaultimg" style="width: 720px; height: 294.712px; opacity: 0; position: relative;" />
+           </div>
+           <div data-start="0" data-linktoslide="no" data-y="0" data-x="0" style="z-index: 2; cursor: pointer; font-size: 8.54237px; padding: 0px; margin: 0px; border-width: 0px; border-style: none; border-color: -moz-use-text-color; line-height: 12.2083px; white-space: nowrap; opacity: 0; left: 0px; top: -50px; transform: scale(1, 1) rotate(0deg); visibility: hidden;" class="tp-caption sft slidelink">
+            <a href="#" target="_self">
+             <div>
+             </div>
+            </a>
+           </div>
+          </li>
+          <li data-thumb="http://www.littlekokoro.com/image/cache/data/sliders/02-50x50.jpg" data-delay="4500" data-masterspeed="1200" data-slotamount="7" data-transition="fade" data-target="_self" data-link="#" style="visibility: visible; left: 0px; top: 0px; z-index: 18; opacity: 1;">
+           <div class="slotholder">
+            <img src="http://www.littlekokoro.com/image/cache/data/sliders/02-1180x483.jpg" alt="" class="defaultimg" style="width: 720px; height: 294.712px; opacity: 0; position: relative;" />
+           </div>
+           <div data-start="0" data-linktoslide="no" data-y="0" data-x="0" style="z-index: 2; cursor: pointer; font-size: 8.54237px; padding: 0px; margin: 0px; border-width: 0px; border-style: none; border-color: -moz-use-text-color; line-height: 12.2083px; white-space: nowrap; opacity: 0; left: 0px; top: -50px; transform: scale(1, 1) rotate(0deg); visibility: hidden;" class="tp-caption sft slidelink">
+            <a href="#" target="_self">
+             <div>
+             </div>
+            </a>
+           </div>
+          </li>
+          <li data-thumb="http://www.littlekokoro.com/image/cache/data/sliders/03.-50x50.jpg" data-delay="4500" data-masterspeed="1200" data-slotamount="7" data-transition="fade" data-target="_self" data-link="#" style="visibility: visible; left: 0px; top: 0px; z-index: 20; opacity: 1;">
+           <div class="slotholder">
+            <img src="http://www.littlekokoro.com/image/cache/data/sliders/03.-1180x483.jpg" alt="" class="defaultimg" style="width: 720px; height: 294.712px; opacity: 1; position: relative;" />
+           </div>
+           <div data-start="0" data-linktoslide="no" data-y="0" data-x="0" style="z-index: 2; cursor: pointer; font-size: 8.54237px; padding: 0px; margin: 0px; border-width: 0px; border-style: none; border-color: -moz-use-text-color; line-height: 12.2083px; white-space: nowrap; opacity: 1; left: 0px; top: 0px; transform: scale(1, 1) rotate(0deg); visibility: visible;" class="tp-caption sft slidelink">
+            <a href="#" target="_self">
+             <div>
+             </div>
+            </a>
+           </div>
+          </li>
+          <li data-thumb="http://www.littlekokoro.com/image/cache/data/sliders/04.-50x50.jpg" data-delay="4000" data-masterspeed="1200" data-slotamount="7" data-transition="fade" data-target="_self" data-link="#">
+           <div class="slotholder">
+            <img src="http://www.littlekokoro.com/image/cache/data/sliders/04.-1180x483.jpg" alt="" class="defaultimg" style="width: 720px; height: 294.712px; opacity: 0;" />
+           </div>
+           <div data-start="0" data-linktoslide="no" data-y="0" data-x="0" style="z-index:2;" class="tp-caption sft slidelink">
+            <a href="#" target="_self">
+             <div>
+             </div>
+            </a>
+           </div>
+          </li>
+          <li data-thumb="http://www.littlekokoro.com/image/cache/data/sliders/05.-50x50.jpg" data-delay="4000" data-masterspeed="1200" data-slotamount="7" data-transition="fade" data-target="_self" data-link="#">
+           <div class="slotholder">
+            <img src="http://www.littlekokoro.com/image/cache/data/sliders/05.-1180x483.jpg" alt="" class="defaultimg" style="width: 720px; height: 294.712px; opacity: 0;" />
+           </div>
+           <div data-start="0" data-linktoslide="no" data-y="0" data-x="0" style="z-index:2;" class="tp-caption sft slidelink">
+            <a href="#" target="_self">
+             <div>
+             </div>
+            </a>
+           </div>
+          </li>
+          <li data-thumb="http://www.littlekokoro.com/image/cache/data/sliders/06.-50x50.jpg" data-delay="4000" data-masterspeed="1200" data-slotamount="7" data-transition="fade" data-target="_self" data-link="#">
+           <div class="slotholder">
+            <img src="http://www.littlekokoro.com/image/cache/data/sliders/06.-1180x483.jpg" alt="" class="defaultimg" style="width: 720px; height: 294.712px; opacity: 0;" />
+           </div>
+           <div data-start="0" data-linktoslide="no" data-y="0" data-x="0" style="z-index:2;" class="tp-caption sft slidelink">
+            <a href="#" target="_self">
+             <div>
+             </div>
+            </a>
+           </div>
+          </li>
+          <li data-thumb="http://www.littlekokoro.com/image/cache/data/sliders/07.-50x50.jpg" data-delay="4000" data-masterspeed="1200" data-slotamount="7" data-transition="fade" data-target="_self" data-link="#">
+           <div class="slotholder">
+            <img src="http://www.littlekokoro.com/image/cache/data/sliders/07.-1180x483.jpg" alt="" class="defaultimg" style="width: 720px; height: 294.712px; opacity: 0;" />
+           </div>
+           <div data-start="0" data-linktoslide="no" data-y="0" data-x="0" style="z-index:2;" class="tp-caption sft slidelink">
+            <a href="#" target="_self">
+             <div>
+             </div>
+            </a>
+           </div>
+          </li>
+          <li data-thumb="http://www.littlekokoro.com/image/cache/data/sliders/08.-50x50.jpg" data-delay="4000" data-masterspeed="1200" data-slotamount="7" data-transition="fade" data-target="_self" data-link="#">
+           <div class="slotholder">
+            <img src="http://www.littlekokoro.com/image/cache/data/sliders/08.-1180x483.jpg" alt="" class="defaultimg" style="width: 720px; height: 294.712px; opacity: 0;" />
+           </div>
+           <div data-start="0" data-linktoslide="no" data-y="0" data-x="0" style="z-index:2;" class="tp-caption sft slidelink">
+            <a href="#" target="_self">
+             <div>
+             </div>
+            </a>
+           </div>
+          </li>
+          <li data-thumb="http://www.littlekokoro.com/image/cache/data/sliders/09.-50x50.jpg" data-delay="4500" data-masterspeed="1200" data-slotamount="7" data-transition="fade" data-target="_self" data-link="#">
+           <div class="slotholder">
+            <img src="http://www.littlekokoro.com/image/cache/data/sliders/09.-1180x483.jpg" alt="" class="defaultimg" style="width: 720px; height: 294.712px; opacity: 0;" />
+           </div>
+           <div data-start="0" data-linktoslide="no" data-y="0" data-x="0" style="z-index:2;" class="tp-caption sft slidelink">
+            <a href="#" target="_self">
+             <div>
+             </div>
+            </a>
+           </div>
+          </li>
+          <li data-thumb="http://www.littlekokoro.com/image/cache/data/sliders/10.-50x50.jpg" data-delay="4500" data-masterspeed="1200" data-slotamount="7" data-transition="fade" data-target="_self" data-link="#">
+           <div class="slotholder">
+            <img src="http://www.littlekokoro.com/image/cache/data/sliders/10.-1180x483.jpg" alt="" class="defaultimg" style="width: 720px; height: 294.712px; opacity: 0;" />
+           </div>
+           <div data-start="0" data-linktoslide="no" data-y="0" data-x="0" style="z-index:2;" class="tp-caption sft slidelink">
+            <a href="#" target="_self">
+             <div>
+             </div>
+            </a>
+           </div>
+          </li>
+         </ul>
+         <div class="tp-loader" style="display: none;">
+         </div>
+         <div style="visibility: hidden; width: 80.9545%; overflow: hidden;" class="tp-bannertimer">
+         </div>
+        </div>
+        <div class="tp-bannershadow tp-shadow3" style="width: 720px;">
+        </div>
+        <div class="tp-leftarrow tparrows default hidearrows" style="position: absolute; top: 146px; margin-top: -43px; left: 35px;">
+        </div>
+        <div class="tp-rightarrow tparrows default hidearrows" style="position: absolute; top: 146px; margin-top: -43px; right: 35px;">
+        </div>
+       </div>
+      </div>
+     </div>
+     <script type="text/javascript">
+      var tpj=jQuery;
+	//tpj.noConflict();
+
+	tpj(document).ready(function() {
+
+	if (tpj.fn.cssOriginal!=undefined)
+		tpj.fn.css = tpj.fn.cssOriginal;
+
+	tpj(".banner").revolution({
+		delay:5000,
+		startheight:480,
+		startwidth:1180,
+
+		hideThumbs:10,
+
+		thumbWidth:50,		// Thumb With and Height and Amount (only if navigation Tyope set to thumb !)
+		thumbHeight:50,
+		thumbAmount:4,
+
+		navigationType:"none",		// bullet, thumb, none - trong
+		navigationArrows:"solo",	// nexttobullets, solo (old name verticalcentered), none - mui ten
+
+		navigationStyle:"navbar-old",				//round,square,navbar,round-old,square-old,navbar-old, or any from the list in the docu (choose between 50+ different item), custom - hinh cua icon tron
+		navigationHAlign:"center",				// Vertical Align top,center,bottom
+		navigationVAlign:"bottom",					// Horizontal Align left,center,right
+		navigationHOffset:0,
+		navigationVOffset:38,
+
+		soloArrowLeftHalign:"left",
+		soloArrowLeftValign:"center",
+		soloArrowLeftHOffset:35,
+		soloArrowLeftVOffset:0,
+
+		soloArrowRightHalign:"right",
+		soloArrowRightValign:"center",
+		soloArrowRightHOffset:35,
+		soloArrowRightVOffset:0,
+
+		touchenabled:"on",	// Enable Swipe Function : on/off
+		onHoverStop:"off",	// Stop Banner Timet at Hover on Slide on/off
+
+		stopAtSlide:-1,
+		stopAfterLoops:-1,
+		
+		hideCaptionAtLimit:500,					// It Defines if a caption should be shown under a Screen Resolution ( Basod on The Width of Browser)
+		hideAllCaptionAtLilmit:500,				// Hide all The Captions if Width of Browser is less then this value
+		hideSliderAtLimit:0,					// Hide the whole slider, and stop also functions if Width of Browser is less than this value
+
+		
+		shadow:3,								//0 = no Shadow, 1,2,3 = 3 Different Art of Shadows  (No Shadow in Fullwidth Version !)
+		fullWidth:"off"							// Turns On or Off the Fullwidth Image Centering in FullWidth Modus
+			});
+		});
+jQuery(document).ready(function($) {
+$(".boss_res").css('display','block');
+});
+     </script>
+    </div>
+   </section>
+   <!--Revolution slider-->
+   <div id="content" class="col-md-24 col-sm-24 col-xs-24">
+    <script src="catalog/view/javascript/bossthemes/cloud-zoom/cloud-zoom.1.0.3.js" type="text/javascript">
+    </script>
+    <script src="catalog/view/javascript/bossthemes/jquery.carouFredSel-6.2.0-packed.js" type="text/javascript">
+    </script>
+    <script type="text/javascript">
+     &lt;!--
+$(window).load(function() {
+	boss_quick_shop();
+	
+	/*$('.display').bind('click', function() {
+		$('.sft_quickshop_icon').remove();
+		boss_quick_shop();
+	});*/
+});
+
+function boss_quick_shop(){
+	
+		$('.box-product&gt;li').each(function(index, value){
+		
+			var id_product='';
+			var reloadurl=false;
+			if($(".image a",this).attr('href')){
+				var href_pro = $(".image a",this).attr('href'); 
+			}else{ 
+				var href_pro = '';
+			}
+			if	(href_pro){
+				var check=href_pro.match("index.php"); 
+			}
+			var last_index = '';
+			var product_id = 0;
+			if(check=="index.php"){	 //direct link
+				var str = href_pro.split("&amp;");
+				for (var i=0;i&lt;str.length;i++){
+					if(str[i].match("product_id=") =="product_id="){
+					
+						last_index = str[i];
+						var id = last_index.split("=");
+						product_id = id[1];
+						break;
+					}
+				}
+				reloadurl=true;
+			}else{	//mode SEO
+				var check_seo = href_pro.match("product_id=");
+				if(check_seo=="product_id="){
+				
+					var str = href_pro.split("&amp;");
+					for (var i=0; i&lt;str.length; i++){
+						if(str[i].match("product_id=") == "product_id="){
+							var temp = str[i].split("?");
+							last_index = temp[temp.length-1]; // lay phan tu cuoi cung
+							var id = last_index.split("=");
+							product_id = id[1];
+							break;
+						}
+					}
+					
+					
+					reloadurl=true;
+				}else{
+				
+					var str_1 = href_pro.split("/");
+					var str_2 = str_1[str_1.length-1]; 
+					
+					var temp = str_2.split("?");
+					last_index = temp[0];
+					var id_index = '';
+											if(last_index=="A_Little_Ballerina_Surprise_Dress"){
+							id_index = "product_id=34";
+						}
+											if(last_index=="Criss_Cross_Romper"){
+							id_index = "product_id=30";
+						}
+											if(last_index=="Pin_Striped_Romper"){
+							id_index = "product_id=48";
+						}
+											if(last_index=="The_Bubble_Dress "){
+							id_index = "product_id=50";
+						}
+											if(last_index=="Bubble-Dress"){
+							id_index = "product_id=63";
+						}
+											if(last_index=="Tumbling_Elephant_Bubble_Dress"){
+							id_index = "product_id=51";
+						}
+											if(last_index=="My_First_Big_Boy_Romper "){
+							id_index = "product_id=41";
+						}
+											if(last_index=="Monkey_on_my_Romper "){
+							id_index = "product_id=28";
+						}
+											if(last_index=="The_Snuggle_Me_Little_Kokoro_Muslin_Square "){
+							id_index = "product_id=52";
+						}
+											if(last_index=="The_Bear_Romper "){
+							id_index = "product_id=54";
+						}
+											if(last_index=="My_Best_Friend_Dress"){
+							id_index = "product_id=40";
+						}
+											if(last_index=="Little_Lola_Dress"){
+							id_index = "product_id=43";
+						}
+											if(last_index=="Little_Ballerina_Flap_Collar "){
+							id_index = "product_id=32";
+						}
+											if(last_index=="Little_Ballerina_Dress- Printed"){
+							id_index = "product_id=55";
+						}
+											if(last_index=="The_Cool_Monkey_Shirt _linen"){
+							id_index = "product_id=56";
+						}
+											if(last_index=="My_Little_Monkey_Shirt"){
+							id_index = "product_id=57";
+						}
+											if(last_index=="The_Big_Boy_Check_Shirt "){
+							id_index = "product_id=58";
+						}
+											if(last_index=="The_Big_Boy_Linen_Shirt "){
+							id_index = "product_id=59";
+						}
+											if(last_index=="Pleated_Pink_Girl_Dress"){
+							id_index = "product_id=65";
+						}
+											if(last_index=="Zoom_to_the_moon_shirt "){
+							id_index = "product_id=62";
+						}
+											if(last_index=="Criss-Cross-Romper"){
+							id_index = "product_id=61";
+						}
+											if(last_index=="Big-Boy-Romper"){
+							id_index = "product_id=66";
+						}
+											if(last_index=="Pin-Striped"){
+							id_index = "product_id=67";
+						}
+											if(last_index=="Monkey-on-my-Collar-Romper"){
+							id_index = "product_id=68";
+						}
+											if(last_index=="Bear-romper"){
+							id_index = "product_id=69";
+						}
+											if(last_index=="Tumbling-Elephant-romper"){
+							id_index = "product_id=70";
+						}
+											if(last_index=="Little-Ballerina-Dress-Pink"){
+							id_index = "product_id=71";
+						}
+											if(last_index=="the_zoom_to_the_moon_linen_shirt-unisex"){
+							id_index = "product_id=73";
+						}
+											if(last_index=="a_linen_shirt-unisex"){
+							id_index = "product_id=75";
+						}
+											if(last_index=="cool_monkey_shirt_linen-unisex"){
+							id_index = "product_id=72";
+						}
+											if(last_index=="a_check_shirt-unisex"){
+							id_index = "product_id=74";
+						}
+										if(id_index!=''){
+						var id = id_index.split('=');
+						product_id = id[1];	
+						reloadurl=true;
+					}
+				}
+			}
+			if(reloadurl){
+			
+				var _qsHref = '&lt;a title="Quick Shop" onclick="getModalContent('+product_id+');" class=\"sft_quickshop_icon\" data-toggle="modal" data-target="#myModal" style=\"position:absolute;\"&gt;Quick Shop&lt;/a&gt;';
+				
+				$('.image',this).prepend(_qsHref);	
+				
+				var quick_button = $('a.sft_quickshop_icon');
+				
+				var width_button = (quick_button.width() + 0)/2 ;
+				var height_button = (quick_button.height() + 0)/2;
+				
+		      	$('.sft_quickshop_icon').css({
+					'margin-left': - width_button + 'px',
+					'margin-top': - height_button +'px',
+					'top': '50%',
+					'left': '50%'
+				});
+
+			}
+	   });
+	var content_modal = '&lt;div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;"&gt;&lt;div class="modal-dialog" style="width:90%; max-width:1000px;"&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="loading" style="position:fixed;top:50%;left:50%"&gt;&lt;/div&gt;';
+	$('#content').append(content_modal);	
+}
+
+function getModalContent(product_id){
+	$.ajax({
+		url: 'index.php?route=module/boss_quick_shop_product/&amp;product_id=' + product_id,
+		dataType: 'json',
+		beforeSend: function() {
+			$('.loading').html('&lt;span class="wait"&gt;&amp;nbsp;&lt;img src="catalog/view/theme/default/image/loading.gif" alt="" /&gt;&lt;/span&gt;');
+			$('#myModal .modal-dialog').html('');
+		},		
+		complete: function() {
+			$('.wait').remove();
+		},
+		success: function(json) {
+			$('#myModal .modal-dialog').html(json['html']);
+		}
+	});
+
+}
+//--&gt;
+    </script>
+    <style>
+     .white-popup-hb{position:relative; width:auto;max-width:800px;margin:0 auto;background:url('http://littlekokoro.com/image/data/background/popup.jpg');padding:15px; height: 566px;}
+    </style>
+    <style>
+     .hbnp-sub-text{font-size:11px;color:gray}.hbnp-error,.hbnp-info,.hbnp-success,.hbnp-warning{border:1px solid;padding:15px}.hbnp-info{color:#00529B;background-color:#BDE5F8}.hbnp-success{color:#4F8A10;background-color:#DFF2BF}.hbnp-warning{color:#9F6000;background-color:#FEEFB3}.hbnp-error{color:#D8000C;background-color:#FFBABA}.hbnp-span-success{color:#4F8A10;margin-left:10px}.hbnp-span-error{color:#D8000C;margin-left:10px}
+    </style>
+    <div class="mfp-hide">
+    </div>
+    <link href="catalog/view/theme/default/stylesheet/magnific-popup.css" rel="stylesheet" />
+    <link href="catalog/view/theme/default/stylesheet/hb_popup_css.css" rel="stylesheet" />
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" />
+    <script src="catalog/view/theme/default/stylesheet/jquery.magnific-popup.min.js">
+    </script>
+    <script src="catalog/view/theme/default/stylesheet/jquery.cookie.js">
+    </script>
+    <script type="text/javascript">
+     $('#hbnp_skip').click(function(){
+sethbnpcookie();
+$.magnificPopup.close();
+});
+
+$('#cpwd').keyup(function(){
+var cpwd = $('#cpwd').val();
+var pwd = $('#pwd').val();
+if (pwd == cpwd){
+	$('#match').html("&lt;span class='hbnp-span-success'&gt;Password matches!&lt;/span&gt;");
+} else {
+	$('#match').html("&lt;span class='hbnp-span-error'&gt;Password doesn't match!&lt;/span&gt;");
+}
+
+});
+
+
+function sethbnpcookie(){
+$.cookie('hbnp_one_time', 'b7a782741f667201b54880c925faec4b');
+}
+
+function autoclose(){
+setTimeout(function(){
+	$.magnificPopup.close();
+}, 7000);
+}
+
+
+$(document).ready(function () {
+setTimeout(function(){
+if (($('#hb-nl-popup').length) &amp;&amp; ($.cookie('hbnp_one_time') != 'b7a782741f667201b54880c925faec4b') &amp;&amp; (1== 1 )){
+	$.magnificPopup.open({
+		items: {src: '#hb-nl-popup'},
+		type: 'inline',
+		
+				
+		removalDelay: 800,
+		callbacks: {
+			beforeOpen: function(){
+				this.st.mainClass = 'mfp-zoom-in';
+			}
+		}
+	});
+}
+}, 1000);  
+}); 
+
+$("#hbnp_subscribe").click(function(){var e=$("#hbnp_email").val(),s=/^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;return s.test(e)&amp;&amp;""!=$.trim(e)?($("#loadgif_hbnp").show(),void $.ajax({type:"post",url:"index.php?route=module/hbnp_core",data:{email:$("#hbnp_email").val(),childname:$("#hbnp_childname").val(),childage:$("#hbnp_childage").val()},dataType:"json",success:function(e){e.success&amp;&amp;($("#nl_form").html(""),$("#hbnp_msg").html(e.success),$("#loadgif_hbnp").hide(),sethbnpcookie(),autoclose(),setTimeout(function(){"1"==e.hbnp_redirect&amp;&amp;(window.location.href=window.location.href)},7e3))},error:function(e,s,n){alert(n+"\r\n"+e.statusText+"\r\n"+e.responseText)}})):(alert("Invalid email"),!1)});
+    </script>
+    <div class="container">
+     <div class="row">
+      <div data-delay="600" data-animate="fadeInUp" class="newletter col-xs-24 col-sm-24 col-md-24 not-animated">
+       <h3 class="title">
+        <span>
+         Stay in touch with us for our latest news, offers and more
+        </span>
+       </h3>
+       <div>
+        <p class="text-title">
+        </p>
+        <div class="newletter-content">
+         <div id="frm_subscribe">
+          <form id="subscribe" name="subscribe">
+           <table>
+            <tbody>
+             <tr>
+              <td>
+               <input type="text" id="subscribe_email" name="subscribe_email" placeholder="Enter your email address here" size="50" class="form-control" />
+               <a onclick="email_subscribe()" class="btn">
+                Subscribe
+               </a>
+              </td>
+             </tr>
+             <tr style="display:none;">
+              <td>
+               <input type="text" id="subscribe_name" name="subscribe_name" value="Enter your email address here" size="50" class="form-control" />
+              </td>
+             </tr>
+             <tr>
+              <td id="subscribe_result">
+              </td>
+             </tr>
+            </tbody>
+           </table>
+          </form>
+         </div>
+        </div>
+       </div>
+       <script type="text/javascript">
+        &lt;!--
+function email_subscribe(){
+	$.ajax({
+			type: 'post',
+			url: 'index.php?route=module/newslettersubscribe/subscribe',
+			dataType: 'html',
+            data:$("#subscribe").serialize(),
+			success: function (html) {
+				eval(html);
+			}
+	}); 
+}
+function email_unsubscribe(){
+	$.ajax({
+			type: 'post',
+			url: 'index.php?route=module/newslettersubscribe/unsubscribe',
+			dataType: 'html',
+            data:$("#subscribe").serialize(),
+			success: function (html) {
+				eval(html);
+			}
+	}); 
+}
+//--&gt;
+       </script>
+      </div>
+     </div>
+    </div>
+    <div style="display: none;" aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" class="modal fade" id="myModal">
+     <div style="width:90%; max-width:1000px;" class="modal-dialog">
+     </div>
+    </div>
+    <div style="position:fixed;top:50%;left:50%" class="loading">
+    </div>
+   </div>
+   <footer>
+    <div class="container top">
+     <div class="row">
+      <div class="col-md-24">
+       <script type="text/javascript">
+        &lt;!--
+	loadGird();
+	function loadGird(){
+				var class_left_right = '6';
+		var class_content_str = '24-18-12';
+		var class_product_str = '6-8-12';
+		changeProductView(class_left_right,class_content_str,class_product_str);
+	}
+	function changeProductView(class_left_right,class_content_str,class_product_str){
+		var class_left = class_left_right;
+		var class_right = class_left_right;
+		var class_content_arr = new Array();
+		class_content_arr = class_content_str.split("-");
+		
+		cols = $('#column-right, #column-left').length;
+		
+		if (cols == 2) {
+			class_content = class_content_arr[2];
+		} else if (cols == 1) {
+			class_content = class_content_arr[1];
+		}else{
+			class_content = class_content_arr[0];
+		}
+		
+		$('#content').removeClass();
+		$('#content').addClass('col-md-'+class_content + ' col-sm-'+class_content + ' col-xs-24');
+		
+		if($("#column-left").length &gt; 0)
+		{
+			$('#column-left').removeClass();
+			$('#column-left').addClass('col-md-'+class_left + ' col-sm-'+class_left + ' col-xs-24');
+		}
+		if($("#column-right").length &gt; 0)
+		{
+			$('#column-right').removeClass();
+			$('#column-right').addClass('col-md-'+class_right + ' col-sm-'+class_right + ' col-xs-24 pull-right');
+		}
+		
+	}
+	//--&gt;
+       </script>
+      </div>
+     </div>
+    </div>
+    <div class="container">
+     <div class="footer_column">
+      <div class="row">
+       <div data-delay="200" data-animate="fadeInUp" class="column col-lg-6 col-md-6 col-sm-12 col-xs-24 not-animated">
+        <h3>
+         Information
+        </h3>
+        <ul>
+         <li>
+          <a href="http://www.littlekokoro.com/about_us">
+           Our Story
+          </a>
+         </li>
+         <li>
+          <a href="http://www.littlekokoro.com/index.php?route=information/information&information_id=6">
+           Delivery Information
+          </a>
+         </li>
+         <li>
+          <a href="http://www.littlekokoro.com/index.php?route=information/information&information_id=3">
+           Privacy Policy
+          </a>
+         </li>
+         <li>
+          <a href="http://www.littlekokoro.com/index.php?route=information/information&information_id=5">
+           Terms &amp; Conditions
+          </a>
+         </li>
+         <li>
+          <a href="http://www.littlekokoro.com/Size-guide">
+           Size &amp; Care
+          </a>
+         </li>
+         <li>
+          <a href="http://www.littlekokoro.com/index.php?route=information/contact">
+           Contact Us
+          </a>
+         </li>
+         <li>
+          <a href="http://www.littlekokoro.com/index.php?route=account/return/insert">
+           Returns
+          </a>
+         </li>
+         <li>
+          <a href="http://www.littlekokoro.com/index.php?route=information/sitemap">
+           Site Map
+          </a>
+         </li>
+        </ul>
+       </div>
+       <div data-delay="400" data-animate="fadeInUp" class="column col-lg-6 col-md-6 col-sm-12 col-xs-24 not-animated">
+        <h3>
+         My Account
+        </h3>
+        <ul>
+         <li>
+          <a href="http://www.littlekokoro.com/index.php?route=account/account">
+           My Account
+          </a>
+         </li>
+         <li>
+          <a href="http://www.littlekokoro.com/index.php?route=account/order">
+           Order History
+          </a>
+         </li>
+         <li>
+          <a href="http://www.littlekokoro.com/index.php?route=account/newsletter">
+           Newsletter
+          </a>
+         </li>
+         <li style=" display: none">
+          <a href="http://www.littlekokoro.com/index.php?route=product/manufacturer">
+           Brands
+          </a>
+         </li>
+         <li>
+          <a href="http://www.littlekokoro.com/index.php?route=account/voucher">
+           Gift Vouchers
+          </a>
+         </li>
+         <li style=" display: none">
+          <a href="http://www.littlekokoro.com/index.php?route=affiliate/account">
+           Affiliates
+          </a>
+         </li>
+         <li style=" display: none">
+          <a href="http://www.littlekokoro.com/index.php?route=product/special">
+           Specials
+          </a>
+         </li>
+        </ul>
+       </div>
+       <div data-delay="600" data-animate="fadeInUp" class="footer-about column col-lg-6 col-md-6 col-sm-12 col-xs-24 not-animated">
+        <h3>
+         About
+        </h3>
+        <a title="parallax" href="#">
+         <img src="image/data/footer_logo.png" alt="parallax" />
+        </a>
+        <div data-delay="300" data-animate="fadeInUp" class="about-store not-animated">
+         <p>
+          Just like children, Little Kokoro clothes breathe oodles of fun, innocence and a dash of whimsy. Our designs, whimsical prints, and our unique characters are
+          <br />
+          what set us apart.
+         </p>
+        </div>
+       </div>
+       <div data-delay="300" data-animate="fadeInUp" class="block-footer-top column col-lg-6 col-md-6 col-sm-12 col-xs-24 not-animated">
+        <div class="footer-contact">
+         <h3>
+          Contact us
+         </h3>
+         <div data-delay="300" data-animate="fadeInUp" class="contact-us not-animated">
+          <div class="address">
+           <div class="image">
+           </div>
+           <p>
+            <span>
+             Little Kokoro,
+             <br />
+             P.O.Box. 71018,
+             <br />
+             London W4 9GD
+            </span>
+           </p>
+          </div>
+          <div class="email">
+           <div class="image">
+           </div>
+           <p>
+            <span>
+             hello@littlekokoro.com
+            </span>
+           </p>
+          </div>
+         </div>
+        </div>
+        <div class="footer-social">
+         <ul>
+          <a target="_blank" href="http://www.facebook.com/littlekokoro">
+           <img style=" width: 34px; height:34px" src="http://littlekokoro.com/image/cache/data/social-icons/fb-100x100.png" />
+          </a>
+          <a target="_blank" href="https://twitter.com/littlekokoro">
+           <img style=" width: 34px; height:34px" src="http://littlekokoro.com/image/cache/data/social-icons/twittre-100x100.png" />
+          </a>
+          <a target="_blank" href="https://instagram.com/mylittlekokoro/">
+           <img style=" width: 34px; height:34px" src="http://littlekokoro.com/image/cache/data/social-icons/instagram-100x100.png" />
+          </a>
+         </ul>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="powered-payment">
+      <div class="row">
+       <div data-delay="200" data-animate="fadeInUp" class="powered col-lg-12 col-md-12 col-sm-12 col-xs-24 not-animated">
+        <div id="powered">
+         <p>
+          Copyright © 2015 Little Kokoro London. All rights Reserved.
+         </p>
+        </div>
+       </div>
+       <div data-delay="400" data-animate="fadeInUp" class="payment col-lg-12 col-md-12 col-sm-12 col-xs-24 not-animated">
+        <ul>
+         <li>
+          <a class="visa" href="#" title="Visa">
+           <img src="image/data/bt_parallax/visa.png" alt="Visa" />
+          </a>
+         </li>
+         <li>
+          <a class="masterCard" href="#" title="MasterCard">
+           <img src="image/data/bt_parallax/master.png" alt="MasterCard" />
+          </a>
+         </li>
+         <li>
+          <a class="merican" href="#" title="Merican">
+           <img src="image/data/bt_parallax/american.png" alt="Merican" />
+          </a>
+         </li>
+         <li>
+          <a class="paypal" href="#" title="Paypal">
+           <img src="image/data/bt_parallax/paypal.png" alt="Paypal" />
+          </a>
+         </li>
+         <li>
+          <a class="skrill" href="#" title="Skrill">
+           <img src="image/data/bt_parallax/skrill.png" alt="Skrill" />
+          </a>
+         </li>
+        </ul>
+       </div>
+      </div>
+     </div>
+    </div>
+   </footer>
+   <div title="Back To Top" class="back_top" id="back_top">
+    <span>
+     <i class="fa fa-angle-up">
+     </i>
+    </span>
+   </div>
+   <script type="text/javascript">
+    $(function(){
+			$(window).scroll(function(){
+				if($(this).scrollTop()&gt;600){
+				  $('#back_top').fadeIn();
+				}
+				else{
+				  $('#back_top').fadeOut();
+				}
+			});
+			$("#back_top").click(function (e) {
+				e.preventDefault();
+				$('body,html').animate({scrollTop:0},800,'swing');
+			});
+        });
+   </script>
+  </div>
+ </body>
+</html>

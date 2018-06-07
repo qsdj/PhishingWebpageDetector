@@ -1,0 +1,2067 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" class="">
+ <head>
+  <title>
+   SINPRAFARMA SP :: Início
+  </title>
+  <meta content="Content-Type" http-equiv="Content-Type" />
+  <link href="logo.jpg" rel="shortcut icon" />
+  <link rel="stylesheet" href="css/ui-lightness/jquery-ui-1.10.3.custom.css" type="text/css" />
+  <link href="style.css?ch=20160105225731" type="text/css" rel="stylesheet" />
+  <script src="js/jquery.js" type="text/javascript">
+  </script>
+  <script src="js/jquery-ui-1.10.3.custom.js" type="text/javascript">
+  </script>
+  <script src="js/jquery.form.js" type="text/javascript">
+  </script>
+  <script src="js/jquery.mask.js?ch=20160105225731" type="text/javascript">
+  </script>
+  <script src="js/js.js?ch=20160105225731" type="text/javascript">
+  </script>
+  <!-- Add mousewheel plugin (this is optional) -->
+  <script src="/fancybox/lib/jquery.mousewheel-3.0.6.pack.js" type="text/javascript">
+  </script>
+  <!-- Add fancyBox -->
+  <link media="screen" type="text/css" href="/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" />
+  <script src="/fancybox/source/jquery.fancybox.pack.js?v=2.1.5" type="text/javascript">
+  </script>
+  <!-- Optionally add helpers - button, thumbnail and/or media -->
+  <link media="screen" type="text/css" href="/fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" rel="stylesheet" />
+  <script src="/fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5" type="text/javascript">
+  </script>
+  <script src="/fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6" type="text/javascript">
+  </script>
+  <link media="screen" type="text/css" href="/fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" rel="stylesheet" />
+  <script src="/fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7" type="text/javascript">
+  </script>
+  <style type="text/css">
+   .fancybox-margin{margin-right:16px;}
+  </style>
+ </head>
+ <body>
+  <div id="conteudo" style="height: 235px;">
+   <div id="header">
+    <!--LOGOTIPO-->
+    <div id="logo">
+     <img src="animate/aminate/logo/01.png" style="z-index: 10; display: inline;" />
+     <img src="animate/aminate/logo/02.png" style="z-index: 10; display: inline;" />
+     <img src="animate/aminate/logo/03.png" style="z-index: 10; display: inline;" />
+     <img src="animate/aminate/logo/04.png" style="z-index: 10; display: inline;" />
+     <img src="animate/aminate/logo/05.png" style="z-index: 10; display: inline;" />
+     <img src="animate/aminate/logo/06.png" style="z-index: 10; display: inline;" />
+     <img src="animate/aminate/logo/07.png" style="z-index: 10;" />
+    </div>
+    <script type="text/javascript">
+     var an = 0;
+		var animelogo = "";		
+		var settimeee = setInterval(function(){
+		animelogo = setInterval(function(){
+				$('#logo &gt; img').css('z-index','10');
+				$('#logo &gt; img:eq('+an+')').css('z-index','20');
+				$('#logo &gt; img:eq('+an+')').fadeIn('slow');
+				if(an &lt; 7){
+					an++
+				}else{
+					an = 0;
+					clearInterval(animelogo);
+				}
+			},50);
+		},3000);
+    </script>
+    <!-- ÁREA RESTRITA -->
+    <div style="width:470px;" id="area_restrita">
+     <form class="formlogin" method="post" action="login.php" id="dados">
+      <input type="text" style="width:145px; height:15px;" placeholder="Usuário" name="usuario" />
+      <input type="password" style="width:120px; height:15px;" value="" placeholder="Senha" name="senha" />
+      <input type="submit" style="display:none" value="Logar" />
+      <a target="_self" class="bt_log" href="javascript:return false;">
+       Logar
+      </a>
+     </form>
+     <div style="margin-left:10px; margin-top:-5px;" class="cadastro">
+      ou cadastre-se
+      <a target="_self" href="cadastre_se.php">
+       AQUI
+      </a>
+      <br />
+      <a target="_self" href="rescue.php">
+       Esqueceu sua senha?
+      </a>
+     </div>
+    </div>
+    <!-- LINKS -->
+    <ul id="nav">
+     <li>
+      <a target="_self" href="./">
+       HOME
+      </a>
+     </li>
+     <li>
+      <a target="_self" href="pg.php?pg=23">
+       SOBRE O SINPRAFARMA
+      </a>
+     </li>
+     <li>
+      <a target="_self" href="pg.php?pg=62">
+       SERVIÇOS
+      </a>
+     </li>
+     <li>
+      <a style="color:#555; text-shadow:none;" target="_self" href="./">
+       PARA VOCÊ TRABALHADOR
+       <img src="images/vip.png" />
+      </a>
+      <ul>
+       <li>
+        <a target="_self" href="pg.php?pg=138">
+         Convênios
+        </a>
+       </li>
+       <li>
+        <a target="_self" href="colonia_v2.php">
+         Colônia de Férias
+        </a>
+       </li>
+       <li>
+        <a target="_self" href="empregos.php">
+         Empregos
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li>
+      <!--pg=4-->
+      <a style="color:#555; text-shadow:none;" target="_self" href="pg.php?pg=29">
+       PARA SEU ESTABELECIMENTO
+      </a>
+      <img src="images/vip.png" />
+      <ul>
+       <li>
+        <a target="_self" href="pg.php?pg=29">
+         Homologações
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li>
+      <a target="_self" href="noticias.php">
+       NOTÍCIAS
+      </a>
+     </li>
+     <li>
+      <a target="_self" href="localizacao.php">
+       LOCALIZAÇÃO
+      </a>
+     </li>
+     <li>
+      <a target="_self" href="contato.php">
+       CONTATO
+      </a>
+     </li>
+     <li style="float:right; margin-top:2px; margin-right:0;">
+      <a target="_blank" href="https://www.facebook.com/sinprafarmasp">
+       <img src="images/bt_facebook.png" />
+      </a>
+      <a target="_blank" href="#">
+       <img src="images/bt_twitter.png" />
+      </a>
+     </li>
+    </ul>
+   </div>
+   <script type="text/javascript">
+    $('.bt_log').click(function(){
+		if($('[name=usuario]').val()==''){
+			alert('Você deve fornecer um usuário!');
+			return false;
+		}else if($('[name=senha]').val()==''){
+			alert('Você deve fornecer uma senha!');
+			return false;
+		}else{
+			$('.formlogin').submit();
+		}
+	})
+	
+	$('.formlogin').submit(function(){
+		if($('[name=usuario]').val()==''){
+			alert('Você deve fornecer um usuário!');
+			return false;
+		}else if($('[name=senha]').val()==''){
+			alert('Você deve fornecer uma senha!');
+			return false;
+		}
+	})
+   </script>
+   <div id="banners_topo">
+    <div class="bn_01">
+     <img src="images/bn_principal.png" />
+    </div>
+    <div class="bn_02">
+     <img src="images/bn_parceiros.png" />
+    </div>
+   </div>
+   <div id="cont_int">
+    <div id="cont_left">
+     <div class="busca_vagas">
+      <form target="_self" method="get" action="empregos.php">
+       <strong>
+        Vagas:
+       </strong>
+       <select name="vaga">
+        <option value="">
+         Indiferente
+        </option>
+        <option value="">
+        </option>
+        <option value="Atendente">
+         Atendente
+        </option>
+        <option value="ATENDENTE / BALCONISTA">
+         ATENDENTE / BALCONISTA
+        </option>
+        <option value="Atendente balcão e Atendente manipulação">
+         Atendente balcão e Atendente manipulação
+        </option>
+        <option value="Atendente de Farmácia">
+         Atendente de Farmácia
+        </option>
+        <option value="ATENDENTE DE FARMÁCIA DE MANIPULAÇÃO">
+         ATENDENTE DE FARMÁCIA DE MANIPULAÇÃO
+        </option>
+        <option value="Atendente de Prescrição">
+         Atendente de Prescrição
+        </option>
+        <option value="Atendente de Prescrição Magistral">
+         Atendente de Prescrição Magistral
+        </option>
+        <option value="Atendente de Prescrição Medica">
+         Atendente de Prescrição Medica
+        </option>
+        <option value="ATENDENTE DE PRESCRIÇÃO MAGISTRAL">
+         ATENDENTE DE PRESCRIÇÃO MAGISTRAL
+        </option>
+        <option value="Atendente prescrição magistral">
+         Atendente prescrição magistral
+        </option>
+        <option value="ATENDENTE/BALCONISTA">
+         ATENDENTE/BALCONISTA
+        </option>
+        <option value="ATENDIMENTO">
+         ATENDIMENTO
+        </option>
+        <option value="Auxiliar de Farmacia">
+         Auxiliar de Farmacia
+        </option>
+        <option value="AUXILIAR DE FARMÁCIA DE MANIPULAÇÃO">
+         AUXILIAR DE FARMÁCIA DE MANIPULAÇÃO
+        </option>
+        <option value="AUXILIAR DE LABORATÓRIO">
+         AUXILIAR DE LABORATÓRIO
+        </option>
+        <option value="Auxiliar de Laboratório">
+         Auxiliar de Laboratório
+        </option>
+        <option value="AUXILIAR DE LABORATORIO">
+         AUXILIAR DE LABORATORIO
+        </option>
+        <option value="Auxiliar Laboratorio">
+         Auxiliar Laboratorio
+        </option>
+        <option value="BALCONISTA">
+         BALCONISTA
+        </option>
+        <option value="Balconista de Drogaria">
+         Balconista de Drogaria
+        </option>
+        <option value="Balconista de Farmácia">
+         Balconista de Farmácia
+        </option>
+        <option value="Balconista de Medicamentos">
+         Balconista de Medicamentos
+        </option>
+        <option value="Balconista de Medicmentos">
+         Balconista de Medicmentos
+        </option>
+        <option value="CAIXA">
+         CAIXA
+        </option>
+        <option value="CONFERENTE">
+         CONFERENTE
+        </option>
+        <option value="Conferente de Receitas Medicas">
+         Conferente de Receitas Medicas
+        </option>
+        <option value="Contador">
+         Contador
+        </option>
+        <option value="ENCAPSULADOR">
+         ENCAPSULADOR
+        </option>
+        <option value="FARMACÊUTICO">
+         FARMACÊUTICO
+        </option>
+        <option value="Farmaceutica (o) Responsável">
+         Farmaceutica (o) Responsável
+        </option>
+        <option value="FARMACEUTICO">
+         FARMACEUTICO
+        </option>
+        <option value="Farmaceutico (a)">
+         Farmaceutico (a)
+        </option>
+        <option value="Farmaceutico (noturno)">
+         Farmaceutico (noturno)
+        </option>
+        <option value="Farmaceutico para Drogaria">
+         Farmaceutico para Drogaria
+        </option>
+        <option value="Farmaceutico responsavel">
+         Farmaceutico responsavel
+        </option>
+        <option value="LABORATÓRIO ">
+         LABORATÓRIO
+        </option>
+        <option value="Laboratório-Manipulação">
+         Laboratório-Manipulação
+        </option>
+        <option value="Manipulador">
+         Manipulador
+        </option>
+        <option value="Manipulador (a)">
+         Manipulador (a)
+        </option>
+        <option value="MANIPULADOR(A)">
+         MANIPULADOR(A)
+        </option>
+        <option value="Manipulador(a) de Dermato">
+         Manipulador(a) de Dermato
+        </option>
+        <option value="manipuladora">
+         manipuladora
+        </option>
+        <option value="Manipuladora de Dermato">
+         Manipuladora de Dermato
+        </option>
+        <option value="OP DE CAIXA">
+         OP DE CAIXA
+        </option>
+        <option value="Operadora de caixa">
+         Operadora de caixa
+        </option>
+        <option value="OPERADORA DE CAIXA FOLGUISTA">
+         OPERADORA DE CAIXA FOLGUISTA
+        </option>
+        <option value="Orçamentista">
+         Orçamentista
+        </option>
+        <option value="PERFUMISTA">
+         PERFUMISTA
+        </option>
+        <option value="Prático">
+         Prático
+        </option>
+        <option value="Recepcionista">
+         Recepcionista
+        </option>
+        <option value="técnico de farmacia">
+         técnico de farmacia
+        </option>
+        <option value="Técnico de Laboratório">
+         Técnico de Laboratório
+        </option>
+        <option value="TÉCNICO DE FARMÁCIA">
+         TÉCNICO DE FARMÁCIA
+        </option>
+        <option value="TECNICO EM FARMACIA">
+         TECNICO EM FARMACIA
+        </option>
+       </select>
+       <strong>
+        Salário:
+       </strong>
+       <select name="salario">
+        <option value="">
+         Indiferente
+        </option>
+        <option value="1">
+         R$ 0 - R$ 1.000,00
+        </option>
+        <option value="2">
+         R$ 1.000,00 - R$ 3.000,00
+        </option>
+        <option value="3">
+         R$ 3.000,00 - R$ 6.000,00
+        </option>
+        <option value="4">
+         R$ 6.000,00 acima
+        </option>
+       </select>
+       <strong>
+        Estado:
+       </strong>
+       <select name="estado">
+        <option value="">
+         Indiferente
+        </option>
+        <option value="ac">
+         Acre
+        </option>
+        <option value="al">
+         Alagoas
+        </option>
+        <option value="am">
+         Amazonas
+        </option>
+        <option value="ap">
+         Amapá
+        </option>
+        <option value="ba">
+         Bahia
+        </option>
+        <option value="ce">
+         Ceará
+        </option>
+        <option value="df">
+         Distrito Federal
+        </option>
+        <option value="es">
+         Espírito Santo
+        </option>
+        <option value="go">
+         Goiás
+        </option>
+        <option value="ma">
+         Maranhão
+        </option>
+        <option value="mt">
+         Mato Grosso
+        </option>
+        <option value="ms">
+         Mato Grosso do Sul
+        </option>
+        <option value="mg">
+         Minas Gerais
+        </option>
+        <option value="pa">
+         Pará
+        </option>
+        <option value="pb">
+         Paraíba
+        </option>
+        <option value="pr">
+         Paraná
+        </option>
+        <option value="pe">
+         Pernambuco
+        </option>
+        <option value="pi">
+         Piauí
+        </option>
+        <option value="rj">
+         Rio de Janeiro
+        </option>
+        <option value="rn">
+         Rio Grande do Norte
+        </option>
+        <option value="ro">
+         Rondônia
+        </option>
+        <option value="rs">
+         Rio Grande do Sul
+        </option>
+        <option value="rr">
+         Roraima
+        </option>
+        <option value="sc">
+         Santa Catarina
+        </option>
+        <option value="se">
+         Sergipe
+        </option>
+        <option value="sp">
+         São Paulo
+        </option>
+        <option value="to">
+         Tocantins
+        </option>
+       </select>
+       <input type="submit" value="Buscar" />
+      </form>
+     </div>
+     <ul class="empregos">
+      <li>
+       <a target="_self" href="det_emprego.php?id=286">
+       </a>
+       <p class="emp_titulo">
+        Droga Leste
+       </p>
+       <p>
+        Farmaceutico (noturno) / 2690,00
+       </p>
+       <p style="color:#999">
+        Itaquera
+       </p>
+       <p>
+        Irá realizar a dispensação do medicamento. Necessário ter CRF ativo e conhecer de genérico, similar e ético.
+       </p>
+      </li>
+      <li>
+       <a target="_self" href="det_emprego.php?id=285">
+       </a>
+       <p class="emp_titulo">
+        D&amp;F Farma Ltda
+       </p>
+       <p>
+        Balconista / Combinar
+       </p>
+       <p style="color:#999">
+        Av. Oswaldo Collino, 840 - Presidente Altino - Osasco
+       </p>
+       <p>
+        Atendimento no balcão, dispensar medicamentos, aplicação de injetáveis, aferição de pressão.
+       </p>
+      </li>
+      <li>
+       <a target="_self" href="det_emprego.php?id=283">
+       </a>
+       <p class="emp_titulo">
+        Rede Droga Leste
+       </p>
+       <p>
+        Balconista de Farmácia / Combinar
+       </p>
+       <p style="color:#999">
+        Zona Leste
+       </p>
+       <p>
+       </p>
+      </li>
+      <li>
+       <a target="_self" href="det_emprego.php?id=281">
+       </a>
+       <p class="emp_titulo">
+        Farma Familia
+       </p>
+       <p>
+        Farmaceutica (o) Responsável / Combinar
+       </p>
+       <p style="color:#999">
+        Rua Costa Barros,66- Vila Alpina
+       </p>
+       <p>
+        Atividades: atendimento aos clientes; organização dos produtos e controle dos psicotrópicos; serviços de saúde (aplicação de injetáveis e esclarecimento de dúvidas); administração dos medicamentos injetáveis e validade dos produtos;Conhecimento do Programa SGNPC .
+- Responsável pela compra, armazenagem e distribuição de medicamentos e materiais, bem como pelo controle de estoque e descarte de produtos vencidos; - Responsável técnico pela farmácia da empresa, garantindo que todas as normas impostas pelos órgãos responsáveis sejam cumpridas rigorosamente.
+       </p>
+      </li>
+      <li>
+       <a target="_self" href="det_emprego.php?id=280">
+       </a>
+       <p class="emp_titulo">
+        Rede Droga Leste
+       </p>
+       <p>
+        Balconista de Drogaria / Piso
+       </p>
+       <p style="color:#999">
+        Zona Leste de SP
+       </p>
+       <p>
+        Atendimento ao cliente na dispensação de medicamentos, conhecimento em medicamentos éticos, genéricos e similares.
+       </p>
+      </li>
+      <li>
+       <a target="_self" href="det_emprego.php?id=279">
+       </a>
+       <p class="emp_titulo">
+        Rede Droga Leste
+       </p>
+       <p>
+        Farmaceutico para Drogaria / piso
+       </p>
+       <p style="color:#999">
+        Residir na Zona Leste
+       </p>
+       <p>
+        Atendimento ao cliente na dispensação de medicamentos, conhecimento em medicamentos éticos, genéricos e similares. CRF Ativo.
+       </p>
+      </li>
+      <li>
+       <a target="_self" href="det_emprego.php?id=275">
+       </a>
+       <p class="emp_titulo">
+        Farmácia Galenica Ltda
+       </p>
+       <p>
+        Atendente de Prescrição Medica / Combinar
+       </p>
+       <p style="color:#999">
+        São Paulo
+       </p>
+       <p>
+        Com experiência no formula certa.
+       </p>
+      </li>
+      <li>
+       <a target="_self" href="det_emprego.php?id=272">
+       </a>
+       <p class="emp_titulo">
+        DROGARIAS POUPE MAIS
+       </p>
+       <p>
+        OPERADORA DE CAIXA FOLGUISTA / 1024,00
+       </p>
+       <p style="color:#999">
+        AV. SANTOS DUMONT, 235, CUMBICA, GUARULHOS
+       </p>
+       <p>
+        - ABERTURA E FECHAMENTO DE CAIXA
+- ATENDIMENTO AO CLIENTE
+- LIMPEZA E ORGANIZAÇÃO DA LOJA
+- VENDAS
+OBS: A OPERADORA DE CAIXA FOLGUISTA IRÁ COBRIR OS HORÁRIOS DE FOLGAS DE OUTRAS OPERADORAS DE CAIXA.
+*ENVIAR SEU CURRÍCULO PARA: rh.poupemais@gmail.com ASSUNTO: VAGA SINPRAFARMA
+       </p>
+      </li>
+      <li>
+       <a target="_self" href="det_emprego.php?id=267">
+       </a>
+       <p class="emp_titulo">
+        DROGA TAS LTDA ME
+       </p>
+       <p>
+        FARMACEUTICO / Combinar
+       </p>
+       <p style="color:#999">
+        RUA ALTO DO PARNAIBA, 298
+       </p>
+       <p>
+        DESENVOLVER ATIVIDADES A ÁREA
+       </p>
+      </li>
+      <li>
+       <a target="_self" href="det_emprego.php?id=251">
+       </a>
+       <p class="emp_titulo">
+        SALUTE VITA
+       </p>
+       <p>
+        atendente de prescrição magistral / Combinar
+       </p>
+       <p style="color:#999">
+        rua Antonio de Macedo Soares, 1696
+       </p>
+       <p>
+        Atuar com abertura e fechamento do estabelecimento atendimento a clientes e inclusão de fórmulas. Atuar com edição de rótulos e fichas de pesagem, desde a entrada á dispensação da mesma. Atuar com atendimento no setor de manipulação de produtos: orientação quanto à posologia (pós venda), pós atendimento, acompanhamento de rotina do paciente, controle de receitas médicas (uso contínuo), orçamento, sistema fórmula certa / Alternate e orçamento de compras. Realizar controle de estoque, planejamento e organização de serviços em geral da farmácia. Atuar no acompanhamento de funcionários no desenvolvimento e eficiência, estabelecendo princípio e funções garantindo a produtividade e eficiência dos serviços executados e acompanhando o desenvolvimento da unidade.
+       </p>
+      </li>
+      <li>
+       <a target="_self" href="det_emprego.php?id=242">
+       </a>
+       <p class="emp_titulo">
+        Farmacia Luvizotto &amp; Takata Ltda
+       </p>
+       <p>
+        Manipulador (a) / Combinar
+       </p>
+       <p style="color:#999">
+        Metrô Tucuruvi, Zona Norte
+       </p>
+       <p>
+        Experiência comprovada em manipulação de sólidos (pesagem, encapsulação, peso médio e saches) e de semissólidos e líquidos (todas as formas farmacêuticas), conhecimento de Controle de Qualidade.
+       </p>
+      </li>
+      <li>
+       <a target="_self" href="det_emprego.php?id=241">
+       </a>
+       <p class="emp_titulo">
+        Almofariz Farmácia de Manipulação
+       </p>
+       <p>
+        Atendente de Prescrição Magistral / Combinar
+       </p>
+       <p style="color:#999">
+        Perdizes
+       </p>
+       <p>
+        Atendimento telefônico aos clientes.
+       </p>
+      </li>
+      <li>
+       <a target="_self" href="det_emprego.php?id=240">
+       </a>
+       <p class="emp_titulo">
+        FARMÁCIA PRÓ SANA
+       </p>
+       <p>
+        TÉCNICO DE FARMÁCIA / Combinar
+       </p>
+       <p style="color:#999">
+        av. do Cursino, 369 - ALTO DO IPIRANGA
+       </p>
+       <p>
+        PESAGEM DE SÓLIDOS
+       </p>
+      </li>
+      <li>
+       <a target="_self" href="det_emprego.php?id=239">
+       </a>
+       <p class="emp_titulo">
+        GARDENIA FORMULAS
+       </p>
+       <p>
+        RECEPCIONISTA / Combinar
+       </p>
+       <p style="color:#999">
+        VILA FORMOSA
+       </p>
+       <p>
+        RECEPCIONISTA COM PRATICA EM FARMACIA DE MANIPULAÇÃO- LOCAL VILA FORMOSA HORARIO 08:30 AS 17:30HRS SEG A SEXTA  E DAS 09:00 AS 13HRS AOS SABADOS URGENTE
+       </p>
+      </li>
+      <li>
+       <a target="_self" href="det_emprego.php?id=237">
+       </a>
+       <p class="emp_titulo">
+        FARMÁCIA PRÓ SANA
+       </p>
+       <p>
+        RECEPCIONISTA / Combinar
+       </p>
+       <p style="color:#999">
+        av. do Cursino, 369
+       </p>
+       <p>
+        atendimento a clientes, inclusão de fichas de pesagem, preparo de fórmulas para entrega com boy
+       </p>
+      </li>
+      <li>
+       <a target="_self" href="det_emprego.php?id=228">
+       </a>
+       <p class="emp_titulo">
+        Farmatec
+       </p>
+       <p>
+        Auxiliar de Laboratório / Combinar
+       </p>
+       <p style="color:#999">
+        Jardim Paulitsa
+       </p>
+       <p>
+        Auxiliar de laboratório, conferência de fórmulas, encapsulação, etc...
+       </p>
+      </li>
+      <li>
+       <a target="_self" href="det_emprego.php?id=225">
+       </a>
+       <p class="emp_titulo">
+        Farmacia Principia Manipulação e Homeopatia
+       </p>
+       <p>
+        Manipulador(a) de Dermato / Combinar
+       </p>
+       <p style="color:#999">
+        rua nanuque 557
+       </p>
+       <p>
+        Manipulador formulas dermatologicas, xaropes, suspensoes, etc...
+       </p>
+      </li>
+      <li>
+       <a target="_self" href="det_emprego.php?id=224">
+       </a>
+       <p class="emp_titulo">
+        O ALQUIMISTA FARMACIA HOMEOPATICA LTDA.
+       </p>
+       <p>
+        AUXILIAR DE LABORATORIO / 1200,00
+       </p>
+       <p style="color:#999">
+        RUA ITAPICURU,653
+       </p>
+       <p>
+        ROTULAGEM DE MEDICAMENTOS HOMEOPÁTICOS E FLORAIS,LIMPEZA E MANUTENÇÃO DE VIDRARIA E EQUIPAMENTOS. VERIFICAÇÃO DE ESTOQUE DE EMBALAGENS E INSUMOS,PREPARAÇÃO DE POMADAS E CREMES
+       </p>
+      </li>
+      <li>
+       <a target="_self" href="det_emprego.php?id=217">
+       </a>
+       <p class="emp_titulo">
+        O ALQUIMISTA FARMACIA HOMEOPATICA LTDA.
+       </p>
+       <p>
+        ATENDENTE/BALCONISTA / Combinar
+       </p>
+       <p style="color:#999">
+        RUA ITAPICURU,653
+       </p>
+       <p>
+        RECEPÇÃO AO CLIENTE,ATENDIMENTO TELEFONICO,ATENDIMENTO DE E-MAILS,LEITURA DE RECEITAS,PAGAMENTOS,RECEBIMENTOS,CONFERENCIA DE MEDICAMENTOS,CONFERENCIA DE ENTREGAS,REPOSIÇÃO DE MERCADORIAS,ETC
+       </p>
+      </li>
+      <li>
+       <a target="_self" href="det_emprego.php?id=216">
+       </a>
+       <p class="emp_titulo">
+        pharmaoperez farmacia e manipu
+       </p>
+       <p>
+        Farmaceutico responsavel / Combinar
+       </p>
+       <p style="color:#999">
+        Rua Antonio de Macedo Soares 1322 Campo Belo
+       </p>
+       <p>
+        Farmacêutico Responsável com habilitação em Homeopatia.
+       </p>
+      </li>
+      <li>
+       <a target="_self" href="det_emprego.php?id=213">
+       </a>
+       <p class="emp_titulo">
+        Farmatec - Farmácia de Manipulação
+       </p>
+       <p>
+        Atendente de prescrição / R$ 1325,00
+       </p>
+       <p style="color:#999">
+        Jardim Paulista
+       </p>
+       <p>
+        Atendimento ao cliente no balcão e por telefone. Cálculo de preço de fórmulas, inclusão, impressão de fichas de produção e rótulos.
+       </p>
+      </li>
+      <li>
+       <a target="_self" href="det_emprego.php?id=206">
+       </a>
+       <p class="emp_titulo">
+        Farma &amp; Cia
+       </p>
+       <p>
+        Balconista de Medicmentos / Combinar
+       </p>
+       <p style="color:#999">
+        Viaduto jacareí, 159. Bela Vista. São Paulo. Próx ao metrô Anhagabaú
+       </p>
+       <p>
+        Balconista de Medicamentos com Experiência
+       </p>
+      </li>
+      <li>
+       <a target="_self" href="det_emprego.php?id=203">
+       </a>
+       <p class="emp_titulo">
+        Drogaria Centaurus
+       </p>
+       <p>
+        Balconista de Medicamentos / Combinar
+       </p>
+       <p style="color:#999">
+        Av. Inajar de Souza, 446 - Limão - Sao Paulo - SP
+       </p>
+       <p>
+        Atendimento de clientes no balcão e perfumaria, aferição de pressão, aplicação de injetaveis, limpeza e organização de prateleiras.
+       </p>
+      </li>
+      <li>
+       <a target="_self" href="det_emprego.php?id=202">
+       </a>
+       <p class="emp_titulo">
+        FARMACIA GALENICA
+       </p>
+       <p>
+        AUXILIAR DE LABORATÓRIO / 1 600,00
+       </p>
+       <p style="color:#999">
+        av&gt; Brigadeiro Faria Lima 1919
+       </p>
+       <p>
+        Pesagem , organização do estoque de matérias primas e embalagens, entrada de notas e tranferências, fracioanmento de matérias primas, compras de embalagens e utensílios
+       </p>
+      </li>
+      <li>
+       <a target="_self" href="det_emprego.php?id=199">
+       </a>
+       <p class="emp_titulo">
+        Farmácia Evidence
+       </p>
+       <p>
+        Auxiliar de Laboratório / R$ 1146,00
+       </p>
+       <p style="color:#999">
+        Vila Clementino
+       </p>
+       <p>
+        Atuar com encapsulação de fórmulas.
+       </p>
+      </li>
+      <li>
+       <a target="_self" href="det_emprego.php?id=198">
+       </a>
+       <p class="emp_titulo">
+        Drogaderma Ltda
+       </p>
+       <p>
+        Atendente de Farmácia / 1178,00
+       </p>
+       <p style="color:#999">
+        Av.Brigadeiro Luis Antonio 4882
+       </p>
+       <p>
+        Atendimento ao publico
+       </p>
+      </li>
+      <li>
+       <a target="_self" href="det_emprego.php?id=194">
+       </a>
+       <p class="emp_titulo">
+        FARMAIS DG V DROGARIA LTDA -ME
+       </p>
+       <p>
+        PERFUMISTA / Combinar
+       </p>
+       <p style="color:#999">
+        ITAQUERA - CIDADE LÍDER
+       </p>
+       <p>
+        ATENDIMENTO AO PUBLICO,  CONHECIMENTO EM COSMÉTICOS.
+       </p>
+      </li>
+      <li>
+       <a target="_self" href="det_emprego.php?id=193">
+       </a>
+       <p class="emp_titulo">
+        FARMAIS DG V DROGARIA LTDA -ME
+       </p>
+       <p>
+        BALCONISTA / PISO + PREMIAÇÃO
+       </p>
+       <p style="color:#999">
+        ITAQUERA
+       </p>
+       <p>
+        BALCONISTA COM EXPERIÊNCIA EM DISPENSAÇÃO DE MEDICAMENTOS; APLICAÇÃO DE INJETÁVEIS; LIMPEZA E ORGANIZAÇÃO DA LOJA; CONHECIMENTOS EM GENÉRICOS E SIMILARES.
+       </p>
+      </li>
+      <li>
+       <a target="_self" href="det_emprego.php?id=186">
+       </a>
+       <p class="emp_titulo">
+        BFB COMERCIO DE PERFUMES COSMÉTICOS DROGARIA LTDA
+       </p>
+       <p>
+        BALCONISTA / 1436,00
+       </p>
+       <p style="color:#999">
+        Avenida Paulista
+       </p>
+       <p>
+        Balconista de Medicamento, atendimento ao cliente, entrada e saída de produto.
+       </p>
+      </li>
+      <li>
+       <a target="_self" href="det_emprego.php?id=185">
+       </a>
+       <p class="emp_titulo">
+        Reação Vital Farmácia de Manip.
+       </p>
+       <p>
+        ATENDENTE / BALCONISTA / Combinar
+       </p>
+       <p style="color:#999">
+        GUARULHOS
+       </p>
+       <p>
+        EXPERIÊNCIA COMPROVADA EM FARMÁCIA DE MANIPULAÇÃO; CONHECIMENTO NO SISTEMA FÓRMULA CERTA; LEITURA DE RECEITUÁRIO; DISPONIBILIDADE PARA TRABALHAR AOS SÁBADOS; RESIDIR EM GUARULHOS OU REGIÃO.
+       </p>
+      </li>
+      <li>
+       <a target="_self" href="det_emprego.php?id=184">
+       </a>
+       <p class="emp_titulo">
+        Reação Vital Farmácia de Manip.
+       </p>
+       <p>
+        MANIPULADOR(A) / Combinar
+       </p>
+       <p style="color:#999">
+        1 vaga para Perdizes / 1 vaga para Guarulhos
+       </p>
+       <p>
+        EXPERIÊNCIA COMPROVADA EM FARMÁCIA DE MANIPULAÇÃO; MANIPULAÇÃO DE USO INTERNO E EXTERNO; CONHECIMENTO NO SISTEMA FÓRMULA CERTA; DISPONIBILIDADE PARA TRABALHAR AOS SÁBADOS;
+       </p>
+      </li>
+      <li>
+       <a target="_self" href="det_emprego.php?id=183">
+       </a>
+       <p class="emp_titulo">
+        Calendula - Farmacia de Manipulação
+       </p>
+       <p>
+        manipuladora / 1300,00
+       </p>
+       <p style="color:#999">
+        Rua das Rosas, 248    Mirandopolis
+       </p>
+       <p>
+        atividade de manipuladora para sólidos e semissólidos e líquidos, auxiliar nos serviços que competem a área de manipulação da farmacia
+       </p>
+      </li>
+      <li>
+       <a target="_self" href="det_emprego.php?id=182">
+       </a>
+       <p class="emp_titulo">
+        PRINCIPIA MANIPULAÇÃO E HOMEOPATIA
+       </p>
+       <p>
+        ATENDENTE DE PRESCRIÇÃO MAGISTRAL / Combinar
+       </p>
+       <p style="color:#999">
+        RUA NANUQUE 557
+       </p>
+       <p>
+        ATUAR NO ATENDIMENTO, EXIGIMOS EXPERIENCIA MININA DE 1 ANO E CONHECIMENTO SO SISTEMA FORMULA CERTA
+       </p>
+      </li>
+      <li>
+       <a target="_self" href="det_emprego.php?id=181">
+       </a>
+       <p class="emp_titulo">
+        PRINCIPIA MANIPULAÇÃO E HOMEOPATIA
+       </p>
+       <p>
+        manipuladora de Dermato / Combinar
+       </p>
+       <p style="color:#999">
+        rua nanuque 557
+       </p>
+       <p>
+        atuar no aviamento de formulas, imprescindível experiencia.
+       </p>
+      </li>
+      <li>
+       <a target="_self" href="det_emprego.php?id=178">
+       </a>
+       <p class="emp_titulo">
+        Farmácia Homeopharma
+       </p>
+       <p>
+        técnico de farmacia / Combinar
+       </p>
+       <p style="color:#999">
+        Av. Conselheiro Rodrigues Alves, 501 - Vila Mariana - 500m do metro Ana Rosa
+       </p>
+       <p>
+        trabalhar como técnico do laboratório de homeopatia e alopatia
+       </p>
+      </li>
+      <li>
+       <a target="_self" href="det_emprego.php?id=177">
+       </a>
+       <p class="emp_titulo">
+        R. F. LOPES FARMÁCIA DE MANIPULAÇÃO LTDA EPP
+       </p>
+       <p>
+        AUXILIAR DE LABORATÓRIO / Combinar
+       </p>
+       <p style="color:#999">
+        SÃO PAULO
+       </p>
+       <p>
+        Vaga para auxiliar de laboratório com experiência em encapsulação, peso médio e rotina da categoria determinada pela empresa.
+       </p>
+      </li>
+      <li>
+       <a target="_self" href="det_emprego.php?id=176">
+       </a>
+       <p class="emp_titulo">
+        Natuvita- Farmácia de Manipulação
+       </p>
+       <p>
+        Atendente / R$1400,00
+       </p>
+       <p style="color:#999">
+       </p>
+       <p>
+       </p>
+      </li>
+      <li>
+       <a target="_self" href="det_emprego.php?id=175">
+       </a>
+       <p class="emp_titulo">
+        Natuvita Farmácia de Manipulação
+       </p>
+       <p>
+        Manipulador / Combinar
+       </p>
+       <p style="color:#999">
+        Rua Demóstenes, 474
+       </p>
+       <p>
+       </p>
+      </li>
+      <li>
+       <a target="_self" href="det_emprego.php?id=174">
+       </a>
+       <p class="emp_titulo">
+        Drogalis
+       </p>
+       <p>
+        Balconista de Medicamentos / 1436,00
+       </p>
+       <p style="color:#999">
+        Mogi das Cruzes
+       </p>
+       <p>
+        •	Auxiliar na organização e limpeza da sala de aplicação, para evitar problemas com vigilância sanitária e CRF na aplicação de injetáveis.
+•	Manter a seção de responsabilidade de cada balconista limpa e organizada, conferindo validade de medicamentos para prevenção de vendas erradas e/ou vencidos.
+•	Orientar o cliente quanto à posologia correta do medicamento para que seja evitando dosagem errada do medicamento.
+•	Etiquetar e organizar os produtos para garantir a praticidade e agilidade no atendimento ao cliente.
+•	Separar medicamentos com (06) seis meses à vencer, para indicação diminuindo assim a perda.
+•	Dar entrada e conferir medicamentos entregues pelos fornecedores para prevenir faltas e perdas de estoque.
+       </p>
+      </li>
+      <li>
+       <a target="_self" href="det_emprego.php?id=173">
+       </a>
+       <p class="emp_titulo">
+        Drogalis
+       </p>
+       <p>
+        Balconista de Medicamentos / 1436,00
+       </p>
+       <p style="color:#999">
+        Itaquaquecetuba
+       </p>
+       <p>
+        •	Auxiliar na organização e limpeza da sala de aplicação, para evitar problemas com vigilância sanitária e CRF na aplicação de injetáveis.
+•	Manter a seção de responsabilidade de cada balconista limpa e organizada, conferindo validade de medicamentos para prevenção de vendas erradas e/ou vencidos.
+•	Orientar o cliente quanto à posologia correta do medicamento para que seja evitando dosagem errada do medicamento.
+•	Etiquetar e organizar os produtos para garantir a praticidade e agilidade no atendimento ao cliente.
+•	Separar medicamentos com (06) seis meses à vencer, para indicação diminuindo assim a perda.
+•	Dar entrada e conferir medicamentos entregues pelos fornecedores para prevenir faltas e perdas de estoque.
+       </p>
+      </li>
+      <li>
+       <a target="_self" href="det_emprego.php?id=172">
+       </a>
+       <p class="emp_titulo">
+        Drogalis
+       </p>
+       <p>
+        Balconista de Medicamentos / 1436,00
+       </p>
+       <p style="color:#999">
+        Guaianazes
+       </p>
+       <p>
+        •	Auxiliar na organização e limpeza da sala de aplicação, para evitar problemas com vigilância sanitária e CRF na aplicação de injetáveis.
+•	Manter a seção de responsabilidade de cada balconista limpa e organizada, conferindo validade de medicamentos para prevenção de vendas erradas e/ou vencidos.
+•	Orientar o cliente quanto à posologia correta do medicamento para que seja evitando dosagem errada do medicamento.
+•	Etiquetar e organizar os produtos para garantir a praticidade e agilidade no atendimento ao cliente.
+•	Separar medicamentos com (06) seis meses à vencer, para indicação diminuindo assim a perda.
+•	Dar entrada e conferir medicamentos entregues pelos fornecedores para prevenir faltas e perdas de estoque.
+       </p>
+      </li>
+      <li>
+       <a target="_self" href="det_emprego.php?id=171">
+       </a>
+       <p class="emp_titulo">
+        Drogalis
+       </p>
+       <p>
+        Balconista de Medicamentos / 1436,00
+       </p>
+       <p style="color:#999">
+        Arujá
+       </p>
+       <p>
+        •	Auxiliar na organização e limpeza da sala de aplicação, para evitar problemas com vigilância sanitária e CRF na aplicação de injetáveis.
+•	Manter a seção de responsabilidade de cada balconista limpa e organizada, conferindo validade de medicamentos para prevenção de vendas erradas e/ou vencidos.
+•	Orientar o cliente quanto à posologia correta do medicamento para que seja evitando dosagem errada do medicamento.
+•	Etiquetar e organizar os produtos para garantir a praticidade e agilidade no atendimento ao cliente.
+•	Separar medicamentos com (06) seis meses à vencer, para indicação diminuindo assim a perda.
+•	Dar entrada e conferir medicamentos entregues pelos fornecedores para prevenir faltas e perdas de estoque.
+       </p>
+      </li>
+      <li>
+       <a target="_self" href="det_emprego.php?id=170">
+       </a>
+       <p class="emp_titulo">
+        Drogalis
+       </p>
+       <p>
+        Balconista de Medicamentos / 1436,00
+       </p>
+       <p style="color:#999">
+        Suzano
+       </p>
+       <p>
+        •	Auxiliar na organização e limpeza da sala de aplicação, para evitar problemas com vigilância sanitária e CRF na aplicação de injetáveis.
+•	Manter a seção de responsabilidade de cada balconista limpa e organizada, conferindo validade de medicamentos para prevenção de vendas erradas e/ou vencidos.
+•	Orientar o cliente quanto à posologia correta do medicamento para que seja evitando dosagem errada do medicamento.
+•	Etiquetar e organizar os produtos para garantir a praticidade e agilidade no atendimento ao cliente.
+•	Separar medicamentos com (06) seis meses à vencer, para indicação diminuindo assim a perda.
+•	Dar entrada e conferir medicamentos entregues pelos fornecedores para prevenir faltas e perdas de estoque.
+       </p>
+      </li>
+      <li>
+       <a target="_self" href="det_emprego.php?id=168">
+       </a>
+       <p class="emp_titulo">
+        Drogalis
+       </p>
+       <p>
+        Balconista de Medicamentos / 1436,00
+       </p>
+       <p style="color:#999">
+        Poá
+       </p>
+       <p>
+        •	Auxiliar na organização e limpeza da sala de aplicação, para evitar problemas com vigilância sanitária e CRF na aplicação de injetáveis.
+•	Manter a seção de responsabilidade de cada balconista limpa e organizada, conferindo validade de medicamentos para prevenção de vendas erradas e/ou vencidos.
+•	Orientar o cliente quanto à posologia correta do medicamento para que seja evitando dosagem errada do medicamento.
+•	Etiquetar e organizar os produtos para garantir a praticidade e agilidade no atendimento ao cliente.
+•	Separar medicamentos com (06) seis meses à vencer, para indicação diminuindo assim a perda.
+•	Dar entrada e conferir medicamentos entregues pelos fornecedores para prevenir faltas e perdas de estoque.
+       </p>
+      </li>
+      <li>
+       <a target="_self" href="det_emprego.php?id=167">
+       </a>
+       <p class="emp_titulo">
+        FARMACIA DM EIRELI
+       </p>
+       <p>
+        BALCONISTA / Combinar
+       </p>
+       <p style="color:#999">
+        VILA POMPÉIA (PRÓXIMO AO HOSPITAL SÃO CAMILO DA POMPÉIA)
+       </p>
+       <p>
+        EXPERIÊNCIA ANTERIOR COMO BALCONISTA DE DROGARIA.AFERIÇÃO DE PRESSÃO ARTERIAL E APLICAÇÃO DE INJEÇÃO.
+       </p>
+      </li>
+      <li>
+       <a target="_self" href="det_emprego.php?id=163">
+       </a>
+       <p class="emp_titulo">
+        Biogalenus Farmácia de Manipulação Ltda.-ME
+       </p>
+       <p>
+        Atendente de prescrição magistral / 1200,00
+       </p>
+       <p style="color:#999">
+        Rua Coriolano, 610
+       </p>
+       <p>
+        Atendimento ao cliente no balcão e por telefone, fazer orçamentos e dispensar fórmulas
+       </p>
+      </li>
+      <li>
+       <a target="_self" href="det_emprego.php?id=161">
+       </a>
+       <p class="emp_titulo">
+        VIDAANIMAL FARMÁCIA DE MANIPULAÇÃO
+       </p>
+       <p>
+        AUXILIAR DE FARMÁCIA DE MANIPULAÇÃO / Combinar
+       </p>
+       <p style="color:#999">
+        SAO PAULO- ZONA NORTE
+       </p>
+       <p>
+        AUXILIAR NAS TAREFAS ROTINEIRAS DE MANIPULAÇÃO
+       </p>
+      </li>
+      <li>
+       <a target="_self" href="det_emprego.php?id=160">
+       </a>
+       <p class="emp_titulo">
+        principia Manipulação e Homeopatia
+       </p>
+       <p>
+        manipuladora de Dermato / Combinar
+       </p>
+       <p style="color:#999">
+        rua nanuque 557
+       </p>
+       <p>
+        manipular produtos dermatológicos e outros
+       </p>
+      </li>
+      <li>
+       <a target="_self" href="det_emprego.php?id=158">
+       </a>
+       <p class="emp_titulo">
+        DROGA BUENO LTDA
+       </p>
+       <p>
+        BALCONISTA / Combinar
+       </p>
+       <p style="color:#999">
+        R BUENO DE ANDRADE 574
+       </p>
+       <p>
+        COM EXPERIENCIA EM ATENDIMENTO AO CLIENTE,APLICACAO DE INJETAVEIS,LIMPEZA,GUARDA DE MERCADORIAS E VERIFICACAO DE VALIDADE.
+       </p>
+      </li>
+      <li>
+       <a target="_self" href="det_emprego.php?id=156">
+       </a>
+       <p class="emp_titulo">
+        BELS FAR DROGARIAS
+       </p>
+       <p>
+        BALCONISTA / PISO+COM
+       </p>
+       <p style="color:#999">
+        Av. Joao Carlos da Silva Borges, 1061 - Vila Cruzeiro - Granja Julieta
+       </p>
+       <p>
+        segunda a sexta das 8h as 17h, sábados sim outro não das 8h as 20h, domingo não trabalha, só trabalha feriados que caírem no sábado.
+       </p>
+      </li>
+      <li>
+       <a target="_self" href="det_emprego.php?id=155">
+       </a>
+       <p class="emp_titulo">
+        Duopharma Farmacia de Manipulação
+       </p>
+       <p>
+        Auxiliar Laboratorio / Combinar
+       </p>
+       <p style="color:#999">
+        Rua Francisco Tramontano,191
+       </p>
+       <p>
+       </p>
+      </li>
+      <li>
+       <a target="_self" href="det_emprego.php?id=154">
+       </a>
+       <p class="emp_titulo">
+        NS FORMULA
+       </p>
+       <p>
+        ENCAPSULADOR / Combinar
+       </p>
+       <p style="color:#999">
+        Jd.São Paulo
+       </p>
+       <p>
+        Auxiliar de laboratório na função de encapsulador com experiencia na função.
+       </p>
+      </li>
+      <li>
+       <a target="_self" href="det_emprego.php?id=153">
+       </a>
+       <p class="emp_titulo">
+        NS FORMULA
+       </p>
+       <p>
+        CONFERENTE / Combinar
+       </p>
+       <p style="color:#999">
+        Jd.São Paulo
+       </p>
+       <p>
+        Auxiliar de laboratório para exercer função em conferencia final das fórmulas manipuladas. Experiencia na atividade.
+       </p>
+      </li>
+      <li>
+       <a target="_self" href="det_emprego.php?id=151">
+       </a>
+       <p class="emp_titulo">
+        NS FORMULA
+       </p>
+       <p>
+        MANIPULADOR / Combinar
+       </p>
+       <p style="color:#999">
+        São Paulo
+       </p>
+       <p>
+        Exercer atividades no laboratório de semi-solidos e liquidos com experiencia na função.
+       </p>
+      </li>
+      <li>
+       <a target="_self" href="det_emprego.php?id=150">
+       </a>
+       <p class="emp_titulo">
+        Almofariz Farmácia de Manipulação
+       </p>
+       <p>
+        Atendente de Prescrição Magistral / 1323,00
+       </p>
+       <p style="color:#999">
+        Campo belo - SP
+       </p>
+       <p>
+        Atendimento ao cliente, orçamento de receitas.
+       </p>
+      </li>
+      <li>
+       <a target="_self" href="det_emprego.php?id=147">
+       </a>
+       <p class="emp_titulo">
+        FARMA VIVA
+       </p>
+       <p>
+        MANIPULADOR  / Combinar
+       </p>
+       <p style="color:#999">
+        SAO PAULO / CAMPO BELO
+       </p>
+       <p>
+        Desejável conhecimento em manipulação de semi-sólidos e líquidos. Horário das 09:00 às 18:00 h de segunda a sexta/ sábados das 09:00 às 13:00h.
+       </p>
+      </li>
+      <li>
+       <a target="_self" href="det_emprego.php?id=146">
+       </a>
+       <p class="emp_titulo">
+        Drogaria e Perfumaria Orquiza Ltda
+       </p>
+       <p>
+        Farmaceutico / 2280,00
+       </p>
+       <p style="color:#999">
+        Av. Pires do Rio, 541
+       </p>
+       <p>
+        Atuar como Farmacêutico da loja
+       </p>
+      </li>
+      <li>
+       <a target="_self" href="det_emprego.php?id=144">
+       </a>
+       <p class="emp_titulo">
+        DROGARIA E PEFUMARIA ORQUIZA LTDA
+       </p>
+       <p>
+        OP DE CAIXA / 951,50
+       </p>
+       <p style="color:#999">
+        AV PIRES DO RIO, 541
+       </p>
+       <p>
+        ATENDIMENTO GERAL DE CAIXA
+       </p>
+      </li>
+      <li>
+       <a target="_self" href="det_emprego.php?id=143">
+       </a>
+       <p class="emp_titulo">
+        REDE DROGA LESTE
+       </p>
+       <p>
+        FARMACEUTICO / Combinar
+       </p>
+       <p style="color:#999">
+        ZONA LESTE
+       </p>
+       <p>
+        ATUAR COMO FARMACEUTICO EM DROGARIA
+       </p>
+      </li>
+      <li>
+       <a target="_self" href="det_emprego.php?id=142">
+       </a>
+       <p class="emp_titulo">
+        REDE DROGA LESTE
+       </p>
+       <p>
+        CAIXA / 951,50
+       </p>
+       <p style="color:#999">
+        PENHA
+       </p>
+       <p>
+        ATUAR COMO OPERADORA DE CAIXA EM DROGARIA
+       </p>
+      </li>
+      <li>
+       <a target="_self" href="det_emprego.php?id=141">
+       </a>
+       <p class="emp_titulo">
+        REDE DROGA LESTE
+       </p>
+       <p>
+        CAIXA / 951,50
+       </p>
+       <p style="color:#999">
+        Tatuape
+       </p>
+       <p>
+        Atuar como Operadora de Caixa
+       </p>
+      </li>
+      <li>
+       <a target="_self" href="det_emprego.php?id=140">
+       </a>
+       <p class="emp_titulo">
+        STAR FARMA
+       </p>
+       <p>
+        balconista / Combinar
+       </p>
+       <p style="color:#999">
+        Rua MArcelina 478 Vila Romana
+       </p>
+       <p>
+        Atendimento no balcão, telefone, aplicação de injetavel, recebimento de mercadoria, organizaç~do de estoque,limpeza e organização da loja
+       </p>
+      </li>
+      <li>
+       <a target="_self" href="det_emprego.php?id=139">
+       </a>
+       <p class="emp_titulo">
+        Rede Leste
+       </p>
+       <p>
+        Prático / 1335,00
+       </p>
+       <p style="color:#999">
+        Zona Leste
+       </p>
+       <p>
+        Atendimento ao cliente, dispensação de medicamentos, organização e limpeza das prateleiras, aplicação de injetáveis
+       </p>
+      </li>
+      <li>
+       <a target="_self" href="det_emprego.php?id=132">
+       </a>
+       <p class="emp_titulo">
+        Farma Radial Drogaria e Perfumaria Ltda  Me
+       </p>
+       <p>
+        Balconista /
+       </p>
+       <p style="color:#999">
+        Zona Leste Sao Paulo
+       </p>
+       <p>
+        Admite-se profissional balconista na área de farmacia/drogaria
+       </p>
+      </li>
+      <li>
+       <a target="_self" href="det_emprego.php?id=131">
+       </a>
+       <p class="emp_titulo">
+        Drogaria Quinta Avenida
+       </p>
+       <p>
+        Balconista / Combinar
+       </p>
+       <p style="color:#999">
+        Av. Rio Branco, 117 - Centro
+       </p>
+       <p>
+        Vaga para balconista, experiência mínima de 2 anos.
+       </p>
+      </li>
+      <li>
+       <a target="_self" href="det_emprego.php?id=129">
+       </a>
+       <p class="emp_titulo">
+        Artesani
+       </p>
+       <p>
+        Técnico de Laboratório / Combinar
+       </p>
+       <p style="color:#999">
+        Av, Pompéia, 1045
+       </p>
+       <p>
+        Manipulação de fórmulas de uso externo, uso interno liquidos e bases galenicas
+       </p>
+      </li>
+      <li>
+       <a target="_self" href="det_emprego.php?id=126">
+       </a>
+       <p class="emp_titulo">
+        LUVIZOTTO, GONCALVES &amp; CIA. LTDA - EPP
+       </p>
+       <p>
+        Orçamentista / Combinar
+       </p>
+       <p style="color:#999">
+        Rua dos Timbiras 601 - Centro - São Paulo / SP
+       </p>
+       <p>
+        Com experiência de fórmula certa.
+       </p>
+      </li>
+      <li>
+       <a target="_self" href="det_emprego.php?id=125">
+       </a>
+       <p class="emp_titulo">
+        LUVIZOTTO, GONCALVES &amp; CIA. LTDA - EPP
+       </p>
+       <p>
+        Contador / Combinar
+       </p>
+       <p style="color:#999">
+        Rua dos Timbiras 601 - Centro
+       </p>
+       <p>
+       </p>
+      </li>
+      <li>
+       <a target="_self" href="det_emprego.php?id=121">
+       </a>
+       <p class="emp_titulo">
+        PHARMA CARE FARMÁCIA DE MANIPULAÇÃO
+       </p>
+       <p>
+        TECNICO EM FARMACIA / Combinar
+       </p>
+       <p style="color:#999">
+        SÃO PAULO
+       </p>
+       <p>
+        MANIPULAÇÃO DE SEMI-SOLIDOS E LIQUIDOS
+       </p>
+      </li>
+      <li>
+       <a target="_self" href="det_emprego.php?id=120">
+       </a>
+       <p class="emp_titulo">
+        PHARMA CARE FARMÁCIA DE MANIPULAÇÃO
+       </p>
+       <p>
+        AUXILIAR DE LABORATORIO / Combinar
+       </p>
+       <p style="color:#999">
+        SÃO PAULO
+       </p>
+       <p>
+        MANIPULAÇÃO DE SEMI-SOLIDOS E LIQUIDOS E SÓLIDOS
+       </p>
+      </li>
+      <li>
+       <a target="_self" href="det_emprego.php?id=119">
+       </a>
+       <p class="emp_titulo">
+        Empório Medicinal Farmácia de Manipiulação
+       </p>
+       <p>
+        Conferente de Receitas Medicas / Combinar
+       </p>
+       <p style="color:#999">
+        Para o bairro de Vila Carrão
+       </p>
+       <p>
+        Para triagem de receitas, fechamento de formulas, conferencia inicial e final de formulas
+       </p>
+      </li>
+      <li>
+       <a target="_self" href="det_emprego.php?id=118">
+       </a>
+       <p class="emp_titulo">
+        Empório Medicinal Farmácia de Manipiulação
+       </p>
+       <p>
+        Auxiliar de Farmacia / Combinar
+       </p>
+       <p style="color:#999">
+        Para o bairro da Vila Carrão zona leste
+       </p>
+       <p>
+        Para atuar na área de controle de qualidade
+       </p>
+      </li>
+      <li>
+       <a target="_self" href="det_emprego.php?id=117">
+       </a>
+       <p class="emp_titulo">
+        Principia Manipulação e Homeopatia
+       </p>
+       <p>
+        Manipuladora de Dermato / Combinar
+       </p>
+       <p style="color:#999">
+        Rua Nanuque 557
+       </p>
+       <p>
+        Atuar no laboratório de líquidos e semi-sólidos, experiência em manipulação de ativos dermocosméticos e cosméticos.
+       </p>
+      </li>
+      <li>
+       <a target="_self" href="det_emprego.php?id=116">
+       </a>
+       <p class="emp_titulo">
+        Botica da Villa Mnaipulação e Homeopatia
+       </p>
+       <p>
+        ATENDENTE DE FARMÁCIA DE MANIPULAÇÃO / Combinar
+       </p>
+       <p style="color:#999">
+        Vila São Francisco / Jaguaré, São Paulo
+       </p>
+       <p>
+        Dados da Vaga:
+· Atendimento e suporte a clientes pessoalmente, por telefone e online.
+· Avaliação de receitas e elaboração de orçamentos.
+· Venda de produtos isentos de prescrição.
+· Recebimento e conferência de mercadorias.
+· Acompanhamento de tratamentos de uso contínuo junto aos clientes.
+       </p>
+      </li>
+      <li>
+       <a target="_self" href="det_emprego.php?id=115">
+       </a>
+       <p class="emp_titulo">
+        Drogaderma Ltda
+       </p>
+       <p>
+        Encapsulador / 1097,73
+       </p>
+       <p style="color:#999">
+        São Paulo
+       </p>
+       <p>
+        Para trabalhar na encapsulação de formulas (loja brigadeiro)
+       </p>
+      </li>
+      <li>
+       <a target="_self" href="det_emprego.php?id=114">
+       </a>
+       <p class="emp_titulo">
+        Drogaderma ltda
+       </p>
+       <p>
+        Atendente de Farmácia / 1095,00
+       </p>
+       <p style="color:#999">
+        São Paulo
+       </p>
+       <p>
+        Tenho vaga de atendente para as filiais Santana, Brigadeiro e Barão
+       </p>
+      </li>
+      <li>
+       <a target="_self" href="det_emprego.php?id=113">
+       </a>
+       <p class="emp_titulo">
+        Drogaderma Ltda
+       </p>
+       <p>
+        Manipulador  / Combinar
+       </p>
+       <p style="color:#999">
+        Rua Darzan 290 Santana
+       </p>
+       <p>
+        Vaga é para trabalhar de manipulador de uso externo, filial de santana do horário das 08:30h às 17:30h aos sábados das 09:00h às 13:00h
+       </p>
+      </li>
+      <li>
+       <a target="_self" href="det_emprego.php?id=112">
+       </a>
+       <p class="emp_titulo">
+        DROGARIA ITAMONTE
+       </p>
+       <p>
+        BALCONISTA / Combinar
+       </p>
+       <p style="color:#999">
+        ZONA NORTE
+       </p>
+       <p>
+        Atendimento ao cliente, aferição de pressão arterial, aplicação de injetáveis, recebimento de mercadorias, controle de validade, organização de limpeza de medicamentos.
+       </p>
+      </li>
+      <li>
+       <a target="_self" href="det_emprego.php?id=111">
+       </a>
+       <p class="emp_titulo">
+        Pharmaceutica
+       </p>
+       <p>
+        Atendente prescrição magistral / Combinar
+       </p>
+       <p style="color:#999">
+        AV ANGELICA 651
+       </p>
+       <p>
+        MOÇAS OU RAPAZES COM EXPERIÊNCIA NO F.CERTA, ATENDIMENTO AO PUBLICO E LER RECEITUÁRIO
+       </p>
+      </li>
+      <li>
+       <a target="_self" href="det_emprego.php?id=110">
+       </a>
+       <p class="emp_titulo">
+        ARTE TERAPÊUTICA
+       </p>
+       <p>
+        LABORATÓRIO  / Combinar
+       </p>
+       <p style="color:#999">
+       </p>
+       <p>
+       </p>
+      </li>
+      <li>
+       <a target="_self" href="det_emprego.php?id=109">
+       </a>
+       <p class="emp_titulo">
+        ARTE TERAPÊUTICA
+       </p>
+       <p>
+        ATENDIMENTO / Combinar
+       </p>
+       <p style="color:#999">
+        R.DR NETO DE ARAUJO 357
+       </p>
+       <p>
+       </p>
+      </li>
+      <li>
+       <a target="_self" href="det_emprego.php?id=108">
+       </a>
+       <p class="emp_titulo">
+        ARTE TERAPÊUTICA
+       </p>
+       <p>
+        FARMACÊUTICO / Combinar
+       </p>
+       <p style="color:#999">
+        R.DR NETO DE ARAUJO 357
+       </p>
+       <p>
+        FARMÁCIA DE MANIPULAÇÃO E HOMEOPATIA
+       </p>
+      </li>
+      <li>
+       <a target="_self" href="det_emprego.php?id=107">
+       </a>
+       <p class="emp_titulo">
+        Empório Medicinal Farmácia de Manipiulação
+       </p>
+       <p>
+        Manipulador / Combinar
+       </p>
+       <p style="color:#999">
+        Bairro Vila Formosa e Vila Carrão
+       </p>
+       <p>
+        Para Manipulação e Pesagem de matérias-primas, controle de produção.
+       </p>
+      </li>
+      <li>
+       <a target="_self" href="det_emprego.php?id=106">
+       </a>
+       <p class="emp_titulo">
+        Empório Medicinal Farmácia de Manipiulação
+       </p>
+       <p>
+        Operadora de caixa / 1095,00
+       </p>
+       <p style="color:#999">
+        Bairro Vila Formosa e Vila Carrão
+       </p>
+       <p>
+        Para Atendimento ao cliente, fechamento de caixa, sangria,Receber valores de vendas de produtos e serviços, controlar valores ...
+       </p>
+      </li>
+      <li>
+       <a target="_self" href="det_emprego.php?id=104">
+       </a>
+       <p class="emp_titulo">
+        Empório Medicinal Farmácia de Manipulação
+       </p>
+       <p>
+        Recepcionista / 1095,00
+       </p>
+       <p style="color:#999">
+        Bairro Vila Formosa e Vila Carrão
+       </p>
+       <p>
+        Para fazer Orçamento de medicamento, atendimento telefônico, atendimento ao cliente e vendas.
+       </p>
+      </li>
+      <li>
+       <a target="_self" href="det_emprego.php?id=103">
+       </a>
+       <p class="emp_titulo">
+        Farmácia Homeopática Ilúmina - 11 - 55849372
+       </p>
+       <p>
+        Laboratório-Manipulação /
+       </p>
+       <p style="color:#999">
+        São Paulo-Pça da Árvore
+       </p>
+       <p>
+        Manipulação homeopática e encapsulador
+       </p>
+      </li>
+      <li>
+       <a target="_self" href="det_emprego.php?id=102">
+       </a>
+       <p class="emp_titulo">
+        FARMAPHITO COMERCIO DE PRODUTOS FARMACEUTICOS LTDA
+       </p>
+       <p>
+        ENCAPSULADOR / Combinar
+       </p>
+       <p style="color:#999">
+        R. VOLUNTARIOS DA PATRIA N. 1177 / SANTANA
+       </p>
+       <p>
+        Prática com encapsulação.
+       </p>
+      </li>
+      <li>
+       <a target="_self" href="det_emprego.php?id=101">
+       </a>
+       <p class="emp_titulo">
+        Farmaphito Comércio de Produtos Farmacêuticos Ltda
+       </p>
+       <p>
+        Atendente / Combinar
+       </p>
+       <p style="color:#999">
+        Rua Voluntários da Pátria, 1177 - Santana
+       </p>
+       <p>
+        Atendimento ao público, leitura e orçamento de receitas, prática com sistema
+       </p>
+      </li>
+      <li>
+       <a target="_self" href="det_emprego.php?id=92">
+       </a>
+       <p class="emp_titulo">
+        Mano Farma Eireli EPP
+       </p>
+       <p>
+        Farmaceutico (a) / Combinar
+       </p>
+       <p style="color:#999">
+        Rua Inhambu, 366
+       </p>
+       <p>
+        Irá trabalhar em laboratório de manipulação e drogaria
+       </p>
+      </li>
+      <li>
+       <a target="_self" href="det_emprego.php?id=90">
+       </a>
+       <p class="emp_titulo">
+        Mano Farma Eireli EPP
+       </p>
+       <p>
+        Atendente de Prescrição Magistral / Combinar
+       </p>
+       <p style="color:#999">
+        Rua inhambu, 366, Moema
+       </p>
+       <p>
+        Fazer orçamentos, inclusão, conhecer o programa Formula Certa
+       </p>
+      </li>
+      <li>
+       <a target="_self" href="det_emprego.php?id=62">
+       </a>
+       <p class="emp_titulo">
+        Sampafharma Laborat.de Manip. LTDA
+       </p>
+       <p>
+        Atendente de Prescrição / Combinar
+       </p>
+       <p style="color:#999">
+        Av Angelica 651 bairro Higienopolis
+       </p>
+       <p>
+        Atendimento ao publico,orçamento de receituário médico e telemarleting.
+       </p>
+      </li>
+      <li>
+       <a target="_self" href="det_emprego.php?id=58">
+       </a>
+       <p class="emp_titulo">
+        Drogaria Moderna Palmeiras
+       </p>
+       <p>
+        Atendente balcão e Atendente manipulação /
+       </p>
+       <p style="color:#999">
+        Rua santa angela, 311
+       </p>
+       <p>
+       </p>
+      </li>
+      <li>
+       <a target="_self" href="det_emprego.php?id=56">
+       </a>
+       <p class="emp_titulo">
+        NATRIUM
+       </p>
+       <p>
+        ATENDENTE DE PRESCRIÇÃO MAGISTRAL /
+       </p>
+       <p style="color:#999">
+        MOEMA
+       </p>
+       <p>
+        ATENDENTE DE PRESCRIÇÃO MAGISTRAL COM EXPERIENCIA NA AREA. CONHECIMENTOS BASICO DE INFORMATICA E FORMULA CERTA.
+       </p>
+      </li>
+     </ul>
+    </div>
+    <div id="cont_right">
+     <div id="not_destaques">
+      <div style="background-position:60px 10px" class="block">
+       Destaques
+      </div>
+      <ul class="not_destaques">
+       <li>
+        <a target="_self" href="noticia.php?nt=1579">
+        </a>
+        <p class="not_titulo">
+         Vacina contra dengue é aprovada pela Anvisa e deve ser vendida em 3 meses
+        </p>
+        <p>
+         A Anvisa (Agência Nacional de Vigilância Sanitária) aprovou a primeira vacina contra a dengue no País. A decisão, publicada no "Diário Oficial" da União nesta segunda-feira (28/12), é o passo inicial para...
+        </p>
+       </li>
+       <li>
+        <a target="_self" href="noticia.php?nt=1578">
+        </a>
+        <p class="not_titulo">
+         Câmara aprova concessão de título de Cidadão Paulistano ao presidente Motta
+        </p>
+        <p>
+         Vereadores da Câmara Municipal de São Paulo aprovaram, por unanimidade, a concessão do título de Cidadão Paulistano a Luiz Carlos Motta, presidente da Fecomerciários e da UGT/SP. O Projeto de Lei nº 85/2015, de autoria do vereador Salomão...
+        </p>
+       </li>
+       <li>
+        <a target="_self" href="noticia.php?nt=1577">
+        </a>
+        <p class="not_titulo">
+         Verão começa sob forte El Niño e previsão de calor intenso e mais chuvas
+        </p>
+        <p>
+         O verão começou nesta terça-feira (22/12) no hemisfério sul, sob efeito de um forte El Niño, e a previsão de muito calor. Todas as regiões do País, exceto a Sul, devem ter temperatura acima da...
+        </p>
+       </li>
+       <li>
+        <a target="_self" href="noticia.php?nt=1576">
+        </a>
+        <p class="not_titulo">
+         Estação Luz permanece fechada e passageiros sofrem para fazer interligação no Brás
+        </p>
+        <p>
+         A estação Luz da CPTM (Companhia Paulista de Trens Metropolitanos) permanece fechada nesta terça-feira (22/12) após o incêndio que destruiu parte do prédio e devastou o Museu da Língua...
+        </p>
+       </li>
+      </ul>
+     </div>
+     <div class="bn_03">
+      <img src="images/bn_assossiado.png" />
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>

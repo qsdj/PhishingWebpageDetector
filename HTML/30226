@@ -1,0 +1,256 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="es-es" dir="ltr" xml:lang="es-es" xmlns="http://www.w3.org/1999/xhtml" class="gecko  win">
+ <head>
+  <base href="http://www.torreschico.com/index.php/component/comprofiler/lostpassword" />
+  <meta content="content-type" http-equiv="content-type" />
+  <meta content="Edificio Torres del Chico Pijao" name="description" />
+  <meta content="Joomla! - Open Source Content Management" name="generator" />
+  <title>
+   ¿Ha perdido su contraseña?
+  </title>
+  <link type="image/vnd.microsoft.icon" rel="shortcut icon" href="/templates/ju_sigma/favicon.ico" />
+  <link type="text/css" href="http://www.torreschico.com/components/com_comprofiler/plugin/templates/default/template.css" rel="stylesheet" />
+  <script type="text/javascript">
+   &lt;!--
+if ( typeof window.$ != 'undefined' ) {
+	window.cbjqldr_tmpsave$ = window.$;
+}
+if ( typeof window.jQuery != 'undefined' ) {
+	window.cbjqldr_tmpsavejquery = window.jQuery;
+}
+--&gt;
+  </script>
+  <script src="http://www.torreschico.com/components/com_comprofiler/js/jquery-1.5.2/jquery-1.5.2.min.js?v=f442eb5119280265" type="text/javascript">
+  </script>
+  <script type="text/javascript">
+   &lt;!--
+var cbjQuery = jQuery.noConflict( true );
+--&gt;
+  </script>
+  <script type="text/javascript">
+   &lt;!--
+window.$ = cbjQuery;
+window.jQuery = cbjQuery;cbjQuery( document ).ready( function( $ ) {
+var jQuery = $;
+$.fn.cb_uncheck = function() {
+	return this.each( function() {
+		this.checked = false;
+	});
+};
+$('#boxLostUsername,#boxLostPassword').click( function() {
+	if ( $('#boxLostUsername').get(0).checked ) {
+		$('#cb_step1_form').slideDown('medium');
+		$('#cb_line_checkusername').slideUp('medium');
+		if ( $('#boxLostPassword').get(0).checked ) {
+			$('#cbsendnewuspass').val('Enviar Nombre de Usuario y Contraseña');
+			$('#cb_lost_username_password').slideDown('medium');
+			$('#cb_lost_username,#cb_lost_password').slideUp('medium');
+		} else {
+			$('#cbsendnewuspass').val('Enviar Nombre de Usuario');
+			$('#cb_lost_username').slideDown('medium');
+			$('#cb_lost_password,#cb_lost_username_password').slideUp('medium');
+		}
+	} else {
+		if ( $('#boxLostPassword').get(0).checked ) {
+			$('#cbsendnewuspass').val('Enviar contraseña');
+			$('#cb_step1_form,#cb_lost_password,#cb_line_checkusername').slideDown('medium');
+			$('#cb_lost_username,#cb_lost_username_password').slideUp('medium');
+		} else {
+			$('#cb_lost_username,#cb_lost_password,#cb_lost_username_password,#cb_step1_form').slideUp('medium');
+		}
+	}
+	return true;
+} );
+$('#cb_lost_username,#cb_lost_password,#cb_lost_username_password,#cb_step1_form,#cb_line_checkusername').hide();
+$('#boxLostUsername,#boxLostPassword').cb_uncheck();
+$('#checkusername,#checkemail').val('');
+$('#cbsendnewuspass').attr('disabled',true);
+$('#cb_lost_username').html('Si usted &lt;strong&gt;perdió su nombre de usuario &lt;/strong&gt;, por favor introduzca su dirección de E-mail y haga click en el botón Enviar, y su nombre de usuario le llegará a su Dirección de E-mail.');
+
+$('#checkusername,#checkemail').keyup( function() {
+	var respField = $('#'+$(this).attr('id')+'Response');
+	if ( respField.html() != '&amp;nbsp;' ) {
+		respField.fadeOut('medium', function() { respField.html('&amp;nbsp;'); } );
+	}
+	if ( $.trim( $('#checkusername').val() ) == '' ) {
+		if ( $.trim( $('#checkemail').val() ) == '' ) {
+			$('#cbsendnewuspass').attr('disabled',true);
+		} else {
+			$('#cbsendnewuspass').attr('disabled',false);
+		}
+	} else {
+		$('#cbsendnewuspass').attr('disabled',false);
+	}
+	return true;
+} );
+});
+if ( typeof window.cbjqldr_tmpsave$ != 'undefined' ) {
+	window.$ = window.cbjqldr_tmpsave$;
+}
+if ( typeof window.cbjqldr_tmpsavejquery != 'undefined' ) {
+	window.jQuery = window.cbjqldr_tmpsavejquery;
+}
+--&gt;
+  </script>
+  <link type="text/css" href="/templates/ju_sigma/css/styles.css" rel="stylesheet" />
+  <script src="/templates/ju_sigma/js/script.js" type="text/javascript">
+  </script>
+  <style type="text/css">
+   #wrapper, #mods1, #header-i, #bottom, #nav { width: 960px; }
+#widget_80  { width: 700px;}
+#rightbar-w { width: 260px;}
+  </style>
+ </head>
+ <body class="bgr">
+  <div id="header">
+   <div id="header-i">
+    <div class="logo">
+     <a href="/">
+      <img alt="Sigma logo" src="/images/logo.png" />
+     </a>
+    </div>
+    <div class="clr">
+    </div>
+   </div>
+  </div>
+  <div id="main">
+   <div id="nright">
+    <div id="nleft">
+     <div id="nav">
+      <ul class="menu">
+       <li class="item-101 current">
+        <span class="li-l">
+        </span>
+        <span class="li-r">
+        </span>
+        <a href="/">
+         Inicio
+        </a>
+       </li>
+      </ul>
+     </div>
+    </div>
+   </div>
+   <div class="wrapper_100" id="wrapper">
+    <div id="main-content">
+     <div id="message">
+      <div id="system-message-container">
+      </div>
+     </div>
+     <div class="full">
+      <div id="widget_100">
+       <div id="comp-i">
+        <!-- START FLASH HEADER -->
+        <!-- END FLASH HEADER -->
+        <div class="componentheading">
+         ¿Perdiste su Nombre de Usuario o su Contraseña?
+        </div>
+        <div id="cbLostPasswordPage" class="cbPageOuter">
+         <div class="cbPageInner">
+          <div id="cb_lost_username_passwd_content" class="contentpaneopen">
+           <form method="post" name="adminForm" id="adminForm" class="cb_form" action="http://www.torreschico.com/">
+            <div id="cb_lost_choice" class="cb_form_line">
+             <label for="cb_lost_choice">
+              Necesito recordar mi:
+             </label>
+             <div class="cb_field">
+              <div>
+               <input type="checkbox" value="username" name="typeofloose[]" id="boxLostUsername" />
+               <label for="boxLostUsername">
+                Usuario
+               </label>
+              </div>
+              <div>
+               <input type="checkbox" value="password" name="typeofloose[]" id="boxLostPassword" />
+               <label for="boxLostPassword">
+                Contraseña
+               </label>
+              </div>
+             </div>
+            </div>
+            <div class="cb_form_instructions">
+             <ul>
+              <li id="cb_lost_username" style="display: none;">
+               Si usted
+               <strong>
+                perdió su nombre de usuario
+               </strong>
+               , por favor introduzca su dirección de E-mail y haga click en el botón Enviar, y su nombre de usuario le llegará a su Dirección de E-mail.
+              </li>
+              <li id="cb_lost_password" style="display: none;">
+               Si
+               <strong>
+                olvidó su Contraseña
+               </strong>
+               pero puede recordar su Nombre de Usuario, introdúzcalo a continuación junto con el correo electrónico, haga click en el botón Enviar y recibirá en breve una nueva contraseña. Use esta nueva contraseña para acceder al sitio.
+              </li>
+              <li id="cb_lost_username_password" style="display: none;">
+               Si
+               <strong>
+                olvidó su Nombre de Usuario y su Contraseña
+               </strong>
+               , primero recupere su Nombre de Usuario, luego la contraseña. Para recuperar su Nombre de Usuario introduzca su dirección de correo electrónico, dejando el campo Nombre de Usuario vacío, haga click en el botón Enviar y se le enviará su nombre de usuario a su dirección. Una vez hecho esto puede regresar aquí para recuperar su contraseña.
+              </li>
+             </ul>
+            </div>
+            <div id="cb_step1_form" style="display: none;">
+             <div id="cb_line_checkusername" class="cb_form_line" style="display: none;">
+              <label for="checkusername">
+               Nombre de Usuario:
+              </label>
+              <div class="cb_field">
+               <div>
+                <input type="text" maxlength="255" size="30" class="inputbox" id="checkusername" name="checkusername" />
+               </div>
+              </div>
+             </div>
+             <div id="cb_line_checkemail" class="cb_form_line">
+              <label for="checkemail">
+               E-mail:
+              </label>
+              <div class="cb_field">
+               <div>
+                <input type="text" maxlength="255" size="30" class="inputbox" id="checkemail" name="checkemail" />
+               </div>
+              </div>
+             </div>
+             <div id="cb_line_lostbutton" class="cb_form_buttons_line">
+              <span class="ju-button-wrapper">
+               <span class="l">
+               </span>
+               <span class="r">
+               </span>
+               <input type="submit" value="Enviar Nombre de Usuario y Contraseña" id="cbsendnewuspass" class="button ju-button" disabled="disabled" />
+              </span>
+             </div>
+            </div>
+            <input type="hidden" value="com_comprofiler" name="option" />
+            <input type="hidden" value="sendNewPass" name="task" />
+            <input type="hidden" value="cbm_1849b5ab_255dde56_ef572dc651aeb9a7d7f47a775b786f9b" name="cbsecuritym3" />
+            <input type="hidden" value="cbrv1_f2adf0cdb89bcc88984e630f9d4f8d95_FCfzaNNO0WfKyfxy" name="cbrasitway" />
+           </form>
+          </div>
+         </div>
+        </div>
+        <div class="cbClr">
+        </div>
+        <div class="clr">
+        </div>
+       </div>
+      </div>
+      <div class="clr">
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <div id="bottom">
+   <div class="coright">
+    Copyright © 2016 Edificio Torres del Chico Pijao. Diseñada por
+    <a target="blank" href="http://www.f1solucionestecnologicas.com/">
+     F1 SET - Ing. David Campos P.
+    </a>
+   </div>
+  </div>
+ </body>
+</html>

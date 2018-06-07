@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="it-IT"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="it-IT"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="it-IT"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html xmlns="http://www.w3.org/1999/xhtml" lang="it-IT" class=" js no-flexbox canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients no-cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths">
+ <!--<![endif]-->
+ <head>
+  <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
+  <link type="text/css" rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
+  <meta charset="UTF-8" />
+  <meta content="width=device-width" name="viewport" />
+  <meta content="http://www.centrostudialthea.it" name="author" />
+  <title>
+   CentroStudiAlthea |
+  </title>
+  <link href="http://www.centrostudialthea.it/?feed=rss2" title="CentroStudiAlthea Feed" type="application/rss+xml" rel="alternate" />
+  <script>
+   var THEME_URI = 'http://www.centrostudialthea.it/wp-content/themes/churchope';
+  </script>
+  <link href="http://www.centrostudialthea.it/wp-content/plugins/calendarize-it/ui-themes/default/style.css?ver=1.8.18" rel="stylesheet" />
+  <link href="http://www.centrostudialthea.it/wp-content/plugins/calendarize-it/style.css?ver=2.0.0.12" rel="stylesheet" />
+  <link href="http://www.centrostudialthea.it/wp-content/plugins/calendarize-it/css/print.css?ver=1.0.0" rel="stylesheet" />
+  <link href="http://www.centrostudialthea.it/wp-content/plugins/calendarize-it/frontend.css?ver=2.0.0.7" rel="stylesheet" />
+  <link href="http://www.centrostudialthea.it/wp-includes/css/dashicons.min.css?ver=3.8.11" rel="stylesheet" />
+  <link href="http://www.centrostudialthea.it/wp-includes/js/thickbox/thickbox.css?ver=20131201" rel="stylesheet" />
+  <link href="http://www.centrostudialthea.it/wp-content/themes/churchope/lib/revslider/rs-plugin/css/settings.css?ver=3.8.11" rel="stylesheet" />
+  <link href="http://www.centrostudialthea.it/wp-content/themes/churchope/lib/revslider/rs-plugin/css/captions.css?ver=3.8.11" rel="stylesheet" />
+  <link href="http://www.centrostudialthea.it/wp-content/themes/churchope/css/main.css" rel="stylesheet" />
+  <link href="http://www.centrostudialthea.it/wp-content/themes/churchope/css/media.queires.css" rel="stylesheet" />
+  <link href="http://www.centrostudialthea.it/wp-content/themes/churchope/js/prettyphoto/css/prettyPhoto.css" rel="stylesheet" />
+  <link href="http://www.centrostudialthea.it/wp-content/themes/churchope/css/skin.css?ver=3.8.11" rel="stylesheet" />
+  <script src="http://www.centrostudialthea.it/wp-includes/js/jquery/jquery.js?ver=1.10.2" type="text/javascript">
+  </script>
+  <script src="http://www.centrostudialthea.it/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1" type="text/javascript">
+  </script>
+  <script src="http://www.centrostudialthea.it/wp-content/plugins/calendarize-it/js/bootstrap.min.js?ver=2.3.2" type="text/javascript">
+  </script>
+  <script src="http://www.centrostudialthea.it/wp-content/plugins/calendarize-it/js/bootstrap-select.js?ver=1.0.0" type="text/javascript">
+  </script>
+  <script src="http://www.centrostudialthea.it/wp-content/plugins/calendarize-it/js/rrecur-parser.js?ver=1.1.0.2" type="text/javascript">
+  </script>
+  <script src="http://www.centrostudialthea.it/wp-content/plugins/calendarize-it/fullcalendar/fullcalendar/fullcalendar.custom.js?ver=1.6.1.1" type="text/javascript">
+  </script>
+  <script src="http://www.centrostudialthea.it/wp-content/plugins/calendarize-it/js/widget_upcoming_events.js?ver=1.1.0.7" type="text/javascript">
+  </script>
+  <script src="http://www.centrostudialthea.it/wp-content/plugins/calendarize-it/js/jquery.easing.1.3.js?ver=1.3.0" type="text/javascript">
+  </script>
+  <script src="http://www.centrostudialthea.it/wp-content/plugins/calendarize-it/js/fullcalendar_custom_views.js?ver=1.1.3.6" type="text/javascript">
+  </script>
+  <script src="http://www.centrostudialthea.it/wp-content/plugins/calendarize-it/fullcalendar/fullcalendar/gcal.js?ver=1.6.1.1" type="text/javascript">
+  </script>
+  <script src="http://www.centrostudialthea.it/wp-includes/js/jquery/ui/jquery.ui.core.min.js?ver=1.10.3" type="text/javascript">
+  </script>
+  <script src="http://www.centrostudialthea.it/wp-includes/js/jquery/ui/jquery.ui.widget.min.js?ver=1.10.3" type="text/javascript">
+  </script>
+  <script src="http://www.centrostudialthea.it/wp-includes/js/jquery/ui/jquery.ui.accordion.min.js?ver=1.10.3" type="text/javascript">
+  </script>
+  <script src="http://www.centrostudialthea.it/wp-includes/js/jquery/ui/jquery.ui.mouse.min.js?ver=1.10.3" type="text/javascript">
+  </script>
+  <script src="http://www.centrostudialthea.it/wp-includes/js/jquery/ui/jquery.ui.slider.min.js?ver=1.10.3" type="text/javascript">
+  </script>
+  <script src="http://www.centrostudialthea.it/wp-includes/js/jquery/ui/jquery.ui.resizable.min.js?ver=1.10.3" type="text/javascript">
+  </script>
+  <script src="http://www.centrostudialthea.it/wp-includes/js/jquery/ui/jquery.ui.draggable.min.js?ver=1.10.3" type="text/javascript">
+  </script>
+  <script src="http://www.centrostudialthea.it/wp-includes/js/jquery/ui/jquery.ui.button.min.js?ver=1.10.3" type="text/javascript">
+  </script>
+  <script src="http://www.centrostudialthea.it/wp-includes/js/jquery/ui/jquery.ui.position.min.js?ver=1.10.3" type="text/javascript">
+  </script>
+  <script src="http://www.centrostudialthea.it/wp-includes/js/jquery/ui/jquery.ui.dialog.min.js?ver=1.10.3" type="text/javascript">
+  </script>
+  <script src="http://www.centrostudialthea.it/wp-includes/js/jquery/ui/jquery.ui.tabs.min.js?ver=1.10.3" type="text/javascript">
+  </script>
+  <script src="http://www.centrostudialthea.it/wp-includes/js/jquery/ui/jquery.ui.sortable.min.js?ver=1.10.3" type="text/javascript">
+  </script>
+  <script src="http://www.centrostudialthea.it/wp-includes/js/jquery/ui/jquery.ui.droppable.min.js?ver=1.10.3" type="text/javascript">
+  </script>
+  <script src="http://www.centrostudialthea.it/wp-includes/js/jquery/ui/jquery.ui.datepicker.min.js?ver=1.10.3" type="text/javascript">
+  </script>
+  <script src="http://www.centrostudialthea.it/wp-includes/js/jquery/ui/jquery.ui.menu.min.js?ver=1.10.3" type="text/javascript">
+  </script>
+  <script src="http://www.centrostudialthea.it/wp-includes/js/jquery/ui/jquery.ui.autocomplete.min.js?ver=1.10.3" type="text/javascript">
+  </script>
+  <script src="http://www.centrostudialthea.it/wp-content/plugins/calendarize-it/js/deprecated.js?ver=bundled-jquery-ui" type="text/javascript">
+  </script>
+  <script src="http://www.centrostudialthea.it/wp-content/plugins/calendarize-it/js/calendarize.js?ver=2.1.0.3" type="text/javascript">
+  </script>
+  <script src="http://www.centrostudialthea.it/wp-content/themes/churchope/js/modernizr-2.5.3.min.js" type="text/javascript">
+  </script>
+  <script src="http://www.centrostudialthea.it/wp-includes/js/comment-reply.min.js?ver=3.8.11" type="text/javascript">
+  </script>
+  <script src="http://www.centrostudialthea.it/wp-content/themes/churchope/lib/revslider/rs-plugin/js/jquery.themepunch.plugins.min.js?ver=3.8.11" type="text/javascript">
+  </script>
+  <script src="http://www.centrostudialthea.it/wp-content/themes/churchope/lib/revslider/rs-plugin/js/jquery.themepunch.revolution.js?ver=3.8.11" type="text/javascript">
+  </script>
+  <link href="http://www.centrostudialthea.it/wp-content/themes/churchope-child/images/favicon.ico" rel="shortcut icon" />
+  <script type="text/javascript">
+   var rhc_event_tpl = "&lt;div class=\"fc-event-list-container\"&gt;\n\t&lt;!-- you can replace with custom content to be displayed before the items --&gt;\n\t&lt;div class=\"fc-event-list-holder\"&gt;\n\t\t&lt;div class=\"fc-event-list-no-events fc-remove\"&gt;&lt;div class=\"fc-no-list-events-message\"&gt;&lt;\/div&gt;&lt;\/div&gt;\n\t\t&lt;div class=\"fc-event-list-date fc-remove\"&gt;&lt;h3 class=\"fc-event-list-date-header\"&gt;&lt;\/h3&gt;&lt;\/div&gt;\n\t\t&lt;div class=\"fc-event-list-item fc-remove\"&gt;\n\t\t\t&lt;div class=\"fc-event-list-content\"&gt;\n\t\t\t\t&lt;h4&gt;&lt;a class=\"fc-event-link fc-event-list-title\" href=\"{link}\" target=\"_BLANK\"&gt;{title}&lt;\/a&gt;&lt;\/h4&gt;\n\n\t\t\t\t&lt;div class=\"rhc fe-extrainfo-container elist-dbox fe-have-image-1\" &gt;\n\t\t\t\t\t&lt;div class=\"fe-extrainfo-container2 row-fluid\"&gt;\n\t\t\t\t\t\t&lt;div class=\"fe-extrainfo-holder fe-extrainfo-col2 span8\"&gt;\n\t\t\t\t\t\t\t&lt;div class=\"row-fluid\"&gt;\n\t\t\t\t\t\t\t\t&lt;div class=\"span12 fe-cell-label dbox-title rhc-info-cell fe-cell-label\"&gt;\n\t\t\t\t\t\t\t\t\t&lt;label class=\"fe-extrainfo-label\"&gt;Lista eventi&lt;\/label&gt;\n\t\t\t\t\t\t\t\t&lt;\/div&gt;\n\t\t\t\t\t\t\t&lt;\/div&gt;\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t&lt;div class=\"row-fluid\"&gt;\n\t\t\t\t\t\t\t\t&lt;div class=\"span6 fe-maincol fe-maincol-0\"&gt;\n\t\t\t\t\t\t\t\t\t&lt;div class=\"rhc-info-cell\"&gt;\n\t\t\t\t\t\t\t\t\t\t&lt;label class=\"fe-extrainfo-label\"&gt;Inizio&lt;\/label&gt;\n\t\t\t\t\t\t\t\t\t\t&lt;span class=\"fe-extrainfo-value fc-start\"&gt;{fc-start}&lt;\/span&gt;\n\t\t\t\t\t\t\t\t\t&lt;\/div&gt;\t\n\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t&lt;div class=\"rhc-info-cell\"&gt;\n\t\t\t\t\t\t\t\t\t\t&lt;label class=\"fe-extrainfo-label\"&gt;Fine&lt;\/label&gt;\n\t\t\t\t\t\t\t\t\t\t&lt;span class=\"fe-extrainfo-value fc-end\"&gt;{fc-end}&lt;\/span&gt;\n\t\t\t\t\t\t\t\t\t&lt;\/div&gt;\t\n\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t&lt;div class=\"rhc-info-cell\"&gt;\n\t\t\t\t\t\t\t\t\t\t&lt;label class=\"fe-extrainfo-label\"&gt;Indirizzo&lt;\/label&gt;\n\t\t\t\t\t\t\t\t\t\t&lt;span class=\"fe-extrainfo-value fc-event-term taxonomy-venue-gaddress\"&gt;&lt;\/span&gt;\n\t\t\t\t\t\t\t\t\t&lt;\/div&gt;\t\n\t\t\t\t\t\t\t\t&lt;\/div&gt;\n\t\t\t\t\t\t\t\t&lt;div class=\"span6 fe-maincol fe-maincol-1\"&gt;\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t&lt;div class=\"rhc-info-cell\"&gt;\n\t\t\t\t\t\t\t\t\t\t&lt;label class=\"fe-extrainfo-label\"&gt;Luogo&lt;\/label&gt;\n\t\t\t\t\t\t\t\t\t\t&lt;span class=\"fe-extrainfo-value fc-event-term taxonomy-venue\"\"&gt;{venue}&lt;\/span&gt;\n\t\t\t\t\t\t\t\t\t&lt;\/div&gt;\t\n\t\t\t\t\t\t\t\t\t&lt;div class=\"rhc-info-cell\"&gt;\n\t\t\t\t\t\t\t\t\t\t&lt;label class=\"fe-extrainfo-label\"&gt;Organizzatore&lt;\/label&gt;\n\t\t\t\t\t\t\t\t\t\t&lt;span class=\"fe-extrainfo-value fc-event-term taxonomy-organizer\"\"&gt;{organizer}&lt;\/span&gt;\n\t\t\t\t\t\t\t\t\t&lt;\/div&gt;\t\n\t\t\t\t\t\t\t\t&lt;\/div&gt;\n\t\t\t\t\t\t\t&lt;\/div&gt;\n\t\t\t\n\t\t\t\t\t\t\t&lt;div class=\"fc-event-list-description dbox-description\"&gt;{description}&lt;\/div&gt;\n\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t&lt;\/div&gt;\n\t\t\t\t\t\t&lt;div class=\"fe-image-holder span4\"&gt;\n\t\t\t\t\t\t\t&lt;div class=\"fc-event-list-featured-image\"&gt;\n\t\t\t\t\t\t\t\t&lt;a class=\"fc-event-link\" href=\"{link}\" target=\"_BLANK\"&gt;&lt;img class=\"fc-event-list-image\" src=\"\" \/&gt;&lt;\/a&gt;\n\t\t\t\t\t\t\t&lt;\/div&gt;\n\t\t\t\t\t\t&lt;\/div&gt;\n\t\t\t\t\t&lt;\/div&gt;\n\t\t\t\t&lt;\/div&gt;\t\t\t\t\n\n\t\t\t&lt;\/div&gt;\n\t\t\t&lt;div class=\"fc-event-list-clear\"&gt;&lt;\/div&gt;\n\t\t\t\n\t\t&lt;\/div&gt;\n\t&lt;\/div&gt;\n&lt;\/div&gt;";
+  </script>
+  <link href="http://www.centrostudialthea.it/" rel="canonical" />
+  <link media="screen" type="text/css" href="http://www.centrostudialthea.it/wp-content/themes/churchope-child/style.css" rel="stylesheet" />
+ </head>
+ <body class="home page page-id-9 page-template-default layout_none_sidebar th_slideshow widget_title">
+  <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+  <header class="clearfix">
+   <div class="header_bottom">
+    <div class="header_top">
+     <div class="row">
+      <div class="logo grid_6">
+       <h1>
+        <a href="http://www.centrostudialthea.it/">
+         <img alt="CentroStudiAlthea" src="http://www.centrostudialthea.it/wp-content/uploads/2014/02/logo-nome-black-ok1.png" />
+         <span class="hidden">
+          CentroStudiAlthea
+         </span>
+        </a>
+       </h1>
+      </div>
+      <div class="grid_6">
+      </div>
+     </div>
+    </div>
+   </div>
+  </header>
+  <section class="clearfix" id="color_header">
+   <div class="mainmenu menu_left">
+    <div class="mainmenu_inner">
+     <div class="row clearfix">
+      <div class="grid_12">
+       <nav class="main_menu">
+        <ul class="sf-menu clearfix superfish" id="menu-main">
+         <li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-9 current_page_item menu-item-1501" id="menu-item-1501">
+          <span class="hover" style="opacity: 1;">
+           <span class="hoverL">
+            <span class="hoverR">
+            </span>
+           </span>
+          </span>
+          <a href="http://www.centrostudialthea.it/">
+           Home
+          </a>
+         </li>
+         <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown menu-item-1659" id="menu-item-1659">
+          <a href="http://www.centrostudialthea.it/?page_id=1655">
+           Le Sale
+          </a>
+          <ul class="sub-menu" style="display: none; visibility: hidden;">
+           <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1507" id="menu-item-1507">
+            <a href="http://www.centrostudialthea.it/?page_id=50">
+             Sala 1
+            </a>
+           </li>
+           <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1532" id="menu-item-1532">
+            <a href="http://www.centrostudialthea.it/?page_id=269">
+             Sala 2
+            </a>
+           </li>
+          </ul>
+         </li>
+         <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown menu-item-1498" id="menu-item-1498">
+          <a href="http://www.centrostudialthea.it/?page_id=25">
+           Gli Studi
+          </a>
+          <ul class="sub-menu" style="display: none; visibility: hidden;">
+           <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1556" id="menu-item-1556">
+            <a href="http://www.centrostudialthea.it/?page_id=565">
+             Studio 1
+            </a>
+           </li>
+           <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1514" id="menu-item-1514">
+            <a href="http://www.centrostudialthea.it/?page_id=75">
+             Studio 2
+            </a>
+           </li>
+           <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1513" id="menu-item-1513">
+            <a href="http://www.centrostudialthea.it/?page_id=77">
+             Studio 3
+            </a>
+           </li>
+           <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1558" id="menu-item-1558">
+            <a href="http://www.centrostudialthea.it/?page_id=558">
+             Studio 4
+            </a>
+           </li>
+           <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1508" id="menu-item-1508">
+            <a href="http://www.centrostudialthea.it/?page_id=48">
+             Studio 5
+            </a>
+           </li>
+           <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1505" id="menu-item-1505">
+            <a href="http://www.centrostudialthea.it/?page_id=35">
+             Studio 6
+            </a>
+           </li>
+          </ul>
+         </li>
+         <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1900" id="menu-item-1900">
+          <a href="http://www.centrostudialthea.it/?page_id=1878">
+           Eventi
+          </a>
+         </li>
+         <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1499" id="menu-item-1499">
+          <a href="http://www.centrostudialthea.it/?page_id=26">
+           Contatti
+          </a>
+         </li>
+        </ul>
+       </nav>
+       <nav class="main_menu_select">
+        <select>
+         <option class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-9 current_page_item menu-item-1501" selected="selected" value="http://www.centrostudialthea.it/">
+          Home
+         </option>
+         <option class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1659" value="http://www.centrostudialthea.it/?page_id=1655">
+          Le Sale
+         </option>
+         <option class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1507" value="http://www.centrostudialthea.it/?page_id=50">
+          &gt;Sala 1
+         </option>
+         <option class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1532" value="http://www.centrostudialthea.it/?page_id=269">
+          &gt;Sala 2
+         </option>
+         <option class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1498" value="http://www.centrostudialthea.it/?page_id=25">
+          Gli Studi
+         </option>
+         <option class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1556" value="http://www.centrostudialthea.it/?page_id=565">
+          &gt;Studio 1
+         </option>
+         <option class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1514" value="http://www.centrostudialthea.it/?page_id=75">
+          &gt;Studio 2
+         </option>
+         <option class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1513" value="http://www.centrostudialthea.it/?page_id=77">
+          &gt;Studio 3
+         </option>
+         <option class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1558" value="http://www.centrostudialthea.it/?page_id=558">
+          &gt;Studio 4
+         </option>
+         <option class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1508" value="http://www.centrostudialthea.it/?page_id=48">
+          &gt;Studio 5
+         </option>
+         <option class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1505" value="http://www.centrostudialthea.it/?page_id=35">
+          &gt;Studio 6
+         </option>
+         <option class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1900" value="http://www.centrostudialthea.it/?page_id=1878">
+          Eventi
+         </option>
+         <option class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1499" value="http://www.centrostudialthea.it/?page_id=26">
+          Contatti
+         </option>
+        </select>
+       </nav>
+      </div>
+     </div>
+    </div>
+   </div>
+   <!-- START REVOLUTION SLIDER  -->
+   <script type="text/javascript" language="javascript">
+    if(typeof  THEME_URI == 'undefined'){var THEME_URI = 'http://www.centrostudialthea.it/wp-content/themes/churchope';}
+   </script>
+   <div style="margin:0px auto;background-color:#;padding:0px;margin-top:0px;margin-bottom:0px;max-height:720px;" class="rev_slider_wrapper fullwidthbanner-container" id="rev_slider_1_1_wrapper">
+    <div style="max-height: 720px; height: 493px;" class="rev_slider fullwidthabanner revslider-initialised tp-simpleresponsive" id="rev_slider_1_1">
+     <ul style="display: block;">
+      <li data-delay="4000" data-masterspeed="1500" data-slotamount="7" data-transition="papercut" style="visibility: visible; left: 0px; top: 0px; z-index: 20; opacity: 1; position: absolute; transform: scale(1, 1) translate(0px, 0px) rotate(0deg);">
+       <div class="slotholder">
+        <img data-fullwidthcentering="true" alt="" src="http://www.centrostudialthea.it/wp-content/themes/churchope/images/blank.png" class="defaultimg" style="width: 1010px; height: 493px; position: absolute; left: -25px; top: 0px; opacity: 1;" />
+       </div>
+       <div data-easing="easeOutExpo" data-start="0" data-speed="300" data-y="-1" data-x="1" class="tp-caption fade start" style="opacity: 1; left: 0.685225px; top: -0.684722px; transform: scale(1, 1) rotate(0deg); visibility: visible;">
+        <img alt="Image 2" src="http://www.centrostudialthea.it/wp-content/uploads/2014/02/home2-1024x5262.jpg" style="width: 960px; height: 493px;" />
+       </div>
+      </li>
+      <li data-masterspeed="300" data-slotamount="7" data-transition="random" style="visibility: visible; left: 0px; top: 0px; z-index: 18; opacity: 1;">
+       <div class="slotholder">
+        <img alt="" src="http://www.centrostudialthea.it/wp-content/themes/churchope/images/blank.png" class="defaultimg" style="width: 1010px; height: 493px; position: absolute; left: -25px; top: 0px; opacity: 0;" />
+       </div>
+       <div data-easing="easeOutExpo" data-start="0" data-speed="300" data-y="-2" data-x="0" class="tp-caption fade start" style="opacity: 0; left: 0px; top: -1.36944px; transform: scale(1, 1) rotate(0deg); visibility: hidden;">
+        <img alt="Image 1" src="http://www.centrostudialthea.it/wp-content/uploads/2014/02/Untitled-2-copy.jpg" style="width: 960px; height: 493px;" />
+       </div>
+      </li>
+      <li data-masterspeed="300" data-slotamount="7" data-transition="random" style="visibility: visible; left: 0px; top: 0px; z-index: 18; opacity: 1; position: absolute;">
+       <div class="slotholder">
+        <img alt="" src="http://www.centrostudialthea.it/wp-content/themes/churchope/images/blank.png" class="defaultimg" style="width: 1010px; height: 493px; position: absolute; left: -25px; top: 0px; opacity: 0;" />
+       </div>
+       <div data-easing="easeOutExpo" data-start="0" data-speed="300" data-y="-1" data-x="-1" class="tp-caption fade start" style="opacity: 0; visibility: hidden; left: -0.685225px; top: -0.684722px; transform: scale(1, 1) rotate(0deg);">
+        <img alt="Image 1" src="http://www.centrostudialthea.it/wp-content/uploads/2014/02/Untitled-2-copy11.jpg" style="width: 960px; height: 493px;" />
+       </div>
+      </li>
+     </ul>
+     <div class="tp-bannertimer" style="width: 36%; overflow: hidden;">
+     </div>
+     <div class="tp-loader" style="display: none;">
+     </div>
+    </div>
+    <div class="tp-bannershadow tp-shadow2" style="width: 960px;">
+    </div>
+    <div class="tp-bullets simplebullets round" id="navjcycle">
+     <span>
+      <a class="bullet first selected activeSlide" href="#">
+       0
+      </a>
+      <a class="bullet" href="#">
+       1
+      </a>
+      <a class="bullet last" href="#">
+       2
+      </a>
+     </span>
+    </div>
+    <div class="tp-leftarrow tparrows default" style="position: absolute; top: 246px; margin-top: -50px; left: 20px;" id="slide_prev">
+    </div>
+    <div class="tp-rightarrow tparrows default" style="position: absolute; top: 246px; margin-top: -50px; right: 20px;" id="slide_next">
+    </div>
+   </div>
+   <script type="text/javascript">
+    var tpj=jQuery;
+				
+									tpj.noConflict();
+								
+				var revapi1;
+				
+				tpj(document).ready(function() {
+				
+				if (tpj.fn.cssOriginal != undefined)
+					tpj.fn.css = tpj.fn.cssOriginal;
+				
+				if(tpj('#rev_slider_1_1').revolution == undefined)
+					revslider_showDoubleJqueryError('#rev_slider_1_1');
+				else
+				   revapi1 = tpj('#rev_slider_1_1').show().revolution(
+					{
+						delay:2000,
+						startwidth:1401,
+						startheight:720,
+						hideThumbs:0,
+						
+						thumbWidth:100,
+						thumbHeight:50,
+						thumbAmount:3,
+						
+						navigationType:"bullet",
+						navigationArrows:"verticalcentered",
+						navigationStyle:"round",
+						
+						touchenabled:"on",
+						onHoverStop:"off",
+						
+						navOffsetHorizontal:0,
+						navOffsetVertical:20,
+						
+						shadow:2,
+						fullWidth:"on",
+
+						stopLoop:"off",
+						stopAfterLoops:-1,
+						stopAtSlide:-1,
+
+						shuffle:"off",
+						
+						hideSliderAtLimit:0,
+						hideCaptionAtLimit:0,
+						hideAllCaptionAtLilmit:0					});
+				
+				});	//ready
+   </script>
+   <!-- END REVOLUTION SLIDER -->
+  </section>
+  <section id="title_sidebar" class="gray_line clearfix">
+   <div class="row">
+    <div class="grid_12">
+     <div class="widget front widget_text" id="text-5">
+      <div class="textwidget">
+       <div class="three_fourth ">
+        <h2>
+         Iscriviti alla nostra newsletter
+        </h2>
+       </div>
+       <div class="one_fourth last">
+        <a href="http://eepurl.com/PovM5" style="background-color: #c62b02" class="churchope_button ">
+         <span>
+          Iscriviti
+         </span>
+        </a>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </section>
+  <div id="main" role="main">
+   <div class="row" id="contentarea">
+    <div class="grid_12">
+     <article class="post-9 page type-page status-publish hentry clearfix" id="page-9">
+      <div class="entry-content">
+       <hr />
+       <div class="two_third ">
+       </div>
+       <div class="one_half ">
+        <h1>
+         Dove
+        </h1>
+        <span style="line-height: 1.5em;">
+         Al numero 22 di via Piacenza si trova il Centro Studi Althea, un centro moderno e qualificato, ristrutturato con grande cura e attenzione per il particolare, in un edificio dei primi ‘900 vicino all’Arco di Porta Romana. Il Centro Studi Althea dispone di Studi multifunzionali e Spazi per ogni utilizzo ed evento. A far da cornice un giardino interno che accoglie gli ospiti e dona bellezza e armonia agli Studi e alle Sale. La tranquillità e la riservatezza sono caratteristiche peculiari di questo luogo.
+        </span>
+        <h1>
+         Gli studi
+        </h1>
+        <span style="line-height: 1.5em;">
+         Luminosi e raffinati negli arredi soddisfano le esigenze di liberi professionisti che desiderano avere uno studio a Milano per un lungo o breve periodo. Tutti gli studi possono essere personalizzati.
+        </span>
+        <span style="line-height: 1.5em;">
+         <a href="http://www.centrostudialthea.it/?page_id=25" style="background-color: #c62b02" class="simple_button_link ">
+          <span>
+           Vedi gli studi
+          </span>
+         </a>
+        </span>
+        <h1>
+         Le sale
+        </h1>
+        Le sale sono fornite di dotazioni tecniche ed audiovisive e possono essere ulteriormente attrezzate per rispondere ad ogni esigenza comunicativa. Sono caratterizzate da volte con mattoni a vista, affreschi, pavimenti in legno e porte in ferro battuto e vetri cattedrali.
+        <a href="http://www.centrostudialthea.it/?page_id=1655" style="background-color: #c62b02" class="simple_button_link ">
+         <span>
+          Vedi le sale
+         </span>
+        </a>
+       </div>
+       <div class="one_half last">
+        <h4>
+         <span style="font-size: 1em; line-height: 1.5em;">
+         </span>
+        </h4>
+        <div class="shortcode_testimonial" id="shortcode_testimonial_1">
+         <div class="jcycle">
+          <div class="testimonial">
+           <div class="quote">
+            <h2>
+             Althea Affitta Studi e Sale.
+            </h2>
+            <h2>
+             Per informazioni sulla disponibilità delle sale e sulla locazione degli studi anche per brevi periodi contattare : 347 2464712          025515833
+            </h2>
+            <p>
+             <a href="http://www.centrostudialthea.it/?page_id=26" style="background-color: #c62b02" class="simple_button_link ">
+              <span>
+               Contatti
+              </span>
+             </a>
+            </p>
+           </div>
+           <div class="testimonial_meta">
+            <span class="testimonial_author">
+            </span>
+            <span>
+            </span>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="clearfix">
+        </div>
+        <div class="clearfix">
+        </div>
+       </div>
+      </div>
+      <!-- If comments are closed. -->
+     </article>
+    </div>
+   </div>
+  </div>
+  <footer>
+   <section class="clearfix row" id="footer_widgets">
+    <aside class="grid_3">
+     <div class="widget widget_text" id="text-2">
+      <h4 class="widget-title">
+       Come raggiungere Althea
+      </h4>
+      <div class="textwidget">
+       Il Centro Studi Althea è facilmente raggiungibile con: linea gialla  della metropolitana, tram 29/30, autobus 
+62 e 77. A 20 minuti dall’aeroporto di Linate ed altrettanti dall' ingresso autostradale. A 10 minuti dalla 
+Stazione Centrale e dalle Ferrovie Nord-Cadorna.
+       <br />
+       <br />
+       Orario di apertura : 07:30 - 23:00
+       <br />
+       <br />
+       <a href="http://www.centrostudialthea.it/?page_id=26" style="background-color: #c62b02" class="simple_button_link ">
+        <span>
+         Maggiori dettagli
+        </span>
+       </a>
+      </div>
+     </div>
+    </aside>
+    <aside class="grid_3">
+    </aside>
+    <aside class="grid_3">
+     <div class="widget widget_nav_menu" id="nav_menu-7">
+      <h4 class="widget-title">
+       Gli studi
+      </h4>
+      <div class="menu-gli-studi-container">
+       <ul class="menu" id="menu-gli-studi">
+        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1561" id="menu-item-1561">
+         <a href="http://www.centrostudialthea.it/?page_id=565">
+          Studio 1
+         </a>
+        </li>
+        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1518" id="menu-item-1518">
+         <a href="http://www.centrostudialthea.it/?page_id=75">
+          Studio 2
+         </a>
+        </li>
+        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1517" id="menu-item-1517">
+         <a href="http://www.centrostudialthea.it/?page_id=77">
+          Studio 3
+         </a>
+        </li>
+        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1563" id="menu-item-1563">
+         <a href="http://www.centrostudialthea.it/?page_id=558">
+          Studio 4
+         </a>
+        </li>
+        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1515" id="menu-item-1515">
+         <a href="http://www.centrostudialthea.it/?page_id=48">
+          Studio 5
+         </a>
+        </li>
+        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1520" id="menu-item-1520">
+         <a href="http://www.centrostudialthea.it/?page_id=35">
+          Studio 6
+         </a>
+        </li>
+       </ul>
+      </div>
+     </div>
+    </aside>
+    <aside class="grid_3">
+     <div class="widget widget_nav_menu" id="nav_menu-6">
+      <h4 class="widget-title">
+       Le sale
+      </h4>
+      <div class="menu-le-sale-container">
+       <ul class="menu" id="menu-le-sale">
+        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1686" id="menu-item-1686">
+         <a href="http://www.centrostudialthea.it/?page_id=50">
+          Sala 1
+         </a>
+        </li>
+        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1685" id="menu-item-1685">
+         <a href="http://www.centrostudialthea.it/?page_id=269">
+          Sala 2
+         </a>
+        </li>
+       </ul>
+      </div>
+     </div>
+    </aside>
+    <div class="grid_12 dotted">
+    </div>
+   </section>
+   <div id="copyright" class="row">
+    <div class="grid_5">
+     <p>
+      Althea 2014©
+      <a href="www.centrostudialthea.it">
+       Althea
+      </a>
+      P.Iva  05577990967
+     </p>
+    </div>
+    <nav class="grid_7 clearfix">
+     <ul class="menu" id="menu-main-2">
+      <li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-9 current_page_item menu-item-1501">
+       <a href="http://www.centrostudialthea.it/">
+        Home
+       </a>
+      </li>
+      <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1659">
+       <a href="http://www.centrostudialthea.it/?page_id=1655">
+        Le Sale
+       </a>
+       <ul class="sub-menu">
+        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1507">
+         <a href="http://www.centrostudialthea.it/?page_id=50">
+          Sala 1
+         </a>
+        </li>
+        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1532">
+         <a href="http://www.centrostudialthea.it/?page_id=269">
+          Sala 2
+         </a>
+        </li>
+       </ul>
+      </li>
+      <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1498">
+       <a href="http://www.centrostudialthea.it/?page_id=25">
+        Gli Studi
+       </a>
+       <ul class="sub-menu">
+        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1556">
+         <a href="http://www.centrostudialthea.it/?page_id=565">
+          Studio 1
+         </a>
+        </li>
+        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1514">
+         <a href="http://www.centrostudialthea.it/?page_id=75">
+          Studio 2
+         </a>
+        </li>
+        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1513">
+         <a href="http://www.centrostudialthea.it/?page_id=77">
+          Studio 3
+         </a>
+        </li>
+        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1558">
+         <a href="http://www.centrostudialthea.it/?page_id=558">
+          Studio 4
+         </a>
+        </li>
+        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1508">
+         <a href="http://www.centrostudialthea.it/?page_id=48">
+          Studio 5
+         </a>
+        </li>
+        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1505">
+         <a href="http://www.centrostudialthea.it/?page_id=35">
+          Studio 6
+         </a>
+        </li>
+       </ul>
+      </li>
+      <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1900">
+       <a href="http://www.centrostudialthea.it/?page_id=1878">
+        Eventi
+       </a>
+      </li>
+      <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1499">
+       <a href="http://www.centrostudialthea.it/?page_id=26">
+        Contatti
+       </a>
+      </li>
+     </ul>
+    </nav>
+   </div>
+   <script type="text/javascript">
+    /* &lt;![CDATA[ */
+var thickboxL10n = {"next":"Next &gt;","prev":"&lt; Prev","image":"Image","of":"of","close":"Close","noiframes":"This feature requires inline frames. You have iframes disabled or your browser does not support them.","loadingAnimation":"http:\/\/www.centrostudialthea.it\/wp-includes\/js\/thickbox\/loadingAnimation.gif"};
+/* ]]&gt; */
+   </script>
+   <script src="http://www.centrostudialthea.it/wp-includes/js/thickbox/thickbox.js?ver=3.1-20121105" type="text/javascript">
+   </script>
+   <script src="http://www.centrostudialthea.it/wp-includes/js/underscore.min.js?ver=1.4.4" type="text/javascript">
+   </script>
+   <script src="http://www.centrostudialthea.it/wp-includes/js/shortcode.min.js?ver=3.8.11" type="text/javascript">
+   </script>
+   <script src="http://www.centrostudialthea.it/wp-admin/js/media-upload.min.js?ver=3.8.11" type="text/javascript">
+   </script>
+   <script src="http://www.centrostudialthea.it/wp-content/themes/churchope/js/superfish/superfish.js" type="text/javascript">
+   </script>
+   <script src="http://www.centrostudialthea.it/wp-content/themes/churchope/js/prettyphoto/js/jquery.prettyPhoto.js" type="text/javascript">
+   </script>
+   <script src="http://www.centrostudialthea.it/wp-content/themes/churchope/js/swipe.js" type="text/javascript">
+   </script>
+   <script type="text/javascript">
+    /* &lt;![CDATA[ */
+var ThemeData = {"admin_url":"http:\/\/www.centrostudialthea.it\/wp-admin\/admin-ajax.php","downloadLink":"http:\/\/www.centrostudialthea.it\/wp-content\/themes\/churchope\/lib\/downloadlink.php","directory_uri":"http:\/\/www.centrostudialthea.it\/wp-content\/themes\/churchope"};
+/* ]]&gt; */
+   </script>
+   <script src="http://www.centrostudialthea.it/wp-content/themes/churchope/js/script.js" type="text/javascript">
+   </script>
+  </footer>
+ </body>
+</html>

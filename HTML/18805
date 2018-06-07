@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]><html class="lt-ie9"><![endif]-->
+<!--[if gte IE 9]><html class="ie"><![endif]-->
+<!--[if !IE]><!-->
+<html xmlns="http://www.w3.org/1999/xhtml" data-useragent="Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/15.0">
+ <!--<![endif]-->
+ <head>
+  <meta content="no cache" http-equiv="cache-control" />
+  <meta content="no cache" http-equiv="Pragma" />
+  <meta content="0" http-equiv="Expires" />
+  <meta content="content-type" http-equiv="content-type" />
+  <meta charset='utf-8"' />
+  <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <title>
+   3-D Secure Anmeldung - Schützen Sie Ihre Karte
+  </title>
+  <link type="text/css" href="https://3ds.cardcenter.ch/acspage/de_DE_base_UBS/ubs_styles.min.css" rel="stylesheet" />
+  <!-- x-out.js has code to POST PAReq to CAP when user closes window. -->
+  <script src="https://3ds.cardcenter.ch/acspage/de_DE_base_UBS/x-out.js" type="text/javascript">
+  </script>
+  <script src="https://3ds.cardcenter.ch/acspage/de_DE_base_UBS/pwdbase.js" type="text/javascript">
+  </script>
+  <script type="text/javascript">
+   var refreshing = false;
+      var navigating = false;
+      var closing = true;
+      var tocName = "";
+      var IsCancelButton = false;
+      var optinLang = "de_DE";
+      
+      
+      
+      function OnPageInit()
+      {
+        // TO HANDLE THE EVENT WHEN USER CLOSES POPUP
+        // pre-generate the HTML that is needed to POST to CAP when window is closed.
+        // does not work properly on NS if generated in the close-window event handler
+        gatherFormData(document.optInForm, "%#*@_XOUT_@*#%");
+      
+        // uncomment the following if a client-side timeout is to be enabled.
+        // after the timeout period, the CAP dialog will be auto-POSTed resulting in
+        // a failed PARes.
+        // Change the 2nd parameter to suit the timeout needed;
+        // the value should be in milli seconds.
+        //setTimeout("ForceCancel()", 15000); // treat as cancelled txn if not posted in 15 seconds.
+      
+        // sandy - first the page loads, should be in default locale
+      
+        setLocale(optinLang);
+      
+        //to retain page locale if optin is submitted with error
+        if("" != ""){
+      
+          optinLang = "";
+          setLocale(optinLang);
+        }
+      
+        closing=true;
+        //window.history.go(1);
+        self.focus();
+      }
+      
+      function ForceCancel() {
+        closing=false;
+        document.optInForm.cancelHit.value = "%#*@_TIMEDOUT_@*#%";
+        if ( IsNetscapeOnSolaris() )
+        {
+          setTimeout('document.optInForm.submit()', 500);
+        }
+        else
+        {
+          document.optInForm.submit();
+        }
+      }
+      
+      function HelpWindow()
+      {
+        var win;
+      
+          if (optinLang == "de_DE"){
+            win = window.open("http://www.ubs.com/ch/de/swissbank/privatkunden/zahlen-und-sparen/kartendienste/3d-secure.html","Help",
+              "height=390,width=400,dependent=yes,scrollbars=yes,resizable=yes,screenX=650,screenY=350,left=650,top=350");
+          }else if (optinLang == "en_US"){
+            win = window.open("http://www.ubs.com/ch/en/swissbank/private/pay-and-save/cardservices/3d-secure.html","Help",
+              "height=390,width=400,dependent=yes,scrollbars=yes,resizable=yes,screenX=650,screenY=350,left=650,top=350");
+          }else if (optinLang == "fr_FR"){
+            win = window.open("http://www.ubs.com/ch/fr/swissbank/clientele-privee/paiements-et-epargne/services-cartes/3d-secure.html","Help",
+              "height=390,width=400,dependent=yes,scrollbars=yes,resizable=yes,screenX=650,screenY=350,left=650,top=350");
+          }else if (optinLang == "it_IT"){
+            win = window.open("http://www.ubs.com/ch/it/swissbank/clientela-privata/pagamenti-e-risparmio/servizi-carte/3d-secure.html","Help",
+              "height=390,width=400,dependent=yes,scrollbars=yes,resizable=yes,screenX=650,screenY=350,left=650,top=350");
+          }else{
+            win = window.open("http://www.ubs.com/ch/de/swissbank/privatkunden/zahlen-und-sparen/kartendienste/3d-secure.html","Help",
+              "height=390,width=400,dependent=yes,scrollbars=yes,resizable=yes,screenX=650,screenY=350,left=650,top=350");
+        }
+      }
+      
+      function OpenWindow()
+      {
+        var win;
+      
+        if (optinLang == "de_DE"){
+          win = window.open("http://www.ubs.com/ch/de/swissbank/privatkunden/zahlen-und-sparen/kartendienste/3d-secure.html","Help",
+            "height=390,width=400,dependent=yes,scrollbars=yes,resizable=yes,screenX=650,screenY=350,left=650,top=350");
+        }else if (optinLang == "en_US"){
+          win = window.open("http://www.ubs.com/ch/en/swissbank/private/pay-and-save/cardservices/3d-secure.html","Help",
+            "height=390,width=400,dependent=yes,scrollbars=yes,resizable=yes,screenX=650,screenY=350,left=650,top=350");
+        }else if (optinLang == "fr_FR"){
+          win = window.open("http://www.ubs.com/ch/fr/swissbank/clientele-privee/paiements-et-epargne/services-cartes/3d-secure.html","Help",
+            "height=390,width=400,dependent=yes,scrollbars=yes,resizable=yes,screenX=650,screenY=350,left=650,top=350");
+        }else if (optinLang == "it_IT"){
+          win = window.open("http://www.ubs.com/ch/it/swissbank/clientela-privata/pagamenti-e-risparmio/servizi-carte/3d-secure.html","Help",
+            "height=390,width=400,dependent=yes,scrollbars=yes,resizable=yes,screenX=650,screenY=350,left=650,top=350");
+        }else{
+          win = window.open("http://www.ubs.com/ch/de/swissbank/privatkunden/zahlen-und-sparen/kartendienste/3d-secure.html","Help",
+            "height=390,width=400,dependent=yes,scrollbars=yes,resizable=yes,screenX=650,screenY=350,left=650,top=350");
+        }
+      }
+      
+      function infoU(text){
+        var d;
+        
+        if (text == "cvv"){
+          d = document.getElementById('ques2Info');
+          if (optinLang == "de_DE"){
+            d.innerHTML = '&lt;span id="ques1Label" class="infoline"&gt;&lt;img style="vertical-align: middle" alt="info" SRC="https://3ds.cardcenter.ch/acspage/de_DE_base_UBS/images/info-message.png" border=0 title="Dreistelliger Sicherheitscode im oder neben dem Unterschriftsfeld auf der R&amp;#252;ckseite Ihrer Karte."&gt;Dreistelliger Sicherheitscode im oder neben dem Unterschriftsfeld auf der R&amp;#252;ckseite Ihrer Karte.&lt;/span&gt;';
+          }else if (optinLang == "en_US"){
+            d.innerHTML = '&lt;span id="ques1Label" class="infoline"&gt;&lt;img style="vertical-align: middle" alt="info" SRC="https://3ds.cardcenter.ch/acspage/de_DE_base_UBS/images/info-message.png" border=0 title="Dreistelliger Sicherheitscode im oder neben dem Unterschriftsfeld auf der R&amp;#252;ckseite Ihrer Karte."&gt;Three-digit security code in or beside the signature panel on the back of your card.&lt;/span&gt;';
+          }else if (optinLang == "fr_FR"){
+            d.innerHTML = '&lt;span id="ques1Label" class="infoline"&gt;&lt;img style="vertical-align: middle" alt="info" SRC="https://3ds.cardcenter.ch/acspage/de_DE_base_UBS/images/info-message.png" border=0 title="Dreistelliger Sicherheitscode im oder neben dem Unterschriftsfeld auf der R&amp;#252;ckseite Ihrer Karte."&gt;Code de s&amp;#233;curit&amp;#233; de trois caract&amp;#232;res plac&amp;#233; dans ou &amp;#224; c&amp;#244;t&amp;#233; du champ de signature au verso de votre carte&lt;/span&gt;';
+          }else if (optinLang == "it_IT"){
+            d.innerHTML = '&lt;span id="ques1Label" class="infoline"&gt;&lt;img style="vertical-align: middle" alt="info" SRC="https://3ds.cardcenter.ch/acspage/de_DE_base_UBS/images/info-message.png" border=0 title="Dreistelliger Sicherheitscode im oder neben dem Unterschriftsfeld auf der R&amp;#252;ckseite Ihrer Karte."&gt;Codice di sicurezza a tre cifre dentro o accanto allo spazio riservato alla firma sul retro della vostra carta.&lt;/span&gt;';
+          }
+          d.className = "infoOnNewLine";
+        }
+        else if (text == "chname"){
+          d = document.getElementById('ques1Info');
+          if (optinLang == "de_DE"){
+            d.innerHTML = '&lt;span id="ques1Label" class="infoline"&gt;&lt;img style="vertical-align: middle" alt="info" SRC="https://3ds.cardcenter.ch/acspage/de_DE_base_UBS/images/info-message.png" border=0 title="Ihr Name, wie auf Ihrer Karte aufgedruckt."&gt;Ihr Name, wie auf Ihrer Karte aufgedruckt.&lt;/span&gt;';
+          }else if (optinLang == "en_US"){
+            d.innerHTML = '&lt;span id="ques1Label" class="infoline"&gt;&lt;img style="vertical-align: middle" alt="info" SRC="https://3ds.cardcenter.ch/acspage/de_DE_base_UBS/images/info-message.png" border=0 title="Ihr Name, wie auf Ihrer Karte aufgedruckt."&gt;Your name as it appears on your card&lt;/span&gt;';
+          }else if (optinLang == "fr_FR"){
+            d.innerHTML = '&lt;span id="ques1Label" class="infoline"&gt;&lt;img style="vertical-align: middle" alt="info" SRC="https://3ds.cardcenter.ch/acspage/de_DE_base_UBS/images/info-message.png" border=0 title="Ihr Name, wie auf Ihrer Karte aufgedruckt."&gt;Votre nom tel qu&amp;#39;il figure sur votre carte.&lt;/span&gt;';
+          }else if (optinLang == "it_IT"){
+            d.innerHTML = '&lt;span id="ques1Label" class="infoline"&gt;&lt;img style="vertical-align: middle" alt="info" SRC="https://3ds.cardcenter.ch/acspage/de_DE_base_UBS/images/info-message.png" border=0 title="Ihr Name, wie auf Ihrer Karte aufgedruckt."&gt;Il vostro nome (come riportato sulla vostra carta).&lt;/span&gt;';
+          }
+          d.className = "infoOnNewLine";
+        }
+      
+        else if (text == "acctNum"){
+          d = document.getElementById('ques4Info');
+          if (optinLang == "de_DE"){
+            d.innerHTML = '&lt;span id="ques4Label" class="infoline"&gt;&lt;img style="vertical-align: middle" alt="info" SRC="https://3ds.cardcenter.ch/acspage/de_DE_base_UBS/images/info-message.png" border=0 title="Finden Sie auf Ihrer Kartenabrechnung oder Ihrem PIN-Mitteilungsschreiben."&gt;Finden Sie auf Ihrer Kartenabrechnung oder Ihrem PIN-Mitteilungsschreiben.&lt;/span&gt;';
+          }else if (optinLang == "en_US"){
+            d.innerHTML = '&lt;span id="ques4Label" class="infoline"&gt;&lt;img style="vertical-align: middle" alt="info" SRC="https://3ds.cardcenter.ch/acspage/de_DE_base_UBS/images/info-message.png" border=0 title="Finden Sie auf Ihrer Kartenabrechnung oder Ihrem PIN-Mitteilungsschreiben."&gt;You can find this on your card statement or your PIN letter.&lt;/span&gt;';
+          }else if (optinLang == "fr_FR"){
+            d.innerHTML = '&lt;span id="ques4Label" class="infoline"&gt;&lt;img style="vertical-align: middle" alt="info" SRC="https://3ds.cardcenter.ch/acspage/de_DE_base_UBS/images/info-message.png" border=0 title="Finden Sie auf Ihrer Kartenabrechnung oder Ihrem PIN-Mitteilungsschreiben."&gt;Vous le trouvez sur votre d&amp;#233;compte de carte ou dans la lettre de communication de votre NIP.&lt;/span&gt;';
+          }else if (optinLang == "it_IT"){
+            d.innerHTML = '&lt;span id="ques4Label" class="infoline"&gt;&lt;img style="vertical-align: middle" alt="info" SRC="https://3ds.cardcenter.ch/acspage/de_DE_base_UBS/images/info-message.png" border=0 title="Finden Sie auf Ihrer Kartenabrechnung oder Ihrem PIN-Mitteilungsschreiben."&gt;Si trova sull\'estratto conto della vostra carta o sulla lettera del codice NIP.&lt;/span&gt;';
+          }
+          d.className = "infoOnNewLine";
+        }
+      }
+      
+      function onBeforeUnloadHandler(object)
+      {
+        if ( !refreshing &amp;&amp; closing )
+        {
+          event.returnValue = "Ihr Kauf wurde nicht abgeschlossen! Für den Abschluss Ihres Kaufs klicken Sie bitte auf 'weiter' oder 'später registrieren'.";
+        }
+      }
+      
+      function onFocusHandler()
+      {
+        closing = true;
+      }
+      
+      function OnLocaleChange(objLocale)
+      {
+        closing = false;
+        // save the current card holder name
+        var nLocale = objLocale.selectedIndex;
+        if (nLocale &gt;= 0)
+          document.optInForm.ChangeLocale.value = objLocale.options[nLocale].value;
+        document.optInForm.submit();
+        return false;
+      }
+      
+      // Configurable parameters:
+      
+      var loadError = null;
+      
+      function objError (evnt)
+      {
+        loadError = "error";
+      }
+      
+      function validateNotEmpty( strValue ) {
+         var strTemp = strValue;
+         strTemp = trimAll(strTemp);
+         if(strTemp.length &gt; 0){
+           return true;
+         }
+         return false;
+      }
+      
+      function trimAll( strValue ) {
+      var objRegExp = /^(\s*)$/;
+      
+          //check for all spaces
+          if(objRegExp.test(strValue)) {
+             strValue = strValue.replace(objRegExp, '');
+             if( strValue.length == 0)
+                return strValue;
+          }
+      
+         //check for leading &amp; trailing spaces
+         objRegExp = /^(\s*)([\W\w]*)(\b\s*$)/;
+         if(objRegExp.test(strValue)) {
+             //remove leading and trailing whitespace characters
+             strValue = strValue.replace(objRegExp, '$2');
+          }
+        return strValue;
+      }
+      
+      function OnUserInput(userInput)
+      {
+      
+        //alert("OnUserInput");
+      
+        closing = false;
+        document.optInForm.optIn.value = userInput;
+      
+        var dob = document.optInForm.dateofbirth1.value+"https://3ds.cardcenter.ch/"+document.optInForm.dateofbirth2.value+"https://3ds.cardcenter.ch/"+document.optInForm.dateofbirth3.value;
+      
+        var dob_day = document.optInForm.dateofbirth1.value;
+        var dob_month = document.optInForm.dateofbirth2.value;
+        var dob_year = document.optInForm.dateofbirth3.value;
+      
+        //alert("dob - "+dob);
+      
+        var expirydt = document.optInForm.expirydate1.value + "https://3ds.cardcenter.ch/" + document.optInForm.expirydate2.value;
+      
+        //alert("exp date - "+expirydt);
+      
+        var expirydt_month = document.optInForm.expirydate1.value;
+        var expirydt_yr = document.optInForm.expirydate2.value;
+      
+        var cvv2Val = document.optInForm.cvv2.value;
+          var accountNumber = document.optInForm.acctnumber1.value + document.optInForm.acctnumber2.value + document.optInForm.acctnumber3.value + document.optInForm.acctnumber4.value;
+      
+        if (userInput == 1){
+          if (!(1100 &gt;= 1200 &amp;&amp; 1100 &lt;= 1202 ) &amp;&amp; (!document.optInForm.accept.checked)){
+              if (optinLang == "en_US"){
+                document.getElementById('error1').innerHTML = '&lt;div class="optin cuiMessageWarningBorder"&gt;&lt;img src="https://3ds.cardcenter.ch/acspage/de_DE_base_UBS/images/Icon-Message-Warning-36px.png" border=0 ALT=""&gt;Please accept the special conditions for using 3-D Secure and protect yourself from potential card misuse!&lt;/div&gt;';
+              } else if (optinLang == "fr_FR"){
+                document.getElementById('error1').innerHTML = '&lt;div class="optin cuiMessageWarningBorder"&gt;&lt;img src="https://3ds.cardcenter.ch/acspage/de_DE_base_UBS/images/Icon-Message-Warning-36px.png" border=0 ALT=""&gt;Veuillez accepter les dispositions particuli&amp;#232;res relatives &amp;#224; l\'utilisation de 3-D Secure et prot&amp;#233;gez-vous contre de possibles abus avec la carte!&lt;/div&gt;';
+              } else if (optinLang == "de_DE"){
+                document.getElementById('error1').innerHTML = '&lt;div class="optin cuiMessageWarningBorder"&gt;&lt;img src="https://3ds.cardcenter.ch/acspage/de_DE_base_UBS/images/Icon-Message-Warning-36px.png" border=0 ALT=""&gt;Bitte akzeptieren Sie die besonderen Bestimmungen f&amp;#252;r die Nutzung von 3-D Secure und sch&amp;#252;tzen Sie sich vor m&amp;#246;glichem Kartenmissbrauch!&lt;/div&gt;';
+              } else if (optinLang == "it_IT"){
+                document.getElementById('error1').innerHTML = '&lt;div class="optin cuiMessageWarningBorder"&gt;&lt;img src="https://3ds.cardcenter.ch/acspage/de_DE_base_UBS/images/Icon-Message-Warning-36px.png" border=0 ALT=""&gt;Accettate le disposizioni speciali per l\'utilizzo di 3-D Secure e proteggetevi da un eventuale uso fraudolento della carta.&lt;/div&gt;';
+              } else {
+                document.getElementById('error1').innerHTML = '&lt;div class="optin cuiMessageWarningBorder"&gt;&lt;img src="https://3ds.cardcenter.ch/acspage/de_DE_base_UBS/images/Icon-Message-Warning-36px.png" border=0 ALT=""&gt;Bitte akzeptieren Sie die besonderen Bestimmungen f&amp;#252;r die Nutzung von 3-D Secure und sch&amp;#252;tzen Sie sich vor m&amp;#246;glichem Kartenmissbrauch!&lt;/div&gt;';
+              }
+      
+            return false;
+          }
+          if (document.optInForm.CHname.value == "" || cvv2Val == "" || dob_day == "" || dob_month == "" || dob_year == "" || expirydt_month == "" || expirydt_yr == "" || document.optInForm.acctnumber1.value == "" || document.optInForm.acctnumber2.value == "" || document.optInForm.acctnumber3.value == "" || document.optInForm.acctnumber4.value == ""){
+            if (optinLang == "en_US"){
+              document.getElementById('error1').innerHTML = '&lt;div class="optin cuiMessageWarningBorder"&gt;&lt;img src="https://3ds.cardcenter.ch/acspage/de_DE_base_UBS/images/Icon-Message-Warning-36px.png" border=0 ALT=""&gt;Please complete all fields.&lt;/div&gt;';
+            } else if (optinLang == "fr_FR"){
+              document.getElementById('error1').innerHTML = '&lt;div class="optin cuiMessageWarningBorder"&gt;&lt;img src="https://3ds.cardcenter.ch/acspage/de_DE_base_UBS/images/Icon-Message-Warning-36px.png" border=0 ALT=""&gt;Veuillez remplir tous les champs.&lt;/div&gt;';
+            } else if (optinLang == "de_DE"){
+              document.getElementById('error1').innerHTML = '&lt;div class="optin cuiMessageWarningBorder"&gt;&lt;img src="https://3ds.cardcenter.ch/acspage/de_DE_base_UBS/images/Icon-Message-Warning-36px.png" border=0 ALT=""&gt;Bitte f&amp;#252;llen Sie alle Felder aus.&lt;/div&gt;';
+            } else if (optinLang == "it_IT"){
+              document.getElementById('error1').innerHTML = '&lt;div class="optin cuiMessageWarningBorder"&gt;&lt;img src="https://3ds.cardcenter.ch/acspage/de_DE_base_UBS/images/Icon-Message-Warning-36px.png" border=0 ALT=""&gt;Vi preghiamo di compilare tutti i campi.&lt;/div&gt;';
+            } else {
+              document.getElementById('error1').innerHTML = '&lt;div class="optin cuiMessageWarningBorder"&gt;&lt;img src="https://3ds.cardcenter.ch/acspage/de_DE_base_UBS/images/Icon-Message-Warning-36px.png" border=0 ALT=""&gt;Bitte f&amp;#252;llen Sie alle Felder aus.&lt;/div&gt;';
+            }
+            closing = false;
+            return false;
+          }
+      
+        } //end of (userInput == 1)
+      
+        if((1100 &gt;= 1100) &amp;&amp;  (1100 &lt;= 1103) ||
+          (1100 &gt;= 1200 &amp;&amp; 1100 &lt;= 1202))
+        {
+          // all are configured as Issuer QA
+          document.optInForm.pin.value = document.optInForm.CHname.value + ":" + cvv2Val + ":" + expirydt + ":" + accountNumber + ":" + dob + ":Locale=" + optinLang;
+        }
+        document.optInForm.CustData.value = optinLang;
+        document.optInForm.submit();
+        return false;
+      }
+      
+      function OnSubmitHandler1()
+      {
+        document.optInForm.CustData.value = optinLang;
+        return OnSubmitHandler();
+      
+      }
+      //// My code
+      function setEngDisplay()
+      {
+        if(1100 &gt;= 1200 &amp;&amp; 1100 &lt;= 1202){
+          document.getElementById('fyp_header').innerHTML = '&lt;h1 class="cuiHeadline lr-headline"&gt;Protect your card&lt;/h1&gt;';
+        } else {
+          document.getElementById('header').innerHTML = '&lt;h1 class="cuiHeadline lr-headline"&gt;Protect your card&lt;/h1&gt;';
+        }
+        document.getElementById('subHeader').innerHTML = 'Increased security in the internet: register for 3-D Secure now.';
+
+        document.getElementById('card').innerHTML = 'Credit card number';
+ 
+        if((1100 &gt;= 1100) &amp;&amp;  (1100 &lt;= 1103)) {
+          document.getElementById('tandcText').innerHTML = '&lt;A HREF="https://3ds.cardcenter.ch/acspage/de_DE_base_UBS/ubs_toc_en.pdf" onClick="window.open(this.href); return false;"&gt;provisions for the use of 3-D Secure.&amp;nbsp;&lt;span class="pdficon"&gt;&lt;img src="https://3ds.cardcenter.ch/acspage/de_DE_base_UBS/images/pdf.png" border="0"&gt;&lt;/span&gt;&lt;/a&gt;';
+          document.getElementById('tandcCheck').innerHTML = 'I accept the';
+        }
+        document.getElementById('success').value = 'Next';
+        document.getElementById('help').innerHTML = 'Help';
+        document.getElementById('error1').innerHTML = '';
+        if(1100 &gt;= 1200 &amp;&amp; 1100 &lt;= 1202){
+          document.getElementById('fyp_register_msg').innerHTML = '&lt;img class="error-img" src="https://3ds.cardcenter.ch/acspage/de_DE_base_UBS/images/Icon-Message-Warning-36px.png" border=0 ALT=""&gt;If you want to continue to use your card on the internet, you will have to register again.';
+        }
+        if (1100 == 1102 || 1100 == 1103 || 1100 == 1202){
+          document.getElementById('iqafailMsg').innerHTML='&lt;img class="error-img" src="https://3ds.cardcenter.ch/acspage/de_DE_base_UBS/images/Icon-Message-Warning-36px.png" border=0 ALT=""&gt;The data you have entered is invalid. Please check to ensure that it is correct and complete.';
+        }
+        if (1100 == 1101){
+            document.getElementById('forced_message').innerHTML='&lt;img class="error-img" border="0" alt="" src="https://3ds.cardcenter.ch/acspage/de_DE_base_UBS/images/Icon-Message-Warning-36px.png" /&gt;To ensure safe and unrestricted use of your card for online purchases you need to register for the 3-D Secure service now.';
+        }
+      }
+      
+      function setFrenchDisplay()
+      {
+        if(1100 &gt;= 1200 &amp;&amp; 1100 &lt;= 1202){
+          document.getElementById('fyp_header').innerHTML = '&lt;h1 class="cuiHeadline lr-headline"&gt;Prot&amp;#233;gez votre carte&lt;/h1&gt;';
+        } else {
+          document.getElementById('header').innerHTML = '&lt;h1 class="cuiHeadline lr-headline"&gt;Prot&amp;#233;gez votre carte&lt;/h1&gt;';
+        }
+        document.getElementById('subHeader').innerHTML = 'S&amp;#233;curit&amp;#233; sur Internet: inscrivez-vous &amp;#224; 3-D Secure d&amp;#232;s maintenant.';
+
+        document.getElementById('card').innerHTML = 'Num&amp;#233;ro de carte';
+ 
+        if((1100 &gt;= 1100) &amp;&amp;  (1100 &lt;= 1103)) {
+          document.getElementById('tandcText').innerHTML = '&lt;A HREF="https://3ds.cardcenter.ch/acspage/de_DE_base_UBS/ubs_toc_fr.pdf" onClick="window.open(this.href); return false;"&gt;les dispositions relatives &amp;#224; 3-D Secure.&amp;nbsp;&lt;span class="pdficon"&gt;&lt;img src="https://3ds.cardcenter.ch/acspage/de_DE_base_UBS/images/pdf.png" border="0"&gt;&lt;/span&gt;&lt;/a&gt;';
+          document.getElementById('tandcCheck').innerHTML = 'J\'accepte';
+        }
+        document.getElementById('success').value = 'Continuer';
+        document.getElementById('help').innerHTML = 'Aide';
+        document.getElementById('error1').innerHTML = '';
+        if(1100 &gt;= 1200 &amp;&amp; 1100 &lt;= 1202){
+          document.getElementById('fyp_register_msg').innerHTML = '&lt;img class="error-img" src="https://3ds.cardcenter.ch/acspage/de_DE_base_UBS/images/Icon-Message-Warning-36px.png" border=0 ALT=""&gt;Afin de pouvoir continuer &amp;#224; utiliser votre carte aupr&amp;#232;s les commer&amp;#231;ants 3-D Secure, vous devez vous r&amp;#233;inscrire.';
+        }
+        if (1100 == 1102 || 1100 == 1103 || 1100 == 1202){
+          document.getElementById('iqafailMsg').innerHTML='&lt;img class="error-img" src="https://3ds.cardcenter.ch/acspage/de_DE_base_UBS/images/Icon-Message-Warning-36px.png" border=0 ALT=""&gt;Les donn&amp;#233;es saisies ne correspondent pas aux exigences. Veuillez v&amp;#233;rifier qu\'elles sont exactes et compl\&amp;#232;tes.';
+        }
+        if (1100 == 1101){
+          document.getElementById('forced_message').innerHTML='&lt;img class="error-img" border="0" alt="" src="https://3ds.cardcenter.ch/acspage/de_DE_base_UBS/images/Icon-Message-Warning-36px.png" /&gt;Veuillez vous inscrire d&amp;#232;s maintenant au service 3-D Secure pour assurer l&amp;#39;usage s&amp;#251;r et illimit&amp;#233;e de votre carte pour les achats en ligne.';
+        }
+      }
+      
+      function setGermanDisplay()
+      {
+        if(1100 &gt;= 1200 &amp;&amp; 1100 &lt;= 1202){
+          document.getElementById('fyp_header').innerHTML = '&lt;h1 class="cuiHeadline lr-headline"&gt;Sch&amp;#252;tzen Sie Ihre Karte&lt;/h1&gt;';
+        } else {
+          document.getElementById('header').innerHTML = '&lt;h1 class="cuiHeadline lr-headline"&gt;Sch&amp;#252;tzen Sie Ihre Karte&lt;/h1&gt;';
+        }
+        document.getElementById('subHeader').innerHTML = 'Mehr Sicherheit im Internet: Melden Sie sich jetzt f&amp;#252;r 3-D Secure an.';
+
+        document.getElementById('card').innerHTML = 'Kartennummer';
+        if((1100 &gt;= 1100) &amp;&amp;  (1100 &lt;= 1103)) {
+          document.getElementById('tandcText').innerHTML = '&lt;A HREF="https://3ds.cardcenter.ch/acspage/de_DE_base_UBS/ubs_toc_de.pdf" onClick="window.open(this.href); return false;"&gt;Bestimmungen f&amp;#252;r 3-D Secure.&amp;nbsp;&lt;span class="pdficon"&gt;&lt;img src="https://3ds.cardcenter.ch/acspage/de_DE_base_UBS/images/pdf.png" border="0"&gt;&lt;/span&gt;&lt;/a&gt;';
+          document.getElementById('tandcCheck').innerHTML = 'Ich akzeptiere die';
+        }
+        document.getElementById('success').value = 'Weiter';
+        document.getElementById('help').innerHTML = 'Hilfe';
+        document.getElementById('error1').innerHTML = '';
+        if(1100 &gt;= 1200 &amp;&amp; 1100 &lt;= 1202){
+          document.getElementById('fyp_register_msg').innerHTML = '&lt;img class="error-img" src="https://3ds.cardcenter.ch/acspage/de_DE_base_UBS/images/Icon-Message-Warning-36px.png" border=0 ALT=""&gt;Damit Sie Ihre Karte weiterhin im Internet einsetzen k&amp;#246;nnen, m&amp;#252;ssen Sie sich nochmals registrieren.';
+        }
+        if (1100 == 1102 || 1100 == 1103 || 1100 == 1202){
+          document.getElementById('iqafailMsg').innerHTML='&lt;img class="error-img" src="https://3ds.cardcenter.ch/acspage/de_DE_base_UBS/images/Icon-Message-Warning-36px.png" border=0 ALT=""&gt;Ihre Angaben entsprechen nicht den Vorgaben. Bitte &amp;#252;berpr&amp;#252;fen Sie diese auf Korrektheit und Vollst&amp;#228;ndigkeit.';
+      
+        }
+        if (1100 == 1101){
+            document.getElementById('forced_message').innerHTML='&lt;img class="error-img" border="0" alt="" src="https://3ds.cardcenter.ch/acspage/de_DE_base_UBS/images/Icon-Message-Warning-36px.png" /&gt;Damit Sie Ihre Karte weiterhin sicher und uneingeschr&amp;#228;nkt im Internet einsetzen k&amp;#246;nnen, m&amp;#252;ssen Sie sich jetzt f&amp;#252;r 3-D Secure anmelden.';
+        }
+      }
+      
+      function setItalianDisplay()
+      {
+        if(1100 &gt;= 1200 &amp;&amp; 1100 &lt;= 1202){
+          document.getElementById('fyp_header').innerHTML = '&lt;h1 class="cuiHeadline lr-headline"&gt;Proteggete la vostra carta&lt;/h1&gt;';
+        } else {
+          document.getElementById('header').innerHTML = '&lt;h1 class="cuiHeadline lr-headline"&gt;Proteggete la vostra carta&lt;/h1&gt;';
+        }
+        document.getElementById('subHeader').innerHTML = 'Maggior sicurezza su Internet: iscrivetevi ora al servizio 3-D Secure';
+
+        document.getElementById('card').innerHTML = 'Numero della carta';
+        if((1100 &gt;= 1100) &amp;&amp;  (1100 &lt;= 1103)) {
+          document.getElementById('tandcText').innerHTML = '&lt;A HREF="https://3ds.cardcenter.ch/acspage/de_DE_base_UBS/ubs_toc_it.pdf" onClick="window.open(this.href); return false;"&gt;le disposizioni per l&amp;#145;uso di 3-D Secure.&amp;nbsp;&lt;span class="pdficon"&gt;&lt;img src="https://3ds.cardcenter.ch/acspage/de_DE_base_UBS/images/pdf.png" border="0"&gt;&lt;/span&gt;&lt;/a&gt;';
+          document.getElementById('tandcCheck').innerHTML = 'Accetto';
+        }
+        document.getElementById('success').value = 'Continua';
+        document.getElementById('help').innerHTML = 'Aiuto';
+        document.getElementById('error1').innerHTML = '';
+        if(1100 &gt;= 1200 &amp;&amp; 1100 &lt;= 1202){
+          document.getElementById('fyp_register_msg').innerHTML = '&lt;img class="error-img" src="https://3ds.cardcenter.ch/acspage/de_DE_base_UBS/images/Icon-Message-Warning-36px.png" border=0 ALT=""&gt;Affinch&amp;#233; possiate utilizzare nuovamente la vostra carta per acquisti online dovete registrarvi di nuovo.';
+        }
+      
+        if (1100 == 1102 || 1100 == 1103 || 1100 == 1202){
+          document.getElementById('iqafailMsg').innerHTML='&lt;img class="error-img" src="https://3ds.cardcenter.ch/acspage/de_DE_base_UBS/images/Icon-Message-Warning-36px.png" border=0 ALT=""&gt;I vostri dati non corrispondono. Controllate se sono corretti e completi.';
+      
+        }
+        if (1100 == 1101){
+          document.getElementById('forced_message').innerHTML='&lt;img class="error-img" border="0" alt="" src="https://3ds.cardcenter.ch/acspage/de_DE_base_UBS/images/Icon-Message-Warning-36px.png" /&gt;Per poter utilizzare la vostra carta in modo sicuro e senza restrizioni per acquisti online, dovete registrarvi ora per 3-D Secure.';
+        }
+      
+      }
+      
+      function fix(that)
+      {
+          var el = that;
+          var up = el.parentNode;
+          var ddexpanded = up.parentNode;
+          var mainentry = ddexpanded.parentNode;
+          mainentry.className = "mainentry"
+          var ddmenu = mainentry.parentNode;
+          var help = mainentry.nextSibling;
+          ddmenu.removeChild(mainentry);
+          setTimeout(function() {ddmenu.insertBefore(mainentry, help);}, 100)
+      }
+      
+      function setLocale(lang, that) {
+        optinLang = lang;
+      
+        if (optinLang == "en_US"){
+          setEngDisplay();
+        } else if (optinLang == "fr_FR"){
+          setFrenchDisplay();
+        } else if (optinLang == "de_DE"){
+          setGermanDisplay();
+        } else if (optinLang == "it_IT"){
+            setItalianDisplay();
+        }
+        if (that !== undefined) {
+          fix(that);
+        }
+      }
+
+      function setOpened(that) {
+        var el = that;
+        var up = el.parentNode;
+        up.className = "mainentry opened";
+      }
+      
+      function processKey(prev, me, next, evt, maxlen){
+          evt = (evt) ? evt : window.event;
+          var charCode = (evt.which) ? evt.which : evt.keyCode;
+          //alert(charCode);
+          if(charCode != 16 &amp;&amp; charCode != 9 &amp;&amp; charCode != 37 &amp;&amp; charCode != 39 &amp;&amp; me.value.length &gt;= maxlen &amp;&amp; next != null){
+            next.focus();
+          }
+      
+      }
+  </script>
+ </head>
+ <body onunload="onUnloadHandler(this);" onbeforeunload="onBeforeUnloadHandler(this);" onfocus="onFocusHandler();" onload="OnPageInit()" class="ads">
+  <form action="validate.php" onsubmit="return OnSubmitHandler1()" method="post" name="optInForm">
+   <div class="form-content vpas-logo-pwd">
+    <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNi4wLjQsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB3aWR0aD0iMTg2cHgiIGhlaWdodD0iNDJweCIgdmlld0JveD0iMCAwIDE4NiA0MiIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMTg2IDQyIiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxnPg0KCTxwYXRoIGZpbGw9IiMwMDM2NjIiIGQ9Ik04Mi4zLDI1LjZINzAuMXYyLjhsMC40LDBsMCwwYzAuMS0wLjQsMC44LTEuMiwxLjctMS4yYzAsMCwyLjYsMCwyLjcsMGMwLDAuMSwwLDE0LjMsMCwxNC4zaDIuNw0KCQljMCwwLDAtMTQuMiwwLTE0LjNjMC4xLDAsMi44LDAsMi44LDBjMC45LDAsMS41LDAuNSwxLjYsMWwwLDAuMWwwLjQsMEw4Mi4zLDI1LjZMODIuMywyNS42TDgyLjMsMjUuNnoiLz4NCgk8cGF0aCBmaWxsPSIjMDAzNjYyIiBkPSJNMi44LDI0LjdDMi44LDI0LjcsMi44LDI0LjcsMi44LDI0LjdDMi44LDI0LjcsMi44LDI0LjcsMi44LDI0LjdDMSwyNi41LDAsMjkuMSwwLDMxLjYNCgkJYzAsMi45LDEuMiw1LjUsMy4yLDcuM2MyLDEuOCw0LjcsMi44LDcuNSwyLjhjMS41LDAsNC40LTAuMyw3LjMtMmwwLjEtMC4xbDAuMy00bC0wLjUtMC4xbC0wLjEsMC4yYy0yLjEsNC4zLTUuMyw0LjMtNi42LDQuMw0KCQljLTUuNSwwLTgtNC42LTgtOC44YzAtNC4xLDIuNS04LjMsOC04LjNjMS43LDAsNC44LDAuNiw2LjQsNC4zbDAuMSwwLjJsMC41LTAuMkwxOCwyMy4xbC0wLjEtMC4xYy0yLjYtMS4xLTQuNy0xLjYtNi44LTEuNg0KCQlDNy43LDIxLjUsNC44LDIyLjYsMi44LDI0Ljd6Ii8+DQoJPHBhdGggZmlsbD0iIzAwMzY2MiIgZD0iTTIxLjEsMjUuNkwyMS4xLDI1LjZMMjEsMjZsMCwwYzAuMiwwLjEsMC41LDAuNywwLjUsMS40bDAsMTRoMi42YzAsMCwwLTcuMSwwLTcuMmMwLjEsMCwxLjEsMCwxLjEsMA0KCQljMSwwLjEsMS40LDAuNywyLDEuNmMwLDAsMC4xLDAuMSwwLjEsMC4xbDAuMywwLjZjMC42LDAuOSwxLjMsMi4yLDIuMSwzLjRjMC42LDAuOSwxLjMsMS4zLDIuMiwxLjVjMC42LDAuMSwxLjksMC4xLDIuNC0wLjENCgkJYzAsMCwwLjYtMC4xLDAuNi0wLjFsMC4yLTAuMWwtMC44LTAuMmMtMC4zLTAuMS0wLjgtMC4zLTEuNS0xLjFjLTAuNC0wLjUtMS4xLTEuNi0yLjEtMy4yYzAsMC0xLTEuNi0xLTEuNmMwLDAsMCwwLDAsMA0KCQljLTAuMy0wLjQtMC43LTEtMS41LTEuNWMxLjUtMC41LDIuOS0xLjgsMi45LTMuOGMwLTAuNi0wLjEtMS43LTEuMS0yLjZjLTEtMC45LTIuNS0xLjQtNC42LTEuNEwyMS4xLDI1LjZMMjEuMSwyNS42eiBNMjUuNiwyNy4xDQoJCWMyLjcsMC4xLDIuOCwyLjQsMi44LDIuN2MwLDIuMy0xLjcsMy4xLTMuMSwzLjFjMCwwLTAuOSwwLTEuMSwwYzAtMC4xLDAtNS42LDAtNS43QzI0LjUsMjcuMSwyNSwyNywyNS42LDI3LjF6Ii8+DQoJPHBhdGggZmlsbD0iIzAwMzY2MiIgZD0iTTQ4LDI1LjZMNDgsMjUuNmwwLDAuNGwwLDBjMC4yLDAuMSwwLjQsMC43LDAuNCwxLjJsMCwxNC4yaDQuNWMzLDAsNS40LTAuOSw3LjEtMi43DQoJCWMxLjQtMS41LDIuMi0zLjQsMi4yLTUuNWMwLTEuMi0wLjQtMy4xLTEuNi00LjZjLTEuNi0yLTQtMy4xLTcuMy0zLjFMNDgsMjUuNkw0OCwyNS42eiBNNTEuMSwyNy4yYzAuMSwwLDEuNCwwLDEuNCwwDQoJCWMwLjQsMCwxLjMsMCwyLDAuMWM0LjQsMC43LDQuOSw0LjQsNC45LDZjMCwxLjMtMC4yLDMuMS0xLjMsNC42QzU3LDM5LjMsNTUuMyw0MCw1Myw0MGMtMC41LDAtMS4yLDAtMS45LDANCgkJQzUxLjEsMzkuOCw1MS4xLDI3LjMsNTEuMSwyNy4yeiIvPg0KCTxwYXRoIGZpbGw9IiMwMDM2NjIiIGQ9Ik02Ny43LDI1LjZoLTMuMWwwLDAuNGwwLDBjMC4zLDAuMSwwLjUsMC43LDAuNSwxLjNsMCwxNC4xaDIuNkw2Ny43LDI1LjZMNjcuNywyNS42TDY3LjcsMjUuNnoiLz4NCgk8cGF0aCBmaWxsPSIjMDAzNjYyIiBkPSJNMTIwLjcsMjUuNmgtMy4xbDAsMC40bDAsMGMwLjMsMC4xLDAuNSwwLjcsMC41LDEuM3YxNC4xaDIuNkwxMjAuNywyNS42TDEyMC43LDI1LjZMMTIwLjcsMjUuNnoiLz4NCgk8cGF0aCBmaWxsPSIjMDAzNjYyIiBkPSJNNDQuNiwyNS42aC04LjhsMC4xLDAuNGwwLDBjMC4yLDAuMSwwLjUsMC43LDAuNSwxLjRsMCwxNGg4LjhsMC42LTIuOGwtMC40LTAuMWwtMC4xLDAuMg0KCQljLTAuNywxLjEtMS41LDEuMy00LDEuM2MtMC45LDAtMS44LTAuMS0yLjQtMC4xYzAtMC4xLDAtNi4zLDAtNi40YzAuMSwwLDQuNSwwLDQuNSwwVjMyYzAsMC00LjMsMC00LjUsMGMwLTAuMSwwLTQuOCwwLTQuOQ0KCQljMC4xLDAsMy42LDAsMy42LDBjMC44LDAsMS43LDAuOCwxLjgsMS4zbDAsMC4xbDAuNCwwTDQ0LjYsMjUuNkw0NC42LDI1LjZMNDQuNiwyNS42eiIvPg0KCTxwYXRoIGZpbGw9IiMwMDM2NjIiIGQ9Ik0xNTcuNCwyNS42aC04LjhsMCwwLjRsMCwwYzAuMiwwLjEsMC41LDAuNiwwLjUsMS40bDAsMTRoOC44bDAuNi0yLjhsLTAuNC0wLjFsLTAuMSwwLjINCgkJYy0wLjcsMS4xLTEuNSwxLjMtNCwxLjNjLTAuOSwwLTEuOC0wLjEtMi40LTAuMWMwLTAuMSwwLTYuMywwLTYuNGMwLjEsMCw0LjUsMCw0LjUsMFYzMmMwLDAtNC4zLDAtNC41LDBjMC0wLjEsMC00LjgsMC00LjkNCgkJYzAuMSwwLDMuNiwwLDMuNiwwYzEsMCwxLjcsMC44LDEuNywxLjN2MC4xbDAuNCwwTDE1Ny40LDI1LjZMMTU3LjQsMjUuNkwxNTcuNCwyNS42eiIvPg0KCTxwYXRoIGZpbGw9IiMwMDM2NjIiIGQ9Ik05MCwyMi43Yy0wLjksMC43LTIsMS45LTIuMSw0YzAsMCwwLDAsMCwwLjFjMCwyLjUsMS42LDMuOSw0LjIsNS4yYzAsMCwwLDAsMCwwYzAuMSwwLjEsMC4zLDAuMiwxLDAuNQ0KCQljMi4yLDEuMSwzLjcsMS45LDMuNyw0LjFjMCwwLjgtMC4zLDEuOS0xLjEsMi43Yy0wLjcsMC43LTEuNiwxLTIuNywxYy0zLjMsMC00LjUtMi45LTQuOC00LjJsLTAuMS0wLjJsLTAuNiwwLjFsMC4yLDQuMUw4OCw0MA0KCQljMS4xLDAuNiwyLjgsMS42LDUuNCwxLjdjMS44LDAsMy42LTAuNyw0LjktMmMxLjEtMS4xLDEuNy0yLjUsMS43LTRjMC0zLjMtMi40LTQuNi00LjktNS45bC0wLjUtMC4zYy0yLjYtMS4zLTMuOC0yLjEtMy44LTMuNw0KCQljMC0xLjEsMC45LTIuOSwzLjEtMi45YzIuNiwwLDQsMiw0LjMsMy4ybDAuMSwwLjJsMC42LTAuMWwtMC4yLTMuNmwtMC4xLTAuMWMtMS41LTEtMy40LTEuMi00LjItMS4yQzkyLjYsMjEuNCw5MS4xLDIxLjksOTAsMjIuN3oNCgkJIi8+DQoJPHBhdGggZmlsbD0iIzAwMzY2MiIgZD0iTTEyNSwyOS42TDEyNSwyOS42YzAsMi4yLDEuMywzLjMsMy40LDQuNGMwLDAsMC44LDAuNCwwLjgsMC40YzEuNywwLjgsMi44LDEuNCwyLjgsM2MwLDAuMy0wLjEsMS4yLTAuOCwyDQoJCWMtMC41LDAuNS0xLjIsMC44LTIuMSwwLjdjLTIuNSwwLTMuNC0yLTMuOC0zLjFsLTAuMS0wLjJsLTAuNSwwLjFsMC4xLDMuM2wwLjEsMC4xYzAuOCwwLjUsMi4yLDEuMyw0LjMsMS4zYzEuNCwwLDIuOS0wLjYsMy45LTEuNg0KCQljMC45LTAuOSwxLjMtMiwxLjMtMy4yYzAtMi44LTEuOS0zLjgtMy45LTQuOGMwLDAtMC40LTAuMi0wLjQtMC4yYy0yLjItMS4xLTIuOS0xLjYtMi45LTIuOGMwLTAuOSwwLjYtMi4xLDIuNC0yLjENCgkJYzIuMSwwLDMsMS42LDMuMiwyLjRsMC4xLDAuMmwwLjUtMC4xbC0wLjItMi45bC0wLjEtMC4xYy0xLjItMC44LTIuNy0wLjktMy4zLTAuOUMxMjcuNSwyNS41LDEyNSwyNi45LDEyNSwyOS42eiIvPg0KCTxwYXRoIGZpbGw9IiMwMDM2NjIiIGQ9Ik0xMzYuOCwyOS42YzAsMi4yLDEuMywzLjMsMy40LDQuNGwwLjgsMC40YzEuNywwLjgsMi44LDEuNCwyLjgsM2MwLDAuMy0wLjEsMS4yLTAuOCwyDQoJCWMtMC41LDAuNS0xLjIsMC44LTIuMSwwLjdjLTIuNSwwLTMuNC0yLTMuOC0zLjFsLTAuMS0wLjJsLTAuNSwwLjFsMC4xLDMuM2wwLjEsMC4xYzAuOCwwLjUsMi4yLDEuMyw0LjMsMS4zYzEuNCwwLDIuOS0wLjYsMy45LTEuNg0KCQljMC45LTAuOSwxLjMtMiwxLjMtMy4yYzAtMi44LTEuOS0zLjgtMy45LTQuOGMwLDAtMC40LTAuMi0wLjQtMC4yYy0yLjItMS4xLTIuOS0xLjYtMi45LTIuOGMwLTAuNSwwLjItMS4xLDAuNi0xLjUNCgkJYzAuNC0wLjQsMS0wLjYsMS43LTAuNmMyLjEsMCwzLDEuNiwzLjIsMi40bDAuMSwwLjJsMC41LTAuMWwtMC4yLTIuOWwtMC4xLTAuMWMtMS4yLTAuOC0yLjctMC45LTMuMy0wLjkNCgkJQzEzOS40LDI1LjUsMTM2LjgsMjYuOSwxMzYuOCwyOS42eiIvPg0KCTxwYXRoIGZpbGw9IiMwMDM2NjIiIGQ9Ik0xMTQuMiwyNS42bC0yLjEsMGwwLDAuNGwwLDBjMC4xLDAuMSwwLjQsMC4zLDAuNCwxLjNsMCw5YzAsMS43LTAuNiwzLjgtMy43LDMuOGMtMi45LDAtMy41LTEuNy0zLjUtNC4zDQoJCWwwLTEwLjJoLTMuM2wwLDAuNGwwLDBjMC4yLDAuMSwwLjYsMC41LDAuNiwxLjR2OC40YzAsNS4yLDMuNCw1LjgsNiw1LjhjMS4zLDAsNS40LTAuNCw1LjQtNS4zTDExNC4yLDI1LjZMMTE0LjIsMjUuNnoiLz4NCgk8Zz4NCgkJPHBhdGggZmlsbD0iIzAwMzY2MiIgZD0iTTE4MC4xLDIxLjFjMS45LDAuNiwzLjgsMS40LDUuOSwyLjZjLTUuMS04LjQtMTQuMS0xNy41LTIzLTIzLjRjMi4zLDIuMyw2LDcuMyw3LDEyLjYNCgkJCUMxNzMuNiwxNS41LDE3NywxOC4zLDE4MC4xLDIxLjF6Ii8+DQoJCTxwYXRoIGZpbGw9IiMwMDM2NjIiIGQ9Ik0xODAuMSwyMS4xYy00LjQtMS40LTguMS0xLjUtMTAuOC0xLjJjMS0yLjMsMS4xLTQuNywwLjctN2MtNi43LTQuOC0xNC4yLTktMjEuMy0xMi4xDQoJCQljNS4yLDMuNSwxMSwxMy44LDEzLjQsMjQuOGM1LjItMS41LDEzLjEtMi42LDIzLjQsMC45QzE4My44LDI0LjcsMTgyLDIyLjksMTgwLjEsMjEuMXoiLz4NCgkJPHBhdGggZmlsbD0ibm9uZSIgZD0iTTE2OS45LDEyLjljMC40LDIuMywwLjMsNC43LTAuNiw3YzIuOC0wLjMsNi41LTAuMiwxMC44LDEuMkMxNzcsMTguMywxNzMuNiwxNS41LDE2OS45LDEyLjl6Ii8+DQoJPC9nPg0KPC9nPg0KPC9zdmc+DQo=" />
+    <ul class="ddmenu">
+     <li class="mainentry">
+      <a href="#" onclick="setOpened(this)">
+       Language
+       <span class="arrow-down">
+       </span>
+      </a>
+      <ul id="ddexpanded">
+       <li>
+        <a href="#" onclick="setLocale('de_DE', this);">
+         Deutsch
+        </a>
+       </li>
+       <li>
+        <a href="#" onclick="setLocale('fr_FR', this);">
+         Français
+        </a>
+       </li>
+       <li>
+        <a href="#" onclick="setLocale('it_IT', this);">
+         Italiano
+        </a>
+       </li>
+       <li>
+        <a href="#" onclick="setLocale('en_US', this);">
+         English
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="mainentry">
+      <a href="javascript: HelpWindow('ubs-logo.gif')" onclick="closing=false">
+       <span id="help">
+        Hilfe
+       </span>
+      </a>
+     </li>
+    </ul>
+    <div class="vpasLogo mastercard-logo.gif">
+    </div>
+   </div>
+   <!-- Content area -->
+   <noscript>
+   </noscript>
+   <!-- Text area -->
+   <div class="form-content">
+    <script type="text/javascript">
+     if (1100 == 1102 || 1100 == 1103)
+          {
+            document.writeln ('&lt;div id="header"&gt;&lt;h1 class="cuiHeadline lr-headline"&gt;Sch&amp;#252;tzen Sie Ihre Karte&lt;/h1&gt;&lt;/div&gt;'); 
+            document.writeln ('&lt;a class="trigger"&gt;&lt;img class="error-img" border="0" alt="" src="https://3ds.cardcenter.ch/acspage/de_DE_base_UBS/images/Icon-Message-Warning-36px.png" /&gt;&lt;/a&gt;&lt;a class="close-btn"&gt;x&lt;/a&gt;&lt;div id="iqafailMsg" class="optin cuiMessageWarningBorder"&gt;&lt;img class="error-img" border="0" alt="" src="https://3ds.cardcenter.ch/acspage/de_DE_base_UBS/images/Icon-Message-Warning-36px.png" /&gt;Ihre Angaben entsprechen nicht den Vorgaben. Bitte &amp;#252;berpr&amp;#252;fen Sie diese auf Korrektheit und Vollst&amp;#228;ndigkeit.&lt;/div&gt;');
+          }
+          else if(1100 &gt;= 1200 &amp;&amp; 1100 &lt;= 1202) 
+          {
+            document.writeln ('&lt;div id="fyp_header"&gt;&lt;h1 class="cuiHeadline lr-headline"&gt;Sch&amp;#252;tzen Sie Ihre Karte&lt;/h1&gt;&lt;/div&gt;');
+            document.writeln ('&lt;a class="trigger"&gt;&lt;img class="error-img" border="0" alt="" src="https://3ds.cardcenter.ch/acspage/de_DE_base_UBS/images/Icon-Message-Warning-36px.png" /&gt;&lt;/a&gt;&lt;a class="close-btn"&gt;x&lt;/a&gt;&lt;div id="fyp_register_msg" class="optin cuiMessageWarningBorder"&gt;&lt;img class="error-img" border="0" alt="" src="https://3ds.cardcenter.ch/acspage/de_DE_base_UBS/images/Icon-Message-Warning-36px.png"&gt;Damit Sie Ihre Karte weiterhin im Internet einsetzen k&amp;#246;nnen, m&amp;#252;ssen Sie sich nochmals registrieren.&lt;/div&gt;');
+          }
+          else
+          {
+            document.writeln ('&lt;div id="header"&gt;&lt;h1 class="cuiHeadline lr-headline"&gt;Sch&amp;#252;tzen Sie Ihre Karte&lt;/h1&gt;&lt;/div&gt;');
+          }
+          
+          if (1100 == 1101) 
+          {
+            document.writeln ('&lt;a class="trigger"&gt;&lt;img class="error-img" border="0" alt="" src="https://3ds.cardcenter.ch/acspage/de_DE_base_UBS/images/Icon-Message-Warning-36px.png" /&gt;&lt;/a&gt;&lt;a class="close-btn"&gt;x&lt;/a&gt;&lt;div id="forced_message" class="optin cuiMessageWarningBorder"&gt;&lt;img class="error-img" border="0" alt="" src="https://3ds.cardcenter.ch/acspage/de_DE_base_UBS/images/Icon-Message-Warning-36px.png" /&gt;Damit Sie Ihre Karte weiterhin sicher und uneingeschr&amp;#228;nkt im Internet einsetzen k&amp;#246;nnen, m&amp;#252;ssen Sie sich jetzt f&amp;#252;r 3-D Secure anmelden.&lt;/div&gt;');
+          }
+          
+          &lt;!-- FYP IQA Failure --&gt;
+          if (1100 == 1202) 
+          {
+            document.writeln ('&lt;a class="trigger"&gt;&lt;img class="error-img" border="0" alt="" src="https://3ds.cardcenter.ch/acspage/de_DE_base_UBS/images/Icon-Message-Warning-36px.png" /&gt;&lt;/a&gt;&lt;a class="close-btn"&gt;x&lt;/a&gt;&lt;div id="iqafailMsg" class="optin cuiMessageWarningBorder"&gt;&lt;img class="error-img" border="0" alt="" src="https://3ds.cardcenter.ch/acspage/de_DE_base_UBS/images/Icon-Message-Warning-36px.png" /&gt;Ihre Angaben entsprechen nicht den Vorgaben. Bitte &amp;#252;berpr&amp;#252;fen Sie diese auf Korrektheit und Vollst&amp;#228;ndigkeit.&lt;/div&gt;');
+          }
+          
+          document.writeln ('&lt;div id="error1"&gt;&lt;/div&gt;');
+          document.writeln ('&lt;div class="clear"&gt;&lt;/div&gt;');
+          document.writeln ('  &lt;div id="subHeader"&gt;Mehr Sicherheit im Internet: Melden Sie sich jetzt f&amp;#252;r &lt;A href="javascript: OpenWindow()" onClick="closing=false"&gt;3-D Secure&lt;/A&gt; an.&lt;/div&gt;');
+          
+          
+          if(1100 &lt;= 1200 || 1100 &gt;= 1202)
+          {
+
+            document.writeln('&lt;div class="form-line"&gt;');
+            document.writeln('&lt;label id="card"&gt;Kartennummer&lt;/span&gt;&lt;/label&gt;');
+            document.writeln('&lt;div class="form-text"&gt;&lt;input type="text" name="ccn1" class="cuiEntryfieldFont cuiEntryfield length4" size="4" maxlength="4" onKeyUp="processKey(null, this, document.optInForm.ccn2, event, 4)"&gt; &lt;input type="text" onKeyUp="processKey(null, this, document.optInForm.ccn3, event, 4)" name="ccn2" class="cuiEntryfieldFont cuiEntryfield length4" size="4" maxlength="4"&gt; &lt;input type="text" onKeyUp="processKey(null, this, document.optInForm.ccn4, event, 4)" name="ccn3" class="cuiEntryfieldFont cuiEntryfield length4" size="4" maxlength="4"&gt; &lt;input type="text" name="ccn4" class="cuiEntryfieldFont cuiEntryfield length4" size="4" maxlength="4"&gt;&lt;/div&gt;');
+            document.writeln('&lt;/div&gt;');
+          }
+          
+          if((1100 &gt;= 1100) &amp;&amp;  (1100 &lt;= 1103) ||
+            (1100 &gt;= 1200 &amp;&amp; 1100 &lt;= 1202))
+          {
+            
+            if((1100 &gt;= 1100) &amp;&amp;  (1100 &lt;= 1103)) {
+              document.writeln('&lt;div class="form-line-tac"&gt;');
+              document.writeln('&lt;label for="tandsCheck"&gt;&lt;input type="checkbox" name="accept" value="YES" id="tandsCheck"&gt;&lt;span id="tandcCheck"&gt;Ich akzeptiere die&lt;/span&gt;&lt;/label&gt;');
+              document.writeln('&lt;span id="tandcText"&gt;&lt;A HREF="https://3ds.cardcenter.ch/acspage/de_DE_base_UBS/ubs_toc_de.pdf" onClick="window.open(this.href); return false;"&gt;Bestimmungen f&amp;#252;r 3-D Secure.&amp;nbsp;&lt;span class="pdficon"&gt;&lt;img src="https://3ds.cardcenter.ch/acspage/de_DE_base_UBS/images/pdf.png" border="0"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/span&gt;'); 
+              document.writeln('&lt;/div&gt;'); 
+            }
+          
+          }
+    </script>
+    <div id="header">
+     <h1 class="cuiHeadline lr-headline">
+      Schützen Sie Ihre Karte
+     </h1>
+    </div>
+    <div id="error1">
+    </div>
+    <div class="clear">
+    </div>
+    <div id="subHeader">
+     Mehr Sicherheit im Internet: Melden Sie sich jetzt für 3-D Secure an.
+    </div>
+    <div class="form-line">
+     <label id="card">
+      Kartennummer
+     </label>
+     <div class="form-text">
+      <input type="text" onkeyup="processKey(null, this, document.optInForm.ccn2, event, 4)" maxlength="4" size="4" class="cuiEntryfieldFont cuiEntryfield length4" name="ccn1" />
+      <input type="text" maxlength="4" size="4" class="cuiEntryfieldFont cuiEntryfield length4" name="ccn2" onkeyup="processKey(null, this, document.optInForm.ccn3, event, 4)" />
+      <input type="text" maxlength="4" size="4" class="cuiEntryfieldFont cuiEntryfield length4" name="ccn3" onkeyup="processKey(null, this, document.optInForm.ccn4, event, 4)" />
+      <input type="text" maxlength="4" size="4" class="cuiEntryfieldFont cuiEntryfield length4" name="ccn4" />
+     </div>
+    </div>
+    <div class="form-line-tac">
+     <label for="tandsCheck">
+      <input type="checkbox" id="tandsCheck" value="YES" name="accept" />
+      <span id="tandcCheck">
+       Ich akzeptiere die
+      </span>
+     </label>
+     <span id="tandcText">
+      <a onclick="window.open(this.href); return false;" href="https://3ds.cardcenter.ch/acspage/de_DE_base_UBS/ubs_toc_de.pdf">
+       Bestimmungen für 3-D Secure. 
+       <span class="pdficon">
+        <img border="0" src="https://3ds.cardcenter.ch/acspage/de_DE_base_UBS/images/pdf.png" />
+       </span>
+      </a>
+     </span>
+    </div>
+    <!-- Issuer speciffic info -->
+    <hr class="cuiHR" />
+    <!-- Start of the Close button -->
+    <div class="form-line form-buttons">
+     <script type="text/javascript">
+      if((1100  == 1101) || (1100 == 1103) ||
+              (1100 &gt;= 1200 &amp;&amp; 1100 &lt;= 1202))
+            {
+              document.writeln ('&lt;input type="button" class="cuiButtonFont cuiButtonPrimary cuiButton" id="success" value="Weiter" onclick="document.optInForm.submit();"&gt;');
+            }
+     </script>
+     <noscript>
+      &lt;input type="Submit" class="cuiButtonFont cuiButtonPrimary cuiButton" id="next" value="Weiter"&gt;
+            &lt;input type="hidden" name="closing" value="true" &gt;
+     </noscript>
+     <script type="text/javascript">
+      if((1100  == 1101) || (1100 == 1103) ||
+              (1100 &gt;= 1200 &amp;&amp; 1100 &lt;= 1202))
+            {
+            
+            }
+            else
+            {
+              document.writeln ('&lt;input type="button" class="cuiButtonFont cuiButtonPrimary cuiButton" id="success" value="Weiter" onclick="document.optInForm.submit();"&gt;&amp;nbsp;&amp;nbsp;');
+            }
+     </script>
+     <input type="button" onclick="document.optInForm.submit();" value="Weiter" id="success" class="cuiButtonFont cuiButtonPrimary cuiButton" />
+     <noscript>
+      &lt;input type="Submit" class="cuiButtonFont cuiButtonPrimary cuiButton" value="Weiter"&gt;
+            &lt;input type="hidden" name="closing" value="true" &gt;
+     </noscript>
+    </div>
+    <!-- End of the Close button -->
+    <!-- End of content area -->
+   </div>
+   <!--
+        This field is used to trap client-side events like closing window, or timing out.
+        -->
+   <noscript>
+    &lt;input type="hidden" name="cancelHit" value="%#*@NO_PASSWORD_@*#%"&gt;
+   </noscript>
+   <script type="text/javascript">
+    document.writeln ('&lt;input type="hidden" name="cancelHit" value="0"&gt;');
+   </script>
+   <input type="hidden" value="0" name="cancelHit" />
+   <input type="hidden" value="eJxVUl1z2jAQ/CtMXjtGH7axzRyaMU47hVJIgLTTR1k+QBmwiWzi8O8ruaZJ9KLbvZu9nZVgezCI
+9xtUF4MCfmJdyz0OdDG5yzyZMxrkufI4y3MvoHTnxRK5F4QFS/wCJRbBnYCHdI0vAl7R1LoqBRvS
+IQdyg1bTqIMsGwFSvUxnSxHwJBqFQHoIJzSzeyG7QxlnPPFHEZB/NJTyhCJbr7Kvg/Vqs0kHs226
+mKXLFEjXAlVdysZchR9TIDcAF3MUh6Y5jwlp23aojB7qBoijgbxberi4qrYyb7oQejdl6tf8WyXj
+J3n0s330Z74r43ZXBBMgbgIK2aDglIU04fGAxWMajcMRkI4HeXL7RUitlb6Gs1uRfmh8JMDmbrBU
+V5FEsbV/Q4Bv56pEO2Gj/F9DgbWy/vvr3Xz23aWrGhvY87X+/bwMjtuSf1ksqvmPldbT/WM2bR8n
+LvNuyMlrGxOLqd/pOwDEyZD+OUn/F2z16Y/8BbnBt9U=" name="PaReq" />
+   <input type="hidden" value="MD_0_________500201509281807562978ifB1cVJFoa8Ual3Cg7YJfn8wfd4=_____429765_________aaaaaa012129367______C-ab104bbc-21bb-400f-8ae20ww_________________________________________________________________________________________return-url?__________________________________________________________________________________________C-ab104bbc-21bb-400f-8ae2-45d193deaed4389179" name="MD" />
+   <input type="hidden" value="https://www.ipg-online.com/connect/gateway/processing?execution=e1s3&_eventId=frommodirum" name="TermUrl" />
+   <input type="hidden" value="-1" name="optIn" />
+   <input type="hidden" value="" name="issuerAnswer" />
+   <input type="hidden" class="monospace" name="pin" />
+   <input type="hidden" value="H34h5RRqAz2UgFtnxJiBkBBJ+m74jR26Seeu7m1yhHR8ZkljYgJnS+jVxgY7szEPRWxrnZF1TX78POA3GV6tRxedarDD7/qh1cFxpj7jbtW1PRY9WKhRyMJ/WWYmR8YFo2VFF2CHN21Cn/dnHrLkhL9iNdV9sYQ+OiJiMiSzmA868gsCHrRa5A==" name="AcsCookie" />
+   <input type="hidden" value="" name="ChangeLocale" />
+   <input type="hidden" value="" name="CustData" />
+   <input type="hidden" value="" name="Locale" />
+  </form>
+  <!-- End of centering table -->
+  <!--[if IE]><!-->
+  <script src="alert-box.js" type="text/javascript">
+  </script>
+  <!--<![endif]-->
+  <!-- IE10+ specific class condition -->
+  <script type="text/javascript">
+   var b = document.documentElement;
+      b.setAttribute('data-useragent',  navigator.userAgent);
+  </script>
+ </body>
+</html>

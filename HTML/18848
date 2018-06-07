@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" class="js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients no-cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths placeholder svgfilters wf-proximanova-n8-active wf-proximanova-n9-active wf-active" style="">
+ <head>
+  <meta charset="utf-8" />
+  <title>
+   Discover whether your workplace is First Aid compliant
+  </title>
+  <meta content="" name="description" />
+  <meta content="width=device-width" name="viewport" />
+  <link href="/favicon.ico" rel="shortcut icon" />
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+  <link href="styles/main.css" rel="stylesheet" />
+  <script async="" src="//www.google-analytics.com/analytics.js">
+  </script>
+  <script charset="utf-8" type="text/javascript" src="scripts/jquery-2.1.4.min.js">
+  </script>
+  <script charset="utf-8" type="text/javascript" src="scripts/modernizr.custom.08611.js">
+  </script>
+  <script src="//use.typekit.net/sbn7hgj.js">
+  </script>
+  <style type="text/css">
+   .tk-proxima-nova{font-family:"proxima-nova",sans-serif;}
+  </style>
+  <link rel="stylesheet" href="https://use.typekit.net/c/f3171c/1w;proxima-nova,7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191,b62:R:n8,b64:R:n9/d?3bb2a6e53c9684ffdc9a98f71f5b2a62bc5e6c08d76a27c2c8c99083c7e658bd95cedc4eec04d6093031a8f69b60dbd3cdfc56e6929dfcbcc57d3020975a7729976ef57111ad422501cdfc50f61c4e99734a586bb6cef3a548ff81b72dbb8fe51d7c241ac10272e8b6090584d5803bf1206e5dc4bb7fc8939d3c828d5cdfd460bc528a02a2b1a5b97efcf7dd375ffffec3cbe6d097daa2f25a2d21733b0fdfa240bf0a882d0801c26c5a176640f76656eee20fc4fa081e20f5225509d5f586e98f9726c157829289589e622b8cb1a27b1235643f8938db" media="all" />
+  <script>
+   try {
+      Typekit.load();
+    } catch (e) {}
+  </script>
+  <script type="text/javascript">
+   var switchTo5x = true;
+  </script>
+  <script src="http://w.sharethis.com/button/buttons.js" type="text/javascript">
+  </script>
+  <script type="text/javascript">
+   stLight.options({
+      publisher: "a577d981-6683-4ce8-bc6b-6ea6b0945fda",
+      doNotHash: false,
+      doNotCopy: false,
+      hashAddressBar: false
+    });
+  </script>
+  <script>
+   $(document).ready(function() {
+		
+		if (Modernizr.input.placeholder) {
+		  // your placeholder text should already be visible!
+		} else {
+		  	$("#cntctfrm").find('[placeholder]').each(function(){ 
+			    $(this).val($(this).attr('placeholder'));
+			
+			    $(this).focus(function() {
+			      if ($(this).attr('placeholder')==$(this).val()) {
+			        $(this).val('');
+			      }
+			    })
+			
+			    $(this).blur(function() {
+			      if ($(this).val()=='') {
+			        $(this).val($(this).attr('placeholder'));
+			      }
+			    })
+			
+			  });
+		}
+		
+		function resetform(){
+			$("input[name=name]").val('');
+			$("input[name=workplace]").val('');
+			$("input[name=postcode]").val('');
+			$("input[name=email]").val('');
+			$("input[name=telephone]").val('');
+		}
+			
+		$("#submit-btn").click(function() {
+			// Set up variables of the form data
+			var name = $("input[name=name]").val();
+			var workplace = $("input[name=workplace]").val();
+			var postcode = $("input[name=postcode]").val();
+			var email = $("input[name=email]").val();
+			var telephone = $("input[name=telephone]").val();
+			var error = false;
+			
+			//Regular expressions to match input values
+			var regText = /^[A-Za-z .'-]+$/;
+			var regPostcode = /^\d{4}$/;
+			var regEmail = /^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/;
+			var regPhone = /^\(?(?:\+?61|0)(?:(?:2\)?[ -]?(?:3[ -]?[38]|[46-9][ -]?[0-9]|5[ -]?[0-35-9])|3\)?(?:4[ -]?[0-57-9]|[57-9][ -]?[0-9]|6[ -]?[1-67])|7\)?[ -]?(?:[2-4][ -]?[0-9]|5[ -]?[2-7]|7[ -]?6)|8\)?[ -]?(?:5[ -]?[1-4]|6[ -]?[0-8]|[7-9][ -]?[0-9]))(?:[ -]?[0-9]){6}|4\)?[ -]?(?:(?:[01][ -]?[0-9]|2[ -]?[0-57-9]|3[ -]?[1-9]|4[ -]?[7-9]|5[ -]?[018])[ -]?[0-9]|3[ -]?0[ -]?[0-5])(?:[ -]?[0-9]){5})$/;	
+							
+			//Data string to send if no errors
+			var dataString = 'name='+ name + '&amp;workplace=' + workplace + '&amp;postcode=' + postcode + '&amp;email=' + email + '&amp;telephone=' + telephone;
+
+			function validateFrm(){
+				//Reset Fields
+				$('#cntctfrm input:not(.donot)').removeClass('error-inpt');
+				$('.error-icon').each(function(){$(this).css({'display':'none'});});
+				
+				//Start Validation
+				if(name=='' || name=='Name' || !name.match(regText)){
+					$("input[name=name]").addClass('error-inpt');error=true;
+					$("input[name=name]").next('.error-icon').css({'display':'inline'});
+					}
+				if(workplace=='' || workplace=='Workplace' || !workplace.match(regText)){
+					$("input[name=workplace]").addClass('error-inpt');error=true;
+					$("input[name=workplace]").next('.error-icon').css({'display':'inline'});
+					}
+				
+				if(postcode=='' || postcode=='Postcode' || !postcode.match(regPostcode)){
+					$("input[name=postcode]").addClass('error-inpt');error=true;
+					$("input[name=postcode]").next('.error-icon').css({'display':'inline'});
+					}
+				
+				if(email=='' || email=='Email' || !email.match(regEmail)){
+					$("input[name=email]").addClass('error-inpt');error=true;
+					$("input[name=email]").next('.error-icon').css({'display':'inline'});
+					}
+				
+				if(telephone=='' || telephone=='Phone' || !telephone.match(regPhone)){
+					$("input[name=telephone]").addClass('error-inpt');error=true;
+					$("input[name=telephone]").next('.error-icon').css({'display':'inline'});
+					}
+				
+				//If no errors, send data to php and send email
+				if(!error){
+					$(".form").fadeTo('fast',0.2, function(){
+						document.getElementById("name").disabled = true;
+						document.getElementById("workplace").disabled = true;
+						document.getElementById("postcode").disabled = true;
+						document.getElementById("email").disabled = true;
+						document.getElementById("tele").disabled = true;
+						document.getElementById("submit-btn").disabled = true;						
+					});
+					$(".loader").delay(200).show();					
+					$.ajax({
+						type: "POST",
+						url: "form.php",
+						data: dataString,
+						success: function(){
+							$(".loader").fadeOut(200);
+							$('.success').delay(200).fadeIn(400).show().delay( 3500 ).fadeOut(400);
+							$('.form').fadeOut(200).hide(function(){
+								//resetform();
+								document.getElementById("name").disabled = false;
+								document.getElementById("workplace").disabled = false;
+								document.getElementById("postcode").disabled = false;
+								document.getElementById("email").disabled = false;
+								document.getElementById("tele").disabled = false;
+								document.getElementById("submit-btn").disabled = false;								
+							}).delay( 4000 ).show().fadeIn(200).fadeTo('fast',1);
+							console.log('Validated and sent');		
+						}
+					});	
+				}
+			}
+
+			validateFrm();
+
+			//Return false so form doesn't follow through with normal submit activity
+			return false;
+		});
+	
+	});
+  </script>
+  <script type="text/javascript" src="http://wd-edge.sharethis.com/button/getAllAppDefault.esi?cb=stLight.allDefault&app=all&publisher=a577d981-6683-4ce8-bc6b-6ea6b0945fda&domain=worstaidtofirstaid.com">
+  </script>
+  <script type="text/javascript" src="http://wd-edge.sharethis.com/button/checkOAuth.esi">
+  </script>
+  <link rel="stylesheet" type="text/css" href="http://w.sharethis.com/button/css/buttons.ab966a004186897711de4a5ed256c924.css" />
+ </head>
+ <body>
+  <!--[if lt IE 9>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+  <script>
+   var versaTag = {};
+    versaTag.id = "2651";
+    versaTag.sync = 0;
+    versaTag.dispType = "js";
+    versaTag.ptcl = "HTTP";
+    versaTag.bsUrl = "bs.serving-sys.com/BurstingPipe";
+    //VersaTag activity parameters include all conversion parameters including custom parameters and Predefined parameters. Syntax: "ParamName1":"ParamValue1", "ParamName2":"ParamValue2". ParamValue can be empty.
+    versaTag.activityParams = {
+      //Predefined parameters:
+      "Session": ""
+        //Custom parameters:
+    };
+    //Static retargeting tags parameters. Syntax: "TagID1":"ParamValue1", "TagID2":"ParamValue2". ParamValue can be empty.
+    versaTag.retargetParams = {};
+    //Dynamic retargeting tags parameters. Syntax: "TagID1":"ParamValue1", "TagID2":"ParamValue2". ParamValue can be empty.
+    versaTag.dynamicRetargetParams = {};
+    // Third party tags conditional parameters and mapping rule parameters. Syntax: "CondParam1":"ParamValue1", "CondParam2":"ParamValue2". ParamValue can be empty.
+    versaTag.conditionalParams = {};
+  </script>
+  <script src="http://ds.serving-sys.com/SemiCachedScripts/ebOneTag.js" id="ebOneTagUrlId">
+  </script>
+  <script type="text/javascript" src="http://bs.serving-sys.com/Serving?cn=ot&onetagid=2651&dispType=js&sync=0&pageurl=$$http%3A//worstaidtofirstaid.com/$$&ns=0&rnd=71290937467526" async="">
+  </script>
+  <noscript>
+   &lt;iframe src="http://bs.serving-sys.com/BurstingPipe?
+      cn=ot&amp;amp;
+      onetagid=2651&amp;amp;
+      ns=1&amp;amp;
+      activityValues=$$Session=[Session]$$&amp;amp;
+      retargetingValues=$$$$&amp;amp;
+      dynamicRetargetingValues=$$$$&amp;amp;
+      acp=$$$$&amp;amp;" style="display:none;width:0px;height:0px"&gt;&lt;/iframe&gt;
+  </noscript>
+  <div class="container">
+   <header class="header">
+    <!-- <h1>W<span class="icon-icon_cross-side"></span>rst Aid <br  /><span class="linetwo"><span class="icon-icon_cross-to"></span>First Aid</span><br  /> <span class="subtitle">In the Workplace</span></h1> -->
+    <div class="title">
+     <img alt="Worst Aid to First Aid in the Workplace" class="img-responsive hidden-md hidden-lg" src="images/logotype-v.svg" />
+    </div>
+    <div class="title">
+     <img alt="Worst Aid to First Aid in the Workplace" class="img-responsive visible-md visible-lg" src="images/logotype-h.svg" />
+    </div>
+   </header>
+   <div class="content">
+    <!--div class="row">
+        <div class="col-lg-12">
+          <h2 class="intro">Discover whether your workplace is First Aid compliant</h2>
+
+        </div>
+      </div-->
+    <!--nav class="navigation padd-sm">
+        <ul class="list-inline">
+
+          <li><a href="http://www.stjohnsa.com.au/training" target="_blank">Book a <br  />first aid course</a>
+          </li>
+          <li><a href="http://stjohnsa.webform.com/form/3340" target="_blank">Take our <br  />compliance test</a>
+          </li>
+          <li>
+            <a href="mailto:worstaidtofirstaid@stjohnsa.com.au">Contact a <br  />compliance professional</a>
+          </li>
+        </ul>
+      </nav-->
+    <main>
+     <div class=" padd">
+      <div class="row">
+       <div class="col-lg-12">
+        <h2 class="upper">
+         Less than 10% of SA businesses are compliant with the First Aid Code of Practice. Are you putting yourself and your employees at risk?
+         <br />
+         <br />
+         First Aid compliance is a complex area. St John Ambulance makes it easy for you to get compliant. Enquire today and go from Worst Aid to First Aid.
+        </h2>
+       </div>
+       <!--div class="col-sm-6 col-md-7 col-md-pull-5"-->
+       <div class="col-sm-6 col-md-7 st-align">
+        <div class="success">
+         <p>
+          Thank you for your Compliance request.
+          <br />
+          <br />
+          You will be contacted by a compliance professional who will help you make the
+					right changes in your business to comply with the First Aid Code of Practice.
+         </p>
+        </div>
+        <div class="loader">
+         <img src="images/loading.gif" />
+        </div>
+        <div class="form">
+         <form action="form.php" method="post" id="cntctfrm" name="contactform">
+          <table width="450px">
+           <tbody>
+            <tr>
+             <td valign="top">
+              <!--label for="name">Name</label-->
+             </td>
+             <td>
+              <input type="text" required="" onfocus="$(this).removeClass('error-inpt')" placeholder="Name" size="30" maxlength="50" id="name" name="name" />
+              <div class="error-icon">
+               X
+              </div>
+             </td>
+            </tr>
+            <tr>
+             <td valign="top">
+              <!--label for="workplace">Workplace</label-->
+             </td>
+             <td valign="top">
+              <input type="text" required="" onfocus="$(this).removeClass('error-inpt')" placeholder="Workplace" size="30" maxlength="50" id="workplace" name="workplace" />
+              <div class="error-icon">
+               X
+              </div>
+             </td>
+            </tr>
+            <tr>
+             <td valign="top">
+              <!--label for="postcode">Postcode</label-->
+             </td>
+             <td valign="top">
+              <input type="number" required="" onfocus="$(this).removeClass('error-inpt')" placeholder="Postcode" size="30" maxlength="50" id="postcode" name="postcode" />
+              <div class="error-icon">
+               X
+              </div>
+             </td>
+            </tr>
+            <tr>
+             <td valign="top">
+              <!--label for="email">Email Address</label-->
+             </td>
+             <td valign="top">
+              <input type="email" required="" onfocus="$(this).removeClass('error-inpt')" placeholder="Email" size="30" maxlength="80" name="email" id="email" />
+              <div class="error-icon">
+               X
+              </div>
+             </td>
+            </tr>
+            <tr>
+             <td valign="top">
+              <!--label for="telephone">Phone</label-->
+             </td>
+             <td valign="top">
+              <input type="tel" required="" onfocus="$(this).removeClass('error-inpt')" placeholder="Phone" size="30" maxlength="30" name="telephone" id="tele" />
+              <div class="error-icon">
+               X
+              </div>
+             </td>
+            </tr>
+            <tr>
+             <td style="text-align:left" colspan="2">
+              <button class="btn btn-default btn-block btn-lg" id="submit-btn" type="submit">
+               Get Compliant
+              </button>
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </form>
+         <div class="bld-txt">
+          <p>
+           You will be contacted by a compliance professional who will help you make the right changes in your business to comply with the First Aid Code of Practice.
+          </p>
+         </div>
+        </div>
+       </div>
+       <!--div class="col-sm-6 col-md-7 col-md-pull-5">
+              <h2 class="line-pattern">Compliance Checklist</h2>
+              <p>In a workplace emergency doing nothing or doing the wrong thing could be the worst possible thing for your business. With all South Australian businesses required by law to be first aid compliant, take our quick compliance test and find
+                out if your business is worst aid or first aid ready.
+              </p>
+
+              <a href="http://stjohnsa.webform.com/form/3340" class="btn btn-default btn-block btn-lg" target="_blank">Workplace Compliance Checklist</a>
+            </div-->
+       <!--div class="col-sm-6 col-md-5 col-md-push-7 align-prprty"-->
+       <div class="col-sm-5 col-md-5 align-prprty txt-cntr st-align">
+        <div class="embed-responsive embed-responsive-16by9">
+         <iframe src="//www.youtube.com/embed/qR2SvTfnYjI?rel=0&controls=0&showinfo=0" class="embed-responsive-item">
+         </iframe>
+        </div>
+        <div class="rd-btn">
+         <a target="_blank" class="btn btn-default btn-block newbtn" href="http://www.stjohnsa.com.au/training">
+          Book a
+          <br />
+          First Aid Course
+         </a>
+        </div>
+        <div class="rd-btn">
+         <a target="_blank" class="btn btn-default btn-block newbtn" href="http://shop.stjohn.org.au/">
+          Shop First Aid Supplies
+         </a>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="bdr-top padd">
+      <div class="row">
+       <div class="col-sm-6 col-md-4">
+        <img alt="Choking First Aid" class="img-responsive ani" src="images/anim-choking_2x.gif" />
+       </div>
+       <div class="col-sm-6 col-md-7 col-md-offset-1">
+        <h2 class="line-pattern">
+         Code of practice
+        </h2>
+        <p>
+         In 2012, Safework Australia launched the new harmonised First Aid in the Workplace Code of Practice, which is currently being rolled out across Australia. This new Code is an approved Code of Practice under section 274 of the Work Health
+                and Safety Act (the WHS Act) approved by Safework Australia and the Ministerial Council.
+        </p>
+        <p>
+         <a href="#code-collaps" data-toggle="collapse">
+          Read more...
+         </a>
+        </p>
+        <div id="code-collaps" class="collapse">
+         <p>
+          As part of the new Code, South Australian workplaces are expected to undertake a risk assessment in order to identify the first aid equipment, procedures and First Aiders they should have in place. The new Code provides guidance on first
+                  aid requirements appropriate for different workplace risks and hazards.
+         </p>
+         <p>
+          The First Aid Workplace Code of Practice highlights three core areas that must be addressed in all workplace settings:
+         </p>
+         <ul>
+          <li>
+           The presence of accredited first aiders on staff who also undertake annual refresher courses in CPR and renew qualifications every three years. In low risk workplaces, one first aider is recommended for every 50 workers. For high-risk workplaces, it is
+                    one to every 25 staff.
+          </li>
+          <li>
+           Workplace resources and equipment, including fully stocked first aid kits and clear first aid signage. First aid rooms could also be necessary in high-risk workplace and for those far from emergency services.
+          </li>
+          <li>
+           Procedures and drills training covering first aid protocols for all workers and what to do in an emergency.
+          </li>
+         </ul>
+         <p>
+          <strong>
+           For more details information on the First Aid Code of Practice visit Safework Australia
+          </strong>
+         </p>
+        </div>
+        <a target="_blank" class="btn btn-default btn-block btn-lg" href="http://www.safework.sa.gov.au/show_page.jsp?id=113693#.VLcZ7f0cS70">
+         First Aid Code of Practice
+        </a>
+       </div>
+      </div>
+     </div>
+     <div class="bdr-top padd">
+      <div class="row">
+       <div class="col-sm-6 col-md-5 col-md-push-7 align-right">
+        <img alt="Concussion First Aid" class="img-responsive ani" src="images/anim-concussion_2x.gif" />
+       </div>
+       <div class="col-sm-6 col-md-7 col-md-pull-5">
+        <h2 class="line-pattern">
+         Get compliant with St John
+        </h2>
+        <p>
+         Work health and safety (WHS) is a key management responsibility for every South Australian business. Workplace legislation requires all South Australian businesses to ensure that sufficient first aid measures are in place, such as having your staff trained
+                in first aid, a fully stocked first aid kit and defibrillator.
+        </p>
+        <p>
+         <a href="#getcomp-collaps" data-toggle="collapse">
+          Read more...
+         </a>
+        </p>
+        <div id="getcomp-collaps" class="collapse">
+         <p>
+          To assist with compliance, our experienced first aid consultants can facilitate a first aid risk assessment to determine the risk level of your workplace in order to ascertain the first aid requirements needed to meet the First Aid Code
+                  of Practice.
+         </p>
+         <p>
+          As the State’s leading expert in the field of first aid, St John Ambulance’s mission is to assist you as a duty holder to understand your first aid obligations and to facilitate the development of a legally compliant first aid workplace
+                  and culture within an organisation.
+         </p>
+         <p>
+          St John Ambulance provides a free risk assessment consulting service to help organisations meet their legal first aid obligations. Our tailored workplace training courses can be completed at your premises or from any of our conveniently
+                  located training centres throughout South Australia. To book a training course or comprehensive risk assessment, call the leaders in first aid training on 1300 656 322.
+         </p>
+         <p>
+          By completing our online first aid risk assessment checklist, you can determine whether your business is compliant in line with the new Code of Practice, First Aid in the Workplace.
+         </p>
+        </div>
+        <a target="_blank" class="btn btn-default btn-block btn-lg" href="http://stjohnsa.webform.com/form/3340">
+         Workplace Compliance Checklist
+        </a>
+       </div>
+      </div>
+     </div>
+    </main>
+   </div>
+  </div>
+  <div class="container">
+   <footer class="footer">
+    <div class="row">
+     <div class="col-lg-3 text-center">
+      <span class="icon-icon_phone">
+      </span>
+      <span class="text">
+       1300 ST JOHN (1300 78 5646)
+      </span>
+     </div>
+     <div class="col-lg-3 text-center">
+      <a href="mailto:worstaidtofirstaid@stjohnsa.com.au">
+       <span class="icon-icon_email">
+       </span>
+       worstaidtofirstaid@stjohnsa.com.au
+      </a>
+     </div>
+     <div class="col-lg-3 text-center">
+      <span class="icon-icon_location">
+      </span>
+      <span class="text">
+       85 Edmund Ave, Unley SA 5061
+      </span>
+     </div>
+     <div class="col-lg-3 text-center">
+      <a target="_blank" href="http://www.stjohnsa.com.au/home/privacy-policy-site-security">
+       Privacy Policy
+      </a>
+     </div>
+    </div>
+    <div class="row">
+     <div class="col-sm-4 text-center col-sm-offset-4">
+      <br />
+      <br />
+      <!-- Go to www.addthis.com/dashboard to customize your tools -->
+      <!-- <span class='st_sharethis_large' displayText='ShareThis'></span> -->
+      <span displaytext="Facebook" class="st_facebook_large" st_processed="yes">
+       <span style="text-decoration:none;color:#000000;display:inline-block;cursor:pointer;" class="stButton">
+        <span class="stLarge" style='background-image: url("http://w.sharethis.com/images/facebook_32.png");'>
+        </span>
+       </span>
+      </span>
+      <span displaytext="Tweet" class="st_twitter_large" st_processed="yes">
+       <span style="text-decoration:none;color:#000000;display:inline-block;cursor:pointer;" class="stButton">
+        <span class="stLarge" style='background-image: url("http://w.sharethis.com/images/twitter_32.png");'>
+        </span>
+       </span>
+      </span>
+      <span displaytext="LinkedIn" class="st_linkedin_large" st_processed="yes">
+       <span style="text-decoration:none;color:#000000;display:inline-block;cursor:pointer;" class="stButton">
+        <span class="stLarge" style='background-image: url("http://w.sharethis.com/images/linkedin_32.png");'>
+        </span>
+       </span>
+      </span>
+     </div>
+    </div>
+   </footer>
+  </div>
+  <!-- Modal Chokin INCORRECT -->
+  <div aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" id="choking-incorrect" class="modal fade">
+   <div class="modal-dialog">
+    <div class="modal-content">
+     <button aria-label="Close" data-dismiss="modal" class="close" type="button">
+      <span class="icon-icon_close">
+      </span>
+     </button>
+     <div class="modal-body">
+      <div class="row">
+       <div class="col-md-7">
+        <h1 class="line-pattern">
+         Incorrect
+        </h1>
+        <h4>
+         Get that thing off your workmate’s face! Talk calmly and encourage them to cough up the object. If coughing is ineffective call an ambulance, then using the heel of one hand give five sharp back blows between the shoulder blades. To go from Worst Aid to First Aid,
+         <a target="_blank" href="http://stjohnsa.webform.com/form/3340">
+          take our First Aid Compliance test.
+         </a>
+        </h4>
+       </div>
+       <div class="col-md-4 col-md-offset-1">
+        <img class="img-responsive" src="images/anim-choking_2x.gif" />
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <!-- Modal Choking CORRECT -->
+  <div aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" id="choking-correct" class="modal fade">
+   <div class="modal-dialog">
+    <div class="modal-content">
+     <button aria-label="Close" data-dismiss="modal" class="close" type="button">
+      <span class="icon-icon_close">
+      </span>
+     </button>
+     <div class="modal-body">
+      <div class="row">
+       <div class="col-md-7">
+        <h1 class="line-pattern">
+         Correct
+        </h1>
+        <h4>
+         Plungers aren’t for blocked windpipes. Talk calmly and encourage them to cough up the object. If coughing is ineffective call an ambulance, then using the heel of one hand give five sharp back blows between the shoulder blades. To go from Worst Aid to First Aid,
+         <a target="_blank" href="http://stjohnsa.webform.com/form/3340">
+          take our First Aid Compliance test.
+         </a>
+        </h4>
+       </div>
+       <div class="col-md-4 col-md-offset-1">
+        <img class="img-responsive" src="images/anim-choking_2x.gif" />
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <!-- Modal Heart Attack INCORRECT -->
+  <div aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" id="heart-attack-incorrect" class="modal fade">
+   <div class="modal-dialog">
+    <div class="modal-content">
+     <button aria-label="Close" data-dismiss="modal" class="close" type="button">
+      <span class="icon-icon_close">
+      </span>
+     </button>
+     <div class="modal-body">
+      <div class="row">
+       <div class="col-md-7">
+        <h1 class="line-pattern">
+         Incorrect
+        </h1>
+        <h4>
+         Licking your colleague’s hand could lose you your job and earn you a reputation as a creepy hand licker. Keep your colleague comfortable and call an ambulance. To go from Worst Aid to First Aid,
+         <a target="_blank" href="http://stjohnsa.webform.com/form/3340">
+          take our First Aid Compliance test.
+         </a>
+        </h4>
+       </div>
+       <div class="col-md-4 col-md-offset-1">
+        <img class="img-responsive" src="images/anim-heartattack_2x.gif" />
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <!-- Modal Heart Attack CORRECT -->
+  <div aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" id="heart-attack-correct" class="modal fade">
+   <div class="modal-dialog">
+    <div class="modal-content">
+     <button aria-label="Close" data-dismiss="modal" class="close" type="button">
+      <span class="icon-icon_close">
+      </span>
+     </button>
+     <div class="modal-body">
+      <div class="row">
+       <div class="col-md-7">
+        <h1 class="line-pattern">
+         Correct
+        </h1>
+        <h4>
+         Licking your colleague’s hand could lose you your job and earn you a reputation as a creepy hand licker. Keep your colleague comfortable and call an ambulance. To go from Worst Aid to First Aid,
+         <a target="_blank" href="http://stjohnsa.webform.com/form/3340">
+          take our First Aid Compliance test.
+         </a>
+        </h4>
+       </div>
+       <div class="col-md-4 col-md-offset-1">
+        <img class="img-responsive" src="images/anim-heartattack_2x.gif" />
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <!-- Modal Concussion INCORRECT -->
+  <div aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" id="concussion-incorrect" class="modal fade">
+   <div class="modal-dialog">
+    <div class="modal-content">
+     <button aria-label="Close" data-dismiss="modal" class="close" type="button">
+      <span class="icon-icon_close">
+      </span>
+     </button>
+     <div class="modal-body">
+      <div class="row">
+       <div class="col-md-7">
+        <h1 class="line-pattern">
+         Incorrect
+        </h1>
+        <h4>
+         Photos will last a lifetime, but your workmate won’t if you don’t check they are responsive and seek medical aid immediately. To go from Worst Aid to First Aid,
+         <a target="_blank" href="http://stjohnsa.webform.com/form/3340">
+          take our First Aid Compliance test.
+         </a>
+        </h4>
+       </div>
+       <div class="col-md-4 col-md-offset-1">
+        <img class="img-responsive" src="images/anim-concussion_2x.gif" />
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <!-- Modal Concussion CORRECT -->
+  <div aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" id="concussion-correct" class="modal fade">
+   <div class="modal-dialog">
+    <div class="modal-content">
+     <button aria-label="Close" data-dismiss="modal" class="close" type="button">
+      <span class="icon-icon_close">
+      </span>
+     </button>
+     <div class="modal-body">
+      <div class="row">
+       <div class="col-md-7">
+        <h1 class="line-pattern">
+         Correct
+        </h1>
+        <h4>
+         Now’s not the time for duckface poses or pouting. Check if your workmate is responsive and seek medical aid immediately. To go from Worst Aid to First Aid,
+         <a target="_blank" href="http://stjohnsa.webform.com/form/3340">
+          take our First Aid Compliance test.
+         </a>
+        </h4>
+       </div>
+       <div class="col-md-4 col-md-offset-1">
+        <img class="img-responsive" src="images/anim-concussion_2x.gif" />
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <script src="scripts/vendor.js">
+  </script>
+  <script src="scripts/main.js">
+  </script>
+  <script>
+   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-60076501-1', 'auto');
+  ga('send', 'pageview');
+  </script>
+  <div id="stcpDiv" style="position: absolute; top: -1999px; left: -1988px;">
+   ShareThis Copy and Paste
+  </div>
+  <iframe width="0px" height="0px" frameborder="0" id="stSegmentFrame" name="stSegmentFrame" src="http://seg.sharethis.com/getSegment.php?purl=http%3A%2F%2Fworstaidtofirstaid.com%2F&jsref=&rnd=1448509314045" scrolling="no" style="display:none;">
+  </iframe>
+  <div id="stwrapper" class="stwrapper stwrapper5x" style="display: none;">
+   <iframe frameborder="0" allowtransparency="true" id="stLframe" class="stLframe" name="stLframe" scrolling="no" src="http://edge.sharethis.com/share5x/index.1fa45b75ede343ffbb6f8bfc9d42ce31.html">
+   </iframe>
+  </div>
+  <div id="stOverlay" onclick="javascript:stWidget.closeWidget();">
+  </div>
+ </body>
+</html>

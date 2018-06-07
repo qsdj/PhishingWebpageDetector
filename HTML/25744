@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+ <head>
+  <link media="screen" type="text/css" href="css/docs.css" rel="stylesheet" />
+  <title>
+   Music Art Dance
+  </title>
+  <meta charset="utf-8" />
+  <link media="screen" type="text/css" href="css/bootstrap.css" rel="stylesheet" />
+  <link media="screen" type="text/css" href="css/responsive.css" rel="stylesheet" />
+  <link media="screen" type="text/css" href="css/style.css" rel="stylesheet" />
+  <link media="screen" type="text/css" href="css/camera.css" rel="stylesheet" />
+  <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Raleway:100" />
+  <script src="js/jquery.js" type="text/javascript">
+  </script>
+  <script src="js/jquery.easing.1.3.js" type="text/javascript">
+  </script>
+  <script src="js/superfish.js" type="text/javascript">
+  </script>
+  <script src="js/jquery.mobilemenu.js" type="text/javascript">
+  </script>
+  <script src="js/jquery.cookie.js" type="text/javascript">
+  </script>
+  <script src="js/camera.js" type="text/javascript">
+  </script>
+  <!--[if (gt IE 9)|!(IE)]><!-->
+  <script src="js/jquery.mobile.customized.min.js" type="text/javascript">
+  </script>
+  <!--<![endif]-->
+  <script>
+   $(document).ready(function(){
+                jQuery('.camera_wrap').camera();
+            });
+  </script>
+  <script type="text/javascript" src="js/gallery.js">
+  </script>
+  <script type="text/javascript" src="js/jquery.tmpl.min.js">
+  </script>
+  <script src="js/jquery.elastislide.js" type="text/javascript">
+  </script>
+  <script type="text/x-jquery-tmpl" id="img-wrapper-tmpl">
+   {{if itemsCount &gt; 1}}
+			  &lt;div class="rg-image-nav"&gt;
+				&lt;a href="#" class="rg-image-nav-prev"&gt;Prev&lt;/a&gt;
+				&lt;a href="#" class="rg-image-nav-next"&gt;Next&lt;/a&gt;
+			  &lt;/div&gt;
+			{{/if}}
+			&lt;div class="rg-image"&gt;&lt;/div&gt;
+			&lt;div class="rg-loading"&gt;&lt;/div&gt;
+			&lt;div class="rg-caption-wrapper"&gt;
+			  &lt;div class="rg-caption" style="display:none;"&gt;&lt;p&gt;&lt;/p&gt;&lt;/div&gt;
+			&lt;/div&gt;
+  </script>
+  <!--[if lt IE 9]>
+    <link rel="stylesheet" href="css/docs.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/ie.css" type="text/css" media="screen">
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+ </head>
+ <body>
+  <!--==============================header=================================-->
+  <!--<div class="container">
+  <div class="row">
+  
+   <div class="span6">
+     <h4 style="color:#FFFFFF;padding: 0px 0 40px 0;"><a href="index.php" style="color:#FFFFFF"><img src="img/logo.png" /></a>
+    <br><br> SCHOOL OF WORLD MUSIC AND DANCE 
+    <br><span style=" font-size:12px !important;">A 501 (c) (3) Non Profit organization, Ein tax id no 61-1597539. </span>
+     </h4>
+    </div>
+    <div class="span6">
+      <ul class="social-icons">
+          <li><a href="#"><img src="img/icon-1.png" alt=""></a></li>
+          <li><a href="#"><img src="img/icon-2.png" alt=""></a></li>
+          <li><a href="#"><img src="img/icon-3.png" alt=""></a></li>
+          <li><a href="#"><img src="img/icon-4.png" alt=""></a></li>
+          <li><a href="#"><img src="img/icon-5.png" alt=""></a></li>
+      </ul>
+    </div>
+  </div>
+</div>-->
+  <div class="container">
+   <div class="row">
+    <div style="width:200px !important;" class="span6">
+     <ul style="float:left !important;" class="social-icons">
+      <li>
+       <a href="#">
+        <img alt="" src="img/icon-1.png" />
+       </a>
+      </li>
+      <li>
+       <a href="#">
+        <img alt="" src="img/icon-2.png" />
+       </a>
+      </li>
+      <li>
+       <a href="#">
+        <img alt="" src="img/icon-3.png" />
+       </a>
+      </li>
+      <li>
+       <a href="#">
+        <img alt="" src="img/icon-4.png" />
+       </a>
+      </li>
+      <li>
+       <a href="#">
+        <img alt="" src="img/icon-5.png" />
+       </a>
+      </li>
+     </ul>
+    </div>
+    <div style="width:500px !important;" class="span6">
+     <h6 style="color:#FFFFFF;padding: 0px 0 40px 0; float:right !important; padding-top:30px !important;">
+      <span style="font-size:23px;">
+       <strong>
+        SCHOOL OF WORLD MUSIC AND DANCE
+       </strong>
+      </span>
+      <br />
+      <br />
+      <span style=" font-size:12px !important; padding-left:45px !important;">
+       A 501 (c) (3) Non Profit organization, Ein tax id no 61-1597539.
+      </span>
+     </h6>
+    </div>
+    <div style="width:265px !important; padding-top:10px !important;" class="span6">
+     <a style="color:#FFFFFF; float:right !important;" href="index.php">
+      <img src="img/logo.png" />
+     </a>
+    </div>
+   </div>
+  </div>
+  <div class="main">
+   <div class="main-bg">
+    <header>
+     <!--<div class="container">
+            <div class="row">
+              <div class="span12 clearfix">
+                <h1 class="brand"><a href="index.php"><span>dance</span><strong>Express yourself through dance</strong></a></h1>
+              </div>
+            </div>
+          </div>-->
+     <div class="nav-border">
+      <div class="container">
+       <div class="navbar navbar_ clearfix row">
+        <div class="navbar-inner span12">
+         <div class="nav-collapse nav-collapse_ collapse">
+          <ul class="nav sf-menu clearfix sf-js-enabled">
+           <li>
+            <a href="index.php">
+             Home
+            </a>
+           </li>
+           <li>
+            <a href="about.php">
+             About
+            </a>
+           </li>
+           <li>
+            <a href="events.php">
+             Events
+            </a>
+           </li>
+           <li>
+            <a href="courses.php">
+             Courses
+            </a>
+           </li>
+           <li>
+            <a href="teachers.php">
+             Teachers
+            </a>
+           </li>
+           <li>
+            <a href="#">
+             Media
+            </a>
+            <ul style="display: none;" class="sub-menu">
+             <li>
+              <a href="gallery.php">
+               Gallery
+              </a>
+             </li>
+             <li>
+              <a href="video.php">
+               Video
+              </a>
+             </li>
+            </ul>
+           </li>
+           <li>
+            <a target="_blank" href="http://sriramv.wordpress.com">
+             Blog
+            </a>
+           </li>
+           <li>
+            class="active"&gt; &gt;
+            <a href="contact.php">
+             Contacts
+            </a>
+           </li>
+          </ul>
+          <select class="select-menu" style="display: inline-block;">
+           <option value="#">
+            Navigate to...
+           </option>
+           <option value="http://musicdanceart.com/index.php">
+            Home
+           </option>
+           <option value="http://musicdanceart.com/about.php">
+            About
+           </option>
+           <option value="http://musicdanceart.com/events.php">
+            Events
+           </option>
+           <option value="http://musicdanceart.com/courses.php">
+            Courses
+           </option>
+           <option value="http://musicdanceart.com/teachers.php">
+            Teachers
+           </option>
+           <option value="http://musicdanceart.com/contact.php#">
+            Media
+           </option>
+           <option value="http://musicdanceart.com/gallery.php">
+            –Gallery
+           </option>
+           <option value="http://musicdanceart.com/video.php">
+            –Video
+           </option>
+           <option value="http://sriramv.wordpress.com/">
+            Blog
+           </option>
+           <option value="http://musicdanceart.com/contact.php" selected="selected">
+            Contacts
+           </option>
+          </select>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <!--==============================content=================================-->
+    <div id="content">
+     <div class="container">
+      <div class="row">
+       <div class="span8">
+        <h2>
+         how to find us
+        </h2>
+        <div class="map">
+         <iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed?pb=%211m14%211m8%211m3%211d2944.017958617175%212d-83.449392%213d42.448634%213m2%211i1024%212i768%214f13.1%213m3%211m2%211s0x8824ae716a3025e7%3A0x4d06f8f944d13254%212s21884+Meridian+Ln%215e0%213m2%211sen%212sin%214v1399555532020">
+         </iframe>
+        </div>
+        <address class="address">
+         <strong class="text-info">
+          The School of World Music and Dance
+          <br />
+          C/o Mrs.Lalita Ramamoorthy
+          <br />
+          21884 Meridian Lane Novi,
+          <br />
+          Michigan 48375.
+          <br />
+          <span>
+           Telephone :
+          </span>
+          001 248 436 8435 , 001 248 767 4409
+          <br />
+          <span>
+           FAX:
+          </span>
+          +1 800 889 9898
+          <br />
+          <span>
+           E-mail:
+          </span>
+          <a href="mailto:natyadhwani@gmail.com">
+           ravilali@gmail.com
+          </a>
+          <br />
+          <!--                   <span>&nbsp;</span>  <a href="mailto:ravilali@gmail.com">ravilali@gmail.com</a><br  />
+                    <span>&nbsp;</span>  <a href="mailto:reachswmd@gmail.com">reachswmd@gmail.com</a>
+-->
+         </strong>
+        </address>
+        <strong class="text-info">
+        </strong>
+       </div>
+       <strong class="text-info">
+        <div class="span4">
+         <h2>
+          feedback
+         </h2>
+         <form onsubmit="return checkCaptcha()" method="post" action="send_email.php" class="contact-form" id="contact-form">
+          <div class="success">
+           Contact form submitted!
+          </div>
+         </form>
+        </div>
+       </strong>
+       <strong>
+        We will be in touch soon.
+       </strong>
+      </div>
+      <fieldset>
+       <label class="name">
+        <input type="text" placeholder="Enter Your Name" required="" name="name" />
+        <span class="error">
+         *This is not a valid name.
+        </span>
+        <span class="empty">
+         *This field is required.
+        </span>
+       </label>
+       <br />
+       <label class="email">
+        <input type="email" placeholder="Enter Your Email" required="" name="email" />
+        <span class="error">
+         *This is not a valid email address.
+        </span>
+        <span class="empty">
+         *This field is required.
+        </span>
+       </label>
+       <br />
+       <label class="phone">
+        <input type="text" placeholder="Enter Your Phone Number" required="" name="phoneno" />
+        <span class="error">
+         *This is not a valid phone number.
+        </span>
+        <span class="empty">
+         *This field is required.
+        </span>
+       </label>
+       <br />
+       <label class="message">
+        <textarea placeholder="Your Message" required="" name="msg">
+        </textarea>
+        <span class="error">
+         *The message is too short.
+        </span>
+        <span class="empty">
+         *This field is required.
+        </span>
+       </label>
+       <br />
+       <label style="padding-top:15px;" class="message">
+        <input type="hidden" value="4299" id="correct_captcha" name="correct_captcha" />
+        <span class="error">
+         *The message is too short.
+        </span>
+        <span class="empty">
+         *
+        </span>
+        <img src="captcha.php?code=4299" />
+       </label>
+       <label class="message">
+        <input type="text" class="text-input" required="" placeholder="Enter The Above Number" id="enter_captcha" name="enter_captcha" />
+        <span class="error">
+         *The message is too short.
+        </span>
+        <span class="empty">
+         *This field is required.
+        </span>
+       </label>
+      </fieldset>
+      <div class="pull-right">
+       <!--<a href="#" class="btn" data-type="reset">clear</a>
+                          <a href="#" class="btn" data-type="submit">send message</a>-->
+       <input type="hidden" value="/contact.php" name="page" />
+       <input type="submit" style="background-color:#DCDCDC !important; color:#999; font-size:13px;" name="submit" class="btn" />
+      </div>
+     </div>
+    </div>
+    <strong class="text-info">
+    </strong>
+   </div>
+   <strong class="text-info">
+   </strong>
+  </div>
+  <strong class="text-info">
+  </strong>
+  <strong class="text-info">
+   <script type="text/javascript">
+    function checkCaptcha()
+ {
+	 correct_captcha=document.getElementById('correct_captcha').value;
+	 enter_captcha=document.getElementById('enter_captcha').value;
+	 if(correct_captcha!=enter_captcha)
+	 {
+		 alert ("You Enter Wrong Number , Try another Time .");
+		 return false;
+	 }
+	 else
+	 { return true; }
+ }
+   </script>
+   <!--==============================footer=================================-->
+   <footer>
+    <div class="footer-border">
+     <div class="container">
+      <div class="row">
+       <div class="span12">
+        <ul class="footer-menu">
+         <li>
+          <a href="index.php">
+           Home
+          </a>
+         </li>
+         <li>
+          <a href="about.php">
+           About
+          </a>
+         </li>
+         <li>
+          <a href="teachers.php">
+           Teachers
+          </a>
+         </li>
+         <li>
+          <a href="events.php">
+           Events
+          </a>
+         </li>
+         <li>
+          <a href="video.php">
+           Videos
+          </a>
+         </li>
+         <li class="active">
+          &gt;
+          <a href="contact.php">
+           Contacts
+          </a>
+         </li>
+        </ul>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="container">
+     <div class="row">
+      <div class="span12">
+       <span>
+        SCHOOL OF WORLD MUSIC AND DANCE © 2015 •   
+        <a target="_blank" href="admin/index.php">
+         Login
+        </a>
+        <span style="float:right;">
+         <!--Designed By :<a href="http://www.alphasoftz.com" target="_blank">Alphasoftz-->
+        </span>
+        <br />
+        <!-- {%FOOTER_LINK} -->
+       </span>
+      </div>
+     </div>
+    </div>
+   </footer>
+  </strong>
+  <strong class="text-info">
+   <script src="js/bootstrap.js" type="text/javascript">
+   </script>
+   <meta content="width=device-width,initial-scale=1.0,user-scalable=0" name="viewport" />
+   <!--LIVEDEMO_00 -->
+  </strong>
+ </body>
+</html>

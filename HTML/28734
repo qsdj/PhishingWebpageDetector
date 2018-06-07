@@ -1,0 +1,615 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-gb" xml:lang="en-gb" xmlns="http://www.w3.org/1999/xhtml" class="gecko  win">
+ <head>
+  <style type="text/css">
+   div#rotator {position:relative; height:175px; left:-10%;}
+div#rotator ul li {float:left; position:absolute; list-style: none;}
+div#rotator1 {position:absolute; height:175px; left:-50%;}
+div#rotator1 ul li {float:left; position:absolute; list-style: none;}
+  </style>
+  <base href="http://tpmtm.ru/structura.html" />
+  <meta content="content-type" http-equiv="content-type" />
+  <meta content="index, follow" name="robots" />
+  <meta content="Технологическая платформа" name="keywords" />
+  <meta content="Организационная структура" name="title" />
+  <meta content="Administrator" name="author" />
+  <meta content="Технологическая платформа" name="description" />
+  <meta content="Joomla! 1.5 - Open Source Content Management" name="generator" />
+  <title>
+   Организационная структура
+  </title>
+  <link type="image/x-icon" rel="shortcut icon" href="/templates/misis_disp_2/favicon.ico" />
+  <link type="text/css" href="/modules/mod_jflanguageselection/tmpl/mod_jflanguageselection.css" rel="stylesheet" />
+  <script src="/media/system/js/mootools.js" type="text/javascript">
+  </script>
+  <script src="/media/system/js/caption.js" type="text/javascript">
+  </script>
+  <link type="text/css" href="/templates/system/css/system.css" rel="stylesheet" />
+  <link type="text/css" href="/templates/system/css/general.css" rel="stylesheet" />
+  <link media="screen" href="/templates/misis_disp_2/css/template.css" type="text/css" rel="stylesheet" />
+  <!--[if IE 6]><link rel="stylesheet" href="/templates/misis_disp_2/css/template.ie6.css" type="text/css" media="screen"  /><![endif]-->
+  <!--[if IE 7]><link rel="stylesheet" href="/templates/misis_disp_2/css/template.ie7.css" type="text/css" media="screen"  /><![endif]-->
+  <script src="/templates/misis_disp_2/jquery.js" type="text/javascript">
+  </script>
+  <script type="text/javascript">
+   jQuery.noConflict();
+  </script>
+  <script src="/templates/misis_disp_2/script.js" type="text/javascript">
+  </script>
+  <script src="http://science.misis.ru/templates/misis_disp_2/jquery-latest.min.js" type="text/javascript">
+  </script>
+  <script type="text/javascript">
+   function theRotator() {
+	// Устанавливаем прозрачность всех картинок в 0
+	$('div#rotator ul li').css({opacity: 0.0});
+ 
+	// Берем первую картинку и показываем ее (по пути включаем полную видимость)
+	$('div#rotator ul li:first').css({opacity: 1.0});
+ 
+	// Вызываем функцию rotate для запуска слайдшоу, 5000 = смена картинок происходит раз в 5 секунд
+	setInterval('rotate()',5000);
+}
+ 
+function rotate() {	
+	// Берем первую картинку
+	var current = ($('div#rotator ul li.show')?  $('div#rotator ul li.show') : $('div#rotator ul li:first'));
+ 
+	// Берем следующую картинку, когда дойдем до последней начинаем с начала
+	var next = ((current.next().length) ? ((current.next().hasClass('show')) ? $('div#rotator ul li:first') :current.next()) : $('div#rotator ul li:first'));	
+ 
+	// Расскомментируйте, чтобы показвать картинки в случайном порядке
+	// var sibs = current.siblings();
+	// var rndNum = Math.floor(Math.random() * sibs.length );
+	// var next = $( sibs[ rndNum ] );
+ 
+	// Подключаем эффект растворения/затухания для показа картинок, css-класс show имеет больший z-index
+	next.css({opacity: 0.0})
+	.addClass('show')
+	.animate({opacity: 1.0}, 1000);
+ 
+	// Прячем текущую картинку
+	current.animate({opacity: 0.0}, 1000)
+	.removeClass('show');
+};
+ 
+$(document).ready(function() {		
+	// Запускаем слайдшоу
+	theRotator();
+});
+  </script>
+ </head>
+ <body>
+  <div id="art-page-background-glare">
+   <div id="art-page-background-glare-image">
+    <div id="art-main">
+     <div class="art-sheet">
+      <div class="art-sheet-tl">
+      </div>
+      <div class="art-sheet-tr">
+      </div>
+      <div class="art-sheet-bl">
+      </div>
+      <div class="art-sheet-br">
+      </div>
+      <div class="art-sheet-tc">
+      </div>
+      <div class="art-sheet-bc">
+      </div>
+      <div class="art-sheet-cl">
+      </div>
+      <div class="art-sheet-cr">
+      </div>
+      <div class="art-sheet-cc">
+      </div>
+      <div class="art-sheet-body">
+       <div class="art-header">
+        <div class="art-header-center">
+         <div class="art-header-png">
+         </div>
+         <div id="rotator1">
+          <a href="/">
+           <img width="434" height="175" alt="" src="/images/image000.png" />
+          </a>
+         </div>
+         <div id="rotator">
+          <ul>
+           <li class="show">
+            <a href="/">
+             <img width="220" height="175" alt="" src="/images/1.jpg" />
+            </a>
+           </li>
+           <li>
+            <a href="/">
+             <img width="220" height="175" alt="" src="/images/2.jpg" />
+            </a>
+           </li>
+           <li>
+            <a href="/">
+             <img width="220" height="175" alt="" src="/images/3.jpg" />
+            </a>
+           </li>
+          </ul>
+         </div>
+        </div>
+        <div class="art-logo">
+        </div>
+        <div class="art-leng">
+         <div id="jflanguageselection">
+          <ul class="jflanguageselection">
+           <li>
+            <a href="http://tpmtm.ru/ru/structura.html">
+             <img border="0" class="langImg" title="Russian" alt="Russian" src="http://tpmtm.ru/components/com_joomfish/images/flags/ru.gif" />
+             <span lang="ru" xml:lang="ru">
+              Russian
+             </span>
+            </a>
+           </li>
+           <li id="active_language">
+            <a href="http://tpmtm.ru/en/structura.html">
+             <img border="0" class="langImg" title="English" alt="English" src="http://tpmtm.ru/components/com_joomfish/images/flags/en.gif" />
+             <span lang="en" xml:lang="en">
+              English
+             </span>
+            </a>
+           </li>
+          </ul>
+         </div>
+         <!--JoomFish V2.1.7 (Dafad)-->
+         <!-- &copy; 2003-2011 Think Network, released under the GPL. -->
+         <!-- More information: at http://www.joomfish.net -->
+        </div>
+        <div class="search">
+         <form method="post" action="index.php">
+          <div class="search">
+           <input type="text" onfocus="if(this.value=='search...') this.value='';" onblur="if(this.value=='') this.value='search...';" value="search..." size="20" class="inputbox" alt="поиск.." maxlength="20" id="mod_search_searchword" name="searchword" />
+          </div>
+          <input type="hidden" value="search" name="task" />
+          <input type="hidden" value="com_search" name="option" />
+          <input type="hidden" value="22" name="Itemid" />
+         </form>
+        </div>
+       </div>
+       <div class="art-nav">
+        <div class="l">
+        </div>
+        <div class="r">
+        </div>
+        <ul class="art-menu">
+         <li class="item1">
+          <a href="http://tpmtm.ru/">
+           <span class="l">
+           </span>
+           <span class="r">
+           </span>
+           <span class="t">
+            Главная
+           </span>
+          </a>
+         </li>
+         <li class="art-menu-li-separator">
+          <span class="art-menu-separator">
+          </span>
+         </li>
+         <li class="item2">
+          <a href="/en/oficilnie-doc.html">
+           <span class="l">
+           </span>
+           <span class="r">
+           </span>
+           <span class="t">
+            Документы
+           </span>
+          </a>
+         </li>
+         <li class="art-menu-li-separator">
+          <span class="art-menu-separator">
+          </span>
+         </li>
+         <li class="item3">
+          <a href="/en/uchastniki.html">
+           <span class="l">
+           </span>
+           <span class="r">
+           </span>
+           <span class="t">
+            Участники
+           </span>
+          </a>
+         </li>
+         <li class="art-menu-li-separator">
+          <span class="art-menu-separator">
+          </span>
+         </li>
+         <li class="item4">
+          <a href="/en/deyatelnost.html">
+           <span class="l">
+           </span>
+           <span class="r">
+           </span>
+           <span class="t">
+            Деятельность
+           </span>
+          </a>
+         </li>
+         <li class="art-menu-li-separator">
+          <span class="art-menu-separator">
+          </span>
+         </li>
+         <li class="item6">
+          <a href="/en/contacti.html">
+           <span class="l">
+           </span>
+           <span class="r">
+           </span>
+           <span class="t">
+            Контакты
+           </span>
+          </a>
+         </li>
+        </ul>
+       </div>
+       <div class="art-content-layout">
+        <div class="art-content-layout-row">
+         <div class="art-layout-cell art-sidebar1">
+          <div class="art-layout-bg">
+          </div>
+          <div class="art-block">
+           <div class="art-block-body">
+            <div class="art-blockheader">
+             <div class="l">
+             </div>
+             <div class="r">
+             </div>
+             <h3 class="t">
+              Авторизация
+             </h3>
+            </div>
+            <div class="art-blockcontent">
+             <div class="art-blockcontent-body">
+              <form id="form-login" name="login" method="post" action="/en/structura.html">
+               <fieldset class="input">
+                <p id="form-login-username">
+                 <label for="modlgn_username">
+                  Username
+                 </label>
+                 <br />
+                 <input type="text" size="18" alt="username" class="inputbox" name="username" id="modlgn_username" />
+                </p>
+                <p id="form-login-password">
+                 <label for="modlgn_passwd">
+                  Password
+                 </label>
+                 <br />
+                 <input type="password" alt="password" size="18" class="inputbox" name="passwd" id="modlgn_passwd" />
+                </p>
+                <p id="form-login-remember">
+                 <label for="modlgn_remember">
+                  Remember Me
+                 </label>
+                 <input type="checkbox" alt="Remember Me" value="yes" class="inputbox" name="remember" id="modlgn_remember" />
+                </p>
+                <span class="art-button-wrapper">
+                 <span class="art-button-l">
+                 </span>
+                 <span class="art-button-r">
+                 </span>
+                 <input type="submit" value="Login" class="button art-button" name="Submit" />
+                </span>
+               </fieldset>
+               <ul>
+                <li>
+                 <a href="/en/component/user/reset.html">
+                  Forgot your password?
+                 </a>
+                </li>
+                <li>
+                 <a href="/en/component/user/remind.html">
+                  Forgot your username?
+                 </a>
+                </li>
+               </ul>
+               <input type="hidden" value="com_user" name="option" />
+               <input type="hidden" value="login" name="task" />
+               <input type="hidden" value="L2VuL2dsYXZuYXkuaHRtbA==" name="return" />
+               <input type="hidden" value="1" name="30c7724ba919a69d5a19817a2ba46715" />
+              </form>
+              <div class="cleared">
+              </div>
+             </div>
+            </div>
+            <div class="cleared">
+            </div>
+           </div>
+          </div>
+          <div class="art-block">
+           <div class="art-block-body">
+            <div class="art-blockcontent">
+             <div class="art-blockcontent-body">
+              <p>
+              </p>
+              <p style="text-align: center;">
+               <a href="http://www.viam.ru/" target="_blank">
+                <img width="120" src="/images/image001.gif" />
+               </a>
+              </p>
+              <p style="text-align: center;">
+               <a target="_blank" href="http://misis.ru/">
+                <img width="120" src="/images/image002.gif" />
+               </a>
+              </p>
+              <p>
+              </p>
+              <p style="text-align: center;">
+               <a href="http://rostechnologii.ru/">
+                <img width="108" height="79" src="/images/stories/logo/rosteh.gif" alt="rosteh" />
+               </a>
+              </p>
+              <div class="cleared">
+              </div>
+             </div>
+            </div>
+            <div class="cleared">
+            </div>
+           </div>
+          </div>
+          <div class="cleared">
+          </div>
+         </div>
+         <div class="art-layout-cell art-content">
+          <div class="art-post">
+           <div class="art-post-body">
+            <div class="art-post-inner">
+             <div class="art-postheadericons art-metadata-icons">
+              <a rel="nofollow" onclick="window.open(this.href,'win2','status=no,toolbar=no,scrollbars=yes,titlebar=no,menubar=no,resizable=yes,width=640,height=480,directories=no,location=no'); return false;" title="Print" href="/en/structura.html?tmpl=component&print=1&page=">
+               <img alt="Print" src="/templates/misis_disp_2/images/printButton.png" />
+              </a>
+             </div>
+             <div class="art-postcontent">
+              <div class="art-article">
+               <div class="jfdefaulttext">
+                There are no translations available.
+               </div>
+               <br />
+               <p style="text-align: center;">
+                <span style="font-family: arial,helvetica,sans-serif;">
+                 <span style="font-size: 14pt;">
+                  <span style="background-color: #888888;">
+                   <span style="color: #ff0000;">
+                    <strong>
+                     <span style="background-color: #ffffff;">
+                      Организационная структура т
+                     </span>
+                    </strong>
+                   </span>
+                  </span>
+                 </span>
+                </span>
+                <span style="font-family: arial,helvetica,sans-serif;">
+                 <span style="font-size: 14pt;">
+                  <span style="background-color: #888888;">
+                   <span style="color: #ff0000;">
+                    <strong>
+                     <span style="background-color: #ffffff;">
+                      ехнологической платформы
+                     </span>
+                    </strong>
+                   </span>
+                  </span>
+                 </span>
+                </span>
+               </p>
+               <p>
+                <img width="582" height="542" alt="org" src="/images/stories/org.png" />
+               </p>
+              </div>
+              <span class="article_separator">
+              </span>
+             </div>
+             <div class="cleared">
+             </div>
+            </div>
+            <div class="cleared">
+            </div>
+           </div>
+          </div>
+          <div class="cleared">
+          </div>
+         </div>
+         <div class="art-layout-cell art-sidebar2">
+          <div class="art-layout-bg">
+          </div>
+          <div class="art-vmenublock">
+           <div class="art-vmenublock-tl">
+           </div>
+           <div class="art-vmenublock-tr">
+           </div>
+           <div class="art-vmenublock-bl">
+           </div>
+           <div class="art-vmenublock-br">
+           </div>
+           <div class="art-vmenublock-tc">
+           </div>
+           <div class="art-vmenublock-bc">
+           </div>
+           <div class="art-vmenublock-cl">
+           </div>
+           <div class="art-vmenublock-cr">
+           </div>
+           <div class="art-vmenublock-cc">
+           </div>
+           <div class="art-vmenublock-body">
+            <div class="art-vmenublockheader">
+             <div class="l">
+             </div>
+             <div class="r">
+             </div>
+             <h3 class="t">
+              О нас
+             </h3>
+            </div>
+            <div class="art-vmenublockcontent">
+             <div class="art-vmenublockcontent-body">
+              <ul class="art-vmenu">
+               <li class="item19">
+                <a href="/en/cel.html">
+                 <span class="l">
+                 </span>
+                 <span class="r">
+                 </span>
+                 <span class="t">
+                  Цель техплатформы
+                 </span>
+                </a>
+               </li>
+               <li class="art-vmenu-separator">
+                <span class="art-vmenu-separator-span">
+                </span>
+               </li>
+               <li class="item20">
+                <a href="/en/kompetencii.html">
+                 <span class="l">
+                 </span>
+                 <span class="r">
+                 </span>
+                 <span class="t">
+                  Компетенции
+                 </span>
+                </a>
+               </li>
+               <li class="art-vmenu-separator">
+                <span class="art-vmenu-separator-span">
+                </span>
+               </li>
+               <li class="item73">
+                <a href="/en/koordinatori.html">
+                 <span class="l">
+                 </span>
+                 <span class="r">
+                 </span>
+                 <span class="t">
+                  Координаторы
+                 </span>
+                </a>
+               </li>
+               <li class="art-vmenu-separator">
+                <span class="art-vmenu-separator-span">
+                </span>
+               </li>
+               <li class="item21">
+                <a href="/en/iniciatori.html">
+                 <span class="l">
+                 </span>
+                 <span class="r">
+                 </span>
+                 <span class="t">
+                  Инициаторы ТП
+                 </span>
+                </a>
+               </li>
+               <li class="art-vmenu-separator">
+                <span class="art-vmenu-separator-span">
+                </span>
+               </li>
+               <li class="parent active item22" id="current">
+                <a class="active" href="/en/structura.html">
+                 <span class="l">
+                 </span>
+                 <span class="r">
+                 </span>
+                 <span class="t">
+                  Структура
+                 </span>
+                </a>
+                <ul>
+                 <li class="art-vmenu-separator art-vmenu-separator-first">
+                  <span class="art-vmenu-separator-span">
+                  </span>
+                 </li>
+                 <li class="item23">
+                  <a href="/en/structura/koordinatori.html">
+                   Координаторы
+                  </a>
+                 </li>
+                 <li class="art-vsubmenu-separator">
+                  <span class="art-vsubmenu-separator-span">
+                  </span>
+                 </li>
+                 <li class="item24">
+                  <a href="/en/structura/ekspertnii-sovet.html">
+                   Экспертный совет
+                  </a>
+                 </li>
+                 <li class="art-vsubmenu-separator">
+                  <span class="art-vsubmenu-separator-span">
+                  </span>
+                 </li>
+                 <li class="item25">
+                  <a href="/en/structura/megvedomstvennii-sovet.html">
+                   Межведомственный совет
+                  </a>
+                 </li>
+                </ul>
+               </li>
+               <li class="art-vmenu-separator">
+                <span class="art-vmenu-separator-span">
+                </span>
+               </li>
+               <li class="item72">
+                <a href="/en/news.html">
+                 <span class="l">
+                 </span>
+                 <span class="r">
+                 </span>
+                 <span class="t">
+                  Новости
+                 </span>
+                </a>
+               </li>
+              </ul>
+              <div class="cleared">
+              </div>
+             </div>
+            </div>
+            <div class="cleared">
+            </div>
+           </div>
+          </div>
+          <div class="cleared">
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="cleared">
+       </div>
+       <div class="art-footer">
+        <div class="art-footer-t">
+        </div>
+        <div class="art-footer-l">
+        </div>
+        <div class="art-footer-b">
+        </div>
+        <div class="art-footer-r">
+        </div>
+        <div class="art-footer-body">
+         <div class="art-footer-text">
+          <p>
+           Copyright © 2015. All Rights Reserved.
+          </p>
+         </div>
+         <div class="cleared">
+         </div>
+        </div>
+       </div>
+       <div class="cleared">
+       </div>
+      </div>
+     </div>
+     <div class="cleared">
+     </div>
+     <p class="art-page-footer">
+     </p>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>

@@ -1,0 +1,387 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta content="Content-Type" http-equiv="Content-Type" />
+  <meta content="ja" http-equiv="Content-Language" />
+  <meta content="text/css" http-equiv="Content-Style-Type" />
+  <meta content="text/javascript" http-equiv="Content-Script-Type" />
+  <meta content="no" http-equiv="Imagetoolbar" />
+  <meta content="" name="description" />
+  <title>
+   食百年の会
+  </title>
+  <link href="http://www.shokuhyaku.jp/feed/" title="新着情報" type="application/rss+xml" rel="alternate" />
+  <link type="text/css" rel="stylesheet" href="http://www.shokuhyaku.jp/wp-content/themes/shoku100/common.css" />
+  <link type="text/css" rel="stylesheet" href="http://www.shokuhyaku.jp/wp-content/themes/shoku100/home.css" />
+  <link media="screen" type="text/css" rel="stylesheet" href="http://www.shokuhyaku.jp/wp-content/themes/shoku100/colorbox.css" />
+  <script type="text/javascript" src="http://www.shokuhyaku.jp/wp-content/themes/shoku100/javascript/swfobject.js">
+  </script>
+  <script type="text/javascript" src="http://www.shokuhyaku.jp/wp-content/themes/shoku100/javascript/jquery.min.js">
+  </script>
+  <script type="text/javascript" src="http://www.shokuhyaku.jp/wp-content/themes/shoku100/javascript/jquery.cookie.js">
+  </script>
+  <script type="text/javascript" src="http://www.shokuhyaku.jp/wp-content/themes/shoku100/javascript/jquery.getqueryparam.js">
+  </script>
+  <script type="text/javascript" src="http://www.shokuhyaku.jp/wp-content/themes/shoku100/javascript/jquery.urlEncode.js">
+  </script>
+  <script type="text/javascript" src="http://www.shokuhyaku.jp/wp-content/themes/shoku100/javascript/jquery.colorbox.js">
+  </script>
+  <script type="text/javascript" src="http://www.shokuhyaku.jp/wp-content/themes/shoku100/javascript/util.js">
+  </script>
+ </head>
+ <body>
+  <div id="cboxOverlay" style="display: none;">
+  </div>
+  <div id="colorbox" style="padding-bottom: 20px; padding-right: 0px; display: none;">
+   <div id="cboxWrapper">
+    <div>
+     <div id="cboxTopLeft" style="float: left;">
+     </div>
+     <div id="cboxTopCenter" style="float: left;">
+     </div>
+     <div id="cboxTopRight" style="float: left;">
+     </div>
+    </div>
+    <div>
+     <div id="cboxMiddleLeft" style="float: left;">
+     </div>
+     <div id="cboxContent" style="float: left;">
+      <div id="cboxLoadedContent" style="width: 0px; height: 0px;" class="">
+      </div>
+      <div id="cboxLoadingOverlay" class="">
+      </div>
+      <div id="cboxLoadingGraphic" class="">
+      </div>
+      <div id="cboxTitle" class="">
+      </div>
+      <div id="cboxCurrent" class="">
+      </div>
+      <div id="cboxSlideshow" class="">
+      </div>
+      <div id="cboxNext" class="">
+      </div>
+      <div id="cboxPrevious" class="">
+      </div>
+      <div id="cboxClose" class="">
+      </div>
+     </div>
+     <div id="cboxMiddleRight" style="float: left;">
+     </div>
+    </div>
+    <div>
+     <div id="cboxBottomLeft" style="float: left;">
+     </div>
+     <div id="cboxBottomCenter" style="float: left;">
+     </div>
+     <div id="cboxBottomRight" style="float: left;">
+     </div>
+    </div>
+   </div>
+   <div style="position:absolute; top:0; left:0; width:9999px; height:0;">
+   </div>
+  </div>
+  <div id="wallpaper">
+   <div id="header">
+    <div class="inner">
+     <div id="header_menu">
+      <a href="/" id="header_menu1" class="active">
+       <img width="108" height="53" alt="トップページ" src="http://www.shokuhyaku.jp/wp-content/themes/shoku100/images/common/spacer.png" />
+      </a>
+      <a href="/objective/" id="header_menu2">
+       <img width="82" height="53" alt="会の目的" src="http://www.shokuhyaku.jp/wp-content/themes/shoku100/images/common/spacer.png" />
+      </a>
+      <a href="/manage/" id="header_menu3">
+       <img width="86" height="53" alt="会の運営" src="http://www.shokuhyaku.jp/wp-content/themes/shoku100/images/common/spacer.png" />
+      </a>
+      <a href="/policy/" id="header_menu4">
+       <img width="86" height="53" alt="年度方針" src="http://www.shokuhyaku.jp/wp-content/themes/shoku100/images/common/spacer.png" />
+      </a>
+      <a href="/campaign/" id="header_menu5">
+       <img width="170" height="53" alt="イベント・セミナー情報" src="http://www.shokuhyaku.jp/wp-content/themes/shoku100/images/common/spacer.png" />
+      </a>
+      <a href="/member_list/" id="header_menu6">
+       <img width="114" height="53" alt="会員企業一覧" src="http://www.shokuhyaku.jp/wp-content/themes/shoku100/images/common/spacer.png" />
+      </a>
+      <a href="/member_room/" id="header_menu7">
+       <img width="96" height="53" alt="会員ルーム" src="http://www.shokuhyaku.jp/wp-content/themes/shoku100/images/common/spacer.png" />
+      </a>
+      <a href="/information/" id="header_menu8">
+       <img width="89" height="53" alt="新着情報" src="http://www.shokuhyaku.jp/wp-content/themes/shoku100/images/common/spacer.png" />
+      </a>
+      <a href="/inquiry/" id="header_menu9">
+       <img width="103" height="53" alt="お問い合わせ" src="http://www.shokuhyaku.jp/wp-content/themes/shoku100/images/common/spacer.png" />
+      </a>
+     </div>
+    </div>
+   </div>
+   <a name="page_top">
+   </a>
+   <div id="main">
+    <div id="main_content">
+     <div id="debug">
+     </div>
+     <img width="689" height="21" alt="新着情報" src="http://www.shokuhyaku.jp/wp-content/themes/shoku100/images/content/index/subtitle_information.png" />
+     <table class="index_table">
+      <tbody>
+       <tr>
+        <td class="icon">
+         <img width="12" height="13" alt="" src="http://www.shokuhyaku.jp/wp-content/themes/shoku100/images/common/arrow.png" />
+        </td>
+        <td class="date">
+         2015.12.07
+        </td>
+        <td class="link">
+         <a href="http://www.shokuhyaku.jp/blog/2015/12/%e6%9d%b1%e4%ba%ac%e7%a0%94%e4%bf%ae%e3%81%ae%e3%81%94%e6%a1%88%e5%86%85%e3%82%92%e3%82%a2%e3%83%83%e3%83%97%e3%81%97%e3%81%be%e3%81%97%e3%81%9f%e3%80%82/">
+          東京研修のご案内をアップしました。
+         </a>
+        </td>
+       </tr>
+       <tr>
+        <td class="icon">
+         <img width="12" height="13" alt="" src="http://www.shokuhyaku.jp/wp-content/themes/shoku100/images/common/arrow.png" />
+        </td>
+        <td class="date">
+         2015.11.26
+        </td>
+        <td class="link">
+         <a href="http://www.shokuhyaku.jp/blog/2015/11/%e3%81%a8%e3%82%93%e3%81%8b%e3%81%a4%e9%83%a8%e4%bc%9a%e3%81%ae%e3%81%94%e6%a1%88%e5%86%85%e3%82%92%e3%82%a2%e3%83%83%e3%83%97%e3%81%97%e3%81%be%e3%81%97%e3%81%9f%e3%80%82/">
+          とんかつ部会のご案内をアップしました。
+         </a>
+        </td>
+       </tr>
+       <tr>
+        <td class="icon">
+         <img width="12" height="13" alt="" src="http://www.shokuhyaku.jp/wp-content/themes/shoku100/images/common/arrow.png" />
+        </td>
+        <td class="date">
+         2015.11.26
+        </td>
+        <td class="link">
+         <a href="http://www.shokuhyaku.jp/blog/2015/11/8%e6%9c%9f%e5%b9%b4%e9%96%93%e3%82%b9%e3%82%b1%e3%82%b8%e3%83%a5%e3%83%bc%e3%83%ab%e8%a1%a8%e3%82%92%e3%82%a2%e3%83%83%e3%83%97%e3%81%97%e3%81%be%e3%81%97%e3%81%9f%e3%80%82/">
+          8期年間スケジュール表をアップしました。
+         </a>
+        </td>
+       </tr>
+       <tr>
+        <td class="icon">
+         <img width="12" height="13" alt="" src="http://www.shokuhyaku.jp/wp-content/themes/shoku100/images/common/arrow.png" />
+        </td>
+        <td class="date">
+         2015.10.05
+        </td>
+        <td class="link">
+         <a href="http://www.shokuhyaku.jp/blog/2015/10/%e7%b7%8f%e4%bc%9a%e3%81%ae%e4%bc%9a%e5%a0%b4%e5%9c%b0%e5%9b%b3%e3%82%92%e3%82%a2%e3%83%83%e3%83%97%e3%81%97%e3%81%be%e3%81%97%e3%81%9f%e3%80%82/">
+          総会の会場地図をアップしました。
+         </a>
+        </td>
+       </tr>
+      </tbody>
+     </table>
+     <img width="689" height="21" alt="イベント・セミナー情報" src="http://www.shokuhyaku.jp/wp-content/themes/shoku100/images/content/index/subtitle_campaign.png" />
+     <table class="index_table">
+      <tbody>
+       <tr>
+        <td class="icon">
+         <img width="12" height="13" alt="" src="http://www.shokuhyaku.jp/wp-content/themes/shoku100/images/common/arrow.png" />
+        </td>
+        <td class="date">
+         2015.12.07
+        </td>
+        <td class="link">
+         <a href="http://www.shokuhyaku.jp/campaign/2015/12/%e7%b5%84%e7%b9%94%e5%a7%94%e5%93%a1%e4%bc%9a%e3%80%80%e6%9d%b1%e4%ba%ac%e7%a0%94%e4%bf%ae%e3%81%ae%e3%81%94%e6%a1%88%e5%86%85/">
+          組織委員会　東京研修のご案内
+         </a>
+        </td>
+       </tr>
+       <tr>
+        <td class="icon">
+         <img width="12" height="13" alt="" src="http://www.shokuhyaku.jp/wp-content/themes/shoku100/images/common/arrow.png" />
+        </td>
+        <td class="date">
+         2015.11.26
+        </td>
+        <td class="link">
+         <a href="http://www.shokuhyaku.jp/campaign/2015/11/%e7%b5%84%e7%b9%94%e5%a7%94%e5%93%a1%e4%bc%9a%e3%80%80%e3%81%a8%e3%82%93%e3%81%8b%e3%81%a4%e9%83%a8%e4%bc%9a%e3%81%ae%e3%81%94%e6%a1%88%e5%86%85/">
+          組織委員会　とんかつ部会のご案内
+         </a>
+        </td>
+       </tr>
+       <tr>
+        <td class="icon">
+         <img width="12" height="13" alt="" src="http://www.shokuhyaku.jp/wp-content/themes/shoku100/images/common/arrow.png" />
+        </td>
+        <td class="date">
+         2015.11.26
+        </td>
+        <td class="link">
+         <a href="http://www.shokuhyaku.jp/campaign/2015/11/%e7%ac%ac%e5%85%ab%e6%9c%9f%e5%b9%b4%e9%96%93%e3%82%b9%e3%82%b1%e3%82%b8%e3%83%a5%e3%83%bc%e3%83%ab%e8%a1%a8/">
+          第八期年間スケジュール表
+         </a>
+        </td>
+       </tr>
+       <tr>
+        <td class="icon">
+         <img width="12" height="13" alt="" src="http://www.shokuhyaku.jp/wp-content/themes/shoku100/images/common/arrow.png" />
+        </td>
+        <td class="date">
+         2015.08.03
+        </td>
+        <td class="link">
+         <a href="http://www.shokuhyaku.jp/campaign/2015/08/%e4%bc%8f%e9%be%8d%e4%bc%9a%e3%80%80%e9%87%91%e6%b2%a2%e7%a0%94%e4%bf%ae%e3%81%ae%e3%81%94%e6%a1%88%e5%86%85/">
+          伏龍会　金沢研修のご案内
+         </a>
+        </td>
+       </tr>
+       <tr>
+        <td class="icon">
+         <img width="12" height="13" alt="" src="http://www.shokuhyaku.jp/wp-content/themes/shoku100/images/common/arrow.png" />
+        </td>
+        <td class="date">
+         2015.07.23
+        </td>
+        <td class="link">
+         <a href="http://www.shokuhyaku.jp/campaign/2015/07/%e7%ac%ac%e5%85%ab%e6%9c%9f%e7%b7%8f%e4%bc%9a%e3%80%81%e6%87%87%e8%a6%aa%e4%bc%9a%e3%81%ae%e3%81%94%e6%a1%88%e5%86%85/">
+          第八期総会、懇親会のご案内
+         </a>
+        </td>
+       </tr>
+       <tr>
+        <td class="icon">
+         <img width="12" height="13" alt="" src="http://www.shokuhyaku.jp/wp-content/themes/shoku100/images/common/arrow.png" />
+        </td>
+        <td class="date">
+         2015.06.22
+        </td>
+        <td class="link">
+         <a href="http://www.shokuhyaku.jp/campaign/2015/06/%e4%b8%8a%e6%b5%b7%e3%83%bb%e8%98%87%e5%b7%9e%e3%83%bb%e6%9d%ad%e5%b7%9e%e7%a0%94%e4%bf%ae%e3%81%ae%e3%81%94%e6%a1%88%e5%86%85/">
+          上海・蘇州・杭州研修のご案内
+         </a>
+        </td>
+       </tr>
+       <tr>
+        <td class="icon">
+         <img width="12" height="13" alt="" src="http://www.shokuhyaku.jp/wp-content/themes/shoku100/images/common/arrow.png" />
+        </td>
+        <td class="date">
+         2015.06.18
+        </td>
+        <td class="link">
+         <a href="http://www.shokuhyaku.jp/campaign/2015/06/%e6%9d%b1%e4%ba%ac%e7%a0%94%e4%bf%ae%e3%81%ae%e3%81%94%e6%a1%88%e5%86%85-2/">
+          組織委員会　東京研修のご案内
+         </a>
+        </td>
+       </tr>
+       <tr>
+        <td class="icon">
+         <img width="12" height="13" alt="" src="http://www.shokuhyaku.jp/wp-content/themes/shoku100/images/common/arrow.png" />
+        </td>
+        <td class="date">
+         2015.05.21
+        </td>
+        <td class="link">
+         <a href="http://www.shokuhyaku.jp/campaign/2015/05/%e7%ac%ac%e4%ba%8c%e5%9b%9e%e3%82%b3%e3%82%b9%e3%83%88%e5%89%8a%e6%b8%9b%e5%a7%94%e5%93%a1%e4%bc%9a%e3%81%ae%e3%81%94%e6%a1%88%e5%86%85-3/">
+          第二回コスト削減委員会のご案内
+         </a>
+        </td>
+       </tr>
+       <tr>
+        <td class="icon">
+         <img width="12" height="13" alt="" src="http://www.shokuhyaku.jp/wp-content/themes/shoku100/images/common/arrow.png" />
+        </td>
+        <td class="date">
+         2015.04.06
+        </td>
+        <td class="link">
+         <a href="http://www.shokuhyaku.jp/campaign/2015/04/%e4%bc%8f%e9%be%8d%e4%bc%9a%e3%80%80%e3%82%bf%e3%82%a4%e7%a0%94%e4%bf%ae%e3%81%ae%e3%81%94%e6%a1%88%e5%86%85/">
+          伏龍会　タイ研修のご案内
+         </a>
+        </td>
+       </tr>
+       <tr>
+        <td class="icon">
+         <img width="12" height="13" alt="" src="http://www.shokuhyaku.jp/wp-content/themes/shoku100/images/common/arrow.png" />
+        </td>
+        <td class="date">
+         2015.03.30
+        </td>
+        <td class="link">
+         <a href="http://www.shokuhyaku.jp/campaign/2015/03/%e7%ac%ac%e4%b8%83%e6%9c%9f%e7%b7%8f%e4%bc%9a%e3%80%80%e7%b5%8c%e5%96%b6%e6%88%a6%e7%95%a5%e3%82%bb%e3%83%9f%e3%83%8a%e3%83%bc%e3%81%ae%e3%81%94%e6%a1%88%e5%86%85/">
+          第七期総会　経営戦略セミナーのご案内
+         </a>
+        </td>
+       </tr>
+      </tbody>
+     </table>
+    </div>
+    <div id="main_navi">
+     <div style="" id="login_form">
+      <img width="218" height="32" alt="会員の方　会員ルームログイン" src="http://www.shokuhyaku.jp/wp-content/themes/shoku100/images/navi/login_title.png" id="login_title" />
+      <div id="login_input">
+       ID
+       <br />
+       <input type="text" id="login_form_id" />
+       <br />
+       パスワード
+       <br />
+       <input type="password" id="login_form_pass" />
+       <br />
+      </div>
+      <div id="login_information">
+       ID、パスワードを忘れてしまった方は
+       <a href="/inquiry/">
+        こちら
+       </a>
+      </div>
+      <a onclick="Login('/');" href="javascript:void(0);" id="login_button">
+       <img width="70" height="26" alt="LOGIN" src="http://www.shokuhyaku.jp/wp-content/themes/shoku100/images/navi/login_button.png" />
+      </a>
+     </div>
+     <div style="display:none;" id="logout_form">
+      <img width="218" height="32" alt="ログアウト" src="http://www.shokuhyaku.jp/wp-content/themes/shoku100/images/navi/logout_title.png" id="logout_title" />
+      <div id="logout_information">
+       ログアウトはこちら
+      </div>
+      <a onclick="Logout('/');" href="javascript:void(0);" id="logout_button">
+       <img width="70" height="26" alt="LOGOUT" src="http://www.shokuhyaku.jp/wp-content/themes/shoku100/images/navi/logout_button.png" />
+      </a>
+     </div>
+     <div id="navi_banner">
+      <a href="/inquiry/">
+       <img width="220" height="175" alt="お問い合わせはこちら" src="http://www.shokuhyaku.jp/wp-content/themes/shoku100/images/navi/inquiry.png" />
+      </a>
+     </div>
+     <div id="navi_banner">
+      <a href="/weekly-news/">
+       <img width="220" height="101" alt="週間外食ニュース" src="http://www.shokuhyaku.jp/wp-content/themes/shoku100/images/navi/weekly-news.jpg" />
+      </a>
+     </div>
+    </div>
+    <div class="clear_div">
+    </div>
+    <div id="footer_banner">
+     <a href="/information/">
+      <img width="305" height="96" alt="新着情報" src="http://www.shokuhyaku.jp/wp-content/themes/shoku100/images/footer/footer_banner1.jpg" />
+     </a>
+     <img width="3" height="96" alt="" src="http://www.shokuhyaku.jp/wp-content/themes/shoku100/images/common/spacer.png" />
+     <a href="/campaign/">
+      <img width="305" height="96" alt="イベント・セミナー情報" src="http://www.shokuhyaku.jp/wp-content/themes/shoku100/images/footer/footer_banner2.jpg" />
+     </a>
+     <img width="3" height="96" alt="" src="http://www.shokuhyaku.jp/wp-content/themes/shoku100/images/common/spacer.png" />
+     <a href="/member_room/">
+      <img width="305" height="96" alt="会員ルーム" src="http://www.shokuhyaku.jp/wp-content/themes/shoku100/images/footer/footer_banner3.jpg" />
+     </a>
+    </div>
+   </div>
+  </div>
+  <div id="footer">
+   <div id="footer_inner">
+    <div id="footer_inner2">
+     Copyright© 食百年の会 All Rights Reserved.
+    </div>
+   </div>
+  </div>
+  <script type="text/javascript">
+   $("#header_menu1").addClass("active");
+  </script>
+ </body>
+</html>

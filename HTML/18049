@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <!--
+    Realizado por: 
+    Alexys Gonzalez
+    alexysbike@gmail.com
+    -->
+  <title>
+   Nuova Venezuela
+  </title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <link href="http://nuovavenezuela.com/img/favicon.ico" rel="shortcut icon" />
+  <link rel="stylesheet" href="http://nuovavenezuela.com/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="http://nuovavenezuela.com/css/bootstrap-lightbox.min.css" />
+  <link rel="stylesheet" href="http://nuovavenezuela.com/css/base.css" />
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+ </head>
+ <body style="background-color:black">
+  <div class="container">
+   <div id="header" class="row">
+    <div id="buscador" class="col-md-5">
+     <div id="opciones-usuario" class="">
+      <a id="boton-login" href="#" data-original-title="" title="">
+       <span class="glyphicon glyphicon-user">
+       </span>
+       Login
+      </a>
+      <a href="http://nuovavenezuela.com/usuario/nuevo">
+       <span class="glyphicon glyphicon-ok">
+       </span>
+       Registrar como Comprador
+      </a>
+      <a href="http://nuovavenezuela.com/usuario/nuevo/disenador">
+       <span class="glyphicon glyphicon-star">
+       </span>
+       Registrar como Diseñador
+      </a>
+     </div>
+     <br />
+     <form method="post" action="http://nuovavenezuela.com/sitio/buscar/" role="search" id="busqueda-pagina" class="">
+      <div class="input-group ">
+       <input type="hidden" value="" id="ordenar" name="ordenar" />
+       <input type="hidden" value="" id="filtrar" name="filtrar" />
+       <input type="hidden" value="" id="valor" name="valor" />
+       <input type="hidden" value="" id="categoria" name="categoria" />
+       <input type="hidden" value="" id="pagina" name="pagina" />
+       <input type="text" value="" id="busqueda-articulo" name="busqueda" placeholder="Busqueda" class="form-control" />
+       <span class="input-group-btn">
+        <button class="btn btn-default" type="submit">
+         <span class="glyphicon glyphicon-search">
+         </span>
+        </button>
+       </span>
+      </div>
+     </form>
+     <br />
+     <a href="http://nuovavenezuela.com/usuario/nuevo/disenador">
+      <span class="glyphicon glyphicon-globe">
+      </span>
+      Publica con Nosotros
+     </a>
+     <a href="http://nuovavenezuela.com/sitio/contacto">
+      <span class="glyphicon glyphicon-envelope">
+      </span>
+      Contácto
+     </a>
+     <a href="http://nuovavenezuela.com/sitio/quienes_somos">
+      <span class="glyphicon glyphicon-info-sign">
+      </span>
+      Quienes Somos
+     </a>
+     <a href="http://nuovavenezuela.com/sitio/tutoriales">
+      <span class="glyphicon glyphicon-book">
+      </span>
+      Tutoriales
+     </a>
+     <br />
+     <br />
+     <a style="min-width:82px; min-height:24px; text-align:left" href="https://www.facebook.com/nuovavenezuela" target="_blank">
+      <img src="http://nuovavenezuela.com/img/socials/facebook-48.png" style="vertical-align:middle; height:36px; margin-right:5px" />
+     </a>
+     <a style="min-width:82px; min-height:24px; text-align:left" href="https://twitter.com/nuovavenezuela" target="_blank">
+      <img src="http://nuovavenezuela.com/img/socials/twitter-48.png" style="vertical-align:middle; height:36px; margin-right:5px" />
+     </a>
+     <a style="min-width:82px; min-height:24px; text-align:left" href="http://instagram.com/nuovavenezuela" target="_blank">
+      <img src="http://nuovavenezuela.com/img/socials/instagram-48.png" style="vertical-align:middle; height:36px" />
+     </a>
+    </div>
+    <div id="logo" class="col-md-7 text-right">
+     <a href="http://nuovavenezuela.com/">
+      <img style="width:350px" src="http://nuovavenezuela.com/img/logo-blanco.png" />
+     </a>
+    </div>
+   </div>
+  </div>
+  <nav style="background-color:black;color:#E31082; min-height:555px;" role="navigation" class="navbar navbar-inverse">
+   <div class="container">
+    <div style="color:#E31082" class="row hidden-xs hidden-sm">
+     <div class="col-md-5 categoria-home-grande borde-categoria borde-categoria-izq">
+      <img class="img-detalles" style="display:none" src="http://nuovavenezuela.com/img/categorias-rotadas/alta-costura-b.png" />
+      <div class="row detalles-categoria">
+       <div class="col-md-2">
+        <img src="http://nuovavenezuela.com/img/categorias-rotadas/alta-costura-p.png" />
+       </div>
+       <div class="col-md-10">
+        <h3>
+         Destacada
+        </h3>
+        <a class="thumbnail color-fucsia" href="http://nuovavenezuela.com/sitio/articulo/159">
+         <div class="row">
+          <div class="col-md-5">
+           <div style="background-image:url(http://nuovavenezuela.com/img/usuarios/84/84_COLLAR.jpg)" class="thumbnails-home">
+           </div>
+          </div>
+          <div class="col-md-7">
+           <div class="caption">
+            <cite class="h5" title="ColecciÃ³n">
+             COLLARES
+            </cite>
+            <h3 style="margin:0">
+             COLLAR DE STRAS
+             <br />
+             <small>
+              Por
+              <i>
+               ROUST ACCESORIOS
+              </i>
+             </small>
+            </h3>
+           </div>
+          </div>
+         </div>
+        </a>
+        <h3>
+         Más Vendida
+        </h3>
+        <a class="thumbnail color-fucsia" href="http://nuovavenezuela.com/sitio/articulo/167">
+         <div class="row">
+          <div class="col-md-5">
+           <div style="background-image:url(http://nuovavenezuela.com/img/usuarios/84/84_COLLAR_AZUL_REY.JPG)" class="thumbnails-home">
+           </div>
+          </div>
+          <div class="col-md-7">
+           <div class="caption">
+            <cite class="h5" title="ColecciÃ³n">
+             COLLARES
+            </cite>
+            <h3 style="margin:0">
+             COLLAR VERSATIL
+             <br />
+             <small>
+              Por
+              <i>
+               ROUST ACCESORIOS
+              </i>
+             </small>
+            </h3>
+           </div>
+          </div>
+         </div>
+        </a>
+        <p class="text-right">
+         <a href="http://nuovavenezuela.com/sitio/buscar/1">
+          Ver todo...
+         </a>
+        </p>
+       </div>
+      </div>
+     </div>
+     <div class="col-md-1 categoria-home borde-categoria">
+      <img class="img-detalles" src="http://nuovavenezuela.com/img/categorias-rotadas/casual-b.png" />
+      <div style="display:none" class="row detalles-categoria">
+       <div class="col-md-2">
+        <img src="http://nuovavenezuela.com/img/categorias-rotadas/casual-p.png" />
+       </div>
+       <div class="col-md-10">
+        <h3>
+         Destacada
+        </h3>
+        <a class="thumbnail color-fucsia" href="http://nuovavenezuela.com/sitio/articulo/175">
+         <div class="row">
+          <div class="col-md-5">
+           <div style="background-image:url(http://nuovavenezuela.com/img/usuarios/99/99_blanco_y_negro.jpg)" class="thumbnails-home">
+           </div>
+          </div>
+          <div class="col-md-7">
+           <div class="caption">
+            <cite class="h5" title="ColecciÃ³n">
+             julio 2014
+            </cite>
+            <h3 style="margin:0">
+             bohemia
+             <br />
+             <small>
+              Por
+              <i>
+               Natural
+              </i>
+             </small>
+            </h3>
+           </div>
+          </div>
+         </div>
+        </a>
+        <h3>
+         Más Vendida
+        </h3>
+        <a class="thumbnail color-fucsia" href="http://nuovavenezuela.com/sitio/articulo/175">
+         <div class="row">
+          <div class="col-md-5">
+           <div style="background-image:url(http://nuovavenezuela.com/img/usuarios/99/99_blanco_y_negro.jpg)" class="thumbnails-home">
+           </div>
+          </div>
+          <div class="col-md-7">
+           <div class="caption">
+            <cite class="h5" title="ColecciÃ³n">
+             julio 2014
+            </cite>
+            <h3 style="margin:0">
+             bohemia
+             <br />
+             <small>
+              Por
+              <i>
+               Natural
+              </i>
+             </small>
+            </h3>
+           </div>
+          </div>
+         </div>
+        </a>
+        <p class="text-right">
+         <a href="http://nuovavenezuela.com/sitio/buscar/2">
+          Ver todo...
+         </a>
+        </p>
+       </div>
+      </div>
+     </div>
+     <div class="col-md-1 categoria-home borde-categoria">
+      <img class="img-detalles" src="http://nuovavenezuela.com/img/categorias-rotadas/deportiva-b.png" />
+      <div style="display:none" class="row detalles-categoria">
+       <div class="col-md-2">
+        <img src="http://nuovavenezuela.com/img/categorias-rotadas/deportiva-p.png" />
+       </div>
+       <div class="col-md-10">
+        <h3>
+         Destacada
+        </h3>
+        <a class="thumbnail color-fucsia" href="http://nuovavenezuela.com/sitio/articulo/107">
+         <div class="row">
+          <div class="col-md-5">
+           <div style="background-image:url(http://nuovavenezuela.com/img/usuarios/31/31_Panda.png)" class="thumbnails-home">
+           </div>
+          </div>
+          <div class="col-md-7">
+           <div class="caption">
+            <cite class="h5" title="ColecciÃ³n">
+             Zoo by UV Design
+            </cite>
+            <h3 style="margin:0">
+             Panda
+             <br />
+             <small>
+              Por
+              <i>
+               UVDESIGN
+              </i>
+             </small>
+            </h3>
+           </div>
+          </div>
+         </div>
+        </a>
+        <h3>
+         Más Vendida
+        </h3>
+        <a class="thumbnail color-fucsia" href="http://nuovavenezuela.com/sitio/articulo/114">
+         <div class="row">
+          <div class="col-md-5">
+           <div style="background-image:url(http://nuovavenezuela.com/img/usuarios/31/31_Cebra2.png)" class="thumbnails-home">
+           </div>
+          </div>
+          <div class="col-md-7">
+           <div class="caption">
+            <cite class="h5" title="ColecciÃ³n">
+             Zoo by UV Design
+            </cite>
+            <h3 style="margin:0">
+             Cebra
+             <br />
+             <small>
+              Por
+              <i>
+               UVDESIGN
+              </i>
+             </small>
+            </h3>
+           </div>
+          </div>
+         </div>
+        </a>
+        <p class="text-right">
+         <a href="http://nuovavenezuela.com/sitio/buscar/3">
+          Ver todo...
+         </a>
+        </p>
+       </div>
+      </div>
+     </div>
+     <div class="col-md-1 categoria-home borde-categoria">
+      <img class="img-detalles" src="http://nuovavenezuela.com/img/categorias-rotadas/playera-b.png" />
+      <div style="display:none" class="row detalles-categoria">
+       <div class="col-md-2">
+        <img src="http://nuovavenezuela.com/img/categorias-rotadas/playera-p.png" />
+       </div>
+       <div class="col-md-10">
+        <h3>
+         Destacada
+        </h3>
+        <div style="height:180px" class="thumbnail">
+         <h2 class="text-center">
+          No hay artículo destacado en este momento
+         </h2>
+        </div>
+        <h3>
+         Más Vendida
+        </h3>
+        <div style="height:180px" class="thumbnail">
+         <h2 class="text-center">
+          No hay artículo más vendido en este momento
+         </h2>
+        </div>
+        <p class="text-right">
+         <a href="http://nuovavenezuela.com/sitio/buscar/4">
+          Ver todo...
+         </a>
+        </p>
+       </div>
+      </div>
+     </div>
+     <div class="col-md-1 categoria-home borde-categoria">
+      <img class="img-detalles" src="http://nuovavenezuela.com/img/categorias-rotadas/intima-b.png" />
+      <div style="display:none" class="row detalles-categoria">
+       <div class="col-md-2">
+        <img src="http://nuovavenezuela.com/img/categorias-rotadas/intima-p.png" />
+       </div>
+       <div class="col-md-10">
+        <h3>
+         Destacada
+        </h3>
+        <div style="height:180px" class="thumbnail">
+         <h2 class="text-center">
+          No hay artículo destacado en este momento
+         </h2>
+        </div>
+        <h3>
+         Más Vendida
+        </h3>
+        <div style="height:180px" class="thumbnail">
+         <h2 class="text-center">
+          No hay artículo más vendido en este momento
+         </h2>
+        </div>
+        <p class="text-right">
+         <a href="http://nuovavenezuela.com/sitio/buscar/5">
+          Ver todo...
+         </a>
+        </p>
+       </div>
+      </div>
+     </div>
+     <div class="col-md-1 categoria-home borde-categoria">
+      <img class="img-detalles" src="http://nuovavenezuela.com/img/categorias-rotadas/accesorios-b.png" />
+      <div style="display:none" class="row detalles-categoria">
+       <div class="col-md-2">
+        <img src="http://nuovavenezuela.com/img/categorias-rotadas/accesorios-p.png" />
+       </div>
+       <div class="col-md-10">
+        <h3>
+         Destacada
+        </h3>
+        <a class="thumbnail color-fucsia" href="http://nuovavenezuela.com/sitio/articulo/132">
+         <div class="row">
+          <div class="col-md-5">
+           <div style="background-image:url(http://nuovavenezuela.com/img/usuarios/83/83_zm01-2.jpg)" class="thumbnails-home">
+           </div>
+          </div>
+          <div class="col-md-7">
+           <div class="caption">
+            <h3 style="margin:0">
+             Zarcillos Soutache
+             <br />
+             <small>
+              Por
+              <i>
+               Vanity Accesorios
+              </i>
+             </small>
+            </h3>
+           </div>
+          </div>
+         </div>
+        </a>
+        <h3>
+         Más Vendida
+        </h3>
+        <a class="thumbnail color-fucsia" href="http://nuovavenezuela.com/sitio/articulo/182">
+         <div class="row">
+          <div class="col-md-5">
+           <div style="background-image:url(http://nuovavenezuela.com/img/usuarios/122/122_Slots.jpg)" class="thumbnails-home">
+           </div>
+          </div>
+          <div class="col-md-7">
+           <div class="caption">
+            <cite class="h5" title="ColecciÃ³n">
+             Summer colection
+            </cite>
+            <h3 style="margin:0">
+             Daniela shirt
+             <br />
+             <small>
+              Por
+              <i>
+               Nuocaova
+              </i>
+             </small>
+            </h3>
+           </div>
+          </div>
+         </div>
+        </a>
+        <p class="text-right">
+         <a href="http://nuovavenezuela.com/sitio/buscar/6">
+          Ver todo...
+         </a>
+        </p>
+       </div>
+      </div>
+     </div>
+     <div class="col-md-1 categoria-home borde-categoria">
+      <img class="img-detalles" src="http://nuovavenezuela.com/img/categorias-rotadas/calzado-b.png" />
+      <div style="display:none" class="row detalles-categoria">
+       <div class="col-md-2">
+        <img src="http://nuovavenezuela.com/img/categorias-rotadas/calzado-p.png" />
+       </div>
+       <div class="col-md-10">
+        <h3>
+         Destacada
+        </h3>
+        <div style="height:180px" class="thumbnail">
+         <h2 class="text-center">
+          No hay artículo destacado en este momento
+         </h2>
+        </div>
+        <h3>
+         Más Vendida
+        </h3>
+        <div style="height:180px" class="thumbnail">
+         <h2 class="text-center">
+          No hay artículo más vendido en este momento
+         </h2>
+        </div>
+        <p class="text-right">
+         <a href="http://nuovavenezuela.com/sitio/buscar/7">
+          Ver todo...
+         </a>
+        </p>
+       </div>
+      </div>
+     </div>
+     <div class="col-md-1 categoria-home borde-categoria">
+      <img class="img-detalles" style="margin-top: 10px;" src="http://nuovavenezuela.com/img/categorias-rotadas/disenadores-b.png" />
+      <div style="display:none" class="row detalles-categoria">
+       <div class="col-md-2">
+        <img style="margin-top: 10px;" src="http://nuovavenezuela.com/img/categorias-rotadas/disenadores-p.png" />
+       </div>
+       <div class="col-md-10">
+        <h3>
+         Destacado
+        </h3>
+        <a class="thumbnail color-fucsia" href="http://nuovavenezuela.com/usuario/ver_perfil/30">
+         <div class="row">
+          <div class="col-md-5">
+           <div style="background-image:url(http://nuovavenezuela.com/img/usuarios/30/30_ArantzaLu_Accesorios.jpg)" class="thumbnails-home">
+           </div>
+          </div>
+          <div class="col-md-7">
+           <div class="caption">
+            <cite class="h5" title="ColecciÃ³n">
+             Arantza Lu
+            </cite>
+            <h3 style="margin:0">
+             ARANTZALU
+            </h3>
+           </div>
+          </div>
+         </div>
+        </a>
+        <p class="text-right">
+         <a href="http://nuovavenezuela.com/sitio/buscar_disenador">
+          Ver todo...
+         </a>
+        </p>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="visible-xs visible-sm">
+     <p class="text-center">
+      <a href="http://nuovavenezuela.com/sitio/buscar/1">
+       <img class="img-responsive center-block" src="http://nuovavenezuela.com/img/categorias/alta-costura-p.png" />
+      </a>
+     </p>
+     <p class="text-center">
+      <a href="http://nuovavenezuela.com/sitio/buscar/2">
+       <img class="img-responsive center-block" src="http://nuovavenezuela.com/img/categorias/casual-p.png" />
+      </a>
+     </p>
+     <p class="text-center">
+      <a href="http://nuovavenezuela.com/sitio/buscar/3">
+       <img class="img-responsive center-block" src="http://nuovavenezuela.com/img/categorias/deportiva-p.png" />
+      </a>
+     </p>
+     <p style="margin-bottom:0" class="text-center">
+      <a href="http://nuovavenezuela.com/sitio/buscar/4">
+       <img class="img-responsive center-block" src="http://nuovavenezuela.com/img/categorias/playera-p.png" />
+      </a>
+     </p>
+     <p class="text-center">
+      <a href="http://nuovavenezuela.com/sitio/buscar/5">
+       <img class="img-responsive center-block" src="http://nuovavenezuela.com/img/categorias/intima-p.png" />
+      </a>
+     </p>
+     <p class="text-center">
+      <a href="http://nuovavenezuela.com/sitio/buscar/6">
+       <img class="img-responsive center-block" src="http://nuovavenezuela.com/img/categorias/accesorios-p.png" />
+      </a>
+     </p>
+     <p class="text-center">
+      <a href="http://nuovavenezuela.com/sitio/buscar/7">
+       <img class="img-responsive center-block" src="http://nuovavenezuela.com/img/categorias/calzado-p.png" />
+      </a>
+     </p>
+     <p class="text-center">
+      <a href="http://nuovavenezuela.com/sitio/buscar_disenador">
+       <img class="img-responsive center-block" src="http://nuovavenezuela.com/img/categorias/disenadores-p.png" />
+      </a>
+     </p>
+    </div>
+   </div>
+  </nav>
+  <div style="margin-top: 20px; margin-bottom: 20px" class="container text-center">
+   <div class="row">
+    <div class="col-md-6">
+     <img class="img-responsive" src="http://nuovavenezuela.com/img/informaciones/pagar-publicidad.png" />
+    </div>
+    <div class="col-md-6">
+     <img class="img-responsive" src="http://nuovavenezuela.com/img/informaciones/pagar-publicidad.png" />
+    </div>
+   </div>
+  </div>
+  <div class="container">
+   <div class="row">
+    <div class="col-md-6">
+     <div style="min-height:341px" class="panel panel-default">
+      <div class="panel-heading">
+       Actualidad
+      </div>
+      <div style="height:298px; overflow-y:scroll" class="panel-body">
+       <strong>
+        No hay noticias de actualidad en este momento...
+       </strong>
+      </div>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <a href="http://nuovavenezuela.com/usuario/nuevo/disenador">
+      <img class="img-responsive" src="http://nuovavenezuela.com/img/informaciones/disenador-publica.png" />
+     </a>
+    </div>
+   </div>
+  </div>
+  <div style="background-color:black; margin-top:20px" class="navbar-inverse" id="footer">
+   <div class="container">
+    <div class="row">
+     <div class="col-md-6">
+      <p>
+       © 2014 Nuova Venezuela,C.A.   RIF: J-40336353-6
+       <br />
+       <a href="mailto:info@nuovavenezuela.com">
+        info@nuovavenezuela.com
+       </a>
+       <br />
+       Teléfono: +584149474836
+       <br />
+       <a style="min-width:82px; min-height:24px; text-align:left" href="https://www.facebook.com/nuovavenezuela" target="_blank">
+        <img src="http://nuovavenezuela.com/img/socials/facebook-48.png" style="vertical-align:middle" />
+       </a>
+       <a style="min-width:82px; min-height:24px; text-align:left" href="https://twitter.com/nuovavenezuela" target="_blank">
+        <img src="http://nuovavenezuela.com/img/socials/twitter-48.png" style="vertical-align:middle" />
+       </a>
+       <a style="min-width:82px; min-height:24px; text-align:left" href="http://instagram.com/nuovavenezuela" target="_blank">
+        <img src="http://nuovavenezuela.com/img/socials/instagram-48.png" style="vertical-align:middle" />
+       </a>
+      </p>
+     </div>
+     <div class="col-md-6">
+      <p>
+       <strong>
+        Mapa del Sitio:
+       </strong>
+       <br />
+       <a href="http://nuovavenezuela.com/sitio/buscar">
+        Artículos
+       </a>
+       <br />
+       <a href="http://nuovavenezuela.com/sitio/quienes_somos">
+        Quienes Somos
+       </a>
+       <br />
+       <a href="http://nuovavenezuela.com/sitio/contacto">
+        Contacto
+       </a>
+       <br />
+       <a href="http://nuovavenezuela.com/sitio/tutoriales">
+        Tutoriales
+       </a>
+      </p>
+     </div>
+    </div>
+   </div>
+  </div>
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="http://nuovavenezuela.com/js/lib/jquery-2.0.3.min.js">
+  </script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="http://nuovavenezuela.com/js/lib/bootstrap.min.js">
+  </script>
+  <script src="http://nuovavenezuela.com/js/lib/bootstrap-lightbox.min.js">
+  </script>
+  <script src="http://nuovavenezuela.com/js/lib/jquery.form.min.js" type="text/javascript">
+  </script>
+  <script src="http://nuovavenezuela.com/js/config.js" type="text/javascript">
+  </script>
+  <script src="http://nuovavenezuela.com/js/base.js" type="text/javascript">
+  </script>
+  <script src="http://nuovavenezuela.com/js/scripts/lightbox.js" type="text/javascript">
+  </script>
+  <script src="http://nuovavenezuela.com/js/scripts/sitio/home.js" type="text/javascript">
+  </script>
+ </body>
+</html>

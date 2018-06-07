@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <title>
+   Event Production
+  </title>
+  <link media="all" type="text/css" rel="stylesheet" href="css/bootstrap.css" />
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="js/jquery.min.js">
+  </script>
+  <!-- Custom Theme files -->
+  <!--theme-style-->
+  <link media="all" type="text/css" rel="stylesheet" href="css/style.css" />
+  <!--//theme-style-->
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <meta content="Content-Type" http-equiv="Content-Type" />
+  <meta content="Marry Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" name="keywords" />
+  <script type="application/x-javascript">
+   addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); }
+  </script>
+  <link media="screen" type="text/css" href="css/flexslider.css" rel="stylesheet" />
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js">
+  </script>
+  <script>
+   $(document).ready(function(){
+    $("#qcon").click(function(){
+        $("#qform").slideToggle(500);
+    });
+});
+  </script>
+ </head>
+ <body>
+  <!--header-->
+  <div class="header">
+   <div class="header-top">
+    <div class="container">
+     <div class="logo">
+      <a href="index.php">
+       <img alt="" src="images/logo.png" />
+      </a>
+     </div>
+     <div class="search">
+      <button id="qcon">
+       Quick Contact
+      </button>
+      <div id="qform">
+       <form method="post" action="">
+        <input type="text" required="" placeholder="Name" name="name" />
+        <input type="email" required="" placeholder="Email" name="email" />
+        <input type="text" required="" placeholder="Contact" name="contact" />
+        <textarea placeholder="Message" name="comment" rows="5">
+        </textarea>
+        <input type="submit" value="Send" name="contactform" />
+       </form>
+      </div>
+      <br />
+      Call: +91 90350 91922
+     </div>
+     <div class="clearfix">
+     </div>
+    </div>
+   </div>
+   <div class="container">
+    <div class="top-nav">
+     <ul class="nav nav-pills nav-justified">
+      <li>
+       <a href="index.php">
+        Home
+       </a>
+      </li>
+      <li>
+       <a href="about.php">
+        About
+       </a>
+      </li>
+      <li class="active">
+       <a href="services.php">
+        Services
+       </a>
+      </li>
+      <li>
+       <a href="gallery.php">
+        Gallery
+       </a>
+      </li>
+      <li>
+       <a href="contact.php">
+        Contact
+       </a>
+      </li>
+      <li>
+       <a href="testimony.php">
+        Testimonial
+       </a>
+      </li>
+      <div class="clearfix">
+      </div>
+     </ul>
+     <script>
+      $("span.menu").click(function(){
+                    $(".top-nav ul").slideToggle(500, function(){
+                    });
+                });
+     </script>
+    </div>
+   </div>
+   <div class="container">
+    <div class="banner">
+     <div class="slider">
+      <section class="slider">
+       <div class="flexslider">
+        <div class="flex-viewport" style="overflow: hidden; position: relative;">
+         <ul class="slides" style="width: 1000%; transition-duration: 0.6s; transform: translate3d(-1440px, 0px, 0px);">
+          <li class="clone" style="width: 720px; float: left; display: block;">
+           <div class="col-md-12 banner-left">
+            <img alt="" src="images/s4.jpg" class="img-responsive" />
+           </div>
+           <div class="clearfix">
+           </div>
+          </li>
+          <li style="width: 720px; float: left; display: block;" class="">
+           <div class="col-md-12 banner-left">
+            <img alt="" src="images/s2.jpg" class="img-responsive" />
+           </div>
+           <div class="clearfix">
+           </div>
+          </li>
+          <li style="width: 720px; float: left; display: block;" class="flex-active-slide">
+           <div class="col-md-12 banner-left">
+            <img alt="" src="images/s3.jpg" class="img-responsive" />
+           </div>
+           <div class="clearfix">
+           </div>
+          </li>
+          <li style="width: 720px; float: left; display: block;">
+           <div class="col-md-12 banner-left">
+            <img alt="" src="images/s4.jpg" class="img-responsive" />
+           </div>
+           <div class="clearfix">
+           </div>
+          </li>
+          <li style="width: 720px; float: left; display: block;" class="clone">
+           <div class="col-md-12 banner-left">
+            <img alt="" src="images/s2.jpg" class="img-responsive" />
+           </div>
+           <div class="clearfix">
+           </div>
+          </li>
+         </ul>
+        </div>
+        <ol class="flex-control-nav flex-control-paging">
+         <li>
+          <a class="">
+           1
+          </a>
+         </li>
+         <li>
+          <a class="flex-active">
+           2
+          </a>
+         </li>
+         <li>
+          <a>
+           3
+          </a>
+         </li>
+        </ol>
+        <ul class="flex-direction-nav">
+         <li>
+          <a href="#" class="flex-prev">
+           Previous
+          </a>
+         </li>
+         <li>
+          <a href="#" class="flex-next">
+           Next
+          </a>
+         </li>
+        </ul>
+       </div>
+      </section>
+      <script>
+       window.jQuery || document.write('&lt;script src="js/libs/jquery-1.7.min.js"&gt;\x3C/script&gt;')
+      </script>
+      <!--FlexSlider-->
+      <script src="js/jquery.flexslider.js" defer="defer">
+      </script>
+      <script type="text/javascript">
+       $(window).load(function(){
+                      $('.flexslider').flexslider({
+                        animation: "slide",
+                        start: function(slider){
+                          $('body').removeClass('loading');
+                        }
+                      });
+                    });
+      </script>
+     </div>
+    </div>
+   </div>
+  </div>
+  <!--//header-->
+  <div class="container">
+   <div class="services">
+    <h3 style="text-align:center;">
+     EVENTS
+    </h3>
+    <div class="service-bottom">
+     <div style="padding: 1em 1em;" class="col-md-12 service-grid-top">
+      <div class="col-md-4 service-grid1">
+       <img alt="" src="admin/images/services/4.jpg" />
+      </div>
+      <div class="col-md-8 service-grid">
+       <h4>
+        Product/ Service Launches
+       </h4>
+       <p>
+       </p>
+       <p style="text-align: justify;">
+        Whether it's a big, bold entertaining reveal or an informative ‘show and tell' we can bring together the technical know-how and creative styling to experientially bring your brand to life.
+       </p>
+       <p style="text-align: justify;">
+        Our technician's ability to manage lighting and audio visual systems to seamlessly draw the audience's attention from speaker to focal points and back again is just part of the specialist knowledge we have in delivering product launches with impact. Our stylists and designers work alongside our technical teams making your product the star through lit product podiums, entranceways, stage sets and specialist mood and reveal lighting.
+       </p>
+       <p>
+       </p>
+      </div>
+     </div>
+     <div style="padding: 1em 1em;" class="col-md-12 service-grid-top">
+      <div class="col-md-4 service-grid1">
+       <img alt="" src="admin/images/services/7.jpg" />
+      </div>
+      <div class="col-md-8 service-grid">
+       <h4>
+        Dealer Meets
+       </h4>
+       <p>
+       </p>
+       <p style="text-align: justify;">
+        Reward your dealers &amp; distributors on meeting their sales quotas. Energize them with ideas to meet exponential growth objectives by organizing your Dealers Meet. We lend our helping hand with arranging world class sales meets, from event anchors to audio-visual infrastructure, taking care of all printing and communication needs to even helping with training companies which can use the occasion for useful training sales strategy development or training sessions.
+       </p>
+       <p>
+       </p>
+      </div>
+     </div>
+     <div style="padding: 1em 1em;" class="col-md-12 service-grid-top">
+      <div class="col-md-4 service-grid1">
+       <img alt="" src="admin/images/services/31.jpg" />
+      </div>
+      <div class="col-md-8 service-grid">
+       <h4>
+        Workshops
+       </h4>
+       <p>
+       </p>
+       <p style="text-align: justify;">
+        We cater to complete workshops management services for organization of different sizes. Our end-to-end services includes assistance in scheduling of dates and fixing of meetings, finding the right facility, providing technical support, assisting in accommodation and transport arrangements, and various other requirements
+       </p>
+       <p>
+       </p>
+      </div>
+     </div>
+     <div style="padding: 1em 1em;" class="col-md-12 service-grid-top">
+      <div class="col-md-4 service-grid1">
+       <img alt="" src="admin/images/services/40.jpg" />
+      </div>
+      <div class="col-md-8 service-grid">
+       <h4>
+        Award Ceremonies
+       </h4>
+       <p>
+       </p>
+       <p style="text-align: justify;">
+        The award function is one of the important ceremonies to be organized by any concerned industry to encourage people of excellence in particular area or field. We organize award function as per the requirement and nature of the award ceremony. We have a dedicated team of professionals with adequate experience in this field and provide our clients with end-to-end services and a personalized care.
+       </p>
+       <p>
+       </p>
+      </div>
+     </div>
+     <div style="padding: 1em 1em;" class="col-md-12 service-grid-top">
+      <div class="col-md-4 service-grid1">
+       <img alt="" src="admin/images/services/37.jpg" />
+      </div>
+      <div class="col-md-8 service-grid">
+       <h4>
+        Sales Meet
+       </h4>
+       <p>
+       </p>
+       <h4 style="box-sizing: border-box; font-family: Asap-Regular; font-weight: 500; line-height: 1.1; color: rgb(51, 51, 51); margin: 0px; font-size: 18px;">
+       </h4>
+       <p style="text-align: justify;">
+        <strong>
+         <em>
+          Om Event Production
+         </em>
+        </strong>
+        is having a vast experience in arranging sales meets. We lend our helping hand with arranging world class sales meets, from event anchors to audio-visual infrastructure, taking care of all printing and communication needs to even helping with training companies which can use the occasion for useful training sales strategy development or training sessions.
+       </p>
+       <p>
+       </p>
+      </div>
+     </div>
+     <div style="padding: 1em 1em;" class="col-md-12 service-grid-top">
+      <div class="col-md-4 service-grid1">
+       <img alt="" src="admin/images/services/36.jpg" />
+      </div>
+      <div class="col-md-8 service-grid">
+       <h4>
+        Annual Days
+       </h4>
+       <p>
+       </p>
+       <h4 style="box-sizing: border-box; font-family: Asap-Regular; font-weight: 500; line-height: 1.1; color: rgb(51, 51, 51); margin: 0px; font-size: 18px;">
+       </h4>
+       <p style="text-align: justify;">
+        For almost all the educational institutions starting from school, college and university, the annual day function has become a sort of compulsory celebration as during this annual day, the school, colleges and universities get an opportunity to exhibit the talents in their possession in different walks of life that to encourage the students as an asset of the nation. So, keeping in mind the value and importance of this annual celebration, we are taking charge of managing the function A to Z and making the management of the organization completely tension free.
+       </p>
+       <p>
+       </p>
+      </div>
+     </div>
+     <div class="clearfix">
+     </div>
+    </div>
+   </div>
+  </div>
+  <div class="container">
+   <div class="services">
+    <h3 style="text-align:center;">
+     EXHIBITIONS
+    </h3>
+    <div class="service-bottom">
+     <div style="padding: 1em 1em;" class="col-md-12 service-grid-top">
+      <div class="col-md-4 service-grid1">
+       <img alt="" src="admin/images/services/AAY_7254.JPG" />
+      </div>
+      <div class="col-md-8 service-grid">
+       <h4>
+        Trade Shows
+       </h4>
+       <p>
+       </p>
+       <p>
+        <span style="color: rgb(153, 153, 153); text-align: justify;">
+         Trade shows &amp; business events are among the popular mediums used by B2B companies globally to expand their business and reach out to potential buyers and sellers. Considering the prime importance of trade shows in building business relationships and promoting products / services,
+        </span>
+       </p>
+       <p>
+        <strong style="text-align: justify; color: #999; font-family: Arial, Verdana, sans-serif; font-size: 12px;">
+         <em>
+          Om Event Production 
+         </em>
+        </strong>
+        <span style="color: rgb(153, 153, 153); text-align: justify;">
+         have a dedicated team of professionals who work with our clients in making this event a spectacular show. They come with adequate experience in this field and provide our clients with end-tour clients in making this event a spectacular show. They come with adequate experience in this field and provide our clients with end-to-end services and a personalized care.
+        </span>
+       </p>
+       <p>
+       </p>
+      </div>
+     </div>
+     <div style="padding: 1em 1em;" class="col-md-12 service-grid-top">
+      <div class="col-md-4 service-grid1">
+       <img alt="" src="admin/images/services/22BG_P2_INTEL_1660354f.jpg" />
+      </div>
+      <div class="col-md-8 service-grid">
+       <h4>
+        Education Fairs
+       </h4>
+       <p>
+       </p>
+       <h4 style="box-sizing: border-box; font-family: Asap-Regular; font-weight: 500; line-height: 1.1; color: rgb(51, 51, 51); margin: 0px; font-size: 18px;">
+        <span style="color: rgb(153, 153, 153); font-size: 15.4px; line-height: 24.64px;">
+         Comming up...
+        </span>
+       </h4>
+       <p>
+       </p>
+      </div>
+     </div>
+     <div style="padding: 1em 1em;" class="col-md-12 service-grid-top">
+      <div class="col-md-4 service-grid1">
+       <img alt="" src="admin/images/services/IMG_3933.jpg" />
+      </div>
+      <div class="col-md-8 service-grid">
+       <h4>
+        Medical Summits
+       </h4>
+       <p>
+       </p>
+       <h4 style="box-sizing: border-box; font-family: Asap-Regular; font-weight: 500; line-height: 1.1; color: rgb(51, 51, 51); margin: 0px; font-size: 18px;">
+        <span style="color: rgb(153, 153, 153); font-size: 15.4px; line-height: 24.64px;">
+         Comming up...
+        </span>
+       </h4>
+       <p>
+       </p>
+      </div>
+     </div>
+     <div class="clearfix">
+     </div>
+    </div>
+   </div>
+  </div>
+  <!--content-->
+  <!--<div class="about">
+	<div class="container">
+		<div class="simply-grid">
+            <div class="our-ad">
+                <div class="col-md-6 so-left">
+                	<h3>EVENTS</h3>
+                    <ul class="simply-left">
+                        <li><a href="#">Product/ Service Launches</a></li>
+                        <li><a href="#">Dealer Meets</a></li>
+                        <li><a href="#">Workshops</a></li>
+                        <li><a href="#">Award Ceremonies</a></li>
+                        <li><a href="#">Sales Meet</a></li>
+                        <li><a href="#">Annual Days etc.</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 so-left">
+                	<h3>EXHIBITIONS</h3>
+                    <ul class="simply-left">
+                        <li><a href="#">Trade Shows</a></li>
+                        <li><a href="#">Education Fairs</a></li>
+                        <li><a href="#">Medical Summits etc</a></li>
+                    </ul>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+		</diV>
+	</div>
+</div>-->
+  <!--footer-->
+  <div class="footer">
+   <div class="container">
+    <div class="footer-top-at">
+     <div class="col-md-3 amet-sed">
+      <h4>
+       MORE INFO
+      </h4>
+      <ul class="nav-bottom">
+       <li>
+        <a href="index.php">
+         Home
+        </a>
+       </li>
+       <li>
+        <a href="about.php">
+         About
+        </a>
+       </li>
+       <li>
+        <a href="services.php">
+         Services
+        </a>
+       </li>
+       <li>
+        <a href="gallery.php">
+         Gallery
+        </a>
+       </li>
+       <li>
+        <a href="contact.php">
+         Contact
+        </a>
+       </li>
+       <li>
+        <a href="testimony.php">
+         Testimonial
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="col-md-5 amet-sed ">
+      <h4>
+       CONTACT US
+      </h4>
+      <p>
+       #63/23, HRBR Layout, Nagadevi Industrial Area, Kacharakanahalli, Bangalore-560084
+      </p>
+      <p>
+       ajay.pramanik@gmail.com
+      </p>
+      <p>
+       +91 90350 91922
+      </p>
+     </div>
+     <div class="col-md-4 amet-sed">
+      <h4>
+       Follow Us
+      </h4>
+      <ul class="social">
+       <li>
+        <a href="">
+         <i>
+         </i>
+        </a>
+       </li>
+       <li>
+        <a href="">
+         <i class="google">
+         </i>
+        </a>
+       </li>
+       <li>
+        <a href="">
+         <i class="twitter">
+         </i>
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="clearfix">
+     </div>
+    </div>
+   </div>
+   <div class="footer-class">
+    <p>
+     © 2015 All Rights Reserved
+    </p>
+   </div>
+  </div>
+ </body>
+</html>

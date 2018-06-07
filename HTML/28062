@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+ <head>
+  <meta charset="utf-8" />
+  <title>
+   Tugun to Bilinga Oceanway - Reports/FAQ's
+  </title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <meta content="Oceanway, Tugun to Bilinga, Gold Coast Oceanway, Friends of Currumbin" name="description" />
+  <meta content="Tugun to Bilinga Oceanway, Oceanway, Gold Coast, Chris Robbins,  Gold Coast City Council, Friends of Currumbin, Pacific Parade, Cycleway, Tugun, Bilinga, Walking, Golden Four Drive, Environment, Qld Government" name="keywords" />
+  <meta content="Natalie Wain" name="author" />
+  <!-- Le styles -->
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.css" />
+  <link rel="stylesheet" href="bootstrap/css/bootstrap-responsive.css" />
+  <link href="css/sinister.css" rel="stylesheet" />
+  <link href="css/font-awesome.min.css" rel="stylesheet" />
+  <link href="css/animated.css" rel="stylesheet" />
+  <style>
+   /* GLOBAL STYLES
+    -------------------------------------------------- */
+    /* Padding below the footer and lighter body text */
+
+    body {
+      padding-bottom: 40px;
+      color: #5a5a5a;
+    }
+
+
+
+    /* CUSTOMIZE THE NAVBAR
+    -------------------------------------------------- */
+
+    /* Special class on .container surrounding .navbar, used for positioning it into place. */
+    .navbar-wrapper {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 10;
+      margin-top: 20px;
+      margin-bottom: -90px; /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
+    }
+    .navbar-wrapper .navbar {
+
+    }
+
+    /* Remove border and change up box shadow for more contrast */
+    .navbar .navbar-inner {
+      border: 0;
+      -webkit-box-shadow: 0 2px 10px rgba(0,0,0,.25);
+         -moz-box-shadow: 0 2px 10px rgba(0,0,0,.25);
+              box-shadow: 0 2px 10px rgba(0,0,0,.25);
+    }
+
+    /* Downsize the brand/project name a bit */
+    .navbar .brand {
+	padding: 14px 20px 16px; /* Increase vertical padding to match navbar links */
+	font-size: 16px;
+	font-weight: bold;
+	text-shadow: 0 -1px 0 rgba(0,0,0,.5);
+	background-color: #00AEEA;
+    }
+
+    /* Navbar links: increase padding for taller navbar */
+    .navbar .nav &gt; li &gt; a {
+      padding: 15px 20px;
+    }
+
+    /* Offset the responsive button for proper vertical alignment */
+    .navbar .btn-navbar {
+      margin-top: 10px;
+    }
+
+
+
+    /* CUSTOMIZE THE CAROUSEL
+    -------------------------------------------------- */
+
+    /* Carousel base class */
+    .carousel {
+      margin-bottom: 60px;
+    }
+
+    .carousel .container {
+      position: relative;
+      z-index: 9;
+    }
+
+    .carousel-control {
+      height: 80px;
+      margin-top: 0;
+      font-size: 120px;
+      text-shadow: 0 1px 1px rgba(0,0,0,.4);
+      background-color: transparent;
+      border: 0;
+      z-index: 10;
+    }
+
+    .carousel .item {
+      height: 500px;
+    }
+    .carousel img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      height: 500px;
+    }
+
+    .carousel-caption {
+      background-color: transparent;
+      position: static;
+      max-width: 550px;
+      padding: 0 20px;
+      margin-top: 200px;
+    }
+    .carousel-caption h1,
+    .carousel-caption .lead {
+      margin: 0;
+      line-height: 1.25;
+      color: #fff;
+      text-shadow: 0 1px 1px rgba(0,0,0,.4);
+    }
+    .carousel-caption .btn {
+      margin-top: 10px;
+    }
+
+
+
+    /* MARKETING CONTENT
+    -------------------------------------------------- */
+
+    /* Center align the text within the three columns below the carousel */
+    .marketing .span4 {
+	text-align: center;
+	padding-left: px;
+    }
+    .marketing h2 {
+      font-weight: normal;
+    }
+    .marketing .span4 p {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+
+
+    /* Featurettes
+    ------------------------- */
+
+    .featurette-divider {
+      margin: 80px 0; /* Space out the Bootstrap &lt;hr&gt; more */
+    }
+    .featurette {
+	padding-top: 120px; /* Vertically center images part 1: add padding above and below text. */
+	overflow: hidden;
+    }
+    .featurette-image {
+      margin-top: -120px; /* Vertically center images part 3: negative margin up the image the same amount of the padding to center it. */
+    }
+
+    /* Give some space on the sides of the floated elements so text doesn't run right into it. */
+    .featurette-image.pull-left {
+      margin-right: 40px;
+    }
+    .featurette-image.pull-right {
+	margin-left: 40px;
+	margin-right: 500px;
+    }
+
+    /* Thin out the marketing headings */
+    .featurette-heading {
+      font-size: 50px;
+      font-weight: 300;
+      line-height: 1;
+      letter-spacing: -1px;
+    }
+.featurette-image.pull-right_green {
+	background-color: #BCE064;
+}
+
+
+
+    /* RESPONSIVE CSS
+    -------------------------------------------------- */
+
+    @media (max-width: 979px) {
+
+      .container.navbar-wrapper {
+        margin-bottom: 0;
+        width: auto;
+      }
+      .navbar-inner {
+	border-radius: 0;
+	margin: -20px 0;
+	background-color: #00B1CD;
+      }
+
+      .carousel .item {
+        height: 500px;
+      }
+      .carousel img {
+        width: auto;
+        height: 500px;
+      }
+
+      .featurette {
+        height: auto;
+        padding: 0;
+      }
+      .featurette-image.pull-left,
+      .featurette-image.pull-right {
+        display: block;
+        float: none;
+        max-width: 40%;
+        margin: 0 auto 20px;
+      }
+    }
+
+
+    @media (max-width: 767px) {
+
+      .navbar-inner {
+        margin: -20px;
+      }
+
+      .carousel {
+        margin-left: -20px;
+        margin-right: -20px;
+      }
+      .carousel .container {
+
+      }
+      .carousel .item {
+        height: 300px;
+      }
+      .carousel img {
+        height: 300px;
+      }
+      .carousel-caption {
+        width: 65%;
+        padding: 0 70px;
+        margin-top: 100px;
+      }
+      .carousel-caption h1 {
+        font-size: 30px;
+      }
+      .carousel-caption .lead,
+      .carousel-caption .btn {
+        font-size: 18px;
+      }
+
+      .marketing .span4 + .span4 {
+        margin-top: 40px;
+      }
+
+      .featurette-heading {
+        font-size: 30px;
+      }
+      .featurette .lead {
+        font-size: 18px;
+        line-height: 1.5;
+      }
+	  /* hover */
+	
+	 .ImageWrapper .ImageOverlayH {
+	background: none repeat scroll 0 0 rgba(0, 0, 0, 0.5);
+	bottom: 0;
+	display: block;
+	height: 100%;
+	left: 0;
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	transition: all 0.2s ease 0s;
+	width: 100%;
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+    }
+    .ImageWrapper:hover .ImageOverlayH {
+        opacity: 1;
+    }
+
+    .ImageWrapper .StyleH {
+        visibility: hidden;
+        margin: 0;
+        opacity: 0;
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        top: 50%;
+        margin-top: -20px;
+    }
+    .ImageWrapper:hover .StyleH {
+        opacity: 1;
+        visibility: visible;
+    }
+
+
+    }
+  </style>
+  <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+  <!--[if lt IE 9]>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6/html5shiv.min.js"></script>
+    <![endif]-->
+  <!-- Fav and touch icons -->
+  <link href="bootstrap/ico/apple-touch-icon-144-precomposed.png" sizes="144x144" rel="apple-touch-icon-precomposed" />
+  <link href="bootstrap/ico/apple-touch-icon-114-precomposed.png" sizes="114x114" rel="apple-touch-icon-precomposed" />
+  <link href="bootstrap/ico/apple-touch-icon-72-precomposed.png" sizes="72x72" rel="apple-touch-icon-precomposed" />
+  <link href="bootstrap/ico/apple-touch-icon-57-precomposed.png" rel="apple-touch-icon-precomposed" />
+  <link href="bootstrap/ico/favicon.png" rel="shortcut icon" />
+  <link type="text/css" rel="stylesheet" href="css/screen.css" />
+  <link type="text/css" rel="stylesheet" href="css1/sinister.css" />
+  <style type="text/css">
+   .span41 {    width: 370px !important;
+}
+  </style>
+  <script src="ScriptLibrary/jquery-latest.pack.js" type="text/javascript">
+  </script>
+  <script src="bootstrap/js/bootstrap.js" type="text/javascript">
+  </script>
+  <script type="text/javascript">
+   function MM_openBrWindow(theURL,winName,features) { //v2.0
+  window.open(theURL,winName,features);
+}
+  </script>
+  <style id="holderjs-style" type="text/css">
+   .holderjs-fluid {font-size:16px;font-weight:bold;text-align:center;font-family:sans-serif;margin:0}
+  </style>
+ </head>
+ <body>
+  <!-- NAVBAR
+    ================================================== -->
+  <div class="navbar-wrapper">
+   <!-- Wrap the .navbar in .container to center it within the absolutely positioned parent. -->
+   <div class="container">
+    <div class="navbar">
+     <div class="navbar-inner">
+      <!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
+      <button data-target=".nav-collapse" data-toggle="collapse" class="btn btn-navbar" type="button">
+       <span class="icon-bar">
+       </span>
+       <span class="icon-bar">
+       </span>
+       <span class="icon-bar">
+       </span>
+      </button>
+      <a href="#" class="brand">
+       <img alt="Tugun to Bilinga Oceanway" src="Images/logo/logo3.jpg" />
+      </a>
+      <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
+      <div class="nav-collapse collapse">
+       <ul class="nav">
+        <li>
+         <a href="index.html">
+          Home
+         </a>
+        </li>
+        <li>
+         <a href="petition.html">
+          Petition
+         </a>
+        </li>
+        <li>
+         <a href="important_info.html">
+          Important Info
+         </a>
+        </li>
+        <li>
+         <a href="dune_care.html">
+          Beach Care
+         </a>
+        </li>
+        <li>
+         <a href="your_comments.html">
+          Your Comments
+         </a>
+        </li>
+        <li>
+         <a href="contact.html">
+          Contact
+         </a>
+        </li>
+       </ul>
+      </div>
+      <!--/.nav-collapse -->
+     </div>
+     <!-- /.navbar-inner -->
+    </div>
+    <!-- /.navbar -->
+   </div>
+   <!-- /.container -->
+  </div>
+  <!-- /.navbar-wrapper -->
+  <div class="container marketing">
+   <div class="row">
+    <div class="span">
+     <img alt="A view from Tugun looking north to Surfers Paradise." src="Images/carousel/surfers.jpg" />
+     <br />
+     <br />
+    </div>
+   </div>
+  </div>
+  <div class="container-fluid ">
+   <h1 class="text_drawing">
+    Gold Coast is a  city with a Bold Vision - a Vision that says
+    <br />
+    <br />
+    "All the way with the Oceanway"
+   </h1>
+   <br />
+   <div class="container">
+    <div class="row">
+     <span class="span4">
+      <img alt="A coloured box with the words A city shaped by clever design." src="Images/box/donate.jpg" />
+     </span>
+     <div class="span4">
+      <img alt="A coloured box with the words A city that connects people with places." src="Images/box/connect.jpg" />
+     </div>
+     <div class="span4">
+      <a href="petition.html">
+       <img alt="a coloured box with the words A city loved for its green, gold and blue." src="Images/box/green.jpg" />
+      </a>
+     </div>
+     <!-- /.span4 -->
+    </div>
+   </div>
+  </div>
+  <!-- Marketing messaging and featurettes
+    ================================================== -->
+  <!-- Wrap the rest of the page in another container to center all the content. -->
+  <div class="container marketing">
+   <div class="span5">
+    <h4 class="">
+     <br />
+     <br />
+     Reports
+    </h4>
+    <p>
+     <a target="new" href="Images/report/t2b-planning-report.pdf">
+      Tugun to Bilinga Oceanway Planning Report, October 2011
+     </a>
+     <br />
+     <br />
+     <a target="new" href="Images/report/t2b-access-improvements-site-layout.pdf">
+      T2B Oceanway Planning Report, Oct 2011 - Annexure 1 (Access Improvements)
+     </a>
+     <br />
+     <br />
+     <a target="new" href="Images/report/t2b-bikeway-report.pdf">
+      T2B Oceanway Planning Report, Oct 2011 - Annexure 2 (Golden Four Drive, Bikeway Upgrade Report)
+     </a>
+     <br />
+     <br />
+     <a target="new" href="Images/report/tugun-bilinga-consultation-report.pdf">
+      Tugun to Bilinga Oceanway Consultation Report, May 2012
+     </a>
+     <br />
+     <br />
+     <a target="new" href="Images/report/golden-four-drive-report.pdf">
+      Golden Four Drive, Community Consultation Report March 2015
+     </a>
+     <br />
+     <br />
+    </p>
+    <h4>
+     <strong>
+      Council Meetings
+     </strong>
+     <br />
+    </h4>
+    <p>
+     <a target="new" href="Images/report/1996_council_resolution.pdf">
+      1996 Gold Coast City Council Resolution
+     </a>
+     <br />
+     <br />
+     <a target="new" href="Images/report/mar_09_2011.pdf">
+      March 2011 Engineering Services Committe, Adopted Report
+     </a>
+     <br />
+     <br />
+     <a href="Images/report/april_2011.pdf">
+      April 2011 Engineering Services Committee - Gold Coast Oceanway
+     </a>
+     <br />
+     <br />
+     <a href="Images/report/nov_30_2011.pdf">
+      November 2011 Engineering Services Committee, Adopted Report
+     </a>
+     <br />
+     <br />
+     <a target="new" href="Images/report/11_october_2012.pdf">
+      October 2012 Engineering Services Committee Meeting
+     </a>
+     <a target="new" href="http://www.goldcoast.qld.gov.au/documents/ma/Planning_671_11_DECEMBER_2013_AGENDA_%28PART_1%29.pdf">
+      City Planning Commmittee Meeting 11/12/13 - Application for Permanent Road Closure
+     </a>
+     <br />
+     <br />
+    </p>
+    <h4>
+     Other Reports &amp; Websites
+     <br />
+    </h4>
+    <p>
+     <a target="new" href="http://www.healthyplaces.org.au/userfiles/Case%20Study%20Gold%20Coast%20Oceanway.pdf">
+      Case Study - Gold Coast Oceanway
+     </a>
+     <br />
+     <br />
+     <a target="new" href="http://www.goldcoast.qld.gov.au/thegoldcoast/oceanway-network-156.html">
+      City of Gold Coast - Oceanway Network
+      <br />
+     </a>
+     <br />
+    </p>
+    <h4>
+     Local and State Government   Plans
+     <br />
+    </h4>
+    <p>
+     <a target="new" href="http://www.goldcoast.qld.gov.au/flipbook/corporate-plan/#p=1">
+      City of Gold Coast Corporate Plan 2020
+     </a>
+     <br />
+     <br />
+     <a target="new" href="Images/report/inclusive_city_plan.pdf">
+      City of Gold Coast Accessible and Inclusive City Action Plan 2014-2019
+     </a>
+     <br />
+     <br />
+     <a target="new" href="http://www.goldcoast.qld.gov.au/planning-and-building/city-plan-2015-19859.html">
+      GCCC Draft City Plan 2015
+     </a>
+     <br />
+     <br />
+     <a target="new" href="Images/report/connecting_seq2031_cover_exec_summary.pdf">
+      Connecting SEQ 
+2031
+     </a>
+     <br />
+    </p>
+   </div>
+   <div class="span6">
+    <h1 class="text-center">
+     Case Study - Gold Coast Oceanway
+    </h1>
+    <h4>
+     OUTCOMES:
+    </h4>
+    <p>
+     <strong>
+      Successes
+     </strong>
+    </p>
+    <ul>
+     <li>
+      <strong>
+       Provision of connecting pathways between destinations allowing tourists and residents to make more trips via walking and cycling.
+      </strong>
+     </li>
+     <li>
+      Increasing numbers of people able to enjoy sustainable journeys.
+     </li>
+     <li>
+      Ongoing Council investment and recognition of the value of the movement network and need for ongoing upgrades.
+     </li>
+     <li>
+      Converting two-way streets with narrow and uneven footpaths to one-way streets with improved and widened pavements has allowed greater walking and cycling use.
+     </li>
+     <li>
+      Provision of hard surface pathways has allowed elederly residents and others with low mobility to access beaches that were previously unaccessible due to the difficulty of traversing soft sands.
+     </li>
+    </ul>
+    <p>
+     <strong>
+      Learnings
+     </strong>
+    </p>
+    <ul>
+     <li>
+      <strong>
+       Build it and they will come. By building more generous pathways for pedestrians and cyclists, non-motorised transport useage explodes. There is pent up demand for more sustainable behaviours which can be addressed by investing in green infrastructure.
+      </strong>
+     </li>
+     <li>
+      The contrast between a normal footpath and an Oceanway in terms of usage behaviours is even more dramatic than between a road with many intersections and a freeway. People appreciate immensely the ability to walk in a constant alignment and pace without having to step over driveways, service lids, cross streets and bus stops. Normal footpaths removes 80% of potential traffic conflicts in comparison with an Oceanway standard right of way which has zero cross conflicts.
+     </li>
+     <li>
+      Intersection detail for the Oceanway is critical. There is a need to respect ease of alongshore movement in changes made to individual sections and public space. For the Oceanway share of travel to grow overall, the regional nature of the corridor needs to be respected in each local area masterplan.
+     </li>
+    </ul>
+    <a class="btn btn-default" target="new" href="Images/report/case_study.pdf">
+     Learn More
+    </a>
+    <br />
+    <br />
+    <img class="img-polaroid" alt="Two green hire bikes with a baby seat on the back, parked along the grass path with a Gold Coast City Council warning sign, instructing users to be careful of the terrrain." src="Images/box/bikes1.jpg" />
+    <br />
+   </div>
+  </div>
+  <div class="container marketing">
+   <div class="span12">
+    <h2 class="text_drawing">
+     <strong>
+      The AWARD WINNING Gold Coast Oceanway
+     </strong>
+     <br />
+    </h2>
+    <blockquote>
+     <p class="">
+      1998 Award of excellence in Environmental Planning
+      <br />
+      2001 Community Safety award
+      <br />
+      2003 Healthy Heart award for active lifestyles
+      <br />
+      2004 Queensland award for the Clean Beach Challenge
+      <br />
+      2005 Queensland award for services to the disabled community
+      <br />
+      2007 Gold Coast Urban Design Awards -
+      <a target="new" href="Images/report/oceanway_award.pdf">
+       Helen Josephson Award
+      </a>
+      for innovation in Urban Design
+      <br />
+      2008 Featured on Getaway
+      <br />
+      <br />
+     </p>
+    </blockquote>
+    <div class="container marketing">
+     <img alt="A group of people at the end of the Tugun north path, unable to walk any further due to either being in a wheelchair, or on crutches." src="Images/carousel/diabled.jpg" />
+     <h3>
+      Disability Projects - Oceanway
+     </h3>
+     <p>
+      Council has a proactive program to ensure that its 36 kilometres oceanway network is accessible to people with disabilities.
+      <br />
+      The beaches and watercycle infrastructure section of Council has a long-term project which aims to establish the oceanway as an international tourism attraction where people with disabilities can enjoy the Gold Coast coastline.
+      <br />
+      The project involves constructing wide, even and connecting pathways; upgrading or building accessible facilities such as parking; toilets and viewing platforms; providing accessible outdoor furniture such as picnic tables and water fountains; and improving lighting.
+      <br />
+      <br />
+     </p>
+     <p>
+      <a class="btn btn-default" target="new" href="http://www.goldcoast.qld.gov.au/disability-projects-oceanway-audit-6048.html">
+       Learn More
+      </a>
+      <br />
+     </p>
+    </div>
+    <div class="container marketing">
+     <h3>
+      But what does our Mayor say about the Tugun to Bilinga Oceanway.
+     </h3>
+     <blockquote>
+      <h6>
+       "I'd also like to take the opportunity to reassure you that Council's recent activities in the area are not to do with the development of a pathway. The decision of the City still stands;
+       <strong>
+        there are no plans for a path and I futher commit to never support the building of a path".
+       </strong>
+      </h6>
+     </blockquote>
+     <p>
+      Tom Tate, Mayor of City of Gold Coast.  Letter to Body Corporate for Sea Crest Tugun dated 8 November 2013.
+      <br />
+      <br />
+      <a class="btn btn-default" target="new" href="Images/tom_tate_letter.JPG">
+       Read Letter Here
+      </a>
+      <br />
+      <br />
+     </p>
+    </div>
+    <!-- Content Row -->
+    <div class="bs-example">
+     <h3>
+      <strong>
+       FREQUENTLY ASKED QUESTION's
+      </strong>
+     </h3>
+     <div id="accordion" class="panel-group">
+      <div class="panel panel-default">
+       <div class="panel-heading">
+        <h4 class="panel-title">
+         <a href="#collapseOne" data-parent="#accordion" data-toggle="collapse" class="accordion-toggle">
+          What are the benefits of an extended beachfront Oceanway path?
+         </a>
+        </h4>
+       </div>
+       <div class="panel-collapse collapse" id="collapseOne">
+        <div class="panel-body">
+         The Tugun to Bilinga (T2B) Oceanway will connect the existing Oceanway paths that end at Bilinga SLSC and O'Connor Park, near the Tugun SLSC. This 1.7km section would lead to approximately 8km of continuous beachfront Oceanway stretching from Flat Rock Creek, Currumbin to Snapper Rocks in Coolangatta. The extension of a beachfront Oceanway - allowing access to this amenity for all members of the public including those with disabilities, the infirm, and the very young and elderly - will have numerous social and economic benefits for the Southern Gold Coast.
+        </div>
+       </div>
+      </div>
+      <!-- /.panel -->
+      <div class="panel panel-default">
+       <div class="panel-heading">
+        <h4 class="panel-title">
+         <a href="#collapseTwo" data-parent="#accordion" data-toggle="collapse" class="accordion-toggle">
+          What materials will the T2B Oceanway path be made of?
+         </a>
+        </h4>
+       </div>
+       <div class="panel-collapse collapse" id="collapseTwo">
+        <div class="panel-body">
+         In the Tugun to Bilinga Oceanway
+         <a target="new" href="Images/report/t2b-planning-report.pdf">
+          Planning Report
+         </a>
+         dated October 2011, council recommended a concrete path. However council may consider alternative materials. Whatever materials are chosen, the primary consideration is that the path is compliant with the Disability Discrimination Act.
+        </div>
+       </div>
+      </div>
+      <!-- /.panel -->
+      <div class="panel panel-default">
+       <div class="panel-heading">
+        <h4 class="panel-title">
+         <a href="#collapseThree" data-parent="#accordion" data-toggle="collapse" class="accordion-toggle">
+          Where exactly will the path go?
+         </a>
+        </h4>
+       </div>
+       <div class="panel-collapse collapse" id="collapseThree">
+        <div class="panel-body">
+         Council's 2011 Planning Report clearly marked out an alignment (route) for the path which is predominantly on public land on the Pacific Parade road reserve, on the landward side of the dune system and seawall (also called the
+         <a target="new" href="Images/report/a-line-seawall.pdf">
+          A-Line wall
+         </a>
+         ).  Most of the road reserve has been "developed" to some extent, as over the years there has been encroachment on this public land by way of lawns, gardens, showers, concrete paths, fencing, etc.
+        </div>
+       </div>
+      </div>
+      <!-- /.panel -->
+      <div class="panel panel-default">
+       <div class="panel-heading">
+        <h4 class="panel-title">
+         <a href="#collapseFour" data-parent="#accordion" data-toggle="collapse" class="accordion-toggle">
+          What effects will the path have on the dune system?
+         </a>
+        </h4>
+       </div>
+       <div class="panel-collapse collapse" id="collapseFour">
+        <div class="panel-body">
+         Council's proposed path alignment is predominantly on the Pacific Parade road reserve which is on the inland, western side of the dunes and seawall. For some of the more narrower sections, alternate walkway structures may be required, for example wooden walkways, which have been installed at multiple locations around the Australian coastline, and would be a far better alternative to the tracks that currently are gouged out of the mid-dune system (eg. John Street) in order to get around these "pinch points".
+        </div>
+       </div>
+      </div>
+      <!-- /.panel -->
+      <div class="panel panel-default">
+       <div class="panel-heading">
+        <h4 class="panel-title">
+         <a href="#collapseFive" data-parent="#accordion" data-toggle="collapse" class="accordion-toggle">
+          Isn't work already being done to protect the dune system there?
+         </a>
+        </h4>
+       </div>
+       <div class="panel-collapse collapse" id="collapseFive">
+        <div class="panel-body">
+         With acknowledgement of the efforts made by a dune care group in one small patch of the dunes at the bottom of Sea Street and council's weed management efforts, there is clear evidence that much of the dune system has been left to degrade over the years.  A recent assessment showed that almost all of the dune system was overgrown by multiple varieties of invasive weed species and introduced plants.  Additionally, in some areas residents have  encroached into the dune system with lawn area. Council’s own Planning Scheme  Policy 15, which outlines the management regime for Coastal Dune Areas, states  that mown turf does not have the ability to trap windblown sand travelling  above the ground level, and this regime is not sustainable, and is not  considered acceptable long term. “To allow the land to be maintained as private  property, without an approved or monitored management regime will reduce the  natural heritage values of the ocean front land and would be detrimental to the  sustainability of other dunal environment”
+         <a target="_parent" href="Images/report/dune_plants_12_policy_15.pdf">
+          (Policy 15 – Management of Coastal  Dune Areas)
+         </a>
+         . Additionally, numerous beach access tracks have been made by  residents increasing the possibility of erosion, and the dunes are a dumping  ground for garden clippings and prunings, general rubbish such as plastics and  bottles, various items of disused infrastructure such as stair rails, and large  pieces of household equipment (eg. a canoe). We believe the most effective way  to improve the health of the dune system along this stretch of coast is to open  up access to allow protection, ownership and stewardship of the dunes that run  along it with support from community groups.
+        </div>
+       </div>
+      </div>
+      <!-- /.panel -->
+      <div class="panel panel-default">
+       <div class="panel-heading">
+        <h4 class="panel-title">
+         <a href="#collapseSix" data-parent="#accordion" data-toggle="collapse" class="accordion-toggle">
+          Will the path damage native trees and wildlife?
+         </a>
+        </h4>
+       </div>
+       <div class="panel-collapse collapse" id="collapseSix">
+        <div class="panel-body">
+         It is true that council's preferred path alignment would require the cutting back or removal of some native trees, but all efforts would be made to keep this to a minimum.  Wherever possible these trees, mainly pandanus, may be transplanted.  Replacement trees can be planted and grown back, but everyone would of course prefer that tree removal is kept to a minimum.  As the path alignment is predominantly on the developed road reserve there can be zero to minimal impact expected to native fauna.  It should be noted there was no mention of fauna/native animal species in the council's Tugun to Bilinga Planning Report.  Overall there may be a very small impact on the environment during the construction of the T2B Oceanway in return for a far greater, longer term environmental gain (together with a significant increase in social, health and economic values).
+        </div>
+       </div>
+      </div>
+      <!-- /.panel -->
+      <div class="panel panel-default">
+       <div class="panel-heading">
+        <h4 class="panel-title">
+         <a href="#collapseSeven" data-parent="#accordion" data-toggle="collapse" class="accordion-toggle">
+          Didn't a survey show the majority of the community wanted this section of the Oceanway put on Golden Four Drive?
+         </a>
+        </h4>
+       </div>
+       <div class="panel-collapse collapse" id="collapseSeven">
+        <div class="panel-body">
+         A survey was conducted on behalf of council and a
+         <a href="Images/report/tugun-bilinga-consultation-report.pdf">
+          Consultation Report
+         </a>
+         released in May 2012.  However the report itself said:
+         <br />
+         <br />
+         <blockquote>
+          <em>
+           <strong>
+            "The consultation process did not focus on a random sample of respondents.  Instead, the feedback process enabled community members who reside, or own property, in proximity to the proposed Oceanway and accessway improvements an opportunity to provide extensive feedback to the proposals.
+           </strong>
+          </em>
+          "
+         </blockquote>
+         This alone calls into question the validity of the survey and its findings.  Expert independent analysis of this survey also seriously questions its outcomes, finding the survey:
+         <br />
+         <br />
+         <blockquote>
+          <em>
+           <strong>
+            "DID NOT COMPLY with the normal standards of statistical riqour, independence and transparency necessary to justify rejection of the Oceanway proposal",  and that "the method was neither random nor representative but biased in favour of a small stakeholder group of Golden Four Drive beachfront residents who overwhelmingly oppose the proposal".
+           </strong>
+          </em>
+         </blockquote>
+         <br />
+         In short, the survey results are not to be trusted.
+         <br />
+        </div>
+       </div>
+      </div>
+      <!-- /.panel -->
+      <div class="panel panel-default">
+       <div class="panel-heading">
+        <h4 class="panel-title">
+         <a href="#collapseEight" data-parent="#accordion" data-toggle="collapse" class="accordion-toggle">
+          What's wrong with putting the Oceanway on Golden Four Drive?
+         </a>
+        </h4>
+       </div>
+       <div class="panel-collapse collapse" id="collapseEight">
+        <div class="panel-body">
+         As it is now, Golden Four Drive is an unsuitable route for  pedestrians, let alone people on bikes, in wheelchairs or in prams, or the  elderly. It is well-used by cars, there are numerous driveway and street  crossings coming out onto the road, and the footpath is narrow, bumpy and full  of obstacles such as overhanging tree branches and bus shelters. Council’s own  advice says that, “The alternate current facilities along Golden Four Drive are  substandard and are not conducive to encouraging people to walk and cycle for  more trips and encourage healthier and more sustainable transport choices from  coastal residents and visitors” (
+         <a href="Images/report/council_20131212.pdf">
+          Adopted Report, December 2013
+         </a>
+         ). Main  Roads and Transport has started a project to upgrade Golden Four Drive in  sections over a number of years, and there is provision for a cycleway and  access path in these plans. However not all cyclists are comfortable riding on  the roadside, and it still is likely to leave pedestrians and other users  having to cross roads and/or possible driveway points. Then there are the  amenity and health aspects of using a path which runs along a busy road compared  with a dedicated and safe beachside path. Additionally, there are technical  issues involved with upgrading Golden Four Drive such as moving infrastructure  and reduced car parking space.
+         <br />
+         <img alt="Golden Four Drive, showing parked cars, traffic, and path ways that are uneven with signage from shops and polls. " src="Images/carousel/g4d1.jpg" />
+        </div>
+       </div>
+      </div>
+      <!-- /.panel -->
+      <!-- /.panel -->
+      <div class="panel panel-default">
+       <div class="panel-heading">
+        <h4 class="panel-title">
+         <a href="#collapseNine" data-parent="#accordion" data-toggle="collapse" class="accordion-toggle">
+          Does the path meet coastal planning and other policies and regulations?
+         </a>
+        </h4>
+       </div>
+       <div class="panel-collapse collapse" id="collapseNine">
+        <div class="panel-body">
+         While T2B Oceanway does pose challenges in terms of policies and regulations, these were investigated by the council’s  Infrastructure Development Group using the resources of Legal Services, City  Governance. No major legal impediments were noted in council’s Tugun to Bilinga  Oceanway Planning Report. In fact council has reported that the only reason the  Oceanway link between  Tugun-Bilinga was put on hold was “a result of the current economic conditions”
+         <a target="new" href="Images/report/council_20131212.pdf">
+          (Adopted Report, December 2013)
+         </a>
+         .
+        </div>
+       </div>
+      </div>
+      <!-- /.panel -->
+     </div>
+     <!-- /.panel-group -->
+    </div>
+    <!-- /.col-lg-12 -->
+   </div>
+   <!-- /.row -->
+   <hr />
+   <img class="img-polaroid" alt="Currumbin esplanade circa 1950's showing massive erosing, washing away all the beach and most of the road, almost up to the footpath on the other side of the road." src="Images/box/elephant_rock.jpg" />
+   <div class="container marketing">
+    <h6>
+     <strong>
+      Currumbin beach after a big blow in the 50's.....Photo courtesy Ross Davenport
+     </strong>
+    </h6>
+   </div>
+   <!-- FOOTER -->
+   <footer>
+   </footer>
+   <p class="pull-right">
+    <a href="#">
+     Back to top
+    </a>
+   </p>
+   <p>
+    © 2015 Natalie Wain·
+    <a target="new" href="Images/privacy_policy.pdf">
+     Privacy
+    </a>
+    ·
+    <a target="new" href="https://www.facebook.com/t2boceanway">
+     Facebook
+    </a>
+   </p>
+  </div>
+  <script>
+   !function ($) {
+        $(function(){
+          // carousel demo
+          $('#myCarousel').carousel()
+        })
+      }(window.jQuery)
+  </script>
+  <script src="bootstrap/js/holder/holder.js">
+  </script>
+ </body>
+</html>

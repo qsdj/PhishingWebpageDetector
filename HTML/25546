@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <title>
+   Event Production
+  </title>
+  <link media="all" type="text/css" rel="stylesheet" href="css/bootstrap.css" />
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="js/jquery.min.js">
+  </script>
+  <!-- Custom Theme files -->
+  <!--theme-style-->
+  <link media="all" type="text/css" rel="stylesheet" href="css/style.css" />
+  <!--//theme-style-->
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <meta content="Content-Type" http-equiv="Content-Type" />
+  <meta content="Marry Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" name="keywords" />
+  <script type="application/x-javascript">
+   addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); }
+  </script>
+  <link media="screen" type="text/css" href="css/flexslider.css" rel="stylesheet" />
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js">
+  </script>
+  <script>
+   $(document).ready(function(){
+    $("#qcon").click(function(){
+        $("#qform").slideToggle(500);
+    });
+});
+  </script>
+ </head>
+ <body>
+  <!--header-->
+  <div class="header">
+   <div class="header-top">
+    <div class="container">
+     <div class="logo">
+      <a href="index.php">
+       <img alt="" src="images/logo.png" />
+      </a>
+     </div>
+     <div class="search">
+      <button id="qcon">
+       Quick Contact
+      </button>
+      <div id="qform">
+       <form method="post" action="">
+        <input type="text" required="" placeholder="Name" name="name" />
+        <input type="email" required="" placeholder="Email" name="email" />
+        <input type="text" required="" placeholder="Contact" name="contact" />
+        <textarea placeholder="Message" name="comment" rows="5">
+        </textarea>
+        <input type="submit" value="Send" name="contactform" />
+       </form>
+      </div>
+      <br />
+      Call: +91 90350 91922
+     </div>
+     <div class="clearfix">
+     </div>
+    </div>
+   </div>
+   <div class="container">
+    <div class="top-nav">
+     <ul class="nav nav-pills nav-justified">
+      <li>
+       <a href="index.php">
+        Home
+       </a>
+      </li>
+      <li>
+       <a href="about.php">
+        About
+       </a>
+      </li>
+      <li>
+       <a href="services.php">
+        Services
+       </a>
+      </li>
+      <li>
+       <a href="gallery.php">
+        Gallery
+       </a>
+      </li>
+      <li>
+       <a href="contact.php">
+        Contact
+       </a>
+      </li>
+      <li>
+       <a href="testimony.php">
+        Testimonial
+       </a>
+      </li>
+      <div class="clearfix">
+      </div>
+     </ul>
+     <script>
+      $("span.menu").click(function(){
+                    $(".top-nav ul").slideToggle(500, function(){
+                    });
+                });
+     </script>
+    </div>
+   </div>
+   <div class="container">
+    <div class="banner">
+     <div class="slider">
+      <section class="slider">
+       <div class="flexslider">
+        <div class="flex-viewport" style="overflow: hidden; position: relative;">
+         <ul class="slides" style="width: 1000%; transition-duration: 0.6s; transform: translate3d(-1440px, 0px, 0px);">
+          <li class="clone" style="width: 720px; float: left; display: block;">
+           <div class="col-md-12 banner-left">
+            <img alt="" src="images/s4.jpg" class="img-responsive" />
+           </div>
+           <div class="clearfix">
+           </div>
+          </li>
+          <li style="width: 720px; float: left; display: block;" class="">
+           <div class="col-md-12 banner-left">
+            <img alt="" src="images/s2.jpg" class="img-responsive" />
+           </div>
+           <div class="clearfix">
+           </div>
+          </li>
+          <li style="width: 720px; float: left; display: block;" class="flex-active-slide">
+           <div class="col-md-12 banner-left">
+            <img alt="" src="images/s3.jpg" class="img-responsive" />
+           </div>
+           <div class="clearfix">
+           </div>
+          </li>
+          <li style="width: 720px; float: left; display: block;">
+           <div class="col-md-12 banner-left">
+            <img alt="" src="images/s4.jpg" class="img-responsive" />
+           </div>
+           <div class="clearfix">
+           </div>
+          </li>
+          <li style="width: 720px; float: left; display: block;" class="clone">
+           <div class="col-md-12 banner-left">
+            <img alt="" src="images/s2.jpg" class="img-responsive" />
+           </div>
+           <div class="clearfix">
+           </div>
+          </li>
+         </ul>
+        </div>
+        <ol class="flex-control-nav flex-control-paging">
+         <li>
+          <a class="">
+           1
+          </a>
+         </li>
+         <li>
+          <a class="flex-active">
+           2
+          </a>
+         </li>
+         <li>
+          <a>
+           3
+          </a>
+         </li>
+        </ol>
+        <ul class="flex-direction-nav">
+         <li>
+          <a href="#" class="flex-prev">
+           Previous
+          </a>
+         </li>
+         <li>
+          <a href="#" class="flex-next">
+           Next
+          </a>
+         </li>
+        </ul>
+       </div>
+      </section>
+      <script>
+       window.jQuery || document.write('&lt;script src="js/libs/jquery-1.7.min.js"&gt;\x3C/script&gt;')
+      </script>
+      <!--FlexSlider-->
+      <script src="js/jquery.flexslider.js" defer="defer">
+      </script>
+      <script type="text/javascript">
+       $(window).load(function(){
+                      $('.flexslider').flexslider({
+                        animation: "slide",
+                        start: function(slider){
+                          $('body').removeClass('loading');
+                        }
+                      });
+                    });
+      </script>
+     </div>
+    </div>
+   </div>
+  </div>
+  <!--//header-->
+  <!--content-->
+  <div class="content">
+   <div class="content-top-at">
+    <div class="container">
+     <div class="content-top">
+      <h1>
+       Welcome
+      </h1>
+     </div>
+     <div class="about-us">
+      <div class="col-md-12 grids1">
+       <img style="width:45%; float:left; margin-right:20px;" src="images/we.jpg" class="img-responsive" alt="" />
+       <b>
+        Welcome to Om Event Production!
+       </b>
+       <p style="text-align: justify;">
+        We offer a lot of different event management services here at 
+        <strong style="box-sizing: border-box; color: rgb(153, 153, 153); font-family: Asap-Regular; font-size: 15.4px; line-height: 24.64px; text-align: justify;">
+         <em style="box-sizing: border-box;">
+          Om Event Production
+         </em>
+        </strong>
+        , so we will have your needs covered, no matter what. It is always nice to know that we have got your back, regardless of the event management services you are going to need.
+       </p>
+       <p style="text-align: justify;">
+        <strong style="box-sizing: border-box; color: rgb(153, 153, 153); font-family: Asap-Regular; font-size: 15.4px; line-height: 24.64px; text-align: justify;">
+         <em style="box-sizing: border-box;">
+          Om Event Production
+         </em>
+        </strong>
+         was started with the remit to plan and produce the most creative high-end private parties and corporate events throughout the Bangalore. We produce events of all sizes, and no matter how large or how small, we still retain our boutique nature - never forgetting the personal touch that really makes the difference. We work with all kinds of budgets, or in some cases, virtually no budget at all. We have the advantages of being able to be very cost effective by keeping overheads low, whilst being able to organize events of any size from small birthday parties, product launches, through to large scale festival production and corporate conferences.
+       </p>
+       <p style="text-align: justify;">
+        With years of experience in planning some of the Bangalore's most high profile private and corporate events, we have the experience, creativity and production skills to make the seemingly impossible, possible all with the help of our event managers or party planners.
+       </p>
+       <p style="text-align: justify;">
+        At 
+        <strong style="box-sizing: border-box; color: rgb(153, 153, 153); font-family: Asap-Regular; font-size: 15.4px; line-height: 24.64px; text-align: justify;">
+         <em style="box-sizing: border-box;">
+          Om Event Production
+         </em>
+        </strong>
+        , we look at producing and providing the best for our clients.
+       </p>
+      </div>
+      <p>
+      </p>
+      <div class="clearfix">
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="container">
+    <div class="services">
+     <div class="service-top">
+      <h2>
+       Services
+      </h2>
+     </div>
+     <div class="service-bottom">
+      <div style="padding: 1em 1em;" class="col-md-4 service-grid-top">
+       <div class="col-md-4 service-grid1">
+        <img width="65" height="65" alt="" src="admin/images/services/4.jpg" />
+       </div>
+       <div class="col-md-8 service-grid">
+        <h4>
+         Product/ Service Launches
+        </h4>
+        <p>
+        </p>
+       </div>
+      </div>
+      <div style="padding: 1em 1em;" class="col-md-4 service-grid-top">
+       <div class="col-md-4 service-grid1">
+        <img width="65" height="65" alt="" src="admin/images/services/7.jpg" />
+       </div>
+       <div class="col-md-8 service-grid">
+        <h4>
+         Dealer Meets
+        </h4>
+        <p>
+        </p>
+       </div>
+      </div>
+      <div style="padding: 1em 1em;" class="col-md-4 service-grid-top">
+       <div class="col-md-4 service-grid1">
+        <img width="65" height="65" alt="" src="admin/images/services/31.jpg" />
+       </div>
+       <div class="col-md-8 service-grid">
+        <h4>
+         Workshops
+        </h4>
+        <p>
+        </p>
+       </div>
+      </div>
+      <div style="padding: 1em 1em;" class="col-md-4 service-grid-top">
+       <div class="col-md-4 service-grid1">
+        <img width="65" height="65" alt="" src="admin/images/services/40.jpg" />
+       </div>
+       <div class="col-md-8 service-grid">
+        <h4>
+         Award Ceremonies
+        </h4>
+        <p>
+        </p>
+       </div>
+      </div>
+      <div style="padding: 1em 1em;" class="col-md-4 service-grid-top">
+       <div class="col-md-4 service-grid1">
+        <img width="65" height="65" alt="" src="admin/images/services/37.jpg" />
+       </div>
+       <div class="col-md-8 service-grid">
+        <h4>
+         Sales Meet
+        </h4>
+        <p>
+        </p>
+       </div>
+      </div>
+      <div style="padding: 1em 1em;" class="col-md-4 service-grid-top">
+       <div class="col-md-4 service-grid1">
+        <img width="65" height="65" alt="" src="admin/images/services/36.jpg" />
+       </div>
+       <div class="col-md-8 service-grid">
+        <h4>
+         Annual Days
+        </h4>
+        <p>
+        </p>
+       </div>
+      </div>
+      <div class="clearfix">
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <!--footer-->
+  <div class="footer">
+   <div class="container">
+    <div class="footer-top-at">
+     <div class="col-md-3 amet-sed">
+      <h4>
+       MORE INFO
+      </h4>
+      <ul class="nav-bottom">
+       <li>
+        <a href="index.php">
+         Home
+        </a>
+       </li>
+       <li>
+        <a href="about.php">
+         About
+        </a>
+       </li>
+       <li>
+        <a href="services.php">
+         Services
+        </a>
+       </li>
+       <li>
+        <a href="gallery.php">
+         Gallery
+        </a>
+       </li>
+       <li>
+        <a href="contact.php">
+         Contact
+        </a>
+       </li>
+       <li>
+        <a href="testimony.php">
+         Testimonial
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="col-md-5 amet-sed ">
+      <h4>
+       CONTACT US
+      </h4>
+      <p>
+       #63/23, HRBR Layout, Nagadevi Industrial Area, Kacharakanahalli, Bangalore-560084
+      </p>
+      <p>
+       ajay.pramanik@gmail.com
+      </p>
+      <p>
+       +91 90350 91922
+      </p>
+     </div>
+     <div class="col-md-4 amet-sed">
+      <h4>
+       Follow Us
+      </h4>
+      <ul class="social">
+       <li>
+        <a href="">
+         <i>
+         </i>
+        </a>
+       </li>
+       <li>
+        <a href="">
+         <i class="google">
+         </i>
+        </a>
+       </li>
+       <li>
+        <a href="">
+         <i class="twitter">
+         </i>
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="clearfix">
+     </div>
+    </div>
+   </div>
+   <div class="footer-class">
+    <p>
+     © 2015 All Rights Reserved
+    </p>
+   </div>
+  </div>
+ </body>
+</html>

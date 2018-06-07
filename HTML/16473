@@ -1,0 +1,151 @@
+<!--?xml version='1.0' encoding='UTF-8'?-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <title>
+   Starfleet Epsilon :: Reset Password
+  </title>
+  <meta content="content-type" http-equiv="content-type" />
+  <meta content="en" name="language" />
+  <meta content="Anodyne Productions' premier online RPG management software" name="description" />
+  <meta content="nova, rpg management, anodyne, rpg, sms" name="keywords" />
+  <meta content="Anodyne Productions" name="author" />
+  <!-- STYLESHEETS -->
+  <link charset="utf-8" media="screen" type="text/css" rel="stylesheet" href="http://www.starfleetepsilon.com/application/views/lcarsgrey/login/css/main.css" />
+  <!-- JAVASCRIPT FILES -->
+  <script src="http://code.jquery.com/jquery-1.8.2.min.js" type="text/javascript">
+  </script>
+  <script src="http://www.starfleetepsilon.com/nova/modules/assets/js/jquery.countdown.js" type="text/javascript">
+  </script>
+  <script type="text/javascript">
+   $(document).ready(function(){
+				$('#countdown').countDown({
+					startNumber: 5,
+					startFontSize: '1em',
+					endFontSize: '1em'
+				});
+			});
+  </script>
+ </head>
+ <body>
+  <!-- BODY -->
+  <div id="body">
+   <div class="upper">
+    <div class="wrapper">
+     <div class="name">
+      Starfleet Epsilon
+     </div>
+    </div>
+   </div>
+   <div class="wrapper">
+    <!-- PAGE CONTENT -->
+    <div class="content">
+     <h1 class="page-head">
+      Reset Password
+     </h1>
+     <p class="fontMedium">
+      Please provide your email address, security question, and answer to reset your password. Once you have reset your password, your new one will be emailed to you and you will be prompted to change it the next time you log in.
+     </p>
+     <br />
+     <form accept-charset="utf-8" method="post" action="http://www.starfleetepsilon.com/index.php/login/reset_password">
+      <div style="display:none">
+       <input type="hidden" value="ba9bc388c1532f09713e6266457d1974" name="nova_csrf_token" />
+      </div>
+      <table class="table100">
+       <tbody>
+        <tr>
+         <td>
+          <strong>
+           Email Address
+          </strong>
+         </td>
+         <td colspan="2">
+          <input type="text" id="email" value="" name="email" />
+         </td>
+        </tr>
+        <tr height="15">
+         <td colspan="3">
+         </td>
+        </tr>
+        <tr>
+         <td>
+          <strong>
+           Security Question
+          </strong>
+         </td>
+         <td>
+          <select name="question">
+           <option value="0">
+            Please select your security question
+           </option>
+           <option value="1">
+            What is your father's middle name?
+           </option>
+           <option value="2">
+            What was the name of your first pet?
+           </option>
+           <option value="3">
+            What city were you born in?
+           </option>
+           <option value="4">
+            What is your favorite animal?
+           </option>
+           <option value="5">
+            Who was your favorite teacher?
+           </option>
+           <option value="6">
+            What is the last book you read?
+           </option>
+          </select>
+         </td>
+         <td align="right">
+          <strong>
+           Answer
+          </strong>
+          <input type="text" id="answer" value="" name="answer" />
+         </td>
+        </tr>
+        <tr height="25">
+         <td colspan="3">
+         </td>
+        </tr>
+        <tr>
+         <td align="right" colspan="3">
+          <button value="Submit" class="button-main" type="submit" name="submit">
+           <span>
+            Submit
+           </span>
+          </button>
+         </td>
+        </tr>
+       </tbody>
+      </table>
+     </form>
+     <!-- FAUX FOOTER -->
+     <div class="lower_content">
+     </div>
+    </div>
+    <!-- FOOTER -->
+    <div id="footer">
+     <strong>
+      <a href="http://www.starfleetepsilon.com/index.php/login/index">
+       Log In Now
+      </a>
+     </strong>
+       |  
+     <strong>
+      <a href="http://www.starfleetepsilon.com/index.php/main/index">
+       Back to site
+      </a>
+     </strong>
+     <br />
+     <br />
+     Powered by
+     <strong>
+      Nova
+     </strong>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>

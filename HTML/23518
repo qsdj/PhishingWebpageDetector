@@ -1,0 +1,1587 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <link href="http://hon3forums.com/Themes/default/css/index.css?fin20" type="text/css" rel="stylesheet" />
+  <script src="http://hon3forums.com/Themes/default/scripts/script.js?fin20" type="text/javascript">
+  </script>
+  <script src="http://hon3forums.com/Themes/default/scripts/theme.js?fin20" type="text/javascript">
+  </script>
+  <script type="text/javascript">
+   &lt;!-- // --&gt;&lt;![CDATA[
+		var smf_theme_url = "http://hon3forums.com/Themes/default";
+		var smf_default_theme_url = "http://hon3forums.com/Themes/default";
+		var smf_images_url = "http://hon3forums.com/Themes/default/images";
+		var smf_scripturl = "http://hon3forums.com/index.php?PHPSESSID=55ac4fab69b6191a18d367a387c7eaea&amp;amp;";
+		var smf_iso_case_folding = false;
+		var smf_charset = "ISO-8859-1";
+		var ajax_notification_text = "Loading...";
+		var ajax_notification_cancel_text = "Cancel";
+	// ]]&gt;
+  </script>
+  <meta content="Content-Type" http-equiv="Content-Type" />
+  <meta content="HOn3 Forums" name="description" />
+  <title>
+   HOn3 Forums
+  </title>
+  <link href="http://hon3forums.com/index.php?PHPSESSID=55ac4fab69b6191a18d367a387c7eaea&action=help" rel="help" />
+  <link href="http://hon3forums.com/index.php?PHPSESSID=55ac4fab69b6191a18d367a387c7eaea&action=search" rel="search" />
+  <link href="http://hon3forums.com/index.php?PHPSESSID=55ac4fab69b6191a18d367a387c7eaea&" rel="contents" />
+  <link href="http://hon3forums.com/index.php?PHPSESSID=55ac4fab69b6191a18d367a387c7eaea&type=rss;action=.xml" title="HOn3 Forums - RSS" type="application/rss+xml" rel="alternate" />
+  <link href="http://hon3forums.com/Themes/default/css/portal.css" id="portal_css" type="text/css" rel="stylesheet" />
+  <script src="http://hon3forums.com/Themes/default/scripts/portal.js?235" type="text/javascript">
+  </script>
+  <script type="text/javascript" language="JavaScript">
+   &lt;!-- // --&gt;&lt;![CDATA[
+		var sp_images_url = "http://hon3forums.com/Themes/default/images/sp";
+		function sp_collapseBlock(id)
+		{
+			mode = document.getElementById("sp_block_" + id).style.display == "" ? 0 : 1;
+			document.cookie = "sp_block_" + id + "=" + (mode ? 0 : 1);
+			document.getElementById("sp_collapse_" + id).src = smf_images_url + (mode ? "/collapse.gif" : "/expand.gif");
+			document.getElementById("sp_block_" + id).style.display = mode ? "" : "none";
+		}
+		function sp_collapseSide(id)
+		{
+			var sp_sides = new Array();
+			sp_sides[1] = "sp_left";
+			sp_sides[4] = "sp_right";
+			mode = document.getElementById(sp_sides[id]).style.display == "" ? 0 : 1;
+			document.cookie = sp_sides[id] + "=" + (mode ? 0 : 1);
+			document.getElementById("sp_collapse_side" + id).src = sp_images_url + (mode ? "/collapse.png" : "/expand.png");
+			document.getElementById(sp_sides[id]).style.display = mode ? "" : "none";
+		}
+		window.addEventListener("load", sp_image_resize, false);
+	// ]]&gt;
+  </script>
+ </head>
+ <body>
+  <div style="width: 90%" id="wrapper">
+   <div id="header">
+    <div class="frame">
+     <div id="top_section">
+      <h1 class="forumtitle">
+       <a href="http://hon3forums.com/index.php?PHPSESSID=55ac4fab69b6191a18d367a387c7eaea&">
+        <img alt="HOn3 Forums" src="http://www.hon3forums.com/345.jpg" />
+       </a>
+      </h1>
+      <img style="cursor: pointer;" title="Shrink or expand the header." alt="*" src="http://hon3forums.com/Themes/default/images/upshrink.png" id="upshrink" />
+      <div class="floatright" id="siteslogan">
+       HOn3 Forums - The Place To Be In HOn3!
+      </div>
+     </div>
+     <div class="middletext" id="upper_section">
+      <div class="user">
+       <script src="http://hon3forums.com/Themes/default/scripts/sha1.js" type="text/javascript">
+       </script>
+       <form onsubmit="hashLoginPassword(this, '3908238fc2bfc819af4731bf91e06abe');" accept-charset="ISO-8859-1" method="post" action="http://hon3forums.com/index.php?PHPSESSID=55ac4fab69b6191a18d367a387c7eaea&action=login2" id="guest_form">
+        <div class="info">
+         Welcome,
+         <strong>
+          Guest
+         </strong>
+         . Please
+         <a href="http://hon3forums.com/index.php?PHPSESSID=55ac4fab69b6191a18d367a387c7eaea&action=login">
+          login
+         </a>
+         or
+         <a href="http://hon3forums.com/index.php?PHPSESSID=55ac4fab69b6191a18d367a387c7eaea&action=register">
+          register
+         </a>
+         .
+        </div>
+        <input type="text" class="input_text" size="10" name="user" />
+        <input type="password" class="input_password" size="10" name="passwrd" />
+        <select name="cookielength">
+         <option value="60">
+          1 Hour
+         </option>
+         <option value="1440">
+          1 Day
+         </option>
+         <option value="10080">
+          1 Week
+         </option>
+         <option value="43200">
+          1 Month
+         </option>
+         <option selected="selected" value="-1">
+          Forever
+         </option>
+        </select>
+        <input type="submit" class="button_submit" value="Login" />
+        <br />
+        <div class="info">
+         Login with username, password and session length
+        </div>
+        <input type="hidden" value="" name="hash_passwrd" />
+       </form>
+      </div>
+      <div class="news normaltext">
+       <form accept-charset="ISO-8859-1" method="post" action="http://hon3forums.com/index.php?PHPSESSID=55ac4fab69b6191a18d367a387c7eaea&action=search2" id="search_form">
+        <input type="text" class="input_text" value="" name="search" />
+        <input type="submit" class="button_submit" value="Search" name="submit" />
+        <input type="hidden" value="0" name="advanced" />
+       </form>
+       <h2>
+        News:
+       </h2>
+       <p>
+        HOn3 Forums, The Place To Be, In HOn3!
+       </p>
+      </div>
+     </div>
+     <br class="clear" />
+     <script type="text/javascript">
+      &lt;!-- // --&gt;&lt;![CDATA[
+			var oMainHeaderToggle = new smc_Toggle({
+				bToggleEnabled: true,
+				bCurrentlyCollapsed: false,
+				aSwappableContainers: [
+					'upper_section'
+				],
+				aSwapImages: [
+					{
+						sId: 'upshrink',
+						srcExpanded: smf_images_url + '/upshrink.png',
+						altExpanded: 'Shrink or expand the header.',
+						srcCollapsed: smf_images_url + '/upshrink2.png',
+						altCollapsed: 'Shrink or expand the header.'
+					}
+				],
+				oThemeOptions: {
+					bUseThemeSettings: false,
+					sOptionName: 'collapse_header',
+					sSessionVar: 'f8bf5c3cadc4',
+					sSessionId: '3908238fc2bfc819af4731bf91e06abe'
+				},
+				oCookieOptions: {
+					bUseCookie: true,
+					sCookieName: 'upshrink'
+				}
+			});
+		// ]]&gt;
+     </script>
+     <div id="main_menu">
+      <ul id="menu_nav" class="dropmenu">
+       <li id="button_home">
+        <a href="http://hon3forums.com/index.php?PHPSESSID=55ac4fab69b6191a18d367a387c7eaea&" class="active firstlevel">
+         <span class="last firstlevel">
+          Home
+         </span>
+        </a>
+       </li>
+       <li id="button_forum">
+        <a href="http://hon3forums.com/index.php?PHPSESSID=55ac4fab69b6191a18d367a387c7eaea&action=forum" class="firstlevel">
+         <span class="firstlevel">
+          Forum
+         </span>
+        </a>
+       </li>
+       <li id="button_help">
+        <a href="http://hon3forums.com/index.php?PHPSESSID=55ac4fab69b6191a18d367a387c7eaea&action=help" class="firstlevel">
+         <span class="firstlevel">
+          Help
+         </span>
+        </a>
+       </li>
+       <li id="button_search">
+        <a href="http://hon3forums.com/index.php?PHPSESSID=55ac4fab69b6191a18d367a387c7eaea&action=search" class="firstlevel">
+         <span class="firstlevel">
+          Search
+         </span>
+        </a>
+       </li>
+       <li id="button_calendar">
+        <a href="http://hon3forums.com/index.php?PHPSESSID=55ac4fab69b6191a18d367a387c7eaea&action=calendar" class="firstlevel">
+         <span class="firstlevel">
+          Calendar
+         </span>
+        </a>
+       </li>
+       <li id="button_login">
+        <a href="http://hon3forums.com/index.php?PHPSESSID=55ac4fab69b6191a18d367a387c7eaea&action=login" class="firstlevel">
+         <span class="firstlevel">
+          Login
+         </span>
+        </a>
+       </li>
+       <li id="button_register">
+        <a href="http://hon3forums.com/index.php?PHPSESSID=55ac4fab69b6191a18d367a387c7eaea&action=register" class="firstlevel">
+         <span class="last firstlevel">
+          Register
+         </span>
+        </a>
+       </li>
+      </ul>
+     </div>
+     <br class="clear" />
+    </div>
+   </div>
+   <div id="content_section">
+    <div class="frame">
+     <div id="main_content_section">
+      <div class="navigate_section">
+       <ul>
+        <li class="last">
+         <a href="http://hon3forums.com/index.php?PHPSESSID=55ac4fab69b6191a18d367a387c7eaea&action=forum">
+          <span>
+           HOn3 Forums
+          </span>
+         </a>
+        </li>
+       </ul>
+      </div>
+      <div class="sp_right sp_fullwidth">
+       <a onclick="return sp_collapseSide(1)" href="#side">
+        <img id="sp_collapse_side1" alt="collapse" src="http://hon3forums.com/Themes/default/images/sp/collapse.png" />
+       </a>
+       <a onclick="return sp_collapseSide(4)" href="#side">
+        <img id="sp_collapse_side4" alt="collapse" src="http://hon3forums.com/Themes/default/images/sp/collapse.png" />
+       </a>
+      </div>
+      <table id="sp_main">
+       <tbody>
+        <tr>
+         <td width="200" id="sp_left">
+          <div class="cat_bar">
+           <h3 class="catbg">
+            <a onclick="sp_collapseBlock('1')" href="javascript:void(0);" style="padding-top: 7px;" class="sp_float_right">
+             <img alt="*" src="http://hon3forums.com/Themes/default/images/collapse.gif" id="sp_collapse_1" />
+            </a>
+            User Info
+           </h3>
+          </div>
+          <div class="sp_block_section" id="sp_block_1">
+           <div class="windowbg">
+            <span class="topslice">
+             <span>
+             </span>
+            </span>
+            <div class="sp_block">
+             <div class="sp_center sp_fullwidth">
+              <script src="http://hon3forums.com/Themes/default/scripts/sha1.js" type="text/javascript">
+              </script>
+              <form onsubmit="hashLoginPassword(this, '3908238fc2bfc819af4731bf91e06abe');" accept-charset="ISO-8859-1" method="post" action="http://hon3forums.com/index.php?PHPSESSID=55ac4fab69b6191a18d367a387c7eaea&action=login2">
+               <table>
+                <tbody>
+                 <tr>
+                  <td class="sp_right">
+                   <label for="sp_user">
+                    Username:
+                   </label>
+                  </td>
+                  <td>
+                   <input type="text" value="" size="9" name="user" id="sp_user" />
+                  </td>
+                 </tr>
+                 <tr>
+                  <td class="sp_right">
+                   <label for="sp_passwrd">
+                    Password:
+                   </label>
+                  </td>
+                  <td>
+                   <input type="password" size="9" id="sp_passwrd" name="passwrd" />
+                  </td>
+                 </tr>
+                 <tr>
+                  <td>
+                   <select name="cookielength">
+                    <option value="60">
+                     1 Hour
+                    </option>
+                    <option value="1440">
+                     1 Day
+                    </option>
+                    <option value="10080">
+                     1 Week
+                    </option>
+                    <option value="43200">
+                     1 Month
+                    </option>
+                    <option selected="selected" value="-1">
+                     Forever
+                    </option>
+                   </select>
+                  </td>
+                  <td>
+                   <input type="submit" class="button_submit" value="Login" />
+                  </td>
+                 </tr>
+                </tbody>
+               </table>
+               <input type="hidden" value="" name="hash_passwrd" />
+              </form>
+              Welcome,
+              <strong>
+               Guest
+              </strong>
+              . Please
+              <a href="http://hon3forums.com/index.php?PHPSESSID=55ac4fab69b6191a18d367a387c7eaea&action=login">
+               login
+              </a>
+              or
+              <a href="http://hon3forums.com/index.php?PHPSESSID=55ac4fab69b6191a18d367a387c7eaea&action=register">
+               register
+              </a>
+              .
+             </div>
+            </div>
+            <span class="botslice">
+             <span>
+             </span>
+            </span>
+           </div>
+          </div>
+          <div class="cat_bar">
+           <h3 class="catbg">
+            <a onclick="sp_collapseBlock('2')" href="javascript:void(0);" style="padding-top: 7px;" class="sp_float_right">
+             <img alt="*" src="http://hon3forums.com/Themes/default/images/collapse.gif" id="sp_collapse_2" />
+            </a>
+            Who's Online
+           </h3>
+          </div>
+          <div class="sp_block_section" id="sp_block_2">
+           <div class="windowbg">
+            <span class="topslice">
+             <span>
+             </span>
+            </span>
+            <div class="sp_block">
+             <ul class="sp_list">
+              <li>
+               <img title="Dot" alt="Dot" src="http://hon3forums.com/Themes/default/images/sp/dot3.png" />
+               Guests: 4
+              </li>
+              <li>
+               <img title="Dot" alt="Dot" src="http://hon3forums.com/Themes/default/images/sp/dot4.png" />
+               Hidden: 0
+              </li>
+              <li>
+               <img title="Dot" alt="Dot" src="http://hon3forums.com/Themes/default/images/sp/dot5.png" />
+               Users: 0
+              </li>
+             </ul>
+             <br />
+             <div class="sp_fullwidth sp_center">
+              There aren't any users online.
+             </div>
+            </div>
+            <span class="botslice">
+             <span>
+             </span>
+            </span>
+           </div>
+          </div>
+          <div class="cat_bar">
+           <h3 class="catbg">
+            <a onclick="sp_collapseBlock('3')" href="javascript:void(0);" style="padding-top: 7px;" class="sp_float_right">
+             <img alt="*" src="http://hon3forums.com/Themes/default/images/collapse.gif" id="sp_collapse_3" />
+            </a>
+            Board Stats
+           </h3>
+          </div>
+          <div class="sp_block_section" id="sp_block_3">
+           <div class="windowbg">
+            <span class="topslice">
+             <span>
+             </span>
+            </span>
+            <div class="sp_block">
+             <ul class="sp_list">
+              <li>
+               <img alt="stats" src="http://hon3forums.com/Themes/default/images/sp/stats.png" />
+               Total Members:
+               <a href="http://hon3forums.com/index.php?PHPSESSID=55ac4fab69b6191a18d367a387c7eaea&action=mlist">
+                204
+               </a>
+              </li>
+              <li>
+               <img alt="stats" src="http://hon3forums.com/Themes/default/images/sp/stats.png" />
+               Total Posts: 2202
+              </li>
+              <li>
+               <img alt="stats" src="http://hon3forums.com/Themes/default/images/sp/stats.png" />
+               Total Topics: 378
+              </li>
+              <li>
+               <img alt="stats" src="http://hon3forums.com/Themes/default/images/sp/stats.png" />
+               Total Categories: 2
+              </li>
+              <li>
+               <img alt="stats" src="http://hon3forums.com/Themes/default/images/sp/stats.png" />
+               Total Boards: 13
+              </li>
+              <li>
+               <img alt="stats" src="http://hon3forums.com/Themes/default/images/sp/stats.png" />
+               Most Online: 42
+              </li>
+             </ul>
+            </div>
+            <span class="botslice">
+             <span>
+             </span>
+            </span>
+           </div>
+          </div>
+          <div class="cat_bar">
+           <h3 class="catbg">
+            <a onclick="sp_collapseBlock('4')" href="javascript:void(0);" style="padding-top: 7px;" class="sp_float_right">
+             <img alt="*" src="http://hon3forums.com/Themes/default/images/collapse.gif" id="sp_collapse_4" />
+            </a>
+            Theme Select
+           </h3>
+          </div>
+          <div class="sp_block_section" id="sp_block_4">
+           <div class="windowbg">
+            <span class="topslice">
+             <span>
+             </span>
+            </span>
+            <div class="sp_block">
+             <form accept-charset="ISO-8859-1" action="" method="post">
+              <div class="sp_center">
+               <select onchange="sp_theme_select(this)" name="theme">
+                <option value="-1">
+                 Forum Default
+                </option>
+                <option value="1">
+                 SMF Default Theme ...
+                </option>
+                <option value="2">
+                 Classic YaBB SE
+                </option>
+                <option value="3">
+                 Babylon
+                </option>
+                <option value="4">
+                 Core
+                </option>
+               </select>
+               <br />
+               <br />
+               <img id="sp_ts_thumb" alt="Forum Default" src="http://hon3forums.com/Themes/default/images/thumbnail.gif" />
+               <br />
+               <br />
+               <input type="checkbox" value="1" name="sp_ts_permanent" />
+               Permanently
+               <br />
+               <input type="submit" class="button_submit" value="Change" name="sp_ts_submit" />
+              </div>
+             </form>
+             <script type="text/javascript" language="JavaScript">
+              &lt;!-- // --&gt;&lt;![CDATA[
+									var sp_ts_thumbs = new Array();
+									sp_ts_thumbs[-1] = "http://hon3forums.com/Themes/default/images/thumbnail.gif";
+									sp_ts_thumbs[1] = "http://hon3forums.com/Themes/default/images/thumbnail.gif";
+									sp_ts_thumbs[2] = "http://hon3forums.com/Themes/classic/images/thumbnail.gif";
+									sp_ts_thumbs[3] = "http://hon3forums.com/Themes/babylon/images/thumbnail.gif";
+									sp_ts_thumbs[4] = "http://hon3forums.com/Themes/core/images/thumbnail.gif";
+									function sp_theme_select(obj)
+									{
+										var id = obj.options[obj.selectedIndex].value;
+										document.getElementById("sp_ts_thumb").src = sp_ts_thumbs[id];
+									}
+								// ]]&gt;
+             </script>
+            </div>
+            <span class="botslice">
+             <span>
+             </span>
+            </span>
+           </div>
+          </div>
+          <div class="cat_bar">
+           <h3 class="catbg">
+            <a onclick="sp_collapseBlock('5')" href="javascript:void(0);" style="padding-top: 7px;" class="sp_float_right">
+             <img alt="*" src="http://hon3forums.com/Themes/default/images/collapse.gif" id="sp_collapse_5" />
+            </a>
+            Search
+           </h3>
+          </div>
+          <div class="sp_block_section_last" id="sp_block_5">
+           <div class="windowbg">
+            <span class="topslice">
+             <span>
+             </span>
+            </span>
+            <div class="sp_block">
+             <form accept-charset="ISO-8859-1" method="post" action="http://hon3forums.com/index.php?PHPSESSID=55ac4fab69b6191a18d367a387c7eaea&action=search2">
+              <div class="sp_center">
+               <input type="text" class="sp_search" value="" name="search" />
+               <br />
+               <input type="submit" class="button_submit" value="Search" name="submit" />
+               <input type="hidden" value="0" name="advanced" />
+              </div>
+             </form>
+            </div>
+            <span class="botslice">
+             <span>
+             </span>
+            </span>
+           </div>
+          </div>
+         </td>
+         <td id="sp_center">
+          <div class="sp_block_section" id="sp_block_6">
+           <div class="windowbg">
+            <span class="topslice">
+             <span>
+             </span>
+            </span>
+            <div class="sp_block">
+             <div class="sp_center sp_fullwidth">
+              HOn3 Forums, The Place To Be, In HOn3!
+             </div>
+            </div>
+            <span class="botslice">
+             <span>
+             </span>
+            </span>
+           </div>
+          </div>
+          <div class="sp_block_section" id="sp_block_7">
+           <div class="windowbg">
+            <span class="topslice">
+             <span>
+             </span>
+            </span>
+            <div class="sp_block">
+             <h2 style="text-align: center;">
+              <strong>
+               WELCOME!
+              </strong>
+             </h2>
+             <p>
+             </p>
+             <p>
+             </p>
+             <center>
+              We are the
+              <strong>
+               ONLY
+              </strong>
+              internet forum that is
+              <strong>
+               EXCLUSIVELY
+              </strong>
+              dedicated to HOn3.
+              <br />
+              Registration is simple and easy, so please
+              <strong>
+               JOIN US.
+              </strong>
+              <br />
+              Mark
+             </center>
+             <br />
+             <h2 style="text-align: center;">
+             </h2>
+             <p>
+             </p>
+             <p>
+              <br />
+             </p>
+             <h2 style="text-align: center;">
+             </h2>
+             <p>
+             </p>
+             <p>
+              <br />
+             </p>
+             <h2 style="text-align: center;">
+             </h2>
+             <p>
+             </p>
+             <p>
+              <br />
+             </p>
+             <h2 style="text-align: center;">
+             </h2>
+             <p>
+             </p>
+             <p>
+              <strong>
+              </strong>
+              <br />
+             </p>
+             <p>
+             </p>
+             <h2 style="text-align: center;">
+             </h2>
+             <br />
+             <p>
+             </p>
+             <p>
+             </p>
+             <h2 style="text-align: center;">
+             </h2>
+             <br />
+             <p>
+             </p>
+             <p>
+              <strong>
+              </strong>
+              <br />
+             </p>
+            </div>
+            <span class="botslice">
+             <span>
+             </span>
+            </span>
+           </div>
+          </div>
+          <div class="sp_block_section_last">
+           <div class="cat_bar">
+            <h3 class="catbg">
+             <span class="sp_float_left sp_article_icon">
+              <img border="0" align="middle" alt="xx" src="http://hon3forums.com/Themes/default/images/post/xx.gif" />
+             </span>
+             <a href="http://hon3forums.com/index.php?PHPSESSID=55ac4fab69b6191a18d367a387c7eaea&topic=404.0">
+              Barry Bogs G/Gn3 Colorado and Western MOW Train
+             </a>
+            </h3>
+           </div>
+           <div class="windowbg sp_article_content">
+            <span class="topslice">
+             <span>
+             </span>
+            </span>
+            <div class="sp_content_padding">
+             <div class="middletext">
+              November 02, 2015, 12:24:21 AM by
+              <a href="http://hon3forums.com/index.php?PHPSESSID=55ac4fab69b6191a18d367a387c7eaea&action=profile;u=1817">
+               ng492
+              </a>
+              | Views: 68 | Comments: 0
+             </div>
+             <div class="post">
+              <hr />
+              Before the National Narrow Gauge Convention this year, I had time to shoot a Maintenance of Way Train on my Dad's layout. Here's the result. Thanks for watching!
+              <br />
+              [www.youtube.com]
+              <br />
+              Thanks,
+              <br />
+              Blake Bogs
+              <br />
+              <a target="_blank" class="bbc_link" href="http://WWW.CWRR.ORG">
+               WWW.CWRR.ORG
+              </a>
+              <br />
+              The train le
+              <a title="Barry Bogs G/Gn3 Colorado and Western MOW Train " href="http://hon3forums.com/index.php?PHPSESSID=55ac4fab69b6191a18d367a387c7eaea&topic=404.0">
+               ...
+              </a>
+             </div>
+             <div class="sp_right">
+              <a href="http://hon3forums.com/index.php?PHPSESSID=55ac4fab69b6191a18d367a387c7eaea&topic=404.0">
+               Read More
+              </a>
+              |
+              <a href="http://hon3forums.com/index.php?PHPSESSID=55ac4fab69b6191a18d367a387c7eaea&action=post;topic=404.0">
+               Write Comment
+              </a>
+             </div>
+            </div>
+            <span class="botslice">
+             <span>
+             </span>
+            </span>
+           </div>
+           <div class="cat_bar">
+            <h3 class="catbg">
+             <span class="sp_float_left sp_article_icon">
+              <img border="0" align="middle" alt="xx" src="http://hon3forums.com/Themes/default/images/post/xx.gif" />
+             </span>
+             <a href="http://hon3forums.com/index.php?PHPSESSID=55ac4fab69b6191a18d367a387c7eaea&topic=403.0">
+              new in the yard
+             </a>
+            </h3>
+           </div>
+           <div class="windowbg sp_article_content">
+            <span class="topslice">
+             <span>
+             </span>
+            </span>
+            <div class="sp_content_padding">
+             <div class="middletext">
+              September 29, 2015, 07:45:53 PM by
+              <a href="http://hon3forums.com/index.php?PHPSESSID=55ac4fab69b6191a18d367a387c7eaea&action=profile;u=1979">
+               Art
+              </a>
+              | Views: 118 | Comments: 1
+             </div>
+             <div class="post">
+              <hr />
+              Hi
+              <br />
+              My name is Paul Williams and I go by the name of "Art" (that's my middle name). I have been out of RR for several years and just got the bug again and will be working in HOn3, I have the Idea that I will build engines by re gauging HO. Work h
+              <a title="new in the yard" href="http://hon3forums.com/index.php?PHPSESSID=55ac4fab69b6191a18d367a387c7eaea&topic=403.0">
+               ...
+              </a>
+             </div>
+             <div class="sp_right">
+              <a href="http://hon3forums.com/index.php?PHPSESSID=55ac4fab69b6191a18d367a387c7eaea&topic=403.0">
+               Read More
+              </a>
+              |
+              <a href="http://hon3forums.com/index.php?PHPSESSID=55ac4fab69b6191a18d367a387c7eaea&action=post;topic=403.1">
+               Write Comment
+              </a>
+             </div>
+            </div>
+            <span class="botslice">
+             <span>
+             </span>
+            </span>
+           </div>
+           <div class="cat_bar">
+            <h3 class="catbg">
+             <span class="sp_float_left sp_article_icon">
+              <img border="0" align="middle" alt="xx" src="http://hon3forums.com/Themes/default/images/post/xx.gif" />
+             </span>
+             <a href="http://hon3forums.com/index.php?PHPSESSID=55ac4fab69b6191a18d367a387c7eaea&topic=402.0">
+              35th Narrow Gauge Convention
+             </a>
+            </h3>
+           </div>
+           <div class="windowbg sp_article_content">
+            <span class="topslice">
+             <span>
+             </span>
+            </span>
+            <div class="sp_content_padding">
+             <a href="http://hon3forums.com/index.php?PHPSESSID=55ac4fab69b6191a18d367a387c7eaea&action=profile;u=1872">
+              <img width="30" class="sp_float_right" alt="trainman2" src="http://hon3forums.com/index.php?PHPSESSID=55ac4fab69b6191a18d367a387c7eaea&action=dlattach;attach=135;type=avatar" />
+             </a>
+             <div class="middletext">
+              September 07, 2015, 09:10:17 AM by
+              <a href="http://hon3forums.com/index.php?PHPSESSID=55ac4fab69b6191a18d367a387c7eaea&action=profile;u=1872">
+               trainman2
+              </a>
+              <br />
+              Views: 157 | Comments: 0
+             </div>
+             <div class="post">
+              <hr />
+              Just got back from the NG Convention in Houston, all was just like it was suppose to be. Most of all the vendors where there and the home layouts were very nice. The convention had about 4-5 layouts at the convention and the HOn3 group modular layout
+              <a title="35th Narrow Gauge Convention" href="http://hon3forums.com/index.php?PHPSESSID=55ac4fab69b6191a18d367a387c7eaea&topic=402.0">
+               ...
+              </a>
+             </div>
+             <div class="sp_right">
+              <a href="http://hon3forums.com/index.php?PHPSESSID=55ac4fab69b6191a18d367a387c7eaea&topic=402.0">
+               Read More
+              </a>
+              |
+              <a href="http://hon3forums.com/index.php?PHPSESSID=55ac4fab69b6191a18d367a387c7eaea&action=post;topic=402.0">
+               Write Comment
+              </a>
+             </div>
+            </div>
+            <span class="botslice">
+             <span>
+             </span>
+            </span>
+           </div>
+           <div class="sp_page_index">
+            Pages: [
+            <strong>
+             1
+            </strong>
+            ]
+            <a href="http://hon3forums.com/index.php?PHPSESSID=55ac4fab69b6191a18d367a387c7eaea&;news8=3" class="navPages">
+             2
+            </a>
+           </div>
+          </div>
+          <br class="sp_side_clear" />
+          <div class="cat_bar">
+           <h3 class="catbg">
+            <a onclick="sp_collapseBlock('9')" href="javascript:void(0);" style="padding-top: 7px;" class="sp_float_right">
+             <img alt="*" src="http://hon3forums.com/Themes/default/images/collapse.gif" id="sp_collapse_9" />
+            </a>
+            Recent Topics
+           </h3>
+          </div>
+          <div class="sp_block_section_last" id="sp_block_9">
+           <div class="windowbg">
+            <span class="topslice">
+             <span>
+             </span>
+            </span>
+            <div class="sp_block">
+             <table class="sp_fullwidth">
+              <tbody>
+               <tr>
+                <td class="sp_recent_icon sp_center">
+                 <img alt="topic" src="http://hon3forums.com/Themes/default/images/sp/topic.png" />
+                </td>
+                <td class="sp_recent_subject">
+                 <a href="http://hon3forums.com/index.php?PHPSESSID=55ac4fab69b6191a18d367a387c7eaea&topic=393.msg2264;topicseen#new">
+                  PSC D&amp;RGW reefer
+                 </a>
+                 <br />
+                 [
+                 <a href="http://hon3forums.com/index.php?PHPSESSID=55ac4fab69b6191a18d367a387c7eaea&board=11.0">
+                  Model &amp; Kit Building/Bashing
+                 </a>
+                 ]
+                </td>
+                <td class="sp_recent_info sp_right">
+                 <a href="http://hon3forums.com/index.php?PHPSESSID=55ac4fab69b6191a18d367a387c7eaea&action=profile;u=27">
+                  Lateral-G
+                 </a>
+                 <br />
+                 November 24, 2015, 12:55:20 PM
+                </td>
+               </tr>
+               <tr>
+                <td class="sp_recent_icon sp_center">
+                 <img alt="topic" src="http://hon3forums.com/Themes/default/images/sp/topic.png" />
+                </td>
+                <td class="sp_recent_subject">
+                 <a href="http://hon3forums.com/index.php?PHPSESSID=55ac4fab69b6191a18d367a387c7eaea&topic=404.msg2262;topicseen#new">
+                  Barry Bogs G/Gn3 Colorado and Western MOW Train
+                 </a>
+                 <br />
+                 [
+                 <a href="http://hon3forums.com/index.php?PHPSESSID=55ac4fab69b6191a18d367a387c7eaea&board=3.0">
+                  Layouts And Layout Construction And Design
+                 </a>
+                 ]
+                </td>
+                <td class="sp_recent_info sp_right">
+                 <a href="http://hon3forums.com/index.php?PHPSESSID=55ac4fab69b6191a18d367a387c7eaea&action=profile;u=1817">
+                  ng492
+                 </a>
+                 <br />
+                 November 02, 2015, 12:24:21 AM
+                </td>
+               </tr>
+               <tr>
+                <td class="sp_recent_icon sp_center">
+                 <img alt="topic" src="http://hon3forums.com/Themes/default/images/sp/topic.png" />
+                </td>
+                <td class="sp_recent_subject">
+                 <a href="http://hon3forums.com/index.php?PHPSESSID=55ac4fab69b6191a18d367a387c7eaea&topic=403.msg2261;topicseen#new">
+                  new in the yard
+                 </a>
+                 <br />
+                 [
+                 <a href="http://hon3forums.com/index.php?PHPSESSID=55ac4fab69b6191a18d367a387c7eaea&board=2.0">
+                  Welcome aboard!
+                 </a>
+                 ]
+                </td>
+                <td class="sp_recent_info sp_right">
+                 <a href="http://hon3forums.com/index.php?PHPSESSID=55ac4fab69b6191a18d367a387c7eaea&action=profile;u=1872">
+                  trainman2
+                 </a>
+                 <br />
+                 October 04, 2015, 10:38:16 PM
+                </td>
+               </tr>
+               <tr>
+                <td class="sp_recent_icon sp_center">
+                 <img alt="topic" src="http://hon3forums.com/Themes/default/images/sp/topic.png" />
+                </td>
+                <td class="sp_recent_subject">
+                 <a href="http://hon3forums.com/index.php?PHPSESSID=55ac4fab69b6191a18d367a387c7eaea&topic=402.msg2259;topicseen#new">
+                  35th Narrow Gauge Convention
+                 </a>
+                 <br />
+                 [
+                 <a href="http://hon3forums.com/index.php?PHPSESSID=55ac4fab69b6191a18d367a387c7eaea&board=1.0">
+                  HOn3 General Discussion Forum
+                 </a>
+                 ]
+                </td>
+                <td class="sp_recent_info sp_right">
+                 <a href="http://hon3forums.com/index.php?PHPSESSID=55ac4fab69b6191a18d367a387c7eaea&action=profile;u=1872">
+                  trainman2
+                 </a>
+                 <br />
+                 September 07, 2015, 09:10:17 AM
+                </td>
+               </tr>
+               <tr>
+                <td class="sp_recent_icon sp_center">
+                 <img alt="topic" src="http://hon3forums.com/Themes/default/images/sp/topic.png" />
+                </td>
+                <td class="sp_recent_subject">
+                 <a href="http://hon3forums.com/index.php?PHPSESSID=55ac4fab69b6191a18d367a387c7eaea&topic=401.msg2258;topicseen#new">
+                  Blackstone K-28/K-36 Update
+                 </a>
+                 <br />
+                 [
+                 <a href="http://hon3forums.com/index.php?PHPSESSID=55ac4fab69b6191a18d367a387c7eaea&board=7.0">
+                  New Product Announcements
+                 </a>
+                 ]
+                </td>
+                <td class="sp_recent_info sp_right">
+                 <a style="color: #FF0000;" href="http://hon3forums.com/index.php?PHPSESSID=55ac4fab69b6191a18d367a387c7eaea&action=profile;u=1">
+                  SundayNiagara
+                 </a>
+                 <br />
+                 August 13, 2015, 08:35:14 AM
+                </td>
+               </tr>
+              </tbody>
+             </table>
+            </div>
+            <span class="botslice">
+             <span>
+             </span>
+            </span>
+           </div>
+          </div>
+         </td>
+         <td width="200" id="sp_right">
+          <div class="cat_bar">
+           <h3 class="catbg">
+            <a onclick="sp_collapseBlock('10')" href="javascript:void(0);" style="padding-top: 7px;" class="sp_float_right">
+             <img alt="*" src="http://hon3forums.com/Themes/default/images/collapse.gif" id="sp_collapse_10" />
+            </a>
+            Top Poster
+           </h3>
+          </div>
+          <div class="sp_block_section" id="sp_block_10">
+           <div class="windowbg">
+            <span class="topslice">
+             <span>
+             </span>
+            </span>
+            <div class="sp_block">
+             <table class="sp_fullwidth">
+              <tbody>
+               <tr>
+                <td class="sp_top_poster sp_center">
+                </td>
+                <td>
+                 <a href="http://hon3forums.com/index.php?PHPSESSID=55ac4fab69b6191a18d367a387c7eaea&action=profile;u=1643">
+                  Batey
+                 </a>
+                 <br />
+                 252 Posts
+                </td>
+               </tr>
+               <tr>
+                <td class="sp_top_poster sp_center">
+                </td>
+                <td>
+                 <a style="color: #FF0000;" href="http://hon3forums.com/index.php?PHPSESSID=55ac4fab69b6191a18d367a387c7eaea&action=profile;u=1">
+                  SundayNiagara
+                 </a>
+                 <br />
+                 245 Posts
+                </td>
+               </tr>
+               <tr>
+                <td class="sp_top_poster sp_center">
+                </td>
+                <td>
+                 <a href="http://hon3forums.com/index.php?PHPSESSID=55ac4fab69b6191a18d367a387c7eaea&action=profile;u=22">
+                  Dutchman
+                 </a>
+                 <br />
+                 189 Posts
+                </td>
+               </tr>
+               <tr>
+                <td class="sp_top_poster sp_center">
+                </td>
+                <td>
+                 <a href="http://hon3forums.com/index.php?PHPSESSID=55ac4fab69b6191a18d367a387c7eaea&action=profile;u=7">
+                  Wolfgang
+                 </a>
+                 <br />
+                 145 Posts
+                </td>
+               </tr>
+               <tr>
+                <td class="sp_top_poster sp_center">
+                </td>
+                <td>
+                 <a href="http://hon3forums.com/index.php?PHPSESSID=55ac4fab69b6191a18d367a387c7eaea&action=profile;u=335">
+                  NGPhil
+                 </a>
+                 <br />
+                 142 Posts
+                </td>
+               </tr>
+              </tbody>
+             </table>
+            </div>
+            <span class="botslice">
+             <span>
+             </span>
+            </span>
+           </div>
+          </div>
+          <div class="cat_bar">
+           <h3 class="catbg">
+            <a onclick="sp_collapseBlock('11')" href="javascript:void(0);" style="padding-top: 7px;" class="sp_float_right">
+             <img alt="*" src="http://hon3forums.com/Themes/default/images/collapse.gif" id="sp_collapse_11" />
+            </a>
+            Recent Posts
+           </h3>
+          </div>
+          <div class="sp_block_section" id="sp_block_11">
+           <div class="windowbg">
+            <span class="topslice">
+             <span>
+             </span>
+            </span>
+            <div class="sp_block">
+             <a href="http://hon3forums.com/index.php?PHPSESSID=55ac4fab69b6191a18d367a387c7eaea&topic=393.msg2264;topicseen#new">
+              Re: PSC D&amp;RGW reefer
+             </a>
+             <span class="smalltext">
+              by
+              <a href="http://hon3forums.com/index.php?PHPSESSID=55ac4fab69b6191a18d367a387c7eaea&action=profile;u=27">
+               Lateral-G
+              </a>
+              <br />
+              [November 24, 2015, 12:55:20 PM]
+             </span>
+             <br />
+             <hr />
+             <a href="http://hon3forums.com/index.php?PHPSESSID=55ac4fab69b6191a18d367a387c7eaea&topic=393.msg2263;topicseen#new">
+              Re: PSC D&amp;RGW reefer
+             </a>
+             <span class="smalltext">
+              by
+              <a href="http://hon3forums.com/index.php?PHPSESSID=55ac4fab69b6191a18d367a387c7eaea&action=profile;u=27">
+               Lateral-G
+              </a>
+              <br />
+              [November 24, 2015, 12:37:39 PM]
+             </span>
+             <br />
+             <hr />
+             <a href="http://hon3forums.com/index.php?PHPSESSID=55ac4fab69b6191a18d367a387c7eaea&topic=404.msg2262;topicseen#new">
+              Barry Bogs G/Gn3 Colorado and Western MOW Train
+             </a>
+             <span class="smalltext">
+              by
+              <a href="http://hon3forums.com/index.php?PHPSESSID=55ac4fab69b6191a18d367a387c7eaea&action=profile;u=1817">
+               ng492
+              </a>
+              <br />
+              [November 02, 2015, 12:24:21 AM]
+             </span>
+             <br />
+             <hr />
+             <a href="http://hon3forums.com/index.php?PHPSESSID=55ac4fab69b6191a18d367a387c7eaea&topic=403.msg2261;topicseen#new">
+              Re: new in the yard
+             </a>
+             <span class="smalltext">
+              by
+              <a href="http://hon3forums.com/index.php?PHPSESSID=55ac4fab69b6191a18d367a387c7eaea&action=profile;u=1872">
+               trainman2
+              </a>
+              <br />
+              [October 04, 2015, 10:38:16 PM]
+             </span>
+             <br />
+             <hr />
+             <a href="http://hon3forums.com/index.php?PHPSESSID=55ac4fab69b6191a18d367a387c7eaea&topic=403.msg2260;topicseen#new">
+              new in the yard
+             </a>
+             <span class="smalltext">
+              by
+              <a href="http://hon3forums.com/index.php?PHPSESSID=55ac4fab69b6191a18d367a387c7eaea&action=profile;u=1979">
+               Art
+              </a>
+              <br />
+              [September 29, 2015, 07:45:53 PM]
+             </span>
+             <br />
+            </div>
+            <span class="botslice">
+             <span>
+             </span>
+            </span>
+           </div>
+          </div>
+          <div class="cat_bar">
+           <h3 class="catbg">
+            <a onclick="sp_collapseBlock('12')" href="javascript:void(0);" style="padding-top: 7px;" class="sp_float_right">
+             <img alt="*" src="http://hon3forums.com/Themes/default/images/collapse.gif" id="sp_collapse_12" />
+            </a>
+            Forum Staff
+           </h3>
+          </div>
+          <div class="sp_block_section" id="sp_block_12">
+           <div class="windowbg">
+            <span class="topslice">
+             <span>
+             </span>
+            </span>
+            <div class="sp_block">
+             <table class="sp_fullwidth">
+              <tbody>
+               <tr>
+                <td class="sp_staff sp_center">
+                </td>
+                <td class="sp_staff_info sp_staff_divider">
+                 <img alt="admin" src="http://hon3forums.com/Themes/default/images/sp/admin.png" />
+                 <a style="color: #FF0000;" href="http://hon3forums.com/index.php?PHPSESSID=55ac4fab69b6191a18d367a387c7eaea&action=profile;u=1">
+                  SundayNiagara
+                 </a>
+                 <br />
+                 President
+                </td>
+               </tr>
+               <tr>
+                <td class="sp_staff sp_center">
+                 <a href="http://hon3forums.com/index.php?PHPSESSID=55ac4fab69b6191a18d367a387c7eaea&action=profile;u=15">
+                  <img width="40" alt="bullbrauch" src="http://hon3forums.com/index.php?PHPSESSID=55ac4fab69b6191a18d367a387c7eaea&action=dlattach;attach=3;type=avatar" />
+                 </a>
+                </td>
+                <td class="sp_staff_info sp_staff_divider">
+                 <img alt="lmod" src="http://hon3forums.com/Themes/default/images/sp/lmod.png" />
+                 <a href="http://hon3forums.com/index.php?PHPSESSID=55ac4fab69b6191a18d367a387c7eaea&action=profile;u=15">
+                  bullbrauch
+                 </a>
+                 <br />
+                 Brakeman
+                </td>
+               </tr>
+               <tr>
+                <td class="sp_staff sp_center">
+                </td>
+                <td class="sp_staff_info sp_staff_divider">
+                 <img alt="lmod" src="http://hon3forums.com/Themes/default/images/sp/lmod.png" />
+                 <a href="http://hon3forums.com/index.php?PHPSESSID=55ac4fab69b6191a18d367a387c7eaea&action=profile;u=1903">
+                  RWL
+                 </a>
+                 <br />
+                 Yardman
+                </td>
+               </tr>
+               <tr>
+                <td class="sp_staff sp_center">
+                </td>
+                <td class="sp_staff_info">
+                 <img alt="lmod" src="http://hon3forums.com/Themes/default/images/sp/lmod.png" />
+                 <a href="http://hon3forums.com/index.php?PHPSESSID=55ac4fab69b6191a18d367a387c7eaea&action=profile;u=29">
+                  railtwister
+                 </a>
+                 <br />
+                 Yardman
+                </td>
+               </tr>
+              </tbody>
+             </table>
+            </div>
+            <span class="botslice">
+             <span>
+             </span>
+            </span>
+           </div>
+          </div>
+          <div class="cat_bar">
+           <h3 class="catbg">
+            <a onclick="sp_collapseBlock('13')" href="javascript:void(0);" style="padding-top: 7px;" class="sp_float_right">
+             <img alt="*" src="http://hon3forums.com/Themes/default/images/collapse.gif" id="sp_collapse_13" />
+            </a>
+            Calendar
+           </h3>
+          </div>
+          <div class="sp_block_section" id="sp_block_13">
+           <div class="windowbg">
+            <span class="topslice">
+             <span>
+             </span>
+            </span>
+            <div class="sp_block">
+             <table class="sp_acalendar smalltext">
+              <tbody>
+               <tr>
+                <td colspan="7" class="sp_center">
+                 <a href="http://hon3forums.com/index.php?PHPSESSID=55ac4fab69b6191a18d367a387c7eaea&action=calendar;year=2015;month=12">
+                  December 2015
+                 </a>
+                </td>
+               </tr>
+               <tr>
+                <td class="sp_center">
+                 Sun
+                </td>
+                <td class="sp_center">
+                 Mon
+                </td>
+                <td class="sp_center">
+                 Tue
+                </td>
+                <td class="sp_center">
+                 Wed
+                </td>
+                <td class="sp_center">
+                 Thu
+                </td>
+                <td class="sp_center">
+                 Fri
+                </td>
+                <td class="sp_center">
+                 Sat
+                </td>
+               </tr>
+               <tr>
+                <td class="sp_acalendar_day">
+                </td>
+                <td class="sp_acalendar_day">
+                </td>
+                <td class="sp_acalendar_day">
+                 <a onclick="return sp_collapseCalendar('0');" href="#day">
+                  1
+                 </a>
+                </td>
+                <td class="sp_acalendar_day">
+                 <a onclick="return sp_collapseCalendar('0');" href="#day">
+                  2
+                 </a>
+                </td>
+                <td class="sp_acalendar_day">
+                 <a onclick="return sp_collapseCalendar('0');" href="#day">
+                  3
+                 </a>
+                </td>
+                <td class="sp_acalendar_day">
+                 <a onclick="return sp_collapseCalendar('0');" href="#day">
+                  4
+                 </a>
+                </td>
+                <td class="sp_acalendar_day">
+                 <a onclick="return sp_collapseCalendar('0');" href="#day">
+                  5
+                 </a>
+                </td>
+               </tr>
+               <tr>
+                <td class="sp_acalendar_day">
+                 <a onclick="return sp_collapseCalendar('0');" href="#day">
+                  6
+                 </a>
+                </td>
+                <td class="sp_acalendar_day">
+                 <a onclick="return sp_collapseCalendar('0');" href="#day">
+                  7
+                 </a>
+                </td>
+                <td class="sp_acalendar_day">
+                 <a onclick="return sp_collapseCalendar('0');" href="#day">
+                  8
+                 </a>
+                </td>
+                <td class="sp_acalendar_day">
+                 <a onclick="return sp_collapseCalendar('0');" href="#day">
+                  9
+                 </a>
+                </td>
+                <td class="sp_acalendar_day">
+                 <a onclick="return sp_collapseCalendar('0');" href="#day">
+                  10
+                 </a>
+                </td>
+                <td class="sp_acalendar_day">
+                 <a onclick="return sp_collapseCalendar('0');" href="#day">
+                  11
+                 </a>
+                </td>
+                <td class="sp_acalendar_day">
+                 <a onclick="return sp_collapseCalendar('0');" href="#day">
+                  [12]
+                 </a>
+                </td>
+               </tr>
+               <tr>
+                <td class="sp_acalendar_day">
+                 <a onclick="return sp_collapseCalendar('0');" href="#day">
+                  13
+                 </a>
+                </td>
+                <td class="sp_acalendar_day">
+                 <a onclick="return sp_collapseCalendar('0');" href="#day">
+                  14
+                 </a>
+                </td>
+                <td class="sp_acalendar_day">
+                 <a onclick="return sp_collapseCalendar('0');" href="#day">
+                  15
+                 </a>
+                </td>
+                <td class="sp_acalendar_day">
+                 <a onclick="return sp_collapseCalendar('0');" href="#day">
+                  16
+                 </a>
+                </td>
+                <td class="sp_acalendar_day">
+                 <a onclick="return sp_collapseCalendar('0');" href="#day">
+                  17
+                 </a>
+                </td>
+                <td class="sp_acalendar_day">
+                 <a onclick="return sp_collapseCalendar('0');" href="#day">
+                  18
+                 </a>
+                </td>
+                <td class="sp_acalendar_day">
+                 <a onclick="return sp_collapseCalendar('0');" href="#day">
+                  19
+                 </a>
+                </td>
+               </tr>
+               <tr>
+                <td class="sp_acalendar_day">
+                 <a onclick="return sp_collapseCalendar('0');" href="#day">
+                  20
+                 </a>
+                </td>
+                <td class="sp_acalendar_day">
+                 <a onclick="return sp_collapseCalendar('21');" href="#day">
+                  <strong>
+                   21
+                  </strong>
+                 </a>
+                </td>
+                <td class="sp_acalendar_day">
+                 <a onclick="return sp_collapseCalendar('0');" href="#day">
+                  22
+                 </a>
+                </td>
+                <td class="sp_acalendar_day">
+                 <a onclick="return sp_collapseCalendar('0');" href="#day">
+                  23
+                 </a>
+                </td>
+                <td class="sp_acalendar_day">
+                 <a onclick="return sp_collapseCalendar('0');" href="#day">
+                  24
+                 </a>
+                </td>
+                <td class="sp_acalendar_day">
+                 <a onclick="return sp_collapseCalendar('25');" href="#day">
+                  <strong>
+                   25
+                  </strong>
+                 </a>
+                </td>
+                <td class="sp_acalendar_day">
+                 <a onclick="return sp_collapseCalendar('0');" href="#day">
+                  26
+                 </a>
+                </td>
+               </tr>
+               <tr>
+                <td class="sp_acalendar_day">
+                 <a onclick="return sp_collapseCalendar('0');" href="#day">
+                  27
+                 </a>
+                </td>
+                <td class="sp_acalendar_day">
+                 <a onclick="return sp_collapseCalendar('0');" href="#day">
+                  28
+                 </a>
+                </td>
+                <td class="sp_acalendar_day">
+                 <a onclick="return sp_collapseCalendar('0');" href="#day">
+                  29
+                 </a>
+                </td>
+                <td class="sp_acalendar_day">
+                 <a onclick="return sp_collapseCalendar('0');" href="#day">
+                  30
+                 </a>
+                </td>
+                <td class="sp_acalendar_day">
+                 <a onclick="return sp_collapseCalendar('0');" href="#day">
+                  31
+                 </a>
+                </td>
+                <td class="sp_acalendar_day">
+                </td>
+                <td class="sp_acalendar_day">
+                </td>
+               </tr>
+              </tbody>
+             </table>
+             <hr class="sp_acalendar_divider" />
+             <div id="sp_calendar_12" class="sp_center smalltext">
+              No calendar events were found.
+             </div>
+             <ul style="display: none;" id="sp_calendar_21" class="sp_list smalltext">
+              <li class="sp_center">
+               <strong>
+                - Holidays -
+               </strong>
+              </li>
+              <li class="sp_list_indent">
+               <img alt="holiday" src="http://hon3forums.com/Themes/default/images/sp/holiday.png" />
+               Winter Solstice
+              </li>
+             </ul>
+             <ul style="display: none;" id="sp_calendar_25" class="sp_list smalltext">
+              <li class="sp_center">
+               <strong>
+                - Holidays -
+               </strong>
+              </li>
+              <li class="sp_list_indent">
+               <img alt="holiday" src="http://hon3forums.com/Themes/default/images/sp/holiday.png" />
+               Christmas
+              </li>
+             </ul>
+             <div style="display: none;" id="sp_calendar_0" class="sp_center smalltext">
+              No calendar events were found.
+             </div>
+             <script type="text/javascript" language="JavaScript">
+              &lt;!-- // --&gt;&lt;![CDATA[
+									var current_day = "sp_calendar_12";
+									function sp_collapseCalendar(id)
+									{
+										new_day = "sp_calendar_" + id;
+										if (new_day == current_day)
+											return false;
+										document.getElementById(current_day).style.display = "none";
+										document.getElementById(new_day).style.display = "";
+										current_day = new_day;
+									}
+									// ]]&gt;
+             </script>
+            </div>
+            <span class="botslice">
+             <span>
+             </span>
+            </span>
+           </div>
+          </div>
+          <div class="cat_bar">
+           <h3 class="catbg">
+            <a onclick="sp_collapseBlock('14')" href="javascript:void(0);" style="padding-top: 7px;" class="sp_float_right">
+             <img alt="*" src="http://hon3forums.com/Themes/default/images/collapse.gif" id="sp_collapse_14" />
+            </a>
+            Top Boards
+           </h3>
+          </div>
+          <div class="sp_block_section_last" id="sp_block_14">
+           <div class="windowbg">
+            <span class="topslice">
+             <span>
+             </span>
+            </span>
+            <div class="sp_block">
+             <ul class="sp_list">
+              <li class="sp_list_top">
+               <img alt="board" src="http://hon3forums.com/Themes/default/images/sp/board.png" />
+               <a href="http://hon3forums.com/index.php?PHPSESSID=55ac4fab69b6191a18d367a387c7eaea&board=1.0">
+                HOn3 General Discussion Forum
+               </a>
+              </li>
+              <li class="sp_list_indent sp_list_bottom smalltext">
+               Topics: 114 | Posts: 887
+              </li>
+              <li class="sp_list_top">
+               <img alt="board" src="http://hon3forums.com/Themes/default/images/sp/board.png" />
+               <a href="http://hon3forums.com/index.php?PHPSESSID=55ac4fab69b6191a18d367a387c7eaea&board=3.0">
+                Layouts And Layout Construction And Design
+               </a>
+              </li>
+              <li class="sp_list_indent sp_list_bottom smalltext">
+               Topics: 36 | Posts: 477
+              </li>
+              <li class="sp_list_top">
+               <img alt="board" src="http://hon3forums.com/Themes/default/images/sp/board.png" />
+               <a href="http://hon3forums.com/index.php?PHPSESSID=55ac4fab69b6191a18d367a387c7eaea&board=2.0">
+                Welcome aboard!
+               </a>
+              </li>
+              <li class="sp_list_indent sp_list_bottom smalltext">
+               Topics: 60 | Posts: 202
+              </li>
+              <li class="sp_list_top">
+               <img alt="board" src="http://hon3forums.com/Themes/default/images/sp/board.png" />
+               <a href="http://hon3forums.com/index.php?PHPSESSID=55ac4fab69b6191a18d367a387c7eaea&board=5.0">
+                Prototype Information
+               </a>
+              </li>
+              <li class="sp_list_indent sp_list_bottom smalltext">
+               Topics: 72 | Posts: 179
+              </li>
+              <li class="sp_list_top">
+               <img alt="board" src="http://hon3forums.com/Themes/default/images/sp/board.png" />
+               <a href="http://hon3forums.com/index.php?PHPSESSID=55ac4fab69b6191a18d367a387c7eaea&board=7.0">
+                New Product Announcements
+               </a>
+              </li>
+              <li class="sp_list_indent smalltext">
+               Topics: 20 | Posts: 121
+              </li>
+             </ul>
+            </div>
+            <span class="botslice">
+             <span>
+             </span>
+            </span>
+           </div>
+          </div>
+         </td>
+        </tr>
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <div id="footer_section">
+    <div class="frame">
+     <ul class="reset">
+      <li style="line-height: 1.5em;" class="copyright">
+       <span style="display: inline; visibility: visible; font-family: Verdana, Arial, sans-serif;" class="smalltext">
+        <a class="new_win" target="_blank" title="Simple Machines Forum" href="http://hon3forums.com/index.php?PHPSESSID=55ac4fab69b6191a18d367a387c7eaea&action=credits">
+         SMF 2.0.5
+        </a>
+        |
+        <a class="new_win" target="_blank" title="License" href="http://www.simplemachines.org/about/smf/license.php">
+         SMF © 2013
+        </a>
+        ,
+        <a class="new_win" target="_blank" title="Simple Machines" href="http://www.simplemachines.org">
+         Simple Machines
+        </a>
+        <br />
+        <a class="new_win" target="_blank" href="http://www.simpleportal.net/">
+         SimplePortal 2.3.5 © 2008-2012, SimplePortal
+        </a>
+       </span>
+      </li>
+      <li>
+       <a title="Valid XHTML 1.0!" class="new_win" target="_blank" href="http://validator.w3.org/check?uri=referer" id="button_xhtml">
+        <span>
+         XHTML
+        </span>
+       </a>
+      </li>
+      <li>
+       <a class="new_win" href="http://hon3forums.com/index.php?PHPSESSID=55ac4fab69b6191a18d367a387c7eaea&action=.xml;type=rss" id="button_rss">
+        <span>
+         RSS
+        </span>
+       </a>
+      </li>
+      <li class="last">
+       <a class="new_win" href="http://hon3forums.com/index.php?PHPSESSID=55ac4fab69b6191a18d367a387c7eaea&wap2" id="button_wap2">
+        <span>
+         WAP2
+        </span>
+       </a>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>

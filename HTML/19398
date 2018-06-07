@@ -1,0 +1,199 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <link href="main/calendar-win2k-cold-1.css" type="text/css" rel="stylesheet" />
+  <link type="text/css" rel="stylesheet" href="main/styles.css" />
+  <script src="main/calendar.js" type="text/javascript">
+  </script>
+  <script src="main/calendar-setup.js" type="text/javascript">
+  </script>
+  <script src="main/lang/calendar-es.js" type="text/javascript">
+  </script>
+  <script language="javascript">
+   function Validart()
+{
+      parent.reporte.location.href="view_listado.php?txt=" + document.form1.txt_busqueda.value;
+	  
+}
+  </script>
+  <title>
+   Fundaproal
+  </title>
+ </head>
+ <body>
+  <center>
+   <div id="prueba">
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <div align="center">
+     <form action="" name="form1" method="post">
+      <table width="720" border="0" cellspacing="0" cellpadding="0">
+       <tbody>
+        <tr>
+         <td align="center">
+          <table width="90%" border="1" align="center" cellspacing="0" cellpadding="0">
+          </table>
+          <table width="100%" border="1">
+           <tbody>
+            <tr>
+             <td>
+              <table width="100%" border="0" cellspacing="0" cellpadding="0">
+               <tbody>
+                <tr>
+                 <td width="2">
+                  <img width="9" height="20" src="images/tab_bkg.gif" />
+                 </td>
+                 <td background="images/tab_bkg.gif" align="left" class="pagetabtitles">
+                  <b>
+                   <font size="2" face="Verdana, Arial, Helvetica, sans-serif" color="#F2F2F2">
+                    Listado de Madres Elaboradoras
+                   </font>
+                  </b>
+                 </td>
+                 <td width="2">
+                  <img width="14" height="20" src="images/tab_bkg.gif" />
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+              <table width="100%" border="0" cellspacing="0" cellpadding="0">
+               <tbody>
+                <tr>
+                 <td class="linesolid">
+                  <table width="100%" border="1" cellspacing="1" cellpadding="4">
+                   <tbody>
+                    <tr bgcolor="#FFFFFF">
+                     <td>
+                      <p align="center">
+                      </p>
+                      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                       <tbody>
+                        <tr height="25">
+                         <td bgcolor="#F1F1F1" align="center" class="TITULO" colspan="6">
+                          Selecciona el Estado :
+                          <select class="campo" id="txt_busqueda" name="txt_busqueda">
+                           <option class="campo" value="">
+                            - Seleccione -
+                           </option>
+                           <option class="campo" value="DTTO. CAPITAL">
+                            DTTO. CAPITAL
+                           </option>
+                           <option class="campo" value="AMAZONAS">
+                            AMAZONAS
+                           </option>
+                           <option class="campo" value="ANZOATEGUI">
+                            ANZOATEGUI
+                           </option>
+                           <option class="campo" value="APURE">
+                            APURE
+                           </option>
+                           <option class="campo" value="ARAGUA">
+                            ARAGUA
+                           </option>
+                           <option class="campo" value="BARINAS">
+                            BARINAS
+                           </option>
+                           <option class="campo" value="BOLIVAR">
+                            BOLIVAR
+                           </option>
+                           <option class="campo" value="CARABOBO">
+                            CARABOBO
+                           </option>
+                           <option class="campo" value="COJEDES">
+                            COJEDES
+                           </option>
+                           <option class="campo" value="DELTA AMACURO">
+                            DELTA AMACURO
+                           </option>
+                           <option class="campo" value="FALCON">
+                            FALCON
+                           </option>
+                           <option class="campo" value="GUARICO">
+                            GUARICO
+                           </option>
+                           <option class="campo" value="LARA">
+                            LARA
+                           </option>
+                           <option class="campo" value="MERIDA">
+                            MERIDA
+                           </option>
+                           <option class="campo" value="MIRANDA">
+                            MIRANDA
+                           </option>
+                           <option class="campo" value="MONAGAS">
+                            MONAGAS
+                           </option>
+                           <option class="campo" value="NUEVA ESPARTA">
+                            NUEVA ESPARTA
+                           </option>
+                           <option class="campo" value="PORTUGUESA">
+                            PORTUGUESA
+                           </option>
+                           <option class="campo" value="SUCRE">
+                            SUCRE
+                           </option>
+                           <option class="campo" value="TACHIRA">
+                            TACHIRA
+                           </option>
+                           <option class="campo" value="TRUJILLO">
+                            TRUJILLO
+                           </option>
+                           <option class="campo" value="YARACUY">
+                            YARACUY
+                           </option>
+                           <option class="campo" value="ZULIA">
+                            ZULIA
+                           </option>
+                           <option class="campo" value="VARGAS">
+                            VARGAS
+                           </option>
+                          </select>
+                          <input type="button" onclick="Validart();" class="input" value="BUSCAR" />
+                         </td>
+                        </tr>
+                       </tbody>
+                      </table>
+                     </td>
+                    </tr>
+                    <tr valign="top" align="center">
+                     <td>
+                      <iframe width="95%" height="300" frameborder="0" scrolling="auto" name="reporte" src="view_listado.php?tipo=0">
+                      </iframe>
+                     </td>
+                    </tr>
+                    <tr valign="middle" height="50">
+                     <td bgcolor="#F1F1F1" align="center" class="TITULO" colspan="8">
+                      <br />
+                      <br />
+                      <br />
+                     </td>
+                    </tr>
+                   </tbody>
+                  </table>
+                  <div align="center">
+                  </div>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </td>
+        </tr>
+       </tbody>
+      </table>
+     </form>
+    </div>
+   </div>
+  </center>
+ </body>
+</html>

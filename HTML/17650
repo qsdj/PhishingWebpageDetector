@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <!--
+    Realizado por: 
+    Alexys Gonzalez
+    alexysbike@gmail.com
+    -->
+  <title>
+   Nuova Venezuela
+  </title>
+  <link href="http://nuovavenezuela.com/img/favicon.ico" rel="shortcut icon" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="http://nuovavenezuela.com/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="http://nuovavenezuela.com/css/bootstrap-lightbox.min.css" />
+  <link rel="stylesheet" href="http://nuovavenezuela.com/css/base.css" />
+  <link rel="stylesheet" href="http://nuovavenezuela.com/css/lightbox.css" />
+  <link rel="stylesheet" href="http://nuovavenezuela.com/css/thumbelina.css" />
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+ </head>
+ <body>
+  <div class="container">
+   <div id="header" class="row">
+    <div id="buscador" class="col-md-3">
+     <form method="post" action="http://nuovavenezuela.com/sitio/buscar/" role="search" id="busqueda-pagina" class="">
+      <div class="input-group ">
+       <input type="hidden" value="" id="ordenar" name="ordenar" />
+       <input type="hidden" value="" id="filtrar" name="filtrar" />
+       <input type="hidden" value="" id="valor" name="valor" />
+       <input type="hidden" value="" id="categoria" name="categoria" />
+       <input type="hidden" value="" id="pagina" name="pagina" />
+       <input type="text" value="" id="busqueda-articulo" name="busqueda" placeholder="Busqueda" class="form-control" />
+       <span class="input-group-btn">
+        <button class="btn btn-default" type="submit">
+         <span class="glyphicon glyphicon-search">
+         </span>
+        </button>
+       </span>
+      </div>
+     </form>
+    </div>
+    <div id="logo" class="col-md-4 col-md-offset-1 text-center">
+     <a href="http://nuovavenezuela.com/">
+      <img src="http://nuovavenezuela.com/img/logo.png" />
+     </a>
+    </div>
+    <div id="opciones-usuario" class="col-md-4 text-right">
+     <a id="boton-login" href="#" data-original-title="" title="">
+      <span class="glyphicon glyphicon-user">
+      </span>
+      Login
+     </a>
+     <a href="http://nuovavenezuela.com/usuario/nuevo">
+      <span class="glyphicon glyphicon-ok">
+      </span>
+      Registrar
+     </a>
+    </div>
+   </div>
+  </div>
+  <nav role="navigation" class="navbar navbar-inverse">
+   <!-- Brand and toggle get grouped for better mobile display -->
+   <div class="container">
+    <div class="navbar-header">
+     <button data-target="#bs-example-navbar-collapse-1" data-toggle="collapse" class="navbar-toggle" type="button">
+      <span class="sr-only">
+       Toggle navigation
+      </span>
+      <span class="icon-bar">
+      </span>
+      <span class="icon-bar">
+      </span>
+      <span class="icon-bar">
+      </span>
+     </button>
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div id="bs-example-navbar-collapse-1" class="collapse navbar-collapse">
+     <ul class="nav navbar-nav">
+      <li>
+       <a href="http://nuovavenezuela.com/sitio/buscar/1">
+        Alta Costura
+       </a>
+      </li>
+      <li>
+       <a href="http://nuovavenezuela.com/sitio/buscar/2">
+        Casual
+       </a>
+      </li>
+      <li>
+       <a href="http://nuovavenezuela.com/sitio/buscar/3">
+        Deportiva
+       </a>
+      </li>
+      <li>
+       <a href="http://nuovavenezuela.com/sitio/buscar/4">
+        Playera
+       </a>
+      </li>
+      <li>
+       <a href="http://nuovavenezuela.com/sitio/buscar/5">
+        Íntima
+       </a>
+      </li>
+      <li>
+       <a href="http://nuovavenezuela.com/sitio/buscar/6">
+        Accesorios
+       </a>
+      </li>
+      <li>
+       <a href="http://nuovavenezuela.com/sitio/buscar/7">
+        Calzado
+       </a>
+      </li>
+      <li>
+       <a href="http://nuovavenezuela.com/sitio/buscar_disenador">
+        Diseñadores
+       </a>
+      </li>
+     </ul>
+    </div>
+    <!-- /.navbar-collapse -->
+   </div>
+  </nav>
+  <div id="contenido" class="container">
+   <div class="row">
+    <div class="col-md-3">
+     <div data-interval="999999" style="height:325px" data-ride="carousel" class="carousel slide" id="imagenes-articulo">
+      <span style="display:none;" id="items-ocultos">
+      </span>
+      <!-- Wrapper for slides -->
+      <div id="carousel-imagenes">
+       <div data-idpresentacion="66" style="" class="item_0">
+        <a title="" url-img="http://nuovavenezuela.com/img/usuarios/84/84_COLLAR_AZUL_REY.JPG" data-target="#lightbox" class="imagen-articulo" style="background-image: url(http://nuovavenezuela.com/img/usuarios/84/84_COLLAR_AZUL_REY.JPG); height:325px; width: 100%;display: block;" href="http://nuovavenezuela.com/img/usuarios/84/84_COLLAR_AZUL_REY.JPG">
+        </a>
+       </div>
+      </div>
+     </div>
+     <div id="thumbnails-articulo">
+      <div class="thumbelina-but horiz left disabled">
+       ˂
+      </div>
+      <div style="position:absolute;overflow:hidden;width:100%;height:100%;">
+       <ul class="thumbelina" style="left: 0px;">
+        <li data-idpresentacion="66" style="display: inline-block;">
+         <img data-target=".item_0" class="imagen-thumbnail" style="background-image: url(http://nuovavenezuela.com/img/usuarios/84/84_COLLAR_AZUL_REY.JPG);" src="" />
+        </li>
+       </ul>
+      </div>
+      <div class="thumbelina-but horiz right disabled">
+       ˃
+      </div>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <div class="row">
+      <div class="col-md-8">
+       <h4>
+        <cite title="Colección">
+         Colección COLLARES
+        </cite>
+       </h4>
+       <h3>
+        COLLAR VERSATIL
+       </h3>
+       <small>
+        <cite title="Categoría">
+         Alta Costura
+         <span class="glyphicon glyphicon-tag">
+         </span>
+        </cite>
+       </small>
+       <a data-idarticulo="167" id="marcar-favorito" style="color: grey" title="Marcar Favorito" href="#">
+        <h4 style="margin:5px 0 0 0">
+         <span class="glyphicon glyphicon-star-empty">
+         </span>
+        </h4>
+       </a>
+       <span class="glyphicon glyphicon-user">
+       </span>
+       Damas
+      </div>
+      <div class="col-md-4">
+       <h2>
+        Bs. 350
+       </h2>
+      </div>
+     </div>
+     <h5>
+      Presentaciones:
+     </h5>
+     <ul id="presentaciones" class="nav nav-pills">
+      <li data-idpresentacion="66" class="">
+       <a data-toggle="tab" title="MORADO" href="#presentacion-66">
+        <i style="background-color: #9620aa;" class="presentacion-square img-thumbnail">
+        </i>
+       </a>
+      </li>
+      <li data-idpresentacion="67" class="">
+       <a data-toggle="tab" title="ROJO" href="#presentacion-67">
+        <i style="background-color: #d81e1e;" class="presentacion-square img-thumbnail">
+        </i>
+       </a>
+      </li>
+      <li data-idpresentacion="68" class="">
+       <a data-toggle="tab" title="AZUL REY" href="#presentacion-68">
+        <i style="background-color: #282fd8;" class="presentacion-square img-thumbnail">
+        </i>
+       </a>
+      </li>
+     </ul>
+     <p id="nombre-presentacion" class="help-block">
+      Todas las presentaciones
+     </p>
+     <input type="hidden" value="varias" id="presentacion-tipo" />
+     <!-- Tab panes -->
+     <div id="select-presentaciones" class="tab-content">
+      <div id="a-esconder">
+       <div class="form-group">
+        <label class="col-sm-2 control-label">
+         <h4>
+          Talla:
+         </h4>
+        </label>
+        <div class="col-sm-10">
+         <h4>
+          <span class="label label-info">
+           Debe escojer una presentación
+          </span>
+         </h4>
+        </div>
+       </div>
+      </div>
+      <div style="padding:0" id="presentacion-66" class="tab-pane ">
+       <div class="form-group">
+        <label class="col-sm-2 control-label">
+         <h4>
+          Talla:
+         </h4>
+        </label>
+        <div class="col-sm-10">
+         <select class="form-control">
+          <option data-cantidad="0" value="">
+           Elija Talla
+          </option>
+          <option data-cantidad="47" value="278">
+           UNICA
+          </option>
+         </select>
+        </div>
+       </div>
+      </div>
+      <div style="padding:0" id="presentacion-67" class="tab-pane ">
+       <div class="form-group">
+        <label class="col-sm-2 control-label">
+         <h4>
+          Talla:
+         </h4>
+        </label>
+        <div class="col-sm-10">
+         <select class="form-control">
+          <option data-cantidad="0" value="">
+           Elija Talla
+          </option>
+          <option data-cantidad="12" value="278">
+           UNICA
+          </option>
+         </select>
+        </div>
+       </div>
+      </div>
+      <div style="padding:0" id="presentacion-68" class="tab-pane ">
+       <div class="form-group">
+        <label class="col-sm-2 control-label">
+         <h4>
+          Talla:
+         </h4>
+        </label>
+        <div class="col-sm-10">
+         <select class="form-control">
+          <option data-cantidad="0" value="">
+           Elija Talla
+          </option>
+          <option data-cantidad="24" value="278">
+           UNICA
+          </option>
+         </select>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="clearfix">
+     </div>
+     <div class="form-group">
+      <label class="col-sm-2 control-label">
+       <h4>
+        Cantidad:
+       </h4>
+      </label>
+      <div class="col-sm-6 col-sm-offset-2">
+       <div class="input-group">
+        <span class="input-group-btn">
+         <button class="btn btn-default" id="menos-cantidad">
+          <span class="glyphicon glyphicon-minus">
+          </span>
+         </button>
+        </span>
+        <input type="text" value="0" id="cantidad" class="form-control" />
+        <span class="input-group-btn">
+         <button class="btn btn-default" id="mas-cantidad">
+          <span class="glyphicon glyphicon-plus">
+          </span>
+         </button>
+        </span>
+       </div>
+       <p id="unidades-disponibles" class="help-block">
+        Elija la talla
+       </p>
+      </div>
+     </div>
+     <div class="clearfix">
+     </div>
+     <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+       <button id="boton-comprar" class="btn btn-primary btn-block btn-lg">
+        <span class="glyphicon glyphicon-shopping-cart">
+        </span>
+        Comprar
+       </button>
+       <p class="text-center">
+        <span style="display:none" class="label label-danger" id="mensaje-error-compra">
+         Debes Escojer una presentacion
+        </span>
+       </p>
+      </div>
+     </div>
+    </div>
+    <div class="col-md-3">
+     <p class="bg-info">
+     </p>
+     <div class="media">
+      <a style="background-image:url(http://nuovavenezuela.com/img/usuarios/84/84_roust_accesorios.jpg)" data-target="#lightbox" class="thumbnail imagen-perfil-pequena pull-left" url-img="http://nuovavenezuela.com/img/usuarios/84/84_roust_accesorios.jpg" href="#">
+      </a>
+      <div class="media-body">
+       <input type="hidden" value="84" id="id-disenador" />
+       <h3 class="media-heading">
+        <a href="http://nuovavenezuela.com/usuario/ver_perfil/84">
+         ROUST ACCESORIOS
+        </a>
+       </h3>
+       <h4>
+        <small>
+         rosalinda  alvaro
+        </small>
+       </h4>
+      </div>
+     </div>
+     <div class="row">
+      <div class="col-md-5 text-right">
+       Calificaciones:
+      </div>
+      <div class="col-md-7">
+       Sin Calificar
+      </div>
+     </div>
+     <p>
+     </p>
+     <h4>
+      Descripción del Artículo:
+     </h4>
+     <p style="padding: 10px;-moz-border-radius: 7px;border-radius: 7px; text-align:justify" class="bg-primary" id="descripcion-articulo">
+      COLLAR VERSTIL PARA TODA OCASIN EN COLOR REY
+     </p>
+    </div>
+   </div>
+   <div class="row">
+    <div id="contenedor-preguntas" class="col-md-6 col-md-offset-3">
+     <h2>
+      Preguntas y Respuestas
+     </h2>
+     <ul class="list-group">
+      <li class="list-group-item list-group-item-success">
+       Debes estar logueado para poder realizar una pregunta
+      </li>
+     </ul>
+    </div>
+   </div>
+   <div aria-hidden="true" aria-labelledby="myLargeModalLabel" role="dialog" tabindex="-1" class="modal fade" id="lightbox">
+    <div class="modal-dialog">
+     <button aria-hidden="true" data-dismiss="modal" class="close hidden" type="button">
+      X
+     </button>
+     <div class="modal-content">
+      <div class="modal-body">
+       <img alt="" src="" />
+      </div>
+     </div>
+    </div>
+   </div>
+   <!-- Modal -->
+   <div data-show="true" aria-hidden="true" role="dialog" tabindex="-1" id="nueva-compra" class="modal fade">
+    <div class="modal-dialog">
+     <div class="modal-content">
+      <form action="http://nuovavenezuela.com/sitio/compra" method="post" role="form">
+       <div class="modal-header">
+        <button aria-hidden="true" data-dismiss="modal" class="close" type="button">
+         ×
+        </button>
+        <h4 id="myModalLabel" class="modal-title">
+         Confirmación de Compra
+        </h4>
+       </div>
+       <div class="modal-body">
+        <input type="hidden" value="0" name="id-usuario-comprador" />
+        <input type="hidden" value="84" name="id-usuario-vendedor" />
+        <input type="hidden" value="167" name="id-articulo" />
+        <input type="hidden" value="varias" name="presentacion-tipo" />
+        <input type="hidden" value="0" name="id-presentacion" />
+        <input type="hidden" value="0" name="id-talla" />
+        <input type="hidden" value="0" name="articulo-cantidad" />
+        <input type="hidden" value="350" name="articulo-precio" />
+        <p>
+         Usted esta a punto de comprar lo siguiente:
+        </p>
+        <div class="well">
+         <div class="row">
+          <div class="col-md-3">
+           <a style="" id="imagen-articulo-pequena" class="thumbnail" href="#">
+           </a>
+          </div>
+          <div class="col-md-9">
+           <h3 style="margin-top: 0">
+            COLLAR VERSATIL
+           </h3>
+           <p>
+            <strong>
+             Presentacion:
+            </strong>
+            <span id="confirmacion-presentacion">
+             presentacion
+            </span>
+            <br />
+            <strong>
+             Talla:
+            </strong>
+            <span id="confirmacion-talla">
+             talla
+            </span>
+            <br />
+            <strong>
+             Cantidad:
+            </strong>
+            <span id="confirmacion-cantidad">
+             cantidad
+            </span>
+            <br />
+            <strong>
+             Precio:
+            </strong>
+            <span id="confirmacion-precio">
+             Bs. 350
+            </span>
+            <br />
+            <strong>
+             Total:
+            </strong>
+            <span id="confirmacion-total">
+            </span>
+           </p>
+          </div>
+         </div>
+        </div>
+        <p>
+         Verifique todos los datos antes de hacer click en "Confirmar Compra"
+        </p>
+        <div id="datos-envio">
+         <legend>
+          Dirección de Envío
+         </legend>
+         <div class="row">
+          <div class="col-md-6">
+           <address class="well">
+           </address>
+          </div>
+         </div>
+         <label class="checkbox-inline">
+          <input type="checkbox" value="1" id="usar-direccion-alt" name="usar-direccion-alt" />
+          Usar una dirección diferente para esta compra
+         </label>
+         <div style="display:none" id="contenedor-direccion-alt">
+          <textarea row="3" class="form-control" name="direccion-alternativa">
+          </textarea>
+          <p class="help-block">
+           Aqui puedes usar una dirección diferente para esta compra en particular.
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="modal-footer">
+        <button data-dismiss="modal" class="btn btn-default" type="button">
+         Cancelar
+        </button>
+        <button class="btn btn-primary" type="submit">
+         Confirmar Compra
+        </button>
+       </div>
+      </form>
+     </div>
+    </div>
+   </div>
+   <!-- Modal -->
+   <div data-show="true" aria-hidden="true" role="dialog" tabindex="-1" id="modal-ver-calificaciones" class="modal fade modal-ver-calificaciones-usuario">
+    <div class="modal-dialog">
+     <div class="modal-content">
+      <div class="modal-header">
+       <button aria-hidden="true" data-dismiss="modal" class="close" type="button">
+        ×
+       </button>
+       <h4 id="modal-titulo" class="modal-title">
+        Calificaciones
+       </h4>
+      </div>
+      <div class="modal-body">
+       <div class="panel panel-default">
+        <div class="panel-heading">
+         Ver:
+         <input type="radio" checked="checked" class="ver-radio" id="ver-todas" name="ver-radio" value="todas" />
+         Todas
+         <input type="radio" class="ver-radio" id="ver-positivas" name="ver-radio" value="positivas" />
+         Positivas
+         <input type="radio" class="ver-radio" id="ver-negativas" name="ver-radio" value="negativas" />
+         Negativas
+         <input type="radio" class="ver-radio" id="ver-neutrales" name="ver-radio" value="neutrales" />
+         Neutrales
+        </div>
+        <ul style="max-height:250px; overflow-y:scroll" id="lista-calif" class="list-group">
+        </ul>
+       </div>
+      </div>
+      <div class="modal-footer">
+       <button data-dismiss="modal" class="btn btn-default" type="button">
+        Cerrar
+       </button>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <div style="margin-top:20px" class="navbar-inverse" id="footer">
+   <div class="container">
+    <div class="row">
+     <div class="col-md-6">
+      <p>
+       © 2014 Nuova Venezuela,C.A.   RIF: J-40336353-6
+       <br />
+       <a href="mailto:info@nuovavenezuela.com">
+        info@nuovavenezuela.com
+       </a>
+       <br />
+       Teléfono: +584149474836
+       <br />
+       <a style="min-width:82px; min-height:24px; text-align:left" href="https://www.facebook.com/nuovavenezuela" target="_blank">
+        <img src="http://nuovavenezuela.com/img/socials/facebook-48.png" style="vertical-align:middle" />
+       </a>
+       <a style="min-width:82px; min-height:24px; text-align:left" href="https://twitter.com/nuovavenezuela" target="_blank">
+        <img src="http://nuovavenezuela.com/img/socials/twitter-48.png" style="vertical-align:middle" />
+       </a>
+       <a style="min-width:82px; min-height:24px; text-align:left" href="http://instagram.com/nuovavenezuela" target="_blank">
+        <img src="http://nuovavenezuela.com/img/socials/instagram-48.png" style="vertical-align:middle" />
+       </a>
+      </p>
+     </div>
+     <div class="col-md-6">
+      <p>
+       <strong>
+        Mapa del Sitio:
+       </strong>
+       <br />
+       <a href="http://nuovavenezuela.com/sitio/buscar">
+        Artículos
+       </a>
+       <br />
+       <a href="http://nuovavenezuela.com/sitio/quienes_somos">
+        Quienes Somos
+       </a>
+       <br />
+       <a href="http://nuovavenezuela.com/sitio/contacto">
+        Contacto
+       </a>
+       <br />
+       <a href="http://nuovavenezuela.com/sitio/tutoriales">
+        Tutoriales
+       </a>
+      </p>
+     </div>
+    </div>
+   </div>
+  </div>
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="http://nuovavenezuela.com/js/lib/jquery-2.0.3.min.js">
+  </script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="http://nuovavenezuela.com/js/lib/bootstrap.min.js">
+  </script>
+  <script src="http://nuovavenezuela.com/js/lib/bootstrap-lightbox.min.js">
+  </script>
+  <script src="http://nuovavenezuela.com/js/lib/jquery.form.min.js" type="text/javascript">
+  </script>
+  <script src="http://nuovavenezuela.com/js/config.js" type="text/javascript">
+  </script>
+  <script src="http://nuovavenezuela.com/js/base.js" type="text/javascript">
+  </script>
+  <script src="http://nuovavenezuela.com/js/scripts/lightbox.js" type="text/javascript">
+  </script>
+  <script src="http://nuovavenezuela.com/js/scripts/../lib/thumbelina.js" type="text/javascript">
+  </script>
+  <script src="http://nuovavenezuela.com/js/scripts/articulo/publico.articulo.js" type="text/javascript">
+  </script>
+  <script src="http://nuovavenezuela.com/js/scripts/usuario/calificaciones.js" type="text/javascript">
+  </script>
+ </body>
+</html>

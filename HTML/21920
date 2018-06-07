@@ -1,0 +1,2658 @@
+<!DOCTYPE html>
+<html xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:sioct="http://rdfs.org/sioc/types#" xmlns:sioc="http://rdfs.org/sioc/ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:og="http://ogp.me/ns#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:dc="http://purl.org/dc/terms/" xmlns:content="http://purl.org/rss/1.0/modules/content/" dir="ltr" version="XHTML+RDFa 1.0" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" class="js js flexbox canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients no-cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths">
+ <head profile="http://www.w3.org/1999/xhtml/vocab">
+  <meta content="Content-Type" http-equiv="Content-Type" />
+  <link type="image/png" href="http://www.sa-elearning.eu/sites/default/files/sa.png" rel="shortcut icon" />
+  <meta content="Drupal 7 (http://drupal.org)" name="Generator" />
+  <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
+  <title>
+   Glossary | Seasonal adjustment
+  </title>
+  <meta content="This e-learning tool will target novice users of Seasonal Adjustment such as applied statisticians and members of public institutions engaged in the dissemination of economic and social indicators." name="description" />
+  <meta content="Eurostat" name="author" />
+  <meta content="width=device-width,initial-scale=1" name="viewport" />
+  <link media="all" href="http://www.sa-elearning.eu/sites/default/files/css/css_xE-rWrJf-fncB6ztZfd2huxqgxu4WO-qwma6Xer30m4.css" rel="stylesheet" type="text/css" />
+  <link media="all" href="http://www.sa-elearning.eu/sites/default/files/css/css_PjPrIajDE50MAegNugI8RxZU-osJkgA83JQnvEfQVog.css" rel="stylesheet" type="text/css" />
+  <link media="all" href="http://www.sa-elearning.eu/sites/default/files/css/css_mJhot5t1wGKTFIBJwc7L33Y-BVkcTimr86BzGGgsCbE.css" rel="stylesheet" type="text/css" />
+  <link media="all" href="http://www.sa-elearning.eu/sites/default/files/css/css_OY-sjhJ8wU5ZE1pUESqA-PHNUrBMTplaKJZeBEjSRHI.css" rel="stylesheet" type="text/css" />
+  <!--[if lte IE 7]>
+<link type="text/css" rel="stylesheet" href="http://www.sa-elearning.eu/sites/all/themes/sadjustment/css/ie.css?nrkx3z" media="all"  />
+<![endif]-->
+  <!--[if IE 6]>
+<link type="text/css" rel="stylesheet" href="http://www.sa-elearning.eu/sites/all/themes/sadjustment/css/ie6.css?nrkx3z" media="all"  />
+<![endif]-->
+  <link rel="stylesheet" href="/sites/all/themes/sadjustment/css/style.css" />
+  <script type="text/javascript" async="" src="http://www.google-analytics.com/ga.js">
+  </script>
+  <script src="http://www.sa-elearning.eu/misc/jquery.js?v=1.4.4" type="text/javascript">
+  </script>
+  <script src="http://www.sa-elearning.eu/misc/jquery.once.js?v=1.2" type="text/javascript">
+  </script>
+  <script src="http://www.sa-elearning.eu/misc/drupal.js?nrkx3z" type="text/javascript">
+  </script>
+  <script src="http://www.sa-elearning.eu/sites/all/modules/video/js/video.js?nrkx3z" type="text/javascript">
+  </script>
+  <script src="http://www.sa-elearning.eu/sites/all/modules/google_analytics/googleanalytics.js?nrkx3z" type="text/javascript">
+  </script>
+  <script type="text/javascript">
+   &lt;!--//--&gt;&lt;![CDATA[//&gt;&lt;!--
+var _gaq = _gaq || [];_gaq.push(["_setAccount", "UA-33367328-1"]);_gaq.push(["_trackPageview"]);(function() {var ga = document.createElement("script");ga.type = "text/javascript";ga.async = true;ga.src = ("https:" == document.location.protocol ? "https://ssl" : "http://www") + ".google-analytics.com/ga.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ga, s);})();
+//--&gt;&lt;!]]&gt;
+  </script>
+  <script src="http://www.sa-elearning.eu/sites/all/themes/sadjustment/js/PIE.js?nrkx3z" type="text/javascript">
+  </script>
+  <script src="http://www.sa-elearning.eu/sites/all/themes/sadjustment/js/libs/modernizr-2.0.min.js?nrkx3z" type="text/javascript">
+  </script>
+  <script src="http://www.sa-elearning.eu/sites/all/themes/sadjustment/js/libs/jquery.carouFredSel-5.5.0-packed.js?nrkx3z" type="text/javascript">
+  </script>
+  <script src="http://www.sa-elearning.eu/sites/all/themes/sadjustment/js/jquery.colorbox-min.js?nrkx3z" type="text/javascript">
+  </script>
+  <script src="http://www.sa-elearning.eu/sites/all/themes/sadjustment/js/jquery.treeview.min.js?nrkx3z" type="text/javascript">
+  </script>
+  <script src="http://www.sa-elearning.eu/sites/all/themes/sadjustment/js/highcharts.js?nrkx3z" type="text/javascript">
+  </script>
+  <script src="http://www.sa-elearning.eu/sites/all/themes/sadjustment/js/scripts.js?nrkx3z" type="text/javascript">
+  </script>
+  <script type="text/javascript">
+   &lt;!--//--&gt;&lt;![CDATA[//&gt;&lt;!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"sadjustment","theme_token":"LxToRCaucagTsIgVRHMVvdcI5gAEMuxW8CLe7LhHhrw","js":{"misc\/jquery.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/modules\/video\/js\/video.js":1,"sites\/all\/modules\/google_analytics\/googleanalytics.js":1,"0":1,"sites\/all\/themes\/sadjustment\/js\/PIE.js":1,"sites\/all\/themes\/sadjustment\/js\/libs\/modernizr-2.0.min.js":1,"sites\/all\/themes\/sadjustment\/js\/libs\/jquery.carouFredSel-5.5.0-packed.js":1,"sites\/all\/themes\/sadjustment\/js\/jquery.colorbox-min.js":1,"sites\/all\/themes\/sadjustment\/js\/jquery.treeview.min.js":1,"sites\/all\/themes\/sadjustment\/js\/highcharts.js":1,"sites\/all\/themes\/sadjustment\/js\/scripts.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"modules\/book\/book.css":1,"modules\/comment\/comment.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"sites\/all\/modules\/quiz\/quiz.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/views\/css\/views.css":1,"sites\/all\/modules\/ckeditor\/css\/ckeditor.css":1,"sites\/all\/modules\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/lexicon\/css\/lexicon.css":1,"sites\/all\/modules\/video\/css\/video.css":1,"sites\/all\/themes\/sadjustment\/css\/colorbox.css":1,"sites\/all\/themes\/sadjustment\/css\/jquery.treeview.css":1,"sites\/all\/themes\/sadjustment\/css\/ie.css":1,"sites\/all\/themes\/sadjustment\/css\/ie6.css":1}},"googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls|xml|z|zip"}});
+//--&gt;&lt;!]]&gt;
+  </script>
+  <!--[if (gte IE 6)&(lte IE 8)]>
+    <script type="text/javascript" src="/sites/all/themes/sadjustment/js/selectivizr-min.js"></script>
+  <![endif]-->
+ </head>
+ <body class="html not-front not-logged-in one-sidebar sidebar-first page-glossary page-glossary-list">
+  <div id="cboxOverlay" style="display: none;">
+  </div>
+  <div id="colorbox" class="" style="padding-bottom: 50px; padding-right: 50px; display: none;">
+   <div id="cboxWrapper">
+    <div>
+     <div id="cboxTopLeft" style="float: left;">
+     </div>
+     <div id="cboxTopCenter" style="float: left;">
+     </div>
+     <div id="cboxTopRight" style="float: left;">
+     </div>
+    </div>
+    <div style="clear: left;">
+     <div id="cboxMiddleLeft" style="float: left;">
+     </div>
+     <div id="cboxContent" style="float: left;">
+      <div id="cboxLoadedContent" style="width: 0px; height: 0px; overflow: hidden; float: left;">
+      </div>
+      <div id="cboxLoadingOverlay" style="float: left;">
+      </div>
+      <div id="cboxLoadingGraphic" style="float: left;">
+      </div>
+      <div id="cboxTitle" style="float: left;">
+      </div>
+      <div id="cboxCurrent" style="float: left;">
+      </div>
+      <div id="cboxNext" style="float: left;">
+      </div>
+      <div id="cboxPrevious" style="float: left;">
+      </div>
+      <div id="cboxSlideshow" style="float: left;">
+      </div>
+      <div id="cboxClose" style="float: left;">
+      </div>
+     </div>
+     <div id="cboxMiddleRight" style="float: left;">
+     </div>
+    </div>
+    <div style="clear: left;">
+     <div id="cboxBottomLeft" style="float: left;">
+     </div>
+     <div id="cboxBottomCenter" style="float: left;">
+     </div>
+     <div id="cboxBottomRight" style="float: left;">
+     </div>
+    </div>
+   </div>
+   <div style="position: absolute; width: 9999px; visibility: hidden; display: none;">
+   </div>
+  </div>
+  <div id="skip-link">
+   <a class="element-invisible element-focusable" href="#main-content">
+    Skip to main content
+   </a>
+  </div>
+  <div class="wrapper">
+   <header id="header">
+    <h1>
+     <a id="logo" rel="logo" href="/">
+      Logo
+     </a>
+    </h1>
+    <nav id="primary_links" role="navigation">
+     <ul class="menu clearfix">
+      <li class="first leaf has-children menu-mlid-718">
+       <a href="/take-elearning-course-seasonal-adjustment">
+        Homepage
+       </a>
+      </li>
+      <li class="leaf has-children menu-mlid-317">
+       <a href="/introduction-2">
+        Conceptual Framework
+       </a>
+      </li>
+      <li class="leaf has-children menu-mlid-530">
+       <a href="/introduction-training-tutorial-ess-guidelines-sa">
+        ESS Guidelines
+       </a>
+      </li>
+      <li class="leaf menu-mlid-531">
+       <a href="/introduction-1">
+        Demetra +
+       </a>
+      </li>
+      <li class="last leaf active-trail active menu-mlid-1899">
+       <a class="active-trail active" title="" href="/glossary/list">
+        Glossary
+       </a>
+      </li>
+     </ul>
+    </nav>
+   </header>
+   <form accept-charset="UTF-8" id="search-block-form" method="post" action="/glossary/list">
+    <div>
+     <a href="/search#get-search">
+      Search
+     </a>
+     <h2 class="element-invisible">
+      Search form
+     </h2>
+     <div class="form-item form-type-textfield form-item-search-block-form">
+      <label for="edit-search-block-form--2" class="element-invisible">
+       Search
+      </label>
+      <input type="text" class="form-text" maxlength="128" size="15" value="" name="search_block_form" id="edit-search-block-form--2" title="Enter the terms you wish to search for." />
+     </div>
+     <div id="edit-actions" class="form-actions form-wrapper">
+      <input type="submit" class="form-submit" value="Search" name="op" id="edit-submit" />
+     </div>
+     <input type="hidden" value="form-2e47CgTZ6UMRuWtSxll_NOl7n8MP3D0Pw8zCfP5s2z0" name="form_build_id" />
+     <input type="hidden" value="search_block_form" name="form_id" />
+    </div>
+   </form>
+   <!-- /.section, /#header -->
+   <div class="content-wrapper">
+    <section id="sidebar-first">
+     <div class="block block-user" id="block-user-login">
+      <h2>
+       Take full advantage of the eLearning by registering
+      </h2>
+      <form accept-charset="UTF-8" id="user-login-form" method="post" action="/glossary/list?destination=glossary/list">
+       <div>
+        <div class="form-item form-type-textfield form-item-name">
+         <label for="edit-name">
+          Username
+          <span title="This field is required." class="form-required">
+           *
+          </span>
+         </label>
+         <input type="text" class="form-text required" maxlength="60" size="15" value="" name="name" id="edit-name" placeholder="Username" />
+        </div>
+        <div class="form-item form-type-password form-item-pass">
+         <label for="edit-pass">
+          Password
+          <span title="This field is required." class="form-required">
+           *
+          </span>
+         </label>
+         <input type="password" class="form-text required" maxlength="128" size="15" name="pass" id="edit-pass" placeholder="Password" />
+        </div>
+        <div class="new_user">
+         <a title="Create a new user account." href="/user/register">
+          New user?
+         </a>
+        </div>
+        <input type="hidden" value="form-U-ef7JGp8l5bV4tSaGGYEqm2ofNgG2r3PBLo_r-i7oI" name="form_build_id" />
+        <input type="hidden" value="user_login_block" name="form_id" />
+        <div id="edit-actions--2" class="form-actions form-wrapper">
+         <input type="submit" class="form-submit" value="Log in" name="op" id="edit-submit--2" />
+        </div>
+       </div>
+      </form>
+     </div>
+     <div class="block block-block" id="block-block-4">
+      <p>
+       <img style="width: 145px; background-color: rgb(42, 57, 144);padding: 20px;border-radius: 10px;margin-left: 30px;" src="http://www.cros-portal.eu/profiles/cros/themes/custom/cros/images/estat_rgb_logo.png" alt="" />
+      </p>
+     </div>
+    </section>
+    <section id="content">
+     <header id="content_header">
+      <h2 class="element-invisible">
+       You are here
+      </h2>
+      <div class="breadcrumb">
+       <a href="/">
+        Home
+       </a>
+      </div>
+      <h1 id="page-title" class="title">
+       Glossary
+      </h1>
+     </header>
+     <div class="block block-system" id="block-system-main">
+      <div class="lexicon-admin-links">
+      </div>
+      <div id="glossary">
+       <div class="lexicon-description">
+        Use glossary term to group articles on similar topics into categories.
+       </div>
+       <div class="lexicon-links">
+        <a class="lexicon-item active" href="/glossary/list#letter_a">
+         a
+        </a>
+        |
+        <a class="lexicon-item active" href="/glossary/list#letter_b">
+         b
+        </a>
+        |
+        <a class="lexicon-item active" href="/glossary/list#letter_c">
+         c
+        </a>
+        |
+        <a class="lexicon-item active" href="/glossary/list#letter_d">
+         d
+        </a>
+        |
+        <a class="lexicon-item active" href="/glossary/list#letter_e">
+         e
+        </a>
+        |
+        <a class="lexicon-item active" href="/glossary/list#letter_f">
+         f
+        </a>
+        |
+        <a class="lexicon-item active" href="/glossary/list#letter_g">
+         g
+        </a>
+        |
+        <a class="lexicon-item active" href="/glossary/list#letter_h">
+         h
+        </a>
+        |
+        <a class="lexicon-item active" href="/glossary/list#letter_i">
+         i
+        </a>
+        | j |
+        <a class="lexicon-item active" href="/glossary/list#letter_k">
+         k
+        </a>
+        |
+        <a class="lexicon-item active" href="/glossary/list#letter_l">
+         l
+        </a>
+        |
+        <a class="lexicon-item active" href="/glossary/list#letter_m">
+         m
+        </a>
+        | n |
+        <a class="lexicon-item active" href="/glossary/list#letter_o">
+         o
+        </a>
+        |
+        <a class="lexicon-item active" href="/glossary/list#letter_p">
+         p
+        </a>
+        | q |
+        <a class="lexicon-item active" href="/glossary/list#letter_r">
+         r
+        </a>
+        |
+        <a class="lexicon-item active" href="/glossary/list#letter_s">
+         s
+        </a>
+        |
+        <a class="lexicon-item active" href="/glossary/list#letter_t">
+         t
+        </a>
+        | u |
+        <a class="lexicon-item active" href="/glossary/list#letter_v">
+         v
+        </a>
+        |
+        <a class="lexicon-item active" href="/glossary/list#letter_w">
+         w
+        </a>
+        |
+        <a class="lexicon-item active" href="/glossary/list#letter_x">
+         x
+        </a>
+        |
+        <a class="lexicon-item active" href="/glossary/list#letter_y">
+         y
+        </a>
+        | z
+       </div>
+       <div class="lexicon-alphabar-instructions">
+        Click one of the letters above to advance the page to terms beginning with that letter.
+       </div>
+       <div class="lexicon-list">
+        <a id="letter_a">
+        </a>
+        <h2 class="lexicon-letter">
+         A
+        </h2>
+        <dl>
+         <dt>
+          <a id="Accuracy">
+          </a>
+          Accuracy
+          <span class="lexicon-extralinks">
+           <a href="/search/node/Accuracy?destination=glossary/list">
+            search for term
+           </a>
+          </span>
+         </dt>
+         <dd>
+          <p>
+           The closeness between an estimated result and the (unknown) true value.
+          </p>
+          <p>
+           Source: Office for National Statistics
+          </p>
+         </dd>
+         <dt>
+          <a id="Additive_outlier">
+          </a>
+          Additive outlier
+          <span class="lexicon-extralinks">
+           <a href="/search/node/Additive%20outlier?destination=glossary/list">
+            search for term
+           </a>
+          </span>
+         </dt>
+         <dd>
+          <p>
+           A point outlier which occurred in a given date
+           <strong>
+            <em>
+             t
+             <sub>
+              0
+             </sub>
+            </em>
+           </strong>
+           and affects single observation.
+          </p>
+         </dd>
+         <dt>
+          <a id="Aggregation">
+          </a>
+          Aggregation
+          <span class="lexicon-extralinks">
+           <a href="/search/node/Aggregation?destination=glossary/list">
+            search for term
+           </a>
+          </span>
+         </dt>
+         <dd>
+          <p>
+           Aggregation is the combination of related categories, usually within a common branch of a hierarchy, to provide information at a broader level to that at which detailed observations are taken.
+          </p>
+          <p>
+           Source:
+           <a href="http://stats.oecd.org/glossary/">
+            OECD Glossary of Statistical Terms
+           </a>
+          </p>
+         </dd>
+         <dt>
+          <a id="ARIMA_model">
+          </a>
+          ARIMA model
+          <span class="lexicon-extralinks">
+           <a href="/search/node/ARIMA%20model?destination=glossary/list">
+            search for term
+           </a>
+          </span>
+         </dt>
+         <dd>
+          <p>
+           ARIMA (an acronym for AutoRegressive Integrated Moving Average) is a model for describing and forecasting/backcasting time series (both stationary and non-stationary). Seasonal ARIMA models have a special form for efficiently modeling many kinds of seasonal time series and are heavily used in seasonal adjustment.
+          </p>
+          <p>
+           Source: Office for National Statistics,
+           <a href="http://www.census.gov/srd/www/x12a/index.html">
+            United States Census Bureau
+           </a>
+          </p>
+         </dd>
+         <dt>
+          <a id="Autocorrelation">
+          </a>
+          Autocorrelation
+          <span class="lexicon-extralinks">
+           <a href="/search/node/Autocorrelation?destination=glossary/list">
+            search for term
+           </a>
+          </span>
+         </dt>
+         <dd>
+          <p>
+           A mathematical representation of the degree of similarity between a given time series and a lagged version of itself over successive time intervals.
+          </p>
+          <p>
+           <span style="font-size: 12px;">
+            Source:
+           </span>
+           <a href="http://www.investopedia.com">
+            www.investopedia.com
+           </a>
+          </p>
+         </dd>
+        </dl>
+        <a id="letter_b">
+        </a>
+        <h2 class="lexicon-letter">
+         B
+        </h2>
+        <dl>
+         <dt>
+          <a id="Backshift_operator">
+          </a>
+          Backshift operator
+          <span class="lexicon-extralinks">
+           <a href="/search/node/Backshift%20operator?destination=glossary/list">
+            search for term
+           </a>
+          </span>
+         </dt>
+         <dd>
+          <p>
+           Backshift operator
+           <em>
+            <strong>
+             B
+            </strong>
+           </em>
+           applied to the time series
+           <em>
+            <strong>
+             y
+             <sub>
+              t
+             </sub>
+            </strong>
+           </em>
+           is defined as:
+           <em>
+            <strong>
+             By
+             <sub>
+              t
+             </sub>
+             = y
+             <sub>
+              t-1
+             </sub>
+            </strong>
+           </em>
+           . In other words
+           <em>
+            <strong>
+             By
+             <sub>
+              t
+             </sub>
+            </strong>
+           </em>
+           is the value of the time series at time index
+           <strong>
+            t-1
+           </strong>
+           .
+          </p>
+         </dd>
+         <dt>
+          <a id="BAYESIA">
+          </a>
+          BAYESIA
+          <span class="lexicon-extralinks">
+           <a href="/search/node/BAYESIA?destination=glossary/list">
+            search for term
+           </a>
+          </span>
+         </dt>
+         <dd>
+          <p>
+           BAYESEA (BAYEsian SEasonal Adjustment program) a program developed by H. Akaike and M. Ishiguro that uses the Bayesian model to estimate the time series components.
+          </p>
+          <p>
+           Read more: Akaike, H., Ishiguro, M. (1980),
+           <em>
+            BAYSEA, A Bayesian Seasonal Adjustment Program
+           </em>
+           , Computer Science Monographs, No.13, The Institute of Statistical Mathematics.
+          </p>
+         </dd>
+         <dt>
+          <a id="Box-Jenkins_Model">
+          </a>
+          Box-Jenkins Model
+          <span class="lexicon-extralinks">
+           <a href="/search/node/Box-Jenkins%20Model?destination=glossary/list">
+            search for term
+           </a>
+          </span>
+         </dt>
+         <dd>
+          <p>
+           A process that can formulate an appropriate ARIMA model.
+          </p>
+          <p>
+           Source: Office for National Statistics
+          </p>
+         </dd>
+         <dt>
+          <a id="BV4">
+          </a>
+          BV4
+          <span class="lexicon-extralinks">
+           <a href="/search/node/BV4?destination=glossary/list">
+            search for term
+           </a>
+          </span>
+         </dt>
+         <dd>
+          <p>
+           BV4 (Berliner Verfahren (Berlin procedure)) is a seasonal adjustment method, developed by the Technische Universität Berlin and the Deutsche Institut fürWirtschaftsforschung (DIW), based on moving filter applications derived from approximating functions by a regression approach. In BV4 method trend-cycle and seasonal component are specified through deterministic functions of time.
+          </p>
+          <p>
+           Source: Eurostat (1998),
+           <em>
+            Seasonal Adjustment Methods. A Comparison for Industry Statistics.
+           </em>
+          </p>
+          <p>
+           Read more:
+           <a href="http://portal.ksh.hu/docs/bemutatkozas/eng/hosa/BV4.pdf">
+            The BV4.1 Procedure for Decomposing and Seasonally Adjusting Economic Time Series
+           </a>
+          </p>
+          <p>
+          </p>
+         </dd>
+        </dl>
+        <a id="letter_c">
+        </a>
+        <h2 class="lexicon-letter">
+         C
+        </h2>
+        <dl>
+         <dt>
+          <a id="Calendar_adjustment">
+          </a>
+          Calendar adjustment
+          <span class="lexicon-extralinks">
+           <a href="/search/node/Calendar%20adjustment?destination=glossary/list">
+            search for term
+           </a>
+          </span>
+         </dt>
+         <dd>
+          <p>
+           Calendar adjustment refers to the correction for calendar variations. Such calendar adjustments include working day adjustments or the incidence of moving holidays (such as Easter and Chinese New Year). The effects of the normal length of a month or a quarter are assigned to the seasonal component.
+          </p>
+          <p>
+           Source:
+           <a href="http://stats.oecd.org/glossary">
+            OECD Glossary of Statistical Terms
+           </a>
+          </p>
+         </dd>
+         <dt>
+          <a id="Comparability">
+          </a>
+          Comparability
+          <span class="lexicon-extralinks">
+           <a href="/search/node/Comparability?destination=glossary/list">
+            search for term
+           </a>
+          </span>
+         </dt>
+         <dd>
+          <p>
+           The degree to which data can be compared over time and domain.
+          </p>
+          <p>
+           Source: Office for National Statistics
+          </p>
+         </dd>
+         <dt>
+          <a id="Cycle">
+          </a>
+          Cycle
+          <span class="lexicon-extralinks">
+           <a href="/search/node/Cycle?destination=glossary/list">
+            search for term
+           </a>
+          </span>
+         </dt>
+         <dd>
+          <p>
+           Regular or periodic fluctuations around the trend, excluding the irregular and seasonal components, revealing a succession of phases of expansion and contraction. The cyclical component can be viewed as those fluctuations in a time series which are longer than a given threshold,
+           <em>
+            e.g.
+           </em>
+           1½ years, but shorter than those attributed to the trend.
+          </p>
+          <p>
+           Source: Task force on data and metadata presentation for the OECD Short-term Economic Statistics Working Party (STESWP), Paris, 2004
+          </p>
+         </dd>
+        </dl>
+        <a id="letter_d">
+        </a>
+        <h2 class="lexicon-letter">
+         D
+        </h2>
+        <dl>
+         <dt>
+          <a id="DAINTIES">
+          </a>
+          DAINTIES
+          <span class="lexicon-extralinks">
+           <a href="/search/node/DAINTIES?destination=glossary/list">
+            search for term
+           </a>
+          </span>
+         </dt>
+         <dd>
+          <p>
+           DAINTIES is a method, developed by B. Fischer and S. Hylleberg, based on moving regression methods which makes the hypothesis that the series and/or its components cannot be modelled in a simple way across the complete span. The method uses only asymmetric filters which allow to avoid revisions but lead to the phase shifts and distortions in the estimators of the components.
+          </p>
+          <p>
+           Source: Eurostat (1998),
+           <em>
+            Seasonal Adjustment Methods. A Comparison for Industry Statistics.
+           </em>
+          </p>
+         </dd>
+         <dt>
+          <a id="Data_processing">
+          </a>
+          Data processing
+          <span class="lexicon-extralinks">
+           <a href="/search/node/Data%20processing?destination=glossary/list">
+            search for term
+           </a>
+          </span>
+         </dt>
+         <dd>
+          <p>
+           The operation performed on data in order to derive new information according to a given set of rules.
+          </p>
+          <p>
+           Source:
+           <a href="http://stats.oecd.org/glossary">
+            OECD Glossary of Statistical Terms
+           </a>
+          </p>
+         </dd>
+         <dt>
+          <a id="Data_provider">
+          </a>
+          Data provider
+          <span class="lexicon-extralinks">
+           <a href="/search/node/Data%20provider?destination=glossary/list">
+            search for term
+           </a>
+          </span>
+         </dt>
+         <dd>
+          <p>
+           A specific data set, metadata set, database or metadata repository from where data or metadata are available. The data provider is often used as a synonym for the term "source of data".
+          </p>
+          <p>
+           Source:
+           <a href="http://stats.oecd.org/glossary">
+            OECD Glossary of Statistical Terms
+           </a>
+          </p>
+         </dd>
+         <dt>
+          <a id="Data_quality">
+          </a>
+          Data quality
+          <span class="lexicon-extralinks">
+           <a href="/search/node/Data%20quality?destination=glossary/list">
+            search for term
+           </a>
+          </span>
+         </dt>
+         <dd>
+          <p>
+           Eurostat defines the quality of statistics with reference to six criteria:
+          </p>
+          <p>
+           1. Relevance: an inquiry is relevant if it meets users' needs. The identification of users and their expectations is therefore necessary. In the European context, domains for which statistics are available should reflect the needs and priorities expressed by the users of the European Statistical System (completeness).
+          </p>
+          <p>
+           2. Accuracy: accuracy is defined as the closeness between the estimated value and the (unknown) true value.
+          </p>
+          <p>
+           3. Timeliness and punctuality in disseminating results: most users want up-to-date figures which are published frequently and on time at pre-established dates.
+          </p>
+          <p>
+           4. Accessibility and clarity of the information: statistical data have most value when they are easily accessible by users, are available in the forms users desire and are adequately documented.
+          </p>
+          <p>
+           5. Comparability: statistics for a given characteristic have the greatest usefulness when they enable reliable comparisons of values taken by the characteristic across space and time. The comparability component stresses the comparison of the same statistics between countries in order to evaluate the meaning of aggregated statistics at the European level.
+          </p>
+          <p>
+           6. Coherence: when originating from a single source, statistics are coherent in that elementary concepts can be combined reliably in more complex ways. When originating from different sources, and in particular from statistical surveys of different frequencies, statistics are coherent in so far as they are based on common definitions, classifications and methodological standards.
+          </p>
+          <p>
+           Source: Eurostat (2003),
+           <em>
+            Assessment of quality in statistics - Definition of Quality in Statistics
+           </em>
+           , Working Group, Luxembourg.
+          </p>
+         </dd>
+         <dt>
+          <a id="Data_set">
+          </a>
+          Data set
+          <span class="lexicon-extralinks">
+           <a href="/search/node/Data%20set?destination=glossary/list">
+            search for term
+           </a>
+          </span>
+         </dt>
+         <dd>
+          <p>
+           Any organized collection of data.
+          </p>
+          <p>
+           Source:
+           <a href="http://stats.oecd.org/glossary">
+            OECD Glossary of Statistical Terms
+           </a>
+          </p>
+         </dd>
+         <dt>
+          <a id="Decomposition">
+          </a>
+          Decomposition
+          <span class="lexicon-extralinks">
+           <a href="/search/node/Decomposition?destination=glossary/list">
+            search for term
+           </a>
+          </span>
+         </dt>
+         <dd>
+          <p>
+           The act of splitting a time series into its constituent parts by the use of statistical methods.
+          </p>
+          <p>
+           Any particular series need not exhibit all of these but those which are present are presumed to act in an additive fashion, i.e
+           <em>
+            .
+           </em>
+           are superimposed; and the process of determining them separately is one of decomposition. In seasonal adjustment a typical time series is  regarded as composed of four parts:
+          </p>
+          <ul>
+           <li>
+            a long-term movement (trend) and oscillations of more or less regular period and amplitude about this trend (cycle);
+           </li>
+           <li>
+            a seasonal component;
+           </li>
+           <li>
+            a calendar component;
+           </li>
+           <li>
+            a random (or irregular) component.
+           </li>
+          </ul>
+          <p>
+           Source: definition based on Marriott, F.H.C. (1990),
+           <em>
+            A Dictionary of Statistical Terms
+           </em>
+           , 5th ed., Longman Scientific and Technical, Burnt Mill, Harlow, Essex, England, for the International Statistical Institute
+          </p>
+         </dd>
+        </dl>
+        <a id="letter_e">
+        </a>
+        <h2 class="lexicon-letter">
+         E
+        </h2>
+        <dl>
+         <dt>
+          <a id="Easter_effect">
+          </a>
+          Easter effect
+          <span class="lexicon-extralinks">
+           <a href="/search/node/Easter%20effect?destination=glossary/list">
+            search for term
+           </a>
+          </span>
+         </dt>
+         <dd>
+          <p>
+           The impact of Easter holiday on time series.
+          </p>
+          <p>
+           Read more:
+           <a href="http://www.census.gov/ts/papers/willsjsm2006.pdf">
+            Willis, K. (2006),
+            <em>
+             Issues in Identifying Easter Effects in Economic Time Series
+            </em>
+           </a>
+          </p>
+         </dd>
+         <dt>
+          <a id="Estimate">
+          </a>
+          Estimate
+          <span class="lexicon-extralinks">
+           <a href="/search/node/Estimate?destination=glossary/list">
+            search for term
+           </a>
+          </span>
+         </dt>
+         <dd>
+          <p>
+           The numerical value of an estimator.
+          </p>
+          <p>
+           Source: Office for National Statistics
+          </p>
+         </dd>
+         <dt>
+          <a id="Estimation">
+          </a>
+          Estimation
+          <span class="lexicon-extralinks">
+           <a href="/search/node/Estimation?destination=glossary/list">
+            search for term
+           </a>
+          </span>
+         </dt>
+         <dd>
+          <p>
+           In statistics, estimation refers to the process by which one makes inferences about a population, based on information obtained from a sample. Usually estimation concerns population parameters, like mean and standard devaition.
+          </p>
+          <p>
+           Source:
+           <a href="http://stats.oecd.org/glossary/">
+            OECD Glossary of Statistical Terms
+           </a>
+          </p>
+         </dd>
+         <dt>
+          <a id="Estimation_error">
+          </a>
+          Estimation error
+          <span class="lexicon-extralinks">
+           <a href="/search/node/Estimation%20error?destination=glossary/list">
+            search for term
+           </a>
+          </span>
+         </dt>
+         <dd>
+          <p>
+           The difference between an estimated value and the true value of a parameter or, sometimes, of a value to be predicted.
+          </p>
+          <p>
+           Source:
+           <a href="http://stats.oecd.org/glossary">
+            OECD Glossary of Statistical Terms
+           </a>
+          </p>
+         </dd>
+         <dt>
+          <a id="Estimator">
+          </a>
+          Estimator
+          <span class="lexicon-extralinks">
+           <a href="/search/node/Estimator?destination=glossary/list">
+            search for term
+           </a>
+          </span>
+         </dt>
+         <dd>
+          <p>
+           A procedure or a formula used to estimate an unknown population quantity.
+          </p>
+          <p>
+           Source: Office for National Statistics
+          </p>
+         </dd>
+         <dt>
+          <a id="European_Statistical_System">
+          </a>
+          European Statistical System
+          <span class="lexicon-extralinks">
+           <a href="/search/node/European%20Statistical%20System?destination=glossary/list">
+            search for term
+           </a>
+          </span>
+         </dt>
+         <dd>
+          <p>
+           The
+           <span style="font-weight: bold;">
+           </span>
+           European Statistical System (ESS) is the partnership comprising Eurostat, National Statistical Institutes (NSIs) and other national statistical bodies responsible in each Member State (MS) for producing and disseminating European statistics.
+          </p>
+          <p>
+           Source:
+           <a href="http://www.ons.gov.uk/ons/about-ons/what-we-do/relationships-abroad/european-statistical-system--ess-/index.html">
+            Office for National Statistics
+           </a>
+          </p>
+         </dd>
+         <dt>
+          <a id="Eurostat">
+          </a>
+          Eurostat
+          <span class="lexicon-extralinks">
+           <a href="/search/node/Eurostat?destination=glossary/list">
+            search for term
+           </a>
+          </span>
+         </dt>
+         <dd>
+          <p>
+           The Statistical Office of the European Communities. Eurostat is part of the European Commission and is responsible for the production of Community statistics.
+          </p>
+          <p>
+           Source:
+           <a href="http://stats.oecd.org/glossary">
+            OECD Glossary of Statistical Terms
+           </a>
+          </p>
+         </dd>
+        </dl>
+        <a id="letter_f">
+        </a>
+        <h2 class="lexicon-letter">
+         F
+        </h2>
+        <dl>
+         <dt>
+          <a id="Filter">
+          </a>
+          Filter
+          <span class="lexicon-extralinks">
+           <a href="/search/node/Filter?destination=glossary/list">
+            search for term
+           </a>
+          </span>
+         </dt>
+         <dd>
+          <p>
+           Any method of isolating harmonic constituents in a time series; a mathematical analogy of the “filtering” of a ray of light or sound by removing unsystematic effects and bringing out the constituent harmonics. It can be understand as a transformation of time series to extract certain frequencies like trend-cycle or seasonal frequencies. The examples of the filters are moving averages.
+          </p>
+          <p>
+           Source: Marriott, F.H.C. (1990),
+           <em>
+            A Dictionary of Statistical Terms
+           </em>
+           , 5th ed., Longman Scientific and Technical, Burnt Mill, Harlow, Essex, England, for the International Statistical Institute
+          </p>
+         </dd>
+         <dt>
+          <a id="Flow_series">
+          </a>
+          Flow series
+          <span class="lexicon-extralinks">
+           <a href="/search/node/Flow%20series?destination=glossary/list">
+            search for term
+           </a>
+          </span>
+         </dt>
+         <dd>
+          <p>
+           Time series measuring consecutive changes over a unit of time, such as monthly sales or monthly cash flows, or monthly changes in any stock series.
+          </p>
+          <p>
+           Source: United States Census Bureau
+          </p>
+         </dd>
+         <dt>
+          <a id="Forecasting">
+          </a>
+          Forecasting
+          <span class="lexicon-extralinks">
+           <a href="/search/node/Forecasting?destination=glossary/list">
+            search for term
+           </a>
+          </span>
+         </dt>
+         <dd>
+          <p>
+           Estimating values after the end of a time series using a model. Forecasting is the reverse of backcasting.
+          </p>
+          <p>
+           Source: Office for National Statistics
+          </p>
+         </dd>
+        </dl>
+        <a id="letter_g">
+        </a>
+        <h2 class="lexicon-letter">
+         G
+        </h2>
+        <dl>
+         <dt>
+          <a id="Guidelines">
+          </a>
+          Guidelines
+          <span class="lexicon-extralinks">
+           <a href="/search/node/Guidelines?destination=glossary/list">
+            search for term
+           </a>
+          </span>
+         </dt>
+         <dd>
+          <p>
+           Directions or principles used in the development, maintenance and application of rules. Guidelines are not necessarily mandatory, but are provided as an aid to interpretation and use of rules.
+          </p>
+          <p>
+           Source:
+           <a href="http://stats.oecd.org/glossary">
+            OECD Glossary of Statistical Terms
+           </a>
+          </p>
+         </dd>
+        </dl>
+        <a id="letter_h">
+        </a>
+        <h2 class="lexicon-letter">
+         H
+        </h2>
+        <dl>
+         <dt>
+          <a id="Heteroskedasticity">
+          </a>
+          Heteroskedasticity
+          <span class="lexicon-extralinks">
+           <a href="/search/node/Heteroskedasticity?destination=glossary/list">
+            search for term
+           </a>
+          </span>
+         </dt>
+         <dd>
+          <p>
+           The data sample is heteroskedastic if its standard deviations of a sample, monitored over a specific amount of time, are non-constant. Heteroskedasticity often arises in two forms, conditional and unconditional. Conditional heteroskedasticity identifies non-constant volatility when future periods of high and low volatility cannot be identified. Unconditional heteroskedasticity is used when futures periods of high and low volatility can be identified.
+          </p>
+          <p>
+           Source:
+           <a href="http://www.answers.com">
+            http://www.answers.com
+           </a>
+          </p>
+         </dd>
+         <dt>
+          <a id="Histogram">
+          </a>
+          Histogram
+          <span class="lexicon-extralinks">
+           <a href="/search/node/Histogram?destination=glossary/list">
+            search for term
+           </a>
+          </span>
+         </dt>
+         <dd>
+          <p>
+           A univariate frequency diagram in which rectangles proportional in area to the class frequencies are erected on sections of the horizontal axis, the width of each section representing the corresponding class interval of the variate.
+          </p>
+          <p>
+           Source:
+           <a href="http://stats.oecd.org/glossary">
+            OECD Glossary of Statistical Terms
+           </a>
+          </p>
+         </dd>
+        </dl>
+        <a id="letter_i">
+        </a>
+        <h2 class="lexicon-letter">
+         I
+        </h2>
+        <dl>
+         <dt>
+          <a id="Information_criteria">
+          </a>
+          Information criteria
+          <span class="lexicon-extralinks">
+           <a href="/search/node/Information%20criteria?destination=glossary/list">
+            search for term
+           </a>
+          </span>
+         </dt>
+         <dd>
+          <p>
+           Information criteria are measures of the relative goodness of fit of a statistical model. In seasonal adjustment programs they are used for selecting the optimal order of the RegARMIA model. The basic idea behind all these criteria is to obtain much explanatory power (measured by the value of the likelihood function) with only a few parameters. The model selection criteria "penalize" for using many parameters and "rewards" for a high value of the likelihood function. Some of the most known information criteria used by X-12-ARIMA are: Akaike Information Criteria (AIC), Corrected Akaike Information Criteria (AICC), Hannan-Quinn Information Criteria (HannanQuinn) and Schwarz-Bayes information criterion (BIC). TRAMO/SEATS uses
+           <a href="http://www.istat.it/strumenti/metodi/destag/software/manualdos.pdf%20.">
+            modified Schwarz-Bayes information criterion (BIC)
+           </a>
+           , i.e. BIC with some constrains aimed at increasing the parsimony and favoring balanced models, i.e., models with similar AR and MA values.
+          </p>
+          <p>
+           Source: Demetra+ User Manual
+          </p>
+          <p>
+           Read more:
+           <a href="http://www.census.gov/ts/x12a/v03/x12adocV03.pdf">
+            X-12-ARIMA Reference Manual (2007)
+           </a>
+          </p>
+         </dd>
+         <dt>
+          <a id="Irregular_component">
+          </a>
+          Irregular component
+          <span class="lexicon-extralinks">
+           <a href="/search/node/Irregular%20component?destination=glossary/list">
+            search for term
+           </a>
+          </span>
+         </dt>
+         <dd>
+          <p>
+           This component results from statistical errors or from accidental or fortuitous events that is not repetitive. For this given month or quarter, the series presents an unexpected behavior, its value being raised much more or much more low that usually at that time of the year. This component belongs to the seasonally adjusted series and can be located while observing graphically the raw series.
+          </p>
+          <p>
+           Source:
+           <a href="http://www.stat.gouv.qc.ca/clacon/eco4_97_an.htm">
+            Institut de la statistique du Québec
+           </a>
+          </p>
+         </dd>
+        </dl>
+        <a id="letter_k">
+        </a>
+        <h2 class="lexicon-letter">
+         K
+        </h2>
+        <dl>
+         <dt>
+          <a id="Kurtosis">
+          </a>
+          Kurtosis
+          <span class="lexicon-extralinks">
+           <a href="/search/node/Kurtosis?destination=glossary/list">
+            search for term
+           </a>
+          </span>
+         </dt>
+         <dd>
+          <p>
+           A term introduced by Karl Pearson in 1906, used to describe the extent to which a unimodal frequency curve is “peaked”; that is to say, the extent of the relative steepness of ascent in the neighbourhood of the mode.
+          </p>
+          <p>
+           Source:
+           <a href="http://stats.oecd.org/glossary">
+            OECD Glossary of Statistical Terms
+           </a>
+          </p>
+         </dd>
+        </dl>
+        <a id="letter_l">
+        </a>
+        <h2 class="lexicon-letter">
+         L
+        </h2>
+        <dl>
+         <dt>
+          <a id="Lag">
+          </a>
+          Lag
+          <span class="lexicon-extralinks">
+           <a href="/search/node/Lag?destination=glossary/list">
+            search for term
+           </a>
+          </span>
+         </dt>
+         <dd>
+          <p>
+           An event occurring at time
+           <strong>
+            <em>
+             t+k (k&gt;0)
+            </em>
+           </strong>
+           is said to lag behind event occurring at time
+           <strong>
+            <em>
+             t
+            </em>
+           </strong>
+           , the extent of the lag being
+           <strong>
+            <em>
+             k
+            </em>
+           </strong>
+           . An event occurring k time units before another may be regarded as having a negative lag.
+          </p>
+          <p>
+           Source:
+           <a href="http://stats.oecd.org/glossary">
+            OECD Glossary of Statistical Terms
+           </a>
+          </p>
+         </dd>
+         <dt>
+          <a id="Leap_Year">
+          </a>
+          Leap Year
+          <span class="lexicon-extralinks">
+           <a href="/search/node/Leap%20Year?destination=glossary/list">
+            search for term
+           </a>
+          </span>
+         </dt>
+         <dd>
+          <p>
+           the calendar effect  that cause regular variation because of the extra day inserted into February every four years. This effect is the non-seasonal part of the length of month/quarter effect.
+          </p>
+         </dd>
+         <dt>
+          <a id="Level_shift_outlier">
+          </a>
+          Level shift outlier
+          <span class="lexicon-extralinks">
+           <a href="/search/node/Level%20shift%20outlier?destination=glossary/list">
+            search for term
+           </a>
+          </span>
+         </dt>
+         <dd>
+          <p>
+           An abrupt and permanent change of the trend level beginning on the given date
+           <strong>
+            <em>
+             t
+             <sub>
+              0
+             </sub>
+            </em>
+           </strong>
+           .
+          </p>
+         </dd>
+        </dl>
+        <a id="letter_m">
+        </a>
+        <h2 class="lexicon-letter">
+         M
+        </h2>
+        <dl>
+         <dt>
+          <a id="Mean">
+          </a>
+          Mean
+          <span class="lexicon-extralinks">
+           <a href="/search/node/Mean?destination=glossary/list">
+            search for term
+           </a>
+          </span>
+         </dt>
+         <dd>
+          <p>
+           The sum of a set of values divided by the number of values.
+          </p>
+          <p>
+           Source: Office for National Statistics
+          </p>
+         </dd>
+         <dt>
+          <a id="Modelling">
+          </a>
+          Modelling
+          <span class="lexicon-extralinks">
+           <a href="/search/node/Modelling?destination=glossary/list">
+            search for term
+           </a>
+          </span>
+         </dt>
+         <dd>
+          <p>
+           The construction of physical, conceptual or mathematical simulations of the real world. Models help to show relationships between processes (physical, economic or social) and may be used to predict the effects of changes in land use.
+          </p>
+          <p>
+           Source:
+           <a href="http://stats.oecd.org/glossary">
+            OECD Glossary of Statistical Terms
+           </a>
+          </p>
+         </dd>
+         <dt>
+          <a id="Moving_average">
+          </a>
+          Moving average
+          <span class="lexicon-extralinks">
+           <a href="/search/node/Moving%20average?destination=glossary/list">
+            search for term
+           </a>
+          </span>
+         </dt>
+         <dd>
+          <p>
+           A moving average is a method for smoothing time series by averaging (with or without weights) a fixed number of consecutive terms. The averaging “moves” over time, in that each data point of the series is sequentially included in the averaging, while the oldest data point in the span of the average is removed. In general, the longer the span of the average, the smoother is the resulting series.
+           <em>
+           </em>
+           Moving averages are used to smooth fluctuations in time series or to identify time series components, such as the trend, the cycle, the seasonal, etc. A moving average replaces each value of a time series by a (weighted) average of
+           <strong>
+            <em>
+             p
+            </em>
+           </strong>
+           preceding values, the given value, and
+           <strong>
+            <em>
+             f
+            </em>
+           </strong>
+           following values of a series. If
+           <strong>
+            <em>
+             p = f
+            </em>
+           </strong>
+           the moving average is said to be centered.The moving average is said to be symmetric if it is centered, and if for each
+           <strong>
+            <em>
+             k =1, 2, ….., p = f
+            </em>
+           </strong>
+           , the weight of the
+           <em>
+            <strong>
+             k
+            </strong>
+            -
+           </em>
+           th preceding value is equal to the weight of the
+           <em>
+            <strong>
+             k
+            </strong>
+            -
+           </em>
+           th following one. The moving average is not defined for the first
+           <strong>
+            <em>
+             p
+            </em>
+           </strong>
+           and the last
+           <strong>
+            <em>
+             f
+            </em>
+           </strong>
+           time series values. In order to compute the moving average for those values, the series must be backcasted and forecasted.
+           <em>
+           </em>
+          </p>
+          <p>
+           Source: Task force on data and metadata presentation for the OECD Short-term Economic Statistics Working Party (STESWP), Paris, 2004
+          </p>
+         </dd>
+         <dt>
+          <a id="Moving_holiday_effects">
+          </a>
+          Moving holiday effects
+          <span class="lexicon-extralinks">
+           <a href="/search/node/Moving%20holiday%20effects?destination=glossary/list">
+            search for term
+           </a>
+          </span>
+         </dt>
+         <dd>
+          <p>
+           Systematic changes in the values of a time series that are associated with the timing of moving holidays, i.e. holidays whose dates vary from year to year, such as Easter, Passover, Ramadan, Chinese New Year, and U. S. Labor Day. Estimates of one or a combination of such effects define the moving holiday component of time series.
+          </p>
+          <p>
+           Source:
+           <a href="http://www.census.gov">
+            United States Census Bureau
+           </a>
+          </p>
+         </dd>
+        </dl>
+        <a id="letter_o">
+        </a>
+        <h2 class="lexicon-letter">
+         O
+        </h2>
+        <dl>
+         <dt>
+          <a id="Observation">
+          </a>
+          Observation
+          <span class="lexicon-extralinks">
+           <a href="/search/node/Observation?destination=glossary/list">
+            search for term
+           </a>
+          </span>
+         </dt>
+         <dd>
+          <p>
+           An observation is the value, at a particular period, of a particular variable.
+          </p>
+          <p>
+           Source:
+           <a href="http://stats.oecd.org/glossary">
+            OECD Glossary of Statistical Terms
+           </a>
+          </p>
+         </dd>
+         <dt>
+          <a id="Original_data">
+          </a>
+          Original data
+          <span class="lexicon-extralinks">
+           <a href="/search/node/Original%20data?destination=glossary/list">
+            search for term
+           </a>
+          </span>
+         </dt>
+         <dd>
+          <p>
+           Original data in the context of seasonal adjustment refers to statistical information that has not undergone seasonal adjustment process.
+          </p>
+         </dd>
+         <dt>
+          <a id="Outliers">
+          </a>
+          Outliers
+          <span class="lexicon-extralinks">
+           <a href="/search/node/Outliers?destination=glossary/list">
+            search for term
+           </a>
+          </span>
+         </dt>
+         <dd>
+          <p>
+           Outliers are defined as the abrupt changes that cannot be explained by the underlying normality of the Arima model. Three outliers’ types can be automatically detected by TRAMO/SEATS and X-12-ARIMA methods:
+          </p>
+          <p>
+           •    additive outlier (AO) which affects an isolated observation;
+           <br />
+           •    level shifts (LS), which implies a step change in the mean level of the series;
+           <br />
+           •    temporary change (TC), which describes a temporary effect on the level of series after a certain point in time.
+          </p>
+          <p>
+           Source: Demetra+ User Manual
+           <br />
+          </p>
+         </dd>
+         <dt>
+          <a id="Over-smoothing">
+          </a>
+          Over-smoothing
+          <span class="lexicon-extralinks">
+           <a href="/search/node/Over-smoothing?destination=glossary/list">
+            search for term
+           </a>
+          </span>
+         </dt>
+         <dd>
+          <p>
+           Smoothing that removes from the time series not only seasonal and calendar movements but also (to some extend) other types of fluctuations.
+          </p>
+         </dd>
+        </dl>
+        <a id="letter_p">
+        </a>
+        <h2 class="lexicon-letter">
+         P
+        </h2>
+        <dl>
+         <dt>
+          <a id="Partial_correlation">
+          </a>
+          Partial correlation
+          <span class="lexicon-extralinks">
+           <a href="/search/node/Partial%20correlation?destination=glossary/list">
+            search for term
+           </a>
+          </span>
+         </dt>
+         <dd>
+          <p>
+           For a time series, the partial autocorrelation between
+           <strong>
+            <em>
+             x
+             <sub>
+              t
+             </sub>
+            </em>
+           </strong>
+           and
+           <strong>
+            <em>
+             x
+             <sub>
+              t-i
+             </sub>
+            </em>
+           </strong>
+           is defined as the conditional correlation between
+           <strong>
+            <em>
+             x
+             <sub>
+              t
+             </sub>
+            </em>
+           </strong>
+           and
+           <strong>
+            <em>
+             x
+             <sub>
+              t-i
+             </sub>
+            </em>
+           </strong>
+           , conditional on
+           <strong>
+            <em>
+             x
+             <sub>
+              t-i+1
+             </sub>
+            </em>
+            , ... ,
+            <em>
+             x
+             <sub>
+              t-1
+             </sub>
+            </em>
+           </strong>
+           , the set of observations that come between the time points
+           <strong>
+            <em>
+             t
+            </em>
+           </strong>
+           and
+           <strong>
+            <em>
+             t−h
+            </em>
+           </strong>
+           .
+          </p>
+          <p>
+           Source:
+           <a href="https://onlinecourses.science.psu.edu">
+            https://onlinecourses.science.psu.edu
+           </a>
+          </p>
+         </dd>
+         <dt>
+          <a id="Phase_effect">
+          </a>
+          Phase effect
+          <span class="lexicon-extralinks">
+           <a href="/search/node/Phase%20effect?destination=glossary/list">
+            search for term
+           </a>
+          </span>
+         </dt>
+         <dd>
+          <p>
+           Phase effect indicates how frequency components are shifted in time by the filter applied to the time series. Therefore this effect measures the difference in detecting turning points between original and seasonally adjusted data (or trend-cycle) in terms of period (month or quarter).
+          </p>
+          <p>
+           <strong>
+            Source:
+           </strong>
+           Demetra+ User Manual
+          </p>
+         </dd>
+         <dt>
+          <a id="Pre-treatment">
+          </a>
+          Pre-treatment
+          <span class="lexicon-extralinks">
+           <a href="/search/node/Pre-treatment?destination=glossary/list">
+            search for term
+           </a>
+          </span>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <a id="letter_r">
+        </a>
+        <h2 class="lexicon-letter">
+         R
+        </h2>
+        <dl>
+         <dt>
+          <a id="Ramp_effect_outlier">
+          </a>
+          Ramp effect outlier
+          <span class="lexicon-extralinks">
+           <a href="/search/node/Ramp%20effect%20outlier?destination=glossary/list">
+            search for term
+           </a>
+          </span>
+         </dt>
+         <dd>
+          <p>
+           Ramp effect is a linear increase or decrease in the level of the series over a specified time interval
+           <em>
+            <strong>
+             t
+             <sub>
+              0
+             </sub>
+            </strong>
+           </em>
+           to
+           <strong>
+            <em>
+             t
+             <sub>
+              1
+             </sub>
+            </em>
+           </strong>
+           . It can be viewed as level shift outlier which effect is spread over few periods.
+          </p>
+         </dd>
+         <dt>
+          <a id="Ratio">
+          </a>
+          Ratio
+          <span class="lexicon-extralinks">
+           <a href="/search/node/Ratio?destination=glossary/list">
+            search for term
+           </a>
+          </span>
+         </dt>
+         <dd>
+          <p>
+           A ratio is a number that expresses the relative size of two other numbers. The result of dividing a number
+           <strong>
+            <em>
+             X
+            </em>
+           </strong>
+           by another number
+           <strong>
+            <em>
+             Y
+            </em>
+           </strong>
+           is the ratio of
+           <strong>
+            <em>
+             X
+            </em>
+           </strong>
+           to
+           <em>
+            <strong>
+             Y
+            </strong>
+            .
+           </em>
+           Ratios are useful for analysing the composition of two sets of events.
+          </p>
+          <p>
+           Source: Palmore, J., Gardner, R.W. (1994),
+           <em>
+            Measuring mortality, fertility and natural increase: a self teaching guide to elementary measures
+           </em>
+           , East-West Centre, Honolulu, Hawaii.
+          </p>
+         </dd>
+         <dt>
+          <a id="RegARIMA_models">
+          </a>
+          RegARIMA models
+          <span class="lexicon-extralinks">
+           <a href="/search/node/RegARIMA%20models?destination=glossary/list">
+            search for term
+           </a>
+          </span>
+         </dt>
+         <dd>
+          <p>
+           In the seasonal adjustment context, a hybrid models in which some features of the time series, such as moving holiday, trading day and outlier effects, are modelled with linear regression variables while the remaining features (those of the regression residuals, including trend, cycle and seasonal components) are modelled with a seasonal ARIMA model.
+          </p>
+          <p>
+           Source:
+           <a href="http://www.census.gov">
+            United States Census Bureau
+           </a>
+          </p>
+         </dd>
+         <dt>
+          <a id="Regression">
+          </a>
+          Regression
+          <span class="lexicon-extralinks">
+           <a href="/search/node/Regression?destination=glossary/list">
+            search for term
+           </a>
+          </span>
+         </dt>
+         <dd>
+          <p>
+           The process of determining a relationship which expresses one variable as a function of one or more other variables.
+          </p>
+          <p>
+           Source: Office for National Statistics
+          </p>
+          <p>
+          </p>
+         </dd>
+         <dt>
+          <a id="Regression_exogenous_variables">
+          </a>
+          Regression (exogenous) variables
+          <span class="lexicon-extralinks">
+           <a href="/search/node/Regression%20%28exogenous%29%20variables?destination=glossary/list">
+            search for term
+           </a>
+          </span>
+         </dt>
+         <dd>
+          <p>
+           Variables that appear in an economic/econometric model, but are not explained by that model (i.e. they are taken as given by the model).
+          </p>
+          <p>
+           Source:
+           <a href="http://stats.oecd.org/glossary">
+            OECD Glossary of Statistical Terms
+           </a>
+          </p>
+         </dd>
+         <dt>
+          <a id="Relevance">
+          </a>
+          Relevance
+          <span class="lexicon-extralinks">
+           <a href="/search/node/Relevance?destination=glossary/list">
+            search for term
+           </a>
+          </span>
+         </dt>
+         <dd>
+          <p>
+           The degree to which the statistical product meets user needs for both coverage and content.
+          </p>
+          <p>
+           Source: Office for National Statistics
+          </p>
+         </dd>
+         <dt>
+          <a id="Residual">
+          </a>
+          Residual
+          <span class="lexicon-extralinks">
+           <a href="/search/node/Residual?destination=glossary/list">
+            search for term
+           </a>
+          </span>
+         </dt>
+         <dd>
+          <p>
+           The difference between an observed random value and its mean or an estimate of its mean.
+          </p>
+          <p>
+           Source: Office for National Statistics
+          </p>
+         </dd>
+         <dt>
+          <a id="Residual_seasonality">
+          </a>
+          Residual seasonality
+          <span class="lexicon-extralinks">
+           <a href="/search/node/Residual%20seasonality?destination=glossary/list">
+            search for term
+           </a>
+          </span>
+         </dt>
+         <dd>
+          <p>
+           Statistically significant seasonal movements in seasonally adjusted time series.
+          </p>
+         </dd>
+         <dt>
+          <a id="Revision_policy">
+          </a>
+          Revision policy
+          <span class="lexicon-extralinks">
+           <a href="/search/node/Revision%20policy?destination=glossary/list">
+            search for term
+           </a>
+          </span>
+         </dt>
+         <dd>
+          <p>
+           Set of policies, aimed at ensuring the transparency of disseminated data whereby preliminary data are compiled that are later revised when more and better source data become available.
+          </p>
+          <p>
+           Source:
+           <a href="http://stats.oecd.org/glossary/detail.asp?ID=6146">
+            OECD Glossary of Statistical Terms
+           </a>
+          </p>
+          <p>
+          </p>
+         </dd>
+         <dt>
+          <a id="Revisions">
+          </a>
+          Revisions
+          <span class="lexicon-extralinks">
+           <a href="/search/node/Revisions?destination=glossary/list">
+            search for term
+           </a>
+          </span>
+         </dt>
+         <dd>
+          <p>
+           <font face="Arial">
+            <font size="-1">
+             Data revisions are defined broadly as any change in a value of a statistic released to the public by an official national statistical agency.
+            </font>
+           </font>
+          </p>
+          <p>
+           Source :
+           <a href="http://stats.oecd.org/glossary/detail.asp?ID=6146">
+            OECD Glossary of Statistical Terms
+           </a>
+          </p>
+          <p>
+          </p>
+         </dd>
+        </dl>
+        <a id="letter_s">
+        </a>
+        <h2 class="lexicon-letter">
+         S
+        </h2>
+        <dl>
+         <dt>
+          <a id="SABL">
+          </a>
+          SABL
+          <span class="lexicon-extralinks">
+           <a href="/search/node/SABL?destination=glossary/list">
+            search for term
+           </a>
+          </span>
+         </dt>
+         <dd>
+          <p>
+           SABL (Seasonal Adjustment – Bell Laboratories) is a seasonal adjustment procedure developed by W. Cleveland, D.M. Dunn and I.J. Terpenning. The principal idea of SABL is to minimize the lack of stability of the seasonal component. Assuming the additive decomposition, the estimation of the trend-cycle, seasonal and irregular components is performed using resistant-smoothing techniques. The smoothers consist of initial resistant smooth using moving medians, followed by one or more linear smoothes. The initial step is performed to adjust time series for outliers.
+          </p>
+          <p>
+           Source:
+           <a href="http://www.census.gov/ts/papers/Conference1978/ClevelandDunnTerpenning1978.pdf">
+            Cleveland, W., Dunn, D.M., Terpenning, I.J. (1978),
+            <em>
+             SABL: A Resistant Reasonable Adjustment Procedure with Graphical Method for Interpretation and Diagnostic
+            </em>
+            , in: A. Zellner, (1978), Seasonal Analysis of Economic Time Series, NBER Books, National Bureau of Economic Research, Inc, number zell78-1.
+           </a>
+          </p>
+         </dd>
+         <dt>
+          <a id="Sampling_error">
+          </a>
+          Sampling error
+          <span class="lexicon-extralinks">
+           <a href="/search/node/Sampling%20error?destination=glossary/list">
+            search for term
+           </a>
+          </span>
+         </dt>
+         <dd>
+          <p>
+           That part of the difference between a population value and an estimate thereof, derived from a random sample, which is due to the fact that only a sample of values is observed; as distinct from errors due to imperfect selection, bias in response or estimation, errors of observation and recording, etc. The totality of sampling errors in all possible samples of the same size generates the sampling distribution of the statistic which is being used to estimate the parent value.Sampling errors arise from the fact that not all units of the targeted population are enumerated, but only a sample of them. Therefore, the information collected on the units in the sample may not perfectly reflect the information which could have been collected on the whole population. The difference is the sampling error (Eurostat, Quality Glossary).
+          </p>
+          <p>
+           Source:
+           <a href="http://www.oecd.org/dataoecd/46/17/37671574.pdf">
+            OECD Data and Metadata Reporting and Presentation Handbook
+           </a>
+          </p>
+          <p>
+          </p>
+         </dd>
+         <dt>
+          <a id="SEASABS">
+          </a>
+          SEASABS
+          <span class="lexicon-extralinks">
+           <a href="/search/node/SEASABS?destination=glossary/list">
+            search for term
+           </a>
+          </span>
+         </dt>
+         <dd>
+          <p>
+           SEASABS is the seasonal adjustment package used by the Australian Bureau of Statistics. It is highly automatic procedure, based on X-11 method, which do not require any detailed knowledge of the X11 method to appropriately seasonally adjust a time series.
+          </p>
+          <p>
+           Source:
+           <a href="http://www.abs.gov.au/websitedbs/d3310114.nsf/4a256353001af3ed4b2562bb00121564/c890aa8e65957397ca256ce10018c9d8%21OpenDocument#HOW%20DOES%20SEASABS%20WORK%3F">
+            Australian Bureau of Statistics
+           </a>
+          </p>
+         </dd>
+         <dt>
+          <a id="Seasonal_adjustment">
+          </a>
+          Seasonal adjustment
+          <span class="lexicon-extralinks">
+           <a href="/search/node/Seasonal%20adjustment?destination=glossary/list">
+            search for term
+           </a>
+          </span>
+         </dt>
+         <dd>
+          <p>
+           Seasonal adjustment is a statistical method for removing the effects of recurring seasonal influences which have been observed in an economic time series , thus showing non-seasonal movements more clearly. Statistically, seasonal adjustment takes place after a time series has already been cleared of calendar effects by way of working-day adjustment.
+          </p>
+          <p>
+           Source :
+           <a target="_blank" href="http://epp.eurostat.ec.europa.eu/statistics_explained/index.php/Glossary:Seasonal_adjustment">
+            Eurostat
+           </a>
+          </p>
+         </dd>
+         <dt>
+          <a id="Seasonal_break">
+          </a>
+          Seasonal break
+          <span class="lexicon-extralinks">
+           <a href="/search/node/Seasonal%20break?destination=glossary/list">
+            search for term
+           </a>
+          </span>
+         </dt>
+         <dd>
+          <p>
+           A sudden and sustained change in the seasonal pattern of time series. According to Statistics New Zealand, "i
+           <em>
+            f the seasonal pattern changes abruptly and this is not modelled
+            <br />
+            properly the seasonally adjusted series produced by deseasonalising the actual series using this incorrect seasonal model will be misleading. The seasonally adjusted series
+            <br />
+            will most likely appear more volatile over the years immediately before and after the seasonal breaks as the seasonal factors for the months affected by the break will not be well estimated over that period
+           </em>
+           ".
+          </p>
+          <p>
+           Source: Statistics New Zealand, Office for National Statistics
+          </p>
+         </dd>
+         <dt>
+          <a id="Seasonal_component">
+          </a>
+          Seasonal component
+          <span class="lexicon-extralinks">
+           <a href="/search/node/Seasonal%20component?destination=glossary/list">
+            search for term
+           </a>
+          </span>
+         </dt>
+         <dd>
+          <p>
+           Part of a time series undergoing specific variations at certain moments during the year which come from these recurring ups and downs. This component is extracted from the series in order to produce the seasonally adjusted series. Indeed, these seasonal weavings do not give any indication as to what is the current economic trend of the series.
+          </p>
+          <p>
+           Source:
+           <a href="http://www.stat.gouv.qc.ca/clacon/eco4_97_an.htm">
+            Institut de la statistique du Québec
+           </a>
+          </p>
+         </dd>
+         <dt>
+          <a id="Seasonal_pattern">
+          </a>
+          Seasonal pattern
+          <span class="lexicon-extralinks">
+           <a href="/search/node/Seasonal%20pattern?destination=glossary/list">
+            search for term
+           </a>
+          </span>
+         </dt>
+         <dd>
+          <p>
+           A regular movement observed in time series, that repeat within the year at given time points each year with similar intensity in the same season.
+          </p>
+         </dd>
+         <dt>
+          <a id="Seasonal_variation">
+          </a>
+          Seasonal variation
+          <span class="lexicon-extralinks">
+           <a href="/search/node/Seasonal%20variation?destination=glossary/list">
+            search for term
+           </a>
+          </span>
+         </dt>
+         <dd>
+          <p>
+           <font face="Arial">
+            <font size="-1">
+             In time series, that part of the movement which is assigned to the effect of the seasons on the year, e.g. seasonal variation in rainfall.
+            </font>
+           </font>
+          </p>
+          <p>
+           <font face="Arial">
+            <font size="-1">
+             Source:
+            </font>
+           </font>
+           <a href="http://stats.oecd.org/glossary/detail.asp?ID=3838">
+            OECD Glossary of Statistical Terms
+           </a>
+          </p>
+         </dd>
+         <dt>
+          <a id="Seasonality">
+          </a>
+          Seasonality
+          <span class="lexicon-extralinks">
+           <a href="/search/node/Seasonality?destination=glossary/list">
+            search for term
+           </a>
+          </span>
+         </dt>
+         <dd>
+          <p>
+           Seasonality is defined as movements observed in time series, that repeat within the year at given time points each year with similar intensity in the same season. It can be observed in time series that frequency is lower than one year. According to the Hylleberg (1992), seasonality is the systematic, although not necessarily regular, intra - year movement caused by the changes of the weather, the calendar, and timing of decisions, directly or indirectly through the production and consumption decisions made by the agent of the economy.
+          </p>
+         </dd>
+         <dt>
+          <a id="Significance">
+          </a>
+          Significance
+          <span class="lexicon-extralinks">
+           <a href="/search/node/Significance?destination=glossary/list">
+            search for term
+           </a>
+          </span>
+         </dt>
+         <dd>
+          <p>
+           <font face="Arial">
+            <font size="-1">
+             An effect is said to be significant if the value of the statistic used to test it lies outside acceptable limits, that is to say, if the hypothesis that the effect is not present is rejected. A test of significance is one which, by use of a test statistic, purports to provide a test of the hypothesis that the effect is absent. By extension the critical values of the statistics are themselves called significant.
+            </font>
+           </font>
+          </p>
+          <p>
+           Source:
+           <a href="http://stats.oecd.org/glossary/">
+            OECD Glossary of Statistical Terms
+           </a>
+          </p>
+         </dd>
+         <dt>
+          <a id="Spectral_analysis">
+          </a>
+          Spectral analysis
+          <span class="lexicon-extralinks">
+           <a href="/search/node/Spectral%20analysis?destination=glossary/list">
+            search for term
+           </a>
+          </span>
+         </dt>
+         <dd>
+          <p>
+           The analysis of the variation of the time series in the frequency domain employing the spectral density function or the spectrum.
+          </p>
+          <p>
+           Source:
+           <a href="http://www.ausstats.abs.gov.au/mwg-internal/de5fs23hu73ds/progress?id=Am8b+OAh8Z">
+            Trevin, D. (2003),
+            <em>
+             A Guide to Interpreting Time Series – Monitoring Trends
+            </em>
+            , Australian Bureau of Statistics, Information Paper
+           </a>
+          </p>
+         </dd>
+         <dt>
+          <a id="Spectrum">
+          </a>
+          Spectrum
+          <span class="lexicon-extralinks">
+           <a href="/search/node/Spectrum?destination=glossary/list">
+            search for term
+           </a>
+          </span>
+         </dt>
+         <dd>
+          <p>
+           The Fourier transformation of the autocovariance function of a stationary series. The area under the spectrum is equal to the variance of the series.
+          </p>
+         </dd>
+         <dt>
+          <a id="STAMP">
+          </a>
+          STAMP
+          <span class="lexicon-extralinks">
+           <a href="/search/node/STAMP?destination=glossary/list">
+            search for term
+           </a>
+          </span>
+         </dt>
+         <dd>
+          <div>
+           STAMP (Structural Time Series Analyser, Modeller and Predictor) is a package, developed by Siem Jan Koopman et all, designed to model and forecast time series models with unobserbed components such as trend, seasonal, cycle and irregular. It is based on structural time series model that uses Kalman filtering. This method uses regression based approach with time varying parameters.
+          </div>
+          <p>
+           Read more:
+           <a href="http://stamp-software.com/">
+            http://stamp-software.com/
+           </a>
+          </p>
+         </dd>
+         <dt>
+          <a id="Stationary">
+          </a>
+          Stationary
+          <span class="lexicon-extralinks">
+           <a href="/search/node/Stationary?destination=glossary/list">
+            search for term
+           </a>
+          </span>
+         </dt>
+         <dd>
+          <p>
+           A time series in which the statistical properties (distribution and joint distributions, for example) do not change over time. In practice, this definition is somewhat weakened and a time series is deemed to be stationary if the main properties of interest (mean, variance, autocorrelation, for example) remain unchanged over time.
+          </p>
+          <p>
+           Source: Office for National Statistics
+          </p>
+          <p>
+          </p>
+         </dd>
+         <dt>
+          <a id="Statistical_indicator">
+          </a>
+          Statistical indicator
+          <span class="lexicon-extralinks">
+           <a href="/search/node/Statistical%20indicator?destination=glossary/list">
+            search for term
+           </a>
+          </span>
+         </dt>
+         <dd>
+          <p>
+           A statistical indicator is a data element that represents statistical data for a specified time, place, and other characteristics.
+          </p>
+          <p>
+           Source: Economic Commission for Europe of the United Nations, (2000),
+           <em>
+            Terminology on Statistical Metadata
+           </em>
+           , Conference of European Statisticians Statistical Standards and Studies, No. 53, UNECE, Geneva, 2000.
+          </p>
+         </dd>
+         <dt>
+          <a id="STL">
+          </a>
+          STL
+          <span class="lexicon-extralinks">
+           <a href="/search/node/STL?destination=glossary/list">
+            search for term
+           </a>
+          </span>
+         </dt>
+         <dd>
+          <p>
+           STL is a filtering procedure for decomposing a time series into trend, seasonal, and remainder components. STL has a simple design that consists of a sequence of applications of the loess smoother; the simplicity allows analysis of the properties of the procedure and allows fast computation, even for very long time series and large amounts of trend and seasonal smoothing. Other features of STL are specification of amounts of seasonal and trend smoothing that range, in a nearly continuous way, from a very small amount of smoothing to a very large amount; robust estimates of the trend and seasonal components that are not distorted by aberrant behavior in the data; specification of the period of the seasonal component to any integer multiple of the time sampling interval greater than one; and the ability to decompose time series with missing values. The procedure has been developed by Statistics Sweden.
+          </p>
+          <p>
+           Source:
+           <a href="http://cs.wellesley.edu/mwg-internal/de5fs23hu73ds/progress?id=B+bWIswZaI">
+            Cleveland, B., Cleveland, W.S., McRae, J.E., Terpenning, I. (1990),
+            <em>
+             A Seasonal-Trend Decomposition Procedure Based on Losses
+            </em>
+            , Journal of Official Statistics, Vol. 6. No. 1, pp. 3-73, Statistics Sweden.
+           </a>
+          </p>
+         </dd>
+         <dt>
+          <a id="Stock_series">
+          </a>
+          Stock series
+          <span class="lexicon-extralinks">
+           <a href="/search/node/Stock%20series?destination=glossary/list">
+            search for term
+           </a>
+          </span>
+         </dt>
+         <dd>
+          <p>
+           <font face="Arial">
+            <font size="-1">
+             Statistical data presented as stock series/data are measured at the end of the reference period, for example, money supply data which can refer to an observation on the last working day of the reference period.
+            </font>
+           </font>
+          </p>
+          <p>
+           Source:
+           <a href="http://stats.oecd.org/glossary">
+            OECD Glossary of Statistical Terms
+           </a>
+          </p>
+         </dd>
+        </dl>
+        <a id="letter_t">
+        </a>
+        <h2 class="lexicon-letter">
+         T
+        </h2>
+        <dl>
+         <dt>
+          <a id="Temporary_transient_change">
+          </a>
+          Temporary (transient) change
+          <span class="lexicon-extralinks">
+           <a href="/search/node/Temporary%20%28transient%29%20change?destination=glossary/list">
+            search for term
+           </a>
+          </span>
+         </dt>
+         <dd>
+          <p>
+           An abrupt and temporary change of the level of time series beginning on the given date
+           <em>
+            t
+            <sub>
+             0.
+            </sub>
+           </em>
+           The effect of temporarary change is not permanent but decays gradually.
+          </p>
+         </dd>
+         <dt>
+          <a id="Time_Series">
+          </a>
+          Time Series
+          <span class="lexicon-extralinks">
+           <a href="/search/node/Time%20Series?destination=glossary/list">
+            search for term
+           </a>
+          </span>
+         </dt>
+         <dd>
+          <p>
+           Time series  is a sequence of observations collected typically at regular time instants spaced at uniform time intervals. There are two groups of methods used in time series analysis: frequency-domain methods and time-domain methods. The principal goals of time series analysis are: identification the nature of the time series and prediction of future development of the time series. The seasonal adjustment methods are useful for achieving both of these aims.
+          </p>
+         </dd>
+         <dt>
+          <a id="Trading_day_effects">
+          </a>
+          Trading day effects
+          <span class="lexicon-extralinks">
+           <a href="/search/node/Trading%20day%20effects?destination=glossary/list">
+            search for term
+           </a>
+          </span>
+         </dt>
+         <dd>
+          <p>
+           Systematic effects in monthly time series related to changes in the day-of-week composition of each period. In case of monthly flow time series (monthly accumulations of daily activity), the increases or decreases from average day-of-week activity associated with the days that occur five times in the month in a given year are important (if they are days of high sales volumes, the monthly value will be inflated, etc.) For montly stock series, such as end-of-month inventories, the extent to which inventories tend to rise or fall on the day of measurement (e.g. the last day of the month) can have an impact that is different from year to year. Attempts to measure analogous effects in quarterly series are seldom successful. A series of estimated trading day effects defines a trading day component for the time series.
+          </p>
+          <p>
+           Source:
+           <a href="http://www.census.gov">
+            United States Census Bureau
+           </a>
+          </p>
+         </dd>
+         <dt>
+          <a id="TRAMOSEATS">
+          </a>
+          TRAMO/SEATS
+          <span class="lexicon-extralinks">
+           <a href="/search/node/TRAMO/SEATS?destination=glossary/list">
+            search for term
+           </a>
+          </span>
+         </dt>
+         <dd>
+          <p>
+           TRAMO/SEATS is a model-based seasonal adjustment method developed by Victor GOMEZ and Agustin MARAVALL (Bank of Spain). It consists of two linked programs: TRAMO and SEATS. TRAMO ("Time Series Regression with ARIMA Noise, Missing Observations, and Outliers") performs estimation, forecasting, and interpolation of regression models with missing observations and ARIMA errors, in the presence of possibly several types of outliers. SEATS ("Signal Extraction in ARIMA Time Series") performs an ARIMA-based decomposition of an observed time series into unobserved components. Both programs are supported by Bank of Spain. More information on TRAMO/SEATS can be found in
+           <a href="http://www.bde.es">
+            www.bde.es
+           </a>
+           .
+          </p>
+         </dd>
+         <dt>
+          <a id="Trend-cycle">
+          </a>
+          Trend-cycle
+          <span class="lexicon-extralinks">
+           <a href="/search/node/Trend-cycle?destination=glossary/list">
+            search for term
+           </a>
+          </span>
+         </dt>
+         <dd>
+          <p>
+           Trend-cycle is a time series component that gathers two parts: a long-term trend from general phenomena of growth or decrease usually linked to population or economic activity and to a rhythmic cycle from an economic variation suitable for economic fluctuations which, traditionally, go from expansion to recession, this cycle's length being unknown but longer than one year.
+          </p>
+          <p>
+           Source:
+           <a href="http://www.stat.gouv.qc.ca/clacon/eco4_97_an.htm">
+            Institut de la statistique du Québec.
+           </a>
+          </p>
+         </dd>
+         <dt>
+          <a id="Trough">
+          </a>
+          Trough
+          <span class="lexicon-extralinks">
+           <a href="/search/node/Trough?destination=glossary/list">
+            search for term
+           </a>
+          </span>
+         </dt>
+         <dd>
+          <p>
+           The minimum point attained within a repetition of a trend-cycle or seasonal movements.
+          </p>
+          <p>
+           Source:
+           <a href="http://www.ausstats.abs.gov.au/mwg-internal/de5fs23hu73ds/progress?id=Am8b+OAh8Z">
+            Trevin, D. (2003),
+            <em>
+             A Guide to Interpreting Time Series – Monitoring Trends, Australian Bureau of Statistics
+            </em>
+            , Information Paper
+           </a>
+          </p>
+         </dd>
+         <dt>
+          <a id="TSW">
+          </a>
+          TSW
+          <span class="lexicon-extralinks">
+           <a href="/search/node/TSW?destination=glossary/list">
+            search for term
+           </a>
+          </span>
+         </dt>
+         <dd>
+          <p>
+           Program TSW (TRAMO SEATS for Windows ) is a Windows application based on programs TRAMO and SEATS and developed at the Bank of Spain by Gianluca Caporello and Agustín Maravall. TSW can be downloaded from
+           <a href="http://www.bde.es/webbde/en/secciones/servicio/software/programas.html">
+            http://www.bde.es/webbde/en/secciones/servicio/software/programas.html
+           </a>
+           .
+          </p>
+         </dd>
+         <dt>
+          <a id="Turning_point">
+          </a>
+          Turning point
+          <span class="lexicon-extralinks">
+           <a href="/search/node/Turning%20point?destination=glossary/list">
+            search for term
+           </a>
+          </span>
+         </dt>
+         <dd>
+          <p>
+           In a time series that is a peak or trough. It is a point where the series changes from increasing to decreasing (or vice versa). In the growth cycles analysis, a turning point occurs in a series when the deviation-from-trend series reached a local maximum (peak) or a local minimum (trough). Growth cycle peaks (end of expansion) occur when activity is furthest above its trend level. Growth cycle troughs (end of contraction/recession) occur when activity is furthest below its trend level.
+          </p>
+          <p>
+           Source: Office for National Statistics
+          </p>
+         </dd>
+        </dl>
+        <a id="letter_v">
+        </a>
+        <h2 class="lexicon-letter">
+         V
+        </h2>
+        <dl>
+         <dt>
+          <a id="Variable">
+          </a>
+          Variable
+          <span class="lexicon-extralinks">
+           <a href="/search/node/Variable?destination=glossary/list">
+            search for term
+           </a>
+          </span>
+         </dt>
+         <dd>
+          <p>
+           A variable is a characteristic of a unit being observed that may assume more than one of a set of values to which a numerical measure or a category from a classification can be assigned (e.g. income, age, weight, etc.).
+          </p>
+         </dd>
+         <dt>
+          <a id="Variance">
+          </a>
+          Variance
+          <span class="lexicon-extralinks">
+           <a href="/search/node/Variance?destination=glossary/list">
+            search for term
+           </a>
+          </span>
+         </dt>
+         <dd>
+          <p>
+           <font face="Arial">
+            <font size="-1">
+             The variance is the mean square deviation of the variable around the average value. It reflects the dispersion of the empirical values around its mean.
+            </font>
+           </font>
+          </p>
+          <p>
+           Source:
+           <a href="http://stats.oecd.org/glossary/">
+            OECD Glossary of Statistical Terms
+           </a>
+          </p>
+         </dd>
+        </dl>
+        <a id="letter_w">
+        </a>
+        <h2 class="lexicon-letter">
+         W
+        </h2>
+        <dl>
+         <dt>
+          <a id="Working-day_adjustment">
+          </a>
+          Working-day adjustment
+          <span class="lexicon-extralinks">
+           <a href="/search/node/Working-day%20adjustment?destination=glossary/list">
+            search for term
+           </a>
+          </span>
+         </dt>
+         <dd>
+          <p>
+           Working-day adjustment is a statistical method for removing the calendar effect from an economic time series. The calendar effect is the variation caused by the changing number of working days in different months or other time periods (quarters, years).
+          </p>
+          <p>
+           Working day adjustment is mainly used in the calculation of short-term statistics (STS), for converting gross figures or indices into their working-day adjusted equivalent. In order to adjust a figure or an index, the calendar nature of a given month is taken into account and calendar effects are removed, whatever their nature. The number of working days for a given month may depend on:
+          </p>
+          <p>
+           •    the timing of certain public holidays (Easter can fall in March or in April, depending on the year);
+           <br />
+           •    the possible overlap of certain public holidays and non-working days (1 May can fall on a Sunday);
+           <br />
+           •    the occurrence of a leap year.
+          </p>
+          <p>
+           Source:
+           <a target="_blank" href="http://epp.eurostat.ec.europa.eu/statistics_explained/index.php/Glossary:Working-day_adjustment">
+            Eurostat
+           </a>
+          </p>
+         </dd>
+        </dl>
+        <a id="letter_x">
+        </a>
+        <h2 class="lexicon-letter">
+         X
+        </h2>
+        <dl>
+         <dt>
+          <a id="X-11">
+          </a>
+          X-11
+          <span class="lexicon-extralinks">
+           <a href="/search/node/X-11?destination=glossary/list">
+            search for term
+           </a>
+          </span>
+         </dt>
+         <dd>
+          <p>
+           Seasonal adjustment software originally developed by United States Census Bureau. It decomposes time series by iterative application of linear filters.
+          </p>
+          <p>
+           Read more:
+           <a href="http://www.census.gov">
+            United States Census Bureau
+           </a>
+          </p>
+          <p>
+          </p>
+         </dd>
+         <dt>
+          <a id="X-11-ARIMA">
+          </a>
+          X-11-ARIMA
+          <span class="lexicon-extralinks">
+           <a href="/search/node/X-11-ARIMA?destination=glossary/list">
+            search for term
+           </a>
+          </span>
+         </dt>
+         <dd>
+          <p>
+           A seasonal adjustment software developed by Statistics Canada. It incorporates ARIMA modelling to improve estimation of the different time series components.
+          </p>
+          <p>
+           Source:
+           <a href="http://www.census.gov">
+            United States Census Bureau
+           </a>
+          </p>
+         </dd>
+         <dt>
+          <a id="X-12-ARIMA">
+          </a>
+          X-12-ARIMA
+          <span class="lexicon-extralinks">
+           <a href="/search/node/X-12-ARIMA?destination=glossary/list">
+            search for term
+           </a>
+          </span>
+         </dt>
+         <dd>
+          <p>
+           X-12-ARIMA is seasonal adjustment software developed and supported by the United States Census Bureau. The program originates from X-11 algorithm and is the result of a long tradition of non-parametric smoothing based on moving averages. It includes all the capabilities of the X-11 program, which estimates trend and seasonal component using moving averages. X-12-ARIMA offers useful enhancements including: extend the time series with forecasts and backcasts from ARIMA models prior to seasonal adjustment, adjustment for effects estimated with user-defined regressors, additional seasonal and trend filter options, alternative seasonal-trend-irregular decomposition, additional diagnostic of the quality and stability of the adjustments, extensive time series modelling and model selection capabilities for linear regression models with ARIMA errors. More information on X-12-ARIMA can be found in
+           <a target="_blank" href="http://www.census.gov">
+            http://www.census.gov
+           </a>
+          </p>
+          <p>
+           <strong>
+            Source:
+           </strong>
+           <a href="http://www.cros-portal.eu/.../Demetra%2B%20User%20Manual%20March%202012.pdf">
+            Demetra+ User Manual
+           </a>
+          </p>
+         </dd>
+        </dl>
+        <a id="letter_y">
+        </a>
+        <h2 class="lexicon-letter">
+         Y
+        </h2>
+        <dl>
+         <dt>
+          <a id="Year-on-year_growth_rates">
+          </a>
+          Year-on-year growth rates
+          <span class="lexicon-extralinks">
+           <a href="/search/node/Year-on-year%20growth%20rates?destination=glossary/list">
+            search for term
+           </a>
+          </span>
+         </dt>
+         <dd>
+          <p>
+           Year-over-year change, expressed as a percentage.
+          </p>
+          <p>
+           Source:
+           <a href="http://www.investorwords.com/2261/growth_rate.html">
+            InwestWords.com
+           </a>
+          </p>
+         </dd>
+        </dl>
+       </div>
+      </div>
+     </div>
+     <footer id="content_footer">
+     </footer>
+    </section>
+   </div>
+  </div>
+  <div id="footer-wrapper">
+   <footer class="wrapper" id="footer">
+    <nav id="footer_links" role="navigation">
+     <ul class="menu clearfix">
+      <li class="first leaf menu-mlid-555">
+       <a title="" href="/disclaimer">
+        Disclamer
+       </a>
+      </li>
+      <li class="leaf menu-mlid-556">
+       <a title="" href="/contact">
+        Contact
+       </a>
+      </li>
+      <li class="last leaf menu-mlid-558">
+       <a title="" href="http://epp.eurostat.ec.europa.eu">
+        Eurostat
+       </a>
+      </li>
+     </ul>
+    </nav>
+   </footer>
+  </div>
+ </body>
+</html>

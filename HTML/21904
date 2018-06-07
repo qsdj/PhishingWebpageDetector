@@ -1,0 +1,587 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta content="Content-Type" http-equiv="Content-Type" />
+  <title>
+   Realty 360 Degree
+  </title>
+  <!--========================Css Section===========================-->
+  <link href="css/style.css" rel="stylesheet" type="text/css" />
+  <link media="all" type="text/css" href="css/stylesheet.css" rel="stylesheet" />
+  <!--========================Js Section===========================-->
+  <script src="js/jquery.min.js" language="javascript" type="text/javascript">
+  </script>
+  <!--
+<script type="text/javascript">
+$(document).ready(function() {
+	//Default Action
+	$(".tab_content").hide(); //Hide all content
+	$(".tabs_neo li:first").addClass("selected").show(); //Activate first tab
+	$(".tab_content:first").show(); //Show first tab content
+	//On Click Event
+	$(".tabs_neo li").click(function(){
+		$(".tabs_neo li").removeClass("selected"); //Remove any "active" class
+		$(this).addClass("selected"); //Add "active" class to selected tab
+		$(".tab_content").hide(); //Hide all tab content
+		var activeTab = $(this).find("a").attr("href"); //Find the rel attribute value to identify the active tab + content
+		$(activeTab).fadeIn(); //Fade in the active content
+		return false;
+	});
+});
+</script>-->
+  <script type="text/javascript" src="js/jquery-1.8.2.min.js">
+  </script>
+  <script>
+   var jq182 = jQuery.noConflict();
+  </script>
+  <!-- JQuery form script -->
+  <!--========================Fonts Calling Section==========================-->
+  <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" />
+  <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700" />
+  <style type="text/css">
+   .sapce {
+	height: 40px;
+	width: 100%;
+}
+  </style>
+ </head>
+ <body id="rebrand">
+  <!-- header section start-->
+  <style type="text/css">
+   .header_top {
+	height: auto;
+	width: 100%;
+	border-bottom:3px solid #bc161c;
+}
+.header_top1 {
+	height: 30px;
+	width: 100%;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#000;
+	line-height:30px;
+	
+}
+.header_top2 {
+	background-color:#fff;
+	height: 110px;
+	width: 100%;
+	border-top:1px solid #ccc;
+	
+}
+.header_top212{
+	margin:	auto;
+	height: 30px;
+	width: 1024px;
+	
+}
+.header_top2_1 {
+	height: 110px;
+	width: 1024px;
+	margin:	auto;
+}
+.header_top2_1_logo {
+	height: 110px;
+	width: 150px;
+	float:left;
+
+}
+.header_top2_1_nav {
+	width: 874px;
+	float:left;
+}
+.fl {
+	float: left;
+}
+.fr {
+	float: right;
+}
+.mail {
+	width: auto;
+	float: right;
+	padding-left: 25px;
+	background: url(../images/icon.png);
+}
+.call {
+	width: auto;
+	float: right;
+	padding-left: 25px;
+	margin-right: 10px;
+	background: url(../images/icon.png) scroll -89px 5px no-repeat;
+}
+.fb {
+	width: auto;
+	float: right;
+	margin: 7px 4px;
+}
+.fb a {
+	width: 15px;
+	height: 15px;
+	background: url(../images/icon.png) scroll -30px -2px no-repeat;
+	display: block;
+}
+.tw {
+	width: auto;
+	float: right;
+	margin: 7px 4px;
+}
+.tw a {
+	width: 15px;
+	height: 15px;
+	background: url(../images/icon.png) scroll -58px -2px no-repeat;
+	display: block;
+}
+header .top .go {
+	width: auto;
+	float: right;
+	margin: 7px 4px;
+}
+header .top .go a {
+	width: 15px;
+	height: 15px;
+	background: url(../images/icon.png) scroll 0px -2px no-repeat;
+	display: block;
+}
+.logo_left1{
+	width:108px;
+	height:100px;
+	float:left;
+	padding-top:10px;
+	}
+.logo_left-img1{
+	height:75px;
+	width:140px;
+	margin:auto;
+	float:left;
+	
+	}	
+.logo_left-slogn1{
+	height:15px;
+	width:144px;
+	float:left;
+	background-color:#db241c;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:8.5px;
+	color:#FFF;
+	font-weight:bold;
+	line-height:14px;
+	margin: auto;
+	
+	}
+	
+	nav {
+	width: auto;
+	float: right;
+	margin-top: 73px;
+}
+nav ul {
+	float: none;
+}
+nav li {
+	width: auto;
+	float: left;
+	margin: 0 1px 0 1px;
+}
+nav li.arrow {
+	background: url(../images/icon.png) scroll 70px -23px no-repeat;
+	padding: 0px 9px 0 0px;
+}
+nav li.arrow1 {
+	background: url(../images/icon.png) scroll 134px -23px no-repeat;
+	padding: 0px 9px 0 0px;
+}
+nav li a {
+	display: block;
+	font: 400 14px/38px 'Open Sans';
+	color: #212020;
+	padding: 0px 9px;
+}
+nav li a:hover, nav li a.selected {
+	color: #CB1C23;
+}
+nav li ul {
+	width: 170px;
+	position: absolute;
+	left: -999em;
+	z-index: 555;
+}
+nav li ul li {
+	width: auto;
+	background: #2f2f2f;
+	border-bottom: 1px solid #333;
+	border-top: 1px solid #000;
+}
+nav li ul a {
+	width: 170px;
+	color: #fff;
+	padding: 0px 0 0 10px !important;
+	font-size: 13px;
+}
+nav li ul a:hover {
+	color: #fff;
+	background: #333333;
+}
+nav li:hover ul {
+	left: auto;
+}
+  </style>
+  <div class="header_top">
+   <div class="header_top1">
+    <div class="header_top212">
+     <div class="fl">
+      Property in India, India Property
+     </div>
+     <div class="fr">
+      <div class="mail">
+       <img width="20" height="20" style="margin-top:4px;" src="images/message.png" />
+        Mail us: realty360deg@gmail.com
+      </div>
+      <div class="call">
+       <table width="100%" border="1">
+        <tbody>
+         <tr>
+          <td>
+           <a href="#">
+            <img style="margin-top:4px;" src="images/google.png" />
+           </a>
+          </td>
+          <td>
+           <a href="#">
+            <img style="margin-top:4px;" src="images/twitter.png" />
+           </a>
+          </td>
+          <td>
+           <a href="#">
+            <img style="margin-top:4px;" src="images/dbg.png" />
+           </a>
+          </td>
+          <td>
+           <a href="#">
+            <img style="margin-top:4px;" src="images/phone.png" />
+           </a>
+          </td>
+          <td>
+           Call us at +91-9999595680
+          </td>
+         </tr>
+        </tbody>
+       </table>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="header_top2">
+    <div class="header_top2_1">
+     <div class="header_top2_1_logo">
+      <div class="logo_left1">
+       <div class="logo_left-img1">
+        <a href="http://realty360degree.com">
+         <img src="images/logo.png" />
+        </a>
+       </div>
+       <div align="center" class="logo_left-slogn1">
+        Allround Real Estate Solutions
+       </div>
+      </div>
+     </div>
+     <nav>
+      <ul>
+       <li>
+        <a href="index.php">
+         Home
+        </a>
+       </li>
+       <li>
+        <a href="about-us.php">
+         Our Company
+        </a>
+       </li>
+       <li class="arrow">
+        <a href="">
+         Projects
+        </a>
+        <ul>
+         <li>
+          <a href="projects-listing_res.php">
+           Residential Projects
+          </a>
+         </li>
+         <li>
+          <a href="projects-listing_com.php">
+           Commercial  Projects
+          </a>
+         </li>
+        </ul>
+       </li>
+       <li>
+        <a href="properties-listing.php">
+         Resale Properties
+        </a>
+        <!-- <ul>
+              <li><a href="properties-listing_r.php">Residential Properties</a></li>
+              <li><a href="properties-listing_c.php">Commercial  Properties</a></li>
+            </ul>  -->
+       </li>
+       <li>
+        <a href="builder.php">
+         Builders
+        </a>
+       </li>
+       <li class="arrow">
+        <a href="">
+         Event
+        </a>
+        <ul>
+         <li>
+          <a href="event.php">
+           Last Event
+          </a>
+         </li>
+         <li>
+          <a href="upcomig_event.php">
+           Upcoming Event
+          </a>
+         </li>
+        </ul>
+       </li>
+       <li>
+        <a href="media.php">
+         Media
+        </a>
+       </li>
+       <li>
+        <a href="contact-us.php">
+         Contact Us
+        </a>
+       </li>
+      </ul>
+     </nav>
+     <div class="header_top2_1_nav">
+     </div>
+    </div>
+   </div>
+  </div>
+  <!-- header section end -->
+  <div class="contanner">
+   <div class="main">
+    <div class="left-section">
+     <h1>
+      Quick Contact Us
+     </h1>
+     <div class="properties-builders1 inner1">
+      <address>
+       <strong>
+        Address:
+       </strong>
+       We are dedicated to providing you with everything
+       <br />
+       <p>
+       </p>
+       <div>
+        <b>
+         cugjc,nv,mnvjh,dnxc n
+        </b>
+       </div>
+       <p>
+       </p>
+      </address>
+      <h2>
+       Have Query ? write Us..
+      </h2>
+      <p>
+       Thank you for visiting Top Real Estate.
+       <br />
+       We are dedicated to providing you with everything you need to complete your next tile project.
+      </p>
+      <strong class="mt5 fl">
+       If you have a question or comment, please contact us:
+      </strong>
+      <div class="wd100-fl">
+       <div class="form-field mt25">
+        <iframe width="900" height="310" frameborder="0" scrolling="no" allowtransparency="true" src="form/contact_form.php">
+        </iframe>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="right-section">
+     <div class="form-hd">
+      <img class="post" src="images/post.png" />
+      Post Your
+      <br />
+      Requirements
+     </div>
+     <!-- post your recruiment  start-->
+     <iframe width="190" height="310" frameborder="0" scrolling="no" allowtransparency="true" src="form/enquiry_contact.htm">
+     </iframe>
+     <!-- post your recruiment end -->
+     <div class="fetu">
+      <ul>
+       <li>
+        <a href="media_cal.php">
+         EMI Calculator
+        </a>
+       </li>
+       <li>
+        <a href="home-loan.php">
+         Home Loan
+        </a>
+       </li>
+       <li>
+        <a href="resources.php">
+         Useful Resources
+        </a>
+       </li>
+       <li class="mng1">
+        <a href="buy_withus.php">
+         Buy with us
+        </a>
+       </li>
+      </ul>
+     </div>
+    </div>
+   </div>
+  </div>
+  <!-- header section start-->
+  <div class="footer">
+   <div class="left_footer">
+    <h4>
+     Quick Link
+    </h4>
+    <div class="quick">
+     <ul>
+      <li>
+       <a href="index.php">
+        Home
+       </a>
+      </li>
+      <li>
+       <a href="about-us.php">
+        About Us
+       </a>
+      </li>
+      <li>
+       <a href="projects-listing_res.php">
+        Projects
+       </a>
+      </li>
+      <li>
+       <a href="properties-listing.php">
+        Resale Properties
+       </a>
+      </li>
+      <li>
+       <a href="contact-us.php">
+        Contact Us
+       </a>
+      </li>
+     </ul>
+    </div>
+    <div class="quick">
+     <ul>
+      <li>
+       <a href="carrer.php">
+        Careers
+       </a>
+      </li>
+      <li>
+       <a href="nri-services.php">
+        NRI's Services
+       </a>
+      </li>
+      <li>
+       <a href="resources.php">
+        Usefull Resource
+       </a>
+      </li>
+      <li>
+       <a href="privacy-policy.php">
+        Privacy Policy
+       </a>
+      </li>
+     </ul>
+    </div>
+    <div class="copy-right">
+     All trademarks, logos and names are properties of their respective owners.
+     <br />
+     All Right Reserved. ©2014 Realty 360 Degree.
+     <br />
+     Developed By:
+     <a title="Discovery IT Solutions" target="_blank" href="http://discoveryitsolutions.com/">
+      Discovery IT Solutions
+     </a>
+    </div>
+   </div>
+   <div class="mid_footer">
+    <div class="ver-border">
+    </div>
+    <div class="property-builder">
+     <h4>
+      Property by Builders
+     </h4>
+     <div class="quick">
+      <ul>
+       <li>
+        <a href="builder-details.php?id=50" class="link">
+         00
+        </a>
+       </li>
+      </ul>
+     </div>
+    </div>
+    <div class="icon">
+     <a href="#">
+      <img src="images/fb.png" />
+     </a>
+     <a href="#">
+      <img src="images/tw.png" />
+     </a>
+     <a href="#">
+      <img src="images/li.png" />
+     </a>
+    </div>
+   </div>
+   <div class="right_footer">
+    <div class="ver-border">
+    </div>
+    <div class="property-builder">
+     <p>
+      <strong>
+       Questions ? We are here to help !
+      </strong>
+      <br />
+      <span class="address-text">
+       You can drop an Email to us at realty360deg@gmail.com
+       <br />
+       for More Information !
+       <br />
+       Or directly reach us at following address.
+      </span>
+     </p>
+     <hr />
+     <p>
+     </p>
+     <p>
+      <strong>
+       Realty 360 Degree
+      </strong>
+      <br />
+      <span class="address-text">
+       Address: B-153, Basement Sec-71,Noida, UP-201301
+       <br />
+       Phone: +91-9999595680, +91-9999575471
+       <br />
+       Website:
+       <a href="http://www.realty360degree.com/">
+        www.realty360degree.com
+       </a>
+       <br />
+       E-mail: realty360deg@gmail.com
+      </span>
+     </p>
+    </div>
+   </div>
+  </div>
+  <!-- header section end -->
+ </body>
+</html>
