@@ -102,6 +102,7 @@ def featureExtraction_Engineering(trainingSet, testSet):
                     finalDataLegit.append(features)
                 else:
                     finalDataNotLegit.append(features)
+    dt2 = time() * 1000
     for cluster in testSet:
         for i in range(len(cluster)):
             features = outputFeatures("HTML/" + str(cluster[0]['phishing_id']),
@@ -111,12 +112,11 @@ def featureExtraction_Engineering(trainingSet, testSet):
                     testDataLegit.append(features)
                 else:
                     testDataNotLegit.append(features)
-
+    dt3 = time() * 1000
     trainGood = map(list, zip(*finalDataLegit))
     trainBad = map(list, zip(*finalDataNotLegit))
     testGood = map(list, zip(*testDataLegit))
     testBad = map(list, zip(*testDataNotLegit))
-
     test_featuresDFLegit = pd.DataFrame({'url': testGood[0], '2LD': testGood[1], 'SS': testGood[2],
                                          'SS_url': testGood[3], 'i_url': testGood[4],
                                          'i_2LD': testGood[5],
@@ -224,12 +224,12 @@ def test(model, testGood, testBad):
     return float(correct) / float(total), metrics.confusion_matrix(predictions, actuals)
 
 
-# my_model = main()
-# with open(os.path.join(here, "state.pickle"), "wb") as f:
-#     pickle.dump(my_model, f)
+my_model = main()
+with open(os.path.join(here, "state.pickle"), "wb") as f:
+    pickle.dump(my_model, f)
 
-with open(os.path.join(here, "state.pickle"), "rb") as f:
-    my_model = pickle.load(f)
+# with open(os.path.join(here, "state.pickle"), "rb") as f:
+#     my_model = pickle.load(f)
 
 testGood1 = pd.read_csv("testGood.csv")
 testBad1 = pd.read_csv("testBad.csv")
@@ -237,13 +237,13 @@ testBad1 = pd.read_csv("testBad.csv")
 print test(my_model, testGood1, testBad1)
 
 
-# featuresDFLegit.to_csv("features_extracted.csv", encoding="utf-8")
-# featuresDFNotLegit.to_csv("features_extracted_not.csv", encoding="utf-8")
-# test_featuresDFLegit.to_csv("testGood.csv", encoding="utf-8")
-# test_featuresDFNotLegit.to_csv("testBad.csv", encoding="utf-8")
+featuresDFLegit.to_csv("features_extracted.csv", encoding="utf-8")
+featuresDFNotLegit.to_csv("features_extracted_not.csv", encoding="utf-8")
+test_featuresDFLegit.to_csv("testGood.csv", encoding="utf-8")
+test_featuresDFNotLegit.to_csv("testBad.csv", encoding="utf-8")
 
 
-# dfList = [featuresDFLegit, featuresDFNotLegit, test_featuresDFLegit, test_featuresDFNotLegit]
-# full_features = pd.concat(dfList)
+dfList = [featuresDFLegit, featuresDFNotLegit, test_featuresDFLegit, test_featuresDFNotLegit]
+full_features = pd.concat(dfList)
 # beautifulSoupDF.to_csv("beautiful_soup_extracted.csv", encoding="utf-8")
-# full_features.to_csv("all_features.csv", encoding="utf-8")
+full_features.to_csv("all_features.csv", encoding="utf-8")

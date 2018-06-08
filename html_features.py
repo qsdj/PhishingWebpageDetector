@@ -7,6 +7,7 @@ import requests
 import pyjq
 from time import time
 from datetime import datetime
+import cssutils
 
 
 def isURL(string):
@@ -25,16 +26,23 @@ def isURL(string):
     return re.match(regex, string)
 
 
+def removeIdentical(ls):
+    """make a list non-repetitive"""
+    return list(set(ls))
+
+
 def batch2LD(ls):
     """
     Helper function, change from a list of urls to a list of domains
     :param ls: a list of urls
     :return: a list of domains
     """
+    newList = []
     for i in range(len(ls)):
         extracted = tldextract.extract(ls[i])
-        ls[i] = extracted.domain
-    return ls
+        if extracted.domain != '':
+            newList.append(extracted.domain)
+    return newList
 
 
 def batchTag2Text(ls):
@@ -46,6 +54,9 @@ def batchTag2Text(ls):
     for i in range(len(ls)):
         ls[i] = ls[i].text
     return ls
+
+
+mediaRule = 0
 
 
 class AdvancedBS:
@@ -86,7 +97,10 @@ class AdvancedBS:
 
     def getTitle(self):
         title = self.bs.find('title')
-        return title.text
+        if title is not None:
+            return title.text
+        else:
+            return ''
         # try:
         #     anchor = self.bs.find_all('a')[0]
         # except IndexError:
@@ -177,7 +191,6 @@ class AdvancedBS:
 
     # set url = false to get a list of all local paths
     def getImageSources(self, url=True):
-        pathList = []
         urlList = []
         for tag in self.bs.find_all("img"):
             # if "src" in tag.attrs and tag.attrs["src"] not in urlList or pathList:
@@ -191,22 +204,61 @@ class AdvancedBS:
         return urlList  # if url else pathList
 
     def getUrlSet(self):
+
         urlList = []
-        for tag in self.bs.find_all():
+        for tag in self.bs.find_all("a"):
             if "href" in tag.attrs and tag.attrs["href"] not in urlList:
                 if isURL(tag.attrs["href"]):
                     urlList.append(tag.attrs["href"])
         return urlList
 
     def getStyles(self):
-        return batchTag2Text(self.bs.find_all("style"))
+        """not fully functional"""
+        def parseSheet(sheetLocal):
+            styleDictLocal = {}
+            for rule in sheetLocal:
+                selector = rule.selectorText
+                styles = rule.style.cssText
+                styleDictLocal[selector.encode('ascii', 'replace')] = styles.encode('ascii', 'replace')
+            return styleDictLocal
+
+        def expandDict(Dict):
+            for key in Dict:
+                newList = Dict[key].split(";\n")
+                newDict = {}
+                for j in newList:
+                    newKey, value = j.split(": ")
+                    newDict[newKey] = value
+                Dict[key] = newDict
+            return Dict
+
+        styleList = []
+        for tag in self.bs.find_all('style'):
+            styleList.append(tag.text)
+        for i in range(len(styleList)):
+            sheet = cssutils.parseString(styleList[i])
+            print sheet
+            print self.url
+            try:
+                unFormatted = parseSheet(sheet)
+            except AttributeError:
+                mediaRule += 1
+            styleDict = expandDict(unFormatted)
+            styleList[i] = styleDict
+        return styleList
+
+    def getStylesSimple(self):
+        styleList = []
+        for tag in self.bs.find_all('style'):
+            styleList.append(tag.text)
+        return styleList
 
     def getStyleSheetUrl(self):
         urlList = []
         for tag in self.bs.find_all("link"):
-            if "href" in tag.attrs and tag.attrs["href"] not in urlList:
+            if "href" in tag.attrs and tag.attrs["href"] not in urlList and 'stylesheet' in tag.attrs['rel']:
                 urlList.append(tag.attrs["href"])
-        return list(set(urlList))
+        return removeIdentical(urlList)
 
     def getLanguageSet(self):
         languageList = []
@@ -214,7 +266,4 @@ class AdvancedBS:
             if "lang" in tag.attrs and tag.attrs["lang"] not in languageList:
                 languageList.append(tag.attrs["lang"])
         return languageList
-
-
-
 
