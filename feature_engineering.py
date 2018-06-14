@@ -6,7 +6,6 @@ import pyxdameraulevenshtein as dl
 from time import time
 sample2URL = "https://connect.ultipro.com/"
 beautifulSoupDF = pd.DataFrame()
-import editdistance
 SoupList = []
 
 
