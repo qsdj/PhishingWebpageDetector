@@ -1,8 +1,8 @@
 from html_features import *
 from feature_engineering import *
+from svm_training import *
 
-
-testBS = AdvancedBS("HTML/135")
+testBS = AdvancedBS("HTML/test.html")
 testBS2 = AdvancedBS("HTML/136")
 
 
@@ -18,6 +18,11 @@ def main_test(Abs):
     print "style sheets 2LD: " + str(removeIdentical(batch2LD(Abs.getStyleSheetUrl())))
 
 
-main_test(testBS)
-main_test(testBS2)
-print outputFeatures(testBS, testBS2, isPath=False)
+def store_TEST():
+    js, homePages = parseData()
+    storeSoups(js, homePages)
+
+
+
+store_TEST()
+# print outputFeatures(testBS, testBS2, isPath=False)

@@ -8,6 +8,8 @@ import pyjq
 from time import time
 from datetime import datetime
 import cssutils
+import json
+import pandas as pd
 
 
 def isURL(string):
@@ -56,7 +58,15 @@ def batchTag2Text(ls):
     return ls
 
 
-mediaRule = 0
+def batchTag2Str(ls):
+    """
+    Helper function, parses a beautiful soup html tag into a string containing both the tag and its content
+    :param ls: a list of tags
+    :return: a list of texts
+    """
+    for i in range(len(ls)):
+        ls[i] = str(ls[i])
+    return ls
 
 
 class AdvancedBS:
@@ -85,6 +95,8 @@ class AdvancedBS:
             dt1 = time()
             with open(url, 'r') as mf:
                 self.html = mf.read().replace('\n', '')
+            with open(url, 'r') as mf:
+                self.numLines = len(mf.readlines())
             dt2 = time()
             print "open file time: " + str(dt2*1000 - dt1*1000)
             dt3 = time()
@@ -101,24 +113,13 @@ class AdvancedBS:
             return title.text
         else:
             return ''
-        # try:
-        #     anchor = self.bs.find_all('a')[0]
-        # except IndexError:
-        #     return "not a title"
-        # try:
-        #     print "title : " + (anchor.get('title'))
-        # except TypeError:
-        #     print "There is no title"
-        #     return "blank"
-        # return anchor.get('title')
 
     def getHyperLinks(self):
         return self.bs.find_all("a")
 
     def getNumLines(self):
         """not functional"""
-        count = len(self.html.readlines())
-        return count
+        return self.numLines
 
     def getMetaTags(self):
         return self.bs.find_all("meta")
@@ -134,17 +135,14 @@ class AdvancedBS:
         hiddenTextList = []
         for tag in tags:
             if 'style' in tag.attrs and keyword in tag.attrs['style']:
-                hiddenTextList.append(tag)
+                hiddenTextList.append(str(tag))
         return hiddenTextList
 
     def getHTML(self):
         return self.html
 
     def getTextInBody(self):
-        bodyTexts = []
-        for tag in self.bs.find_all("body"):
-            bodyTexts.append(tag.text)
-        return bodyTexts
+        return self.bs.find("body").text if self.bs.find("body") is not None else ''
 
     def getLength(self):
         return len(self.html)
@@ -157,7 +155,7 @@ class AdvancedBS:
             for word in tag.text.split(" "):
                 totalLengthWords += len(word)
                 totalNumWords += 1
-        return totalLengthWords/totalNumWords
+        return totalLengthWords/totalNumWords if totalNumWords != 0 else 0
 
     def getWordCount(self):
         totalNumWords = 0
@@ -186,21 +184,17 @@ class AdvancedBS:
         linkList = []
         for tag in self.bs.find_all("script"):
             if "src" in tag.attrs:
-                linkList.append(tag)
+                linkList.append(tag['src'])
         return linkList
 
     # set url = false to get a list of all local paths
     def getImageSources(self, url=True):
         urlList = []
         for tag in self.bs.find_all("img"):
-            # if "src" in tag.attrs and tag.attrs["src"] not in urlList or pathList:
-            # if isURL(tag.attrs["src"]):
             try:
                 urlList.append(tag.attrs["src"])
             except KeyError:
                 pass
-            # else:
-            #    pathList.append(tag.attrs["src"])
         return urlList  # if url else pathList
 
     def getUrlSet(self):
@@ -214,9 +208,14 @@ class AdvancedBS:
 
     def getStyles(self):
         """not fully functional"""
+        mediaRule = 0
+        parser = cssutils.CSSParser()
+
         def parseSheet(sheetLocal):
             styleDictLocal = {}
             for rule in sheetLocal:
+                if type(rule) is not cssutils.css.CSSStyleRule:
+                    continue
                 selector = rule.selectorText
                 styles = rule.style.cssText
                 styleDictLocal[selector.encode('ascii', 'replace')] = styles.encode('ascii', 'replace')
@@ -227,7 +226,16 @@ class AdvancedBS:
                 newList = Dict[key].split(";\n")
                 newDict = {}
                 for j in newList:
-                    newKey, value = j.split(": ")
+                    print j
+                    try:
+                        newKey, value = j.split(": ")
+                    except ValueError:  # this one indicates some people format using ":" rather than ": "
+                        try:
+                            newKey, value = j.split(":")
+                        except ValueError:  # this one indicates that on a higher level of splitting there may be
+                            # empty strings left out that can't be split
+                            continue
+
                     newDict[newKey] = value
                 Dict[key] = newDict
             return Dict
@@ -237,26 +245,30 @@ class AdvancedBS:
             styleList.append(tag.text)
         for i in range(len(styleList)):
             sheet = cssutils.parseString(styleList[i])
-            print sheet
-            print self.url
-            try:
-                unFormatted = parseSheet(sheet)
-            except AttributeError:
-                mediaRule += 1
+            # try:
+            # try:
+            unFormatted = parseSheet(sheet)
+            # except AttributeError:
+            #     unFormatted = parser.parseStyle(parser.cssText)
+            # except AttributeError:
+            #     unFormatted = cssutils.css.CSSMediaRule(styleList[i])
+
             styleDict = expandDict(unFormatted)
             styleList[i] = styleDict
         return styleList
 
     def getStylesSimple(self):
+        """remember to modify it back"""
         styleList = []
         for tag in self.bs.find_all('style'):
-            styleList.append(tag.text)
+            styleList.append(str(tag))  # .text)
         return styleList
 
     def getStyleSheetUrl(self):
         urlList = []
         for tag in self.bs.find_all("link"):
-            if "href" in tag.attrs and tag.attrs["href"] not in urlList and 'stylesheet' in tag.attrs['rel']:
+            if "href" in tag.attrs and tag.attrs["href"] not in urlList and 'rel' in tag.attrs and 'stylesheet' in \
+                    tag.attrs['rel']:
                 urlList.append(tag.attrs["href"])
         return removeIdentical(urlList)
 
@@ -267,3 +279,66 @@ class AdvancedBS:
                 languageList.append(tag.attrs["lang"])
         return languageList
 
+    def getNumNull(self):
+        return self.html.count("null")
+
+    def getAsymHTML(self):
+        """returns 1 if html tag is asymmetrical, 0 otherwise"""
+        return 1 if (self.html.count("<html") - self.html.count("</html")) != 0 else 0
+
+    def forJson_CSV(self):
+        urlSet = self.getUrlSet()
+        title = self.getTitle()
+
+        df = {'title': self.getTitle(), 'hyperLinks': batchTag2Str(self.getHyperLinks()), '#lines': self.getNumLines(),
+              'meta': batchTag2Str(self.getMetaTags()), 'hidden': self.getHidden(), 'bodyText': self.getTextInBody(),
+              'length': self.getLength(), 'avgWordLengths': self.getAvgLengthOfWords(), 'wordCount': self.getWordCount()
+              , 'distinctWordCount': self.getDistinctWordCount(), 'hiddenObjects': batchTag2Str(self.getHiddenObjects())
+              , 'IFrames': batchTag2Str(self.getIFrames()), 'links2scripts': self.getLinksToScripts(), 'imageSources':
+              self.getImageSources(), 'urlSet': self.getUrlSet(), 'styles': self.getStyles(), 'styleSheetUrls':
+              self.getStyleSheetUrl(), 'languages': self.getLanguageSet(), '#null': self.getNumNull(), 'AsymHTML':
+                  self.getAsymHTML()}
+
+        return df
+
+
+def storeSoups():
+    with open('deltaphish_data.json', 'r') as fp:
+        js_all = json.load(fp)
+    # print js_all[0]
+    # print js_all[1]
+    df_list = []
+    df_phish = []
+    df_good = []
+    for i in range(len(js_all)):
+        BS = AdvancedBS('HTML/' + str(js_all[i]['id']))
+        df1 = BS.forJson_CSV()
+        df1 = df1.copy()
+        df1.update(js_all[i])
+        df_list.append(df1)
+        if df1['label'] == 0:
+            df_good.append(df1)
+        else:
+            df_phish.append(df1)
+    js1 = json.dumps(df_list)
+    with open('all_features.txt', 'wb') as mf:
+        mf.write(js1)
+
+    overall_df = pd.DataFrame(df_list)
+    phishing_df = pd.DataFrame(df_phish)
+    legitimate_df = pd.DataFrame(df_good)
+    overall_df.to_csv("beautifulSoupCsv1.csv", encoding='utf-8')
+    phishing_df.to_csv("phishingBeautifulSoupCsv1.csv", encoding='utf-8')
+    legitimate_df.to_csv("legitimateBeautifulSoupCsv1.csv", encoding='utf-8')
+
+
+def parseData():
+    overall_df = pd.read_csv("beautifulSoupCsv1.csv")
+    phishing_df = pd.read_csv("phishingBeautifulSoupCsv1.csv")
+    legitimate_df = pd.read_csv("legitimateBeautifulSoupCsv1.csv")
+    print 'shape'
+    print overall_df.shape
+    overall_df.dropna()
+    print 'shape'
+    print overall_df.shape
+    return overall_df, phishing_df, legitimate_df

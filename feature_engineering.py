@@ -6,11 +6,16 @@ import pyxdameraulevenshtein as dl
 from time import time
 sample2URL = "https://connect.ultipro.com/"
 beautifulSoupDF = pd.DataFrame()
+import editdistance
+SoupList = []
 
 
-def AdvancedStrCompare(str1, str2, threshold=0.3):
+def AdvancedStrCompare(str1, str2, threshold=0.05):
     """the smaller threshold is, the less likely two strings will be considered same"""
-    return 1 if dl.normalized_damerau_levenshtein_distance(str1, str2) <= threshold else 0
+    return 1 if dl.normalized_damerau_levenshtein_distance(str1, str2) < threshold else 0
+
+
+# def LongStrAdvancedCompare(str1, str2):
 
 
 def jaccard(list1, list2, advanced=False):
@@ -27,7 +32,7 @@ def jaccard(list1, list2, advanced=False):
     else:
         intersection = len(list(set(list1).intersection(list2)))
     union = (len(list1) + len(list2)) - intersection
-    return float(intersection) / float(union)
+    return float(intersection) / float(union) if union != 0 else 1
 
 
 def dictJaccard(dict1, dict2):
@@ -53,80 +58,68 @@ def xLink(url1, url2):
     :param url2: 2nd advancedBS
     :return: 1 if two urls are linked, 0 otherwise
     """
-    if type(url1) == type(url2) == str:
-        abs1 = AdvancedBS(url1)
-        abs2 = AdvancedBS(url2)
-        if abs2 in abs1.getUrlSet() or abs1 in abs2.getUrlSet():
-            return 1
-        else:
-            return 0
 
-    if url1.url in url2.getUrlSet() or url2.url in url1.getUrlSet():
+    if url1['url'] in url2['urlSet'] or url2['url'] in url1['urlSet']:
         return 1
     else:
         return 0
 
 
-def outputFeatures(path1, path2, isPath=True):
+def outputFeatures(page, homePage):
     """
-    Output a set of features from two Urls
-    :param isPath: this means that the path1 and path2 parameters are indeed file paths
-    :param path1:
-    :param path2:
-    :return:
+    Output a set of comparison based features from two dictionaries containing home pages and non-home pages
+    input is from the output files of storeSoups()
+    :param page: a non-home page
+    :param homePage: its corresponding home page
+    :return: Write all features to a csv file, return the features for each page as well.
     """
-    dt1 = time() * 1000
+    dt1 = time()*1000
     feature_vec = []
-    if isPath:
-        sampleABS = AdvancedBS(path1)
-        # bsDF = pd.read_html(sampleABS.getBs())
-        sample2ABS = AdvancedBS(path2)
-        # bsDF2 = pd.read_html(sample2ABS.getBs())
 
-        # beautifulSoupDF.append(bsDF)
-        # beautifulSoupDF.append(bsDF2)
-    else:
-        dt7 = time() * 1000
-        sampleABS = path1
-        sample2ABS = path2
-        print "what the: " + str(time()*1000 - dt7)
-    dt2 = time() * 1000
-    print "initialisation time: " + str(dt2-dt1)
-    urlSet = sampleABS.getUrlSet()
-    urlSet2 = sample2ABS.getUrlSet()
-    domainSet = list(set(batch2LD(urlSet)))
-    domainSet2 = list(set(batch2LD(urlSet2)))
+    Title = page['title']
+    Title2 = homePage['title']
 
-    styleSet = sampleABS.getStylesSimple()
-    styleSet2 = sample2ABS.getStylesSimple()
-    styleSheets = sampleABS.getStyleSheetUrl()
-    styleSheets2 = sample2ABS.getStyleSheetUrl()
-
-    dt3 = time()*1000
-    print "first part: " + str(dt3-dt2)
-
-    IUrl1 = sampleABS.getImageSources()
-    IUrl2 = sample2ABS.getImageSources()
-    IDomain = removeIdentical(batch2LD(IUrl1))
-    IDomain2 = removeIdentical(batch2LD(IUrl2))
-    Title = sampleABS.getTitle()
-    Title2 = sample2ABS.getTitle()
+    # print Title2
     TBOW1 = wordninja.split(Title.lower())
     TBOW2 = wordninja.split(Title2.lower())
-    language = sampleABS.getLanguageSet()
-    language2 = sampleABS.getLanguageSet()
+    dt3 = time()*1000
+    print "bag of words: " + str(dt3 - dt1)
+    feature_vec.append(jaccard(page['urlSet'], homePage['urlSet']))  # jaccard of url set CHECKED!!!!
+    print page['domain_name'], "home  ", homePage['domain_name']
+    feature_vec.append(jaccard(page['domain_name'], homePage['domain_name']))  # jaccard of 2LD set CHECKED!!!!
+    dt4 = time() * 1000
+    # feature_vec.append(jaccard(page['styles'], homePage['styles'], advanced=True))
+    #  jaccard of <style> tags HALF CHECKED!!!!
+    list1 = page['styles']
+    list2 = homePage['styles']
 
-    dt4 = time()*1000
-    print "second part: " + str(dt4-dt3)
-    feature_vec.append(jaccard(urlSet, urlSet2))  # jaccard of url set CHECKED!!!!
-    feature_vec.append(jaccard(domainSet, domainSet2))  # jaccard of 2LD set CHECKED!!!!
-    feature_vec.append(jaccard(styleSet, styleSet2, advanced=True))  # jaccard of <style> tags HALF CHECKED!!!!
-    feature_vec.append(jaccard(styleSheets, styleSheets2))  # jaccard of external sheets HALF CHECKED!!!!!
-    feature_vec.append(jaccard(removeIdentical(batch2LD(styleSheets)), removeIdentical(batch2LD(styleSheets2))))
-    feature_vec.append(jaccard(IUrl1, IUrl2))  # jaccard of image urls CHECKED!!!!
-    feature_vec.append(jaccard(IDomain, IDomain2))  # jaccard of image 2LDs CHECKED!!!!
+    # sameStyle = 0
+    # for i in list1:
+    #     for j in list2:
+    #         if dictJaccard(list1, list2) > 0.7:
+    #             if 'tagged' not in i or j:
+    #                 sameStyle += 1
+    #                 i['tagged'] = 1
+    #                 j['tagged'] = 1
+    #
+    # feature_vec.append(float(sameStyle)/float(len(list1) + len(list2)))
+    feature_vec.append(jaccard(list1, list2))
+    dt7 = time() * 1000
+    print "advanced style compare: " + str(dt7 - dt4)
+    feature_vec.append(jaccard(page['styleSheetUrls'], homePage['styleSheetUrls']))
+    # jaccard of external sheets HALF CHECKED!!!!!
+
+    feature_vec.append(jaccard(removeIdentical(batch2LD(page['styleSheetUrls'])), removeIdentical(batch2LD(homePage['styleSheetUrls']))))
+
+    feature_vec.append(jaccard(page['imageSources'], homePage['imageSources']))  # jaccard of image urls CHECKED!!!!
+
+    print "first half: " + str(dt4 - dt3)
+    feature_vec.append(jaccard(removeIdentical(batch2LD(page['imageSources'])), removeIdentical(
+        batch2LD(page['imageSources']))))  # jaccard of image 2LDs CHECKED!!!!
     feature_vec.append(jaccard(TBOW1, TBOW2))  # jaccard of titles(bag of words) CHECKED!!!!
-    feature_vec.append(jaccard(language, language2))  # jaccard of language(s)
-    feature_vec.append(xLink(sampleABS, sample2ABS))  # xLink is 1 if two pages are linked, 0 otherwise
+    feature_vec.append(jaccard(page['languages'], homePage['languages']))  # jaccard of language(s)
+    feature_vec.append(xLink(page, homePage))  # xLink is 1 if two pages are linked, 0 otherwise
+    dt2 = time()*1000
 
+    print "feature output time: " + str(dt2-dt1)
     return feature_vec

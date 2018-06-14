@@ -1,201 +1,168 @@
 from feature_engineering import *
-import json
-from mlxtend.plotting import plot_decision_regions
+import sklearn
 from sklearn import svm, metrics
 import matplotlib.pyplot as plt
 from time import sleep, time
 import numpy as np
-import pandas as pd
 import pickle
-import random
 import os
-
+from html_features import *
+import itertools
 here = os.path.dirname(os.path.abspath(__file__))
-# this code is based on data input of a list of lists which contain a group of URLs, n valid and others scam(
-# the first, i.e. index 0 element is the home page)
 
 
-"""make 4 panda dataframes for 4 different files"""
-featuresDFLegit = pd.DataFrame(columns=['url', '2LD', 'SS', 'SS_url', 'i_url', 'i_2LD', 'title', 'language', 'xLink'])
-featuresDFNotLegit = pd.DataFrame(
-    columns=['url', '2LD', 'SS', 'SS_url', 'i_url', 'i_2LD', 'title', 'language', 'xLink'])
-test_featuresDFLegit = pd.DataFrame(
-    columns=['url', '2LD', 'SS', 'SS_url', 'i_url', 'i_2LD', 'title', 'language', 'xLink'])
-test_featuresDFNotLegit = pd.DataFrame(
-    columns=['url', '2LD', 'SS', 'SS_url', 'i_url', 'i_2LD', 'title', 'language', 'xLink'])
-
-
-def parseData():
-    """
-    parse data from deltaphish_data.json into two list of dictionaries
-    :return: a list of dictionary consisting of homePages and a list of dictionary consisting of pages
-    """
-    homePages = []
-    with open('deltaphish_data.json', 'r') as fp:
-        js = json.load(fp)
-    indexList = []
-    for i in range(len(js)):
-        if js[i]['is_home']:
-            homePages.append(js[i])
-            indexList.append(i)
-    indexList.sort(reverse=True)
-    for j in indexList:
-        js.pop(j)
-
-    return js, homePages
-
-
-def generateTrainTestData():
+def generateTrainTestData(allData):
     """
     split data into training and testing set
     :return: trainingSet[], testSet[]
     """
-    pages, homePages = parseData()
-    groups = []
-    testIndexes = []
-    testSet = []
-    for homePage in homePages:
-        group = [homePage]
-        for page in pages:
-            if homePage['domain_name'] == page['domain_name']:
-                group.append(page)
-        groups.append(group)
-    for i in range(int(len(groups) * 0.3)):
-        rand = random.randint(0, len(groups) - 1)
-        testIndexes.append(rand)
-    testIndexes.sort(reverse=True)
-    for i in testIndexes:
-        testSet.append(groups.pop(i))
-    trainingSet = groups
-    return trainingSet, testSet
 
+    nonHomePages, homePages = allData.loc[allData['is_home'] == False], allData.loc[allData['is_home'] == True]
+    nonHomePages.dropna(inplace=True)
+    homePages.dropna(inplace=True)
+    print 'dataFrame preprocessing done'
+    phishList = []
+    goodList = []
+    idSet = list(set(nonHomePages['phishing_id']))
+    for i in idSet:
+        oneGroupOfNonHomePages = nonHomePages.loc[nonHomePages['phishing_id'] == i]
+        homePage = homePages.loc[homePages['phishing_id'] == i]
 
-def featureExtraction_Engineering(trainingSet, testSet):
-    """
-    Extract all features from trainingSet and testSet, return them as list of lists, store them as csv at the same time
-    :param trainingSet: a list of dictionaries representing homePages used to train
-    :param testSet: a list of dictionaries representing homePages used to test
-    :return:
-        training data:
-            not phishing
-            phishing
-        test data:
-            not phishing
-            phishing
-    """
-
-    global featuresDFLegit
-    global featuresDFNotLegit
-    global test_featuresDFNotLegit
-    global test_featuresDFLegit
-
-    finalDataLegit = []
-    finalDataNotLegit = []
-    testDataLegit = []
-    testDataNotLegit = []
-    for cluster in trainingSet:
-        for i in range(1, len(cluster)):
-            features = outputFeatures("HTML/" + str(cluster[0]['phishing_id']),
-                                      "HTML/" + str(cluster[i]['phishing_id']))
-            if features is not None:
-                if cluster[i]['label'] == 0:
-                    finalDataLegit.append(features)
+        for row in oneGroupOfNonHomePages.T.to_dict().values():
+            dt1 = time()*1000
+            for r in homePage.T.to_dict().values():
+                if row['label'] == 0:
+                    goodList.append(outputFeatures(row, r))
                 else:
-                    finalDataNotLegit.append(features)
-    dt2 = time() * 1000
-    for cluster in testSet:
-        for i in range(len(cluster)):
-            features = outputFeatures("HTML/" + str(cluster[0]['phishing_id']),
-                                      "HTML/" + str(cluster[i]['phishing_id']))
-            if features is not None:
-                if cluster[i]['label'] == 0:
-                    testDataLegit.append(features)
-                else:
-                    testDataNotLegit.append(features)
-    dt3 = time() * 1000
-    trainGood = map(list, zip(*finalDataLegit))
-    trainBad = map(list, zip(*finalDataNotLegit))
-    testGood = map(list, zip(*testDataLegit))
-    testBad = map(list, zip(*testDataNotLegit))
-    test_featuresDFLegit = pd.DataFrame({'url': testGood[0], '2LD': testGood[1], 'SS': testGood[2],
-                                         'SS_url': testGood[3], 'i_url': testGood[4],
-                                         'i_2LD': testGood[5],
-                                         'title': testGood[6], 'language': testGood[7],
-                                         'xLink': testGood[8], 'isPhishing': 0},
-                                        index=range(len(testGood[0])))
+                    phishList.append(outputFeatures(row, r))
+            dt2 = time()*1000
+            print dt2 - dt1
+    print 'features ready'
 
-    test_featuresDFNotLegit = pd.DataFrame({'url': testBad[0], '2LD': testBad[1], 'SS': testBad[2],
-                                            'SS_url': testBad[3], 'i_url': testBad[4],
-                                            'i_2LD': testBad[5],
-                                            'title': testBad[6], 'language': testBad[7],
-                                            'xLink': testBad[8], 'isPhishing': 1},
-                                           index=range(len(testBad[0])))
+    zeros = []
+    for i in range(len(goodList)):
+        zeros.append(0)
+    ones = []
+    for i in range(len(phishList)):
+        ones.append(1)
+    goodPageTrain, goodPageTest, labelTrain, labelTest = sklearn.model_selection.train_test_split(
+        goodList, zeros, test_size=0.3)
 
-    featuresDFLegit = pd.DataFrame({'url': trainGood[0], '2LD': trainGood[1], 'SS': trainGood[2],
-                                    'SS_url': trainGood[3], 'i_url': trainGood[4],
-                                    'i_2LD': trainGood[5],
-                                    'title': trainGood[6], 'language': trainGood[7],
-                                    'xLink': trainGood[8], 'isPhishing': 0},
-                                   index=range(len(trainGood[0])))
+    phishPageTrain, phishPageTest, phishLabelTrain, phishLabelTest = sklearn.model_selection.train_test_split(
+        phishList, ones, test_size=0.3)
 
-    featuresDFNotLegit = pd.DataFrame({'url': trainBad[0], '2LD': trainBad[1], 'SS': trainBad[2],
-                                       'SS_url': trainBad[3], 'i_url': trainBad[4],
-                                       'i_2LD': trainBad[5],
-                                       'title': trainBad[6], 'language': trainBad[7],
-                                       'xLink': trainBad[8], 'isPhishing': 1},
-                                      index=range(len(trainBad[0])))
+    createLocalCsv(phishPageTrain, goodPageTrain, "trainingFeatures")
+    createLocalCsv(phishPageTest, goodPageTest, "testingFeatures")
 
-    return finalDataLegit, finalDataNotLegit, testDataLegit, testDataNotLegit
+    return [goodPageTrain, goodPageTest, labelTrain, labelTest, phishPageTrain, phishPageTest, phishLabelTrain,
+            phishLabelTest]
 
 
-# x and y are list of good pages and list of bad pages
-def train(x, y):
+def createLocalCsv(phishX, goodX, name):
+    # store features in csv
+    phishX = map(list, zip(*phishX))
+    goodX = map(list, zip(*goodX))
+    phishXCsv = pd.DataFrame({'url': phishX[0], '2LD': phishX[1], 'SS': phishX[2],
+                              'SS_url': phishX[3], 'i_url': phishX[4],
+                              'i_2LD': phishX[5],
+                              'title': phishX[6], 'language': phishX[7],
+                              'xLink': phishX[8], 'isPhishing': 1},
+                             index=range(len(phishX[0])))
+    goodXCsv = pd.DataFrame({'url': goodX[0], '2LD': goodX[1], 'SS': goodX[2],
+                             'SS_url': goodX[3], 'i_url': goodX[4],
+                             'i_2LD': goodX[5],
+                             'title': goodX[6], 'language': goodX[7],
+                             'xLink': goodX[8], 'isPhishing': 0},
+                            index=range(len(goodX[0])))
+
+    toCsv = pd.concat([phishXCsv, goodXCsv])
+    toCsv.to_csv(name + ".csv", encoding='utf-8')
+
+
+def train(phishX, goodX):
     """
     train a model using linear SVM with default parameters
-    :param x: list of
-    :param y:
-    :return:
+    :param phishX: list of lists representing feature vectors of phishing pages
+    :param goodX: list of lists representing feature vectors of safe pages
+    :return: phishX and goodX (for later use), and the svm model trained
     """
-    clf = svm.LinearSVC(verbose=True)
+    print 'features successfully stored'
+    clf = svm.LinearSVC(C=0.5, verbose=True)
+
     train_X_list = []
     train_Y_list = []
-
-    for i in x:
-        train_X_list.append(i)
-        train_Y_list.append(0)
-    for i in y:
-        train_X_list.append(i)
+    for i in phishX:
+        train_X_list.append(i[:9])
         train_Y_list.append(1)
-
+    for i in goodX:
+        train_X_list.append(i[:9])
+        train_Y_list.append(0)
     trainX = np.array(train_X_list)
     trainY = np.array(train_Y_list)
+
     print "training starts"
     clf.fit(trainX, trainY)
     print "train complete"
+
+    return clf, phishX, goodX
+
+
+def plot(phishX, goodX, pltDimensions=(0, 1)):
+    """
+
+    :param phishX: list of lists representing feature vectors of phishing pages
+    :param goodX: list of lists representing feature vectors of safe pages
+    :param pltDimensions:
+    :return:
+    """
+
+    print 'plotting'
     x0, x1, y0, y1 = [], [], [], []
-    for i in x:
-        x0.append(i[0])
-        x1.append(i[1])
-    for i in y:
-        y0.append(i[0])
-        y1.append(i[1])
+    for i in phishX:
+        x0.append(i[pltDimensions[0]])
+        x1.append(i[pltDimensions[1]])
+    for i in goodX:
+        y0.append(i[pltDimensions[0]])
+        y1.append(i[pltDimensions[1]])
 
     plt.scatter(x0, x1, marker='+')
     plt.scatter(y0, y1, marker='o')
-    plt.title('SVM Decision Region Boundary', size=16)
-    plt.show()
-    return clf
+    plt.title('showing plots of parts of the vector', size=16)
+    options = {0: plt.xlabel("url jaccard"),
+               1: plt.xlabel("2LD jaccard"),
+               2: plt.xlabel("SS jaccard"),
+               3: plt.xlabel("SS-url jaccard"),
+               4: plt.xlabel("SS-2LD jaccard"),
+               5: plt.xlabel("Image-url jaccard"),
+               6: plt.xlabel("Image-2LD jaccard"),
+               7: plt.xlabel("title jaccard"),
+               8: plt.xlabel("language jaccard"),
+               9: plt.xlabel("Xlink"),
+               10: plt.ylabel("url jaccard"),
+               11: plt.ylabel("2LD jaccard"),
+               12: plt.ylabel("SS jaccard"),
+               13: plt.ylabel("SS-url jaccard"),
+               14: plt.ylabel("SS-2LD jaccard"),
+               15: plt.ylabel("Image-url jaccard"),
+               16: plt.ylabel("Image-2LD jaccard"),
+               17: plt.ylabel("title jaccard"),
+               18: plt.ylabel("language jaccard"),
+               19: plt.ylabel("Xlink")
+               }
+    print pltDimensions
+    options[pltDimensions[0]]
+    options[pltDimensions[1] + 10]
+    # plt.show()
 
 
-def main():
-    print "parse data complete"
-    trainingSet, testSet = generateTrainTestData()
-    good, bad, testGood, testBad = featureExtraction_Engineering(trainingSet, testSet)
-    print "feature extraction and feature engineering complete"
-    model = train(good, bad)
-    print model
-    print test(model, testGood, testBad)
-    return model
+def plotAllCombinations(phishX, goodX, pltDimension=2):
+    print 'plotting all combinations'
+    dimension = len(phishX[0])
+    if pltDimension > 3:
+        raise ValueError("Can't visualize such high dimensional data")
+    allCombinations = itertools.combinations(range(dimension), pltDimension)
+    for i in allCombinations:
+        plot(phishX, goodX, tuple(i))
 
 
 def test(model, testGood, testBad):
@@ -209,41 +176,33 @@ def test(model, testGood, testBad):
     predictions = []
     actuals = []
     total = len(testGood) + len(testBad)
-    for sample in testGood.iterrows():
-        index, sample = sample
-        if model.predict(np.asarray(sample.tolist()[:9]).reshape(1, -1)) == 0:
+    for sample in testGood:
+        if model.predict(np.asarray(sample[:9]).reshape(1, -1)) == 0:
             correct += 1
-        predictions.append(model.predict(np.asarray(sample.tolist()[:9]).reshape(1, -1)))
+        predictions.append(model.predict(np.asarray(sample[:9]).reshape(1, -1)))
         actuals.append(0)
-    for sample in testBad.iterrows():
-        index, sample = sample
-        if model.predict(np.asarray(sample.tolist()[:9]).reshape(1, -1)) == 1:
+    for sample in testBad:
+        if model.predict(np.asarray(sample[:9]).reshape(1, -1)) == 1:
             correct += 1
-        predictions.append(model.predict(np.asarray(sample.tolist()[:9]).reshape(1, -1)))
+        predictions.append(model.predict(np.asarray(sample[:9]).reshape(1, -1)))
         actuals.append(1)
     return float(correct) / float(total), metrics.confusion_matrix(predictions, actuals)
 
 
-my_model = main()
-with open(os.path.join(here, "state.pickle"), "wb") as f:
-    pickle.dump(my_model, f)
+def main():
+    full, good, phish = parseData()
+    print "parse data complete"
+    fullList = generateTrainTestData(full)
+    print "feature extraction and feature engineering complete"
+    model, phishX, goodX = train(fullList[4], fullList[0])
+    plotAllCombinations(phishX, goodX, pltDimension=2)
+    print test(model, fullList[1], fullList[5])
+    with open(os.path.join(here, "state.pickle"), "wb") as f:
+        pickle.dump(model, f)
+    print 'model stored'
 
+
+main()
 # with open(os.path.join(here, "state.pickle"), "rb") as f:
 #     my_model = pickle.load(f)
 
-testGood1 = pd.read_csv("testGood.csv")
-testBad1 = pd.read_csv("testBad.csv")
-
-print test(my_model, testGood1, testBad1)
-
-
-featuresDFLegit.to_csv("features_extracted.csv", encoding="utf-8")
-featuresDFNotLegit.to_csv("features_extracted_not.csv", encoding="utf-8")
-test_featuresDFLegit.to_csv("testGood.csv", encoding="utf-8")
-test_featuresDFNotLegit.to_csv("testBad.csv", encoding="utf-8")
-
-
-dfList = [featuresDFLegit, featuresDFNotLegit, test_featuresDFLegit, test_featuresDFNotLegit]
-full_features = pd.concat(dfList)
-# beautifulSoupDF.to_csv("beautiful_soup_extracted.csv", encoding="utf-8")
-full_features.to_csv("all_features.csv", encoding="utf-8")
