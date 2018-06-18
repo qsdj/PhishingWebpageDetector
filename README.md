@@ -38,10 +38,11 @@ There's generally five steps:
 5. Test the model 
 
 The project is logically distributed into 3 python scripts:
-html_features, feature_engineering, svm_training
+html_features.py, feature_engineering.py, svm_training.py
 
 Optional Functionality:
 You can plot scatter plots of all data points
+by calling svm_training.plotAllCombinations()
 
 1. Extracting features from html code:
 you can do so by using the function html_features.extractHtmlFeatures(filename1, filename2, filename3)
@@ -54,17 +55,11 @@ Do note that filenames are default parameters, if you don't plan to change them,
 html_features.parseData(filename1, filename2, filename3) is a helper method for you to reload the stored data into python, it returns them in formats of pandas dataframe
 
 2. Extracting numerical values from stored features/Split data into training set and test set:
-you can do so by using the function svm_training.generateTrainTestData()
+you can do so by using the function svm_training.generateTrainTestData(allData, local=False)
+if it is the first time you run this function, i.e. data have yet to be stored locally, choose local=True and use the first output from parseData() function as allData, if you specify local=True, the input allData does not matter.
 
-
-until finished
-End with an example of getting some data out of the system or using it for a little demo
-
-Running the tests
-Explain how to run the automated tests for this system
-
-Break down into end to end tests
-Explain what these tests test and why
+3. Training the Linear SVM model based on vectors gotten from step 2:
+you can use train()
 
 Give an example
 And coding style tests
